@@ -37,7 +37,7 @@ func int C_DiegoTooFar(var int tolerance) //tolerance wichtig in Dialog, sonst m
 	}
 	else if (Npc_GetDistToWP (hero, "DT_MAINGATE") < (500 + tolerance))
 	|| 		(Wld_GetPlayerPortalGuild() == GIL_DMT)
-	|| 		( (Npc_GetDistToWP (hero, "DT_E3_03") < 1000) && (Npc_GetHeightToNpc(self, hero) > 1000) ) //freies Stück oben
+	|| 		( (Npc_GetDistToWP (hero, "DT_E3_03") < 1000) && (Npc_GetHeightToNpc(self, hero) > 1000) ) //freies StÃ¼ck oben
 	{
 		return LOC_XARDAS;
 	}

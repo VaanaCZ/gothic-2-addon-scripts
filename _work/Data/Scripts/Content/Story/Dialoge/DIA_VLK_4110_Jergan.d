@@ -40,8 +40,8 @@ FUNC INT DIA_Jergan_Hallo_Condition()
 
 FUNC VOID DIA_Jergan_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Hallo_15_00");//Qu'est-ce que vous faites ici ?
-	AI_Output (self, other,"DIA_Jergan_Hallo_13_01");//Je viens du château. On m'a chargé d'inspecter les environs et de chercher les gens portés disparus.
+	AI_Output (other, self,"DIA_Jergan_Hallo_15_00");//Qu'est-ce que vous faites iciÂ ?
+	AI_Output (self, other,"DIA_Jergan_Hallo_13_01");//Je viens du chÃ¢teau. On m'a chargÃ© d'inspecter les environs et de chercher les gens portÃ©s disparus.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Vermisste
@@ -65,9 +65,9 @@ FUNC INT DIA_Jergan_Vermisste_Condition()
 };
 FUNC VOID DIA_Jergan_Vermisste_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//Les gens portés disparus ?
+	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//Les gens portÃ©s disparusÂ ?
 	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//Plusieurs personnes se sont enfuies lors de l'attaque des dragons. La plupart sont mortes, ce qui n'a rien de surprenant.
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Mais s'il y a des survivants, je suis chargé de les ramener au château.
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Mais s'il y a des survivants, je suis chargÃ© de les ramener au chÃ¢teau.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Burg 
@@ -79,7 +79,7 @@ INSTANCE DIA_Jergan_Burg   (C_INFO)
 	condition   = DIA_Jergan_Burg_Condition;
 	information = DIA_Jergan_Burg_Info;
 	permanent   = FALSE;
-	description = "Pouvez-vous m'aider à entrer au château ?";
+	description = "Pouvez-vous m'aider Ã  entrer au chÃ¢teau ?";
 };
 
 FUNC INT DIA_Jergan_Burg_Condition()
@@ -92,13 +92,13 @@ FUNC INT DIA_Jergan_Burg_Condition()
 };
 FUNC VOID DIA_Jergan_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//Pouvez-vous m'aider à entrer au château ?
-	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//Bien sûr, mais uniquement si vous me rendez service.
-	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Si vous arrivez au château, allez voir Oric le paladin et dites-lui que son frère est mort au col.
+	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//Pouvez-vous m'aider Ã  entrer au chÃ¢teauÂ ?
+	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//Bien sÃ»r, mais uniquement si vous me rendez service.
+	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Si vous arrivez au chÃ¢teau, allez voir Oric le paladin et dites-lui que son frÃ¨re est mort au col.
 	
 	Log_CreateTopic (Topic_OricBruder, LOG_MISSION);
 	Log_SetTopicStatus (Topic_OricBruder,LOG_RUNNING);
-	B_LogEntry (Topic_OricBruder,"Quand je serai au château, je dois dire à Oric que son frère est tombé au col.");
+	B_LogEntry (Topic_OricBruder,"Quand je serai au chÃ¢teau, je dois dire Ã  Oric que son frÃ¨re est tombÃ© au col.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gegend
@@ -125,11 +125,11 @@ FUNC VOID DIA_Jergan_Gegend_Info()
 {
 	if (Jergan_Tell == FALSE)
 	{
-		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Que faut-il savoir au sujet de la région ?
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Si vous voulez vivre, retournez là d'où vous venez.
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Cela fait plusieurs semaines que les peaux vertes font le siège du château et ces sales dragons se cachent quelque part dans le coin.
+		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Que faut-il savoir au sujet de la rÃ©gionÂ ?
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Si vous voulez vivre, retournez lÃ  d'oÃ¹ vous venez.
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Cela fait plusieurs semaines que les peaux vertes font le siÃ¨ge du chÃ¢teau et ces sales dragons se cachent quelque part dans le coin.
 	};
-	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//La Vallée des mines regorge d'orques. Où que vous alliez, ce ne sera pas une partie de plaisir.
+	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//La VallÃ©e des mines regorge d'orques. OÃ¹ que vous alliez, ce ne sera pas une partie de plaisir.
 	Jergan_Tell = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -142,7 +142,7 @@ INSTANCE DIA_Jergan_Hilfe   (C_INFO)
 	condition   = DIA_Jergan_Hilfe_Condition;
 	information = DIA_Jergan_Hilfe_Info;
 	permanent   = FALSE;
-	description = "Comment puis-je entrer au château ?";
+	description = "Comment puis-je entrer au chÃ¢teau ?";
 };
 
 FUNC INT DIA_Jergan_Hilfe_Condition()
@@ -155,11 +155,11 @@ FUNC INT DIA_Jergan_Hilfe_Condition()
 };
 FUNC VOID DIA_Jergan_Hilfe_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//Comment faire pour accéder au château ?
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Oubliez la voie directe. Par contre, si vous le contournez, vous pourrez peut-être entrer par l'arrière.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Evitez les sentiers et suivez le cours de la rivière. Je vous conseille même de la descendre en nageant pendant quelque temps, après quoi cela devrait être plus facile.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Les orques ont un bélier derrière le château. C'est par là qu'il vous faut passer. Approchez-vous le plus possible sans vous faire remarquer, puis courez comme le vent.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//Si vous êtes assez rapide, vous passerez peut-être.
+	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//Comment faire pour accÃ©der au chÃ¢teauÂ ?
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Oubliez la voie directe. Par contre, si vous le contournez, vous pourrez peut-Ãªtre entrer par l'arriÃ¨re.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Evitez les sentiers et suivez le cours de la riviÃ¨re. Je vous conseille mÃªme de la descendre en nageant pendant quelque temps, aprÃ¨s quoi cela devrait Ãªtre plus facile.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Les orques ont un bÃ©lier derriÃ¨re le chÃ¢teau. C'est par lÃ  qu'il vous faut passer. Approchez-vous le plus possible sans vous faire remarquer, puis courez comme le vent.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//Si vous Ãªtes assez rapide, vous passerez peut-Ãªtre.
 };
 
 
@@ -187,8 +187,8 @@ FUNC INT DIA_Jergan_Mine_Condition()
 FUNC VOID DIA_Jergan_Mine_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Que faites-vous ici ?
-	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Je suis éclaireur, alors j'explore la région de part en part. Mais le moins que l'on puisse dire, c'est que les saurinides ne me facilitent pas la tâche.
-	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//La période est propice à la récolte des trophées... à condition de savoir les prélever bien sûr.
+	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Je suis Ã©claireur, alors j'explore la rÃ©gion de part en part. Mais le moins que l'on puisse dire, c'est que les saurinides ne me facilitent pas la tÃ¢che.
+	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//La pÃ©riode est propice Ã  la rÃ©colte des trophÃ©es... Ã  condition de savoir les prÃ©lever bien sÃ»r.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen
@@ -200,7 +200,7 @@ INSTANCE DIA_Jergan_Claw   (C_INFO)
 	condition   = DIA_Jergan_Claw_Condition;
 	information = DIA_Jergan_Claw_Info;
 	permanent   = FALSE;
-	description = "Pouvez-vous m'apprendre comment faire ça ?";
+	description = "Pouvez-vous m'apprendre comment faire Ã§a ?";
 };
 
 FUNC INT DIA_Jergan_Claw_Condition()
@@ -214,7 +214,7 @@ FUNC INT DIA_Jergan_Claw_Condition()
 };
 FUNC VOID DIA_Jergan_Claw_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Claw_15_00");//Pouvez-vous m'apprendre comment faire ?
+	AI_Output (other, self,"DIA_Jergan_Claw_15_00");//Pouvez-vous m'apprendre comment faireÂ ?
 	AI_Output (self, other,"DIA_Jergan_Claw_13_01");//Je peux vous montrer comment arracher les griffes des saurinides morts.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -227,7 +227,7 @@ INSTANCE DIA_Jergan_Teach   (C_INFO)
 	condition   = DIA_Jergan_Teach_Condition;
 	information = DIA_Jergan_Teach_Info;
 	permanent   = TRUE;
-	description = "(Apprendre à retirer les griffes)";
+	description = "(Apprendre Ã  retirer les griffes)";
 };
 FUNC INT DIA_Jergan_Teach_Condition()
 {	
@@ -244,8 +244,8 @@ FUNC VOID DIA_Jergan_Teach_Info()
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 	{
-		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//Ce qu'il faut se rappeler, c'est qu'il est nécessaire de les arracher d'un coup sec. N'hésitez pas et ne cherchez pas à les découper à l'aide d'une lame.
-		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//C'est également la méthode à appliquer pour arracher les griffes des lézards et des bêtes des ombres.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//Ce qu'il faut se rappeler, c'est qu'il est nÃ©cessaire de les arracher d'un coup sec. N'hÃ©sitez pas et ne cherchez pas Ã  les dÃ©couper Ã  l'aide d'une lame.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//C'est Ã©galement la mÃ©thode Ã  appliquer pour arracher les griffes des lÃ©zards et des bÃªtes des ombres.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -258,7 +258,7 @@ INSTANCE DIA_Jergan_Diego   (C_INFO)
 	condition   = DIA_Jergan_Diego_Condition;
 	information = DIA_Jergan_Diego_Info;
 	permanent   = FALSE;
-	description = "Savez-vous où est allé Diego ?";
+	description = "Savez-vous oÃ¹ est allÃ© Diego ?";
 };
 
 FUNC INT DIA_Jergan_Diego_Condition()
@@ -272,14 +272,14 @@ FUNC INT DIA_Jergan_Diego_Condition()
 };
 FUNC VOID DIA_Jergan_Diego_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Savez-vous où se trouve Diego ?
-	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego ? C'était l'un des mineurs de Silvestro, mais il se fait particulièrement discret ces temps-ci.
+	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Savez-vous oÃ¹ se trouve DiegoÂ ?
+	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//DiegoÂ ? C'Ã©tait l'un des mineurs de Silvestro, mais il se fait particuliÃ¨rement discret ces temps-ci.
 	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//Je l'ai vu en compagnie de deux chevaliers portant une caisse pas trop loin d'ici.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Vous voyez la vieille tour de garde ? Dirigez-vous vers elle, puis vers le château.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Un sentier permet de franchir les rochers visibles sur la droite. C'est par là que les trois hommes sont passés.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Vous voyez la vieille tour de gardeÂ ? Dirigez-vous vers elle, puis vers le chÃ¢teau.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Un sentier permet de franchir les rochers visibles sur la droite. C'est par lÃ  que les trois hommes sont passÃ©s.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Rudelführer getötet
+//	RudelfÃ¼hrer getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Jergan_Leader   (C_INFO)
@@ -303,18 +303,18 @@ FUNC INT DIA_Jergan_Leader_Condition()
 };
 FUNC VOID DIA_Jergan_Leader_Info()
 {
-	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Ainsi, vous avez tué le chef de la meute. Est-ce que vous lui avez arraché ses griffes ?
+	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Ainsi, vous avez tuÃ© le chef de la meute. Est-ce que vous lui avez arrachÃ© ses griffesÂ ?
 	
 	if (Npc_HasItems (other, ItAt_ClawLeader) >= 1)
 	{
 		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//Oui.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Nul doute qu'elles doivent valoir très cher. Certaines personnes les collectionnent vous savez.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Si vous trouvez un acheteur intéressé, elles vous rapporteront probablement une coquette somme.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Nul doute qu'elles doivent valoir trÃ¨s cher. Certaines personnes les collectionnent vous savez.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Si vous trouvez un acheteur intÃ©ressÃ©, elles vous rapporteront probablement une coquette somme.
 	}
 	else
 	{
 		AI_Output (other, self,"DIA_Jergan_Leader_15_04");//Non.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_05");//Vous devriez le faire, je suis sûr qu'elles valent une fortune.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_05");//Vous devriez le faire, je suis sÃ»r qu'elles valent une fortune.
 	};	
 };
 

@@ -49,12 +49,12 @@ func void DIA_Grimbald_HALLO_Info ()
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Je chasse. Cela me semble évident.
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Je chasse. Cela me semble Ã©vident.
 				Grimbald_PissOff = TRUE;
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Plus maintenant. Vous êtes là non ?
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Plus maintenant. Vous Ãªtes lÃ  non ?
 				
 				Info_ClearChoices	(DIA_Grimbald_HALLO);
 				Info_AddChoice	(DIA_Grimbald_HALLO, "J'ai des choses dont je dois m'occuper.", DIA_Grimbald_HALLO_nein );
@@ -72,32 +72,32 @@ func void DIA_Grimbald_HALLO_ich ()
 func void DIA_Grimbald_HALLO_Was ()
 {
 	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Que voulez-vous faire ?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Je veux chasser les saurinides là-bas mais je crois qu'ils sont trop nombreux pour moi.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Je veux chasser les saurinides lÃ -bas mais je crois qu'ils sont trop nombreux pour moi.
 
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Comptez pas sur moi pour ça.", DIA_Grimbald_HALLO_Was_neinnein );
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Très bien. Je vous aiderai. Après vous.", DIA_Grimbald_HALLO_Was_ja );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "Comptez pas sur moi pour Ã§a.", DIA_Grimbald_HALLO_Was_neinnein );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "TrÃ¨s bien. Je vous aiderai. AprÃ¨s vous.", DIA_Grimbald_HALLO_Was_ja );
 };
 func void DIA_Grimbald_HALLO_Was_neinnein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neinnein_15_00"); //Comptez pas sur moi pour ça.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //Alors dégage, lâche.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neinnein_15_00"); //Comptez pas sur moi pour Ã§a.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //Alors dÃ©gage, lÃ¢che.
 	Grimbald_PissOff = TRUE;
 	Info_ClearChoices	(DIA_Grimbald_HALLO);
 };
 
 func void DIA_Grimbald_HALLO_Was_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //Très bien. Je vais vous aider. Passez en premier.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Bien sûr. Mais ne vous approchez pas trop du troll noir là-bas. Il vous mettrait en pièces, compris ?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //Et que la honte vous ronge si vous vous dégonflez.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //TrÃ¨s bien. Je vais vous aider. Passez en premier.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Bien sÃ»r. Mais ne vous approchez pas trop du troll noir lÃ -bas. Il vous mettrait en piÃ¨ces, compris ?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //Et que la honte vous ronge si vous vous dÃ©gonflez.
 	B_StartOtherRoutine	(self,"Jagd");
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Grimbald_HALLO_nein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //J'ai d'autres choses à faire.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Ne dites pas n'importe quoi. Que pouvez-vous donc avoir à faire d'aussi important en pleine nature ?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //J'ai d'autres choses Ã  faire.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Ne dites pas n'importe quoi. Que pouvez-vous donc avoir Ã  faire d'aussi important en pleine nature ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ instance DIA_Grimbald_Jagd		(C_INFO)
 	information	 = 	DIA_Grimbald_Jagd_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Pouvez-vous m'apprendre à chasser ?";
+	description	 = 	"Pouvez-vous m'apprendre Ã  chasser ?";
 };
 
 func int DIA_Grimbald_Jagd_Condition ()
@@ -125,29 +125,29 @@ func int DIA_Grimbald_Jagd_Condition ()
 
 func void DIA_Grimbald_Jagd_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //Pouvez-vous m'apprendre à chasser ?
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //Pouvez-vous m'apprendre Ã  chasser ?
 	if 	((Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 		|| (Grimbald_PissOff == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Hum. Très bien. Vous ne m'avez pas vraiment été d'une grande aide mais ne soyons pas trop dur.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Hum. TrÃ¨s bien. Vous ne m'avez pas vraiment Ã©tÃ© d'une grande aide mais ne soyons pas trop dur.
 		Grimbald_TeachAnimalTrophy = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //Bien sûr, mais ce n'est pas gratuit.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //Bien sÃ»r, mais ce n'est pas gratuit.
 		B_Say_Gold (self, other, 200);
 	
 		Info_ClearChoices	(DIA_Grimbald_Jagd);
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Je vais y réfléchir.", DIA_Grimbald_Jagd_zuviel );
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Très bien.", DIA_Grimbald_Jagd_ja );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "Je vais y rÃ©flÃ©chir.", DIA_Grimbald_Jagd_zuviel );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "TrÃ¨s bien.", DIA_Grimbald_Jagd_ja );
 	};
 };
 
 func void DIA_Grimbald_Jagd_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //Très bien, voici votre argent.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //TrÃ¨s bien, voici votre argent.
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,200))
 		{
@@ -163,7 +163,7 @@ func void DIA_Grimbald_Jagd_ja ()
 
 func void DIA_Grimbald_Jagd_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Je vais y réfléchir.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Je vais y rÃ©flÃ©chir.
 	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Si vous le dites.
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };
@@ -179,7 +179,7 @@ instance DIA_Grimbald_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grimbald_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grimbald_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Apprenez-moi à chasser.";
+	description	 = 	"Apprenez-moi Ã  chasser.";
 };
 
 func int DIA_Grimbald_TEACHHUNTING_Condition ()
@@ -192,7 +192,7 @@ func int DIA_Grimbald_TEACHHUNTING_Condition ()
 var int DIA_Grimbald_TEACHHUNTING_OneTime;
 func void DIA_Grimbald_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //Apprenez-moi à chasser.
+	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //Apprenez-moi Ã  chasser.
 	if (DIA_Grimbald_TEACHHUNTING_OneTime == FALSE)
 	{
 		B_StartOtherRoutine	(self,"JagdOver");
@@ -234,7 +234,7 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Vous savez déjà tout ce que je peux vous apprendre.
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Vous savez dÃ©jÃ  tout ce que je peux vous apprendre.
 			};
 };
 
@@ -256,7 +256,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFWing()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //Soit vous arrachez les ailes, soit vous les détachez avec un couteau tranchant.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //Soit vous arrachez les ailes, soit vous les dÃ©tachez avec un couteau tranchant.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -265,7 +265,7 @@ func void DIA_Grimbald_TEACHHUNTING_Claws ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Il y a différents moyens de retirer des griffes. Pour certains animaux, il faut forcer alors qu'avec d'autres un simple couteau permet de les couper.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Il y a diffÃ©rents moyens de retirer des griffes. Pour certains animaux, il faut forcer alors qu'avec d'autres un simple couteau permet de les couper.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -274,7 +274,7 @@ func void DIA_Grimbald_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //Les foreurs des mines et les fléaux des champs ont de puissantes mandibules que vous pouvez ôter de la tête de l'animal d'un coup sec et puissant.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //Les foreurs des mines et les flÃ©aux des champs ont de puissantes mandibules que vous pouvez Ã´ter de la tÃªte de l'animal d'un coup sec et puissant.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -283,7 +283,7 @@ func void DIA_Grimbald_TEACHHUNTING_CrawlerPlate ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Les plaques des foreurs des mines sont étroitement collées au corps de l'animal mais vous pouvez les retirer avec un objet tranchant.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Les plaques des foreurs des mines sont Ã©troitement collÃ©es au corps de l'animal mais vous pouvez les retirer avec un objet tranchant.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -314,7 +314,7 @@ func int DIA_Grimbald_NovChase_Condition ()
 func void DIA_Grimbald_NovChase_Info ()
 {
 	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //Avez-vous vu un novice passer par ici ?
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //De singuliers individus sont passés par ici aujourd'hui dont deux types vers l'arche de pierre là-haut.
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //De singuliers individus sont passÃ©s par ici aujourd'hui dont deux types vers l'arche de pierre lÃ -haut.
 	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Je les ai vus il y a quelques temps et un novice des Magiciens du feu les accompagnait.
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -342,7 +342,7 @@ func int DIA_Grimbald_Trolltot_Condition ()
 
 func void DIA_Grimbald_Trolltot_Info ()
 {
-	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //Le troll noir est mort. Bien joué. J'ignorais qu'on pouvait tuer ces choses. Je n'oublierai pas ça.
+	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //Le troll noir est mort. Bien jouÃ©. J'ignorais qu'on pouvait tuer ces choses. Je n'oublierai pas Ã§a.
 	B_GivePlayerXP (XP_Ambient);
 };
 

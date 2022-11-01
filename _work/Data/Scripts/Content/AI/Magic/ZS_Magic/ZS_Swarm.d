@@ -24,10 +24,10 @@ func void B_StopSwarm()
 	}
 	else
 	{
-		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-Attitüde hostile ist 
+		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-AttitÃ¼de hostile ist 
 	};
 	
-	// nach Aufruf dieses Befehles wird die Loop über return LOOP_END beendet
+	// nach Aufruf dieses Befehles wird die Loop Ã¼ber return LOOP_END beendet
 };
 
 // **************

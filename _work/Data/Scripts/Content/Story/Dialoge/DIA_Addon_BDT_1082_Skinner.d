@@ -75,10 +75,10 @@ FUNC INT DIA_Addon_Skinner_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Pourquoi vous m'avez réveillé, hein ? Je parie que même vous, vous n'en savez rien...
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Non - ne dites rien. Il est trop tard pour me présenter des excuses.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Pourquoi vous m'avez rÃ©veillÃ©, hein ? Je parie que mÃªme vous, vous n'en savez rien...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Non - ne dites rien. Il est trop tard pour me prÃ©senter des excuses.
 	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//Maintenant, vous avez deux choix : soit vous nous combattez, ma Betty et moi... soit vous essayez de vous enfuir.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//A votre place, je commencerais à courir...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//A votre place, je commencerais Ã  courir...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
@@ -110,11 +110,11 @@ FUNC VOID DIA_Addon_Skinner_Attentat_Info()
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);
 	
 	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Eliminer Esteban",DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
-	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Retrouver le traître",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
+	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Retrouver le traÃ®tre",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00");//Je veux éliminer Esteban.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00");//Je veux Ã©liminer Esteban.
 	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_08_01");//Super.
 	
 	Judas_Counter = (Judas_Counter + 1);
@@ -123,7 +123,7 @@ FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_PRO()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//Je veux retrouver le traître.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//Je veux retrouver le traÃ®tre.
 	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01");//Merde.
 	
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);

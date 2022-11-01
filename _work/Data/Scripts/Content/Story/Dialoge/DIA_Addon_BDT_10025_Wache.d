@@ -36,13 +36,13 @@ FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Comment ça se passe ?
-	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Je cuisine un délicieux ragoût pour les mineurs et les gardes.
+	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Comment Ã§a se passe ?
+	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Je cuisine un dÃ©licieux ragoÃ»t pour les mineurs et les gardes.
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Par contre, les esclaves n'ont jamais rien à manger. De l'eau croupie et du pain sec, tout au mieux.
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Ça ne leur fera pas de mal, à ces citadins.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Par contre, les esclaves n'ont jamais rien Ã  manger. De l'eau croupie et du pain sec, tout au mieux.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Ã‡a ne leur fera pas de mal, Ã  ces citadins.
 	};
 };
 

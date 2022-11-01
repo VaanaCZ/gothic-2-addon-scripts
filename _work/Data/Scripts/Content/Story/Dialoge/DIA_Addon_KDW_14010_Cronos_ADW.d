@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Cronos_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Cronos_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Cronos_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Karte zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Karte zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Cronos_ADW_PICKPOCKET_Condition()
@@ -96,12 +96,12 @@ func int DIA_Addon_Cronos_ADWHello_Condition ()
 func void DIA_Addon_Cronos_ADWHello_Info ()
 {
 	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //Heureux de vous revoir. Nous avons craint le pire.
-	AI_Output	(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //Ce n'était pas si terrible que cela. Comment vont les choses, ici ?
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Cette région est extrêmement dangereuse.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //Certains animaux sur ces terres n'ont jamais été aperçus par d'autres que nous.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Non loin d'ici se trouve un grand marais qui a proliféré pendant des centaines d'années sans que quiconque ne s'en rende compte.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //Il ne se passe pas une journée sans que nous soyons attaqués par des créatures provenant du marais.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //Je vous recommande d'être prudent s'il vous prend l'envie de vous promener dans les parages.
+	AI_Output	(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //Ce n'Ã©tait pas si terrible que cela. Comment vont les choses, ici ?
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Cette rÃ©gion est extrÃªmement dangereuse.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //Certains animaux sur ces terres n'ont jamais Ã©tÃ© aperÃ§us par d'autres que nous.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Non loin d'ici se trouve un grand marais qui a prolifÃ©rÃ© pendant des centaines d'annÃ©es sans que quiconque ne s'en rende compte.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //Il ne se passe pas une journÃ©e sans que nous soyons attaquÃ©s par des crÃ©atures provenant du marais.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //Je vous recommande d'Ãªtre prudent s'il vous prend l'envie de vous promener dans les parages.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -125,8 +125,8 @@ func int DIA_Addon_Cronos_WaechterADW_Condition ()
 func void DIA_Addon_Cronos_WaechterADW_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //Avez-vous du nouveau sur les sentinelles de pierre ?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //Nous sommes déjà parvenus à en éliminer un certain nombre.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //Elles se tiennent là, figées telles des colonnes de sel, et ne bougent plus.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //Nous sommes dÃ©jÃ  parvenus Ã  en Ã©liminer un certain nombre.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //Elles se tiennent lÃ , figÃ©es telles des colonnes de sel, et ne bougent plus.
 	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //Mais ne vous fiez pas aux apparences. Si vous vous approchez trop, elles vous attaqueront !
 	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_04"); //Il n'y a aucun doute sur un point : la source de leur puissance se trouve quelque part en ces lieux.
 };
@@ -143,7 +143,7 @@ instance DIA_Addon_Cronos_ADW_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Cronos_ADW_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Faisons un échange.";
+	description	 = 	"Faisons un Ã©change.";
 };
 
 func int DIA_Addon_Cronos_ADW_Trade_Condition ()

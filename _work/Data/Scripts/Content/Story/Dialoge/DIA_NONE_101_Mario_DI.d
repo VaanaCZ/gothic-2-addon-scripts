@@ -33,7 +33,7 @@ INSTANCE DIA_NONE_101_MARIO_DI_Job (C_INFO)
 	information = DIA_NONE_101_MARIO_DI_Job_Info;
 	permanent   = TRUE;
 
-	description	= "Voici votre chance de prouver vos capacités de combattant.";
+	description	= "Voici votre chance de prouver vos capacitÃ©s de combattant.";
 };
 
 FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
@@ -47,9 +47,9 @@ FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_Job_Info()
 {
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //Voilà votre chance de montrer que vous savez vous battre.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //VoilÃ  votre chance de montrer que vous savez vous battre.
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //Du calme, chaque chose en son temps.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Hmm… Je m'attendais à une telle réponse de votre part.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Hmmâ€¦ Je m'attendais Ã  une telle rÃ©ponse de votre part.
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Attendez.
 };
 
@@ -75,10 +75,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_ambush_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_ambush_Info()
 {
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Approchez-vous un peu. Bien. Et maintenant, montrez-moi de quoi vous êtes capable.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Qu'entendez-vous par là ?
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //C'est simple. Le maître en a plus qu'assez de vous.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //J'aurais dû vous tuer plus tôt, mais mes amis et moi-même allons rectifier cette erreur sans attendre.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Approchez-vous un peu. Bien. Et maintenant, montrez-moi de quoi vous Ãªtes capable.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Qu'entendez-vous par lÃ  ?
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //C'est simple. Le maÃ®tre en a plus qu'assez de vous.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //J'aurais dÃ» vous tuer plus tÃ´t, mais mes amis et moi-mÃªme allons rectifier cette erreur sans attendre.
 	
 	Info_ClearChoices	(DIA_NONE_101_MARIO_DI_ambush);
 	Info_AddChoice	(DIA_NONE_101_MARIO_DI_ambush, DIALOG_ENDE, DIA_NONE_101_MARIO_DI_ambush_ambush );

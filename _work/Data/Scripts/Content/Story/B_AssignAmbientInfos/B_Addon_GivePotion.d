@@ -31,7 +31,7 @@ func VOID DIA_Addon_GivePotion_Info()
 	Info_AddChoice (DIA_Addon_GivePotion,DIALOG_BACK,DIA_Addon_GivePotion_BACK);
 	if (Npc_HasItems (other,ItPo_Health_03) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(donner un élixir de soin)",DIA_Addon_GivePotion_ItPo_Health_03);
+		Info_AddChoice (DIA_Addon_GivePotion,"(donner un Ã©lixir de soin)",DIA_Addon_GivePotion_ItPo_Health_03);
 	};
 	if (Npc_HasItems (other,ItPo_Health_02) >= 1)
 	{
@@ -47,7 +47,7 @@ func void B_Addon_DrinkPotion ()
 {
 	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Tenez, prenez cette potion de soins.
 
-	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //geändert m.F. 
+	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //geÃ¤ndert m.F. 
 	{
 		if (Npc_HasItems(self,ItPo_Health_03) > 0)			
 		{

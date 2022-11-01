@@ -75,14 +75,14 @@ FUNC INT DIA_Joe_Hallo_Condition()
 };
 FUNC VOID DIA_Joe_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Merci, mon vieux, merci beaucoup. Et moi qui commençais à penser que je ne sortirais jamais d'ici...
+	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Merci, mon vieux, merci beaucoup. Et moi qui commenÃ§ais Ã  penser que je ne sortirais jamais d'ici...
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP ((XP_Ambient*4));
 	
-	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Qu'est-ce que vous faites là ?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Je me suis retrouvé enfermé. La porte était ouverte et j'ai voulu voir ce qu'il y avait à l'intérieur, par curiosité. Mais dès que je suis entré, la garde est passée et a fermé cette maudite porte à clé.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Toute cette histoire est très embarrassante et je vous serais reconnaissant si elle restait entre nous.
-	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Je comprends. C'est vrai qu'il n'y a pas vraiment de quoi en être fier...
+	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Qu'est-ce que vous faites lÃ Â ?
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Je me suis retrouvÃ© enfermÃ©. La porte Ã©tait ouverte et j'ai voulu voir ce qu'il y avait Ã  l'intÃ©rieur, par curiositÃ©. Mais dÃ¨s que je suis entrÃ©, la garde est passÃ©e et a fermÃ© cette maudite porte Ã  clÃ©.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Toute cette histoire est trÃ¨s embarrassante et je vous serais reconnaissant si elle restait entre nous.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Je comprends. C'est vrai qu'il n'y a pas vraiment de quoi en Ãªtre fier...
 	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//J'aurais bien besoin d'un bon verre...
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START"); 
@@ -109,7 +109,7 @@ FUNC INT DIA_Joe_Perm_Condition()
 FUNC VOID DIA_Joe_Perm_Info()
 {
 	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Tout va bien ?
-	AI_Output (self, other,"DIA_Joe_Perm_10_01");//Merci de m'avoir libéré.
+	AI_Output (self, other,"DIA_Joe_Perm_10_01");//Merci de m'avoir libÃ©rÃ©.
 	
 	AI_StopProcessInfos (self);
 };
@@ -136,8 +136,8 @@ FUNC INT DIA_Joe_Sign_Condition()
 FUNC VOID DIA_Joe_Sign_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Hé, vous savez quoi ? Nous avons des amis communs ! Puisque c'est ainsi, permettez-moi de vous montrer ma reconnaissance...
-	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Tenez, prenez ces crochets. Je suis sûr qu'ils vous seront utiles.
+	AI_Output (self, other,"DIA_Joe_Sign_10_00");//HÃ©, vous savez quoiÂ ? Nous avons des amis communsÂ ! Puisque c'est ainsi, permettez-moi de vous montrer ma reconnaissance...
+	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Tenez, prenez ces crochets. Je suis sÃ»r qu'ils vous seront utiles.
 	
 	B_GiveInvItems (self, other, ItKE_Lockpick, 5);
 	

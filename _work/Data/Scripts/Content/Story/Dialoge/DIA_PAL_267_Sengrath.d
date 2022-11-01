@@ -41,11 +41,11 @@ FUNC INT DIA_Sengrath_Hello_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Je le savais ! Je savais bien que quelqu'un y arriverait !
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Avez-vous franchi le col ? Mais alors, notre messager a réussi à passer ?
-	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Non, il n'est pas passé. Je suis venu sur ordre du seigneur Hagen.
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(grogne) Maudits orques !
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Le commandant Garond va sans doute vouloir vous parler. Vous le trouverez dans le grand bâtiment gardé par deux chevaliers.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Je le savaisÂ ! Je savais bien que quelqu'un y arriveraitÂ !
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Avez-vous franchi le colÂ ? Mais alors, notre messager a rÃ©ussi Ã  passerÂ ?
+	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //Non, il n'est pas passÃ©. Je suis venu sur ordre du seigneur Hagen.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(grogne) Maudits orquesÂ !
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Le commandant Garond va sans doute vouloir vous parler. Vous le trouverez dans le grand bÃ¢timent gardÃ© par deux chevaliers.
 };
 // ************************************************************
 // 			  	Equipment 
@@ -57,7 +57,7 @@ INSTANCE DIA_Sengrath_Equipment (C_INFO)
 	condition	= DIA_Sengrath_Equipment_Condition;
 	information	= DIA_Sengrath_Equipment_Info;
 	permanent	= FALSE;
-	description = "Où puis-je trouver de l'équipement ici ?";
+	description = "OÃ¹ puis-je trouver de l'Ã©quipement ici ?";
 };                       
 
 FUNC INT DIA_Sengrath_Equipment_Condition()
@@ -66,13 +66,13 @@ FUNC INT DIA_Sengrath_Equipment_Condition()
 };	 
 FUNC VOID DIA_Sengrath_Equipment_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Où puis-je m'équiper ici ?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Tandor est chargé des armes. Pour tout le reste, c'est Engor qu'il faut aller trouver.
-	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //Et l'équipement magique ?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Nous avons des parchemins magiques. S'ils vous intéressent, faites-le moi savoir.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //OÃ¹ puis-je m'Ã©quiper iciÂ ?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Tandor est chargÃ© des armes. Pour tout le reste, c'est Engor qu'il faut aller trouver.
+	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //Et l'Ã©quipement magiqueÂ ?
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Nous avons des parchemins magiques. S'ils vous intÃ©ressent, faites-le moi savoir.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Sengrath vend des parchemins de sort dans le château.");
+	B_LogEntry (TOPIC_Trader_OC,"Sengrath vend des parchemins de sort dans le chÃ¢teau.");
 };
 // ************************************************************
 // 			  	Lehrer
@@ -93,7 +93,7 @@ FUNC INT DIA_Sengrath_Perm_Condition()
 };
 FUNC VOID DIA_Sengrath_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Qui prodigue son enseignement ici ?
+	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Qui prodigue son enseignement iciÂ ?
 	
 	if (other.guild == GIL_KDF)
 	&& (Kapitel == 2)
@@ -102,10 +102,10 @@ FUNC VOID DIA_Sengrath_Perm_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Demandez à Kéroloth. C'est lui qui enseigne l'escrime à nos nouvelles recrues. Peut-être aura-t-il également des choses à vous apprendre.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Demandez Ã  KÃ©roloth. C'est lui qui enseigne l'escrime Ã  nos nouvelles recrues. Peut-Ãªtre aura-t-il Ã©galement des choses Ã  vous apprendre.
 		
 		Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
-		B_LogEntry (TOPIC_Teacher_OC,"Au château, Kéroloth entraîne les spadassins.");
+		B_LogEntry (TOPIC_Teacher_OC,"Au chÃ¢teau, KÃ©roloth entraÃ®ne les spadassins.");
 	};
 };
 // ************************************************************

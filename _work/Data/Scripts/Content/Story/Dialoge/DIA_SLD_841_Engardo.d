@@ -50,20 +50,20 @@ func void DIA_Engardo_HALLO_Info ()
 	Akils_SLDStillthere = TRUE;
 	if (Chance == FALSE)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Hé, bouffon ! Vous vous êtes perdu ou quoi ? Retournez planter des navets dans votre champ.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //HÃ©, bouffon ! Vous vous Ãªtes perdu ou quoi ? Retournez planter des navets dans votre champ.
 		Chance = 1;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 1) 
 	{	
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //Vous êtes au mauvais endroit au mauvais moment.
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //Alors, si vous voulez continuer à vivre, tirez-vous sans attendre, c'est compris ?
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //Vous Ãªtes au mauvais endroit au mauvais moment.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //Alors, si vous voulez continuer Ã  vivre, tirez-vous sans attendre, c'est comprisÂ ?
 		Chance = 2;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 2)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //Vous avez un problème d'audition ou vous cherchez à mourir ? (implacable) En tout cas, c'est trop tard maintenant...
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //Vous avez un problÃ¨me d'audition ou vous cherchez Ã  mourirÂ ? (implacable) En tout cas, c'est trop tard maintenant...
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_SuddenEnemyInferno, 1);

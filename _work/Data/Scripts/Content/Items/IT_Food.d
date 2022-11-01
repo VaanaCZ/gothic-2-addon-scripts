@@ -18,7 +18,7 @@ const int	Value_Water		=	10;		const int	HP_Water		=	8;
 const int	Value_Beer		=	20;		const int	HP_Beer			=	3;	const int	Mana_Beer		=	1;
 const int	Value_Booze		=	15;		const int	HP_Booze		=	4;	const int	Mana_Booze		=	1;
 const int	Value_Wine		=	20;		const int	HP_Wine			=	2;	const int	Mana_Wine		=	1;
-const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge‰ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
+const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge√§ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
 
 
 
@@ -46,7 +46,7 @@ INSTANCE ItFo_Apple (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		
 	COUNT[1]			= 	HP_Apple;
 	
-	TEXT[3]				=    "Une pomme fraÓche,";
+	TEXT[3]				=    "Une pomme fra√Æche,";
 	TEXT[4]				=    "ferme et juteuse.";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
@@ -222,7 +222,7 @@ INSTANCE ItFoMuttonRaw (C_Item)
 
 INSTANCE ItFoMutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 {	
-	name 				=	"Viande grillÈe";
+	name 				=	"Viande grill√©e";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -277,7 +277,7 @@ INSTANCE ItFo_Stew (C_Item)
 
 INSTANCE ItFo_XPStew (C_Item)
 {	
-	name 				=	"Civet de ThÈkla";
+	name 				=	"Civet de Th√©kla";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -307,7 +307,7 @@ INSTANCE ItFo_XPStew (C_Item)
 
 INSTANCE ItFo_CoragonsBeer (C_Item)
 {	
-	name 				=	"BiËre";
+	name 				=	"Bi√®re";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -323,7 +323,7 @@ INSTANCE ItFo_CoragonsBeer (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		COUNT[1]	= HP_Beer;
 	TEXT[2]				= 	NAME_Bonus_Mana;	COUNT[2]	= Mana_Beer;
 	
-	TEXT[4]				= 	"BiËre spÈciale de Coragon";		
+	TEXT[4]				= 	"Bi√®re sp√©ciale de Coragon";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Beer;
 
 };
@@ -459,7 +459,7 @@ INSTANCE ItFo_Water (C_Item)
 
 INSTANCE ItFo_Beer (C_Item)
 {	
-	name 				=	"BiËre";
+	name 				=	"Bi√®re";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

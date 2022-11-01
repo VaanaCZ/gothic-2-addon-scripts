@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_7_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Récemment, c'est devenu beaucoup plus dangereux ici. Et les fléaux des champs sont un véritable cauchemar.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //RÃ©cemment, c'est devenu beaucoup plus dangereux ici. Et les flÃ©aux des champs sont un vÃ©ritable cauchemar.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Nous devons payer notre contribution à la ville. Sinon, nous aurons des ennuis avec les paladins.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Nous devons payer notre contribution Ã  la ville. Sinon, nous aurons des ennuis avec les paladins.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //La rébellion d'Onar aura de sérieuses conséquences. Je préfère ne pas m'en mêler.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //La rÃ©bellion d'Onar aura de sÃ©rieuses consÃ©quences. Je prÃ©fÃ¨re ne pas m'en mÃªler.
 	};
 	
 	AI_StopProcessInfos	(self);

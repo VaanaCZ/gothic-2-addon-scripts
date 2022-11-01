@@ -14,7 +14,7 @@ var int ALchemy_2_permanent;
 var int ALchemy_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -34,7 +34,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Potions Pouvoir mag.");
-					Doc_PrintLine	( nDocID,  0, "et ingrédients"						);
+					Doc_PrintLine	( nDocID,  0, "et ingrÃ©dients"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Essence de mana"						);
@@ -52,12 +52,12 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pour le laboratoire d'alchimie, il faut une fiole qui sera utilisée au cours du processus."	); 
+					Doc_PrintLines	( nDocID,  1, "Pour le laboratoire d'alchimie, il faut une fiole qui sera utilisÃ©e au cours du processus."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pour une potion de soin ou une qui augmente le pouvoir magique, il faut un ingrédient et une plante :"			);
-					Doc_PrintLine	( nDocID,  1, "Nœud de prairie"		);
+					Doc_PrintLines	( nDocID,  1, "Pour une potion de soin ou une qui augmente le pouvoir magique, il faut un ingrÃ©dient et une plante :"			);
+					Doc_PrintLine	( nDocID,  1, "NÅ“ud de prairie"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pour préparer une potion provoquant des altérations permanentes du corps, il faut une plante :"						);
+					Doc_PrintLines	( nDocID,  1, "Pour prÃ©parer une potion provoquant des altÃ©rations permanentes du corps, il faut une plante :"						);
 					Doc_PrintLines	( nDocID,  1, "Oseille royale"		);
 					Doc_Show		( nDocID );
 					
@@ -70,7 +70,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -90,17 +90,17 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Potions de soin");
-					Doc_PrintLine	( nDocID,  0, "et ingrédients"						);
+					Doc_PrintLine	( nDocID,  0, "et ingrÃ©dients"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Essence médicinale"						);
-					Doc_PrintLine	( nDocID,  0, "2 plantes méd."						);
+					Doc_PrintLine	( nDocID,  0, "Essence mÃ©dicinale"						);
+					Doc_PrintLine	( nDocID,  0, "2 plantes mÃ©d."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Extrait médicinal"						);
-					Doc_PrintLine	( nDocID,  0, "2 herbes méd."						);
+					Doc_PrintLine	( nDocID,  0, "Extrait mÃ©dicinal"						);
+					Doc_PrintLine	( nDocID,  0, "2 herbes mÃ©d."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Elixir médicinal"						);
-					Doc_PrintLine	( nDocID,  0, "2 racines méd."						);
+					Doc_PrintLine	( nDocID,  0, "Elixir mÃ©dicinal"						);
+					Doc_PrintLine	( nDocID,  0, "2 racines mÃ©d."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
@@ -108,12 +108,12 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pour le laboratoire d'alchimie, il faut une fiole qui sera utilisée au cours du processus."	); 
+					Doc_PrintLines	( nDocID,  1, "Pour le laboratoire d'alchimie, il faut une fiole qui sera utilisÃ©e au cours du processus."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pour une potion de soin ou une qui augmente le pouvoir magique, il faut un ingrédient et une plante :"			);
-					Doc_PrintLine	( nDocID,  1, "Nœud de prairie"		);
+					Doc_PrintLines	( nDocID,  1, "Pour une potion de soin ou une qui augmente le pouvoir magique, il faut un ingrÃ©dient et une plante :"			);
+					Doc_PrintLine	( nDocID,  1, "NÅ“ud de prairie"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pour préparer une potion provoquant des altérations permanentes du corps, il faut une plante :"						);
+					Doc_PrintLines	( nDocID,  1, "Pour prÃ©parer une potion provoquant des altÃ©rations permanentes du corps, il faut une plante :"						);
 					Doc_PrintLines	( nDocID,  1, "Oseille royale"		);
 					Doc_Show		( nDocID );
 					
@@ -126,7 +126,7 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -144,22 +144,22 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Potions d'altération permanente");
-					Doc_PrintLine	( nDocID,  0, "et ingrédients"						);
+					Doc_PrintLines	( nDocID,  0, "Potions d'altÃ©ration permanente");
+					Doc_PrintLine	( nDocID,  0, "et ingrÃ©dients"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Elixir de dextérité"						);
+					Doc_PrintLine	( nDocID,  0, "Elixir de dextÃ©ritÃ©"						);
 					Doc_PrintLine	( nDocID,  0, "1 baie gobeline"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Potion de rapidité"						);
-					Doc_PrintLines	( nDocID,  0, "1 herbe faucheuse - remplacez l'oseille royale par un nœud de prairie."						);
+					Doc_PrintLine	( nDocID,  0, "Potion de rapiditÃ©"						);
+					Doc_PrintLines	( nDocID,  0, "1 herbe faucheuse - remplacez l'oseille royale par un nÅ“ud de prairie."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Elixir de force"						);
 					Doc_PrintLine	( nDocID,  0, "1 racine de dragon"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLines	( nDocID,  0, "Elixir de vie"						);
-					Doc_PrintLine	( nDocID,  0, "1 racine méd."						);
+					Doc_PrintLine	( nDocID,  0, "1 racine mÃ©d."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLines	( nDocID,  0, "Elixir de l'esprit"						);
 					Doc_PrintLine	( nDocID,  0, "1 racine de feu"						);
@@ -167,9 +167,9 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Le brassage de ces recettes requiert une grande connaissance de l'alchimie. Toutes ces recettes contiennent un même ingrédient, l'oseille royale. "); 
+					Doc_PrintLines	( nDocID,  1, "Le brassage de ces recettes requiert une grande connaissance de l'alchimie. Toutes ces recettes contiennent un mÃªme ingrÃ©dient, l'oseille royale. "); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "La potion de vitesse est beaucoup plus simple à préparer, puisqu'elle ne contient pas d'oseille royale."						);
+					Doc_PrintLines	( nDocID,  1, "La potion de vitesse est beaucoup plus simple Ã  prÃ©parer, puisqu'elle ne contient pas d'oseille royale."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					

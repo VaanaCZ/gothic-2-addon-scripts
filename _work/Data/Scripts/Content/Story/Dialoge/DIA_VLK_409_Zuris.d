@@ -95,7 +95,7 @@ func int DIA_Zuris_Sperre_Condition ()
 };
 func void DIA_Zuris_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Zuris_Sperre_14_00"); //Mais vous êtes un prisonnier de la colonie minière ! Débarrassez-moi le plancher !
+	AI_Output (self, other, "DIA_Zuris_Sperre_14_00"); //Mais vous Ãªtes un prisonnier de la colonie miniÃ¨reÂ ! DÃ©barrassez-moi le plancherÂ !
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -122,11 +122,11 @@ func int DIA_Zuris_GREET_Condition ()
 };
 func void DIA_Zuris_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Zuris_GREET_14_00"); //Je suis Zuris, maître des potions.
-	AI_Output (self, other, "DIA_Zuris_GREET_14_01"); //Avez-vous besoin d'un élixir magique ou d'une potion de soins ? Si tel est le cas, vous avez frappé à la bonne porte.
+	AI_Output (self, other, "DIA_Zuris_GREET_14_00"); //Je suis Zuris, maÃ®tre des potions.
+	AI_Output (self, other, "DIA_Zuris_GREET_14_01"); //Avez-vous besoin d'un Ã©lixir magique ou d'une potion de soinsÂ ? Si tel est le cas, vous avez frappÃ© Ã  la bonne porte.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Zuris vend des potions sur la place du marché.");
+	B_LogEntry (Topic_CityTrader,"Zuris vend des potions sur la place du marchÃ©.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -157,7 +157,7 @@ func void DIA_Zuris_WAREZ_Info ()
 	if (Zuris_einmal == FALSE)
 	&& (!Npc_KnowsInfo (other, DIA_Zuris_Potions))
 	{
-		AI_Output (self, other, "DIA_Zuris_GREET_14_02"); //Je viens tout juste de recevoir de nouvelles potions que mon invité, maître Daron le Magicien du feu, m'a amené du monastère.
+		AI_Output (self, other, "DIA_Zuris_GREET_14_02"); //Je viens tout juste de recevoir de nouvelles potions que mon invitÃ©, maÃ®tre Daron le Magicien du feu, m'a amenÃ© du monastÃ¨re.
 		Zuris_einmal = TRUE;
 	};
 };
@@ -171,7 +171,7 @@ instance DIA_Zuris_POTIONS		(C_INFO)
 	condition	= 	DIA_Zuris_POTIONS_Condition;
 	information	= 	DIA_Zuris_POTIONS_Info;
 	permanent	= FALSE;
-	description	= 	"Préparez-vous vos propres potions ?";
+	description	= 	"PrÃ©parez-vous vos propres potions ?";
 };
 
 func int DIA_Zuris_POTIONS_Condition ()
@@ -183,16 +183,16 @@ func int DIA_Zuris_POTIONS_Condition ()
 };
 func void DIA_Zuris_POTIONS_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_POTIONS_15_00"); //Préparez-vous vous-même les potions que vous vendez ?
-	AI_Output (self, other, "DIA_Zuris_POTIONS_14_01"); //Non. Je me fournis auprès du monastère ou de Constantino l'alchimiste.
+	AI_Output (other, self, "DIA_Zuris_POTIONS_15_00"); //PrÃ©parez-vous vous-mÃªme les potions que vous vendezÂ ?
+	AI_Output (self, other, "DIA_Zuris_POTIONS_14_01"); //Non. Je me fournis auprÃ¨s du monastÃ¨re ou de Constantino l'alchimiste.
 	
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Si préparer les potions vous intéresse, allez-vous adresser à ce dernier. Il a besoin d'un assistant.
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Mais il est têtu comme une mule et il ne fera jamais de lui-même les démarches nécessaires pour engager quelqu'un.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Si prÃ©parer les potions vous intÃ©resse, allez-vous adresser Ã  ce dernier. Il a besoin d'un assistant.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Mais il est tÃªtu comme une mule et il ne fera jamais de lui-mÃªme les dÃ©marches nÃ©cessaires pour engager quelqu'un.
 	};
 	
-	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //Il passe toujours devant mon échoppe quand il sort de la ville par la porte est afin d'aller chercher des plantes pour ses potions.
+	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //Il passe toujours devant mon Ã©choppe quand il sort de la ville par la porte est afin d'aller chercher des plantes pour ses potions.
 };
 
 // **************************************************
@@ -206,7 +206,7 @@ instance DIA_Zuris_Kraut (C_INFO)
 	condition	= DIA_Zuris_Kraut_Condition;
 	information	= DIA_Zuris_Kraut_Info;
 	permanent	= FALSE;
-	description	= "Où exactement Constantino ramasse-t-il ses herbes ?";
+	description	= "OÃ¹ exactement Constantino ramasse-t-il ses herbes ?";
 };
 
 func int DIA_Zuris_Kraut_Condition ()
@@ -218,9 +218,9 @@ func int DIA_Zuris_Kraut_Condition ()
 };
 func void DIA_Zuris_Kraut_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //Où Constantino ramasse-t-il ses plantes au juste ?
-	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //Il sort toujours par la porte est de la ville, après quoi il part sur la gauche.
-	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Un jour, il m'a dit qu'il trouvait tout ce qu'il lui fallait à cet endroit, exception faite de l'oseille royale.
+	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //OÃ¹ Constantino ramasse-t-il ses plantes au justeÂ ?
+	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //Il sort toujours par la porte est de la ville, aprÃ¨s quoi il part sur la gauche.
+	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Un jour, il m'a dit qu'il trouvait tout ce qu'il lui fallait Ã  cet endroit, exception faite de l'oseille royale.
 	
 	Wld_InsertItem (ItPl_Mana_Herb_01,"FP_ITEM_HERB_01");
 	Wld_InsertItem (ItPl_Mana_Herb_02,"FP_ITEM_HERB_02");
@@ -236,7 +236,7 @@ func void DIA_Zuris_Kraut_Info ()
 };
 
 // **************************************************
-//					 Kronstöckel
+//					 KronstÃ¶ckel
 // **************************************************
 
 instance DIA_Zuris_Kronstoeckel (C_INFO)
@@ -246,7 +246,7 @@ instance DIA_Zuris_Kronstoeckel (C_INFO)
 	condition	= DIA_Zuris_Kronstoeckel_Condition;
 	information	= DIA_Zuris_Kronstoeckel_Info;
 	permanent	= FALSE;
-	description	= "Constantino vous a-t-il déjà dit où trouver de l'oseille royale ?";
+	description	= "Constantino vous a-t-il dÃ©jÃ  dit oÃ¹ trouver de l'oseille royale ?";
 };
 
 func int DIA_Zuris_Kronstoeckel_Condition ()
@@ -258,10 +258,10 @@ func int DIA_Zuris_Kronstoeckel_Condition ()
 };
 func void DIA_Zuris_Kronstoeckel_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //Vous a-t-il dit où il va chercher son oseille royale ?
-	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //Je l'ai entendu dire une fois que cette plante pousse à proximité des cercles de pierres.
-	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //Il y en a un à proximité de la ferme de Lobart, c'est la ferme à côté de l'autre porte.
-	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //Il me semble qu'il se trouve au sommet d'une colline. Je crois que c'est une vieille tombe, ou quelque chose comme ça.
+	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //Vous a-t-il dit oÃ¹ il va chercher son oseille royaleÂ ?
+	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //Je l'ai entendu dire une fois que cette plante pousse Ã  proximitÃ© des cercles de pierres.
+	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //Il y en a un Ã  proximitÃ© de la ferme de Lobart, c'est la ferme Ã  cÃ´tÃ© de l'autre porte.
+	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //Il me semble qu'il se trouve au sommet d'une colline. Je crois que c'est une vieille tombe, ou quelque chose comme Ã§a.
 	
 	Wld_InsertItem (ItPl_Perm_Herb,"FP_ITEM_HERB_11");
 };
@@ -276,7 +276,7 @@ instance DIA_Zuris_WHERE		(C_INFO)
 	condition	 = 	DIA_Zuris_WHERE_Condition;
 	information	 = 	DIA_Zuris_WHERE_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Où puis-je trouver Constantino ?";
+	description	 = 	"OÃ¹ puis-je trouver Constantino ?";
 };
 
 func int DIA_Zuris_WHERE_Condition ()
@@ -289,8 +289,8 @@ func int DIA_Zuris_WHERE_Condition ()
 };
 func void DIA_Zuris_WHERE_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_WHERE_15_00"); //Où puis-je trouver Constantino ?
-	AI_Output (self, other, "DIA_Zuris_WHERE_14_01"); //Il habite dans le tunnel, non loin de la forge d'Harad. Cela ne devrait pas être difficile à trouver.
+	AI_Output (other, self, "DIA_Zuris_WHERE_15_00"); //OÃ¹ puis-je trouver ConstantinoÂ ?
+	AI_Output (self, other, "DIA_Zuris_WHERE_14_01"); //Il habite dans le tunnel, non loin de la forge d'Harad. Cela ne devrait pas Ãªtre difficile Ã  trouver.
 };
 
 
@@ -303,7 +303,7 @@ instance DIA_Zuris_Kloster		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Zuris_Kloster_Condition;
 	information	 = 	DIA_Zuris_Kloster_Info;
-	description  =  "Parlez-moi du monastère.";
+	description  =  "Parlez-moi du monastÃ¨re.";
 };
 
 func int DIA_Zuris_Kloster_Condition ()
@@ -315,8 +315,8 @@ func int DIA_Zuris_Kloster_Condition ()
 };
 func void DIA_Zuris_Kloster_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //Parlez-moi du monastère.
-	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //Il vaudrait mieux que vous abordiez le sujet avec maître Daron. Il s'y connaît bien plus que moi sur la question.
+	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //Parlez-moi du monastÃ¨re.
+	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //Il vaudrait mieux que vous abordiez le sujet avec maÃ®tre Daron. Il s'y connaÃ®t bien plus que moi sur la question.
 };
 
 // ************************************************************
@@ -329,7 +329,7 @@ INSTANCE DIA_Zuris_Minenanteil (C_INFO)
 	condition	= DIA_Zuris_Minenanteil_Condition;
 	information	= DIA_Zuris_Minenanteil_Info;
 
-	description = "Vous vendez des concessions minières ?";
+	description = "Vous vendez des concessions miniÃ¨res ?";
 };   
                     
 FUNC INT DIA_Zuris_Minenanteil_Condition()
@@ -343,8 +343,8 @@ FUNC INT DIA_Zuris_Minenanteil_Condition()
 
 FUNC VOID DIA_Zuris_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //Vous vendez des concessions minières ?
-	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Oui. Quel fiasco, mes aïeux ! C'est la dernière fois que je prends part à une affaire aussi louche.
+	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //Vous vendez des concessions miniÃ¨resÂ ?
+	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Oui. Quel fiasco, mes aÃ¯euxÂ ! C'est la derniÃ¨re fois que je prends part Ã  une affaire aussi louche.
 	
 	B_GivePlayerXP (XP_Ambient);
 };	

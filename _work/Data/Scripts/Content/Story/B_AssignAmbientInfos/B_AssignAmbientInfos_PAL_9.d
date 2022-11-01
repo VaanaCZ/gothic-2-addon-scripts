@@ -43,8 +43,8 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Comment puis-je devenir paladin ?
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Ceux qui prouvent leur valeur au service d'Innos ou ‡ celui du roi seront choisis !
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //En rÈsumÈ : seuls les meilleurs seront choisis. Mais VOUS avez un long chemin ‡ faire pour y parvenir mon garÁon !
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Ceux qui prouvent leur valeur au service d'Innos ou √† celui du roi seront choisis !
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //En r√©sum√© : seuls les meilleurs seront choisis. Mais VOUS avez un long chemin √† faire pour y parvenir mon gar√ßon !
 };
 
 // *************************************************************************
@@ -72,7 +72,7 @@ FUNC VOID DIA_PAL_9_PEOPLE_Info()
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Qui commande ici ?
 	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Le seigneur Hagen.
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //Et ?
-	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //Et personne d'autre. Le seigneur Hagen est le commandant suprÍme de toute l'Óle.
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //Et personne d'autre. Le seigneur Hagen est le commandant supr√™me de toute l'√Æle.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_9_LOCATION(C_INFO)
 	condition	= DIA_PAL_9_LOCATION_Condition;
 	information	= DIA_PAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Pourquoi Ítes-vous venus ‡ Khorinis ?";
+	description = "Pourquoi √™tes-vous venus √† Khorinis ?";
 };                       
 
 FUNC INT DIA_PAL_9_LOCATION_Condition()
@@ -97,7 +97,7 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Pourquoi Ítes-vous venus ‡ Khorinis ?
+	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Pourquoi √™tes-vous venus √† Khorinis ?
 	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Cela ne vous regarde pas, mon gars ! Contentez-vous de savoir que nous sommes au service d'Innos et du roi !
 };
 
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_9_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //Maintenant que nous savons que nous avons affaire ‡ des dragons, notre commandant va bientÙt agir.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //Maintenant que nous savons que nous avons affaire √† des dragons, notre commandant va bient√¥t agir.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Nous n'avons toujours pas de nouvelles de notre dÈtachement dans la VallÈe des mines. C'est trËs inquiÈtant.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Nous n'avons toujours pas de nouvelles de notre d√©tachement dans la Vall√©e des mines. C'est tr√®s inqui√©tant.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //Gr‚ces soient rendues ‡ Innos ! La menace des dragons a ÈtÈ jugulÈe. DÈsormais nous n'avons plus qu'‡ nous occuper des orques pour accÈder au minerai.
+			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //Gr√¢ces soient rendues √† Innos ! La menace des dragons a √©t√© jugul√©e. D√©sormais nous n'avons plus qu'√† nous occuper des orques pour acc√©der au minerai.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Si vous n'avez rien de plus important ‡ dire, alors allez-vous-en, voyou !
+		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Si vous n'avez rien de plus important √† dire, alors allez-vous-en, voyou !
 	};
 };
 

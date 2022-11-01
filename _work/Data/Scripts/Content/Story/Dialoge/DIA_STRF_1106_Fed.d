@@ -44,10 +44,10 @@ func int DIA_Fed_HALLO_Condition ()
 };
 func void DIA_Fed_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Qu'est-ce que vous me voulez ? Je ne bougerai pas d'ici !
-	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Du calme. Détendez-vous, personne ne veut que vous alliez quelque part.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Innos soit loué. Vous savez, au cours des derniers jours, plusieurs hommes ont quitté le camp... et aucun n'est revenu.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Tous se sont fait dévorer par les saurinides. Mais pas moi. Oh, non ! Moi, je reste là jusqu'à ce que tout ça soit fini.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Qu'est-ce que vous me voulezÂ ? Je ne bougerai pas d'iciÂ !
+	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Du calme. DÃ©tendez-vous, personne ne veut que vous alliez quelque part.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Innos soit louÃ©. Vous savez, au cours des derniers jours, plusieurs hommes ont quittÃ© le camp... et aucun n'est revenu.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Tous se sont fait dÃ©vorer par les saurinides. Mais pas moi. Oh, nonÂ ! Moi, je reste lÃ  jusqu'Ã  ce que tout Ã§a soit fini.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -70,10 +70,10 @@ func int DIA_Fed_Snapper_Condition ()
 };
 func void DIA_Fed_Snapper_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Que savez-vous au sujet des saurinides ?
-	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot les surveille à la nuit tombée. Il y en a quelques-uns au niveau du bassin qui s'étend au pied de la tour noire.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Les autres sont au-dessus de nous, au sommet de la falaise. Ils attendent juste que nous soyons épuisés.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Nous sommes pris au piège ici. Bientôt, ils attaqueront notre campement... et ce sera un carnage.
+	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Que savez-vous au sujet des saurinidesÂ ?
+	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot les surveille Ã  la nuit tombÃ©e. Il y en a quelques-uns au niveau du bassin qui s'Ã©tend au pied de la tour noire.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Les autres sont au-dessus de nous, au sommet de la falaise. Ils attendent juste que nous soyons Ã©puisÃ©s.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Nous sommes pris au piÃ¨ge ici. BientÃ´t, ils attaqueront notre campement... et ce sera un carnage.
 	AI_Output (other, self, "DIA_Fed_Snapper_15_04"); //Je vois.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -98,12 +98,12 @@ func void DIA_Fed_Perm_Info ()
 	
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Les saurinides sont là, tout près. Vous les sentez ? Moi, oui.
+		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Les saurinides sont lÃ , tout prÃ¨s. Vous les sentezÂ ? Moi, oui.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //On dirait que les saurinides se sont repliés. Mais ça ne veut rien dire. Ils reviendront. Ou si ce n'est pas eux, ce sera les loups, les lézards ou les orques.
-		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Un jour ou l'autre, ils nous tueront et se repaîtront de nos dépouilles.
+		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //On dirait que les saurinides se sont repliÃ©s. Mais Ã§a ne veut rien dire. Ils reviendront. Ou si ce n'est pas eux, ce sera les loups, les lÃ©zards ou les orques.
+		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Un jour ou l'autre, ils nous tueront et se repaÃ®tront de nos dÃ©pouilles.
 	};
 	AI_StopProcessInfos(self);
 	

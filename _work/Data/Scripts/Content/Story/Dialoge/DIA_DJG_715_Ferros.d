@@ -32,7 +32,7 @@ INSTANCE DIA_DJG_715_Ferros_Hello   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Hello_Condition;
 	information = DIA_DJG_715_Ferros_Hello_Info;
 	permanent   = FALSE;
-	description = "D'où venez-vous ?";
+	description = "D'oÃ¹ venez-vous ?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Hello_Condition()
@@ -42,14 +42,14 @@ FUNC INT DIA_DJG_715_Ferros_Hello_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //D'où venez-vous ?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //Du continent. Les miens et moi-même nous nous sommes réfugiés ici.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //La situation ne fait qu'empirer ici. Les orques ne laissent derrière eux que des villages incendiés.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Le roi a perdu le contrôle de son royaume.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //D'oÃ¹ venez-vous ?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //Du continent. Les miens et moi-mÃªme nous nous sommes rÃ©fugiÃ©s ici.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //La situation ne fait qu'empirer ici. Les orques ne laissent derriÃ¨re eux que des villages incendiÃ©s.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Le roi a perdu le contrÃ´le de son royaume.
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_04"); //Si vous voulez mon avis, vous autres les paladins, vous avez échoué.
+		AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_04"); //Si vous voulez mon avis, vous autres les paladins, vous avez Ã©chouÃ©.
 	};	
 };
 
@@ -63,7 +63,7 @@ INSTANCE DIA_DJG_715_Ferros_Friends   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Friends_Condition;
 	information = DIA_DJG_715_Ferros_Friends_Info;
 	permanent   = FALSE;
-	description = "Où sont les vôtres maintenant ?";
+	description = "OÃ¹ sont les vÃ´tres maintenant ?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
@@ -76,9 +76,9 @@ FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Friends_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Où sont les vôtres maintenant ?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //Je les ai quittés.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Ils pensaient pouvoir prendre tout ce qu'ils voulaient même si ça ne leur appartenait pas. Je ne mange pas de ce pain-là.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //OÃ¹ sont les vÃ´tres maintenant ?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //Je les ai quittÃ©s.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Ils pensaient pouvoir prendre tout ce qu'ils voulaient mÃªme si Ã§a ne leur appartenait pas. Je ne mange pas de ce pain-lÃ .
 };
 
 //*********************************************************************
@@ -111,8 +111,8 @@ FUNC VOID DIA_DJG_715_Ferros_War_Info()
 		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //Cela fait longtemps que vous n'avez pas vu votre roi, hein ?
 	};
 	
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Les orques assiègent la capitale mais j'ignore si elle est tombée ou non.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //La dernière chose que j'ai entendu dire c'est que le roi était mort. Mais je n'y crois pas.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Les orques assiÃ¨gent la capitale mais j'ignore si elle est tombÃ©e ou non.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //La derniÃ¨re chose que j'ai entendu dire c'est que le roi Ã©tait mort. Mais je n'y crois pas.
 };
 
 //*********************************************************************
@@ -125,7 +125,7 @@ INSTANCE DIA_DJG_715_Ferros_OldCamp   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_OldCamp_Condition;
 	information = DIA_DJG_715_Ferros_OldCamp_Info;
 	permanent   = FALSE;
-	description = "Que faites-vous au château ?";
+	description = "Que faites-vous au chÃ¢teau ?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
@@ -135,21 +135,21 @@ FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //Que faites-vous au château ?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //J'ai entendu parler des dragons et je voulais aider à les combattre.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //Malheureusement, j'ai perdu mon épée quand je me suis glissé ici en échappant aux orques. Maintenant je suis coincé.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Sans épée, je ne peux pas sortir. Et celles qu'on peut acheter ici ne valent rien.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //Que faites-vous au chÃ¢teau ?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //J'ai entendu parler des dragons et je voulais aider Ã  les combattre.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //Malheureusement, j'ai perdu mon Ã©pÃ©e quand je me suis glissÃ© ici en Ã©chappant aux orques. Maintenant je suis coincÃ©.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Sans Ã©pÃ©e, je ne peux pas sortir. Et celles qu'on peut acheter ici ne valent rien.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Je vous souhaite bonne chance dans vos recherches.",DIA_DJG_715_Ferros_OldCamp_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Que me donnerez-vous si je vous trouve une bonne épée ?",DIA_DJG_715_Ferros_OldCamp_Price);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Je trouverai votre épée.",DIA_DJG_715_Ferros_OldCamp_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Que me donnerez-vous si je vous trouve une bonne Ã©pÃ©e ?",DIA_DJG_715_Ferros_OldCamp_Price);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Je trouverai votre Ã©pÃ©e.",DIA_DJG_715_Ferros_OldCamp_Yes);
 	Wld_InsertItem		(ItMW_1H_FerrosSword_Mis , "FP_OW_ITEM_08"); 
 	MIS_FerrosSword = LOG_RUNNING; 
 	
 	Log_CreateTopic (TOPIC_FerrosSword, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FerrosSword, LOG_RUNNING);
-	B_LogEntry (TOPIC_FerrosSword,"Féros a laissé son épée chez les orques. C'est stupide."); 
+	B_LogEntry (TOPIC_FerrosSword,"FÃ©ros a laissÃ© son Ã©pÃ©e chez les orques. C'est stupide."); 
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
@@ -162,18 +162,18 @@ FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Price ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Que me donnerez-vous si je vous trouve une bonne épée ?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Hélas, je ne peux rien vous donner. J'ai dépensé tout l'or qui me restait pour mon épée.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Que me donnerez-vous si je vous trouve une bonne Ã©pÃ©e ?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //HÃ©las, je ne peux rien vous donner. J'ai dÃ©pensÃ© tout l'or qui me restait pour mon Ã©pÃ©e.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Yes ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Je vais retrouver votre épée.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Je vais retrouver votre Ã©pÃ©e.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //Ce serait fantastique. Cherchez-la sur la haute falaise au sud.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Je l'ai probablement perdue là, près des tentes des orques.
-	B_LogEntry (TOPIC_FerrosSword,"Il semble que Féros ait perdu son épée sur une falaise au sud, là où se dressent les tentes des orques."); 
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Je l'ai probablement perdue lÃ , prÃ¨s des tentes des orques.
+	B_LogEntry (TOPIC_FerrosSword,"Il semble que FÃ©ros ait perdu son Ã©pÃ©e sur une falaise au sud, lÃ  oÃ¹ se dressent les tentes des orques."); 
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
@@ -188,7 +188,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosAnySword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosAnySword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosAnySword_Info;
 	permanent   = FALSE;
-	description = "J'ai peut-être une autre épée pour vous.";
+	description = "J'ai peut-Ãªtre une autre Ã©pÃ©e pour vous.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
@@ -203,7 +203,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //J'ai peut-être une autre épée pour vous.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //J'ai peut-Ãªtre une autre Ã©pÃ©e pour vous.
 
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
@@ -227,8 +227,8 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Back ()
 
 FUNC VOID B_Ferros_FerrosAnySword_Give ()
 {
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //C'est une bonne épée. Du très bon travail.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //Etes-vous vraiment sûr de vouloir me la donner ?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //C'est une bonne Ã©pÃ©e. Du trÃ¨s bon travail.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //Etes-vous vraiment sÃ»r de vouloir me la donner ?
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade ()
@@ -257,10 +257,10 @@ FUNC VOID B_Ferros_FerrosAnySword_Yes1 ()
 FUNC VOID B_Ferros_FerrosAnySword_Yes2 ()
 {
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_00"); //Merci, je vous suis redevable.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //En échange, je vais vous apprendre une ou deux astuces pour mieux utiliser votre force et votre dextérité en combat.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //En Ã©change, je vais vous apprendre une ou deux astuces pour mieux utiliser votre force et votre dextÃ©ritÃ© en combat.
 
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Féros peut m'apprendre à augmenter ma force et ma dextérité.");
+	B_LogEntry		(TOPIC_Teacher, "FÃ©ros peut m'apprendre Ã  augmenter ma force et ma dextÃ©ritÃ©.");
 
 };
 
@@ -316,7 +316,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosHisSword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosHisSword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosHisSword_Info;
 	permanent   = FALSE;
-	description = "J'ai trouvé votre épée.";
+	description = "J'ai trouvÃ© votre Ã©pÃ©e.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosHisSword_Condition()
@@ -330,7 +330,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosHisSword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosHisSword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosHisSword_15_00"); //J'ai retrouvé votre épée.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosHisSword_15_00"); //J'ai retrouvÃ© votre Ã©pÃ©e.
 	B_GiveInvItems (other,self,ItMw_1h_FerrosSword_Mis,1);
 	B_Ferros_FerrosAnySword_Yes2 ();
 	MIS_FerrosSword = LOG_SUCCESS;	
@@ -348,7 +348,7 @@ INSTANCE DIA_Ferros_Teach(C_INFO)
 	condition	= DIA_Ferros_Teach_Condition;
 	information	= DIA_Ferros_Teach_Info;
 	permanent	= TRUE;
-	description = "Montrez-moi comment améliorer mes compétences.";
+	description = "Montrez-moi comment amÃ©liorer mes compÃ©tences.";
 };                       
 
 FUNC INT DIA_Ferros_Teach_Condition()
@@ -361,15 +361,15 @@ FUNC INT DIA_Ferros_Teach_Condition()
  
 FUNC VOID DIA_Ferros_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Montrez-moi comment améliorer mes caractéristiques.
+	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Montrez-moi comment amÃ©liorer mes caractÃ©ristiques.
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_01"); //Après ces attaques d'orques, j'arrête. Je suis content d'être encore en vie.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_01"); //AprÃ¨s ces attaques d'orques, j'arrÃªte. Je suis content d'Ãªtre encore en vie.
 	}
 	else
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Un bon combattant doit apprendre à transmettre ses capacités à son épée.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Un bon combattant doit apprendre Ã  transmettre ses capacitÃ©s Ã  son Ã©pÃ©e.
 	
 	Info_ClearChoices (DIA_Ferros_Teach);
 	Info_AddChoice		(DIA_Ferros_Teach, DIALOG_BACK, DIA_Ferros_Teach_Back);
@@ -435,7 +435,7 @@ FUNC INT DIA_Ferros_AllDragonsDead_Condition()
 FUNC VOID DIA_Ferros_AllDragonsDead_Info()
 {
 	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //Tous les dragons sont morts.
-	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Bien joué ! Si on avait plus de gens comme vous, on en serait pas là où on en est.
+	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Bien jouÃ© ! Si on avait plus de gens comme vous, on en serait pas lÃ  oÃ¹ on en est.
 };
 
 // ************************************************************

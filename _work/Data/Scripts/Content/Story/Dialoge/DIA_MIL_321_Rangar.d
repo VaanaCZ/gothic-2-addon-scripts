@@ -97,9 +97,9 @@ FUNC INT DIA_Rangar_Hallo_Condition()
 
 FUNC VOID DIA_Rangar_Hallo_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Hallo_15_00");//Hé ! Comment ça va ?
-	AI_Output (self, other, "DIA_Rangar_Hallo_07_01");//Tant que les paladins n'ont pas d'autre mission pour moi, je suis libre de boire quelques verres ici. Que demander de plus ? (sourire)
-	AI_Output (other, self, "DIA_Rangar_Hallo_15_02");//Vous travaillez pour les paladins ?
+	AI_Output (other, self, "DIA_Rangar_Hallo_15_00");//HÃ©Â ! Comment Ã§a vaÂ ?
+	AI_Output (self, other, "DIA_Rangar_Hallo_07_01");//Tant que les paladins n'ont pas d'autre mission pour moi, je suis libre de boire quelques verres ici. Que demander de plusÂ ? (sourire)
+	AI_Output (other, self, "DIA_Rangar_Hallo_15_02");//Vous travaillez pour les paladinsÂ ?
 	AI_Output (self, other, "DIA_Rangar_Hallo_07_03");//Oui. Je leur fais des rapports sur ce qui se passe en ville. Mais tout est calme, en ce moment.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -112,7 +112,7 @@ INSTANCE DIA_Rangar_Ork   (C_INFO)
 	condition   = DIA_Rangar_Ork_Condition;
 	information = DIA_Rangar_Ork_Info;
 	permanent   = FALSE;
-	description = "Comment ça se passe avec les orques ?";
+	description = "Comment Ã§a se passe avec les orques ?";
 };
 
 FUNC INT DIA_Rangar_Ork_Condition()
@@ -126,8 +126,8 @@ FUNC INT DIA_Rangar_Ork_Condition()
 };
 FUNC VOID DIA_Rangar_Ork_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Ork_15_00");//Comment ça se passe, avec les orques ?
-	AI_Output (self, other, "DIA_Rangar_Ork_07_01");//Inutile de vous en faire. La garde, dont je fais partie, et les paladins contrôlent la situation.
+	AI_Output (other, self, "DIA_Rangar_Ork_15_00");//Comment Ã§a se passe, avec les orquesÂ ?
+	AI_Output (self, other, "DIA_Rangar_Ork_07_01");//Inutile de vous en faire. La garde, dont je fais partie, et les paladins contrÃ´lent la situation.
 	AI_Output (self, other, "DIA_Rangar_Ork_07_02");//Rentrez chez vous et laissez-nous faire notre travail. Nous veillons sur la ville et ses habitants... *hic*
 };
 ///////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@ INSTANCE DIA_Rangar_Bier   (C_INFO)
 	condition   = DIA_Rangar_Bier_Condition;
 	information = DIA_Rangar_Bier_Info;
 	permanent   = TRUE;
-	description = "Voulez-vous une autre bière ?";
+	description = "Voulez-vous une autre biÃ¨re ?";
 };
 
 FUNC INT DIA_Rangar_Bier_Condition()
@@ -154,19 +154,19 @@ FUNC INT DIA_Rangar_Bier_Condition()
 };
 FUNC VOID DIA_Rangar_Bier_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Bier_15_00");//Est-ce qu'une autre bière vous dirait ?
+	AI_Output (other, self, "DIA_Rangar_Bier_15_00");//Est-ce qu'une autre biÃ¨re vous diraitÂ ?
 	
 	if B_GiveInvItems (other, self, ItFo_Beer, 1)
 	{
 		if (Knows_Paladins == FALSE)
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_01");//Ahhhh ! Rien ne vaut une bonne bière bien fraîche...
+			AI_Output (self, other, "DIA_Rangar_Bier_07_01");//AhhhhÂ ! Rien ne vaut une bonne biÃ¨re bien fraÃ®che...
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (other, self, "DIA_Rangar_Bier_15_02");//Vous étiez en train de me parler des orques...
-			AI_Output (self, other, "DIA_Rangar_Bier_07_03");//Ah, oui, c'est vrai. Les orques ne représentent pas la moindre menace pour la ville.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_04");//Ils sont coincés dans la vallée des Mines et les paladins tiennent le col.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_05");//Même un insecte ne passerait pas.
+			AI_Output (other, self, "DIA_Rangar_Bier_15_02");//Vous Ã©tiez en train de me parler des orques...
+			AI_Output (self, other, "DIA_Rangar_Bier_07_03");//Ah, oui, c'est vrai. Les orques ne reprÃ©sentent pas la moindre menace pour la ville.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_04");//Ils sont coincÃ©s dans la vallÃ©e des Mines et les paladins tiennent le col.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_05");//MÃªme un insecte ne passerait pas.
 			
 			Knows_Paladins = 1;
 			Info_ClearChoices (DIA_Rangar_Bier);
@@ -177,26 +177,26 @@ FUNC VOID DIA_Rangar_Bier_Info()
 			AI_Output (self, other, "DIA_Rangar_Bier_07_06");//Je ne dirais pas non si vous m'offriez une petite chope...
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (other, self, "DIA_Rangar_Bier_15_07");//Un orque aurait été aperçu en dehors de la ville...
-			AI_Output (self, other, "DIA_Rangar_Bier_07_08");//Oui, bien sûr. L'orque terriblement dangereux qui se trouve en dehors de la ville. Un vrai monstre. Sûr qu'il va bientôt nous attaquer.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_09");//Ecoutez, si cet orque approche un peu trop, on lui bottera le cul. Pigé ?
+			AI_Output (other, self, "DIA_Rangar_Bier_15_07");//Un orque aurait Ã©tÃ© aperÃ§u en dehors de la ville...
+			AI_Output (self, other, "DIA_Rangar_Bier_07_08");//Oui, bien sÃ»r. L'orque terriblement dangereux qui se trouve en dehors de la ville. Un vrai monstre. SÃ»r qu'il va bientÃ´t nous attaquer.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_09");//Ecoutez, si cet orque approche un peu trop, on lui bottera le cul. PigÃ©Â ?
 			AI_Output (other, self, "DIA_Rangar_Bier_15_10");//Je vois.
 			Knows_Paladins = 2;
 			Info_ClearChoices (DIA_Rangar_Bier);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_11");//La bière amère, c'est celle que je préfère.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_11");//La biÃ¨re amÃ¨re, c'est celle que je prÃ©fÃ¨re.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (self, other, "DIA_Rangar_Bier_07_12");//Vous savez, c'est rare, les gens qui acceptent de vous offrir à boire. Vous êtes quelqu'un de bien.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_12");//Vous savez, c'est rare, les gens qui acceptent de vous offrir Ã  boire. Vous Ãªtes quelqu'un de bien.
 			Info_ClearChoices (DIA_Rangar_Bier);
 		};
 		
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Rangar_Bier_07_13");//Bien sûr que je veux une autre bière. Offrez-la moi.
+		AI_Output (self, other, "DIA_Rangar_Bier_07_13");//Bien sÃ»r que je veux une autre biÃ¨re. Offrez-la moi.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -211,7 +211,7 @@ instance DIA_Addon_Rangar_Erwischt		(C_INFO)
 	condition	 = 	DIA_Addon_Rangar_Erwischt_Condition;
 	information	 = 	DIA_Addon_Rangar_Erwischt_Info;
 
-	description	 = 	"Que faites-vous là ?";
+	description	 = 	"Que faites-vous lÃ  ?";
 };
 
 var int DIA_Addon_Rangar_Erwischt_OneTime;
@@ -228,10 +228,10 @@ func int DIA_Addon_Rangar_Erwischt_Condition ()
 
 func void DIA_Addon_Rangar_Erwischt_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_00"); //Que faites-vous là ?
-	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_01"); //(se sentant pris) Huum. Je… euh… Ça ne vous regarde pas. Fichez le camp.
-	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_02"); //Martin va être ravi d'apprendre qui fouille dans ses affaires quand il n'est pas là.
-	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_03"); //(hautain) Faites ce que vous voulez. Je serai déjà loin, mon petit bonhomme.
+	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_00"); //Que faites-vous lÃ  ?
+	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_01"); //(se sentant pris) Huum. Jeâ€¦ euhâ€¦ Ã‡a ne vous regarde pas. Fichez le camp.
+	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_02"); //Martin va Ãªtre ravi d'apprendre qui fouille dans ses affaires quand il n'est pas lÃ .
+	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_03"); //(hautain) Faites ce que vous voulez. Je serai dÃ©jÃ  loin, mon petit bonhomme.
 	B_GivePlayerXP (XP_Addon_Martin_GotRangar);
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -249,7 +249,7 @@ instance DIA_Addon_Rangar_nachhaken		(C_INFO)
 	information	 = 	DIA_Addon_Rangar_nachhaken_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vous croyez vraiment vous en tirer comme ça ?";
+	description	 = 	"Vous croyez vraiment vous en tirer comme Ã§a ?";
 };
 
 func int DIA_Addon_Rangar_nachhaken_Condition ()
@@ -263,6 +263,6 @@ func int DIA_Addon_Rangar_nachhaken_Condition ()
 
 func void DIA_Addon_Rangar_nachhaken_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Rangar_nachhaken_15_00"); //Vous croyez vraiment vous en tirer comme ça ?
-	AI_Output	(self, other, "DIA_Addon_Rangar_nachhaken_07_01"); //(indifférent) Ne faites pas tant d'histoires pour un chapardage sans conséquences.
+	AI_Output	(other, self, "DIA_Addon_Rangar_nachhaken_15_00"); //Vous croyez vraiment vous en tirer comme Ã§a ?
+	AI_Output	(self, other, "DIA_Addon_Rangar_nachhaken_07_01"); //(indiffÃ©rent) Ne faites pas tant d'histoires pour un chapardage sans consÃ©quences.
 };

@@ -51,11 +51,11 @@ FUNC VOID DIA_OWPAL_4_STANDARD_Info()
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Nous ne devons pas céder tant qu'Innos nous baigne de sa lumière.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Nous ne devons pas cÃ©der tant qu'Innos nous baigne de sa lumiÃ¨re.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //Avec l'aide d'Innos, nous éloignerons les créatures maléfiques de nos terres.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //Avec l'aide d'Innos, nous Ã©loignerons les crÃ©atures malÃ©fiques de nos terres.
 	};
 	
 	AI_StopProcessInfos	(self);

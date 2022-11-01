@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Swamp_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Le pouvoir de l'Œil est épuisé. Tu vas mourir humain.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Le pouvoir de l'Å’il est Ã©puisÃ©. Tu vas mourir humain.
 
 	Swampdragon = Hlp_GetNpc (dragon_swamp);
 
@@ -72,17 +72,17 @@ FUNC INT DIA_Dragon_Swamp_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Swamp_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Malheur à vous si vous faites un pas de plus !
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Malheur Ã  vous si vous faites un pas de plus !
 
 	if (Mis_KilledDragons == 0)
 		{
-			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ah ! L'Œil d'Innos semble agir.
+			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ah ! L'Å’il d'Innos semble agir.
 		};
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //Beaucoup d'entre vous sont venus. Je les ai tous anéantis.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Gardez votre salive. Vos menaces ne m'impressionnent guère, espèce de rejeton infernal.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //Beaucoup d'entre vous sont venus. Je les ai tous anÃ©antis.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Gardez votre salive. Vos menaces ne m'impressionnent guÃ¨re, espÃ¨ce de rejeton infernal.
 	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Dites-moi ce que je veux savoir ou je vous noierai dans votre propre sang.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha ! Ha ! Ha ! Vous osez me menacer, petit ver ? Donnez-moi une seule raison de ne pas vous mettre en pièces à l'instant.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Je suis un envoyé d'Innos et je porte l'Œil sacré. Vous n'avez pas le choix. Vous devez plier devant ma volonté ou être détruit.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha ! Ha ! Ha ! Vous osez me menacer, petit ver ? Donnez-moi une seule raison de ne pas vous mettre en piÃ¨ces Ã  l'instant.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Je suis un envoyÃ© d'Innos et je porte l'Å’il sacrÃ©. Vous n'avez pas le choix. Vous devez plier devant ma volontÃ© ou Ãªtre dÃ©truit.
 	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(rugissements) Arrh. Dites ce que vous attendez de moi.
 };
 
@@ -96,7 +96,7 @@ instance DIA_Dragon_Swamp_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Swamp_WERBISTDU_Info;
 
-	description	 = 	"Qui êtes-vous ?";
+	description	 = 	"Qui Ãªtes-vous ?";
 };
 
 func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
@@ -109,8 +109,8 @@ func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Swamp_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Qui êtes-vous ?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Je me nomme Pandrodor. Et vous seriez bien avisé de retourner ramper sous le rocher d'où vous venez.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Qui Ãªtes-vous ?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Je me nomme Pandrodor. Et vous seriez bien avisÃ© de retourner ramper sous le rocher d'oÃ¹ vous venez.
 	
 };
 
@@ -124,7 +124,7 @@ instance DIA_Dragon_Swamp_WOSINDDIEANDEREN		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition;
 	information	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info;
 
-	description	 = 	"Où puis-je trouver le reste de vos horribles congénères ?";
+	description	 = 	"OÃ¹ puis-je trouver le reste de vos horribles congÃ©nÃ¨res ?";
 };
 
 func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
@@ -137,10 +137,10 @@ func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
 
 func void DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Où puis-je trouver les autres créatures répugnantes de votre espèce ?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Les éléments, qui sont à la base de toutes choses, maintiennent ce monde.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Chacun d'eux permet de contrôler une partie de cet univers.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Cherchez les éléments et vous trouverez les autres.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //OÃ¹ puis-je trouver les autres crÃ©atures rÃ©pugnantes de votre espÃ¨ce ?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Les Ã©lÃ©ments, qui sont Ã  la base de toutes choses, maintiennent ce monde.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Chacun d'eux permet de contrÃ´ler une partie de cet univers.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Cherchez les Ã©lÃ©ments et vous trouverez les autres.
 };
 
 

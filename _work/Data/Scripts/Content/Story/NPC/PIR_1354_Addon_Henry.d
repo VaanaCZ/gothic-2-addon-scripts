@@ -22,7 +22,7 @@ INSTANCE PIR_1354_Addon_Henry (Npc_Default)
 	EquipItem (self, ItMw_Krummschwert); 
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_P_Normal01, BodyTex_P, ITAR_PIR_M_Addon);	  

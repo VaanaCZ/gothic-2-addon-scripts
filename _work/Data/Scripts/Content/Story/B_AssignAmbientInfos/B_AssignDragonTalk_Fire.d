@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Fire_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //L'Œil a perdu son pouvoir et vous ne survivrez pas à cette journée.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //L'Å’il a perdu son pouvoir et vous ne survivrez pas Ã  cette journÃ©e.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -61,16 +61,16 @@ FUNC INT DIA_Dragon_Fire_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Je n'arrive pas à croire qu'ils sont prêts à sacrifier leur vie pour voir un dragon en chair et en os.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Je n'arrive pas Ã  croire qu'ils sont prÃªts Ã  sacrifier leur vie pour voir un dragon en chair et en os.
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Vous vous exprimez plutôt bien pour un monstre aussi imposant.
+		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Vous vous exprimez plutÃ´t bien pour un monstre aussi imposant.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Je ne suis pas venu juste pour vous voir. J'avais en tête quelque chose de plus radical.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Vous ne voulez pas dire que vous désirez me défier ?
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha ! Ha ! Ha ! Je vais briser votre cou décharné.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Pas si vite mon ami. J'ai l'Œil d'Innos sur moi. Vous ne pouvez résister à ma volonté. Répondez à mes questions ou l'agonie sera insupportable.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(rugissements) Arrh ! Alors posez vos ridicules questions tant que vous le pouvez. Votre pouvoir ne durera pas très longtemps.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Je ne suis pas venu juste pour vous voir. J'avais en tÃªte quelque chose de plus radical.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Vous ne voulez pas dire que vous dÃ©sirez me dÃ©fier ?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha ! Ha ! Ha ! Je vais briser votre cou dÃ©charnÃ©.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Pas si vite mon ami. J'ai l'Å’il d'Innos sur moi. Vous ne pouvez rÃ©sister Ã  ma volontÃ©. RÃ©pondez Ã  mes questions ou l'agonie sera insupportable.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(rugissements) Arrh ! Alors posez vos ridicules questions tant que vous le pouvez. Votre pouvoir ne durera pas trÃ¨s longtemps.
 
 };
 
@@ -84,7 +84,7 @@ instance DIA_Dragon_Fire_WerBistDu		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_WerBistDu_Condition;
 	information	 = 	DIA_Dragon_Fire_WerBistDu_Info;
 
-	description	 = 	"Qui êtes-vous ?";
+	description	 = 	"Qui Ãªtes-vous ?";
 };
 
 func int DIA_Dragon_Fire_WerBistDu_Condition ()
@@ -97,9 +97,9 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Qui êtes-vous ?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Je me nomme Féomathar et c'est tout ce que vous saurez de moi.
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Une fois que j'aurai échappé au sort de l'Œil, vous finirez dans les flammes.
+	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Qui Ãªtes-vous ?
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Je me nomme FÃ©omathar et c'est tout ce que vous saurez de moi.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Une fois que j'aurai Ã©chappÃ© au sort de l'Å’il, vous finirez dans les flammes.
 
 };
 
@@ -112,7 +112,7 @@ instance DIA_Dragon_Fire_HORT		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_HORT_Condition;
 	information	 = 	DIA_Dragon_Fire_HORT_Info;
 
-	description	 = 	"Alors où sont vos réserves ?";
+	description	 = 	"Alors oÃ¹ sont vos rÃ©serves ?";
 };
 
 func int DIA_Dragon_Fire_HORT_Condition ()
@@ -125,9 +125,9 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 
 func void DIA_Dragon_Fire_HORT_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Tous les dragons ont un trésor qu'ils amassent. Où est le vôtre ?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //Dans un endroit où vous ne pourrez pas vous rendre une fois que je me serai libéré de l'emprise de l'Œil.
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Mon trésor se trouve sur une haute falaise presque impossible à atteindre pour un être sans ailes tel que vous.
+	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Tous les dragons ont un trÃ©sor qu'ils amassent. OÃ¹ est le vÃ´tre ?
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //Dans un endroit oÃ¹ vous ne pourrez pas vous rendre une fois que je me serai libÃ©rÃ© de l'emprise de l'Å’il.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Mon trÃ©sor se trouve sur une haute falaise presque impossible Ã  atteindre pour un Ãªtre sans ailes tel que vous.
 
 };
 

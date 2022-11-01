@@ -42,7 +42,7 @@ func int DIA_Cedric_Hallo_Condition ()
 };
 func void DIA_Cedric_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Je suis Cédric, paladin du roi et maître de l'épée.
+	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Je suis CÃ©dric, paladin du roi et maÃ®tre de l'Ã©pÃ©e.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Cedric_CanTeach		(C_INFO)
 	condition	 = 	DIA_Cedric_CanTeach_Condition;
 	information	 = 	DIA_Cedric_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Pouvez-vous m'entraîner ?";
+	description	 = 	"Pouvez-vous m'entraÃ®ner ?";
 };
 func int DIA_Cedric_CanTeach_Condition ()
 {	
@@ -66,13 +66,13 @@ func int DIA_Cedric_CanTeach_Condition ()
 };
 func void DIA_Cedric_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //Pouvez-vous m'entraîner ?
+	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //Pouvez-vous m'entraÃ®nerÂ ?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Je peux vous entraîner à vous battre avec des armes à une main.
+		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Je peux vous entraÃ®ner Ã  vous battre avec des armes Ã  une main.
 		Cedric_Teach1H = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Le paladin Cédric peut m'apprendre à combattre avec des armes à une main.");
+		B_LogEntry (TOPIC_CityTeacher,"Le paladin CÃ©dric peut m'apprendre Ã  combattre avec des armes Ã  une main.");
 	}
 	else
 	{
@@ -90,7 +90,7 @@ INSTANCE DIA_Cedric_Teach(C_INFO)
 	condition	= DIA_Cedric_Teach_Condition;
 	information	= DIA_Cedric_Teach_Info;
 	permanent	= TRUE;
-	description = "Je veux m'entraîner.";
+	description = "Je veux m'entraÃ®ner.";
 };                       
 //----------------------------------
 var int DIA_Cedric_Teach_permanent;
@@ -106,11 +106,11 @@ FUNC INT DIA_Cedric_Teach_Condition()
  
 FUNC VOID DIA_Cedric_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Cedric_Teach_15_00"); //Je souhaite bénéficier de votre enseignement.
+	AI_Output (other,self ,"DIA_Cedric_Teach_15_00"); //Je souhaite bÃ©nÃ©ficier de votre enseignement.
 	
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Vous avez appris tout ce que je pouvais vous enseigner au sujet du combat à l'épée. Je n'ai plus rien à vous montrer.
+		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Vous avez appris tout ce que je pouvais vous enseigner au sujet du combat Ã  l'Ã©pÃ©e. Je n'ai plus rien Ã  vous montrer.
 	}
 	else
 	{

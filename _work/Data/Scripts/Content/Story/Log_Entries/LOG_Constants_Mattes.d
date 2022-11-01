@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -17,7 +17,7 @@ const string Topic_Addon_Esteban	= "Tentative de meurtre";
 const string Topic_Addon_Huno		= "L'acier de Huno";
 const string Topic_Addon_Fisk		= "Un paquet de crochets";
 const string Topic_Addon_Buddler	= "Trois pierres - trois mineurs";
-const string Topic_Addon_Tempel		= "L'entrée du temple";
+const string Topic_Addon_Tempel		= "L'entrÃ©e du temple";
 
 const string Topic_Addon_Fortuno	= "Errances oniriques";
 const string Topic_Addon_Hammer		= "La liqueur du Marteau";	
@@ -25,21 +25,21 @@ const string Topic_Addon_Hammer		= "La liqueur du Marteau";
 
 
 const string Topic_Addon_BDT_Trader  = "Un marchand chez les bandits";	
-const string Topic_Addon_BDT_Teacher = "Un maître d'armes chez les bandits";	
+const string Topic_Addon_BDT_Teacher = "Un maÃ®tre d'armes chez les bandits";	
 
 // ------ Kapitel 1 ------
 CONST string 	Topic_Bandits				=	"Avis de recherche et bandits"; 
 
-// ------ Der Rübenbauer ------
+// ------ Der RÃ¼benbauer ------
 const string	TOPIC_Kleidung				=	"La tenue de travail de Lobart";
 const string	TOPIC_Rueben				=	"La cueillette des navets";
-const string	TOPIC_Ruebenbringen			=	"Porter les navets à Hilda";
+const string	TOPIC_Ruebenbringen			=	"Porter les navets Ã  Hilda";
 const string	TOPIC_Vino					=	"Pour une bouteille de vin";
 const string	TOPIC_Maleth				=	"Les bandits sur la ferme de Lobart";
 const string	TOPIC_Hilda					=	"Une casserole pour Hilda";
 
 //-----Der Weg in die Stadt-------------
-const string	TOPIC_City					=	"L'entrée de la ville de Khorinis";
+const string	TOPIC_City					=	"L'entrÃ©e de la ville de Khorinis";
 
 //-----In Khorinis Lehrling werden --------- 
 const string	TOPIC_BecomeMIL				=	"Recrutement dans la milice";
@@ -47,18 +47,18 @@ const string	TOPIC_BecomeMIL				=	"Recrutement dans la milice";
 const string	TOPIC_Lehrling				=   "Apprenti de Khorinis";
 const string	TOPIC_OV					=   "La voie de la haute ville";
 
-const string	TOPIC_Matteo				=   "Mattéo et Gritta";
-const string	TOPIC_Thorben				=   "La bénédiction des dieux";
-const string	TOPIC_HaradOrk				=   "Un défi important";
+const string	TOPIC_Matteo				=   "MattÃ©o et Gritta";
+const string	TOPIC_Thorben				=   "La bÃ©nÃ©diction des dieux";
+const string	TOPIC_HaradOrk				=   "Un dÃ©fi important";
 const string	TOPIC_BosperBogen			=   "L'arc de Bosper";
 const string	TOPIC_BosperWolf			=   "Peaux pour Bosper";
 const string	TOPIC_ConstantinoPlants		=   "Plantes pour Constantino";
 
-//-------------Händler und Diebe---------------------------
+//-------------HÃ¤ndler und Diebe---------------------------
 const string	TOPIC_Canthar				=	"Au bon plaisir de Canthar";
 const string	TOPIC_HakonBanditen			=   "Les pillages des bandits";
 const string	TOPIC_Jora					=	"L'or du marchand";
-const string	TOPIC_JoraDieb				=	"Un voleur effronté";
+const string	TOPIC_JoraDieb				=	"Un voleur effrontÃ©";
 const string	TOPIC_Nagur					=	"Le messager perfide";
 const string	TOPIC_Baltram				=	"La livraison de Baltram";
 
@@ -67,15 +67,15 @@ const string 	Topic_CassiaKelche			= 	"Les calices de sang";
 const string 	Topic_RamirezSextant		= 	"Un sextant";
 
 //------------Hafenviertel und Sonstiges------------------
-const string 	TOPIC_Alwin					= 	"Fellan le dément";
-const string 	TOPIC_Ignaz					= 	"L'expérience";
-const string 	TOPIC_AlrikSchwert			= 	"L'épée d'Alrik";
+const string 	TOPIC_Alwin					= 	"Fellan le dÃ©ment";
+const string 	TOPIC_Ignaz					= 	"L'expÃ©rience";
+const string 	TOPIC_AlrikSchwert			= 	"L'Ã©pÃ©e d'Alrik";
 const string 	TOPIC_Garvell				= 	"Des informations pour Garvell";
 
 
 
-//---------Milizaufträge-------------------------------
-const string	TOPIC_Peck					= 	"Où est Peck ?";
+//---------MilizauftrÃ¤ge-------------------------------
+const string	TOPIC_Peck					= 	"OÃ¹ est Peck ?";
 const string	TOPIC_Warehouse				= 	"Un paquet d'herbe";
 const string	TOPIC_Redlight				= 	"Trafic d'herbe";
 const string	TOPIC_Feldraeuber			= 	"Incident sur la ferme de Lobart";
@@ -83,57 +83,57 @@ const string	TOPIC_Feldraeuber			= 	"Incident sur la ferme de Lobart";
 
 
 //---------Kloster-----------------------------
-const string	TOPIC_BecomeKdF				=	"La consécration d'un Magicien du feu"; 
+const string	TOPIC_BecomeKdF				=	"La consÃ©cration d'un Magicien du feu"; 
 
-const string	Topic_Kloster				=	"L'entrée du monastère d'Innos";
-const string    Topic_Gemeinschaft			=	"Des travaux pour la communauté";
+const string	Topic_Kloster				=	"L'entrÃ©e du monastÃ¨re d'Innos";
+const string    Topic_Gemeinschaft			=	"Des travaux pour la communautÃ©";
 
-//---------Arbeiten für die Gemeinschaft-----------------------------
-const string    Topic_Neorasrezept  		=	"La recette égarée";
+//---------Arbeiten fÃ¼r die Gemeinschaft-----------------------------
+const string    Topic_Neorasrezept  		=	"La recette Ã©garÃ©e";
 const string    Topic_NeorasPflanzen		=	"Sept plantes";
-const string    Topic_IsgarothWolf			=	"Le problème d'Isgaroth";
+const string    Topic_IsgarothWolf			=	"Le problÃ¨me d'Isgaroth";
 const string    Topic_ParlanFegen			=	"Les salles des novices";
 const string    Topic_GoraxEssen 			=	"Le partage des saucisses";
 const string    Topic_GoraxWein 			=	"La livraison de vin";
-const string    Topic_MardukBeten 			=	"Une prière pour les paladins";
+const string    Topic_MardukBeten 			=	"Une priÃ¨re pour les paladins";
 
 //---------Sonstiges -----------------------------
 const string	Topic_OpolosRezept			=	"Opolos et la recette";
-const string	Topic_BaboTrain				=	"L'entraînement au combat de Babo";
+const string	Topic_BaboTrain				=	"L'entraÃ®nement au combat de Babo";
 const string	Topic_KarrasCharm			=	"Une promenade en ville";
 
-//---------Prüfung des Feuers---------------------
+//---------PrÃ¼fung des Feuers---------------------
 const string	TOPIC_FireContest			=	"L'Epreuve du feu";
 const string	TOPIC_Golem					=	"Le rocher vivant";
 const string	TOPIC_Rune					=	"La rune du feu";
 const string	TOPIC_Schnitzeljagd			=	"La voie des croyants"; 
 
-//---------Hilfe für Novizen-----------------------
+//---------Hilfe fÃ¼r Novizen-----------------------
 const string 	Topic_BaboGaertner			=   "Babo et le jardin aux herbes";
 const string 	Topic_DyrianDrin			=   "L'offense de Dyrian";
-const string 	Topic_OpolosStudy			=   "Opolos et la bibliothèque";
+const string 	Topic_OpolosStudy			=   "Opolos et la bibliothÃ¨que";
 
 //---------LOG_NOTE-----------
-const string	Topic_KlosterTrader			=	"Un marchand dans le monastère";
-const string	Topic_KlosterTeacher		=	"Un maître d'armes dans le monastère";
+const string	Topic_KlosterTrader			=	"Un marchand dans le monastÃ¨re";
+const string	Topic_KlosterTeacher		=	"Un maÃ®tre d'armes dans le monastÃ¨re";
 
 
-//---------Söldner----------------------------------
+//---------SÃ¶ldner----------------------------------
 const string	TOPIC_BecomeSLD				=	"Recrutement chez les mercenaires"; 
 const string	TOPIC_TorlofPacht			=	"La collecte du loyer";
 const string	TOPIC_TorlofMiliz			=	"Repousser la milice";
 const string	TOPIC_SLDRespekt			=	"Le respect des mercenaires";  
  
-const string 	TOPIC_JarvisSLDKo			=	"Sincères salutations";  
+const string 	TOPIC_JarvisSLDKo			=	"SincÃ¨res salutations";  
 const string 	TOPIC_CordProve				=	"L'art du combat";   
 const string 	Topic_CipherHerb			=	"Pour quelques tiges d'herbe";    
 const string 	Topic_CipherPaket			=	"Le paquet d'herbe";    
-const string 	Topic_RodWette				=	"L'épée de Rod";    
+const string 	Topic_RodWette				=	"L'Ã©pÃ©e de Rod";    
 const string 	TOPIC_FesterRauber			=	"Les pillards des champs";   
 const string 	TOPIC_TheklaEintopf			=	"Civet";    
-const string 	TOPIC_SagittaHerb			=	"Aloès solaire";    
-const string 	TOPIC_PepeWolves			=	"Quatre loups pour Pépé";    
-const string 	TOPIC_KickBullco			=	"Un sacré coup dans les dents"; 
+const string 	TOPIC_SagittaHerb			=	"AloÃ¨s solaire";    
+const string 	TOPIC_PepeWolves			=	"Quatre loups pour PÃ©pÃ©";    
+const string 	TOPIC_KickBullco			=	"Un sacrÃ© coup dans les dents"; 
  
 const string 	TOPIC_Frieden				=	"La proposition de paix";  
  
@@ -148,8 +148,8 @@ const string 	TOPIC_Frieden				=	"La proposition de paix";
 const string	TOPIC_MISOLDWORLD			=	"Les preuves";
 const string	TOPIC_ScoutMine				=	"Foreurs et minerai";
 
-const string	Topic_MarcosJungs			=	"Soutien à Marcos";
-const string	TOPIC_RescueGorn			=	"La libération de Gorn";
+const string	Topic_MarcosJungs			=	"Soutien Ã  Marcos";
+const string	TOPIC_RescueGorn			=	"La libÃ©ration de Gorn";
 const string	TOPIC_FajethKillSnapper		=	"Chasse aux saurinides";
 const string	TOPIC_BringMeat				=	"Viande";
 const string	TopicBrutusKasse			=	"De l'or pour Brutus";
@@ -164,8 +164,8 @@ const string	TOPIC_Lutero				=	"Griffes de saurinide";
 const string	TOPIC_Fernando				=	"Les affaires de Fernando";
 
 //-------------------------------------------------------------------------------------
-const string	TOPIC_PyrokarClearDemonTower	 = "Retour à la tour";
-const string	TOPIC_HyglasBringBook			 = "Puissance des étoiles";
+const string	TOPIC_PyrokarClearDemonTower	 = "Retour Ã  la tour";
+const string	TOPIC_HyglasBringBook			 = "Puissance des Ã©toiles";
 
 const string	Topic_BabosDocs		 			 = "Documents";
 const string	TOPIC_Wolf_BringCrawlerPlates	 = "L'armure de foreur";

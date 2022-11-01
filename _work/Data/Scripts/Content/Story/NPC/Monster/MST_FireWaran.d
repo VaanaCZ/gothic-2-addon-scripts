@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_FireWaran(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"LÈzard de feu";
+	name							=	"L√©zard de feu";
 	guild							=	GIL_WARAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FIREWARAN;
 	level							=	30;
@@ -27,7 +27,7 @@ PROTOTYPE Mst_Default_FireWaran(C_Npc)
 	protection	[PROT_MAGIC]		=	0;
 	
 	//----- Damage Types ----
-	damagetype 						=	DAM_FIRE; //Opfer f‰ngt an zu brennen
+	damagetype 						=	DAM_FIRE; //Opfer f√§ngt an zu brennen
 //	damage		[DAM_INDEX_BLUNT]	=	0;
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;

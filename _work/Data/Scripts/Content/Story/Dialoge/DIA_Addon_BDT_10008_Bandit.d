@@ -77,11 +77,11 @@ FUNC INT DIA_Addon_10008_Bandit_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//Ne le réveillez PAS !
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//Ne le rÃ©veillez PAS !
 	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Quoi ???
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Si vous voulez vous rendre un grand service, évitez de vous approcher de Skinner.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Ce type est complètement imprévisible. Il a froidement tué le dernier gars qui a eu le malheur de le réveiller.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Laissez-le dormir, dans l'intérêt de tous.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Si vous voulez vous rendre un grand service, Ã©vitez de vous approcher de Skinner.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Ce type est complÃ¨tement imprÃ©visible. Il a froidement tuÃ© le dernier gars qui a eu le malheur de le rÃ©veiller.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Laissez-le dormir, dans l'intÃ©rÃªt de tous.
 };
 //--------------------------------------------------------------------
 //	Info soup
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_10008_Bandit_soup   (C_INFO)
 	condition   = DIA_Addon_10008_Bandit_soup_Condition;
 	information = DIA_Addon_10008_Bandit_soup_Info;
 	permanent   = FALSE;
-	description = "Vous êtes un mineur ?";
+	description = "Vous Ãªtes un mineur ?";
 };
 FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 {	
@@ -101,15 +101,15 @@ FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_soup_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//Vous êtes un mineur ?
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//C'est à cause de mon pantalon, c'est ça ? Non, je le porte parce qu'il est confortable, simplement.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Tout ce que je fais ici, c'est cuisiner le ragoût. Tenez, goûtez-moi ça - ça vous donnera des forces.
+	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//Vous Ãªtes un mineur ?
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//C'est Ã  cause de mon pantalon, c'est Ã§a ? Non, je le porte parce qu'il est confortable, simplement.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Tout ce que je fais ici, c'est cuisiner le ragoÃ»t. Tenez, goÃ»tez-moi Ã§a - Ã§a vous donnera des forces.
 	B_GiveInvItems (self, other, ItFo_Addon_Meatsoup,1);
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Il est toujours important d'améliorer votre force - le danger pullule dans les environs, sous toutes ses formes.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Si vous voulez, je peux vous aider à améliorer votre force.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Il est toujours important d'amÃ©liorer votre force - le danger pullule dans les environs, sous toutes ses formes.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Si vous voulez, je peux vous aider Ã  amÃ©liorer votre force.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Le bandit chargé de cuisiner le ragoût peut m'aider à améliorer ma force.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Le bandit chargÃ© de cuisiner le ragoÃ»t peut m'aider Ã  amÃ©liorer ma force.");	
 };
 //*******************************************
 //	TechPlayer

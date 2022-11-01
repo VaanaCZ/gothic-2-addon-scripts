@@ -174,7 +174,7 @@ instance MENUITEM_LOADSAVE_LEVELNAME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_DATETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "Sauvegardée";
+	text[0]		= "SauvegardÃ©e";
 	posx		= SAVEGAME_X2;
 	posy		= 4900;
 	fontName	= MENU_FONT_SMALL;
@@ -203,7 +203,7 @@ instance MENUITEM_LOADSAVE_DATETIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_GAMETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "durée :";
+	text[0]		= "durÃ©e :";
 	posx		= SAVEGAME_X2;
 	posy		= 6200;
 	fontName	= MENU_FONT_SMALL;
@@ -904,7 +904,7 @@ INSTANCE MENUITEM_LOAD_SLOT20(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT0(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "    - Sauvegarde rapide -    ";
-	text[1]		=   "Appuyez sur ENTREE pour charger la partie sauvegardée sélectionnée"; // Kommentar
+	text[1]		=   "Appuyez sur ENTREE pour charger la partie sauvegardÃ©e sÃ©lectionnÃ©e"; // Kommentar
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 20 * SAVEGAME_DY;
 	dimx		= 	SAVEGAME_DX1;

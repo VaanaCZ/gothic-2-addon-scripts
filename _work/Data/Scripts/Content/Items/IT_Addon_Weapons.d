@@ -4,7 +4,7 @@
 	
 	Magierstab rot, blau, gold
 	Zweihandkeule, Einhandkeule (Holz, Stein) 
-	Steinhammer (Maya TX) klein (einhand), groﬂ (zweihand)
+	Steinhammer (Maya TX) klein (einhand), gro√ü (zweihand)
 	
 	Sichelstab (Zweihand, Stab mit Sichelklinge)
 	
@@ -26,9 +26,9 @@
 	
 	
 	ItMW_Addon_Hacker_1h_01 //Machete					  ab KAP1 zu kaufen		+3
-	ItMW_Addon_Hacker_2h_01 //Groﬂe Machete				  ab KAP1 zu kaufen     +3
+	ItMW_Addon_Hacker_2h_01 //Gro√üe Machete				  ab KAP1 zu kaufen     +3
 	ItMW_Addon_Keule_1h_01 //Keule, Windknecht			  finden ab kap 1			
-	ItMW_Addon_Keule_2h_01 //Groﬂe Keule, Sturmknecht     finden in Addonworld
+	ItMW_Addon_Keule_2h_01 //Gro√üe Keule, Sturmknecht     finden in Addonworld
 	
 	
 	
@@ -207,7 +207,7 @@ INSTANCE ItMW_Addon_Stab04 (C_Item)
 	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF4";
 
-	description			= 	"Ulthar a enchantÈ ce sceptre";
+	description			= 	"Ulthar a enchant√© ce sceptre";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
@@ -304,7 +304,7 @@ INSTANCE ItMW_Addon_Hacker_1h_02 (C_Item)
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_2h_01 (C_Item) 
 {	
-	name 				=	"Machette gÈante";
+	name 				=	"Machette g√©ante";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -333,7 +333,7 @@ INSTANCE ItMW_Addon_Hacker_2h_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_2h_02 (C_Item) 
 {	
-	name 				=	"Machette gÈante ancienne";
+	name 				=	"Machette g√©ante ancienne";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -394,7 +394,7 @@ INSTANCE ItMW_Addon_Keule_1h_01 (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Keule_2h_01 (C_Item)//Sturmknecht 2h Holzkeule
 {	
-	name 				=	"Gourdin des tempÍtes";  
+	name 				=	"Gourdin des temp√™tes";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -407,7 +407,7 @@ INSTANCE ItMW_Addon_Keule_2h_01 (C_Item)//Sturmknecht 2h Holzkeule
 	range    			=  	RANGE_Sturmknecht;		
 	
 	on_equip			=	UnEquip_2H_10;//MALUS WAFFE MUSS umgekehrt sein. 
-	on_unequip			=	Equip_2H_10; //erhˆhen 
+	on_unequip			=	Equip_2H_10; //erh√∂hen 
 	
 	cond_atr[2]   		=	ATR_STRENGTH;
 	cond_value[2]  		=	Condition_Sturmknecht;
@@ -424,7 +424,7 @@ INSTANCE ItMW_Addon_Keule_2h_01 (C_Item)//Sturmknecht 2h Holzkeule
 // *****************************************************
 INSTANCE ItMw_FrancisDagger_Mis (C_Item)
 {	
-	name 				=	"Poignard aff˚tÈ";  
+	name 				=	"Poignard aff√ªt√©";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -455,7 +455,7 @@ INSTANCE ItMw_FrancisDagger_Mis (C_Item)
 // *****************************************************
 INSTANCE ItMw_RangerStaff_Addon (C_Item)
 {	
-	name 				=	"B‚ton de l'Anneau de l'eau";  
+	name 				=	"B√¢ton de l'Anneau de l'eau";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -584,7 +584,7 @@ INSTANCE ItMw_Addon_PIR1hSword (C_Item)
 // *****************************************************
 INSTANCE ItMw_Addon_BanditTrader (C_Item)
 {	
-	name 				=	"RapiËre de bandit";  
+	name 				=	"Rapi√®re de bandit";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -602,7 +602,7 @@ INSTANCE ItMw_Addon_BanditTrader (C_Item)
 
 	description			= name;
 
-	TEXT[1]				= 	"La lettre 'F' est gravÈe sur le pommeau.";
+	TEXT[1]				= 	"La lettre 'F' est grav√©e sur le pommeau.";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Dex_needed;				COUNT[3]	= cond_value[2];
@@ -644,7 +644,7 @@ INSTANCE ItMw_Addon_Betty (C_Item)
 
 instance ItRw_Addon_MagicArrow (C_Item)
 {
-	name 				=	"FlËche magique";
+	name 				=	"Fl√®che magique";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW | ITEM_MULTI;
@@ -670,7 +670,7 @@ instance ItRw_Addon_MagicArrow (C_Item)
 
 instance ItRw_Addon_FireArrow (C_Item)
 {
-	name 				=	"FlËche de feu";
+	name 				=	"Fl√®che de feu";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW | ITEM_MULTI;
@@ -778,7 +778,7 @@ instance ItRw_Addon_MagicBolt (C_Item)
 
 instance ItRw_Addon_MagicCrossbow (C_Item)
 {
-	name 				=	"ArbalËte magique";
+	name 				=	"Arbal√®te magique";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;

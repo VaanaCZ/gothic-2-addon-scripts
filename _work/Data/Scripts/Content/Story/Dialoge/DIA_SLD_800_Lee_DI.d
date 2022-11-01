@@ -43,8 +43,8 @@ func int DIA_Lee_DI_Hallo_Condition ()
 
 func void DIA_Lee_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //De quelle tâche comptez-vous vous charger ?
-	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Il faut bien que quelqu'un surveille le navire. Je vais rester ici afin de m'assurer qu'il sera bien là à votre retour.
+	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //De quelle tÃ¢che comptez-vous vous chargerÂ ?
+	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Il faut bien que quelqu'un surveille le navire. Je vais rester ici afin de m'assurer qu'il sera bien lÃ  Ã  votre retour.
 	
 };
 
@@ -74,15 +74,15 @@ func int DIA_Lee_DI_PERM6_Condition ()
 
 func void DIA_Lee_DI_PERM6_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Comment va mon navire ?
+	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Comment va mon navireÂ ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_01"); //Ne vous inquiétez pas, je contrôle la situation.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_01"); //Ne vous inquiÃ©tez pas, je contrÃ´le la situation.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Tout va bien. Ces misérables orques peuvent revenir aussi souvent que ça leur chante, s'ils aiment recevoir de bonnes leçons.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Tout va bien. Ces misÃ©rables orques peuvent revenir aussi souvent que Ã§a leur chante, s'ils aiment recevoir de bonnes leÃ§ons.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -100,7 +100,7 @@ INSTANCE DIA_Lee_DI_Teach(C_INFO)
 	information	= DIA_Lee_DI_Teach_Info;
 	permanent	= TRUE;
 	
-	description = "J'ai besoin de m'entraîner.";
+	description = "J'ai besoin de m'entraÃ®ner.";
 };                       
 
 FUNC INT DIA_Lee_DI_Teach_Condition()
@@ -113,8 +113,8 @@ FUNC INT DIA_Lee_DI_Teach_Condition()
  
 FUNC VOID DIA_Lee_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //J'aurais besoin d'entraînement.
-	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //Dans quelle aptitude au juste ?
+	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //J'aurais besoin d'entraÃ®nement.
+	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //Dans quelle aptitude au justeÂ ?
 	
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -128,7 +128,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Votre défense est pitoyable, mais il faudra bien qu'elle fasse l'affaire.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Votre dÃ©fense est pitoyable, mais il faudra bien qu'elle fasse l'affaire.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //Le coup le plus fort qui soit ne sert à rien s'il ne touche pas sa cible, alors utilisez votre force à bon escient.
+		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //Le coup le plus fort qui soit ne sert Ã  rien s'il ne touche pas sa cible, alors utilisez votre force Ã  bon escient.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -215,23 +215,23 @@ var int DIA_Lee_DI_UndeadDragonDead_OneTime;
 func void DIA_Lee_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Nous pouvons y aller, l'ennemi est mort.
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Très bien. Dites au capitaine de lever l'ancre.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //TrÃ¨s bien. Dites au capitaine de lever l'ancre.
 
 	if (DIA_Lee_DI_UndeadDragonDead_OneTime == FALSE)
 	&& (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Vous allez m'emmener sur le continent, n'est-ce pas ?
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Vous allez m'emmener sur le continent, n'est-ce pasÂ ?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Oui. Khorinis survivra bien sans vous.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
 			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Alors, je vais enfin pouvoir aller rendre une petite visite au roi.
 			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Depuis le temps que j'attends cet instant...
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Qu'en dites-vous ? La patience doit être récompensée, non ?
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Qu'en dites-vousÂ ? La patience doit Ãªtre rÃ©compensÃ©e, nonÂ ?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //Oui, surtout si elle s'accompagne d'arguments... percutants.
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(éclate de rire) C'est vrai qu'il va me falloir faire usage de la force, je le crains. En tout cas, cela a été un honneur de combattre à vos côtés.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(Ã©clate de rire) C'est vrai qu'il va me falloir faire usage de la force, je le crains. En tout cas, cela a Ã©tÃ© un honneur de combattre Ã  vos cÃ´tÃ©s.
 			DIA_Lee_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Puissent nos routes se croiser de nouveau à l'avenir.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Puissent nos routes se croiser de nouveau Ã  l'avenir.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

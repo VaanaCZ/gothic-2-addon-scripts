@@ -26,7 +26,7 @@ instance MENU_LOG(C_MENU_DEF)
 };
 
 //
-// Menüpunkte
+// MenÃ¼punkte
 //
 
 const int LOG_ITEM_X1 	= 1200;
@@ -39,7 +39,7 @@ const int LOG_ITEM_LIST_WIDTH	= 4500;
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Quêtes\nEn cours";
+	text[0]		=	"QuÃªtes\nEn cours";
 	posx		=	LOG_ITEM_X1;
 	posy		=   	1500;
 	dimx 		= 	LOG_ITEM_DX1;
@@ -69,7 +69,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"missions\néchouées";
+	text[0]		=	"missions\nÃ©chouÃ©es";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	3500;
@@ -85,7 +85,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Infos\nGénérales";
+	text[0]		=	"Infos\nGÃ©nÃ©rales";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	4500;

@@ -2,7 +2,7 @@
 instance PAL_261_Gerold  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gérold";
+	name 		= "GÃ©rold";
 	guild 		= GIL_PAL;
 	id 			= 261;
 	voice 		= 12;

@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Scatty_Hi   (C_INFO)
 	condition   = DIA_Addon_Scatty_Hi_Condition;
 	information = DIA_Addon_Scatty_Hi_Info;
 	permanent   = FALSE;
-	description = "Comment vont les affaires ?";
+	description = "Comment vont les affairesÂ ?";
 };
 FUNC INT DIA_Addon_Scatty_Hi_Condition()
 {	
@@ -79,11 +79,11 @@ FUNC VOID DIA_Addon_Scatty_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Comment vont les affaires ?
 	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//Depuis l'ouverture du tombeau, la demande n'est pas bien grande...
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Raven n'a plus besoin des esclaves. C'est pour ça qu'ils ont été envoyés à la mine afin d'extraire de l'or, sur l'ordre de Bloodwyn.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Raven n'a plus besoin des esclaves. C'est pour Ã§a qu'ils ont Ã©tÃ© envoyÃ©s Ã  la mine afin d'extraire de l'or, sur l'ordre de Bloodwyn.
 	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//Depuis, les mineurs se la coulent douce. (marmonne) Quand les mineurs se la coulent douce, les affaires ne vont pas bien.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty propose différentes marchandises.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty propose diffÃ©rentes marchandises.");
 };
 /*
 	Ich bin hier auch sowas wie der Proviantmeister. Wenn du was brauchst, kannst du mit mir handeln. 
@@ -112,11 +112,11 @@ FUNC INT DIA_Addon_Scatty_last_Condition()
 FUNC VOID DIA_Addon_Scatty_last_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Bloodwyn ? Est-ce lui, le responsable ici ?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Il supervise la mine, mais il n'y descend pour ainsi dire jamais. Il passe la plupart de son temps à l'intérieur du temple, avec Raven.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Il supervise la mine, mais il n'y descend pour ainsi dire jamais. Il passe la plupart de son temps Ã  l'intÃ©rieur du temple, avec Raven.
 	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Qu'entendez-vous exactement, par 'pour ainsi dire' ?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//La dernière fois que je l'ai vu, il sortait du tombeau...
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(hâtivement) ...Non, attendez ! La dernière fois qu'il est venu, c'était pour envoyer des esclaves à la mine afin d'extraire de l'or.
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//A la différence de Raven, Bloodwyn s'intéresse BEAUCOUP à l'or.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//La derniÃ¨re fois que je l'ai vu, il sortait du tombeau...
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(hÃ¢tivement) ...Non, attendez ! La derniÃ¨re fois qu'il est venu, c'Ã©tait pour envoyer des esclaves Ã  la mine afin d'extraire de l'or.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//A la diffÃ©rence de Raven, Bloodwyn s'intÃ©resse BEAUCOUP Ã  l'or.
 };
 //---------------------------------------------------------------------
 //	Info Gruft
@@ -140,11 +140,11 @@ FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 FUNC VOID DIA_Addon_Scatty_Gruft_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Quelle sorte de tombeau ?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Un tombeau maudit, empli de mauvais sorts ! Les gardiens du tombeau ont tué de nombreux hommes !
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//Des gardiens ? Vous parlez des créatures de pierre ? Assez plates, avec une tête ronde ?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Un tombeau maudit, empli de mauvais sorts ! Les gardiens du tombeau ont tuÃ© de nombreux hommes !
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//Des gardiens ? Vous parlez des crÃ©atures de pierre ? Assez plates, avec une tÃªte ronde ?
 	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//C'est exactement cela ! Elles sont sorties des profondeurs du tombeau par dizaines !
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Je savais depuis le début que l'ouverture du tombeau était une mauvaise idée.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Mais Raven était obsédé par la volonté d'exhumer ce lieu. Et lorsqu'il est parvenu à ouvrir le tombeau, lui et ses gardes y sont rentrés en force.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Je savais depuis le dÃ©but que l'ouverture du tombeau Ã©tait une mauvaise idÃ©e.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Mais Raven Ã©tait obsÃ©dÃ© par la volontÃ© d'exhumer ce lieu. Et lorsqu'il est parvenu Ã  ouvrir le tombeau, lui et ses gardes y sont rentrÃ©s en force.
 };
 //---------------------------------------------------------------------
 //	Info GruftAgain
@@ -168,16 +168,16 @@ FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 FUNC VOID DIA_Addon_Scatty_GruftAgain_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Que cherchait Raven dans cette tombe ?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(s'interrompt) Hum... vous êtes plutôt curieux. Vous me faites penser à un type que j'ai connu, autrefois.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Il était aussi curieux que vous. Et pour finir, ça lui a coûté la vie.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Venez-en aux faits. Que s'est-il passé à l'intérieur du tombeau ?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//Eh bien... heu... j'ai vraiment la gorge sèche.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//PAS MAINTENANT, Scatty. C'est important - qu'a fait Raven à l'intérieur du tombeau ?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Bien. (inspire profondément) Il... il a appelé... ou invoqué quelque chose. Il répétait sans cesse des mots dans une langue étrange.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Une lumière éclatante a inondé le tombeau, et j'ai entendu un cri qui m'a proprement transpercé - un cri vraiment démoniaque.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(s'interrompt) Hum... vous Ãªtes plutÃ´t curieux. Vous me faites penser Ã  un type que j'ai connu, autrefois.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Il Ã©tait aussi curieux que vous. Et pour finir, Ã§a lui a coÃ»tÃ© la vie.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Venez-en aux faits. Que s'est-il passÃ© Ã  l'intÃ©rieur du tombeau ?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//Eh bien... heu... j'ai vraiment la gorge sÃ¨che.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//PAS MAINTENANT, Scatty. C'est important - qu'a fait Raven Ã  l'intÃ©rieur du tombeau ?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Bien. (inspire profondÃ©ment) Il... il a appelÃ©... ou invoquÃ© quelque chose. Il rÃ©pÃ©tait sans cesse des mots dans une langue Ã©trange.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Une lumiÃ¨re Ã©clatante a inondÃ© le tombeau, et j'ai entendu un cri qui m'a proprement transpercÃ© - un cri vraiment dÃ©moniaque.
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//Et ensuite ?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//C'est tout ce que je sais. A cet instant, Bloodwyn est sorti du tombeau et m'a conseillé de déguerpir en vitesse. C'est exactement ce que j'ai fait.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Raven et ses gars n'ont pas attendu bien longtemps avant de retourner à l'intérieur du temple. Depuis, personne n'a plus vu Raven.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//C'est tout ce que je sais. A cet instant, Bloodwyn est sorti du tombeau et m'a conseillÃ© de dÃ©guerpir en vitesse. C'est exactement ce que j'ai fait.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Raven et ses gars n'ont pas attendu bien longtemps avant de retourner Ã  l'intÃ©rieur du temple. Depuis, personne n'a plus vu Raven.
 };
 //---------------------------------------------------------------------
 //	Info Trinken
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Scatty_Trinken   (C_INFO)
 	condition   = DIA_Addon_Scatty_Trinken_Condition;
 	information = DIA_Addon_Scatty_Trinken_Info;
 	permanent   = FALSE;
-	description = "Voulez-vous quelque chose à boire ?";
+	description = "Voulez-vous quelque chose Ã  boire ?";
 };
 FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 {	
@@ -200,9 +200,9 @@ FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Trinken_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Voulez-vous quelque chose à boire ?
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Une bière serait vraiment la bienvenue. On ne trouve pratiquement plus de bière ici, à l'intérieur du camp.
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Mais peut-être Lucia en a-t-elle encore une bouteille...
+	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Voulez-vous quelque chose Ã  boire ?
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Une biÃ¨re serait vraiment la bienvenue. On ne trouve pratiquement plus de biÃ¨re ici, Ã  l'intÃ©rieur du camp.
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Mais peut-Ãªtre Lucia en a-t-elle encore une bouteille...
 };
 //---------------------------------------------------------------------
 //	Info Bier geben
@@ -214,7 +214,7 @@ INSTANCE DIA_Addon_Scatty_Bier   (C_INFO)
 	condition   = DIA_Addon_Scatty_Bier_Condition;
 	information = DIA_Addon_Scatty_Bier_Info;
 	permanent   = FALSE;
-	description = "A votre santé ! (donner une bière)";
+	description = "A votre santÃ© ! (donner une biÃ¨re)";
 };
 FUNC INT DIA_Addon_Scatty_Bier_Condition()
 {	
@@ -232,7 +232,7 @@ FUNC VOID DIA_Addon_Scatty_Bier_Info()
 	{
 		AI_UseItem (self, ItFo_Beer);
 	};
-	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Oh, c'est délicieux. Merci, mon gars. Vous êtes mon héros.
+	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Oh, c'est dÃ©licieux. Merci, mon gars. Vous Ãªtes mon hÃ©ros.
 	
 	B_GivePlayerXP (XP_Ambient* 5);
 };
@@ -256,9 +256,9 @@ FUNC INT DIA_Addon_Scatty_Gold_Condition()
 FUNC VOID DIA_Addon_Scatty_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Prenez une pioche, et allez attaquer un bloc d'or - tout le monde sait faire ça.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Mais si vous faites ça, les pépites auront tendance à éclater. C'est pourquoi seuls les mineurs expérimentés devraient s'essayer à cela.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Je vous en dirai plus lorsque vous aurez acquis davantage d'expérience.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Prenez une pioche, et allez attaquer un bloc d'or - tout le monde sait faire Ã§a.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Mais si vous faites Ã§a, les pÃ©pites auront tendance Ã  Ã©clater. C'est pourquoi seuls les mineurs expÃ©rimentÃ©s devraient s'essayer Ã  cela.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Je vous en dirai plus lorsque vous aurez acquis davantage d'expÃ©rience.
 
 	B_Upgrade_Hero_HackChance(5);
 };
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_Scatty_teach   (C_INFO)
 	condition   = DIA_Addon_Scatty_teach_Condition;
 	information = DIA_Addon_Scatty_teach_Info;
 	permanent   = TRUE;
-	description = "Apprendre à extraire de l'or (Coût : 2 PA/10 pour cent)";
+	description = "Apprendre Ã  extraire de l'or (CoÃ»t : 2 PA/10 pour cent)";
 };
 FUNC INT DIA_Addon_Scatty_teach_Condition()
 {	
@@ -290,9 +290,9 @@ FUNC VOID DIA_Addon_Scatty_teach_Info()
 	
 	if (other.lp >= 1)  
 	{
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Surtout, gardez à l'esprit que l'or n'est en rien comme du minerai - il est aussi tendre que du beurre. Si vous frappez trop fort, votre pépite éclatera.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Tous les mineurs ont leurs petits trucs pour extraire des pépites de taille convenable de la roche.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Au final, ces petits trucs font toute la différence entre un mineur et un bon mineur.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Surtout, gardez Ã  l'esprit que l'or n'est en rien comme du minerai - il est aussi tendre que du beurre. Si vous frappez trop fort, votre pÃ©pite Ã©clatera.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Tous les mineurs ont leurs petits trucs pour extraire des pÃ©pites de taille convenable de la roche.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Au final, ces petits trucs font toute la diffÃ©rence entre un mineur et un bon mineur.
 		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//De plus, vous ne progresserez qu'en pratiquant. Ce n'est qu'au fil du temps que vous deviendrez un meilleur mineur.
 		
 		other.lp = (other.lp -1);
@@ -327,7 +327,7 @@ FUNC INT DIA_Addon_Scatty_tot_Condition()
 FUNC VOID DIA_Addon_Scatty_tot_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Bloodwyn est mort.
-	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hum, je ne souhaite pas cela à grand monde... mais dans le cas de Bloodwyn, c'est mieux ainsi.
+	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hum, je ne souhaite pas cela Ã  grand monde... mais dans le cas de Bloodwyn, c'est mieux ainsi.
 };
 //---------------------------------------------------------------------
 //	Info trade

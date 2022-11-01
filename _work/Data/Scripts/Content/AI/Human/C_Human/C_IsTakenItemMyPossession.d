@@ -9,12 +9,12 @@ func int C_IsTakenItemMyPossession (var C_NPC slf, var C_NPC oth, var C_ITEM itm
 	
 	// FUNC
 
-	// ------ Persönliches Besitzflag ------
+	// ------ PersÃ¶nliches Besitzflag ------
 	if (Npc_OwnedByNpc(itm, slf)) 
 	{
 		// ------ Story: Der Hammer Innos ------
 		if (Hlp_IsItem (itm, Holy_Hammer_MIS))
-		// kann nur Nov_608_Garwig sein, weil Hammer persönlicher Besitz
+		// kann nur Nov_608_Garwig sein, weil Hammer persÃ¶nlicher Besitz
 		{
 			Hammer_Taken = TRUE;
 		};

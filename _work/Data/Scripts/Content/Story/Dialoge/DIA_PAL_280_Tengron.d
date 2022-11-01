@@ -45,7 +45,7 @@ func void DIA_Tengron_First_Info ()
 {
 	AI_Output (self, other, "DIA_Tengron_First_07_00"); //Que faites-vous ici ?
 	AI_Output (other, self, "DIA_Tengron_First_15_01"); //Je suis ici sur ordre du seigneur Hagen.
-	AI_Output (self, other, "DIA_Tengron_First_07_02"); //Vous devez absolument essayer d'atteindre le château pour vous entretenir avec le commandant Garond.
+	AI_Output (self, other, "DIA_Tengron_First_07_02"); //Vous devez absolument essayer d'atteindre le chÃ¢teau pour vous entretenir avec le commandant Garond.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -70,12 +70,12 @@ func int DIA_Tengron_HALLO_Condition ()
 };
 func void DIA_Tengron_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Tengron_HALLO_07_00"); //Innos vous garde ! Avez-vous des nouvelles du château ? Pouvons-nous attendre des renforts dans un avenir proche ?
+	AI_Output (self, other, "DIA_Tengron_HALLO_07_00"); //Innos vous gardeÂ ! Avez-vous des nouvelles du chÃ¢teauÂ ? Pouvons-nous attendre des renforts dans un avenir procheÂ ?
 	
 	if (Npc_IsDead(Fajeth) == FALSE)
 	{
 		AI_Output (other, self, "DIA_Tengron_HALLO_15_01"); //Je viens chercher des nouvelles, pas vous en apporter.
-		AI_Output (self, other, "DIA_Tengron_HALLO_07_02"); //Alors, parlez à Fajeth. C'est lui qui nous dirige. Mais si vous avez des nouvelles du château, donnez-les moi.
+		AI_Output (self, other, "DIA_Tengron_HALLO_07_02"); //Alors, parlez Ã  Fajeth. C'est lui qui nous dirige. Mais si vous avez des nouvelles du chÃ¢teau, donnez-les moi.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -102,35 +102,35 @@ func int DIA_Tengron_News_Condition ()
 func void DIA_Tengron_News_Info ()
 {
 	AI_Output (other, self, "DIA_Tengron_News_15_00"); //Pour ce qui est des nouvelles...
-	AI_Output (self, other, "DIA_Tengron_News_07_01"); //Oui. Quelle est la situation au château ?
-	AI_Output (other, self, "DIA_Tengron_News_15_02"); //Il est toujours assiégé par les orques et sans défense contre les attaques des dragons.
-	AI_Output (self, other, "DIA_Tengron_News_07_03"); //Malédiction ! Pourvu que les nôtres puissent tenir !
-	AI_Output (self, other, "DIA_Tengron_News_07_04"); //Ecoutez, j'ai un ami au château. Il s'appelle Udar et nous nous connaissons depuis longtemps. Nous avons livré de nombreuses batailles côte à côte.
-	AI_Output (self, other, "DIA_Tengron_News_07_05"); //Je voudrais que vous lui ameniez cet anneau afin qu'il le garde pour moi. Dites-lui que je le récupérerai à mon retour.
+	AI_Output (self, other, "DIA_Tengron_News_07_01"); //Oui. Quelle est la situation au chÃ¢teauÂ ?
+	AI_Output (other, self, "DIA_Tengron_News_15_02"); //Il est toujours assiÃ©gÃ© par les orques et sans dÃ©fense contre les attaques des dragons.
+	AI_Output (self, other, "DIA_Tengron_News_07_03"); //MalÃ©dictionÂ ! Pourvu que les nÃ´tres puissent tenirÂ !
+	AI_Output (self, other, "DIA_Tengron_News_07_04"); //Ecoutez, j'ai un ami au chÃ¢teau. Il s'appelle Udar et nous nous connaissons depuis longtemps. Nous avons livrÃ© de nombreuses batailles cÃ´te Ã  cÃ´te.
+	AI_Output (self, other, "DIA_Tengron_News_07_05"); //Je voudrais que vous lui ameniez cet anneau afin qu'il le garde pour moi. Dites-lui que je le rÃ©cupÃ©rerai Ã  mon retour.
 	
 	Info_ClearChoices (DIA_Tengron_News);
 	
 	Info_AddChoice (DIA_Tengron_News,"Je n'ai pas le temps.",DIA_Tengron_News_No);
-	Info_AddChoice (DIA_Tengron_News,"Pas de problème...",DIA_Tengron_News_Yes);
+	Info_AddChoice (DIA_Tengron_News,"Pas de problÃ¨me...",DIA_Tengron_News_Yes);
 };
 FUNC VOID DIA_Tengron_News_No()
 {
-	AI_Output (other, self, "DIA_Tengron_News_No_15_00"); //Je n'ai pas de temps à perdre avec ça.
+	AI_Output (other, self, "DIA_Tengron_News_No_15_00"); //Je n'ai pas de temps Ã  perdre avec Ã§a.
 	AI_Output (self, other, "DIA_Tengron_News_No_07_01"); //Je comprends.
 	
 	Info_ClearChoices (DIA_Tengron_News);
 };
 FUNC VOID DIA_Tengron_News_Yes()
 {
-	AI_Output (other, self, "DIA_Tengron_News_Yes_15_00"); //Pas de problème. Je remettrai l'anneau à Udar dès mon retour au château.
-	AI_Output (self, other, "DIA_Tengron_News_Yes_07_01"); //Bien. La magie de l'anneau lui conférera un regain de force. Et n'oubliez surtout pas de lui dire que je viendrai le récupérer.
+	AI_Output (other, self, "DIA_Tengron_News_Yes_15_00"); //Pas de problÃ¨me. Je remettrai l'anneau Ã  Udar dÃ¨s mon retour au chÃ¢teau.
+	AI_Output (self, other, "DIA_Tengron_News_Yes_07_01"); //Bien. La magie de l'anneau lui confÃ©rera un regain de force. Et n'oubliez surtout pas de lui dire que je viendrai le rÃ©cupÃ©rer.
 	
 	B_GiveInvItems (self,other,ItRi_Tengron,1);
 	Info_ClearChoices (DIA_Tengron_News);
 	
 	Log_CreateTopic (Topic_TengronRing,LOG_MISSION);
 	Log_SetTopicStatus (Topic_TengronRing,LOG_RUNNING);
-	B_LogEntry (Topic_TengronRing,"Tengron m'a donné un anneau que je dois remettre à Udar au château.");
+	B_LogEntry (Topic_TengronRing,"Tengron m'a donnÃ© un anneau que je dois remettre Ã  Udar au chÃ¢teau.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Situation
@@ -153,9 +153,9 @@ func int DIA_Tengron_Situation_Condition ()
 };
 func void DIA_Tengron_Situation_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_Situation_15_00"); //Quelle est la situation, ici ?
-	AI_Output (self, other, "DIA_Tengron_Situation_07_01"); //Nous sommes encerclés par les monstres et nous n'avons pour ainsi dire pas extrait de minerai. Et comme si ça ne suffisait pas, nous avons déjà perdu beaucoup d'hommes.
-	AI_Output (self, other, "DIA_Tengron_Situation_07_02"); //J'ignore combien de temps nous pourrons tenir, mais nous ne baisserons pas les bras !
+	AI_Output (other, self, "DIA_Tengron_Situation_15_00"); //Quelle est la situation, iciÂ ?
+	AI_Output (self, other, "DIA_Tengron_Situation_07_01"); //Nous sommes encerclÃ©s par les monstres et nous n'avons pour ainsi dire pas extrait de minerai. Et comme si Ã§a ne suffisait pas, nous avons dÃ©jÃ  perdu beaucoup d'hommes.
+	AI_Output (self, other, "DIA_Tengron_Situation_07_02"); //J'ignore combien de temps nous pourrons tenir, mais nous ne baisserons pas les brasÂ !
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info NeedYourHelp
@@ -179,9 +179,9 @@ func int DIA_Tengron_HELP_Condition ()
 };
 func void DIA_Tengron_HELP_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_HELP_15_00"); //J'aurais besoin de votre aide. Fajeth veut que je chasse les lézards, et...
-	AI_Output (self, other, "DIA_Tengron_HELP_07_01"); //Fajeth est le seul habilité à me donner des ordres et il m'a dit de garder le site minier. Alors, c'est ce que je vais continuer à faire.
-	AI_Output (self, other, "DIA_Tengron_HELP_07_02"); //Peut-être que quelqu'un d'autre acceptera de vous aider.
+	AI_Output (other, self, "DIA_Tengron_HELP_15_00"); //J'aurais besoin de votre aide. Fajeth veut que je chasse les lÃ©zards, et...
+	AI_Output (self, other, "DIA_Tengron_HELP_07_01"); //Fajeth est le seul habilitÃ© Ã  me donner des ordres et il m'a dit de garder le site minier. Alors, c'est ce que je vais continuer Ã  faire.
+	AI_Output (self, other, "DIA_Tengron_HELP_07_02"); //Peut-Ãªtre que quelqu'un d'autre acceptera de vous aider.
 };
 
 

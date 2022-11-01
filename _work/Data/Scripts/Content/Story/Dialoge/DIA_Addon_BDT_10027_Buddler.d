@@ -36,15 +36,15 @@ FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//Comment ça va ?
+	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//Comment Ã§a va ?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//J'ai déjà bien assez travaillé pour le compte des barons du minerai. Content que quelqu'un creuse enfin à ma place...
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//J'ai dÃ©jÃ  bien assez travaillÃ© pour le compte des barons du minerai. Content que quelqu'un creuse enfin Ã  ma place...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Bon sang... il va falloir qu'on se remette à creuser nous-mêmes, pas vrai ?
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Bon sang... il va falloir qu'on se remette Ã  creuser nous-mÃªmes, pas vrai ?
 	};
 };
 //---------------------------------------------------------------------
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Tout est dans la tête, mon garçon. Le travail à la mine est un travail mental, avant tout. Il ne faut pas essayer de forcer la pierre - elle est plus dure que vous, de toutes façons.
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Libérez votre esprit de tout, et essayez de ne faire qu'un avec l'or. Ensuite, c'est une méditation, une prière.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Tout est dans la tÃªte, mon garÃ§on. Le travail Ã  la mine est un travail mental, avant tout. Il ne faut pas essayer de forcer la pierre - elle est plus dure que vous, de toutes faÃ§ons.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//LibÃ©rez votre esprit de tout, et essayez de ne faire qu'un avec l'or. Ensuite, c'est une mÃ©ditation, une priÃ¨re.
 	
 	B_Upgrade_Hero_HackChance(10);
 };

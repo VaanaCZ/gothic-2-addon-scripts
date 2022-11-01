@@ -9,8 +9,8 @@
 
 // visual effects config instance
 // WICHTIG:
-// die Parameter der Keys verändern die effekte/visuals nur wenn ein Wert ungleich NULL angegeben wird,
-// ausser bei INTEGER Variablen. Das heisst wenn ein KEY benutzt wird und ein Parameter den FX/das Visual ändern
+// die Parameter der Keys verÃ¤ndern die effekte/visuals nur wenn ein Wert ungleich NULL angegeben wird,
+// ausser bei INTEGER Variablen. Das heisst wenn ein KEY benutzt wird und ein Parameter den FX/das Visual Ã¤ndern
 // soll, so muss dieser bei Floats leicht von 0 verschieden sein (z.B. 0.000001).
 //
 // Parameter der Keys wirken sich immer nur auf den ersten definierten PFX aus, bei Multi-PFX's nicht auf die Childs
@@ -1206,9 +1206,9 @@ instance spellFX_BELIARSRAGE_COLLIDE		(CFx_Base_Proto)
 ///   													XXXXXXXXXXXXXXXXX
 
 // [EDENFELD] Die spellFX_Light_ACTIVE Instanz muss als Child mit eigener Trajectory an die Haupt spellFX_Light Instanz
-// gehängt werden, und darf erst beim Casten ein Visual bekommen.
+// gehÃ¤ngt werden, und darf erst beim Casten ein Visual bekommen.
 // nur so kann getestet werden, ob ein etwaiges gecastetes Licht noch aktiv ist. Vorher wurde die spellFX_Light_ACTIVE
-// Instanz über die emCreateFXID Variable getriggert. Die so erzeugten Effekte haben dann aber keinen Bezug mehr zum Licht Spell.
+// Instanz Ã¼ber die emCreateFXID Variable getriggert. Die so erzeugten Effekte haben dann aber keinen Bezug mehr zum Licht Spell.
 
 
 
@@ -1645,8 +1645,8 @@ instance spellFX_InstantFireball_FIRECLOUD		(CFx_Base_Proto)
      	emtrjloopmode_s 		= "NONE";
      	emtrjeasefunc_s 		= "LINEAR";
 		emTrjDynUpdateDelay	= 20000;
-     	emCheckCollision 		= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nötig, da dieser FX nicht als Child eingefügt wurde, sondern komplett
-     													// unabhängig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
+     	emCheckCollision 		= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nÃ¶tig, da dieser FX nicht als Child eingefÃ¼gt wurde, sondern komplett
+     													// unabhÃ¤ngig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
 		emActionCollDyn_S 		= "COLLIDE";
 		emActionCollStat_S 		= "COLLIDE";
 		};
@@ -2025,7 +2025,7 @@ INSTANCE spellFX_FireRain_RAIN		(CFx_Base_Proto)
 };
 
 
-INSTANCE spellFX_FireRain_SUB(CFx_Base_Proto)		// vorrübergehend, bis er hardcodiert nicht mehr gesucht wird
+INSTANCE spellFX_FireRain_SUB(CFx_Base_Proto)		// vorrÃ¼bergehend, bis er hardcodiert nicht mehr gesucht wird
 {
      	visname_S 				= "";
      	emtrjmode_s 			= "FIXED";
@@ -2133,7 +2133,7 @@ instance spellFX_PalHeal(CFx_Base_Proto)
 			emCreateFXID		= "spellFX_Heal_ORIGIN";
 };
 
-instance spellFX_PalHeal_START		(CFx_Base_Proto)			// HEAL START wird im 1. Invest-Key getriggert. Säule aus dem Boden.
+instance spellFX_PalHeal_START		(CFx_Base_Proto)			// HEAL START wird im 1. Invest-Key getriggert. SÃ¤ule aus dem Boden.
 {
 		visname_S 			= "MFX_Heal_Start";
 		sfxID			  	= "MFX_Heal_CAST";
@@ -2142,7 +2142,7 @@ instance spellFX_PalHeal_START		(CFx_Base_Proto)			// HEAL START wird im 1. Inve
 		emTrjOriginNode 	= "BIP01 R FOOT";
 };
 
-instance spellFX_PalHeal_ORIGIN	(CFx_Base_Proto)		// HEAL ORIGIN wird automatisch über emFXInvestOrigin_S getriggert. Aura um den Spieler
+instance spellFX_PalHeal_ORIGIN	(CFx_Base_Proto)		// HEAL ORIGIN wird automatisch Ã¼ber emFXInvestOrigin_S getriggert. Aura um den Spieler
 {
 		visname_S 			= "MFX_Heal_HEAVENLIGHT";
 		emTrjOriginNode 	= "BIP01";
@@ -2967,7 +2967,7 @@ INSTANCE spellFX_IceWave_WAVE_KEY_CAST		(C_ParticleFXEmitKey)
 
 
 
-INSTANCE spellFX_Icewave_SUB(CFx_Base_Proto)		// vorrübergehend, bis er hardcodiert nicht mehr gesucht wird
+INSTANCE spellFX_Icewave_SUB(CFx_Base_Proto)		// vorrÃ¼bergehend, bis er hardcodiert nicht mehr gesucht wird
 {
      	visname_S 				= "";
      	emtrjmode_s 			= "FIXED";
@@ -3399,7 +3399,7 @@ instance spellFX_Massdeath_LEFTHAND	(CFx_Base_Proto)
 
 };
 
-INSTANCE spellFX_MassDeath_SUB			(CFx_Base_Proto)		// vorrübergehend, bis er hardcodiert nicht mehr gesucht wird
+INSTANCE spellFX_MassDeath_SUB			(CFx_Base_Proto)		// vorrÃ¼bergehend, bis er hardcodiert nicht mehr gesucht wird
 {
      	visname_S 				= "";
      	emtrjmode_s 			= "FIXED";
@@ -4333,8 +4333,8 @@ instance spellFX_Deathbolt_FIRECLOUD		(CFx_Base_Proto)
      	emtrjloopmode_s 		= "NONE";
      	emtrjeasefunc_s 		= "LINEAR";
 		emTrjDynUpdateDelay	= 20000;
-     	emCheckCollision 		= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nötig, da dieser FX nicht als Child eingefügt wurde, sondern komplett
-     													// unabhängig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
+     	emCheckCollision 		= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nÃ¶tig, da dieser FX nicht als Child eingefÃ¼gt wurde, sondern komplett
+     													// unabhÃ¤ngig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
 		emActionCollDyn_S 		= "COLLIDE";
 		emActionCollStat_S 		= "COLLIDE";
 		};
@@ -4444,8 +4444,8 @@ instance spellFX_Deathball_FIRECLOUD		(CFx_Base_Proto)
      	emtrjloopmode_s 		= "NONE";
      	emtrjeasefunc_s 		= "LINEAR";
 		emTrjDynUpdateDelay	= 20000;
-     	emCheckCollision 		= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nötig, da dieser FX nicht als Child eingefügt wurde, sondern komplett
-     													// unabhängig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
+     	emCheckCollision 		= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nÃ¶tig, da dieser FX nicht als Child eingefÃ¼gt wurde, sondern komplett
+     													// unabhÃ¤ngig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
 		emActionCollDyn_S 		= "COLLIDE";
 		emActionCollStat_S 		= "COLLIDE";
 		};
@@ -4691,7 +4691,7 @@ instance spellFX_Lightning_TARGET			(CFx_Base_Proto)
 		emfxcreate_s	= "spellFX_Thunderspell_TARGET_CHILD1";
 };
 
-instance spellFX_Thunderspell_SENDPERCEPTION			(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_SENDPERCEPTION			(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 Head";
@@ -4704,7 +4704,7 @@ instance spellFX_Thunderspell_SENDPERCEPTION			(CFx_Base_Proto)			// gehört zu F
 };
 
 
-instance spellFX_Thunderspell_SENDPERCEPTION_CHILD1		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_SENDPERCEPTION_CHILD1		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 R UPPERARM";
@@ -4714,7 +4714,7 @@ instance spellFX_Thunderspell_SENDPERCEPTION_CHILD1		(CFx_Base_Proto)			// gehör
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD2		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD2		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 L UPPERARM";
@@ -4724,7 +4724,7 @@ instance spellFX_Thunderspell_TARGET_CHILD2		(CFx_Base_Proto)			// gehört zu FX-
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD3		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD3		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 L HAND";
@@ -4734,7 +4734,7 @@ instance spellFX_Thunderspell_TARGET_CHILD3		(CFx_Base_Proto)			// gehört zu FX-
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD4		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD4		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 R HAND";
@@ -4744,7 +4744,7 @@ instance spellFX_Thunderspell_TARGET_CHILD4		(CFx_Base_Proto)			// gehört zu FX-
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD5		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD5		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 L FOOT";
@@ -4754,7 +4754,7 @@ instance spellFX_Thunderspell_TARGET_CHILD5		(CFx_Base_Proto)			// gehört zu FX-
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD6		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD6		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 R FOOT";
@@ -4763,7 +4763,7 @@ instance spellFX_Thunderspell_TARGET_CHILD6		(CFx_Base_Proto)			// gehört zu FX-
 		emfxcreate_s	= "spellFX_Thunderspell_SENDPERCEPTION_CHILD7";
 		emFXCreatedOwnTrj 	= 1;
 };
-instance spellFX_Thunderspell_TARGET_CHILD7		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD7		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 L THIGH";
@@ -4772,7 +4772,7 @@ instance spellFX_Thunderspell_TARGET_CHILD7		(CFx_Base_Proto)			// gehört zu FX-
 		emfxcreate_s	= "spellFX_Thunderspell_SENDPERCEPTION_CHILD8";
 		emFXCreatedOwnTrj 	= 1;
 };
-instance spellFX_Thunderspell_TARGET_CHILD8		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD8		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 R THIGH";
@@ -4782,7 +4782,7 @@ instance spellFX_Thunderspell_TARGET_CHILD8		(CFx_Base_Proto)			// gehört zu FX-
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD9		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD9		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 L CALF";
@@ -4792,7 +4792,7 @@ instance spellFX_Thunderspell_TARGET_CHILD9		(CFx_Base_Proto)			// gehört zu FX-
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD10		(CFx_Base_Proto)			// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD10		(CFx_Base_Proto)			// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01 R CALF";
@@ -4802,7 +4802,7 @@ instance spellFX_Thunderspell_TARGET_CHILD10		(CFx_Base_Proto)			// gehört zu FX
 		emFXCreatedOwnTrj 	= 1;
 };
 
-instance spellFX_Thunderspell_TARGET_CHILD11		(CFx_Base_Proto)		// gehört zu FX-Kette. DO NOT DELETE
+instance spellFX_Thunderspell_TARGET_CHILD11		(CFx_Base_Proto)		// gehÃ¶rt zu FX-Kette. DO NOT DELETE
 {
 		visname_S 		= "MFX_Thunderball_Target";
 		emTrjOriginNode = "BIP01";
@@ -5007,7 +5007,7 @@ INSTANCE BLACK_SCREEN(CFx_Base_Proto)
  	userString[1]     	= "0 0 0 255";
  	userString[2]     	= "0";
  	visAlphaBlendFunc_S = "BLEND";
-	emFXLifeSpan    	= 2;						// Dauer is Sekunden (über timer skaliert)
+	emFXLifeSpan    	= 2;						// Dauer is Sekunden (Ã¼ber timer skaliert)
 };
 
 
@@ -5025,7 +5025,7 @@ INSTANCE SLEEP_BLEND(CFx_Base_Proto)
  	userString[1]     	= "0 0 0 255";
  	userString[2]     	= "0";
  	visAlphaBlendFunc_S = "BLEND";
-	emFXLifeSpan    	= 2;						// Dauer is Sekunden (über timer skaliert)
+	emFXLifeSpan    	= 2;						// Dauer is Sekunden (Ã¼ber timer skaliert)
 };
 
 
@@ -5681,8 +5681,8 @@ instance spellFX_InvisibleProjectile		(CFx_Base_Proto)
      	emtrjloopmode_s 	= "NONE";
      	emtrjeasefunc_s 	= "LINEAR";
 	emTrjDynUpdateDelay	= 20000;
-     	emCheckCollision 	= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nötig, da dieser FX nicht als Child eingefügt wurde, sondern komplett
-     													// unabhängig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
+     	emCheckCollision 	= 2;					// [EDENFELD, neu] 2: Coll, aber keinen Schaden abziehen (nÃ¶tig, da dieser FX nicht als Child eingefÃ¼gt wurde, sondern komplett
+     													// unabhÃ¤ngig mit Coll in die Welt gesetzt wurde. Der Schaden wird aber schon von spellFX_InstantFireball berechnet.)
 	emActionCollDyn_S 	= "COLLIDE";
 	emActionCollStat_S 	= "COLLIDE";
 	};

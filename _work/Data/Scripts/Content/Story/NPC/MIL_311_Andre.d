@@ -2,7 +2,7 @@
 instance Mil_311_Andre (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "André";	
+	name 		= "AndrÃ©";	
 	guild 		= GIL_MIL;
 	id 			= 311;
 	voice 		= 8;

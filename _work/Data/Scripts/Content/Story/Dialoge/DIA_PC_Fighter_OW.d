@@ -47,25 +47,25 @@ FUNC VOID DIA_GornOW_Hello_Info()
 	VAR C_NPC Milten;
 	Milten			= Hlp_GetNpc(PC_Mage_OW);
 	
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Assez paressé, vous voilà libre !
-	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //Pas trop tôt ! Il était grand temps qu’on me fasse sortir d’ici.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Par contre, je ne m’attendais pas à ce que ce soit vous. Ça me fait sacrément plaisir de vous voir.
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(sourit) Garond dit que vous mangez trop et qu’il ne peut plus se permettre de vous nourrir gratuitement.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Maintenant que vous m'y faites penser, je boirais bien une bière ou deux. Fichons le camp d'ici, j'en ai plus qu'assez de cette cellule !
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Assez paressÃ©, vous voilÃ  libre !
+	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //Pas trop tÃ´t ! Il Ã©tait grand temps quâ€™on me fasse sortir dâ€™ici.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Par contre, je ne mâ€™attendais pas Ã  ce que ce soit vous. Ã‡a me fait sacrÃ©ment plaisir de vous voir.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(sourit) Garond dit que vous mangez trop et quâ€™il ne peut plus se permettre de vous nourrir gratuitement.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Maintenant que vous m'y faites penser, je boirais bien une biÃ¨re ou deux. Fichons le camp d'ici, j'en ai plus qu'assez de cette cellule !
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Attendez, j’ai là quelque chose qui devrait vous être utile.
-		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //J’ai trouvé cette armure dans la cellule. Un prisonnier avait dû la cacher ici.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Attendez, jâ€™ai lÃ  quelque chose qui devrait vous Ãªtre utile.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //Jâ€™ai trouvÃ© cette armure dans la cellule. Un prisonnier avait dÃ» la cacher ici.
 		B_GiveInvItems (self, other, itar_sld_M, 1);
-		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Elle est trop petite pour moi, mais peut-être qu’elle vous irait...
+		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Elle est trop petite pour moi, mais peut-Ãªtre quâ€™elle vous irait...
 		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //Merci. Je vous rejoins chez Milten.
 	}
 	else
 	{
-		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//D’accord. On se retrouve là-bas.
+		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//Dâ€™accord. On se retrouve lÃ -bas.
 	};
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//Pas de problème.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//Pas de problÃ¨me.
 	
 	AI_StopProcessInfos (self);
 	
@@ -100,20 +100,20 @@ FUNC INT DIA_GornOW_MetMilten_Condition()
 };
 FUNC VOID DIA_GornOW_MetMilten_Info()
 {	
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Bon, je n’ai que trop traîné dans le coin. Il est grand temps de voir autre chose que cette vallée.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Comment avez-vous réussi à franchir le col ?
-	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//Il existe un passage par la mine abandonnée...
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Bien. J’attends le moment opportun et je file.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Bon, je nâ€™ai que trop traÃ®nÃ© dans le coin. Il est grand temps de voir autre chose que cette vallÃ©e.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Comment avez-vous rÃ©ussi Ã  franchir le col ?
+	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//Il existe un passage par la mine abandonnÃ©e...
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Bien. Jâ€™attends le moment opportun et je file.
 	
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//Où comptez-vous aller ?
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//J’ai entendu dire que Lee était encore en vie. J’aimerais bien le retrouver.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//OÃ¹ comptez-vous aller ?
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Jâ€™ai entendu dire que Lee Ã©tait encore en vie. Jâ€™aimerais bien le retrouver.
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//Dans ce cas, allez à la ferme d’Onar. C’est là que se trouvent Lee et ses hommes. Il a besoin d’hommes de confiance tels que vous.
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//C’est ce que je vais faire. Comme ça je verrai bien comment ils se débrouillent là-bas.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//Dans ce cas, allez Ã  la ferme dâ€™Onar. Câ€™est lÃ  que se trouvent Lee et ses hommes. Il a besoin dâ€™hommes de confiance tels que vous.
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//Câ€™est ce que je vais faire. Comme Ã§a je verrai bien comment ils se dÃ©brouillent lÃ -bas.
 	};
 };	
 

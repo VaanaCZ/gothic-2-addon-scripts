@@ -118,7 +118,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht für 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht fÃ¼r 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {
@@ -194,7 +194,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	
 INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 {
-	name 			=	"Hareng pressé";
+	name 			=	"Hareng pressÃ©";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -206,7 +206,7 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0]		=	UseSchnellerHering;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Ça a l'air dangereux !";
+	description		= 	"Ã‡a a l'air dangereux !";
 	
 	TEXT[1]			= 	"Effets inconnus.";				
 	TEXT[2]			=	"Effets secondaires probables";
@@ -248,7 +248,7 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 		
 	description			= 	"Sac de piments rouges forts";
 	
-	TEXT[0]				= 	"En provenance des îles du sud";
+	TEXT[0]				= 	"En provenance des Ã®les du sud";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"ATTENTION, TRES FORT !";
@@ -283,14 +283,14 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 		B_RaiseAttribute 	(self,	ATR_STRENGTH,	STR_FireStew);
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS_MAX,	HP_FireStew);
 		
-		PrintScreen ("Force et énergie vitale accrues !", -1, 34, FONT_ScreenSmall,2); 
+		PrintScreen ("Force et Ã©nergie vitale accrues !", -1, 34, FONT_ScreenSmall,2); 
 	};
 //-------------------------------------------------------
 // Fleischsuppe
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Meatsoup (C_Item)
 {	
-	name 				=	"Ragoût";
+	name 				=	"RagoÃ»t";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -302,7 +302,7 @@ INSTANCE ItFo_Addon_Meatsoup (C_Item)
 	scemeName			=	"RICE";
 	on_state[0]			=	Use_MeatSoup;
 
-	description			= 	"Ragoût fumant";
+	description			= 	"RagoÃ»t fumant";
 	TEXT[1]				= 	NAME_Bonus_STR;		COUNT[1]	= STR_MeatSoup;
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_FishSoup;
 

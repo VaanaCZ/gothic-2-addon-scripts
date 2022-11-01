@@ -41,12 +41,12 @@ func int DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Condition ()
 
 func void DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Info ()
 {
-	AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_00"); //Eh ! Clochard ! Tu ne serait pas tombé sur ce mouton des fois ?
+	AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_00"); //Eh ! Clochard ! Tu ne serait pas tombÃ© sur ce mouton des fois ?
 
 	if (MIS_Akil_SchafDiebe == 0)
 	{
 		AI_Output			(other, self, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_15_01"); //Un mouton ? Quel mouton ?
-		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //Voilà un brave gars. Maintenant dégage. Il n'y a rien pour toi ici.
+		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //VoilÃ  un brave gars. Maintenant dÃ©gage. Il n'y a rien pour toi ici.
 	};
 };
 
@@ -96,7 +96,7 @@ instance DIA_NAME_BANDIT_RUECKDASSCHAFRAUS		(C_INFO)
 	information	 = 	DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vous avez volé un mouton au fermier Akil.";
+	description	 = 	"Vous avez volÃ© un mouton au fermier Akil.";
 };
 
 func int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Condition ()
@@ -110,12 +110,12 @@ func int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Condition ()
 var int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_NoPerm;
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_15_00"); //Vous avez volé un mouton au fermier Akil.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_15_00"); //Vous avez volÃ© un mouton au fermier Akil.
 	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_09_01"); //Et alors ? Qu'est-ce que vous comptez faire ?
 	
 	Info_ClearChoices	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS);
 	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Rien. Que voulez-vous que je fasse d'un mouton stupide ?", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Donnez-moi ce mouton ou je vous mets une raclée.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Donnez-moi ce mouton ou je vous mets une raclÃ©e.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
 
 };
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
@@ -133,8 +133,8 @@ func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //Rien. Qu'est-ce que je peux avoir à faire d'un stupide mouton ?
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //Alors arrêtez de me taper sur les nerfs et fichez le camp.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //Rien. Qu'est-ce que je peux avoir Ã  faire d'un stupide mouton ?
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //Alors arrÃªtez de me taper sur les nerfs et fichez le camp.
 	hero.aivar[AIV_LastDistToWP] 	= Npc_GetDistToWP (hero,"NW_FOREST_CAVE1_IN_01");
 	AI_StopProcessInfos (self);
 };

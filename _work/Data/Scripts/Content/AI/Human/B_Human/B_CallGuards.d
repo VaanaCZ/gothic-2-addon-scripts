@@ -46,7 +46,7 @@ func void B_CallGuards()
 		return;
 	};		
 	
-	// ------ Enemy = Mensch oder Monster ODER Mörder ------
+	// ------ Enemy = Mensch oder Monster ODER MÃ¶rder ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_GuildEnemy)
 	|| (self.aivar[AIV_ATTACKREASON] == AR_HumanMurderedHuman)
 	{
@@ -90,7 +90,7 @@ func void B_CallGuards()
 		return;
 	};
 	
-	// ------ Täter hat trotz zweimaliger Warnung Waffe nicht weggesteckt ------
+	// ------ TÃ¤ter hat trotz zweimaliger Warnung Waffe nicht weggesteckt ------
 	if (self.aivar[AIV_ATTACKREASON] == AR_ReactToWeapon)
 	{
 		if (!C_NpcIsToughGuy(self))

@@ -9,7 +9,7 @@ const int	Value_Addon_Joint_01		=  60;
 //---------------------------------------------------------------------
 INSTANCE ItMi_GoldNugget_Addon(C_Item)
 {
-	name 		=	"Pépite d'or";
+	name 		=	"PÃ©pite d'or";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;
@@ -28,7 +28,7 @@ INSTANCE ItMi_GoldNugget_Addon(C_Item)
 	
 };
 //---------------------------------------------------------------------
-//	Weiße Perle
+//	WeiÃŸe Perle
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_WhitePearl (C_Item)
 {
@@ -49,7 +49,7 @@ INSTANCE ItMi_Addon_WhitePearl (C_Item)
 	INV_ZBIAS			= INVCAM_ENTF_MISC_STANDARD;
 };
 //---------------------------------------------------------------------
-//	Grüner Novize
+//	GrÃ¼ner Novize
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Joint_01(C_Item)
 {
@@ -112,7 +112,7 @@ INSTANCE ItMi_BaltramPaket(C_Item)
 };
 
 //****************************************************************************
-//				Baltrams Lieferung für Skip
+//				Baltrams Lieferung fÃ¼r Skip
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
@@ -131,13 +131,13 @@ INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 	description			= 	name;
 	TEXT[2]				= 	"Ce lourd paquet";
 	TEXT[3]				=	"de bonnes choses.";
-	TEXT[4]				=	"est destiné au pirate Skip";
+	TEXT[4]				=	"est destinÃ© au pirate Skip";
 	
 };
 /******************************************************************************************/
 INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 {
-	name 				=	"Ecuelle dorée de Bromor";
+	name 				=	"Ecuelle dorÃ©e de Bromor";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -148,9 +148,9 @@ INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[2]				= 	"Le nom 'Bromor' a été";
-	TEXT[3]				=	"gravé dans le fond de l'écuelle";
-	TEXT[4]				=	"à l'aide d'un objet pointu.";
+	TEXT[2]				= 	"Le nom 'Bromor' a Ã©tÃ©";
+	TEXT[3]				=	"gravÃ© dans le fond de l'Ã©cuelle";
+	TEXT[4]				=	"Ã  l'aide d'un objet pointu.";
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
 };
@@ -172,8 +172,8 @@ INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"Une étiquette portant le nom 'Cavalorn'";
-	TEXT[2]				= 	"est accrochée à la bandoulière du sac";
+	TEXT[1]				= 	"Une Ã©tiquette portant le nom 'Cavalorn'";
+	TEXT[2]				= 	"est accrochÃ©e Ã  la bandouliÃ¨re du sac";
 	TEXT[3]				= 	"Il contient 1 bloc de minerai";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -186,7 +186,7 @@ FUNC VOID Use_CavalornsBeutel ()
 		SC_OpenedCavalornsBeutel = TRUE;
 		Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CavalornTheHut,"J'ai trouvé un sac contenant 1 bloc de minerai près de la hutte de Cavalorn, dans la Vallée des mines. Ce vieux brigand de Cavalorn a dû l'oublier ici.");
+		B_LogEntry (TOPIC_Addon_CavalornTheHut,"J'ai trouvÃ© un sac contenant 1 bloc de minerai prÃ¨s de la hutte de Cavalorn, dans la VallÃ©e des mines. Ce vieux brigand de Cavalorn a dÃ» l'oublier ici.");
 };
 
 //**************************************
@@ -194,7 +194,7 @@ FUNC VOID Use_CavalornsBeutel ()
 //**************************************
 instance ItMi_Skull(C_Item)
 {
-	name 				=	"Crâne";
+	name 				=	"CrÃ¢ne";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;

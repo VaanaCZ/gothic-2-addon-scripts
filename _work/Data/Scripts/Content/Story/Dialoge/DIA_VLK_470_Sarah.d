@@ -81,7 +81,7 @@ func int DIA_Sarah_Greet_Condition ()
 };
 func void DIA_Sarah_Greet_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_Add_16_07"); //Ah, vous revoilà !
+	AI_Output (self, other, "DIA_Sarah_Add_16_07"); //Ah, vous revoilÃ Â !
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -102,14 +102,14 @@ func int DIA_Sarah_HALLO_Condition ()
 };
 func void DIA_Sarah_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Comment vont les affaires ?
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Quand les paladins sont arrivés, j'ai tout d'abord cru que ce serait bénéfique pour le commerce...
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Mais ils ont chargé Harad de forger toutes leurs armes, et ni Hakon ni moi-même ne leur vendons quoi que ce soit.
+	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Comment vont les affairesÂ ?
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Quand les paladins sont arrivÃ©s, j'ai tout d'abord cru que ce serait bÃ©nÃ©fique pour le commerce...
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Mais ils ont chargÃ© Harad de forger toutes leurs armes, et ni Hakon ni moi-mÃªme ne leur vendons quoi que ce soit.
 	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Comme si cela ne suffisait pas, les fermiers ne nous livrent plus en nourriture et les prix flambent.
-	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Certes, les paladins payent ma note d'hôtel, mais c'est une bien piètre consolation...
+	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Certes, les paladins payent ma note d'hÃ´tel, mais c'est une bien piÃ¨tre consolation...
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Sarah vend des armes sur la place du marché.");	
+	B_LogEntry (Topic_CityTrader,"Sarah vend des armes sur la place du marchÃ©.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Bauern
@@ -121,7 +121,7 @@ instance DIA_Sarah_Bauern		(C_INFO)
 	condition	 = 	DIA_Sarah_Bauern_Condition;
 	information	 = 	DIA_Sarah_Bauern_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Quel est le problème avec les fermiers ?";
+	description	 = 	"Quel est le problÃ¨me avec les fermiers ?";
 };
 
 func int DIA_Sarah_Bauern_Condition ()
@@ -133,13 +133,13 @@ func int DIA_Sarah_Bauern_Condition ()
 };
 func void DIA_Sarah_Bauern_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Quel est le problème, avec les fermiers ?
+	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Quel est le problÃ¨me, avec les fermiersÂ ?
 	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Ils refusent de nous livrer.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Et maintenant que les bateaux n'arrivent plus, la ville dépend bien sûr totalement de la nourriture livrée par les fermiers.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //Onar, le plus grand fermier de la région, a engagé des mercenaires afin de protéger son exploitation des gardes de la ville, sans quoi ces derniers iraient se servir chez lui sans lui demander son avis.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Et maintenant que les bateaux n'arrivent plus, la ville dÃ©pend bien sÃ»r totalement de la nourriture livrÃ©e par les fermiers.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //Onar, le plus grand fermier de la rÃ©gion, a engagÃ© des mercenaires afin de protÃ©ger son exploitation des gardes de la ville, sans quoi ces derniers iraient se servir chez lui sans lui demander son avis.
 	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Mais les mercenaires ne se contentent pas de garder la ferme d'Onar.
-	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Ils se rendent également aux autres fermes afin d'intimider les petits fermiers.
-	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Je les ai vus faire quand je suis passée devant la ferme d'Akil. Je n'aimerais pas être à la place de ce dernier.
+	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Ils se rendent Ã©galement aux autres fermes afin d'intimider les petits fermiers.
+	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Je les ai vus faire quand je suis passÃ©e devant la ferme d'Akil. Je n'aimerais pas Ãªtre Ã  la place de ce dernier.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -152,7 +152,7 @@ instance DIA_Sarah_AkilsHof		(C_INFO)
 	condition	 = 	DIA_Sarah_AkilsHof_Condition;
 	information	 = 	DIA_Sarah_AkilsHof_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Où puis-je trouver la ferme d'Akil ?";
+	description	 = 	"OÃ¹ puis-je trouver la ferme d'Akil ?";
 };
 
 func int DIA_Sarah_AkilsHof_Condition ()
@@ -164,10 +164,10 @@ func int DIA_Sarah_AkilsHof_Condition ()
 };
 func void DIA_Sarah_AkilsHof_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Où se trouve la ferme d'Akil ?
-	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Sortez de la ville par la porte est et prenez la route de droite. Vous finirez par arriver à un escalier.
+	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //OÃ¹ se trouve la ferme d'AkilÂ ?
+	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Sortez de la ville par la porte est et prenez la route de droite. Vous finirez par arriver Ã  un escalier.
 	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //Empruntez-le pour atteindre la ferme d'Akil.
-	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Mais je vous déconseille d'y aller maintenant... les mercenaires doivent encore s'y trouver.
+	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Mais je vous dÃ©conseille d'y aller maintenant... les mercenaires doivent encore s'y trouver.
 };
 
 
@@ -225,8 +225,8 @@ func int DIA_Sarah_IMKNAST_Condition ()
 };
 func void DIA_Sarah_IMKNAST_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Vous ? Vous osez revenir ici ? Il m'est impossible de le prouver, mais je suis sûre que vous avez joué un rôle dans ce sale tour !
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //C'est votre faute si je suis ici, à vous et à ce maudit Canthar ! Puisse Innos vous châtier tous les deux !
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //VousÂ ? Vous osez revenir iciÂ ? Il m'est impossible de le prouver, mais je suis sÃ»re que vous avez jouÃ© un rÃ´le dans ce sale tourÂ !
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //C'est votre faute si je suis ici, Ã  vous et Ã  ce maudit CantharÂ ! Puisse Innos vous chÃ¢tier tous les deuxÂ !
 	
 	AI_StopProcessInfos (self);
 };
@@ -254,8 +254,8 @@ func int DIA_Sarah_Success_Condition ()
 };
 func void DIA_Sarah_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Oui voulait vous tendre un piège afin de s'emparer de votre emplacement, mais je l'ai dénoncé aux gardes.
-	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Alors, vous vous êtes fait un dangereux ennemi. Je connais cet ignoble individu depuis longtemps, et il a toujours cherché à me voler mon emplacement.
+	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Oui voulait vous tendre un piÃ¨ge afin de s'emparer de votre emplacement, mais je l'ai dÃ©noncÃ© aux gardes.
+	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Alors, vous vous Ãªtes fait un dangereux ennemi. Je connais cet ignoble individu depuis longtemps, et il a toujours cherchÃ© Ã  me voler mon emplacement.
 	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Prenez cette arme en guise de remerciement de ma part.
 	
 	B_GivePlayerXP (XP_CantharImKnast);

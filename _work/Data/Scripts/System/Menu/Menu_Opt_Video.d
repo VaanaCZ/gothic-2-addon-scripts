@@ -32,7 +32,7 @@ INSTANCE MENU_OPT_VIDEO(C_MENU_DEF)
 
 INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Paramètres vidéo";
+	text[0]		=	"ParamÃ¨tres vidÃ©o";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -51,7 +51,7 @@ INSTANCE MENUITEM_VID_DEVICE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Carte graph.";
-	text[1]		=	"Redémarrez pour que les modifications soient prises en compte."; // Kommentar
+	text[1]		=	"RedÃ©marrez pour que les modifications soient prises en compte."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
@@ -87,8 +87,8 @@ INSTANCE MENUITEM_VID_DEVICE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_RESOLUTION(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Résolution";
-	text[1]		= "Choix résolution et APPUYEZ SUR ENTREE"; // Kommentar
+	text[0]		= "RÃ©solution";
+	text[1]		= "Choix rÃ©solution et APPUYEZ SUR ENTREE"; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_DY*1;
@@ -124,8 +124,8 @@ INSTANCE MENUITEM_VID_RESOLUTION_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_BRIGHTNESS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Luminosité";
-	text[1]		= "Luminosité"; // Kommentar
+	text[0]		= "LuminositÃ©";
+	text[1]		= "LuminositÃ©"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;

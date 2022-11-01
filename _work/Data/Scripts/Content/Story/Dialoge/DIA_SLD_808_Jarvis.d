@@ -45,9 +45,9 @@ FUNC INT DIA_Jarvis_Hello_Condition()
  
 FUNC VOID DIA_Jarvis_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Hé ! On se connaît ?
-	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //C'est possible. J'étais à la colonie moi aussi.
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //Ah, oui, c'est ça. Qu'est-ce que vous me voulez ?
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //HÃ©Â ! On se connaÃ®tÂ ?
+	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //C'est possible. J'Ã©tais Ã  la colonie moi aussi.
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //Ah, oui, c'est Ã§a. Qu'est-ce que vous me voulezÂ ?
 };
 	
 // ************************************************************
@@ -60,7 +60,7 @@ instance DIA_Jarvis_DieLage (C_INFO)
 	condition	= DIA_Jarvis_DieLage_Condition;
 	information	= DIA_Jarvis_DieLage_Info;
 	permanent	= FALSE;
-	description = "Comment ça se passe ?";
+	description = "Comment Ã§a se passe ?";
 };                       
 
 FUNC INT DIA_Jarvis_DieLage_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_Jarvis_DieLage_Condition()
  
 FUNC VOID DIA_Jarvis_DieLage_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Comment ça va ?
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //Nous avons de gros ennuis en ce moment. Deux factions commencent à se dessiner au sein de notre groupe.
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Sylvio et ses fidèles pensent que le plan de Lee n'est pas le bon.
+	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Comment Ã§a va ?
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //Nous avons de gros ennuis en ce moment. Deux factions commencent Ã  se dessiner au sein de notre groupe.
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Sylvio et ses fidÃ¨les pensent que le plan de Lee n'est pas le bon.
 };
 	
 // ************************************************************
@@ -98,14 +98,14 @@ FUNC INT DIA_Jarvis_TwoFronts_Condition()
  
 FUNC VOID DIA_Jarvis_TwoFronts_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Comment se fait-il qu'il y ait deux factions différentes ?
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //Pour la plupart, on vient de la colonie et on est sous les ordres de Lee depuis le début.
+	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Comment se fait-il qu'il y ait deux factions diffÃ©rentesÂ ?
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //Pour la plupart, on vient de la colonie et on est sous les ordres de Lee depuis le dÃ©but.
 	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //Mais certains nous ont rejoints par la suite.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //Eux venaient du sud, où ils avaient affronté les orques.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //Sans qu'on sache comment, ils ont entendu dire que Lee avait besoin d'hommes. Sylvio était à leur tête.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //Il a accepté de laisser le commandement à Lee mais maintenant, il essaye de fomenter une rébellion.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //La plupart des hommes de Lee pensent que ce n'est pas vraiment un problème, mais je connais les types comme Sylvio.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Il est prêt à tout pour réaliser son ambition.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //Eux venaient du sud, oÃ¹ ils avaient affrontÃ© les orques.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //Sans qu'on sache comment, ils ont entendu dire que Lee avait besoin d'hommes. Sylvio Ã©tait Ã  leur tÃªte.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //Il a acceptÃ© de laisser le commandement Ã  Lee mais maintenant, il essaye de fomenter une rÃ©bellion.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //La plupart des hommes de Lee pensent que ce n'est pas vraiment un problÃ¨me, mais je connais les types comme Sylvio.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Il est prÃªt Ã  tout pour rÃ©aliser son ambition.
 };
 	
 // ************************************************************
@@ -131,13 +131,13 @@ FUNC INT DIA_Jarvis_LeesPlan_Condition()
  
 FUNC VOID DIA_Jarvis_LeesPlan_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //Savez-vous ce que Lee compte faire ?
+	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //Savez-vous ce que Lee compte faireÂ ?
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 	{
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Il veut attendre que les paladins de la ville n'aient plus à manger.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Il veut attendre que les paladins de la ville n'aient plus Ã  manger.
 	};
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Il a l'intention de nous faire quitter l'île à tous. Et Innos m'en est témoin, c'est vrai que ça ne me déplairait pas le moins du monde.
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //Je ne sais pas comment il compte procéder, mais je lui fais confiance. Jusque-là, on n'a pas eu à se plaindre de lui.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Il a l'intention de nous faire quitter l'Ã®le Ã  tous. Et Innos m'en est tÃ©moin, c'est vrai que Ã§a ne me dÃ©plairait pas le moins du monde.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //Je ne sais pas comment il compte procÃ©der, mais je lui fais confiance. Jusque-lÃ , on n'a pas eu Ã  se plaindre de lui.
 };
 
 // ************************************************************
@@ -150,7 +150,7 @@ instance DIA_Jarvis_SylviosPlan (C_INFO)
 	condition	= DIA_Jarvis_SylviosPlan_Condition;
 	information	= DIA_Jarvis_SylviosPlan_Info;
 	permanent	= FALSE;
-	description = "Savez-vous ce que prépare Sylvio ?";
+	description = "Savez-vous ce que prÃ©pare Sylvio ?";
 };                       
 
 FUNC INT DIA_Jarvis_SylviosPlan_Condition()
@@ -163,10 +163,10 @@ FUNC INT DIA_Jarvis_SylviosPlan_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosPlan_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //Savez-vous ce que Sylvio mijote ?
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Il a découvert qu'une partie des paladins sont retournés à l'ancienne colonie.
+	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //Savez-vous ce que Sylvio mijoteÂ ?
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Il a dÃ©couvert qu'une partie des paladins sont retournÃ©s Ã  l'ancienne colonie.
 	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //Selon lui, ceux qui restent n'oseront jamais nous attaquer ici et il souhaite tirer profit de la situation.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //Son plan est simple : piller les petits fermes, attaquer les patrouilles auxquelles la milice se livre en dehors de la ville, dévaliser les voyageurs, ce genre de choses.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //Son plan est simpleÂ : piller les petits fermes, attaquer les patrouilles auxquelles la milice se livre en dehors de la ville, dÃ©valiser les voyageurs, ce genre de choses.
 	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //Mais Lee pense que c'est ce que nous pourrions faire de pire compte tenu de la situation.
 };
 
@@ -193,11 +193,11 @@ FUNC INT DIA_Jarvis_WannaJoin_Condition()
  
 FUNC VOID DIA_Jarvis_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //Je veux devenir un mercenaire !
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Je ne pense pas que ce soit une bonne idée...
-	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //Quel est le problème ?
+	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //Je veux devenir un mercenaireÂ !
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Je ne pense pas que ce soit une bonne idÃ©e...
+	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //Quel est le problÃ¨meÂ ?
 	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //Eh bien, il me faudrait voter pour ou contre vous.
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //Et compte tenu de la situation, je ne pourrais voter pour vous que si j'avais la certitude que vous êtes du côté de Lee.
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //Et compte tenu de la situation, je ne pourrais voter pour vous que si j'avais la certitude que vous Ãªtes du cÃ´tÃ© de Lee.
 };
 
 // ************************************************************
@@ -224,15 +224,15 @@ FUNC INT DIA_Jarvis_MissionKO_Condition()
  
 FUNC VOID DIA_Jarvis_MissionKO_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //Que faut-il que je fasse pour vous en convaincre ?
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //C'est simple : tabassez quelques types de Sylvio. De cette façon, les deux camps sauront à quoi s'en tenir avec vous.
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //Et si vous respectez les règles des duels, vous gagnerez même le respect des autres.
+	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //Que faut-il que je fasse pour vous en convaincreÂ ?
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //C'est simpleÂ : tabassez quelques types de Sylvio. De cette faÃ§on, les deux camps sauront Ã  quoi s'en tenir avec vous.
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //Et si vous respectez les rÃ¨gles des duels, vous gagnerez mÃªme le respect des autres.
 	
 	MIS_Jarvis_SldKO = LOG_RUNNING;
 	self.aivar[AIV_IGNORE_Murder] = TRUE;
 	Log_CreateTopic (TOPIC_JarvisSLDKo,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_JarvisSLDKo,LOG_RUNNING);
-	B_LogEntry (TOPIC_JarvisSLDKo,"Jarvis veut que je triomphe de quelques gars de Sylvio. Après il me donnera son vote.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Jarvis veut que je triomphe de quelques gars de Sylvio. AprÃ¨s il me donnera son vote.");
 };
 
 // ************************************************************
@@ -245,7 +245,7 @@ instance DIA_Jarvis_DuellRegeln (C_INFO)
 	condition	= DIA_Jarvis_DuellRegeln_Condition;
 	information	= DIA_Jarvis_DuellRegeln_Info;
 	permanent	= FALSE;
-	description = "Quelles sont les règles d'un duel ?";
+	description = "Quelles sont les rÃ¨gles d'un duel ?";
 };                       
 
 FUNC INT DIA_Jarvis_DuellRegeln_Condition()
@@ -258,11 +258,11 @@ FUNC INT DIA_Jarvis_DuellRegeln_Condition()
  
 FUNC VOID DIA_Jarvis_DuellRegeln_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Quelles sont les règles en vigueur au cours d'un duel ?
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //Si ça vous intéresse, allez voir Torlof. Il vous expliquera tout ça.
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //Et pour qu'il n'y ait pas de malentendu entre nous : moi, je m'en moque, que vous respectiez les règles ou non. Tout ce que je vous demande, c'est que les types que vous choisirez finissent le nez dans la gadoue.
+	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Quelles sont les rÃ¨gles en vigueur au cours d'un duelÂ ?
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //Si Ã§a vous intÃ©resse, allez voir Torlof. Il vous expliquera tout Ã§a.
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //Et pour qu'il n'y ait pas de malentendu entre nousÂ : moi, je m'en moque, que vous respectiez les rÃ¨gles ou non. Tout ce que je vous demande, c'est que les types que vous choisirez finissent le nez dans la gadoue.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Et je n'ai même pas besoin de respecter les règles du duel...");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Et je n'ai mÃªme pas besoin de respecter les rÃ¨gles du duel...");
 };
 
 // ************************************************************
@@ -288,12 +288,12 @@ FUNC INT DIA_Jarvis_SylviosMen_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosMen_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //Qui sont les hommes de Sylvio ?
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Ils sont six en tout. Il y a d'abord Sylvio lui-même et son bras droit, Bullco.
+	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //Qui sont les hommes de SylvioÂ ?
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Ils sont six en tout. Il y a d'abord Sylvio lui-mÃªme et son bras droit, Bullco.
 	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_02"); //Plus Rod, Sentenza, Fester et Raoul.
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //Les autres sont soit neutres, soit du côté de Lee.
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //Les autres sont soit neutres, soit du cÃ´tÃ© de Lee.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Les hommes de Sylvio sont Sylvio lui-même, son lieutenant Bullco, Rod, Sentenza, Fester et Raoul.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Les hommes de Sylvio sont Sylvio lui-mÃªme, son lieutenant Bullco, Rod, Sentenza, Fester et Raoul.");
 };
 
 // ************************************************************
@@ -320,11 +320,11 @@ FUNC INT DIA_Jarvis_HowMany_Condition()
 FUNC VOID DIA_Jarvis_HowMany_Info()
 {	
 	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //Combien d'hommes de Sylvio dois-je battre ?
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Faites mordre la poussière à trois d'entre eux et vous aurez prouvé dans quel camp vous êtes.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Choisissez ceux que vous voulez, ça ne me regarde pas.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //Oh, juste un conseil : il ne s'agit pas de faire la preuve de votre courage, alors, ne défiez surtout pas Sylvio. Il vous réduirait en bouillie.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Faites mordre la poussiÃ¨re Ã  trois d'entre eux et vous aurez prouvÃ© dans quel camp vous Ãªtes.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Choisissez ceux que vous voulez, Ã§a ne me regarde pas.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //Oh, juste un conseilÂ : il ne s'agit pas de faire la preuve de votre courage, alors, ne dÃ©fiez surtout pas Sylvio. Il vous rÃ©duirait en bouillie.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Si je triomphe de trois des hommes de Sylvio, cela suffira. Mais je ferais bien d'éviter de défier Sylvio.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Si je triomphe de trois des hommes de Sylvio, cela suffira. Mais je ferais bien d'Ã©viter de dÃ©fier Sylvio.");
 };
 
 // ************************************************************
@@ -337,7 +337,7 @@ instance DIA_Jarvis_HowManyLeft (C_INFO)
 	condition	= DIA_Jarvis_HowManyLeft_Condition;
 	information	= DIA_Jarvis_HowManyLeft_Info;
 	permanent	= TRUE;
-	description = "Combien reste-t-il d’hommes de Sylvio sur ma liste ?";
+	description = "Combien reste-t-il dâ€™hommes de Sylvio sur ma liste ?";
 };                       
 
 FUNC INT DIA_Jarvis_HowManyLeft_Condition()
@@ -351,7 +351,7 @@ FUNC INT DIA_Jarvis_HowManyLeft_Condition()
  
 FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Il y a encore combien d'hommes de Sylvio sur ma liste ?
+	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Il y a encore combien d'hommes de Sylvio sur ma listeÂ ?
 	
 	var int victories;
 	victories = 0;
@@ -360,7 +360,7 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	|| (Bullco.aivar[AIV_KilledByPlayer] == TRUE)
 	{
 		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_01"); //J'ai battu Bullco.
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //Il paraît. Pas mal.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //Il paraÃ®t. Pas mal.
 		victories = victories + 1; 
 
 	};
@@ -375,11 +375,11 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (Npc_KnowsInfo (other, DIA_Sentenza_Hello))
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Sentenza a essayé de me racketter. C'était pas une bonne idée.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Sentenza a essayÃ© de me racketter. C'Ã©tait pas une bonne idÃ©e.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_05"); //J'ai assommé Sentenza.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_05"); //J'ai assommÃ© Sentenza.
 		};
 
 		victories = victories + 1;
@@ -394,7 +394,7 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Fester n'a eu que ce qu'il méritait.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Fester n'a eu que ce qu'il mÃ©ritait.
 		};
 		victories = victories + 1;
 	};
@@ -404,15 +404,15 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (victories == 0)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //Quant à Raoul...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //Quant Ã  Raoul...
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //Je suis allé voir Raoul.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //Je suis allÃ© voir Raoul.
 		};
 	
 		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_10"); //Et ?
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //Il avait besoin d'une bonne raclée pour se remettre les idées en place.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //Il avait besoin d'une bonne raclÃ©e pour se remettre les idÃ©es en place.
 		victories = victories + 1;
 	};
 	
@@ -422,22 +422,22 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{	
 		if (victories == 0)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //Vous n'avez pas encore cogné le moindre homme de Sylvio.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //Vous n'avez pas encore cognÃ© le moindre homme de Sylvio.
 		}
 		else // 1-2
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //Bien. Continuez comme ça.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //Bien. Continuez comme Ã§a.
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //Je tiens à ce que vous en assommiez au moins trois.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //Je tiens Ã  ce que vous en assommiez au moins trois.
 	}
 	else // 3 oder mehr
 	{	
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //C'est bon, ça suffira.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //C'est bon, Ã§a suffira.
 		if (victories == 6)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //Vous leur avez vraiment refait le portrait à tous, hein ?
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //Vous leur avez vraiment refait le portrait Ã  tous, heinÂ ?
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //Très impressionnant. Si Lee me demande mon avis, je voterai pour vous sans la moindre hésitation.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //TrÃ¨s impressionnant. Si Lee me demande mon avis, je voterai pour vous sans la moindre hÃ©sitation.
 		
 		MIS_Jarvis_SldKO = LOG_SUCCESS;
 		
@@ -451,7 +451,7 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 
 // ###############################
 // ##							##
-// 			Höhere Gilden
+// 			HÃ¶here Gilden
 // ##							##
 // ###############################
 
@@ -491,11 +491,11 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 			if (other.guild == GIL_SLD)
 			|| (other.guild == GIL_DJG)
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //Vous êtes des nôtres désormais. C'est une bonne nouvelle.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //Vous Ãªtes des nÃ´tres dÃ©sormais. C'est une bonne nouvelle.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //Vous avez fait le mauvais choix. Vous auriez pu être des nôtres.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //Vous avez fait le mauvais choix. Vous auriez pu Ãªtre des nÃ´tres.
 			};
 		
 			Jarvis_GuildComment = TRUE;
@@ -510,13 +510,13 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 	{
 		if (Jarvis_SylvioComment == FALSE)
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Sylvio nous a enfin débarrassé le plancher. Quand il a entendu parler des dragons, lui et plusieurs de ses hommes sont partis en direction de la colonie minière.
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //Il croit sans doute qu'il pourra s'enrichir là-bas.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Sylvio nous a enfin dÃ©barrassÃ© le plancher. Quand il a entendu parler des dragons, lui et plusieurs de ses hommes sont partis en direction de la colonie miniÃ¨re.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //Il croit sans doute qu'il pourra s'enrichir lÃ -bas.
 			Jarvis_SylvioComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Rien. Tout est calme pour le moment. Je me demande comment tout ça va se finir...
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Rien. Tout est calme pour le moment. Je me demande comment tout Ã§a va se finir...
 		};
 	};
 };

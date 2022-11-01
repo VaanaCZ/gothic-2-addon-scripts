@@ -51,7 +51,7 @@ FUNC VOID DIA_Igaraz_Hello_Info()
 {
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self ,other,"DIA_Igaranz_Hello_13_00"); //Que puis-je faire pour vous, mon frère ?
+		AI_Output (self ,other,"DIA_Igaranz_Hello_13_00"); //Que puis-je faire pour vous, mon frÃ¨re ?
 	}
 	else
 	{
@@ -68,7 +68,7 @@ INSTANCE DIA_Igaraz_Wurst(C_INFO)
 	condition	= DIA_Igaraz_Wurst_Condition;
 	information	= DIA_Igaraz_Wurst_Info;
 	permanent	= FALSE;
-	description = "Je suis occupé à distribuer les saucisses.";
+	description = "Je suis occupÃ© Ã  distribuer les saucisses.";
 };                       
 
 FUNC INT DIA_Igaraz_Wurst_Condition()
@@ -84,8 +84,8 @@ FUNC INT DIA_Igaraz_Wurst_Condition()
 
 FUNC VOID DIA_Igaraz_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Igaraz_Wurst_15_00"); //Je suis occupé à distribuer des saucisses.
-	AI_Output (self, other, "DIA_Igaraz_Wurst_13_01"); //Ainsi, vous travaillez pour Gorax, hein ? Très bien, donnez-moi cette saucisse.
+	AI_Output (other, self, "DIA_Igaraz_Wurst_15_00"); //Je suis occupÃ© Ã  distribuer des saucisses.
+	AI_Output (self, other, "DIA_Igaraz_Wurst_13_01"); //Ainsi, vous travaillez pour Gorax, heinÂ ? TrÃ¨s bien, donnez-moi cette saucisse.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -123,11 +123,11 @@ FUNC INT DIA_Igaraz_NotWork_Condition()
 FUNC VOID DIA_Igaraz_NotWork_Info()
 {
 	AI_Output (other,self ,"DIA_Igaranz_NotWork_15_00"); //Pourquoi ne travaillez-vous pas ?
-	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_01"); //J'ai la permission d'étudier l'enseignement d'Innos. Je cherche la sagesse dans ses paroles.
-	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //Un jour, il me choisira, et je pourrai alors passer l'épreuve de magie pour rejoindre le Cercle du feu.
+	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_01"); //J'ai la permission d'Ã©tudier l'enseignement d'Innos. Je cherche la sagesse dans ses paroles.
+	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //Un jour, il me choisira, et je pourrai alors passer l'Ã©preuve de magie pour rejoindre le Cercle du feu.
 };
 ///////////////////////////////////////////////////////////////////////
-//Wer sind die Erwählten?
+//Wer sind die ErwÃ¤hlten?
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_Choosen   (C_INFO)
 {
@@ -151,14 +151,14 @@ FUNC INT DIA_Igaraz_Choosen_Condition()
 };
 FUNC VOID DIA_Igaraz_Choosen_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_15_00"); //Qui sont les élus ?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_01"); //Les novices qu'Innos autorise à passer l'épreuve de magie.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_02"); //Ceux qui la réussissent sont acceptés dans les rangs du Cercle du feu.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_15_00"); //Qui sont les Ã©lusÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_01"); //Les novices qu'Innos autorise Ã  passer l'Ã©preuve de magie.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_02"); //Ceux qui la rÃ©ussissent sont acceptÃ©s dans les rangs du Cercle du feu.
 	
 	Info_ClearChoices (DIA_Igaranz_Choosen);
 	Info_AddChoice 	(DIA_Igaranz_Choosen,Dialog_Back,DIA_Igaranz_Choosen_back);
 	Info_AddChoice	(DIA_Igaranz_Choosen,"Qu'est-ce que le Test de magie ?",DIA_Igaranz_Choosen_TestOfMagic);
-	Info_AddChoice	(DIA_Igaranz_Choosen,"Comment puis-je être Elu ?",DIA_Igaranz_Choosen_HowChoosen);
+	Info_AddChoice	(DIA_Igaranz_Choosen,"Comment puis-je Ãªtre Elu ?",DIA_Igaranz_Choosen_HowChoosen);
 };	
 
 FUNC VOID DIA_Igaranz_Choosen_back ()
@@ -168,19 +168,19 @@ FUNC VOID DIA_Igaranz_Choosen_back ()
 
 FUNC VOID DIA_Igaranz_Choosen_TestOfMagic ()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Quelle est cette épreuve de magie ?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_01"); //Une épreuve annoncée par le Haut Conseil à tous les novices choisis.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Il s'agit d'une tâche testant leur foi et leur intelligence.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_03"); //Tous les novices y prennent part mais un seul peut la mener à bien.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Quelle est cette Ã©preuve de magieÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_01"); //Une Ã©preuve annoncÃ©e par le Haut Conseil Ã  tous les novices choisis.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Il s'agit d'une tÃ¢che testant leur foi et leur intelligence.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_03"); //Tous les novices y prennent part mais un seul peut la mener Ã  bien.
 };
 
 FUNC VOID DIA_Igaranz_Choosen_HowChoosen ()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_HowChoosen_15_00"); //Que dois-je faire pour être choisi ?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //Vous ne pouvez rien faire à ce sujet. C'est Innos seul qui choisit et le Haut Conseil est là pour faire part de sa volonté à tous.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_HowChoosen_15_00"); //Que dois-je faire pour Ãªtre choisiÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //Vous ne pouvez rien faire Ã  ce sujet. C'est Innos seul qui choisit et le Haut Conseil est lÃ  pour faire part de sa volontÃ© Ã  tous.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über Innos Lehren
+//	ErzÃ¤hl mir was Ã¼ber Innos Lehren
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 {
@@ -189,7 +189,7 @@ INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 	condition   = DIA_Igaraz_StudyInnos_Condition;
 	information = DIA_Igaraz_StudyInnos_Info;
 	permanent   = FALSE;
-	description	= "Comment puis-je étudier les saintes écritures ?";
+	description	= "Comment puis-je Ã©tudier les saintes Ã©critures ?";
 };
 
 FUNC INT DIA_Igaraz_StudyInnos_Condition()
@@ -204,12 +204,12 @@ FUNC INT DIA_Igaraz_StudyInnos_Condition()
 };
 FUNC VOID DIA_Igaraz_StudyInnos_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_StudyInnos_15_00"); //Comment puis-je étudier les textes sacrés ?
-	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_01"); //Il faut pour cela avoir accès à la bibliothèque.
-	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //Mais père Parlan ne vous en remettra la clé que si vous avez fini votre travail.
+	AI_Output (other,self ,"DIA_Igaranz_StudyInnos_15_00"); //Comment puis-je Ã©tudier les textes sacrÃ©sÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_01"); //Il faut pour cela avoir accÃ¨s Ã  la bibliothÃ¨que.
+	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //Mais pÃ¨re Parlan ne vous en remettra la clÃ© que si vous avez fini votre travail.
 };
 //**************************************************************************
-//	ABSCHNITT 2  DIE PRÜFUNG DER MAGIE 
+//	ABSCHNITT 2  DIE PRÃœFUNG DER MAGIE 
 //**************************************************************************
 ///////////////////////////////////////////////////////////////////////
 //	Info CHOOSEN
@@ -233,7 +233,7 @@ func int DIA_Igaraz_IMTHEMAN_Condition ()
 };
 func void DIA_Igaraz_IMTHEMAN_Info ()
 {
-	AI_Output (self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(fièrement) Ça y est. Innos m'a choisi et je vais prendre part à l'épreuve de magie.
+	AI_Output (self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(fiÃ¨rement) Ã‡a y est. Innos m'a choisi et je vais prendre part Ã  l'Ã©preuve de magie.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info METOO
@@ -260,16 +260,16 @@ func int DIA_Igaraz_METOO_Condition ()
 };
 func void DIA_Igaraz_METOO_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_15_00"); //Moi aussi. J'ai demandé à passer l'Epreuve du feu.
-	AI_Output (self, other, "DIA_Igaraz_METOO_13_01"); //Vous avez fait quoi ? Dans ce cas, soit vous avez la faveur d'Innos, soit vous êtes complètement fou...
-	AI_Output (other, self, "DIA_Igaraz_METOO_15_02"); //J'ai déjà mené à bien un tas de choses démentes, alors, une de plus ou une de moins...
-	AI_Output (self, other, "DIA_Igaraz_METOO_13_03"); //La main d'Innos est sur moi. Je sais que je passerai l'épreuve avec succès.
+	AI_Output (other, self, "DIA_Igaraz_METOO_15_00"); //Moi aussi. J'ai demandÃ© Ã  passer l'Epreuve du feu.
+	AI_Output (self, other, "DIA_Igaraz_METOO_13_01"); //Vous avez fait quoiÂ ? Dans ce cas, soit vous avez la faveur d'Innos, soit vous Ãªtes complÃ¨tement fou...
+	AI_Output (other, self, "DIA_Igaraz_METOO_15_02"); //J'ai dÃ©jÃ  menÃ© Ã  bien un tas de choses dÃ©mentes, alors, une de plus ou une de moins...
+	AI_Output (self, other, "DIA_Igaraz_METOO_13_03"); //La main d'Innos est sur moi. Je sais que je passerai l'Ã©preuve avec succÃ¨s.
 	
 
 	Info_ClearChoices	 (DIA_Igaraz_METOO);
 	Info_AddChoice 		 (DIA_Igaraz_METOO,DIALOG_BACK,DIA_Igaraz_METOO_BACK);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Peut-être pourrions-nous travailler ensemble...",DIA_Igaraz_METOO_HELP);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Alors avez-vous trouvé quelque chose ?",DIA_Igaraz_METOO_TELL);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"Peut-Ãªtre pourrions-nous travailler ensemble...",DIA_Igaraz_METOO_HELP);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"Alors avez-vous trouvÃ© quelque chose ?",DIA_Igaraz_METOO_TELL);
 	Info_AddChoice 		 (DIA_Igaraz_METOO,"Avez-vous vu Agon ou Ulf ?",DIA_Igaraz_METOO_AGON);
 };
 FUNC VOID DIA_Igaraz_METOO_BACK()
@@ -278,19 +278,19 @@ FUNC VOID DIA_Igaraz_METOO_BACK()
 };
 FUNC VOID DIA_Igaraz_METOO_TELL ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_TELL_15_00"); //Vous avez déjà découvert quelque chose ?
-	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_01"); //Comme vous n'avez pas la moindre chance de toute façon, je peux bien vous le dire...
-	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Inutile de chercher à proximité des fermes, il n'y a rien d'intéressant, là-bas...
+	AI_Output (other, self, "DIA_Igaraz_METOO_TELL_15_00"); //Vous avez dÃ©jÃ  dÃ©couvert quelque choseÂ ?
+	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_01"); //Comme vous n'avez pas la moindre chance de toute faÃ§on, je peux bien vous le dire...
+	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Inutile de chercher Ã  proximitÃ© des fermes, il n'y a rien d'intÃ©ressant, lÃ -bas...
 };
 FUNC VOID DIA_Igaraz_METOO_HELP ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_HELP_15_00"); //Peut-être pourrions-nous faire équipe...
-	AI_Output (self, other, "DIA_Igaraz_METOO_HELP_13_01"); //N'y songez même pas. J'accomplirai cette mission seul. Vous ne feriez que me gêner.
+	AI_Output (other, self, "DIA_Igaraz_METOO_HELP_15_00"); //Peut-Ãªtre pourrions-nous faire Ã©quipe...
+	AI_Output (self, other, "DIA_Igaraz_METOO_HELP_13_01"); //N'y songez mÃªme pas. J'accomplirai cette mission seul. Vous ne feriez que me gÃªner.
 };
 FUNC VOID DIA_Igaraz_METOO_AGON ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_AGON_15_00"); //Avez-vous vu Agon ou Ulf ?
-	AI_Output (self, other, "DIA_Igaraz_METOO_AGON_13_01"); //Nous nous sommes séparés à l'auberge. Je me suis rendu aux fermes alors qu'eux deux partaient ensemble, mais j'ignore pour où...
+	AI_Output (other, self, "DIA_Igaraz_METOO_AGON_15_00"); //Avez-vous vu Agon ou UlfÂ ?
+	AI_Output (self, other, "DIA_Igaraz_METOO_AGON_13_01"); //Nous nous sommes sÃ©parÃ©s Ã  l'auberge. Je me suis rendu aux fermes alors qu'eux deux partaient ensemble, mais j'ignore pour oÃ¹...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ADD
@@ -317,20 +317,20 @@ func int DIA_Igaraz_ADD_Condition ()
 };
 func void DIA_Igaraz_ADD_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_Add_15_00"); //Est-ce que le terme de 'pierre vivante' vous dit quelque chose ?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_01"); //(glousse) Non. Est-ce Serpentes qui vous a confié cette épreuve ?
-	AI_Output (other, self, "DIA_Igaraz_Add_15_02"); //Oui, pourquoi ?
+	AI_Output (other, self, "DIA_Igaraz_Add_15_00"); //Est-ce que le terme de 'pierre vivante' vous dit quelque choseÂ ?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_01"); //(glousse) Non. Est-ce Serpentes qui vous a confiÃ© cette Ã©preuveÂ ?
+	AI_Output (other, self, "DIA_Igaraz_Add_15_02"); //Oui, pourquoiÂ ?
 	AI_Output (self, other, "DIA_Igaraz_Add_13_03"); //J'imagine ce qu'il a voulu dire...
-	AI_Output (self, other, "DIA_Igaraz_Add_13_04"); //Vous ne seriez pas le premier à échouer dans cette épreuve...
-	AI_Output (other, self, "DIA_Igaraz_Add_15_05"); //Où puis-je trouver cette pierre vivante, au juste ?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_06"); //Suivez le chemin. Au bout de quelque temps, vous arriverez à un cours d'eau.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_07"); //Suivez le chemin le long des pentes de la montagne. Vous devriez la trouver quelque part par là.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_08"); //Si vous atteignez un pont, c'est que vous êtes allé trop loin.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_09"); //(éclate de rire) Evidemment, il faudrait que vous soyez capable de survivre jusque-là...
-	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //C'est tout ce que vous apprendrez de moi. (sarcastique) Après tout, c'est vous qui êtes censé passer cette épreuve...
+	AI_Output (self, other, "DIA_Igaraz_Add_13_04"); //Vous ne seriez pas le premier Ã  Ã©chouer dans cette Ã©preuve...
+	AI_Output (other, self, "DIA_Igaraz_Add_15_05"); //OÃ¹ puis-je trouver cette pierre vivante, au justeÂ ?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_06"); //Suivez le chemin. Au bout de quelque temps, vous arriverez Ã  un cours d'eau.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_07"); //Suivez le chemin le long des pentes de la montagne. Vous devriez la trouver quelque part par lÃ .
+	AI_Output (self, other, "DIA_Igaraz_Add_13_08"); //Si vous atteignez un pont, c'est que vous Ãªtes allÃ© trop loin.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_09"); //(Ã©clate de rire) Evidemment, il faudrait que vous soyez capable de survivre jusque-lÃ ...
+	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //C'est tout ce que vous apprendrez de moi. (sarcastique) AprÃ¨s tout, c'est vous qui Ãªtes censÃ© passer cette Ã©preuve...
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Perm Prüfung 
+//	Info Perm PrÃ¼fung 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaraz_Pruefung		(C_INFO)
 {
@@ -338,7 +338,7 @@ instance DIA_Igaraz_Pruefung		(C_INFO)
 	nr			 = 	22;
 	condition	 = 	DIA_Igaraz_Pruefung_Condition;
 	information	 = 	DIA_Igaraz_Pruefung_Info;
-	description	 =  "Avez-vous découvert quelque chose de nouveau ?";
+	description	 =  "Avez-vous dÃ©couvert quelque chose de nouveau ?";
 };
 func int DIA_Igaraz_Pruefung_Condition ()
 {	
@@ -351,7 +351,7 @@ func int DIA_Igaraz_Pruefung_Condition ()
 };
 func void DIA_Igaraz_Pruefung_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_Pruefung_15_00"); //Avez-vous découvert autre chose ?
+	AI_Output (other, self, "DIA_Igaraz_Pruefung_15_00"); //Avez-vous dÃ©couvert autre choseÂ ?
 	AI_Output (self, other, "DIA_Igaraz_Pruefung_13_01"); //Pas encore, mais je continue de chercher.
 	
 	AI_StopProcessInfos (self); 
@@ -386,19 +386,19 @@ func int DIA_Igaraz_Stein_Condition ()
 };
 func void DIA_Igaraz_Stein_Info ()
 {
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_00"); //Hé, attendez ! Il faut que nous parlions.
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_00"); //HÃ©, attendezÂ ! Il faut que nous parlions.
 	AI_Output (other, self, "DIA_Igaraz_Seufz_15_01"); //Je ne pense pas en fait.
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_02"); //Cela fait des années que j'attends de passer cette épreuve. Innos est avec moi. Je dois réussir !
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_02"); //Cela fait des annÃ©es que j'attends de passer cette Ã©preuve. Innos est avec moi. Je dois rÃ©ussirÂ !
 	
 	if Npc_KnowsInfo (other, DIA_Ulf_Abrechnung)
 	{
-		AI_Output (other, self, "DIA_Igaraz_Seufz_15_03"); //Voilà qui me rappelle quelque chose...
+		AI_Output (other, self, "DIA_Igaraz_Seufz_15_03"); //VoilÃ  qui me rappelle quelque chose...
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Igaraz_Seufz_15_04"); //Vous n'êtes pas le seul à dire cela.
+		AI_Output (other, self, "DIA_Igaraz_Seufz_15_04"); //Vous n'Ãªtes pas le seul Ã  dire cela.
 	};
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_05"); //Assez bavassé. Il me faut ce que vous avez trouvé... Ce qui signifie que vous allez mourir !
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_05"); //Assez bavassÃ©. Il me faut ce que vous avez trouvÃ©... Ce qui signifie que vous allez mourirÂ !
 	
 	
 	AI_StopProcessInfos (self);
@@ -488,11 +488,11 @@ FUNC INT DIA_Igaraz_TalkAboutBabo_Condition()
 FUNC VOID DIA_Igaraz_TalkAboutBabo_Info()
 {
 	AI_Output (other,self ,"DIA_Igaranz_TalkAboutBabo_15_00"); //Nous devons parler de Babo.
-	AI_Output (self ,other,"DIA_Igaranz_TalkAboutBabo_13_01"); //(réservé) Oui... qu'y a-t-il ?
+	AI_Output (self ,other,"DIA_Igaranz_TalkAboutBabo_13_01"); //(rÃ©servÃ©) Oui... qu'y a-t-ilÂ ?
 };
 
 //**************************************************************************
-//	Du hast etwas was Babo gehört
+//	Du hast etwas was Babo gehÃ¶rt
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 {
@@ -501,7 +501,7 @@ INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 	condition   = DIA_Igaraz_BabosBelongings_Condition;
 	information = DIA_Igaraz_BabosBelongings_Info;
 	permanent   = FALSE;
-	description = "Vous avez quelque chose qui appartient à Babo.";
+	description = "Vous avez quelque chose qui appartient Ã  Babo.";
 };
 FUNC INT DIA_Igaraz_BabosBelongings_Condition()
 {
@@ -512,10 +512,10 @@ FUNC INT DIA_Igaraz_BabosBelongings_Condition()
 };
 FUNC VOID DIA_Igaraz_BabosBelongings_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_00"); //Vous détenez quelque chose qui lui appartient.
-	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_01"); //De quoi peut-il bien s'agir ?
-	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_02"); //De documents. Il désire les récupérer.
-	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_03"); //(moqueur) Cela ne m'étonne pas. Malheureusement, je préfère les conserver, ce qui nous pose un sérieux dilemme...
+	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_00"); //Vous dÃ©tenez quelque chose qui lui appartient.
+	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_01"); //De quoi peut-il bien s'agirÂ ?
+	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_02"); //De documents. Il dÃ©sire les rÃ©cupÃ©rer.
+	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_03"); //(moqueur) Cela ne m'Ã©tonne pas. Malheureusement, je prÃ©fÃ¨re les conserver, ce qui nous pose un sÃ©rieux dilemme...
 };
 
 //**************************************************************************
@@ -528,7 +528,7 @@ INSTANCE DIA_Igaranz_WhereDocs   (C_INFO)
 	condition   = DIA_Igaraz_WhereDocs_Condition;
 	information = DIA_Igaraz_WhereDocs_Info;
 	permanent   = FALSE;
-	description = "Où avez-vous eu les papiers ?";
+	description = "OÃ¹ avez-vous eu les papiers ?";
 };
 FUNC INT DIA_Igaraz_WhereDocs_Condition()
 {
@@ -539,14 +539,14 @@ FUNC INT DIA_Igaraz_WhereDocs_Condition()
 };
 FUNC VOID DIA_Igaraz_WhereDocs_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_00"); //Où les avez-vous mis ?
-	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_01"); //(suffisant) Je ne les ai pas sur moi, c'est l'évidence même ! Et j'ai bien peur de ne pas pouvoir vous en dire davantage.
-	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_02"); //Où sont-ils ?
-	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_03"); //A l'abri. Et je ne vous donnerai jamais la clé permettant de les récupérer.
+	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_00"); //OÃ¹ les avez-vous misÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_01"); //(suffisant) Je ne les ai pas sur moi, c'est l'Ã©vidence mÃªmeÂ ! Et j'ai bien peur de ne pas pouvoir vous en dire davantage.
+	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_02"); //OÃ¹ sont-ilsÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_03"); //A l'abri. Et je ne vous donnerai jamais la clÃ© permettant de les rÃ©cupÃ©rer.
 };
 
 //**************************************************************************
-//	Was soll Babo für dich tun?
+//	Was soll Babo fÃ¼r dich tun?
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosJob   (C_INFO)
 {
@@ -566,15 +566,15 @@ FUNC INT DIA_Igaraz_BabosJob_Condition()
 };
 FUNC VOID DIA_Igaraz_BabosJob_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_00"); //Qu'est-ce que Babo était censé faire pour vous ?
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_01"); //Si j'avais su que ce bébé se mettrait dans un tel état pour un peu d'herbe des marais, j'aurais veillé à ce que quelqu'un d'autre se charge du jardin du monastère.
-	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_02"); //Il est censé faire pousser de l'herbe des marais ?
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_03"); //Bien sûr. Son prix a triplé en ville depuis qu'il n'en arrive plus de l'autre côté de la Barrière.
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_04"); //Tout le monde y aurait trouvé son compte... mais Babo n'a pas voulu jouer le jeu.
+	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_00"); //Qu'est-ce que Babo Ã©tait censÃ© faire pour vousÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_01"); //Si j'avais su que ce bÃ©bÃ© se mettrait dans un tel Ã©tat pour un peu d'herbe des marais, j'aurais veillÃ© Ã  ce que quelqu'un d'autre se charge du jardin du monastÃ¨re.
+	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_02"); //Il est censÃ© faire pousser de l'herbe des maraisÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_03"); //Bien sÃ»r. Son prix a triplÃ© en ville depuis qu'il n'en arrive plus de l'autre cÃ´tÃ© de la BarriÃ¨re.
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_04"); //Tout le monde y aurait trouvÃ© son compte... mais Babo n'a pas voulu jouer le jeu.
 };
 
 //**************************************************************************
-//	Wieviel willst du für die Papiere haben?
+//	Wieviel willst du fÃ¼r die Papiere haben?
 //**************************************************************************
 INSTANCE DIA_Igaranz_Price   (C_INFO)
 {
@@ -594,10 +594,10 @@ FUNC INT DIA_Igaraz_Price_Condition()
 };
 FUNC VOID DIA_Igaraz_Price_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Price_15_00"); //Combien voulez-vous pour ces documents ?
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_01"); //(éclate de rire) Ils n'ont pour ainsi dire pas de prix ! On voit rarement des choses ayant autant de valeur par ici.
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_02"); //Mais je n'ai nullement le désir d'hypothéquer mon avenir pour quelques pièces d'or.
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_03"); //Donnez-moi 300 pièces d'or et les papiers sont à vous.
+	AI_Output (other,self ,"DIA_Igaranz_Price_15_00"); //Combien voulez-vous pour ces documentsÂ ?
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_01"); //(Ã©clate de rire) Ils n'ont pour ainsi dire pas de prixÂ ! On voit rarement des choses ayant autant de valeur par ici.
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_02"); //Mais je n'ai nullement le dÃ©sir d'hypothÃ©quer mon avenir pour quelques piÃ¨ces d'or.
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_03"); //Donnez-moi 300 piÃ¨ces d'or et les papiers sont Ã  vous.
 };
 
 //**************************************************************************
@@ -622,8 +622,8 @@ FUNC INT DIA_Igaraz_BuyIt_Condition()
 };
 FUNC VOID DIA_Igaraz_BuyIt_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BuyIt_15_00"); //Je tiens à vous les acheter.
-	AI_Output (self ,other,"DIA_Igaranz_BuyIt_13_01"); //Ecoutez, je ne peux pas m'en aller pour le moment. Je veux bien vous donner la clé de mon coffre. De toute façon, il n'y a rien à l'intérieur.
+	AI_Output (other,self ,"DIA_Igaranz_BuyIt_15_00"); //Je tiens Ã  vous les acheter.
+	AI_Output (self ,other,"DIA_Igaranz_BuyIt_13_01"); //Ecoutez, je ne peux pas m'en aller pour le moment. Je veux bien vous donner la clÃ© de mon coffre. De toute faÃ§on, il n'y a rien Ã  l'intÃ©rieur.
 	
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	B_GiveInvItems (self,other,ItKe_IgarazChest_mis,1);
@@ -675,7 +675,7 @@ func void DIA_Igaraz_PICKPOCKET_DoIt()
 	{
 		B_ResetThiefLevel();
 		AI_StopProcessInfos	(self);
-		B_Attack (self, other, AR_Theft, 1); //AR_Theft führt zu NEWS!
+		B_Attack (self, other, AR_Theft, 1); //AR_Theft fÃ¼hrt zu NEWS!
 	};
 };
 	
@@ -753,7 +753,7 @@ INSTANCE DIA_Igaranz_Perm   (C_INFO)
 	condition   = DIA_Igaraz_Perm_Condition;
 	information = DIA_Igaraz_Perm_Info;
 	permanent   = FALSE;
-	description	= "Avez-vous quelque chose qui puisse m'intéresser ?";
+	description	= "Avez-vous quelque chose qui puisse m'intÃ©resser ?";
 };
 FUNC INT DIA_Igaraz_Perm_Condition()
 {
@@ -766,7 +766,7 @@ FUNC INT DIA_Igaraz_Perm_Condition()
 };
 FUNC VOID DIA_Igaraz_Perm_Info()
 {
-	AI_Output (other ,self,"DIA_Igaranz_Perm_15_00"); //Avez-vous quoi que ce soit d'autre d'intéressant pour moi ?
+	AI_Output (other ,self,"DIA_Igaranz_Perm_15_00"); //Avez-vous quoi que ce soit d'autre d'intÃ©ressant pour moiÂ ?
 	AI_Output (self ,other,"DIA_Igaranz_Perm_13_01"); //Euh... non.
 	
 	AI_StopProcessInfos(self); 

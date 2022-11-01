@@ -96,10 +96,10 @@ func int DIA_Ruga_Hallo_Condition ()
 func void DIA_Ruga_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Que faites-vous ici ?
-	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //J'apprends aux gars à se servir d'une arbalète et à devenir un peu plus adroits.
+	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //J'apprends aux gars Ã  se servir d'une arbalÃ¨te et Ã  devenir un peu plus adroits.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Ruga, un garde de la ville, peut m'aider à augmenter ma Dextérité et m'apprendre à utiliser une arbalète. Mais pour cela, je dois d'abord servir le roi.");
+	B_LogEntry (Topic_CityTeacher, "Ruga, un garde de la ville, peut m'aider Ã  augmenter ma DextÃ©ritÃ© et m'apprendre Ã  utiliser une arbalÃ¨te. Mais pour cela, je dois d'abord servir le roi.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -111,7 +111,7 @@ instance DIA_Ruga_Train		(C_INFO)
 	condition	 = 	DIA_Ruga_Train_Condition;
 	information	 = 	DIA_Ruga_Train_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Pouvez-vous m'entraîner ?";
+	description	 = 	"Pouvez-vous m'entraÃ®ner ?";
 };
 
 func int DIA_Ruga_Train_Condition ()
@@ -123,15 +123,15 @@ func int DIA_Ruga_Train_Condition ()
 };
 func void DIA_Ruga_Train_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Pouvez-vous m'entraîner ?
+	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Pouvez-vous m'entraÃ®ner ?
 	
 	if (hero.guild == GIL_MIL)
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Bien sûr. Si vous êtes assez expérimenté, je peux vous aider.
-		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Rappelez-vous bien que la dextérité et le combat à distance sont comme l'arbalète et le carreau. L'un...
-		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //… ne vaut rien sans l'autre. J'ai bien compris.
+		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Bien sÃ»r. Si vous Ãªtes assez expÃ©rimentÃ©, je peux vous aider.
+		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Rappelez-vous bien que la dextÃ©ritÃ© et le combat Ã  distance sont comme l'arbalÃ¨te et le carreau. L'un...
+		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //â€¦ ne vaut rien sans l'autre. J'ai bien compris.
 	
 		Ruga_TeachCrossbow = TRUE;
 		Ruga_TeachDEX 	   = TRUE;
@@ -139,13 +139,13 @@ func void DIA_Ruga_Train_Info ()
 	else if ((hero.guild == GIL_SLD)
 	|| 		 (hero.guild == GIL_DJG))
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Hors de ma vue, (méprisant) mercenaire.
+		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Hors de ma vue, (mÃ©prisant) mercenaire.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{	 
-		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Non, je n'entraîne que les hommes au service du roi. Personne d'autre.
-		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Mais nous avons toujours besoin de monde. Si vous voulez vous joindre à la milice, allez parler au seigneur Hagen.
+		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Non, je n'entraÃ®ne que les hommes au service du roi. Personne d'autre.
+		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Mais nous avons toujours besoin de monde. Si vous voulez vous joindre Ã  la milice, allez parler au seigneur Hagen.
 	};     
 };
 //**************************************
@@ -158,7 +158,7 @@ INSTANCE DIA_Ruga_Teach(C_INFO)
 	condition	= DIA_Ruga_Teach_Condition;
 	information	= DIA_Ruga_Teach_Info;
 	permanent	= TRUE;
-	description = "Montrez-moi comment me servir d'une arbalète.";
+	description = "Montrez-moi comment me servir d'une arbalÃ¨te.";
 };                       
 //-------------------------------------
 var int DIA_Ruga_Teach_permanent;
@@ -174,7 +174,7 @@ FUNC INT DIA_Ruga_Teach_Condition()
  
 FUNC VOID DIA_Ruga_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //Montrez-moi comment me servir d'une arbalète.
+	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //Montrez-moi comment me servir d'une arbalÃ¨te.
 
 	Info_ClearChoices 	(DIA_Ruga_Teach);
 	Info_AddChoice 		(DIA_Ruga_Teach,	DIALOG_BACK		,DIA_Ruga_Teach_Back);
@@ -251,7 +251,7 @@ func void DIA_Ruga_TEACHDEX_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //C'est tout ce que je suis en mesure de vous enseigner. Allez trouver un autre maître si vous voulez devenir plus agile.
+		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //C'est tout ce que je suis en mesure de vous enseigner. Allez trouver un autre maÃ®tre si vous voulez devenir plus agile.
 		DIA_Ruga_TEACHDEX_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Ruga_TEACHDEX);

@@ -40,7 +40,7 @@ FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
 FUNC VOID DIA_OCPAL_4_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //Qui commande ici ?
-	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Le commandant Garond. Il se trouve dans le plus grand b‚timent du ch‚teau.
+	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Le commandant Garond. Il se trouve dans le plus grand b√¢timent du ch√¢teau.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_4_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_4_LOCATION_Condition;
 	information	= DIA_OCPAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Que pouvez-vous me dire sur la VallÈe des mines ?";
+	description = "Que pouvez-vous me dire sur la Vall√©e des mines ?";
 };                       
 
 FUNC INT DIA_OCPAL_4_LOCATION_Condition()
@@ -62,9 +62,9 @@ FUNC INT DIA_OCPAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Que pouvez-vous me dire au sujet de la VallÈe des mines ?
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //A ma connaissance, il y a quelques mines dans le coin. Si elles n'ont pas toutes ÈtÈ envahies par les orques.
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Les troupes sont, pour la plupart, constituÈes de prisonniers. Mais il y a Ègalement des paladins.
+	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Que pouvez-vous me dire au sujet de la Vall√©e des mines ?
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //A ma connaissance, il y a quelques mines dans le coin. Si elles n'ont pas toutes √©t√© envahies par les orques.
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Les troupes sont, pour la plupart, constitu√©es de prisonniers. Mais il y a √©galement des paladins.
 };
 
 // *************************************************************************
@@ -76,7 +76,7 @@ INSTANCE DIA_OCPAL_4_STANDARD(C_INFO)
 	condition	= DIA_OCPAL_4_STANDARD_Condition;
 	information	= DIA_OCPAL_4_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Comment Áa se passe ?";
+	description = "Comment √ßa se passe ?";
 };
                        
 func INT DIA_OCPAL_4_STANDARD_Condition()
@@ -86,30 +86,30 @@ func INT DIA_OCPAL_4_STANDARD_Condition()
 
 FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Comment Áa se passe ?
+	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Comment √ßa se passe ?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //Les orques nous ont encerclÈs ! Mais nous nous battrons jusqu'au dernier ! Et Innos nous aidera contre les dragons !
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //Les orques nous ont encercl√©s ! Mais nous nous battrons jusqu'au dernier ! Et Innos nous aidera contre les dragons !
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Les orques ne vont plus tarder ‡ attaquer. O˘ sont ces fichus renforts ?
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Les orques ne vont plus tarder √† attaquer. O√π sont ces fichus renforts ?
 			if (other.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Vous ne pensez tout de mÍme pas sÈrieusement que vous autres, les chasseurs de dragons, avez la moindre chance contre TOUS les dragons ?
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Vous ne pensez tout de m√™me pas s√©rieusement que vous autres, les chasseurs de dragons, avez la moindre chance contre TOUS les dragons ?
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Ces soi-disant chasseurs de dragons n'arriveront pas ‡ grand-chose !
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Ces soi-disant chasseurs de dragons n'arriveront pas √† grand-chose !
 			};
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_05"); //LouÈ soit Innos ! Ces foutues crÈatures ont ÈtÈ vaincues !
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_05"); //Lou√© soit Innos ! Ces foutues cr√©atures ont √©t√© vaincues !
 		};
 	};
 
@@ -117,11 +117,11 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //La dÈfaite des dragons ne semble pas avoir impressionnÈ les orques. Pourquoi, au nom d'Innos, ne partent-ils pas ? Il y a une diablerie ‡ l'úuvre dans cette affaire.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //La d√©faite des dragons ne semble pas avoir impressionn√© les orques. Pourquoi, au nom d'Innos, ne partent-ils pas ? Il y a une diablerie √† l'≈ìuvre dans cette affaire.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Cette foutue porte a cÈdÈ. Les orques s'engouffrent dans le ch‚teau et rien ne peut les arrÍter.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Cette foutue porte a c√©d√©. Les orques s'engouffrent dans le ch√¢teau et rien ne peut les arr√™ter.
 			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_08"); //Quelqu'un doit en informer le seigneur Hagen. Nous avons besoin de lui ICI maintenant.
 		};
 	};

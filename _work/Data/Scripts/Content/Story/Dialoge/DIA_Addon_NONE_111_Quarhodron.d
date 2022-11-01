@@ -47,15 +47,15 @@ func void DIA_Addon_Quarhodron_Hello_Info ()
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
 		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //Pourquoi me tirer de mon sommeil, veilleur ?
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //(en colère) Dites-moi ce que vous désirez !
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //(en colÃ¨re) Dites-moi ce que vous dÃ©sirez !
 		 
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Qu'y a-t-il à l'intérieur du temple d'Adanos ?", DIA_Addon_Quarhodron_Hello_schwert );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Quelqu'un est entré de force dans le temple d'Adanos.", DIA_Addon_Quarhodron_Hello_raven );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Laissez-moi accéder au temple d'Adanos.", DIA_Addon_Quarhodron_Hello_tempel );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Cette terre est ravagée par des séismes.", DIA_Addon_Quarhodron_Hello_erdbeben );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Qu'y a-t-il Ã  l'intÃ©rieur du temple d'Adanos ?", DIA_Addon_Quarhodron_Hello_schwert );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Quelqu'un est entrÃ© de force dans le temple d'Adanos.", DIA_Addon_Quarhodron_Hello_raven );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Laissez-moi accÃ©der au temple d'Adanos.", DIA_Addon_Quarhodron_Hello_tempel );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Cette terre est ravagÃ©e par des sÃ©ismes.", DIA_Addon_Quarhodron_Hello_erdbeben );
 		DIA_Addon_Quarhodron_Hello_NoPerm = TRUE;
-		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnütz herum.
+		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnÃ¼tz herum.
 		SC_TalkedToGhost = TRUE;
 	}
 	else
@@ -73,52 +73,52 @@ func void B_Quarhodron_Hello_KommZumPunkt ()
 	if (DIA_Addon_Quarhodron_Hello_ChoiceCounter >= 3)
 	&& (B_Quarhodron_Hello_KommZumPunkt_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "La sagesse tant louée des ancêtres est réellement toute-puissante.", DIA_Addon_Quarhodron_Hello_frech );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "La sagesse tant louÃ©e des ancÃªtres est rÃ©ellement toute-puissante.", DIA_Addon_Quarhodron_Hello_frech );
 		B_Quarhodron_Hello_KommZumPunkt_OneTime = TRUE;
 	};
 };
 
 func void DIA_Addon_Quarhodron_Hello_erdbeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Ces terres sont dévastées par des séismes. Nous devons faire quelque chose, sinon cette île toute entière sombrera dans la mer !
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Ces terres sont dÃ©vastÃ©es par des sÃ©ismes. Nous devons faire quelque chose, sinon cette Ã®le toute entiÃ¨re sombrera dans la mer !
 	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //Il n'y a plus rien que nous puissions faire.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //La furie d'Adanos s'est abattue sur Jharkendar afin de châtier les infidèles.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //La furie d'Adanos s'est abattue sur Jharkendar afin de chÃ¢tier les infidÃ¨les.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_raven ()
 {
 	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //Quelqu'un s'est introduit dans le temple d'Adanos.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Impossible. J'ai moi-même scellé cette porte. Nul ne peut la franchir ?
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Impossible. J'ai moi-mÃªme scellÃ© cette porte. Nul ne peut la franchir ?
 	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_02"); //Vraiment ?
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_tempel ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //Permettez-moi d'accéder au temple d'Adanos.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //Le temple demeurera clos pour l'éternité. Ainsi en a décidé le conseil.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //Permettez-moi d'accÃ©der au temple d'Adanos.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //Le temple demeurera clos pour l'Ã©ternitÃ©. Ainsi en a dÃ©cidÃ© le conseil.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_schwert ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Qu'y a-t-il à l'intérieur du temple d'Adanos ?
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //Toute ma tristesse, toute ma déception...
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Qu'y a-t-il Ã  l'intÃ©rieur du temple d'Adanos ?
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //Toute ma tristesse, toute ma dÃ©ception...
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_frech ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //La sagesse tant louée des ancêtres est réellement toute-puissante.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //Nul homme de votre rang n'a à me parler ainsi.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //On ne m'ôtera pas de l'idée que vous n'êtes pas celui que vous prétendez être.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //Si vous désirez mon aide, vous devrez d'abord vous en montrer digne.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //Répondez à mes questions, afin que je sois certain de ne pas me dévoiler à un étranger.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //La sagesse tant louÃ©e des ancÃªtres est rÃ©ellement toute-puissante.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //Nul homme de votre rang n'a Ã  me parler ainsi.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //On ne m'Ã´tera pas de l'idÃ©e que vous n'Ãªtes pas celui que vous prÃ©tendez Ãªtre.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //Si vous dÃ©sirez mon aide, vous devrez d'abord vous en montrer digne.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //RÃ©pondez Ã  mes questions, afin que je sois certain de ne pas me dÃ©voiler Ã  un Ã©tranger.
 	
 	Log_CreateTopic (TOPIC_Addon_Quarhodron, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Quarhodron, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron ne m'aidera que si je me montre valeureux à ses yeux. Il m'a posé des questions difficiles, auxquelles je vais devoir répondre avant qu'il n'accepte de m'aider."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron ne m'aidera que si je me montre valeureux Ã  ses yeux. Il m'a posÃ© des questions difficiles, auxquelles je vais devoir rÃ©pondre avant qu'il n'accepte de m'aider."); 
 
 	Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
 };
@@ -153,7 +153,7 @@ var int B_Quarhodron_Fragen_ChoicesOneTime;
 
 func void B_Quarhodron_TestFailed ()
 {
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Vos réponses incorrectes dénotent la malveillance de vos intentions.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Vos rÃ©ponses incorrectes dÃ©notent la malveillance de vos intentions.
 		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_01"); //Je ne vous aiderai pas.
 		AI_StopProcessInfos (self);	
 };
@@ -172,7 +172,7 @@ func void B_Quarhodron_Fragen_Choices ()
 		&& (Quarhodrons_RichtigeAntworten == 0)
 		{
 			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //Je ne vous crois pas.
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Je crois que vous ne devriez revenir ici que lorsque vous aurez décidé de me dire la vérité.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Je crois que vous ne devriez revenir ici que lorsque vous aurez dÃ©cidÃ© de me dire la vÃ©ritÃ©.
 			AI_StopProcessInfos (self);
 		}
 		else 
@@ -181,9 +181,9 @@ func void B_Quarhodron_Fragen_Choices ()
 			{
 				if (B_Quarhodron_Fragen_ChoicesOneTime == FALSE)
 				{
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //(réfléchit) Les pouvoirs d'un veilleur des morts vous auraient permis de me réveiller, cela est vrai.
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Si vous êtes vraiment celui que vous prétendez être, vous pourrez répondre sans peine à mes questions.
-					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //Exceptée une seule...
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //(rÃ©flÃ©chit) Les pouvoirs d'un veilleur des morts vous auraient permis de me rÃ©veiller, cela est vrai.
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Si vous Ãªtes vraiment celui que vous prÃ©tendez Ãªtre, vous pourrez rÃ©pondre sans peine Ã  mes questions.
+					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //ExceptÃ©e une seule...
 					
 					B_Quarhodron_Fragen_ChoicesOneTime = TRUE;
 				};
@@ -192,14 +192,14 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion == 7)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Qui a scellé le portail afin de protéger le monde du mal ?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui a scellé le portail afin de protéger le monde du mal ?"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Qui a scellÃ© le portail afin de protÃ©ger le monde du mal ?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui a scellÃ© le portail afin de protÃ©ger le monde du malÂ ?"); 
 				Quarhodrons_NextQuestion = Quarhodron_AlleFragenGestellt;
 			}
 			else if (Quarhodrons_NextQuestion == 6)
 			{
 				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //Qui soulage la souffrance et soigne les malades ?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui atténue la souffrance et soigne les malades à Jharkendar ?"); 
+				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui attÃ©nue la souffrance et soigne les malades Ã  JharkendarÂ ?"); 
 				Quarhodrons_NextQuestion = 7;
 			}
 			else if (Quarhodrons_NextQuestion == 5)
@@ -210,20 +210,20 @@ func void B_Quarhodron_Fragen_Choices ()
 			}	
 			else if (Quarhodrons_NextQuestion == 4)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Qui a déchaîné le mal sur nous ?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui est responsable du mal qui a frappé le peuple de Jharkendar ?"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Qui a dÃ©chaÃ®nÃ© le mal sur nous ?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui est responsable du mal qui a frappÃ© le peuple de JharkendarÂ ?"); 
 				Quarhodrons_NextQuestion = 5;
 			}
 			else if (Quarhodrons_NextQuestion == 3)
 			{
 				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //Qui peut me donner un ordre direct ?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui peut donner un ordre direct à Quarhodron ?"); 
+				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui peut donner un ordre direct Ã  Quarhodron ?"); 
 				Quarhodrons_NextQuestion = 4;
 			}	
 			else if (Quarhodrons_NextQuestion == 2)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Qui protégeait autrefois le peuple de Jharkendar des attaques des ennemis ?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui protégeait jadis le peuple de Jharkendar des attaques ennemies ?"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Qui protÃ©geait autrefois le peuple de Jharkendar des attaques des ennemis ?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron,"Qui protÃ©geait jadis le peuple de Jharkendar des attaques ennemies ?"); 
 				Quarhodrons_NextQuestion = 3;
 			};
 			
@@ -238,9 +238,9 @@ func void B_Quarhodron_Fragen_Choices ()
 				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Je ne sais pas.", DIA_Addon_Quarhodron_Fragen_NoPlan );
 			};
 			
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des érudits.", DIA_Addon_Quarhodron_Fragen_gele );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des Ã©rudits.", DIA_Addon_Quarhodron_Fragen_gele );
 			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des veilleurs des morts.", DIA_Addon_Quarhodron_Fragen_totenw );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des prêtres.", DIA_Addon_Quarhodron_Fragen_prie );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des prÃªtres.", DIA_Addon_Quarhodron_Fragen_prie );
 			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des guerriers.", DIA_Addon_Quarhodron_Fragen_warr );
 			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "La caste des soigneurs.", DIA_Addon_Quarhodron_Fragen_heiler );
 		};
@@ -257,7 +257,7 @@ func void DIA_Addon_Quarhodron_Fragen_Info ()
 	if (DIA_Addon_Quarhodron_Fragen_Info_OneTime == FALSE)
 	{
 		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //Je suis Quarhodron, ancien seigneur de guerre de Jharkendar.
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //Vous m'avez éveillé.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //Vous m'avez Ã©veillÃ©.
 		
 		DIA_Addon_Quarhodron_Fragen_Info_OneTime = TRUE;
 	};
@@ -276,14 +276,14 @@ func void DIA_Addon_Quarhodron_Fragen_warr ()
 };
 func void DIA_Addon_Quarhodron_Fragen_prie ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //La caste des prêtres.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //La caste des prÃªtres.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 4)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_gele ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_gele_15_00"); //La caste des érudits.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_gele_15_00"); //La caste des Ã©rudits.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 6)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
@@ -346,27 +346,27 @@ func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 };
 func void DIA_Addon_Quarhodron_GibMirKey_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //Ecoutez-moi bien. Une personne réellement malveillante s'est infiltrée dans le temple d'Adanos.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Si vous ne me laissez pas accéder au temple dès maintenant, il sera vraisemblablement trop tard pour intervenir, et ce monde sera condamné.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //C'est impossible ! A Jharkendar, seuls le grand prêtre Khardimon et moi-même savons comment ouvrir la porte du temple d'Adanos.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //Eh bien... Disons que votre cher ami Khardimon semble avoir été un peu trop loquace.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Je vous dis que la porte était ouverte. Je l'ai vue de mes yeux.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //Bien... la vérité résonne dans votre voix. Je ne douterai plus de vos paroles.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //J'ose l'espérer.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //Ecoutez-moi bien. Une personne rÃ©ellement malveillante s'est infiltrÃ©e dans le temple d'Adanos.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Si vous ne me laissez pas accÃ©der au temple dÃ¨s maintenant, il sera vraisemblablement trop tard pour intervenir, et ce monde sera condamnÃ©.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //C'est impossible ! A Jharkendar, seuls le grand prÃªtre Khardimon et moi-mÃªme savons comment ouvrir la porte du temple d'Adanos.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //Eh bien... Disons que votre cher ami Khardimon semble avoir Ã©tÃ© un peu trop loquace.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Je vous dis que la porte Ã©tait ouverte. Je l'ai vue de mes yeux.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //Bien... la vÃ©ritÃ© rÃ©sonne dans votre voix. Je ne douterai plus de vos paroles.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //J'ose l'espÃ©rer.
 	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //Dans ce cas, prenez le mot de passe. Il est inscrit sur cette tablette de pierre. Prononcez ces mots devant la porte close du temple, et elle s'ouvrira.
 	CreateInvItems (self, ItMi_TempelTorKey, 1);									
 	B_GiveInvItems (self, other, ItMi_TempelTorKey, 1);		
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //(déjà mourant) Mon temps ici s'est écoulé. Je ne peux hélas plus vous aider.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //(déjà mourant) Mais n'oubliez pas : prenez garde aux salles du d'Adanos. Ne l'oubliez pas, car votre mort serait certaine...
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //(dÃ©jÃ  mourant) Mon temps ici s'est Ã©coulÃ©. Je ne peux hÃ©las plus vous aider.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //(dÃ©jÃ  mourant) Mais n'oubliez pas : prenez garde aux salles du d'Adanos. Ne l'oubliez pas, car votre mort serait certaine...
 	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_10"); //Attendez. Que sont ces salles ?
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //(déjà mourant) Mes forces s'estompent... adieu. Nous nous reverrons dans le royaume des morts.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //(dÃ©jÃ  mourant) Mes forces s'estompent... adieu. Nous nous reverrons dans le royaume des morts.
 	AI_StopProcessInfos (self);
 	
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron m'a remis une tablette de pierre permettant d'ouvrir l'entrée du temple d'Adanos."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron m'a remis une tablette de pierre permettant d'ouvrir l'entrÃ©e du temple d'Adanos."); 
 	
 	Log_CreateTopic (TOPIC_Addon_Kammern, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Kammern, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kammern,"Quarhodron a parlé des 'Chambres d'Adanos', en me conseillant de m'en méfier. Je dois vraiment découvrir ce dont il parlait si je ne veux pas tomber dans un piège dans le temple d'Adanos."); 
+	B_LogEntry (TOPIC_Addon_Kammern,"Quarhodron a parlÃ© des 'Chambres d'Adanos', en me conseillant de m'en mÃ©fier. Je dois vraiment dÃ©couvrir ce dont il parlait si je ne veux pas tomber dans un piÃ¨ge dans le temple d'Adanos."); 
 
 	Ghost_SCKnowsHow2GetInAdanosTempel = TRUE;
 };

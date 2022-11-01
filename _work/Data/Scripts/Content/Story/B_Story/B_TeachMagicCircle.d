@@ -14,7 +14,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ falscher Parameter ------
 	if (circle < 1) || (circle > 6)
 	{
-		Print ("*** ERREUR : Paramètre incorrect ***");
+		Print ("*** ERREUR : ParamÃ¨tre incorrect ***");
 		return FALSE;
 	};
 	
@@ -36,13 +36,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Les runes magiques que je peux utiliser sont réparties en Cercles. Je ne peux utiliser un sort d'un Cercle supérieur à celui que j'ai atteint."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"Les runes magiques que je peux utiliser sont rÃ©parties en Cercles. Je ne peux utiliser un sort d'un Cercle supÃ©rieur Ã  celui que j'ai atteint."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)
 	{
 		PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 1er Cercle sont : Lumière, Flèche de feu, Eclair mineur, Soins légers et Convocation de gobelin squelette.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 1er Cercle sont : LumiÃ¨re, FlÃ¨che de feu, Eclair mineur, Soins lÃ©gers et Convocation de gobelin squelette.");
 		return TRUE;
 	};
 	
@@ -50,7 +50,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 2)
 	{
 		PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 2ème Cercle sont : Boule de feu, Flèche de glace, Convocation de loup, Poing du vent et Sommeil.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 2Ã¨me Cercle sont : Boule de feu, FlÃ¨che de glace, Convocation de loup, Poing du vent et Sommeil.");
 		return TRUE;
 	};
 	
@@ -58,7 +58,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 3)
 	{
 		PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 3ème Cercle sont : Soins importants, Sphère d'éclairs, Tempête de feu mineure, Création de squelette, Terreur et Bloc de glace.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 3Ã¨me Cercle sont : Soins importants, SphÃ¨re d'Ã©clairs, TempÃªte de feu mineure, CrÃ©ation de squelette, Terreur et Bloc de glace.");
 		return TRUE;
 	};
 	
@@ -66,7 +66,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 4)
 	{
 		PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 4ème Cercle sont : Eclair, Création de golem de pierre, Destruction de morts-vivants et Boule de feu majeure.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 4Ã¨me Cercle sont : Eclair, CrÃ©ation de golem de pierre, Destruction de morts-vivants et Boule de feu majeure.");
 		return TRUE;
 	};
 	
@@ -74,7 +74,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 5)
 	{
 		PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 5ème Cercle sont : Tempête de feu, Déferlante de glace, Convocation de démon et Soins critiques.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 5Ã¨me Cercle sont : TempÃªte de feu, DÃ©ferlante de glace, Convocation de dÃ©mon et Soins critiques.");
 		return TRUE;
 	};
 	
@@ -82,7 +82,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 6)
 	{
 		PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 6ème Cercle sont : Pluie ardente, Souffle de mort, Vague de mort, Armée des ténèbres et Réduction de monstre.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Les sorts du 6Ã¨me Cercle sont : Pluie ardente, Souffle de mort, Vague de mort, ArmÃ©e des tÃ©nÃ¨bres et RÃ©duction de monstre.");
 		return TRUE;
 	};
 };

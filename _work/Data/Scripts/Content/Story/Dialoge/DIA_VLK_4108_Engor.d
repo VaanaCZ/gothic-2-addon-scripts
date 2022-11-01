@@ -43,12 +43,12 @@ func void DIA_Engor_HALLO_Info ()
 	
  	AI_Output (self, other, "DIA_Engor_HALLO_13_00"); //Ah, c'est donc vous qui avez franchi le col...
 	AI_Output (other, self, "DIA_Engor_HALLO_15_01"); //Oui.
-	AI_Output (self, other, "DIA_Engor_HALLO_13_02"); //Excellent ! Je me nomme Engor et c'est moi qui gère les provisions de cette expédition.
-	AI_Output (self, other, "DIA_Engor_HALLO_13_03"); //Mais n'allez surtout pas vous imaginer que je sois du genre à donner quoi que ce soit !
-	AI_Output (self, other, "DIA_Engor_HALLO_13_04"); //Par contre, si vous avez de quoi payer, il devrait être possible de s'arranger.
+	AI_Output (self, other, "DIA_Engor_HALLO_13_02"); //ExcellentÂ ! Je me nomme Engor et c'est moi qui gÃ¨re les provisions de cette expÃ©dition.
+	AI_Output (self, other, "DIA_Engor_HALLO_13_03"); //Mais n'allez surtout pas vous imaginer que je sois du genre Ã  donner quoi que ce soitÂ !
+	AI_Output (self, other, "DIA_Engor_HALLO_13_04"); //Par contre, si vous avez de quoi payer, il devrait Ãªtre possible de s'arranger.
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
-	B_LogEntry(TOPIC_Trader_OC, "Engor gère l'approvisionnement du château et fait un peu de commerce pour arrondir ses fins de mois.");  
+	B_LogEntry(TOPIC_Trader_OC, "Engor gÃ¨re l'approvisionnement du chÃ¢teau et fait un peu de commerce pour arrondir ses fins de mois.");  
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Handeln
@@ -99,7 +99,7 @@ instance DIA_Engor_ABOUTPARLAF		(C_INFO)
 	nr		 	 = 	2;
 	condition	 = 	DIA_Engor_ABOUTPARLAF_Condition;
 	information	 = 	DIA_Engor_ABOUTPARLAF_Info;
-	description	 = 	"J'ai entendu dire que vous étiez celui qui distribuait les rations.";
+	description	 = 	"J'ai entendu dire que vous Ã©tiez celui qui distribuait les rations.";
 };
 
 func int DIA_Engor_ABOUTPARLAF_Condition ()
@@ -111,8 +111,8 @@ func int DIA_Engor_ABOUTPARLAF_Condition ()
 };
 func void DIA_Engor_ABOUTPARLAF_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_ABOUTPARLAF_15_00"); //Je me suis laissé dire que c'était vous qui distribuiez les rations...
-	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_01"); //C'est exact. Pourquoi cette question ? Faut-il que je vous nourrisse vous aussi ?
+	AI_Output (other, self, "DIA_Engor_ABOUTPARLAF_15_00"); //Je me suis laissÃ© dire que c'Ã©tait vous qui distribuiez les rations...
+	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_01"); //C'est exact. Pourquoi cette questionÂ ? Faut-il que je vous nourrisse vous aussiÂ ?
 	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_02"); //Si vous voulez quelque chose, vous devrez payer comme tout le monde.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -125,7 +125,7 @@ instance DIA_Engor_Ruestung		(C_INFO)
 	condition	 = 	DIA_Engor_Ruestung_Condition;
 	information	 = 	DIA_Engor_Ruestung_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Avez-vous quelque chose qui puisse m'intéresser ?";
+	description	 = 	"Avez-vous quelque chose qui puisse m'intÃ©resser ?";
 };
 
 func int DIA_Engor_Ruestung_Condition ()
@@ -137,9 +137,9 @@ func int DIA_Engor_Ruestung_Condition ()
 };
 func void DIA_Engor_Ruestung_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_Ruestung_15_00"); //Avez-vous quoi que ce soit d'autre d'intéressant pour moi ?
-	AI_Output (self, other, "DIA_Engor_Ruestung_13_01"); //Je peux vous obtenir une armure lourde de milicien si cela vous intéresse.
-	AI_Output (self, other, "DIA_Engor_Ruestung_13_02"); //Evidemment, ce n'est pas donné, mais si vous avez de quoi payer...
+	AI_Output (other, self, "DIA_Engor_Ruestung_15_00"); //Avez-vous quoi que ce soit d'autre d'intÃ©ressant pour moiÂ ?
+	AI_Output (self, other, "DIA_Engor_Ruestung_13_01"); //Je peux vous obtenir une armure lourde de milicien si cela vous intÃ©resse.
+	AI_Output (self, other, "DIA_Engor_Ruestung_13_02"); //Evidemment, ce n'est pas donnÃ©, mais si vous avez de quoi payer...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info RSkaufen
@@ -151,7 +151,7 @@ instance DIA_Engor_RSkaufen		(C_INFO)
 	condition	 = 	DIA_Engor_RSkaufen_Condition;
 	information	 = 	DIA_Engor_RSkaufen_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Acheter armure lourde de la milice (Protection : armes 60, flèches 60. Coût : 2500 pièces d'or)"; 
+	description	 = 	"Acheter armure lourde de la milice (Protection : armes 60, flÃ¨ches 60. CoÃ»t : 2500 piÃ¨ces d'or)"; 
 };
 //--------------------------------------
 var int DIA_Engor_RSkaufen_perm;
@@ -170,7 +170,7 @@ func void DIA_Engor_RSkaufen_Info ()
 	if (B_GiveInvItems (other, self, Itmi_Gold,2500))
 	{
 		AI_Output (other, self, "DIA_Engor_RSkaufen_15_00"); //Donnez-moi l'armure.
-		AI_Output (self, other, "DIA_Engor_RSkaufen_13_01"); //Tenez. C'est un excellent modèle qui vous protègera bien.
+		AI_Output (self, other, "DIA_Engor_RSkaufen_13_01"); //Tenez. C'est un excellent modÃ¨le qui vous protÃ¨gera bien.
 		B_GiveInvItems (self,other, ITAR_MIL_M,1);
 		DIA_Engor_RSkaufen_perm = TRUE;
 	}
@@ -189,7 +189,7 @@ instance DIA_Engor_HELP		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Engor_HELP_Condition;
 	information	 = 	DIA_Engor_HELP_Info;
-	description	 = 	"Peut-être puis-je vous aider dans votre travail ?";
+	description	 = 	"Peut-Ãªtre puis-je vous aider dans votre travail ?";
 };
 
 func int DIA_Engor_HELP_Condition ()
@@ -201,23 +201,23 @@ func int DIA_Engor_HELP_Condition ()
 };
 func void DIA_Engor_HELP_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_15_00"); //Je peux peut-être vous aider dans votre travail...
-	AI_Output (self, other, "DIA_Engor_HELP_13_01"); //Hmm... oui, pourquoi pas ? C'est vrai qu'un peu d'aide serait la bienvenue...
-	AI_Output (other, self, "DIA_Engor_HELP_15_02"); //Alors, que faut-il que je fasse ?
-	AI_Output (self, other, "DIA_Engor_HELP_13_03"); //Nos réserves de nourriture vont bientôt finir par atteindre un seuil critique, mais nous n'avons surtout presque plus de viande.
-	AI_Output (self, other, "DIA_Engor_HELP_13_04"); //Si vous pouviez nous en ramener, crue ou cuite, cela nous aiderait beaucoup. Du jambon ou des saucisses feraient également l'affaire. Qu'en dites-vous ?
+	AI_Output (other, self, "DIA_Engor_HELP_15_00"); //Je peux peut-Ãªtre vous aider dans votre travail...
+	AI_Output (self, other, "DIA_Engor_HELP_13_01"); //Hmm... oui, pourquoi pasÂ ? C'est vrai qu'un peu d'aide serait la bienvenue...
+	AI_Output (other, self, "DIA_Engor_HELP_15_02"); //Alors, que faut-il que je fasseÂ ?
+	AI_Output (self, other, "DIA_Engor_HELP_13_03"); //Nos rÃ©serves de nourriture vont bientÃ´t finir par atteindre un seuil critique, mais nous n'avons surtout presque plus de viande.
+	AI_Output (self, other, "DIA_Engor_HELP_13_04"); //Si vous pouviez nous en ramener, crue ou cuite, cela nous aiderait beaucoup. Du jambon ou des saucisses feraient Ã©galement l'affaire. Qu'en dites-vousÂ ?
 
 	
 	Info_ClearChoices (DIA_Engor_HELP);
 	Info_AddChoice (DIA_Engor_HELP,"Je n'ai pas le temps.",DIA_Engor_HELP_NO);
-	Info_AddChoice (DIA_Engor_HELP,"Ne vous inquiétez pas, je vais vous trouver de quoi manger.",DIA_Engor_HELP_YES);
+	Info_AddChoice (DIA_Engor_HELP,"Ne vous inquiÃ©tez pas, je vais vous trouver de quoi manger.",DIA_Engor_HELP_YES);
 	
 	
 };
 FUNC VOID DIA_Engor_HELP_NO()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_NO_15_00"); //Je n'ai pas de temps à perdre avec ça.
-	AI_Output (self, other, "DIA_Engor_HELP_NO_13_01"); //Alors pourquoi me faites-vous perdre le mien ?
+	AI_Output (other, self, "DIA_Engor_HELP_NO_15_00"); //Je n'ai pas de temps Ã  perdre avec Ã§a.
+	AI_Output (self, other, "DIA_Engor_HELP_NO_13_01"); //Alors pourquoi me faites-vous perdre le mienÂ ?
 	
 	MIS_Engor_BringMeat = LOG_OBSOLETE; 
 	AI_StopProcessInfos (self);
@@ -225,12 +225,12 @@ FUNC VOID DIA_Engor_HELP_NO()
 FUNC VOID DIA_Engor_HELP_YES()
 {
 	AI_Output (other, self, "DIA_Engor_HELP_YES_15_00"); //Ne vous en faites pas, je vais vous ramener de la viande.
-	AI_Output (self, other, "DIA_Engor_HELP_YES_13_01"); //Deux douzaines de morceaux de viande m'aideraient à nourrir la majeure partie de nos soldats. Revenez quand vous l'aurez. Moi, il faut que je me remette au travail.
+	AI_Output (self, other, "DIA_Engor_HELP_YES_13_01"); //Deux douzaines de morceaux de viande m'aideraient Ã  nourrir la majeure partie de nos soldats. Revenez quand vous l'aurez. Moi, il faut que je me remette au travail.
 
 	Log_CreateTopic (TOPIC_BringMeat, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BringMeat, LOG_RUNNING);
 	B_LogEntry  (TOPIC_BringMeat,"Engor a besoin de deux douzaines de morceaux de viande pour ses hommes.");
-	B_LogEntry  (TOPIC_BringMeat,"Cela n'a aucune importance que ce soit des saucisses, du jambon, de la viande grillée ou de la viande crue. Tant que ses gars ont quelque chose de correct à avaler. ");  
+	B_LogEntry  (TOPIC_BringMeat,"Cela n'a aucune importance que ce soit des saucisses, du jambon, de la viande grillÃ©e ou de la viande crue. Tant que ses gars ont quelque chose de correct Ã  avaler. ");  
 
 	
 	MIS_Engor_BringMeat = LOG_RUNNING;  
@@ -246,7 +246,7 @@ instance DIA_Engor_BRINGMEAT		(C_INFO)
 	condition	 = 	DIA_Engor_BRINGMEAT_Condition;
 	information	 = 	DIA_Engor_BRINGMEAT_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tenez, je vous ai apporté quelque chose à manger. (donner la viande).";
+	description	 = 	"Tenez, je vous ai apportÃ© quelque chose Ã  manger. (donner la viande).";
 };
 
 func int DIA_Engor_BRINGMEAT_Condition ()
@@ -268,7 +268,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	var string ConcatBacon;
 	var string ConcatSausage;
 	
-	AI_Output (other, self, "DIA_Engor_BRINGMEAT_15_00"); //Tenez, voilà pour vous.
+	AI_Output (other, self, "DIA_Engor_BRINGMEAT_15_00"); //Tenez, voilÃ  pour vous.
 	
 // ***** Rohes Fleisch *****
 	if (Npc_HasItems (hero,ItFoMuttonRaw) >= 1) 
@@ -280,7 +280,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 		
 			Meat_Counter = (Meat_Counter + (Meat_Amount - Meat_Counter));
 		}
-		else if (Npc_HasItems (hero, ItFoMuttonRaw) < Meat_Amount) // muss hier stehen, wegen nächster Zeile
+		else if (Npc_HasItems (hero, ItFoMuttonRaw) < Meat_Amount) // muss hier stehen, wegen nÃ¤chster Zeile
 		&& (Meat_Counter < Meat_Amount) 
 		{
 			Meat_Counter = Meat_Counter + (Npc_HasItems (hero,ItFoMuttonRaw));
@@ -341,7 +341,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 			Npc_RemoveInvItems (other, ItFo_Bacon,(Npc_HasItems (other,ItFo_Bacon)));
 		};
 	};
-	// ***** Würste *****	
+	// ***** WÃ¼rste *****	
 	if (Npc_HasItems (hero,ItFo_Sausage) >= 1) 
 	{
 		if (Npc_HasItems (hero, ItFo_Sausage) >= Meat_Amount) 
@@ -379,15 +379,15 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	};
 	if (Meat_counter >= Meat_Amount)
 	{
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_02"); //Splendide ! Voilà assez de viande pour tenir un moment.
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_03"); //Mais n'allez surtout pas vous imaginer que c'est pour ça que je vais vous donner quoi que ce soit !
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_02"); //SplendideÂ ! VoilÃ  assez de viande pour tenir un moment.
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_03"); //Mais n'allez surtout pas vous imaginer que c'est pour Ã§a que je vais vous donner quoi que ce soitÂ !
 		/*
 		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_04"); //Hm...
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_05"); //Na schön. Du hast mir geholfen, du kriegst was umsonst. Ich gebe dir eine Information. 	
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_05"); //Na schÃ¶n. Du hast mir geholfen, du kriegst was umsonst. Ich gebe dir eine Information. 	
 		*/
 		MIS_Engor_BringMeat = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BringMeat);
-		Log_AddEntry (TOPIC_BringMeat,"Engor a eu sa viande. Il va faire en sorte qu'elle soit répartie entre ses hommes."); 
+		Log_AddEntry (TOPIC_BringMeat,"Engor a eu sa viande. Il va faire en sorte qu'elle soit rÃ©partie entre ses hommes."); 
 	};
 };
 
@@ -400,7 +400,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 //*************************************
 
 ///////////////////////////////////////////////////////////////////////
-//	Wie laufen die Geschäfte?
+//	Wie laufen die GeschÃ¤fte?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Engor_Business		(C_INFO)
 {
@@ -423,19 +423,19 @@ func int DIA_Engor_Business_Condition ()
 };
 func void DIA_Engor_Business_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_Business_15_00"); //Comment vont les affaires ?
+	AI_Output (other, self, "DIA_Engor_Business_15_00"); //Comment vont les affairesÂ ?
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 		{
-			AI_Output (self, other, "DIA_Engor_Business_13_01"); //Couci-couça. J'espère que les finances des chasseurs de dragons sont à la mesure de leur ego.
+			AI_Output (self, other, "DIA_Engor_Business_13_01"); //Couci-couÃ§a. J'espÃ¨re que les finances des chasseurs de dragons sont Ã  la mesure de leur ego.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Engor_Business_13_02"); //Mal. Les paladins n'achètent rien.
+			AI_Output (self, other, "DIA_Engor_Business_13_02"); //Mal. Les paladins n'achÃ¨tent rien.
 		};
 
-	AI_Output (self, other, "DIA_Engor_Business_13_03"); //Et vous, vous avez besoin de quelque chose ?
+	AI_Output (self, other, "DIA_Engor_Business_13_03"); //Et vous, vous avez besoin de quelque choseÂ ?
 };
 
 
@@ -452,7 +452,7 @@ INSTANCE DIA_Engor_PICKPOCKET (C_INFO)
 	condition	= DIA_Engor_PICKPOCKET_Condition;
 	information	= DIA_Engor_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ce serait risqué de lui voler sa carte)";
+	description = "(Ce serait risquÃ© de lui voler sa carte)";
 };                       
 
 FUNC INT DIA_Engor_PICKPOCKET_Condition()

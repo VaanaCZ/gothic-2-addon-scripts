@@ -44,10 +44,10 @@ FUNC INT DIA_VLK_8_JOIN_Condition()
 FUNC VOID DIA_VLK_8_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //Je veux devenir citoyen de la ville !
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //Et pourquoi me dites-vous ça ? Allez voir un des maîtres artisans dans le bas quartier de la ville. Si vous avez de la chance, l'un d'eux aura besoin d'un apprenti.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //Sinon, vous devrez aller voir le gouverneur pour être enregistré comme citoyen.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //Mais, pour l'instant, ce n'est même pas la peine d'y penser. Le gouverneur a perdu son poste depuis l'arrivée des paladins.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //Et il est certain que leur chef, le seigneur Hagen, n'aura pas le temps de s'occuper de ça.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //Et pourquoi me dites-vous Ã§a ? Allez voir un des maÃ®tres artisans dans le bas quartier de la ville. Si vous avez de la chance, l'un d'eux aura besoin d'un apprenti.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //Sinon, vous devrez aller voir le gouverneur pour Ãªtre enregistrÃ© comme citoyen.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //Mais, pour l'instant, ce n'est mÃªme pas la peine d'y penser. Le gouverneur a perdu son poste depuis l'arrivÃ©e des paladins.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //Et il est certain que leur chef, le seigneur Hagen, n'aura pas le temps de s'occuper de Ã§a.
 };
 
 // *************************************************************************
@@ -70,7 +70,7 @@ FUNC INT DIA_VLK_8_PEOPLE_Condition()
 FUNC VOID DIA_VLK_8_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //Qui sont les citoyens les plus importants de la ville ?
-	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //A part les paladins... les maîtres artisans du bas quartier. Ils ont tous une grande importance.
+	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //A part les paladins... les maÃ®tres artisans du bas quartier. Ils ont tous une grande importance.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_8_LOCATION(C_INFO)
 	condition	= DIA_VLK_8_LOCATION_Condition;
 	information	= DIA_VLK_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Qu'y a-t-il d'intéressant à voir ici ?";
+	description = "Qu'y a-t-il d'intÃ©ressant Ã  voir ici ?";
 };                       
 
 FUNC INT DIA_VLK_8_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_8_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_8_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Qu'y a-t-il d'intéressant à voir dans le coin ?
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //Le grand navire à bord duquel les paladins sont arrivés se trouve au port. Il est énorme ! Vous devriez allez jeter un coup d'œil.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //Mais je doute qu'ils vous laissent monter à bord. Les paladins gardent le navire comme si c'était les bijoux de la couronne.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //Ce n'est pas étonnant. C'est également le seul navire digne de ce nom à des lieues à la ronde.
+	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Qu'y a-t-il d'intÃ©ressant Ã  voir dans le coin ?
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //Le grand navire Ã  bord duquel les paladins sont arrivÃ©s se trouve au port. Il est Ã©norme ! Vous devriez allez jeter un coup d'Å“il.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //Mais je doute qu'ils vous laissent monter Ã  bord. Les paladins gardent le navire comme si c'Ã©tait les bijoux de la couronne.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //Ce n'est pas Ã©tonnant. C'est Ã©galement le seul navire digne de ce nom Ã  des lieues Ã  la ronde.
 };
 
 // *************************************************************************
@@ -119,9 +119,9 @@ FUNC VOID DIA_VLK_8_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //Tout le monde est très inquiet, en ce moment.
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Comme si l'invasion de la ville par les paladins ne suffisait pas, des personnes disparaissent sans cesse de la manière la plus étrange qui soit.
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //Il serait vraiment temps que la milice réagisse à ce sujet !
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //Tout le monde est trÃ¨s inquiet, en ce moment.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Comme si l'invasion de la ville par les paladins ne suffisait pas, des personnes disparaissent sans cesse de la maniÃ¨re la plus Ã©trange qui soit.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //Il serait vraiment temps que la milice rÃ©agisse Ã  ce sujet !
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
 				Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -133,25 +133,25 @@ FUNC VOID DIA_VLK_8_STANDARD_Info()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Tout le monde attend que les paladins disent pourquoi ils sont là. Je crois que c'est à cause des orques. Ils vont bientôt attaquer !
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //Les paladins ont beau être bénis par Innos, on n'y coupera pas quand les orques vont débarquer.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Tout le monde attend que les paladins disent pourquoi ils sont lÃ . Je crois que c'est Ã  cause des orques. Ils vont bientÃ´t attaquer !
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //Les paladins ont beau Ãªtre bÃ©nis par Innos, on n'y coupera pas quand les orques vont dÃ©barquer.
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Il paraît que les paladins ne sont ici que pour récupérer tout le minerai de l'île. Ils disent que c'est pour la guerre sur le continent.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //Savez-vous ce que cela signifie ? Le roi se fiche éperdument que nous mourions tous quand les orques attaqueront.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Je ferai en sorte d'être à bord du navire quand les paladins lèveront l'ancre.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Il paraÃ®t que les paladins ne sont ici que pour rÃ©cupÃ©rer tout le minerai de l'Ã®le. Ils disent que c'est pour la guerre sur le continent.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //Savez-vous ce que cela signifie ? Le roi se fiche Ã©perdument que nous mourions tous quand les orques attaqueront.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Je ferai en sorte d'Ãªtre Ã  bord du navire quand les paladins lÃ¨veront l'ancre.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //Ils disent que les orques viennent ici à dos de dragons qui sont aussi gros que la moitié de la ville ! On n'a aucune chance !
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //Ils disent que les orques viennent ici Ã  dos de dragons qui sont aussi gros que la moitiÃ© de la ville ! On n'a aucune chance !
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //Les gens disent que les dragons ont été vaincus. Se peut-il que ce soit vrai ?
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //Les gens disent que les dragons ont Ã©tÃ© vaincus. Se peut-il que ce soit vrai ?
 	};
 };
 

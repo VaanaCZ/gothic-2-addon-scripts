@@ -73,11 +73,11 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Oui, allez-y et dites au revoir à votre pote.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Oui, allez-y et dites au revoir Ã  votre pote.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //On a emmené le porc coupable du meurtre de Lothar.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //On a emmenÃ© le porc coupable du meurtre de Lothar.
 		};
 	}
 	else if (Canthar_Ausgeliefert == FALSE)
@@ -91,7 +91,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //Très bien, mon pote.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //TrÃ¨s bien, mon pote.
 		}
 		else if (other.guild == GIL_PAL) || (other.guild == GIL_KDF)
 		{
@@ -99,7 +99,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Allez-y mais ne restez pas très longtemps, compris ?
+			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Allez-y mais ne restez pas trÃ¨s longtemps, compris ?
 		};
 	};
 };		
@@ -129,9 +129,9 @@ func int DIA_Boltan_HalloBennet_Condition ()
 
 func void DIA_Boltan_HalloBennet_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Vous n'êtes pas ici pour faire sortir votre pote de là, n'est-ce pas ?
-	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //N'y pensez même pas ! Il me suffit de donner l'alerte pour que les gars soient là en un instant
-	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //Et on fera de la chair à pâté de mercenaire ! (rire gras)
+	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Vous n'Ãªtes pas ici pour faire sortir votre pote de lÃ , n'est-ce pas ?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //N'y pensez mÃªme pas ! Il me suffit de donner l'alerte pour que les gars soient lÃ  en un instant
+	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //Et on fera de la chair Ã  pÃ¢tÃ© de mercenaire ! (rire gras)
 };		
 	
 // ************************************************
@@ -159,10 +159,10 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 
 func void DIA_Boltan_HalloCanthar_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Eh, vous êtes le type qui a porté plainte contre Canthar le marchand.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Beaucoup de gens viennent ici se porter garant pour lui. Des gens respectés.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Toute cette affaire doit être un malentendu. Ça arrive parfois.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //A l'avenir, vous devriez faire attention à qui vous envoyez en prison.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Eh, vous Ãªtes le type qui a portÃ© plainte contre Canthar le marchand.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Beaucoup de gens viennent ici se porter garant pour lui. Des gens respectÃ©s.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Toute cette affaire doit Ãªtre un malentendu. Ã‡a arrive parfois.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //A l'avenir, vous devriez faire attention Ã  qui vous envoyez en prison.
 };		
 
 

@@ -2,7 +2,7 @@
 // unbenutzte Item - Visuals
 // *************************
 
-//ItRw_Bow_War_04	// Dämonenbogen, Todbringer
+//ItRw_Bow_War_04	// DÃ¤monenbogen, Todbringer
 //ItRw_Bow_War_03	// Sturmbogen
 //ItRw_Bow_War_02	// Orkhetzer
 //ItRw_Bow_War_01	// Kriegsbogen
@@ -26,7 +26,7 @@
 
 INSTANCE ItRw_Arrow(C_Item)
 {
-	name 				=	"Flèche";
+	name 				=	"FlÃ¨che";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -70,7 +70,7 @@ INSTANCE ItRw_Bolt(C_Item)
 
 INSTANCE ItRw_Mil_Crossbow(C_Item)
 {
-	name 				=	"Arbalète";
+	name 				=	"ArbalÃ¨te";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -116,7 +116,7 @@ INSTANCE ItRw_Sld_Bow(C_Item)
 };
 
 
-//Bögen
+//BÃ¶gen
 //Kapitel 1
 instance ItRw_Bow_L_01(C_Item)
 {
@@ -243,7 +243,7 @@ INSTANCE ItRw_Bow_M_01 (C_Item)
 
 INSTANCE ItRw_Bow_M_02 (C_Item)
 {
-	name 				=	"Arc en frêne";
+	name 				=	"Arc en frÃªne";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -293,7 +293,7 @@ INSTANCE ItRw_Bow_M_03 (C_Item)
 
 INSTANCE ItRw_Bow_M_04 (C_Item)
 {
-	name 				=	"Arc en hêtre";
+	name 				=	"Arc en hÃªtre";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -343,7 +343,7 @@ INSTANCE ItRw_Bow_H_01 (C_Item)
 
 INSTANCE ItRw_Bow_H_02 (C_Item)
 {
-	name 				=	"Arc en chêne";
+	name 				=	"Arc en chÃªne";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -415,13 +415,13 @@ INSTANCE ItRw_Bow_H_04 (C_Item)
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 
-//Armbrüste
+//ArmbrÃ¼ste
 
 //Kapitel 1
 
 INSTANCE ItRw_Crossbow_L_01(C_Item)
 {
-	name 				=	"Arbalète de chasse";
+	name 				=	"ArbalÃ¨te de chasse";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -446,7 +446,7 @@ INSTANCE ItRw_Crossbow_L_01(C_Item)
 
 INSTANCE ItRw_Crossbow_L_02(C_Item)
 {
-	name 				=	"Arbalète légère";
+	name 				=	"ArbalÃ¨te lÃ©gÃ¨re";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -471,7 +471,7 @@ INSTANCE ItRw_Crossbow_L_02(C_Item)
 
 INSTANCE ItRw_Crossbow_M_01(C_Item)
 {
-	name 				=	"Arbalète";
+	name 				=	"ArbalÃ¨te";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -496,7 +496,7 @@ INSTANCE ItRw_Crossbow_M_01(C_Item)
 
 INSTANCE ItRw_Crossbow_M_02(C_Item)
 {
-	name 				=	"Arbalète de guerre";
+	name 				=	"ArbalÃ¨te de guerre";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -521,7 +521,7 @@ INSTANCE ItRw_Crossbow_M_02(C_Item)
 
 INSTANCE ItRw_Crossbow_H_01(C_Item)
 {
-	name 				=	"Arbalète lourde";
+	name 				=	"ArbalÃ¨te lourde";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -546,7 +546,7 @@ INSTANCE ItRw_Crossbow_H_01(C_Item)
 
 INSTANCE ItRw_Crossbow_H_02(C_Item)
 {
-	name 				=	"Arbalète de chasseur de dragon";
+	name 				=	"ArbalÃ¨te de chasseur de dragon";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;

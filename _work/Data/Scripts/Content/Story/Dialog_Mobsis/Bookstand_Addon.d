@@ -1,6 +1,6 @@
 
 //*************************************
-//	Buchständer im Banditenlager
+//	BuchstÃ¤nder im Banditenlager
 //*************************************
 
 FUNC VOID Use_Bookstand_Addon_BL_S1()		
@@ -23,13 +23,13 @@ FUNC VOID Use_Bookstand_Addon_BL_S1()
 
 					Doc_PrintLine	( nDocID,  0, "Mine"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Crimson : 79 pépites d'or reçues et fondues"					);
+					Doc_PrintLines	( nDocID,  0, "Crimson : 79 pÃ©pites d'or reÃ§ues et fondues"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Scatty : marchandises reçues à hauteur de 250 pièces d'or"					);
+					Doc_PrintLines	( nDocID,  0, "Scatty : marchandises reÃ§ues Ã  hauteur de 250 piÃ¨ces d'or"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Garaz : 6 pépites d'or reçues"					);
+					Doc_PrintLines	( nDocID,  0, "Garaz : 6 pÃ©pites d'or reÃ§ues"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Tous les gardes : 9 pépites d'or reçues"					);
+					Doc_PrintLines	( nDocID,  0, "Tous les gardes : 9 pÃ©pites d'or reÃ§ues"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -41,17 +41,17 @@ FUNC VOID Use_Bookstand_Addon_BL_S1()
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, "Camp :"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Gardes de Raven : 25 pièces d'or"					);
+					Doc_PrintLines	( nDocID,  1, "Gardes de Raven : 25 piÃ¨ces d'or"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Finn : 60 pièces d'or"					);
-					Doc_PrintLines	( nDocID,  1, "Lennar : 40 pièces d'or"); 
-					Doc_PrintLines	( nDocID,  1, "Emilio : 50 pièces d'or"					);
+					Doc_PrintLines	( nDocID,  1, "Finn : 60 piÃ¨ces d'or"					);
+					Doc_PrintLines	( nDocID,  1, "Lennar : 40 piÃ¨ces d'or"); 
+					Doc_PrintLines	( nDocID,  1, "Emilio : 50 piÃ¨ces d'or"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Autres : 20 pièces d'or"					);
+					Doc_PrintLines	( nDocID,  1, "Autres : 20 piÃ¨ces d'or"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Huno, Fisk, Snaf : selon les marchandises"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Chasseurs : que le chef s'occupe d'eux ! Franco a reçu 7 pièces d'or");
+					Doc_PrintLines	( nDocID,  1, "Chasseurs : que le chef s'occupe d'eux ! Franco a reÃ§u 7 piÃ¨ces d'or");
 					Doc_Show		( nDocID );
 	
 	};
@@ -83,52 +83,52 @@ func int C_CanReadBookStand ()
 
 func void Use_BookstandMaya () 
 {
-	if (BookstandMayaArt == 1)		//Joly:  überall objektieren!
+	if (BookstandMayaArt == 1)		//Joly:  Ã¼berall objektieren!
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLines	( StPl_nDocID,  0, "...car seuls les VEILLEURS DES MORTS peuvent invoquer les anciens.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Leur absence nous fait cruellement défaut. Sans le conseil des anciens, nous sommes à la merci des nôtres.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Leur absence nous fait cruellement dÃ©faut. Sans le conseil des anciens, nous sommes Ã  la merci des nÃ´tres.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Les SOIGNEURS avaient pour mission de sceller le portail et d'en détruire la clef. Adanos seul sait ce qui a pu advenir d'eux, ou même s'ils ont atteint leur objectif.");         
+			Doc_PrintLines	( StPl_nDocID,  0, "Les SOIGNEURS avaient pour mission de sceller le portail et d'en dÃ©truire la clef. Adanos seul sait ce qui a pu advenir d'eux, ou mÃªme s'ils ont atteint leur objectif.");         
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "La CASTE DES GUERRIERS a été anéantie par la furie d'Adanos. Le cœur du vieux prince guerrier est brisé."		);  
+			Doc_PrintLines	( StPl_nDocID,  1, "La CASTE DES GUERRIERS a Ã©tÃ© anÃ©antie par la furie d'Adanos. Le cÅ“ur du vieux prince guerrier est brisÃ©."		);  
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Seuls les PRETRES restants gardent espoir et prêchent inlassablement la renaissance de notre ville autrefois magnifique.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Seuls les PRETRES restants gardent espoir et prÃªchent inlassablement la renaissance de notre ville autrefois magnifique.");
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Toutefois, nous, les ERUDITS, connaissons l'effroyable vérité. JHARKENDAR est tombé, et sera inéluctablement emporté par les flots du temps.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Toutefois, nous, les ERUDITS, connaissons l'effroyable vÃ©ritÃ©. JHARKENDAR est tombÃ©, et sera inÃ©luctablement emportÃ© par les flots du temps.");
 			Doc_PrintLines	( StPl_nDocID,  1, "");        
 	}
 	else if (BookstandMayaArt == 2)     //Joly: objektieren egal wo, nur nicht Entrance.                     
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "RHADEMES a été emprisonné à tout jamais dans le temple d'ADANOS, mais la puissance de l'épée n'a pas été anéantie.");
+			Doc_PrintLines	( StPl_nDocID,  0, "RHADEMES a Ã©tÃ© emprisonnÃ© Ã  tout jamais dans le temple d'ADANOS, mais la puissance de l'Ã©pÃ©e n'a pas Ã©tÃ© anÃ©antie.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Son influence était devenue trop immense. Les rues étaient sans cesse le théâtre de massacres.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Son influence Ã©tait devenue trop immense. Les rues Ã©taient sans cesse le thÃ©Ã¢tre de massacres.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "La furie d'ADANOS pénétrait toute chose. La mer, elle-même, se dressa au-dessus de JHARKENDAR, inondant la ville toute entière.");
+			Doc_PrintLines	( StPl_nDocID,  0, "La furie d'ADANOS pÃ©nÃ©trait toute chose. La mer, elle-mÃªme, se dressa au-dessus de JHARKENDAR, inondant la ville toute entiÃ¨re.");
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Seuls les temples et édifices érigés sur les hauteurs furent presque épargnés.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Seuls les temples et Ã©difices Ã©rigÃ©s sur les hauteurs furent presque Ã©pargnÃ©s.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
-			Doc_PrintLines	( StPl_nDocID,  1, "Les rares citoyens ayant survécu à ce cataclysme ne trouvèrent pas la force de reconstruire la ville.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Les rares citoyens ayant survÃ©cu Ã  ce cataclysme ne trouvÃ¨rent pas la force de reconstruire la ville.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
-			Doc_PrintLines	( StPl_nDocID,  1, "Ainsi fut scellé le destin de JHARKENDAR.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Ainsi fut scellÃ© le destin de JHARKENDAR.");
 
 			if ( SC_Knows_WeaponInAdanosTempel == FALSE)
 			{				
@@ -139,64 +139,64 @@ func void Use_BookstandMaya ()
 	else if (BookstandMayaArt == 3)                  
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "L'âge de QUARHODRON ne lui permettait plus de diriger notre armée. C'est pourquoi les prêtres firent valoir à son encontre leur droit de prééminence.");
+			Doc_PrintLines	( StPl_nDocID,  0, "L'Ã¢ge de QUARHODRON ne lui permettait plus de diriger notre armÃ©e. C'est pourquoi les prÃªtres firent valoir Ã  son encontre leur droit de prÃ©Ã©minence.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Ils lui ordonnèrent de démissionner et de leur remettre l'épée.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Ils lui ordonnÃ¨rent de dÃ©missionner et de leur remettre l'Ã©pÃ©e.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Le Conseil des Cinq devait élire son successeur. Toutefois, la caste des guerriers refusa au Conseil le droit de voter.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Le Conseil des Cinq devait Ã©lire son successeur. Toutefois, la caste des guerriers refusa au Conseil le droit de voter.");
 	                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Les guerriers refusaient de se soumettre plus longtemps à l'autorité du Conseil des Cinq, et élirent RHADEMES, fils de QUARHODRON, à la tête de leur caste.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Les guerriers refusaient de se soumettre plus longtemps Ã  l'autoritÃ© du Conseil des Cinq, et Ã©lirent RHADEMES, fils de QUARHODRON, Ã  la tÃªte de leur caste.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Par orgueil, trompé par la confiance qu'il accordait à sa chair et son sang, QUARHODRON céda à leur requête.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Par orgueil, trompÃ© par la confiance qu'il accordait Ã  sa chair et son sang, QUARHODRON cÃ©da Ã  leur requÃªte.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Il remit l'épée à son fils, dans l'espoir qu'il la manierait d'une main aussi forte et juste que la sienne.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Il remit l'Ã©pÃ©e Ã  son fils, dans l'espoir qu'il la manierait d'une main aussi forte et juste que la sienne.");
 	} 
 	else if (BookstandMayaArt == 4)  
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Mais RHADEMES était faible. La volonté de l'épée le vainquit, et fit de lui son instrument.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Mais RHADEMES Ã©tait faible. La volontÃ© de l'Ã©pÃ©e le vainquit, et fit de lui son instrument.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Même les soigneurs ne parvinrent pas à soulager la souffrance et l'infamie qu'il fit déferler sur notre peuple dans son aveuglement.");
+			Doc_PrintLines	( StPl_nDocID,  0, "MÃªme les soigneurs ne parvinrent pas Ã  soulager la souffrance et l'infamie qu'il fit dÃ©ferler sur notre peuple dans son aveuglement.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "L'épée comprit rapidement que ce peuple était trop faible pour s'opposer à ses desseins.");
+			Doc_PrintLines	( StPl_nDocID,  0, "L'Ã©pÃ©e comprit rapidement que ce peuple Ã©tait trop faible pour s'opposer Ã  ses desseins.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Seule la puissance de nos anciens pouvait s'élever contre elle.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Seule la puissance de nos anciens pouvait s'Ã©lever contre elle.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Elle ordonna donc à RHADEMES de bannir ou d'exécuter tous les veilleurs des morts, anéantissant ainsi tout espoir de nous délivrer de ce mal.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Elle ordonna donc Ã  RHADEMES de bannir ou d'exÃ©cuter tous les veilleurs des morts, anÃ©antissant ainsi tout espoir de nous dÃ©livrer de ce mal.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Ainsi, il ne restait plus un seul veilleur des morts lorsque les quatre chefs de notre peuple, destitués de leur pouvoir, prirent l'amère décision d'abandonner JHARKENDAR.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Ainsi, il ne restait plus un seul veilleur des morts lorsque les quatre chefs de notre peuple, destituÃ©s de leur pouvoir, prirent l'amÃ¨re dÃ©cision d'abandonner JHARKENDAR.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "La guerre faisait rage dans les rues... C'est alors que les soigneurs partirent sceller à tout jamais l'unique entrée de notre vallée.");
+			Doc_PrintLines	( StPl_nDocID,  1, "La guerre faisait rage dans les rues... C'est alors que les soigneurs partirent sceller Ã  tout jamais l'unique entrÃ©e de notre vallÃ©e.");
 	}
 	else if (BookstandMayaArt == 5)
 	{
 			Doc_PrintLines	( StPl_nDocID,  0, "");  
-			Doc_PrintLines	( StPl_nDocID,  0, "En ces lieux, QUARHODRON, le grand prêtre KHARDIMON et moi-même élaborâmes d'un plan pour vaincre RHADEMES et l'épée.");
+			Doc_PrintLines	( StPl_nDocID,  0, "En ces lieux, QUARHODRON, le grand prÃªtre KHARDIMON et moi-mÃªme Ã©laborÃ¢mes d'un plan pour vaincre RHADEMES et l'Ã©pÃ©e.");
 			Doc_PrintLines	( StPl_nDocID,  0, "");  
-			Doc_PrintLines	( StPl_nDocID,  0, "QUARHODRON et KHARDIMON estimaient tous deux qu'en unissant nos forces, nous pouvions vaincre RHADEMES au cours d'un combat. Mais je connaissais trop bien la puissance de l'épée pour croire à cette hypothèse.");
+			Doc_PrintLines	( StPl_nDocID,  0, "QUARHODRON et KHARDIMON estimaient tous deux qu'en unissant nos forces, nous pouvions vaincre RHADEMES au cours d'un combat. Mais je connaissais trop bien la puissance de l'Ã©pÃ©e pour croire Ã  cette hypothÃ¨se.");
 			Doc_PrintLines	( StPl_nDocID,  0, "");	
-			Doc_PrintLines	( StPl_nDocID,  0, "Je me dressai donc contre la décision des autres, estimant que seule une ruse nous permettrait de venir à bout de RHADEMES.");			
+			Doc_PrintLines	( StPl_nDocID,  0, "Je me dressai donc contre la dÃ©cision des autres, estimant que seule une ruse nous permettrait de venir Ã  bout de RHADEMES.");			
 
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLines	( StPl_nDocID,  1, ""		);  
 
-			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON se soumit à la décision du Conseil. Il se rendit au temple d'Adanos, et fit mander son fils.");                   
+			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON se soumit Ã  la dÃ©cision du Conseil. Il se rendit au temple d'Adanos, et fit mander son fils.");                   
 			Doc_PrintLines	( StPl_nDocID,  1, "");  
-			Doc_PrintLines	( StPl_nDocID,  1, "La haine qui dévorait son fils avait pris une telle ampleur que RHADEMES s'engouffra dans le temple ivre de rage, déterminé à exécuter son père.");                
+			Doc_PrintLines	( StPl_nDocID,  1, "La haine qui dÃ©vorait son fils avait pris une telle ampleur que RHADEMES s'engouffra dans le temple ivre de rage, dÃ©terminÃ© Ã  exÃ©cuter son pÃ¨re.");                
 			Doc_PrintLines	( StPl_nDocID,  1, "");  
-			Doc_PrintLines	( StPl_nDocID,  1, "Il ne découvrit que trop tard quelles étaient nos intentions.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Il ne dÃ©couvrit que trop tard quelles Ã©taient nos intentions.");
 			Doc_PrintLines	( StPl_nDocID,  1, ""); 
-			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON scella les salles sacrées du temple derrière lui, et RHADEMES fut emprisonné dans le temple pour l'éternité."); 
+			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON scella les salles sacrÃ©es du temple derriÃ¨re lui, et RHADEMES fut emprisonnÃ© dans le temple pour l'Ã©ternitÃ©."); 
 			
 			Doc_PrintLines	( StPl_nDocID,  1, "");  
 			Doc_PrintLines	( StPl_nDocID,  1, "");

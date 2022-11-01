@@ -32,7 +32,7 @@ INSTANCE DIA_Wambo_PICKPOCKET (C_INFO)
 	condition	= DIA_Wambo_PICKPOCKET_Condition;
 	information	= DIA_Wambo_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ce serait risqué de lui voler sa clef)";
+	description = "(Ce serait risquÃ© de lui voler sa clef)";
 };                       
 
 FUNC INT DIA_Wambo_PICKPOCKET_Condition()
@@ -96,7 +96,7 @@ FUNC VOID DIA_Wambo_Job_Info()
 {	
 	AI_Output (other,self ,"DIA_Wambo_Job_15_00"); //Que faites-vous ici ?
 	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //Je fais en sorte que personne n'entre dans les maisons.
-	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //Ordre direct du seigneur Hagen. Et ne songez même pas à violer cet ordre !
+	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //Ordre direct du seigneur Hagen. Et ne songez mÃªme pas Ã  violer cet ordre !
 };
 //*************************************************************
 //		Wie ist die Lage?
@@ -108,7 +108,7 @@ INSTANCE DIA_Wambo_Situation(C_INFO)
 	condition	= DIA_Wambo_Situation_Condition;
 	information	= DIA_Wambo_Situation_Info;
 	permanent	= TRUE;
-	description = "Comment ça se passe ?";
+	description = "Comment Ã§a se passe ?";
 };                       
 
 FUNC INT DIA_Wambo_Situation_Condition()
@@ -121,7 +121,7 @@ FUNC INT DIA_Wambo_Situation_Condition()
 
 FUNC VOID DIA_Wambo_Situation_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Situation_15_00"); //Comment ça va ?
+	AI_Output (other,self ,"DIA_Wambo_Situation_15_00"); //Comment Ã§a va ?
 	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //Pour l'instant, tout est calme.
 };
 //*************************************************************
@@ -134,7 +134,7 @@ INSTANCE DIA_Wambo_Ramirez(C_INFO)
 	condition	= DIA_Wambo_Ramirez_Condition;
 	information	= DIA_Wambo_Ramirez_Info;
 	permanent	= FALSE;
-	description = "Je suis envoyé par notre ami mutuel, Ramirez.";
+	description = "Je suis envoyÃ© par notre ami mutuel, Ramirez.";
 };                       
 
 FUNC INT DIA_Wambo_Ramirez_Condition()
@@ -149,9 +149,9 @@ FUNC VOID DIA_Wambo_Ramirez_Info()
 {	
 	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_00"); //C'est notre ami commun, Ramirez, qui m'envoie.
 	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Oh ? Ce Ramirez est un sale rat. Et ce n'est pas mon ami. M'apportez-vous quelque chose ?
-	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Cela dépend de ce que vous voulez.
+	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Cela dÃ©pend de ce que vous voulez.
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(discrètement) D'accord, je vais vous dire comment ça marche. Vous me payez 250 pièces d'or et je disparais cette nuit.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(discrÃ¨tement) D'accord, je vais vous dire comment Ã§a marche. Vous me payez 250 piÃ¨ces d'or et je disparais cette nuit.
 	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Si je suis dans le coin et qu'on vous remarque trop, on ne fait pas affaire.
 };
 //*************************************************************
@@ -164,7 +164,7 @@ INSTANCE DIA_Wambo_Deal(C_INFO)
 	condition	= DIA_Wambo_Deal_Condition;
 	information	= DIA_Wambo_Deal_Info;
 	permanent	= TRUE;
-	description = "(Payer 250 pièces d'or)";
+	description = "(Payer 250 piÃ¨ces d'or)";
 };                       
 //-----------------------------------
 var int DIA_Wambo_Deal_permanent;
@@ -183,7 +183,7 @@ FUNC VOID DIA_Wambo_Deal_Info()
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Très bien, alors je vais disparaître pour la soirée.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //TrÃ¨s bien, alors je vais disparaÃ®tre pour la soirÃ©e.
 		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //Et souvenez-vous, si vous provoquez des troubles, je ne vous connais pas.
 		
 		DIA_Wambo_Deal_permanent = TRUE;
@@ -192,8 +192,8 @@ FUNC VOID DIA_Wambo_Deal_Info()
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Wambo_Deal_15_03"); //… mais je ne l'ai pas sur moi.
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_04"); //Je ne supporte pas qu'on essaie de se payer ma tête. Apportez-moi l'or.
+		AI_Output (other,self ,"DIA_Wambo_Deal_15_03"); //â€¦ mais je ne l'ai pas sur moi.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_04"); //Je ne supporte pas qu'on essaie de se payer ma tÃªte. Apportez-moi l'or.
 		AI_StopProcessInfos (self);
 	};
 };

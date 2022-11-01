@@ -19,7 +19,7 @@ FUNC VOID DIA_Addon_Franco_EXIT_Info()
 	if (Franco_Exit == FALSE)
 	&& (MIS_HlpLogan == LOG_RUNNING)
 	{
-		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//Ne vous égarez pas, ou vous finirez dans l'estomac d'un requin.
+		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//Ne vous Ã©garez pas, ou vous finirez dans l'estomac d'un requin.
 		Franco_Exit = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -34,7 +34,7 @@ INSTANCE DIA_Franco_PICKPOCKET (C_INFO)
 	condition	= DIA_Franco_PICKPOCKET_Condition;
 	information	= DIA_Franco_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Il serait extrêmement risqué de lui dérober son amulette)";
+	description = "(Il serait extrÃªmement risquÃ© de lui dÃ©rober son amulette)";
 };                       
 
 FUNC INT DIA_Franco_PICKPOCKET_Condition()
@@ -100,17 +100,17 @@ FUNC VOID DIA_Addon_Franco_HI_Info()
 {	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Si je rends service à Franco, il me laissera entrer dans le camp.");
+	B_LogEntry (Topic_Addon_Franco,"Si je rends service Ã  Franco, il me laissera entrer dans le camp.");
 	
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Hé, que faites-vous ici ? Vous voulez rentrer dans le camp ?
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//HÃ©, que faites-vous ici ? Vous voulez rentrer dans le camp ?
 	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//Oui, je suis...
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Je me fiche de savoir qui vous êtes. Mon nom est Franco, et c'est moi qui commande ici.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Je me fiche de savoir qui vous Ãªtes. Mon nom est Franco, et c'est moi qui commande ici.
 	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Si vous faites du bon travail ici, je vous laisserai rentrer dans le camp.
 	
 	if (Ramon_News == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Ramon, le garde posté devant la porte, vous dira si de nouvelles personnes sont demandées à l'intérieur du camp. Allez-le-lui demander.
-		B_LogEntry (Topic_Addon_Franco,"Je suis censé demander à Ramon, le garde posté devant la porte, s'ils ont besoin de nouvelles recrues à l'intérieur du camp.");
+		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Ramon, le garde postÃ© devant la porte, vous dira si de nouvelles personnes sont demandÃ©es Ã  l'intÃ©rieur du camp. Allez-le-lui demander.
+		B_LogEntry (Topic_Addon_Franco,"Je suis censÃ© demander Ã  Ramon, le garde postÃ© devant la porte, s'ils ont besoin de nouvelles recrues Ã  l'intÃ©rieur du camp.");
 	};
 };
 //---------------------------------------------------------------------
@@ -141,9 +141,9 @@ FUNC VOID DIA_Addon_Franco_Hai_Info()
 	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//Vous n'avez encore rien fait.
 	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//J'ai fait beaucoup de choses, seulement vous n'en savez rien du tout !
 	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//Bien, alors vous voulez une chance ? Vous aurez une chance. Allez voir Logan. Il a quelques soucis avec les requins des marais.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//Aidez-le à éliminer ces bestioles et vous pourrez rentrer dans le camp.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//Aidez-le Ã  Ã©liminer ces bestioles et vous pourrez rentrer dans le camp.
 	
-	B_LogEntry (Topic_Addon_Franco,"Franco veut que j'aille aider Logan avant de me laisser accéder au camp.");
+	B_LogEntry (Topic_Addon_Franco,"Franco veut que j'aille aider Logan avant de me laisser accÃ©der au camp.");
 };
 //---------------------------------------------------------------------
 //	Info Logan Wo?
@@ -155,7 +155,7 @@ INSTANCE DIA_Addon_Franco_Wo   (C_INFO)
 	condition   = DIA_Addon_Franco_Wo_Condition;
 	information = DIA_Addon_Franco_Wo_Info;
 	permanent   = FALSE;
-	description = "Où puis-je trouver ce Logan ?";
+	description = "OÃ¹ puis-je trouver ce Logan ?";
 };
 FUNC INT DIA_Addon_Franco_Wo_Condition()
 {	
@@ -168,8 +168,8 @@ FUNC INT DIA_Addon_Franco_Wo_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Wo_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//Où puis-je trouver ce Logan ?
-	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Lorsque vous vous trouvez face à l'entrée du camp, suivez le mur de pierres vers la gauche. Ensuite, enfoncez-vous un peu dans le marais.
+	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//OÃ¹ puis-je trouver ce Logan ?
+	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Lorsque vous vous trouvez face Ã  l'entrÃ©e du camp, suivez le mur de pierres vers la gauche. Ensuite, enfoncez-vous un peu dans le marais.
 	AI_StopProcessInfos (self);
 };
 //---------------------------------------------------------------------
@@ -196,8 +196,8 @@ FUNC INT DIA_Addon_Franco_tot_Condition()
 FUNC VOID DIA_Addon_Franco_tot_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Logan est mort.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Damnation ! Il était le meilleur de nos chasseurs... c'est une mauvaise nouvelle.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Quoi qu'il en soit, j'ai déjà envoyé quelqu'un d'autre à l'intérieur du camp.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Damnation ! Il Ã©tait le meilleur de nos chasseurs... c'est une mauvaise nouvelle.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Quoi qu'il en soit, j'ai dÃ©jÃ  envoyÃ© quelqu'un d'autre Ã  l'intÃ©rieur du camp.
 	
 	if (MIS_HlpLogan == LOG_RUNNING)
 	{
@@ -227,16 +227,16 @@ FUNC INT DIA_Addon_Franco_HaiSuccess_Condition()
 };
 FUNC VOID DIA_Addon_Franco_HaiSuccess_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_00");//J'ai aidé Logan...
+	AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_00");//J'ai aidÃ© Logan...
 	
 	if Npc_IsDead (Logan)
 	{
-		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//...mais il n'a pas survécu.
+		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//...mais il n'a pas survÃ©cu.
 	};
 	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//Bien, alors vous avez combattu les requins des marais - vous nous serez utile... du moins, plus utile que la plupart des types ici.
 	B_GivePlayerXP (XP_Addon_HlpLogan);
 	
-	B_LogEntry (Topic_Addon_Franco,"J'ai aidé Logan, mais ça n'a pas suffi pour que Franco me laisse accéder au camp.");
+	B_LogEntry (Topic_Addon_Franco,"J'ai aidÃ© Logan, mais Ã§a n'a pas suffi pour que Franco me laisse accÃ©der au camp.");
 };
 
 //---------------------------------------------------------------------
@@ -263,15 +263,15 @@ FUNC VOID DIA_Addon_Franco_Mis2_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//Alors, je peux rentrer dans le camp, maintenant ?
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Ecoutez - j'ai besoin de vous pour une nouvelle mission.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//Il y a quelques jours, j'ai envoyé Edgor dans le marais.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//Il y a quelques jours, j'ai envoyÃ© Edgor dans le marais.
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//Il devait me ramener une ancienne tablette de pierre - mais depuis, personne ne l'a revu.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Allez voir ce qu'il fait, et ramenez-moi cette satanée tablette de pierre ?
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Allez voir ce qu'il fait, et ramenez-moi cette satanÃ©e tablette de pierre ?
 	
 	MIS_HlpEdgor = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_Stoneplate,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Stoneplate,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Stoneplate,"Franco me demande de ramener une tablette de pierre qu'Edgor devait lui rapporter. Désormais, c'est à moi de m'en charger.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Franco me demande de ramener une tablette de pierre qu'Edgor devait lui rapporter. DÃ©sormais, c'est Ã  moi de m'en charger.");
 	
 	B_LogEntry (Topic_Addon_Franco,"Franco veut que j'aide Edgor avant de me permettre de rentrer dans le camp.");
 };
@@ -300,9 +300,9 @@ FUNC VOID DIA_Addon_Franco_While_Info()
 	AI_Output (other,self,"DIA_Addon_Franco_While_15_00");//Et l'or ?
 	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Quoi ? Que dites-vous ?
 	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Est-ce que je toucherai quelque chose en contrepartie de mon travail ici, dans le marais ?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(très amical) Vous voulez de l'or ? Bien sûr, combien voulez-vous ? Cinquante pépites d'or ? Cent ? Je vous donnerai tout l'or que vous pouvez porter...
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(fort) Pour qui vous prenez-vous ? Vous essayez de m'énerver ?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Maintenant, dégagez d'ici et allez faire quelque chose de votre journée ? Dans le cas contraire, vous ne toucherez pas la moindre pépite d'or ?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(trÃ¨s amical) Vous voulez de l'or ? Bien sÃ»r, combien voulez-vous ? Cinquante pÃ©pites d'or ? Cent ? Je vous donnerai tout l'or que vous pouvez porter...
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(fort) Pour qui vous prenez-vous ? Vous essayez de m'Ã©nerver ?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Maintenant, dÃ©gagez d'ici et allez faire quelque chose de votre journÃ©e ? Dans le cas contraire, vous ne toucherez pas la moindre pÃ©pite d'or ?
 	AI_StopProcessInfos(self);
 };
 
@@ -328,8 +328,8 @@ FUNC INT DIA_Addon_Franco_WOEDGOR_Condition()
 };
 FUNC VOID DIA_Addon_Franco_WOEDGOR_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_15_00"); //(soupire) Alors, où puis-je trouver cet Edgor ?
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Vous voulez connaître le chemin le plus rapide, ou le chemin le plus sûr ?
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_15_00"); //(soupire) Alors, oÃ¹ puis-je trouver cet Edgor ?
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Vous voulez connaÃ®tre le chemin le plus rapide, ou le chemin le plus sÃ»r ?
 	
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
 	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Je prendrai le chemin le plus rapide." ,DIA_Addon_Franco_WOEDGOR_Fast);
@@ -338,15 +338,15 @@ FUNC VOID DIA_Addon_Franco_WOEDGOR_Info()
 
 func void B_Addon_Franco_There()
 {
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Ce marais est empli de vieilles ruines. Il est sûrement en train de se la couler douce quelque part à l'intérieur d'un bâtiment abandonné...
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //J'imagine qu'il a eu l'intelligence d'allumer un feu de bois. Ça devrait vous permettre de le repérer facilement.
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Ce marais est empli de vieilles ruines. Il est sÃ»rement en train de se la couler douce quelque part Ã  l'intÃ©rieur d'un bÃ¢timent abandonnÃ©...
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //J'imagine qu'il a eu l'intelligence d'allumer un feu de bois. Ã‡a devrait vous permettre de le repÃ©rer facilement.
 };
 
 func void DIA_Addon_Franco_WOEDGOR_Easy()
 {
 	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Indiquez-moi le chemin le plus facile.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Suivez le chemin jusqu'à la grande porte. Vous devriez y trouver Sancho.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Là, tournez à gauche et suivez les marches.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Suivez le chemin jusqu'Ã  la grande porte. Vous devriez y trouver Sancho.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //LÃ , tournez Ã  gauche et suivez les marches.
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -385,11 +385,11 @@ FUNC VOID DIA_Addon_Franco_tafel_Info()
 	AI_Output (other,self,"DIA_Addon_Franco_tafel_15_00");//Voici la tablette de pierre.
 	B_GiveInvItems (other, self, ItMi_Addon_Stone_04,1);
 	
-	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Bien, très bien ! Raven sera content de vous.
+	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Bien, trÃ¨s bien ! Raven sera content de vous.
 	MIS_HlpEdgor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_HlpEdgor);
 	
-	B_LogEntry (Topic_Addon_Franco,"J'ai rapporté à Franco la tablette de pierre qu'il voulait.");
+	B_LogEntry (Topic_Addon_Franco,"J'ai rapportÃ© Ã  Franco la tablette de pierre qu'il voulait.");
 };
 
 //---------------------------------------------------------------------
@@ -417,7 +417,7 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 	
 	if !Npc_IsDead (Logan)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//Non, je viens d'y envoyer Logan. Son nom était avant le vôtre, sur la liste.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//Non, je viens d'y envoyer Logan. Son nom Ã©tait avant le vÃ´tre, sur la liste.
 		
 		Logan_Inside = TRUE;
 		AI_Teleport (Logan,"BL_INN_CORNER_02");
@@ -425,13 +425,13 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//Non, j'y ai déjà envoyé quelqu'un d'autre.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//Non, j'y ai dÃ©jÃ  envoyÃ© quelqu'un d'autre.
 	};
 	
 	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//Et pour l'instant, le camp n'a besoin de personne d'autre.
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//De plus, j'ai vraiment besoin de vous ici, (sourit) maintenant que Logan n'est plus des nôtres ?
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//De plus, j'ai vraiment besoin de vous ici, (sourit) maintenant que Logan n'est plus des nÃ´tres ?
 		
-	B_LogEntry (Topic_Addon_Franco,"Franco refuse de me laisser rentrer dans le camp. Je crois que je vais devoir régler une fois pour toutes le problème Franco...");
+	B_LogEntry (Topic_Addon_Franco,"Franco refuse de me laisser rentrer dans le camp. Je crois que je vais devoir rÃ©gler une fois pour toutes le problÃ¨me Franco...");
 };
 
 //---------------------------------------------------------------------
@@ -463,7 +463,7 @@ FUNC VOID DIA_Addon_Franco_Fight_Info()
 func void DIA_Addon_Franco_Fight_Duel()
 {
 	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //Alors, vous le regretterez, tout simplement.
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Vous me menacez ? VOUS ? Vous voulez me menacer ? Il est temps de vous donner une leçon...
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Vous me menacez ? VOUS ? Vous voulez me menacer ? Il est temps de vous donner une leÃ§on...
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -500,7 +500,7 @@ FUNC INT DIA_Addon_Franco_Pig_Condition()
 FUNC VOID DIA_Addon_Franco_Pig_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Ordure ! Je vais vous tuer !
-	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(tendu) Misérable petit vermisseau, vous voulez vous mesurer à moi ? Attendez voir
+	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(tendu) MisÃ©rable petit vermisseau, vous voulez vous mesurer Ã  moi ? Attendez voir
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

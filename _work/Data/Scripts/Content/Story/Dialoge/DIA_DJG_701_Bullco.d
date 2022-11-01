@@ -42,7 +42,7 @@ instance DIA_BullcoDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_BullcoDJG_HALLO_Condition;
 	information	 = 	DIA_BullcoDJG_HALLO_Info;
 
-	description	 = 	"Quel est le problème ??";
+	description	 = 	"Quel est le problÃ¨me ??";
 };
 
 func int DIA_BullcoDJG_HALLO_Condition ()
@@ -55,9 +55,9 @@ func int DIA_BullcoDJG_HALLO_Condition ()
 
 func void DIA_BullcoDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_BullcoDJG_HALLO_15_00"); //Quel est le problème ?
+	AI_Output			(other, self, "DIA_BullcoDJG_HALLO_15_00"); //Quel est le problÃ¨me ?
 	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_01"); //Il fait tellement froid ! Je ne sais pas pourquoi Sylvio voulait tant venir ici !
-	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_02"); //Il y a plein d'autres endroits dans la région où il y a des choses à faire.
+	AI_Output			(self, other, "DIA_BullcoDJG_HALLO_06_02"); //Il y a plein d'autres endroits dans la rÃ©gion oÃ¹ il y a des choses Ã  faire.
 	AI_StopProcessInfos (self);
 };
 
@@ -91,11 +91,11 @@ func void DIA_BullcoDJG_WARTEMAL_Info ()
 
 	if (Npc_KnowsInfo(other, DIA_Bullco_WASNUN))
 		{
-		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_01"); //Arrêtez de me taper sur les nerfs.
+		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_01"); //ArrÃªtez de me taper sur les nerfs.
 		}
 	else
 		{
-		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_02"); //Pas maintenant ! Je gèle ! Je veux juste partir d'ici aussi vite que possible.
+		AI_Output			(self, other, "DIA_BullcoDJG_WARTEMAL_06_02"); //Pas maintenant ! Je gÃ¨le ! Je veux juste partir d'ici aussi vite que possible.
 		};
 
 	AI_StopProcessInfos (self);
@@ -124,7 +124,7 @@ func int DIA_Bullco_SYLVIODEAD_Condition ()
 
 func void DIA_Bullco_SYLVIODEAD_Info ()
 {
-	AI_Output			(self, other, "DIA_Bullco_SYLVIODEAD_06_00"); //Malédiction. Sylvio est mort.
+	AI_Output			(self, other, "DIA_Bullco_SYLVIODEAD_06_00"); //MalÃ©diction. Sylvio est mort.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -155,17 +155,17 @@ func int DIA_Bullco_WASNUN_Condition ()
 func void DIA_Bullco_WASNUN_Info ()
 {
 	AI_Output			(other, self, "DIA_Bullco_WASNUN_15_00"); //Que comptez-vous faire maintenant que Sylvio est mort ?
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_06_01"); //Aucune idée. Je pense que je vais aller avec les autres chasseurs de dragons, s'ils veulent encore de moi.
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_06_01"); //Aucune idÃ©e. Je pense que je vais aller avec les autres chasseurs de dragons, s'ils veulent encore de moi.
 
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Je crois que je vais juste vous arracher la tête.", DIA_Bullco_WASNUN_kopfab );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Savez-vous où sont les autres ?", DIA_Bullco_WASNUN_woandere );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Je crois que je vais juste vous arracher la tÃªte.", DIA_Bullco_WASNUN_kopfab );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Savez-vous oÃ¹ sont les autres ?", DIA_Bullco_WASNUN_woandere );
 
 };
 
 func void DIA_Bullco_WASNUN_woandere ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_15_00"); //Savez-vous où sont les autres ?
-	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_06_01"); //Je crois. Du moins, j'ai vu l'un d'entre eux près de la rivière là-bas.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_15_00"); //Savez-vous oÃ¹ sont les autres ?
+	AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_06_01"); //Je crois. Du moins, j'ai vu l'un d'entre eux prÃ¨s de la riviÃ¨re lÃ -bas.
 
 	Info_AddChoice	(DIA_Bullco_WASNUN, "Menez-moi aux autres chasseurs de dragons.", DIA_Bullco_WASNUN_woandere_zuihnen );
 };
@@ -178,7 +178,7 @@ func void DIA_Bullco_WASNUN_woandere_zuihnen ()
 
 	Info_AddChoice	(DIA_Bullco_WASNUN, "Comme vous voudrez.", DIA_Bullco_WASNUN_woandere_zuihnen_alleine );
 	Info_AddChoice	(DIA_Bullco_WASNUN, "Estimez-vous heureux que je vous laisse vivre.", DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen );
-	Info_AddChoice	(DIA_Bullco_WASNUN, "Je vous en offre 50 pièces d'or.", DIA_Bullco_WASNUN_woandere_zuihnen_Geld );
+	Info_AddChoice	(DIA_Bullco_WASNUN, "Je vous en offre 50 piÃ¨ces d'or.", DIA_Bullco_WASNUN_woandere_zuihnen_Geld );
 
 
 };
@@ -191,25 +191,25 @@ func void DIA_Bullco_WASNUN_woandere_zuihnen_lebenlassen ()
 
 func void DIA_Bullco_WASNUN_woandere_zuihnen_Geld ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_15_00"); //Je vous donne 50 pièces d'or si vous le faites.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_15_00"); //Je vous donne 50 piÃ¨ces d'or si vous le faites.
 	
 	if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_01"); //Très bien. Envoyez la monnaie.
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_02"); //Suivez-moi. Je vais vous conduire où j'ai vu pour la dernière fois l'un de ces chasseurs de dragons.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_01"); //TrÃ¨s bien. Envoyez la monnaie.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_02"); //Suivez-moi. Je vais vous conduire oÃ¹ j'ai vu pour la derniÃ¨re fois l'un de ces chasseurs de dragons.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"DJGVorposten");
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_03"); //Vous n'avez pas 50 pièces d'or. Allez au diable.
+			AI_Output			(self, other, "DIA_Bullco_WASNUN_woandere_zuihnen_Geld_06_03"); //Vous n'avez pas 50 piÃ¨ces d'or. Allez au diable.
 			AI_StopProcessInfos (self);
 		};
 };
 
 func void DIA_Bullco_WASNUN_woandere_zuihnen_alleine ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_15_00"); //Comme vous voulez, je suis sûr que je les trouverai.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_15_00"); //Comme vous voulez, je suis sÃ»r que je les trouverai.
 	AI_Output			(self ,other, "DIA_Bullco_WASNUN_woandere_zuihnen_alleine_06_01"); //Alors n'allez pas au diable.
 	
 	AI_StopProcessInfos (self);
@@ -218,7 +218,7 @@ func void DIA_Bullco_WASNUN_woandere_zuihnen_alleine ()
 
 func void DIA_Bullco_WASNUN_kopfab ()
 {
-	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_15_00"); //Je pourrais vous arracher la tête.
+	AI_Output			(other, self, "DIA_Bullco_WASNUN_kopfab_15_00"); //Je pourrais vous arracher la tÃªte.
 	AI_Output			(self, other, "DIA_Bullco_WASNUN_kopfab_06_01"); //Fermez-la.
 
 	Info_AddChoice	(DIA_Bullco_WASNUN, "Tirez votre arme. Nous allons en finir tout de suite.", DIA_Bullco_WASNUN_kopfab_angriff );

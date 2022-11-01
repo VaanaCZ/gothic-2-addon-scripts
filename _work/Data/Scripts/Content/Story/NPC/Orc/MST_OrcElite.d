@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcElite(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Orque d'élite";
+	name							=	"Orque d'Ã©lite";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCELITE;
 	voice							=	18;
@@ -107,7 +107,7 @@ INSTANCE OrcElite_Rest (Mst_Default_OrcElite)
 //		Story Orks											
 //*********************************************************************************************************************************************************************************************************************************
 //*************************
-//	OrkElite_AntiPaladinOrkOberst    	(Wenn SC GIL_PAL ist, dann hat er es mit diesen übelriechenden Schergen zu tun!)													
+//	OrkElite_AntiPaladinOrkOberst    	(Wenn SC GIL_PAL ist, dann hat er es mit diesen Ã¼belriechenden Schergen zu tun!)													
 //*************************
 INSTANCE OrkElite_AntiPaladinOrkOberst (Mst_Default_OrcElite)
 {
@@ -134,7 +134,7 @@ INSTANCE OrkElite_AntiPaladinOrkOberst (Mst_Default_OrcElite)
 };
 
 //*************************
-//	Orc Elite AntiPaladin    	(Wenn SC GIL_PAL ist, dann hat er es mit diesen übelriechenden Schergen zu tun!)													
+//	Orc Elite AntiPaladin    	(Wenn SC GIL_PAL ist, dann hat er es mit diesen Ã¼belriechenden Schergen zu tun!)													
 //*************************
 INSTANCE OrcElite_AntiPaladin (Mst_Default_OrcElite)
 {
@@ -153,7 +153,7 @@ INSTANCE OrcElite_AntiPaladin (Mst_Default_OrcElite)
 };
 
 //*************************
-//	Orc Elite AntiPaladin1    	(Wenn SC GIL_PAL ist, dann hat er es mit diesen übelriechenden Schergen zu tun!)													
+//	Orc Elite AntiPaladin1    	(Wenn SC GIL_PAL ist, dann hat er es mit diesen Ã¼belriechenden Schergen zu tun!)													
 //*************************
 INSTANCE OrcElite_AntiPaladin1 (Mst_Default_OrcElite)
 {

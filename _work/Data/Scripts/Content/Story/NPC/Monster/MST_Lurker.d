@@ -83,7 +83,7 @@ INSTANCE Kervo_Lurker1	(Mst_Default_Lurker)
 {
 	B_SetVisuals_Lurker();
 	Npc_SetToFistMode(self);
-	aivar[AIV_MaxDistToWp]			= 500;	//Joly: damit sie nicht in Kervos Höhle rennen.
+	aivar[AIV_MaxDistToWp]			= 500;	//Joly: damit sie nicht in Kervos HÃ¶hle rennen.
 	aivar[AIV_OriginalFightTactic] 	= FAI_LURKER;
 };
 

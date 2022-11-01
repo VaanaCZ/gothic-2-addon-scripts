@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Myxir_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -95,7 +95,7 @@ func int DIA_Addon_Myxir_Hallo_Condition ()
 func void DIA_Addon_Myxir_Hallo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Tout va bien ?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //C'est trËs courageux de votre part d'entrer ici de la sorte.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //C'est tr√®s courageux de votre part d'entrer ici de la sorte.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WasMachstDu
@@ -121,10 +121,10 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition ()
 func void DIA_Addon_Myxir_WasMachstDu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Que faites-vous ici ?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //J'Ètudie la langue des b‚tisseurs.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //J'√©tudie la langue des b√¢tisseurs.
 	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Cette langue est la clef qui nous permettra de comprendre ce peuple ancien.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Chacun de nous doit l'apprendre. Dans le cas contraire, cette expÈdition sera terminÈe avant mÍme d'avoir commencÈ.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Les b‚tisseurs se servaient de tablettes de pierre pour transmettre leurs connaissances. Malheureusement, nombre de ces tablettes ont ÈtÈ dÈrobÈes ou brisÈes depuis fort longtemps dÈj‡.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Chacun de nous doit l'apprendre. Dans le cas contraire, cette exp√©dition sera termin√©e avant m√™me d'avoir commenc√©.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Les b√¢tisseurs se servaient de tablettes de pierre pour transmettre leurs connaissances. Malheureusement, nombre de ces tablettes ont √©t√© d√©rob√©es ou bris√©es depuis fort longtemps d√©j√†.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Steintafeln
@@ -150,13 +150,13 @@ func void DIA_Addon_Myxir_Steintafeln_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Que contiennent ces tablettes de pierre, au juste ?
 	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //Elles contiennent tout le savoir de ce peuple ancien.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Certaines renforcent la connaissance du combat et la maÓtrise de la magie par des voies magiques.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Pour toute personne capable de les lire, ces tablettes sont un vÈritable trÈsor.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Certaines renforcent la connaissance du combat et la ma√Ætrise de la magie par des voies magiques.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Pour toute personne capable de les lire, ces tablettes sont un v√©ritable tr√©sor.
 
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Stoneplates,"Les tablettes de pierre contiennent le savoir des b‚tisseurs anciens. Certaines de ces tablettes augmentent la connaissance du combat et de la magie de celui qui les dÈtient. Toutefois, il faut pouvoir les lire."); 
+	B_LogEntry (TOPIC_Addon_Stoneplates,"Les tablettes de pierre contiennent le savoir des b√¢tisseurs anciens. Certaines de ces tablettes augmentent la connaissance du combat et de la magie de celui qui les d√©tient. Toutefois, il faut pouvoir les lire."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WillYouTeachMe

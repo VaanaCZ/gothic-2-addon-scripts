@@ -77,8 +77,8 @@ FUNC INT DIA_Addon_Garett_Anheuern_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Anheuern_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_00"); //Ne comptez pas sur moi pour me joindre à votre attaque.
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_01"); //Qu'est-ce que vous croyez que les autres gars vont faire quand j'aurai le dos tourné, hein ?
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_00"); //Ne comptez pas sur moi pour me joindre Ã  votre attaque.
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_01"); //Qu'est-ce que vous croyez que les autres gars vont faire quand j'aurai le dos tournÃ©, hein ?
 	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_02"); //Quand je reviendrai, il ne restera pas une seule caisse dans ma hutte !
 	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_03"); //Je reste ici et je garde nos provisions !
 };
@@ -106,10 +106,10 @@ FUNC INT DIA_Addon_Garett_Hello_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_00"); //Tiens, voilà une nouvelle tête. J'espère que ça n'est pas une tête de bandit.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_00"); //Tiens, voilÃ  une nouvelle tÃªte. J'espÃ¨re que Ã§a n'est pas une tÃªte de bandit.
 	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_01"); //Je m'appelle Garett. Si vous avez besoin de quelque chose, demandez-moi.
 	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_02"); //Je peux tout vous avoir. Du vin, des armes, tout ce dont vous pouvez avoir besoin.
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_03"); //Sauf de l'alcool. Si vous voulez du tafia correct, allez plutôt voir Samuel.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_03"); //Sauf de l'alcool. Si vous voulez du tafia correct, allez plutÃ´t voir Samuel.
 
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_GarettTrade);
@@ -139,7 +139,7 @@ FUNC INT DIA_Addon_Garett_Samuel_Condition()
 FUNC VOID DIA_Addon_Garett_Samuel_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Garett_Samuel_15_00"); //Qui est Samuel ?
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_01"); //C'est notre bouilleur de crû. Il a une grotte sur la plage, pas très loin du camp.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_01"); //C'est notre bouilleur de crÃ». Il a une grotte sur la plage, pas trÃ¨s loin du camp.
 	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_02"); //Vous ne pouvez pas la rater. Marchez vers le Nord.
 	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_03"); //Vous feriez bien d'avoir du tafia.
 	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_04"); //Certains des gars ici n'aiment pas beaucoup les nouveaux, ici.
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Garett_Warez(C_INFO)
 	condition	= DIA_Addon_Garett_Warez_Condition;
 	information	= DIA_Addon_Garett_Warez_Info;
 
-	description = "Où est-ce que vous vous fournissez ?";
+	description = "OÃ¹ est-ce que vous vous fournissez ?";
 };                       
 FUNC INT DIA_Addon_Garett_Warez_Condition()
 {
@@ -166,10 +166,10 @@ FUNC INT DIA_Addon_Garett_Warez_Condition()
 };
 func VOID DIA_Addon_Garett_Warez_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Warez_15_00"); //Où est-ce que vous vous fournissez ?
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_01"); //Skip ramène toujours des tas de choses quand il se rend à Khorinis.
+	AI_Output (other,self,"DIA_Addon_Garett_Warez_15_00"); //OÃ¹ est-ce que vous vous fournissez ?
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_01"); //Skip ramÃ¨ne toujours des tas de choses quand il se rend Ã  Khorinis.
 	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_02"); //Il y a encore peu de temps, il faisait des affaires avec les bandits.
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_03"); //Mais depuis qu'on est en guerre avec eux, c'est moi qui récupère toutes ses marchandises.
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_03"); //Mais depuis qu'on est en guerre avec eux, c'est moi qui rÃ©cupÃ¨re toutes ses marchandises.
 };
 
 // ************************************************************
@@ -194,9 +194,9 @@ FUNC INT DIA_Addon_Garett_Bandits_Condition()
 func VOID DIA_Addon_Garett_Bandits_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Garett_Bandits_15_00"); //Que savez-vous des bandits ?
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_01"); //Demandez plutôt à Skip.
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_02"); //Je peux vous dire qu'il les a pas mal fréquentés.
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_03"); //Greg a donné des ordres. On doit éliminer tout bandit qui s'approcherait du camp.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_01"); //Demandez plutÃ´t Ã  Skip.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_02"); //Je peux vous dire qu'il les a pas mal frÃ©quentÃ©s.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_03"); //Greg a donnÃ© des ordres. On doit Ã©liminer tout bandit qui s'approcherait du camp.
 };
 
 
@@ -226,13 +226,13 @@ FUNC INT DIA_Addon_Garett_Greg_Condition ()
 FUNC VOID DIA_Addon_Garett_Greg_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Garett_Greg_15_00"); //Votre capitaine, Greg. Il est comment ?
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_01"); //C'est un vieux dur à cuire, il n'y a pas de doute là dessus.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_02"); //Et d'une avidité !
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_03"); //Il oblige Francis, notre trésorier à ne pas payer un sou plus que nécessaire pour éviter une mutinerie.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_01"); //C'est un vieux dur Ã  cuire, il n'y a pas de doute lÃ  dessus.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_02"); //Et d'une aviditÃ© !
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_03"); //Il oblige Francis, notre trÃ©sorier Ã  ne pas payer un sou plus que nÃ©cessaire pour Ã©viter une mutinerie.
 	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_04"); //Et si l'un d'entre-nous trouve un objet valant vraiment quelque chose, il le prend pour lui. On n'y coupe pas !
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_05"); //Une fois, j'ai récupéré un compas venant d'une frégate royale.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_06"); //Ce salopard de Greg me l'a pris, bien sûr.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_07"); //Bah. Il l'a sûrement enterré quelque part, comme le reste de son trésor.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_05"); //Une fois, j'ai rÃ©cupÃ©rÃ© un compas venant d'une frÃ©gate royale.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_06"); //Ce salopard de Greg me l'a pris, bien sÃ»r.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_07"); //Bah. Il l'a sÃ»rement enterrÃ© quelque part, comme le reste de son trÃ©sor.
 };
 
 // ------------------------------------------------------------
@@ -245,7 +245,7 @@ INSTANCE DIA_Addon_Garett_Tips(C_INFO)
 	condition	= DIA_Addon_Garett_Tips_Condition;
 	information	= DIA_Addon_Garett_Tips_Info;
 
-	description = "Où aurait-il pu enterrer ce compas ?";
+	description = "OÃ¹ aurait-il pu enterrer ce compas ?";
 };                       
 FUNC INT DIA_Addon_Garett_Tips_Condition()
 {
@@ -257,18 +257,18 @@ FUNC INT DIA_Addon_Garett_Tips_Condition()
 
 FUNC VOID DIA_Addon_Garett_Tips_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_00"); //Où aurait-il pu enterrer ce compas ?
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_01"); //Une fois, Greg m'a dit que c'était la Mort elle-même qui veillait sur mon compas.
+	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_00"); //OÃ¹ aurait-il pu enterrer ce compas ?
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_01"); //Une fois, Greg m'a dit que c'Ã©tait la Mort elle-mÃªme qui veillait sur mon compas.
 	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_02"); //Autre chose ?
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_03"); //Il y a une plage au sud de l'île qui ne peut être atteinte que par la mer.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_04"); //On dit que Greg y va souvent. Vous trouverez peut-être quelque chose là-bas.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_05"); //J'y suis allé une fois pour voir ce que je pourrais y trouver, mais l'endroit grouille de monstres.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_06"); //Si vous voulez vraiment aller là-bas, n'oubliez pas d'emporter une pioche.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_03"); //Il y a une plage au sud de l'Ã®le qui ne peut Ãªtre atteinte que par la mer.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_04"); //On dit que Greg y va souvent. Vous trouverez peut-Ãªtre quelque chose lÃ -bas.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_05"); //J'y suis allÃ© une fois pour voir ce que je pourrais y trouver, mais l'endroit grouille de monstres.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_06"); //Si vous voulez vraiment aller lÃ -bas, n'oubliez pas d'emporter une pioche.
 	MIS_Addon_Garett_BringKompass = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_Kompass,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_Kompass,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kompass,"Greg a dérobé un précieux compas à Garret. Garret le soupçonne de l'avoir enterré quelque part sur la plage sud.");
+	B_LogEntry (TOPIC_Addon_Kompass,"Greg a dÃ©robÃ© un prÃ©cieux compas Ã  Garret. Garret le soupÃ§onne de l'avoir enterrÃ© quelque part sur la plage sud.");
 };
 
 // ------------------------------------------------------------
@@ -281,7 +281,7 @@ INSTANCE DIA_Addon_Garett_GiveKompass(C_INFO)
 	condition	= DIA_Addon_Garett_GiveKompass_Condition;
 	information	= DIA_Addon_Garett_GiveKompass_Info;
 	permanent	= FALSE;
-	description = "Voilà votre compas.";
+	description = "VoilÃ  votre compas.";
 };                       
 FUNC INT DIA_Addon_Garett_GiveKompass_Condition()
 {
@@ -293,9 +293,9 @@ FUNC INT DIA_Addon_Garett_GiveKompass_Condition()
 };
 FUNC VOID DIA_Addon_Garett_GiveKompass_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_GiveKompass_15_00"); //Voilà votre compas.
+	AI_Output (other,self,"DIA_Addon_Garett_GiveKompass_15_00"); //VoilÃ  votre compas.
 	
-	//Patch m.f. - weil Händler
+	//Patch m.f. - weil HÃ¤ndler
 	if B_GiveInvItems (other,self,ItMI_Addon_Kompass_Mis,1)
 	{
 		Npc_RemoveInvItems (self, ItMI_Addon_Kompass_Mis,1);
@@ -306,17 +306,17 @@ FUNC VOID DIA_Addon_Garett_GiveKompass_Info()
 	if (Npc_HasItems (self, ItBE_Addon_Prot_EdgPoi) > 0)
 	{ 
 		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_03"); //Cette fois-ci, Greg ne remettra pas la main dessus
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_04"); //Tenez, prenez ce ceinturon en échange. C'est mon bien le plus précieux.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_04"); //Tenez, prenez ce ceinturon en Ã©change. C'est mon bien le plus prÃ©cieux.
 		B_GiveInvItems (self, other, ItBE_Addon_Prot_EdgPoi, 1);
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_05"); //Vous m'avez déjà acheté ce ceinturon, vous vous souvenez ?
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_06"); //Et vous aviez payé une belle somme - (vite) non pas qu'il ne la valait pas. Tenez, reprenez votre or.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_05"); //Vous m'avez dÃ©jÃ  achetÃ© ce ceinturon, vous vous souvenez ?
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_06"); //Et vous aviez payÃ© une belle somme - (vite) non pas qu'il ne la valait pas. Tenez, reprenez votre or.
 		B_GiveInvItems (self, other, itmi_gold, Value_ItBE_Addon_Prot_EdgPoi);
 	};
 	
-	B_LogEntry (TOPIC_Addon_Kompass,"Garret était très heureux de revoir son compas.");
+	B_LogEntry (TOPIC_Addon_Kompass,"Garret Ã©tait trÃ¨s heureux de revoir son compas.");
 	MIS_Addon_Garett_BringKompass = LOG_SUCCESS;
 	B_GivePlayerXP (XP_ADDON_Garett_Bring_Kompass);
 };
@@ -331,7 +331,7 @@ INSTANCE DIA_Addon_Garett_Francis(C_INFO)
 	condition	= DIA_Addon_Garett_Francis_Condition;
 	information	= DIA_Addon_Garett_Francis_Info;
 	permanent	= FALSE;
-	description = "Que pouvez-vous me dire à propos de Francis ?";
+	description = "Que pouvez-vous me dire Ã  propos de Francis ?";
 };                       
 FUNC INT DIA_Addon_Garett_Francis_Condition()
 {
@@ -343,15 +343,15 @@ FUNC INT DIA_Addon_Garett_Francis_Condition()
 
 FUNC VOID DIA_Addon_Garett_Francis_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Francis_15_00"); //Que pouvez-vous me dire à propos de Francis ?
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_01"); //Greg lui a confié le commandement pendant son absence.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_02"); //Mais Francis n'a vraiment pas l'étoffe d'un chef !
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_03"); //Il n'est même pas fichu de tirer ce gros fainéant de Morgan de son lit.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_04"); //Henry et ses gars sont les seuls à travailler par ici.
+	AI_Output (other,self,"DIA_Addon_Garett_Francis_15_00"); //Que pouvez-vous me dire Ã  propos de Francis ?
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_01"); //Greg lui a confiÃ© le commandement pendant son absence.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_02"); //Mais Francis n'a vraiment pas l'Ã©toffe d'un chef !
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_03"); //Il n'est mÃªme pas fichu de tirer ce gros fainÃ©ant de Morgan de son lit.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_04"); //Henry et ses gars sont les seuls Ã  travailler par ici.
 	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_05"); //Les autres s'amusent au lieu de travailler.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_06"); //J'espère que Greg va vite rentrer.
+		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_06"); //J'espÃ¨re que Greg va vite rentrer.
 		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_07"); //Il va tous leur botter les fesses.
 	};
 };
@@ -379,11 +379,11 @@ FUNC VOID DIA_Addon_Garett_PERM_Info()
 	if (GregIsBack == FALSE)
 	|| (Npc_IsDead(Greg))
 	{
-		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_02"); //Il ne se passe plus rien depuis le départ de Greg.
+		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_02"); //Il ne se passe plus rien depuis le dÃ©part de Greg.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_01"); //Maintenant que Greg est de retour, les choses reviennent à la normale par ici.
+		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_01"); //Maintenant que Greg est de retour, les choses reviennent Ã  la normale par ici.
 	};
 };
 

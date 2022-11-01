@@ -6,7 +6,7 @@
 
 func void B_StopPyro()
 {	
-	Npc_PercEnable	(self, PERC_ASSESSMAGIC, B_AssessMagic); //falls in diesem Frame (während des Ausführens des B_) noch ein neuer Spruch wirkt
+	Npc_PercEnable	(self, PERC_ASSESSMAGIC, B_AssessMagic); //falls in diesem Frame (wÃ¤hrend des AusfÃ¼hrens des B_) noch ein neuer Spruch wirkt
 	
 	Npc_ClearAIQueue(self);
 	AI_StandUp		(self);
@@ -15,11 +15,11 @@ func void B_StopPyro()
 	{
 		B_AssessDamage();
 		AI_ContinueRoutine	(self); //Sicherheitshalber, falls B_AssessDamage NICHT in neuen ZS weiterleitet (kann z.ZT. aber nicht passieren) 
-									// - sonst würde NPC in Loop hängenbleiben
+									// - sonst wÃ¼rde NPC in Loop hÃ¤ngenbleiben
 	}
 	else
 	{
-		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-Attitüde hostile ist 
+		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-AttitÃ¼de hostile ist 
 		AI_ContinueRoutine	(self); //sonst bleibt Monster in Loop und kassiert weiter Schaden
 	};
 };	

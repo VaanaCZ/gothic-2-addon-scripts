@@ -87,7 +87,7 @@ func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 	}
 	else if (MIS_Send_Buddler == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_06"); //Hé ! Tant que Thorus ne vous en aura pas donné l'autorisation, vous ne passerez pas ici.
+		AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_06"); //HÃ© ! Tant que Thorus ne vous en aura pas donnÃ© l'autorisation, vous ne passerez pas ici.
 	};
 	
 	
@@ -126,7 +126,7 @@ FUNC INT DIA_BDT_1088_Addon_Torwache_SecondWarn_Condition()
 
 func void DIA_BDT_1088_Addon_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Bien, restez calme. Je vous donne une dernière chance. Faites demi-tour MAINTENANT, ou vous mourrez...
+	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Bien, restez calme. Je vous donne une derniÃ¨re chance. Faites demi-tour MAINTENANT, ou vous mourrez...
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_1088_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	

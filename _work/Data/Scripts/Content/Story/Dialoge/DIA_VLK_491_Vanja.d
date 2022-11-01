@@ -78,7 +78,7 @@ func int DIA_Vanja_STANDARD_Condition ()
 };
 func void DIA_Vanja_STANDARD_Info ()
 {
-	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Je suis occupée.
+	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Je suis occupÃ©e.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -91,7 +91,7 @@ instance DIA_Vanja_DOPE		(C_INFO)
 	condition	 = 	DIA_Vanja_DOPE_Condition;
 	information	 = 	DIA_Vanja_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Où puis-je trouver de l'herbe ?";
+	description	 = 	"OÃ¹ puis-je trouver de l'herbe ?";
 };
 
 func int DIA_Vanja_DOPE_Condition ()
@@ -104,9 +104,9 @@ func int DIA_Vanja_DOPE_Condition ()
 };
 func void DIA_Vanja_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Où puis-je trouver de l'herbe ?
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Pas la moindre idée. Mais je vous conseille de ne pas y toucher...
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Sans quoi vous risqueriez de vous brûler si vous continuez à poser ce genre de question.
+	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //OÃ¹ puis-je trouver de l'herbeÂ ?
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Pas la moindre idÃ©e. Mais je vous conseille de ne pas y toucher...
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Sans quoi vous risqueriez de vous brÃ»ler si vous continuez Ã  poser ce genre de question.
 };
 
 

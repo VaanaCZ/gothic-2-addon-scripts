@@ -37,7 +37,7 @@ func INT DIA_Addon_BenchPirate_Hello_Condition()
 };
 func VOID DIA_Addon_BenchPirate_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Pir_7_Hello_15_00"); //Comment ça se passe ?
+	AI_Output (other,self ,"DIA_Addon_Pir_7_Hello_15_00"); //Comment Ã§a se passe ?
 	var int randy;
 	randy = Hlp_Random (3);
 	
@@ -45,30 +45,30 @@ func VOID DIA_Addon_BenchPirate_Hello_Info()
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_01"); //Greg est enfin revenu. Il était plus que temps.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_01"); //Greg est enfin revenu. Il Ã©tait plus que temps.
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_02"); //Francis va avoir du bois pour la palissade. J'espère qu'il ne va pas être débordé.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_02"); //Francis va avoir du bois pour la palissade. J'espÃ¨re qu'il ne va pas Ãªtre dÃ©bordÃ©.
 		}
 		else 
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_03"); //On va s'occuper des bandits alors. Avec Greg à nos côtés, nous n'avons peur de rien.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_03"); //On va s'occuper des bandits alors. Avec Greg Ã  nos cÃ´tÃ©s, nous n'avons peur de rien.
 		};
 	}
 	else
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, le chef du camp, n'est qu'un clown. Qui peut le prendre au sérieux ?
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, le chef du camp, n'est qu'un clown. Qui peut le prendre au sÃ©rieux ?
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg fait confiance à Francis parce qu'il est trop stupide pour le rouler ! Mais de là à en faire le chef
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg fait confiance Ã  Francis parce qu'il est trop stupide pour le rouler ! Mais de lÃ  Ã  en faire le chef
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Si Greg ne revient pas au plus tôt et si je n'ai pas un pont sous les pieds, je ne vais pas tarder à avoir le mal de terre !
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Si Greg ne revient pas au plus tÃ´t et si je n'ai pas un pont sous les pieds, je ne vais pas tarder Ã  avoir le mal de terre !
 		};
 	};	
 };
@@ -90,7 +90,7 @@ INSTANCE DIA_Addon_BenchPirate_Anheuern(C_INFO)
 	condition	= DIA_Addon_BenchPirate_Anheuern_Condition;
 	information	= DIA_Addon_BenchPirate_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Vous êtes supposé m'aider.";
+	description = "Vous Ãªtes supposÃ© m'aider.";
 };                       
 FUNC INT DIA_Addon_BenchPirate_Anheuern_Condition()
 {
@@ -101,9 +101,9 @@ FUNC INT DIA_Addon_BenchPirate_Anheuern_Condition()
 };
 func VOID DIA_Addon_BenchPirate_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_00"); //Vous êtes supposé m'aider.
+	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_00"); //Vous Ãªtes supposÃ© m'aider.
 	AI_Output (self ,other,"DIA_Addon_BenchPirate_Anheuern_07_01"); //C'est un ordre de Greg ?
-	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_08"); //C'est ça.
+	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_08"); //C'est Ã§a.
 };
 
 // ------------------------------------------------------------
@@ -132,12 +132,12 @@ func void DIA_Addon_BenchPirate_ComeOn_Info ()
 	AI_Output	(other, self, "DIA_Addon_BenchPirate_ComeOn_15_01"); //Le canyon nous attend.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //C'est exactement là que je vais retourner
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //C'est exactement lÃ  que je vais retourner
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //À vos ordres, Cap'taine !
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //Ã€ vos ordres, Cap'taine !
 		if (C_BodyStateContains (self, BS_SIT))
 		{
 			AI_StandUp (self);
@@ -203,7 +203,7 @@ FUNC INT DIA_Addon_BenchPirate_TooFar_Condition()
 FUNC VOID DIA_Addon_BenchPirate_TooFar_Info()
 {	
 	AI_Output (self ,other,"DIA_Addon_BenchPirate_TooFar_07_01"); //Nous sommes trop loin du camp. 
-	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_02"); //Je n'aime pas ça du tout.
+	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_02"); //Je n'aime pas Ã§a du tout.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
 		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_02"); //Je rentre au camp !

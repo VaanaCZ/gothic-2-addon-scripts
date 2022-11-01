@@ -1,6 +1,6 @@
 INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 {
-	name 				=	"Clef rouillée";
+	name 				=	"Clef rouillÃ©e";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -12,8 +12,8 @@ INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Ouvre la porte menant à la pierre de";
-	TEXT[3]				=   "téléportation à l'intérieur du temple";
+	TEXT[2]				=	"Ouvre la porte menant Ã  la pierre de";
+	TEXT[3]				=   "tÃ©lÃ©portation Ã  l'intÃ©rieur du temple";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
@@ -72,7 +72,7 @@ INSTANCE ITKE_Addon_Esteban_01 (C_Item)
 	description			= 	"Clef d'Esteban";
 	
 	TEXT[2]				=	"Ouvre le coffre";
-	TEXT[3]				=   "à l'intérieur de son repaire";
+	TEXT[3]				=   "Ã  l'intÃ©rieur de son repaire";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -115,7 +115,7 @@ INSTANCE ITKE_CANYONLIBRARY_HIERARCHY_BOOKS_ADDON (C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"obtenue du chamane orque dans le camp orque";
-	TEXT[3]				=   "devant la bibliothèque des Érudits";
+	TEXT[3]				=   "devant la bibliothÃ¨que des Ã‰rudits";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };

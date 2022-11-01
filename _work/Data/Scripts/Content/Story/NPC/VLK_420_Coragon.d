@@ -20,7 +20,7 @@ instance VLK_420_Coragon (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	//Händler
+	//HÃ¤ndler
 
 		
 	// ------ visuals ------																			

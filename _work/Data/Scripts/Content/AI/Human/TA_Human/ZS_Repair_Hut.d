@@ -18,14 +18,14 @@ FUNC VOID ZS_Repair_Hut ()
 
 FUNC int ZS_Repair_Hut_Loop ()
 {
-	// ------ Hämmern ------
+	// ------ HÃ¤mmern ------
 	if (!C_BodyStateContains(self, BS_MOBINTERACT_INTERRUPT))
 	&& (Wld_IsMobAvailable(self,"REPAIR"))
 	{
 		AI_UseMob (self, "REPAIR", 1);
 	};
 	
-	// ------ Random-Ani beim Hämmern ------
+	// ------ Random-Ani beim HÃ¤mmern ------
 	if (Npc_GetStateTime(self) > 5)
 	&& (C_BodyStateContains(self, BS_MOBINTERACT_INTERRUPT))
     {

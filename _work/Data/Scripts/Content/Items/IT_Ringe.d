@@ -150,7 +150,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anneau de peau d'écorce";
+	description				= "Anneau de peau d'Ã©corce";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint;
@@ -219,7 +219,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //Höhle OW//PassNW bei den Orks
+	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //HÃ¶hle OW//PassNW bei den Orks
 {
 	name 					=	NAME_Ring;
 
@@ -284,7 +284,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anneau de peau minérale";
+	description				= "Anneau de peau minÃ©rale";
 	
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge02;
@@ -356,7 +356,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhütte OW
+	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhÃ¼tte OW
 {
 	name 					=	NAME_Ring;
 
@@ -375,7 +375,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anneau de défense";
+	description				= "Anneau de dÃ©fense";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage02;
@@ -421,7 +421,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Anneau d'invulnérabilité";
+	description		= "Anneau d'invulnÃ©rabilitÃ©";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage;
@@ -478,7 +478,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Anneau d'invincibilité";
+	description		= "Anneau d'invincibilitÃ©";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage02;
@@ -535,7 +535,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Anneau de compétence";
+	description		= "Anneau de compÃ©tence";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Ri_Dex;
@@ -561,7 +561,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW Nähe Alter DT
+	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW NÃ¤he Alter DT
 {
 	name 					=	NAME_Ring;
 
@@ -580,7 +580,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Anneau de dextérité";
+	description				= "Anneau de dextÃ©ritÃ©";
 
 	TEXT[2]					= 	NAME_Bonus_Dex;
 	COUNT[2]				= 	Ri_Dex02;

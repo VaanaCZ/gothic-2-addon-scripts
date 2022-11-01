@@ -40,7 +40,7 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Hé, comment ça va ?
+	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//HÃ©, comment Ã§a va ?
 	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Je suis en vie - C'est tout ce qui compte pour moi.
 	
 	if (Monty_einmal == FALSE)
@@ -69,7 +69,7 @@ FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
 	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Bien, le plus important, c'est l'angle avec lequel vous piochez.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Pas trop à plat ni trop droit. De cette manière, vous récupérez toutes les pépites et votre pioche durera plus longtemps.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Pas trop Ã  plat ni trop droit. De cette maniÃ¨re, vous rÃ©cupÃ©rez toutes les pÃ©pites et votre pioche durera plus longtemps.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

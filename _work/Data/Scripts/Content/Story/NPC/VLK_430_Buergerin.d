@@ -2,7 +2,7 @@
 instance VLK_430_Buergerin (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= Name_Buergerin;	//Frau vom 'Säger' 453
+	name 		= Name_Buergerin;	//Frau vom 'SÃ¤ger' 453
 	guild 		= GIL_VLK;
 	id 			= 430;
 	voice 		= 17;

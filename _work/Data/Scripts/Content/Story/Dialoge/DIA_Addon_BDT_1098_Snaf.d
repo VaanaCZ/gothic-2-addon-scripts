@@ -95,7 +95,7 @@ FUNC INT DIA_Addon_Snaf_Cook_Condition()
 FUNC VOID DIA_Addon_Snaf_Cook_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_Cook_15_00"); //Qu'y a-t-il au menu ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_01_01"); //Je vais vous faire goûter un nouveau plat - viande grillée au feu de bois, sauce Marteau.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_01_01"); //Je vais vous faire goÃ»ter un nouveau plat - viande grillÃ©e au feu de bois, sauce Marteau.
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Cook);
 	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"Des grillades au feu de bois ?",DIA_Addon_Snaf_Cook_FEUER);	
@@ -104,15 +104,15 @@ FUNC VOID DIA_Addon_Snaf_Cook_Info()
 //---------------------------------------------------------------------
 FUNC VOID DIA_Addon_Snaf_Cook_FEUER()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//De la viande grillée ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//De la viande croustillante, délicatement grillée, mélangée à de l'herbe de feu marinée.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Mais ne vous inquiétez pas - j'ai déjà tous les ingrédients nécessaires pour cette recette.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//De la viande grillÃ©e ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//De la viande croustillante, dÃ©licatement grillÃ©e, mÃ©langÃ©e Ã  de l'herbe de feu marinÃ©e.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Mais ne vous inquiÃ©tez pas - j'ai dÃ©jÃ  tous les ingrÃ©dients nÃ©cessaires pour cette recette.
 };
 FUNC VOID DIA_Addon_Snaf_Cook_HAMMER()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_15_00");//Sauce Marteau ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//Une sauce à base de Marteau - un alcool fort. Je tiens cette recette d'un type appelé Lou.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//Trouvez-moi les ingrédients et allez me distiller l'alcool dans le laboratoire d'alchimie. Ensuite, je vous préparerai une sauce pour accompagner votre viande. Qu'est-ce que vous en dites ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//Une sauce Ã  base de Marteau - un alcool fort. Je tiens cette recette d'un type appelÃ© Lou.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//Trouvez-moi les ingrÃ©dients et allez me distiller l'alcool dans le laboratoire d'alchimie. Ensuite, je vous prÃ©parerai une sauce pour accompagner votre viande. Qu'est-ce que vous en dites ?
 	
 	Info_AddChoice (DIA_Addon_Snaf_Cook,"Je n'ai pas le temps.",DIA_Addon_Snaf_Cook_NO);
 	Info_AddChoice (DIA_Addon_Snaf_Cook,"Bien, je m'en occuperai.",DIA_Addon_Snaf_Cook_YES);
@@ -137,7 +137,7 @@ FUNC VOID DIA_Addon_Snaf_Cook_YES()
 	
 	Log_CreateTopic (Topic_Addon_Hammer,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Hammer,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Hammer,"Snaf a besoin d'alcool pour sa recette. Il m'a donné la recette d'un breuvage appelé 'Liqueur du Marteau', que je pourrai préparer sur la table du laboratoire.");
+	B_LogEntry (Topic_Addon_Hammer,"Snaf a besoin d'alcool pour sa recette. Il m'a donnÃ© la recette d'un breuvage appelÃ© 'Liqueur du Marteau', que je pourrai prÃ©parer sur la table du laboratoire.");
 };
 //---------------------------------------------------------------------
 //	Info Booze
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Snaf_Booze   (C_INFO)
 	condition   = DIA_Addon_Snaf_Booze_Condition;
 	information = DIA_Addon_Snaf_Booze_Info;
 	permanent   = FALSE;
-	description = "J'ai distillé l'alcool !";
+	description = "J'ai distillÃ© l'alcool !";
 };
 FUNC INT DIA_Addon_Snaf_Booze_Condition()
 {	
@@ -165,10 +165,10 @@ FUNC VOID DIA_Addon_Snaf_Booze_Info()
 {
 	B_GiveInvItems (other, self, ItFo_Addon_LousHammer, 1);
 	
-	AI_Output (other, self, "DIA_Addon_Snaf_Booze_15_00");//J'ai distillé l'alcool !
+	AI_Output (other, self, "DIA_Addon_Snaf_Booze_15_00");//J'ai distillÃ© l'alcool !
 	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_01");//Excellent, alors je vais pouvoir terminer la cuisson du plat !
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//Tenez, vous pouvez en goûter une part dès maintenant. Ça vous donnera des forces.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//Oh, et si je peux encore vous être utile... Pour vous, toutes les informations seront gratuites, désormais.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//Tenez, vous pouvez en goÃ»ter une part dÃ¨s maintenant. Ã‡a vous donnera des forces.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//Oh, et si je peux encore vous Ãªtre utile... Pour vous, toutes les informations seront gratuites, dÃ©sormais.
 	Snaf_Tip_Kosten = 0;
 	B_GiveInvItems (self, other, ItFo_Addon_FireStew,1);
 	MIS_SnafHammer = LOG_SUCCESS;
@@ -198,32 +198,32 @@ FUNC VOID DIA_Addon_Snaf_Attentat_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Que savez-vous de l'attaque ?
 	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_01"); //Le complot contre Esteban ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //Vous savez comment ça se passe. Le tavernier entend tout, mais ne prend jamais parti...
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //Vous savez comment Ã§a se passe. Le tavernier entend tout, mais ne prend jamais parti...
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Dites-moi au moins à qui je peux m'adresser.",DIA_Addon_Snaf_Attentat_GoWhere);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Si vous étiez à ma place, qu'est-ce que vous feriez ?",DIA_Addon_Snaf_Attentat_YouBeingMe);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Dites-moi au moins Ã  qui je peux m'adresser.",DIA_Addon_Snaf_Attentat_GoWhere);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Si vous Ã©tiez Ã  ma place, qu'est-ce que vous feriez ?",DIA_Addon_Snaf_Attentat_YouBeingMe);
 	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Alors vous savez quelque chose ?",DIA_Addon_Snaf_Attentat_Something);	
 };
 	
 func void DIA_Addon_Snaf_Attentat_Something()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Alors vous savez quelque chose ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //Je n'ai pas dit ÇA.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //Je n'ai pas dit Ã‡A.
 };
 func void DIA_Addon_Snaf_Attentat_GoWhere()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_GoWhere_15_00"); //Dites-moi au moins à qui je peux m'adresser.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_GoWhere_01_01"); //Oh, bon sang ! Qu'est-ce que ça change ! Laissez tomber !
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_GoWhere_15_00"); //Dites-moi au moins Ã  qui je peux m'adresser.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_GoWhere_01_01"); //Oh, bon sang ! Qu'est-ce que Ã§a change ! Laissez tomber !
 };
 func void DIA_Addon_Snaf_Attentat_YouBeingMe()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //Si vous étiez à ma place, qu'est-ce que vous feriez ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Je penserais à ce que je sais et au commanditaire de l'attaque.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Premièrement, c'était certainement l'un des bandits, ce qui signifie qu'il est ici, dans le camp.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Deuxièmement, s'il est ici dans le camp, cela signifie qu'il vous observe.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //Troisièmement, aussi longtemps qu'il croira que vous êtes du côté d'Esteban, il ne se dévoilera jamais à vous.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //Par conséquent, la question INTERESSANTE est la suivante : quelles sont vos chances d'identifier votre homme ?
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //Si vous Ã©tiez Ã  ma place, qu'est-ce que vous feriez ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Je penserais Ã  ce que je sais et au commanditaire de l'attaque.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //PremiÃ¨rement, c'Ã©tait certainement l'un des bandits, ce qui signifie qu'il est ici, dans le camp.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //DeuxiÃ¨mement, s'il est ici dans le camp, cela signifie qu'il vous observe.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //TroisiÃ¨mement, aussi longtemps qu'il croira que vous Ãªtes du cÃ´tÃ© d'Esteban, il ne se dÃ©voilera jamais Ã  vous.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //Par consÃ©quent, la question INTERESSANTE est la suivante : quelles sont vos chances d'identifier votre homme ?
 
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
 };
@@ -257,32 +257,32 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 	if (Senyan_Erpressung == LOG_RUNNING) 
 	&& (!Npc_IsDead (Senyan))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //Elles sont plutôt minces. Certaines personnes ont déjà remarqué que vous êtes proche de Senyan.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //Elles sont plutÃ´t minces. Certaines personnes ont dÃ©jÃ  remarquÃ© que vous Ãªtes proche de Senyan.
 		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //Vous devrez couper les ponts avec lui. Sinon, vous n'aurez jamais la moindre chance de trouver le commanditaire de l'attaque.
 		
 		if (Snaf_Tip_Senyan == FALSE)
 		{
-			B_LogEntry (Topic_Addon_Senyan,"Je devrais couper les ponts avec Senyan. En revanche, je n'ai pas intérêt à l'attaquer directement... il faudrait que je parle avec lui, avant.");
+			B_LogEntry (Topic_Addon_Senyan,"Je devrais couper les ponts avec Senyan. En revanche, je n'ai pas intÃ©rÃªt Ã  l'attaquer directement... il faudrait que je parle avec lui, avant.");
 			Snaf_Tip_Senyan = TRUE;
 		};
 	}
 	else if (Npc_IsDead(Senyan))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_04"); //Vous avez éliminé l'un des gars d'Esteban. L'homme que vous recherchez croira maintenant que vous êtes de son côté.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_05"); //Mais ce n'est pas pour ça qu'il se dévoilera à vous. Vous allez devoir en découvrir davantage à son sujet.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_04"); //Vous avez Ã©liminÃ© l'un des gars d'Esteban. L'homme que vous recherchez croira maintenant que vous Ãªtes de son cÃ´tÃ©.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_05"); //Mais ce n'est pas pour Ã§a qu'il se dÃ©voilera Ã  vous. Vous allez devoir en dÃ©couvrir davantage Ã  son sujet.
 	}
 	else if (Finn_Petzt == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Finn semble vraiment nerveux, depuis que vous lui avez parlé.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Finn semble vraiment nerveux, depuis que vous lui avez parlÃ©.
 		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //Et tout le monde ici sait qu'il est en bons termes avec Esteban.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //Ça signifie que vous lui avez sûrement appris quelque chose qu'il ne voulait pas entendre.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //Ça fera plaisir à la personne que vous recherchez...
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //Toutefois, il y a des risques qu'il aille voir Esteban avec cette information - (ironiquement) mais cela, vous le savez déjà...
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //Ã‡a signifie que vous lui avez sÃ»rement appris quelque chose qu'il ne voulait pas entendre.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //Ã‡a fera plaisir Ã  la personne que vous recherchez...
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //Toutefois, il y a des risques qu'il aille voir Esteban avec cette information - (ironiquement) mais cela, vous le savez dÃ©jÃ ...
 	}
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //On raconte que vous avez informé Finn que vous travailliez pour Esteban...
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //Je ne sais pas vraiment ce que vous avez en tête, mais l'homme que vous recherchez se montrera certainement plus prudent, désormais.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //On raconte que vous avez informÃ© Finn que vous travailliez pour Esteban...
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //Je ne sais pas vraiment ce que vous avez en tÃªte, mais l'homme que vous recherchez se montrera certainement plus prudent, dÃ©sormais.
 	}
 	else
 	{
@@ -295,7 +295,7 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 		if (Snaf_Einmal == FALSE)
 		{
 			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14"); //Merci.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(sèchement) Hé ! Je ne vous ai rien dit que vous ne sachiez pas déjà, compris ?
+			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(sÃ¨chement) HÃ© ! Je ne vous ai rien dit que vous ne sachiez pas dÃ©jÃ , compris ?
 			
 			Snaf_Einmal = TRUE;
 		}
@@ -329,8 +329,8 @@ FUNC INT DIA_Addon_Snaf_HOCH_Condition()
 FUNC VOID DIA_Addon_Snaf_HOCH_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_HOCH_15_00"); //Huno m'envoie.
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Il semblerait que vous ayez trouvé votre homme...
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //Montez à l'étage, quelqu'un vous attend.
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Il semblerait que vous ayez trouvÃ© votre homme...
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //Montez Ã  l'Ã©tage, quelqu'un vous attend.
 		
 	AI_StopProcessInfos (self);
 	AI_Teleport (Fisk,"BL_INN_UP_06");
@@ -365,13 +365,13 @@ FUNC VOID DIA_Addon_Snaf_People_Info()
 {
 	
 	AI_Output (other, self, "DIA_Addon_Snaf_People_15_00"); //Que pensent les gens ici d'Esteban ?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_01_01"); //Il va falloir être un peu plus précis...
+	AI_Output (self, other, "DIA_Addon_Snaf_People_01_01"); //Il va falloir Ãªtre un peu plus prÃ©cis...
 	if (Kosten_Einmal == FALSE)
 	&& (MIS_SnafHammer != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //Chaque information vous coûtera...
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //Chaque information vous coÃ»tera...
 		AI_Output (other, self, "DIA_Addon_Snaf_People_15_03"); //Combien ?
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //10 pièces d'or !
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //10 piÃ¨ces d'or !
 		
 		Snaf_Tip_Kosten = 10;
 		Kosten_Einmal = TRUE;
@@ -393,7 +393,7 @@ FUNC VOID DIA_Addon_Snaf_People_Info()
 // --------------------------------------------
 	func void B_Addon_Snaf_NotEnough()
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_NotEnough_01_00"); //Vous n'avez pas assez d'or, mon garçon !
+		AI_Output (self, other, "DIA_Addon_Snaf_NotEnough_01_00"); //Vous n'avez pas assez d'or, mon garÃ§on !
 	};
 
 FUNC VOID DIA_Addon_Snaf_People_BACK()
@@ -405,7 +405,7 @@ FUNC VOID DIA_Addon_Snaf_People_Paul()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Paul_15_00"); //Et Paul ?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //Je crois qu'il n'apprécie pas particulièrement Esteban. Et puisqu'il a travaillé pour Huno, il n'entrera jamais dans la mine.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //Je crois qu'il n'apprÃ©cie pas particuliÃ¨rement Esteban. Et puisqu'il a travaillÃ© pour Huno, il n'entrera jamais dans la mine.
 	}
 	else
 	{
@@ -416,15 +416,15 @@ FUNC VOID DIA_Addon_Snaf_People_Huno()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Et que pense Huno d'Esteban ?
 	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //Ah ! Huno... Je ne sais presque rien de lui.
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(sourit) Cette information est gratuite, bien évidemment.
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(sourit) Cette information est gratuite, bien Ã©videmment.
 };
 FUNC VOID DIA_Addon_Snaf_People_Fisk()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Fisk_15_00"); //Et Fisk ?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Fisk est Fisk. Il verse sa part à Esteban et distribue les marchandises qu'il se procure essentiellement auprès des pirates.
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //Je ne crois pas qu'il apprécie réellement Esteban.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Fisk est Fisk. Il verse sa part Ã  Esteban et distribue les marchandises qu'il se procure essentiellement auprÃ¨s des pirates.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //Je ne crois pas qu'il apprÃ©cie rÃ©ellement Esteban.
 	}
 	else
 	{
@@ -445,7 +445,7 @@ FUNC VOID DIA_Addon_Snaf_People_Emilio()
 };
 FUNC VOID DIA_Addon_Snaf_People_Senyan()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Senyan_15_00"); //Et à propos de Senyan ?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Senyan_15_00"); //Et Ã  propos de Senyan ?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
 		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //Senyan est l'un des hommes d'Esteban. Cela fait un moment qu'il travaille pour lui.
@@ -458,7 +458,7 @@ FUNC VOID DIA_Addon_Snaf_People_Senyan()
 FUNC VOID DIA_Addon_Snaf_People_Lennar()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //Que pense Lennar d'Esteban ?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //En réalité, je crois que Lennar ne pense pas DU TOUT.
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //En rÃ©alitÃ©, je crois que Lennar ne pense pas DU TOUT.
 };
 
 func VOID DIA_Addon_Snaf_People_Finn()
@@ -466,8 +466,8 @@ func VOID DIA_Addon_Snaf_People_Finn()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Finn_15_00"); //Et Finn ?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Un bon mineur. Il a le flair pour repérer les pépites d'or.
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Esteban l'apprécie pour cette raison. Je crois qu'ils sont en assez bons termes.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Un bon mineur. Il a le flair pour repÃ©rer les pÃ©pites d'or.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Esteban l'apprÃ©cie pour cette raison. Je crois qu'ils sont en assez bons termes.
 	}
 	else
 	{
@@ -498,7 +498,7 @@ FUNC INT DIA_Addon_Snaf_Himself_Condition()
 FUNC VOID DIA_Addon_Snaf_Himself_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //Et que pensez-vous d'Esteban, vous ?
-	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //Ceux qui parlent de lui ne tardent pas à mourir...
+	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //Ceux qui parlent de lui ne tardent pas Ã  mourir...
 	//AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_02"); //Und?
 	//AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_03"); //Ende der Geschichte. //wav fehlt
 };
@@ -513,7 +513,7 @@ instance DIA_Addon_Snaf_PERM (C_INFO)
 	condition   = DIA_Addon_Snaf_PERM_Condition;
 	information = DIA_Addon_Snaf_PERM_Info;
 	permanent   = TRUE;
-	description = "Comment vont les affaires ?";
+	description = "Comment vont les affairesÂ ?";
 };
 FUNC INT DIA_Addon_Snaf_PERM_Condition()
 {	
@@ -525,7 +525,7 @@ FUNC INT DIA_Addon_Snaf_PERM_Condition()
 FUNC VOID DIA_Addon_Snaf_PERM_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //Comment vont les affaires ?
-	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Bien ! La mort d'Esteban incite pas mal de personnes à venir faire la fête ici...
+	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Bien ! La mort d'Esteban incite pas mal de personnes Ã  venir faire la fÃªte ici...
 };
 
 

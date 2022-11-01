@@ -57,7 +57,7 @@ FUNC INT DIA_Canthar_EXIT_Condition()
  
 FUNC VOID DIA_Canthar_EXIT_Info()
 {
-	AI_Output (other, self,"DIA_Canthar_EXIT_15_00"); //Il faut que j'y aille !
+	AI_Output (other, self,"DIA_Canthar_EXIT_15_00"); //Il faut que j'y ailleÂ !
 	AI_Output (self, other,"DIA_Canthar_EXIT_09_01"); //Comme vous voulez...
 	AI_StopProcessInfos	(self);
 };
@@ -90,17 +90,17 @@ FUNC VOID DIA_Canthar_PersonalCRIMES_Info()
 	// ------ Spieler hat mich besiegt ------
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_00"); //Vous avez été stupide de m'attaquer.
+		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_00"); //Vous avez Ã©tÃ© stupide de m'attaquer.
 	}
 		
 	// ------ ich habe Spieler besiegt ODER keiner wurde besiegt ------
 	else // FIGHT_WON oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_01"); //(moqueur) Pensiez-vous vraiment pouvoir me vaincre aussi facilement ?
+		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_01"); //(moqueur) Pensiez-vous vraiment pouvoir me vaincre aussi facilementÂ ?
 	};
 	
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_02"); //Faites-vous pardonner ou je vous promets que vous allez le regretter !
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_15_03"); //A quoi pensez-vous au juste ?
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_02"); //Faites-vous pardonner ou je vous promets que vous allez le regretterÂ !
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_15_03"); //A quoi pensez-vous au justeÂ ?
 	B_Say_Gold(self,other, 100);
 	
 	Info_ClearChoices	(DIA_Canthar_PersonalCRIMES);
@@ -113,8 +113,8 @@ FUNC VOID DIA_Canthar_PersonalCRIMES_Info()
 
 func void DIA_Canthar_PersonalCRIMES_Pay()
 {
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_Pay_15_00"); //Voici votre argent. N'en parlons plus d'accord ?
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_Pay_09_01"); //Voilà qui est très raisonnable de votre part.
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_Pay_15_00"); //Voici votre argent. N'en parlons plus d'accordÂ ?
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_Pay_09_01"); //VoilÃ  qui est trÃ¨s raisonnable de votre part.
 	
 	// ------ AIVARs resetten! ------
 	self.aivar[AIV_LastFightComment] = TRUE;
@@ -124,8 +124,8 @@ func void DIA_Canthar_PersonalCRIMES_Pay()
 
 func void DIA_Canthar_PersonalCRIMES_NotEnough()
 {
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_NotEnough_15_00"); //Mais je n'ai pas autant d'argent !
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_NotEnough_09_01"); //Alors, pourquoi me faites-vous perdre mon temps ?
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_NotEnough_15_00"); //Mais je n'ai pas autant d'argentÂ !
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_NotEnough_09_01"); //Alors, pourquoi me faites-vous perdre mon tempsÂ ?
 	
 	AI_StopProcessInfos(self);
 };
@@ -157,15 +157,15 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 {	
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 	
-	// ------ OHNE Rüstung ------
+	// ------ OHNE RÃ¼stung ------
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //Eh bien, eh bien... qui avons-nous là ?
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_01"); //Vous vous rendez en ville, n'est-ce pas ?
-		AI_Output	(other, self,"DIA_Canthar_Hallo_15_02"); //Peut-être.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_03"); //Hmm... (dédaigneux) Vous avez une tête de fugitif, et tous les fugitifs se rendent en ville.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_04"); //Vous pourriez même être un ancien détenu de la colonie minière.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_05"); //(rapidement) Je me moque d'où vous venez, mais je pense avoir une offre intéressante à vous faire...
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //Eh bien, eh bien... qui avons-nous lÃ Â ?
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_01"); //Vous vous rendez en ville, n'est-ce pasÂ ?
+		AI_Output	(other, self,"DIA_Canthar_Hallo_15_02"); //Peut-Ãªtre.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_03"); //Hmm... (dÃ©daigneux) Vous avez une tÃªte de fugitif, et tous les fugitifs se rendent en ville.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_04"); //Vous pourriez mÃªme Ãªtre un ancien dÃ©tenu de la colonie miniÃ¨re.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_05"); //(rapidement) Je me moque d'oÃ¹ vous venez, mais je pense avoir une offre intÃ©ressante Ã  vous faire...
 		
 		Canthar_GotMe = TRUE;
 	}
@@ -174,14 +174,14 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 	else if (Hlp_IsItem (itm, ItAr_Bau_L)) 
 	|| 		(Hlp_IsItem (itm, ItAr_Bau_M))
 	{
-		AI_Output (self, other,"DIA_Canthar_HelloArmor_09_06");	//Alors ? Le travail avance bien, paysan ?
+		AI_Output (self, other,"DIA_Canthar_HelloArmor_09_06");	//AlorsÂ ? Le travail avance bien, paysanÂ ?
 			
 		Info_ClearChoices	(DIA_Canthar_Hallo);
 		Info_AddChoice		(DIA_Canthar_Hallo, "Ai-je l'air d'un paysan ?" 	,DIA_Canthar_Hallo_NoBauer);
 		Info_AddChoice		(DIA_Canthar_Hallo, "Je ne peux pas me plaindre."		,DIA_Canthar_Hallo_Bauer);
 	}
 	
-	// ------ alle anderen Rüstungen (höchst unwahrscheinlich) ------
+	// ------ alle anderen RÃ¼stungen (hÃ¶chst unwahrscheinlich) ------
 	else 
 	{
 		AI_Output (self, other,"DIA_Canthar_Hallo_09_07"); //Que puis-je pour vous ?
@@ -191,16 +191,16 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 func void DIA_Canthar_Hallo_Bauer()
 {
 	AI_Output	(other, self,"DIA_Canthar_Hallo_Bauer_15_00");	//Je ne peux pas me plaindre.
-	AI_Output	(self, other,"DIA_Canthar_Hallo_Bauer_09_01");	//Je peux faire quelque chose pour vous ?
+	AI_Output	(self, other,"DIA_Canthar_Hallo_Bauer_09_01");	//Je peux faire quelque chose pour vousÂ ?
 
 	Info_ClearChoices	(DIA_Canthar_Hallo);
 };
 
 func void DIA_Canthar_Hallo_NoBauer()
 {
-	AI_Output	(other, self,"DIA_Canthar_Hallo_NoBauer_15_00"); //Ai-je l'air d'un fermier ?
-	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_01"); //Oui, complètement. Par contre, votre façon de parler est différente.
-	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_02"); //(pensif) Si je ne me trompe pas à votre sujet, je pense avoir une offre intéressante à vous faire...
+	AI_Output	(other, self,"DIA_Canthar_Hallo_NoBauer_15_00"); //Ai-je l'air d'un fermierÂ ?
+	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_01"); //Oui, complÃ¨tement. Par contre, votre faÃ§on de parler est diffÃ©rente.
+	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_02"); //(pensif) Si je ne me trompe pas Ã  votre sujet, je pense avoir une offre intÃ©ressante Ã  vous faire...
 	
 	Canthar_GotMe = TRUE;
 	
@@ -219,7 +219,7 @@ INSTANCE DIA_Canthar_WhatOffer (C_INFO)
 	condition	= DIA_Canthar_WhatOffer_Condition;
 	information	= DIA_Canthar_WhatOffer_Info;
 	permanent	= FALSE;
-	description	= "Qu'avez-vous à m'offrir ?";
+	description	= "Qu'avez-vous Ã  m'offrir ?";
 };                       
 
 FUNC INT DIA_Canthar_WhatOffer_Condition()
@@ -232,7 +232,7 @@ FUNC INT DIA_Canthar_WhatOffer_Condition()
  
 FUNC VOID DIA_Canthar_WhatOffer_Info()
 {	
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_15_00"); //Qu'avez-vous à offrir ?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_15_00"); //Qu'avez-vous Ã  offrirÂ ?
 	
 	if (Canthar_GotME == TRUE)
 	{
@@ -242,28 +242,28 @@ FUNC VOID DIA_Canthar_WhatOffer_Info()
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_02"); //(ironique) Si vous vous montrez aussi 'convaincant' avec les gardes que vous l'êtes avec moi, ils ne vous laisseront jamais entrer en ville.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_02"); //(ironique) Si vous vous montrez aussi 'convaincant' avec les gardes que vous l'Ãªtes avec moi, ils ne vous laisseront jamais entrer en ville.
 		};
 		
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_03"); //Je peux vous aider à entrer en ville.
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_04"); //J'ai ici un bout de papier frappé du sceau royal et de la signature du gouverneur. C'est ce qu'on appelle un laissez-passer.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_03"); //Je peux vous aider Ã  entrer en ville.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_04"); //J'ai ici un bout de papier frappÃ© du sceau royal et de la signature du gouverneur. C'est ce qu'on appelle un laissez-passer.
 				
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{	
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_05"); //Si vous avez ce papier sur vous, les gardes vous laisseront aller et venir à votre guise, même si vous êtes vêtu de haillons.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_05"); //Si vous avez ce papier sur vous, les gardes vous laisseront aller et venir Ã  votre guise, mÃªme si vous Ãªtes vÃªtu de haillons.
 		};
 		
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_06"); //Ça vous intéresse ?
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_06"); //Ã‡a vous intÃ©resseÂ ?
 		
 		Info_ClearChoices	(DIA_Canthar_WhatOffer);
 		Info_AddChoice		(DIA_Canthar_WhatOffer, "Non ! Gardez votre papier !",DIA_Canthar_WhatOffer_No);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Que voulez-vous en échange du laissez-passer ?",DIA_Canthar_WhatOffer_Price);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Que voulez-vous en Ã©change du laissez-passer ?",DIA_Canthar_WhatOffer_Price);
 		Info_AddChoice		(DIA_Canthar_WhatOffer, "Comment allez-vous entrer en ville ?" 			,DIA_Canthar_WhatOffer_HowYouIn);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Il doit y avoir une entourloupe là-dessous..."	,DIA_Canthar_WhatOffer_Strings);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Il doit y avoir une entourloupe lÃ -dessous..."	,DIA_Canthar_WhatOffer_Strings);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_07"); //Je suis un marchand itinérant. Je vends un peu de tout.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_07"); //Je suis un marchand itinÃ©rant. Je vends un peu de tout.
 	};
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Canthar vend toutes sortes d'armes."); 
@@ -271,26 +271,26 @@ FUNC VOID DIA_Canthar_WhatOffer_Info()
 
 func void DIA_Canthar_WhatOffer_Strings()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Strings_15_00"); //J'imagine qu'il y a un piège...
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Strings_09_01"); //(faussement honnête) Un piège ? Mais non, voyons. Vous me devrez juste une faveur, c'est tout.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Strings_15_00"); //J'imagine qu'il y a un piÃ¨ge...
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Strings_09_01"); //(faussement honnÃªte) Un piÃ¨geÂ ? Mais non, voyons. Vous me devrez juste une faveur, c'est tout.
 };
 
 func void DIA_Canthar_WhatOffer_HowYouIn()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_HowYouIn_15_00");  //Et vous, comment entrerez-vous en ville ?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_HowYouIn_15_00");  //Et vous, comment entrerez-vous en villeÂ ?
 	AI_Output (self, other,"DIA_Canthar_WhatOffer_HowYouIn_09_01"); //Les gardes me connaissent. Il suffira que je leur dise que j'ai perdu mon laissez-passer.
 };
 
 func void DIA_Canthar_WhatOffer_Price()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_00"); //Que voulez-vous en échange de votre laissez-passer ?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_01"); //(satisfait) Ahh... je savais que je vous avais bien jugé !
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_02"); //Ecoutez... je vais vous remettre mon laissez-passer sans rien vous demander en échange.
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_03"); //C'est vrai ?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_00"); //Que voulez-vous en Ã©change de votre laissez-passerÂ ?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_01"); //(satisfait) Ahh... je savais que je vous avais bien jugÃ©Â !
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_02"); //Ecoutez... je vais vous remettre mon laissez-passer sans rien vous demander en Ã©change.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_03"); //C'est vraiÂ ?
 	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_04"); //Oui, oui. Par contre, si nous nous retrouvons en ville, vous me devrez une faveur.
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_05"); //Alors ? C'est d'accord ?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_05"); //AlorsÂ ? C'est d'accordÂ ?
 		
-	Info_AddChoice (DIA_Canthar_WhatOffer, "Bien sûr, donnez-moi le papier.",DIA_Canthar_WhatOffer_Ok);
+	Info_AddChoice (DIA_Canthar_WhatOffer, "Bien sÃ»r, donnez-moi le papier.",DIA_Canthar_WhatOffer_Ok);
 };
 
 func void DIA_Canthar_WhatOffer_Ok()
@@ -299,23 +299,23 @@ func void DIA_Canthar_WhatOffer_Ok()
 	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_01"); //Tenez. Prenez-en soin surtout ! Il a une grande valeur.
 	CreateInvItems (self,ItWr_Passierschein, 1);
 	B_GiveInvItems (self, other, ItWr_Passierschein, 1);
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_02"); //Une dernière chose : ne songez même pas à reprendre votre parole !
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_03"); //En tant que marchand, je bénéficie d'une influence plus que conséquente en ville, et je saurais vous le faire payer.
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_02"); //Une derniÃ¨re choseÂ : ne songez mÃªme pas Ã  reprendre votre paroleÂ !
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_03"); //En tant que marchand, je bÃ©nÃ©ficie d'une influence plus que consÃ©quente en ville, et je saurais vous le faire payer.
 	
 	Canthar_Gefallen = TRUE;	
 	Info_ClearChoices	(DIA_Canthar_WhatOffer);
 	
 	Log_CreateTopic (TOPIC_City,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_City,LOG_RUNNING);
-	B_LogEntry (TOPIC_City,"J'ai obtenu un laissez-passer auprès du marchand Canthar pour entrer en ville. En échange, je lui devrai un service la prochaine fois que nous nous rencontrerons.");
+	B_LogEntry (TOPIC_City,"J'ai obtenu un laissez-passer auprÃ¨s du marchand Canthar pour entrer en ville. En Ã©change, je lui devrai un service la prochaine fois que nous nous rencontrerons.");
 
 };
 
 func void DIA_Canthar_WhatOffer_No()
 {
 	AI_Output (other, self,"DIA_Canthar_WhatOffer_No_15_00"); //Non. Gardez votre laissez-passer.
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_01"); //Hmm... on dirait que je vous ai finalement mal jugé...
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_02"); //Tant pis. Peut-être voudrez-vous autre chose... Cela vous intéresserait-il de voir ce que j'ai à offrir ?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_01"); //Hmm... on dirait que je vous ai finalement mal jugÃ©...
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_02"); //Tant pis. Peut-Ãªtre voudrez-vous autre chose... Cela vous intÃ©resserait-il de voir ce que j'ai Ã  offrirÂ ?
 	
 	Info_ClearChoices	(DIA_Canthar_WhatOffer);
 };
@@ -366,7 +366,7 @@ func void DIA_Canthar_TRADE_Info ()
 // ###########################################
 /*
 		-->
-		Aber ein Händler namnes Canthar hat das erzählt. 
+		Aber ein HÃ¤ndler namnes Canthar hat das erzÃ¤hlt. 
 	*/
 
 ///////////////////////////////////////////////////////////////////////
@@ -399,39 +399,39 @@ func void DIA_Canthar_PAYPRICEINCITY_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_01"); //Hé, vous ! J'ai une proposition à vous faire.
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_01"); //HÃ©, vousÂ ! J'ai une proposition Ã  vous faire.
 	};
 	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_02"); //Que voulez-vous ?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_03"); //Je veux récupérer mon emplacement de la place du marché. Sarah se l'est approprié.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_04"); //Mais cela fait bien assez longtemps qu'elle occupe cet emplacement ! Je veux le récupérer !
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_05"); //En quoi est-ce que cela me concerne ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_03"); //Je veux rÃ©cupÃ©rer mon emplacement de la place du marchÃ©. Sarah se l'est appropriÃ©.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_04"); //Mais cela fait bien assez longtemps qu'elle occupe cet emplacementÂ ! Je veux le rÃ©cupÃ©rerÂ !
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_05"); //En quoi est-ce que cela me concerneÂ ?
 	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_06"); //Je vais vous remettre une lettre qu'il faudra glisser dans sa poche.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_07"); //Cela fait, allez trouver André et dites-lui que Sarah vend des armes à Onar.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_08"); //Elle est jetée en prison, vous touchez une prime, et moi, je récupère mon emplacement.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_07"); //Cela fait, allez trouver AndrÃ© et dites-lui que Sarah vend des armes Ã  Onar.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_08"); //Elle est jetÃ©e en prison, vous touchez une prime, et moi, je rÃ©cupÃ¨re mon emplacement.
 	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_09"); //Vous avez deux jours.
 	
 	if (Canthar_Gefallen == FALSE)
 	{
-		AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_10"); //Et qu'est-ce que j'ai à y gagner ?
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_11"); //Quand j'aurai récupéré mon emplacement, je vous donnerai une arme... une TRES bonne arme.
+		AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_10"); //Et qu'est-ce que j'ai Ã  y gagner ?
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_11"); //Quand j'aurai rÃ©cupÃ©rÃ© mon emplacement, je vous donnerai une arme... une TRES bonne arme.
 	};
 	
 	Info_ClearChoices (DIA_Canthar_PAYPRICEINCITY);
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Non, je ne veux rien avoir à faire avec ça.", DIA_Canthar_PAYPRICEINCITY_Nein );
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Très bien, je le ferai.", DIA_Canthar_PAYPRICEINCITY_Ok );
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Que se passera-t-il si je refuse de faire ça ?", DIA_Canthar_PAYPRICEINCITY_If );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Non, je ne veux rien avoir Ã  faire avec Ã§a.", DIA_Canthar_PAYPRICEINCITY_Nein );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "TrÃ¨s bien, je le ferai.", DIA_Canthar_PAYPRICEINCITY_Ok );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Que se passera-t-il si je refuse de faire Ã§a ?", DIA_Canthar_PAYPRICEINCITY_If );
 };
 
 func void DIA_Canthar_PAYPRICEINCITY_if ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_if_15_00"); //Que se passera-t-il si je refuse ?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_01"); //Ce serait on ne peut plus stupide de votre part, car voyez-vous, je sais que vous êtes un prisonnier évadé...
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_02"); //Si jamais cela se sait, nul doute que vous vous retrouverez en délicatesse avec les autorités.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_if_15_00"); //Que se passera-t-il si je refuseÂ ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_01"); //Ce serait on ne peut plus stupide de votre part, car voyez-vous, je sais que vous Ãªtes un prisonnier Ã©vadÃ©...
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_02"); //Si jamais cela se sait, nul doute que vous vous retrouverez en dÃ©licatesse avec les autoritÃ©s.
 };
 
 func void DIA_Canthar_PAYPRICEINCITY_Nein ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Nein_15_00"); //Je ne veux rien avoir à faire avec cette histoire.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Nein_15_00"); //Je ne veux rien avoir Ã  faire avec cette histoire.
 	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Nein_09_01"); //Mauvais choix, petit. On se reverra !
 	
 	MIS_Canthars_KomproBrief = LOG_OBSOLETE;
@@ -443,14 +443,14 @@ func void DIA_Canthar_PAYPRICEINCITY_Nein ()
 func void DIA_Canthar_PAYPRICEINCITY_Ok ()
 {
 	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_00"); //On dirait que je n'ai pas le choix...
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_01"); //Bravo, vous avez tout compris ! Voici la lettre.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_01"); //Bravo, vous avez tout comprisÂ ! Voici la lettre.
 	
 	CreateInvItems (self, ItWr_Canthars_KomproBrief_MIS, 1);
 	B_GiveInvItems (self, other, ItWr_Canthars_KomproBrief_MIS, 1);
 	
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_02"); //Comment suis-je censé glisser la lettre dans sa poche sans qu'elle s'en aperçoive ?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_03"); //Demandez-lui de vous montrer ses marchandises et passez à l'action quand elle le fera.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_04"); //Et n'oubliez surtout pas que je suis un homme influent. Je vous déconseille fortement de me trahir.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_02"); //Comment suis-je censÃ© glisser la lettre dans sa poche sans qu'elle s'en aperÃ§oiveÂ ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_03"); //Demandez-lui de vous montrer ses marchandises et passez Ã  l'action quand elle le fera.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_04"); //Et n'oubliez surtout pas que je suis un homme influent. Je vous dÃ©conseille fortement de me trahir.
 	
 	MIS_Canthars_KomproBrief = LOG_RUNNING;
 	MIS_Canthars_KomproBrief_Day = Wld_GetDay(); 
@@ -466,7 +466,7 @@ func void DIA_Canthar_PAYPRICEINCITY_Ok ()
 	{
 		B_LogEntry (TOPIC_Canthar,"Canthar m'a promis de me donner une arme si je lui rends un service.");
 	};
-	B_LogEntry (TOPIC_Canthar,"Je dois refiler une lettre à Sarah, qui sera la preuve qu'elle vend des armes à Onar. Puis je dois aller voir le seigneur André et la dénoncer.");
+	B_LogEntry (TOPIC_Canthar,"Je dois refiler une lettre Ã  Sarah, qui sera la preuve qu'elle vend des armes Ã  Onar. Puis je dois aller voir le seigneur AndrÃ© et la dÃ©noncer.");
 	
 	Info_ClearChoices (DIA_Canthar_PAYPRICEINCITY);
 	
@@ -496,19 +496,19 @@ func void DIA_Canthar_SARAHERLEDIGT_Info ()
 	{
 		if (MIS_Canthars_KomproBrief_Day <= (Wld_GetDay()+ 2))
 		{
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_00"); //Vous n'avez pas une mission à accomplir ?
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_01"); //Glissez la lettre dans la poche de Sarah et allez la dénoncer auprès d'André.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_00"); //Vous n'avez pas une mission Ã  accomplirÂ ?
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_01"); //Glissez la lettre dans la poche de Sarah et allez la dÃ©noncer auprÃ¨s d'AndrÃ©.
 			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_02"); //Faites-le... et n'essayez surtout pas de me trahir ou vous le regretteriez.
 		}
 		else  
 		{
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_03"); //Vous prenez vraiment tout votre temps, vous ! Mettez-vous un peu au travail !
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_03"); //Vous prenez vraiment tout votre temps, vousÂ ! Mettez-vous un peu au travailÂ !
 		};
 	}
 	else
 	{
 			AI_Output (other, self, "DIA_Canthar_SARAHERLEDIGT_15_04"); //Sarah est morte.
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_05"); //C'est vrai ? Merveilleux ! Dans ce cas, vous avez rempli votre part du marché.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_05"); //C'est vraiÂ ? MerveilleuxÂ ! Dans ce cas, vous avez rempli votre part du marchÃ©.
 			
 			MIS_Canthars_KomproBrief = LOG_SUCCESS;
 			B_GivePlayerXP (XP_Ambient);
@@ -538,8 +538,8 @@ func int DIA_Canthar_Success_Condition ()
 };
 func void DIA_Canthar_Success_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Success_09_00"); //Bien joué. C'est tout ce qu'elle méritait.
-	AI_Output (self, other, "DIA_Canthar_Success_09_01"); //Je me suis approprié sa marchandise, alors, s'il vous faut une arme, n'hésitez pas à venir me trouver.
+	AI_Output (self, other, "DIA_Canthar_Success_09_00"); //Bien jouÃ©. C'est tout ce qu'elle mÃ©ritait.
+	AI_Output (self, other, "DIA_Canthar_Success_09_01"); //Je me suis appropriÃ© sa marchandise, alors, s'il vous faut une arme, n'hÃ©sitez pas Ã  venir me trouver.
 	
 	if (Kapitel == 1)
 	{
@@ -601,21 +601,21 @@ func void DIA_Canthar_Again_Info ()
 	
 	if (MIS_Canthars_KomproBrief  == LOG_FAILED)
 	{
-		AI_Output (other,self , "DIA_Canthar_Again_15_01"); //Pourquoi n'êtes-vous pas en prison ?
-		AI_Output (self,other, "DIA_Canthar_Again_09_02"); //On m'a relâché. Je vous l'avais dit, je suis un homme très influent en ville.
+		AI_Output (other,self , "DIA_Canthar_Again_15_01"); //Pourquoi n'Ãªtes-vous pas en prisonÂ ?
+		AI_Output (self,other, "DIA_Canthar_Again_09_02"); //On m'a relÃ¢chÃ©. Je vous l'avais dit, je suis un homme trÃ¨s influent en ville.
 	}
 	else if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Canthar_Again_09_03"); //Et j'en ai profité pour me charger moi-même de Sarah. Vous pouvez jeter la lettre que je vous avais remise.
+		AI_Output (self, other, "DIA_Canthar_Again_09_03"); //Et j'en ai profitÃ© pour me charger moi-mÃªme de Sarah. Vous pouvez jeter la lettre que je vous avais remise.
 		
 	}
 	else if (MIS_Canthars_KomproBrief == LOG_OBSOLETE)
 	{
-		AI_Output (self, other, "DIA_Canthar_Again_09_04"); //Il me semble que je vous avais prévenu, non ? Vous auriez mieux fait de faire ce que je vous avais demandé....
+		AI_Output (self, other, "DIA_Canthar_Again_09_04"); //Il me semble que je vous avais prÃ©venu, nonÂ ? Vous auriez mieux fait de faire ce que je vous avais demandÃ©....
 	};
-	AI_Output (self, other, "DIA_Canthar_Again_09_05"); //Maintenant, tous les marchands savent que vous êtes un prisonnier évadé.
-	AI_Output (self, other, "DIA_Canthar_Again_09_06"); //C'est regrettable. Désormais, il ne vous sera plus possible d'obtenir ne serait-ce qu'un croûton de pain sur la place du marché.
-	AI_Output (self, other, "DIA_Canthar_Again_09_07"); //Je pourrais bien évidemment arranger, cela... pour, disons...
+	AI_Output (self, other, "DIA_Canthar_Again_09_05"); //Maintenant, tous les marchands savent que vous Ãªtes un prisonnier Ã©vadÃ©.
+	AI_Output (self, other, "DIA_Canthar_Again_09_06"); //C'est regrettable. DÃ©sormais, il ne vous sera plus possible d'obtenir ne serait-ce qu'un croÃ»ton de pain sur la place du marchÃ©.
+	AI_Output (self, other, "DIA_Canthar_Again_09_07"); //Je pourrais bien Ã©videmment arranger, cela... pour, disons...
 	B_Say_Gold 	(self, other, Canthar_Gold);
 	
 	AI_StopProcessInfos (self);
@@ -646,24 +646,24 @@ func int DIA_Canthar_Pay_Condition ()
 };
 func void DIA_Canthar_Pay_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Pay_09_00"); //Vous venez me payer ?
+	AI_Output (self, other, "DIA_Canthar_Pay_09_00"); //Vous venez me payerÂ ?
 	
 	Info_ClearChoices (DIA_Canthar_Pay);
 	
 	if (Npc_HasItems (other, ItmI_Gold) >= Canthar_Gold)
 	{
-		Info_AddChoice (DIA_Canthar_Pay,"Très bien, je paierai...",DIA_Canthar_Pay_Ja);
+		Info_AddChoice (DIA_Canthar_Pay,"TrÃ¨s bien, je paierai...",DIA_Canthar_Pay_Ja);
 	};
 	Info_AddChoice (DIA_Canthar_Pay,"Je n'ai pas assez d'argent sur moi...",DIA_Canthar_Pay_Nein);
-	Info_AddChoice (DIA_Canthar_Pay,"C'est combien déjà ?",DIA_Canthar_Pay_Wieviel);
+	Info_AddChoice (DIA_Canthar_Pay,"C'est combien dÃ©jÃ  ?",DIA_Canthar_Pay_Wieviel);
 };
 
 
 FUNC VOID DIA_Canthar_Pay_Ja()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Ja_15_00"); //Très bien, je vais payer. Vous ne me laissez pas le choix.
+	AI_Output (other, self, "DIA_Canthar_Pay_Ja_15_00"); //TrÃ¨s bien, je vais payer. Vous ne me laissez pas le choix.
 	B_GiveInvItems (other, self, Itmi_Gold,Canthar_Gold);
-	AI_Output (self, other, "DIA_Canthar_Pay_Ja_09_01"); //(sourit) Bien. Je vais faire en sorte que votre réputation redevienne meilleure auprès des marchands.
+	AI_Output (self, other, "DIA_Canthar_Pay_Ja_09_01"); //(sourit) Bien. Je vais faire en sorte que votre rÃ©putation redevienne meilleure auprÃ¨s des marchands.
 	
 	Canthar_Sperre = FALSE;
 	Canthar_Pay = TRUE; 
@@ -672,13 +672,13 @@ FUNC VOID DIA_Canthar_Pay_Ja()
 FUNC VOID DIA_Canthar_Pay_Nein()
 {
 	AI_Output (other, self, "DIA_Canthar_Pay_Nein_15_00"); //Je n'ai pas assez d'argent sur moi.
-	AI_Output (self, other, "DIA_Canthar_Pay_Nein_09_01"); //Alors procurez-vous la somme nécessaire.
+	AI_Output (self, other, "DIA_Canthar_Pay_Nein_09_01"); //Alors procurez-vous la somme nÃ©cessaire.
 	Info_ClearChoices (DIA_Canthar_Pay);
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Canthar_Pay_Wieviel()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Wieviel_15_00"); //Combien cela va-t-il coûter déjà ?
+	AI_Output (other, self, "DIA_Canthar_Pay_Wieviel_15_00"); //Combien cela va-t-il coÃ»ter dÃ©jÃ  ?
 	B_Say_Gold 	(self, other, Canthar_Gold);
 	
 };
@@ -705,8 +705,8 @@ func int DIA_Canthar_CANTHARANGEPISST_Condition ()
 };
 func void DIA_Canthar_CANTHARANGEPISST_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_00"); //Je vous avais prévenu, mais vous n'avez pas voulu m'écouter. Nous en reparlerons plus tard.
-	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_01"); //Allez-vous en maintenant ! J'ai envie de me reposer.
+	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_00"); //Je vous avais prÃ©venu, mais vous n'avez pas voulu m'Ã©couter. Nous en reparlerons plus tard.
+	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_01"); //Allez-vous en maintenantÂ ! J'ai envie de me reposer.
 	
 	AI_StopProcessInfos (self);	
 };
@@ -720,7 +720,7 @@ instance DIA_Canthar_MinenAnteil		(C_INFO)
 	condition	 = 	DIA_Canthar_MinenAnteil_Condition;
 	information	 = 	DIA_Canthar_MinenAnteil_Info;
 
-	description	 = 	"Vous vendez des concessions illégales !";
+	description	 = 	"Vous vendez des concessions illÃ©gales !";
 };
 
 func int DIA_Canthar_MinenAnteil_Condition ()
@@ -735,8 +735,8 @@ func int DIA_Canthar_MinenAnteil_Condition ()
 
 func void DIA_Canthar_MinenAnteil_Info ()
 {
-	AI_Output (other, self, "DIA_Canthar_Minenanteil_15_00"); //Vous vendez des concessions minières illégales !
-	AI_Output (self, other, "DIA_Canthar_Minenanteil_09_01"); //Oui, et alors ? Si je ne le fais pas, quelqu'un d'autre le fera.
+	AI_Output (other, self, "DIA_Canthar_Minenanteil_15_00"); //Vous vendez des concessions miniÃ¨res illÃ©galesÂ !
+	AI_Output (self, other, "DIA_Canthar_Minenanteil_09_01"); //Oui, et alorsÂ ? Si je ne le fais pas, quelqu'un d'autre le fera.
 	B_GivePlayerXP (XP_Ambient);
 };
 

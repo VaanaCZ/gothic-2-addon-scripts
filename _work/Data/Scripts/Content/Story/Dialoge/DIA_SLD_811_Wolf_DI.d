@@ -32,7 +32,7 @@ instance DIA_Wolf_DI_HALLO		(C_INFO)
 	information	 = 	DIA_Wolf_DI_HALLO_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Comment ça va ?";
+	description	 = 	"Comment Ã§a va ?";
 };
 
 func int DIA_Wolf_DI_HALLO_Condition ()
@@ -45,14 +45,14 @@ func int DIA_Wolf_DI_HALLO_Condition ()
 var int DIA_Wolf_DI_HALLO_OneTime;
 func void DIA_Wolf_DI_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_00"); //Comment ça se passe ?
+	AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_00"); //Comment Ã§a se passe ?
 
 	if ( Bennet_IsOnBoard == LOG_SUCCESS)
 	&& (Npc_IsDead(Bennet_DI)	==	FALSE)
 		{
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Il vous fallait vraiment prendre Bennet avec vous ?
-			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //Quel est le problème ?
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Rien, tout va bien. Faites ce que vous avez à faire et tirez-vous d'ici, compris ?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Il vous fallait vraiment prendre Bennet avec vousÂ ?
+			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //Quel est le problÃ¨me ?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Rien, tout va bien. Faites ce que vous avez Ã  faire et tirez-vous d'ici, comprisÂ ?
 		}
 	else
 		{
@@ -66,8 +66,8 @@ func void DIA_Wolf_DI_HALLO_Info ()
 				}
 			else
 				{
-					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Pouvez-vous me fabriquer une armure ?
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Je regrette, mon vieux, mais pas avec ces outils-là. Il vous faudra attendre qu'on ait rallié le continent.
+					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Pouvez-vous me fabriquer une armureÂ ?
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Je regrette, mon vieux, mais pas avec ces outils-lÃ . Il vous faudra attendre qu'on ait ralliÃ© le continent.
 				};
 		};
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Wolf_DI_Training (C_INFO)
 	information	= DIA_Wolf_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "Formez-moi au combat à longue distance.";
+	description = "Formez-moi au combat Ã  longue distance.";
 };                       
 FUNC INT DIA_Wolf_DI_Training_Condition()
 {
@@ -96,8 +96,8 @@ FUNC INT DIA_Wolf_DI_Training_Condition()
 
 FUNC VOID DIA_Wolf_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //Entraînez-moi au combat à distance.
-	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //Quel genre de combat à distance ?
+	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //EntraÃ®nez-moi au combat Ã  distance.
+	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //Quel genre de combat Ã  distanceÂ ?
 	
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -116,7 +116,7 @@ func void DIA_Wolf_DI_Training_BOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 1, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //Contrairement à l'arbalète, l'arc est une arme exigeant beaucoup d'espace. Il vous faudra toujours prendre ce facteur en considération au combat.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //Contrairement Ã  l'arbalÃ¨te, l'arc est une arme exigeant beaucoup d'espace. Il vous faudra toujours prendre ce facteur en considÃ©ration au combat.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -133,7 +133,7 @@ func void DIA_Wolf_DI_Training_BOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 5, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //Laissez bien filez la corde lorsque vous la lâchez. Un doigt qui traîne et votre flèche partira n'importe où.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //Laissez bien filez la corde lorsque vous la lÃ¢chez. Un doigt qui traÃ®ne et votre flÃ¨che partira n'importe oÃ¹.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -154,7 +154,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //Ne faites surtout pas de gestes brusques en tirant à l'arbalète. C'est pour ça qu'il faut toujours actionner le mécanisme lentement et de manière régulière.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //Ne faites surtout pas de gestes brusques en tirant Ã  l'arbalÃ¨te. C'est pour Ã§a qu'il faut toujours actionner le mÃ©canisme lentement et de maniÃ¨re rÃ©guliÃ¨re.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -170,7 +170,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Un bon tireur se sert du vent et évite autant que possible de tirer face au vent.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Un bon tireur se sert du vent et Ã©vite autant que possible de tirer face au vent.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -212,12 +212,12 @@ var int DIA_Wolf_DI_UndeadDragonDead_OneTime;
 func void DIA_Wolf_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Tout va bien ?
-	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //Oui, et pour vous ? C'était pas de la tarte, hein ?
+	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //Oui, et pour vousÂ ? C'Ã©tait pas de la tarte, heinÂ ?
 
 	if (DIA_Wolf_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Où comptez-vous aller, maintenant ?
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //N'importe où du moment que je ne retourne pas sur mes pas. J'en ai plus qu'assez de Khorinis.
+			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //OÃ¹ comptez-vous aller, maintenantÂ ?
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //N'importe oÃ¹ du moment que je ne retourne pas sur mes pas. J'en ai plus qu'assez de Khorinis.
 			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //Pour moi, toutes les destinations se valent, du moment qu'on part loin d'ici.
 			DIA_Wolf_DI_UndeadDragonDead_OneTime = TRUE;
 		};

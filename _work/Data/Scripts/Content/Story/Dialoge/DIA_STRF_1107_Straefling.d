@@ -40,8 +40,8 @@ func int DIA_STRF_1107_FINGER_Condition ()
 };
 func void DIA_STRF_1107_FINGER_Info ()
 {
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Ne touchez pas à mes pots ! Personne n'a le droit d'y toucher, c'est compris ?
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Je suis responsable de la nourriture, ce qui signifie que personne d'autre n'a rien à faire ici ! J'espère que c'est clair !
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Ne touchez pas Ã  mes potsÂ ! Personne n'a le droit d'y toucher, c'est comprisÂ ?
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Je suis responsable de la nourriture, ce qui signifie que personne d'autre n'a rien Ã  faire iciÂ ! J'espÃ¨re que c'est clairÂ !
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info COOK
@@ -51,7 +51,7 @@ instance DIA_STRF_1107_COOK		(C_INFO)
 	npc			 = 	STRF_1107_Straefling;
 	condition	 = 	DIA_STRF_1107_COOK_Condition;
 	information	 = 	DIA_STRF_1107_COOK_Info;
-	description	 =  "Qui a décrété que vous seriez le cuisinier ?";
+	description	 =  "Qui a dÃ©crÃ©tÃ© que vous seriez le cuisinier ?";
 };
 
 func int DIA_STRF_1107_COOK_Condition ()
@@ -63,10 +63,10 @@ func int DIA_STRF_1107_COOK_Condition ()
 };
 func void DIA_STRF_1107_COOK_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //Qui vous a nommé cuisinier ?
-	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Le commandant Garond. Avant d'être prisonnier ici, j'étais le cuistot du Sanglier Enragé.
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //Et pourquoi vous a-t-on enfermé ?
-	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //A cause d'une méprise entre un client, un hachoir à viande et moi.
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //Qui vous a nommÃ© cuisinierÂ ?
+	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Le commandant Garond. Avant d'Ãªtre prisonnier ici, j'Ã©tais le cuistot du Sanglier EnragÃ©.
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //Et pourquoi vous a-t-on enfermÃ©Â ?
+	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //A cause d'une mÃ©prise entre un client, un hachoir Ã  viande et moi.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM
@@ -90,8 +90,8 @@ func int DIA_STRF_1107_PERM_Condition ()
 };
 func void DIA_STRF_1107_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //Du nouveau ?
-	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Si vous vous intéressez à ce qui se passe, allez voir les chevaliers. Moi, je ne suis qu'un cuistot. Et prisonnier en plus.
+	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //Du nouveauÂ ?
+	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Si vous vous intÃ©ressez Ã  ce qui se passe, allez voir les chevaliers. Moi, je ne suis qu'un cuistot. Et prisonnier en plus.
 };
  
 

@@ -50,7 +50,7 @@ const int 	Value_BeliarW_2H_19 	= 3100;	const int 	Damage_BeliarW_2H_19	= 118;
 const int 	Value_BeliarW_2H_20 	= 3300;	const int 	Damage_BeliarW_2H_20	= 120;
 
 //-----------------------------
-// Hitchance für 1H und 2H in %
+// Hitchance fÃ¼r 1H und 2H in %
 //-----------------------------
 const int 	BeliarDamageChance_01 = 12;
 const int 	BeliarDamageChance_02 = 14;

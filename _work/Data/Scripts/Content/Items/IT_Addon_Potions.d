@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (unwissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -18,7 +18,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Potion d'altÈration mentale";
+	description		= 	"Potion d'alt√©ration mentale";
 	
 	TEXT[2]			=   "A consommer avec MODERATION !";
 	
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (wissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -55,7 +55,7 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Potion d'altÈration mentale";
+	description		= 	"Potion d'alt√©ration mentale";
 	
 	TEXT[2]			=   "A consommer avec MODERATION !";
 	
@@ -96,7 +96,7 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	description		= 	"Energie vitale pure";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"RÈgÈnÈration totale";
+	TEXT[2]			= 	"R√©g√©n√©ration totale";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -129,7 +129,7 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	description		= 	"Mana pur";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"RÈgÈnÈration totale du mana";
+	TEXT[2]			= 	"R√©g√©n√©ration totale du mana";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

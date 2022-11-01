@@ -2,7 +2,7 @@
 instance VLK_416_Matteo (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mattéo";
+	name 		= "MattÃ©o";
 	guild 		= GIL_VLK;
 	id 			= 416;
 	voice 		= 9;
@@ -20,7 +20,7 @@ instance VLK_416_Matteo (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 	
 
 		

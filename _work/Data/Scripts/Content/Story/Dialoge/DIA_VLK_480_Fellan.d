@@ -82,13 +82,13 @@ func void DIA_Fellan_News_Info ()
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_00"); //Vous m'avez battu, je le reconnais. Quel exploit ! Vous êtes un vrai héros !
+		 AI_Output (self, other, "DIA_Fellan_News_06_00"); //Vous m'avez battu, je le reconnais. Quel exploitÂ ! Vous Ãªtes un vrai hÃ©rosÂ !
 	
 		 if (MIS_AttackFellan == LOG_RUNNING)
 		 && (FellanGeschlagen == FALSE)
 		 {
-		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Vous voulez bien arrêter de vous servir de votre marteau maintenant, ou bien faut-il que je vous donne une autre leçon ?
-		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Non, ne me frappez plus ! J'arrête ! Mais si tout ça s'effondre, ce sera votre faute !
+		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Vous voulez bien arrÃªter de vous servir de votre marteau maintenant, ou bien faut-il que je vous donne une autre leÃ§onÂ ?
+		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Non, ne me frappez plusÂ ! J'arrÃªteÂ ! Mais si tout Ã§a s'effondre, ce sera votre fauteÂ !
 		 	
 		 	FellanGeschlagen = TRUE;
 		 	Npc_ExchangeRoutine (self,"OHNEHAMMER");
@@ -98,11 +98,11 @@ func void DIA_Fellan_News_Info ()
 	}; 
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Quel est le problème ? Vous voulez un autre coup de poing dans le nez ?
+		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Quel est le problÃ¨meÂ ? Vous voulez un autre coup de poing dans le nezÂ ?
 	};
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Vous êtes dingue ou quoi ? Vous commencez par vouloir vous battre, puis par discuter... mais qu'est-ce que vous voulez au juste ?
+		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Vous Ãªtes dingue ou quoiÂ ? Vous commencez par vouloir vous battre, puis par discuter... mais qu'est-ce que vous voulez au justeÂ ?
 	};
 	self.aivar[AIV_LastFightComment] = TRUE;
 };
@@ -128,9 +128,9 @@ func int DIA_Fellan_HALLO_Condition ()
 };
 func void DIA_Fellan_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Pourquoi donnez-vous tous ces coups de marteau ?
+	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Pourquoi donnez-vous tous ces coups de marteauÂ ?
 	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //Cela fait plusieurs jours que j'essaye de colmater les fuites de ma maison.
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //La charpente s'est affaissée depuis les fortes pluies que nous avons eues récemment. Si ça continue, ma maison va s'écrouler comme un château de cartes !
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //La charpente s'est affaissÃ©e depuis les fortes pluies que nous avons eues rÃ©cemment. Si Ã§a continue, ma maison va s'Ã©crouler comme un chÃ¢teau de cartesÂ !
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ instance DIA_Fellan_Stop		(C_INFO)
 	condition	 = 	DIA_Fellan_Stop_Condition;
 	information	 = 	DIA_Fellan_Stop_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Pourriez-vous arrêter de taper ?";
+	description	 = 	"Pourriez-vous arrÃªter de taper ?";
 };
 
 func int DIA_Fellan_Stop_Condition ()
@@ -156,30 +156,30 @@ func int DIA_Fellan_Stop_Condition ()
 };
 func void DIA_Fellan_Stop_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //Est-ce que vous pourriez arrêter de faire tout ce bruit ?
-	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //Non, il faut que je finisse ça.
+	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //Est-ce que vous pourriez arrÃªter de faire tout ce bruitÂ ?
+	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //Non, il faut que je finisse Ã§a.
 	
 	Info_ClearChoices (DIA_Fellan_Stop);
-	Info_AddChoice (DIA_Fellan_Stop,"Arrêtez de taper ou je vous brise les os.",DIA_Fellan_Stop_Bones);
-	Info_AddChoice (DIA_Fellan_Stop,"Je vous donne 10 pièces d'or si vous arrêtez de taper.",DIA_Fellan_Stop_Gold);
-	Info_AddChoice (DIA_Fellan_Stop,"Arrêtez de taper, d'accord ?",DIA_Fellan_Stop_Just);
+	Info_AddChoice (DIA_Fellan_Stop,"ArrÃªtez de taper ou je vous brise les os.",DIA_Fellan_Stop_Bones);
+	Info_AddChoice (DIA_Fellan_Stop,"Je vous donne 10 piÃ¨ces d'or si vous arrÃªtez de taper.",DIA_Fellan_Stop_Gold);
+	Info_AddChoice (DIA_Fellan_Stop,"ArrÃªtez de taper, d'accord ?",DIA_Fellan_Stop_Just);
 };
 FUNC VOID DIA_Fellan_Stop_Bones()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //Cessez ce vacarme ou je vous réduis en miettes !
-	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Et vous, arrêtez de me menacer, ou je vous remets les idées en place à coups de marteau !
+	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //Cessez ce vacarme ou je vous rÃ©duis en miettesÂ !
+	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Et vous, arrÃªtez de me menacer, ou je vous remets les idÃ©es en place Ã  coups de marteauÂ !
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Fellan_Stop_Gold()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Je vous donne 10 pièces d'or si vous cessez ce vacarme.
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Hé ! C'est très généreux à vous, mais pour ce qui est de votre or, vous pouvez...
+	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Je vous donne 10 piÃ¨ces d'or si vous cessez ce vacarme.
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //HÃ©Â ! C'est trÃ¨s gÃ©nÃ©reux Ã  vous, mais pour ce qui est de votre or, vous pouvez...
 	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //... enfin, j'imagine que vous savez ce que vous pouvez en faire.
 };
 FUNC VOID DIA_Fellan_Stop_Just()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //Arrêtez de faire du bruit, d'accord ?
-	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //Et vous, arrêtez de me chercher, d'accord ?
+	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //ArrÃªtez de faire du bruit, d'accordÂ ?
+	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //Et vous, arrÃªtez de me chercher, d'accordÂ ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alles klar?
@@ -202,15 +202,15 @@ func int DIA_Fellan_klar_Condition ()
 };
 func void DIA_Fellan_klar_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_klar_15_00"); //Hé ! Bonjour ! Comment ça va ?
+	AI_Output (other, self, "DIA_Fellan_klar_15_00"); //HÃ©Â ! BonjourÂ ! Comment Ã§a vaÂ ?
 	
 	if (FellanGeschlagen == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Bien. Il faut juste que j'arrive à réparer ma maison à temps.
+		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Bien. Il faut juste que j'arrive Ã  rÃ©parer ma maison Ã  temps.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Le toit ne cesse de s'affaisser. Au prochain orage, je vais me retrouver avec de l'eau jusqu'aux chevilles... et ce sera votre faute !
+		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Le toit ne cesse de s'affaisser. Au prochain orage, je vais me retrouver avec de l'eau jusqu'aux chevilles... et ce sera votre fauteÂ !
 	};
 	AI_StopProcessInfos (self);
 };

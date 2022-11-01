@@ -20,23 +20,23 @@ FUNC VOID Bookstand_Milten_03_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Il est tard."					);
-					Doc_PrintLines	( nDocID,  0, "L'effondrement de la vieille mine a sérieusement altéré l'humeur du baron."	);
+					Doc_PrintLines	( nDocID,  0, "L'effondrement de la vieille mine a sÃ©rieusement altÃ©rÃ© l'humeur du baron."	);
 					Doc_PrintLines	( nDocID,  0, "Gomez est une bombe sur le point d'exploser."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Il pense que c'est le nouveau qui est à blâmer pour l'effondrement. Il est vrai qu'il est étrange. Il ferait mieux de ne pas revenir ici.");
+					Doc_PrintLines	( nDocID,  0, "Il pense que c'est le nouveau qui est Ã  blÃ¢mer pour l'effondrement. Il est vrai qu'il est Ã©trange. Il ferait mieux de ne pas revenir ici.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'humeur de Gomez ne s’arrange pas et je sais ce qu'il prépare. Il faut avertir les mages des eaux avant qu'il ne soit trop tard."					);
+					Doc_PrintLines	( nDocID,  1, "L'humeur de Gomez ne sâ€™arrange pas et je sais ce qu'il prÃ©pare. Il faut avertir les mages des eaux avant qu'il ne soit trop tard."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Corristo"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Peut-être pouvons-nous empêcher un désastre. Je n'ose imaginer ce qu'il adviendrait si la mine libre..."					);
+					Doc_PrintLines	( nDocID,  1, "Peut-Ãªtre pouvons-nous empÃªcher un dÃ©sastre. Je n'ose imaginer ce qu'il adviendrait si la mine libre..."					);
 					Doc_Show		( nDocID );
 
 	};
@@ -62,9 +62,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "J'ai pris la liberté de me mettre à l'aise. Qui aurait cru que je serais un jour le seul mage du camp ?"					);
-					Doc_PrintLines	( nDocID,  0, "Bon, je ne peux pas dire que je sois heureux d'être de retour. En fait, je devrais songer à partir."	);
-					Doc_PrintLines	( nDocID,  0, "L'expédition ne donne rien."					);
+					Doc_PrintLines	( nDocID,  0, "J'ai pris la libertÃ© de me mettre Ã  l'aise. Qui aurait cru que je serais un jour le seul mage du camp ?"					);
+					Doc_PrintLines	( nDocID,  0, "Bon, je ne peux pas dire que je sois heureux d'Ãªtre de retour. En fait, je devrais songer Ã  partir."	);
+					Doc_PrintLines	( nDocID,  0, "L'expÃ©dition ne donne rien."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");
 			
@@ -75,7 +75,7 @@ FUNC VOID Bookstand_Milten_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Les mineurs sont partis hier avec Diego. Cela ne me surprendrait pas qu'il devienne messager."					);
-					Doc_PrintLines	( nDocID,  1, "Il n'est pas près de reprendre une pioche."					);
+					Doc_PrintLines	( nDocID,  1, "Il n'est pas prÃ¨s de reprendre une pioche."					);
 					Doc_PrintLines	( nDocID,  1, "Bon, je vais en profiter pour me perfectionner en alchimie."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Milten"					);
@@ -130,13 +130,13 @@ FUNC VOID Bookstand_Engor_01_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Stock");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "On a trouvé des marchandises, mais sans valeur. Liste :"					);
+					Doc_PrintLines	( nDocID,  0, "On a trouvÃ© des marchandises, mais sans valeur. Liste :"					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "3 caisses de haillons"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "8 caisses de fer rouillé"					);
+					Doc_PrintLines	( nDocID,  0, "8 caisses de fer rouillÃ©"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "4 caisses d'armures brisées");
+					Doc_PrintLines	( nDocID,  0, "4 caisses d'armures brisÃ©es");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "5 caisses de peaux et de cuir (puants)");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -151,9 +151,9 @@ FUNC VOID Bookstand_Engor_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "16 caisses de roches (pas de minerai)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 caisse de lames rouillées"					);
+					Doc_PrintLines	( nDocID,  1, "1 caisse de lames rouillÃ©es"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "4 caisses de poteries cassées"					);
+					Doc_PrintLines	( nDocID,  1, "4 caisses de poteries cassÃ©es"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "56 barriques d'eau"					);
 					Doc_PrintLine	( nDocID,  1, ""					);

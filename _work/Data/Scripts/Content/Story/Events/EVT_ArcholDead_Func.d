@@ -16,7 +16,7 @@ func void EVT_ARCHOLDEAD_FUNC ()
 	
 		if (EVT_ARCHOLDEAD_FUNC_OneTime == FALSE)
 		{
-			B_LogEntry (TOPIC_HallenVonIrdorath,"J'ai découvert quelque chose qui ressemble à un temple. Il est habité par des créatures mortes-vivantes. Cela me rappelle ce maudit temple orque du Dormeur. Cette fois-ci je n'échouerai pas. Pas cette fois-ci !"); 
+			B_LogEntry (TOPIC_HallenVonIrdorath,"J'ai dÃ©couvert quelque chose qui ressemble Ã  un temple. Il est habitÃ© par des crÃ©atures mortes-vivantes. Cela me rappelle ce maudit temple orque du Dormeur. Cette fois-ci je n'Ã©chouerai pas. Pas cette fois-ci !"); 
 			EVT_ARCHOLDEAD_FUNC_OneTime = TRUE;
 		};
 };

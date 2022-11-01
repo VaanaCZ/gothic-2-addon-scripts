@@ -24,12 +24,12 @@ FUNC INT DIA_Xardas_FirstEXIT_Condition()
 FUNC VOID DIA_Xardas_FirstEXIT_Info()
 {	
 	AI_Output (other, self,"DIA_Xardas_FirstEXIT_15_00"); //Je me mets en route aussi vite que possible.
-	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_01"); //Bien. Ah, une dernière chose : ne dites à personne que vous m'avez parlé et surtout, pas aux magiciens.
+	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_01"); //Bien. Ah, une derniÃ¨re choseÂ : ne dites Ã  personne que vous m'avez parlÃ© et surtout, pas aux magiciens.
 	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_02"); //Depuis que je vis en exil, le Cercle du feu me croit mort... Et cela me convient parfaitement.
 	
 	AI_StopProcessInfos	(self);
 	
-	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muß auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
+	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muÃŸ auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
 	
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -80,46 +80,46 @@ FUNC INT DIA_Xardas_Hello_Condition()
 };
 FUNC VOID DIA_Xardas_Hello_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_00"); //Vous revoilà ! (souriant) Je pensais pas qu'on se reverrait un jour.
-	AI_Output (other, self, "DIA_Addon_Xardas_Hello_15_01"); //J'ai l'impression d'avoir passé trois semaines sous un tas de pierres.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_02"); //C'est ce qui s'est passé. Seule la magie de votre armure vous a maintenu en vie. 
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_03"); //J'ai craint ne pas pouvoir vous récupérer sous les débris du temple.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_04"); //Mais assez avec ça. Vous êtes là, maintenant.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_00"); //Vous revoilÃ  ! (souriant) Je pensais pas qu'on se reverrait un jour.
+	AI_Output (other, self, "DIA_Addon_Xardas_Hello_15_01"); //J'ai l'impression d'avoir passÃ© trois semaines sous un tas de pierres.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_02"); //C'est ce qui s'est passÃ©. Seule la magie de votre armure vous a maintenu en vie. 
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_03"); //J'ai craint ne pas pouvoir vous rÃ©cupÃ©rer sous les dÃ©bris du temple.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_04"); //Mais assez avec Ã§a. Vous Ãªtes lÃ , maintenant.
 	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_05"); //Il y une nouvelle menace dont nous devons nous occuper.
 
  	Info_ClearChoices	(DIA_Xardas_Hello);
-	Info_AddChoice	(DIA_Xardas_Hello, "Nous avons tout notre temps, désormais. Le dormeur a été vaincu.", DIA_Addon_Xardas_Hello_Dragons );
+	Info_AddChoice	(DIA_Xardas_Hello, "Nous avons tout notre temps, dÃ©sormais. Le dormeur a Ã©tÃ© vaincu.", DIA_Addon_Xardas_Hello_Dragons );
 	Info_AddChoice	(DIA_Xardas_Hello, "De quelle nouvelle menace parlez-vous maintenant ?!", DIA_Addon_Xardas_Hello_Man );
 };
 func void DIA_Addon_Xardas_Hello_Man ()
 {
 	PlayVideo ("Intro_ADDON");
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_10"); //Vous devez vous allier à eux ! C'est le seul moyen d'arrêter Béliar.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_10"); //Vous devez vous allier Ã  eux ! C'est le seul moyen d'arrÃªter BÃ©liar.
 	
 	Addon_zuerst = TRUE;
 };
 func void DIA_Addon_Xardas_Hello_Dragons ()
 {
-	AI_Output (other,self ,"DIA_Xardas_Hello_15_03"); //Au moins, nous avons le temps, maintenant. J'ai réussi. Le Dormeur...
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_04"); //... a été banni. Vous l'avez vaincu, c'est vrai, mais nous n'avons pas le pouvoir d'empêcher la guerre qui nous attend désormais.
+	AI_Output (other,self ,"DIA_Xardas_Hello_15_03"); //Au moins, nous avons le temps, maintenant. J'ai rÃ©ussi. Le Dormeur...
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_04"); //... a Ã©tÃ© banni. Vous l'avez vaincu, c'est vrai, mais nous n'avons pas le pouvoir d'empÃªcher la guerre qui nous attend dÃ©sormais.
 	//AI_Output (other,self ,"DIA_Xardas_Hello_15_05"); //Du redest von den Orks?
 	//AI_Output (self ,other,"DIA_Xardas_Hello_14_06"); //Ich rede von weitaus schlimmeren Kreaturen.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_07"); //L'ultime cri de rage du Dormeur a mis en branle les armées des ténèbres.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_08"); //Ce cri était un ordre lancé à toutes les créatures du Mal, un mot de pouvoir auquel ils étaient obligés d'obéir.
- 	AI_Output (self ,other,"DIA_Xardas_Hello_14_09"); //Il avait pour signification : VENEZ ! Et tous sont venus, même les dragons.
- 	AI_Output (other,self ,"DIA_Xardas_Hello_15_10"); //(stupéfait) Des dragons ?
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_11"); //Ce sont des créatures aussi puissantes qu'anciennes. Je sens leur pouvoir, même ici...
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_12"); //Et ils ont réuni une véritable armée de serviteurs autour d'eux.
-	AI_Output (other,self ,"DIA_Xardas_Hello_15_13"); //Où se trouve cette armée, désormais ?
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_14"); //Elle campe non loin d'ici, dans la Vallée des mines, proche de Khorinis, et elle se prépare à attaquer.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_07"); //L'ultime cri de rage du Dormeur a mis en branle les armÃ©es des tÃ©nÃ¨bres.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_08"); //Ce cri Ã©tait un ordre lancÃ© Ã  toutes les crÃ©atures du Mal, un mot de pouvoir auquel ils Ã©taient obligÃ©s d'obÃ©ir.
+ 	AI_Output (self ,other,"DIA_Xardas_Hello_14_09"); //Il avait pour significationÂ : VENEZÂ ! Et tous sont venus, mÃªme les dragons.
+ 	AI_Output (other,self ,"DIA_Xardas_Hello_15_10"); //(stupÃ©fait) Des dragonsÂ ?
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_11"); //Ce sont des crÃ©atures aussi puissantes qu'anciennes. Je sens leur pouvoir, mÃªme ici...
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_12"); //Et ils ont rÃ©uni une vÃ©ritable armÃ©e de serviteurs autour d'eux.
+	AI_Output (other,self ,"DIA_Xardas_Hello_15_13"); //OÃ¹ se trouve cette armÃ©e, dÃ©sormaisÂ ?
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_14"); //Elle campe non loin d'ici, dans la VallÃ©e des mines, proche de Khorinis, et elle se prÃ©pare Ã  attaquer.
 		
 	if (Addon_zuerst == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Xardas_Hello_14_15"); //(pensif) Il ne nous reste guère de temps.
+		AI_Output (self ,other,"DIA_Xardas_Hello_14_15"); //(pensif) Il ne nous reste guÃ¨re de temps.
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Xardas_Hello_Dragons_14_06"); //Mais ça n'est pas tout. Il a encore une autre menace dont j'ai récemment entendu parler.
+		AI_Output (self ,other, "DIA_Addon_Xardas_Hello_Dragons_14_06"); //Mais Ã§a n'est pas tout. Il a encore une autre menace dont j'ai rÃ©cemment entendu parler.
 		Info_ClearChoices	(DIA_Xardas_Hello);
 		Info_AddChoice	(DIA_Xardas_Hello, "De quelle autre menace parlez-vous maintenant ?!", DIA_Addon_Xardas_Hello_Man );
 	};
@@ -151,9 +151,9 @@ func int DIA_Xardas_AWAY_Condition ()
 
 func void DIA_Xardas_AWAY_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_AWAY_15_00"); //Dans ce cas, il faut partir sans perdre un instant !
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_01"); //Même si nous fuyons maintenant, il nous faudra affronter les dragons plus tard.
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_02"); //Avec l'aide des soldats et des magiciens de la région, nous pouvons les vaincre avant que leur armée ne soit totalement constituée.
+	AI_Output (other, self, "DIA_Xardas_AWAY_15_00"); //Dans ce cas, il faut partir sans perdre un instantÂ !
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_01"); //MÃªme si nous fuyons maintenant, il nous faudra affronter les dragons plus tard.
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_02"); //Avec l'aide des soldats et des magiciens de la rÃ©gion, nous pouvons les vaincre avant que leur armÃ©e ne soit totalement constituÃ©e.
 	AI_Output (self, other, "DIA_Xardas_AWAY_14_03"); //Nous n'aurons jamais de meilleure chance.
 };
 
@@ -181,17 +181,17 @@ func int DIA_Xardas_TODO_Condition ()
 
 func void DIA_Xardas_TODO_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_TODO_15_00"); //Que pouvons-nous faire ?
-	AI_Output (self, other, "DIA_Xardas_TODO_14_01"); //Cette fois-ci, nous ne pouvons pas nous en charger nous-mêmes. Seul le pouvoir d'Innos pourra nous aider contre ces dragons.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_02"); //Un groupe de paladins est posté non loin d'ici, dans la ville de Khorinis.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_03"); //Ils détiennent un puissant artefact qui pourrait nous aider à vaincre les dragons.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_04"); //On l'appelle l'Œil d'Innos. Il faut nous le ramener.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_05"); //Expliquez aux paladins la menace à laquelle nous devons faire face. Vous devez absolument convaincre leur chef de nous aider.
-	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07"); //Une fois que vous lui aurez parlé, vous devrez trouver l'artefact de Béliar.
-	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08"); //C'est la contrepartie de l'Œil d'Innos. Il ne doit pas tomber entre les mains du Mal.
+	AI_Output (other, self, "DIA_Xardas_TODO_15_00"); //Que pouvons-nous faireÂ ?
+	AI_Output (self, other, "DIA_Xardas_TODO_14_01"); //Cette fois-ci, nous ne pouvons pas nous en charger nous-mÃªmes. Seul le pouvoir d'Innos pourra nous aider contre ces dragons.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_02"); //Un groupe de paladins est postÃ© non loin d'ici, dans la ville de Khorinis.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_03"); //Ils dÃ©tiennent un puissant artefact qui pourrait nous aider Ã  vaincre les dragons.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_04"); //On l'appelle l'Å’il d'Innos. Il faut nous le ramener.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_05"); //Expliquez aux paladins la menace Ã  laquelle nous devons faire face. Vous devez absolument convaincre leur chef de nous aider.
+	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07"); //Une fois que vous lui aurez parlÃ©, vous devrez trouver l'artefact de BÃ©liar.
+	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08"); //C'est la contrepartie de l'Å’il d'Innos. Il ne doit pas tomber entre les mains du Mal.
 	Log_CreateTopic (TOPIC_INNOSEYE, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_INNOSEYE, LOG_RUNNING);
-	B_LogEntry (TOPIC_INNOSEYE,"Un groupe de paladins campe hors de la ville de Khorinis. Ils détiennent un puissant artefact : l'Œil d'Innos. Ses pouvoirs devraient nous aider à contrer la menace des dragons. Je dois convaincre les paladins de se rallier à notre cause."); 
+	B_LogEntry (TOPIC_INNOSEYE,"Un groupe de paladins campe hors de la ville de Khorinis. Ils dÃ©tiennent un puissant artefact : l'Å’il d'Innos. Ses pouvoirs devraient nous aider Ã  contrer la menace des dragons. Je dois convaincre les paladins de se rallier Ã  notre cause."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -216,11 +216,11 @@ func int DIA_Addon_Xardas_StonePlate_Condition ()
 func void DIA_Addon_Xardas_StonePlate_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Xardas_StonePlate_15_00"); //Vous savez quelque chose sur cette tablette de pierre ?
-	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der Höhlen vor meinem Turm gefunden.
+	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der HÃ¶hlen vor meinem Turm gefunden.
 	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_02"); //Sie sind in einer seltsam alten Sprache geschrieben, die ich in dieser Form noch nirgendwo gesehen habe.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //J'ai d'abord pensé qu'il s'agissait d'un objet magique mais je suis arrivé à la conclusion qu'elle n'avait pas grand sens.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //Je n'ai pas réussi à déchiffrer entièrement le sens de cette tablette, mais elle semble être en rapport avec une culture très ancienne.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_05"); //Si vous la voulez, prenez-la. Elle ne me sert à rien.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //J'ai d'abord pensÃ© qu'il s'agissait d'un objet magique mais je suis arrivÃ© Ã  la conclusion qu'elle n'avait pas grand sens.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //Je n'ai pas rÃ©ussi Ã  dÃ©chiffrer entiÃ¨rement le sens de cette tablette, mais elle semble Ãªtre en rapport avec une culture trÃ¨s ancienne.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_05"); //Si vous la voulez, prenez-la. Elle ne me sert Ã  rien.
 
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -241,7 +241,7 @@ instance DIA_Addon_Xardas_Portal (C_INFO)
 	condition	= DIA_Addon_Xardas_Portal_Condition;
 	information	= DIA_Addon_Xardas_Portal_Info;
 
-	description	= "Les Mages de l'eau ont découvert un portail menant à une partie inconnue de l'île.";
+	description	= "Les Mages de l'eau ont dÃ©couvert un portail menant Ã  une partie inconnue de l'Ã®le.";
 };
 
 func int DIA_Addon_Xardas_Portal_Condition ()
@@ -256,10 +256,10 @@ func int DIA_Addon_Xardas_Portal_Condition ()
 
 func void DIA_Addon_Xardas_Portal_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_00"); //Les Mages de l'eau ont découvert un portail menant à une partie inconnue de l'île.
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01"); //Intéressant
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02"); //Dès que vous aurez trouvé quelque chose de vraiment utile, faites-le moi savoir !
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_03"); //L'artefact de Béliar pourrait bien être caché quelque part là-bas. Trouvez-le !
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_00"); //Les Mages de l'eau ont dÃ©couvert un portail menant Ã  une partie inconnue de l'Ã®le.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01"); //IntÃ©ressant
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02"); //DÃ¨s que vous aurez trouvÃ© quelque chose de vraiment utile, faites-le moi savoir !
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_03"); //L'artefact de BÃ©liar pourrait bien Ãªtre cachÃ© quelque part lÃ -bas. Trouvez-le !
 };
 
 // ------------------------------------------------------------
@@ -272,7 +272,7 @@ instance DIA_Addon_Xardas_PortalAgain (C_INFO)
 	condition	= DIA_Addon_Xardas_PortalAgain_Condition;
 	information	= DIA_Addon_Xardas_PortalAgain_Info;
 	permanent 	= TRUE;
-	description	= "À propos de cette partie inconnue de l'île…";
+	description	= "Ã€ propos de cette partie inconnue de l'Ã®leâ€¦";
 };
 
 func int DIA_Addon_Xardas_PortalAgain_Condition ()
@@ -287,8 +287,8 @@ func int DIA_Addon_Xardas_PortalAgain_Condition ()
 
 func void DIA_Addon_Xardas_PortalAgain_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_17"); //À propos de cette partie inconnue de l'île
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_18"); //Ne m'ennuyez pas avec les détails. Ne revenez que si vous avez trouvé quelque chose de vraiment intéressant.
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_17"); //Ã€ propos de cette partie inconnue de l'Ã®le
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_18"); //Ne m'ennuyez pas avec les dÃ©tails. Ne revenez que si vous avez trouvÃ© quelque chose de vraiment intÃ©ressant.
 };
 
 // ------------------------------------------------------------
@@ -301,7 +301,7 @@ instance DIA_Addon_Xardas_AddonSuccess (C_INFO)
 	condition	= DIA_Addon_Xardas_AddonSuccess_Condition;
 	information	= DIA_Addon_Xardas_AddonSuccess_Info;
 
-	description	= "J'ai exploré la partie inconnue de l'île…";
+	description	= "J'ai explorÃ© la partie inconnue de l'Ã®leâ€¦";
 };
 
 func int DIA_Addon_Xardas_AddonSuccess_Condition ()
@@ -315,27 +315,27 @@ func int DIA_Addon_Xardas_AddonSuccess_Condition ()
 
 func void DIA_Addon_Xardas_AddonSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_03"); //J'ai exploré la partie inconnue de l'île
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_04"); //Et qu'avez-vous trouvé ?
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_05"); //Il était question d'un artefact puissant. La Griffe de Béliar.
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_06"); //La Griffe de Béliar ?! Où est-elle ? Vous l'avez sur vous ?
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_03"); //J'ai explorÃ© la partie inconnue de l'Ã®le
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_04"); //Et qu'avez-vous trouvÃ© ?
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_05"); //Il Ã©tait question d'un artefact puissant. La Griffe de BÃ©liar.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_06"); //La Griffe de BÃ©liar ?! OÃ¹ est-elle ? Vous l'avez sur vous ?
 
 	if (C_SCHasBeliarsWeapon())
 	{
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_07"); //Oui. La voilà.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08"); //(avide) Comme c'est intéressant.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09"); //Cette arme peut nous être très utile. Mais elle est aussi extrêmement dangereuse.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_10"); //Faites bien attention à vous ! Et surtout : ne la perdez pas !
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_07"); //Oui. La voilÃ .
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08"); //(avide) Comme c'est intÃ©ressant.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09"); //Cette arme peut nous Ãªtre trÃ¨s utile. Mais elle est aussi extrÃªmement dangereuse.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_10"); //Faites bien attention Ã  vous ! Et surtout : ne la perdez pas !
 		B_GivePlayerXP (XP_Ambient*3);
 	}
 	else
 	{
 		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_11"); //Je ne l'ai plus
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_12"); //Je l'ai donnée aux Mages de l'eau pour qu'ils la jettent à la mer
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_13"); //(déchaîné) Êtes-vous malade ? Avez-vous la moindre idée de ce que vous avez donné ?
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_14"); //Cette arme aurait pu nous être très utile !
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_12"); //Je l'ai donnÃ©e aux Mages de l'eau pour qu'ils la jettent Ã  la mer
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_13"); //(dÃ©chaÃ®nÃ©) ÃŠtes-vous malade ? Avez-vous la moindre idÃ©e de ce que vous avez donnÃ© ?
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_14"); //Cette arme aurait pu nous Ãªtre trÃ¨s utile !
 		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_15"); //Je pense que c'est mieux ainsi.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_16"); //(soupire) Les voies des dieux sont impénétrables
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_16"); //(soupire) Les voies des dieux sont impÃ©nÃ©trables
 	};
 };
 
@@ -366,8 +366,8 @@ func int DIA_Xardas_WEAPON_Condition ()
 func void DIA_Xardas_WEAPON_Info ()
 {
 	AI_Output (other, self, "DIA_Xardas_WEAPON_15_00"); //J'ai besoin d'armes.
-	AI_Output (self, other, "DIA_Xardas_WEAPON_14_01"); //Je ne peux vous donner que ce que je possède.
-	AI_Output (self, other, "DIA_Xardas_WEAPON_14_02"); //Regardez ce que vous trouvez dans ma tour et prenez tout ce qui pourra vous être utile.
+	AI_Output (self, other, "DIA_Xardas_WEAPON_14_01"); //Je ne peux vous donner que ce que je possÃ¨de.
+	AI_Output (self, other, "DIA_Xardas_WEAPON_14_02"); //Regardez ce que vous trouvez dans ma tour et prenez tout ce qui pourra vous Ãªtre utile.
 };
 
 
@@ -381,7 +381,7 @@ instance DIA_Xardas_ARTEFAKT (C_INFO)	//E2 nach TODO
 	condition	 = 	DIA_Xardas_ARTEFAKT_Condition;
 	information	 = 	DIA_Xardas_ARTEFAKT_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Qu'est-ce exactement l'Œil d'Innos ?";
+	description	 = 	"Qu'est-ce exactement l'Å’il d'Innos ?";
 };
 
 func int DIA_Xardas_ARTEFAKT_Condition ()
@@ -395,10 +395,10 @@ func int DIA_Xardas_ARTEFAKT_Condition ()
 
 func void DIA_Xardas_ARTEFAKT_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_ARTEFAKT_15_00"); //Qu'est-ce que l'Œil d'Innos, au juste ?
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_01"); //C'est une amulette. Selon la légende, Innos lui aurait transmis une partie de son pouvoir.
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_02"); //Elle vous rendra votre force perdue et nous aidera à vaincre les dragons.
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_03"); //Elle possède également des pouvoirs secrets, dont je vous parlerai une fois que vous vous la serez procurée.
+	AI_Output (other, self, "DIA_Xardas_ARTEFAKT_15_00"); //Qu'est-ce que l'Å’il d'Innos, au justeÂ ?
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_01"); //C'est une amulette. Selon la lÃ©gende, Innos lui aurait transmis une partie de son pouvoir.
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_02"); //Elle vous rendra votre force perdue et nous aidera Ã  vaincre les dragons.
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_03"); //Elle possÃ¨de Ã©galement des pouvoirs secrets, dont je vous parlerai une fois que vous vous la serez procurÃ©e.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -411,7 +411,7 @@ instance DIA_Xardas_PALADIN	(C_INFO) //E2 nach TODO
 	condition	 = 	DIA_Xardas_PALADIN_Condition;
 	information	 = 	DIA_Xardas_PALADIN_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Pourquoi les paladins me donneraient-ils l'Œil d'Innos ?";
+	description	 = 	"Pourquoi les paladins me donneraient-ils l'Å’il d'Innos ?";
 };
 func int DIA_Xardas_PALADIN_Condition ()
 {	
@@ -423,12 +423,12 @@ func int DIA_Xardas_PALADIN_Condition ()
 };
 func void DIA_Xardas_PALADIN_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_00"); //Pourquoi les paladins accepteraient-ils de me remettre l'Œil d'Innos ?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_01"); //Parce que vous êtes destiné à la porter.
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_02"); //Comment pouvez-vous en être sûr ?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_03"); //Plusieurs raisons me poussent le croire, la principale étant que vous avez triomphé du Dormeur. Si les dieux n'étaient pas de votre côté, vous ne seriez pas là à me parler.
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_04"); //Imaginons que vous ayez raison et que je sois destiné à porter l'Œil d'Innos. Comment les paladins peuvent-ils savoir que c'est le cas ?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_05"); //C'est l'Œil lui-même qui choisit qui a le droit de le porter. Une fois que vous vous en serez emparé et que vous l'aurez passé autour de votre cou, les paladins ne pourront plus douter de la véracité de vos dires.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_00"); //Pourquoi les paladins accepteraient-ils de me remettre l'Å’il d'InnosÂ ?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_01"); //Parce que vous Ãªtes destinÃ© Ã  la porter.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_02"); //Comment pouvez-vous en Ãªtre sÃ»rÂ ?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_03"); //Plusieurs raisons me poussent le croire, la principale Ã©tant que vous avez triomphÃ© du Dormeur. Si les dieux n'Ã©taient pas de votre cÃ´tÃ©, vous ne seriez pas lÃ  Ã  me parler.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_04"); //Imaginons que vous ayez raison et que je sois destinÃ© Ã  porter l'Å’il d'Innos. Comment les paladins peuvent-ils savoir que c'est le casÂ ?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_05"); //C'est l'Å’il lui-mÃªme qui choisit qui a le droit de le porter. Une fois que vous vous en serez emparÃ© et que vous l'aurez passÃ© autour de votre cou, les paladins ne pourront plus douter de la vÃ©racitÃ© de vos dires.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Khorinis
@@ -453,9 +453,9 @@ func int DIA_Xardas_Khorinis_Condition ()
 };
 func void DIA_Xardas_Khorinis_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Khorinis_15_00"); //Comment puis-je me rendre en ville ?
+	AI_Output (other, self, "DIA_Xardas_Khorinis_15_00"); //Comment puis-je me rendre en villeÂ ?
 	AI_Output (self, other, "DIA_Xardas_Khorinis_14_01"); //Suivez la route qui traverse les montagnes. La ville est grande, vous ne pouvez pas la rater.
-	AI_Output (self, other, "DIA_Xardas_Khorinis_14_02"); //Mais attention, car la route qui y mène n'est pas sans danger et vous n'êtes plus aussi fort qu'autrefois...
+	AI_Output (self, other, "DIA_Xardas_Khorinis_14_02"); //Mais attention, car la route qui y mÃ¨ne n'est pas sans danger et vous n'Ãªtes plus aussi fort qu'autrefois...
 };
 // ************************************************************
 // 			  		Zum zweiten Mal bei Xardas
@@ -468,7 +468,7 @@ instance DIA_Xardas_WhereEx (C_INFO) //BACK AGAIN
 	condition	 = 	DIA_Xardas_WhereEx_Condition;
 	information	 = 	DIA_Xardas_WhereEx_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Où sommes-nous exactement ?";
+	description	 = 	"OÃ¹ sommes-nous exactement ?";
 };
 
 func int DIA_Xardas_WhereEx_Condition ()
@@ -482,12 +482,12 @@ func int DIA_Xardas_WhereEx_Condition ()
 
 func void DIA_Xardas_WhereEx_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Add_15_00"); //Où sommes-nous au juste ?
-	AI_Output (self, other, "DIA_Xardas_Add_14_01"); //A proximité de la ville de Khorinis, comme je vous l'ai déjà dit.
+	AI_Output (other, self, "DIA_Xardas_Add_15_00"); //OÃ¹ sommes-nous au justeÂ ?
+	AI_Output (self, other, "DIA_Xardas_Add_14_01"); //A proximitÃ© de la ville de Khorinis, comme je vous l'ai dÃ©jÃ  dit.
 	AI_Output (self, other, "DIA_Xardas_Add_14_02"); //C'est ici que j'ai reconstruit ma tour.
-	AI_Output (other, self, "DIA_Xardas_Add_15_03"); //Mais nous nous sommes vus il y a quelques jours à peine dans la Vallée des mines...
-	AI_Output (self, other, "DIA_Xardas_Add_14_04"); //Les serviteurs que j'ai convoqués pour bâtir ma tour ont fait de l'excellent travail.
-	AI_Output (other, self, "DIA_Xardas_Add_15_05"); //Ça, c'est sûr !
+	AI_Output (other, self, "DIA_Xardas_Add_15_03"); //Mais nous nous sommes vus il y a quelques jours Ã  peine dans la VallÃ©e des mines...
+	AI_Output (self, other, "DIA_Xardas_Add_14_04"); //Les serviteurs que j'ai convoquÃ©s pour bÃ¢tir ma tour ont fait de l'excellent travail.
+	AI_Output (other, self, "DIA_Xardas_Add_15_05"); //Ã‡a, c'est sÃ»rÂ !
 };
 
 instance DIA_Xardas_EQUIPMENT (C_INFO) //BACK AGAIN
@@ -497,7 +497,7 @@ instance DIA_Xardas_EQUIPMENT (C_INFO) //BACK AGAIN
 	condition	 = 	DIA_Xardas_EQUIPMENT_Condition;
 	information	 = 	DIA_Xardas_EQUIPMENT_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Où puis-je trouver un meilleur équipement ?";
+	description	 = 	"OÃ¹ puis-je trouver un meilleur Ã©quipement ?";
 };
 
 func int DIA_Xardas_EQUIPMENT_Condition ()
@@ -512,10 +512,10 @@ func int DIA_Xardas_EQUIPMENT_Condition ()
 
 func void DIA_Xardas_EQUIPMENT_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_EQUIPMENT_15_00"); //Où puis-je me procurer un meilleur équipement ?
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_01"); //L'endroit le plus proche où trouver armes et armures de meilleure qualité est la ville de Khorinis.
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_02"); //Sinon, dans la vallée, vous pouvez cueillir des plantes curatives qui vous aideront si vous êtes blessé au combat.
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_03"); //Vous voyez le lac qui s'étend au pied de ma tour ? Un passage secret le relie à la vallée.
+	AI_Output (other, self, "DIA_Xardas_EQUIPMENT_15_00"); //OÃ¹ puis-je me procurer un meilleur Ã©quipementÂ ?
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_01"); //L'endroit le plus proche oÃ¹ trouver armes et armures de meilleure qualitÃ© est la ville de Khorinis.
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_02"); //Sinon, dans la vallÃ©e, vous pouvez cueillir des plantes curatives qui vous aideront si vous Ãªtes blessÃ© au combat.
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_03"); //Vous voyez le lac qui s'Ã©tend au pied de ma tourÂ ? Un passage secret le relie Ã  la vallÃ©e.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ABOUTLESTER
@@ -527,7 +527,7 @@ instance DIA_Xardas_ABOUTLESTER		(C_INFO)
 	condition	 = 	DIA_Xardas_ABOUTLESTER_Condition;
 	information	 = 	DIA_Xardas_ABOUTLESTER_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Avez-vous déjà parlé à Lester ?";
+	description	 = 	"Avez-vous dÃ©jÃ  parlÃ© Ã  Lester ?";
 };
 func int DIA_Xardas_ABOUTLESTER_Condition ()
 {	
@@ -540,14 +540,14 @@ func int DIA_Xardas_ABOUTLESTER_Condition ()
 };
 func void DIA_Xardas_ABOUTLESTER_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_00"); //Avez-vous parlé à Lester ?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_01"); //Oui, je l'ai bombardé de questions. Il m'a beaucoup appris, mais il est épuisé.
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_02"); //C'est un miracle qu'il ait survécu à sa fuite. Je l'ai envoyé se reposer.
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_03"); //Que vous a-t-il dit ?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_04"); //Rien de bon, j'en ai bien peur. Il a vu non seulement un dragon, mais aussi des hommes encapuchonnés et revêtus d'un long manteau noir.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_00"); //Avez-vous parlÃ© Ã  LesterÂ ?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_01"); //Oui, je l'ai bombardÃ© de questions. Il m'a beaucoup appris, mais il est Ã©puisÃ©.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_02"); //C'est un miracle qu'il ait survÃ©cu Ã  sa fuite. Je l'ai envoyÃ© se reposer.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_03"); //Que vous a-t-il ditÂ ?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_04"); //Rien de bon, j'en ai bien peur. Il a vu non seulement un dragon, mais aussi des hommes encapuchonnÃ©s et revÃªtus d'un long manteau noir.
 	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_05"); //Et ?
 	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_06"); //Si ces hommes existent vraiment, il est possible qu'ils constituent une menace.
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_07"); //Et cela ne me plaît pas. Tenez, prenez mon anneau. Il vous protègera de la magie.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_07"); //Et cela ne me plaÃ®t pas. Tenez, prenez mon anneau. Il vous protÃ¨gera de la magie.
 	
 	B_GiveInvItems (self, other, ItRi_Prot_Mage_01,1);
 	B_GivePlayerXP		(XP_Ambient);
@@ -570,7 +570,7 @@ instance DIA_Xardas_FirstPal		(C_INFO)
 	condition	 = 	DIA_Xardas_FirstPal_Condition;
 	information	 = 	DIA_Xardas_FirstPal_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Je suis allé en ville...";
+	description	 = 	"Je suis allÃ© en ville...";
 };
 func int DIA_Xardas_FirstPal_Condition ()
 {	
@@ -583,13 +583,13 @@ func int DIA_Xardas_FirstPal_Condition ()
 };
 func void DIA_Xardas_FirstPal_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_FirstPal_15_00"); //Je suis allé en ville.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_01"); //Et ? Avez-vous eu la possibilité de parler au chef des paladins ?
+	AI_Output (other, self, "DIA_Xardas_FirstPal_15_00"); //Je suis allÃ© en ville.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_01"); //EtÂ ? Avez-vous eu la possibilitÃ© de parler au chef des paladinsÂ ?
 	AI_Output (other, self, "DIA_Xardas_FirstPal_15_02"); //Je n'ai pas eu le droit de le voir.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_03"); //C'est ridicule ! Il doit bien exister le moyen d'arriver jusqu'à lui.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_04"); //Si rien d'autre ne marche, entrez au monastère et devenez magicien.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_05"); //Il s'agit certes là d'une décision douteuse sur le plan moral mais, au moins, elle vous permettra d'atteindre le but recherché.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_06"); //Si vous étiez magicien, il n'aurait d'autre choix que d'accepter de vous recevoir.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_03"); //C'est ridiculeÂ ! Il doit bien exister le moyen d'arriver jusqu'Ã  lui.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_04"); //Si rien d'autre ne marche, entrez au monastÃ¨re et devenez magicien.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_05"); //Il s'agit certes lÃ  d'une dÃ©cision douteuse sur le plan moral mais, au moins, elle vous permettra d'atteindre le but recherchÃ©.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_06"); //Si vous Ã©tiez magicien, il n'aurait d'autre choix que d'accepter de vous recevoir.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -614,9 +614,9 @@ func int DIA_Xardas_Weiter_Condition ()
 };
 func void DIA_Xardas_Weiter_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Weiter_15_00"); //Alors, que faire maintenant ?
-	AI_Output (self, other, "DIA_Xardas_Weiter_14_01"); //Nous allons continuer comme prévu. Il n'y a rien d'autre à faire.
-	AI_Output (self, other, "DIA_Xardas_Weiter_14_02"); //Procurez-vous l'Œil d'Innos pendant que je continue de chercher des réponses.
+	AI_Output (other, self, "DIA_Xardas_Weiter_15_00"); //Alors, que faire maintenantÂ ?
+	AI_Output (self, other, "DIA_Xardas_Weiter_14_01"); //Nous allons continuer comme prÃ©vu. Il n'y a rien d'autre Ã  faire.
+	AI_Output (self, other, "DIA_Xardas_Weiter_14_02"); //Procurez-vous l'Å’il d'Innos pendant que je continue de chercher des rÃ©ponses.
 };
 
 INSTANCE DIA_Xardas_KdfSecret (C_INFO)
@@ -626,7 +626,7 @@ INSTANCE DIA_Xardas_KdfSecret (C_INFO)
 	condition	= DIA_Xardas_KdfSecret_Condition;
 	information	= DIA_Xardas_KdfSecret_Info;
 	permanent	= FALSE;
-	description = "Pourquoi est-ce que le Cercle du feu ne doit pas être au courant pour vous ?";
+	description = "Pourquoi est-ce que le Cercle du feu ne doit pas Ãªtre au courant pour vous ?";
 };                       
 
 FUNC INT DIA_Xardas_KdfSecret_Condition()
@@ -639,12 +639,12 @@ FUNC INT DIA_Xardas_KdfSecret_Condition()
  
 FUNC VOID DIA_Xardas_KdfSecret_Info()
 {	
-	AI_Output	(other, self,"DIA_Xardas_KdfSecret_15_00");	//Pourquoi le Cercle du feu ne doit-il rien savoir à votre sujet ?
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_01");	//J'étais autrefois un membre éminent du Cercle. Et déjà, à l'époque, je pensais que la magie des démons était la clef de la barrière magique.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_02"); //Mais je n'ai pas réussi à convaincre les autres membres du Cercle de me suivre sur cette voie.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_03"); //Je les ai donc quittés afin d'étudier la magie noire.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_04"); //C'est là un crime que les... (méprisant) bons et vertueux Magiciens du feu... les fidèles d'Innos, comme ils s'appellent, jugent inexcusable.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_05"); //Ils savent que je suis encore en vie mais ignorent où me chercher... et c'est tant mieux.
+	AI_Output	(other, self,"DIA_Xardas_KdfSecret_15_00");	//Pourquoi le Cercle du feu ne doit-il rien savoir Ã  votre sujet ?
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_01");	//J'Ã©tais autrefois un membre Ã©minent du Cercle. Et dÃ©jÃ , Ã  l'Ã©poque, je pensais que la magie des dÃ©mons Ã©tait la clef de la barriÃ¨re magique.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_02"); //Mais je n'ai pas rÃ©ussi Ã  convaincre les autres membres du Cercle de me suivre sur cette voie.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_03"); //Je les ai donc quittÃ©s afin d'Ã©tudier la magie noire.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_04"); //C'est lÃ  un crime que les... (mÃ©prisant) bons et vertueux Magiciens du feu... les fidÃ¨les d'Innos, comme ils s'appellent, jugent inexcusable.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_05"); //Ils savent que je suis encore en vie mais ignorent oÃ¹ me chercher... et c'est tant mieux.
 };
 
 
@@ -692,7 +692,7 @@ instance DIA_Xardas_BACKFROMOW		(C_INFO)
 	condition	 = 	DIA_Xardas_BACKFROMOW_Condition;
 	information	 = 	DIA_Xardas_BACKFROMOW_Info;
 
-	description	 = 	"Je reviens de la Vallée des mines.";
+	description	 = 	"Je reviens de la VallÃ©e des mines.";
 };
 
 func int DIA_Xardas_BACKFROMOW_Condition ()
@@ -705,11 +705,11 @@ func int DIA_Xardas_BACKFROMOW_Condition ()
 
 func void DIA_Xardas_BACKFROMOW_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_00"); //Je reviens de la Vallée des mines.
-	AI_Output			(self, other, "DIA_Xardas_BACKFROMOW_14_01"); //Pas trop tôt ! Qu'avez-vous vu ?
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_02"); //Vous aviez raison. La région a été envahie par l'armée ennemie.
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_03"); //Les orques assiègent le château et les dragons ont tout dévasté.
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_04"); //Si je ne m'abuse, il ne faudra pas longtemps avant que Khorinis se retrouve attaqué.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_00"); //Je reviens de la VallÃ©e des mines.
+	AI_Output			(self, other, "DIA_Xardas_BACKFROMOW_14_01"); //Pas trop tÃ´tÂ ! Qu'avez-vous vuÂ ?
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_02"); //Vous aviez raison. La rÃ©gion a Ã©tÃ© envahie par l'armÃ©e ennemie.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_03"); //Les orques assiÃ¨gent le chÃ¢teau et les dragons ont tout dÃ©vastÃ©.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_04"); //Si je ne m'abuse, il ne faudra pas longtemps avant que Khorinis se retrouve attaquÃ©.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -723,7 +723,7 @@ instance DIA_Xardas_DMTSINDDA		(C_INFO)
 	condition	 = 	DIA_Xardas_DMTSINDDA_Condition;
 	information	 = 	DIA_Xardas_DMTSINDDA_Info;
 
-	description	 = 	"Que diable s'est-il passé ici pendant mon absence ?";
+	description	 = 	"Que diable s'est-il passÃ© ici pendant mon absence ?";
 };
 
 func int DIA_Xardas_DMTSINDDA_Condition ()
@@ -743,53 +743,53 @@ func void DIA_Xardas_DMTSINDDA_Info ()
 		AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_00"); //Lester m'a dit que vous vouliez me voir au plus vite.
 	};
 	
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_01"); //Qu'est-il arrivé ici depuis ?
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_02"); //L'ennemi a appris qui vous êtes et sait que vous cherchez à mettre la main sur l'Œil d'Innos.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_03"); //La menace que vous représentez l'a forcé à se découvrir et à nous attaquer ouvertement.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_04"); //Le temps des faux-semblants est révolu. Hier, nous ignorions quelle forme l'attaque adverse allait prendre, mais aujourd'hui, ce n'est que trop évident.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_01"); //Qu'est-il arrivÃ© ici depuisÂ ?
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_02"); //L'ennemi a appris qui vous Ãªtes et sait que vous cherchez Ã  mettre la main sur l'Å’il d'Innos.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_03"); //La menace que vous reprÃ©sentez l'a forcÃ© Ã  se dÃ©couvrir et Ã  nous attaquer ouvertement.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_04"); //Le temps des faux-semblants est rÃ©volu. Hier, nous ignorions quelle forme l'attaque adverse allait prendre, mais aujourd'hui, ce n'est que trop Ã©vident.
 
-	B_LogEntry (TOPIC_INNOSEYE, "L'ennemi a découvert que je cherchais l'Œil d'Innos. Il est temps que je mette la main dessus avant qu'il ne soit trop tard.");
+	B_LogEntry (TOPIC_INNOSEYE, "L'ennemi a dÃ©couvert que je cherchais l'Å’il d'Innos. Il est temps que je mette la main dessus avant qu'il ne soit trop tard.");
 	
 	Info_ClearChoices	(DIA_Xardas_DMTSINDDA);
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "J'ai été attaqué par des magiciens en robe noire.", DIA_Xardas_DMTSINDDA_DMT );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "J'ai Ã©tÃ© attaquÃ© par des magiciens en robe noire.", DIA_Xardas_DMTSINDDA_DMT );
 	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "J'ai enfin mis la main sur la preuve que voulait le seigneur Hagen.", DIA_Xardas_DMTSINDDA_Beweis );
 
 };
 
 func void DIA_Xardas_DMTSINDDA_DMT ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_15_00"); //J'ai été attaqué par des magiciens en robe noire.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_01"); //L'ennemi a de multiples visages. Les Traqueurs sont l'une de ses facettes. En réalité, ils sont là pour préparer le terrain à notre véritable adversaire.
- 	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_02"); //Ils se sont postés en divers endroits stratégiques et n'attendent plus que l'occasion de refermer les mâchoires de leur piège.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_03"); //Restez loin d'eux, car ce sont de puissantes créatures magiques qui feront tout pour entraver votre progression.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_15_00"); //J'ai Ã©tÃ© attaquÃ© par des magiciens en robe noire.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_01"); //L'ennemi a de multiples visages. Les Traqueurs sont l'une de ses facettes. En rÃ©alitÃ©, ils sont lÃ  pour prÃ©parer le terrain Ã  notre vÃ©ritable adversaire.
+ 	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_02"); //Ils se sont postÃ©s en divers endroits stratÃ©giques et n'attendent plus que l'occasion de refermer les mÃ¢choires de leur piÃ¨ge.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_03"); //Restez loin d'eux, car ce sont de puissantes crÃ©atures magiques qui feront tout pour entraver votre progression.
 	
 	if (hero.guild == GIL_KDF)
 	{
 	Log_CreateTopic (TOPIC_DEMENTOREN, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DEMENTOREN, LOG_RUNNING);
-	B_LogEntry (TOPIC_DEMENTOREN,"Xardas connaît les hommes en noir. Il semble que les Traqueurs tirent les ficelles des troupes ennemies. Ils sont très dangereux."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"Xardas connaÃ®t les hommes en noir. Il semble que les Traqueurs tirent les ficelles des troupes ennemies. Ils sont trÃ¨s dangereux."); 
 	};
 };
 
 func void DIA_Xardas_DMTSINDDA_Beweis ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_00"); //J'ai enfin la preuve exigée par le seigneur Hagen.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_01"); //De quelle preuve s'agit-il ?
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_02"); //J'ai reçu une lettre de Garond, le commandant des paladins de la Vallée des mines. Il y demande des renforts.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_03"); //Bien joué ! Cela devrait suffire à convaincre ce vieux cheval de guerre.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_00"); //J'ai enfin la preuve exigÃ©e par le seigneur Hagen.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_01"); //De quelle preuve s'agit-ilÂ ?
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_02"); //J'ai reÃ§u une lettre de Garond, le commandant des paladins de la VallÃ©e des mines. Il y demande des renforts.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_03"); //Bien jouÃ©Â ! Cela devrait suffire Ã  convaincre ce vieux cheval de guerre.
 	
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Quelle va être la prochaine étape ?", DIA_Xardas_DMTSINDDA_DMT_WhatToDo );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Quelle va Ãªtre la prochaine Ã©tape ?", DIA_Xardas_DMTSINDDA_DMT_WhatToDo );
 	B_GivePlayerXP (XP_Ambient);
 };
 
 func void DIA_Xardas_DMTSINDDA_DMT_WhatToDo ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_15_00"); //Que faut-il faire maintenant ?
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_01"); //Apporter la lettre de Garond au seigneur Hagen afin qu'il vous permette d'accéder à l'Œil d'Innos.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02"); //Cela fait, rendez-vous au monastère et parlez à Pyrokar. Il faut absolument qu'il vous remette l'Œil.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03"); //Vous devez mettre l'artefact à l'abri. Rien n'a davantage d'importance.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04"); //Allez, avant qu'il ne soit trop tard. Car l'ennemi aussi va chercher à s'en emparer.
-	B_LogEntry (TOPIC_INNOSEYE, "L'Œil est au monastère des Magiciens du feu. Heureusement, le seigneur Hagen me permettra d'y avoir accès quand je lui aurai remis le message du seigneur Garond. Pyrokar, le Grand Magicien du feu, ne me laissera pas approcher de l'amulette sans l'accord de Hagen.");
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_15_00"); //Que faut-il faire maintenantÂ ?
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_01"); //Apporter la lettre de Garond au seigneur Hagen afin qu'il vous permette d'accÃ©der Ã  l'Å’il d'Innos.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02"); //Cela fait, rendez-vous au monastÃ¨re et parlez Ã  Pyrokar. Il faut absolument qu'il vous remette l'Å’il.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03"); //Vous devez mettre l'artefact Ã  l'abri. Rien n'a davantage d'importance.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04"); //Allez, avant qu'il ne soit trop tard. Car l'ennemi aussi va chercher Ã  s'en emparer.
+	B_LogEntry (TOPIC_INNOSEYE, "L'Å’il est au monastÃ¨re des Magiciens du feu. Heureusement, le seigneur Hagen me permettra d'y avoir accÃ¨s quand je lui aurai remis le message du seigneur Garond. Pyrokar, le Grand Magicien du feu, ne me laissera pas approcher de l'amulette sans l'accord de Hagen.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -802,7 +802,7 @@ instance DIA_Xardas_INNOSEYEBROKEN		(C_INFO)
 	condition	 = 	DIA_Xardas_INNOSEYEBROKEN_Condition;
 	information	 = 	DIA_Xardas_INNOSEYEBROKEN_Info;
 
-	description	 = 	"L'Œil d'Innos a été détruit.";
+	description	 = 	"L'Å’il d'Innos a Ã©tÃ© dÃ©truit.";
 };
 
 func int DIA_Xardas_INNOSEYEBROKEN_Condition ()
@@ -817,10 +817,10 @@ func int DIA_Xardas_INNOSEYEBROKEN_Condition ()
 
 func void DIA_Xardas_INNOSEYEBROKEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_00"); //L'Œil d'Innos a été détruit.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_01"); //Que dites-vous ? Détruit ?
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_02"); //Je l'ai retrouvé dans la forêt du nord. Malheureusement, je n'ai pu qu'en récupérer les fragments.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_03"); //C'était notre seule chance de tenir tête aux dragons et il n'est plus. Nous avons échoué.
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_00"); //L'Å’il d'Innos a Ã©tÃ© dÃ©truit.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_01"); //Que dites-vousÂ ? DÃ©truitÂ ?
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_02"); //Je l'ai retrouvÃ© dans la forÃªt du nord. Malheureusement, je n'ai pu qu'en rÃ©cupÃ©rer les fragments.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_03"); //C'Ã©tait notre seule chance de tenir tÃªte aux dragons et il n'est plus. Nous avons Ã©chouÃ©.
 
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 	B_GivePlayerXP (XP_Ambient);
@@ -832,11 +832,11 @@ func void DIA_Xardas_INNOSEYEBROKEN_Info ()
 };
 func void DIA_Xardas_INNOSEYEBROKEN_wasnun ()
 {
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_wasnun_15_00"); //Et maintenant ?
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_01"); //C'est un coup terrible, mais il nous faut redresser la tête. Je vais me retirer afin de réfléchir à la question.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_02"); //De votre côté, allez en ville et parlez à Vatras, le Mage de l'eau. Peut-être sait-il ce qu'il convient de faire...
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_wasnun_15_00"); //Et maintenantÂ ?
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_01"); //C'est un coup terrible, mais il nous faut redresser la tÃªte. Je vais me retirer afin de rÃ©flÃ©chir Ã  la question.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_02"); //De votre cÃ´tÃ©, allez en ville et parlez Ã  Vatras, le Mage de l'eau. Peut-Ãªtre sait-il ce qu'il convient de faire...
 
-	B_LogEntry (TOPIC_INNOSEYE, "Xardas n'était pas très heureux d'apprendre la destruction de l'Œil d’Innos. Le Magicien des eaux, Vatras, de la cité de Khorinis, semble être notre seul espoir.");
+	B_LogEntry (TOPIC_INNOSEYE, "Xardas n'Ã©tait pas trÃ¨s heureux d'apprendre la destruction de l'Å’il dâ€™Innos. Le Magicien des eaux, Vatras, de la citÃ© de Khorinis, semble Ãªtre notre seul espoir.");
 
 	MIS_Xardas_GoToVatrasInnoseye = LOG_RUNNING;
 };
@@ -868,25 +868,25 @@ func int DIA_Xardas_RITUALREQUEST_Condition ()
 func void DIA_Xardas_RITUALREQUEST_Info ()
 {
 	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_00"); //Vatras m'envoie vous voir.
-	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_01"); //Excellent ! Et qu'a-t-il dit ?
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_02"); //Il a parlé d'un rituel d'inversion au Cercle du soleil.
-	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_03"); //(éclate de rire) Le vieux diable ! Je crois savoir ce qu'il mijote. Il vous a envoyé à moi afin que j'aille le trouver.
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_04"); //On le dirait bien. Quand comptez-vous y aller ?
+	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_01"); //ExcellentÂ ! Et qu'a-t-il ditÂ ?
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_02"); //Il a parlÃ© d'un rituel d'inversion au Cercle du soleil.
+	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_03"); //(Ã©clate de rire) Le vieux diableÂ ! Je crois savoir ce qu'il mijote. Il vous a envoyÃ© Ã  moi afin que j'aille le trouver.
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_04"); //On le dirait bien. Quand comptez-vous y allerÂ ?
 
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_DJG)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_05"); //Je me mets en route immédiatement car il ne faut pas le faire attendre. Pour votre part, menez à bien les tâches que je vous ai confiées et venez me rejoindre.
+		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_05"); //Je me mets en route immÃ©diatement car il ne faut pas le faire attendre. Pour votre part, menez Ã  bien les tÃ¢ches que je vous ai confiÃ©es et venez me rejoindre.
 		AI_StopProcessInfos (self);
-		B_LogEntry (TOPIC_INNOSEYE, "Xardas a accepté de venir au rituel du Cercle du soleil.");
+		B_LogEntry (TOPIC_INNOSEYE, "Xardas a acceptÃ© de venir au rituel du Cercle du soleil.");
 		B_GivePlayerXP (XP_Ambient);
 		Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair");
 		Xardas_GoesToRitualInnosEye = TRUE; 
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_06"); //Je ne prendrai part au rituel que quand j'aurai la certitude que vous êtes prêt à affronter les dragons.
+		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_06"); //Je ne prendrai part au rituel que quand j'aurai la certitude que vous Ãªtes prÃªt Ã  affronter les dragons.
 	};	
 	B_GivePlayerXP (XP_Ambient);
 
@@ -919,28 +919,28 @@ func int DIA_Xardas_WARUMNICHTJETZT_Condition ()
 
 func void DIA_Xardas_WARUMNICHTJETZT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_00"); //Pourquoi n'allez-vous pas le voir tout de suite ?
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_00"); //Pourquoi n'allez-vous pas le voir tout de suiteÂ ?
 	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_01"); //Parfois, je ne vous comprends pas...
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_14_02"); //(irrité) Ne me parlez pas sur ce ton ! Si je n'avais pas été là, votre dépouille serait en train de se décomposer dans le temple.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_14_02"); //(irritÃ©) Ne me parlez pas sur ce tonÂ ! Si je n'avais pas Ã©tÃ© lÃ , votre dÃ©pouille serait en train de se dÃ©composer dans le temple.
 
-	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Oubliez ça. Contentez-vous de me dire ce que j'ai besoin de savoir.", DIA_Xardas_WARUMNICHTJETZT_wastun );
-	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Alors, expliquez-moi au moins pourquoi vous hésitez.", DIA_Xardas_WARUMNICHTJETZT_grund );
+	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Oubliez Ã§a. Contentez-vous de me dire ce que j'ai besoin de savoir.", DIA_Xardas_WARUMNICHTJETZT_wastun );
+	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Alors, expliquez-moi au moins pourquoi vous hÃ©sitez.", DIA_Xardas_WARUMNICHTJETZT_grund );
 };
 func void DIA_Xardas_WARUMNICHTJETZT_grund ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_grund_15_00"); //Expliquez-moi au moins pourquoi vous hésitez.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_01"); //Depuis que j'ai quitté les Magiciens du feu, je me suis efforcé de me tenir à l'écart d'eux.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_grund_15_00"); //Expliquez-moi au moins pourquoi vous hÃ©sitez.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_01"); //Depuis que j'ai quittÃ© les Magiciens du feu, je me suis efforcÃ© de me tenir Ã  l'Ã©cart d'eux.
 	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_02"); //Et je n'ai pas l'intention que cela change, sauf si je n'ai pas le choix.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_03"); //Toutefois, avant de m'exposer à leurs reproches, je tiens à m'assurer que vous aurez une chance, fut-elle infime, contre les dragons.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_04"); //Mais vous n'irez pas loin avec votre équipement miteux. Revenez me voir quand vous serez assez fort.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_03"); //Toutefois, avant de m'exposer Ã  leurs reproches, je tiens Ã  m'assurer que vous aurez une chance, fut-elle infime, contre les dragons.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_04"); //Mais vous n'irez pas loin avec votre Ã©quipement miteux. Revenez me voir quand vous serez assez fort.
   	AI_StopProcessInfos (self);
 };
 
 func void DIA_Xardas_WARUMNICHTJETZT_wastun  ()
 {
 	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_wastun_15_00"); //Laissez tomber. Dites-moi juste ce que je dois faire.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_01"); //Vous êtes encore trop faible pour affronter les dragons. Vous n'avez pas la moindre chance avec un équipement aussi pathétique.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_02"); //Ne revenez pas tant que vous ne serez pas mieux préparé. Alors, seulement, j'irai voir Vatras.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_01"); //Vous Ãªtes encore trop faible pour affronter les dragons. Vous n'avez pas la moindre chance avec un Ã©quipement aussi pathÃ©tique.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_02"); //Ne revenez pas tant que vous ne serez pas mieux prÃ©parÃ©. Alors, seulement, j'irai voir Vatras.
  	AI_StopProcessInfos (self);
 };
 
@@ -953,7 +953,7 @@ instance DIA_Xardas_BEREIT		(C_INFO)
 	condition	 = 	DIA_Xardas_BEREIT_Condition;
 	information	 = 	DIA_Xardas_BEREIT_Info;
 
-	description	 = 	"Je suis prêt à affronter les dragons.";
+	description	 = 	"Je suis prÃªt Ã  affronter les dragons.";
 };
 
 func int DIA_Xardas_BEREIT_Condition ()
@@ -969,10 +969,10 @@ func int DIA_Xardas_BEREIT_Condition ()
 
 func void DIA_Xardas_BEREIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BEREIT_15_00"); //Je suis prêt à affronter les dragons.
-	AI_Output			(self, other, "DIA_Xardas_BEREIT_14_01"); //Dans ce cas, il n'y a plus une seconde à perdre. Je pars rejoindre le Cercle du soleil sans attendre. Quant à vous, menez à bien les tâches qui vous incombent et retrouvez-moi là-bas.
+	AI_Output			(other, self, "DIA_Xardas_BEREIT_15_00"); //Je suis prÃªt Ã  affronter les dragons.
+	AI_Output			(self, other, "DIA_Xardas_BEREIT_14_01"); //Dans ce cas, il n'y a plus une seconde Ã  perdre. Je pars rejoindre le Cercle du soleil sans attendre. Quant Ã  vous, menez Ã  bien les tÃ¢ches qui vous incombent et retrouvez-moi lÃ -bas.
 	AI_StopProcessInfos (self);
-	B_LogEntry (TOPIC_INNOSEYE, "Xardas a accepté de venir au rituel du Cercle du soleil.");
+	B_LogEntry (TOPIC_INNOSEYE, "Xardas a acceptÃ© de venir au rituel du Cercle du soleil.");
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair"); 
 	Xardas_GoesToRitualInnosEye = TRUE; 
@@ -989,7 +989,7 @@ instance DIA_Xardas_BINGESPANNT		(C_INFO)
 	information	 = 	DIA_Xardas_BINGESPANNT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Est-ce que le rituel de réversion va marcher ?";
+	description	 = 	"Est-ce que le rituel de rÃ©version va marcher ?";
 };
 
 func int DIA_Xardas_BINGESPANNT_Condition ()
@@ -1004,8 +1004,8 @@ func int DIA_Xardas_BINGESPANNT_Condition ()
 
 func void DIA_Xardas_BINGESPANNT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BINGESPANNT_15_00"); //Le rituel d'inversion fonctionnera-t-il ?
-	AI_Output			(self, other, "DIA_Xardas_BINGESPANNT_14_01"); //Impossible d'en avoir la certitude. Tout dépend de ce que Vatras a l'intention de faire.
+	AI_Output			(other, self, "DIA_Xardas_BINGESPANNT_15_00"); //Le rituel d'inversion fonctionnera-t-ilÂ ?
+	AI_Output			(self, other, "DIA_Xardas_BINGESPANNT_14_01"); //Impossible d'en avoir la certitude. Tout dÃ©pend de ce que Vatras a l'intention de faire.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1035,25 +1035,25 @@ func void DIA_Xardas_PYROWILLNICHT_Info ()
 {
 	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_00"); //Pyrokar refuse de venir prendre part au rituel.
 	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_01"); //Il veut d'abord la preuve qu'il peut vous faire confiance.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //Vraiment ? Pyrokar ? Voilà qui ne manque pas d'intérêt...
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //Ce vieux fou va tout faire pour nous causer des ennuis. Mais je crois avoir quelque chose qui devrait vous être utile...
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //Quand j'ai quitté l'ordre des Magiciens du feu, j'ai pris quelques objets du monastère avec moi.
-	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich ständig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
-	//"hier" passt nicht, weil Xardas am Steinkreis stehen könnte - Satz ist eh überflüssig
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //VraimentÂ ? PyrokarÂ ? VoilÃ  qui ne manque pas d'intÃ©rÃªt...
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //Ce vieux fou va tout faire pour nous causer des ennuis. Mais je crois avoir quelque chose qui devrait vous Ãªtre utile...
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //Quand j'ai quittÃ© l'ordre des Magiciens du feu, j'ai pris quelques objets du monastÃ¨re avec moi.
+	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich stÃ¤ndig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
+	//"hier" passt nicht, weil Xardas am Steinkreis stehen kÃ¶nnte - Satz ist eh Ã¼berflÃ¼ssig
 	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_06"); //Mais je ne voulais pas qu'un groupe de paladins et de Magiciens du feu retournent ma tour de fond en comble et les retrouvent.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //Alors, je les ai cachés en divers endroits où je sais que nul n'ira jamais les chercher.
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_08"); //Où ça ?
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_09"); //Certains de ces objets sont enfermés dans un coffre qui se trouve dans la ferme de Sékob.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //Alors, je les ai cachÃ©s en divers endroits oÃ¹ je sais que nul n'ira jamais les chercher.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_08"); //OÃ¹ Ã§aÂ ?
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_09"); //Certains de ces objets sont enfermÃ©s dans un coffre qui se trouve dans la ferme de SÃ©kob.
 	Sekob_RoomFree = TRUE;
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_10"); //Vous faites confiance à ce Sékob ?
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_11"); //Non, mais il est possible de l'acheter et il ne pose pas de question. Et puis, le coffre est fermé à clef. Tenez, en voici justement la clef.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_10"); //Vous faites confiance Ã  ce SÃ©kobÂ ?
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_11"); //Non, mais il est possible de l'acheter et il ne pose pas de question. Et puis, le coffre est fermÃ© Ã  clef. Tenez, en voici justement la clef.
 
 	CreateInvItems 		(self, ItKe_CHEST_SEKOB_XARDASBOOK_MIS, 1);					
 	B_GiveInvItems 		(self, other, ItKe_CHEST_SEKOB_XARDASBOOK_MIS,1);
 
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_12"); //Il y a un très vieux livre à l'intérieur. Quand Pyrokar le verra, il saura qu'il vient de moi.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_13"); //Cet ouvrage ne m'est plus d'aucune utilité. Comme cela, il me servira une ultime fois...
-	B_LogEntry (TOPIC_INNOSEYE, "Xardas m'a donné la clef d'un coffre de la ferme de Sékob. Je dois rapporter le livre qui s'y trouve à Pyrokar.");
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_12"); //Il y a un trÃ¨s vieux livre Ã  l'intÃ©rieur. Quand Pyrokar le verra, il saura qu'il vient de moi.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_13"); //Cet ouvrage ne m'est plus d'aucune utilitÃ©. Comme cela, il me servira une ultime fois...
+	B_LogEntry (TOPIC_INNOSEYE, "Xardas m'a donnÃ© la clef d'un coffre de la ferme de SÃ©kob. Je dois rapporter le livre qui s'y trouve Ã  Pyrokar.");
 };
 
 
@@ -1081,11 +1081,11 @@ func int DIA_Xardas_RitualInnosEyeRepairImportant_Condition ()
 
 func void DIA_Xardas_RitualInnosEyeRepairImportant_Info ()
 {
-	AI_Output (self, other, "DIA_Xardas_Add_14_06"); //Maintenant que l'Œil d'Innos a été reconstitué, il faut affronter les dragons.
-	AI_Output (self, other, "DIA_Xardas_Add_14_07"); //Tous servent Béliar, le dieu des ténèbres.
-	AI_Output (self, other, "DIA_Xardas_Add_14_08"); //Mais ils sont forcément contrôlés par une puissance terrestre, j'en ai acquis la conviction.
-	AI_Output (self, other, "DIA_Xardas_Add_14_09"); //Découvrez quelle est la source de leur pouvoir.
-	AI_Output (self, other, "DIA_Xardas_Add_14_10"); //Revenez me voir dès que vous le saurez.
+	AI_Output (self, other, "DIA_Xardas_Add_14_06"); //Maintenant que l'Å’il d'Innos a Ã©tÃ© reconstituÃ©, il faut affronter les dragons.
+	AI_Output (self, other, "DIA_Xardas_Add_14_07"); //Tous servent BÃ©liar, le dieu des tÃ©nÃ¨bres.
+	AI_Output (self, other, "DIA_Xardas_Add_14_08"); //Mais ils sont forcÃ©ment contrÃ´lÃ©s par une puissance terrestre, j'en ai acquis la conviction.
+	AI_Output (self, other, "DIA_Xardas_Add_14_09"); //DÃ©couvrez quelle est la source de leur pouvoir.
+	AI_Output (self, other, "DIA_Xardas_Add_14_10"); //Revenez me voir dÃ¨s que vous le saurez.
 	
 	Info_ClearChoices	(DIA_Xardas_RitualInnosEyeRepairImportant);
 	Info_AddChoice	(DIA_Xardas_RitualInnosEyeRepairImportant, DIALOG_ENDE, DIA_Xardas_RitualInnosEyeRepairImportant_weiter );
@@ -1111,7 +1111,7 @@ instance DIA_Xardas_WASNUN		(C_INFO)
 	information	 = 	DIA_Xardas_WASNUN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"L'Œil d'Innos est guéri. Et maintenant ?";
+	description	 = 	"L'Å’il d'Innos est guÃ©ri. Et maintenant ?";
 };
 
 func int DIA_Xardas_WASNUN_Condition ()
@@ -1125,16 +1125,16 @@ func int DIA_Xardas_WASNUN_Condition ()
 
 func void DIA_Xardas_WASNUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WASNUN_15_00"); //L'Œil d'Innos a été reconstitué. Et maintenant ?
+	AI_Output			(other, self, "DIA_Xardas_WASNUN_15_00"); //L'Å’il d'Innos a Ã©tÃ© reconstituÃ©. Et maintenantÂ ?
 	AI_Output			(self, other, "DIA_Xardas_WASNUN_14_01"); //N'oubliez pas de le porter quand vous affronterez enfin les dragons.
 
 	if (MIS_ReadyforChapter4 == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_02"); //Ne perdez pas de temps. Allez à la Vallée des mines et tuez les dragons.
+		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_02"); //Ne perdez pas de temps. Allez Ã  la VallÃ©e des mines et tuez les dragons.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_03"); //Allez voir Pyrokar et demandez-lui de vous expliquer comment utiliser l'Œil.
+		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_03"); //Allez voir Pyrokar et demandez-lui de vous expliquer comment utiliser l'Å’il.
 	};
 };		
 
@@ -1198,8 +1198,8 @@ func int DIA_Xardas_PERM4_Condition ()
 func void DIA_Xardas_PERM4_Info ()
 {
 	AI_Output			(other, self, "DIA_Xardas_PERM4_15_00"); //Quoi de neuf ?
-	AI_Output			(self, other, "DIA_Xardas_PERM4_14_01"); //Les Traqueurs ne sont pas encore partis. Ils ne connaîtront pas le repos tant qu'ils ne vous auront pas rattrapé.
-	AI_Output			(self, other, "DIA_Xardas_PERM4_14_02"); //Tuez les dragons de la Vallée des mines et découvrez qui est derrière ces attaques, sans quoi notre ennemi reconstituera son armée.
+	AI_Output			(self, other, "DIA_Xardas_PERM4_14_01"); //Les Traqueurs ne sont pas encore partis. Ils ne connaÃ®tront pas le repos tant qu'ils ne vous auront pas rattrapÃ©.
+	AI_Output			(self, other, "DIA_Xardas_PERM4_14_02"); //Tuez les dragons de la VallÃ©e des mines et dÃ©couvrez qui est derriÃ¨re ces attaques, sans quoi notre ennemi reconstituera son armÃ©e.
 
 };
 

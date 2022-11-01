@@ -85,7 +85,7 @@ INSTANCE Wolf	(Mst_Default_Wolf)
 
 INSTANCE Summoned_Wolf	(Mst_Default_Wolf)
 {
-	name							=	"Loup convoqué";
+	name							=	"Loup convoquÃ©";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_WOLF;
 	level							=	0; //10
@@ -146,7 +146,7 @@ INSTANCE YWolf	(Mst_Default_Wolf)
 
 
 //************
-//	Missions Wölfe für Pepe: YWolf    	
+//	Missions WÃ¶lfe fÃ¼r Pepe: YWolf    	
 //************
 
 

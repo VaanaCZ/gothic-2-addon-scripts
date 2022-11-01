@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_10031_Wache_Scatty_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Scatty_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Hé, vous voulez aller à la mine ? Alors n'oubliez pas de vous équiper chez Scatty.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//HÃ©, vous voulez aller Ã  la mine ? Alors n'oubliez pas de vous Ã©quiper chez Scatty.
 	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//De quoi aurai-je besoin ?
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Ben, tout au moins d'une pioche. Et pensez à emporter des provisions, ça ne vous fera pas de mal.
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Ou peut-être des potions de soins ? Ça grouille de foreurs, là-dessous.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Ben, tout au moins d'une pioche. Et pensez Ã  emporter des provisions, Ã§a ne vous fera pas de mal.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Ou peut-Ãªtre des potions de soins ? Ã‡a grouille de foreurs, lÃ -dessous.
 	AI_StopProcessInfos (self);
 };
 //----------------------------------------------------------------------
@@ -67,10 +67,10 @@ FUNC VOID DIA_Addon_10031_Wache_Hi_Info()
 	if (Sklaven_Flucht == TRUE)
 	&& (Wache_Joker == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//Eh ben, eh ben... Les esclaves étaient pressés de partir, en tout cas.
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Quand on leur a annoncé qu'ils étaient libres, ils ont filé comme des lapins !
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//Eh ben, eh ben... Les esclaves Ã©taient pressÃ©s de partir, en tout cas.
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Quand on leur a annoncÃ© qu'ils Ã©taient libres, ils ont filÃ© comme des lapins !
 		Wache_Joker = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Ouais. Alors évitez de vous attirer des ennuis, et tout se passera bien.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Ouais. Alors Ã©vitez de vous attirer des ennuis, et tout se passera bien.
 	
 };

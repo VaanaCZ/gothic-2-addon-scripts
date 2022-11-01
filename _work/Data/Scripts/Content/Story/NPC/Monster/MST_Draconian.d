@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Draconian(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Homme lézard";
+	name							=	"Homme lÃ©zard";
 	guild							=	GIL_DRACONIAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRACONIAN;
 	level							=	35;

@@ -31,7 +31,7 @@ instance DIA_Mil_332_Stadtwache_PERM (C_INFO)
 	condition	= DIA_Mil_332_Stadtwache_PERM_Condition;
 	information	= DIA_Mil_332_Stadtwache_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Comment ça va ?";
+	description	= "Comment Ã§a va ?";
 };
 
 func int DIA_Mil_332_Stadtwache_PERM_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Mil_332_Stadtwache_PERM_Condition ()
 
 func void DIA_Mil_332_Stadtwache_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Mil_332_Stadtwache_PERM_15_00"); //Comment ça se passe ?
-	AI_Output			(self, other, "DIA_Mil_332_Stadtwache_PERM_04_01"); //Dégagez, je suis de service !
+	AI_Output			(other, self, "DIA_Mil_332_Stadtwache_PERM_15_00"); //Comment Ã§a se passe ?
+	AI_Output			(self, other, "DIA_Mil_332_Stadtwache_PERM_04_01"); //DÃ©gagez, je suis de serviceÂ !
 	AI_StopProcessInfos (self);
 };
 

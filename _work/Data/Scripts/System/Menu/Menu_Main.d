@@ -58,7 +58,7 @@ INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Charger partie";
-	text[1]		=	"Reprendre une partie sauvegardée";  // Kommentar
+	text[1]		=	"Reprendre une partie sauvegardÃ©e";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		=  0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*1;
@@ -116,7 +116,7 @@ instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Configuration";
-	text[1]		= "Paramètres du jeu, audio et vidéo";  // Kommentar
+	text[1]		= "ParamÃ¨tres du jeu, audio et vidÃ©o";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*4;
@@ -133,7 +133,7 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Introduction";
-	text[1]		= "Séquence d'introduction";
+	text[1]		= "SÃ©quence d'introduction";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;
@@ -147,8 +147,8 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Crédits";
-	text[1]		= "Crédits";  // Kommentar
+	text[0]		= "CrÃ©dits";
+	text[1]		= "CrÃ©dits";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;

@@ -96,7 +96,7 @@ FUNC INT DIA_Daron_Hallo_Condition()
 FUNC VOID DIA_Daron_Hallo_Info()
 {	
 	AI_Output (self, other,"DIA_Daron_Hallo_10_00");//Que puis-je faire pour vous ? Recherchez-vous l'apaisement spirituel ?
-	AI_Output (self, other,"DIA_Daron_Hallo_10_01");//Voulez-vous adresser une prière à notre seigneur Innos ou faire une offrande à notre église ?
+	AI_Output (self, other,"DIA_Daron_Hallo_10_01");//Voulez-vous adresser une priÃ¨re Ã  notre seigneur Innos ou faire une offrande Ã  notre Ã©glise ?
 };
 
 // ************************************************************
@@ -122,11 +122,11 @@ FUNC INT DIA_Daron_Paladine_Condition()
 FUNC VOID DIA_Daron_Paladine_Info()
 {	
 	AI_Output (other, self,"DIA_Daron_Paladine_15_00");//Je dois parler aux paladins. Pouvez-vous m'aider ?
-	AI_Output (self, other,"DIA_Daron_Paladine_10_01");//Il faut que vous ayez accès au haut quartier de la ville. Mais ce n'est permis qu'aux citoyens et aux membres de la garde.
-	AI_Output (self, other,"DIA_Daron_Paladine_10_02");//Et, bien entendu, à nous autres, les Magiciens du feu.
+	AI_Output (self, other,"DIA_Daron_Paladine_10_01");//Il faut que vous ayez accÃ¨s au haut quartier de la ville. Mais ce n'est permis qu'aux citoyens et aux membres de la garde.
+	AI_Output (self, other,"DIA_Daron_Paladine_10_02");//Et, bien entendu, Ã  nous autres, les Magiciens du feu.
 	AI_Output (other, self,"DIA_Daron_Paladine_15_03");//Comment puis-je devenir Magicien du feu ?
-	AI_Output (self, other,"DIA_Daron_Paladine_10_04");//Vous devez rejoindre notre ordre en tant que novice. Une fois que vous nous aurez servi pendant quelque temps, vous serez peut-être accepté au sein des magiciens.
-	AI_Output (self, other,"DIA_Daron_Paladine_10_05");//Cependant, c'est un long chemin nécessitant du travail et beaucoup d'études.
+	AI_Output (self, other,"DIA_Daron_Paladine_10_04");//Vous devez rejoindre notre ordre en tant que novice. Une fois que vous nous aurez servi pendant quelque temps, vous serez peut-Ãªtre acceptÃ© au sein des magiciens.
+	AI_Output (self, other,"DIA_Daron_Paladine_10_05");//Cependant, c'est un long chemin nÃ©cessitant du travail et beaucoup d'Ã©tudes.
 };
 
 // ************************************************************
@@ -139,7 +139,7 @@ INSTANCE DIA_Daron_AboutSegen (C_INFO)
 	condition	= DIA_Daron_AboutSegen_Condition;
 	information	= DIA_Daron_AboutSegen_Info;
 	permanent	= FALSE;
-	description = "Je suis venu solliciter votre bénédiction !";
+	description = "Je suis venu solliciter votre bÃ©nÃ©diction !";
 };                       
 FUNC INT DIA_Daron_AboutSegen_Condition()
 {	
@@ -152,18 +152,18 @@ FUNC INT DIA_Daron_AboutSegen_Condition()
 };
 FUNC VOID DIA_Daron_AboutSegen_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_AboutSegen_15_00"); //Je suis venu pour obtenir votre bénédiction.
-	AI_Output (self, other,"DIA_Daron_AboutSegen_10_01"); //C'est une bonne chose. Vous voudrez donc probablement faire un don en or à la sainte église d'Innos, n'est-ce pas ?
-	AI_Output (other, self,"DIA_Daron_AboutSegen_15_02"); //En fait, je voudrais votre bénédiction pour pouvoir devenir apprenti dans le bas quartier de la ville...
+	AI_Output (other, self,"DIA_Daron_AboutSegen_15_00"); //Je suis venu pour obtenir votre bÃ©nÃ©diction.
+	AI_Output (self, other,"DIA_Daron_AboutSegen_10_01"); //C'est une bonne chose. Vous voudrez donc probablement faire un don en or Ã  la sainte Ã©glise d'Innos, n'est-ce pas ?
+	AI_Output (other, self,"DIA_Daron_AboutSegen_15_02"); //En fait, je voudrais votre bÃ©nÃ©diction pour pouvoir devenir apprenti dans le bas quartier de la ville...
 	if (Daron_Segen == TRUE)
 	{
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_03"); //Mais je vous ai déjà donné ma bénédiction, mon fils.
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_03"); //Mais je vous ai dÃ©jÃ  donnÃ© ma bÃ©nÃ©diction, mon fils.
 		AI_Output (self, other,"DIA_Daron_AboutSegen_10_04"); //Qu'Innos soit avec vous mon fils !
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_05"); //Mais, mon fils ! Sans une modeste offrande à l'église, il m'est impossible de vous bénir.
-		AI_Output (self, other,"DIA_Daron_AboutSegen_10_06"); //Comment puis-je savoir autrement que vous ne nourrissez que de bonnes intentions envers la sainte église d'Innos ?
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_05"); //Mais, mon fils ! Sans une modeste offrande Ã  l'Ã©glise, il m'est impossible de vous bÃ©nir.
+		AI_Output (self, other,"DIA_Daron_AboutSegen_10_06"); //Comment puis-je savoir autrement que vous ne nourrissez que de bonnes intentions envers la sainte Ã©glise d'Innos ?
 	};
 };
 
@@ -177,7 +177,7 @@ INSTANCE DIA_Daron_Spenden(C_INFO)
 	condition	= DIA_Daron_Spenden_Condition;
 	information	= DIA_Daron_Spenden_Info;
 	permanent	= FALSE;
-	description	= "A combien s'élève généralement une offrande dans le coin ?";
+	description	= "A combien s'Ã©lÃ¨ve gÃ©nÃ©ralement une offrande dans le coin ?";
 };                       
 FUNC INT DIA_Daron_Spenden_Condition()
 {	if (hero.guild != GIL_KDF)
@@ -187,47 +187,47 @@ FUNC INT DIA_Daron_Spenden_Condition()
 };
 FUNC VOID DIA_Daron_Spenden_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Spenden_15_00");//A combien se monte généralement une offrande ?
-	AI_Output (self, other,"DIA_Daron_Spenden_10_01");//Eh bien, cela dépend de quel pourcentage de votre fortune vous voulez donner. Laissez-moi voir combien vous avez.
+	AI_Output (other, self,"DIA_Daron_Spenden_15_00");//A combien se monte gÃ©nÃ©ralement une offrande ?
+	AI_Output (self, other,"DIA_Daron_Spenden_10_01");//Eh bien, cela dÃ©pend de quel pourcentage de votre fortune vous voulez donner. Laissez-moi voir combien vous avez.
 	AI_Output (self, other,"DIA_Daron_Spenden_10_02");//(il regarde dans la bourse) Hum, hum...
 	
 	if (Npc_HasItems (other, ItMi_Gold) < 10)
 	{
-		AI_Output (self, other,"DIA_Daron_Spenden_10_03");//Hum, vous êtes pauvre, n'est-ce pas ? Gardez le peu que vous avez.
+		AI_Output (self, other,"DIA_Daron_Spenden_10_03");//Hum, vous Ãªtes pauvre, n'est-ce pas ? Gardez le peu que vous avez.
 		
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, ne m'a pas accordé sa bénédiction. Je suppose que cela signifie que je dois réunir de l'or et le lui donner.");
+			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, ne m'a pas accordÃ© sa bÃ©nÃ©diction. Je suppose que cela signifie que je dois rÃ©unir de l'or et le lui donner.");
 		};
 	}
 	else //Gold >= 10
 	{
 		if (Npc_HasItems (other, ItMi_Gold) < 50)
 		{
-			AI_Output (self, other,"DIA_Daron_Spenden_10_04");//Vous n'avez pas grand-chose mais vous n'êtes pas pauvre. 10 pièces d'or pour Innos, nous vivons modestement.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_04");//Vous n'avez pas grand-chose mais vous n'Ãªtes pas pauvre. 10 piÃ¨ces d'or pour Innos, nous vivons modestement.
 			B_GiveInvItems (other, self, ItMi_Gold, 10);
 			
 		}
 		else if (Npc_HasItems (other, ItMi_Gold) < 100)
 		{
-			AI_Output (self, other,"DIA_Daron_Spenden_10_05");//Vous avez plus de 50 pièces d'or. Donnez-en 25 à Innos et recevez ma bénédiction.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_05");//Vous avez plus de 50 piÃ¨ces d'or. Donnez-en 25 Ã  Innos et recevez ma bÃ©nÃ©diction.
 			B_GiveInvItems (other, self, ItMi_Gold, 25);
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Daron_Spenden_10_06");//Vous avez plus de cent pièces d'or. Le Seigneur Innos a dit, 'Donnez si vous avez'.
-			AI_Output (self, other,"DIA_Daron_Spenden_10_07");//L'église accepte votre généreuse offrande.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_06");//Vous avez plus de cent piÃ¨ces d'or. Le Seigneur Innos a dit, 'Donnez si vous avez'.
+			AI_Output (self, other,"DIA_Daron_Spenden_10_07");//L'Ã©glise accepte votre gÃ©nÃ©reuse offrande.
 			B_GiveInvItems (other, self, ItMi_Gold, 50);
 			
 		};
 		
-		AI_Output (self, other,"DIA_Daron_Spenden_10_08");//Je vous bénis au nom d'Innos. Car Il est la lumière et la droiture.
+		AI_Output (self, other,"DIA_Daron_Spenden_10_08");//Je vous bÃ©nis au nom d'Innos. Car Il est la lumiÃ¨re et la droiture.
 		Daron_Segen = TRUE;
 		B_GivePlayerXP (XP_InnosSegen);
 		
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordé sa bénédiction.");
+			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordÃ© sa bÃ©nÃ©diction.");
 		};
 	};
 };
@@ -242,7 +242,7 @@ INSTANCE DIA_Daron_Woher(C_INFO)
 	condition	= DIA_Daron_Woher_Condition;
 	information	= DIA_Daron_Woher_Info;
 	permanent	= FALSE;
-	description	= "D'où venez-vous ?";
+	description	= "D'oÃ¹ venez-vous ?";
 };                       
 FUNC INT DIA_Daron_Woher_Condition()
 {	
@@ -254,12 +254,12 @@ FUNC INT DIA_Daron_Woher_Condition()
 };
 FUNC VOID DIA_Daron_Woher_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Woher_15_00");//D'où venez-vous ?
-	AI_Output (self, other,"DIA_Daron_Woher_10_01");//Je viens du monastère des magiciens, dans les montagnes.
+	AI_Output (other, self,"DIA_Daron_Woher_15_00");//D'oÃ¹ venez-vous ?
+	AI_Output (self, other,"DIA_Daron_Woher_10_01");//Je viens du monastÃ¨re des magiciens, dans les montagnes.
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other,"DIA_Daron_Woher_10_02");//Ici nous acceptons tous ceux qui ont le cœur pur et qui souhaitent servir le tout puissant Seigneur Innos.
+		AI_Output (self, other,"DIA_Daron_Woher_10_02");//Ici nous acceptons tous ceux qui ont le cÅ“ur pur et qui souhaitent servir le tout puissant Seigneur Innos.
 	};
 };
 
@@ -287,9 +287,9 @@ FUNC INT DIA_Daron_Innos_Condition()
 FUNC VOID DIA_Daron_Innos_Info()
 {	
 	AI_Output (other, self,"DIA_Daron_Innos_15_00");//Parlez-moi d'Innos.
-	AI_Output (self, other,"DIA_Daron_Innos_10_01");//Innos, notre dieu tout-puissant, est la lumière et le feu.
-	AI_Output (self, other,"DIA_Daron_Innos_10_02");//Il a choisi les hommes pour être ses instruments et il leur a donné la magie et les lois.
-	AI_Output (self, other,"DIA_Daron_Innos_10_03");//Nous agissons en Son nom. Nous faisons justice selon Sa volonté et nous prêchons Sa sagesse.
+	AI_Output (self, other,"DIA_Daron_Innos_10_01");//Innos, notre dieu tout-puissant, est la lumiÃ¨re et le feu.
+	AI_Output (self, other,"DIA_Daron_Innos_10_02");//Il a choisi les hommes pour Ãªtre ses instruments et il leur a donnÃ© la magie et les lois.
+	AI_Output (self, other,"DIA_Daron_Innos_10_03");//Nous agissons en Son nom. Nous faisons justice selon Sa volontÃ© et nous prÃªchons Sa sagesse.
 };
 
 // ************************************************************
@@ -302,7 +302,7 @@ INSTANCE DIA_Daron_Kloster(C_INFO)
 	condition	= DIA_Daron_Kloster_Condition;
 	information	= DIA_Daron_Kloster_Info;
 	permanent	= FALSE;
-	description	= "Dites-m'en plus au sujet du monastère.";
+	description	= "Dites-m'en plus au sujet du monastÃ¨re.";
 };                       
 FUNC INT DIA_Daron_Kloster_Condition()
 {	
@@ -316,9 +316,9 @@ FUNC INT DIA_Daron_Kloster_Condition()
 };
 FUNC VOID DIA_Daron_Kloster_Info()
 {	
-	AI_Output (other, self,"DIA_Daron_Kloster_15_00");//Dites-m'en plus au sujet du monastère.
-	AI_Output (self, other,"DIA_Daron_Kloster_10_01");//Nous apprenons à nos étudiants toutes les formes de magie. Mais les arts des Magiciens du feu ne se limitent pas à ça.
-	AI_Output (self, other,"DIA_Daron_Kloster_10_02");//Nous maîtrisons également l'alchimie et la création de puissantes runes.
+	AI_Output (other, self,"DIA_Daron_Kloster_15_00");//Dites-m'en plus au sujet du monastÃ¨re.
+	AI_Output (self, other,"DIA_Daron_Kloster_10_01");//Nous apprenons Ã  nos Ã©tudiants toutes les formes de magie. Mais les arts des Magiciens du feu ne se limitent pas Ã  Ã§a.
+	AI_Output (self, other,"DIA_Daron_Kloster_10_02");//Nous maÃ®trisons Ã©galement l'alchimie et la crÃ©ation de puissantes runes.
 	AI_Output (self, other,"DIA_Daron_Kloster_10_03");//De plus, nous produisons un excellent vin.
 };
 
@@ -344,8 +344,8 @@ FUNC INT DIA_Daron_Stadt_Condition()
 FUNC VOID DIA_Daron_Stadt_Info()
 {	
 	AI_Output (other, self,"DIA_Daron_Stadt_15_00");//Que faites-vous en ville ?
-	AI_Output (self, other,"DIA_Daron_Stadt_10_01");//J'ai des affaires à régler avec les paladins et j'aide la population de mes conseils et de mes paroles rassurantes.
-	AI_Output (self, other,"DIA_Daron_Stadt_10_02");//Particulièrement en ces temps difficiles, il est de notre devoir d'être là pour le peuple et d'aider les pauvres.
+	AI_Output (self, other,"DIA_Daron_Stadt_10_01");//J'ai des affaires Ã  rÃ©gler avec les paladins et j'aide la population de mes conseils et de mes paroles rassurantes.
+	AI_Output (self, other,"DIA_Daron_Stadt_10_02");//ParticuliÃ¨rement en ces temps difficiles, il est de notre devoir d'Ãªtre lÃ  pour le peuple et d'aider les pauvres.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -374,60 +374,60 @@ func void DIA_Addon_Daron_GuildHelp_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_00"); //J'ai entendu des rumeurs qui disaient que vous aviez perdu une statuette.
 	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_01"); //Tiens donc ! Cela ne peut venir que de Vatras le Mage de l'eau.
-	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_02"); //Quel est votre problème ?
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_03"); //Une stauette de grande valeur a été envoyée du continent à destination du monastère. Mais elle n'est jamais arrivée.
-	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_04"); //Le bateau a été attaqué ?
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_05"); //(honteux) Non. Elle est arrivée à Khorinis en parfait état et je m'y suis rendu pour la récupérer.
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_06"); //Sur le chemin du retour vers le monastère, une bande de gobelins me l'a prise.
-	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_07"); //(en colère) Ne me regardez pas comme ça. Nous autres magiciens ne sommes que des hommes, vous savez.
+	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_02"); //Quel est votre problÃ¨me ?
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_03"); //Une stauette de grande valeur a Ã©tÃ© envoyÃ©e du continent Ã  destination du monastÃ¨re. Mais elle n'est jamais arrivÃ©e.
+	AI_Output	(other, self, "DIA_Addon_Daron_GuildHelp_15_04"); //Le bateau a Ã©tÃ© attaquÃ© ?
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_05"); //(honteux) Non. Elle est arrivÃ©e Ã  Khorinis en parfait Ã©tat et je m'y suis rendu pour la rÃ©cupÃ©rer.
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_06"); //Sur le chemin du retour vers le monastÃ¨re, une bande de gobelins me l'a prise.
+	AI_Output	(self, other, "DIA_Addon_Daron_GuildHelp_10_07"); //(en colÃ¨re) Ne me regardez pas comme Ã§a. Nous autres magiciens ne sommes que des hommes, vous savez.
 	
 	MIS_Addon_Vatras_Go2Daron = LOG_SUCCESS;
 	MIS_Addon_Daron_GetStatue = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Addon_Daron_GuildHelp);
 	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Vous dites que ce sont les gobelins qui l'ont maintenant ?", DIA_Addon_Daron_GuildHelp_gobbos );
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Où avez-vous perdu la statuette ?", DIA_Addon_Daron_GuildHelp_wo );
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Pourquoi ne pas avoir essayé de la récupérer ?", DIA_Addon_Daron_GuildHelp_wiederholen );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "OÃ¹ avez-vous perdu la statuette ?", DIA_Addon_Daron_GuildHelp_wo );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "Pourquoi ne pas avoir essayÃ© de la rÃ©cupÃ©rer ?", DIA_Addon_Daron_GuildHelp_wiederholen );
 };
 
 func void DIA_Addon_Daron_GuildHelp_wiederholen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wiederholen_15_00"); //Pourquoi ne pas avoir essayé de la récupérer ?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wiederholen_10_01"); //Bien sûr que j'ai essayé ! Je l'ai cherchée partout. Peine perdue.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wiederholen_15_00"); //Pourquoi ne pas avoir essayÃ© de la rÃ©cupÃ©rer ?
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wiederholen_10_01"); //Bien sÃ»r que j'ai essayÃ© ! Je l'ai cherchÃ©e partout. Peine perdue.
 };
 
 func void DIA_Addon_Daron_GuildHelp_gobbos ()
 {
 	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_gobbos_15_00"); //Vous dites que ce sont les gobelins qui l'ont maintenant ?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_01"); //Ils l'ont volée avant de s'enfuir dans les buissons.
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_02"); //Je ne l'ai jamais retrouvée. Ils l'ont sûrement cachée dans un trou.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_01"); //Ils l'ont volÃ©e avant de s'enfuir dans les buissons.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_gobbos_10_02"); //Je ne l'ai jamais retrouvÃ©e. Ils l'ont sÃ»rement cachÃ©e dans un trou.
 };
 
 func void DIA_Addon_Daron_GuildHelp_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wo_15_00"); //Où avez-vous perdu la statuette ?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wo_10_01"); //Sur la route du monastère, près de la taverne d'Orlan.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_wo_15_00"); //OÃ¹ avez-vous perdu la statuette ?
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_wo_10_01"); //Sur la route du monastÃ¨re, prÃ¨s de la taverne d'Orlan.
 
 	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "J'en sais assez. Je vais vous la retrouver.", DIA_Addon_Daron_GuildHelp_auftrag );
-	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "La taverne d'Orlan ? Où est-ce ?", DIA_Addon_Daron_GuildHelp_woTaverne );
+	Info_AddChoice	(DIA_Addon_Daron_GuildHelp, "La taverne d'Orlan ? OÃ¹ est-ce ?", DIA_Addon_Daron_GuildHelp_woTaverne );
 };
 
 func void DIA_Addon_Daron_GuildHelp_woTaverne ()
 {
-	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_woTaverne_15_00"); //La taverne d'Orlan ? Où est-ce ?
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_01"); //Si vous sortez de la ville par cette porte et que vous suivez le chemin, vous arriverez à une maison isolée.
+	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_woTaverne_15_00"); //La taverne d'Orlan ? OÃ¹ est-ce ?
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_01"); //Si vous sortez de la ville par cette porte et que vous suivez le chemin, vous arriverez Ã  une maison isolÃ©e.
 	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_woTaverne_10_02"); //C'est la taverne d'Orlan. La 'Harpie Morte'.
 };
 
 func void DIA_Addon_Daron_GuildHelp_auftrag ()
 {
 	AI_Output			(other, self, "DIA_Addon_Daron_GuildHelp_auftrag_15_00"); //J'en sais assez. Je vais vous la retrouver.
-	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_auftrag_10_01"); //Qu'Innos vous guide et vous protège des dangers qui vous attendent hors des murs de la ville.
+	AI_Output			(self, other, "DIA_Addon_Daron_GuildHelp_auftrag_10_01"); //Qu'Innos vous guide et vous protÃ¨ge des dangers qui vous attendent hors des murs de la ville.
 	Info_ClearChoices	(DIA_Addon_Daron_GuildHelp);
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Daron a été détroussé par des gobelins effrontés. Depuis, il ne parvient pas à retrouver une statuette précieuse qu'il devait apporter au monastère. On raconte que les gobelins se terrent au fond d'un trou près de la Taverne de la la harpie morte."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Daron a Ã©tÃ© dÃ©troussÃ© par des gobelins effrontÃ©s. Depuis, il ne parvient pas Ã  retrouver une statuette prÃ©cieuse qu'il devait apporter au monastÃ¨re. On raconte que les gobelins se terrent au fond d'un trou prÃ¨s de la Taverne de la la harpie morte."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -440,7 +440,7 @@ instance DIA_Addon_Daron_FoundStatue		(C_INFO)
 	condition	 = 	DIA_Addon_Daron_FoundStatue_Condition;
 	information	 = 	DIA_Addon_Daron_FoundStatue_Info;
 
-	description	 = 	"J'ai trouvé votre statuette.";
+	description	 = 	"J'ai trouvÃ© votre statuette.";
 };
 
 func int DIA_Addon_Daron_FoundStatue_Condition ()
@@ -455,15 +455,15 @@ func int DIA_Addon_Daron_FoundStatue_Condition ()
 
 func void DIA_Addon_Daron_FoundStatue_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_00"); //J'ai trouvé votre statuette.
-	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_01"); //Innos soit loué !
+	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_00"); //J'ai trouvÃ© votre statuette.
+	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_01"); //Innos soit louÃ© !
 	AI_Output	(other, self, "DIA_Addon_Daron_FoundStatue_15_02"); //Qu'allez-vous faire maintenant ?
 	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_03"); //Rien. Elle n'a fait que me porter la poisse.
-	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_04"); //Vous allez la rapporter au monastère pour moi, mon fils.
+	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_04"); //Vous allez la rapporter au monastÃ¨re pour moi, mon fils.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_05"); //Bien sûr, ils ne vous laisseront pas entrer si vous ne dédiez pas le reste de votre vie au service du monastère.
-		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_06"); //Mais je suis sûr que cela ne vous dérange pas puisque cela vous permet de me rendre service, n'est-ce pas ?
+		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_05"); //Bien sÃ»r, ils ne vous laisseront pas entrer si vous ne dÃ©diez pas le reste de votre vie au service du monastÃ¨re.
+		AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_06"); //Mais je suis sÃ»r que cela ne vous dÃ©range pas puisque cela vous permet de me rendre service, n'est-ce pas ?
 	};
 	AI_Output	(self, other, "DIA_Addon_Daron_FoundStatue_10_07"); //Qu'Innos vous accompagne, mon fils !
 };
@@ -478,7 +478,7 @@ instance DIA_Addon_Daron_ReturnedStatue		(C_INFO)
 	condition	 = 	DIA_Addon_Daron_ReturnedStatue_Condition;
 	information	 = 	DIA_Addon_Daron_ReturnedStatue_Info;
 
-	description	 = 	"J'ai apporté la statuette à votre monastère.";
+	description	 = 	"J'ai apportÃ© la statuette Ã  votre monastÃ¨re.";
 };
 
 func int DIA_Addon_Daron_ReturnedStatue_Condition ()
@@ -492,8 +492,8 @@ func int DIA_Addon_Daron_ReturnedStatue_Condition ()
 
 func void DIA_Addon_Daron_ReturnedStatue_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Daron_ReturnedStatue_15_00"); //J'ai porté votre statuette au monastère. Vous pouvez vous détendre.
-	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_01"); //Voilà une bonne nouvelle. Qu'Innos vous protège.
+	AI_Output	(other, self, "DIA_Addon_Daron_ReturnedStatue_15_00"); //J'ai portÃ© votre statuette au monastÃ¨re. Vous pouvez vous dÃ©tendre.
+	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_01"); //VoilÃ  une bonne nouvelle. Qu'Innos vous protÃ¨ge.
 	AI_Output	(self, other, "DIA_Addon_Daron_ReturnedStatue_10_02"); //Prenez ceci comme marque de ma reconnaissance, mon fils.
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);
@@ -525,8 +525,8 @@ FUNC INT DIA_Daron_arm_Condition()
 FUNC VOID DIA_Daron_arm_Info()
 {	
 	AI_Output (other, self,"DIA_Daron_arm_15_00");//Je suis pauvre !
-	AI_Output (self, other,"DIA_Daron_arm_10_01");//Vous êtes donc démuni. Ce n'est pas étonnant par les temps qui courent. Prenez cet or, cela devrait vous aider.
-	AI_Output (self, other,"DIA_Daron_arm_10_02");//Mais vous devriez chercher du travail, alors vous verrez à quelle rapidité vous pouvez gagner de l'or. Alors vous pourrez en faire don à l'église d'Innos comme elle l'a fait pour vous.
+	AI_Output (self, other,"DIA_Daron_arm_10_01");//Vous Ãªtes donc dÃ©muni. Ce n'est pas Ã©tonnant par les temps qui courent. Prenez cet or, cela devrait vous aider.
+	AI_Output (self, other,"DIA_Daron_arm_10_02");//Mais vous devriez chercher du travail, alors vous verrez Ã  quelle rapiditÃ© vous pouvez gagner de l'or. Alors vous pourrez en faire don Ã  l'Ã©glise d'Innos comme elle l'a fait pour vous.
 	
 	B_GiveInvItems (self, other, ItMi_Gold, 20);
 };
@@ -567,14 +567,14 @@ FUNC VOID DIA_Daron_Spende_Info()
 	{
 		Info_AddChoice 	(DIA_Daron_Spende,"Mais je n'ai pas assez d'or...(RETOUR)",DIA_Daron_Spende_BACK);
 		
-		Info_AddChoice 	(DIA_Daron_Spende,"(50 pièces d'or)",DIA_Daron_Spende_50);
-		Info_AddChoice 	(DIA_Daron_Spende,"(100 pièces d'or)",DIA_Daron_Spende_100);
-		Info_AddChoice 	(DIA_Daron_Spende,"(200 pièces d'or)",DIA_Daron_Spende_200);
+		Info_AddChoice 	(DIA_Daron_Spende,"(50 piÃ¨ces d'or)",DIA_Daron_Spende_50);
+		Info_AddChoice 	(DIA_Daron_Spende,"(100 piÃ¨ces d'or)",DIA_Daron_Spende_100);
+		Info_AddChoice 	(DIA_Daron_Spende,"(200 piÃ¨ces d'or)",DIA_Daron_Spende_200);
 	 }
 	 else 
 	 {
-	 	AI_Output (self, other,"DIA_Daron_Spende_10_01");//Vous m'avez donné plus de 1 000 pièces d'or.
-	 	AI_Output (self, other,"DIA_Daron_Spende_10_02");//Que la bénédiction d'Innos soit toujours sur vous.
+	 	AI_Output (self, other,"DIA_Daron_Spende_10_01");//Vous m'avez donnÃ© plus de 1 000 piÃ¨ces d'or.
+	 	AI_Output (self, other,"DIA_Daron_Spende_10_02");//Que la bÃ©nÃ©diction d'Innos soit toujours sur vous.
 	 	
 	 	DIA_Daron_Spende_permanent = TRUE;	
 		B_DaronSegen ();
@@ -594,13 +594,13 @@ FUNC VOID DIA_Daron_Spende_50()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 50)
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_50_10_00");//Je vous bénis au nom d'Innos. Car Il est la lumière et la droiture.
+		AI_Output (self, other,"DIA_Daron_Spende_50_10_00");//Je vous bÃ©nis au nom d'Innos. Car Il est la lumiÃ¨re et la droiture.
 		Daron_Spende = (Daron_Spende + 50);
 		B_DaronSegen ();
 		Daron_Segen = TRUE;
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordé sa bénédiction.");
+			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordÃ© sa bÃ©nÃ©diction.");
 		};
 	}
 	else
@@ -613,19 +613,19 @@ FUNC VOID DIA_Daron_Spende_100()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_100_10_00");//Innos, Tu es la lumière qui illumine la voie des justes.
-		AI_Output (self, other,"DIA_Daron_Spende_100_10_01");//En Ton nom, je bénis cet homme. Qu'il soit baigné de Ta lumière.
+		AI_Output (self, other,"DIA_Daron_Spende_100_10_00");//Innos, Tu es la lumiÃ¨re qui illumine la voie des justes.
+		AI_Output (self, other,"DIA_Daron_Spende_100_10_01");//En Ton nom, je bÃ©nis cet homme. Qu'il soit baignÃ© de Ta lumiÃ¨re.
 		Daron_Spende = (Daron_Spende + 100);
 		B_DaronSegen ();
 		Daron_Segen = TRUE;
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordé sa bénédiction.");
+			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordÃ© sa bÃ©nÃ©diction.");
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_100_10_02");//Le Seigneur a dit : si tu désires prier, ouvre ton esprit. Et si tu souhaites donner, apporte ton don.
+		AI_Output (self, other,"DIA_Daron_Spende_100_10_02");//Le Seigneur a dit : si tu dÃ©sires prier, ouvre ton esprit. Et si tu souhaites donner, apporte ton don.
 	};
 	Info_ClearChoices (DIA_Daron_Spende);
 };
@@ -633,14 +633,14 @@ FUNC VOID DIA_Daron_Spende_200()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 200)
 	{
-		AI_Output (self, other,"DIA_Daron_Spende_200_10_00");//Innos, bénis cet homme. Que Ta lumière l'éclaire.
+		AI_Output (self, other,"DIA_Daron_Spende_200_10_00");//Innos, bÃ©nis cet homme. Que Ta lumiÃ¨re l'Ã©claire.
 		AI_Output (self, other,"DIA_Daron_Spende_200_10_01");//Donne-lui la force d'agir avec justice.
 		Daron_Spende = (Daron_Spende + 200);
 		B_DaronSegen ();
 		Daron_Segen = TRUE;
 		if (MIS_Thorben_GetBlessings == LOG_RUNNING)
 		{
-			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordé sa bénédiction.");
+			B_LogEntry (TOPIC_Thorben,"Daron, le Magicien du feu, m'a accordÃ© sa bÃ©nÃ©diction.");
 		};
 	}
 	else

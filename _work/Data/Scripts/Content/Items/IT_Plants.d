@@ -193,7 +193,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01(C_Item)
 {	
-	name 				=	"Plante médicinale";
+	name 				=	"Plante mÃ©dicinale";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -222,7 +222,7 @@ INSTANCE ItPl_Health_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_02(C_Item)
 {	
-	name 				=	"Herbe médicinale";
+	name 				=	"Herbe mÃ©dicinale";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -250,7 +250,7 @@ INSTANCE ItPl_Health_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_03(C_Item)
 {	
-	name 				=	"Racine médicinale";
+	name 				=	"Racine mÃ©dicinale";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -464,7 +464,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Forestberry (C_Item)
 {	
-	name 				=	"Baie des forêts";
+	name 				=	"Baie des forÃªts";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -523,13 +523,13 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von temporären und permanten Tränken
+//		Pflanze zum brauen von temporÃ¤ren und permanten TrÃ¤nken
 //******************************************************************************************
 
 
 INSTANCE ItPl_Temp_Herb(C_Item)
 {	
-	name 				=	"Nœud de prairie";
+	name 				=	"NÅ“ud de prairie";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	

@@ -47,7 +47,7 @@ func void DIA_Addon_Cord_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Cord_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_00"); //Bienvenu à l'Anneau de l'eau, frère.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_14_00"); //Bienvenu Ã  l'Anneau de l'eau, frÃ¨re.
 		DIA_Addon_Cord_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
@@ -84,15 +84,15 @@ FUNC INT DIA_Cord_Hallo_Condition()
 
 FUNC VOID DIA_Cord_Hallo_Info()
 {
-	AI_Output (self ,other, "DIA_Cord_Hallo_14_00"); //Si les loups ou les fléaux des champs vous posent des problèmes, allez voir les jeunes mercenaires.
-	AI_Output (self ,other, "DIA_Cord_Hallo_14_01"); //Revenez me voir le jour où les paladins se présenteront ici.
+	AI_Output (self ,other, "DIA_Cord_Hallo_14_00"); //Si les loups ou les flÃ©aux des champs vous posent des problÃ¨mes, allez voir les jeunes mercenaires.
+	AI_Output (self ,other, "DIA_Cord_Hallo_14_01"); //Revenez me voir le jour oÃ¹ les paladins se prÃ©senteront ici.
 	
 	if (SC_IsRanger == FALSE)
 	{	
 		AI_Output (other, self, "DIA_Cord_Hallo_15_02"); //Quoi ?
-		AI_Output (self ,other, "DIA_Cord_Hallo_14_03"); //Chaque fois qu'un paysan vient me voir, c'est toujours à propos de massacres de pauvres bêtes innocentes.
+		AI_Output (self ,other, "DIA_Cord_Hallo_14_03"); //Chaque fois qu'un paysan vient me voir, c'est toujours Ã  propos de massacres de pauvres bÃªtes innocentes.
 		AI_Output (other, self, "DIA_Cord_Hallo_15_04"); //Je ne suis pas un paysan.
-		AI_Output (self ,other, "DIA_Cord_Hallo_14_05"); //Ah bon ? Qu'est-ce que vous voulez alors ?
+		AI_Output (self ,other, "DIA_Cord_Hallo_14_05"); //Ah bonÂ ? Qu'est-ce que vous voulez alorsÂ ?
 	};
 };
 
@@ -122,24 +122,24 @@ FUNC INT DIA_Cord_WannaJoin_Condition()
 
 FUNC VOID B_Cord_BeBetter ()
 {
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_14"); //Tant que vous ne savez pas manier une arme correctement, vous n'avez rien à faire ici.
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_14"); //Tant que vous ne savez pas manier une arme correctement, vous n'avez rien Ã  faire ici.
 };
 
 FUNC VOID DIA_Cord_WannaJoin_Info()
 {
-	AI_Output (other, self, "DIA_Cord_WannaJoin_15_00"); //Je veux devenir un mercenaire !
+	AI_Output (other, self, "DIA_Cord_WannaJoin_15_00"); //Je veux devenir un mercenaireÂ !
 	if (Cord_SchonmalGefragt == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_01"); //Vous avez la tête de quelqu'un qui est né pour passer ses journées dans les champs, petit.
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_02"); //Vous savez manier une arme ?
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_01"); //Vous avez la tÃªte de quelqu'un qui est nÃ© pour passer ses journÃ©es dans les champs, petit.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_02"); //Vous savez manier une armeÂ ?
 		Cord_SchonmalGefragt = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_03"); //Alors, vous vous êtes amélioré ?
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_03"); //Alors, vous vous Ãªtes amÃ©liorÃ©Â ?
 	};
 	
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_04"); //Et les armes à une main ?
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_04"); //Et les armes Ã  une mainÂ ?
 	if (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 	{
 		AI_Output (other, self, "DIA_Cord_WannaJoin_15_05"); //Je ne suis pas mauvais avec.
@@ -148,36 +148,36 @@ FUNC VOID DIA_Cord_WannaJoin_Info()
 	{
 		AI_Output (other, self, "DIA_Cord_WannaJoin_15_06"); //Eh bien...
 	};
-	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_07"); //Bon. Et les armes à deux mains ?
+	AI_Output (self ,other, "DIA_Cord_WannaJoin_14_07"); //Bon. Et les armes Ã  deux mains ?
 	if (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_08"); //Je sais me débrouiller avec.
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_08"); //Je sais me dÃ©brouiller avec.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Cord_WannaJoin_15_09"); //Je vais m'améliorer, je le sais !
+		AI_Output (other, self, "DIA_Cord_WannaJoin_15_09"); //Je vais m'amÃ©liorer, je le saisÂ !
 	};
 	
 	if (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 	|| (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_10"); //Au moins, vous n'êtes pas un débutant. Très bien, je vais voter pour vous.
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_11"); //Tout ce que vous avez besoin de savoir, vous pourrez l'apprendre à mon contact.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_10"); //Au moins, vous n'Ãªtes pas un dÃ©butant. TrÃ¨s bien, je vais voter pour vous.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_11"); //Tout ce que vous avez besoin de savoir, vous pourrez l'apprendre Ã  mon contact.
 		Cord_Approved = TRUE;
 		B_GivePlayerXP (XP_Cord_Approved);
 		B_LogEntry (TOPIC_SLDRespekt,"Le vote de Cord m'est acquis.");
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTeacher,"Cord peut m'entraîner au maniement des armes à une main et à deux mains.");
+		B_LogEntry (Topic_SoldierTeacher,"Cord peut m'entraÃ®ner au maniement des armes Ã  une main et Ã  deux mains.");
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_12"); //En d'autres termes, vous êtes un vrai bleu !
-		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_13"); //Chacun d'entre nous doit pouvoir faire confiance à ses camarades. Notre vie à tous en dépend.
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_12"); //En d'autres termes, vous Ãªtes un vrai bleuÂ !
+		AI_Output (self ,other, "DIA_Cord_WannaJoin_14_13"); //Chacun d'entre nous doit pouvoir faire confiance Ã  ses camarades. Notre vie Ã  tous en dÃ©pend.
 		B_Cord_BeBetter ();
 		
 		Log_CreateTopic (TOPIC_CordProve,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_CordProve,LOG_RUNNING); 
-		B_LogEntry (TOPIC_CordProve,"Cord me donnera son vote quand j'aurai appris à mieux me battre."); 
+		B_LogEntry (TOPIC_CordProve,"Cord me donnera son vote quand j'aurai appris Ã  mieux me battre."); 
 	};
 };
 
@@ -209,11 +209,11 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	
 	if (SC_IsRanger == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_01"); //Quel est le fumier qui n'a pas été capable de tenir sa langue ?
+		AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_01"); //Quel est le fumier qui n'a pas Ã©tÃ© capable de tenir sa langue ?
 		
 		if (SC_KnowsCordAsRangerFromLee == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_02"); //C'est Lee qui m'en a parlé.
+			AI_Output	(other, self, "DIA_Addon_Cord_YouAreRanger_15_02"); //C'est Lee qui m'en a parlÃ©.
 		};
 	
 		if (SC_KnowsCordAsRangerFromLares == TRUE)
@@ -223,17 +223,17 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	};
 	
 	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_04"); //(soupire) On dirait bien que que je doive traiter avec vous maintenant, n'est-ce pas ?
-	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt für dich machen, damit du die Schnauze hälst?
-	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //Très bien, alors de quoi avez-vous besoin ?
-	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //Et faites sacrément attention à ce que vous allez me dire maintenant. Car si je n'aime pas ce que j'entends, je pourrais bien vous écorcher vif.
+	//AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_05"); //Was muss ich denn jetzt fÃ¼r dich machen, damit du die Schnauze hÃ¤lst?
+	AI_Output	(self, other, "DIA_Addon_Cord_Add_14_01"); //TrÃ¨s bien, alors de quoi avez-vous besoin ?
+	AI_Output	(self, other, "DIA_Addon_Cord_YouAreRanger_14_06"); //Et faites sacrÃ©ment attention Ã  ce que vous allez me dire maintenant. Car si je n'aime pas ce que j'entends, je pourrais bien vous Ã©corcher vif.
 	
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
-	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Je n'ai pas besoin de quoi que ce soit. Je me débrouillerai seul.", DIA_Addon_Cord_YouAreRanger_nix );
+	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Je n'ai pas besoin de quoi que ce soit. Je me dÃ©brouillerai seul.", DIA_Addon_Cord_YouAreRanger_nix );
 	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Je veux votre armure.", DIA_Addon_Cord_YouAreRanger_ruestung );
 	Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Je veux votre arme !", DIA_Addon_Cord_YouAreRanger_waffe );
 	if (Cord_Approved == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Apprenez-moi à me battre.", DIA_Addon_Cord_YouAreRanger_kampf );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Apprenez-moi Ã  me battre.", DIA_Addon_Cord_YouAreRanger_kampf );
 	};
 	if (hero.guild == GIL_NONE)
 	{
@@ -241,18 +241,18 @@ func void DIA_Addon_Cord_YouAreRanger_Info ()
 	};
 	if (hero.guild == GIL_NONE)
 	{
-		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Vous pourriez m'aider à rejoindre les rangs des mercenaires.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
+		Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Vous pourriez m'aider Ã  rejoindre les rangs des mercenaires.", DIA_Addon_Cord_YouAreRanger_SLDAufnahme );
 	};
-	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich für mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
+	//Info_AddChoice	(DIA_Addon_Cord_YouAreRanger, "Bezahl mich fÃ¼r mein Schweigen.", DIA_Addon_Cord_YouAreRanger_Gold );
 };
 var int Cord_SC_Dreist;
 func void 	B_DIA_Addon_Cord_YouAreRanger_WARN ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_WARN_14_00"); //(menaçant) Et malheur à vous si j'apprends que vous n'avez pas pu tenir votre langue. Et je ne le répéterai pas, compris ?
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_WARN_14_00"); //(menaÃ§ant) Et malheur Ã  vous si j'apprends que vous n'avez pas pu tenir votre langue. Et je ne le rÃ©pÃ©terai pas, compris ?
 };
 func void 	B_DIA_Addon_Cord_YouAreRanger_FRESSE ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_FRESSE_14_00"); //(furieux) Parfait. Là vous avez dépassé les bornes. Je vais balayer la cour avec votre face.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_FRESSE_14_00"); //(furieux) Parfait. LÃ  vous avez dÃ©passÃ© les bornes. Je vais balayer la cour avec votre face.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 	Cord_RangerHelp_GetSLD = FALSE;
@@ -265,7 +265,7 @@ func void DIA_Addon_Cord_YouAreRanger_ruestung ()
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_ruestung_14_01"); //Redites cela et je vous fais manger la poussière.
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_ruestung_14_01"); //Redites cela et je vous fais manger la poussiÃ¨re.
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -280,7 +280,7 @@ func void DIA_Addon_Cord_YouAreRanger_waffe ()
 
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Cord_Add_14_03"); //(menaçant) Ah vraiment ?
+		AI_Output (self, other, "DIA_Addon_Cord_Add_14_03"); //(menaÃ§ant) Ah vraiment ?
 		AI_Output (self, other, "DIA_Addon_Cord_Add_14_02"); //(furieux) Essayez donc de la prendre !
 		Cord_SC_Dreist = TRUE;
 	}
@@ -309,8 +309,8 @@ var int DIA_Addon_Cord_YouAreRanger_SCGotOffer;
 
 func void DIA_Addon_Cord_YouAreRanger_kampf ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_kampf_15_00"); //Apprenez-moi à me battre.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_kampf_14_01"); //Très bien. Quoi d'autre ?
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_kampf_15_00"); //Apprenez-moi Ã  me battre.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_kampf_14_01"); //TrÃ¨s bien. Quoi d'autre ?
 	Cord_RangerHelp_Fight = TRUE;
 
 	if (DIA_Addon_Cord_YouAreRanger_SCGotOffer == FALSE)
@@ -321,8 +321,8 @@ func void DIA_Addon_Cord_YouAreRanger_kampf ()
 };
 func void DIA_Addon_Cord_YouAreRanger_SLDAufnahme ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_15_00"); //Vous pourriez m'aider à me faire accepter par les mercenaires.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_14_01"); //(rit) Je vois ça. Bien. J'essayerai. Quoi d'autre ?
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_15_00"); //Vous pourriez m'aider Ã  me faire accepter par les mercenaires.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_SLDAufnahme_14_01"); //(rit) Je vois Ã§a. Bien. J'essayerai. Quoi d'autre ?
 
 	Cord_RangerHelp_GetSLD = TRUE;
 	
@@ -337,7 +337,7 @@ func void DIA_Addon_Cord_YouAreRanger_Gold ()
 	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_Gold_15_00"); //Payez-moi pour mon silence.
 	if (Cord_SC_Dreist == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_Gold_14_01"); //Vous aimeriez bien, hein ? Dommage pour vous mais je ne laisserai personne me faire chanter, sale bâtard !
+		AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_Gold_14_01"); //Vous aimeriez bien, heinÂ ? Dommage pour vous mais je ne laisserai personne me faire chanter, sale bÃ¢tard !
 		Cord_SC_Dreist = TRUE;
 	}
 	else
@@ -347,7 +347,7 @@ func void DIA_Addon_Cord_YouAreRanger_Gold ()
 };
 func void DIA_Addon_Cord_YouAreRanger_nix ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_nix_15_00"); //Je n'ai pas besoin de quoi que ce soit. Je me débrouillerai seul.
+	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_nix_15_00"); //Je n'ai pas besoin de quoi que ce soit. Je me dÃ©brouillerai seul.
 	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_nix_14_01"); //Si c'est ce que vous voulez, vous avez eu votre chance.
 	B_DIA_Addon_Cord_YouAreRanger_WARN ();
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
@@ -355,7 +355,7 @@ func void DIA_Addon_Cord_YouAreRanger_nix ()
 func void DIA_Addon_Cord_YouAreRanger_reicht ()
 {
 	AI_Output			(other, self, "DIA_Addon_Cord_YouAreRanger_reicht_15_00"); //Parfait.
-	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_reicht_14_01"); //Cela ne devrait pas être trop difficile.
+	AI_Output			(self, other, "DIA_Addon_Cord_YouAreRanger_reicht_14_01"); //Cela ne devrait pas Ãªtre trop difficile.
 	B_DIA_Addon_Cord_YouAreRanger_WARN ();
 	Info_ClearChoices	(DIA_Addon_Cord_YouAreRanger);
 };
@@ -371,7 +371,7 @@ instance DIA_Addon_Cord_RangerHelp2GetSLD		(C_INFO)
 	information	 = 	DIA_Addon_Cord_RangerHelp2GetSLD_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Aidez-moi à devenir un mercenaire.";
+	description	 = 	"Aidez-moi Ã  devenir un mercenaire.";
 };
 var int DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm;
 func int DIA_Addon_Cord_RangerHelp2GetSLD_Condition ()
@@ -385,12 +385,12 @@ func int DIA_Addon_Cord_RangerHelp2GetSLD_Condition ()
 };
 func void B_Cord_RangerHelpObsolete ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_00"); //On s'en est déjà chargé.
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_00"); //On s'en est dÃ©jÃ  chargÃ©.
 	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_01"); //Oh. Je crois bien que je ne peux donc pas vous aider.
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_02"); //Qu'entendez-vous par là ?
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelpObsolete_15_02"); //Qu'entendez-vous par lÃ  ?
 	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_03"); //Et bien, cela signifie que je ne peux pas vous aider.
 	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_04"); //Ou bien voulez-vous que je me dresse contre chaque mercenaire, juste pour que vous puissiez les rejoindre ?
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_05"); //Vous allez devoir le faire vous-même.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelpObsolete_14_05"); //Vous allez devoir le faire vous-mÃªme.
 	DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm = TRUE;
 	TOPIC_End_RangerHelpSLD = TRUE;
 };
@@ -401,54 +401,54 @@ func void B_Cord_ComeLaterWhenDone ()
 };
 func void B_Cord_IDoItForYou ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_00"); //Ah oui. C'est facile. Écoutez. Revenez demain, j'aurai réglé cette affaire pour vous.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_00"); //Ah oui. C'est facile. Ã‰coutez. Revenez demain, j'aurai rÃ©glÃ© cette affaire pour vous.
 	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_01"); //Mais vous allez devoir faire quelque chose pour moi en retour.
-	AI_Output	(other, self, "DIA_Addon_Cord_IDoItForYou_15_02"); //Et qu'est-ce que ça sera ?
+	AI_Output	(other, self, "DIA_Addon_Cord_IDoItForYou_15_02"); //Et qu'est-ce que Ã§a sera ?
 	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_03"); //Pas loin d'ici, vers le sud-est, il y a un petit campement de bandits dans les montagnes.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_04"); //Si vous allez  vers le sud-est, vous apercevrez rapidement la tour là-bas.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_04"); //Si vous allez  vers le sud-est, vous apercevrez rapidement la tour lÃ -bas.
 	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_05"); //Un de mes hommes, Patrick, est parti depuis quelques jours pour faire des affaires avec ces vauriens.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_06"); //Bon. Je lui ai dit que ce n'était pas une brillante idée. Mais ce crétin n'a rien voulu savoir.
-	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_07"); //Je présume qu'ils lui ont réglé son compte. Mais je n'en suis pas certain.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_06"); //Bon. Je lui ai dit que ce n'Ã©tait pas une brillante idÃ©e. Mais ce crÃ©tin n'a rien voulu savoir.
+	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_07"); //Je prÃ©sume qu'ils lui ont rÃ©glÃ© son compte. Mais je n'en suis pas certain.
 	AI_Output	(self, other, "DIA_Addon_Cord_IDoItForYou_14_08"); //Vous allez vous renseigner pour moi.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Cord s'occupera de mettre Torlof à l'épreuve. Patrick, l'ami de Cord, a disparu. Il veut que je me rendre dans le petit camp de montagne des bandits au sud-est d'ici, afin de voir si Patrick s'y trouve."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Cord s'occupera de mettre Torlof Ã  l'Ã©preuve. Patrick, l'ami de Cord, a disparu. Il veut que je me rendre dans le petit camp de montagne des bandits au sud-est d'ici, afin de voir si Patrick s'y trouve."); 
 
 	
 	Info_ClearChoices	(DIA_Addon_Cord_RangerHelp2GetSLD);	
-	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "N'y pensez pas. C'est bien plus difficile que la tâche de Torlof.", B_Cord_IDoItForYou_mist );
+	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "N'y pensez pas. C'est bien plus difficile que la tÃ¢che de Torlof.", B_Cord_IDoItForYou_mist );
 	Info_AddChoice	(DIA_Addon_Cord_RangerHelp2GetSLD, "Et qu'est-ce qui vous fait croire qu'ils ne me feront pas aussi mon affaire ?", B_Cord_IDoItForYou_Dexter );
 		
 	DIA_Addon_Cord_RangerHelp2GetSLD_NoPerm = TRUE;
 };
 func void B_Cord_IDoItForYou_mist ()
 {
-	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_mist_15_00"); //N'y pensez pas. C'est bien plus difficile que la tâche de Torlof.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_01"); //Ça ne l'est pas. Un petit bonhomme fuyant et quelconque comme vous ne leur sera d'aucun intérêt.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_02"); //Et je ne peux pas le faire moi-même. Ces gars se mettront en rogne à la moindre vue d'un mercenaire.
+	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_mist_15_00"); //N'y pensez pas. C'est bien plus difficile que la tÃ¢che de Torlof.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_01"); //Ã‡a ne l'est pas. Un petit bonhomme fuyant et quelconque comme vous ne leur sera d'aucun intÃ©rÃªt.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_mist_14_02"); //Et je ne peux pas le faire moi-mÃªme. Ces gars se mettront en rogne Ã  la moindre vue d'un mercenaire.
 };
 func void B_Cord_IDoItForYou_Dexter ()
 {
 	AI_Output			(other, self, "Dia_Addon_Cord_IDoItForYou_Dexter_15_00"); //Et qu'est-ce qui vous fait croire qu'ils ne me feront pas aussi mon affaire ?
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_01"); //Parce que je connais le nom de leur chef : Dexter. Vous n'avez qu'à prétendre connaître ce gars.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_02"); //Ses hommes y réfléchiront à deux fois avant de vous tordre le cou juste pour le plaisir.
-	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_03"); //Évidemment, cela reste dangereux.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_01"); //Parce que je connais le nom de leur chef : Dexter. Vous n'avez qu'Ã  prÃ©tendre connaÃ®tre ce gars.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_02"); //Ses hommes y rÃ©flÃ©chiront Ã  deux fois avant de vous tordre le cou juste pour le plaisir.
+	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_03"); //Ã‰videmment, cela reste dangereux.
 	AI_Output			(self, other, "Dia_Addon_Cord_IDoItForYou_Dexter_14_04"); //Mais vous pouvez y arriver.
 	Info_ClearChoices	(DIA_Addon_Cord_RangerHelp2GetSLD);	
 	
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Le chef des bandits est un dénommé Dexter."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Le chef des bandits est un dÃ©nommÃ© Dexter."); 
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Le mercenaire Cord est à la recherche son ami Patrick."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Le mercenaire Cord est Ã  la recherche son ami Patrick."); 
 		
 	MIS_Addon_Cord_Look4Patrick = LOG_RUNNING;
 	Ranger_SCKnowsDexter = TRUE; 
 };
 func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_00"); //Aidez-moi à devenir mercenaire.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_01"); //Laissez-moi y réfléchir. Hum. Vous devez passer par Torlof si vous voulez progresser ici.
-	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_02"); //Avez-vous déjà vu Torlof à ce sujet ?
+	AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_00"); //Aidez-moi Ã  devenir mercenaire.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_01"); //Laissez-moi y rÃ©flÃ©chir. Hum. Vous devez passer par Torlof si vous voulez progresser ici.
+	AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_02"); //Avez-vous dÃ©jÃ  vu Torlof Ã  ce sujet ?
 
 	if (Torlof_Go == FALSE)
 	{
@@ -457,7 +457,7 @@ func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_04"); //Oui. Ça fait partie du test et de tout ça.
+		AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_04"); //Oui. Ã‡a fait partie du test et de tout Ã§a.
 		AI_Output	(self, other, "DIA_Addon_Cord_RangerHelp2GetSLD_14_05"); //Ah. Quel sera-t-il ?
 		
 		if	(Torlof_ProbeBestanden == TRUE)
@@ -468,17 +468,17 @@ func void DIA_Addon_Cord_RangerHelp2GetSLD_Info ()
 		}		
 		else if (Torlof_Probe == 0)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_06"); //Je n'ai pas encore accepté.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_06"); //Je n'ai pas encore acceptÃ©.
 			B_Cord_ComeLaterWhenDone ();
 		}		
 		else if (Torlof_Probe == Probe_Sekob)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_07"); //Je suis censé encaisser le loyer de la ferme de Sekob.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_07"); //Je suis censÃ© encaisser le loyer de la ferme de Sekob.
 			B_Cord_IDoItForYou ();
 		}
 		else if (Torlof_Probe == Probe_Bengar)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_08"); //Je suis censé éloigner la milice de la ferme de Bengar.
+			AI_Output	(other, self, "DIA_Addon_Cord_RangerHelp2GetSLD_15_08"); //Je suis censÃ© Ã©loigner la milice de la ferme de Bengar.
 			B_Cord_IDoItForYou ();
 		}
 		else 
@@ -498,7 +498,7 @@ instance DIA_Addon_Cord_TalkedToDexter		(C_INFO)
 	condition	 = 	DIA_Addon_Cord_TalkedToDexter_Condition;
 	information	 = 	DIA_Addon_Cord_TalkedToDexter_Info;
 
-	description	 = 	"J'étais venu pour voir Dexter.";
+	description	 = 	"J'Ã©tais venu pour voir Dexter.";
 };
 
 func int DIA_Addon_Cord_TalkedToDexter_Condition ()
@@ -513,7 +513,7 @@ func int DIA_Addon_Cord_TalkedToDexter_Condition ()
 
 func void DIA_Addon_Cord_TalkedToDexter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_00"); //J'étais venu pour voir Dexter.
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_00"); //J'Ã©tais venu pour voir Dexter.
 	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_01"); //Et ?
 	
 	if (Npc_IsDead(BDT_1060_Dexter))
@@ -521,25 +521,25 @@ func void DIA_Addon_Cord_TalkedToDexter_Info ()
 		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_02"); //Dexter est mort.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_03"); //Il n'y avait nulle trace là-bas de votre ami Patrick.
+	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_03"); //Il n'y avait nulle trace lÃ -bas de votre ami Patrick.
 	
 	if (Dexter_KnowsPatrick == TRUE)
 	{
 		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_04"); //Dexter se souvenait de lui, mais il a dit que cela faisait bien longtemps qu'il ne l'avait vu.
-		AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_05"); //Et vous êtes sûr que Dexter ne vous a pas menti ?
-		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_06"); //Non, je n'en suis pas sûr. Mais c'est tout ce que je puis vous dire.
+		AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_05"); //Et vous Ãªtes sÃ»r que Dexter ne vous a pas menti ?
+		AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_06"); //Non, je n'en suis pas sÃ»r. Mais c'est tout ce que je puis vous dire.
 		
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_07"); //J'y comprends rien. Il semble s'être envolé.
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_08"); //Bon, vous avez respecté la part de notre marché...
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_07"); //J'y comprends rien. Il semble s'Ãªtre envolÃ©.
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_08"); //Bon, vous avez respectÃ© la part de notre marchÃ©...
 
 	MIS_Addon_Cord_Look4Patrick = LOG_SUCCESS;
 	TOPIC_End_RangerHelpSLD = TRUE;
 	B_GivePlayerXP (XP_Addon_Cord_Look4Patrick);
 
 	AI_Output	(other, self, "DIA_Addon_Cord_TalkedToDexter_15_09"); //Qu'en est-il du test de Torlof maintenant ?
-	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_10"); //Ne vous en faites pas, vous pouvez retourner voir Torlof. Vous avez accompli votre tâche et vous avez réussi le test. Je vous ai bien dit que je m'en chargerai.
+	AI_Output	(self, other, "DIA_Addon_Cord_TalkedToDexter_14_10"); //Ne vous en faites pas, vous pouvez retourner voir Torlof. Vous avez accompli votre tÃ¢che et vous avez rÃ©ussi le test. Je vous ai bien dit que je m'en chargerai.
 
 	Cord_RangerHelp_TorlofsProbe = TRUE;
 
@@ -577,13 +577,13 @@ FUNC INT DIA_Cord_ReturnPatrick_Condition()
 FUNC VOID DIA_Cord_ReturnPatrick_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_00"); //Patrick est de retour.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_01"); //Hé mec ! J'avais presque perdu espoir. Vous....
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_02"); //Hé faites-moi une faveur.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_01"); //HÃ© mec ! J'avais presque perdu espoir. Vous....
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_02"); //HÃ© faites-moi une faveur.
 	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_03"); //Oui ?
-	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_04"); //Épargnez-nous votre discours de remerciement.
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_05"); //Je n'allais pas vous remercier de toute façon.
+	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_04"); //Ã‰pargnez-nous votre discours de remerciement.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_05"); //Je n'allais pas vous remercier de toute faÃ§on.
 	AI_Output (other, self, "DIA_Addon_Cord_ReturnPatrick_15_06"); //Mais... ?
-	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_07"); //(sourit) J'allais juste vous dire que vous êtes sacrément culotté.
+	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_07"); //(sourit) J'allais juste vous dire que vous Ãªtes sacrÃ©ment culottÃ©.
 	AI_Output (self ,other, "DIA_Addon_Cord_ReturnPatrick_14_09"); //(sourit) Du calme !
 	
 	B_GivePlayerXP (XP_Ambient);
@@ -599,7 +599,7 @@ INSTANCE DIA_Cord_ExplainSkills   (C_INFO)
 	condition   = DIA_Cord_ExplainSkills_Condition;
 	information = DIA_Cord_ExplainSkills_Info;
 	permanent   = FALSE;
-	description = "Que devrais-je apprendre en premier, les armes à une main ou à deux mains ?";
+	description = "Que devrais-je apprendre en premier, les armes Ã  une main ou Ã  deux mains ?";
 };
 
 FUNC INT DIA_Cord_ExplainSkills_Condition()
@@ -611,14 +611,14 @@ FUNC INT DIA_Cord_ExplainSkills_Condition()
 };
 FUNC VOID DIA_Cord_ExplainSkills_Info()
 {
-	AI_Output (other, self, "DIA_Cord_ExplainSkills_15_00"); //Que vaut-il mieux apprendre pour commencer, le combat à une main ou à deux mains ?
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_01"); //Tous deux sont à peu près similaires.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_02"); //Dès que vous atteignez le niveau suivant pour un de ces deux styles de combat, vous vous améliorez aussi dans l'autre.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_03"); //Si, par exemple, vous êtes bon au maniement des armes à une main et débutant dans celui des armes à deux mains...
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_04"); //… votre compétence dans les armes à deux mains progressera quand vous vous entraînez avec des armes à une main.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_05"); //Si vous vous entraînez avec un seul type d'arme, vous verrez bien vite que l'entraînement sera plus fatigant.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_06"); //Par contre, si vous vous entraînez avec les deux, vous atteindrez le même résultat bien plus rapidement.
-	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_07"); //Mais le résultat sera le même au final. A vous de décider.
+	AI_Output (other, self, "DIA_Cord_ExplainSkills_15_00"); //Que vaut-il mieux apprendre pour commencer, le combat Ã  une main ou Ã  deux mainsÂ ?
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_01"); //Tous deux sont Ã  peu prÃ¨s similaires.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_02"); //DÃ¨s que vous atteignez le niveau suivant pour un de ces deux styles de combat, vous vous amÃ©liorez aussi dans l'autre.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_03"); //Si, par exemple, vous Ãªtes bon au maniement des armes Ã  une main et dÃ©butant dans celui des armes Ã  deux mains...
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_04"); //â€¦ votre compÃ©tence dans les armes Ã  deux mains progressera quand vous vous entraÃ®nez avec des armes Ã  une main.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_05"); //Si vous vous entraÃ®nez avec un seul type d'arme, vous verrez bien vite que l'entraÃ®nement sera plus fatigant.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_06"); //Par contre, si vous vous entraÃ®nez avec les deux, vous atteindrez le mÃªme rÃ©sultat bien plus rapidement.
+	AI_Output (self ,other, "DIA_Cord_ExplainSkills_14_07"); //Mais le rÃ©sultat sera le mÃªme au final. A vous de dÃ©cider.
 };
 // ************************************************************
 // 			  				ExplainWeapons
@@ -630,7 +630,7 @@ INSTANCE DIA_Cord_ExplainWeapons   (C_INFO)
 	condition   = DIA_Cord_ExplainWeapons_Condition;
 	information = DIA_Cord_ExplainWeapons_Info;
 	permanent   = FALSE;
-	description = "Quels sont les avantages du combat à une main et du combat à deux mains ?";
+	description = "Quels sont les avantages du combat Ã  une main et du combat Ã  deux mains ?";
 };
 
 FUNC INT DIA_Cord_ExplainWeapons_Condition()
@@ -643,12 +643,12 @@ FUNC INT DIA_Cord_ExplainWeapons_Condition()
 
 FUNC VOID DIA_Cord_ExplainWeapons_Info()
 {
-	AI_Output (other, self, "DIA_Cord_ExplainWeapons_15_00"); //Quels sont les avantages du combat à une ou deux mains ?
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_01"); //Bonne question. Je vois que vous avez réfléchi au sujet.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_02"); //Les armes à une main sont plus rapides mais un peu moins dangereuses.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_03"); //Les armes à deux mains causent plus de dégâts mais vous ne pouvez pas frapper aussi vite.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_04"); //Il faut une plus grande force physique pour manier les armes à deux mains. L'entraînement est plus long.
-	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_05"); //La seule façon de devenir vraiment bon est de ne pas ménager ses efforts.
+	AI_Output (other, self, "DIA_Cord_ExplainWeapons_15_00"); //Quels sont les avantages du combat Ã  une ou deux mainsÂ ?
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_01"); //Bonne question. Je vois que vous avez rÃ©flÃ©chi au sujet.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_02"); //Les armes Ã  une main sont plus rapides mais un peu moins dangereuses.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_03"); //Les armes Ã  deux mains causent plus de dÃ©gÃ¢ts mais vous ne pouvez pas frapper aussi vite.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_04"); //Il faut une plus grande force physique pour manier les armes Ã  deux mains. L'entraÃ®nement est plus long.
+	AI_Output (self ,other, "DIA_Cord_ExplainWeapons_14_05"); //La seule faÃ§on de devenir vraiment bon est de ne pas mÃ©nager ses efforts.
 };
 
 // ******************************************************
@@ -666,7 +666,7 @@ INSTANCE DIA_Cord_Teach(C_INFO)
 	condition	= DIA_Cord_Teach_Condition;
 	information	= DIA_Cord_Teach_Info;
 	permanent	= TRUE;
-	description = "Apprenez-moi à me battre.";
+	description = "Apprenez-moi Ã  me battre.";
 };                       
 
 FUNC INT DIA_Cord_Teach_Condition()
@@ -676,12 +676,12 @@ FUNC INT DIA_Cord_Teach_Condition()
 
 FUNC VOID B_Cord_Zeitverschwendung ()
 {
-	AI_Output (self ,other,"DIA_Cord_Teach_14_03"); //Je n'ai pas pour habitude de perdre mon temps avec les débutants.
+	AI_Output (self ,other,"DIA_Cord_Teach_14_03"); //Je n'ai pas pour habitude de perdre mon temps avec les dÃ©butants.
 };
 
 FUNC VOID DIA_Cord_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Cord_Teach_15_00"); //Apprenez-moi à me battre.
+	AI_Output (other,self, "DIA_Cord_Teach_15_00"); //Apprenez-moi Ã  me battre.
 	if (Cord_Approved == TRUE)
 	|| (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
@@ -692,19 +692,19 @@ FUNC VOID DIA_Cord_Teach_Info()
 		{
 		
 		
-			AI_Output (self ,other,"DIA_Cord_Teach_14_01"); //Je peux vous apprendre à manier n'importe quelle arme. Par où voulez-vous commencer ?
+			AI_Output (self ,other,"DIA_Cord_Teach_14_01"); //Je peux vous apprendre Ã  manier n'importe quelle arme. Par oÃ¹ voulez-vous commencerÂ ?
 			Cord_Approved = TRUE;
 		}
 		else if  (Npc_GetTalentSkill(other, NPC_TALENT_1H) > 0)
 		{
-			AI_Output (self ,other,"DIA_Cord_Teach_14_02"); //Je peux vous apprendre à manier l'épée à une main, mais vous n'êtes pas encore assez doué pour essayer le modèle à deux mains.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_02"); //Je peux vous apprendre Ã  manier l'Ã©pÃ©e Ã  une main, mais vous n'Ãªtes pas encore assez douÃ© pour essayer le modÃ¨le Ã  deux mains.
 			B_Cord_Zeitverschwendung();
 			Cord_Approved = TRUE;
 		}
 		else if (Npc_GetTalentSkill(other, NPC_TALENT_2H) > 0)
 		{
-			AI_Output (self ,other,"DIA_Cord_Teach_14_04"); //Vous êtes un vrai débutant pour ce qui est des armes à une main. Par contre vous ne vous débrouillez pas mal avec les armes à deux mains.
-			AI_Output (self ,other,"DIA_Cord_Teach_14_05"); //S'il vous faut davantage d'expérience avec les armes à une main, trouvez-vous un autre instructeur.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_04"); //Vous Ãªtes un vrai dÃ©butant pour ce qui est des armes Ã  une main. Par contre vous ne vous dÃ©brouillez pas mal avec les armes Ã  deux mains.
+			AI_Output (self ,other,"DIA_Cord_Teach_14_05"); //S'il vous faut davantage d'expÃ©rience avec les armes Ã  une main, trouvez-vous un autre instructeur.
 			Cord_Approved = TRUE;
 		}
 		else
@@ -738,7 +738,7 @@ FUNC VOID DIA_Cord_Teach_Info()
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Cord_Teach_14_06"); //Je n'entraîne que les mercenaires ou les candidats méritant de nous rejoindre.
+		AI_Output (self ,other,"DIA_Cord_Teach_14_06"); //Je n'entraÃ®ne que les mercenaires ou les candidats mÃ©ritant de nous rejoindre.
 	};
 };
 
@@ -747,7 +747,7 @@ FUNC VOID DIA_Cord_Teach_Back ()
 	if (Cord_Merke_1h < other.HitChance[NPC_TALENT_1H])
 	|| (Cord_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Cord_Teach_BACK_14_00"); //Vous avez déjà commencé à vous améliorer. Continuez comme ça !
+		AI_Output (self ,other,"DIA_Cord_Teach_BACK_14_00"); //Vous avez dÃ©jÃ  commencÃ© Ã  vous amÃ©liorer. Continuez comme Ã§aÂ !
 	};
 	
 	Info_ClearChoices (DIA_Cord_Teach);

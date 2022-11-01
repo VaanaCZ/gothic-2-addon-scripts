@@ -44,7 +44,7 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Paramètres jeu";
+	text[0]		= "ParamÃ¨tres jeu";
 	text[1]		= "Configurer les options de jeu";  // Kommentar
 
 	// Position und Dimension
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Paramètres graphiques";
-	text[1]		= "Portée de vue, détails et effets";  // Kommentar
+	text[0]		= "ParamÃ¨tres graphiques";
+	text[1]		= "PortÃ©e de vue, dÃ©tails et effets";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Paramètres vidéo";
-	text[1]		=	"Adaptateur graphique, résolution, luminosité et contraste";  // Kommentar
+	text[0]		=	"ParamÃ¨tres vidÃ©o";
+	text[1]		=	"Adaptateur graphique, rÃ©solution, luminositÃ© et contraste";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -113,7 +113,7 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Contrôles";
+	text[0]		= "ContrÃ´les";
 	text[1]		= "Configuration du clavier et de la souris";  // Kommentar
 
 	// Position und Dimension
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Configuration avancée";
-	text[1]		= "Paramètres supplémentaires";  // Kommentar
+	text[0]		= "Configuration avancÃ©e";
+	text[1]		= "ParamÃ¨tres supplÃ©mentaires";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Performance/Qualité";
-	text[1]		= "Optimiser performances du jeu et qualité graphique";  // Kommentar
+	text[0]		= "Performance/QualitÃ©";
+	text[1]		= "Optimiser performances du jeu et qualitÃ© graphique";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -167,7 +167,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "Personnaliser#Haute performance|Qualité moyenne|Haute qualité";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "Personnaliser#Haute performance|QualitÃ© moyenne|Haute qualitÃ©";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension

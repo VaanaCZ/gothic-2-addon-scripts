@@ -41,13 +41,13 @@ func int DIA_Addon_Eremit_Hello_Condition ()
 };
 func void DIA_Addon_Eremit_Hello_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_00"); //(ébahi) Que faites-vous ici ?
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_00"); //(Ã©bahi) Que faites-vous ici ?
 	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_00"); //Que fais-je ici ?! Que diable faites-vous ici ?!
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_01"); //Je suis venu me terrer aux confins de cette île dans l'espoir d'y trouver la quiétude !
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_02"); //La guerre civile, les pillages des bandits, les hordes d'orques à ma porte...
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_03"); //Ce n'était plus supportable, pour moi. J'ai fui cette folie.
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_01"); //Je suis venu me terrer aux confins de cette Ã®le dans l'espoir d'y trouver la quiÃ©tude !
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_02"); //La guerre civile, les pillages des bandits, les hordes d'orques Ã  ma porte...
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_03"); //Ce n'Ã©tait plus supportable, pour moi. J'ai fui cette folie.
 	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_04"); //Il y a bien des orques ici, mais ils sont peu nombreux.
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_05"); //Et surtout, Innos soit loué, personne n'est jamais venu ici. (grognon) Enfin, jusqu'à aujourd'hui...
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_05"); //Et surtout, Innos soit louÃ©, personne n'est jamais venu ici. (grognon) Enfin, jusqu'Ã  aujourd'hui...
 };
 
 // ********************************************************
@@ -68,10 +68,10 @@ func int DIA_Addon_Eremit_SeekTafeln_Condition ()
 };
 func void DIA_Addon_Eremit_SeekTafeln_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_02"); //Je recherche des tablettes de pierre. Vous ne sauriez pas où je pourrais les trouver, à tout hasard ?
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_02"); //Je recherche des tablettes de pierre. Vous ne sauriez pas oÃ¹ je pourrais les trouver, Ã  tout hasard ?
 	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_06"); //(prudent) Si... mais je les garde pour moi !
 	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_07"); //C'est la seule lecture dont je dispose pour m'occuper l'esprit, dans ces parages.
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_08"); //Je n'en comprends peut-être pas la totalité, mais je suis parvenu à déchiffrer certains textes.
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_08"); //Je n'en comprends peut-Ãªtre pas la totalitÃ©, mais je suis parvenu Ã  dÃ©chiffrer certains textes.
 };
 
 // ********************************************************
@@ -100,10 +100,10 @@ func int DIA_Addon_Eremit_Teach_Condition ()
 func void DIA_Addon_Eremit_Teach_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_03"); //A propos des tablettes de pierre...
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_25"); //Voulez-vous que je vous apprenne à les lire ?
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_25"); //Voulez-vous que je vous apprenne Ã  les lire ?
 	if (MIS_Eremit_Klamotten != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_26"); //(pressé) Mais je ne vous remettrai pas les miennes ! Vous devrez trouver les vôtres !
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_26"); //(pressÃ©) Mais je ne vous remettrai pas les miennes ! Vous devrez trouver les vÃ´tres !
 	};
 
 	Info_ClearChoices (DIA_Addon_Eremit_Teach);
@@ -130,7 +130,7 @@ func void DIA_Addon_Eremit_Teach_Info ()
 // ---------------------------------------------------------------
 	func void B_Addon_Eremit_TeachLanguage()
 	{	
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_27"); //Eh bien, c'est assez simple, en réalité... Un G est un O, un T est un H et un I est un C. 
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_27"); //Eh bien, c'est assez simple, en rÃ©alitÃ©... Un G est un O, un T est un H et un I est un C. 
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_28"); //Si vous comprenez cela, le reste coule logiquement de source...
 		
 		/*
@@ -162,7 +162,7 @@ func void DIA_Addon_Eremit_Teach_Yes()
 {
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_29"); //Je ne crois pas que je puisse encore vous enseigner quoi que ce soit à ce sujet.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_29"); //Je ne crois pas que je puisse encore vous enseigner quoi que ce soit Ã  ce sujet.
 		Eremit_Teach_Once = TRUE;
 	}
 	else if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] == TRUE)
@@ -198,7 +198,7 @@ instance DIA_Addon_Eremit_Klamotten (C_INFO)
 	condition	= DIA_Addon_Eremit_Klamotten_Condition;
 	information	= DIA_Addon_Eremit_Klamotten_Info;
 	permanent 	= TRUE;
-	description = "J'ai trouvé des vêtements pour vous...";
+	description = "J'ai trouvÃ© des vÃªtements pour vous...";
 };
 func int DIA_Addon_Eremit_Klamotten_Condition ()
 {
@@ -209,14 +209,14 @@ func int DIA_Addon_Eremit_Klamotten_Condition ()
 };
 func void DIA_Addon_Eremit_Klamotten_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_01"); //J'ai trouvé des vêtements pour vous...
-	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_19"); //Vraiment ? Montrez-les moi, que je vois s'ils sont à ma taille !
+	AI_Output (other, self, "DIA_Addon_Eremit_Add_15_01"); //J'ai trouvÃ© des vÃªtements pour vous...
+	AI_Output (self, other, "DIA_Addon_Eremit_Add_04_19"); //Vraiment ? Montrez-les moi, que je vois s'ils sont Ã  ma taille !
 	
 	Info_ClearChoices (DIA_Addon_Eremit_Klamotten);
 	Info_AddChoice (DIA_Addon_Eremit_Klamotten, DIALOG_BACK, DIA_Addon_Eremit_Klamotten_BACK);
 	if (Npc_HasItems (other, ITAR_PIR_L_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner l'armure légère de pirate", DIA_Addon_Eremit_Klamotten_PIR_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner l'armure lÃ©gÃ¨re de pirate", DIA_Addon_Eremit_Klamotten_PIR_L);
 	};
 	if (Npc_HasItems (other, ITAR_PIR_M_Addon) > 0)
 	{
@@ -228,19 +228,19 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	};
 	//if (Npc_HasItems (other, ITAR_Thorus_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Gardistenrüstung geben", DIA_Addon_Eremit_Klamotten_Thorus);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "GardistenrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_Thorus);
 	//};
 	//if (Npc_HasItems (other, ITAR_OreBaron_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Erzbaronrüstung geben", DIA_Addon_Eremit_Klamotten_OreBaron);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "ErzbaronrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_OreBaron);
 	//};
 	//if (Npc_HasItems (other, ITAR_Bloodwyn_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Bloodwyn's Rüstung geben", DIA_Addon_Eremit_Klamotten_Bloodwyn);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Bloodwyn's RÃ¼stung geben", DIA_Addon_Eremit_Klamotten_Bloodwyn);
 	//};
 	//if (Npc_HasItems (other, ITAR_Raven_Addon) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Raven's Rüstung geben", DIA_Addon_Eremit_Klamotten_Raven);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Raven's RÃ¼stung geben", DIA_Addon_Eremit_Klamotten_Raven);
 	//};
 	if (Npc_HasItems (other, ITAR_RANGER_Addon) > 0)
 	{
@@ -248,7 +248,7 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	};
 	if (Npc_HasItems (other, ITAR_KDW_L_Addon) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner la robe légère de l'Anneau de l'eau", DIA_Addon_Eremit_Klamotten_KDW_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner la robe lÃ©gÃ¨re de l'Anneau de l'eau", DIA_Addon_Eremit_Klamotten_KDW_L);
 	};
 	if (Npc_HasItems (other, ITAR_KDW_H) > 0)
 	{
@@ -268,19 +268,19 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	};
 	if (Npc_HasItems (other, ITAR_BARKEEPER) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner le tablier de propriétaire terrien", DIA_Addon_Eremit_Klamotten_Barkeeper);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner le tablier de propriÃ©taire terrien", DIA_Addon_Eremit_Klamotten_Barkeeper);
 	};
 	if (Npc_HasItems (other, ITAR_VLK_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vêtements de citoyen I", DIA_Addon_Eremit_Klamotten_VLK_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vÃªtements de citoyen I", DIA_Addon_Eremit_Klamotten_VLK_L);
 	};
 	if (Npc_HasItems (other, ITAR_VLK_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vêtements de citoyen II", DIA_Addon_Eremit_Klamotten_VLK_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vÃªtements de citoyen II", DIA_Addon_Eremit_Klamotten_VLK_M);
 	};
 	if (Npc_HasItems (other, ITAR_VLK_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vêtements de citoyen III", DIA_Addon_Eremit_Klamotten_VLK_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vÃªtements de citoyen III", DIA_Addon_Eremit_Klamotten_VLK_H);
 	};
 	if (Npc_HasItems (other, ITAR_VlkBabe_L) > 0)
 	{
@@ -297,53 +297,53 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	/*
 	if (Npc_HasItems (other, ITAR_MIL_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Milizrüstung geben", DIA_Addon_Eremit_Klamotten_MIL_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte MilizrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_MIL_L);
 	};
 	if (Npc_HasItems (other, ITAR_MIL_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Milizrüstung geben", DIA_Addon_Eremit_Klamotten_MIL_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere MilizrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_MIL_M);
 	};
 	if (Npc_HasItems (other, ITAR_PAL_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Paladinrüstung geben", DIA_Addon_Eremit_Klamotten_PAL_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere PaladinrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_PAL_M);
 	};
 	if (Npc_HasItems (other, ITAR_PAL_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Paladinrüstung geben", DIA_Addon_Eremit_Klamotten_PAL_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere PaladinrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_PAL_H);
 	};
 	*/
 	if (Npc_HasItems (other, ITAR_PAL_SKEL) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner l'armure de paladin fatiguée", DIA_Addon_Eremit_Klamotten_PAL_SKEL);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner l'armure de paladin fatiguÃ©e", DIA_Addon_Eremit_Klamotten_PAL_SKEL);
 	};
 	if (Npc_HasItems (other, ITAR_BAU_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vêtements légers de fermier ", DIA_Addon_Eremit_Klamotten_BAU_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vÃªtements lÃ©gers de fermier ", DIA_Addon_Eremit_Klamotten_BAU_L);
 	};
 	if (Npc_HasItems (other, ITAR_BAU_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vêtements moyens de fermier ", DIA_Addon_Eremit_Klamotten_BAU_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner les vÃªtements moyens de fermier ", DIA_Addon_Eremit_Klamotten_BAU_M);
 	};
 	if (Npc_HasItems (other, ITAR_BauBabe_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner la robe légère de fermière", DIA_Addon_Eremit_Klamotten_BauBabe_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner la robe lÃ©gÃ¨re de fermiÃ¨re", DIA_Addon_Eremit_Klamotten_BauBabe_L);
 	};
 	if (Npc_HasItems (other, ITAR_BauBabe_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner la robe moyenne de fermière", DIA_Addon_Eremit_Klamotten_BauBabe_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Donner la robe moyenne de fermiÃ¨re", DIA_Addon_Eremit_Klamotten_BauBabe_M);
 	};
 	/*
 	if (Npc_HasItems (other, ITAR_SLD_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Söldnerrüstung geben", DIA_Addon_Eremit_Klamotten_SLD_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte SÃ¶ldnerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_SLD_L);
 	};
 	if (Npc_HasItems (other, ITAR_SLD_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Söldnerrüstung geben", DIA_Addon_Eremit_Klamotten_SLD_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere SÃ¶ldnerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_SLD_M);
 	};
 	if (Npc_HasItems (other, ITAR_SLD_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Söldnerrüstung geben", DIA_Addon_Eremit_Klamotten_SLD_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere SÃ¶ldnerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_SLD_H);
 	};
 	*/
 	if (Npc_HasItems (other, ITAR_DJG_Crawler) > 0)
@@ -353,15 +353,15 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	/*
 	if (Npc_HasItems (other, ITAR_DJG_L) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte Drachenjägerrüstung geben", DIA_Addon_Eremit_Klamotten_DJG_L);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Leichte DrachenjÃ¤gerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_DJG_L);
 	};
 	if (Npc_HasItems (other, ITAR_DJG_M) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Drachenjägerrüstung geben", DIA_Addon_Eremit_Klamotten_DJG_M);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere DrachenjÃ¤gerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_DJG_M);
 	};
 	if (Npc_HasItems (other, ITAR_DJG_H) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Drachenjägerrüstung geben", DIA_Addon_Eremit_Klamotten_DJG_H);
+		Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere DrachenjÃ¤gerrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_DJG_H);
 	};
 	if (Npc_HasItems (other, ITAR_NOV_L) > 0)
 	{
@@ -382,11 +382,11 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	};
 	//if (Npc_HasItems (other, ITAR_BDT_M) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere Banditenrüstung geben", DIA_Addon_Eremit_Klamotten_BDT_M);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Mittlere BanditenrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_BDT_M);
 	//};
 	//if (Npc_HasItems (other, ITAR_BDT_H) > 0)
 	//{
-	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere Banditenrüstung geben", DIA_Addon_Eremit_Klamotten_BDT_H);
+	//	Info_AddChoice (DIA_Addon_Eremit_Klamotten, "Schwere BanditenrÃ¼stung geben", DIA_Addon_Eremit_Klamotten_BDT_H);
 	//};
 	if (Npc_HasItems (other, ITAR_XARDAS) > 0)
 	{
@@ -418,7 +418,7 @@ func void DIA_Addon_Eremit_Klamotten_Info ()
 	{
 		AI_EquipBestArmor (self);
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_20"); //Ils le sont !
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_21"); //Alors, que dois-je faire maintenant ? J'ai donné tout mon or aux pirates afin de payer la traversée vers l'île.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_21"); //Alors, que dois-je faire maintenant ? J'ai donnÃ© tout mon or aux pirates afin de payer la traversÃ©e vers l'Ã®le.
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_22"); //Je ne peux que vous remettre quelques tablettes de pierre anciennes. 
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_23"); //Tenez, prenez-les. J'en rechercherai d'autres.
 		
@@ -702,13 +702,13 @@ func void DIA_Addon_Eremit_PERM_Info ()
 	
 	if (MIS_Eremit_Klamotten == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_09"); //(fier) J'ai tout construit moi-même, ici. Mes armes, mes outils, ma cabane - tout !
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_10"); //Je suis venu ici les mains vide, le cœur empli de détermination...
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_09"); //(fier) J'ai tout construit moi-mÃªme, ici. Mes armes, mes outils, ma cabane - tout !
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_10"); //Je suis venu ici les mains vide, le cÅ“ur empli de dÃ©termination...
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_11"); //Mais parfois...
 		AI_Output (other, self, "DIA_Addon_Eremit_Doppelt_15_01"); //Oui ? 
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_12"); //Parfois, je regrette de ne pas avoir emporté de vêtements.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_12"); //Parfois, je regrette de ne pas avoir emportÃ© de vÃªtements.
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_13"); //Je ne sais pas comment tisser ou tanner des peaux...
-		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_14"); //Et les nuits ne sont pas vraiment chaudes, dans cette région de l'île.
+		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_14"); //Et les nuits ne sont pas vraiment chaudes, dans cette rÃ©gion de l'Ã®le.
 		MIS_Eremit_Klamotten = LOG_RUNNING;
 	}
 	else 
@@ -716,12 +716,12 @@ func void DIA_Addon_Eremit_PERM_Info ()
 		AI_Output (self, other, "DIA_Addon_Eremit_Add_04_15"); //Je m'en sors. 
 		if (MIS_Eremit_Klamotten == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_18"); //Mais avec des vêtements, je pourrais passer l'hiver sans difficulté ! Après ça... nous verrons bien...
+			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_18"); //Mais avec des vÃªtements, je pourrais passer l'hiver sans difficultÃ© ! AprÃ¨s Ã§a... nous verrons bien...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_16"); //Je m'y trouve mieux qu'à Khorinis, en tout cas !
-			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_17"); //Même sans vêtements...
+			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_16"); //Je m'y trouve mieux qu'Ã  Khorinis, en tout cas !
+			AI_Output (self, other, "DIA_Addon_Eremit_Add_04_17"); //MÃªme sans vÃªtements...
 		};
 	};
 };	

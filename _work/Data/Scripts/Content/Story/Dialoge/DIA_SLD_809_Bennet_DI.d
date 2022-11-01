@@ -45,11 +45,11 @@ FUNC INT DIA_Bennet_DI_Hello_Condition()
 
 FUNC VOID DIA_Bennet_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//Ça va ?
+	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//Ã‡a vaÂ ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//La forge du bateau est quelque peu rouillée à cause de l'eau salée. J'aurai sans doute du mal à produire des pièces de qualité tant que je travaillerai ici, mais à part ça...
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//La forge du bateau est quelque peu rouillÃ©e Ã  cause de l'eau salÃ©e. J'aurai sans doute du mal Ã  produire des piÃ¨ces de qualitÃ© tant que je travaillerai ici, mais Ã  part Ã§a...
 	}
 	else
 	{
@@ -82,7 +82,7 @@ func int DIA_Bennet_DI_TRADE_Condition ()
 
 func void DIA_Bennet_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Quelles armes pouvez-vous me vendre ?
+	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Quelles armes pouvez-vous me vendreÂ ?
 	B_GiveTradeInv (self);
 	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Je ne vends que ce qui se fait de mieux, vous le savez bien.
 };
@@ -111,8 +111,8 @@ func int DIA_Bennet_DI_Smith_Condition ()
 
 func void DIA_Bennet_DI_Smith_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //Pouvez-vous m'enseigner votre métier ?
-	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Tout dépend de ce que vous voulez fabriquer.
+	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //Pouvez-vous m'enseigner votre mÃ©tierÂ ?
+	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Tout dÃ©pend de ce que vous voulez fabriquer.
 
 	Info_ClearChoices (DIA_Bennet_DI_Smith);
 	Info_AddChoice	    (DIA_Bennet_DI_Smith, DIALOG_BACK, DIA_Bennet_DI_Smith_BACK);
@@ -234,7 +234,7 @@ FUNC INT DIA_Bennet_TeachSTR_Condition()
 FUNC VOID DIA_Bennet_TeachSTR_Info()
 {	
 	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Je souhaite devenir plus fort.
-	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //Dans une époque comme celle-ci, il vaut mieux être fort.
+	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //Dans une Ã©poque comme celle-ci, il vaut mieux Ãªtre fort.
 	
 	Info_ClearChoices (DIA_Bennet_TeachSTR);
 	Info_AddChoice		(DIA_Bennet_TeachSTR, DIALOG_BACK, DIA_Bennet_TeachSTR_Back);
@@ -269,7 +269,7 @@ instance DIA_Bennet_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_DragonEgg_Condition;
 	information	 = 	DIA_Bennet_DI_DragonEgg_Info;
 
-	description	 = 	"J'ai un œuf de dragon.";
+	description	 = 	"J'ai un Å“uf de dragon.";
 };
 
 func int DIA_Bennet_DI_DragonEgg_Condition ()
@@ -282,10 +282,10 @@ func int DIA_Bennet_DI_DragonEgg_Condition ()
 
 func void DIA_Bennet_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //J'ai un œuf de dragon avec moi.
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Et alors ?
+	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //J'ai un Å“uf de dragon avec moi.
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Et alorsÂ ?
 	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Eh bien, je pensais que...
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Je sais ce que vous vous êtes dit, mais n'y pensez plus. Gardez votre œuf, il ne m'intéresse pas.
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Je sais ce que vous vous Ãªtes dit, mais n'y pensez plus. Gardez votre Å“uf, il ne m'intÃ©resse pas.
 	B_GivePlayerXP (XP_Ambient);
 };
 	
@@ -314,7 +314,7 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
 func void DIA_Bennet_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Nous avons fait tout ce que nous devions faire.
-	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //J'en suis heureux parce que je commence à en avoir assez de cette vieille forge. Et puis mes jambes ont grand besoin de retrouver le plancher des vaches.
+	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //J'en suis heureux parce que je commence Ã  en avoir assez de cette vieille forge. Et puis mes jambes ont grand besoin de retrouver le plancher des vaches.
 	AI_StopProcessInfos (self);
 };
 

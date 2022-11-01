@@ -29,7 +29,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 	Log_CreateTopic (TOPIC_TalentAnimalTrophy,LOG_NOTE);
 	B_LogEntry (TOPIC_TalentAnimalTrophy,"Maintenant, je peux :");
 	
-	// ------ Körperteil nehmen lernen ------
+	// ------ KÃ¶rperteil nehmen lernen ------
 	
 	if (trophy == TROPHY_Teeth) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] 			= TRUE;	
 	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer les crocs des animaux morts.");};
@@ -40,11 +40,11 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 	if (trophy == TROPHY_ReptileSkin) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] 		= TRUE;	
 	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer la peau des reptiles.");}; //ADDON
 	if (trophy == TROPHY_Heart) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Heart] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer le cœur des golems et des démons morts.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer le cÅ“ur des golems et des dÃ©mons morts.");};
 	if (trophy == TROPHY_ShadowHorn) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ShadowHorn] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer la corne des bêtes des ombres mortes.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer la corne des bÃªtes des ombres mortes.");};
 	if (trophy == TROPHY_FireTongue) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_FireTongue] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer la langue des lézards de feu morts.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer la langue des lÃ©zards de feu morts.");};
 	if (trophy == TROPHY_BFWing) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] 			= TRUE;	
 	B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer les ailes des mouches sanguines mortes.");};
 	if (trophy == TROPHY_BFSting) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] 			= TRUE;	
@@ -62,7 +62,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 												CreateInvItems (Firedragon, ItAt_DragonScale, 12);	
 												CreateInvItems (Icedragon, 	ItAt_DragonScale, 12);
 												
-												B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer les écailles d'un dragon mort.");	
+												B_LogEntry (TOPIC_TalentAnimalTrophy,"...retirer les Ã©cailles d'un dragon mort.");	
 											};
 	if (trophy == TROPHY_DragonBlood)		{	
 												PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DragonBlood] 		= TRUE;	
@@ -76,7 +76,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 
 	PrintScreen			(PRINT_LearnTakeAnimalTrophy, -1, -1, FONT_Screen, 2);
 	
-	// ------ bei jedem Körperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
+	// ------ bei jedem KÃ¶rperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
 	Npc_SetTalentSkill 	(oth, NPC_TALENT_TAKEANIMALTROPHY, 1);
 	return TRUE;
 };

@@ -6,7 +6,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 {	
   	Wld_PlayEffect("spellFX_Teleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
 	Snd_Play ("MFX_TELEPORT_CAST");
-	Npc_ClearAIQueue (hero);	//Joly:wegen Seitwärts da durch rennen.
+	Npc_ClearAIQueue (hero);	//Joly:wegen SeitwÃ¤rts da durch rennen.
 	
 	SCUsed_TELEPORTER = TRUE;			//SC hat schon mal einen Teleporter benutzt
 	
@@ -20,7 +20,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"La pierre de téléportation située dans la grotte à l'est du port mène à la Taverne de la harpie morte."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"La pierre de tÃ©lÃ©portation situÃ©e dans la grotte Ã  l'est du port mÃ¨ne Ã  la Taverne de la harpie morte."); 
 			};
 			
 			SCUsed_NW_TELEPORTSTATION_CITY = TRUE; 
@@ -33,7 +33,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"La pierre de téléportation proche de la Taverne de la harpie morte mène au portail des mystérieux bâtisseurs."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"La pierre de tÃ©lÃ©portation proche de la Taverne de la harpie morte mÃ¨ne au portail des mystÃ©rieux bÃ¢tisseurs."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_TAVERNE = TRUE; 
@@ -46,7 +46,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsNW,"La pierre de téléportation proche du portail des mystérieux bâtisseurs mène à l'intérieur de la grotte à l'est du port."); 
+				B_LogEntry (TOPIC_Addon_TeleportsNW,"La pierre de tÃ©lÃ©portation proche du portail des mystÃ©rieux bÃ¢tisseurs mÃ¨ne Ã  l'intÃ©rieur de la grotte Ã  l'est du port."); 
 			};
 
 			SCUsed_NW_TELEPORTSTATION_MAYA = TRUE;
@@ -76,7 +76,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"J'ai activé une pierre de téléportation près du portail menant à Khorinis."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"J'ai activÃ© une pierre de tÃ©lÃ©portation prÃ¨s du portail menant Ã  Khorinis."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
@@ -90,7 +90,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Je suis parvenu à activer une pierre de téléportation dans la partie haute du camp des bandits."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Je suis parvenu Ã  activer une pierre de tÃ©lÃ©portation dans la partie haute du camp des bandits."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -104,7 +104,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"J'ai activé une pierre de téléportation dans les marais au sud du camp des bandits."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"J'ai activÃ© une pierre de tÃ©lÃ©portation dans les marais au sud du camp des bandits."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -118,7 +118,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"J'ai découvert une pierre de téléportation au sud-ouest."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"J'ai dÃ©couvert une pierre de tÃ©lÃ©portation au sud-ouest."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 	
@@ -132,14 +132,14 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Une pierre de téléportation se trouve dans une grotte dans le canyon. Je l'ai activée."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Une pierre de tÃ©lÃ©portation se trouve dans une grotte dans le canyon. Je l'ai activÃ©e."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
 			if (MIS_KrokoJagd == LOG_SUCCESS)
 			&& (SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER == FALSE)
 			{
-				// Monster, die bei der Jagd mit Alligator Jack stören
+				// Monster, die bei der Jagd mit Alligator Jack stÃ¶ren
 				Wld_InsertNpc  	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Giant_DesertRat,"ADW_CANYON_PATH_TO_MINE1_05");
@@ -160,7 +160,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			};	
 			SCUsed_ADW_TELEPORTSTATION_RAVENTELEPORT_OUT = TRUE;
 		}
-		else	//immer zurück zum ADW_ENTRANCE für alle anderen Teleportstations
+		else	//immer zurÃ¼ck zum ADW_ENTRANCE fÃ¼r alle anderen Teleportstations
 		{
 			AI_Teleport	(hero, "ADW_ENTRANCE"); 
 		};

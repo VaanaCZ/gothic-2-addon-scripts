@@ -47,7 +47,7 @@ FUNC VOID DIA_Skalven_3_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_00"); //(effrayé) Qu'est-ce que vous me voulez ? Fichez le camp !
+		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_00"); //(effrayÃ©) Qu'est-ce que vous me voulez ? Fichez le camp !
 	};
 	if (randy == 1)
 	{
@@ -55,7 +55,7 @@ FUNC VOID DIA_Skalven_3_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_02"); //(effrayé) Ne me faites pas de mal, par pitié !
+		AI_Output (self,other,"DIA_Addon_Sklaven_3_STANDARD_03_02"); //(effrayÃ©) Ne me faites pas de mal, par pitiÃ© !
 	};
 	
 	AI_StopProcessInfos	(self);

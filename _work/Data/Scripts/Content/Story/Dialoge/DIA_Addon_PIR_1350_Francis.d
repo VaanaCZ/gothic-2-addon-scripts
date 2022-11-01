@@ -23,10 +23,10 @@ FUNC VOID DIA_Addon_Francis_EXIT_Info()
 };
 
 // ************************************************************
-// 			  			In Gregs H¸tte rein 
+// 			  			In Gregs H√ºtte rein 
 // ************************************************************
 // ------------------------------------------------------------
-// 			  		Spieler kennt H¸tte nicht
+// 			  		Spieler kennt H√ºtte nicht
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Francis_First (C_INFO)
 {
@@ -49,11 +49,11 @@ FUNC INT DIA_Addon_Francis_First_Condition()
 func VOID DIA_Addon_Francis_First_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Francis_GregsHut_15_00"); //C'est votre cabane ?
-	AI_Output (self,other,"DIA_Addon_Francis_GregsHut_13_01"); //Non, elle appartient ‡ Greg.
+	AI_Output (self,other,"DIA_Addon_Francis_GregsHut_13_01"); //Non, elle appartient √† Greg.
 	Knows_GregsHut = TRUE;
 };
 // ------------------------------------------------------------
-// 			  			Ich muﬂ da rein!
+// 			  			Ich mu√ü da rein!
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Francis_LetMeIn (C_INFO)
 {
@@ -76,9 +76,9 @@ FUNC INT DIA_Addon_Francis_LetMeIn_Condition()
 func VOID DIA_Addon_Francis_LetMeIn_Info()
 {	
 	AI_Output (other, self ,"DIA_Addon_Francis_LetMeIn_15_00"); //Je dois entrer dans la cabane de Greg.
-	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_01"); //N'y pensez mÍme pas.
-	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_02"); //Greg n'est pas l‡. Quant ‡ moi, j'ai verrouillÈ la porte, et je m'assure que personne n'y rentre pour piller ses biens. 
-	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_03"); //Alors dÈgagez en vitesse, ou prÈparez-vous ‡ passer un mauvais quart d'heure !
+	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_01"); //N'y pensez m√™me pas.
+	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_02"); //Greg n'est pas l√†. Quant √† moi, j'ai verrouill√© la porte, et je m'assure que personne n'y rentre pour piller ses biens. 
+	AI_Output (self ,other ,"DIA_Addon_Francis_LetMeIn_13_03"); //Alors d√©gagez en vitesse, ou pr√©parez-vous √† passer un mauvais quart d'heure !
 };
 // ------------------------------------------------------------
 // 			  			Hab Greg getroffen!
@@ -104,17 +104,17 @@ func VOID DIA_Addon_Francis_AboutGreg_Info()
 {	
 	AI_Output (other, self ,"DIA_Addon_Francis_AboutGreg_15_00"); //Greg est votre patron ?
 	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_01"); //N'essayez pas de me dire que vous le connaissez !
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_02"); //Tous les marins connaissent le terrible cap'taine Greg, mÍme les derniers culs-terreux de cette contrÈe !
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_02"); //Tous les marins connaissent le terrible cap'taine Greg, m√™me les derniers culs-terreux de cette contr√©e !
 	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_03"); //(fier) Et c'est MOI qu'il laisse aux commandes en son absence.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_04"); //J'ai la responsabilitÈ de mettre ces fainÈants au travail !
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_05"); //Certains gars ont tendance ‡ croire que lorsque le capitaine s'absente, ils sont libres de faire ce que bon leur semble.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_06"); //Ils vont avoir une sacrÈe surprise au retour de Greg... 
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_07"); //Je l'informerai de tout ce qu'il s'est passÈ ici, bien compris ?
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_08"); //Et notamment des personnes qui ont tentÈ de rentrer dans sa cabane.
-	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_09"); //Alors dÈgagez d'ici en vitesse si vous ne voulez pas d'ennuis !
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_04"); //J'ai la responsabilit√© de mettre ces fain√©ants au travail !
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_05"); //Certains gars ont tendance √† croire que lorsque le capitaine s'absente, ils sont libres de faire ce que bon leur semble.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_06"); //Ils vont avoir une sacr√©e surprise au retour de Greg... 
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_07"); //Je l'informerai de tout ce qu'il s'est pass√© ici, bien compris ?
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_08"); //Et notamment des personnes qui ont tent√© de rentrer dans sa cabane.
+	AI_Output (self ,other ,"DIA_Addon_Francis_AboutGreg_13_09"); //Alors d√©gagez d'ici en vitesse si vous ne voulez pas d'ennuis !
 };
 // ------------------------------------------------------------
-// 		  			Gib mir Schl¸ssel + Bestechung!
+// 		  			Gib mir Schl√ºssel + Bestechung!
 // ------------------------------------------------------------
 var int Francis_bezahlt;
 
@@ -141,9 +141,9 @@ func VOID DIA_Addon_Francis_Key_Info()
 	AI_Output (self ,other,"DIA_Addon_Francis_Key_13_01"); //Vous voulez rire ?!
 	
 	Info_ClearChoices (DIA_Addon_Francis_Key);
-	Info_AddChoice (DIA_Addon_Francis_Key, "J'y rÈflÈchirai...", DIA_Addon_Francis_Key_BACK);
-	Info_AddChoice (DIA_Addon_Francis_Key, "Je vous donnerai 2000 piËces d'or.", DIA_Addon_Francis_Key_2000Gold);
-	Info_AddChoice (DIA_Addon_Francis_Key, "Je vous donnerai 1000 piËces d'or !", DIA_Addon_Francis_Key_1000Gold);
+	Info_AddChoice (DIA_Addon_Francis_Key, "J'y r√©fl√©chirai...", DIA_Addon_Francis_Key_BACK);
+	Info_AddChoice (DIA_Addon_Francis_Key, "Je vous donnerai 2000 pi√®ces d'or.", DIA_Addon_Francis_Key_2000Gold);
+	Info_AddChoice (DIA_Addon_Francis_Key, "Je vous donnerai 1000 pi√®ces d'or !", DIA_Addon_Francis_Key_1000Gold);
 };
 func void DIA_Addon_Francis_Key_BACK()
 {
@@ -151,28 +151,28 @@ func void DIA_Addon_Francis_Key_BACK()
 };
 func void DIA_Addon_Francis_Key_1000Gold()
 {
-	AI_Output (other, self ,"DIA_Addon_Francis_Key_1000Gold_15_00"); //Je vous donnerai 1000 piËces d'or !
-	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_01"); //DÈsolÈ, mais Áa ne m'incitera pas ‡ trahir mon capitaine.
+	AI_Output (other, self ,"DIA_Addon_Francis_Key_1000Gold_15_00"); //Je vous donnerai 1000 pi√®ces d'or !
+	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_01"); //D√©sol√©, mais √ßa ne m'incitera pas √† trahir mon capitaine.
 	AI_Output (self ,other ,"DIA_Addon_Francis_Key_1000Gold_13_02"); //Surveillez vos propos, ou j'aurai votre peau !
 };
 func void DIA_Addon_Francis_Key_2000Gold()
 {
-	AI_Output (other,self ,"DIA_Addon_Francis_Key_2000Gold_15_00"); //Je vous donnerai 2000 piËces d'or.
+	AI_Output (other,self ,"DIA_Addon_Francis_Key_2000Gold_15_00"); //Je vous donnerai 2000 pi√®ces d'or.
 	
 	if (Npc_HasItems (other,ItMI_Gold) >= 2000)
 	{
 		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_01"); //Ce que vous me demandez est une mutinerie !
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_02"); //(pour lui-mÍme) Mais aprËs tout...
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_03"); //Bon, tenez - la voici. Personne n'a ‡ le savoir.
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_02"); //(pour lui-m√™me) Mais apr√®s tout...
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_03"); //Bon, tenez - la voici. Personne n'a √† le savoir.
 		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_04"); //Voici la clef !
-		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_05"); //Mais dÈpÍchez-vous d'en ressortir avant que Greg ne revienne. Et pas un mot aux autres, c'est bien compris ?
+		AI_Output (self ,other,"DIA_Addon_Francis_Key_2000Gold_13_05"); //Mais d√©p√™chez-vous d'en ressortir avant que Greg ne revienne. Et pas un mot aux autres, c'est bien compris ?
 		B_GiveInvItems (other, self,ItMi_Gold,2000);
 		B_GiveInvItems (self ,other,ITKE_Greg_ADDON_MIS,1);
 		Francis_bezahlt = TRUE;
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Addon_FrancisNotEnoughGold_13_05"); //(rires) Ha ! Je suis s˚r que vous n'avez mÍme pas autant sur vous !
+		AI_Output (self ,other,"DIA_Addon_FrancisNotEnoughGold_13_05"); //(rires) Ha ! Je suis s√ªr que vous n'avez m√™me pas autant sur vous !
 	};
 	Info_ClearChoices (DIA_Addon_Francis_Key);
 };
@@ -199,8 +199,8 @@ FUNC INT DIA_Addon_Francis_AufsMaul_Condition()
 func VOID DIA_Addon_Francis_AufsMaul_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Francis_AufsMaul_15_00"); //Bien, bien... alors voyons ce que vous avez ?
-	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_01"); //(voix perÁante) Quoi ? C'est moi le capitaine ici ! 
-	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_02"); //Je vous apprendrai le respect, espËce de cul-terreux !
+	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_01"); //(voix per√ßante) Quoi ? C'est moi le capitaine ici ! 
+	AI_Output (self, other, "DIA_Addon_Francis_AufsMaul_13_02"); //Je vous apprendrai le respect, esp√®ce de cul-terreux !
 	
 	AI_StopProcessInfos (self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -215,7 +215,7 @@ INSTANCE DIA_Addon_Francis_Buch (C_INFO)
 	condition	= DIA_Addon_Francis_Buch_Condition;
 	information	= DIA_Addon_Francis_Buch_Info;
 	permanent	= TRUE;
-	description = "J'ai trouvÈ votre cachette...";
+	description = "J'ai trouv√© votre cachette...";
 };                       
 FUNC INT DIA_Addon_Francis_Buch_Condition()
 {
@@ -226,11 +226,11 @@ FUNC INT DIA_Addon_Francis_Buch_Condition()
 };
 func VOID DIA_Addon_Francis_Buch_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_03"); //J'ai trouvÈ votre cache. Votre trÈsor et votre livre des payes. C'est bien votre livre, pas vrai ?
+	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_03"); //J'ai trouv√© votre cache. Votre tr√©sor et votre livre des payes. C'est bien votre livre, pas vrai ?
 	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_01"); //Heu... Je n'ai jamais vu ce livre !
-	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_02"); //Et... heu, de toutes faÁons, mÍme si c'Ètait mon livre...
-	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_03"); //Vous ne pensez tout de mÍme pas que mes gars vont vous croire parce que vous leur montrez quelques pages jaunies, hein ?
-	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_01"); //Vous avez volÈ une part de leur butin ‡ chacun d'eux.
+	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_02"); //Et... heu, de toutes fa√ßons, m√™me si c'√©tait mon livre...
+	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_03"); //Vous ne pensez tout de m√™me pas que mes gars vont vous croire parce que vous leur montrez quelques pages jaunies, hein ?
+	AI_Output (other,self ,"DIA_Addon_Francis_Key_Business_15_01"); //Vous avez vol√© une part de leur butin √† chacun d'eux.
 	AI_Output (self, other, "DIA_Addon_Francis_Buch_13_04"); //Heu... attendez un peu...
 	if (Npc_HasItems (self, ITKE_Greg_ADDON_MIS))
 	{
@@ -239,7 +239,7 @@ func VOID DIA_Addon_Francis_Buch_Info()
 			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_05"); //(mielleux) Vous vouliez la clef de la cabane de Greg, pas vrai ?
 		};
 		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_06"); //Je vous donnerai la clef de la cabane de Greg !
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_07"); //Il y conserve tout un tas d'objets prÈcieux !
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_07"); //Il y conserve tout un tas d'objets pr√©cieux !
 		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_08"); //(nerveusement) Mais vous me donnez le livre et vous oubliez cette histoire, compris ?
 		B_GiveInvItems (other,self,ITWR_Addon_FrancisAbrechnung_Mis,1);
 		B_GiveInvItems (self ,other,ITKE_Greg_ADDON_MIS,1);
@@ -250,16 +250,16 @@ func VOID DIA_Addon_Francis_Buch_Info()
 		if (Francis_bezahlt == TRUE)
 		&& (Npc_HasItems(self, itmi_gold) >= 2000)
 		{
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_10"); //Voici vos 2000 piËces d'or !
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_11"); //Auxquelles je rajoute encore 500 piËces.
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_10"); //Voici vos 2000 pi√®ces d'or !
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_11"); //Auxquelles je rajoute encore 500 pi√®ces.
 			B_GiveInvItems (self, other, itmi_gold, 2500);
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_12"); //Et voici 500 piËces d'or !
+			AI_Output (self, other, "DIA_Addon_Francis_Buch_13_12"); //Et voici 500 pi√®ces d'or !
 			B_GiveInvItems (self, other, itmi_gold, 500);
 		};
-		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_13"); //(h‚tivement) Et maintenant, donnez-moi cela...
+		AI_Output (self, other, "DIA_Addon_Francis_Buch_13_13"); //(h√¢tivement) Et maintenant, donnez-moi cela...
 		B_GiveInvItems (other,self,ITWR_Addon_FrancisAbrechnung_Mis,1);
 	};
 	AI_StopProcessInfos (self);
@@ -305,7 +305,7 @@ func void DIA_Francis_PICKPOCKET_DoIt()
 	else
 	{
 		AI_StopProcessInfos	(self);
-		B_Attack (self, other, AR_Theft, 1); //AR_Theft f¸hrt zu NEWS!
+		B_Attack (self, other, AR_Theft, 1); //AR_Theft f√ºhrt zu NEWS!
 	};
 	Info_ClearChoices (DIA_Francis_PICKPOCKET);
 };
@@ -339,7 +339,7 @@ func VOID DIA_Francis_Ausgeschissen_Info()
 {	
 	if (!Npc_IsDead(Greg))
 	{
-		AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_00"); //(furieux) Gr‚ce ‡ vous, Greg m'a ordonnÈ de dÈbiter des planches jusqu'‡ ce qu'il n'y ait plus un arbre debout sur l'Óle !
+		AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_00"); //(furieux) Gr√¢ce √† vous, Greg m'a ordonn√© de d√©biter des planches jusqu'√† ce qu'il n'y ait plus un arbre debout sur l'√Æle !
 	};
 	AI_Output (self, other, "DIA_Addon_Francis_Ausgeschissen_13_01"); //Fichez-moi la paix !
 	AI_StopProcessInfos (self);

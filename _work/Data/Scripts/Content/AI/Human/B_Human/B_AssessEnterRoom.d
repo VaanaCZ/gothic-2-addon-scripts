@@ -2,7 +2,7 @@
 // B_AssessEnterRoom
 // -----------------
 // wird aufgerufen durch Wahrnehmung ASSESSENTERRROOM
-// kann ÜBERALL her aufgerufen werden (auch aus ZS_Attack), dann aber sofort zurück
+// kann ÃœBERALL her aufgerufen werden (auch aus ZS_Attack), dann aber sofort zurÃ¼ck
 // oder durch B_AssessPlayer, wenn Portalroom = MEIN Room
 // ********************************************************************************
 
@@ -24,7 +24,7 @@ func int B_AssessEnterRoom ()
     
   	// EXIT IF...
 	
-	// ------ Tür zu weit weg ------
+	// ------ TÃ¼r zu weit weg ------
 	if (Npc_GetDistToNpc(self, other) > 1000)
 	{
 		return FALSE;
@@ -80,7 +80,7 @@ func int B_AssessEnterRoom ()
 		};
 	};
 	
-	// ------ GIL_NONE ignoriert ------ (NICHT Portalguild NONE ignorieren, sonst wird der SC beim rauskommen aus Häusern nicht mehr erfasst!)
+	// ------ GIL_NONE ignoriert ------ (NICHT Portalguild NONE ignorieren, sonst wird der SC beim rauskommen aus HÃ¤usern nicht mehr erfasst!)
 	if (self.guild == GIL_NONE)
 	{
 		return FALSE;
@@ -96,7 +96,7 @@ func int B_AssessEnterRoom ()
 	
 	// FUNC 
 
-	// ------- Spieler befindet sich in öffentlichem Raum ------
+	// ------- Spieler befindet sich in Ã¶ffentlichem Raum ------
 	if (portalguild == GIL_PUBLIC)
 	&& (Npc_IsInPlayersRoom (self))					//beide im selben Raum
 	{
@@ -177,7 +177,7 @@ func void B_AssessPortalCollision()
 	
 	//AUSSEN
 	
-	// ------ wenn ich den Spieler nicht rauskommen sehe oder höre -----
+	// ------ wenn ich den Spieler nicht rauskommen sehe oder hÃ¶re -----
 	if (!Npc_CanSeeNpc (self, other))
 	&& ( C_BodyStateContains(other, BS_SNEAK) || C_BodyStateContains(other, BS_STAND) )
 	{
@@ -186,7 +186,7 @@ func void B_AssessPortalCollision()
 	
 	// ------ Spieler ist gerade rausgeworfen worden ------
 	Npc_PerceiveAll(self);
-	if (Wld_DetectNpcEx(self, -1, ZS_ClearRoom, -1, FALSE)) //ist noch für die Dauer von B_Say TRUE
+	if (Wld_DetectNpcEx(self, -1, ZS_ClearRoom, -1, FALSE)) //ist noch fÃ¼r die Dauer von B_Say TRUE
 	{
 		//other zerschossen, aber hier egal
 		return;	

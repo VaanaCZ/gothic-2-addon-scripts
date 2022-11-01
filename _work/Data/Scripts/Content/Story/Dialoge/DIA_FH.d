@@ -24,7 +24,7 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("MINUS-Gesichter gibtÂ´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
@@ -127,7 +127,7 @@ INSTANCE DIA_FH_PreviousFace (C_INFO)
 	condition		= DIA_FH_PreviousFace_Condition;
 	information		= DIA_FH_PreviousFace_Info;
 	permanent		= 1;
-	description		= "Visage précédent";
+	description		= "Visage prÃ©cÃ©dent";
 };                       
 
 FUNC INT DIA_FH_PreviousFace_Condition()
@@ -151,7 +151,7 @@ INSTANCE DIA_FH_PreviousFace10 (C_INFO)
 	condition		= DIA_FH_PreviousFace10_Condition;
 	information		= DIA_FH_PreviousFace10_Info;
 	permanent		= 1;
-	description		= "10 visages précédents";
+	description		= "10 visages prÃ©cÃ©dents";
 };                       
 
 FUNC INT DIA_FH_PreviousFace10_Condition()
@@ -175,7 +175,7 @@ INSTANCE DIA_FH_ResetFace (C_INFO)
 	condition		= DIA_FH_ResetFace_Condition;
 	information		= DIA_FH_ResetFace_Info;
 	permanent		= 1;
-	description		= "Réinitialiser visages";
+	description		= "RÃ©initialiser visages";
 };                       
 
 FUNC INT DIA_FH_ResetFace_Condition()

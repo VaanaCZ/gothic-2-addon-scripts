@@ -1,5 +1,5 @@
 // *********************************************
-// NSC steht mit Armen in die Hüfte gestemmt rum
+// NSC steht mit Armen in die HÃ¼fte gestemmt rum
 // *********************************************
 
 func void ZS_Stand_Guarding()

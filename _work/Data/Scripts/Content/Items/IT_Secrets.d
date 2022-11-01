@@ -17,7 +17,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 	on_state[0]			=	Use_ErzFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Quelque chose est dissimulé dans le poisson.";		
+	TEXT[2]				= 	"Quelque chose est dissimulÃ© dans le poisson.";		
 	
 };
 
@@ -44,7 +44,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 	on_state[0]			=	Use_GoldFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Quelque chose est dissimulé dans le poisson.";		
+	TEXT[2]				= 	"Quelque chose est dissimulÃ© dans le poisson.";		
 	
 };
 
@@ -71,7 +71,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 	on_state[0]			=	Use_Ringfisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Quelque chose est dissimulé dans le poisson.";		
+	TEXT[2]				= 	"Quelque chose est dissimulÃ© dans le poisson.";		
 	
 };
 
@@ -85,7 +85,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_LockpickFisch (C_Item)
 {	
-	name 				=	"Poisson léger";
+	name 				=	"Poisson lÃ©ger";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -98,7 +98,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 	on_state[0]			=	Use_LockpickFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Quelque chose est dissimulé dans le poisson.";		
+	TEXT[2]				= 	"Quelque chose est dissimulÃ© dans le poisson.";		
 	
 };
 
@@ -132,7 +132,7 @@ INSTANCE ItSe_GoldPocket25	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Quelques pièces tintent à l'intérieur.";
+	TEXT[2]				= 	"Quelques piÃ¨ces tintent Ã  l'intÃ©rieur.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -161,7 +161,7 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Le sac est plein de pièces.";
+	TEXT[2]				= 	"Le sac est plein de piÃ¨ces.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -191,7 +191,7 @@ INSTANCE ItSe_GoldPocket100	(C_Item)
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"Un lourd sac plein";
-	TEXT[3]				= 	"de pièces d'or.";
+	TEXT[3]				= 	"de piÃ¨ces d'or.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -219,7 +219,7 @@ INSTANCE ItSe_HannasBeutel	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Hanna me l'a donné.";
+	TEXT[2]				= 	"Hanna me l'a donnÃ©.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

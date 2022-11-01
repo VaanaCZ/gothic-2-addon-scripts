@@ -44,7 +44,7 @@ FUNC INT DIA_Addon_Telbor_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Telbor_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_00");//Hé, ça va.
+	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_00");//HÃ©, Ã§a va.
 	
 	if (Sklaven_Flucht == FALSE)
 	{
@@ -54,7 +54,7 @@ FUNC VOID DIA_Addon_Telbor_Hi_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_02");//Merci d'avoir aidé Pardos.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_02");//Merci d'avoir aidÃ© Pardos.
 			
 			if Telbor_once == FALSE
 			{

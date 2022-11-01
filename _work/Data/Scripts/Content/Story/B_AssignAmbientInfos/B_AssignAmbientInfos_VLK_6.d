@@ -46,7 +46,7 @@ FUNC VOID DIA_VLK_6_JOIN_Info()
 	AI_Output (other, self, "DIA_VLK_6_JOIN_15_00"); //Que dois-je faire pour devenir citoyen de la ville ?
 	AI_Output (self, other, "DIA_VLK_6_JOIN_06_01"); //Vous voulez vous installer ici ? Alors que tout indique que la fin du monde est proche ?
 	AI_Output (other, self, "DIA_VLK_6_JOIN_15_02"); //Je ne compte pas rester pour toujours.
-	AI_Output (self, other, "DIA_VLK_6_JOIN_06_03"); //Si vous voulez un conseil, vous devriez ficher le camp d'ici tant que vous le pouvez encore. Mais si vous insistez, vous devriez parler à un des citoyens influents de la ville.
+	AI_Output (self, other, "DIA_VLK_6_JOIN_06_03"); //Si vous voulez un conseil, vous devriez ficher le camp d'ici tant que vous le pouvez encore. Mais si vous insistez, vous devriez parler Ã  un des citoyens influents de la ville.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ FUNC INT DIA_VLK_6_PEOPLE_Condition()
 FUNC VOID DIA_VLK_6_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_6_PEOPLE_15_00"); //Qui sont les personnages influents de Khorinis ?
-	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_01"); //Allez voir le forgeron ou le charpentier dans le bas quartier. Vous y trouverez également d'autres maîtres très respectés.
+	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_01"); //Allez voir le forgeron ou le charpentier dans le bas quartier. Vous y trouverez Ã©galement d'autres maÃ®tres trÃ¨s respectÃ©s.
 	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_02"); //Si d'autres que les gardes ou les paladins ont voix au chapitre, c'est bien eux.
 };
 
@@ -93,9 +93,9 @@ FUNC INT DIA_VLK_6_LOCATION_Condition()
 FUNC VOID DIA_VLK_6_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_6_LOCATION_15_00"); //Comment puis-je m'y retrouver en ville ?
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_01"); //Ce n'est pas si facile de s'y retrouver ici, n'est-ce pas ? Même les pancartes ne sont pas toujours utiles.
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_01"); //Ce n'est pas si facile de s'y retrouver ici, n'est-ce pas ? MÃªme les pancartes ne sont pas toujours utiles.
 	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_02"); //Si vous avez un mauvais sens de l'orientation, allez au port, si toutefois vous savez y aller, et rendez-vous chez le cartographe.
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_03"); //C'est juste à côté du pub, sur le quai. Brahim aura certainement une carte de la ville.
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_03"); //C'est juste Ã  cÃ´tÃ© du pub, sur le quai. Brahim aura certainement une carte de la ville.
 };
 
 // *************************************************************************
@@ -119,23 +119,23 @@ FUNC VOID DIA_VLK_6_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_01"); //Depuis qu'ils ont abattu la Barrière, la ville est envahie de bandits. Mais les paladins ne font rien. Qu'est-ce qu'ils viennent faire ici ?
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_01"); //Depuis qu'ils ont abattu la BarriÃ¨re, la ville est envahie de bandits. Mais les paladins ne font rien. Qu'est-ce qu'ils viennent faire ici ?
 	};
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_02"); //Depuis peu, les bandits posent moins de problèmes. On dirait que quelqu'un a enfin pris les choses en main.
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_02"); //Depuis peu, les bandits posent moins de problÃ¨mes. On dirait que quelqu'un a enfin pris les choses en main.
 	};
 	
 	if (Kapitel == 3)
 	{
 		if MIS_RescueBennet == LOG_SUCCESS
 		{
-			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_03"); //Ils ont laissé partir ce sale mercenaire qui a tué le paladin. On aurait mieux fait de le pendre.
+			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_03"); //Ils ont laissÃ© partir ce sale mercenaire qui a tuÃ© le paladin. On aurait mieux fait de le pendre.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_04"); //On dit qu'un des mercenaires d'Onar a tué un paladin. Ils l'ont arrêté et l'ont jeté en prison. Il sera bientôt pendu.
+			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_04"); //On dit qu'un des mercenaires d'Onar a tuÃ© un paladin. Ils l'ont arrÃªtÃ© et l'ont jetÃ© en prison. Il sera bientÃ´t pendu.
 		};
 	};
 	
@@ -146,7 +146,7 @@ FUNC VOID DIA_VLK_6_STANDARD_Info()
 
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_06"); //On raconte que le seigneur Hagen rassemble ses hommes pour libérer la Vallée des mines. Les choses bougent enfin !
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_06"); //On raconte que le seigneur Hagen rassemble ses hommes pour libÃ©rer la VallÃ©e des mines. Les choses bougent enfin !
 	};
 };
 

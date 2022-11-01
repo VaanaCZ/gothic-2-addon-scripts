@@ -43,7 +43,7 @@ func int DIA_Hakon_Sperre_Condition ()
 };
 func void DIA_Hakon_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Hakon_Sperre_12_00"); //Allez-vous en, sale prisonnier ! Canthar m'a dit quel pourri vous étiez !
+	AI_Output (self, other, "DIA_Hakon_Sperre_12_00"); //Allez-vous en, sale prisonnier ! Canthar m'a dit quel pourri vous Ã©tiez !
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -69,10 +69,10 @@ func int DIA_Hakon_Hallo_Condition ()
 func void DIA_Hakon_Hallo_Info ()
 {
 	AI_Output (self ,other,"DIA_Hakon_Add_12_00"); //Je suis Hakon, le vendeur d'armes.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_01"); //Ces temps-ci tout le monde devrait être armé. Surtout quand on sort de la ville.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_01"); //Ces temps-ci tout le monde devrait Ãªtre armÃ©. Surtout quand on sort de la ville.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Hakon vend des armes sur la place du marché.");
+	B_LogEntry (Topic_CityTrader,"Hakon vend des armes sur la place du marchÃ©.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WAREZ
@@ -99,7 +99,7 @@ func void DIA_Hakon_Trade_Info ()
 	if (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self,other,"DIA_Hakon_Trade_12_01"); //C'est un honneur pour moi qu'un représentant de notre sainte Eglise s'intéresse à ma marchandise.
+		AI_Output (self,other,"DIA_Hakon_Trade_12_01"); //C'est un honneur pour moi qu'un reprÃ©sentant de notre sainte Eglise s'intÃ©resse Ã  ma marchandise.
 	};
 };
 
@@ -129,16 +129,16 @@ func void DIA_Addon_Hakon_MissingPeople_Info ()
 	AI_Output	(other, self, "DIA_Addon_Hakon_MissingPeople_15_00"); //Que savez-vous sur les disparitions des citoyens de Khorinis ?
 	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_01"); //J'en ai vu beaucoup franchir la porte est de la ville.
 	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_02"); //Je n'avais jamais vu de ma vie certains de ceux qui sont venus et beaucoup de ceux qui sont partis ne sont jamais revenus.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_03"); //Mais ce qui est arrivé l'autre jour était vraiment très étrange.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_04"); //Un homme, du nom de Joe, je crois, est venu. Il se vantait d'avoir bientôt une grosse somme d'argent.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_05"); //Il disait savoir comment rentrer dans l'une des tours de la ville, là où la milice entrepose ses armes.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_06"); //Je ne l'ai pas revu depuis, et pourtant je le croisais à la même heure chaque jour.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_07"); //J'en ai référé à la milice et peut-être l'ont-ils déjà pincé et que je le retrouverai au cachot.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_08"); //Mais le seigneur André ne comprenait rien de ce que je racontais. Il ne connaissait même pas le gars en question.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_03"); //Mais ce qui est arrivÃ© l'autre jour Ã©tait vraiment trÃ¨s Ã©trange.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_04"); //Un homme, du nom de Joe, je crois, est venu. Il se vantait d'avoir bientÃ´t une grosse somme d'argent.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_05"); //Il disait savoir comment rentrer dans l'une des tours de la ville, lÃ  oÃ¹ la milice entrepose ses armes.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_06"); //Je ne l'ai pas revu depuis, et pourtant je le croisais Ã  la mÃªme heure chaque jour.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_07"); //J'en ai rÃ©fÃ©rÃ© Ã  la milice et peut-Ãªtre l'ont-ils dÃ©jÃ  pincÃ© et que je le retrouverai au cachot.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_08"); //Mais le seigneur AndrÃ© ne comprenait rien de ce que je racontais. Il ne connaissait mÃªme pas le gars en question.
 
 	Log_CreateTopic (TOPIC_Addon_Joe, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Joe, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Joe,"Halon, un marchand de Khorinis, dit qu'un dénommé Joe a simplement disparu sans laisser de traces. Il prétend que Joe sait comment se rendre dans l'une des tours de la ville, dans laquelle la milice entrepose ses armes."); 
+	B_LogEntry (TOPIC_Addon_Joe,"Halon, un marchand de Khorinis, dit qu'un dÃ©nommÃ© Joe a simplement disparu sans laisser de traces. Il prÃ©tend que Joe sait comment se rendre dans l'une des tours de la ville, dans laquelle la milice entrepose ses armes."); 
 
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -162,9 +162,9 @@ func int DIA_Hakon_OutOfTown_Condition ()
 func void DIA_Hakon_OutOfTown_Info ()
 {
 	AI_Output (other, self,"DIA_Hakon_Add_15_02"); //Parlez-moi des environs de la ville.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_03"); //Ils sont devenus extrêmement dangereux ces temps-ci.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_04"); //A cause des brigands, bien sûr, mais aussi des bêtes sauvages.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_05"); //Apparemment, même les animaux n'ont pas assez à manger en ce moment.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_03"); //Ils sont devenus extrÃªmement dangereux ces temps-ci.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_04"); //A cause des brigands, bien sÃ»r, mais aussi des bÃªtes sauvages.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_05"); //Apparemment, mÃªme les animaux n'ont pas assez Ã  manger en ce moment.
 	AI_Output (self ,other,"DIA_Hakon_Add_12_06"); //Ils se rapprochent sans cesse un peu plus de la ville.
 };
 
@@ -186,11 +186,11 @@ func int DIA_Hakon_Paladine_Condition ()
 };
 func void DIA_Hakon_Paladine_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_07"); //Que savez-vous au sujet des paladins ?
-	AI_Output (self ,other,"DIA_Hakon_Add_12_08"); //Ces types sont en train de me ruiner !
-	AI_Output (self ,other,"DIA_Hakon_Add_12_09"); //On ne peut quasiment rien acheter de plus grand qu'une épée courte en ville.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_10"); //Les paladins ont réquisitionné tout ce qui avait une plus longue lame.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_11"); //(sarcastique) En échange, j'ai le droit de vivre à l'hôtel sans payer ma chambre. Ha !
+	AI_Output (other, self,"DIA_Hakon_Add_15_07"); //Que savez-vous au sujet des paladinsÂ ?
+	AI_Output (self ,other,"DIA_Hakon_Add_12_08"); //Ces types sont en train de me ruinerÂ !
+	AI_Output (self ,other,"DIA_Hakon_Add_12_09"); //On ne peut quasiment rien acheter de plus grand qu'une Ã©pÃ©e courte en ville.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_10"); //Les paladins ont rÃ©quisitionnÃ© tout ce qui avait une plus longue lame.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_11"); //(sarcastique) En Ã©change, j'ai le droit de vivre Ã  l'hÃ´tel sans payer ma chambre. HaÂ !
 };
 
 // ********************************************************
@@ -203,7 +203,7 @@ instance DIA_Hakon_WoWaffen		(C_INFO)
 	condition	 = 	DIA_Hakon_WoWaffen_Condition;
 	information	 = 	DIA_Hakon_WoWaffen_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Où trouvez-vous vos armes ?";
+	description	 = 	"OÃ¹ trouvez-vous vos armes ?";
 };
 func int DIA_Hakon_WoWaffen_Condition ()
 {	
@@ -214,17 +214,17 @@ func int DIA_Hakon_WoWaffen_Condition ()
 };
 func void DIA_Hakon_WoWaffen_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_12"); //D'où faites-vous venir vos armes ?
+	AI_Output (other, self,"DIA_Hakon_Add_15_12"); //D'oÃ¹ faites-vous venir vos armesÂ ?
 	if (Npc_KnowsInfo (other, DIA_Hakon_HaradBandits))
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_13"); //De nulle part ! Je me fournissais auprès d'Harad.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_13"); //De nulle partÂ ! Je me fournissais auprÃ¨s d'Harad.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_14"); //Je me fournissais auprès d'Harad, le forgeron.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_14"); //Je me fournissais auprÃ¨s d'Harad, le forgeron.
 	};
 	AI_Output (self ,other,"DIA_Hakon_Add_12_15"); //Mais maintenant, il travaille exclusivement pour les paladins.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_16"); //Il travaille gratuitement pour eux nuit et jour, tel un fou. Il est persuadé que c'est son devoir.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_16"); //Il travaille gratuitement pour eux nuit et jour, tel un fou. Il est persuadÃ© que c'est son devoir.
 	AI_Output (self ,other,"DIA_Hakon_Add_12_17"); //Je ne peux vous offrir que ce qu'il me reste en stock.
 };
 
@@ -238,7 +238,7 @@ instance DIA_Hakon_HaradBandits		(C_INFO)
 	condition	 = 	DIA_Hakon_HaradBandits_Condition;
 	information	 = 	DIA_Hakon_HaradBandits_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Harad m'a parlé de l'attaque des bandits...";
+	description	 = 	"Harad m'a parlÃ© de l'attaque des bandits...";
 };
 func int DIA_Hakon_HaradBandits_Condition ()
 {
@@ -249,10 +249,10 @@ func int DIA_Hakon_HaradBandits_Condition ()
 };
 func void DIA_Hakon_HaradBandits_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_18"); //Harad m'a parlé des attaques perpétrées par les brigands.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_19"); //Oh. Et ?
-	AI_Output (other, self,"DIA_Hakon_Add_15_20"); //Il donnera son accord pour que je sois accepté comme apprenti si je retrouve les brigands.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_21"); //(éclate de rire) Ce bon vieux Harad ! Ce doit être sa manière à lui de me faire savoir qu'il est dans l'incapacité de me fabriquer des armes pour le moment.
+	AI_Output (other, self,"DIA_Hakon_Add_15_18"); //Harad m'a parlÃ© des attaques perpÃ©trÃ©es par les brigands.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_19"); //Oh. EtÂ ?
+	AI_Output (other, self,"DIA_Hakon_Add_15_20"); //Il donnera son accord pour que je sois acceptÃ© comme apprenti si je retrouve les brigands.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_21"); //(Ã©clate de rire) Ce bon vieux HaradÂ ! Ce doit Ãªtre sa maniÃ¨re Ã  lui de me faire savoir qu'il est dans l'incapacitÃ© de me fabriquer des armes pour le moment.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -277,16 +277,16 @@ func int DIA_Hakon_Banditen_Condition ()
 };
 func void DIA_Hakon_Banditen_Info ()
 {
-	AI_Output (other, self, "DIA_Hakon_Banditen_15_00"); //Que savez-vous au sujet des brigands ?
-	AI_Output (self, other, "DIA_Hakon_Banditen_12_01"); //Ce que je sais à leur sujet ? Ils m'ont dévalisé avant que j'arrive en ville !
+	AI_Output (other, self, "DIA_Hakon_Banditen_15_00"); //Que savez-vous au sujet des brigandsÂ ?
+	AI_Output (self, other, "DIA_Hakon_Banditen_12_01"); //Ce que je sais Ã  leur sujetÂ ? Ils m'ont dÃ©valisÃ© avant que j'arrive en villeÂ !
 	AI_Output (self, other, "DIA_Hakon_Banditen_12_02"); //Et je ne suis pas le seul dans ce cas. Cela fait un moment qu'ils font des leurs...
-	AI_Output (self, other, "DIA_Hakon_Banditen_12_03"); //La milice a bien essayé de les retrouver, mais sans succès.
+	AI_Output (self, other, "DIA_Hakon_Banditen_12_03"); //La milice a bien essayÃ© de les retrouver, mais sans succÃ¨s.
 
 	MIS_HakonBandits = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_HakonBanditen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HakonBanditen,LOG_RUNNING);
-	B_LogEntry(TOPIC_HakonBanditen,"Hakon, le vendeur d'armes, a été attaqué par des bandits à l'extérieur de la ville." );
+	B_LogEntry(TOPIC_HakonBanditen,"Hakon, le vendeur d'armes, a Ã©tÃ© attaquÃ© par des bandits Ã  l'extÃ©rieur de la ville." );
 };
 
 
@@ -312,18 +312,18 @@ func int DIA_Hakon_Wieviel_Condition ()
 func void DIA_Hakon_Wieviel_Info ()
 {
 	AI_Output (other, self, "DIA_Hakon_Banditen_Ehre_15_00"); //Je m'en occupe.
-	AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_01"); //Quoi ? Vous voulez vous charger des brigands ? Tout seul ? J'imagine que vous devez savoir vous battre, alors...
-	AI_Output (other, self, "DIA_Hakon_Banditen_Kohle_15_00"); //Combien seriez-vous prêt à me donner pour que je le fasse ?
+	AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_01"); //QuoiÂ ? Vous voulez vous charger des brigandsÂ ? Tout seulÂ ? J'imagine que vous devez savoir vous battre, alors...
+	AI_Output (other, self, "DIA_Hakon_Banditen_Kohle_15_00"); //Combien seriez-vous prÃªt Ã  me donner pour que je le fasseÂ ?
 	
 	if (Npc_KnowsInfo (other, DIA_Hakon_HaradBandits))
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_25"); //(rusé) Vous voulez entrer dans les bonnes grâces d'Harad, n'est-ce pas ?
-		AI_Output (self ,other,"DIA_Hakon_Add_12_26"); //Je ne vois pas pourquoi je devrais vous payer pour ça.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_25"); //(rusÃ©) Vous voulez entrer dans les bonnes grÃ¢ces d'Harad, n'est-ce pasÂ ?
+		AI_Output (self ,other,"DIA_Hakon_Add_12_26"); //Je ne vois pas pourquoi je devrais vous payer pour Ã§a.
 	}
 	else
 	{
 		AI_Output (self, other, "DIA_Hakon_Banditen_Ehre_12_01"); //Il est vrai que c'est une entreprise dangereuse...
-		AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_02"); //D'accord. Je vous paierai 100 pièces d'or si vous venez à bout des brigands.
+		AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_02"); //D'accord. Je vous paierai 100 piÃ¨ces d'or si vous venez Ã  bout des brigands.
 		MIS_HakonBanditsPay = TRUE;
 	};
 	
@@ -353,12 +353,12 @@ func int DIA_Hakon_Miliz_Condition ()
 func void DIA_Hakon_Miliz_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Hakon_Miliz_15_00"); //Savez-vous quels sont les miliciens qui ont pris part aux recherches ?
-	AI_Output (self, other, "DIA_Hakon_Miliz_12_01"); //L'un d'eux s'appelle Pablo. Il est parti à la recherche des brigands avec plusieurs de ses compagnons, mais ils ne les ont pas trouvés.
-	AI_Output (other, self, "DIA_Hakon_Miliz_15_02"); //Savez-vous où je peux trouver ce Pablo ?
+	AI_Output (other, self, "DIA_Hakon_Miliz_15_00"); //Savez-vous quels sont les miliciens qui ont pris part aux recherchesÂ ?
+	AI_Output (self, other, "DIA_Hakon_Miliz_12_01"); //L'un d'eux s'appelle Pablo. Il est parti Ã  la recherche des brigands avec plusieurs de ses compagnons, mais ils ne les ont pas trouvÃ©s.
+	AI_Output (other, self, "DIA_Hakon_Miliz_15_02"); //Savez-vous oÃ¹ je peux trouver ce PabloÂ ?
 	AI_Output (self, other, "DIA_Hakon_Miliz_12_03"); //Il patrouille en ville. Vous le trouverez soit sur la place du temple soit dans le bas quartier.
 	
-	B_LogEntry(TOPIC_HakonBanditen,"Pablo, un garde de la ville, a participé à la vaine recherche des bandits." );
+	B_LogEntry(TOPIC_HakonBanditen,"Pablo, un garde de la ville, a participÃ© Ã  la vaine recherche des bandits." );
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo
@@ -370,7 +370,7 @@ instance DIA_Hakon_Wo		(C_INFO)
 	condition	 = 	DIA_Hakon_Wo_Condition;
 	information	 = 	DIA_Hakon_Wo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Où vous ont-ils attaqué ?";
+	description	 = 	"OÃ¹ vous ont-ils attaquÃ© ?";
 };
 
 func int DIA_Hakon_Wo_Condition ()
@@ -382,9 +382,9 @@ func int DIA_Hakon_Wo_Condition ()
 };
 func void DIA_Hakon_Wo_Info ()
 {
-	AI_Output (other, self, "DIA_Hakon_Wo_15_00"); //Où les brigands vous ont-ils agressé ?
-	AI_Output (self, other, "DIA_Hakon_Wo_12_01"); //A proximité de la ferme d'Akil. Pour y arriver, il suffit de prendre la route de droite à la sortie de la ville.
-	AI_Output (self, other, "DIA_Hakon_Wo_12_02"); //Au bout de quelque temps, vous devriez apercevoir quelques marches. C'est là que ces fumiers m'ont attaqué. Je parie que leur cachette se trouve non loin, dans les bois.
+	AI_Output (other, self, "DIA_Hakon_Wo_15_00"); //OÃ¹ les brigands vous ont-ils agressÃ©Â ?
+	AI_Output (self, other, "DIA_Hakon_Wo_12_01"); //A proximitÃ© de la ferme d'Akil. Pour y arriver, il suffit de prendre la route de droite Ã  la sortie de la ville.
+	AI_Output (self, other, "DIA_Hakon_Wo_12_02"); //Au bout de quelque temps, vous devriez apercevoir quelques marches. C'est lÃ  que ces fumiers m'ont attaquÃ©. Je parie que leur cachette se trouve non loin, dans les bois.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Miliz
@@ -396,7 +396,7 @@ instance DIA_Hakon_Success		(C_INFO)
 	condition	 = 	DIA_Hakon_Success_Condition;
 	information	 = 	DIA_Hakon_Success_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Je me suis chargé des bandits.";
+	description	 = 	"Je me suis chargÃ© des bandits.";
 };
 
 func int DIA_Hakon_Success_Condition ()
@@ -413,15 +413,15 @@ func int DIA_Hakon_Success_Condition ()
 func void DIA_Hakon_Success_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Hakon_Success_15_00"); //Je me suis occupé des brigands.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_27"); //C'est vrai ? N'importe qui pourrait le prétendre. Il me faudrait une preuve.
-	AI_Output (other, self,"DIA_Hakon_Add_15_28"); //(soupire) Vous voulez que je retourne leur couper la tête afin de vous les ramener ?
-	AI_Output (self ,other,"DIA_Hakon_Add_12_29"); //(rapidement) Euh... non, ce ne sera pas nécessaire. Je vous crois.
-	AI_Output (self, other, "DIA_Hakon_Success_12_01"); //Vous venez de rendre un grand service aux marchands et à la ville.
+	AI_Output (other, self, "DIA_Hakon_Success_15_00"); //Je me suis occupÃ© des brigands.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_27"); //C'est vraiÂ ? N'importe qui pourrait le prÃ©tendre. Il me faudrait une preuve.
+	AI_Output (other, self,"DIA_Hakon_Add_15_28"); //(soupire) Vous voulez que je retourne leur couper la tÃªte afin de vous les ramenerÂ ?
+	AI_Output (self ,other,"DIA_Hakon_Add_12_29"); //(rapidement) Euh... non, ce ne sera pas nÃ©cessaire. Je vous crois.
+	AI_Output (self, other, "DIA_Hakon_Success_12_01"); //Vous venez de rendre un grand service aux marchands et Ã  la ville.
 	
 	if (Npc_KnowsInfo (other, DIA_Hakon_HaradBandits))
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_30"); //Harad en sera très satisfait... enfin, je crois.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_30"); //Harad en sera trÃ¨s satisfait... enfin, je crois.
 	};
 		
 	if (MIS_HakonBanditsPay == TRUE)
@@ -444,7 +444,7 @@ INSTANCE DIA_Hakon_Minenanteil (C_INFO)
 	condition	= DIA_Hakon_Minenanteil_Condition;
 	information	= DIA_Hakon_Minenanteil_Info;
 	permanent	= FALSE;
-	description = "Où avez-vous trouvé ces concessions minières que vous vendez ?";
+	description = "OÃ¹ avez-vous trouvÃ© ces concessions miniÃ¨res que vous vendez ?";
 };   
                     
 FUNC INT DIA_Hakon_Minenanteil_Condition()
@@ -458,7 +458,7 @@ FUNC INT DIA_Hakon_Minenanteil_Condition()
 
 FUNC VOID DIA_Hakon_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Hakon_Minenanteil_15_00"); //D'où tenez-vous ces concessions minières que vous vendez ?
+	AI_Output (other, self, "DIA_Hakon_Minenanteil_15_00"); //D'oÃ¹ tenez-vous ces concessions miniÃ¨res que vous vendezÂ ?
 	AI_Output (self, other, "DIA_Hakon_Minenanteil_12_01"); //Je regrette, mais je ne peux pas vous le dire. Ce serait trop dangereux pour moi.
 	B_GivePlayerXP (XP_Ambient);
 };	
@@ -529,6 +529,6 @@ FUNC INT DIA_Hakon_Kapitel2_Condition()
 FUNC VOID DIA_Hakon_Kapitel2_Info()
 {	
 	AI_Output (self ,other,"DIA_Hakon_Add_12_22"); //Encore vous !
-	AI_Output (self ,other,"DIA_Hakon_Add_12_23"); //Harad a enfin terminé de travailler pour les paladins.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_24"); //Cela signifie que je peux enfin vous proposer de nouvelles armes. Ça vous intéresse ?
+	AI_Output (self ,other,"DIA_Hakon_Add_12_23"); //Harad a enfin terminÃ© de travailler pour les paladins.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_24"); //Cela signifie que je peux enfin vous proposer de nouvelles armes. Ã‡a vous intÃ©resseÂ ?
 };

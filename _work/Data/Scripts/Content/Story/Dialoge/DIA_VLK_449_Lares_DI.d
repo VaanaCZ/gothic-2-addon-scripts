@@ -45,11 +45,11 @@ FUNC INT DIA_Lares_DI_Hallo_Condition()
 };
 FUNC VOID DIA_Lares_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Hallo_15_00"); //Comment ça se passe ?
+	AI_Output (other,self ,"DIA_Lares_DI_Hallo_15_00"); //Comment Ã§a se passe ?
 
 	if (ORkSturmDI == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_01"); //Dépêchez-vous ! Les orques ne vont sans doute pas tarder à revenir !
+		AI_Output (self ,other,"DIA_Lares_DI_Hallo_09_01"); //DÃ©pÃªchez-vousÂ ! Les orques ne vont sans doute pas tarder Ã  revenirÂ !
 	}
 	else
 	{
@@ -81,14 +81,14 @@ FUNC INT DIA_Lares_DI_Training_Condition()
 
 FUNC VOID DIA_Lares_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Enseignez-moi vos compétences.
-	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //Pas de problème.
+	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Enseignez-moi vos compÃ©tences.
+	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //Pas de problÃ¨me.
 	
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre à être discret"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre Ã  Ãªtre discret"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -101,13 +101,13 @@ FUNC VOID DIA_Lares_DI_Training_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Pliez légèrement la jambe avant afin de garder l'autre bien droite. De cette manière, vous aurez une meilleure assise.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Pliez lÃ©gÃ¨rement la jambe avant afin de garder l'autre bien droite. De cette maniÃ¨re, vous aurez une meilleure assise.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre à être discret"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre Ã  Ãªtre discret"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -126,7 +126,7 @@ FUNC VOID DIA_Lares_DI_Training_1H_5 ()
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre à être discret"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre Ã  Ãªtre discret"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -151,7 +151,7 @@ func void DIA_Lares_DI_Training_DEX_1 ()
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre à être discret"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre Ã  Ãªtre discret"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -168,14 +168,14 @@ func void DIA_Lares_DI_Training_DEX_5 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 5, T_MED))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_5_09_00"); //Regardez toujours où vous mettez les pieds.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_5_09_00"); //Regardez toujours oÃ¹ vous mettez les pieds.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre à être discret"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre Ã  Ãªtre discret"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -189,14 +189,14 @@ func void DIA_Lares_DI_Training_SNEAK ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_SNEAK_09_00"); //Marchez bien sur le plat du pied quand vous essayez d'avancer discrètement.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_SNEAK_09_00"); //Marchez bien sur le plat du pied quand vous essayez d'avancer discrÃ¨tement.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre à être discret"	,DIA_Lares_DI_Training_SNEAK);
+		Info_AddChoice		(DIA_Lares_DI_Training, "Apprendre Ã  Ãªtre discret"	,DIA_Lares_DI_Training_SNEAK);
 	};
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_Lares_DI_Training_DEX_1);
 	Info_AddChoice		(DIA_Lares_DI_Training, B_BuildLearnString(PRINT_LearnDEX5			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_Lares_DI_Training_DEX_5);
@@ -223,7 +223,7 @@ INSTANCE DIA_Lares_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_Lares_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "Tout cela ne semble pas beaucoup vous préoccuper.";
+	description = "Tout cela ne semble pas beaucoup vous prÃ©occuper.";
 };                       
 FUNC INT DIA_Lares_DI_UndeadDragonDead_Condition()
 {
@@ -236,13 +236,13 @@ FUNC INT DIA_Lares_DI_UndeadDragonDead_Condition()
 var int DIA_Lares_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Lares_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //Tout ceci n'a guère l'air de vous préoccuper...
-	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //Bah. C'est que j'étais sûr que vous y arriveriez, c'est tout.
+	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //Tout ceci n'a guÃ¨re l'air de vous prÃ©occuper...
+	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //Bah. C'est que j'Ã©tais sÃ»r que vous y arriveriez, c'est tout.
 
 	if (DIA_Lares_DI_UndeadDragonDead_OneTime == FALSE )
 	{
-		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Que comptez-vous faire maintenant ?
-		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Pas la moindre idée. J'imagine que je vais vous suivre pour le moment.
+		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Que comptez-vous faire maintenantÂ ?
+		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Pas la moindre idÃ©e. J'imagine que je vais vous suivre pour le moment.
 		
 		DIA_Lares_DI_UndeadDragonDead_OneTime = TRUE;
 	};

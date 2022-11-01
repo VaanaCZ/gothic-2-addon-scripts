@@ -24,7 +24,7 @@ FUNC VOID DIA_Parcival_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Schürfer
+//	Info SchÃ¼rfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Schurfer		(C_INFO)
 {
@@ -44,20 +44,20 @@ func int DIA_Parcival_Schurfer_Condition ()
 };
 func void DIA_Parcival_Schurfer_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Que pouvez-vous me dire au sujet des mineurs ?
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //C'est moi qui ai constitué les trois groupes.
+	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Que pouvez-vous me dire au sujet des mineursÂ ?
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //C'est moi qui ai constituÃ© les trois groupes.
 	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //Les paladins qui les dirigent ont pour nom Marcos, Fajeth et Silvestro.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Le groupe de Marcos est parti en direction d'une vieille mine dirigée par un mineur expérimenté du nom de Grimes.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Le groupe de Marcos est parti en direction d'une vieille mine dirigÃ©e par un mineur expÃ©rimentÃ© du nom de Grimes.
 	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //Les deux autres groupes sont partis ensemble.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Jergan, l'un de nos éclaireurs, nous a indiqué qu'ils avaient dressé le camp près d'une grande tour.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Jergan, l'un de nos Ã©claireurs, nous a indiquÃ© qu'ils avaient dressÃ© le camp prÃ¨s d'une grande tour.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Chaque escouade de mineurs est menée par un paladin : Marcos, Fajeth et Silvestro.");
-	B_LogEntry (TOPIC_ScoutMine,"Le groupe de Marcos s'est dirigé vers la vieille mine. Leur éclaireur est le mineur Grimes."); 
-	B_LogEntry (TOPIC_ScoutMine,"Les deux autres escouades se sont unies. Elles ont établi leur campement près d’une grande tour."); 
+	B_LogEntry (TOPIC_ScoutMine,"Chaque escouade de mineurs est menÃ©e par un paladin : Marcos, Fajeth et Silvestro.");
+	B_LogEntry (TOPIC_ScoutMine,"Le groupe de Marcos s'est dirigÃ© vers la vieille mine. Leur Ã©claireur est le mineur Grimes."); 
+	B_LogEntry (TOPIC_ScoutMine,"Les deux autres escouades se sont unies. Elles ont Ã©tabli leur campement prÃ¨s dâ€™une grande tour."); 
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Schürfer
+//	Info SchÃ¼rfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Diego		(C_INFO)
 {
@@ -78,10 +78,10 @@ func int DIA_Parcival_Diego_Condition ()
 };
 func void DIA_Parcival_Diego_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //De quel groupe de mineurs Diego faisait-il partie ?
-	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Diego, le prisonnier ? Il se trouve dans le groupe de Silvestro.
+	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //De quel groupe de mineurs Diego faisait-il partieÂ ?
+	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Diego, le prisonnierÂ ? Il se trouve dans le groupe de Silvestro.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Diego est avec les mineurs dirigés par le paladin Silvestro."); 
+	B_LogEntry (TOPIC_ScoutMine,"Diego est avec les mineurs dirigÃ©s par le paladin Silvestro."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Weg
@@ -93,7 +93,7 @@ instance DIA_Parcival_Weg		(C_INFO)
 	condition	 = 	DIA_Parcival_Weg_Condition;
 	information	 = 	DIA_Parcival_Weg_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Savez-vous comment accéder aux sites d'extraction ?";
+	description	 =	"Savez-vous comment accÃ©der aux sites d'extraction ?";
 };
 func int DIA_Parcival_Weg_Condition ()	
 {	
@@ -104,11 +104,11 @@ func int DIA_Parcival_Weg_Condition ()
 };
 func void DIA_Parcival_Weg_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //Savez-vous comment rejoindre les sites miniers ?
-	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Il n'existe aucun chemin sûr pour se rendre dans cette vallée, mais il me paraît évident qu'il vaut mieux éviter la voie la plus directe.
-	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Restez au large des orques et des bois, et qu'Innos vous protège.
+	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //Savez-vous comment rejoindre les sites miniersÂ ?
+	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Il n'existe aucun chemin sÃ»r pour se rendre dans cette vallÃ©e, mais il me paraÃ®t Ã©vident qu'il vaut mieux Ã©viter la voie la plus directe.
+	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Restez au large des orques et des bois, et qu'Innos vous protÃ¨ge.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Il semblerait plus sage de ne pas prendre la route menant directement aux mineurs. Je devrais particulièrement éviter les bois et les orques."); 
+	B_LogEntry (TOPIC_ScoutMine,"Il semblerait plus sage de ne pas prendre la route menant directement aux mineurs. Je devrais particuliÃ¨rement Ã©viter les bois et les orques."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -120,7 +120,7 @@ instance DIA_Parcival_DRAGON		(C_INFO)
 	nr			 =  2;
 	condition	 = 	DIA_Parcival_DRAGON_Condition;
 	information	 = 	DIA_Parcival_DRAGON_Info;
-	description	 =	"Comment ça se passe ?";
+	description	 =	"Comment Ã§a se passe ?";
 };
 func int DIA_Parcival_DRAGON_Condition ()	
 {
@@ -128,9 +128,9 @@ func int DIA_Parcival_DRAGON_Condition ()
 };
 func void DIA_Parcival_DRAGON_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Comme ça va ?
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //Le camp est encerclé d'orques occupant une position retranchée.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Mais les attaques de dragons sont encore bien plus inquiétantes. Ils ont dévasté notre cercle extérieur.
+	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Comme Ã§a va ?
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //Le camp est encerclÃ© d'orques occupant une position retranchÃ©e.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Mais les attaques de dragons sont encore bien plus inquiÃ©tantes. Ils ont dÃ©vastÃ© notre cercle extÃ©rieur.
 	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //S'ils reviennent, nous subirons de terribles pertes.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -155,10 +155,10 @@ func int DIA_Parcival_DRAGONS_Condition ()
 };
 func void DIA_Parcival_DRAGONS_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Combien de dragons y a-t-il ?
+	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Combien de dragons y a-t-ilÂ ?
 	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //Nous l'ignorons, mais nous savons qu'il y en a plus d'un.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //Et ce n'est pas tout... La Vallée des mines grouille de créatures maléfiques alliées aux dragons.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Ne nous voilons pas la face... sans renforts, nos chances de nous en sortir en vie sont extrêmement minces.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //Et ce n'est pas tout... La VallÃ©e des mines grouille de crÃ©atures malÃ©fiques alliÃ©es aux dragons.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Ne nous voilons pas la face... sans renforts, nos chances de nous en sortir en vie sont extrÃªmement minces.
 	 
 	AI_StopProcessInfos (self); 
 };
@@ -196,21 +196,21 @@ func void DIA_Parcival_BRAVE_Info ()
 		
 		if randy == 0
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //Tout est calme, mais cela peut changer d'un instant à l'autre.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //Tout est calme, mais cela peut changer d'un instant Ã  l'autre.
 		};
 		if randy == 1
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //Nous résisterons tant que nous le pourrons.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //Nous rÃ©sisterons tant que nous le pourrons.
 		};
 		if randy == 2
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Innos nous aidera. Sa lumière illumine nos cœurs !
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Innos nous aidera. Sa lumiÃ¨re illumine nos cÅ“ursÂ !
 		};
 	
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Hé ! Vous n'avez rien de mieux à faire que de m'imposer vos incessants bavardages ? Allez-vous en !
+	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //HÃ©Â ! Vous n'avez rien de mieux Ã  faire que de m'imposer vos incessants bavardagesÂ ? Allez-vous enÂ !
 	B_GivePlayerXP (XP_Ambient);
 	};
 	
@@ -281,15 +281,15 @@ func void DIA_Parcival_ALLESKLAR_Info ()
 
 	if (DIA_Parcival_ALLESKLAR_NervCounter == 0)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_01"); //Jusque-là, oui...
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_01"); //Jusque-lÃ , oui...
 	}	
 	else if (DIA_Parcival_ALLESKLAR_NervCounter == 1)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Oui, bon sang !
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Oui, bon sangÂ !
 	}	
 	else if (Parcival_BRAVE_LaberCount > 6)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //(éclate de rire) Ha ! Je comprends maintenant ce que avez en tête. Non, mon ami, pas cette fois...
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //(Ã©clate de rire) HaÂ ! Je comprends maintenant ce que avez en tÃªte. Non, mon ami, pas cette fois...
 	}
 	else
 	{
@@ -344,7 +344,7 @@ instance DIA_Parcival_AnyNews		(C_INFO)
 	condition	 = 	DIA_Parcival_AnyNews_Condition;
 	information	 = 	DIA_Parcival_AnyNews_Info;
 
-	description  =	"Il s'est passé quelque chose d'important ?";		
+	description  =	"Il s'est passÃ© quelque chose d'important ?";		
 };
 
 func int DIA_Parcival_AnyNews_Condition ()
@@ -357,34 +357,34 @@ func int DIA_Parcival_AnyNews_Condition ()
 };
 func void DIA_Parcival_AnyNews_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Il s'est passé quoi que ce soit d'important ?
+	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Il s'est passÃ© quoi que ce soit d'importantÂ ?
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Vous faites partie de cette racaille qui se donne le nom pompeux de chasseurs de dragons ?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Vous faites partie de cette racaille qui se donne le nom pompeux de chasseurs de dragonsÂ ?
 		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //Je vous croyais suffisamment honorable pour ne pas vous acoquiner avec ces individus.
 	
 	}
 	else
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //Je suis inquiet... très inquiet.
-		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Pour quelle raison ?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Des inconnus sont arrivés il y a peu. Ils se donnent le nom de chasseurs de dragons.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //Je suis inquiet... trÃ¨s inquiet.
+		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Pour quelle raisonÂ ?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Des inconnus sont arrivÃ©s il y a peu. Ils se donnent le nom de chasseurs de dragons.
 		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //Mais pour moi, ce ne sont que des oisifs et des criminels.
 	};
-	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //S'il ne tenait qu'à moi, je les chasserai tous du château et je laisserai les orques se charger d'eux.
+	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //S'il ne tenait qu'Ã  moi, je les chasserai tous du chÃ¢teau et je laisserai les orques se charger d'eux.
 
 	Info_ClearChoices (DIA_Parcival_AnyNews);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Contrairement au seigneur Hagen, ils sont là.",DIA_Parcival_AnyNews_LordHagen); 
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Contrairement au seigneur Hagen, ils sont lÃ .",DIA_Parcival_AnyNews_LordHagen); 
 	Info_AddChoice	(DIA_Parcival_AnyNews,"Vous devriez leur donner une chance.",DIA_Parcival_AnyNews_Chance);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Ne croyez-vous pas que vous exagérez ?",DIA_Parcival_AnyNews_Overact);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Ne croyez-vous pas que vous exagÃ©rez ?",DIA_Parcival_AnyNews_Overact);
 	
 };
 
 FUNC VOID DIA_Parcival_AnyNews_LordHagen ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Contrairement au seigneur Hagen, ils sont là, eux.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //(part d'un rire sans joie) Eh oui, hélas. Nous n'avons qu'eux...
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Innos nous impose vraiment une terrible épreuve...
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Contrairement au seigneur Hagen, ils sont lÃ , eux.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //(part d'un rire sans joie) Eh oui, hÃ©las. Nous n'avons qu'eux...
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Innos nous impose vraiment une terrible Ã©preuve...
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);
 };
@@ -393,22 +393,22 @@ FUNC VOID DIA_Parcival_AnyNews_Chance ()
 {
 	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //Vous devriez leur laisser leur chance.
 	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //C'est exactement ce qui est en train de se passer... malheureusement.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Garond est convaincu qu'ils peuvent nous être utiles.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Mais je garde l'œil sur eux. Les orques nous causent déjà suffisamment d'ennuis, nous n'avons vraiment pas besoin d'en avoir d'autres.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Garond est convaincu qu'ils peuvent nous Ãªtre utiles.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Mais je garde l'Å“il sur eux. Les orques nous causent dÃ©jÃ  suffisamment d'ennuis, nous n'avons vraiment pas besoin d'en avoir d'autres.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);  
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Overact ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Vous ne trouvez pas que vous exagérez ?
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //Absolument pas ! Dans notre situation, nous avons besoin d'hommes capables de servir d'exemple...
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //De guerriers animés par le feu sacré d'Innos.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Vous ne trouvez pas que vous exagÃ©rezÂ ?
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //Absolument pasÂ ! Dans notre situation, nous avons besoin d'hommes capables de servir d'exemple...
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //De guerriers animÃ©s par le feu sacrÃ© d'Innos.
 	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //Au lieu de cela, cette racaille nuit au moral de mes troupes.
 };
  
 ///////////////////////////////////////////////////////////////////////
-//	Ich muss mit dir über Jan reden
+//	Ich muss mit dir Ã¼ber Jan reden
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_Jan		(C_INFO)
@@ -432,15 +432,15 @@ func int DIA_Parcival_Jan_Condition ()
 func void DIA_Parcival_Jan_Info ()
 {
 	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //Il faut que je vous parle de Jan.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_01"); //Jan ? Qui est-ce donc ?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //Un chasseur de dragons, il est également forgeron.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //Ah, oui, je me souviens de lui. Que vouliez-vous me dire à son sujet ?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Il souhaiterait travailler à la forge.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //Hors de question ! Il n'est pas des nôtres et je ne lui fais nullement confiance.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_01"); //JanÂ ? Qui est-ce doncÂ ?
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //Un chasseur de dragons, il est Ã©galement forgeron.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //Ah, oui, je me souviens de lui. Que vouliez-vous me dire Ã  son sujetÂ ?
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Il souhaiterait travailler Ã  la forge.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //Hors de questionÂ ! Il n'est pas des nÃ´tres et je ne lui fais nullement confiance.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Kannst du das mit Jan noch mal überdenken?
+//	Kannst du das mit Jan noch mal Ã¼berdenken?
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_ThinkAgain		(C_INFO)
@@ -450,7 +450,7 @@ instance DIA_Parcival_ThinkAgain		(C_INFO)
 	condition	 = 	DIA_Parcival_ThinkAgain_Condition;
 	information	 = 	DIA_Parcival_ThinkAgain_Info;
 	permanent	 = 	TRUE;
-	description  =	"Ne pouvez-vous pas reconsidérer votre décision pour Jan ?";		
+	description  =	"Ne pouvez-vous pas reconsidÃ©rer votre dÃ©cision pour Jan ?";		
 };
 
 func int DIA_Parcival_ThinkAgain_Condition ()
@@ -463,12 +463,12 @@ func int DIA_Parcival_ThinkAgain_Condition ()
 };
 func void DIA_Parcival_ThinkAgain_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //Vous ne voulez pas réfléchir à la question pour ce qui est de Jan ?
-	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //Non, ma décision est prise.
+	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //Vous ne voulez pas rÃ©flÃ©chir Ã  la question pour ce qui est de JanÂ ?
+	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //Non, ma dÃ©cision est prise.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Garond will, dass Jan die Schmiede übernimmt.
+//	Garond will, dass Jan die Schmiede Ã¼bernimmt.
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_TalkedGarond		(C_INFO)
@@ -494,7 +494,7 @@ func void DIA_Parcival_TalkedGarond_Info ()
 {
 	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Garond souhaite que Jan reprenne la forge.
 	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //Hmm... Dans ce cas, qu'il la prenne.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //Mais vous ne m'ôterez pas de l'idée que c'est une erreur de lui faire confiance.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //Mais vous ne m'Ã´terez pas de l'idÃ©e que c'est une erreur de lui faire confiance.
 };  
 
 ///////////////////////////////////////////////////////////////////////
@@ -508,7 +508,7 @@ instance DIA_Parcival_PERMKAP4		(C_INFO)
 	information	 = 	DIA_Parcival_PERMKAP4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Et à part ça ?";
+	description	 = 	"Et Ã  part Ã§a ?";
 };
 
 func int DIA_Parcival_PERMKAP4_Condition ()
@@ -522,8 +522,8 @@ func int DIA_Parcival_PERMKAP4_Condition ()
 
 func void DIA_Parcival_PERMKAP4_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //Et à part ça ?
-	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //Aaah, laissez-moi tranquille !
+	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //Et Ã  part Ã§a ?
+	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //Aaah, laissez-moi tranquilleÂ !
 
 };
 
@@ -584,8 +584,8 @@ func int DIA_Parcival_VERRAETER_Condition ()
 func void DIA_Parcival_VERRAETER_Info ()
 {
 	
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //Traître ! Je sais que c'est vous qui avez ouvert la porte !
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Vous allez me le payer !
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //TraÃ®treÂ ! Je sais que c'est vous qui avez ouvert la porteÂ !
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Vous allez me le payerÂ !
 	
 	Npc_SetRefuseTalk (self,30);
 	AI_StopProcessInfos (self);

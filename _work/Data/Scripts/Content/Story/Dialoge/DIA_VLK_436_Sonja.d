@@ -85,7 +85,7 @@ func void DIA_Sonja_STANDARD_Info ()
 	else if (other.guild == GIL_DJG)
 	&& (Sonja_Says == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //Le problème, avec vous les hommes, c'est que vous préférez tuer de l'orque que faire des galipettes.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //Le problÃ¨me, avec vous les hommes, c'est que vous prÃ©fÃ©rez tuer de l'orque que faire des galipettes.
 		Sonja_Says = TRUE;
 	}
 	else

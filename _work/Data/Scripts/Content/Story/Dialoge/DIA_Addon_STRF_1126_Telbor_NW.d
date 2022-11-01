@@ -73,12 +73,12 @@ FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Telbor_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//Alors, le travail des champs va reprendre ?
-	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//Hé, le type qui m'a sauvé la vie ! Et oui, le dur labeur continue pour moi.
+	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//HÃ©, le type qui m'a sauvÃ© la vie ! Et oui, le dur labeur continue pour moi.
 	
 	if !Npc_IsDead (Egill)
 	&& !Npc_IsDead (Ehnim)
 	{
-		AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_02");//Surtout avec ces deux imbéciles de frères. Mon dieu, les bandits n'étaient pas aussi terribles...
+		AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_02");//Surtout avec ces deux imbÃ©ciles de frÃ¨res. Mon dieu, les bandits n'Ã©taient pas aussi terribles...
 	};
 };
 

@@ -1,7 +1,7 @@
 instance VLK_404_Lutero (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lutéro"; 
+	name 		= "LutÃ©ro"; 
 	guild 		= GIL_VLK;
 	id 			= 404;
 	voice 		= 13;

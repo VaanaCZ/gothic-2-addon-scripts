@@ -277,7 +277,7 @@ func void PLAYER_HOTKEY_LAME_POTION()
 		 }
 		 else
 		 {
-				Print ("Mana max. dÈj‡ atteint !");
+				Print ("Mana max. d√©j√† atteint !");
 		 };
 	};
 };
@@ -335,7 +335,7 @@ if (Npc_IsInState (hero,ZS_Dead)==FALSE)
 		 }
 		 else
 		 {
-				Print ("Energie vitale maximum dÈj‡ atteinte !");
+				Print ("Energie vitale maximum d√©j√† atteinte !");
 		 };
 	};
 };

@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Jusqu'‡ prÈsent on a pu contenir les orques. Mais il y en a de plus en plus.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Jusqu'√† pr√©sent on a pu contenir les orques. Mais il y en a de plus en plus.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_01"); //La milice ne vient pas nous aider. Elle ne quitte la ville que pour prendre nos rÈcoltes et notre bÈtail.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_01"); //La milice ne vient pas nous aider. Elle ne quitte la ville que pour prendre nos r√©coltes et notre b√©tail.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar est fou de se dresser contre la ville alors que les paladins sont l‡.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar est fou de se dresser contre la ville alors que les paladins sont l√†.
 	};
 	
 	AI_StopProcessInfos	(self);

@@ -51,32 +51,32 @@ FUNC INT DIA_Dragon_Fire_Island_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Restez, humain. Tous mes sens me hurlent que celui qui a assassiné ma chair et mon sang se tient devant moi.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Restez, humain. Tous mes sens me hurlent que celui qui a assassinÃ© ma chair et mon sang se tient devant moi.
 	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //Vraiment ? Qui traitez-vous d'assassin, rejeton de l'enfer ?
 	
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Cela ne vous a-t-il pas suffi de détruire presque toute notre descendance ?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Cela ne vous a-t-il pas suffi de dÃ©truire presque toute notre descendance ?
 	};
 	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Le meurtre de mon frère Feomathar pèse sur votre conscience et vous allez payer pour ça.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Le meurtre de mon frÃ¨re Feomathar pÃ¨se sur votre conscience et vous allez payer pour Ã§a.
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //Je m'occuperai également du reste de votre immonde progéniture.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrhh. Je vais vous brûler vif avec le plus grand plaisir.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //Je m'occuperai Ã©galement du reste de votre immonde progÃ©niture.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrhh. Je vais vous brÃ»ler vif avec le plus grand plaisir.
 	};
 
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //Arrêtez de gesticuler et venons-en aux choses sérieuses.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_07"); //Vous avez été très loin, petit humain, mais vous ne quitterez jamais cet endroit vivant.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //ArrÃªtez de gesticuler et venons-en aux choses sÃ©rieuses.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_07"); //Vous avez Ã©tÃ© trÃ¨s loin, petit humain, mais vous ne quitterez jamais cet endroit vivant.
 
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Un autre dragon de feu. Je commence à en avoir ras le bol de ces bestioles. Tout ce que je veux, c'est franchir le gouffre qui se trouve derrière le dragon de feu."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Un autre dragon de feu. Je commence Ã  en avoir ras le bol de ces bestioles. Tout ce que je veux, c'est franchir le gouffre qui se trouve derriÃ¨re le dragon de feu."); 
 
 	DragonTalk_Exit_Free  = FALSE;
 	self.flags =  0;

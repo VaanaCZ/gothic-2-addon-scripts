@@ -47,11 +47,11 @@ FUNC VOID DIA_OUT_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Depuis que la Barrière autour de la colonie pénitentiaire a disparu, on ne cesse d'avoir des problèmes avec les bandits.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Depuis que la BarriÃ¨re autour de la colonie pÃ©nitentiaire a disparu, on ne cesse d'avoir des problÃ¨mes avec les bandits.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_01"); //On ne peut pas compter sur la milice. Nous devons nous défendre nous-mêmes.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_01"); //On ne peut pas compter sur la milice. Nous devons nous dÃ©fendre nous-mÃªmes.
 	};
 	if (randy == 2)
 	{

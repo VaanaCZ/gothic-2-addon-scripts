@@ -1,6 +1,6 @@
 
-const int Value_Dragonegg 		= 200;//Joly: nicht ‰ndern
-const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
+const int Value_Dragonegg 		= 200;//Joly: nicht √§ndern
+const int Value_OrcEliteRing 	= 130;//Joly: nicht √§ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -60,7 +60,7 @@ const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
 
 INSTANCE ItMW_1H_FerrosSword_Mis (C_Item) 
 {	
-	name 				=	"EpÈe de FÈro";
+	name 				=	"Ep√©e de F√©ro";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;
@@ -85,7 +85,7 @@ INSTANCE ItMW_1H_FerrosSword_Mis (C_Item)
 
 INSTANCE ItMi_KerolothsGeldbeutel_MIS(C_Item)
 {
-	name 				=	"Sacoche de cuir de KÈroloth";
+	name 				=	"Sacoche de cuir de K√©roloth";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -110,7 +110,7 @@ FUNC VOID UseKerolothsGeldbeutel ()
 
 INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name 				=	"Sacoche de cuir de KÈroloth";
+	name 				=	"Sacoche de cuir de K√©roloth";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -127,7 +127,7 @@ INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 
 INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 {
-	name 				=	"ArbalËte de Sengrath";
+	name 				=	"Arbal√®te de Sengrath";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -149,7 +149,7 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 };
 
 
-//Tabins Lurkerh‰ute von Engrom
+//Tabins Lurkerh√§ute von Engrom
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"Le nom Talbin est marquÈ au fer ‡ l'intÈrieur.";
+	TEXT[0]				= 	"Le nom Talbin est marqu√© au fer √† l'int√©rieur.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -172,11 +172,11 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Drachen-Ei	(f¸r DJG only Ambient auftrag)
+//	Drachen-Ei	(f√ºr DJG only Ambient auftrag)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
-	name 					=	"åuf de dragon";
+	name 					=	"≈íuf de dragon";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -187,15 +187,15 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"L'úuf est chaud et vous entendez";
-	TEXT[1]					=	"un grattement ‡ l'intÈrieur.";
+	TEXT[0]					=	"L'≈ìuf est chaud et vous entendez";
+	TEXT[1]					=	"un grattement √† l'int√©rieur.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
 //---------------------------------------------------------------------
-//	OrcEliteRing (f¸r PAL only Ambient auftrag)
+//	OrcEliteRing (f√ºr PAL only Ambient auftrag)
 //---------------------------------------------------------------------
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
@@ -203,7 +203,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 	name 					=	"Anneau des seigneurs de guerre orques";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
-	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muﬂ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Mu√ü so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	value 					=	Value_OrcEliteRing;
 
@@ -217,7 +217,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 	description				= 	name;
 
 	TEXT[0]					=	"L'anneau est grossier et semble";
-	TEXT[1]					=	"Ètrangement froid.";
+	TEXT[1]					=	"√©trangement froid.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -262,7 +262,7 @@ INSTANCE ItPo_DragonEggDrinkNeoras_MIS (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Potion de sÈcrÈtion d'úuf de dragon";
+	description		= 	"Potion de s√©cr√©tion d'≈ìuf de dragon";
 	
 	TEXT[3]			= 	"Effets inconnus.";				
 	
@@ -287,7 +287,7 @@ INSTANCE ItPo_DragonEggDrinkNeoras_MIS (C_Item)
 
 instance ItWr_Map_Orcelite_MIS (C_Item)
 {
-	name 		= "Carte d'Ètat-major orque";  // 
+	name 		= "Carte d'√©tat-major orque";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -325,7 +325,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 		if (Use_Map_NewWorld_Orcelite_MIS_OneTime == FALSE)
 		&& (MIS_KillOrkOberst != 0)
 		{
-			B_LogEntry (TOPIC_OrcElite,"J'ai trouvÈ une Ètrange carte sur le colonel orque. Il semble que ce soit la carte stratÈgique des orques."); 
+			B_LogEntry (TOPIC_OrcElite,"J'ai trouv√© une √©trange carte sur le colonel orque. Il semble que ce soit la carte strat√©gique des orques."); 
 			Use_Map_NewWorld_Orcelite_MIS_OneTime = TRUE;
 		};
 	};

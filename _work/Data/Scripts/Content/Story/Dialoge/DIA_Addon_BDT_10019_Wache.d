@@ -36,7 +36,7 @@ FUNC INT DIA_Addon_10019_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Alors, vous partez à la mine ?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Alors, vous partez Ã  la mine ?
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"En fait, je cherche Raven...",DIA_Addon_BDT_10019_Wache_Hi_Raven);
@@ -45,15 +45,15 @@ FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 FUNC VOID B_Say_Wache_kaputt()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Pourquoi sont-ils morts ?
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(rires malicieux) Ils ont travaillé jusqu'à leur dernier souffle.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(rires malicieux) Ils ont travaillÃ© jusqu'Ã  leur dernier souffle.
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//En fait, je cherche Raven...
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//(avertissement) Hé - si vous essayez d'entrer dans le temple, vous serez aussi mort que les prisonniers ici.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Allez plutôt faire un tour à la mine.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//(avertissement) HÃ© - si vous essayez d'entrer dans le temple, vous serez aussi mort que les prisonniers ici.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Allez plutÃ´t faire un tour Ã  la mine.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
@@ -61,7 +61,7 @@ FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Ja()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//Oui.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Alors faites attention à vous. Soyez plus vigilant que ces types ne l'étaient avant de se retrouver en pièces.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Alors faites attention Ã  vous. Soyez plus vigilant que ces types ne l'Ã©taient avant de se retrouver en piÃ¨ces.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
