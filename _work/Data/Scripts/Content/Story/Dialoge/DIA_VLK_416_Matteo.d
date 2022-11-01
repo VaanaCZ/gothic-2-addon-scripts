@@ -679,7 +679,7 @@ FUNC VOID DIA_Matteo_WarumNichtBeiDir_Info()
 };	
 
 // ************************************************************
-// 			  				Andere Möglichkeie 			E5
+// 			  				Andere MÃ¶glichkeie 			E5
 // ************************************************************
 INSTANCE DIA_Matteo_OtherWay (C_INFO)
 {

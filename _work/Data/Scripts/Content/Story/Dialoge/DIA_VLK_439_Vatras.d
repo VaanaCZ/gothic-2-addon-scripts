@@ -343,7 +343,7 @@ func void DIA_Addon_Vatras_CavalornSentMe_Info ()
 };
 
 // ************************************************************
-// 		Tell Me About RING 		(Trigger für MIS_Waffenhändler)
+// 		Tell Me About RING 		(Trigger fÃ¼r MIS_WaffenhÃ¤ndler)
 // ************************************************************
 instance DIA_Addon_Vatras_TellMe (C_INFO)
 {
@@ -476,7 +476,7 @@ func void DIA_Addon_Vatras_WannaBeRanger_Info ()
 	};
 	
 	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_04"); //But I know nothing about you at all ...
-	//AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_03"); //Ich will dich wohl segnen, Fremder, aber ich kenne dich nicht. Erzähle mir was über dich.
+	//AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_03"); //Ich will dich wohl segnen, Fremder, aber ich kenne dich nicht. ErzÃ¤hle mir was Ã¼ber dich.
 	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_04"); //What do you want to know?
 	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_05"); //Well, you could tell me where you come from and why you have come to the city.
 	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_06"); //I carry an important message for the leader of the paladins.
@@ -642,7 +642,7 @@ FUNC VOID DIA_Vatras_INFLUENCE_THIRD_LIE()
 // 			  			How to JOIN
 // ************************************************************
 // ------------------------------------------------------------
-// Was muß ich tun?
+// Was muÃŸ ich tun?
 // ------------------------------------------------------------
 instance DIA_Addon_Vatras_HowToJoin	(C_INFO)
 {
@@ -805,7 +805,7 @@ func void DIA_Addon_Vatras_NowRanger_Info ()
 	AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_00"); //I am ready to join the Ring of Water!
 	AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_01"); //So you delivered your message to Lord Hagen?
 	
-	if (Kapitel >= 2) //Pass-Schlüssel von Hagen
+	if (Kapitel >= 2) //Pass-SchlÃ¼ssel von Hagen
 	{
 		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_02"); //Yes.
 		if (MIS_OLDWORLD != LOG_SUCCESS)
@@ -1095,14 +1095,14 @@ func void DIA_Addon_Vatras_Free_Info ()
 	
 	Snd_Play ("Levelup");
 	
-	// ***Mike** Auskommentiert, weil FALSCHE funktion - bitte Rücksprache, bevor du's wieder änderst
+	// ***Mike** Auskommentiert, weil FALSCHE funktion - bitte RÃ¼cksprache, bevor du's wieder Ã¤nderst
 	//var string concatText;
 	//concatText = ConcatStrings (NAME_Bonus_ManaMax,IntToString (4));
 	//PrintScreen (concatText, -1,-1,FONT_ScreenSmall,2); 
 };
 
 // ************************************************************
-// 			  				Waffenhändler
+// 			  				WaffenhÃ¤ndler
 // ************************************************************
 instance DIA_Addon_Vatras_Waffen (C_INFO)
 {
@@ -1180,7 +1180,7 @@ func void DIA_Addon_Vatras_Waffen_Success ()
 };
 
 // ************************************************************
-// 			  				Waffenhändler
+// 			  				WaffenhÃ¤ndler
 // ************************************************************
 instance DIA_Addon_Vatras_WISP (C_INFO)
 {
@@ -1329,7 +1329,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info ()
 	}
 	else 
 	{
-		//Fixme Joly --> Hier SC-output "Hier.." oder ähnliche --Mike
+		//Fixme Joly --> Hier SC-output "Hier.." oder Ã¤hnliche --Mike
 	};
 	
 	B_GiveInvItems (other, self, ItWr_StonePlateCommon_Addon, anzahl);
@@ -1347,7 +1347,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info ()
 		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_04"); //Here, take a few spell scrolls as a reward ...
 		B_GiveInvItems (self, other, ItSc_InstantFireball, anzahl);
 	}
-	else // 1-4 Plates --> 2-5 Tränke
+	else // 1-4 Plates --> 2-5 TrÃ¤nke
 	{
 		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_03"); //Here, take a few potions as a reward ...
 		B_GiveInvItems (self, other, ItPo_Health_03, anzahl+1);
@@ -1418,7 +1418,7 @@ func void DIA_Addon_Vatras_GuildHelp_Info ()
 // ************************************************************
 
 // ============================================================
-// MORE 	(Wegen der alten Scheiße...)
+// MORE 	(Wegen der alten ScheiÃŸe...)
 // ============================================================
 instance DIA_Vatras_MORE		(C_INFO)
 {
@@ -1675,7 +1675,7 @@ func void DIA_Vatras_Teach_5()
 instance DIA_Vatras_GODS		(C_INFO)
 {
 	npc			 = 	VLK_439_Vatras;
-	nr          = 	98;	//Joly: bracuht ne hohe Nummer, denn wird in den späteren Kapiteln auch verwendet.
+	nr          = 	98;	//Joly: bracuht ne hohe Nummer, denn wird in den spÃ¤teren Kapiteln auch verwendet.
 	condition	 = 	DIA_Vatras_GODS_Condition;
 	information	 = 	DIA_Vatras_GODS_Info;
 	permanent	 =  TRUE;
@@ -1754,7 +1754,7 @@ FUNC VOID DIA_Vatras_GODS_BELIAR()
 instance DIA_Vatras_HEAL		(C_INFO)
 {
 	npc			 = 	VLK_439_Vatras;
-	nr          = 	99;	//Joly: bracuht ne hohe Nummer, denn wird in den späteren Kapiteln auch verwendet.
+	nr          = 	99;	//Joly: bracuht ne hohe Nummer, denn wird in den spÃ¤teren Kapiteln auch verwendet.
 	condition	 = 	DIA_Vatras_HEAL_Condition;
 	information	 = 	DIA_Vatras_HEAL_Info;
 	permanent	 = 	TRUE;
@@ -2190,13 +2190,13 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_weiter ()
 	Npc_ExchangeRoutine	(self,"RITUALINNOSEYEREPAIR");
 
 	
-	// ------ Zuhörer weg -------
+	// ------ ZuhÃ¶rer weg -------
 		B_Vatras_Geheweg (kurz);
 	// --------------------------
 	
 	//Joly: Weg mit den Ritualdementoren!!!!!
 
-	DMT_1201.aivar[AIV_EnemyOverride] = TRUE;	//Joly: Damit sie erstmal nicht die Welt entvölkern, ohne Zutun des Spielers!!!!!
+	DMT_1201.aivar[AIV_EnemyOverride] = TRUE;	//Joly: Damit sie erstmal nicht die Welt entvÃ¶lkern, ohne Zutun des Spielers!!!!!
 	DMT_1202.aivar[AIV_EnemyOverride] = TRUE;
 	DMT_1203.aivar[AIV_EnemyOverride] = TRUE;
 	DMT_1204.aivar[AIV_EnemyOverride] = TRUE;
@@ -2474,7 +2474,7 @@ func void DIA_Vatras_OBSESSION_Info ()
 
 
 // ************************************************************
-// 	  				   Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  				   Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Vatras_AllDragonsDead(C_INFO)
@@ -2565,7 +2565,7 @@ FUNC VOID DIA_Vatras_KnowWhereEnemy_Yes ()
 			Npc_ExchangeRoutine (self,"WAITFORSHIP"); 
 		};
 
-	// ------ Zuhörer weg -------
+	// ------ ZuhÃ¶rer weg -------
 	B_Vatras_GeheWeg (lang);
 	
 	Info_ClearChoices (DIA_Vatras_KnowWhereEnemy);
@@ -2612,7 +2612,7 @@ func void DIA_Vatras_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Vatras_StillNeedYou		(C_INFO)
 {
@@ -2643,7 +2643,7 @@ func void DIA_Vatras_StillNeedYou_Info ()
 	Vatras_IsOnBoard	 = LOG_SUCCESS;
 	crewmember_Count = (Crewmember_Count +1);
 
-	// ------ Zuhörer weg -------
+	// ------ ZuhÃ¶rer weg -------
 	B_Vatras_GeheWeg (lang);
 	
 	AI_StopProcessInfos (self); Vatras_MORE = FALSE;

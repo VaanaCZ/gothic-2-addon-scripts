@@ -8,7 +8,7 @@ FUNC VOID B_GiveTradeInv_Addon_Juan (var C_NPC slf)
 		//Special
 		CreateInvItems (slf,ItMi_GoldNugget_Addon,2);
 		//STAHLPAKET IM INVENTORY  
-		CreateInvItems (slf,ItFo_Addon_Pfeffer_01,1);//F‹R Mission fortuno
+		CreateInvItems (slf,ItFo_Addon_Pfeffer_01,1);//F√úR Mission fortuno
 		//Lennars Paket
 		
 		//Food
@@ -25,7 +25,7 @@ FUNC VOID B_GiveTradeInv_Addon_Juan (var C_NPC slf)
 		
 		CreateInvItems (slf,ItPl_Temp_Herb, 3); 
 		
-		//Tr‰nke
+		//Tr√§nke
 		CreateInvItems (slf,ItPo_Mana_01 	, 5); 
 		CreateInvItems (slf,ItPo_Health_01	, 5);
 		

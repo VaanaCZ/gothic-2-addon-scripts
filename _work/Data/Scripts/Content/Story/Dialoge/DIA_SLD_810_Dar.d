@@ -158,7 +158,7 @@ INSTANCE DIA_Dar_DuDieb (C_INFO)
 
 FUNC INT DIA_Dar_DuDieb_Condition()
 {
-	if (Npc_KnowsInfo (other, DIA_Cipher_TradeWhat)) //von Diebstahl gehört
+	if (Npc_KnowsInfo (other, DIA_Cipher_TradeWhat)) //von Diebstahl gehÃ¶rt
 	&& (MIS_Cipher_Paket == LOG_RUNNING)
 	{
 		return TRUE;

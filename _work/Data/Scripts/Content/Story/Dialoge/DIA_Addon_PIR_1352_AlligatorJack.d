@@ -220,8 +220,8 @@ func void DIA_Addon_AlligatorJack_BDTRuestung_Info ()
 	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_01"); //What would you do with THAT?
 	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_02"); //It'll only get you into trouble if you're seen with it.
 	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_03"); //Everyone's going to take you for a bandit and will try to kill you.
-	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_04"); //Außer den Banditen SELBST vielleicht.
-	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_05"); //Die werden dich höchstens noch für einen von ihnen halten.
+	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_04"); //AuÃŸer den Banditen SELBST vielleicht.
+	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_05"); //Die werden dich hÃ¶chstens noch fÃ¼r einen von ihnen halten.
 	
 	Info_ClearChoices	(DIA_Addon_AlligatorJack_BDTRuestung);
 	Info_AddChoice	(DIA_Addon_AlligatorJack_BDTRuestung, "Do you have any idea where I could find armor like that?", DIA_Addon_AlligatorJack_BDTRuestung_wo );
@@ -236,7 +236,7 @@ func void DIA_Addon_AlligatorJack_BDTRuestung_wo ()
 {
 	AI_Output	(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_wo_15_00"); //Do you have any idea where I could find armor like that?
 	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_01"); //We used to have one in our pirate camp.
-	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_02"); //Mmh ... Ich denke, die hatte genau deine Größe.
+	//AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_02"); //Mmh ... Ich denke, die hatte genau deine GrÃ¶ÃŸe.
 	AI_Output	(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_03"); //But I don't know whether it's still there.
 	
 	B_LogEntry (TOPIC_Addon_BDTRuestung,"The pirates are supposed to have a suit of bandit armor. But Alligator Jack couldn't tell me if it exists."); 
@@ -486,7 +486,7 @@ func void DIA_Addon_AlligatorJack_AlligatorJackInter1_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Das habe ich befürchtet
+//	Info Das habe ich befÃ¼rchtet
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Addon_AlligatorJack_TheHunt		(C_INFO)

@@ -251,7 +251,7 @@ func void DIA_Gorax_Aufgabe_Info ()
 	B_LogEntry (Topic_GoraxEssen,"Master Gorax wants me to share the mutton sausages from the larder out equally among the novices. Apart from me, there are thirteen more novices in the monastery.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Würste verteilt
+//	Info WÃ¼rste verteilt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_Wurst		(C_INFO)
 {
@@ -453,7 +453,7 @@ func void DIA_Gorax_TRADE_Info ()
 	AI_Output			(other, self, "DIA_Gorax_TRADE_15_00"); //I need a few things ...
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info SLEEP für KDF
+//	Info SLEEP fÃ¼r KDF
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_KDF		(C_INFO)
 {

@@ -7,7 +7,7 @@ instance DIA_Addon_Lares_Patch		(C_INFO)
 	nr		 	= 99;
 	condition	= DIA_Addon_Lares_Patch_Condition;
 	information	= DIA_Addon_Lares_Patch_Info;
-	description	= "(Ornament - Stück zurückverlangen)";
+	description	= "(Ornament - StÃ¼ck zurÃ¼ckverlangen)";
 };
 func int DIA_Addon_Lares_Patch_Condition ()
 {
@@ -593,7 +593,7 @@ func int DIA_Addon_Lares_Teleportstation_Condition ()
 {
 	if (MIS_Addon_Lares_Ornament2Saturas == LOG_SUCCESS)//SC war schon bei den Wassermagiern
 	&& (SCUsed_TELEPORTER == TRUE)			//SC hat schon mal einen Teleporter benutzt
-	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> für Orlan
+	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> fÃ¼r Orlan
 	{
 		return TRUE;
 	};
@@ -675,7 +675,7 @@ func void DIA_Addon_Lares_OrnamentBringJob_Info ()
 	MIS_Addon_Lares_Ornament2Saturas = LOG_RUNNING;
 };
 // ------------------------------------------------------------
-// Hol Ablösung
+// Hol AblÃ¶sung
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_YourMission		(C_INFO)
 {
@@ -1027,7 +1027,7 @@ func void DIA_Lares_Paladine_Info ()
 	};
 	
 	//AI_Output (other, self, "DIA_Lares_Alternative_15_00"); //Hab' ich eine Alternative?
-	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du wäre, würde ich zu Onars Hof gehen und mit Lee reden.
+	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du wÃ¤re, wÃ¼rde ich zu Onars Hof gehen und mit Lee reden.
 	//AI_Output (self, other, "DIA_Lares_Alternative_09_02"); //Ich bin mir sicher, wir finden einem Weg, dich ins obere Viertel zu bringen.
 };	
 
@@ -1224,7 +1224,7 @@ func void DIA_Lares_AboutSld_WayToOnar()
 	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //It's quite simple. You leave the seaport by the east gate, and then follow the path towards the east.
 	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_01"); //I can take you there if you want.
 	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_01"); //Ich kann dich hinbringen, wenn du willst. Hab sowieso schon zu lange hier rumgehangen.
-	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar für gewöhnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schöpft ...
+	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar fÃ¼r gewÃ¶hnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schÃ¶pft ...
 	Lares_WayToOnar = TRUE;
 };	
 
@@ -1287,7 +1287,7 @@ func void DIA_Lares_WhereGuildOfThieves_Info ()
 	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_03"); //If you want to get involved with them, you should be very careful.
 };
 // ------------------------------------------------------------
-// Meersalz Schlüssel
+// Meersalz SchlÃ¼ssel
 // ------------------------------------------------------------
 instance DIA_Lares_GotKey (C_INFO)
 {
@@ -1341,7 +1341,7 @@ func void DIA_Lares_Kanalisation_Info ()
 };
 
 // ************************************************************
-// 		  			Important für andere Gilden
+// 		  			Important fÃ¼r andere Gilden
 // ************************************************************
 instance DIA_Lares_OtherGuild (C_INFO)
 {
@@ -1396,7 +1396,7 @@ func void DIA_Lares_OtherGuild_Info ()
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	{
-		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehört, du bist aufgenommen worden.
+		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehÃ¶rt, du bist aufgenommen worden.
 		AI_Output (self, other, "DIA_Addon_Lares_OtherGuild_09_00"); //I heard that you have been accepted to join Lee.
 		AI_Output (self, other, "DIA_Lares_OtherGuild_09_10"); //Congratulations.
 	};
@@ -1489,7 +1489,7 @@ func void DIA_Lares_GoNow_Info ()
 	{
 		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //I cannot leave here until we know more about the missing people, or someone else takes over my duties.
 	}
-	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen während RangerMeeting
+	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen wÃ¤hrend RangerMeeting
 	{
 		B_Lares_Geheimtreffen();
 	}
@@ -2294,7 +2294,7 @@ FUNC VOID DIA_Lares_AnyNews_Info()
 };
 
 // ************************************************************
-// 		Hast du was von Bennet gehört?			 
+// 		Hast du was von Bennet gehÃ¶rt?			 
 // ************************************************************
 INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 {
@@ -2530,7 +2530,7 @@ func void DIA_Lares_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lares_StillNeedYou		(C_INFO)
 {

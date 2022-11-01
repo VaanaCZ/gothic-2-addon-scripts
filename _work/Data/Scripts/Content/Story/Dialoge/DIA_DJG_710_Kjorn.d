@@ -107,7 +107,7 @@ FUNC VOID DIA_Kjorn_SellInfos_Info()
 };
 
 //*********************************************************************
-//	Ich brauche Infos über.. 
+//	Ich brauche Infos Ã¼ber.. 
 //*********************************************************************
 INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 {
@@ -158,7 +158,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 	
-	//----- Zurück -----
+	//----- ZurÃ¼ck -----
 	
 	Info_AddChoice (DIA_Kjorn_BuyInfos,DIALOG_BACK,DIA_Kjorn_BuyInfos_Back);
 	
@@ -204,7 +204,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 };
 
-//------ Zurück -----
+//------ ZurÃ¼ck -----
 
 FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 {

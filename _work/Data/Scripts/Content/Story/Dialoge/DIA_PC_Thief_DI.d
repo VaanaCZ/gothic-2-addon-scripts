@@ -378,13 +378,13 @@ FUNC VOID DIA_PC_Thief_DI_UndeadDragonDead_Info()
 	{
 		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_06"); //What are you going to do now?
 		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_07"); //That's a good question. I think I'll go back to Khorinis first.
-		//AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_08"); //Wäre doch gelacht, wenn ich aus dem Dreckloch nicht wieder eine gescheite Stadt ohne Korruption machen kann.
+		//AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_08"); //WÃ¤re doch gelacht, wenn ich aus dem Dreckloch nicht wieder eine gescheite Stadt ohne Korruption machen kann.
 		if (Diebesgilde_Verraten == TRUE)
 		|| (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 		{
 			AI_Output (self ,other,"DIA_DiegoDI_Add_11_00"); //There's no more thieves' guild there. That opens up some interesting possibilities.
 		};
-		//AI_Output (self ,other,"DIA_DiegoDI_Add_11_01"); //Für Bromors Haus kann ich bestimmt noch was rausschlagen - vorausgesetzt ich finde einen Käufer...
+		//AI_Output (self ,other,"DIA_DiegoDI_Add_11_01"); //FÃ¼r Bromors Haus kann ich bestimmt noch was rausschlagen - vorausgesetzt ich finde einen KÃ¤ufer...
 		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_09"); //Mmh. Or maybe I'll simply take over Bromor's business. There's always money in that. Honest money.
 		DIA_PC_Thief_DI_UndeadDragonDead_OneTime = TRUE;
 	};

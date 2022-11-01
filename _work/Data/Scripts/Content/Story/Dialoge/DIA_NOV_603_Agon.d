@@ -185,7 +185,7 @@ FUNC VOID DIA_Agon_YouAndBabo_Understand ()
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 //************************************************************************
-//	Kann ich bei dir Kräuter bekommen?
+//	Kann ich bei dir KrÃ¤uter bekommen?
 //************************************************************************
 
 INSTANCE DIA_Agon_GetHerb   (C_INFO)
@@ -211,7 +211,7 @@ FUNC VOID DIA_Agon_GetHerb_Info()
 	AI_Output (self ,other,"DIA_Agon_GetHerb_07_01"); //We're trying to grow healing plants that Master Neoras can use to brew potions.
 };
 //************************************************************************
-//	Agon ist in der Höhle
+//	Agon ist in der HÃ¶hle
 //************************************************************************
 
 INSTANCE DIA_Agon_GolemDead   (C_INFO)
@@ -297,7 +297,7 @@ FUNC VOID DIA_Agon_GolemDead_Congrat ()
 };
 
 //****************************************
-//	Der Sc war vor Agon in der Höhle
+//	Der Sc war vor Agon in der HÃ¶hle
 //****************************************
 
 INSTANCE DIA_Agon_GolemLives   (C_INFO)
@@ -355,8 +355,8 @@ FUNC INT DIA_Agon_StillAlive_Condition()
 FUNC VOID DIA_Agon_StillAlive_Info()
 {
 	AI_Output (other,self ,"DIA_Agon_StillAlive_15_00"); //Was machst Du hier? 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //Hättest Du mich nicht töten können? Dann müsste ich das ganze hier wenigstens nicht mehr ertragen. 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurück ins Kloster!
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //HÃ¤ttest Du mich nicht tÃ¶ten kÃ¶nnen? Dann mÃ¼sste ich das ganze hier wenigstens nicht mehr ertragen. 
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurÃ¼ck ins Kloster!
 	
 	AI_StopProcessInfos (self);
 };

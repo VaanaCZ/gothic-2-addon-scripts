@@ -181,7 +181,7 @@ FUNC INT DIA_Garond_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Garond_PETZMASTER_Info()
 {
-	Garond_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Garond_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Garond noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
@@ -195,7 +195,7 @@ FUNC VOID DIA_Garond_PETZMASTER_Info()
 		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_02"); //Murder is just about the last thing I need here.
 		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_03"); //I need every single one of my people - and now I'm left with one less again!
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Garond_Schulden = Garond_Schulden + 500;						//PLUS Mörder-Malus
+		Garond_Schulden = Garond_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
 			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_04"); //To say nothing of the other messes you've gotten yourself into.
@@ -232,7 +232,7 @@ FUNC VOID DIA_Garond_PETZMASTER_Info()
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 
-	// ------ Schaf getötet (es gibt drei Schafe in der Burg) ------
+	// ------ Schaf getÃ¶tet (es gibt drei Schafe in der Burg) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
 		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_16"); //You're running around killing our sheep? They belong to us all.
@@ -403,7 +403,7 @@ FUNC VOID DIA_Garond_Why_Info()
 	AI_Output (self ,other,"DIA_Garond_Why_10_02"); //You, on the other hand, have managed to get through once already - that makes you the best man for this job.
 };
 // ************************************************************
-// 			Ausrüstung
+// 			AusrÃ¼stung
 // ************************************************************
 
 INSTANCE DIA_Garond_Equipment (C_INFO)
@@ -472,7 +472,7 @@ FUNC VOID DIA_Garond_zahlen_Info()
 	AI_Output (self ,other,"DIA_Garond_zahlen_10_02"); //Oh well, I guess I have no choice. I'll pay you 500 gold pieces if you take care of this mission for me.
 };
 // ************************************************************
-// 	Wo finde ich die Schürfstellen?
+// 	Wo finde ich die SchÃ¼rfstellen?
 // ************************************************************
 
 INSTANCE DIA_Garond_Wo (C_INFO)
@@ -998,7 +998,7 @@ func void DIA_Garond_BACKINKAP4_Info ()
 	DJG_Angar_SentToStones = TRUE;
 
 
-	// Die Drachenjäger vom Spielstart verziehen sich in ihr Lager.
+	// Die DrachenjÃ¤ger vom Spielstart verziehen sich in ihr Lager.
 	//-----------------------------------------
 	B_StartOtherRoutine 	(Kjorn,	"START");
 	B_StartOtherRoutine 	(Godar,	"START");
@@ -1124,7 +1124,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 };
 
 //*********************************************************************
-//	Ich habe alle drachen getötet
+//	Ich habe alle drachen getÃ¶tet
 //*********************************************************************
 
 ///////////////////////////////////////////////////////////////////////

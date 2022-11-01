@@ -22,7 +22,7 @@ instance STRF_1122_Addon_Pardos (Npc_Default)
 		slf.attribute[ATR_MANA_MAX] 		= 100;
 		slf.attribute[ATR_MANA] 			= 100;
 		slf.attribute[ATR_HITPOINTS_MAX]	= 120;
-		slf.attribute[ATR_HITPOINTS] 		= 70;//für MISSION															
+		slf.attribute[ATR_HITPOINTS] 		= 70;//fÃ¼r MISSION															
 		
 	// ------ Kampf-Taktik ------
 	fight_tactic		= FAI_HUMAN_NORMAL;	

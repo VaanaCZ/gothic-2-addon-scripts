@@ -130,7 +130,7 @@ INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 	B_SetVisuals_Lesser_Skeleton();
 
 	EquipItem (self, ItMw_2H_Sword_M_01);
-	//EquipItem (self, ItRw_Sld_Bow); //FIXME Carsten: Bogen schieﬂt beim Skelett in Zeitlupe...
+	//EquipItem (self, ItRw_Sld_Bow); //FIXME Carsten: Bogen schie√üt beim Skelett in Zeitlupe...
 };
 
 //**************

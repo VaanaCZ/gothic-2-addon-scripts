@@ -1,7 +1,7 @@
 // **************************
 // B_GiveDeathInv
 // --------------
-// für Menschen und Monster
+// fÃ¼r Menschen und Monster
 // gibt Monstern AnimalTrophy
 // **************************
 
@@ -17,7 +17,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 	
 	// FUNC
 	
-	// ------ Zähne verteilen ------
+	// ------ ZÃ¤hne verteilen ------
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == TRUE)
 	{
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_WOLF)			{	CreateInvItems (slf, ItAt_Teeth		, 2);	};
@@ -50,7 +50,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_LURKER)			{	CreateInvItems (slf, ItAt_LurkerClaw, 1);	};		
 	};
 	
-	// ------ Fell und Häute verteilen ------
+	// ------ Fell und HÃ¤ute verteilen ------
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == TRUE)
 	{
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_SHEEP)			{	CreateInvItems (slf, ItAt_SheepFur	, 1);	};
@@ -63,7 +63,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_Keiler)			{	CreateInvItems (slf, ItAt_Addon_KeilerFur, 1);	};
 	};
 	
-	// ------ Fell und Häute verteilen ------
+	// ------ Fell und HÃ¤ute verteilen ------
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == TRUE)
 	{
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_LURKER)			{	CreateInvItems (slf, itat_LurkerSkin, 1);	};
@@ -99,7 +99,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_FIREWARAN)		{	CreateInvItems (slf, ItAt_WaranFiretongue, 1);	};
 	};
 
-	// ------ Blutfliegen-Flügel ------
+	// ------ Blutfliegen-FlÃ¼gel ------
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] == TRUE)
 	{
 		if (slf.aivar[AIV_MM_REAL_ID] == ID_BLOODFLY)		{	CreateInvItems (slf, ItAt_Wing, 2);	};
@@ -322,7 +322,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 		CreateInvItems (slf,ItPo_Health_01,1);
 	};
 	
-	//-------- Dämonen -----
+	//-------- DÃ¤monen -----
 	if (slf.aivar[AIV_MM_REAL_ID]			== 	ID_DEMON)
 	&& (Orc_Randomizer == 0)
 	{
@@ -347,7 +347,7 @@ func void B_GiveDeathInv (var C_NPC slf)
 		CreateInvItems (slf, ItPo_Health_02	, 1);	
 	};
 	
-	//-------- Dämonen Lord-----
+	//-------- DÃ¤monen Lord-----
 	if (slf.aivar[AIV_MM_REAL_ID]			== 	ID_DEMON_LORD)
 	&& (Orc_Randomizer <= 1)
 	{

@@ -143,7 +143,7 @@ func void DIA_Pal_213_Schiffswache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -243,7 +243,7 @@ FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF2_Info()
 };
 
 //**********************************************************
-//Du würdest einen Magier des Feuers angreifen?
+//Du wÃ¼rdest einen Magier des Feuers angreifen?
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmKDF3   (C_INFO)
@@ -303,7 +303,7 @@ FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF4_Info()
 };
 
 //**********************************************************
-//Schließen Lord Hagen Befehle auch mich mit ein?.
+//SchlieÃŸen Lord Hagen Befehle auch mich mit ein?.
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmKDF5   (C_INFO)
@@ -485,7 +485,7 @@ FUNC VOID DIA_Pal_213_Schiffswache_IAmDJG_Info()
 };
 
 //**********************************************************
-//sc ist DJG -Ich könnte dir Geld geben.
+//sc ist DJG -Ich kÃ¶nnte dir Geld geben.
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmDJG2   (C_INFO)

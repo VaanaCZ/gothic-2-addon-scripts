@@ -582,18 +582,18 @@ func int DIA_SylvioDJG_ANGEBOTMACHEN_Condition ()
 
 func void DIA_SylvioDJG_ANGEBOTMACHEN_Info ()
 {
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_00"); //Paﬂ auf, ich mach euch ein Angebot.
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_01"); //Na, dann laﬂ mal hˆren.
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_02"); //Ihr hockt garantiert nicht zuf‰llig hier vor der Eisregion da dr¸ben. Ihr spielt mit dem Gedanken da rein zu gehen und euch die Beute dahinter zu schnappen.
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_03"); //Und wenn es so w‰re?
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_04"); //Wir kˆnnten gemeinsam hinein gehen!
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_00"); //Pa√ü auf, ich mach euch ein Angebot.
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_01"); //Na, dann la√ü mal h√∂ren.
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_02"); //Ihr hockt garantiert nicht zuf√§llig hier vor der Eisregion da dr√ºben. Ihr spielt mit dem Gedanken da rein zu gehen und euch die Beute dahinter zu schnappen.
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_03"); //Und wenn es so w√§re?
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_04"); //Wir k√∂nnten gemeinsam hinein gehen!
 	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_05"); //Warum denkst du sollten WIR das tun?
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_06"); //Mich interssieren die Sch‰tze nicht, die sich dahinter verbergen. Was es da zu holen gibt, kˆnnt ihr meinet wegen behalten.
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_06"); //Mich interssieren die Sch√§tze nicht, die sich dahinter verbergen. Was es da zu holen gibt, k√∂nnt ihr meinet wegen behalten.
 	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_07"); //Mmh!
 	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_08"); //Ihr seid zwar gut, aber mit drei Mann sind wir schneller wieder raus.
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_09"); //Bilde dir aber nicht ein, daﬂ du uns ¸bers Ohr hauen kannst! Ausserdem ist der Eisdrache nicht von schlechten Eltern. Wir kriegen alles, sagst du?
-	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_10"); //Genau! Jetzt, wo ich weiﬂ, daﬂ es um einen Drachen geht...
-	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_11"); //Verdammt! Na schˆn, von mir aus! Sag bescheid, wenn du bereit bist!
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_09"); //Bilde dir aber nicht ein, da√ü du uns √ºbers Ohr hauen kannst! Ausserdem ist der Eisdrache nicht von schlechten Eltern. Wir kriegen alles, sagst du?
+	AI_Output			(other, self, "DIA_SylvioDJG_ANGEBOTMACHEN_15_10"); //Genau! Jetzt, wo ich wei√ü, da√ü es um einen Drachen geht...
+	AI_Output			(self, other, "DIA_SylvioDJG_ANGEBOTMACHEN_09_11"); //Verdammt! Na sch√∂n, von mir aus! Sag bescheid, wenn du bereit bist!
 
 	Log_AddEntry (TOPIC_Dragonhunter,"Sylvio vermutet einen Drachen in der Eisregion."); 
 };
@@ -626,7 +626,7 @@ FUNC INT DIA_SylvioDJG_WAIT_Condition()
 func VOID DIA_SylvioDJG_WAIT_Info()
 {
 	AI_Output 			(other,self,"DIA_SylvioDJG_WAIT_15_00"); //Warte mal einen Moment!
-	AI_Output 			(self,other,"DIA_SylvioDJG_WAIT_09_01"); //Was ist denn? Geh¥ gef‰lligst weiter!
+	AI_Output 			(self,other,"DIA_SylvioDJG_WAIT_09_01"); //Was ist denn? Geh¬¥ gef√§lligst weiter!
 	AI_StopProcessInfos	(self);
 };
 
@@ -656,7 +656,7 @@ FUNC INT DIA_SylvioDJG_IceWait1_Condition()
 
 func VOID DIA_SylvioDJG_IceWait1_Info()
 {
-	AI_Output 			(other,self,"DIA_SylvioDJG_IceWait1_15_00"); //Ich bin soweit! Laﬂ uns losgehen!
+	AI_Output 			(other,self,"DIA_SylvioDJG_IceWait1_15_00"); //Ich bin soweit! La√ü uns losgehen!
 	AI_Output 			(self,other,"DIA_SylvioDJG_IceWait1_09_01"); //Dann werden wir ja sehen, wie gut du bist.
 	Info_AddChoice		(DIA_SylvioDJG_IceWait1, "losgehen", DIA_SylvioDJG_IceWait1_losgehen );
 
@@ -710,7 +710,7 @@ func VOID DIA_SylvioDJG_IceWait2_Info()
 
 	AI_Output (self, other,"DIA_SylvioDJG_IceWait2_09_00"); //So! Die erste Ebene scheint nun sicher!
 	AI_Output (other, self,"DIA_SylvioDJG_IceWait2_15_01"); //Geh weiter!
-	AI_Output (self, other,"DIA_SylvioDJG_IceWait2_09_02"); //Hˆr dir das an! Der Kleine, kriegt wohl nicht genug, was? 
+	AI_Output (self, other,"DIA_SylvioDJG_IceWait2_09_02"); //H√∂r dir das an! Der Kleine, kriegt wohl nicht genug, was? 
 	Info_AddChoice	(DIA_SylvioDJG_IceWait2, DIALOG_ENDE, DIA_SylvioDJG_IceWait2_weiter );
 };
 
@@ -764,14 +764,14 @@ func VOID DIA_SylvioDJG_GoForIceDragon_Info()
 {
 	AI_GotoNpc	(self,	other);
 
-	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_00"); //So. Jetzt heiﬂt, es dem Drachen das Handwerk zu legen. Was du machst? Ist mit ehrlich gesagt egal!
+	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_00"); //So. Jetzt hei√üt, es dem Drachen das Handwerk zu legen. Was du machst? Ist mit ehrlich gesagt egal!
 	AI_Output	(other, self,"DIA_SylvioDJG_GoForIceDragon_15_01"); //Ich warne dich, Sylvio, verarsch mich jetzt nicht!
-	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_02"); //Bis hierhin warst du eine...na ja...sagen wir...Hilfe. Aber jetzt, da wir an den ganzen Golemfeldern vorbei sind, ¸berlass die Hauptarbeit mal lieber einem Profi. Sonst passiert dir noch was.
+	AI_Output 	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_02"); //Bis hierhin warst du eine...na ja...sagen wir...Hilfe. Aber jetzt, da wir an den ganzen Golemfeldern vorbei sind, √ºberlass die Hauptarbeit mal lieber einem Profi. Sonst passiert dir noch was.
 	AI_Output	(other, self,"DIA_SylvioDJG_GoForIceDragon_15_03"); //Keine Chance!
-	AI_Output	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_04"); //Na gut! Wenn du nicht anders willst. Aber beschwer dich nachher nicht ich h‰tte...
+	AI_Output	(self, other,"DIA_SylvioDJG_GoForIceDragon_09_04"); //Na gut! Wenn du nicht anders willst. Aber beschwer dich nachher nicht ich h√§tte...
 	AI_Output	(other, self,"DIA_SylvioDJG_GoForIceDragon_15_05"); //Halt endlich die Klappe!
 
-	Log_AddEntry (TOPIC_Dragonhunter,"Sylvio wollte mich erst los werden, nachdem wir die Icegolemebene hinter uns gelassen hatten. Schlieﬂlich griffen wir dann doch gemeinsam den Eisdrachen an."); 
+	Log_AddEntry (TOPIC_Dragonhunter,"Sylvio wollte mich erst los werden, nachdem wir die Icegolemebene hinter uns gelassen hatten. Schlie√ülich griffen wir dann doch gemeinsam den Eisdrachen an."); 
 	
 	B_GivePlayerXP (XP_SylvioDJGIceClear);
 	
@@ -829,14 +829,14 @@ func void DIA_SylvioDJG_WHATNEXT_Info ()
 {
 	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_00"); //Der Eisdrache ist tot! Und du gibst mir jetzt alles, was du bei dir hast!
 	AI_Output	(other, self, "DIA_SylvioDJG_WHATNEXT_15_01"); //Was ist los? Ich denke ja gar nicht daran!	
-	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_02"); //Ich werde derjenige sein, der als Eisdrachentˆter gefeiert wird. Deine kleine Rolle bei der Sache, wird jetzt aus der Welt geschafft!
+	AI_Output	(self, other, "DIA_SylvioDJG_WHATNEXT_09_02"); //Ich werde derjenige sein, der als Eisdrachent√∂ter gefeiert wird. Deine kleine Rolle bei der Sache, wird jetzt aus der Welt geschafft!
 	
 	AI_StopProcessInfos	(self);
 	
 	self.flags =0;
 	DJG_Bullco.flags =0;
 
-	Log_AddEntry (TOPIC_Dragonhunter,"Das dreckige Schwein Sylvio wollte mir den Sieg ¸ber den Eisdrachen steitig machen. Es gab eine kleine Auseinandersetzung."); 
+	Log_AddEntry (TOPIC_Dragonhunter,"Das dreckige Schwein Sylvio wollte mir den Sieg √ºber den Eisdrachen steitig machen. Es gab eine kleine Auseinandersetzung."); 
 
 	B_Attack (self, other, AR_NONE, 1);	
 	B_Attack (DJG_Bullco, other, AR_NONE, 1);	

@@ -326,7 +326,7 @@ func void Use_Pirates_01 ()
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
-//	Rezept für grünene Novizen
+//	Rezept fÃ¼r grÃ¼nene Novizen
 //**********************************************************************************
 INSTANCE ITWr_Addon_Joint_01		(C_Item)
 {

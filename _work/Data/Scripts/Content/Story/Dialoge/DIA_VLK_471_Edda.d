@@ -99,7 +99,7 @@ FUNC VOID DIA_Edda_Kochen_Info()
 	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //I cook for everybody. For you, too, if you want. All you need to do is bring me a fish.
 };			
 // ************************************************************
-// 		t‰gliche Suppe abholen
+// 		t√§gliche Suppe abholen
 // ************************************************************
 INSTANCE DIA_Edda_Suppe(C_INFO)
 {

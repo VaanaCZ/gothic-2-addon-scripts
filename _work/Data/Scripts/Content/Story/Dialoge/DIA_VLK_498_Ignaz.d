@@ -108,7 +108,7 @@ FUNC VOID DIA_Ignaz_Traenke_Info()
 	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//What's in it for me if I help you?
 	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//I could teach you how to brew potions.
 	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//I know the recipes for healing and mana essences and for speed potions.
-	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//Außerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
+	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//AuÃŸerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -240,7 +240,7 @@ FUNC VOID DIA_Ignaz_Danach_Info()
 	MIS_Ignaz_Charm = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MIS_Ignaz_Charm);
 	
-	//PATCH fallls alle Scrolls aufgekauft oder geplündert wurden
+	//PATCH fallls alle Scrolls aufgekauft oder geplÃ¼ndert wurden
 	CreateInvItems (self,ITSC_Charm		, 3);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -332,7 +332,7 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 		{
 			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //To prepare a potion at the alchemist's bench, you need a laboratory flask.
 			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //And you're going to need different plants or other ingredients for each potion.
-			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benötigten Pflanzen dafür sehr selten sind.
+			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benÃ¶tigten Pflanzen dafÃ¼r sehr selten sind.
 			Alchemy_Explain = TRUE;
 		}
 		else

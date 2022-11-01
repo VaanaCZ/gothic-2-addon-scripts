@@ -273,7 +273,7 @@ FUNC VOID DIA_PAL_205_Torwache_PassAsMage_Info()
 	AI_StopProcessInfos	(self);
 };
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃ–LDNER
 // ************************************************************
 
 INSTANCE DIA_PAL_205_Torwache_PassAsSld (C_INFO)

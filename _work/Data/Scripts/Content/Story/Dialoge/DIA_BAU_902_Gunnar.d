@@ -97,7 +97,7 @@ FUNC VOID DIA_Gunnar_Everywhere_Info()
 };
 
 // ************************************************************
-// 			  			Aud dem Süden
+// 			  			Aud dem SÃ¼den
 // ************************************************************
 INSTANCE DIA_Gunnar_South (C_INFO)
 {

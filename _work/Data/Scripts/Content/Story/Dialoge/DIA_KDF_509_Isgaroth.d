@@ -23,7 +23,7 @@ FUNC VOID DIA_Isgaroth_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 //****************************************************************************
-//	Begrüssung
+//	BegrÃ¼ssung
 //****************************************************************************
 
 INSTANCE DIA_Isgaroth_Hello   (C_INFO)

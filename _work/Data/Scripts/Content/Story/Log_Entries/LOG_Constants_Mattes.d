@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -30,7 +30,7 @@ const string Topic_Addon_BDT_Teacher = "Learning from the bandits";
 // ------ Kapitel 1 ------
 CONST string 	Topic_Bandits				=	"Wanted Notes and Bandits"; 
 
-// ------ Der Rübenbauer ------
+// ------ Der RÃ¼benbauer ------
 const string	TOPIC_Kleidung				=	"Lobart's Work clothes";
 const string	TOPIC_Rueben				=	"Harvest the Turnip Field";
 const string	TOPIC_Ruebenbringen			=	"Bring the turnips to Hilda";
@@ -54,7 +54,7 @@ const string	TOPIC_BosperBogen			=   "Bosper's Bow";
 const string	TOPIC_BosperWolf			=   "Furs for Bosper";
 const string	TOPIC_ConstantinoPlants		=   "Herbs for Constantino";
 
-//-------------Händler und Diebe---------------------------
+//-------------HÃ¤ndler und Diebe---------------------------
 const string	TOPIC_Canthar				=	"Canthar's Favor";
 const string	TOPIC_HakonBanditen			=   "Bandit Raids";
 const string	TOPIC_Jora					=	"The Gold of a Merchant";
@@ -74,7 +74,7 @@ const string 	TOPIC_Garvell				= 	"Information for Garvell";
 
 
 
-//---------Milizaufträge-------------------------------
+//---------MilizauftrÃ¤ge-------------------------------
 const string	TOPIC_Peck					= 	"Where is Peck?";
 const string	TOPIC_Warehouse				= 	"A Package full of Weed";
 const string	TOPIC_Redlight				= 	"The Weed Deal";
@@ -88,7 +88,7 @@ const string	TOPIC_BecomeKdF				=	"Magician of Fire";
 const string	Topic_Kloster				=	"How to Get into the Monastery.";
 const string    Topic_Gemeinschaft			=	"Serve the Community";
 
-//---------Arbeiten für die Gemeinschaft-----------------------------
+//---------Arbeiten fÃ¼r die Gemeinschaft-----------------------------
 const string    Topic_Neorasrezept  		=	"The Lost Recipe";
 const string    Topic_NeorasPflanzen		=	"Seven Herbs";
 const string    Topic_IsgarothWolf			=	"Isgaroth's Problem";
@@ -102,13 +102,13 @@ const string	Topic_OpolosRezept			=	"Opolos and the Recipe";
 const string	Topic_BaboTrain				=	"Fight Training for Babo";
 const string	Topic_KarrasCharm			=	"A Short Trip to the City";
 
-//---------Prüfung des Feuers---------------------
+//---------PrÃ¼fung des Feuers---------------------
 const string	TOPIC_FireContest			=	"The Test of Fire";
 const string	TOPIC_Golem					=	"The Living Rock";
 const string	TOPIC_Rune					=	"Create a Rune";
 const string	TOPIC_Schnitzeljagd			=	"The Path of Believers"; 
 
-//---------Hilfe für Novizen-----------------------
+//---------Hilfe fÃ¼r Novizen-----------------------
 const string 	Topic_BaboGaertner			=   "Babo and the Garden";
 const string 	Topic_DyrianDrin			=   "Dyrian's Crime";
 const string 	Topic_OpolosStudy			=   "Opolos and the Library";
@@ -118,7 +118,7 @@ const string	Topic_KlosterTrader			=	"Trade in the Monastery";
 const string	Topic_KlosterTeacher		=	"Learning in the Monastery";
 
 
-//---------Söldner----------------------------------
+//---------SÃ¶ldner----------------------------------
 const string	TOPIC_BecomeSLD				=	"Member of the Mercenaries"; 
 const string	TOPIC_TorlofPacht			=	"Collect the Rent";
 const string	TOPIC_TorlofMiliz			=	"Drive away the Militia";
@@ -157,7 +157,7 @@ const string	TopicBrutusKasse			=	"Gold for Brutus";
 const string	Topic_TengronRing			=	"Tengron's Ring";
 const string	Topic_OricBruder			=	"Bad News";
 
-const string	TOPIC_BilgotEscort			=	"Bilgot´s Curse";
+const string	TOPIC_BilgotEscort			=	"BilgotÂ´s Curse";
 
 const string	TOPIC_Botschaft				=	"The Message";
 const string	TOPIC_Lutero				=	"Snappers' Claws";

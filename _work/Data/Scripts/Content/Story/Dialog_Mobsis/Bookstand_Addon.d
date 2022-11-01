@@ -1,6 +1,6 @@
 
 //*************************************
-//	Buchständer im Banditenlager
+//	BuchstÃ¤nder im Banditenlager
 //*************************************
 
 FUNC VOID Use_Bookstand_Addon_BL_S1()		
@@ -83,7 +83,7 @@ func int C_CanReadBookStand ()
 
 func void Use_BookstandMaya () 
 {
-	if (BookstandMayaArt == 1)		//Joly:  überall objektieren!
+	if (BookstandMayaArt == 1)		//Joly:  Ã¼berall objektieren!
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                

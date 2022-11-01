@@ -171,7 +171,7 @@ FUNC VOID DIA_Rupert_WoMatteo_Info()
 };
 
 // ***************************************************************
-//							Wer hat Einfluß
+//							Wer hat EinfluÃŸ
 // ***************************************************************
 INSTANCE DIA_Rupert_WerEinfluss(C_INFO)
 {
@@ -319,7 +319,7 @@ FUNC VOID DIA_Rupert_Bauernaufstand_Info()
 };
 
 // ***************************************************************
-//							Söldner
+//							SÃ¶ldner
 // ***************************************************************
 INSTANCE DIA_Rupert_Mercs(C_INFO)
 {

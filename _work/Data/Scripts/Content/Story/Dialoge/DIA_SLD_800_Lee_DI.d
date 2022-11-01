@@ -222,7 +222,7 @@ func void DIA_Lee_DI_UndeadDragonDead_Info ()
 		{
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //You'll take me to the mainland, won't you?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Yes. Khorinis will survive without you.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
 			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Then I can finally pay my long delayed visit to the King.
 			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //I've waited a long time for this ...
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //What do you think? Shouldn't patience finally be rewarded?

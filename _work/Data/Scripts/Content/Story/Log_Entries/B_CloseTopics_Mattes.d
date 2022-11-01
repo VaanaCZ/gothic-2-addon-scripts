@@ -1,5 +1,5 @@
 // ***************************************************
-//  	B_CloseTopics_Mattes ()	(verschiebt Topics in den zugehörigen Log-Ordner bei FAILED oder SUCCESS)	
+//  	B_CloseTopics_Mattes ()	(verschiebt Topics in den zugehÃ¶rigen Log-Ordner bei FAILED oder SUCCESS)	
 // ***************************************************
 	
 func void B_CloseTopics_Mattes ()	
@@ -45,7 +45,7 @@ func void B_CloseTopics_Mattes ()
 	B_CloseTopic	(TOPIC_ConstantinoPlants, MIS_Constantino_BringHerbs, 0, 6);
 	B_CloseTopic	(TOPIC_HaradOrk, MIS_Harad_Orc, 0, 6);
 	
-	//----------------Händler und Diebe--------------------
+	//----------------HÃ¤ndler und Diebe--------------------
 	B_CloseTopic	(TOPIC_Canthar,MIS_Canthars_KomproBrief , 0, 3);
 	B_CloseTopic	(TOPIC_HakonBanditen, MIS_HakonBandits, 0, 6);
 	B_CloseTopic	(TOPIC_Jora, Jora_Gold, 0, 6);
@@ -106,7 +106,7 @@ func void B_CloseTopics_Mattes ()
  	B_CloseTopic	(Topic_DyrianDrin,MIS_HelpDyrian , 0, 2);
  	B_CloseTopic	(Topic_OpolosStudy,MIS_HelpOpolos , 0, 2);
  		
- 	//--------------- SÖLDNER  -------------------------				
+ 	//--------------- SÃ–LDNER  -------------------------				
  	B_CloseTopic	(TOPIC_BecomeSLD,SLD_Aufnahme , 0, 2);
 	B_CloseTopic	(TOPIC_SLDRespekt,0 , Torlof_GenugStimmen, 2);
 	

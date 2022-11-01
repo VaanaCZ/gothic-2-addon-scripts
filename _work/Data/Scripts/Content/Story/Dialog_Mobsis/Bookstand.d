@@ -1,15 +1,15 @@
 //##########################################################################
 //##
-//##	Hier stehen alle Buchst‰ndermobsiscripte
+//##	Hier stehen alle Buchst√§ndermobsiscripte
 //##
 //##########################################################################
 
 
 //*************************************
-//	Buchst‰nder in der Klosterbibliothek
+//	Buchst√§nder in der Klosterbibliothek
 //*************************************
 
-FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
+FUNC VOID Use_Bookstand_01_S1()		//Buchst√§nder in der Magierbibliothek
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -17,7 +17,7 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 	{	
 	if  (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; //f¸r die Pr¸fung des Feuers 
+			KNOWS_FIRE_CONTEST = TRUE; //f√ºr die Pr√ºfung des Feuers 
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
@@ -62,13 +62,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 };
 
 //*************************************
-//	Buchst‰nder in der Geheimen Bibliothek
+//	Buchst√§nder in der Geheimen Bibliothek
 //*************************************
 //--------------------------------------
 var int FinalDragonEquipment_Once;
 //--------------------------------------
 
-FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothek 
+FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst√§nder in der geheimen Bibliothek 
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	

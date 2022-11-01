@@ -119,7 +119,7 @@ func void DIA_Hilda_WasZuEssen_Info ()
 							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //You've had your portion for today! Come back later.
 						};
 					}
-					else //Pfanne zu spät
+					else //Pfanne zu spÃ¤t
 					{
 						AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_04"); //We don't feed idlers here. Go away!
 						AI_StopProcessInfos (self); 
@@ -138,7 +138,7 @@ func void DIA_Hilda_WasZuEssen_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Rüben bringen
+//	RÃ¼ben bringen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_BringBeet (C_INFO)
 {
@@ -271,7 +271,7 @@ func void DIA_Hilda_PfanneGeholt_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Pfanne zu spät
+//	Pfanne zu spÃ¤t
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_PfanneTooLate (C_INFO)
 {
@@ -368,8 +368,8 @@ func int DIA_Hilda_TruheRumgemacht_Condition ()
 
 func void DIA_Hilda_TruheRumgemacht_Info ()
 {
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //Denk´ bloss nicht, ich hätte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst hol´ ich meinen Mann!
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //DenkÂ´ bloss nicht, ich hÃ¤tte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst holÂ´ ich meinen Mann!
 	
 	AI_StopProcessInfos(self);
 };

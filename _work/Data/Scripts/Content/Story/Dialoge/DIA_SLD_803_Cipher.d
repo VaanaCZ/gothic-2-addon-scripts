@@ -236,7 +236,7 @@ FUNC VOID DIA_Cipher_Joints_Info()
 			B_LogEntry (TOPIC_SLDRespekt,"Cipher will vote for me when I join the mercenaries.");
 		};
 		
-		MIS_Cipher_BringWeed = LOG_OBSOLETE; //Cipher ist glücklich
+		MIS_Cipher_BringWeed = LOG_OBSOLETE; //Cipher ist glÃ¼cklich
 	}
 	else //normal Running
 	{

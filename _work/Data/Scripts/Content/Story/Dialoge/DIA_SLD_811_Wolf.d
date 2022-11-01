@@ -733,7 +733,7 @@ func void DIA_Wolf_SHIP_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//Ich muﬂ zu einer Insel nicht weit von dieser hier.
+//Ich mu√ü zu einer Insel nicht weit von dieser hier.
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Wolf_KnowWhereEnemy		(C_INFO)
 {

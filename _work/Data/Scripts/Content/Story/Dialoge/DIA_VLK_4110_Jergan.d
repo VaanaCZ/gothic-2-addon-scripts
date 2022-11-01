@@ -279,7 +279,7 @@ FUNC VOID DIA_Jergan_Diego_Info()
 	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//A path leads through the rocks to the right. That's where they went.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Rudelführer getötet
+//	RudelfÃ¼hrer getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Jergan_Leader   (C_INFO)

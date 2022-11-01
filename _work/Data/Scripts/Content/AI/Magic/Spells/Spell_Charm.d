@@ -34,7 +34,7 @@ func int Spell_Logic_Charm(var int manaInvested)
  		// ------ Opfer (other) ist nicht GILDEN-Hostile zu other ------
 		if (Wld_GetGuildAttitude(other.guild, self.guild) != ATT_HOSTILE)
 		{	
-			// ------ ABER temp_hostile (d.h. hat gerade gegen den Spieler gek‰mpft) ------
+			// ------ ABER temp_hostile (d.h. hat gerade gegen den Spieler gek√§mpft) ------
 			if (Npc_GetAttitude (other, self) == ATT_HOSTILE)
 			{
 				Npc_SetTempAttitude(other, Wld_GetGuildAttitude(other.guild, self.guild));

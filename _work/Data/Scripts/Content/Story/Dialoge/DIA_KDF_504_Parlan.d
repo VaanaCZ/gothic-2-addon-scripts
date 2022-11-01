@@ -215,7 +215,7 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 						B_Parlan_HAMMER();
 					};
 	
-	Parlan_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Parlan_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Parlan noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
@@ -228,7 +228,7 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_01"); //You are guilty of the worst of all crimes! Murder!
 	
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Parlan_Schulden = Parlan_Schulden + 500;						//PLUS Mörder-Malus
+		Parlan_Schulden = Parlan_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
 			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_02"); //And you have burdened yourself with even more guilt!
@@ -264,7 +264,7 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getötet ------
+	// ------ Schaf getÃ¶tet ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
 		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_13"); //You have killed our sheep. You will pay compensation for that!
@@ -1248,7 +1248,7 @@ FUNC VOID DIA_Parlan_IAmParlan_OK()
 	Info_ClearChoices (DIA_Parlan_IAmParlan);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Schlüssel für Bibliothek
+//	SchlÃ¼ssel fÃ¼r Bibliothek
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Parlan_Bibliothek   (C_INFO)
 {
@@ -1354,7 +1354,7 @@ FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Back()
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Church()
 {
 	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Church_15_00"); //... the church?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Church_05_01"); //Die Kirche ist das größte Gebäude im Kloster. Du kannst sie gar nicht übersehen.
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Church_05_01"); //Die Kirche ist das grÃ¶ÃŸte GebÃ¤ude im Kloster. Du kannst sie gar nicht Ã¼bersehen.
 	AI_Output (self, other, "DIA_Parlan_Add_05_00"); //Lord Almighty! Has Innos stricken you blind?
 	AI_Output (self, other, "DIA_Parlan_Add_05_01"); //(cynically) Where is the church? Oh my, where could it possibly be?
 };
@@ -1362,21 +1362,21 @@ FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Church()
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Library()
 {
 	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Library_15_00"); //... the library?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Library_05_01"); //Die Bibliothek ist am Ende des Säulenganges, direkt gegenüber der Kirche.
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Library_05_01"); //Die Bibliothek ist am Ende des SÃ¤ulenganges, direkt gegenÃ¼ber der Kirche.
 	AI_Output (self, other, "DIA_Parlan_Add_05_02"); //The library is at the end of the colonnade to the left, directly across from the church.
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Chapel()
 {
 	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Chapel_15_00"); //... the chapel?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Chapel_05_01"); //Wenn du das Kloster betrittst, findest du die Kapelle auf der halben Höhe des linken Säulenganges.
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Chapel_05_01"); //Wenn du das Kloster betrittst, findest du die Kapelle auf der halben HÃ¶he des linken SÃ¤ulenganges.
 	AI_Output (self, other, "DIA_Parlan_Add_05_03"); //The chapel is the room halfway along the left colonnade. That's where the paladins pray to Innos.
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Cellar()
 {
 	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Cellar_15_00"); //... the cellars?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Cellar_05_01"); //Der Eingang in die Katakomben ist direkt gegenüber der Kapelle auf halber Höhe des Säulenganges.
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Cellar_05_01"); //Der Eingang in die Katakomben ist direkt gegenÃ¼ber der Kapelle auf halber HÃ¶he des SÃ¤ulenganges.
 	AI_Output (self, other, "DIA_Parlan_Add_05_04"); //The entrance to the cellars lies halfway along the colonnade on the right.
 };
 

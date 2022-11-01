@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -54,7 +54,7 @@ const string	TOPIC_Addon_Erol				=	"Merchant raid";
 
 const string	TOPIC_Addon_VatrasAbloesung		=	"Relief for Vatras";
 
-// ******** Texte, die in alte Topics gepackt werden müssen *************
+// ******** Texte, die in alte Topics gepackt werden mÃ¼ssen *************
 
 const string	LogText_Addon_SCKnowsMisspeapl 		=	"Many citizens of Khorinis are missing. Nobody seems to know what became of them.";
 const string	LogText_Addon_WilliamLeiche	 		=	"The body of a fisherman lies in the ruins east of the Water Mages' camp.";

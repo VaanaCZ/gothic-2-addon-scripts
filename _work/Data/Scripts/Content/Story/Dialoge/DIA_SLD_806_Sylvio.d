@@ -168,7 +168,7 @@ func int DIA_Sylvio_MenDefeated_Condition ()
 func void DIA_Sylvio_MenDefeated_Info ()
 {
 	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //It has come to my attention that you have it in for my boys!
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //And as far as I know, you're one of Lee's protégés.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //And as far as I know, you're one of Lee's protÃ©gÃ©s.
 	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //I'm warning you! A few things are going to be different around here soon, and we'll talk about this again then!
 	
 	Sylvio_MenDefeated = TRUE;

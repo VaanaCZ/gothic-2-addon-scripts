@@ -474,7 +474,7 @@ func void DIA_Rod_Wette_KeepIt()
 
 
 // ************************************************************
-// 			  				Schwert zurück
+// 			  				Schwert zurÃ¼ck
 // ************************************************************
 var int Rod_SchwertXPGiven;
 

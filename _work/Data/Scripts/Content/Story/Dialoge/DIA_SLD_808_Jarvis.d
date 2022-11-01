@@ -451,7 +451,7 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 
 // ###############################
 // ##							##
-// 			Höhere Gilden
+// 			HÃ¶here Gilden
 // ##							##
 // ###############################
 

@@ -16,7 +16,7 @@ FUNC VOID B_GiveTradeInv_Constantino (var C_NPC slf)
 		CreateInvItems (slf, ItAt_Wing, 3); 
 		CreateInvItems (slf, ITWr_Addon_Health_04, 1); //NEUES REZEPT
 		CreateInvItems (slf, ITWr_Addon_Mana_04, 1); //NEUES REZEPT
-		CreateInvItems (slf,ItWr_Astronomy_Mis,1);	//Für  Mission HygalsBringBook
+		CreateInvItems (slf,ItWr_Astronomy_Mis,1);	//FÃ¼r  Mission HygalsBringBook
 			
 		Constantino_ItemsGiven_Chapter_1 = TRUE;
 	};

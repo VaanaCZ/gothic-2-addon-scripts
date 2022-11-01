@@ -1,7 +1,7 @@
 // *******************************************
 // ZS_MM_EatBody
 // -------------
-// geht davon aus, daﬂ ein Body gefunden wurde
+// geht davon aus, da√ü ein Body gefunden wurde
 // *******************************************
 
 func void ZS_MM_EatBody()

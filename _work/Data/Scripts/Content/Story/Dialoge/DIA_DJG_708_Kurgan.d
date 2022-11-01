@@ -77,7 +77,7 @@ func void DIA_Kurgan_ELSE_Info ()
 };
 
 //**************************************************************************
-//	Bist du hier der Anführer?
+//	Bist du hier der AnfÃ¼hrer?
 //**************************************************************************
 
 instance DIA_Kurgan_Leader		(C_INFO)
@@ -104,7 +104,7 @@ func void DIA_Kurgan_Leader_Info ()
 };
 
 //**************************************************************************
-//	Wolltet ihr nicht ein paar Drachen töten?
+//	Wolltet ihr nicht ein paar Drachen tÃ¶ten?
 //**************************************************************************
 
 instance DIA_Kurgan_KillDragon		(C_INFO)

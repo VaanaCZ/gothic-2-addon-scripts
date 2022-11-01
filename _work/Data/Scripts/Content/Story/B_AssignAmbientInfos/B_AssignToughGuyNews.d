@@ -30,11 +30,11 @@ FUNC VOID DIA_ToughGuy_NEWS_Info()
 	}
 	else if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		B_Say (self,other,"$TOUGHGUY_ATTACKWON"); //(selbstgefällig) Ich nehme an, du hast mittlerweile begriffen, wer von uns beiden der Stärkere ist... Was willst du?
+		B_Say (self,other,"$TOUGHGUY_ATTACKWON"); //(selbstgefÃ¤llig) Ich nehme an, du hast mittlerweile begriffen, wer von uns beiden der StÃ¤rkere ist... Was willst du?
 	}
 	else //FIGHT_CANCEL
 	{
-		B_Say (self,other,"$TOUGHGUY_PLAYERATTACK"); //Ich dachte, du wolltest dich mit mir anlegen. Hast du's dir anders überlegt? Willst doch lieber REDEN, was? (lacht) 
+		B_Say (self,other,"$TOUGHGUY_PLAYERATTACK"); //Ich dachte, du wolltest dich mit mir anlegen. Hast du's dir anders Ã¼berlegt? Willst doch lieber REDEN, was? (lacht) 
 	};
 	
 	// ------ AIVAR resetten ------

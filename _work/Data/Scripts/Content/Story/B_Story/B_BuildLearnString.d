@@ -1,8 +1,8 @@
 // *********************************************************
 // B_BuildLearnString
 // ------------------
-// macht einen String aus übergebener Stringkonstante (Text) 
-// und übergebenen Kosten
+// macht einen String aus Ã¼bergebener Stringkonstante (Text) 
+// und Ã¼bergebenen Kosten
 // *********************************************************
 
 func string B_BuildLearnString (var string text, var int kosten)

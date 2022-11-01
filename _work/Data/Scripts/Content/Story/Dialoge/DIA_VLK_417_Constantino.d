@@ -287,7 +287,7 @@ FUNC VOID DIA_Constantino_ZUSTIMMUNG_Info()
 };
 
 // *******************************************************
-//						Was muﬂ ich tun?		//e3
+//						Was mu√ü ich tun?		//e3
 // *******************************************************
 instance DIA_Constantino_BringHerbs (C_INFO)
 {
@@ -370,8 +370,8 @@ func void DIA_Constantino_HerbsRunning_Success()
 	AI_Output (other, self,"DIA_Constantino_HerbsRunning_Success_15_00"); //I've got all the plants I was supposed to bring you!
 	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_01"); //What? You're pulling my leg, right?
 
-	//11 Gegenst‰nde gegeben (Pflanzen) HACK f¸r Screen ADDON
-	AI_PrintScreen ("11 Gegenst‰nde gegeben (Pflanzen)", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+	//11 Gegenst√§nde gegeben (Pflanzen) HACK f√ºr Screen ADDON
+	AI_PrintScreen ("11 Gegenst√§nde gegeben (Pflanzen)", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 	
 	Npc_RemoveInvItems (other, ItPl_Mana_Herb_01,1);
 	Npc_RemoveInvItems (other, ItPl_Mana_Herb_02,1);
@@ -871,7 +871,7 @@ FUNC VOID DIA_Constantino_Alchemy_Info()
 };
 
 // *******************************************************
-//					f¸r Nicht-Lehrlinge	
+//					f√ºr Nicht-Lehrlinge	
 // *******************************************************
 INSTANCE DIA_Constantino_NewRecipes (C_INFO)
 {

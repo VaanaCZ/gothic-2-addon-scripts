@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Saturas_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Saturas_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Saturas_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Saturas_ADW_PICKPOCKET_Condition()
@@ -135,8 +135,8 @@ func void DIA_Addon_Saturas_ADWStart_Raven ()
 func void DIA_Addon_Saturas_ADWStart_RavenAim ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenAim_15_00"); //What does Raven want in the temple?
-	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_01"); //Wir wissen es nicht. Es muss etwas sehr Wertvolles oder Mächtiges in dem Tempel sein.
-	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_02"); //Aber wir können davon ausgehen, dass er nichts Gutes im Schilde führt.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_01"); //Wir wissen es nicht. Es muss etwas sehr Wertvolles oder MÃ¤chtiges in dem Tempel sein.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_02"); //Aber wir kÃ¶nnen davon ausgehen, dass er nichts Gutes im Schilde fÃ¼hrt.
 	AI_Output (self, other, "DIA_Addon_Bodo_14_01"); //We only know that it has to do with a powerful artifact that is somehow connected to Adanos and Beliar.
 	AI_Output (self, other, "DIA_Addon_Bodo_14_02"); //(grimly) We can certainly assume that he is not up to anything good...
 };
@@ -1096,8 +1096,8 @@ func void DIA_Addon_Saturas_BeliarsWeapon_wastun ()
 func void DIA_Addon_Saturas_BeliarsWeapon_geben ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_geben_15_00"); //Couldn't you keep the weapon safe?
-	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_01"); //Du bist der Bezwinger des Bösen. Deine Entscheidungen bestimmen das Geschick dieser Welt.
-	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_02"); //Wenn du dich dazu entschließt, die Klaue aus der Hand zu geben, ist dein Schicksal nicht mehr an sie gebunden.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_01"); //Du bist der Bezwinger des BÃ¶sen. Deine Entscheidungen bestimmen das Geschick dieser Welt.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_02"); //Wenn du dich dazu entschlieÃŸt, die Klaue aus der Hand zu geben, ist dein Schicksal nicht mehr an sie gebunden.
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_03"); //If you give it to me, then I shall render it harmless, so that it can no longer be misused.
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_04"); //So consider well what you will do.
 

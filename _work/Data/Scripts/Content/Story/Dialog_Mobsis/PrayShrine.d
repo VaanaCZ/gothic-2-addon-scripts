@@ -144,7 +144,7 @@ FUNC VOID PC_PrayShrine_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 }; 
 //*******************************************************
-//Für das Heil der Paladine beten
+//FÃ¼r das Heil der Paladine beten
 //*******************************************************
 INSTANCE PC_PrayShrine_Paladine (C_Info)
 {
