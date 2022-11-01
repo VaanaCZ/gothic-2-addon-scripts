@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchst‰nder in der Magierbibliothek
+//				Weitere Buchst√§nder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -21,8 +21,8 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "P·gina 1"					);
-					Doc_PrintLine	( nDocID,  0, "Las piedras r˙nicas"					);
+					Doc_PrintLine	( nDocID,  0, "P√°gina 1"					);
+					Doc_PrintLine	( nDocID,  0, "Las piedras r√∫nicas"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -30,7 +30,7 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "P·gina 2"					);
+					Doc_PrintLine	( nDocID,  1, "P√°gina 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -57,7 +57,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "P·gina 1"					);
+					Doc_PrintLine	( nDocID,  0, "P√°gina 1"					);
 					Doc_PrintLine	( nDocID,  0, "Las runas y sus ingredientes"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -66,7 +66,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "P·gina 2"					);
+					Doc_PrintLine	( nDocID,  1, "P√°gina 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -93,8 +93,8 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "P·gina 1"					);
-					Doc_PrintLine	( nDocID,  0, "EnseÒanzas de Innos"	);
+					Doc_PrintLine	( nDocID,  0, "P√°gina 1"					);
+					Doc_PrintLine	( nDocID,  0, "Ense√±anzas de Innos"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -102,7 +102,7 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "P·gina 2"					);
+					Doc_PrintLine	( nDocID,  1, "P√°gina 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -129,7 +129,7 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "P·gina 1"					);
+					Doc_PrintLine	( nDocID,  0, "P√°gina 1"					);
 					Doc_PrintLine	( nDocID,  0, "Mandamientos de Innos"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -138,7 +138,7 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "P·gina 2"					);
+					Doc_PrintLine	( nDocID,  1, "P√°gina 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -165,10 +165,10 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "EL PRIMER CÕRCULO"					);
+					Doc_PrintLine	( nDocID,  0, "EL PRIMER C√çRCULO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Las runas del primer cÌrculo y los ingredientes necesarios para crearlas.");
+					Doc_PrintLines	( nDocID,  0, "Las runas del primer c√≠rculo y los ingredientes necesarios para crearlas.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -180,7 +180,7 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  0, "Azufre");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Rel·mpago pequeÒo");
+					Doc_PrintLine	( nDocID,  0, "Rel√°mpago peque√±o");
 					Doc_PrintLine	( nDocID,  0, "Cristal de roca");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -196,11 +196,11 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har· falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har√° falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÛrmula del conjuro y tener una piedra r˙nica virgen, asÌ como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la f√≥rmula del conjuro y tener una piedra r√∫nica virgen, as√≠ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r˙nica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r√∫nica."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -223,10 +223,10 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "EL SEGUNDO CÕRCULO"					);
+					Doc_PrintLine	( nDocID,  0, "EL SEGUNDO C√çRCULO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Las runas del segundo cÌrculo y los ingredientes necesarios para crearlas.");
+					Doc_PrintLines	( nDocID,  0, "Las runas del segundo c√≠rculo y los ingredientes necesarios para crearlas.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -244,8 +244,8 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  0, "Piel de lobo");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "PuÒo de viento");
-					Doc_PrintLine	( nDocID,  0, "CarbÛn");
+					Doc_PrintLine	( nDocID,  0, "Pu√±o de viento");
+					Doc_PrintLine	( nDocID,  0, "Carb√≥n");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Dormir");
@@ -256,11 +256,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har· falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har√° falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÛrmula del conjuro y tener una piedra r˙nica virgen, asÌ como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la f√≥rmula del conjuro y tener una piedra r√∫nica virgen, as√≠ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r˙nica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r√∫nica."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -284,10 +284,10 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "EL TERCER CÕRCULO"					);
+					Doc_PrintLine	( nDocID,  0, "EL TERCER C√çRCULO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Las runas del tercer cÌrculo y los ingredientes necesarios para crearlas.");
+					Doc_PrintLines	( nDocID,  0, "Las runas del tercer c√≠rculo y los ingredientes necesarios para crearlas.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
@@ -296,7 +296,7 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "PequeÒa tormenta de fuego");
+					Doc_PrintLine	( nDocID,  0, "Peque√±a tormenta de fuego");
 					Doc_PrintLine	( nDocID,  0, "Brea");
 					Doc_PrintLine	( nDocID,  0, "Azufre");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -326,11 +326,11 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "Azufre");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har· falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har√° falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÛrmula del conjuro y tener una piedra r˙nica virgen, asÌ como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la f√≥rmula del conjuro y tener una piedra r√∫nica virgen, as√≠ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r˙nica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r√∫nica."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -354,10 +354,10 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "EL CUARTO CÕRCULO"					);
+					Doc_PrintLine	( nDocID,  0, "EL CUARTO C√çRCULO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Las runas del cuarto cÌrculo y los ingredientes necesarios para crearlas.");
+					Doc_PrintLines	( nDocID,  0, "Las runas del cuarto c√≠rculo y los ingredientes necesarios para crearlas.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -366,13 +366,13 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  0, "Brea");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Rel·mpago");
+					Doc_PrintLine	( nDocID,  0, "Rel√°mpago");
 					Doc_PrintLine	( nDocID,  0, "Cristal de roca");
 					Doc_PrintLine	( nDocID,  0, "Cuarzo glacial");
 					Doc_PrintLine	( nDocID,  0, "");				
 					
-					Doc_PrintLine	( nDocID,  0, "Despertar a gÛlem");
-					Doc_PrintLine	( nDocID,  0, "CorazÛn de gÛlem de piedra");
+					Doc_PrintLine	( nDocID,  0, "Despertar a g√≥lem");
+					Doc_PrintLine	( nDocID,  0, "Coraz√≥n de g√≥lem de piedra");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Destruir muerto viviente");
@@ -387,17 +387,17 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har· falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har√° falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÛrmula del conjuro y tener una piedra r˙nica virgen, asÌ como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la f√≥rmula del conjuro y tener una piedra r√∫nica virgen, as√≠ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r˙nica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r√∫nica."					);
 					Doc_Show		( nDocID );
 		
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des f¸nften Kreises und ihre Ingredenzien
+//				Runen des f√ºnften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {
@@ -415,10 +415,10 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "EL QUINTO CÕRCULO"					);
+					Doc_PrintLine	( nDocID,  0, "EL QUINTO C√çRCULO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Las runas del quinto cÌrculo y los ingredientes necesarios para crearlas.");
+					Doc_PrintLines	( nDocID,  0, "Las runas del quinto c√≠rculo y los ingredientes necesarios para crearlas.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -434,22 +434,22 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Convocar demonio");
-					Doc_PrintLine	( nDocID,  0, "CorazÛn de demonio");
+					Doc_PrintLine	( nDocID,  0, "Coraz√≥n de demonio");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Curar heridas graves");
-					Doc_PrintLine	( nDocID,  0, "RaÌz curativa");
+					Doc_PrintLine	( nDocID,  0, "Ra√≠z curativa");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har· falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har√° falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÛrmula del conjuro y tener una piedra r˙nica virgen, asÌ como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la f√≥rmula del conjuro y tener una piedra r√∫nica virgen, as√≠ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r˙nica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r√∫nica."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -473,10 +473,10 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "EL SEXTO CÕRCULO"					);
+					Doc_PrintLine	( nDocID,  0, "EL SEXTO C√çRCULO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Las runas del sexto cÌrculo y los ingredientes necesarios para crearlas.");
+					Doc_PrintLines	( nDocID,  0, "Las runas del sexto c√≠rculo y los ingredientes necesarios para crearlas.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -487,7 +487,7 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Aliento mortal");
-					Doc_PrintLine	( nDocID,  0, "CarbÛn");
+					Doc_PrintLine	( nDocID,  0, "Carb√≥n");
 					Doc_PrintLine	( nDocID,  0, "Perla negra");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -496,11 +496,11 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "Perla negra");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "EjÈrcito de las tinieblas");
+					Doc_PrintLine	( nDocID,  0, "Ej√©rcito de las tinieblas");
 					Doc_PrintLine	( nDocID,  0, "Hueso de esqueleto");
 					Doc_PrintLine	( nDocID,  0, "Perla negra");
-					Doc_PrintLine	( nDocID,  0, "CorazÛn de gÛlem de piedra");
-					Doc_PrintLine	( nDocID,  0,  "CorazÛn de demonio");
+					Doc_PrintLine	( nDocID,  0, "Coraz√≥n de g√≥lem de piedra");
+					Doc_PrintLine	( nDocID,  0,  "Coraz√≥n de demonio");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -516,11 +516,11 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har· falta UNO de los ingredientes listados."					);
+					Doc_PrintLines	( nDocID,  1, "Para crear una runa siempre har√° falta UNO de los ingredientes listados."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la fÛrmula del conjuro y tener una piedra r˙nica virgen, asÌ como un pergamino de conjuro para el conjuro deseado."					);
+					Doc_PrintLines	( nDocID,  1, "El usuario debe conocer la f√≥rmula del conjuro y tener una piedra r√∫nica virgen, as√≠ como un pergamino de conjuro para el conjuro deseado."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r˙nica."					);
+					Doc_PrintLines	( nDocID,  1, "Solo cuando se cumplen los requisitos se puede empezar a trabajar en la mesa r√∫nica."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -544,7 +544,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "P·gina 1"					);
+					Doc_PrintLine	( nDocID,  0, "P√°gina 1"					);
 					Doc_PrintLine	( nDocID,  0, "Reglas"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -553,7 +553,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "P·gina 2"					);
+					Doc_PrintLine	( nDocID,  1, "P√°gina 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);

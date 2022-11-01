@@ -66,7 +66,7 @@ INSTANCE DIA_Alwin_Sheep(C_INFO)
 	condition	= DIA_Alwin_Sheep_Condition;
 	information	= DIA_Alwin_Sheep_Info;
 	permanent	= FALSE;
-	description = "¿Esas ovejas son tuyas?";
+	description = "Â¿Esas ovejas son tuyas?";
 };                       
 FUNC INT DIA_Alwin_Sheep_Condition()
 {
@@ -74,9 +74,9 @@ FUNC INT DIA_Alwin_Sheep_Condition()
 };
 FUNC VOID DIA_Alwin_Sheep_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_Sheep_15_00"); //¿Esas ovejas son tuyas?
-	AI_Output (self ,other,"DIA_Alwin_Sheep_12_01"); //La única que me pertenece es la que responde al nombre de Lucy. (Se ríe) Ésa es mi mujer, Lucy.
-	AI_Output (self ,other,"DIA_Alwin_Sheep_12_02"); //Las ovejas pertenecen a la milicia. Todas las ovejas que recogen de los granjeros me las traen a mí.
+	AI_Output (other, self,"DIA_Alwin_Sheep_15_00"); //Â¿Esas ovejas son tuyas?
+	AI_Output (self ,other,"DIA_Alwin_Sheep_12_01"); //La Ãºnica que me pertenece es la que responde al nombre de Lucy. (Se rÃ­e) Ã‰sa es mi mujer, Lucy.
+	AI_Output (self ,other,"DIA_Alwin_Sheep_12_02"); //Las ovejas pertenecen a la milicia. Todas las ovejas que recogen de los granjeros me las traen a mÃ­.
 };
 //***************************************************
 //		Der irre Fellan
@@ -100,10 +100,10 @@ FUNC INT DIA_Alwin_Fellan_Condition()
 };
 FUNC VOID DIA_Alwin_Fellan_Info()
 {	
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_00"); //Chico, el martilleo de ese lunático me está destrozando.
-	AI_Output (other, self,"DIA_Alwin_Fellan_15_01"); //¿De quién hablas?
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_02"); //¿No oyes ese martilleo? ¿Quién te crees que martillea todo el día en el distrito del puerto?
-	AI_Output (self ,other,"DIA_Alwin_Fellan_12_03"); //Hablo del lunático de Fellan. Se lleva el martillo a su choza todos los días.
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_00"); //Chico, el martilleo de ese lunÃ¡tico me estÃ¡ destrozando.
+	AI_Output (other, self,"DIA_Alwin_Fellan_15_01"); //Â¿De quiÃ©n hablas?
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_02"); //Â¿No oyes ese martilleo? Â¿QuiÃ©n te crees que martillea todo el dÃ­a en el distrito del puerto?
+	AI_Output (self ,other,"DIA_Alwin_Fellan_12_03"); //Hablo del lunÃ¡tico de Fellan. Se lleva el martillo a su choza todos los dÃ­as.
 };
 //***************************************************
 //		Der irre Fellan
@@ -115,7 +115,7 @@ INSTANCE DIA_Alwin_FellanRunning (C_INFO)
 	condition	= DIA_Alwin_FellanRunning_Condition;
 	information	= DIA_Alwin_FellanRunning_Info;
 	permanent	= FALSE;
-	description = "Podría ocuparme de Fellan...";
+	description = "PodrÃ­a ocuparme de Fellan...";
 };                       
 FUNC INT DIA_Alwin_FellanRunning_Condition()
 {	
@@ -127,45 +127,45 @@ FUNC INT DIA_Alwin_FellanRunning_Condition()
 };
 FUNC VOID DIA_Alwin_FellanRunning_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_00"); //Podría ocuparme de Fellan...
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_01"); //¿Quieres ayudarme? ¿Y tú que sacas a cambio?
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_02"); //Tú me dirás.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_03"); //Oh, ¡funciona así! De acuerdo. Si puedes hacer que deje de martillear, te pagaré 25 monedas de oro.
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_04"); //Pero te aviso ya de una cosa: no puedes hablar con ese tipo. Está chalado. ¡Lo único que te ayudará será un par de buenos puñetazos!
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_00"); //PodrÃ­a ocuparme de Fellan...
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_01"); //Â¿Quieres ayudarme? Â¿Y tÃº que sacas a cambio?
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_15_02"); //TÃº me dirÃ¡s.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_03"); //Oh, Â¡funciona asÃ­! De acuerdo. Si puedes hacer que deje de martillear, te pagarÃ© 25 monedas de oro.
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_12_04"); //Pero te aviso ya de una cosa: no puedes hablar con ese tipo. EstÃ¡ chalado. Â¡Lo Ãºnico que te ayudarÃ¡ serÃ¡ un par de buenos puÃ±etazos!
 	
 	MIS_AttackFellan = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Alwin,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Alwin,LOG_RUNNING);
-	B_LogEntry (TOPIC_Alwin,"Alwin quiere que consiga que Fellan deje de dar palizas. No parece que matarlo sea la solución.");
+	B_LogEntry (TOPIC_Alwin,"Alwin quiere que consiga que Fellan deje de dar palizas. No parece que matarlo sea la soluciÃ³n.");
 		
 	
 	Info_ClearChoices (DIA_Alwin_FellanRunning);
-	Info_AddChoice (DIA_Alwin_FellanRunning, "Veré lo que puedo hacer...", DIA_Alwin_FellanRunning_Ok);
+	Info_AddChoice (DIA_Alwin_FellanRunning, "VerÃ© lo que puedo hacer...", DIA_Alwin_FellanRunning_Ok);
 	if (hero.guild != GIL_MIL)
 	&& (hero.guild != GIL_PAL)
 	&& (hero.guild != GIL_KDF)
 	{
-		Info_AddChoice (DIA_Alwin_FellanRunning, "Si le pego, me meteré en problemas con la milicia...", DIA_Alwin_FellanRunning_Problems);
+		Info_AddChoice (DIA_Alwin_FellanRunning, "Si le pego, me meterÃ© en problemas con la milicia...", DIA_Alwin_FellanRunning_Problems);
 	};
 };
 
 func void DIA_Alwin_FellanRunning_Ok()
 {
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_Ok_15_00"); //Veré lo que puedo hacer...
-	AI_Output (self ,other,"DIA_Alwin_FellanRunning_Ok_12_01"); //Puedes pensarlo. Recuerda, te pagaré 25 monedas de oro.
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_Ok_15_00"); //VerÃ© lo que puedo hacer...
+	AI_Output (self ,other,"DIA_Alwin_FellanRunning_Ok_12_01"); //Puedes pensarlo. Recuerda, te pagarÃ© 25 monedas de oro.
 	
 	Info_ClearChoices (DIA_Alwin_FellanRunning);
 };
 
 func void DIA_Alwin_FellanRunning_Problems()
 {
-	AI_Output (other, self,"DIA_Alwin_FellanRunning_Problems_15_00"); //Si le pego, me meteré en problemas con la milicia...
-	AI_Output (self ,other,"DIA_Alwin_Add_12_00"); //Aquí abajo, en el puerto, nadie presta mucha atención a las broncas...
-	AI_Output (self ,other,"DIA_Alwin_Add_12_01"); //Pero si robas por aquí, o enredas con las ovejas, te meterás en problemas.
+	AI_Output (other, self,"DIA_Alwin_FellanRunning_Problems_15_00"); //Si le pego, me meterÃ© en problemas con la milicia...
+	AI_Output (self ,other,"DIA_Alwin_Add_12_00"); //AquÃ­ abajo, en el puerto, nadie presta mucha atenciÃ³n a las broncas...
+	AI_Output (self ,other,"DIA_Alwin_Add_12_01"); //Pero si robas por aquÃ­, o enredas con las ovejas, te meterÃ¡s en problemas.
 
-	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_01"); //Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du könntest höchstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
-	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_02"); //Schlägereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
+	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_01"); //Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du kÃ¶nntest hÃ¶chstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
+	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_02"); //SchlÃ¤gereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
 	//AI_Output (self ,other,"DIA_Alwin_FellanRunning_Problems_12_03"); //Aber wenn du ihn dazu bringst, dass ER dich angreift, werden alle Leute, die den Kampf mitkriegen, auf deiner Seite sein.
 };
 
@@ -179,7 +179,7 @@ INSTANCE DIA_Alwin_FellanSuccess(C_INFO)
 	condition	= DIA_Alwin_FellanSuccess_Condition;
 	information	= DIA_Alwin_FellanSuccess_Info;
 	permanent	= FALSE;
-	description	= "Fellan ya no martilleará más.";
+	description	= "Fellan ya no martillearÃ¡ mÃ¡s.";
 };                       
 FUNC INT DIA_Alwin_FellanSuccess_Condition()
 {	
@@ -192,12 +192,12 @@ FUNC INT DIA_Alwin_FellanSuccess_Condition()
 };
 FUNC VOID DIA_Alwin_FellanSuccess_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_FellanSuccess_15_00"); //Fellan ya no martilleará más.
-	AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_01"); //¿Has oído? Se acabó el martilleo. Por fin. Pensé que el tío no pararía nunca.
+	AI_Output (other, self,"DIA_Alwin_FellanSuccess_15_00"); //Fellan ya no martillearÃ¡ mÃ¡s.
+	AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_01"); //Â¿Has oÃ­do? Se acabÃ³ el martilleo. Por fin. PensÃ© que el tÃ­o no pararÃ­a nunca.
 	
 	if (Npc_IsDead (Fellan) == FALSE) 
 	{
-		AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_02"); //Me has hecho un enorme favor. ¿Sabes qué?, te daré 30 monedas de oro.
+		AI_Output (self ,other,"DIA_Alwin_FellanSuccess_12_02"); //Me has hecho un enorme favor. Â¿Sabes quÃ©?, te darÃ© 30 monedas de oro.
 		
 		B_GiveInvItems (self, other, ItMi_Gold, 30);
 		
@@ -219,7 +219,7 @@ INSTANCE DIA_Alwin_Endlos(C_INFO)
 	condition	= DIA_Alwin_Endlos_Condition;
 	information	= DIA_Alwin_Endlos_Info;
 	permanent	= TRUE;
-	description	= "¿Y cómo están las ovejas?";
+	description	= "Â¿Y cÃ³mo estÃ¡n las ovejas?";
 };                       
 FUNC INT DIA_Alwin_Endlos_Condition()
 {	
@@ -230,43 +230,43 @@ FUNC INT DIA_Alwin_Endlos_Condition()
 };
 FUNC VOID DIA_Alwin_Endlos_Info()
 {	
-	AI_Output (other, self,"DIA_Alwin_Endlos_15_00"); //¿Y cómo están las ovejas?
+	AI_Output (other, self,"DIA_Alwin_Endlos_15_00"); //Â¿Y cÃ³mo estÃ¡n las ovejas?
 	
 	if (MIS_AttackFellan != LOG_SUCCESS)
 	&& (Npc_IsDead (Fellan) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_01"); //El martilleo de Fellan las va a volver locas. Uno de estos días se van a caer a trozos.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_01"); //El martilleo de Fellan las va a volver locas. Uno de estos dÃ­as se van a caer a trozos.
 		
 	}
 	else if (Kapitel <= 2)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_02"); //Las ovejas comen y no paran de engordar. Como mi mujer. JA, JA, JA (se ríe exageradamente).
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_02"); //Las ovejas comen y no paran de engordar. Como mi mujer. JA, JA, JA (se rÃ­e exageradamente).
 	}
 	else if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_03"); //Probablemente tendré que matar una. ¡Para la última cena!
-			AI_Output (other, self,"DIA_Alwin_Endlos_15_04"); //¿Para qué?
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_05"); //Para el mercenario que asesinó al paladín. Naturalmente, será ejecutado.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_06"); //Solo tengo que decidir a qué bicho pasaré por la piedra.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_03"); //Probablemente tendrÃ© que matar una. Â¡Para la Ãºltima cena!
+			AI_Output (other, self,"DIA_Alwin_Endlos_15_04"); //Â¿Para quÃ©?
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_05"); //Para el mercenario que asesinÃ³ al paladÃ­n. Naturalmente, serÃ¡ ejecutado.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_06"); //Solo tengo que decidir a quÃ© bicho pasarÃ© por la piedra.
 		}
 		else
 		{
 			AI_Output (self ,other,"DIA_Alwin_Endlos_12_07"); //Lucy tiene suerte de estar viva.
-			AI_Output (other, self,"DIA_Alwin_Endlos_15_08"); //Creí que dijiste que Lucy era tu esposa.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_09"); //Claro, pero también llamé Lucy a la oveja. Me refiero a la oveja que estaba destinada para la última cena de ese tal Bennet.
-			AI_Output (self ,other,"DIA_Alwin_Endlos_12_10"); //Pero todo eso se arregló. Lucy estará contenta.
+			AI_Output (other, self,"DIA_Alwin_Endlos_15_08"); //CreÃ­ que dijiste que Lucy era tu esposa.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_09"); //Claro, pero tambiÃ©n llamÃ© Lucy a la oveja. Me refiero a la oveja que estaba destinada para la Ãºltima cena de ese tal Bennet.
+			AI_Output (self ,other,"DIA_Alwin_Endlos_12_10"); //Pero todo eso se arreglÃ³. Lucy estarÃ¡ contenta.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_11"); //Según pasa el tiempo, ver comer a las ovejas resulta bastante aburrido.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_11"); //SegÃºn pasa el tiempo, ver comer a las ovejas resulta bastante aburrido.
 	}
 	else	//Kapitel 5
 	{
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_12"); //Me voy a despedir de ellas. Lord Hagen ha ordenado que todas las ovejas deben servir como provisiones para su ejército.
-		AI_Output (self ,other,"DIA_Alwin_Endlos_12_13"); //Bueno, al menos tendré más tiempo para mi mujer.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_12"); //Me voy a despedir de ellas. Lord Hagen ha ordenado que todas las ovejas deben servir como provisiones para su ejÃ©rcito.
+		AI_Output (self ,other,"DIA_Alwin_Endlos_12_13"); //Bueno, al menos tendrÃ© mÃ¡s tiempo para mi mujer.
 	};
 };
 

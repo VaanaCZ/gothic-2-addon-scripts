@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_Flask
+// benÃ¶tigtes Item dafÃ¼r: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tränke herstellen  Dialoge 
+//TrÃ¤nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -119,7 +119,7 @@ INSTANCE PC_Booze_Lou (C_Info)
 	condition		= PC_Booze_Lou_Condition;
 	information		= PC_Booze_Lou_Info;
 	permanent		= TRUE;
-	description		= "Probar el martillo de Lou…"; 
+	description		= "Probar el martillo de Louâ€¦"; 
 };
 
 FUNC INT PC_Booze_Lou_Condition ()
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tränke 
+//Mana TrÃ¤nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -307,7 +307,7 @@ INSTANCE PC_Mana_Start (C_Info)
 	condition		= PC_Mana_Start_Condition;
 	information		= PC_Mana_Start_Info;
 	permanent		= TRUE;
-	description		= "Preparar pociones de maná"; 
+	description		= "Preparar pociones de manÃ¡"; 
 };
 
 FUNC INT PC_Mana_Start_Condition ()
@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Esencia de maná (2 ortigas de fuego, 1 maleza de llanura)"; 
+	description		= "Esencia de manÃ¡ (2 ortigas de fuego, 1 maleza de llanura)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -398,7 +398,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Extracto de maná (2 hierbas del fuego, 1 maleza de llanura)"; 
+	description		= "Extracto de manÃ¡ (2 hierbas del fuego, 1 maleza de llanura)"; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -436,7 +436,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Elixir de maná (2 raíces de fuego, 1 maleza de llanura)"; 
+	description		= "Elixir de manÃ¡ (2 raÃ­ces de fuego, 1 maleza de llanura)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -475,7 +475,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Poción de maná (3 esencias de maná, 1 baya de las llanuras)"; 
+	description		= "PociÃ³n de manÃ¡ (3 esencias de manÃ¡, 1 baya de las llanuras)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltränke 
+//HeiltrÃ¤nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -518,7 +518,7 @@ INSTANCE PC_Health_Start (C_Info)
 	condition		= PC_Health_Start_Condition;
 	information		= PC_Health_Start_Info;
 	permanent		= TRUE;
-	description		= "Prepara pociones de curación"; 
+	description		= "Prepara pociones de curaciÃ³n"; 
 };
 
 FUNC INT PC_Health_Start_Condition ()
@@ -569,7 +569,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Esencia de curación (2 plantas curativas, 1 maleza de llanura)"; 
+	description		= "Esencia de curaciÃ³n (2 plantas curativas, 1 maleza de llanura)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -609,7 +609,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extracto de curación (2 hierbas curativas, 1 maleza de llanura)"; 
+	description		= "Extracto de curaciÃ³n (2 hierbas curativas, 1 maleza de llanura)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -648,7 +648,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixir de curación (2 raíces curativas, 1 maleza de llanura)"; 
+	description		= "Elixir de curaciÃ³n (2 raÃ­ces curativas, 1 maleza de llanura)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -686,7 +686,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Pociones de curación (3 esencias de curación, 1 baya de las llanuras)"; 
+	description		= "Pociones de curaciÃ³n (3 esencias de curaciÃ³n, 1 baya de las llanuras)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tränke 
+//Spezielle TrÃ¤nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -779,7 +779,7 @@ INSTANCE PC_ItPo_Addon_Geist (C_INFO)
 	condition		= PC_ItPo_Addon_Geist_Condition;
 	information		= PC_ItPo_Addon_Geist_Info;
 	permanent		= TRUE;
-	description		= "Elixir de alteración mental"; 
+	description		= "Elixir de alteraciÃ³n mental"; 
 };
 
 FUNC INT PC_ItPo_Addon_Geist_Condition()
@@ -829,7 +829,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixir de vida (1 raíz curativa, 1 acedera)"; 
+	description		= "Elixir de vida (1 raÃ­z curativa, 1 acedera)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -868,7 +868,7 @@ INSTANCE PC_ItPo_Perm_Mana (C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Elixir de espíritu (1 raíz de fuego, 1 acedera)"; 
+	description		= "Elixir de espÃ­ritu (1 raÃ­z de fuego, 1 acedera)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Mana_Condition()
@@ -907,7 +907,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Poción de destreza (1 baya de trasgo, 1 acedera)"; 
+	description		= "PociÃ³n de destreza (1 baya de trasgo, 1 acedera)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -946,7 +946,7 @@ INSTANCE PC_ItPo_Strg (C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Poción de fuerza (1 raíz de dragón, 1 acedera)"; 
+	description		= "PociÃ³n de fuerza (1 raÃ­z de dragÃ³n, 1 acedera)"; 
 };
 
 FUNC INT PC_ItPo_Strg_Condition()
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Poción de velocidad (1 mala hierba de chasqueador, 1 maleza de llanura)"; 
+	description		= "PociÃ³n de velocidad (1 mala hierba de chasqueador, 1 maleza de llanura)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1028,7 +1028,7 @@ INSTANCE PC_Tabak_Start (C_Info)
 	condition		= PC_Tabak_Start_Condition;
 	information		= PC_Tabak_Start_Info;
 	permanent		= TRUE;
-	description		= "Mezcla tabaco y lía cigarros"; 
+	description		= "Mezcla tabaco y lÃ­a cigarros"; 
 };
 
 FUNC INT PC_Tabak_Start_Condition ()
@@ -1081,7 +1081,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Tratar hierba de ciénaga (1 tallo)"; 
+	description		= "Tratar hierba de ciÃ©naga (1 tallo)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Grünen Novizen herstellen
+//	GrÃ¼nen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1186,7 +1186,7 @@ FUNC VOID PC_ItMi_Tabak_Info ()
 	};
 	if (Npc_HasItems (hero, ItPl_SwampHerb) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"... con hierba de ciénaga",PC_ItMi_Tabak_Swampherb);
+		Info_AddChoice 	(PC_ItMi_Tabak,"... con hierba de ciÃ©naga",PC_ItMi_Tabak_Swampherb);
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{
@@ -1228,7 +1228,7 @@ INSTANCE PC_ItPo_MegaDrink (C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Poción de huevo de dragón (10 huevos de dragón, 1 perla negra, 1 azufre)"; 
+	description		= "PociÃ³n de huevo de dragÃ³n (10 huevos de dragÃ³n, 1 perla negra, 1 azufre)"; 
 };
 
 FUNC INT PC_ItPo_MegaDrink_Condition()

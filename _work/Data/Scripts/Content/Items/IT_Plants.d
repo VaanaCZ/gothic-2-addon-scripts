@@ -193,7 +193,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01(C_Item)
 {	
-	name 				=	"RaÌz de fuego";
+	name 				=	"Ra√≠z de fuego";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -276,7 +276,7 @@ INSTANCE ItPl_Health_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Dex_Herb_01(C_Item)
 {	
-	name 				=	"RaÌz curativa";
+	name 				=	"Ra√≠z curativa";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -304,7 +304,7 @@ INSTANCE ItPl_Dex_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Strength_Herb_01(C_Item)
 {	
-	name 				=	"RaÌz de dragÛn";
+	name 				=	"Ra√≠z de drag√≥n";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -334,7 +334,7 @@ INSTANCE ItPl_Strength_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Speed_Herb_01(C_Item)
 {	
-	name 				=	"RaÌz de dragÛn";
+	name 				=	"Ra√≠z de drag√≥n";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -464,7 +464,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Forestberry (C_Item)
 {	
-	name 				=	"Sa˙co anciano";
+	name 				=	"Sa√∫co anciano";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -523,7 +523,7 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von tempor‰ren und permanten Tr‰nken
+//		Pflanze zum brauen von tempor√§ren und permanten Tr√§nken
 //******************************************************************************************
 
 

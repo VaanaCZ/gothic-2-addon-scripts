@@ -10,7 +10,7 @@ instance DIA_Addon_GivePotion(C_INFO)
 	condition	= DIA_Addon_GivePotion_Condition;
 	information	= DIA_Addon_GivePotion_Info;
 	permanent	= TRUE;
-	description = "(dar poci髇 de curaci髇)";
+	description = "(dar poci贸n de curaci贸n)";
 };                       
 FUNC INT DIA_Addon_GivePotion_Condition()
 {
@@ -31,23 +31,23 @@ func VOID DIA_Addon_GivePotion_Info()
 	Info_AddChoice (DIA_Addon_GivePotion,DIALOG_BACK,DIA_Addon_GivePotion_BACK);
 	if (Npc_HasItems (other,ItPo_Health_03) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(dar elixir de curaci髇)",DIA_Addon_GivePotion_ItPo_Health_03);
+		Info_AddChoice (DIA_Addon_GivePotion,"(dar elixir de curaci贸n)",DIA_Addon_GivePotion_ItPo_Health_03);
 	};
 	if (Npc_HasItems (other,ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(dar extracto de curaci髇)",DIA_Addon_GivePotion_ItPo_Health_02);
+		Info_AddChoice (DIA_Addon_GivePotion,"(dar extracto de curaci贸n)",DIA_Addon_GivePotion_ItPo_Health_02);
 	};
 	if (Npc_HasItems (other,ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(dar esencia de curaci髇)",DIA_Addon_GivePotion_ItPo_Health_01);
+		Info_AddChoice (DIA_Addon_GivePotion,"(dar esencia de curaci贸n)",DIA_Addon_GivePotion_ItPo_Health_01);
 	};
 };
 // ------------------------------------------------------------
 func void B_Addon_DrinkPotion ()
 {
-	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Ten, t髆ate la poci髇 de curaci髇.
+	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Ten, t贸mate la poci贸n de curaci贸n.
 
-	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //ge鋘dert m.F. 
+	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //ge盲ndert m.F. 
 	{
 		if (Npc_HasItems(self,ItPo_Health_03) > 0)			
 		{

@@ -44,10 +44,10 @@ func int DIA_Fed_HALLO_Condition ()
 };
 func void DIA_Fed_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //¿Qué quieres de mí? ¡Yo no voy a ninguna parte!
-	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Tranquilo, relájate. Nadie quiere que vayas a ningún sitio.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Gracias a Innos. Ya sabes que, durante los últimos días, varios hombres han abandonado el campamento y ninguno de ellos ha regresado.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Fueron devorados todos por chasqueadores. Pero no yo. Yo me quedo aquí hasta que todo esto haya terminado.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Â¿QuÃ© quieres de mÃ­? Â¡Yo no voy a ninguna parte!
+	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Tranquilo, relÃ¡jate. Nadie quiere que vayas a ningÃºn sitio.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Gracias a Innos. Ya sabes que, durante los Ãºltimos dÃ­as, varios hombres han abandonado el campamento y ninguno de ellos ha regresado.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Fueron devorados todos por chasqueadores. Pero no yo. Yo me quedo aquÃ­ hasta que todo esto haya terminado.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -59,7 +59,7 @@ instance DIA_Fed_Snapper	(C_INFO)
 	condition	 = 	DIA_Fed_Snapper_Condition;
 	information	 = 	DIA_Fed_Snapper_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¿Qué sabes de los chasqueadores?";
+	description	 = 	"Â¿QuÃ© sabes de los chasqueadores?";
 };
 func int DIA_Fed_Snapper_Condition ()
 {	
@@ -70,10 +70,10 @@ func int DIA_Fed_Snapper_Condition ()
 };
 func void DIA_Fed_Snapper_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //¿Qué sabes de los chasqueadores?
-	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot los vigila por la noche. Unos cuantos están en la charca, al pie de la torre oscura.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Hay otros justo encima de nosotros, en la cima del precipicio. Solo están esperando a que estemos todos agotados.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Nos las arreglamos para quedar atrapados aquí. Pronto atacarán el campamento y se darán un banquete sangriento...
+	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Â¿QuÃ© sabes de los chasqueadores?
+	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot los vigila por la noche. Unos cuantos estÃ¡n en la charca, al pie de la torre oscura.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Hay otros justo encima de nosotros, en la cima del precipicio. Solo estÃ¡n esperando a que estemos todos agotados.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Nos las arreglamos para quedar atrapados aquÃ­. Pronto atacarÃ¡n el campamento y se darÃ¡n un banquete sangriento...
 	AI_Output (other, self, "DIA_Fed_Snapper_15_04"); //Ya veo.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -86,7 +86,7 @@ instance DIA_Fed_Perm	(C_INFO)
 	condition	 = 	DIA_Fed_Perm_Condition;
 	information	 = 	DIA_Fed_Perm_Info;
 	permanent	 =  TRUE;
-	description	 = 	"¿Estás loco?";
+	description	 = 	"Â¿EstÃ¡s loco?";
 };
 func int DIA_Fed_Perm_Condition ()
 {	
@@ -94,16 +94,16 @@ func int DIA_Fed_Perm_Condition ()
 };
 func void DIA_Fed_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Perm_15_00"); //¿Estás bien?
+	AI_Output (other, self, "DIA_Fed_Perm_15_00"); //Â¿EstÃ¡s bien?
 	
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Los chasqueadores están ahí fuera. ¿Puedes olerlos...? Yo puedo olerlos...
+		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Los chasqueadores estÃ¡n ahÃ­ fuera. Â¿Puedes olerlos...? Yo puedo olerlos...
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //Parece que los chasqueadores han retrocedido. Pero eso no significa nada. Volverán. Ellos, o los lobos, o los lagartos, o los orcos.
-		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Y tarde o temprano nos cogerán y se alimentarán de nuestros cadáveres...
+		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //Parece que los chasqueadores han retrocedido. Pero eso no significa nada. VolverÃ¡n. Ellos, o los lobos, o los lagartos, o los orcos.
+		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Y tarde o temprano nos cogerÃ¡n y se alimentarÃ¡n de nuestros cadÃ¡veres...
 	};
 	AI_StopProcessInfos(self);
 	

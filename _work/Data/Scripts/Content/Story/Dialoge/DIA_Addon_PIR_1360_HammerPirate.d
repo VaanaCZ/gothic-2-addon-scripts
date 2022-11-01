@@ -29,7 +29,7 @@ instance DIA_Addon_HammerPirate_Hello(C_INFO)
 	condition	= DIA_Addon_HammerPirate_Hello_Condition;
 	information	= DIA_Addon_HammerPirate_Hello_Info;
 	permanent	= TRUE;
-	description = "¿Va todo bien?";
+	description = "Â¿Va todo bien?";
 };                       
 func INT DIA_Addon_HammerPirate_Hello_Condition()
 {
@@ -37,21 +37,21 @@ func INT DIA_Addon_HammerPirate_Hello_Condition()
 };
 func VOID DIA_Addon_HammerPirate_Hello_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_HammerPirate_Hello_15_00"); //¿Todo en orden?
+	AI_Output (other, self, "DIA_Addon_HammerPirate_Hello_15_00"); //Â¿Todo en orden?
 	if (self.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
 		if (C_TowerBanditsDead() == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_01"); //Claro, ya está todo arreglado. Hemos dejado planchados a esa escoria.
+			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_01"); //Claro, ya estÃ¡ todo arreglado. Hemos dejado planchados a esa escoria.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_02"); //¡Vamos a arreglar esto!
+			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_02"); //Â¡Vamos a arreglar esto!
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //¡No! Lo de martillear no va ocmigo.
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //Â¡No! Lo de martillear no va ocmigo.
 	};
 };
 
@@ -83,13 +83,13 @@ FUNC INT DIA_Addon_HammerPirate_Anheuern_Condition()
 };
 func VOID DIA_Addon_HammerPirate_Anheuern_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_00"); //¡No me digas! ¡Quieres que vaya y te ayude a aniquilar a esos bandidos!
+	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_00"); //Â¡No me digas! Â¡Quieres que vaya y te ayude a aniquilar a esos bandidos!
 	AI_Output (other,self ,"DIA_Addon_PIR_6_JoinHenry_15_08"); //Eso es.
 	if (!Npc_IsDead(SawPirate))
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //¿Por qué no se lo dices al que está serrando tablas?
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //Â¿Por quÃ© no se lo dices al que estÃ¡ serrando tablas?
 	};
-	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_02"); //Yo… no puedo con tanta tensión
+	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_02"); //Yoâ€¦ no puedo con tanta tensiÃ³n
 };
 // ------------------------------------------------------------
 // 						Komm (wieder) mit!
@@ -127,7 +127,7 @@ func void DIA_Addon_HammerPirate_ComeOn_Info ()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_03"); //(suspira) Sí, sí.
+		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_03"); //(suspira) SÃ­, sÃ­.
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"FOLLOW");
 		self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -157,7 +157,7 @@ FUNC INT DIA_Addon_HammerPirate_GoHome_Condition()
 FUNC VOID DIA_Addon_HammerPirate_GoHome_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_HammerPirate_GoHome_15_00"); //Ya no te necesito.
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_01"); //Si tú lo dices
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_01"); //Si tÃº lo dices
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START"); 
@@ -186,7 +186,7 @@ FUNC INT DIA_Addon_HammerPirate_TooFar_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_TooFar_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_TooFar_07_01"); //Si quieres seguir en esa dirección, no seré yo quien te detenga
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_TooFar_07_01"); //Si quieres seguir en esa direcciÃ³n, no serÃ© yo quien te detenga
 	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //Creo que voy a volver.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -220,8 +220,8 @@ FUNC INT DIA_Addon_HammerPirate_Success_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_Success_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_01"); //¿Sabes qué? He estado pensando. ¡No eres mal tipo!
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_02"); //Pues entonces vuelvo al campamento. ¡Nos vemos!
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_01"); //Â¿Sabes quÃ©? He estado pensando. Â¡No eres mal tipo!
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_02"); //Pues entonces vuelvo al campamento. Â¡Nos vemos!
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");

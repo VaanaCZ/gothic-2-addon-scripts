@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Wache_02_Hi   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Hi_Condition;
 	information = DIA_Addon_Wache_02_Hi_Info;
 	permanent   = FALSE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };
 FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 {	
@@ -71,10 +71,10 @@ FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//¿Cómo va todo?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Un momento, ¿no te conozco de algo?
+	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Â¿CÃ³mo va todo?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Un momento, Â¿no te conozco de algo?
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Hmm… No, no eres tú. Venga, lárgate.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Hmmâ€¦ No, no eres tÃº. Venga, lÃ¡rgate.
 };
 //--------------------------------------------------------------------
 //	Info Attentat
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Wache_02_Attentat   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Attentat_Condition;
 	information = DIA_Addon_Wache_02_Attentat_Info;
 	permanent   = FALSE;
-	description = "¿Qué sabes sobre el ataque?";
+	description = "Â¿QuÃ© sabes sobre el ataque?";
 };
 FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 {	
@@ -98,9 +98,9 @@ FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//¿Qué sabes sobre el ataque?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//¿Quieres que te lo diga? (risas) Le rompí las piernas al tipo.
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(amenazante) Y le haré lo mismo a todo el que quiera atacar a Esteban
+	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Â¿QuÃ© sabes sobre el ataque?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Â¿Quieres que te lo diga? (risas) Le rompÃ­ las piernas al tipo.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(amenazante) Y le harÃ© lo mismo a todo el que quiera atacar a Esteban
 };
 //--------------------------------------------------------------------
 //	Info perm
@@ -112,7 +112,7 @@ INSTANCE DIA_Addon_Wache_02_perm   (C_INFO)
 	condition   = DIA_Addon_Wache_02_perm_Condition;
 	information = DIA_Addon_Wache_02_perm_Info;
 	permanent   = TRUE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };
 FUNC INT DIA_Addon_Wache_02_perm_Condition()
 {	
@@ -123,12 +123,12 @@ FUNC INT DIA_Addon_Wache_02_perm_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_perm_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//¿Qué tal todo?
+	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Â¿QuÃ© tal todo?
 	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//Tranquilo hasta ahora.
 	
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Buscas al traidor. Nos ocuparemos de él.
+		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Buscas al traidor. Nos ocuparemos de Ã©l.
 	};
 };
 

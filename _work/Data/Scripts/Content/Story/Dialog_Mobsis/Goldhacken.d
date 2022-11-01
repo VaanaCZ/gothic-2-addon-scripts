@@ -1,6 +1,6 @@
 FUNC INT B_GoldMob_Bestimmung()
 {
-	//bin ich mobsi X und habe ich noch Gold übrig?
+	//bin ich mobsi X und habe ich noch Gold Ã¼brig?
 	if Hlp_StrCmp (Npc_GetNearestWP (self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount)
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount +1);
@@ -153,7 +153,7 @@ INSTANCE PC_Goldhacken_Addon_Hour (C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Parte sólo un poco."; 
+	description		= "Parte sÃ³lo un poco."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Hour_Condition ()
@@ -200,7 +200,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 8)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-				PrintScreen ("¡3 pepitas de oro extraídas!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Â¡3 pepitas de oro extraÃ­das!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				
 			}
@@ -208,32 +208,32 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 5)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-				PrintScreen ("¡2 pepitas de oro extraídas!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Â¡2 pepitas de oro extraÃ­das!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			}
 			else
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-				PrintScreen ("¡1 pepita de oro extraída!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Â¡1 pepita de oro extraÃ­da!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			};
 		}
 		else
 		{
-			PrintScreen ("Por todos lados saltan astillas de oro…", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Por todos lados saltan astillas de oroâ€¦", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("Aquí no hay nada más que sacar.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("AquÃ­ no hay nada mÃ¡s que sacar.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
 //*******************************************************
-//	Goldhacken Trümmerschlag
+//	Goldhacken TrÃ¼mmerschlag
 //*******************************************************
 INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 {
@@ -242,7 +242,7 @@ INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 	condition		= PC_Goldhacken_Addon_TSchlag_Condition;
 	information		= PC_Goldhacken_Addon_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Pégale un buen golpe."; 
+	description		= "PÃ©gale un buen golpe."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_TSchlag_Condition ()
@@ -261,7 +261,7 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		
 	if (TruemmerChance < 5)
 	{
-			PrintScreen ("Nada…", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Nadaâ€¦", -1, -1, FONT_ScreenSmall, 2);	
 	}
 	else
 	{
@@ -273,19 +273,19 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-			PrintScreen ("¡3 pepitas de oro extraídas!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Â¡3 pepitas de oro extraÃ­das!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-			PrintScreen ("¡2 pepitas de oro extraídas!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Â¡2 pepitas de oro extraÃ­das!", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-			PrintScreen ("¡1 pepita de oro extraída!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Â¡1 pepita de oro extraÃ­da!", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 	Truemmer_Count = 0;
@@ -302,7 +302,7 @@ INSTANCE PC_Goldhacken_Addon_Chance (C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(evalúa habilidad propia)"; 
+	description		= "(evalÃºa habilidad propia)"; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Chance_Condition ()

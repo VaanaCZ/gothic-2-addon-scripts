@@ -31,7 +31,7 @@ instance DIA_Bullco_Hallo		(C_INFO)
 	condition	= DIA_Bullco_Hallo_Condition;
 	information	= DIA_Bullco_Hallo_Info;
 	permanent	= TRUE;
-	description	= "Nosotros dos deberíamos tener una charla...";
+	description	= "Nosotros dos deberÃ­amos tener una charla...";
 };
 
 func int DIA_Bullco_Hallo_Condition ()
@@ -41,14 +41,14 @@ func int DIA_Bullco_Hallo_Condition ()
 
 func void DIA_Bullco_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_HALLO_15_00"); //Deberíamos charlar...
+	AI_Output (other, self, "DIA_Bullco_HALLO_15_00"); //DeberÃ­amos charlar...
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Bullco_HALLO_06_01"); //¡Escucha, tú ganas! Ahora déjame solo.
+		AI_Output (self, other, "DIA_Bullco_HALLO_06_01"); //Â¡Escucha, tÃº ganas! Ahora dÃ©jame solo.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_HALLO_06_02"); //No sabría qué decir sobre eso.
+		AI_Output (self, other, "DIA_Bullco_HALLO_06_02"); //No sabrÃ­a quÃ© decir sobre eso.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -77,7 +77,7 @@ func int DIA_Bullco_Quatscher_Condition ()
 
 func void DIA_Bullco_Quatscher_Info ()
 {
-	AI_Output (self, other, "DIA_Bullco_Quatscher_06_00"); //A Sylvio no le gusta que le hablen. Ya lo tendrías que haber deducido.
+	AI_Output (self, other, "DIA_Bullco_Quatscher_06_00"); //A Sylvio no le gusta que le hablen. Ya lo tendrÃ­as que haber deducido.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "PEE");
@@ -114,10 +114,10 @@ func int DIA_Bullco_PleaseLeave_Condition ()
 
 func void DIA_Bullco_PleaseLeave_Info ()
 {
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //Tenemos que hablar, tú y yo.
-	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //¿Qué es lo que quieres?
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //Creo que lo mejor sería que no volvieras a aparecer por la granja.
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //Intenta haberte ido para mañana. ¿De acuerdo?
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //Tenemos que hablar, tÃº y yo.
+	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //Â¿QuÃ© es lo que quieres?
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //Creo que lo mejor serÃ­a que no volvieras a aparecer por la granja.
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //Intenta haberte ido para maÃ±ana. Â¿De acuerdo?
 
 	Bullco_Leave_Day = B_GetDayPlus();	
 	Bullco_scharf = TRUE;
@@ -155,13 +155,13 @@ func void DIA_Bullco_DailyCheck_Info ()
 {
 	if (Bullco_HitCounter == 0)
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_00"); //Resulta que sigues aquí...
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_01"); //Creía que habíamos acordado que te dejaría irte en paz.
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_02"); //Tendrías que haberme hecho caso.
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_00"); //Resulta que sigues aquÃ­...
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_01"); //CreÃ­a que habÃ­amos acordado que te dejarÃ­a irte en paz.
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_02"); //TendrÃ­as que haberme hecho caso.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //¡No me lo puedo creer! ¡El tipo sigue aquí!
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //Â¡No me lo puedo creer! Â¡El tipo sigue aquÃ­!
 	};
 	
 	Bullco_HitCounter = Bullco_HitCounter + 1;
@@ -183,7 +183,7 @@ instance DIA_Bullco_WontLeave (C_INFO)
 	condition	= DIA_Bullco_WontLeave_Condition;
 	information	= DIA_Bullco_WontLeave_Info;
 	permanent	= FALSE;
-	description = "¡NO me voy a ir de aquí!";
+	description = "Â¡NO me voy a ir de aquÃ­!";
 };
 
 func int DIA_Bullco_WontLeave_Condition ()
@@ -196,7 +196,7 @@ func int DIA_Bullco_WontLeave_Condition ()
 
 func void DIA_Bullco_WontLeave_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_WontLeave_15_00"); //¡NO voy a marcharme!
+	AI_Output (other, self, "DIA_Bullco_WontLeave_15_00"); //Â¡NO voy a marcharme!
 
 	if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
@@ -206,7 +206,7 @@ func void DIA_Bullco_WontLeave_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(Gruñendo) Sí, sí, díselo a quien le importe.
+		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(GruÃ±endo) SÃ­, sÃ­, dÃ­selo a quien le importe.
 		Bullco_scharf = FALSE;
 		AI_StopProcessInfos (self);
 	};
@@ -224,7 +224,7 @@ instance DIA_Bullco_PepesSchafe (C_INFO)
 	condition	= DIA_Bullco_PepesSchafe_Condition;
 	information	= DIA_Bullco_PepesSchafe_Info;
 	permanent	= FALSE;
-	description = "¿Te suena el nombre de Pepe?";
+	description = "Â¿Te suena el nombre de Pepe?";
 };
 
 func int DIA_Bullco_PepesSchafe_Condition ()
@@ -239,17 +239,17 @@ func int DIA_Bullco_PepesSchafe_Condition ()
 
 func void DIA_Bullco_PepesSchafe_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_00"); //¿Te suena el nombre de Pepe?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_01"); //No entiendo una palabra de lo que me hablas, ¡pero no me gusta tu tono!
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_02"); //Se suponía que tenías que custodiar sus ovejas.
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //¿A quién le importan sus ovejas?
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_00"); //Â¿Te suena el nombre de Pepe?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_01"); //No entiendo una palabra de lo que me hablas, Â¡pero no me gusta tu tono!
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_02"); //Se suponÃ­a que tenÃ­as que custodiar sus ovejas.
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //Â¿A quiÃ©n le importan sus ovejas?
 	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_04"); //A Lee le importan.
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_05"); //¿Adónde quieres ir a parar?
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Si sigues tocándome las narices, me encargaré de que tengas que pagar las ovejas.
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //Así que si te interesa tu paga, ¡déjame en paz a partir de ahora!
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(Furioso) Tú, tú...
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(Con calma) ¿Sí?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(Para sí mismo) Maldita rata apestosa...
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_05"); //Â¿AdÃ³nde quieres ir a parar?
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Si sigues tocÃ¡ndome las narices, me encargarÃ© de que tengas que pagar las ovejas.
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //AsÃ­ que si te interesa tu paga, Â¡dÃ©jame en paz a partir de ahora!
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(Furioso) TÃº, tÃº...
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(Con calma) Â¿SÃ­?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(Para sÃ­ mismo) Maldita rata apestosa...
 	
 	Bullco_scharf = FALSE;
 	B_GivePlayerXP (XP_Ambient);

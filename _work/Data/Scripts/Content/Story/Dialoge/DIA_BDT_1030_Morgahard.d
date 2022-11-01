@@ -43,40 +43,40 @@ func int DIA_Morgahard_HALLO_Condition ()
 func void DIA_Morgahard_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_00"); //Eres Morgahard.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_01"); //¿Cómo es que conoces mi nombre?
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_02"); //El juez te busca. Huiste de la cárcel.
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_03"); //¿Qué hiciste? ¿Robarle la cartera?
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_04"); //La suya no, la del gobernador. Y fue él quien lo ordenó.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_05"); //Después de que asaltáramos al gobernador, no quiso compartir el botín con nosotros e hizo que nos detuvieran.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_06"); //No queríamos acabar en la horca, y por eso huimos.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_07"); //Creímos que no nos cogerían. Parece que nos equivocamos.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_01"); //Â¿CÃ³mo es que conoces mi nombre?
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_02"); //El juez te busca. Huiste de la cÃ¡rcel.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_15_03"); //Â¿QuÃ© hiciste? Â¿Robarle la cartera?
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_04"); //La suya no, la del gobernador. Y fue Ã©l quien lo ordenÃ³.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_05"); //DespuÃ©s de que asaltÃ¡ramos al gobernador, no quiso compartir el botÃ­n con nosotros e hizo que nos detuvieran.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_06"); //No querÃ­amos acabar en la horca, y por eso huimos.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_07_07"); //CreÃ­mos que no nos cogerÃ­an. Parece que nos equivocamos.
 
 	Info_ClearChoices	(DIA_Morgahard_HALLO);
 	Info_AddChoice	(DIA_Morgahard_HALLO, "Deja de lloriquear y desenfunda el arma.", DIA_Morgahard_HALLO_attack );
-	Info_AddChoice	(DIA_Morgahard_HALLO, "¿Qué podemos hacer contra el juez?", DIA_Morgahard_HALLO_richter );
+	Info_AddChoice	(DIA_Morgahard_HALLO, "Â¿QuÃ© podemos hacer contra el juez?", DIA_Morgahard_HALLO_richter );
 	Info_AddChoice	(DIA_Morgahard_HALLO, "El juez me ha ordenado que te mate.", DIA_Morgahard_HALLO_tot );
-	B_LogEntry (TOPIC_RichterLakai,"He encontrado a Morgahard, el líder de los fugitivos."); 
+	B_LogEntry (TOPIC_RichterLakai,"He encontrado a Morgahard, el lÃ­der de los fugitivos."); 
 	SCFoundMorgahard = TRUE;
 	B_GivePlayerXP (XP_FoundMorgahard);
 };
 func void DIA_Morgahard_HALLO_tot ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_tot_15_00"); //El juez me ha ordenado que te mate.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_tot_07_01"); //Sí, claro. Has venido para eso, ¿no?
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_tot_07_01"); //SÃ­, claro. Has venido para eso, Â¿no?
 
 };
 
 func void DIA_Morgahard_HALLO_richter ()
 {
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_00"); //¿Qué podemos hacer contra el juez?
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_01"); //Nada de nada. Permanece intocable en la parte alta de la ciudad como una araña en su tela.
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_02"); //Yo no diría tanto. Solo necesitaríamos pruebas de su culpabilidad en el asunto del gobernador.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_03"); //¿Pruebas, dices? Las tengo, pero ¿quién haría caso a un delincuente condenado?
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_04"); //Dame las pruebas y me aseguraré de que no se te vuelva a perseguir.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_05"); //¿Seguro? Vale. Ten, toma esta carta. Lleva la firma del juez.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_00"); //Â¿QuÃ© podemos hacer contra el juez?
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_01"); //Nada de nada. Permanece intocable en la parte alta de la ciudad como una araÃ±a en su tela.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_02"); //Yo no dirÃ­a tanto. Solo necesitarÃ­amos pruebas de su culpabilidad en el asunto del gobernador.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_03"); //Â¿Pruebas, dices? Las tengo, pero Â¿quiÃ©n harÃ­a caso a un delincuente condenado?
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_04"); //Dame las pruebas y me asegurarÃ© de que no se te vuelva a perseguir.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_05"); //Â¿Seguro? Vale. Ten, toma esta carta. Lleva la firma del juez.
 	B_GiveInvItems 		(self, other, ItWr_RichterKomproBrief_MIS, 1);					
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_06"); //Aunque no me exculpa, basta para confirmar que fue cómplice en aquel asunto.
-	B_LogEntry (TOPIC_RichterLakai,"Morgahard me ha dado el encargo del juez. Este trozo de papel prueba definitivamente que el juez hizo que asaltaran al gobernador Larius. Creo que es justo lo que Lee quería que encontrara."); 
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_06"); //Aunque no me exculpa, basta para confirmar que fue cÃ³mplice en aquel asunto.
+	B_LogEntry (TOPIC_RichterLakai,"Morgahard me ha dado el encargo del juez. Este trozo de papel prueba definitivamente que el juez hizo que asaltaran al gobernador Larius. Creo que es justo lo que Lee querÃ­a que encontrara."); 
 	AI_StopProcessInfos (self);
 };
 var int MorgahardSucked;
@@ -116,7 +116,7 @@ func int DIA_Morgahard_Perm_Condition ()
 
 func void DIA_Morgahard_Perm_Info ()
 {
-	AI_Output			(self, other, "DIA_Morgahard_Perm_07_00"); //Ese juez es un cerdo. Algún día le veré ahorcado.
+	AI_Output			(self, other, "DIA_Morgahard_Perm_07_00"); //Ese juez es un cerdo. AlgÃºn dÃ­a le verÃ© ahorcado.
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ func int DIA_Morgahard_Perm2_Condition ()
 };
 func void DIA_Morgahard_Perm2_Info ()
 {
-	AI_Output			(self, other, "DIA_Morgahard_Perm2_07_00"); //¿Por qué no desapareces?
+	AI_Output			(self, other, "DIA_Morgahard_Perm2_07_00"); //Â¿Por quÃ© no desapareces?
 	AI_StopProcessInfos (self);
 };
 

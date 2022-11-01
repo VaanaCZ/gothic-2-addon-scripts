@@ -19,7 +19,7 @@ instance VLK_408_Jora (Npc_Default)
 	EquipItem (self, ItMw_AlriksSword_Mis); //WICHTIG
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Normal02, BodyTex_N, ITAR_VLK_M);	

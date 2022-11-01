@@ -1,5 +1,5 @@
 // *********************************************************
-// Rüstungs Kosten in Gold
+// RÃ¼stungs Kosten in Gold
 // -----------------------
 // Alles, was hier mit 0 angegeben ist  
 // a) kann der Spieler NIE bekommen und
@@ -22,7 +22,7 @@ const int VALUE_ITAR_MIL_M		= 2500;
 const int VALUE_ITAR_PAL_M		= 5000;
 const int VALUE_ITAR_PAL_H		= 20000;
 
-// ------ Bauern und Söldner ------
+// ------ Bauern und SÃ¶ldner ------
 const int VALUE_ITAR_Bau_L		= 80;
 const int VALUE_ITAR_Bau_M		= 100;
 const int VALUE_ITAR_BauBabe_L	= 0;
@@ -42,7 +42,7 @@ const int VALUE_ITAR_Leather_L	= 250;
 const int VALUE_ITAR_BDT_M		= 550;
 const int VALUE_ITAR_BDT_H		= 2100;
 
-// ------ Drachenjäger ------
+// ------ DrachenjÃ¤ger ------
 const int VALUE_ITAR_DJG_L		= 3000;
 const int VALUE_ITAR_DJG_M		= 12000;
 const int VALUE_ITAR_DJG_H		= 20000;
@@ -59,12 +59,12 @@ const int VALUE_ITAR_Prisoner	= 10;
 
 
 // ******************
-// 		Rüstungen
+// 		RÃ¼stungen
 // ******************
 
 INSTANCE ITAR_Governor (C_Item)
 {
-	name 					=	"Jubón de gobernador";
+	name 					=	"JubÃ³n de gobernador";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -104,7 +104,7 @@ INSTANCE ITAR_Governor (C_Item)
 // ******************************************************
 INSTANCE ITAR_JUDGE (C_Item)
 {
-	name 					=	"Túnica de juez";
+	name 					=	"TÃºnica de juez";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -502,7 +502,7 @@ FUNC VOID Equip_ITAR_MIL_L()
 	{
 		MILArmor_Equipped = TRUE;
 		
-		if (MIL01_Equipped == TRUE)//Gürtel
+		if (MIL01_Equipped == TRUE)//GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -642,7 +642,7 @@ INSTANCE ITAR_PAL_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_PAL_H (C_Item)
 {
-	name 					=	"Armadura de paladín";
+	name 					=	"Armadura de paladÃ­n";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1291,7 +1291,7 @@ INSTANCE ITAR_DJG_BABE (C_Item)
 // ******************************************************
 INSTANCE ITAR_NOV_L (C_Item)
 {
-	name 					=	"Túnica de novicio";
+	name 					=	"TÃºnica de novicio";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1367,7 +1367,7 @@ FUNC VOID UnEquip_ITAR_NOV_L()
 // ******************************************************
 INSTANCE ITAR_KDF_L (C_Item)
 {
-	name 					=	"Túnica de mago de fuego";
+	name 					=	"TÃºnica de mago de fuego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1442,7 +1442,7 @@ FUNC VOID UnEquip_ITAR_KDF_L()
 // ******************************************************
 INSTANCE ITAR_KDF_H (C_Item)
 {
-	name 					=	"Túnica pesada de fuego";
+	name 					=	"TÃºnica pesada de fuego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ FUNC VOID Equip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = TRUE;	
 	
-		if (Leather01_Equipped == TRUE) //Ledergürtel
+		if (Leather01_Equipped == TRUE) //LedergÃ¼rtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1575,7 +1575,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = FALSE;	
 	
-		if (Leather01_Equipped == TRUE) //Ledergürtel
+		if (Leather01_Equipped == TRUE) //LedergÃ¼rtel
 		{
 			self.protection[PROT_EDGE] 	-= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -1670,7 +1670,7 @@ INSTANCE ITAR_BDT_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_XARDAS (C_Item)
 {
-	name 					=	"Túnica de las artes oscuras";
+	name 					=	"TÃºnica de las artes oscuras";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1706,7 +1706,7 @@ INSTANCE ITAR_XARDAS (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_LESTER (C_Item)
 {
-	name 					=	"Túnica de Lester";
+	name 					=	"TÃºnica de Lester";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1862,7 +1862,7 @@ INSTANCE ITAR_Dementor (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDW_H (C_Item)
 {
-	name 					=	"Túnica de mago de agua";
+	name 					=	"TÃºnica de mago de agua";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

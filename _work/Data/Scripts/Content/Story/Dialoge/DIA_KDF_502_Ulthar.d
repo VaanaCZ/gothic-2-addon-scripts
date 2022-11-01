@@ -45,13 +45,13 @@ func int DIA_Ulthar_GREET_Condition ()
 };
 func void DIA_Ulthar_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_00"); //Mira, el nuevo novicio se presenta ante el Concilio Supremo. Que Innos te acompañe, hijo.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_01"); //¿Cuál es la labor del Concilio Supremo?
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_02"); //Nuestra obligación es revelar la voluntad de Innos. Por lo tanto, nombramos a los novicios elegidos que se someterán a la prueba de la magia.
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_03"); //Aunque llevemos una vida retirada, escrutamos los acontecimientos del mundo, pues la iglesia de Innos representa la más alta ley terrenal.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_04"); //Ah, así que te interesa lo que sucede en el mundo...
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_05"); //¿Qué opinas de los dragones que ocupan el Valle de las Minas y de su ejército que crece día a día?
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_06"); //Entiendo que estés enojado, pero debemos sopesar tus palabras antes de tomar medidas.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_00"); //Mira, el nuevo novicio se presenta ante el Concilio Supremo. Que Innos te acompaÃ±e, hijo.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_01"); //Â¿CuÃ¡l es la labor del Concilio Supremo?
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_02"); //Nuestra obligaciÃ³n es revelar la voluntad de Innos. Por lo tanto, nombramos a los novicios elegidos que se someterÃ¡n a la prueba de la magia.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_03"); //Aunque llevemos una vida retirada, escrutamos los acontecimientos del mundo, pues la iglesia de Innos representa la mÃ¡s alta ley terrenal.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_04"); //Ah, asÃ­ que te interesa lo que sucede en el mundo...
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_05"); //Â¿QuÃ© opinas de los dragones que ocupan el Valle de las Minas y de su ejÃ©rcito que crece dÃ­a a dÃ­a?
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_06"); //Entiendo que estÃ©s enojado, pero debemos sopesar tus palabras antes de tomar medidas.
 	AI_Output (self, other, "DIA_Ulthar_GREET_05_07"); //Si nos dejamos llevar y nos precipitamos, no conseguiremos nada. Por lo tanto, cumple con tus obligaciones y ya hablaremos de lo que hay que hacer.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -63,7 +63,7 @@ instance DIA_Ulthar_MAGETEST		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Ulthar_MAGETEST_Condition;
 	information	 = 	DIA_Ulthar_MAGETEST_Info;
-	description	 = 	"Háblame de la prueba de la magia.";
+	description	 = 	"HÃ¡blame de la prueba de la magia.";
 };
 func int DIA_Ulthar_MAGETEST_Condition ()
 {	
@@ -74,7 +74,7 @@ func int DIA_Ulthar_MAGETEST_Condition ()
 };
 func void DIA_Ulthar_MAGETEST_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_MAGETEST_15_00"); //Háblame de la prueba de la magia.
+	AI_Output (other, self, "DIA_Ulthar_MAGETEST_15_00"); //HÃ¡blame de la prueba de la magia.
 	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_01"); //Es la oportunidad que tienen los novicios elegidos para ingresar en el gremio de magos, pero solo uno de ellos puede superar la prueba.
 	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_02"); //Y solo Innos escoge a los novicios.
 };
@@ -88,7 +88,7 @@ instance DIA_Ulthar_WHEN		(C_INFO)
 	condition	 = 	DIA_Ulthar_WHEN_Condition;
 	information	 = 	DIA_Ulthar_WHEN_Info;
 	permanent	 =  TRUE;
-	description	 = 	"¿Cuándo va a tener lugar la prueba?";
+	description	 = 	"Â¿CuÃ¡ndo va a tener lugar la prueba?";
 };
 func int DIA_Ulthar_WHEN_Condition ()
 {
@@ -100,7 +100,7 @@ func int DIA_Ulthar_WHEN_Condition ()
 };
 func void DIA_Ulthar_WHEN_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_WHEN_15_00"); //¿Cuándo va a tener lugar la prueba?
+	AI_Output (other, self, "DIA_Ulthar_WHEN_15_00"); //Â¿CuÃ¡ndo va a tener lugar la prueba?
 	AI_Output (self, other, "DIA_Ulthar_WHEN_05_01"); //En cuanto Innos nos haga saber tu voluntad. Informaremos a los novicios elegidos y les someteremos a la prueba.
 	
 };
@@ -127,11 +127,11 @@ func void DIA_Ulthar_TEST_Info ()
 {
 	AI_Output (other, self, "DIA_Ulthar_TEST_15_00"); //Estoy listo para afrontar tu prueba, maestro.
 	AI_Output (self, other, "DIA_Ulthar_TEST_05_01"); //No me sorprende que conozcas la ley antigua.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_02"); //Pero sospecho que no eres consciente del riesgo que corres. Recuerda que los espíritus impacientes no resisten la prueba del fuego.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_03"); //Ha pasado mucho tiempo desde la última vez que alguien se sometió a la prueba, y solo ha habido un hombre que ha sobrevivido a ella y la ha superado.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_02"); //Pero sospecho que no eres consciente del riesgo que corres. Recuerda que los espÃ­ritus impacientes no resisten la prueba del fuego.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_03"); //Ha pasado mucho tiempo desde la Ãºltima vez que alguien se sometiÃ³ a la prueba, y solo ha habido un hombre que ha sobrevivido a ella y la ha superado.
 	AI_Output (self, other, "DIA_Ulthar_TEST_05_04"); //En aquel entonces era un joven ambicioso, y desde ese momento ha encontrado su puesto en el Concilio Supremo: me refiero a Serpentes.
-	AI_Output (other, self, "DIA_Ulthar_TEST_15_05"); //No creo que siga siendo el único en superar la prueba durante mucho tiempo.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_06"); //En ese caso, no quiero entretenerme más. Presta atención a la prueba:
+	AI_Output (other, self, "DIA_Ulthar_TEST_15_05"); //No creo que siga siendo el Ãºnico en superar la prueba durante mucho tiempo.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_06"); //En ese caso, no quiero entretenerme mÃ¡s. Presta atenciÃ³n a la prueba:
 	AI_Output (self, other, "DIA_Ulthar_TEST_05_07"); //Crea una runa de flecha de fuego. Eso es todo. Que Innos te ayude.
 	
 	MIS_RUNE = LOG_RUNNING;
@@ -164,7 +164,7 @@ func int DIA_Ulthar_RUNNING_Condition ()
 };
 func void DIA_Ulthar_RUNNING_Info ()
 {
-	AI_Output (self, other, "DIA_Ulthar_RUNNING_05_00"); //Ya sabes cuál es tu misión. Llévala a cabo.
+	AI_Output (self, other, "DIA_Ulthar_RUNNING_05_00"); //Ya sabes cuÃ¡l es tu misiÃ³n. LlÃ©vala a cabo.
 	
 	AI_StopProcessInfos (self);
 };
@@ -178,7 +178,7 @@ instance DIA_Ulthar_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Ulthar_SUCCESS_Condition;
 	information	 = 	DIA_Ulthar_SUCCESS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¡He creado la runa!";
+	description	 = 	"Â¡He creado la runa!";
 };
 func int DIA_Ulthar_SUCCESS_Condition ()
 {
@@ -190,15 +190,15 @@ func int DIA_Ulthar_SUCCESS_Condition ()
 };
 func void DIA_Ulthar_SUCCESS_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_SUCCESS_15_00"); //¡He creado la runa!
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_01"); //Muy bien, novicio. Quédatela. Será tu primera runa.
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_02"); //En cuanto hayas alcanzado el primer Círculo de Fuego, podrás usarla.
+	AI_Output (other, self, "DIA_Ulthar_SUCCESS_15_00"); //Â¡He creado la runa!
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_01"); //Muy bien, novicio. QuÃ©datela. SerÃ¡ tu primera runa.
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_02"); //En cuanto hayas alcanzado el primer CÃ­rculo de Fuego, podrÃ¡s usarla.
 	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_03"); //Has superado la prueba satisfactoriamente.
 	
 	if (MIS_GOLEM == LOG_RUNNING)
 	&& ((Npc_IsDead (Magic_Golem)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_04"); //¡No obstante, aún te aguarda la peligrosa misión que Serpentes te ha asignado!
+		AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_04"); //Â¡No obstante, aÃºn te aguarda la peligrosa misiÃ³n que Serpentes te ha asignado!
 	};
 	
 	MIS_RUNE = LOG_SUCCESS;
@@ -248,7 +248,7 @@ instance DIA_Ulthar_PermAbKap3		(C_INFO)
 	condition	 = 	DIA_Ulthar_PermAbKap3_Condition;
 	information	 = 	DIA_Ulthar_PermAbKap3_Info;
 	permanent	 = 	TRUE;
-	description  =  "¿Alguna novedad?";
+	description  =  "Â¿Alguna novedad?";
 };
 func int DIA_Ulthar_PermAbKap3_Condition ()
 {	
@@ -260,11 +260,11 @@ func int DIA_Ulthar_PermAbKap3_Condition ()
 };
 func void DIA_Ulthar_PermAbKap3_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_PermAbKap3_15_00"); //¿Alguna novedad?
+	AI_Output (other, self, "DIA_Ulthar_PermAbKap3_15_00"); //Â¿Alguna novedad?
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_01"); //Por ahora no. Ve a cumplir tus misiones. Aún te queda mucho por hacer.
+		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_01"); //Por ahora no. Ve a cumplir tus misiones. AÃºn te queda mucho por hacer.
 	}
 	else
 	{
@@ -297,13 +297,13 @@ func void DIA_Ulthar_SCHREINEVERGIFTET_Info ()
 {
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_00"); //Una cosa más. El enemigo ha profanado algunos de los altares dedicados a Innos y ubicados al borde de los caminos, que han perdido su consagración mágica.
-			AI_Output			(other, self, "DIA_Ulthar_SCHREINEVERGIFTET_15_01"); //Comprendo. ¿Y?
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_02"); //Te corresponde purificar los altares para que la situación no empeore.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_00"); //Una cosa mÃ¡s. El enemigo ha profanado algunos de los altares dedicados a Innos y ubicados al borde de los caminos, que han perdido su consagraciÃ³n mÃ¡gica.
+			AI_Output			(other, self, "DIA_Ulthar_SCHREINEVERGIFTET_15_01"); //Comprendo. Â¿Y?
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_02"); //Te corresponde purificar los altares para que la situaciÃ³n no empeore.
 			CreateInvItems (self, ItMi_UltharsHolyWater_Mis, 1);									
 			B_GiveInvItems (self, other, ItMi_UltharsHolyWater_Mis, 1);	
 			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_03"); //Coge esta agua bendita y deja caer un hilillo sobre la base de los altares.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_04"); //Con las palabras sagradas de la purificación, el altar recuperará su antiguo poder.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_04"); //Con las palabras sagradas de la purificaciÃ³n, el altar recuperarÃ¡ su antiguo poder.
 
 			if ((Npc_HasItems (other,ItWr_Map_Shrine_MIS))==FALSE)
 			{
@@ -314,7 +314,7 @@ func void DIA_Ulthar_SCHREINEVERGIFTET_Info ()
 				}
 				else
 				{
-					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_06"); //Aquí tienes un mapa. En él aparecen los altares que hemos erigido.
+					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_06"); //AquÃ­ tienes un mapa. En Ã©l aparecen los altares que hemos erigido.
 					CreateInvItems (self, ItWr_Map_Shrine_MIS, 1);									
 					B_GiveInvItems (self, other, ItWr_Map_Shrine_MIS, 1);					
 				};
@@ -325,15 +325,15 @@ func void DIA_Ulthar_SCHREINEVERGIFTET_Info ()
 			
 			Log_CreateTopic (TOPIC_Ulthar_HeileSchreine_PAL, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Ulthar_HeileSchreine_PAL, LOG_RUNNING);
-			B_LogEntry (TOPIC_Ulthar_HeileSchreine_PAL,"Ulthar me ha encargado la tarea de purificar con su agua bendita todos los templos que profanó el enemigo."); 
+			B_LogEntry (TOPIC_Ulthar_HeileSchreine_PAL,"Ulthar me ha encargado la tarea de purificar con su agua bendita todos los templos que profanÃ³ el enemigo."); 
 			
 			AI_StopProcessInfos (self);
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_08"); //Una cosa más. Apártate de los altares que están al borde de los caminos. Nos hemos enterado de que algunos han sido profanados.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_09"); //Nadie sabe cuáles son sus efectos en la actualidad.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_10"); //La resolución de este problema no es cosa tuya. Los paladines se encargarán del asunto.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_08"); //Una cosa mÃ¡s. ApÃ¡rtate de los altares que estÃ¡n al borde de los caminos. Nos hemos enterado de que algunos han sido profanados.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_09"); //Nadie sabe cuÃ¡les son sus efectos en la actualidad.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_10"); //La resoluciÃ³n de este problema no es cosa tuya. Los paladines se encargarÃ¡n del asunto.
 			AI_StopProcessInfos (self);
 		};
 };
@@ -362,8 +362,8 @@ func int DIA_Ulthar_SchreineGeheilt_Condition ()
 func void DIA_Ulthar_SchreineGeheilt_Info ()
 {
 	AI_Output			(other, self, "DIA_Ulthar_SchreineGeheilt_15_00"); //He purificado todos los altares.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_01"); //Magnífico, hijo mío. Me siento orgulloso de ti. Que Innos te proteja.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_02"); //Toma este amuleto de fuerza, y que te sea útil en la batalla contra el enemigo.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_01"); //MagnÃ­fico, hijo mÃ­o. Me siento orgulloso de ti. Que Innos te proteja.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_02"); //Toma este amuleto de fuerza, y que te sea Ãºtil en la batalla contra el enemigo.
 	CreateInvItems (self, ItAm_Dex_Strg_01, 1);									
 	B_GiveInvItems (self, other, ItAm_Dex_Strg_01, 1);
 	B_GivePlayerXP (XP_Ulthar_SchreineGereinigt);
@@ -431,7 +431,7 @@ func int DIA_Ulthar_SchreineGeheiltNoPAL_Condition ()
 func void DIA_Ulthar_SchreineGeheiltNoPAL_Info ()
 {
 	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_00"); //Buenas noticias. Los altares del borde del camino han sido purificados. La fuerza de Innos han ayudado a los paladines a erradicar del mundo este problema.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_01"); //Una vez más, puedes hacer donativos a Innos sin reservas ni remordimientos.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_01"); //Una vez mÃ¡s, puedes hacer donativos a Innos sin reservas ni remordimientos.
 	AI_StopProcessInfos (self);
 };
 

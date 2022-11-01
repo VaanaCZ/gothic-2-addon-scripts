@@ -94,7 +94,7 @@ INSTANCE ITAR_PIR_M_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_H_Addon (C_Item)
 {
-	name 					=	"Ropa de capitán";
+	name 					=	"Ropa de capitÃ¡n";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,13 +453,13 @@ INSTANCE ITAR_MayaZombie_Addon (C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rüstungen
+//	Magische RÃ¼stungen
 //
 
 
 instance ItAr_FireArmor_Addon (C_Item)
 {
-	name 					=	"Armadura mágica";
+	name 					=	"Armadura mÃ¡gica";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

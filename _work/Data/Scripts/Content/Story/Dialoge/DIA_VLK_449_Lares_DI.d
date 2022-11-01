@@ -34,7 +34,7 @@ INSTANCE DIA_Lares_DI_Hallo (C_INFO)
 	information	= DIA_Lares_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };                       
 FUNC INT DIA_Lares_DI_Hallo_Condition()
 {
@@ -45,7 +45,7 @@ FUNC INT DIA_Lares_DI_Hallo_Condition()
 };
 FUNC VOID DIA_Lares_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Hallo_15_00"); //¿Qué tal va todo?
+	AI_Output (other,self ,"DIA_Lares_DI_Hallo_15_00"); //Â¿QuÃ© tal va todo?
 
 	if (ORkSturmDI == TRUE)
 	{
@@ -69,7 +69,7 @@ INSTANCE DIA_Lares_DI_Training (C_INFO)
 	information	= DIA_Lares_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "Enséñame tus habilidades.";
+	description = "EnsÃ©Ã±ame tus habilidades.";
 };                       
 FUNC INT DIA_Lares_DI_Training_Condition()
 {
@@ -81,7 +81,7 @@ FUNC INT DIA_Lares_DI_Training_Condition()
 
 FUNC VOID DIA_Lares_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Enséñame tus habilidades.
+	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //EnsÃ©Ã±ame tus habilidades.
 	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //Sin problemas.
 	
 	Info_ClearChoices (DIA_Lares_DI_Training);
@@ -101,7 +101,7 @@ FUNC VOID DIA_Lares_DI_Training_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Tienes que doblar tu pierna delantera un poco y mantener la trasera recta. Así tendrás una postura más firme.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Tienes que doblar tu pierna delantera un poco y mantener la trasera recta. AsÃ­ tendrÃ¡s una postura mÃ¡s firme.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
@@ -120,7 +120,7 @@ FUNC VOID DIA_Lares_DI_Training_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //Mantén tus caderas flexibles. Eso te ayudará a esquivar un contraataque.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //MantÃ©n tus caderas flexibles. Eso te ayudarÃ¡ a esquivar un contraataque.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
@@ -144,7 +144,7 @@ func void DIA_Lares_DI_Training_DEX_1 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 1, T_MED))
 	{
-		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_1_09_00"); //La mitad superior de tu cuerpo tiene que actuar en armonía con el resto.
+		AI_Output (self ,other,"DIA_Lares_DI_Training_DEX_1_09_00"); //La mitad superior de tu cuerpo tiene que actuar en armonÃ­a con el resto.
 	};
 
 	Info_ClearChoices (DIA_Lares_DI_Training);
@@ -237,12 +237,12 @@ var int DIA_Lares_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Lares_DI_UndeadDragonDead_Info()
 {	
 	AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_00"); //No parece que te interese mucho todo esto.
-	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //Ah, ya sabes, pensaba que lo conseguirías.
+	AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_01"); //Ah, ya sabes, pensaba que lo conseguirÃ­as.
 
 	if (DIA_Lares_DI_UndeadDragonDead_OneTime == FALSE )
 	{
-		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //¿Qué vas a hacer ahora?
-		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Ni idea. Supongo que te seguiré, de momento.
+		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Â¿QuÃ© vas a hacer ahora?
+		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Ni idea. Supongo que te seguirÃ©, de momento.
 		
 		DIA_Lares_DI_UndeadDragonDead_OneTime = TRUE;
 	};

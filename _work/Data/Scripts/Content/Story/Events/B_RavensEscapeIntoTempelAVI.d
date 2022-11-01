@@ -8,7 +8,7 @@ func void B_RAVENSESCAPEINTOTEMPELAVI ()
 		
 		Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RavenKDW,"He entrado en los aposentos de Raven y lo he visto desaparecer tras una gran puerta. No he podido seguirle. Me imagino que la puerta conducir· al templo de Adanos. Tengo que informar a Saturas."); 
+		B_LogEntry (TOPIC_Addon_RavenKDW,"He entrado en los aposentos de Raven y lo he visto desaparecer tras una gran puerta. No he podido seguirle. Me imagino que la puerta conducir√° al templo de Adanos. Tengo que informar a Saturas."); 
 		
 		B_RAVENSESCAPEINTOTEMPELAVI_OneTime = TRUE;
 	};

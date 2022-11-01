@@ -73,62 +73,62 @@ func int DIA_Mil_333_Stadtwache_FirstWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //¡ALTO!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //Â¡ALTO!
 		
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
-		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(Suspira) ¿Qué pasa?
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //¡Lo sabes de sobra!
+		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(Suspira) Â¿QuÃ© pasa?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //Â¡Lo sabes de sobra!
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //¡En la ciudad se te busca por asesinato!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Â¡En la ciudad se te busca por asesinato!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //¡Aquí no queremos ladrones asquerosos!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //Â¡AquÃ­ no queremos ladrones asquerosos!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //¡En nuestra ciudad no hay sitio para los alborotadores!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //Â¡En nuestra ciudad no hay sitio para los alborotadores!
 		};
 	
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //¿Por qué crees que íbamos a dejarte entrar?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //Â¿Por quÃ© crees que Ã­bamos a dejarte entrar?
 	}
 	else // ------ normales Reinkommen ------
 	{
 		 var C_Item itm; itm = Npc_GetEquippedArmor(other);
 		
-		// ------ ohne Rüstung ODER als Bauer ------
+		// ------ ohne RÃ¼stung ODER als Bauer ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_L) == TRUE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_M) == TRUE)
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //¿Sí?
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Â¿SÃ­?
 			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //Pareces un pobre diablo. En esta ciudad no hay sitio para la gente sin dinero.
 			
 			if (Npc_HasItems(other, ItWr_Passierschein))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //¡Pero si tengo un pase!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //Solo es válido en la otra puerta.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //Â¡Pero si tengo un pase!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //Solo es vÃ¡lido en la otra puerta.
 			};
 			
 			if (Npc_KnowsInfo (other, DIA_Mil_310_Stadtwache_MilizWerden))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //¡Pero tengo intención de alistarme en la guardia de la ciudad!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //¡Ja! ¡No me hagas reír! Ve a la otra puerta e intenta camelarles a ellos.
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Ya he estado. Me han mandado para acá.
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(Sonrisa maliciosa) ¡Vaya! Siempre nos mandan a la flor y nata...
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Â¡Pero tengo intenciÃ³n de alistarme en la guardia de la ciudad!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Â¡Ja! Â¡No me hagas reÃ­r! Ve a la otra puerta e intenta camelarles a ellos.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Ya he estado. Me han mandado para acÃ¡.
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(Sonrisa maliciosa) Â¡Vaya! Siempre nos mandan a la flor y nata...
 			};
 		}
- 	 	// ------ alle anderen Rüstungen ------
+ 	 	// ------ alle anderen RÃ¼stungen ------
 		else 
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(Con calma) ¿Qué?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //Solo quería echarte un vistazo. Bueno, parece que tienes algo de dinero. Pasa.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(Con calma) Â¿QuÃ©?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //Solo querÃ­a echarte un vistazo. Bueno, parece que tienes algo de dinero. Pasa.
 			
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Stadtwache_310.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -169,7 +169,7 @@ FUNC INT DIA_Mil_333_Stadtwache_SecondWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //¿Tienes cera en los oídos? ¡Si das un paso más, probarás mi espada!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //Â¿Tienes cera en los oÃ­dos? Â¡Si das un paso mÃ¡s, probarÃ¡s mi espada!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,Mil_333_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -207,7 +207,7 @@ func void DIA_Mil_333_Stadtwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //Tú lo has querido...
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //TÃº lo has querido...
 	
 	AI_StopProcessInfos	(self);			
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -225,7 +225,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Aquí tienes 100 monedas de oro. ¡Déjame pasar!";
+	description	= "AquÃ­ tienes 100 monedas de oro. Â¡DÃ©jame pasar!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
@@ -238,7 +238,7 @@ FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_333_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Aquí tienes 100 monedas de oro. ¡Déjame pasar!
+	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //AquÃ­ tienes 100 monedas de oro. Â¡DÃ©jame pasar!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
@@ -246,7 +246,7 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //¡Y ve directamente a ver a Andre o te cobraré otras 100 monedas de oro la próxima vez!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //Â¡Y ve directamente a ver a Andre o te cobrarÃ© otras 100 monedas de oro la prÃ³xima vez!
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -254,12 +254,12 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 		Mil_333_schonmalreingelassen = TRUE;
 		B_CheckLog();
 		
-		// ------ wenn bezahlt, persönliche Absolution erteilen -------
+		// ------ wenn bezahlt, persÃ¶nliche Absolution erteilen -------
 		MIL_333_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //¡¿Qué?! ¡¿Dónde?! No veo monedas de oro. ¡Vete a hacer puñetas!
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Â¡Â¿QuÃ©?! Â¡Â¿DÃ³nde?! No veo monedas de oro. Â¡Vete a hacer puÃ±etas!
 	};
 	
 	AI_StopProcessInfos (self);
@@ -291,7 +291,7 @@ FUNC INT DIA_Mil_333_Stadtwache_PERM_Condition()
 	
 func void DIA_Mil_333_Stadtwache_PERM_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_06_00"); //¡Largo!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_06_00"); //Â¡Largo!
 	
 	AI_StopProcessInfos (self);
 };

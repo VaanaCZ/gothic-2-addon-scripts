@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Tom_HI   (C_INFO)
 	condition   = DIA_Addon_Tom_HI_Condition;
 	information = DIA_Addon_Tom_HI_Info;
 	permanent   = FALSE;
-	description = "¿Qué haces aquí sentado?";
+	description = "Â¿QuÃ© haces aquÃ­ sentado?";
 };
 FUNC INT DIA_Addon_Tom_HI_Condition()
 {	
@@ -71,12 +71,12 @@ FUNC INT DIA_Addon_Tom_HI_Condition()
 };
 FUNC VOID DIA_Addon_Tom_HI_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_HI_15_00"); //¿Qué haces aquí sentado?
+	AI_Output (other,self,"DIA_Addon_Tom_HI_15_00"); //Â¿QuÃ© haces aquÃ­ sentado?
 	AI_Output (self,other,"DIA_Addon_Tom_HI_11_01"); //Tengo problemas. De momento, no me conviene mucho que me vean por el campamento.
-	AI_Output (other,self,"DIA_Addon_Tom_HI_15_02"); //¿Qué ocurre?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_03"); //Mantenía buenas relaciones con algunos piratas, ¿sabes?
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_04"); //Siempre me reunía con los chicos a las afueras del campamento para comerciar.
-	AI_Output (self,other,"DIA_Addon_Tom_HI_11_05"); //¡Vaya! Compraba suministros para medio campamento. 'Tom, tráeme esto, Tom, tráeme aquello.'
+	AI_Output (other,self,"DIA_Addon_Tom_HI_15_02"); //Â¿QuÃ© ocurre?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_03"); //MantenÃ­a buenas relaciones con algunos piratas, Â¿sabes?
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_04"); //Siempre me reunÃ­a con los chicos a las afueras del campamento para comerciar.
+	AI_Output (self,other,"DIA_Addon_Tom_HI_11_05"); //Â¡Vaya! Compraba suministros para medio campamento. 'Tom, trÃ¡eme esto, Tom, trÃ¡eme aquello.'
 	AI_Output (self,other,"DIA_Addon_Tom_HI_11_06"); //Y entonces ese bastardo de Esteban tuvo que meterse.
 };
 //---------------------------------------------------------------------
@@ -89,7 +89,7 @@ INSTANCE DIA_Addon_Tom_Juan   (C_INFO)
 	condition   = DIA_Addon_Tom_Juan_Condition;
 	information = DIA_Addon_Tom_Juan_Info;
 	permanent   = FALSE;
-	description = "¿Qué ha pasado?";
+	description = "Â¿QuÃ© ha pasado?";
 };
 FUNC INT DIA_Addon_Tom_Juan_Condition()
 {	
@@ -100,13 +100,13 @@ FUNC INT DIA_Addon_Tom_Juan_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Juan_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Juan_15_00"); //¿Qué ocurrió?
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_01"); //Esteban envió a Juan, uno de sus hombres. El muy bastardo nos atacó.
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_02"); //¡Estaba a punto de hacer un trato con los piratas cuando salió de la nada y me tiró al suelo de dos golpes!
-	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_03"); //¡Qué tipo más rápido! Pero no lo suficiente, pude escaparme.
+	AI_Output (other,self,"DIA_Addon_Tom_Juan_15_00"); //Â¿QuÃ© ocurriÃ³?
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_01"); //Esteban enviÃ³ a Juan, uno de sus hombres. El muy bastardo nos atacÃ³.
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_02"); //Â¡Estaba a punto de hacer un trato con los piratas cuando saliÃ³ de la nada y me tirÃ³ al suelo de dos golpes!
+	AI_Output (self,other,"DIA_Addon_Tom_Juan_11_03"); //Â¡QuÃ© tipo mÃ¡s rÃ¡pido! Pero no lo suficiente, pude escaparme.
 	SC_Knows_JuanMurderedAngus = TRUE;
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Así que Juan es responsable de la muerte de Hank y Angus. Les esperó y luego acabó con ellos.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"AsÃ­ que Juan es responsable de la muerte de Hank y Angus. Les esperÃ³ y luego acabÃ³ con ellos.");
 };
 
 //---------------------------------------------------------------------
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_Tom_Esteban   (C_INFO)
 	condition   = DIA_Addon_Tom_Esteban_Condition;
 	information = DIA_Addon_Tom_Esteban_Info;
 	permanent   = FALSE;
-	description = "¿Y desde esa emboscada te escondes aquí?";
+	description = "Â¿Y desde esa emboscada te escondes aquÃ­?";
 };
 FUNC INT DIA_Addon_Tom_Esteban_Condition()
 {	
@@ -130,10 +130,10 @@ FUNC INT DIA_Addon_Tom_Esteban_Condition()
 };
 FUNC VOID DIA_Addon_Tom_Esteban_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_Esteban_15_00"); //¿Y desde esa emboscada te escondes aquí?
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_01"); //Primero volví al campamento para informar a Fisk, Huno y el resto de que podían olvidarse de su envío.
+	AI_Output (other,self,"DIA_Addon_Tom_Esteban_15_00"); //Â¿Y desde esa emboscada te escondes aquÃ­?
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_01"); //Primero volvÃ­ al campamento para informar a Fisk, Huno y el resto de que podÃ­an olvidarse de su envÃ­o.
 	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_02"); //Y que Esteban era el culpable.
-	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_03"); //Si Esteban se entera de que le dije a todos que ÉL era el responsable, soy hombre muerto.
+	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_03"); //Si Esteban se entera de que le dije a todos que Ã‰L era el responsable, soy hombre muerto.
 	AI_Output (self,other,"DIA_Addon_Tom_Esteban_11_04"); //Por eso no puedo volver al campamento.
 	
 	Tom_tells = TRUE;
@@ -162,10 +162,10 @@ FUNC INT DIA_Addon_Tom_Dead_Condition()
 FUNC VOID DIA_Addon_Tom_Dead_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_00"); //Han matado a Esteban.
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_01"); //¿En serio? ¡Vaya, ESO sí que es suerte!
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_02"); //¿Quién lo hizo?
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_01"); //Â¿En serio? Â¡Vaya, ESO sÃ­ que es suerte!
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_02"); //Â¿QuiÃ©n lo hizo?
 	AI_Output (other,self,"DIA_Addon_Tom_Dead_15_03"); //(maliciosamente) Digamos que alguien que conoces
-	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_04"); //Gracias por venir a decírmelo. Ahora podré volver al campamento
+	AI_Output (self,other,"DIA_Addon_Tom_Dead_11_04"); //Gracias por venir a decÃ­rmelo. Ahora podrÃ© volver al campamento
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Tom_PERM   (C_INFO)
 	condition   = DIA_Addon_Tom_PERM_Condition;
 	information = DIA_Addon_Tom_PERM_Info;
 	permanent   = TRUE;
-	description = "¿Y además de eso?";
+	description = "Â¿Y ademÃ¡s de eso?";
 };
 FUNC INT DIA_Addon_Tom_PERM_Condition()
 {	
@@ -193,21 +193,21 @@ FUNC INT DIA_Addon_Tom_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Tom_PERM_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Tom_PERM_15_00"); //¿Y si no?
+	AI_Output (other,self,"DIA_Addon_Tom_PERM_15_00"); //Â¿Y si no?
 
 	if (Npc_GetDistToWP (self,"BL_INN_05_B") <= 500)
 	{
-		AI_Output (self,other,"DIA_Addon_Tom_PERM_11_01"); //Ahora podré volver a disfrutar en paz del licor de Lucía.
+		AI_Output (self,other,"DIA_Addon_Tom_PERM_11_01"); //Ahora podrÃ© volver a disfrutar en paz del licor de LucÃ­a.
 	}
 	else
 	{	
 		if (Npc_KnowsInfo (other, DIA_Addon_Tom_Dead))
 		{
-			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_02"); //¡Ahora podré volver a dejarme ver en el campamento!
+			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_02"); //Â¡Ahora podrÃ© volver a dejarme ver en el campamento!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_03"); //¿Y si no? Si no me quedaría aquí contando rocas
+			AI_Output (self,other,"DIA_Addon_Tom_PERM_11_03"); //Â¿Y si no? Si no me quedarÃ­a aquÃ­ contando rocas
 		};
 	};
 };

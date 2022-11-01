@@ -27,12 +27,12 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Para forjar un arma primero hace falta acero en bruto. Se tiene que calentar en un fuego de herrero hasta que se ponga al rojo, molde·ndolo entonces en el yunque. En las armas especiales se suelen emplear ciertas substancias que les otorgan caracterÌsticas especiales.");
+	B_LogEntry (TOPIC_TalentSmith,"Para forjar un arma primero hace falta acero en bruto. Se tiene que calentar en un fuego de herrero hasta que se ponga al rojo, molde√°ndolo entonces en el yunque. En las armas especiales se suelen emplear ciertas substancias que les otorgan caracter√≠sticas especiales.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"No necesito m·s material para la 'Espada autoforjada'.");};
+	B_LogEntry (TOPIC_TalentSmith,"No necesito m√°s material para la 'Espada autoforjada'.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"Necesito 1 pepita de mineral para forjar una ''espada larga de mineral''.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
@@ -46,9 +46,9 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"Necesito 4 pepitas de mineral para forjar una ''hoja de batalla pesada de mineral''.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Si aÒado 4 unidades de mineral y 5 de sangre de dragÛn, puedo forjar una EXTERMINADORA DE DRAGONES DE MINERAL.");};
+	B_LogEntry (TOPIC_TalentSmith,"Si a√±ado 4 unidades de mineral y 5 de sangre de drag√≥n, puedo forjar una EXTERMINADORA DE DRAGONES DE MINERAL.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Si aÒado 5 unidades de mineral y 5 de sangre de dragÛn, puedo forjar una EXTERMINADORA DE DRAGONES GRANDE DE MINERAL.");};
+	B_LogEntry (TOPIC_TalentSmith,"Si a√±ado 5 unidades de mineral y 5 de sangre de drag√≥n, puedo forjar una EXTERMINADORA DE DRAGONES GRANDE DE MINERAL.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
@@ -56,7 +56,7 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"Ahora puedo forjar una buena espada larga."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ahora puedo forjar una hoja de rubÌ."); };
+	B_LogEntry (TOPIC_TalentSmith,"Ahora puedo forjar una hoja de rub√≠."); };
 	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"Harad hat mir beigebracht, 'El Bastardo' zu schmieden - eine der besten Einhandwaffen, die es gibt!"); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);

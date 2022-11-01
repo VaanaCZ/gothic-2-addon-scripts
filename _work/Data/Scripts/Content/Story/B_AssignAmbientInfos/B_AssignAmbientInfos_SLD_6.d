@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_6_JOIN(C_INFO)
 	condition	= DIA_SLD_6_JOIN_Condition;
 	information	= DIA_SLD_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "¡Quiero unirme a vosotros!";
+	description = "Â¡Quiero unirme a vosotros!";
 };                       
 
 FUNC INT DIA_SLD_6_JOIN_Condition()
@@ -42,7 +42,7 @@ FUNC INT DIA_SLD_6_JOIN_Condition()
 
 FUNC VOID DIA_SLD_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //¡Quiero unirme a vosotros!
+	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //Â¡Quiero unirme a vosotros!
 	
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
@@ -50,11 +50,11 @@ FUNC VOID DIA_SLD_6_JOIN_Info()
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02"); //Desplumar a los granjeros es una cosa, pero pelearte con la milicia es otra. No obstante, si a Onar le vienes bien, por mí no hay problema.
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02"); //Desplumar a los granjeros es una cosa, pero pelearte con la milicia es otra. No obstante, si a Onar le vienes bien, por mÃ­ no hay problema.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03"); //Habla con Torlof. Él te dará las indicaciones pertinentes... (se ríe)
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03"); //Habla con Torlof. Ã‰l te darÃ¡ las indicaciones pertinentes... (se rÃ­e)
 	};
 };
 
@@ -67,7 +67,7 @@ INSTANCE DIA_SLD_6_PEOPLE(C_INFO)
 	condition	= DIA_SLD_6_PEOPLE_Condition;
 	information	= DIA_SLD_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_SLD_6_PEOPLE_Condition()
@@ -81,10 +81,10 @@ FUNC INT DIA_SLD_6_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //¿Quién está al mando?
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //La granja es de Onar, si te refieres a eso, aunque nuestro líder es Lee.
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Era general del ejército real, pero ya no es tan amigo del rey (se ríe).
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Acuérdate de su nombre. Si te metes en algún lío por aquí, probablemente sea el único que pueda solucionarlo. Los demás se limitarán a despellejarte.
+	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //La granja es de Onar, si te refieres a eso, aunque nuestro lÃ­der es Lee.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Era general del ejÃ©rcito real, pero ya no es tan amigo del rey (se rÃ­e).
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //AcuÃ©rdate de su nombre. Si te metes en algÃºn lÃ­o por aquÃ­, probablemente sea el Ãºnico que pueda solucionarlo. Los demÃ¡s se limitarÃ¡n a despellejarte.
 };
 
 // *************************************************************************
@@ -96,7 +96,7 @@ INSTANCE DIA_SLD_6_LOCATION(C_INFO)
 	condition	= DIA_SLD_6_LOCATION_Condition;
 	information	= DIA_SLD_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Estáis protegiendo a los granjeros?";
+	description = "Â¿EstÃ¡is protegiendo a los granjeros?";
 };                       
 
 FUNC INT DIA_SLD_6_LOCATION_Condition()
@@ -110,9 +110,9 @@ FUNC INT DIA_SLD_6_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //¿Estáis protegiendo a los granjeros?
+	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //Â¿EstÃ¡is protegiendo a los granjeros?
 	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01"); //No solo protegemos la granja de Onar, sino todo el valle.
-	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02"); //Onar quiere que tratemos con mano dura a los alborotadores, así que pórtate bien.
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02"); //Onar quiere que tratemos con mano dura a los alborotadores, asÃ­ que pÃ³rtate bien.
 };
 
 // *************************************************************************
@@ -124,7 +124,7 @@ INSTANCE DIA_SLD_6_STANDARD(C_INFO)
 	condition	= DIA_SLD_6_STANDARD_Condition;
 	information	= DIA_SLD_6_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };                       
 func INT DIA_SLD_6_STANDARD_Condition()
 {
@@ -132,7 +132,7 @@ func INT DIA_SLD_6_STANDARD_Condition()
 };
 FUNC VOID DIA_SLD_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_STANDARD_15_00"); //¿Qué pasa?
+	AI_Output (other, self, "DIA_SLD_6_STANDARD_15_00"); //Â¿QuÃ© pasa?
 		
 	if (Kapitel <= 2)
 	{
@@ -140,23 +140,23 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_01"); //¡Ya eres uno de los nuestros, chaval!
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_01"); //Â¡Ya eres uno de los nuestros, chaval!
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_02"); //¿Qué es lo que quieres?
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_02"); //Â¿QuÃ© es lo que quieres?
 			};
 		}
 		else
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //Cuando me enteré de lo de los dragones, al principio no me lo creía.
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Un dragón... menuda pelea. Eso sí que es un rival de verdad. Ya estoy harto de ovejas y de milicianos estúpidos.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //Cuando me enterÃ© de lo de los dragones, al principio no me lo creÃ­a.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Un dragÃ³n... menuda pelea. Eso sÃ­ que es un rival de verdad. Ya estoy harto de ovejas y de milicianos estÃºpidos.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //¿Los dragones han hecho que lord Hagen se cague de miedo?
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //Â¿Los dragones han hecho que lord Hagen se cague de miedo?
 				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //Parece que va a tener que sacar su noble trasero de la ciudad de una vez.
 			};
 		};	
@@ -166,7 +166,7 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Lord Hagen puede considerarse afortunado. Si llegan a pasar unos días más, habríamos sacado a Bennet.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Lord Hagen puede considerarse afortunado. Si llegan a pasar unos dÃ­as mÃ¡s, habrÃ­amos sacado a Bennet.
 		}
 		else
 		{
@@ -178,12 +178,12 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_09"); //¿Qué haces todavía aquí? ¿No te ibas al valle con los otros?
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_10"); //Me da igual si no volvéis ninguno de vosotros.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_09"); //Â¿QuÃ© haces todavÃ­a aquÃ­? Â¿No te ibas al valle con los otros?
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_10"); //Me da igual si no volvÃ©is ninguno de vosotros.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_11"); //Deberías ir al Valle de las Minas. Tengo entendido que toda ayuda es poca para esos pobres diablos.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_11"); //DeberÃ­as ir al Valle de las Minas. Tengo entendido que toda ayuda es poca para esos pobres diablos.
 		};	
 	};
 	
@@ -191,8 +191,8 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //En cuanto apareciste supe que pondrías esto patas arriba.
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Pero, ¿dragones? Eso es extraordinario. La gente no va a querer pegarse contigo.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //En cuanto apareciste supe que pondrÃ­as esto patas arriba.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Pero, Â¿dragones? Eso es extraordinario. La gente no va a querer pegarse contigo.
 		}
 		else
 		{

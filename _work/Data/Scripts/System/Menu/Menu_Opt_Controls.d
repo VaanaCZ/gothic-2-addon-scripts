@@ -71,8 +71,8 @@ instance MENU_OPT_CONTROLS(C_MENU_DEF)
 instance MENU_ITEM_NEXTMENU(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "M·s teclas...";
-	text[1]		= "Configurar m·s teclas de control";  // Kommentar
+	text[0]		= "M√°s teclas...";
+	text[1]		= "Configurar m√°s teclas de control";  // Kommentar
 
 	// Positionen  und Dimensionen
 	posx		=	ctrl_sp1_1 + 2500;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
@@ -194,7 +194,7 @@ INSTANCE MENU_ITEM_KEY_WEAPON_PARADE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -215,7 +215,7 @@ INSTANCE MENU_ITEM_INP_WEAPON_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -236,7 +236,7 @@ INSTANCE MENU_ITEM_INP_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_PARADE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -273,7 +273,7 @@ INSTANCE MENU_ITEM_KEY_LOCKFOCUS(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_QUICKMANA(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"PociÛn de man·";
+	text[0]			=	"Poci√≥n de man√°";
 	text[1]			=   "pulsa la tecla SUPR para vaciar el espacio y INTRO para definir"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP2;
 
@@ -290,7 +290,7 @@ INSTANCE MENU_ITEM_KEY_QUICKMANA(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_QUICKHEALTH(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"PociÛn de curaciÛn";
+	text[0]			=	"Poci√≥n de curaci√≥n";
 	text[1]			=   "pulsa la tecla SUPR para vaciar el espacio y INTRO para definir"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 
@@ -308,7 +308,7 @@ INSTANCE MENU_ITEM_KEY_QUICKHEALTH(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOCKFOCUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -329,7 +329,7 @@ INSTANCE MENU_ITEM_INP_LOCKFOCUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_QUICKMANA(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -350,7 +350,7 @@ INSTANCE MENU_ITEM_INP_QUICKMANA(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_QUICKHEALTH(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -371,7 +371,7 @@ INSTANCE MENU_ITEM_INP_QUICKHEALTH(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"CONFIGURACI”N DE CONTROLES";
+	text[0]		=	"CONFIGURACI√ìN DE CONTROLES";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;
@@ -514,7 +514,7 @@ INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"AcciÛn";
+	text[0]			=	"Acci√≥n";
 	text[1]			=   "pulsa la tecla SUPR para vaciar el espacio y INTRO para definir"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 
@@ -597,7 +597,7 @@ INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"EstadÌsticas del personaje";
+	text[0]		=	"Estad√≠sticas del personaje";
 	text[1]			=   "pulsa la tecla SUPR para vaciar el espacio y INTRO para definir"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 
@@ -629,7 +629,7 @@ INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_KBDINPUT_BACK_PIC;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	type		= 	MENU_ITEM_INPUT;
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;
@@ -645,7 +645,7 @@ INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -661,7 +661,7 @@ INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -675,7 +675,7 @@ INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -690,7 +690,7 @@ INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -704,7 +704,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -718,7 +718,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -735,7 +735,7 @@ INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -752,7 +752,7 @@ instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -774,7 +774,7 @@ INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -789,7 +789,7 @@ INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -805,7 +805,7 @@ INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_MAP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -825,7 +825,7 @@ INSTANCE MENU_ITEM_INP_MAP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -842,7 +842,7 @@ INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -864,7 +864,7 @@ INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -881,7 +881,7 @@ INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -897,7 +897,7 @@ INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Pulsa la tecla deseada para esta acciÛn.";
+	text[1] 	=   "Pulsa la tecla deseada para esta acci√≥n.";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -918,8 +918,8 @@ INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ConfiguraciÛn predeterminada";
-	text[1]		=	"Establecer la configuraciÛn de control predeterminada"; // Kommentar
+	text[0]		=	"Configuraci√≥n predeterminada";
+	text[1]		=	"Establecer la configuraci√≥n de control predeterminada"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 19 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -931,7 +931,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 {
 	text[0]		=	"Controles alternativos";
-	text[1]		=	"Establecer una configuraciÛn alternativa de controles"; // Kommentar
+	text[1]		=	"Establecer una configuraci√≥n alternativa de controles"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 20 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -943,7 +943,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CHG_KEYS_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atr·s";
+	text[0]		=	"Atr√°s";
 	// Position und Dimension
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
 	dimy		=	300;

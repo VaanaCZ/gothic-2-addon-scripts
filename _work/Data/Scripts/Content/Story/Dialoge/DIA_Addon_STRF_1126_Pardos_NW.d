@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Pardos_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Pardos_NW_Hi_Condition;
 	information = DIA_Addon_Pardos_NW_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Todo va bien?";
+	description = "Â¿Todo va bien?";
 };
 FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 {		
@@ -36,8 +36,8 @@ FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//¿Qué tal te va a ti?
-	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(sonríe) Eh, mi salvador. Gracias de nuevo, ahora me paso el día descansando.
+	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//Â¿QuÃ© tal te va a ti?
+	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(sonrÃ­e) Eh, mi salvador. Gracias de nuevo, ahora me paso el dÃ­a descansando.
 	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//Vale, pues entonces sigo adelante.
 };
 // ************************************************************

@@ -47,8 +47,8 @@ func int DIA_Vino_HALLO_Condition ()
 };
 func void DIA_Vino_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //¿Y qué tal va el trabajo?
-	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Como siempre. Hay mucho que hacer, nos falta dinero, y si tenemos mala suerte los orcos vendrán mañana y quemarán la granja.
+	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //Â¿Y quÃ© tal va el trabajo?
+	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Como siempre. Hay mucho que hacer, nos falta dinero, y si tenemos mala suerte los orcos vendrÃ¡n maÃ±ana y quemarÃ¡n la granja.
 	
 	if (hero.guild == GIL_NONE)
 		{
@@ -66,7 +66,7 @@ instance DIA_Vino_SeekWork		(C_INFO)
 	condition	= DIA_Vino_SeekWork_Condition;
 	information	= DIA_Vino_SeekWork_Info;
 	permanent 	= FALSE;
-	description	= "¿Te puedo echar una mano? Busco trabajo.";
+	description	= "Â¿Te puedo echar una mano? Busco trabajo.";
 	
 };
 func int DIA_Vino_SeekWork_Condition ()
@@ -81,42 +81,42 @@ func int DIA_Vino_SeekWork_Condition ()
 };
 func void DIA_Vino_SeekWork_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //¿Te puedo echar una mano? Busco trabajo.
+	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //Â¿Te puedo echar una mano? Busco trabajo.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //¿Sabes trabajar en el campo?
-		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //¿Qué hay que saber?
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //¡Ah! En ese caso... No necesitamos ayuda, gracias.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //Â¿Sabes trabajar en el campo?
+		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //Â¿QuÃ© hay que saber?
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //Â¡Ah! En ese caso... No necesitamos ayuda, gracias.
 		
 		if (!Npc_IsDead(Lobart))
 		{
-			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //Si quieres trabajar como peón para Lobart, te advierto que paga muy mal a los de tu ralea.
+			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //Si quieres trabajar como peÃ³n para Lobart, te advierto que paga muy mal a los de tu ralea.
 		
 			if ( (Mob_HasItems("CHEST_LOBART", ITAR_Bau_L) == TRUE) || (Npc_HasItems (lobart, itar_bau_l) > 0) )
 			&& (Lobart_Kleidung_Verkauft == FALSE)
 			&& ( (Npc_KnowsInfo (other, DIA_Lobart_KLEIDUNG)) || (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW)) )
 			{
-				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //Se ofreció a venderme barata algo de ropa limpia si le ayudaba en la granja.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Um. Ahora mismo no tengo nada para ti, pero puedes traernos algo de beber a mí y a los muchachos.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //Tráeme una botella de vino y le diré a Lobart que nos fuiste de gran ayuda. (Se ríe burlonamente)
+				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //Se ofreciÃ³ a venderme barata algo de ropa limpia si le ayudaba en la granja.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Um. Ahora mismo no tengo nada para ti, pero puedes traernos algo de beber a mÃ­ y a los muchachos.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //TrÃ¡eme una botella de vino y le dirÃ© a Lobart que nos fuiste de gran ayuda. (Se rÃ­e burlonamente)
 				
 				MIS_Vino_Wein = LOG_RUNNING;
 				
 				Log_CreateTopic (TOPIC_Vino,LOG_MISSION);
 				Log_SetTopicStatus (TOPIC_Vino,LOG_RUNNING);
-				B_LogEntry (TOPIC_Vino,"Si le llevo a Vino una botella de vino, le dirá a Lobart que le ayudé.");
+				B_LogEntry (TOPIC_Vino,"Si le llevo a Vino una botella de vino, le dirÃ¡ a Lobart que le ayudÃ©.");
 				
 			}
 			else
 			{	
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_08"); //Pero yo no te he dicho nada, ¿me oyes?
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_08"); //Pero yo no te he dicho nada, Â¿me oyes?
 			};
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //No creo. Alguien de tu posición no querría hacer el tipo de trabajos humildes que ofrezco.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //No creo. Alguien de tu posiciÃ³n no querrÃ­a hacer el tipo de trabajos humildes que ofrezco.
 	};
 };
 
@@ -146,14 +146,14 @@ func void DIA_Vino_BringWine_Info ()
 {
 	AI_Output (other, self, "DIA_Vino_BringWine_15_00"); //Ten el vino.
 	B_GiveInvItems (other,self, itfo_wine, 1);
-	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //Será mejor que no pregunte de dónde lo has sacado, ¿eh? (Se ríe) ¿Qué más da?
+	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //SerÃ¡ mejor que no pregunte de dÃ³nde lo has sacado, Â¿eh? (Se rÃ­e) Â¿QuÃ© mÃ¡s da?
 	if (!Npc_IsDead (Lobart))
 	{
 		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //De todos modos, gracias.
 
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Lobart recibirá las mejores referencias.
+			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Lobart recibirÃ¡ las mejores referencias.
 		};
 	};
 	
@@ -188,14 +188,14 @@ func int DIA_Vino_ToTheCity_Condition ()
 func void DIA_Vino_ToTheCity_Info ()
 {
 	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //Me voy a la ciudad.
-	AI_Output (self, other, "DIA_Vino_ToTheCity_05_01"); //¿Y?
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //¿Me puedes contar algo interesante de la ciudad?
+	AI_Output (self, other, "DIA_Vino_ToTheCity_05_01"); //Â¿Y?
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //Â¿Me puedes contar algo interesante de la ciudad?
 	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //No, pero Maleth va a la ciudad de vez en cuando. A lo mejor sabe algo... es decir, algo que te interese.
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//								Gerüchte (PERM)
+//								GerÃ¼chte (PERM)
 ///////////////////////////////////////////////////////////////////////
 
 // --------------------------
@@ -210,7 +210,7 @@ instance DIA_Vino_PERM (C_INFO)
 	condition	= DIA_Vino_PERM_Condition;
 	information	= DIA_Vino_PERM_Info;
 	permanent 	= TRUE;
-	description	= "¿Hay alguna noticia interesante?";
+	description	= "Â¿Hay alguna noticia interesante?";
 };
 func int DIA_Vino_PERM_Condition ()
 {
@@ -222,11 +222,11 @@ func int DIA_Vino_PERM_Condition ()
 };
 func void DIA_Vino_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //¿Hay alguna noticia interesante?
+	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //Â¿Hay alguna noticia interesante?
 	
 	if (Vino_Gossip_Orks == FALSE)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //Juraría haber visto un orco en el lindero del bosque hace un par de días.
+		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //JurarÃ­a haber visto un orco en el lindero del bosque hace un par de dÃ­as.
 		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //Desde entonces duermo con un ojo abierto.
 		Vino_Gossip_Orks = TRUE;
 		Knows_Ork = TRUE;
@@ -234,14 +234,14 @@ func void DIA_Vino_PERM_Info ()
 	else if (Vino_Gossip_Bugs == FALSE)
 	&& 		(MIS_AndreHelpLobart == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Esos enormes y asquerosos escarabajos se están convirtiendo en todo un fastidio. Están por todas partes, y si no tienes cuidado, se lo comen todo.
-		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //Hace unos días estaba tumbado en la hierba de lo más tranquilo, a punto de quedarme dormido, y uno de esos malditos bichos se puso a comerse mi zapato.
-		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //Tenías que haberme visto correr. Desde entonces, no he podido dormir bien.
+		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Esos enormes y asquerosos escarabajos se estÃ¡n convirtiendo en todo un fastidio. EstÃ¡n por todas partes, y si no tienes cuidado, se lo comen todo.
+		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //Hace unos dÃ­as estaba tumbado en la hierba de lo mÃ¡s tranquilo, a punto de quedarme dormido, y uno de esos malditos bichos se puso a comerse mi zapato.
+		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //TenÃ­as que haberme visto correr. Desde entonces, no he podido dormir bien.
 		Vino_Gossip_Bugs = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //¿Además de lo que ya te he contado? No.
+		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //Â¿AdemÃ¡s de lo que ya te he contado? No.
 	};
 };
 
@@ -289,7 +289,7 @@ instance DIA_Vino_DMTAMSTART		(C_INFO)
 	information	 = 	DIA_Vino_DMTAMSTART_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Y a ti qué tal te va?";
+	description	 = 	"Â¿Y a ti quÃ© tal te va?";
 };
 
 func int DIA_Vino_DMTAMSTART_Condition ()
@@ -303,20 +303,20 @@ func int DIA_Vino_DMTAMSTART_Condition ()
 var int DIA_Vino_DMTAMSTART_OneTime;
 func void DIA_Vino_DMTAMSTART_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_DMTAMSTART_15_00"); //¿Y a ti qué tal te va?
+	AI_Output			(other, self, "DIA_Vino_DMTAMSTART_15_00"); //Â¿Y a ti quÃ© tal te va?
 	
 	if (FoundVinosKellerei == TRUE)
 	&& (DIA_Vino_DMTAMSTART_OneTime == FALSE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Fatal. La milicia encontró el alambique que tenía escondido.
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //Espero que no se enteren de que es mío.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Fatal. La milicia encontrÃ³ el alambique que tenÃ­a escondido.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //Espero que no se enteren de que es mÃ­o.
 		B_GivePlayerXP (XP_AmbientKap3);
 		DIA_Vino_DMTAMSTART_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //Esos cerdos de las túnicas negras están por todas partes. Alguien debería hacer que se tragaran las capas.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //Esos cerdos de las tÃºnicas negras estÃ¡n por todas partes. Alguien deberÃ­a hacer que se tragaran las capas.
 	};
 };
 
@@ -332,7 +332,7 @@ instance DIA_Vino_Obesessed		(C_INFO)
 	information	 = 	DIA_Vino_Obesessed_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué es lo que no está bien?";
+	description	 = 	"Â¿QuÃ© es lo que no estÃ¡ bien?";
 };
 
 func int DIA_Vino_Obesessed_Condition ()
@@ -356,8 +356,8 @@ func void DIA_Vino_Obesessed_Info ()
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //¿Qué pasa contigo?
-	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //(Brama) Maldita sea, lárgate. Si no, me van a matar.
+	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //Â¿QuÃ© pasa contigo?
+	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //(Brama) Maldita sea, lÃ¡rgate. Si no, me van a matar.
 	AI_StopProcessInfos (self);
 	DMT_Vino1.aivar[AIV_EnemyOverride] = FALSE;
 	DMT_Vino2.aivar[AIV_EnemyOverride] = FALSE;
@@ -393,16 +393,16 @@ var int DIA_Vino_Heilung_oneTime;
 func void DIA_Vino_Heilung_Info ()
 {
 	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //No te reconozco.
-	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Mi cabeza... No aguanto más.
+	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Mi cabeza... No aguanto mÃ¡s.
 
 	if (DIA_Vino_Heilung_oneTime == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //Deberías ir al monasterio. A lo mejor Pyrokar, el mago de fuego de mayor rango, puede ayudarte.
-		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //¿Tú crees? Vale. Lo intentaré.
+		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //DeberÃ­as ir al monasterio. A lo mejor Pyrokar, el mago de fuego de mayor rango, puede ayudarte.
+		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //Â¿TÃº crees? Vale. Lo intentarÃ©.
 		B_NpcClearObsessionByDMT (self);
 		B_StartOtherRoutine  (Vino,"Kloster"); 
 		
-		B_LogEntry (TOPIC_DEMENTOREN,"Vino está poseído. Le he mandado al monasterio a que le curen. Espero que llegue de una pieza."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Vino estÃ¡ poseÃ­do. Le he mandado al monasterio a que le curen. Espero que llegue de una pieza."); 
 	
 		B_GivePlayerXP (XP_VinoFreeFromDMT);
 		DIA_Vino_Heilung_oneTime = TRUE;
@@ -457,7 +457,7 @@ instance DIA_Vino_PERM4OBSESSED		(C_INFO)
 	information	 = 	DIA_Vino_PERM4OBSESSED_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué tal estás?";
+	description	 = 	"Â¿QuÃ© tal estÃ¡s?";
 };
 
 func int DIA_Vino_PERM4OBSESSED_Condition ()
@@ -474,7 +474,7 @@ var int DIA_Vino_PERM4OBSESSED_XP_oneTime;
 
 func void DIA_Vino_PERM4OBSESSED_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //¿Qué tal estás?
+	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //Â¿QuÃ© tal estÃ¡s?
 	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Ya estoy bien. Creo que los chicos me pueden echar una mano, aunque sigo algo mareado.
 
 	if (DIA_Vino_PERM4OBSESSED_XP_oneTime == FALSE)
@@ -496,7 +496,7 @@ instance DIA_Vino_PERM45UND6		(C_INFO)
 	information	 = 	DIA_Vino_PERM45UND6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Alguna novedad?";
+	description	 = 	"Â¿Alguna novedad?";
 };
 
 func int DIA_Vino_PERM45UND6_Condition ()
@@ -511,12 +511,12 @@ func int DIA_Vino_PERM45UND6_Condition ()
 
 func void DIA_Vino_PERM45UND6_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //¿Alguna novedad?
+	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //Â¿Alguna novedad?
 
 	if (hero.guild == GIL_PAL)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //El número de orcos en la región se ha disparado.
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Los paladines vais a acabar con ellos, ¿verdad?
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //El nÃºmero de orcos en la regiÃ³n se ha disparado.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Los paladines vais a acabar con ellos, Â¿verdad?
 	}
 	else	//hero.guild == GIL_DJG
 	{
@@ -526,7 +526,7 @@ func void DIA_Vino_PERM45UND6_Info ()
 	if (FoundVinosKellerei == TRUE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //Por desgracia, la milicia encontró mi alambique. Espero que no me pillen.
+		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //Por desgracia, la milicia encontrÃ³ mi alambique. Espero que no me pillen.
 	};
 };
 

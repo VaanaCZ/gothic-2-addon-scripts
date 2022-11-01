@@ -41,7 +41,7 @@ instance VLK_435_Nadja (Npc_Default)
 	daily_routine 		= Rtn_Start_435;
 };
 
-FUNC VOID Rtn_Start_435 () // Nadja hält sich für gewöhnlich unten auf...
+FUNC VOID Rtn_Start_435 () // Nadja hÃ¤lt sich fÃ¼r gewÃ¶hnlich unten auf...
 {	
 	TA_Stand_Drinking	(05,00,17,00,"NW_PUFF_DANCE");
 	TA_Dance			(17,00,21,00,"NW_PUFF_DANCE");

@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_7_JOIN(C_INFO)
 	condition	= DIA_BAU_7_JOIN_Condition;
 	information	= DIA_BAU_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "¿Qué sabes de los mercenarios?";
+	description = "Â¿QuÃ© sabes de los mercenarios?";
 };                       
 
 FUNC INT DIA_BAU_7_JOIN_Condition()
@@ -42,9 +42,9 @@ FUNC INT DIA_BAU_7_JOIN_Condition()
 
 FUNC VOID DIA_BAU_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_JOIN_15_00"); //¿Qué sabes de los mercenarios?
-	AI_Output (self, other, "DIA_BAU_7_JOIN_07_01"); //Onar los contrató para defender la granja.
-	AI_Output (self, other, "DIA_BAU_7_JOIN_07_02"); //La mayoría se comporta como si la granja fuera suya, pero por lo menos nos protegen.
+	AI_Output (other, self, "DIA_BAU_7_JOIN_15_00"); //Â¿QuÃ© sabes de los mercenarios?
+	AI_Output (self, other, "DIA_BAU_7_JOIN_07_01"); //Onar los contratÃ³ para defender la granja.
+	AI_Output (self, other, "DIA_BAU_7_JOIN_07_02"); //La mayorÃ­a se comporta como si la granja fuera suya, pero por lo menos nos protegen.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_BAU_7_PEOPLE(C_INFO)
 	condition	= DIA_BAU_7_PEOPLE_Condition;
 	information	= DIA_BAU_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_BAU_7_PEOPLE_Condition()
@@ -66,8 +66,8 @@ FUNC INT DIA_BAU_7_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_PEOPLE_15_00"); //¿Quién está al mando?
-	AI_Output (self, other, "DIA_BAU_7_PEOPLE_07_01"); //La granja grande es de Onar y las pequeñas también son suyas, pero las arrienda.
+	AI_Output (other, self, "DIA_BAU_7_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output (self, other, "DIA_BAU_7_PEOPLE_07_01"); //La granja grande es de Onar y las pequeÃ±as tambiÃ©n son suyas, pero las arrienda.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_BAU_7_LOCATION(C_INFO)
 	condition	= DIA_BAU_7_LOCATION_Condition;
 	information	= DIA_BAU_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Cuéntame algo más de la zona.";
+	description = "CuÃ©ntame algo mÃ¡s de la zona.";
 };                       
 
 FUNC INT DIA_BAU_7_LOCATION_Condition()
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_7_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_LOCATION_15_00"); //Cuéntame algo más de la zona.
-	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_01"); //La granja grande que está al este del valle es de Onar. La granja de Sekob está al norte.
-	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_02"); //Y la granja de Bengar está en la meseta del sudoeste. Se puede subir allí desde el valle, por una gran escalinata de piedra.
+	AI_Output (other, self, "DIA_BAU_7_LOCATION_15_00"); //CuÃ©ntame algo mÃ¡s de la zona.
+	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_01"); //La granja grande que estÃ¡ al este del valle es de Onar. La granja de Sekob estÃ¡ al norte.
+	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_02"); //Y la granja de Bengar estÃ¡ en la meseta del sudoeste. Se puede subir allÃ­ desde el valle, por una gran escalinata de piedra.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_7_STANDARD(C_INFO)
 	condition	= DIA_BAU_7_STANDARD_Condition;
 	information	= DIA_BAU_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay de nuevo?";
+	description = "Â¿QuÃ© hay de nuevo?";
 };                       
 func INT DIA_BAU_7_STANDARD_Condition()
 {
@@ -111,11 +111,11 @@ func INT DIA_BAU_7_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_STANDARD_15_00"); //¿Qué hay de nuevo?
+	AI_Output (other, self, "DIA_BAU_7_STANDARD_15_00"); //Â¿QuÃ© hay de nuevo?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_01"); //Hemos declarado nuestra independencia: no vamos a volver a pagar impuestos a la ciudad. ¡El rey no ha hecho nada por nosotros y estamos hartos!
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_01"); //Hemos declarado nuestra independencia: no vamos a volver a pagar impuestos a la ciudad. Â¡El rey no ha hecho nada por nosotros y estamos hartos!
 	};
 
 	if (Kapitel == 2)
@@ -125,17 +125,17 @@ FUNC VOID DIA_BAU_7_STANDARD_Info()
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_03"); //¡Ahora se oyen rumores de dragones! Al rey siempre se le ocurren ideas nuevas para sacarle dinero al pueblo.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_03"); //Â¡Ahora se oyen rumores de dragones! Al rey siempre se le ocurren ideas nuevas para sacarle dinero al pueblo.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_04"); //Ten cuidado, por el desfiladero cruzan un montón de seres siniestros y animales salvajes.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_04"); //Ten cuidado, por el desfiladero cruzan un montÃ³n de seres siniestros y animales salvajes.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_05"); //Ahora que los dragones han muerto, los paladines se dignan a salir de la ciudad. Ya era hora de que volviera a reinar el orden por aquí.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_05"); //Ahora que los dragones han muerto, los paladines se dignan a salir de la ciudad. Ya era hora de que volviera a reinar el orden por aquÃ­.
 	};
 };
 

@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10028_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10028_Buddler_Hi_Condition;
 	information = DIA_Addon_10028_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };
 FUNC INT DIA_Addon_10028_Buddler_Hi_Condition()
 {	
@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10028_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10028_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00");//¿Qué tal todo?
+	AI_Output (other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00");//Â¿QuÃ© tal todo?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
 		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//No pienso tomarme la molestia de trabajar yo. Para eso tenemos suficientes esclavos.
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(risas) Nunca hemos conseguido oro tan fácilmente.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(risas) Nunca hemos conseguido oro tan fÃ¡cilmente.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03");//Grmpf. ¿Quién es el imbécil que ha liberado a los esclavos?
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03");//Grmpf. Â¿QuiÃ©n es el imbÃ©cil que ha liberado a los esclavos?
 		AI_StopProcessInfos(self);
 	};
 };
@@ -69,7 +69,7 @@ FUNC VOID DIA_Addon_10028_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
 	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_00");//Siempre cava de abajo a arriba.
-	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//Puede parecer difícil, pero de ese modo sacas más oro de la roca.
+	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//Puede parecer difÃ­cil, pero de ese modo sacas mÃ¡s oro de la roca.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

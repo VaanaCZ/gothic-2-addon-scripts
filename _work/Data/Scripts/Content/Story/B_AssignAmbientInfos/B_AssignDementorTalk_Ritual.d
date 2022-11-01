@@ -16,8 +16,8 @@ func void B_AssignDementorTalk_Ritual ()
 		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Ahora demostraremos que tu intento de desafiar al maestro era vano.
 
 		MIS_SCKnowsInnosEyeIsBroken  = TRUE;
-		B_LogEntry (TOPIC_INNOSEYE, "Esos tipos siniestros me ponen de los nervios. Han destruido el Ojo de Innos. No tengo ni idea de cómo arreglarlo.");
- 		B_LogEntry (TOPIC_TraitorPedro, "He encontrado el Ojo de Innos. Pero por ahora no hay rastro de Pedro por ningún lado. Esos magos negros están compinchados con él.");
+		B_LogEntry (TOPIC_INNOSEYE, "Esos tipos siniestros me ponen de los nervios. Han destruido el Ojo de Innos. No tengo ni idea de cÃ³mo arreglarlo.");
+ 		B_LogEntry (TOPIC_TraitorPedro, "He encontrado el Ojo de Innos. Pero por ahora no hay rastro de Pedro por ningÃºn lado. Esos magos negros estÃ¡n compinchados con Ã©l.");
 		B_GivePlayerXP (XP_SCKnowsInnosEyeIsBroken);
 	}
 	else

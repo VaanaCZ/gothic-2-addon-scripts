@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10025_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10025_Wache_Hi_Condition;
 	information = DIA_Addon_10025_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };
 FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 {	
@@ -36,13 +36,13 @@ FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//¿Qué tal todo?
+	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Â¿QuÃ© tal todo?
 	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Estoy preparando un delicioso estofado para cavadores y guardias.
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Pero los esclavos… para ellos nada. Algunos consiguen agua sucia y pan duro, con suerte.
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//No le hará daño a esos chicos de la ciudad.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Pero los esclavosâ€¦ para ellos nada. Algunos consiguen agua sucia y pan duro, con suerte.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//No le harÃ¡ daÃ±o a esos chicos de la ciudad.
 	};
 };
 

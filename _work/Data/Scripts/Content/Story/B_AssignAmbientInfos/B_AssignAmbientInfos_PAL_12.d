@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_12_JOIN(C_INFO)
 	condition	= DIA_PAL_12_JOIN_Condition;
 	information	= DIA_PAL_12_JOIN_Info;
 	permanent	= TRUE;
-	description = "¡Quiero convertirme en paladín!";
+	description = "Â¡Quiero convertirme en paladÃ­n!";
 };                       
 
 FUNC INT DIA_PAL_12_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_PAL_12_JOIN_Condition()
 
 FUNC VOID DIA_PAL_12_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_JOIN_15_00"); //¡Quiero convertirme en paladín!
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_01"); //¿Tú? ¡No me hagas reír! Ni siquiera eres miembro de la guardia de la ciudad.
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_02"); //Si no viera claramente que eres un palurdo estúpido, pensaría que tratabas de insultarme.
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_03"); //Solo los mejores de los mejores de entre los siervos fieles del rey y de nuestro Señor Innos son aceptados como paladines.
+	AI_Output (other, self, "DIA_PAL_12_JOIN_15_00"); //Â¡Quiero convertirme en paladÃ­n!
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_01"); //Â¿TÃº? Â¡No me hagas reÃ­r! Ni siquiera eres miembro de la guardia de la ciudad.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_02"); //Si no viera claramente que eres un palurdo estÃºpido, pensarÃ­a que tratabas de insultarme.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_03"); //Solo los mejores de los mejores de entre los siervos fieles del rey y de nuestro SeÃ±or Innos son aceptados como paladines.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_PAL_12_PEOPLE(C_INFO)
 	condition	= DIA_PAL_12_PEOPLE_Condition;
 	information	= DIA_PAL_12_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_PAL_12_PEOPLE_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_PAL_12_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_12_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_PEOPLE_15_00"); //¿Quién está al mando?
+	AI_Output (other, self, "DIA_PAL_12_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
 	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //El honorable lord Hagen, aunque lord Andre se encarga de todos los asuntos relacionados con la plebe.
-	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Lo encontrarás en el cuartel. A lo mejor tienes suerte y te dedica unos minutos de su valioso tiempo.
+	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Lo encontrarÃ¡s en el cuartel. A lo mejor tienes suerte y te dedica unos minutos de su valioso tiempo.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_12_LOCATION(C_INFO)
 	condition	= DIA_PAL_12_LOCATION_Condition;
 	information	= DIA_PAL_12_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué hacéis los paladines en Khorinis?";
+	description = "Â¿QuÃ© hacÃ©is los paladines en Khorinis?";
 };                       
 
 FUNC INT DIA_PAL_12_LOCATION_Condition()
@@ -97,9 +97,9 @@ FUNC INT DIA_PAL_12_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_12_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_LOCATION_15_00"); //¿Qué hacéis los paladines en Khorinis?
+	AI_Output (other, self, "DIA_PAL_12_LOCATION_15_00"); //Â¿QuÃ© hacÃ©is los paladines en Khorinis?
 	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_01"); //La gente que hace preguntas acaba en la horca en un periquete.
-	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Si hay algo que lord Andre no puede permitirse es que los espías se enteren de la naturaleza de nuestra misión.
+	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Si hay algo que lord Andre no puede permitirse es que los espÃ­as se enteren de la naturaleza de nuestra misiÃ³n.
 	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_03"); //Ten cuidado con lo que preguntas.
 };
 
@@ -112,7 +112,7 @@ INSTANCE DIA_PAL_12_STANDARD(C_INFO)
 	condition	= DIA_PAL_12_STANDARD_Condition;
 	information	= DIA_PAL_12_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Cómo van las cosas?";
+	description = "Â¿CÃ³mo van las cosas?";
 };
                        
 func INT DIA_PAL_12_STANDARD_Condition()
@@ -122,7 +122,7 @@ func INT DIA_PAL_12_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_12_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_STANDARD_15_00"); //¿Cómo van las cosas?
+	AI_Output (other, self, "DIA_PAL_12_STANDARD_15_00"); //Â¿CÃ³mo van las cosas?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -141,12 +141,12 @@ FUNC VOID DIA_PAL_12_STANDARD_Info()
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //¡Demos gracias a Innos! Se ha conjurado la amenaza de los dragones, y solo tenemos que encargarnos de los orcos para hacernos con el mineral.
+			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Â¡Demos gracias a Innos! Se ha conjurado la amenaza de los dragones, y solo tenemos que encargarnos de los orcos para hacernos con el mineral.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_12_STANDARD_12_04"); //No esperarás que te responda esa pregunta, ¿eh, chaval?
+		AI_Output (self, other, "DIA_PAL_12_STANDARD_12_04"); //No esperarÃ¡s que te responda esa pregunta, Â¿eh, chaval?
 	};
 };
 

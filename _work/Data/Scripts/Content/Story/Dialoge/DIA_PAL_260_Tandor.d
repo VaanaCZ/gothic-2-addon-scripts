@@ -44,15 +44,15 @@ func int DIA_Tandor_Hallo_Condition ()
 };
 func void DIA_Tandor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //¿Viniste por el paso? Muy bien. Ya hemos perdido demasiados hombres ahí fuera.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //Sé por experiencia cómo están las cosas ahí fuera. Durante un tiempo acompañé a una unidad de reconocimiento.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //¿Tienes arma? Si necesitas una buena arma, soy tu hombre.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //Â¿Viniste por el paso? Muy bien. Ya hemos perdido demasiados hombres ahÃ­ fuera.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //SÃ© por experiencia cÃ³mo estÃ¡n las cosas ahÃ­ fuera. Durante un tiempo acompaÃ±Ã© a una unidad de reconocimiento.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //Â¿Tienes arma? Si necesitas una buena arma, soy tu hombre.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
 	B_LogEntry (TOPIC_Trader_OC,"Tandor vende armas en el castillo.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Spähtrupp
+//	Info SpÃ¤htrupp
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Tandor_Trupp		(C_INFO)
 {
@@ -61,7 +61,7 @@ instance DIA_Tandor_Trupp		(C_INFO)
 	condition	 = 	DIA_Tandor_Trupp_Condition;
 	information	 = 	DIA_Tandor_Trupp_Info;
 	permanent 	 =  FALSE;
-	description  =  "¿Qué fue de la unidad?";
+	description  =  "Â¿QuÃ© fue de la unidad?";
 };
 func int DIA_Tandor_Trupp_Condition ()
 {	
@@ -72,11 +72,11 @@ func int DIA_Tandor_Trupp_Condition ()
 };
 func void DIA_Tandor_Trupp_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //¿Qué fue de la unidad?
+	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //Â¿QuÃ© fue de la unidad?
 	AI_Output (self, other, "DIA_Tandor_Trupp_08_01"); //Exploramos la zona e intentamos avanzar hasta la costa. Montamos el campamento en una cueva.
 	AI_Output (self, other, "DIA_Tandor_Trupp_08_02"); //Era ya muy de noche cuando llegaron los orcos. Llenaron la ladera de antorchas y tambores, y nos descubrieron.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Intentamos huir, pero fui el único que lo consiguió...
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Poco después, los orcos erigieron una gran empalizada y nos tuvimos que retirar al castillo.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Intentamos huir, pero fui el Ãºnico que lo consiguiÃ³...
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Poco despuÃ©s, los orcos erigieron una gran empalizada y nos tuvimos que retirar al castillo.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info Trade
@@ -89,7 +89,7 @@ instance DIA_Tandor_Trade		(C_INFO)
 	information	 = 	DIA_Tandor_Trade_Info;
 	permanent 	 =  TRUE;
 	trade		 =	TRUE;
-	description	 = 	"Enséñame tu mercancía.";
+	description	 = 	"EnsÃ©Ã±ame tu mercancÃ­a.";
 };
 func int DIA_Tandor_Trade_Condition ()
 {
@@ -98,7 +98,7 @@ func int DIA_Tandor_Trade_Condition ()
 func void DIA_Tandor_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Tandor_Trade_15_00"); //Muéstrame tu mercancía.
+	AI_Output (other, self, "DIA_Tandor_Trade_15_00"); //MuÃ©strame tu mercancÃ­a.
 };		
 ///////////////////////////////////////////////////////////////////////
 //	Info DIA_Tandor_Equipment
@@ -109,7 +109,7 @@ instance DIA_Tandor_Equipment		(C_INFO)
 	nr		 	 =  3;
 	condition	 = 	DIA_Tandor_Equipment_Condition;
 	information	 = 	DIA_Tandor_Equipment_Info;
-	description	 = 	"Me envía Garond, necesito equipo.";
+	description	 = 	"Me envÃ­a Garond, necesito equipo.";
 };
 
 func int DIA_Tandor_Equipment_Condition ()
@@ -123,8 +123,8 @@ func int DIA_Tandor_Equipment_Condition ()
 };
 func void DIA_Tandor_Equipment_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_15_00"); //Me envía Garond. Necesito equipo.
-	AI_Output (self, other, "DIA_Tandor_Equipment_08_01"); //¿Para combate cuerpo a cuerpo o a distancia?
+	AI_Output (other, self, "DIA_Tandor_Equipment_15_00"); //Me envÃ­a Garond. Necesito equipo.
+	AI_Output (self, other, "DIA_Tandor_Equipment_08_01"); //Â¿Para combate cuerpo a cuerpo o a distancia?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
 	Info_AddChoice 	  (DIA_Tandor_Equipment,"Cuerpo a cuerpo.",DIA_Tandor_Equipment_Nah);
@@ -133,7 +133,7 @@ func void DIA_Tandor_Equipment_Info ()
 FUNC VOID DIA_Tandor_Equipment_Nah()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Nah_15_00"); //Cuerpo a cuerpo.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Nah_08_01"); //¿A una mano o a dos manos?
+	AI_Output (self, other, "DIA_Tandor_Equipment_Nah_08_01"); //Â¿A una mano o a dos manos?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
 	Info_AddChoice 	  (DIA_Tandor_Equipment,"A una mano.",DIA_Tandor_Equipment_Ein);
@@ -142,7 +142,7 @@ FUNC VOID DIA_Tandor_Equipment_Nah()
 FUNC VOID DIA_Tandor_Equipment_Fern()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Fern_15_00"); //Combate a distancia.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Fern_08_01"); //¿Arco o ballesta?
+	AI_Output (self, other, "DIA_Tandor_Equipment_Fern_08_01"); //Â¿Arco o ballesta?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
 	Info_AddChoice 	  (DIA_Tandor_Equipment,"Arco",DIA_Tandor_Equipment_Bow);
@@ -158,14 +158,14 @@ FUNC VOID DIA_Tandor_Equipment_Ein()
 FUNC VOID DIA_Tandor_Equipment_Zwei()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Zwei_15_00"); //A dos manos.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Zwei_08_01"); //Con este mandoble estarás bien armado.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Zwei_08_01"); //Con este mandoble estarÃ¡s bien armado.
 	B_GiveInvItems (self,other,ItMw_Zweihaender1 ,1);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Bow()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Bow_15_00"); //Arco.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Este arco de caza es justo lo que necesitas. Y también te daré flechas.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Este arco de caza es justo lo que necesitas. Y tambiÃ©n te darÃ© flechas.
 	B_GiveInvItems (self,other,ItRw_Bow_L_03 ,1);
 	B_GiveInvItems (self,other, ItRw_Arrow,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Tandor_Equipment_Bow()
 FUNC VOID DIA_Tandor_Equipment_Crossbow()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Crossbow_15_00"); //Ballesta.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Crossbow_08_01"); //Entonces toma esta ballesta ligera. Si quieres virotes, también tengo.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Crossbow_08_01"); //Entonces toma esta ballesta ligera. Si quieres virotes, tambiÃ©n tengo.
 	B_GiveInvItems (self,other, ItRw_Crossbow_L_02,1);
 	B_GiveInvItems (self,other, ItRw_Bolt,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
@@ -256,7 +256,7 @@ instance DIA_Tandor_News		(C_INFO)
 	condition	 = 	DIA_Tandor_News_Condition;
 	information	 = 	DIA_Tandor_News_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Tienes noticias?";
+	description	 = 	"Â¿Tienes noticias?";
 };
 
 func int DIA_Tandor_News_Condition ()
@@ -270,16 +270,16 @@ func int DIA_Tandor_News_Condition ()
 
 func void DIA_Tandor_News_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_News_15_00"); //¿Tienes noticias?
+	AI_Output (other, self, "DIA_Tandor_News_15_00"); //Â¿Tienes noticias?
 
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Tandor_News_08_01"); //Lo único que ha pasado recientemente es la llegada de tus cazadores de dragones.
+			AI_Output (self, other, "DIA_Tandor_News_08_01"); //Lo Ãºnico que ha pasado recientemente es la llegada de tus cazadores de dragones.
 		}
 	else
 		{
 			AI_Output (self, other, "DIA_Tandor_News_08_02"); //Han llegado los cazadores de dragones.
-			AI_Output (self, other, "DIA_Tandor_News_08_03"); //Me parecen unos bastardos curtidos y espero que lo sean. De lo contrario, no sobrevivirán mucho tiempo.
+			AI_Output (self, other, "DIA_Tandor_News_08_03"); //Me parecen unos bastardos curtidos y espero que lo sean. De lo contrario, no sobrevivirÃ¡n mucho tiempo.
 		};
 };
 //#####################################################################
@@ -326,7 +326,7 @@ instance DIA_Tandor_WASISTLOS		(C_INFO)
 	information	 = 	DIA_Tandor_WASISTLOS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"No estás poniendo buena cara.";
+	description	 = 	"No estÃ¡s poniendo buena cara.";
 };
 
 func int DIA_Tandor_WASISTLOS_Condition ()
@@ -340,11 +340,11 @@ func int DIA_Tandor_WASISTLOS_Condition ()
 
 func void DIA_Tandor_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //No estás poniendo buena cara.
+	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //No estÃ¡s poniendo buena cara.
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_01"); //Los orcos seguirán viviendo, hasta que muramos todos.
+	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_01"); //Los orcos seguirÃ¡n viviendo, hasta que muramos todos.
 	}
 	else
 	{

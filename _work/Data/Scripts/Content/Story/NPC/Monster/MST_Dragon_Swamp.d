@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Swamp(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Dragón de ciénaga";
+	name							=	"DragÃ³n de ciÃ©naga";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_SWAMP;
 	level							=	300;
@@ -34,7 +34,7 @@ PROTOTYPE Mst_Default_Dragon_Swamp(C_Npc)
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
 	damage		[DAM_INDEX_FIRE]	=	129;
-	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt für Fire+Fly
+	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fÃ¼r Fire+Fly
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----	

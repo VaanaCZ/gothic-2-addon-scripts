@@ -14,7 +14,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ falscher Parameter ------
 	if (circle < 1) || (circle > 6)
 	{
-		Print ("*** ERROR: parámetro equivocado ***");
+		Print ("*** ERROR: parÃ¡metro equivocado ***");
 		return FALSE;
 	};
 	
@@ -36,13 +36,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Las runas mágicas a las que he tenido acceso están divididas en círculos. No puedo usar un conjuro que requiera un círculo de más nivel que los que haya dominado."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"Las runas mÃ¡gicas a las que he tenido acceso estÃ¡n divididas en cÃ­rculos. No puedo usar un conjuro que requiera un cÃ­rculo de mÃ¡s nivel que los que haya dominado."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)
 	{
 		PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del primer círculo son: luz, flecha de fuego, relámpago pequeño, curar heridas ligeras y convocar esqueleto de trasgo.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del primer cÃ­rculo son: luz, flecha de fuego, relÃ¡mpago pequeÃ±o, curar heridas ligeras y convocar esqueleto de trasgo.");
 		return TRUE;
 	};
 	
@@ -50,7 +50,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 2)
 	{
 		PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del segundo círculo son: bola de fuego, flecha de hielo, convocar lobo, puño de viento y dormir.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del segundo cÃ­rculo son: bola de fuego, flecha de hielo, convocar lobo, puÃ±o de viento y dormir.");
 		return TRUE;
 	};
 	
@@ -58,7 +58,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 3)
 	{
 		PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del primer círculo son: curar heridas normales, bola relampagueante, pequeña tormenta de fuego, crear esqueleto, miedo y bloque de hielo.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del primer cÃ­rculo son: curar heridas normales, bola relampagueante, pequeÃ±a tormenta de fuego, crear esqueleto, miedo y bloque de hielo.");
 		return TRUE;
 	};
 	
@@ -66,7 +66,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 4)
 	{
 		PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del cuarto círculo son: relámpago, crear gólem de piedra, destruir muerto viviente y bola de fuego grande.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del cuarto cÃ­rculo son: relÃ¡mpago, crear gÃ³lem de piedra, destruir muerto viviente y bola de fuego grande.");
 		return TRUE;
 	};
 	
@@ -82,7 +82,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 6)
 	{
 		PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del sexto nivel son: lluvia de fuego, aliento mortal, oleada de muerte, ejército de las tinieblas y encoger monstruo.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Los conjuros del sexto nivel son: lluvia de fuego, aliento mortal, oleada de muerte, ejÃ©rcito de las tinieblas y encoger monstruo.");
 		return TRUE;
 	};
 };

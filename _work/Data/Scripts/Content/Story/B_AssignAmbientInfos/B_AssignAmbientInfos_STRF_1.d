@@ -47,7 +47,7 @@ FUNC VOID DIA_STRF_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //¡Si me hubiera largado cuando se me presentó la oportunidad, ese cerdo no me tendría esclavizado!
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Â¡Si me hubiera largado cuando se me presentÃ³ la oportunidad, ese cerdo no me tendrÃ­a esclavizado!
 	};
 	if (randy == 1)
 	{
@@ -55,7 +55,7 @@ FUNC VOID DIA_STRF_1_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_02"); //¡Si hubieras probado la bazofia que nos echaron, tú también pensarías en rebelarte!
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_02"); //Â¡Si hubieras probado la bazofia que nos echaron, tÃº tambiÃ©n pensarÃ­as en rebelarte!
 	};
 	
 	AI_StopProcessInfos	(self);

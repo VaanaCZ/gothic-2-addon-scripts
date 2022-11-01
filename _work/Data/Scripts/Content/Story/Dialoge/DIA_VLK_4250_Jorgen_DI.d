@@ -31,7 +31,7 @@ INSTANCE DIA_Jorgen_DI_Hallo   (C_INFO)
 	information = DIA_Jorgen_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "¿Va todo bien?";
+	description = "Â¿Va todo bien?";
 
 };
 
@@ -45,7 +45,7 @@ FUNC INT DIA_Jorgen_DI_Hallo_Condition()
 
 FUNC VOID DIA_Jorgen_DI_Hallo_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_DI_Hallo_15_00"); //¿Va todo bien?
+	AI_Output (other,self ,"DIA_Jorgen_DI_Hallo_15_00"); //Â¿Va todo bien?
 
 	if (ORkSturmDI == FALSE)
 	{
@@ -53,7 +53,7 @@ FUNC VOID DIA_Jorgen_DI_Hallo_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //No sobreviviremos a otro ataque orco como ése. Así que date prisa, tenemos que salir de aquí.
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //No sobreviviremos a otro ataque orco como Ã©se. AsÃ­ que date prisa, tenemos que salir de aquÃ­.
 		B_StartOtherRoutine	(Jorgen_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ instance DIA_Jorgen_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jorgen_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"El enemigo está muerto.";
+	description = 	"El enemigo estÃ¡ muerto.";
 
 };
 
@@ -83,17 +83,17 @@ func int DIA_Jorgen_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //El enemigo está muerto.
-	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //Son buenas noticias. ¿Es todo lo que tenemos que hacer en esta isla?
+	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //El enemigo estÃ¡ muerto.
+	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //Son buenas noticias. Â¿Es todo lo que tenemos que hacer en esta isla?
 
 	Info_ClearChoices	(DIA_Jorgen_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Un minuto más.", DIA_Jorgen_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Sí, eso es. Vamos.", DIA_Jorgen_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Un minuto mÃ¡s.", DIA_Jorgen_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "SÃ­, eso es. Vamos.", DIA_Jorgen_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_DI_UndeadDragonDead_moment_15_00"); //Un minuto más. Aún tengo que ocuparme de algo.
+	AI_Output			(other, self, "DIA_Jorgen_DI_UndeadDragonDead_moment_15_00"); //Un minuto mÃ¡s. AÃºn tengo que ocuparme de algo.
 	AI_Output			(self, other, "DIA_Jorgen_DI_UndeadDragonDead_moment_07_01"); //De acuerdo. Pero date prisa.
 	AI_StopProcessInfos (self);
 };

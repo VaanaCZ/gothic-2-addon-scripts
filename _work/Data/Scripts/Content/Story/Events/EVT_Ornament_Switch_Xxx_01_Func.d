@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis Onars Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis Onars Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 {
@@ -15,13 +15,13 @@ func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_BIGFARM_Addon, ItMi_OrnamentEffekt_BIGFARM_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"He activado el mecanismo del cÌrculo de piedra junto a la granja de Sekob. Ha habido una enorme explosiÛn y un centinela de piedra ha tratado de matarme."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"He activado el mecanismo del c√≠rculo de piedra junto a la granja de Sekob. Ha habido una enorme explosi√≥n y un centinela de piedra ha tratado de matarme."); 
 			ORNAMENT_SWITCHED_BIGFARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis Lobarts Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis Lobarts Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 {
@@ -30,13 +30,13 @@ func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 			Wld_PlayEffect("FX_EarthQuake",  hero, hero, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"He activado el mecanismo del cÌrculo de piedra junto a la granja de Lobart. Ha habido un temblor, pero nada m·s."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"He activado el mecanismo del c√≠rculo de piedra junto a la granja de Lobart. Ha habido un temblor, pero nada m√°s."); 
 			ORNAMENT_SWITCHED_FARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis im Medium Forest) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis im Medium Forest) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 {
@@ -52,7 +52,7 @@ func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_FOREST_Addon, ItMi_OrnamentEffekt_FOREST_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"He activado el mecanismo del cÌrculo de piedra del bosque del norte. Ha aparecido un gran centinela de piedra. TenÌa malas pulgas."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"He activado el mecanismo del c√≠rculo de piedra del bosque del norte. Ha aparecido un gran centinela de piedra. Ten√≠a malas pulgas."); 
 			ORNAMENT_SWITCHED_FOREST = TRUE;
 		};
 };

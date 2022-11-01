@@ -74,18 +74,18 @@ func int DIA_Mika_WOHIN_Condition ()
 
 func void DIA_Mika_WOHIN_Info ()
 {
-	AI_Output			(self, other, "DIA_Mika_WOHIN_12_00"); //Eh, eh, no tan deprisa. Es peligroso rondar por aquí. ¿De dónde vienes?
+	AI_Output			(self, other, "DIA_Mika_WOHIN_12_00"); //Eh, eh, no tan deprisa. Es peligroso rondar por aquÃ­. Â¿De dÃ³nde vienes?
 
 	Info_ClearChoices	(DIA_Mika_WOHIN);
 
 	Info_AddChoice	(DIA_Mika_WOHIN, "No es de tu incumbencia.", DIA_Mika_WOHIN_weg );
 	Info_AddChoice	(DIA_Mika_WOHIN, "De una de las granjas.", DIA_Mika_WOHIN_Bauern );
-	Info_AddChoice	(DIA_Mika_WOHIN, "¡De la ciudad!", DIA_Mika_WOHIN_stadt );
+	Info_AddChoice	(DIA_Mika_WOHIN, "Â¡De la ciudad!", DIA_Mika_WOHIN_stadt );
 };
 func void DIA_Mika_WOHIN_stadt ()
 {
-	AI_Output			(other, self, "DIA_Mika_WOHIN_stadt_15_00"); //¡De la ciudad!
-	AI_Output			(self, other, "DIA_Mika_WOHIN_stadt_12_01"); //Vaya, vaya. Y ¿qué haces rondando por aquí, tan lejos de la protección de las murallas de la ciudad?
+	AI_Output			(other, self, "DIA_Mika_WOHIN_stadt_15_00"); //Â¡De la ciudad!
+	AI_Output			(self, other, "DIA_Mika_WOHIN_stadt_12_01"); //Vaya, vaya. Y Â¿quÃ© haces rondando por aquÃ­, tan lejos de la protecciÃ³n de las murallas de la ciudad?
 
 	Info_ClearChoices	(DIA_Mika_WOHIN);
 };
@@ -93,7 +93,7 @@ func void DIA_Mika_WOHIN_stadt ()
 func void DIA_Mika_WOHIN_Bauern ()
 {
 	AI_Output			(other, self, "DIA_Mika_WOHIN_Bauern_15_00"); //De una de las granjas.
-	AI_Output			(self, other, "DIA_Mika_WOHIN_Bauern_12_01"); //Eres granjero, ¿eh? En ese caso no deberías caminar solo por estos peligrosos senderos. Quién sabe lo que podría estar esperándote.
+	AI_Output			(self, other, "DIA_Mika_WOHIN_Bauern_12_01"); //Eres granjero, Â¿eh? En ese caso no deberÃ­as caminar solo por estos peligrosos senderos. QuiÃ©n sabe lo que podrÃ­a estar esperÃ¡ndote.
 
 	Info_ClearChoices	(DIA_Mika_WOHIN);
 };
@@ -101,7 +101,7 @@ func void DIA_Mika_WOHIN_Bauern ()
 func void DIA_Mika_WOHIN_weg ()
 {
 	AI_Output			(other, self, "DIA_Mika_WOHIN_weg_15_00"); //No es de tu incumbencia.
-	AI_Output			(self, other, "DIA_Mika_WOHIN_weg_12_01"); //Lo que tú digas. Pero luego no te quejes si alguien te despelleja. Que te vaya bien.
+	AI_Output			(self, other, "DIA_Mika_WOHIN_weg_12_01"); //Lo que tÃº digas. Pero luego no te quejes si alguien te despelleja. Que te vaya bien.
 
 	AI_StopProcessInfos (self);
 };
@@ -116,7 +116,7 @@ instance DIA_Mika_WASGEFAEHRLICH		(C_INFO)
 	condition	 = 	DIA_Mika_WASGEFAEHRLICH_Condition;
 	information	 = 	DIA_Mika_WASGEFAEHRLICH_Info;
 
-	description	 = 	"¿Qué es tan peligroso?";
+	description	 = 	"Â¿QuÃ© es tan peligroso?";
 };
 
 func int DIA_Mika_WASGEFAEHRLICH_Condition ()
@@ -126,15 +126,15 @@ func int DIA_Mika_WASGEFAEHRLICH_Condition ()
 
 func void DIA_Mika_WASGEFAEHRLICH_Info ()
 {
-	AI_Output			(other, self, "DIA_Mika_WASGEFAEHRLICH_15_00"); //¿Qué es tan peligroso?
+	AI_Output			(other, self, "DIA_Mika_WASGEFAEHRLICH_15_00"); //Â¿QuÃ© es tan peligroso?
 	AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_01"); //Muchas cosas.
-	if (other.protection[PROT_EDGE]	< ITAR_Leather_L.protection [PROT_EDGE])	//Joly: kleiner als die Lederrüstung
+	if (other.protection[PROT_EDGE]	< ITAR_Leather_L.protection [PROT_EDGE])	//Joly: kleiner als die LederrÃ¼stung
 	{
-		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_02"); //Por un lado están los bandidos. A un mequetrefe como tú se lo pulirían para desayunar.
-		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_03"); //Si los bandidos no te atrapan, los animales salvajes del bosque o los mercenarios de los alrededores se ocuparán de ti.
+		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_02"); //Por un lado estÃ¡n los bandidos. A un mequetrefe como tÃº se lo pulirÃ­an para desayunar.
+		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_03"); //Si los bandidos no te atrapan, los animales salvajes del bosque o los mercenarios de los alrededores se ocuparÃ¡n de ti.
 		AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_04"); //Por eso, antes de salir hazte con una armadura decente.
 	};
-	AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_05"); //Apuesto a que me pedirás ayuda a gritos en cuanto dobles la primera curva del camino.
+	AI_Output			(self, other, "DIA_Mika_WASGEFAEHRLICH_12_05"); //Apuesto a que me pedirÃ¡s ayuda a gritos en cuanto dobles la primera curva del camino.
 	
 };
 
@@ -161,39 +161,39 @@ func int DIA_Mika_WASKOSTETHILFE_Condition ()
 
 func void DIA_Mika_WASKOSTETHILFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Mika_WASKOSTETHILFE_15_00"); //Supongamos que recurriera a tu ayuda. ¿Cuánto me costaría?
-	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_12_01"); //No soy más que un siervo humilde del rey y no me gustaría desplumar a un habitante desvalido del reino.
-	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_12_02"); //Pero si lo planteas así, no me opondría a cierto respaldo monetario para fomentar nuestra futura relación comercial.
-	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_12_03"); //Para empezar bastaría con 10 monedas de oro. ¿Qué te parece?
+	AI_Output			(other, self, "DIA_Mika_WASKOSTETHILFE_15_00"); //Supongamos que recurriera a tu ayuda. Â¿CuÃ¡nto me costarÃ­a?
+	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_12_01"); //No soy mÃ¡s que un siervo humilde del rey y no me gustarÃ­a desplumar a un habitante desvalido del reino.
+	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_12_02"); //Pero si lo planteas asÃ­, no me opondrÃ­a a cierto respaldo monetario para fomentar nuestra futura relaciÃ³n comercial.
+	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_12_03"); //Para empezar bastarÃ­a con 10 monedas de oro. Â¿QuÃ© te parece?
 
 	Info_ClearChoices	(DIA_Mika_WASKOSTETHILFE);
 
-	Info_AddChoice	(DIA_Mika_WASKOSTETHILFE, "Me lo pensaré.", DIA_Mika_WASKOSTETHILFE_nochnicht );
-	Info_AddChoice	(DIA_Mika_WASKOSTETHILFE, "¿Por qué no? Aquí tienes las 10 monedas.", DIA_Mika_WASKOSTETHILFE_ja );
+	Info_AddChoice	(DIA_Mika_WASKOSTETHILFE, "Me lo pensarÃ©.", DIA_Mika_WASKOSTETHILFE_nochnicht );
+	Info_AddChoice	(DIA_Mika_WASKOSTETHILFE, "Â¿Por quÃ© no? AquÃ­ tienes las 10 monedas.", DIA_Mika_WASKOSTETHILFE_ja );
 
 };
 
 func void DIA_Mika_WASKOSTETHILFE_ja ()
 {
-	AI_Output			(other, self, "DIA_Mika_WASKOSTETHILFE_ja_15_00"); //¿Por qué no? Aquí tienes las 10 monedas.
+	AI_Output			(other, self, "DIA_Mika_WASKOSTETHILFE_ja_15_00"); //Â¿Por quÃ© no? AquÃ­ tienes las 10 monedas.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,10))
 			{
-				AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_ja_12_01"); //Genial. Si necesitas mi ayuda, ya sabes dónde encontrarme.
-				AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_ja_12_02"); //Pero hazme el favor de no venirme con menudencias. No lo soporto, ¿me oyes?
+				AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_ja_12_01"); //Genial. Si necesitas mi ayuda, ya sabes dÃ³nde encontrarme.
+				AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_ja_12_02"); //Pero hazme el favor de no venirme con menudencias. No lo soporto, Â¿me oyes?
 				
 				Mika_Helps = TRUE;
 			}
 		else
 			{
-				AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_ja_12_03"); //No tienes dinero. Quizá debas pensarte bien si quieres que te ayude.
+				AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_ja_12_03"); //No tienes dinero. QuizÃ¡ debas pensarte bien si quieres que te ayude.
 			};
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Mika_WASKOSTETHILFE_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Mika_WASKOSTETHILFE_nochnicht_15_00"); //Me lo pensaré.
+	AI_Output			(other, self, "DIA_Mika_WASKOSTETHILFE_nochnicht_15_00"); //Me lo pensarÃ©.
 	AI_Output			(self, other, "DIA_Mika_WASKOSTETHILFE_nochnicht_12_01"); //Haz lo que quieras. Que te vaya bien la muerte.
 
 	AI_StopProcessInfos (self);
@@ -210,7 +210,7 @@ instance DIA_Mika_UEBERLEGT		(C_INFO)
 	information	 = 	DIA_Mika_UEBERLEGT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"He cambiado de idea. Te pagaré las 10 monedas de oro.";
+	description	 = 	"He cambiado de idea. Te pagarÃ© las 10 monedas de oro.";
 };
 
 func int DIA_Mika_UEBERLEGT_Condition ()
@@ -223,11 +223,11 @@ func int DIA_Mika_UEBERLEGT_Condition ()
 };
 func void DIA_Mika_UEBERLEGT_Info ()
 {
-	AI_Output			(other, self, "DIA_Mika_UEBERLEGT_15_00"); //He cambiado de idea. Te pagaré las 10 monedas de oro.
+	AI_Output			(other, self, "DIA_Mika_UEBERLEGT_15_00"); //He cambiado de idea. Te pagarÃ© las 10 monedas de oro.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,10))
 		{
-			AI_Output			(self, other, "DIA_Mika_UEBERLEGT_12_01"); //Estupendo. Mejor tarde que nunca. ¿Y ahora qué?
+			AI_Output			(self, other, "DIA_Mika_UEBERLEGT_12_01"); //Estupendo. Mejor tarde que nunca. Â¿Y ahora quÃ©?
 			
 			Mika_Helps = TRUE;
 		}
@@ -263,7 +263,7 @@ func int DIA_Mika_HILFE_Condition ()
 func void DIA_Mika_HILFE_Info ()
 {
 	AI_Output			(other, self, "DIA_Mika_HILFE_15_00"); //Necesito tu ayuda.
-	AI_Output			(self, other, "DIA_Mika_HILFE_12_01"); //Si es absolutamente necesario... ¿Qué pasa?
+	AI_Output			(self, other, "DIA_Mika_HILFE_12_01"); //Si es absolutamente necesario... Â¿QuÃ© pasa?
 
 	Info_ClearChoices	(DIA_Mika_HILFE);
 	
@@ -281,7 +281,7 @@ func void DIA_Mika_HILFE_Info ()
 func void DIA_Mika_HILFE_Akil ()
 {
 	AI_Output			(other, self, "DIA_Mika_HILFE_Akil_15_00"); //Unos mercenarios han atacado al granjero Akil.
-	AI_Output			(self, other, "DIA_Mika_HILFE_Akil_12_01"); //(Intranquilo) ¿Qué? ¿Esa chusma ronda la granja de Akil? No perdamos el tiempo. Sígueme.
+	AI_Output			(self, other, "DIA_Mika_HILFE_Akil_12_01"); //(Intranquilo) Â¿QuÃ©? Â¿Esa chusma ronda la granja de Akil? No perdamos el tiempo. SÃ­gueme.
 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -294,7 +294,7 @@ func void DIA_Mika_HILFE_Akil ()
 func void DIA_Mika_HILFE_monster ()
 {
 	AI_Output			(other, self, "DIA_Mika_HILFE_monster_15_00"); //Me han atacado unos monstruos.
-	AI_Output			(self, other, "DIA_Mika_HILFE_monster_12_01"); //No veo ningún monstruo. Seguro que te lo has inventado.
+	AI_Output			(self, other, "DIA_Mika_HILFE_monster_12_01"); //No veo ningÃºn monstruo. Seguro que te lo has inventado.
 
 	AI_StopProcessInfos (self);	
 };
@@ -302,7 +302,7 @@ func void DIA_Mika_HILFE_monster ()
 func void DIA_Mika_HILFE_schongut ()
 {
 	AI_Output			(other, self, "DIA_Mika_HILFE_schongut_15_00"); //Me persiguen unos bandidos.
-	AI_Output			(self, other, "DIA_Mika_HILFE_schongut_12_01"); //¿En serio? ¿Y dónde están? Si te estuvieran persiguiendo, al menos vería a uno de ellos, ¿no?
+	AI_Output			(self, other, "DIA_Mika_HILFE_schongut_12_01"); //Â¿En serio? Â¿Y dÃ³nde estÃ¡n? Si te estuvieran persiguiendo, al menos verÃ­a a uno de ellos, Â¿no?
 
 	AI_StopProcessInfos (self);	
 };
@@ -333,13 +333,13 @@ func int DIA_Mika_Zack_Condition ()
 
 func void DIA_Mika_Zack_Info ()
 {
-	AI_Output			(self, other, "DIA_Mika_Zack_12_00"); //Mira cómo se hace.
+	AI_Output			(self, other, "DIA_Mika_Zack_12_00"); //Mira cÃ³mo se hace.
 	Info_AddChoice	(DIA_Mika_Zack, DIALOG_ENDE, DIA_Mika_Zack_los );
 };
 func void DIA_Mika_Zack_los ()
 {
 	AI_StopProcessInfos (self);
-	//Joly: B_attack funzt hier nicht und ist auch nicht nötig!!!!!!!!!!!
+	//Joly: B_attack funzt hier nicht und ist auch nicht nÃ¶tig!!!!!!!!!!!
 	if(!Npc_IsDead (Alvares))
 	{
 		Alvares.aivar[AIV_EnemyOverride] = FALSE;
@@ -374,7 +374,7 @@ func int DIA_Mika_WIEDERNACHHAUSE_Condition ()
 
 func void DIA_Mika_WIEDERNACHHAUSE_Info ()
 {
-	AI_Output			(self, other, "DIA_Mika_WIEDERNACHHAUSE_12_00"); //Muy bien. Ya está. Me marcho.
+	AI_Output			(self, other, "DIA_Mika_WIEDERNACHHAUSE_12_00"); //Muy bien. Ya estÃ¡. Me marcho.
 
 	AI_StopProcessInfos (self);		
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -428,7 +428,7 @@ INSTANCE DIA_Mika_Kap3u4u5_PERM   (C_INFO)
 	condition   = DIA_Mika_Kap3u4u5_PERM_Condition;
 	information = DIA_Mika_Kap3u4u5_PERM_Info;
 	permanent   = TRUE;
-	description = "¿Todo tranquilo?";
+	description = "Â¿Todo tranquilo?";
 };
 
 FUNC INT DIA_Mika_Kap3u4u5_PERM_Condition()
@@ -444,7 +444,7 @@ FUNC INT DIA_Mika_Kap3u4u5_PERM_Condition()
 
 FUNC VOID DIA_Mika_Kap3u4u5_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Mika_Kap3u4u5_PERM_15_00"); //¿Todo tranquilo?
+	AI_Output (other,self ,"DIA_Mika_Kap3u4u5_PERM_15_00"); //Â¿Todo tranquilo?
 	AI_Output (self ,other,"DIA_Mika_Kap3u4u5_PERM_12_01"); //Sigues vivo. Estoy impresionado.
 };
 

@@ -91,7 +91,7 @@ instance DIA_Vanja_DOPE		(C_INFO)
 	condition	 = 	DIA_Vanja_DOPE_Condition;
 	information	 = 	DIA_Vanja_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¿Dónde puedo encontrar un poco de hierba?";
+	description	 = 	"Â¿DÃ³nde puedo encontrar un poco de hierba?";
 };
 
 func int DIA_Vanja_DOPE_Condition ()
@@ -104,9 +104,9 @@ func int DIA_Vanja_DOPE_Condition ()
 };
 func void DIA_Vanja_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //¿Dónde puedo encontrar un poco de hierba?
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Ni idea. Será mejor que apartes tus dedos de esas cosas.
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Porque, si sigues preguntando sobre eso, podrías quemártelos...
+	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Â¿DÃ³nde puedo encontrar un poco de hierba?
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Ni idea. SerÃ¡ mejor que apartes tus dedos de esas cosas.
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Porque, si sigues preguntando sobre eso, podrÃ­as quemÃ¡rtelos...
 };
 
 

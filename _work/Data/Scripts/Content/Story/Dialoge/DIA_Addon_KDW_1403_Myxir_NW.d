@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Myxir_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Hallo_Condition;
 	information	 = 	DIA_Addon_Myxir_Hallo_Info;
 
-	description	 = 	"¿Va todo bien?";
+	description	 = 	"Â¿Va todo bien?";
 };
 
 func int DIA_Addon_Myxir_Hallo_Condition ()
@@ -94,8 +94,8 @@ func int DIA_Addon_Myxir_Hallo_Condition ()
 
 func void DIA_Addon_Myxir_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //¿Todo claro?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Eres muy valiente viniendo  por aquí.
+	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Â¿Todo claro?
+	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Eres muy valiente viniendo  por aquÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WasMachstDu
@@ -107,7 +107,7 @@ instance DIA_Addon_Myxir_WasMachstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WasMachstDu_Condition;
 	information	 = 	DIA_Addon_Myxir_WasMachstDu_Info;
 
-	description	 = 	"¿Qué estás haciendo aquí?";
+	description	 = 	"Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 
 func int DIA_Addon_Myxir_WasMachstDu_Condition ()
@@ -120,10 +120,10 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition ()
 
 func void DIA_Addon_Myxir_WasMachstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //¿Qué te trae por esta zona?
+	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Â¿QuÃ© te trae por esta zona?
 	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Estoy estudiando el idioma de los constructores.
 	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //El idioma es la clave para entender a este antiguo pueblo.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Todos debemos aprenderlo o esta expedición será un fracaso antes de empezar.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Todos debemos aprenderlo o esta expediciÃ³n serÃ¡ un fracaso antes de empezar.
 	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Los constructores utilizaban tablillas de piedra para transmitir sus conocimientos. Por desgracia, muchas se han roto o las han robado hace tiempo.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ instance DIA_Addon_Myxir_Steintafeln		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Steintafeln_Condition;
 	information	 = 	DIA_Addon_Myxir_Steintafeln_Info;
 
-	description	 = 	"¿Qué hay en esas tablillas de piedra?";
+	description	 = 	"Â¿QuÃ© hay en esas tablillas de piedra?";
 };
 
 func int DIA_Addon_Myxir_Steintafeln_Condition ()
@@ -148,15 +148,15 @@ func int DIA_Addon_Myxir_Steintafeln_Condition ()
 };
 func void DIA_Addon_Myxir_Steintafeln_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //¿Qué hay en esas tablillas de piedra?
+	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Â¿QuÃ© hay en esas tablillas de piedra?
 	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //Contienen todo el saber recopilado del antiguo pueblo.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Hay información que incrementa los conocimientos en combate y magia mediante medios mágicos.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Son un auténtico tesoro para alguien que sepa leer las tablillas.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Hay informaciÃ³n que incrementa los conocimientos en combate y magia mediante medios mÃ¡gicos.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Son un autÃ©ntico tesoro para alguien que sepa leer las tablillas.
 
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Stoneplates,"Las tablillas de piedra contienen el saber del antiguo pueblo de los constructores. Algunas incrementan mágicamente los conocimientos de magia y combate, pero hay que saber leerlas."); 
+	B_LogEntry (TOPIC_Addon_Stoneplates,"Las tablillas de piedra contienen el saber del antiguo pueblo de los constructores. Algunas incrementan mÃ¡gicamente los conocimientos de magia y combate, pero hay que saber leerlas."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WillYouTeachMe
@@ -168,7 +168,7 @@ instance DIA_Addon_Myxir_WillYouTeachMe		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WillYouTeachMe_Condition;
 	information	 = 	DIA_Addon_Myxir_WillYouTeachMe_Info;
 
-	description	 = 	"¿Puedes enseñarme a leer ese idioma?";
+	description	 = 	"Â¿Puedes enseÃ±arme a leer ese idioma?";
 };
 
 func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
@@ -181,8 +181,8 @@ func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
 
 func void DIA_Addon_Myxir_WillYouTeachMe_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //¿Puedes enseñarme a leer ese idioma?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Bueno, ¿por qué no? Será un placer transmitirte mis conocimientos.
+	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //Â¿Puedes enseÃ±arme a leer ese idioma?
+	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Bueno, Â¿por quÃ© no? SerÃ¡ un placer transmitirte mis conocimientos.
 	Myxir_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
@@ -204,7 +204,7 @@ instance DIA_Addon_Myxir_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Enséñame ese idioma.";
+	description	 = 	"EnsÃ©Ã±ame ese idioma.";
 };
 
 var int DIA_Addon_Myxir_Teach_NoPerm;

@@ -68,15 +68,15 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //¿Por qué perturbas mi descanso? ¿Debo enterrarme más hondo para que los pequeñajos me dejéis en paz?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Â¿Por quÃ© perturbas mi descanso? Â¿Debo enterrarme mÃ¡s hondo para que los pequeÃ±ajos me dejÃ©is en paz?
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Un dragón que habla. Alabado sea el Ojo de Innos.
+		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Un dragÃ³n que habla. Alabado sea el Ojo de Innos.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Los humanos sois criaturas peculiares. Os azota el viento helado de la muerte, pero de las cenizas siempre surge alguno que cree que está destinado a ser un héroe.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Pero eso se va a acabar. Me ocuparé personalmente de que ninguno de los vuestros se alce en un tiempo.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Los humanos sois criaturas peculiares. Os azota el viento helado de la muerte, pero de las cenizas siempre surge alguno que cree que estÃ¡ destinado a ser un hÃ©roe.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Pero eso se va a acabar. Me ocuparÃ© personalmente de que ninguno de los vuestros se alce en un tiempo.
 	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Calla. Con el poder del Ojo sagrado que me ha sido otorgado, te ordeno que respondas mis preguntas.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ja, ja, ja. Entonces, pregunta. Lo que averigües no va a serte de utilidad.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ja, ja, ja. Entonces, pregunta. Lo que averigÃ¼es no va a serte de utilidad.
 
 };
 
@@ -90,7 +90,7 @@ instance DIA_Dragon_Ice_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Ice_WERBISTDU_Info;
 
-	description	 = 	"¿Quién eres tú?";
+	description	 = 	"Â¿QuiÃ©n eres tÃº?";
 };
 
 func int DIA_Dragon_Ice_WERBISTDU_Condition ()
@@ -103,8 +103,8 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Ice_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //¿Quién eres tú?
-	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Soy Finkregh. Señor del hielo y la nieve, guardián del Congreso y, en última instancia, tu muerte.
+	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Â¿QuiÃ©n eres tÃº?
+	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Soy Finkregh. SeÃ±or del hielo y la nieve, guardiÃ¡n del Congreso y, en Ãºltima instancia, tu muerte.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Dragon_Ice_BELIAR		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_BELIAR_Condition;
 	information	 = 	DIA_Dragon_Ice_BELIAR_Info;
 
-	description	 = 	"¿A qué dios sirves?";
+	description	 = 	"Â¿A quÃ© dios sirves?";
 };
 
 func int DIA_Dragon_Ice_BELIAR_Condition ()
@@ -130,10 +130,10 @@ func int DIA_Dragon_Ice_BELIAR_Condition ()
 
 func void DIA_Dragon_Ice_BELIAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //¿A qué dios sirves?
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //¿Qué dios maldito permitiría que criaturas despreciables como vosotros habitaran esta tierra?
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //No te molestes en intentar comprender el significado de nuestra reunión, pequeño héroe.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar no se ha limitado a permitirnos que estemos aquí. Nos lo ha ordenado.
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Â¿A quÃ© dios sirves?
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Â¿QuÃ© dios maldito permitirÃ­a que criaturas despreciables como vosotros habitaran esta tierra?
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //No te molestes en intentar comprender el significado de nuestra reuniÃ³n, pequeÃ±o hÃ©roe.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar no se ha limitado a permitirnos que estemos aquÃ­. Nos lo ha ordenado.
 	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Inspirado por sus divinas palabras, no descansaremos hasta que se haga su voluntad.
 
 };

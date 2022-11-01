@@ -45,36 +45,36 @@ FUNC INT DIA_Hokurn_Hello_Condition()
 
 FUNC VOID DIA_Hokurn_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_00"); //¿Tienes algo de beber?
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_00"); //Â¿Tienes algo de beber?
 	AI_Output (other,self ,"DIA_Hokurn_Hello_15_01"); //Supongo que no quieres agua.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_01_02"); //¡¡No, maldita sea!! Necesito algo con alcohol para librarme de una vez de estos malditos dolores de cabeza.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_01_02"); //Â¡Â¡No, maldita sea!! Necesito algo con alcohol para librarme de una vez de estos malditos dolores de cabeza.
 	AI_Output (self ,other,"DIA_Hokurn_Hello_01_03"); //Cuando estoy un tiempo sin beber, parece que me va a explotar la cabeza.
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
-	Info_AddChoice (DIA_Hokurn_Hello,"Probaré a tomar algo.",DIA_Hokurn_Hello_No);
+	Info_AddChoice (DIA_Hokurn_Hello,"ProbarÃ© a tomar algo.",DIA_Hokurn_Hello_No);
 	
 	IF(	(Npc_HasItems (other,ItFo_Beer) 	>=1)	
 	||	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	||	(Npc_HasItems (other,ItFo_Wine) 	>=1))
 	{
-		Info_AddChoice (DIA_Hokurn_Hello,"Ten, tómate esto.",DIA_Hokurn_Hello_Yes);
+		Info_AddChoice (DIA_Hokurn_Hello,"Ten, tÃ³mate esto.",DIA_Hokurn_Hello_Yes);
 	};
 };
 
 FUNC VOID DIA_Hokurn_Hello_No ()
 {
 	AI_Output (other,self ,"DIA_Hokurn_Hello_No_15_00"); //No puedo darte nada.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_No_01_01"); //¡Entonces lárgate!
+	AI_Output (self ,other,"DIA_Hokurn_Hello_No_01_01"); //Â¡Entonces lÃ¡rgate!
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
-	Info_AddChoice (DIA_Hokurn_Hello,"Una cosa más...",DIA_Hokurn_Hello_ASK1);
+	Info_AddChoice (DIA_Hokurn_Hello,"Una cosa mÃ¡s...",DIA_Hokurn_Hello_ASK1);
 };
 
 FUNC VOID DIA_Hokurn_Hello_ASK1 ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK1_15_00"); //Una cosa más...
-	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK1_01_01"); //(Brama) ¿No entiendes lo que te digo? ¡A TOMAR POR SACO!
+	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK1_15_00"); //Una cosa mÃ¡s...
+	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK1_01_01"); //(Brama) Â¿No entiendes lo que te digo? Â¡A TOMAR POR SACO!
 	
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
@@ -84,7 +84,7 @@ FUNC VOID DIA_Hokurn_Hello_ASK1 ()
 FUNC VOID DIA_Hokurn_Hello_ASK2 ()
 {
 	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //Es importante.
-	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(Brama) Tú lo has querido.
+	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(Brama) TÃº lo has querido.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -98,12 +98,12 @@ FUNC VOID DIA_Hokurn_Hello_END ()
 FUNC VOID B_Hokurn_Sauf ()
 {
 	AI_Output (self ,other,"B_Hokurn_Sauf_01_00"); //(Eructa) Ja, me ha sentado fenomenal.
-	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //Ya vuelvo a pensar con claridad. ¿En qué puedo ayudarte?
+	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //Ya vuelvo a pensar con claridad. Â¿En quÃ© puedo ayudarte?
 };
 
 FUNC VOID DIA_Hokurn_Hello_Yes ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_Yes_15_00"); //Ten, tómate esto.
+	AI_Output (other,self ,"DIA_Hokurn_Hello_Yes_15_00"); //Ten, tÃ³mate esto.
 	
 	IF		(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -138,7 +138,7 @@ INSTANCE DIA_Hokurn_Drink   (C_INFO)
 	condition   = DIA_Hokurn_Drink_Condition;
 	information = DIA_Hokurn_Drink_Info;
 	permanent   = TRUE;
-	description = "Te he traído algo de beber.";
+	description = "Te he traÃ­do algo de beber.";
 };
 
 FUNC INT DIA_Hokurn_Drink_Condition()
@@ -154,8 +154,8 @@ FUNC INT DIA_Hokurn_Drink_Condition()
 
 FUNC VOID DIA_Hokurn_Drink_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Drink_15_00"); //Te he traído algo de beber.
-	AI_Output (self ,other,"DIA_Hokurn_Drink_01_01"); //(Con avaricia) ¡¡Dámelo!!
+	AI_Output (other,self ,"DIA_Hokurn_Drink_15_00"); //Te he traÃ­do algo de beber.
+	AI_Output (self ,other,"DIA_Hokurn_Drink_01_01"); //(Con avaricia) Â¡Â¡DÃ¡melo!!
 	
 	IF	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
 	{
@@ -188,7 +188,7 @@ INSTANCE DIA_Hokurn_Question   (C_INFO)
 	condition   = DIA_Hokurn_Question_Condition;
 	information = DIA_Hokurn_Question_Info;
 	permanent   = TRUE;
-	description = "Necesito información.";
+	description = "Necesito informaciÃ³n.";
 };
 
 FUNC INT DIA_Hokurn_Question_Condition()
@@ -201,9 +201,9 @@ FUNC INT DIA_Hokurn_Question_Condition()
 
 FUNC VOID DIA_Hokurn_Question_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Question_15_00"); //Necesito información.
-	AI_Output (self ,other,"DIA_Hokurn_Question_01_01"); //(Irritado) Creía que me habías entendido. Solo hablo con amigos.
-	AI_Output (self ,other,"DIA_Hokurn_Question_01_02"); //Y los amigos te ofrecen algo de beber. ¿Lo pillas? ¡Lárgate de una vez!
+	AI_Output (other,self ,"DIA_Hokurn_Question_15_00"); //Necesito informaciÃ³n.
+	AI_Output (self ,other,"DIA_Hokurn_Question_01_01"); //(Irritado) CreÃ­a que me habÃ­as entendido. Solo hablo con amigos.
+	AI_Output (self ,other,"DIA_Hokurn_Question_01_02"); //Y los amigos te ofrecen algo de beber. Â¿Lo pillas? Â¡LÃ¡rgate de una vez!
 };
 
 //*********************************************************************
@@ -216,7 +216,7 @@ INSTANCE DIA_Hokurn_Learn   (C_INFO)
 	condition   = DIA_Hokurn_Learn_Condition;
 	information = DIA_Hokurn_Learn_Info;
 	permanent   = FALSE;
-	description = "Busco a alguien que pueda enseñarme algo.";
+	description = "Busco a alguien que pueda enseÃ±arme algo.";
 };
 
 FUNC INT DIA_Hokurn_Learn_Condition()
@@ -229,30 +229,30 @@ FUNC INT DIA_Hokurn_Learn_Condition()
 
 FUNC VOID DIA_Hokurn_Learn_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //Busco a alguien que pueda enseñarme algo.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //Yo podría enseñarte unas cuantas cosas. Soy el mejor combatiente en muchos kilómetros a la redonda.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Como somos amigos, te haré descuento. 300 monedas de oro.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //Busco a alguien que pueda enseÃ±arme algo.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //Yo podrÃ­a enseÃ±arte unas cuantas cosas. Soy el mejor combatiente en muchos kilÃ³metros a la redonda.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Como somos amigos, te harÃ© descuento. 300 monedas de oro.
 
 	Info_ClearChoices (DIA_Hokurn_Learn);
 	Info_AddChoice	(DIA_Hokurn_Learn,"Es demasiado caro.",DIA_Hokurn_Learn_TooExpensive);
 	if (Npc_HasItems (other,ItMi_Gold) >= 300)
 	{
-		Info_AddChoice	(DIA_Hokurn_Learn,"De acuerdo, aquí tienes el dinero.",DIA_Hokurn_Learn_OK);
+		Info_AddChoice	(DIA_Hokurn_Learn,"De acuerdo, aquÃ­ tienes el dinero.",DIA_Hokurn_Learn_OK);
 	};	 
 };
 
 FUNC VOID DIA_Hokurn_Learn_TooExpensive ()
 {
 	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //Es demasiado caro.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //¿Demasiado caro? Es menos de lo que cobraría cualquiera que estuviese en mi lugar.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //Piénsatelo.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //Â¿Demasiado caro? Es menos de lo que cobrarÃ­a cualquiera que estuviese en mi lugar.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //PiÃ©nsatelo.
 	
 	Info_ClearChoices (DIA_Hokurn_Learn);
 };
 
 FUNC VOID DIA_Hokurn_Learn_OK ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_OK_15_00"); //De acuerdo, aquí tienes el dinero.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_OK_15_00"); //De acuerdo, aquÃ­ tienes el dinero.
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	Hokurn_TeachPlayer = TRUE;
 	Info_ClearChoices (DIA_Hokurn_Learn);
@@ -284,7 +284,7 @@ FUNC INT DIA_Hokurn_PayTeacher_Condition()
 FUNC VOID DIA_Hokurn_PayTeacher_Info()
 {
 	AI_Output (other,self ,"DIA_Hokurn_PayTeacher_15_00"); //Ten el dinero. Quiero que me entrenes.
-	AI_Output (self ,other,"DIA_Hokurn_PayTeacher_01_01"); //¡No te arrepentirás!
+	AI_Output (self ,other,"DIA_Hokurn_PayTeacher_01_01"); //Â¡No te arrepentirÃ¡s!
 
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	Hokurn_TeachPlayer = TRUE;
@@ -368,17 +368,17 @@ FUNC VOID DIA_Hokurn_Teach_Info()
 	
 	if (HokurnLastDrink < Wld_GetDay ())
 	{
-		AI_Output (self ,other,"DIA_Hokurn_Teach_01_01"); //¡Antes tráeme algo de beber!
+		AI_Output (self ,other,"DIA_Hokurn_Teach_01_01"); //Â¡Antes trÃ¡eme algo de beber!
 	}
 	else
 	{	 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Luego veremos lo que podemos exprimirle a tus oxidados huesos de paladín.
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Luego veremos lo que podemos exprimirle a tus oxidados huesos de paladÃ­n.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_03"); //¿Y tú qué sabes? Los magos también emplean armas cuerpo a cuerpo.
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_03"); //Â¿Y tÃº quÃ© sabes? Los magos tambiÃ©n emplean armas cuerpo a cuerpo.
 		};
 
 		Info_ClearChoices 	(DIA_Hokurn_Teach);
@@ -444,7 +444,7 @@ FUNC VOID DIA_Hokurn_Teach_1H_5 ()
 };
 
 //*********************************************************************
-//	Wieso hängt ihr hier überhaupt rum?
+//	Wieso hÃ¤ngt ihr hier Ã¼berhaupt rum?
 //*********************************************************************
 INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 {
@@ -453,7 +453,7 @@ INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 	condition   = DIA_Hokurn_StayHere_Condition;
 	information = DIA_Hokurn_StayHere_Info;
 	permanent   = FALSE;
-	description = "De todas formas, ¿qué haces aquí?";
+	description = "De todas formas, Â¿quÃ© haces aquÃ­?";
 };
 
 FUNC INT DIA_Hokurn_StayHere_Condition()
@@ -466,12 +466,12 @@ FUNC INT DIA_Hokurn_StayHere_Condition()
 
 FUNC VOID DIA_Hokurn_StayHere_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //De todas formas, ¿qué haces aquí?
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //No tengo ni idea de lo que hacemos aquí o cuándo va a pasar algo.
+	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //De todas formas, Â¿quÃ© haces aquÃ­?
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //No tengo ni idea de lo que hacemos aquÃ­ o cuÃ¡ndo va a pasar algo.
 	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //Y me da igual, mientras tenga suficiente bebida.
 	
 	/*
-	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier überhaupt?
+	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier Ã¼berhaupt?
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
 	*/
@@ -488,7 +488,7 @@ INSTANCE DIA_Hokurn_WhereDragon   (C_INFO)
 	condition   = DIA_Hokurn_WhereDragon_Condition;
 	information = DIA_Hokurn_WhereDragon_Info;
 	permanent   = TRUE;
-	description = "Entonces, ¿sabes dónde están los dragones?";
+	description = "Entonces, Â¿sabes dÃ³nde estÃ¡n los dragones?";
 };
 
 FUNC INT DIA_Hokurn_WhereDragon_Condition()
@@ -503,48 +503,48 @@ FUNC INT DIA_Hokurn_WhereDragon_Condition()
 
 FUNC VOID DIA_Hokurn_WhereDragon_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_15_00"); //Entonces, ¿sabes dónde están los dragones?
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //Si te lo digo, ¿qué beneficio saco?
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_15_00"); //Entonces, Â¿sabes dÃ³nde estÃ¡n los dragones?
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //Si te lo digo, Â¿quÃ© beneficio saco?
 
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Nada, los buscaré por mi cuenta.",DIA_Hokurn_WhereDragon_FindMyself);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Estaría dispuesto a pagar por esa información.",DIA_Hokurn_WhereDragon_Gold);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"Nada, los buscarÃ© por mi cuenta.",DIA_Hokurn_WhereDragon_FindMyself);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"EstarÃ­a dispuesto a pagar por esa informaciÃ³n.",DIA_Hokurn_WhereDragon_Gold);
 	if Npc_HasItems (other,ITFO_BOOZE) >=1
 	{
-		Info_AddChoice (DIA_Hokurn_WhereDragon,"¡Aún me queda una botella de ginebra!",DIA_Hokurn_WhereDragon_Booze);	 
+		Info_AddChoice (DIA_Hokurn_WhereDragon,"Â¡AÃºn me queda una botella de ginebra!",DIA_Hokurn_WhereDragon_Booze);	 
 	};
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_FindMyself ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Nada, los buscaré por mi cuenta.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //Será mejor que tengas cuidado. Te enfrentas a un reto monumental.
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Nada, los buscarÃ© por mi cuenta.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //SerÃ¡ mejor que tengas cuidado. Te enfrentas a un reto monumental.
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_Gold ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Gold_15_00"); //Estaría dispuesto a pagar por esa información.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //¿A pagarme? Um. Te lo contaré por 200 monedas de oro.
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Gold_15_00"); //EstarÃ­a dispuesto a pagar por esa informaciÃ³n.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Â¿A pagarme? Um. Te lo contarÃ© por 200 monedas de oro.
 	
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"¡Es demasiado!",DIA_Hokurn_WhereDragon_TooMuch);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"Â¡Es demasiado!",DIA_Hokurn_WhereDragon_TooMuch);
 	if Npc_HasItems (other,ItMi_Gold) >=200
 	{
-		Info_AddChoice (DIA_Hokurn_WhereDragon,"Trato hecho. ¡Aquí tienes el dinero!",DIA_Hokurn_WhereDragon_OK);
+		Info_AddChoice (DIA_Hokurn_WhereDragon,"Trato hecho. Â¡AquÃ­ tienes el dinero!",DIA_Hokurn_WhereDragon_OK);
 	};
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_TooMuch ()
 {
-	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //¡Es demasiado!
+	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //Â¡Es demasiado!
 	AI_Output 	(self ,other,"DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Entonces no hay nada que hacer.
 	Info_ClearChoices	(DIA_Hokurn_WhereDragon); 
 };
 
 FUNC VOID DIA_Hokurn_WhereDragon_OK ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_OK_15_00"); //Trato hecho. ¡Aquí tienes el dinero!
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_OK_15_00"); //Trato hecho. Â¡AquÃ­ tienes el dinero!
 	B_GiveInvItems (other,self,ItMi_gold,200);
 	
 	HokurnTellsDragon = TRUE;
@@ -553,11 +553,11 @@ FUNC VOID DIA_Hokurn_WhereDragon_OK ()
 
 FUNC VOID DIA_Hokurn_WhereDragon_Booze ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Booze_15_00"); //¡Aún me queda una botella de ginebra!
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //Me pelearía con todos los dragones del mundo por una botella de buena cosecha.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //De acuerdo. ¡Dame la botella!
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Booze_15_00"); //Â¡AÃºn me queda una botella de ginebra!
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //Me pelearÃ­a con todos los dragones del mundo por una botella de buena cosecha.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //De acuerdo. Â¡Dame la botella!
 	B_GiveInvItems ( other,self,ItFo_booze,1);
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //La guardaré para un día lluvioso.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //La guardarÃ© para un dÃ­a lluvioso.
 
 	HokurnTellsDragon = TRUE;
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
@@ -573,7 +573,7 @@ INSTANCE DIA_Hokurn_Dragon   (C_INFO)
 	condition   = DIA_Hokurn_Dragon_Condition;
 	information = DIA_Hokurn_Dragon_Info;
 	permanent   = TRUE;
-	description = "De acuerdo. ¿Dónde están esos dragones?";
+	description = "De acuerdo. Â¿DÃ³nde estÃ¡n esos dragones?";
 };
 
 FUNC INT DIA_Hokurn_Dragon_Condition()
@@ -586,10 +586,10 @@ FUNC INT DIA_Hokurn_Dragon_Condition()
 
 FUNC VOID DIA_Hokurn_Dragon_Info()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //De acuerdo. ¿Dónde están esos dragones?
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //Por supuesto, no puedo darte detalles concretos, pero he oído que se supone que hay cuatro dragones.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //Por la noche hemos visto un fulgor rojizo en la cumbre de la montaña más alta.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //Te juro por mi madre que, si buscas un dragón, allí lo encontrarás.
+	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //De acuerdo. Â¿DÃ³nde estÃ¡n esos dragones?
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //Por supuesto, no puedo darte detalles concretos, pero he oÃ­do que se supone que hay cuatro dragones.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //Por la noche hemos visto un fulgor rojizo en la cumbre de la montaÃ±a mÃ¡s alta.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //Te juro por mi madre que, si buscas un dragÃ³n, allÃ­ lo encontrarÃ¡s.
 };
 
 //*********************************************************************
@@ -617,7 +617,7 @@ FUNC INT DIA_Hokurn_AllDragonsDead_Condition()
 FUNC VOID DIA_Hokurn_AllDragonsDead_Info()
 {
 	AI_Output	(other,self ,"DIA_Hokurn_AllDragonsDead_15_00"); //He matado a todos los dragones.
-	AI_Output 	(self ,other,"DIA_Hokurn_AllDragonsDead_01_01"); //Vete a freír espárragos y a contarle esos cuentos a otro.
+	AI_Output 	(self ,other,"DIA_Hokurn_AllDragonsDead_01_01"); //Vete a freÃ­r espÃ¡rragos y a contarle esos cuentos a otro.
 };
 
 // ************************************************************

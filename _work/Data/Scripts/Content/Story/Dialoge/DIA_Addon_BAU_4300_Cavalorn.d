@@ -45,7 +45,7 @@ INSTANCE DIA_Addon_Cavalorn_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Cavalorn_PICKPOCKET_Condition;
 	information	= DIA_Addon_Cavalorn_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Sería sencillo robar su carcaj de flechas)";
+	description = "(SerÃ­a sencillo robar su carcaj de flechas)";
 };                       
 
 FUNC INT DIA_Addon_Cavalorn_PICKPOCKET_Condition()
@@ -117,7 +117,7 @@ func void DIA_Addon_Cavalorn_MeetingIsRunning_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_08_01"); //Vatras te confiará tu siguiente misión.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_08_01"); //Vatras te confiarÃ¡ tu siguiente misiÃ³n.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -132,7 +132,7 @@ instance DIA_Addon_Cavalorn_HALLO		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_HALLO_Condition;
 	information	 = 	DIA_Addon_Cavalorn_HALLO_Info;
 
-	description	 = 	"¿Tienes problemas?";
+	description	 = 	"Â¿Tienes problemas?";
 };
 
 func int DIA_Addon_Cavalorn_HALLO_Condition ()
@@ -142,27 +142,27 @@ func int DIA_Addon_Cavalorn_HALLO_Condition ()
 
 func void DIA_Addon_Cavalorn_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_15_00"); //¿Problemas?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_01"); //(molesto) Mierda. No sé dónde se meten. Matas a uno y enseguida vuelven a aparecer todos.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_15_00"); //Â¿Problemas?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_01"); //(molesto) Mierda. No sÃ© dÃ³nde se meten. Matas a uno y enseguida vuelven a aparecer todos.
 	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_02"); //(tono astuto) Un momento. Yo te conozco. Eres el tipo que no dejaba de pedirme flechas en el Valle de las Minas.
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Te llamas Cavalorn, ¿no?", DIA_Addon_Cavalorn_HALLO_Ja );
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Apenas recuerdo nada…", DIA_Addon_Cavalorn_HALLO_weissNicht );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Te llamas Cavalorn, Â¿no?", DIA_Addon_Cavalorn_HALLO_Ja );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Apenas recuerdo nadaâ€¦", DIA_Addon_Cavalorn_HALLO_weissNicht );
 
 };
 func void DIA_Addon_Cavalorn_HALLO_weissNicht ()
 {
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_weissNicht_15_00"); //Casi ni me acuerdo
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01"); //Oh, vamos. Allí, en mi cabaña, a las afueras del Campamento Viejo, te enseñé a usar el arco y a ser sigiloso. ¿No te suena?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01"); //Oh, vamos. AllÃ­, en mi cabaÃ±a, a las afueras del Campamento Viejo, te enseÃ±Ã© a usar el arco y a ser sigiloso. Â¿No te suena?
 
 };
 
 func void DIA_Addon_Cavalorn_HALLO_Ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Ja_15_00"); //Te llamas Cavalorn, ¿no?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_01"); //Ah, veo que no me has olvidado después de lo que vivimos en la colonia maldita.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_02"); //¿A dónde te diriges?
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Ja_15_00"); //Te llamas Cavalorn, Â¿no?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_01"); //Ah, veo que no me has olvidado despuÃ©s de lo que vivimos en la colonia maldita.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_02"); //Â¿A dÃ³nde te diriges?
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "No tengo un objetivo concreto.", DIA_Addon_Cavalorn_HALLO_keinZiel );
@@ -177,23 +177,23 @@ func void DIA_Addon_Cavalorn_HALLO_Stadt ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_HALLO_Stadt_15_00"); //A la ciudad.
 	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_01"); //(risas) Vaya, vaya, a la ciudad...
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_02"); //Puedes meterte en líos con los guardias. Ya no dejan pasar a nadie, porque la zona está llena de bandidos.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_03"); //En los últimos días ha pasado por aquí uno de los antiguos psiónicos del Valle de las Minas. Dijo que entra y sale de Khorinis constantemente.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_04"); //Entró en el valle por debajo de la gran torre. Debe de haber alguna entrada cerca de la catarata.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_05"); //Quizá deberías hablar con él.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_02"); //Puedes meterte en lÃ­os con los guardias. Ya no dejan pasar a nadie, porque la zona estÃ¡ llena de bandidos.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_03"); //En los Ãºltimos dÃ­as ha pasado por aquÃ­ uno de los antiguos psiÃ³nicos del Valle de las Minas. Dijo que entra y sale de Khorinis constantemente.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_04"); //EntrÃ³ en el valle por debajo de la gran torre. Debe de haber alguna entrada cerca de la catarata.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_05"); //QuizÃ¡ deberÃ­as hablar con Ã©l.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
 
 func void DIA_Addon_Cavalorn_HALLO_Bauern ()
 {
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Bauern_15_00"); //Al Valle de las Minas.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_01"); //(sorprendido) ¿Sí? Mmh, ojalá pudiera seguirte, pero antes tengo que terminar mis quehaceres.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_02"); //Cuando estés en el Valle de las Minas, ¿podrías mirar si mi vieja cabaña sigue en pie? Me gustaría volver algún día.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_01"); //(sorprendido) Â¿SÃ­? Mmh, ojalÃ¡ pudiera seguirte, pero antes tengo que terminar mis quehaceres.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_02"); //Cuando estÃ©s en el Valle de las Minas, Â¿podrÃ­as mirar si mi vieja cabaÃ±a sigue en pie? Me gustarÃ­a volver algÃºn dÃ­a.
 	
 	MIS_Addon_Cavalorn_TheHut = LOG_RUNNING;	
 	Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_CavalornTheHut,"Cavalorn quiere que vaya a ver si su vieja cabaña del Valle de las Minas sigue en pie. Por lo que puedo recordar, se encuentra en la abrupta zona oeste del antiguo Campamento Viejo. Sospecho que dejó allí algo.");
+	B_LogEntry (TOPIC_Addon_CavalornTheHut,"Cavalorn quiere que vaya a ver si su vieja cabaÃ±a del Valle de las Minas sigue en pie. Por lo que puedo recordar, se encuentra en la abrupta zona oeste del antiguo Campamento Viejo. Sospecho que dejÃ³ allÃ­ algo.");
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
@@ -201,7 +201,7 @@ func void DIA_Addon_Cavalorn_HALLO_Bauern ()
 func void DIA_Addon_Cavalorn_HALLO_keinZiel ()
 {
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_keinZiel_15_00"); //No tengo un objetivo concreto.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_keinZiel_08_01"); //No quieres contármelo, ¿eh? Muy bien.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_keinZiel_08_01"); //No quieres contÃ¡rmelo, Â¿eh? Muy bien.
 
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
@@ -216,7 +216,7 @@ instance DIA_Addon_Cavalorn_Beutel		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Beutel_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Beutel_Info;
 
-	description	 = 	"Estuve en tu cabaña del Valle de las Minas.";
+	description	 = 	"Estuve en tu cabaÃ±a del Valle de las Minas.";
 };
 
 func int DIA_Addon_Cavalorn_Beutel_Condition ()
@@ -230,20 +230,20 @@ func int DIA_Addon_Cavalorn_Beutel_Condition ()
 
 func void DIA_Addon_Cavalorn_Beutel_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_00"); //Estuve en tu cabaña del Valle de las Minas.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_01"); //Aún sigue en pie.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_00"); //Estuve en tu cabaÃ±a del Valle de las Minas.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_01"); //AÃºn sigue en pie.
 	if (MIS_Addon_Cavalorn_TheHut == LOG_RUNNING)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_02"); //Sí. Y también sé lo que buscabas de allí.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_02"); //SÃ­. Y tambiÃ©n sÃ© lo que buscabas de allÃ­.
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_03"); //¿Lo has encontrado?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_04"); //Si te refieres a la bolsa con mineral… Sí, la tengo.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_05"); //Eres muy listo, ¿sabías?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_03"); //Â¿Lo has encontrado?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_04"); //Si te refieres a la bolsa con mineralâ€¦ SÃ­, la tengo.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_05"); //Eres muy listo, Â¿sabÃ­as?
 	if (MIS_Addon_Cavalorn_TheHut == LOG_RUNNING)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_06"); //¿Qué otra cosa podías querer de esa vieja choza? No había nada más.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_06"); //Â¿QuÃ© otra cosa podÃ­as querer de esa vieja choza? No habÃ­a nada mÃ¡s.
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_07"); //¿La llevas contigo? Te daré 100 monedas de oro a cambio.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_07"); //Â¿La llevas contigo? Te darÃ© 100 monedas de oro a cambio.
 	TOPIC_End_CavalornTheHut = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
@@ -254,7 +254,7 @@ func void DIA_Addon_Cavalorn_Beutel_Info ()
 	}
 	else if  (Npc_HasItems (other,ItMi_Nugget))
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "No, pero tengo un trozo de oro aquí.", DIA_Addon_Cavalorn_Beutel_jaerz );
+		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "No, pero tengo un trozo de oro aquÃ­.", DIA_Addon_Cavalorn_Beutel_jaerz );
 	};
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "No.", DIA_Addon_Cavalorn_Beutel_no );
 };
@@ -265,11 +265,11 @@ func void DIA_Addon_Cavalorn_Beutel_back ()
 };
 func void DIA_Addon_Cavalorn_Beutel_jaerz ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_jaerz_15_00"); //No, pero tengo un trozo de oro aquí.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_jaerz_15_00"); //No, pero tengo un trozo de oro aquÃ­.
 	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_jaerz_08_01"); //Vale.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "¿Por qué la dejaste allí?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Â¿Por quÃ© la dejaste allÃ­?", DIA_Addon_Cavalorn_Beutel_why );
 };
 func void DIA_Addon_Cavalorn_Beutel_ja ()
 {
@@ -277,25 +277,25 @@ func void DIA_Addon_Cavalorn_Beutel_ja ()
 	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_ja_08_01"); //Estupendo.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "¿Por qué la dejaste allí?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Â¿Por quÃ© la dejaste allÃ­?", DIA_Addon_Cavalorn_Beutel_why );
 };
 
 func void DIA_Addon_Cavalorn_Beutel_no ()
 {
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_00"); //No.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_no_08_01"); //Entonces RECUPÉRALA. Después de todo, incluso hubiera vuelto a ese maldito Valle de las Minas.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_no_08_01"); //Entonces RECUPÃ‰RALA. DespuÃ©s de todo, incluso hubiera vuelto a ese maldito Valle de las Minas.
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_02"); //Estoy emocionado.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "¿Por qué la dejaste allí?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Â¿Por quÃ© la dejaste allÃ­?", DIA_Addon_Cavalorn_Beutel_why );
 };
 
 func void DIA_Addon_Cavalorn_Beutel_why ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_why_15_00"); //¿Por qué la dejaste allí?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_01"); //No sabía que ese mineral fuera tan valioso en Khorinis.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_02"); //Por un mísero trozo de mineral, se puede conseguir un lugar donde dormir en la colonia penal.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_03"); //En la ciudad portuaria, prácticamente te cortan el cuello si saben que tienes mineral.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_why_15_00"); //Â¿Por quÃ© la dejaste allÃ­?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_01"); //No sabÃ­a que ese mineral fuera tan valioso en Khorinis.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_02"); //Por un mÃ­sero trozo de mineral, se puede conseguir un lugar donde dormir en la colonia penal.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_03"); //En la ciudad portuaria, prÃ¡cticamente te cortan el cuello si saben que tienes mineral.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -308,7 +308,7 @@ instance DIA_Addon_Cavalorn_ErzGeben		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_ErzGeben_Condition;
 	information	 = 	DIA_Addon_Cavalorn_ErzGeben_Info;
 
-	description	 = 	"Dame 100 monedas de oro y te devolveré tu mineral.";
+	description	 = 	"Dame 100 monedas de oro y te devolverÃ© tu mineral.";
 };
 
 func int DIA_Addon_Cavalorn_ErzGeben_Condition ()
@@ -322,8 +322,8 @@ func int DIA_Addon_Cavalorn_ErzGeben_Condition ()
 
 func void DIA_Addon_Cavalorn_ErzGeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_ErzGeben_15_00"); //Dame 100 monedas de oro y te devolveré tu mineral.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_01"); //Vale. Aquí tienes.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_ErzGeben_15_00"); //Dame 100 monedas de oro y te devolverÃ© tu mineral.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_01"); //Vale. AquÃ­ tienes.
 	CreateInvItems (self, ItMi_Gold, 100);									
 	B_GiveInvItems (self, other, ItMi_Gold, 100);		
 
@@ -346,7 +346,7 @@ instance DIA_Addon_Cavalorn_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_WASMACHSTDU_Condition;
 	information	 = 	DIA_Addon_Cavalorn_WASMACHSTDU_Info;
 
-	description	 = 	"¿Qué estás haciendo aquí?";
+	description	 = 	"Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 
 func int DIA_Addon_Cavalorn_WASMACHSTDU_Condition ()
@@ -360,8 +360,8 @@ func int DIA_Addon_Cavalorn_WASMACHSTDU_Condition ()
 
 func void DIA_Addon_Cavalorn_WASMACHSTDU_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_WASMACHSTDU_15_00"); //¿Qué haces por aquí?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_WASMACHSTDU_08_01"); //Nada, sentado. Si no fuera por esos malditos bandidos, no estaría aquí.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_WASMACHSTDU_15_00"); //Â¿QuÃ© haces por aquÃ­?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_WASMACHSTDU_08_01"); //Nada, sentado. Si no fuera por esos malditos bandidos, no estarÃ­a aquÃ­.
 	
 };
 
@@ -375,7 +375,7 @@ instance DIA_Addon_Cavalorn_Banditen		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Banditen_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Banditen_Info;
 
-	description	 = 	"¿Qué ha pasado con los bandidos?";
+	description	 = 	"Â¿QuÃ© ha pasado con los bandidos?";
 };
 
 func int DIA_Addon_Cavalorn_Banditen_Condition ()
@@ -389,15 +389,15 @@ func int DIA_Addon_Cavalorn_Banditen_Condition ()
 
 func void DIA_Addon_Cavalorn_Banditen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_00"); //¿Qué ha pasado con los bandidos?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_01"); //¿Has dormido en las últimas semanas?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_00"); //Â¿QuÃ© ha pasado con los bandidos?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_01"); //Â¿Has dormido en las Ãºltimas semanas?
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_02"); //Eh...
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_03"); //Hablo de la gentuza de la colonia penal que se está estableciendo en la zona. Asaltan y matan a todo el que encuentran.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_04"); //(suspira) Supongo que tengo suerte de seguir vivo. Bajé la guardia un instante y me atacaron por detrás.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_03"); //Hablo de la gentuza de la colonia penal que se estÃ¡ estableciendo en la zona. Asaltan y matan a todo el que encuentran.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_04"); //(suspira) Supongo que tengo suerte de seguir vivo. BajÃ© la guardia un instante y me atacaron por detrÃ¡s.
 	
 	if (C_BragoBanditsDead () == FALSE) 
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_05"); //No sé cómo voy a recuperar mis cosas.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_05"); //No sÃ© cÃ³mo voy a recuperar mis cosas.
 	};
 };
 
@@ -411,7 +411,7 @@ instance DIA_Addon_Cavalorn_ARTEFAKT		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_ARTEFAKT_Condition;
 	information	 = 	DIA_Addon_Cavalorn_ARTEFAKT_Info;
 
-	description	 = 	"¿Los bandidos te han robado?";
+	description	 = 	"Â¿Los bandidos te han robado?";
 };
 
 func int DIA_Addon_Cavalorn_ARTEFAKT_Condition ()
@@ -427,8 +427,8 @@ func int DIA_Addon_Cavalorn_ARTEFAKT_Condition ()
 
 func void DIA_Addon_Cavalorn_ARTEFAKT_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_ARTEFAKT_15_00"); //¿Los bandidos te han robado?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_01"); //(furioso) Sí. Me golpearon y quisieron convertirme en pasto de los trasgos.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_ARTEFAKT_15_00"); //Â¿Los bandidos te han robado?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_01"); //(furioso) SÃ­. Me golpearon y quisieron convertirme en pasto de los trasgos.
 	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_02"); //Eran cosas muy importantes. Una carta y todo mi dinero. Tengo que recuperarlo como sea.
 	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_03"); //Pero no pienso volver sin alguien que me cubra la espalda. Esa chusma sin agallas
 };
@@ -443,7 +443,7 @@ instance DIA_Addon_Cavalorn_HELFEN		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_HELFEN_Condition;
 	information	 = 	DIA_Addon_Cavalorn_HELFEN_Info;
 
-	description	 = 	"¿Te puedo ayudar con los bandidos?";
+	description	 = 	"Â¿Te puedo ayudar con los bandidos?";
 };
 
 func int DIA_Addon_Cavalorn_HELFEN_Condition ()
@@ -459,24 +459,24 @@ func int DIA_Addon_Cavalorn_HELFEN_Condition ()
 
 func void DIA_Addon_Cavalorn_HELFEN_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_HELFEN_15_00"); //¿Te puedo ayudar con los bandidos?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_HELFEN_15_00"); //Â¿Te puedo ayudar con los bandidos?
 
 	if (Npc_HasEquippedArmor(other) == FALSE)
 	&& (hero.guild == GIL_NONE) 
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_01"); //(voz astuta) Quizás. Pero con lo enclenque que estás, seguro que no has tocado en semanas una espada decente.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_01"); //(voz astuta) QuizÃ¡s. Pero con lo enclenque que estÃ¡s, seguro que no has tocado en semanas una espada decente.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_02"); //Bueno, no tengo más opción que aceptar tu oferta. Mi tiempo se agota.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_03"); //Presta atención. Por este sendero encontrarás uno de esos agujeros inmundos en los que se esconden los bandidos.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_02"); //Bueno, no tengo mÃ¡s opciÃ³n que aceptar tu oferta. Mi tiempo se agota.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_03"); //Presta atenciÃ³n. Por este sendero encontrarÃ¡s uno de esos agujeros inmundos en los que se esconden los bandidos.
 	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_04"); //Esos tipos son los mismos que me robaron.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_05"); //Avísame cuando estés listo e iremos a por ellos.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_05"); //AvÃ­same cuando estÃ©s listo e iremos a por ellos.
 	
 	MIS_Addon_Cavalorn_KillBrago = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_KillBrago, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KillBrago, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_KillBrago,"Los bandidos que hay junto a Cavalorn le robaron algo de valor. Él quiere que nos aliemos con estos bandidos."); 
+	B_LogEntry (TOPIC_Addon_KillBrago,"Los bandidos que hay junto a Cavalorn le robaron algo de valor. Ã‰l quiere que nos aliemos con estos bandidos."); 
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 };
@@ -512,15 +512,15 @@ func void DIA_Addon_Cavalorn_AUSRUESTUNG_Info ()
 			AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_01"); //Esos bastardos me han dejado sin nada.
 		};
 		
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_02"); //Puedo darte un cuchillo de lobo. ¿Te sirve de momento?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_03"); //¿Llamas a eso cuchillo?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_02"); //Puedo darte un cuchillo de lobo. Â¿Te sirve de momento?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_03"); //Â¿Llamas a eso cuchillo?
 
 	CreateInvItems (self, ItMW_Addon_Knife01, 1);									
 	B_GiveInvItems (self, other, ItMW_Addon_Knife01, 1);					
 	 
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_04"); //¿Y qué hay de la curación?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_05"); //Me quedan 2 pociones de curación. ¿Te interesa?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_06"); //Claro. Dámelas.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_04"); //Â¿Y quÃ© hay de la curaciÃ³n?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_05"); //Me quedan 2 pociones de curaciÃ³n. Â¿Te interesa?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_06"); //Claro. DÃ¡melas.
 	
 	CreateInvItems (self, ItPo_Health_01, 2);									
 	B_GiveInvItems (self, other, ItPo_Health_01, 2);					
@@ -554,7 +554,7 @@ func int DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition ()
 func void DIA_Addon_Cavalorn_LETSKILLBANDITS_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_LETSKILLBANDITS_15_00"); //Vamos a por esos tipos.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_01"); //Por supuesto. Tú cúbreme las espaldas, ¿vale?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_01"); //Por supuesto. TÃº cÃºbreme las espaldas, Â¿vale?
 	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_02"); //Van a llevarse una desagradable sorpresa.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KillBandits");
@@ -572,23 +572,23 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 	
 	if (MIS_Addon_Cavalorn_Letter2Vatras != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_00"); //Por fin podré completar mi misión. Ya he perdido mucho tiempo.
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_01"); //¿Qué tipo de misión…?
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_02"); //(para sí) Ah. Sí. Primero tengo que entrar a la ciudad y luego
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_03"); //(suspiro) No sé cómo voy a conseguir hacer todo a tiempo.
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_04"); //(seco) ¿Y yo qué?
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_05"); //(evaluando) Mmh. ¿Por qué no? Podrías llevar la carta a la ciudad.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_00"); //Por fin podrÃ© completar mi misiÃ³n. Ya he perdido mucho tiempo.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_01"); //Â¿QuÃ© tipo de misiÃ³nâ€¦?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_02"); //(para sÃ­) Ah. SÃ­. Primero tengo que entrar a la ciudad y luego
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_03"); //(suspiro) No sÃ© cÃ³mo voy a conseguir hacer todo a tiempo.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_04"); //(seco) Â¿Y yo quÃ©?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_05"); //(evaluando) Mmh. Â¿Por quÃ© no? PodrÃ­as llevar la carta a la ciudad.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_06"); //Así tendré más tiempo para ocuparme de mi equipamiento.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_06"); //AsÃ­ tendrÃ© mÃ¡s tiempo para ocuparme de mi equipamiento.
 
 	if (MIS_Addon_Cavalorn_Letter2Vatras != LOG_SUCCESS)
 	{
 		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_07"); //Uno de los bandidos debe de llevar la carta en el bolsillo.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_08"); //Llévasela a Vatras, el Mago de Agua, a la ciudad. Lo encontrarás en el Templo de Adanos. Se pasa el día allí rezando.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_08"); //LlÃ©vasela a Vatras, el Mago de Agua, a la ciudad. Lo encontrarÃ¡s en el Templo de Adanos. Se pasa el dÃ­a allÃ­ rezando.
 		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_09"); //Dile que no he podido hacerlo personalmente.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_10"); //Y si te pregunta dónde estoy, dile que me dirijo al punto de encuentro, ¿de acuerdo?
-		B_LogEntry (TOPIC_Addon_KDW,"Vatras, Mago de Agua, está en el puerto marítimo de Khorinis, rezando a Adanos en el templo."); 
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_10"); //Y si te pregunta dÃ³nde estoy, dile que me dirijo al punto de encuentro, Â¿de acuerdo?
+		B_LogEntry (TOPIC_Addon_KDW,"Vatras, Mago de Agua, estÃ¡ en el puerto marÃ­timo de Khorinis, rezando a Adanos en el templo."); 
 	};
 	
 	if (Npc_HasEquippedArmor(other) == FALSE)
@@ -596,8 +596,8 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 	&& (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_11"); //Ah, sí, una cosa más. Primero compra algo de ropa decente a los granjeros.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_12"); //Si no, te tomarán por un bandido. Toma un par de monedas.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_11"); //Ah, sÃ­, una cosa mÃ¡s. Primero compra algo de ropa decente a los granjeros.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_12"); //Si no, te tomarÃ¡n por un bandido. Toma un par de monedas.
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);	
 	};
@@ -643,7 +643,7 @@ func int DIA_Addon_Cavalorn_BragoKilled_Condition ()
 
 func void DIA_Addon_Cavalorn_BragoKilled_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_BragoKilled_08_00"); //Solucionado. Ja. No deberían haberse metido conmigo.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_BragoKilled_08_00"); //Solucionado. Ja. No deberÃ­an haberse metido conmigo.
 	
 	B_Addon_Cavalorn_VatrasBrief ();
 	
@@ -659,7 +659,7 @@ instance DIA_Addon_Cavalorn_PCKilledBrago		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_PCKilledBrago_Condition;
 	information	 = 	DIA_Addon_Cavalorn_PCKilledBrago_Info;
 
-	description	 = 	"Los bandidos están acabados.";
+	description	 = 	"Los bandidos estÃ¡n acabados.";
 };
 
 func int DIA_Addon_Cavalorn_PCKilledBrago_Condition ()
@@ -674,7 +674,7 @@ func int DIA_Addon_Cavalorn_PCKilledBrago_Condition ()
 
 func void DIA_Addon_Cavalorn_PCKilledBrago_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_PCKilledBrago_15_00"); //Los bandidos están acabados.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_PCKilledBrago_15_00"); //Los bandidos estÃ¡n acabados.
 
 	B_Addon_Cavalorn_VatrasBrief ();
 
@@ -703,9 +703,9 @@ func int DIA_Addon_Cavalorn_JUNGS_Condition ()
 
 func void DIA_Addon_Cavalorn_JUNGS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_JUNGS_15_00"); //Llevas una armadura muy interesante. ¿Ya no perteneces a las Sombras?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_01"); //¿Sombras? No existen desde la caída de la Barrera.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_02"); //En cuanto pudimos marcharnos del Valle de las Minas ya no tenía motivo para quedarme con ellos.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_JUNGS_15_00"); //Llevas una armadura muy interesante. Â¿Ya no perteneces a las Sombras?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_01"); //Â¿Sombras? No existen desde la caÃ­da de la Barrera.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_02"); //En cuanto pudimos marcharnos del Valle de las Minas ya no tenÃ­a motivo para quedarme con ellos.
 	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_03"); //Ahora trabajo para los Magos de Agua. Pertenezco al 'Anillo de Agua'.
 	
 	SC_KnowsRanger = TRUE;
@@ -727,7 +727,7 @@ instance DIA_Addon_Cavalorn_Ring		(C_INFO)
 	condition	= DIA_Addon_Cavalorn_Ring_Condition;
 	information	= DIA_Addon_Cavalorn_Ring_Info;
 	permanent 	= FALSE;
-	description	= "¡Háblame sobre el 2Anillo de Agua'!";
+	description	= "Â¡HÃ¡blame sobre el 2Anillo de Agua'!";
 };
 func int DIA_Addon_Cavalorn_Ring_Condition ()
 {
@@ -738,12 +738,12 @@ func int DIA_Addon_Cavalorn_Ring_Condition ()
 };
 func void DIA_Addon_Cavalorn_Ring_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_Ring_15_00"); //¡Háblame del 'Anillo de Agua'!
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_01"); //No me está permitido.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_02"); //Lo único que puedo hacer es enviarte a hablar con Vatras. Es el representante de los Magos de Agua en Khorinis.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_03"); //Lo mejor será que hables con él. Dile que vas de mi parte.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_04"); //Quizá te acepte como uno de los nuestros. Necesitamos gente que valga urgentemente
-	B_LogEntry (TOPIC_Addon_RingOfWater,"El Mago de Agua Vatras me informará sobre ese 'Anillo de Agua'."); 
+	AI_Output (other, self, "DIA_Addon_Cavalorn_Ring_15_00"); //Â¡HÃ¡blame del 'Anillo de Agua'!
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_01"); //No me estÃ¡ permitido.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_02"); //Lo Ãºnico que puedo hacer es enviarte a hablar con Vatras. Es el representante de los Magos de Agua en Khorinis.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_03"); //Lo mejor serÃ¡ que hables con Ã©l. Dile que vas de mi parte.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_04"); //QuizÃ¡ te acepte como uno de los nuestros. Necesitamos gente que valga urgentemente
+	B_LogEntry (TOPIC_Addon_RingOfWater,"El Mago de Agua Vatras me informarÃ¡ sobre ese 'Anillo de Agua'."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Gegner
@@ -755,7 +755,7 @@ instance DIA_Addon_Cavalorn_Feinde (C_INFO)
 	condition	= DIA_Addon_Cavalorn_Feinde_Condition;
 	information	= DIA_Addon_Cavalorn_Feinde_Info;
 	permanent 	= FALSE;
-	description	= "¿No erais tú y tu gente enemigos de los Magos de Agua?";
+	description	= "Â¿No erais tÃº y tu gente enemigos de los Magos de Agua?";
 };
 func int DIA_Addon_Cavalorn_Feinde_Condition ()
 {
@@ -766,10 +766,10 @@ func int DIA_Addon_Cavalorn_Feinde_Condition ()
 };
 func void DIA_Addon_Cavalorn_Feinde_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_Feinde_15_00"); //¿No erais tú y tu gente enemigos de los Magos de Agua?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_01"); //Esa época disparatada se acabó. Ya no hay 'Campamento Nuevo' y 'Campamento Viejo'.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_Feinde_15_00"); //Â¿No erais tÃº y tu gente enemigos de los Magos de Agua?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_01"); //Esa Ã©poca disparatada se acabÃ³. Ya no hay 'Campamento Nuevo' y 'Campamento Viejo'.
 	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_02"); //Ya que no existe la colonia penal, la gente va por su cuenta.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_03"); //A la mayoría de antiguos prisioneros como yo aún nos persiguen.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_03"); //A la mayorÃ­a de antiguos prisioneros como yo aÃºn nos persiguen.
 	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_04"); //Los Magos de Agua pudieron anular mi condena y ahora puedo desplazarme con libertad.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -782,7 +782,7 @@ instance DIA_Addon_Cavalorn_KdWTask (C_INFO)
 	condition	= DIA_Addon_Cavalorn_KdWTask_Condition;
 	information	= DIA_Addon_Cavalorn_KdWTask_Info;
 	permanent 	= FALSE;
-	description	= "¿Qué hacen ahora los Magos de Agua?";
+	description	= "Â¿QuÃ© hacen ahora los Magos de Agua?";
 };
 func int DIA_Addon_Cavalorn_KdWTask_Condition ()
 {
@@ -794,10 +794,10 @@ func int DIA_Addon_Cavalorn_KdWTask_Condition ()
 };
 func void DIA_Addon_Cavalorn_KdWTask_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_00"); //¿Qué hacen ahora los Magos de Agua?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_01"); //Preparan algo grandioso. Tiene que ver con una región desconocida de la isla.
-	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_02"); //¿Una región desconocida? ¿Y dónde se supone que está?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_03"); //No puedo decirte más. Habla con Vatras en Khorinis.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_00"); //Â¿QuÃ© hacen ahora los Magos de Agua?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_01"); //Preparan algo grandioso. Tiene que ver con una regiÃ³n desconocida de la isla.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_02"); //Â¿Una regiÃ³n desconocida? Â¿Y dÃ³nde se supone que estÃ¡?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_03"); //No puedo decirte mÃ¡s. Habla con Vatras en Khorinis.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -840,7 +840,7 @@ instance DIA_Addon_Cavalorn_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Ornament_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Ornament_Info;
 
-	description	 = 	"¿Buscas algo?";
+	description	 = 	"Â¿Buscas algo?";
 };
 
 func int DIA_Addon_Cavalorn_Ornament_Condition ()
@@ -854,27 +854,27 @@ func int DIA_Addon_Cavalorn_Ornament_Condition ()
 
 func void DIA_Addon_Cavalorn_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_00"); //¿Buscas algo?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_01"); //¿Se me nota? Pues sí, los Magos de Agua me han encargado buscar un ornamento perdido.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_00"); //Â¿Buscas algo?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_01"); //Â¿Se me nota? Pues sÃ­, los Magos de Agua me han encargado buscar un ornamento perdido.
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_02"); //Perfecto. A mi Nefarius me ha encargado lo mismo.
 
 	if (SC_KnowsRanger == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_03"); //¿Así que eres del 'Anillo de Agua'?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_03"); //Â¿AsÃ­ que eres del 'Anillo de Agua'?
 		if (SC_IsRanger == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_04"); //Sí.
+			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_04"); //SÃ­.
 		}
 		else
 		{
-			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_05"); //Aún no, pero estoy en ello.
+			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_05"); //AÃºn no, pero estoy en ello.
 		};
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_06"); //Me alegro. Así no tendré que hacerlo solo.
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_07"); //¿Ya has encontrado el ornamento?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_08"); //He encontrado el lugar donde debería de haber uno.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_09"); //Este círculo de piedra podría ser una de las estructuras que describió Nefarius.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_10"); //Ahora sólo hay que encontrar el mecanismo que tenemos que hallar.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_06"); //Me alegro. AsÃ­ no tendrÃ© que hacerlo solo.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_07"); //Â¿Ya has encontrado el ornamento?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_08"); //He encontrado el lugar donde deberÃ­a de haber uno.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_09"); //Este cÃ­rculo de piedra podrÃ­a ser una de las estructuras que describiÃ³ Nefarius.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_10"); //Ahora sÃ³lo hay que encontrar el mecanismo que tenemos que hallar.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Triggered
@@ -902,15 +902,15 @@ func int DIA_Addon_Cavalorn_Triggered_Condition ()
 func void DIA_Addon_Cavalorn_Triggered_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_Triggered_15_00"); //He probado el mecanismo. No hace nada.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_01"); //Los granjeros de Lobart tenían razón.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_02"); //Dijo que uno de ellos ya había estado manipulando estas piedras.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_03"); //Un centinela de piedra apareció de la nada y les atacó.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_04"); //Los granjeros llamaron a la milicia y éstos a los paladines, que acudieron a destruir al monstruo.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_05"); //Ya he buscado por toda la zona. Si hubiera un ornamento, ya los paladines lo tendrían.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_01"); //Los granjeros de Lobart tenÃ­an razÃ³n.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_02"); //Dijo que uno de ellos ya habÃ­a estado manipulando estas piedras.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_03"); //Un centinela de piedra apareciÃ³ de la nada y les atacÃ³.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_04"); //Los granjeros llamaron a la milicia y Ã©stos a los paladines, que acudieron a destruir al monstruo.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_05"); //Ya he buscado por toda la zona. Si hubiera un ornamento, ya los paladines lo tendrÃ­an.
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Triggered);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Uno de nosotros tiene que ir al barrio alto de la ciudad.", DIA_Addon_Cavalorn_Triggered_Pal );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Después iré allí y les pediré que devuevan el ornamento.", DIA_Addon_Cavalorn_Triggered_OBack );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "DespuÃ©s irÃ© allÃ­ y les pedirÃ© que devuevan el ornamento.", DIA_Addon_Cavalorn_Triggered_OBack );
 };
 func void B_Cavalorn_Triggered_Wohin ()
 {
@@ -933,7 +933,7 @@ func void DIA_Addon_Cavalorn_Triggered_OBack ()
 	Npc_RemoveInvItems	(self, ITAR_RANGER_Addon,	Npc_HasItems (self, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(self, ITAR_Fake_RANGER,	Npc_HasItems (self, ITAR_Fake_RANGER ) );
 	AI_EquipBestArmor (self); 
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_OBack_15_00"); //Entonces iré a pedirles que devuelvan el ornamento.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_OBack_15_00"); //Entonces irÃ© a pedirles que devuelvan el ornamento.
 	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_OBack_08_01"); //Muy bien.
 	B_Cavalorn_Triggered_Wohin ();
 };
@@ -946,7 +946,7 @@ func void DIA_Addon_Cavalorn_Triggered_Pal ()
 	Npc_RemoveInvItems	(self, ITAR_Fake_RANGER,	Npc_HasItems (self, ITAR_Fake_RANGER ) );
 	AI_EquipBestArmor (self); 
 	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_Pal_15_00"); //Uno de nosotros tiene que ir al barrio alto de la ciudad.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Pal_08_01"); //Yo no tengo tiempo. Tendrás que hacerlo tú.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Pal_08_01"); //Yo no tengo tiempo. TendrÃ¡s que hacerlo tÃº.
 	B_Cavalorn_Triggered_Wohin ();
 };
 
@@ -974,7 +974,7 @@ func int DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition ()
 func void DIA_Addon_Cavalorn_GotOrnaFromHagen_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cavalorn_GotOrnaFromHagen_15_00"); //Lord Hagen me ha dado el ornamento perdido.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_GotOrnaFromHagen_08_01"); //¿Ves? Estaba seguro que lo tenían los paladines.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_GotOrnaFromHagen_08_01"); //Â¿Ves? Estaba seguro que lo tenÃ­an los paladines.
 	B_GivePlayerXP (XP_Ambient);
 	MIS_Addon_Cavalorn_GetOrnamentFromPAL = LOG_SUCCESS;
 };
@@ -989,7 +989,7 @@ instance DIA_Addon_Cavalorn_WannaLearn (C_INFO)
 	condition	= DIA_Addon_Cavalorn_WannaLearn_Condition;
 	information	= DIA_Addon_Cavalorn_WannaLearn_Info;
 	permanent 	= FALSE;
-	description	= "¿Puedes enseñarme algo?";
+	description	= "Â¿Puedes enseÃ±arme algo?";
 };
 
 func int DIA_Addon_Cavalorn_WannaLearn_Condition ()
@@ -1003,9 +1003,9 @@ func int DIA_Addon_Cavalorn_WannaLearn_Condition ()
 
 func void DIA_Addon_Cavalorn_WannaLearn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_WannaLearn_15_00"); //¿Puedes enseñarme algo?
+	AI_Output (other, self, "DIA_Addon_Cavalorn_WannaLearn_15_00"); //Â¿Puedes enseÃ±arme algo?
 	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_01"); //Claro, ya lo sabes. Esos tipos te han sacado hasta la sangre.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_02"); //No te acuerdas de nada, ¿no es cierto?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_02"); //No te acuerdas de nada, Â¿no es cierto?
 	
 	Cavalorn_Addon_TeachPlayer = TRUE;
 	Log_CreateTopic (Topic_OutTeacher,LOG_NOTE);
@@ -1056,7 +1056,7 @@ func VOID DIA_Addon_Cavalorn_TEACH_Choices ()
 func void DIA_Addon_Cavalorn_TEACH_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Cavalorn_TEACH_15_00"); //Quiero aprender tus habilidades.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_TEACH_08_01"); //Claro. ¿Qué quieres aprender?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_TEACH_08_01"); //Claro. Â¿QuÃ© quieres aprender?
 	
 	Addon_Cavalorn_Merke_Bow = other.HitChance[NPC_TALENT_BOW];
 	Addon_Cavalorn_Merke_1h =  other.HitChance[NPC_TALENT_1H];
@@ -1068,7 +1068,7 @@ FUNC VOID DIA_Addon_Cavalorn_Teach_Sneak ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 		{
-			AI_Output			(self, other, "DIA_Addon_Cavalorn_Teach_Sneak_08_00"); //Con suelas blandas, es más fácil acercarse a los adversarios sin que ellos se den cuenta.
+			AI_Output			(self, other, "DIA_Addon_Cavalorn_Teach_Sneak_08_00"); //Con suelas blandas, es mÃ¡s fÃ¡cil acercarse a los adversarios sin que ellos se den cuenta.
 		};
 
 	DIA_Addon_Cavalorn_TEACH_Choices ();

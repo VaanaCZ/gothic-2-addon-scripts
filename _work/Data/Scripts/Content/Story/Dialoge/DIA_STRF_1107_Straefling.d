@@ -40,8 +40,8 @@ func int DIA_STRF_1107_FINGER_Condition ()
 };
 func void DIA_STRF_1107_FINGER_Info ()
 {
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //¡Aparta las manos de mis cazuelas! Nadie toca mis cazuelas, ¡¿entendido?!
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Soy responsable de la comida ¡y eso significa que nadie más puede andar por aquí! ¡Espero haberme explicado con claridad!
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Â¡Aparta las manos de mis cazuelas! Nadie toca mis cazuelas, Â¡Â¿entendido?!
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Soy responsable de la comida Â¡y eso significa que nadie mÃ¡s puede andar por aquÃ­! Â¡Espero haberme explicado con claridad!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info COOK
@@ -51,7 +51,7 @@ instance DIA_STRF_1107_COOK		(C_INFO)
 	npc			 = 	STRF_1107_Straefling;
 	condition	 = 	DIA_STRF_1107_COOK_Condition;
 	information	 = 	DIA_STRF_1107_COOK_Info;
-	description	 =  "¿Y a ti quién te eligió como cocinero?";
+	description	 =  "Â¿Y a ti quiÃ©n te eligiÃ³ como cocinero?";
 };
 
 func int DIA_STRF_1107_COOK_Condition ()
@@ -63,9 +63,9 @@ func int DIA_STRF_1107_COOK_Condition ()
 };
 func void DIA_STRF_1107_COOK_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //¿Y a ti quién te eligió como cocinero?
-	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Fue el comandante Garond. Antes de convertirme en prisionero, solía ser el cocinero del Jabalí Rugiente.
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //¿Y por qué te encerraron?
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //Â¿Y a ti quiÃ©n te eligiÃ³ como cocinero?
+	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Fue el comandante Garond. Antes de convertirme en prisionero, solÃ­a ser el cocinero del JabalÃ­ Rugiente.
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //Â¿Y por quÃ© te encerraron?
 	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //Hubo un malentendido entre un cliente, un cuchillo de carnicero y yo.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -78,7 +78,7 @@ instance DIA_STRF_1107_PERM		(C_INFO)
 	condition	 = 	DIA_STRF_1107_PERM_Condition;
 	information	 = 	DIA_STRF_1107_PERM_Info;
 	permanent	 =  TRUE;
-	description	 =  "¿Alguna novedad?";
+	description	 =  "Â¿Alguna novedad?";
 };
 
 func int DIA_STRF_1107_PERM_Condition ()
@@ -90,8 +90,8 @@ func int DIA_STRF_1107_PERM_Condition ()
 };
 func void DIA_STRF_1107_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //¿Alguna novedad?
-	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Si quieres enterarte de las noticias, pregunta a los caballeros. Yo no soy más que un cocinero preso.
+	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //Â¿Alguna novedad?
+	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Si quieres enterarte de las noticias, pregunta a los caballeros. Yo no soy mÃ¡s que un cocinero preso.
 };
  
 

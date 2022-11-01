@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -9,7 +9,7 @@ const string TOPIC_Addon_RatHunt		= 	"Caza de ratas";
 const string TOPIC_Addon_BringMeat		=	"Carne para Morgan";
 const string TOPIC_Addon_BanditsTower 	=	"La torre";
 const string TOPIC_Addon_HolOwen		= 	"Madera para la empalizada";
-const string TOPIC_Addon_Kompass		=	"La brújula de Garett";
+const string TOPIC_Addon_Kompass		=	"La brÃºjula de Garett";
 const string TOPIC_Addon_RoastGrog		=	"Ponche para el cocinero";
 const string TOPIC_Addon_BrandonBooze	=	"Una bebida para Brandon";
 const string TOPIC_Addon_MorganBeach	=	"La playa del norte";
@@ -21,24 +21,24 @@ const string TOPIC_Addon_ScoutBandits	=	"Espiando a los bandidos";
 const string TOPIC_Addon_MalcomsStunt	=	"Malcom";
 
 
-//-------- Addon Händler -----------
+//-------- Addon HÃ¤ndler -----------
 
 const string Topic_Addon_PIR_Trader  = "Comerciando con los piratas";	
 
 //-------- Addon Lehrer ------------
-const string Topic_Addon_PIR_Teacher = "Lección de los piratas";
+const string Topic_Addon_PIR_Teacher = "LecciÃ³n de los piratas";
 
 
 
 //Inhalte:
 
-const string Log_Text_Addon_ScoutBandits	=	"Los bandidos tienen una mina de oro. Por eso están aquí.";
+const string Log_Text_Addon_ScoutBandits	=	"Los bandidos tienen una mina de oro. Por eso estÃ¡n aquÃ­.";
 
 //Teacher
 
-const string Log_Text_Addon_HenryTeach		=	"Henry puede enseñarme a luchar con armas de dos manos y ballestas.";
-const string Log_Text_Addon_MorganTeach		=	"Morgan puede enseñarme a luchar con armas de una mano.";
-const string Log_Text_Addon_BrandonTeach	=	"Brandon puede enseñarme a fortalecerme y a ser más diestro.";
+const string Log_Text_Addon_HenryTeach		=	"Henry puede enseÃ±arme a luchar con armas de dos manos y ballestas.";
+const string Log_Text_Addon_MorganTeach		=	"Morgan puede enseÃ±arme a luchar con armas de una mano.";
+const string Log_Text_Addon_BrandonTeach	=	"Brandon puede enseÃ±arme a fortalecerme y a ser mÃ¡s diestro.";
 
 //Trader
 
@@ -46,13 +46,13 @@ const string Log_Text_Addon_GarettTrade	=	"Garret es el comerciante de los pirat
 
 const string Log_Text_Addon_SamuelTrade	=	"Samuel es el destilador. Vende todo tipo de alcohol.";
 
-//	Sprüche
+//	SprÃ¼che
 
 const string Log_Text_Addon_TalentRune_Whirlwind	="Ingredientes para la runa 'Torbellino': 1 ala";
 const string Log_Text_Addon_TalentRune_Icelance		="Ingredientes para la runa 'Lanza': 1 cuarzo glacial";
-const string Log_Text_Addon_TalentRune_Geyser		="Ingredientes para la runa 'Géiser': 1 aguamarina";
-const string Log_Text_Addon_TalentRune_Waterfist	="Ingredientes para la runa 'Puño de agua': 1 aguamarina y 1 cuarzo de la montaña";
-const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredientes para la runa 'Tormenta': 1 cuarzo de la montaña y 1 ala.";
+const string Log_Text_Addon_TalentRune_Geyser		="Ingredientes para la runa 'GÃ©iser': 1 aguamarina";
+const string Log_Text_Addon_TalentRune_Waterfist	="Ingredientes para la runa 'PuÃ±o de agua': 1 aguamarina y 1 cuarzo de la montaÃ±a";
+const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredientes para la runa 'Tormenta': 1 cuarzo de la montaÃ±a y 1 ala.";
 
 //##########################################
 //		Gothic 2
@@ -63,10 +63,10 @@ const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredientes para la runa 
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
-const string TOPIC_RescueBennet		=	"Bennet está en la cárcel.";
+const string TOPIC_RescueBennet		=	"Bennet estÃ¡ en la cÃ¡rcel.";
 const string Topic_Ship				=	"Necesito un barco.";
-const string Topic_Crew				=	"Sin tripulación, no habrá viaje."; 
-const string Topic_Captain			=	"¿Quién será mi capitán?"; 	
+const string Topic_Crew				=	"Sin tripulaciÃ³n, no habrÃ¡ viaje."; 
+const string Topic_Captain			=	"Â¿QuiÃ©n serÃ¡ mi capitÃ¡n?"; 	
 
 // ------ Kapitel 4 ------
 // ------ Kapitel 5 ------

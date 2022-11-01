@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Juan_HI   (C_INFO)
 	condition   = DIA_Addon_Juan_HI_Condition;
 	information = DIA_Addon_Juan_HI_Info;
 	permanent   = FALSE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };
 FUNC INT DIA_Addon_Juan_HI_Condition()
 {	
@@ -71,12 +71,12 @@ FUNC INT DIA_Addon_Juan_HI_Condition()
 };
 FUNC VOID DIA_Addon_Juan_HI_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_HI_15_00");//¿Qué tal todo?
-	AI_Output (self,other,"DIA_Addon_Juan_HI_13_01");//¿Qué quieres? ¿Tienes algo que contarme? Si no, lárgate.
+	AI_Output (other,self,"DIA_Addon_Juan_HI_15_00");//Â¿QuÃ© tal todo?
+	AI_Output (self,other,"DIA_Addon_Juan_HI_13_01");//Â¿QuÃ© quieres? Â¿Tienes algo que contarme? Si no, lÃ¡rgate.
 	
 	if !Npc_IsDead (Freund)
 	{
-		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//De lo contrario, mi amigo te hará picadillo. ¿Lo captas?
+		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//De lo contrario, mi amigo te harÃ¡ picadillo. Â¿Lo captas?
 		B_StartOtherRoutine (Freund,"STAND");
 	};
 };	
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_Juan_Losung   (C_INFO)
 	condition   = DIA_Addon_Juan_Losung_Condition;
 	information = DIA_Addon_Juan_Losung_Info;
 	permanent   = FALSE;
-	description = "Dicen que vendes cosas interesantes…";
+	description = "Dicen que vendes cosas interesantesâ€¦";
 };
 FUNC INT DIA_Addon_Juan_Losung_Condition()
 {	
@@ -103,12 +103,12 @@ FUNC INT DIA_Addon_Juan_Losung_Condition()
 };
 FUNC VOID DIA_Addon_Juan_Losung_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Dicen que tienes mercancía interesante que ofrecer
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//Y qué. Esteban quiere tomarme el pelo, ¿eh? Hago todo el trabajo y me escondo aquí durante días, en este miserable agujero
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//…y él envía a alguien para… ¿traer la mercancía? ¡No soy un almacén!
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//Sí, ¿y? Eso no es mi problema.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Pero yo lo CONVIERTO en tu problema. Quieres el envío. Bien, ¡pues págalo!
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Tú consigue el oro de Esteban, Raven o quien quieras. No me importa. ¡Quien quiera lo que traigo, tendrá que pagar por ello!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Dicen que tienes mercancÃ­a interesante que ofrecer
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//Y quÃ©. Esteban quiere tomarme el pelo, Â¿eh? Hago todo el trabajo y me escondo aquÃ­ durante dÃ­as, en este miserable agujero
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//â€¦y Ã©l envÃ­a a alguien paraâ€¦ Â¿traer la mercancÃ­a? Â¡No soy un almacÃ©n!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//SÃ­, Â¿y? Eso no es mi problema.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Pero yo lo CONVIERTO en tu problema. Quieres el envÃ­o. Bien, Â¡pues pÃ¡galo!
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//TÃº consigue el oro de Esteban, Raven o quien quieras. No me importa. Â¡Quien quiera lo que traigo, tendrÃ¡ que pagar por ello!
 };
 
 //---------------------------------------------------------------------
@@ -121,7 +121,7 @@ INSTANCE DIA_Addon_Juan_AufsMaul (C_INFO)
 	condition   = DIA_Addon_Juan_AufsMaul_Condition;
 	information = DIA_Addon_Juan_AufsMaul_Info;
 	permanent   = FALSE;
-	description = "No me envía Esteban.";
+	description = "No me envÃ­a Esteban.";
 };
 FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 {	
@@ -132,8 +132,8 @@ FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 };
 FUNC VOID DIA_Addon_Juan_AufsMaul_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //¡No vengo de parte de Esteban!
-	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //¿Oh? Entonces… eh… ¡Un segundo! Quieto, tienes un bicho en el hombro.
+	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //Â¡No vengo de parte de Esteban!
+	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Â¿Oh? Entoncesâ€¦ ehâ€¦ Â¡Un segundo! Quieto, tienes un bicho en el hombro.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);

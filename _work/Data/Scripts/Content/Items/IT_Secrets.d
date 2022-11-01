@@ -58,7 +58,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_Ringfisch (C_Item)
 {	
-	name 				=	"Pez pequeÒo";
+	name 				=	"Pez peque√±o";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -116,7 +116,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 //------------- 25 Gold -----------------------
 INSTANCE ItSe_GoldPocket25	(C_Item)
 {
-	name 				=	"BolsÛn de cuero";
+	name 				=	"Bols√≥n de cuero";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -145,7 +145,7 @@ FUNC VOID GoldPocket25 ()
 //------------- 50 Gold -----------------------
 INSTANCE ItSe_GoldPocket50	(C_Item)
 {
-	name 				=	"BolsÛn de cuero";
+	name 				=	"Bols√≥n de cuero";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -161,7 +161,7 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Est· llena de monedas.";
+	TEXT[2]				= 	"Est√° llena de monedas.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -174,7 +174,7 @@ FUNC VOID GoldPocket50 ()
 //------------- 100 Gold -----------------------
 INSTANCE ItSe_GoldPocket100	(C_Item)
 {
-	name 				=	"BolsÛn de cuero";
+	name 				=	"Bols√≥n de cuero";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -203,7 +203,7 @@ FUNC VOID GoldPocket100 ()
 //------------- Hannas Beutel -----------------------
 INSTANCE ItSe_HannasBeutel	(C_Item)
 {
-	name 				=	"BolsÛn de cuero";
+	name 				=	"Bols√≥n de cuero";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

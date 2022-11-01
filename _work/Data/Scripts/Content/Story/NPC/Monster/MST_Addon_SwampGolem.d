@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Addon_SwampGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Gólem de la ciénaga";
+	name							=	"GÃ³lem de la ciÃ©naga";
 	guild							=	GIL_SWAMPGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPGOLEM;
 	level							=	25;

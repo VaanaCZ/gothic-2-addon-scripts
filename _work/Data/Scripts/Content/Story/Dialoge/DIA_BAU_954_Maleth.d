@@ -8,7 +8,7 @@ INSTANCE DIA_Maleth_EXIT   (C_INFO)
 	condition   = DIA_Maleth_EXIT_Condition;
 	information = DIA_Maleth_EXIT_Info;
 	permanent   = TRUE;
-	description = "¡Tengo que irme!";
+	description = "Â¡Tengo que irme!";
 };
 FUNC INT DIA_Maleth_EXIT_Condition()
 {
@@ -52,17 +52,17 @@ func int DIA_Maleth_Hallo_Condition ()
 
 func void DIA_Maleth_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Maleth_Hallo_08_00"); //¡Eh, forastero!
+	AI_Output (self, other, "DIA_Maleth_Hallo_08_00"); //Â¡Eh, forastero!
 
 	if (hero.guild == GIL_NONE)
 		{
 		
 			if (Npc_GetDistToWP(self,"NW_FARM1_PATH_CITY_SHEEP_09") < 500)
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_01"); //He visto que salías de las montañas.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_01"); //He visto que salÃ­as de las montaÃ±as.
 			};
-			AI_Output (self, other, "DIA_Maleth_Hallo_08_02"); //Alégrate de no haber pasado por aquí hace tres semanas.
-			AI_Output (self, other, "DIA_Maleth_Hallo_08_03"); //Te habríamos tomado por un preso fugado. ¡Nos los cargamos en un periquete!
+			AI_Output (self, other, "DIA_Maleth_Hallo_08_02"); //AlÃ©grate de no haber pasado por aquÃ­ hace tres semanas.
+			AI_Output (self, other, "DIA_Maleth_Hallo_08_03"); //Te habrÃ­amos tomado por un preso fugado. Â¡Nos los cargamos en un periquete!
 			
 			if (Npc_HasEquippedArmor(other) == FALSE) 
 			{
@@ -70,16 +70,16 @@ func void DIA_Maleth_Hallo_Info ()
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_05"); //Cuando llegaste, parecías agotado.
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_06"); //¡Ya casi vuelves a parecer humano!
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_05"); //Cuando llegaste, parecÃ­as agotado.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_06"); //Â¡Ya casi vuelves a parecer humano!
 			};
 		};
 
-	AI_Output (self, other, "DIA_Maleth_Hallo_08_07"); //(Con desconfianza) ¿Qué quieres?
+	AI_Output (self, other, "DIA_Maleth_Hallo_08_07"); //(Con desconfianza) Â¿QuÃ© quieres?
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Banditen Überfall
+//	Banditen Ãœberfall
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Maleth_BANDITS		(C_INFO) //E1
 {
@@ -88,7 +88,7 @@ instance DIA_Maleth_BANDITS		(C_INFO) //E1
 	condition	= DIA_Maleth_BANDITS_Condition;
 	information	= DIA_Maleth_BANDITS_Info;
 	permanent   = FALSE;
-	description	= "Los bandidos me atacaron en las montañas.";
+	description	= "Los bandidos me atacaron en las montaÃ±as.";
 };
 
 func int DIA_Maleth_BANDITS_Condition ()
@@ -102,9 +102,9 @@ func int DIA_Maleth_BANDITS_Condition ()
 
 func void DIA_Maleth_BANDITS_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BANDITS_15_00"); //Los bandidos me atacaron en las montañas.
-	AI_Output (self, other, "DIA_Maleth_BANDITS_08_01"); //¡Chusma asquerosa! ¡Seguramente sean los mismos bastardos que se llevaron anoche una de nuestras ovejas!
-	AI_Output (self, other, "DIA_Maleth_BANDITS_08_02"); //Has tenido mucha suerte. La mayoría de la gente no sale viva.
+	AI_Output (other, self, "DIA_Maleth_BANDITS_15_00"); //Los bandidos me atacaron en las montaÃ±as.
+	AI_Output (self, other, "DIA_Maleth_BANDITS_08_01"); //Â¡Chusma asquerosa! Â¡Seguramente sean los mismos bastardos que se llevaron anoche una de nuestras ovejas!
+	AI_Output (self, other, "DIA_Maleth_BANDITS_08_02"); //Has tenido mucha suerte. La mayorÃ­a de la gente no sale viva.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ instance DIA_Maleth_BanditsDEAD	(C_INFO) //E2
 	condition	= DIA_Maleth_BanditsDEAD_Condition;
 	information	= DIA_Maleth_BanditsDEAD_Info;
 	permanent   = FALSE;
-	description	= "Esos bandidos ya no te incordiarán...";
+	description	= "Esos bandidos ya no te incordiarÃ¡n...";
 };
 
 func int DIA_Maleth_BanditsDEAD_Condition ()
@@ -133,15 +133,15 @@ func int DIA_Maleth_BanditsDEAD_Condition ()
 
 func void DIA_Maleth_BanditsDEAD_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_00"); //Esos bandidos ya no te incordiarán...
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_01"); //¿Por qué? ¿Han muerto?
+	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_00"); //Esos bandidos ya no te incordiarÃ¡n...
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_01"); //Â¿Por quÃ©? Â¿Han muerto?
 	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_02"); //Se pelearon con la persona equivocada...
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_03"); //¡Gracias a Innos! Ten. No es gran cosa, pero quiero que te lo quedes.
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_03"); //Â¡Gracias a Innos! Ten. No es gran cosa, pero quiero que te lo quedes.
 	B_GiveInvItems (self, other, ItFo_Wine, 3);
 	
 	MIS_Maleth_Bandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MalethKillBandits);
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_04"); //¡Se lo contaré a los demás!
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_04"); //Â¡Se lo contarÃ© a los demÃ¡s!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -154,7 +154,7 @@ instance DIA_Maleth_BanditsALIVE (C_INFO) //E2
 	condition	= DIA_Maleth_BanditsALIVE_Condition;
 	information	= DIA_Maleth_BanditsALIVE_Info;
 	permanent   = FALSE;
-	description	= "Sé dónde está el escondite de los bandidos...";
+	description	= "SÃ© dÃ³nde estÃ¡ el escondite de los bandidos...";
 };
 
 func int DIA_Maleth_BanditsALIVE_Condition ()
@@ -173,15 +173,15 @@ func int DIA_Maleth_BanditsALIVE_Condition ()
 
 func void DIA_Maleth_BanditsALIVE_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BanditsALIVE_15_00"); //Sé dónde está el escondite de los bandidos...
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_01"); //¿Quieres atacarlos? ¡No cuentes conmigo! ¡Es demasiado peligroso!
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_02"); //¡Además, tengo que cuidar de mis ovejas!
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_03"); //Pero si crees que puedes librarte de esa gentuza, todos los habitantes de la granja te estarían muy agradecidos.
+	AI_Output (other, self, "DIA_Maleth_BanditsALIVE_15_00"); //SÃ© dÃ³nde estÃ¡ el escondite de los bandidos...
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_01"); //Â¿Quieres atacarlos? Â¡No cuentes conmigo! Â¡Es demasiado peligroso!
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_02"); //Â¡AdemÃ¡s, tengo que cuidar de mis ovejas!
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_03"); //Pero si crees que puedes librarte de esa gentuza, todos los habitantes de la granja te estarÃ­an muy agradecidos.
 	MIS_Maleth_Bandits = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Maleth,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Maleth,LOG_RUNNING);
-	B_LogEntry (TOPIC_Maleth,"Si derroto al jefe de los bandidos mientras voy de la torre de Xardas a la granja de Lobart, todos los de la granja me lo agradecerán.");
+	B_LogEntry (TOPIC_Maleth,"Si derroto al jefe de los bandidos mientras voy de la torre de Xardas a la granja de Lobart, todos los de la granja me lo agradecerÃ¡n.");
 	
 };
 
@@ -215,15 +215,15 @@ func void DIA_Maleth_ToTheCity_Info ()
 	
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_01"); //Con esa pinta, tendrás que sobornar a los guardias para que te dejen entrar.
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_02"); //Y tienes que saber lo que quieren oír.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_01"); //Con esa pinta, tendrÃ¡s que sobornar a los guardias para que te dejen entrar.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_02"); //Y tienes que saber lo que quieren oÃ­r.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_03"); //A lo mejor te dejan entrar... si les dices lo que quieren oír...
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_03"); //A lo mejor te dejan entrar... si les dices lo que quieren oÃ­r...
 	};
 	
-	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_04"); //¿Y qué es?
+	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_04"); //Â¿Y quÃ© es?
 	AI_Output (self, other, "DIA_Maleth_ToTheCity_08_05"); //Bueno, por ejemplo, que eres de la granja de Lobart y quieres ir al herrero de la ciudad.
 	
 	Log_CreateTopic (TOPIC_City,LOG_MISSION);
@@ -233,8 +233,8 @@ func void DIA_Maleth_ToTheCity_Info ()
 	
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_06"); //Pero eso no te servirá de nada. No tienes pinta de granjero.
-		B_LogEntry (TOPIC_City,"Por supuesto, antes tendré que disfrazarme de granjero.");
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_06"); //Pero eso no te servirÃ¡ de nada. No tienes pinta de granjero.
+		B_LogEntry (TOPIC_City,"Por supuesto, antes tendrÃ© que disfrazarme de granjero.");
 		
 	};
 	
@@ -245,7 +245,7 @@ func void DIA_Maleth_ToTheCity_Info ()
 	
 
 ///////////////////////////////////////////////////////////////////////
-//	Bessere Ausrüstung
+//	Bessere AusrÃ¼stung
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Maleth_Equipment		(C_INFO)
 {
@@ -254,7 +254,7 @@ instance DIA_Maleth_Equipment		(C_INFO)
 	condition	= DIA_Maleth_Equipment_Condition;
 	information	= DIA_Maleth_Equipment_Info;
 	permanent   = FALSE;
-	description	= "¡Necesito mejor equipo!";
+	description	= "Â¡Necesito mejor equipo!";
 };
 
 func int DIA_Maleth_Equipment_Condition ()
@@ -269,11 +269,11 @@ func int DIA_Maleth_Equipment_Condition ()
 
 func void DIA_Maleth_Equipment_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_Equipment_15_00"); //¡Necesito mejor equipo!
+	AI_Output (other, self, "DIA_Maleth_Equipment_15_00"); //Â¡Necesito mejor equipo!
 	AI_Output (self, other, "DIA_Maleth_Equipment_08_01"); //Ya me imagino, pero ahora mismo no podemos prescindir de nada.
 	if (!Npc_IsDead(Lobart))
 	{
-		AI_Output (self, other, "DIA_Maleth_Equipment_08_02"); //Si puedes pagarlo, Lobart te venderá algo.
+		AI_Output (self, other, "DIA_Maleth_Equipment_08_02"); //Si puedes pagarlo, Lobart te venderÃ¡ algo.
 		AI_Output (self, other, "DIA_Maleth_Equipment_08_03"); //Si no, ve a preguntarle si te puede dar trabajo.
 	};
 };
@@ -289,7 +289,7 @@ instance DIA_Maleth_LOBART		(C_INFO)
 	condition	= DIA_Maleth_LOBART_Condition;
 	information	= DIA_Maleth_LOBART_Info;
 	permanent   = FALSE;
-	description	= "¿Dónde está Lobart?";
+	description	= "Â¿DÃ³nde estÃ¡ Lobart?";
 };
 
 func int DIA_Maleth_LOBART_Condition ()
@@ -304,9 +304,9 @@ func int DIA_Maleth_LOBART_Condition ()
 
 func void DIA_Maleth_LOBART_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_LOBART_15_00"); //¿Dónde está Lobart?
-	AI_Output (self, other, "DIA_Maleth_LOBART_08_01"); //¡Pues en la granja! ¡La granja es suya!
-	AI_Output (self, other, "DIA_Maleth_LOBART_08_02"); //¡Y no le toques las narices! Ha sacudido y echado de la granja a un montón de vagos.
+	AI_Output (other, self, "DIA_Maleth_LOBART_15_00"); //Â¿DÃ³nde estÃ¡ Lobart?
+	AI_Output (self, other, "DIA_Maleth_LOBART_08_01"); //Â¡Pues en la granja! Â¡La granja es suya!
+	AI_Output (self, other, "DIA_Maleth_LOBART_08_02"); //Â¡Y no le toques las narices! Ha sacudido y echado de la granja a un montÃ³n de vagos.
 };
 
 
@@ -355,7 +355,7 @@ instance DIA_Maleth_PROBLEME		(C_INFO)
 	condition	 = 	DIA_Maleth_PROBLEME_Condition;
 	information	 = 	DIA_Maleth_PROBLEME_Info;
 
-	description	 = 	"¿Alguna novedad en los últimos días?";
+	description	 = 	"Â¿Alguna novedad en los Ãºltimos dÃ­as?";
 };
 
 func int DIA_Maleth_PROBLEME_Condition ()
@@ -368,47 +368,47 @@ func int DIA_Maleth_PROBLEME_Condition ()
 
 func void DIA_Maleth_PROBLEME_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_15_00"); //¿Alguna novedad en los últimos días?
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_15_00"); //Â¿Alguna novedad en los Ãºltimos dÃ­as?
 	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_01"); //Recorre el camino que lleva a la ciudad.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_02"); //Si te topas con un tipo que tiene una túnica negra, te enterarás de las novedades.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_02"); //Si te topas con un tipo que tiene una tÃºnica negra, te enterarÃ¡s de las novedades.
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 	Info_AddChoice	(DIA_Maleth_PROBLEME, DIALOG_BACK, DIA_Maleth_PROBLEME_Back );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "¿Cómo están las ovejas?", DIA_Maleth_PROBLEME_schafe );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "¿Ya han venido a verte los de las túnicas negras?", DIA_Maleth_PROBLEME_beidir );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Â¿CÃ³mo estÃ¡n las ovejas?", DIA_Maleth_PROBLEME_schafe );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Â¿Ya han venido a verte los de las tÃºnicas negras?", DIA_Maleth_PROBLEME_beidir );
 	
 };
 func void DIA_Maleth_PROBLEME_beidir ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_beidir_15_00"); //¿Ya han venido a verte los de las túnicas negras?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_beidir_08_01"); //Sí. Llevan unos días por aquí. En mi opinión, han salido directamente del infierno.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_beidir_15_00"); //Â¿Ya han venido a verte los de las tÃºnicas negras?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_beidir_08_01"); //SÃ­. Llevan unos dÃ­as por aquÃ­. En mi opiniÃ³n, han salido directamente del infierno.
 
 };
 
 func void DIA_Maleth_PROBLEME_schafe ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_15_00"); //¿Cómo están las ovejas?
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_15_00"); //Â¿CÃ³mo estÃ¡n las ovejas?
 	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_08_01"); //(Enojado) No finjas que te interesa. Tienes otros problemas.
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "¿Problemas yo? ¿Y tú qué sabes?", DIA_Maleth_PROBLEME_schafe_probleme );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Â¿Problemas yo? Â¿Y tÃº quÃ© sabes?", DIA_Maleth_PROBLEME_schafe_probleme );
 
 };
 func void DIA_Maleth_PROBLEME_schafe_probleme ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_15_00"); //¿Problemas yo? ¿Y tú qué sabes?
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_15_00"); //Â¿Problemas yo? Â¿Y tÃº quÃ© sabes?
 	
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_01"); //(Brusco) ¿Eres de la guardia de la ciudad o no? Entonces, haz algo con respecto a esos bastardos de las túnicas negras.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_01"); //(Brusco) Â¿Eres de la guardia de la ciudad o no? Entonces, haz algo con respecto a esos bastardos de las tÃºnicas negras.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_02"); //(Enojado) Los malditos mercenarios solo pensáis en una cosa: cómo meteros en el bolsillo el dinero de los demás.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_02"); //(Enojado) Los malditos mercenarios solo pensÃ¡is en una cosa: cÃ³mo meteros en el bolsillo el dinero de los demÃ¡s.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_03"); //Los nobles señores del monasterio deberíais hacer algo con respecto a esos encapuchados.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_03"); //Los nobles seÃ±ores del monasterio deberÃ­ais hacer algo con respecto a esos encapuchados.
 		};
 
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
@@ -417,21 +417,21 @@ func void DIA_Maleth_PROBLEME_schafe_probleme ()
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			Info_AddChoice	(DIA_Maleth_PROBLEME, "¿Qué te pasa?", DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag );
+			Info_AddChoice	(DIA_Maleth_PROBLEME, "Â¿QuÃ© te pasa?", DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag );
 		};
 };
 
 func void DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_00"); //¿Qué te pasa?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_01"); //La culpa la tiene ese aguardiente clandestino que me colocó Vino hace unas semanas.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_02"); //Apenas me acuerdo de nada, tío. Solo sé que desde entonces mi bastón ha desaparecido.
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_03"); //¿Y por eso montas tanto follón?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_04"); //Para ti resulta fácil decirlo. Como no es tuyo...
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_00"); //Â¿QuÃ© te pasa?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_01"); //La culpa la tiene ese aguardiente clandestino que me colocÃ³ Vino hace unas semanas.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_02"); //Apenas me acuerdo de nada, tÃ­o. Solo sÃ© que desde entonces mi bastÃ³n ha desaparecido.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_03"); //Â¿Y por eso montas tanto follÃ³n?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_04"); //Para ti resulta fÃ¡cil decirlo. Como no es tuyo...
 	
 	Log_CreateTopic (TOPIC_MalethsGehstock, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MalethsGehstock, LOG_RUNNING);
-	B_LogEntry (TOPIC_MalethsGehstock,"Maleth ha perdido su cayado. Estaba borracho como una cuba. Por lo que sé de él, nunca se aleja mucho de la granja de Lobart. Debería encontrarlo no muy lejos de allí."); 
+	B_LogEntry (TOPIC_MalethsGehstock,"Maleth ha perdido su cayado. Estaba borracho como una cuba. Por lo que sÃ© de Ã©l, nunca se aleja mucho de la granja de Lobart. DeberÃ­a encontrarlo no muy lejos de allÃ­."); 
 
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 };
@@ -439,7 +439,7 @@ func void DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag ()
 func void DIA_Maleth_PROBLEME_schafe_probleme_drohen ()
 {
 	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_15_00"); //Eh, cuidado con lo que dices, colega.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_08_01"); //No haces más que fanfarronear. Sería mejor que te fueras.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_08_01"); //No haces mÃ¡s que fanfarronear. SerÃ­a mejor que te fueras.
 };
 
 func void DIA_Maleth_PROBLEME_Back ()
@@ -457,7 +457,7 @@ instance DIA_Maleth_GEHSTOCK		(C_INFO)
 	condition	 = 	DIA_Maleth_GEHSTOCK_Condition;
 	information	 = 	DIA_Maleth_GEHSTOCK_Info;
 
-	description	 = 	"Creo que este bastón es tuyo.";
+	description	 = 	"Creo que este bastÃ³n es tuyo.";
 };
 
 func int DIA_Maleth_GEHSTOCK_Condition ()
@@ -471,13 +471,13 @@ func int DIA_Maleth_GEHSTOCK_Condition ()
 
 func void DIA_Maleth_GEHSTOCK_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_00"); //Creo que este bastón es tuyo.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_01"); //Magnífico. Yo...
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_02"); //Un momento. Antes paga por él.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_00"); //Creo que este bastÃ³n es tuyo.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_01"); //MagnÃ­fico. Yo...
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_02"); //Un momento. Antes paga por Ã©l.
 	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_03"); //Pero... no tengo gran cosa.
 	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_04"); //Entonces piensa en algo.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_05"); //Muy bien, a ver qué te parece esto. Ayer vi pasar unos bandidos con unas bolsas de oro.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_06"); //¿Si te digo dónde guardan el botón me devuelves el bastón?
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_05"); //Muy bien, a ver quÃ© te parece esto. Ayer vi pasar unos bandidos con unas bolsas de oro.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_06"); //Â¿Si te digo dÃ³nde guardan el botÃ³n me devuelves el bastÃ³n?
 	TOPIC_END_MalethsGehstock = TRUE;
 	B_GivePlayerXP (XP_FoundMalethsGehstock);
 
@@ -489,8 +489,8 @@ func void DIA_Maleth_GEHSTOCK_ok ()
 {
 	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_ok_15_00"); //De acuerdo.
 	B_GiveInvItems 		(other, self, ItMw_MalethsGehstock_MIS,1);
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_01"); //Muy bien. Ve al oeste, a ese bosquecillo. Allí encontrarás un barranco.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_02"); //En una cueva deberías encontrar algo.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_01"); //Muy bien. Ve al oeste, a ese bosquecillo. AllÃ­ encontrarÃ¡s un barranco.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_02"); //En una cueva deberÃ­as encontrar algo.
 
 	B_LogEntry (TOPIC_MalethsGehstock,"Maleth me ha dicho que hay un gran campamento de bandidos en los bosques que quedan al oeste de la granja de Lobart."); 
 	CreateInvItems 		(BDT_1024_MalethsBandit, ItMi_MalethsBanditGold,1);
@@ -534,7 +534,7 @@ func int DIA_Maleth_PERM3_Condition ()
 func void DIA_Maleth_PERM3_Info ()
 {
 	AI_Output			(other, self, "DIA_Maleth_PERM3_15_00"); //No te enfades tanto.
-	AI_Output			(self, other, "DIA_Maleth_PERM3_08_01"); //(Molesto) Lárgate.
+	AI_Output			(self, other, "DIA_Maleth_PERM3_08_01"); //(Molesto) LÃ¡rgate.
 	AI_StopProcessInfos (self);
 };
 

@@ -1,6 +1,6 @@
 func void B_FollowMe_Wisp ()
 {
-	AI_Output		(other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00"); //Sígueme.
+	AI_Output		(other, self, "DIA_Addon_WispDetector_FollowMe_Wisp_15_00"); //SÃ­gueme.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info EXIT 
@@ -35,7 +35,7 @@ instance DIA_Addon_WispDetector_DetectItems		(C_INFO)
 	information	 = 	DIA_Addon_WispDetector_DetectItems_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¡Encuentra algo para mí!";
+	description	 = 	"Â¡Encuentra algo para mÃ­!";
 };
 
 func int DIA_Addon_WispDetector_DetectItems_Condition ()
@@ -45,11 +45,11 @@ func int DIA_Addon_WispDetector_DetectItems_Condition ()
 
 func void DIA_Addon_WispDetector_DetectItems_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_WispDetector_DetectItems_15_00"); //¡Encuentra algo para mí!
+	AI_Output	(other, self, "DIA_Addon_WispDetector_DetectItems_15_00"); //Â¡Encuentra algo para mÃ­!
 
 	Info_ClearChoices	(DIA_Addon_WispDetector_DetectItems);
 
-	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Sígueme.", DIA_Addon_WispDetector_DetectItems_Follow );
+	Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "SÃ­gueme.", DIA_Addon_WispDetector_DetectItems_Follow );
 
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_RUNE] 	== TRUE)	
 	{	
@@ -61,7 +61,7 @@ func void DIA_Addon_WispDetector_DetectItems_Info ()
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Necesito armas de largo alcance y munición."				, DIA_Addon_WispDetector_DetectItems_FF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Necesito armas de largo alcance y municiÃ³n."				, DIA_Addon_WispDetector_DetectItems_FF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NF] 	== TRUE)		
 	{	
@@ -93,7 +93,7 @@ func void DIA_Addon_WispDetector_DetectItems_Follow ()
 
 func void DIA_Addon_WispDetector_DetectItems_ALL ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_ALL_15_00"); //¡Dame lo que encuentres!
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_ALL_15_00"); //Â¡Dame lo que encuentres!
 	WispSearching = WispSearch_ALL;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -133,7 +133,7 @@ func void DIA_Addon_WispDetector_DetectItems_NF ()
 
 func void DIA_Addon_WispDetector_DetectItems_FF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Necesito armas de largo alcance y munición.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Necesito armas de largo alcance y municiÃ³n.
 	WispSearching = WispSearch_FF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -166,7 +166,7 @@ instance DIA_Addon_WispDetector_Follow		(C_INFO)
 	information	 = 	DIA_Addon_WispDetector_Follow_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Sígueme.";
+	description	 = 	"SÃ­gueme.";
 };
 
 func int DIA_Addon_WispDetector_Follow_Condition ()

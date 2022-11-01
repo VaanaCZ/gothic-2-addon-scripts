@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_7_JOIN(C_INFO)
 	condition	= DIA_MIL_7_JOIN_Condition;
 	information	= DIA_MIL_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "¡Quiero alistarme en la milicia!";
+	description = "Â¡Quiero alistarme en la milicia!";
 };                       
 
 FUNC INT DIA_MIL_7_JOIN_Condition()
@@ -42,16 +42,16 @@ FUNC INT DIA_MIL_7_JOIN_Condition()
 
 FUNC VOID DIA_MIL_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_JOIN_15_00"); //¡Quiero alistarme en la milicia!
+	AI_Output (other, self, "DIA_MIL_7_JOIN_15_00"); //Â¡Quiero alistarme en la milicia!
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01"); //¡Ni siquiera eres ciudadano de Khorinis! ¿Por qué piensas que lord Andre debe aceptarte?
-		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02"); //¡Podría llegar cualquiera para hacerse con un arma y una armadura y luego desaparecer!
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01"); //Â¡Ni siquiera eres ciudadano de Khorinis! Â¿Por quÃ© piensas que lord Andre debe aceptarte?
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02"); //Â¡PodrÃ­a llegar cualquiera para hacerse con un arma y una armadura y luego desaparecer!
 		
 		if (C_NpcIsInQuarter (self) != Q_KASERNE)
 		{
-			AI_Output (other, self, "DIA_MIL_7_JOIN_15_03"); //¡Pero hablo en serio!
-			AI_Output (self, other, "DIA_MIL_7_JOIN_07_04"); //A mí no me lo digas, explícaselo a lord Andre. Le encontrarás en el cuartel.
+			AI_Output (other, self, "DIA_MIL_7_JOIN_15_03"); //Â¡Pero hablo en serio!
+			AI_Output (self, other, "DIA_MIL_7_JOIN_07_04"); //A mÃ­ no me lo digas, explÃ­caselo a lord Andre. Le encontrarÃ¡s en el cuartel.
 		};
 	}
 	else
@@ -69,7 +69,7 @@ INSTANCE DIA_MIL_7_PEOPLE(C_INFO)
 	condition	= DIA_MIL_7_PEOPLE_Condition;
 	information	= DIA_MIL_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Qué sabes de los paladines?";
+	description = "Â¿QuÃ© sabes de los paladines?";
 };                       
 
 FUNC INT DIA_MIL_7_PEOPLE_Condition()
@@ -82,10 +82,10 @@ FUNC INT DIA_MIL_7_PEOPLE_Condition()
 
 FUNC VOID DIA_MIL_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_PEOPLE_15_00"); //¿Qué sabes de los paladines?
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_01"); //No mucho. Nadie sabe por qué han venido. Ni siquiera los que pertenecemos a la guardia de la ciudad.
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02"); //Han tomado el control de la ciudad, han echado al gobernador de la cámara del consejo y han despojado al juez de su cargo.
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03"); //En mi opinión, está bien. Esos imbéciles presuntuosos necesitaban una lección de humildad.
+	AI_Output (other, self, "DIA_MIL_7_PEOPLE_15_00"); //Â¿QuÃ© sabes de los paladines?
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_01"); //No mucho. Nadie sabe por quÃ© han venido. Ni siquiera los que pertenecemos a la guardia de la ciudad.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02"); //Han tomado el control de la ciudad, han echado al gobernador de la cÃ¡mara del consejo y han despojado al juez de su cargo.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03"); //En mi opiniÃ³n, estÃ¡ bien. Esos imbÃ©ciles presuntuosos necesitaban una lecciÃ³n de humildad.
 };
 
 // *************************************************************************
@@ -97,7 +97,7 @@ INSTANCE DIA_MIL_7_LOCATION(C_INFO)
 	condition	= DIA_MIL_7_LOCATION_Condition;
 	information	= DIA_MIL_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué alternativas tengo en la ciudad?";
+	description = "Â¿QuÃ© alternativas tengo en la ciudad?";
 };                       
 
 FUNC INT DIA_MIL_7_LOCATION_Condition()
@@ -107,11 +107,11 @@ FUNC INT DIA_MIL_7_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_LOCATION_15_00"); //¿Qué alternativas tengo en la ciudad?
+	AI_Output (other, self, "DIA_MIL_7_LOCATION_15_00"); //Â¿QuÃ© alternativas tengo en la ciudad?
 	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_01"); //Si no quieres acabar en los bajos fondos del distrito del puerto, encuentra un empleo fijo. Pregunta en la parte baja de la ciudad, a lo mejor tienes suerte.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_02"); //Si tienes pensado quedarte un tiempo en la ciudad, deberías alistarte en la milicia, o por lo menos hacer instrucción de combate.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_03"); //Los instructores de combate del cuartel también adiestran a civiles.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_04"); //Los orcos no tardarán en llegar y, cuando lo hagan, te alegrarás de cada hora que hayas empleado en el campo de instrucción.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_02"); //Si tienes pensado quedarte un tiempo en la ciudad, deberÃ­as alistarte en la milicia, o por lo menos hacer instrucciÃ³n de combate.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_03"); //Los instructores de combate del cuartel tambiÃ©n adiestran a civiles.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_04"); //Los orcos no tardarÃ¡n en llegar y, cuando lo hagan, te alegrarÃ¡s de cada hora que hayas empleado en el campo de instrucciÃ³n.
 };
 
 // *************************************************************************
@@ -123,7 +123,7 @@ INSTANCE DIA_MIL_7_STANDARD(C_INFO)
 	condition	= DIA_MIL_7_STANDARD_Condition;
 	information	= DIA_MIL_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Qué hay de nuevo?";
+	description = "Â¿QuÃ© hay de nuevo?";
 };                       
 func INT DIA_MIL_7_STANDARD_Condition()
 {
@@ -131,7 +131,7 @@ func INT DIA_MIL_7_STANDARD_Condition()
 };
 FUNC VOID DIA_MIL_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_STANDARD_15_00"); //¿Qué hay de nuevo?
+	AI_Output (other, self, "DIA_MIL_7_STANDARD_15_00"); //Â¿QuÃ© hay de nuevo?
 		
 	if (Kapitel == 1)
 	{
@@ -139,7 +139,7 @@ FUNC VOID DIA_MIL_7_STANDARD_Info()
 		randy = Hlp_Random (2);
 		if (randy == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_MIL_7_STANDARD_07_00"); //Están desapareciendo ciudadanos poco a poco. Hasta ahora, no hemos podido averiguar qué les ha ocurrido. ¿Los orcos estarán implicados?
+			AI_Output (self,other,"DIA_Addon_MIL_7_STANDARD_07_00"); //EstÃ¡n desapareciendo ciudadanos poco a poco. Hasta ahora, no hemos podido averiguar quÃ© les ha ocurrido. Â¿Los orcos estarÃ¡n implicados?
 			
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
@@ -157,18 +157,18 @@ FUNC VOID DIA_MIL_7_STANDARD_Info()
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_02"); //Es hora de que los paladines acaben con la rebelión de los granjeros. El que infringe la ley ha de ser castigado, sobre todo ahora, que estamos en guerra.
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_02"); //Es hora de que los paladines acaben con la rebeliÃ³n de los granjeros. El que infringe la ley ha de ser castigado, sobre todo ahora, que estamos en guerra.
 	};
 
 	if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_03"); //Por lo visto, el mercenario acusado de asesinar a Lothar es inocente. Alguien encontró pruebas de que le habían tendido una trampa.
+			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_03"); //Por lo visto, el mercenario acusado de asesinar a Lothar es inocente. Alguien encontrÃ³ pruebas de que le habÃ­an tendido una trampa.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_04"); //Uno de los mercenarios de Onar asesinó al honorable paladín Lothar, pero al cerdo lo han pillado y ha dado con sus huesos en prisión.
+			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_04"); //Uno de los mercenarios de Onar asesinÃ³ al honorable paladÃ­n Lothar, pero al cerdo lo han pillado y ha dado con sus huesos en prisiÃ³n.
 		};
 	};
 
@@ -179,7 +179,7 @@ FUNC VOID DIA_MIL_7_STANDARD_Info()
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_06"); //Ya no hay dragones, pero los problemas no han acabado. Los orcos son los siguientes. ¡Resolveremos los problemas por orden!
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_06"); //Ya no hay dragones, pero los problemas no han acabado. Los orcos son los siguientes. Â¡Resolveremos los problemas por orden!
 	};
 };
 

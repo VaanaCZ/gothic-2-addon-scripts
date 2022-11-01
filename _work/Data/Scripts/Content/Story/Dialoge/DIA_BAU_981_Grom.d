@@ -31,7 +31,7 @@ instance DIA_Grom_HALLO		(C_INFO)
 	condition	 = 	DIA_Grom_HALLO_Condition;
 	information	 = 	DIA_Grom_HALLO_Info;
 
-	description	 = 	"¿Va todo bien?";
+	description	 = 	"Â¿Va todo bien?";
 };
 
 func int DIA_Grom_HALLO_Condition ()
@@ -41,25 +41,25 @@ func int DIA_Grom_HALLO_Condition ()
 
 func void DIA_Grom_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //¿Va todo bien?
-	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah, un peregrino desconocido. Estoy muy ocupado. ¿Qué quieres?
+	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Â¿Va todo bien?
+	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah, un peregrino desconocido. Estoy muy ocupado. Â¿QuÃ© quieres?
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
-	Info_AddChoice	(DIA_Grom_HALLO, "¿Qué cosas interesantes hay aquí para ver?", DIA_Grom_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Grom_HALLO, "¿Qué estás haciendo aquí?", DIA_Grom_HALLO_was );
+	Info_AddChoice	(DIA_Grom_HALLO, "Â¿QuÃ© cosas interesantes hay aquÃ­ para ver?", DIA_Grom_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Grom_HALLO, "Â¿QuÃ© estÃ¡s haciendo aquÃ­?", DIA_Grom_HALLO_was );
 };
 
 func void DIA_Grom_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //¿Qué cosas interesantes hay aquí para ver?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //De interés es una expresión adecuada. Si te internas en el bosque, te toparás con unos tipos bastante malvados.
+	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Â¿QuÃ© cosas interesantes hay aquÃ­ para ver?
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //De interÃ©s es una expresiÃ³n adecuada. Si te internas en el bosque, te toparÃ¡s con unos tipos bastante malvados.
 	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Miden unos tres metros, son peludos y tienen muy mal genio. No vayas si no eres lo bastante fuerte.
 };
 
 func void DIA_Grom_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //¿Qué haces aquí?
-	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Lo que suele hacer un leñador y cazador.
+	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Â¿QuÃ© haces aquÃ­?
+	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Lo que suele hacer un leÃ±ador y cazador.
 	Info_AddChoice	(DIA_Grom_HALLO, DIALOG_BACK, DIA_Grom_HALLO_BACK );
 };
 
@@ -79,7 +79,7 @@ INSTANCE DIA_Grom_AskTeacher (C_INFO)
 	condition	= DIA_Grom_AskTeacher_Condition;
 	information	= DIA_Grom_AskTeacher_Info;
 
-	description = "¿Qué me puedes enseñar acerca de la caza?";
+	description = "Â¿QuÃ© me puedes enseÃ±ar acerca de la caza?";
 };                       
 
 FUNC INT DIA_Grom_AskTeacher_Condition()
@@ -92,12 +92,12 @@ FUNC INT DIA_Grom_AskTeacher_Condition()
 
 FUNC VOID DIA_Grom_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //¿Puedes enseñarme algo del arte de cazar?
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Claro. Pero antes tráeme algo decente para comer. Me muero de hambre.
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Quiero una botella de leche, una barra de pan y un buen jamón, y luego te enseñaré lo que quieras.
+	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Â¿Puedes enseÃ±arme algo del arte de cazar?
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Claro. Pero antes trÃ¡eme algo decente para comer. Me muero de hambre.
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Quiero una botella de leche, una barra de pan y un buen jamÃ³n, y luego te enseÃ±arÃ© lo que quieras.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
-	B_LogEntry (TOPIC_GromAskTeacher,"Grom, el cazador, me enseñará lo que sabe si le llevo una botella de leche, pan y jamón."); 
+	B_LogEntry (TOPIC_GromAskTeacher,"Grom, el cazador, me enseÃ±arÃ¡ lo que sabe si le llevo una botella de leche, pan y jamÃ³n."); 
 };
 
 
@@ -112,7 +112,7 @@ INSTANCE DIA_Grom_PayTeacher (C_INFO)
 	condition	= DIA_Grom_PayTeacher_Condition;
 	information	= DIA_Grom_PayTeacher_Info;
  
- 	description = "Aquí tienes la comida que querías.";
+ 	description = "AquÃ­ tienes la comida que querÃ­as.";
 };                       
 
 FUNC INT DIA_Grom_PayTeacher_Condition()
@@ -130,8 +130,8 @@ FUNC VOID DIA_Grom_PayTeacher_Info()
 	B_GiveInvItems (other, self, Itfo_Milk, 1);
 	B_GiveInvItems (other, self, Itfo_Bread, 1);
 	B_GiveInvItems (other, self, Itfo_Bacon, 1);
-	AI_Output(other,self,"DIA_Grom_PayTeacher_15_00"); //Aquí tienes la comida que querías.
-	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01"); //Estupendo. ¿Y ahora qué?
+	AI_Output(other,self,"DIA_Grom_PayTeacher_15_00"); //AquÃ­ tienes la comida que querÃ­as.
+	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01"); //Estupendo. Â¿Y ahora quÃ©?
 	Grom_TeachAnimalTrophy = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -146,7 +146,7 @@ instance DIA_Grom_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grom_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grom_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Enséñame a cazar.";
+	description	 = 	"EnsÃ©Ã±ame a cazar.";
 };
 
 func int DIA_Grom_TEACHHUNTING_Condition ()
@@ -159,7 +159,7 @@ func int DIA_Grom_TEACHHUNTING_Condition ()
 
 func void DIA_Grom_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //Enséñame a cazar.
+	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //EnsÃ©Ã±ame a cazar.
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -168,7 +168,7 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			)
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //¿Qué quieres aprender?
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Â¿QuÃ© quieres aprender?
 		
 
 			Info_AddChoice		(DIA_Grom_TEACHHUNTING, DIALOG_BACK, DIA_Grom_TEACHHUNTING_BACK);
@@ -183,11 +183,11 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Extraer corazón",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Extraer corazÃ³n",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Quitar mandíbulas",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Quitar mandÃ­bulas",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
@@ -196,7 +196,7 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //No puedo enseñarte nada que ya no sepas.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //No puedo enseÃ±arte nada que ya no sepas.
 		};
 };
 
@@ -210,7 +210,7 @@ func void DIA_Grom_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Haz un corte en las patas del animal para poder despellejarle. Hazlo desde delante hacia atrás, no al revés.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Haz un corte en las patas del animal para poder despellejarle. Hazlo desde delante hacia atrÃ¡s, no al revÃ©s.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -220,7 +220,7 @@ func void DIA_Grom_TEACHHUNTING_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Al sacar los dientes, procura que no se rompan al desprenderse del cráneo.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Al sacar los dientes, procura que no se rompan al desprenderse del crÃ¡neo.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Para arrancar el corazón del animal, tienes que hacer un corte diestro en el pecho. No obstante, solo suele merecer la pena si se trata de un animal especial o de bestias mágicas.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Para arrancar el corazÃ³n del animal, tienes que hacer un corte diestro en el pecho. No obstante, solo suele merecer la pena si se trata de un animal especial o de bestias mÃ¡gicas.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Las mandíbulas de un reptador de la mina o de un incursor de campo se sacan con una palanca metálica muy fuerte. Están profundamente alojadas en el cráneo del animal.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Las mandÃ­bulas de un reptador de la mina o de un incursor de campo se sacan con una palanca metÃ¡lica muy fuerte. EstÃ¡n profundamente alojadas en el crÃ¡neo del animal.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -250,7 +250,7 @@ func void DIA_Grom_TEACHHUNTING_ShadowHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Para arrancar el cuerno de una bestia de sombra, agarra con todas tus fuerzas el cráneo, tira del cuerno y córtalo con una hoja bien dura.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Para arrancar el cuerno de una bestia de sombra, agarra con todas tus fuerzas el crÃ¡neo, tira del cuerno y cÃ³rtalo con una hoja bien dura.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

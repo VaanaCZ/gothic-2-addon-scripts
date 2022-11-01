@@ -32,7 +32,7 @@ FUNC VOID DIA_DiegoNW_EXIT_Info()
 
 
 // ************************************************************
-// 	  	  Wie laufen die Geschäfte? (perm)
+// 	  	  Wie laufen die GeschÃ¤fte? (perm)
 // ************************************************************
 
 INSTANCE DIA_DiegoNW_Perm(C_INFO)
@@ -43,7 +43,7 @@ INSTANCE DIA_DiegoNW_Perm(C_INFO)
 	information	= DIA_DiegoNW_Perm_Info;
 	permanent	= TRUE;
 
-	description = "¿Qué tal va el negocio?";
+	description = "Â¿QuÃ© tal va el negocio?";
 };                       
 FUNC INT DIA_DiegoNW_Perm_Condition()
 {
@@ -54,10 +54,10 @@ FUNC INT DIA_DiegoNW_Perm_Condition()
 };
 FUNC VOID DIA_DiegoNW_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_00"); //¿Qué tal el negocio?
-	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_01"); //Ruinoso. Alguien me debería haber advertido de que Khorinis se había ido al cuerno.
+	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_00"); //Â¿QuÃ© tal el negocio?
+	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_01"); //Ruinoso. Alguien me deberÃ­a haber advertido de que Khorinis se habÃ­a ido al cuerno.
 	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_02"); //Ni idea, siempre he conocido la ciudad como es ahora.
-	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_03"); //Tendrías que haberla visto hace unos años. Te habría gustado.
+	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_03"); //TendrÃ­as que haberla visto hace unos aÃ±os. Te habrÃ­a gustado.
 };
 
 
@@ -91,15 +91,15 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Info()
 {	
 	if (Diego_IsDead == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_01"); //¡Eh, pareces totalmente sorprendido!
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_02"); //(ríe) Creías que la había palmado, ¿verdad?
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_03"); //Pasé un tiempo inconsciente, pero, como ves, aún sigo vivo.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_04"); //Lo importante es que estamos aquí los dos.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_01"); //Â¡Eh, pareces totalmente sorprendido!
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_02"); //(rÃ­e) CreÃ­as que la habÃ­a palmado, Â¿verdad?
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_03"); //PasÃ© un tiempo inconsciente, pero, como ves, aÃºn sigo vivo.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_04"); //Lo importante es que estamos aquÃ­ los dos.
 		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_05"); //Tienes que ayudarme.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_11_00"); //Me alegro de que estés aquí. Tienes que ayudarme.
+		AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_11_00"); //Me alegro de que estÃ©s aquÃ­. Tienes que ayudarme.
 	};
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 	
@@ -108,65 +108,65 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Info()
 	//	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Wer bist du?",DIA_DiegoNW_NeedHelp_WhoAreYou);//Joly:macht keinen Sinn. Ohne mit Diego gesprochen zu haben -> Kein DiegoNW !! Hauptstory Kapitel 2 OW!!!!
 	};
 	
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿Qué ropas son esas?",DIA_DiegoNW_NeedHelp_Clothes);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿Qué estás haciendo aquí?",DIA_DiegoNW_NeedHelp_Plan);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿De qué va esto?",DIA_DiegoNW_NeedHelp_Problem);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿QuÃ© ropas son esas?",DIA_DiegoNW_NeedHelp_Clothes);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿QuÃ© estÃ¡s haciendo aquÃ­?",DIA_DiegoNW_NeedHelp_Plan);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿De quÃ© va esto?",DIA_DiegoNW_NeedHelp_Problem);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Plan()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Plan_15_00"); //¿Qué haces aquí?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_01"); //He estado observando a los guardias. Parece que están alerta.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_02"); //No creo que me fuera fácil pasar por allí.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Plan_15_00"); //Â¿QuÃ© haces aquÃ­?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_01"); //He estado observando a los guardias. Parece que estÃ¡n alerta.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_02"); //No creo que me fuera fÃ¡cil pasar por allÃ­.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_WhoAreYou()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_00"); //¿Quién eres tú?
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_00"); //Â¿QuiÃ©n eres tÃº?
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_01"); //Seguro que es por mis ropas. Los guardias no quieren dejarme entrar en la ciudad.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_02"); //Por eso le compré esta ropa a un comerciante, fuera de la ciudad. Espero que te acuerdes de mí. Soy Diego.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_03"); //En la trena te enseñé todo lo necesario para sobrevivir.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_02"); //Por eso le comprÃ© esta ropa a un comerciante, fuera de la ciudad. Espero que te acuerdes de mÃ­. Soy Diego.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_03"); //En la trena te enseÃ±Ã© todo lo necesario para sobrevivir.
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_04"); //No puedes haberlo olvidado todo.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_05"); //Esto... ¿qué fue exactamente lo que pasó?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_06"); //Madre mía, es verdad que no te acuerdas de nada.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_07"); //Escucha, ahora no tengo tiempo de explicártelo todo. Solo te puedo decir que éramos muy buenos amigos y te salvé la vida más de una vez.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_05"); //Esto... Â¿quÃ© fue exactamente lo que pasÃ³?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_06"); //Madre mÃ­a, es verdad que no te acuerdas de nada.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_07"); //Escucha, ahora no tengo tiempo de explicÃ¡rtelo todo. Solo te puedo decir que Ã©ramos muy buenos amigos y te salvÃ© la vida mÃ¡s de una vez.
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_08"); //Y ahora necesito tu ayuda.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Clothes()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_00"); //¿Qué ropas son ésas?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_01"); //Se las compré a un comerciante, fuera de la ciudad. Al principio, los guardias no querían dejarme pasar.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_02"); //Y, además, no hace falta que todo el mundo se entere de dónde vengo.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_03"); //En eso tienes razón.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_00"); //Â¿QuÃ© ropas son Ã©sas?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_01"); //Se las comprÃ© a un comerciante, fuera de la ciudad. Al principio, los guardias no querÃ­an dejarme pasar.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_02"); //Y, ademÃ¡s, no hace falta que todo el mundo se entere de dÃ³nde vengo.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_03"); //En eso tienes razÃ³n.
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_04"); //Eso es lo que creo. Pero aunque me quite mis ropas de sombra, sigo siendo el mismo.
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_05"); //Y tengo grandes planes para esta ciudad.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_00"); //¿A qué te refieres?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_01"); //Han cambiado muchas cosas desde que me fui de aquí. Tengo que recuperar el tiempo perdido.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_02"); //¿Cuál es el problema?
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_00"); //Â¿A quÃ© te refieres?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_01"); //Han cambiado muchas cosas desde que me fui de aquÃ­. Tengo que recuperar el tiempo perdido.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_02"); //Â¿CuÃ¡l es el problema?
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_03"); //Tengo que entrar en el barrio alto.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_04"); //No soy ciudadano y no tengo dinero suficiente para sobornar a los guardias. ¡Y ahí es donde entras tú!
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_05"); //¿Así que quieres que te deje algo de oro?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_06"); //Vaya tontería. Yo tengo oro, y diría que bastante. Por desgracia, no lo tengo aquí.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_04"); //No soy ciudadano y no tengo dinero suficiente para sobornar a los guardias. Â¡Y ahÃ­ es donde entras tÃº!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_05"); //Â¿AsÃ­ que quieres que te deje algo de oro?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_06"); //Vaya tonterÃ­a. Yo tengo oro, y dirÃ­a que bastante. Por desgracia, no lo tengo aquÃ­.
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_07"); //Necesito que me recuperes el oro.
 	
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 	Info_AddChoice (DIA_DiegoNW_NeedHelp,"No tengo tiempo para eso.",DIA_DiegoNW_NeedHelp_Problem_NoTime);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿Qué obtengo yo a cambio?",DIA_DiegoNW_NeedHelp_Problem_Reward);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Bien, te ayudaré.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿QuÃ© obtengo yo a cambio?",DIA_DiegoNW_NeedHelp_Problem_Reward);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Bien, te ayudarÃ©.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_NoTime()
 {
 	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_00"); //No tengo tiempo para eso.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_01"); //Eh, ¡creía que éramos colegas! Al fin y al cabo, fui yo quien te salvó el culo cuando te metieron en la colonia.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_01"); //Eh, Â¡creÃ­a que Ã©ramos colegas! Al fin y al cabo, fui yo quien te salvÃ³ el culo cuando te metieron en la colonia.
 	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_02"); //Exageras.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_03"); //¿Ah, sí? Entonces piensa durante un minuto qué habría pasado si no te hubiera explicado cómo debías comportarte.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_04"); //Los magnates del mineral te habrían comido vivo y habrías muerto de manera lamentable en la mina.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_03"); //Â¿Ah, sÃ­? Entonces piensa durante un minuto quÃ© habrÃ­a pasado si no te hubiera explicado cÃ³mo debÃ­as comportarte.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_04"); //Los magnates del mineral te habrÃ­an comido vivo y habrÃ­as muerto de manera lamentable en la mina.
 
 	MIS_HelpDiegoNW = LOG_FAILED;
 	
@@ -175,67 +175,67 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Problem_NoTime()
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_Reward()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_Reward_15_00"); //¿Y qué gano yo?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_Reward_11_01"); //¿Alguna vez te he pedido que me pagaras algo? Somos amigos, ¿es que eso no es suficiente?
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_Reward_15_00"); //Â¿Y quÃ© gano yo?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_Reward_11_01"); //Â¿Alguna vez te he pedido que me pagaras algo? Somos amigos, Â¿es que eso no es suficiente?
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_15_00"); //Bien, te ayudaré.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_01"); //Mira, escucha. Cuando la Barrera aún seguía en pie, escondí un pequeño tesoro.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_02"); //Ha pasado mucho tiempo. Por eso olvidé llevármelo conmigo.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_03"); //Y ahora no me puedo marchar de aquí.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_15_00"); //Bien, te ayudarÃ©.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_01"); //Mira, escucha. Cuando la Barrera aÃºn seguÃ­a en pie, escondÃ­ un pequeÃ±o tesoro.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_02"); //Ha pasado mucho tiempo. Por eso olvidÃ© llevÃ¡rmelo conmigo.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_03"); //Y ahora no me puedo marchar de aquÃ­.
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_11_03"); //Abreviando, tienes que ir al Valle de las Minas y recuperar mi oro.
 
 	MIS_HelpDiegoNW = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_HelpDiegoNW,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HelpDiegoNW,LOG_RUNNING);
-	B_LogEntry (TOPIC_HelpDiegoNW,"El oro de Diego está en el Valle de las Minas. Lo necesito para llegar al barrio alto y me ha enviado para que lo recoja.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"El oro de Diego estÃ¡ en el Valle de las Minas. Lo necesito para llegar al barrio alto y me ha enviado para que lo recoja.");
 	
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿Qué vas a hacer con el oro?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿De dónde sacaste todo ese oro?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"¿Dónde está escondido el oro?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿QuÃ© vas a hacer con el oro?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿De dÃ³nde sacaste todo ese oro?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Â¿DÃ³nde estÃ¡ escondido el oro?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_15_00"); //¿Qué vas a hacer con el oro?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_01"); //Aún tengo una cuenta que saldar con un mercader del barrio alto. Tengo que encargarme de ello.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_02"); //¡Después podré dedicarme a una nueva carrera!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_15_00"); //Â¿QuÃ© vas a hacer con el oro?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_01"); //AÃºn tengo una cuenta que saldar con un mercader del barrio alto. Tengo que encargarme de ello.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_02"); //Â¡DespuÃ©s podrÃ© dedicarme a una nueva carrera!
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_15_00"); //¿De dónde sacaste todo ese oro?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_01"); //¿Es que soy el único que se guardó algo de oro en el Valle de las Minas?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_02"); //Sisar algunas pepitas fue de lo más fácil. Solo por si alguna vez salía de allí.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_HowGold_11_03"); //Todos valoraban tanto ese mineral que nadie le prestaba atención al oro 
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_15_00"); //Â¿De dÃ³nde sacaste todo ese oro?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_01"); //Â¿Es que soy el Ãºnico que se guardÃ³ algo de oro en el Valle de las Minas?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_02"); //Sisar algunas pepitas fue de lo mÃ¡s fÃ¡cil. Solo por si alguna vez salÃ­a de allÃ­.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_HowGold_11_03"); //Todos valoraban tanto ese mineral que nadie le prestaba atenciÃ³n al oro 
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_00"); //¿Dónde está escondido el oro?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_01"); //Justo en la plaza del mercado, encima de la mina abandonada. Está en una bolsa de cuero.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_00"); //Â¿DÃ³nde estÃ¡ escondido el oro?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_01"); //Justo en la plaza del mercado, encima de la mina abandonada. EstÃ¡ en una bolsa de cuero.
 	if (Diego_angekommen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_01"); //Ahórrate el comentario. Estoy seguro de que hemos pasado por su lado.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_02"); //Tráeme la bolsa.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_01"); //AhÃ³rrate el comentario. Estoy seguro de que hemos pasado por su lado.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_02"); //TrÃ¡eme la bolsa.
 	};
 	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_02"); //Pero no te olvides de comprobar que es la correcta, para que no te hagas todo el camino a lo tonto.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_03"); //¿Cómo la reconoceré?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_04"); //Está llena de oro. ¡Un montón de oro!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_03"); //Â¿CÃ³mo la reconocerÃ©?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_04"); //EstÃ¡ llena de oro. Â¡Un montÃ³n de oro!
 					
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Intentaré encontrar tu oro.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt);		
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"IntentarÃ© encontrar tu oro.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt);		
 	
-	B_LogEntry (TOPIC_HelpDiegoNW,"El oro de Diego está en algún lugar de la antigua plaza del mercado, por encima de la mina, desde el que se enviaban mercancías a la colonia mediante un cable.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"El oro de Diego estÃ¡ en algÃºn lugar de la antigua plaza del mercado, por encima de la mina, desde el que se enviaban mercancÃ­as a la colonia mediante un cable.");
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_TryIt_15_00"); //Intentaré encontrar tu oro.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_TryIt_11_01"); //(Sonríe irónicamente) Hazlo. Con eso me basta.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_TryIt_15_00"); //IntentarÃ© encontrar tu oro.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_TryIt_11_01"); //(SonrÃ­e irÃ³nicamente) Hazlo. Con eso me basta.
 
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 };
@@ -251,7 +251,7 @@ INSTANCE DIA_DiegoNW_HelpYou(C_INFO)
 	condition	= DIA_DiegoNW_HelpYou_Condition;
 	information	= DIA_DiegoNW_HelpYou_Info;
 	permanent	= FALSE;
-	description	= "De acuerdo, después de todo, te ayudaré.";
+	description	= "De acuerdo, despuÃ©s de todo, te ayudarÃ©.";
 };                       
 FUNC INT DIA_DiegoNW_HelpYou_Condition()
 {
@@ -264,18 +264,18 @@ FUNC INT DIA_DiegoNW_HelpYou_Condition()
 };
 FUNC VOID DIA_DiegoNW_HelpYou_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_00"); //De acuerdo, te ayudaré .
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_01"); //Lo sabía.
-	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_02"); //Vale. Centrémonos en los negocios.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_03"); //De acuerdo. He escondido un tesoro en el Valle de las Minas y debes ir a traérmelo.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_06"); //Mientras tanto me quedaré aquí a prepararlo todo.
+	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_00"); //De acuerdo, te ayudarÃ© .
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_01"); //Lo sabÃ­a.
+	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_02"); //Vale. CentrÃ©monos en los negocios.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_03"); //De acuerdo. He escondido un tesoro en el Valle de las Minas y debes ir a traÃ©rmelo.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_06"); //Mientras tanto me quedarÃ© aquÃ­ a prepararlo todo.
 	DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold();
 	DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt();
 
 	MIS_HelpDiegoNW = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_HelpDiegoNW,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HelpDiegoNW,LOG_RUNNING);
-	B_LogEntry (TOPIC_HelpDiegoNW,"El oro de Diego está en el Valle de las Minas. Lo necesito para llegar al barrio alto y me ha enviado para que lo recoja.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"El oro de Diego estÃ¡ en el Valle de las Minas. Lo necesito para llegar al barrio alto y me ha enviado para que lo recoja.");
 };
 
 //***********************************************
@@ -289,7 +289,7 @@ INSTANCE DIA_DiegoNW_HaveYourGold(C_INFO)
 	condition	= DIA_DiegoNW_HaveYourGold_Condition;
 	information	= DIA_DiegoNW_HaveYourGold_Info;
 	permanent	= TRUE;
-	description	= "¡He encontrado tu oro!";
+	description	= "Â¡He encontrado tu oro!";
 };            
 
 FUNC INT DIA_DiegoNW_HaveYourGold_Condition()
@@ -305,15 +305,15 @@ FUNC INT DIA_DiegoNW_HaveYourGold_Condition()
 
 FUNC VOID B_DIEGONW_DIEGOSREVENGE ()
 {
-	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_05"); //Muy bien. Ahora más le vale a Gerbrandt andarse con ojo.
+	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_05"); //Muy bien. Ahora mÃ¡s le vale a Gerbrandt andarse con ojo.
 };
 
 var int DiegosRevenge;
 
 FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_HaveYourGold_15_00"); //¡He encontrado tu oro!
-	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_01"); //Estupendo. Enséñamelo.
+	AI_Output (other,self ,"DIA_DiegoNW_HaveYourGold_15_00"); //Â¡He encontrado tu oro!
+	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_01"); //Estupendo. EnsÃ©Ã±amelo.
 	
 	IF (Npc_HasItems (other,ItSe_DiegosTreasure_Mis) >=1)
 	{
@@ -323,9 +323,9 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 	}
 	else if (Npc_HasItems (other,ItMi_Gold < DiegosTreasure))
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_02"); //¡Pero no está todo! ¿No te fías de mí? Lo necesito todo.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_03"); //Si me plan funciona, quedará suficiente para ti.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_04"); //Así que asegúrate de que consigo todo. ¡Es importante!
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_02"); //Â¡Pero no estÃ¡ todo! Â¿No te fÃ­as de mÃ­? Lo necesito todo.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_03"); //Si me plan funciona, quedarÃ¡ suficiente para ti.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_04"); //AsÃ­ que asegÃºrate de que consigo todo. Â¡Es importante!
 	}
 	else
 	{
@@ -339,7 +339,7 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 	{
 		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_06"); //Escucha, sigo necesitando que alguien se encargue de los guardias.
 		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_07"); //Quiero que le lleves esta carta a Gerbrandt. Es uno de los mercaderes sebosos del barrio alto.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_08"); //Salúdale de mi parte. Nos encontraremos enfrente de la casa de Gerbrandt.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_08"); //SalÃºdale de mi parte. Nos encontraremos enfrente de la casa de Gerbrandt.
 
 		CreateInvItems (self ,ItWr_DiegosLetter_MIS,1);
 		B_GiveInvItems (self,other,ItWr_DiegosLetter_MIS,1);
@@ -388,9 +388,9 @@ FUNC VOID DIA_DiegoNW_DeliveredLetter_Info()
 {
 		
 	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_00"); //He entregado la carta.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_01"); //Estupendo. ¿Qué tal se la tomó Gerbrandt?
-	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_02"); //Se llevó una impresión y no tardó en esfumarse.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_03"); //(Satisfecho) No me extraña.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_01"); //Estupendo. Â¿QuÃ© tal se la tomÃ³ Gerbrandt?
+	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_02"); //Se llevÃ³ una impresiÃ³n y no tardÃ³ en esfumarse.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_03"); //(Satisfecho) No me extraÃ±a.
 	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_04"); //Me temo que, antes de nada, tengo que amueblar mi nueva casa. Si no recuerdo mal, el gusto de Gerbrandt es lo peor.
 	  
 	B_GivePlayerXP (XP_DiegoHasANewHome);
@@ -398,50 +398,50 @@ FUNC VOID DIA_DiegoNW_DeliveredLetter_Info()
 	Wld_AssignRoomToGuild ("reich01",		GIL_PUBLIC);
 
 	Info_ClearChoices (DIA_DiegoNW_DeliveredLetter);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"¿Y cómo lo has conseguido?",DIA_DiegoNW_DeliveredLetter_YourTrick);	
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"¿Entonces la casa es tuya?",DIA_DiegoNW_DeliveredLetter_YourHouse);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Â¿Y cÃ³mo lo has conseguido?",DIA_DiegoNW_DeliveredLetter_YourTrick);	
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Â¿Entonces la casa es tuya?",DIA_DiegoNW_DeliveredLetter_YourHouse);
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_Gerbrandt ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_15_00"); //¿Qué hay de Gerbrandt?
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_15_00"); //Â¿QuÃ© hay de Gerbrandt?
 	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_01"); //Ya se ha dado la gran vida durante demasiado tiempo.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_02"); //Vivía aquí a todo lujo, mientras yo tragaba estofado de sabandija de carne.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_03"); //No sé de dónde vino, pero nunca volverá a Khorinis. Me ocuparé de ello.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_02"); //VivÃ­a aquÃ­ a todo lujo, mientras yo tragaba estofado de sabandija de carne.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_03"); //No sÃ© de dÃ³nde vino, pero nunca volverÃ¡ a Khorinis. Me ocuparÃ© de ello.
 	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_04"); //Si le buscas, prueba en el distrito portuario.
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourHouse()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_00"); //¿Entonces la casa es tuya?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_01"); //Sí, toda mía, y amueblada.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_02"); //Después de varios años en alojamientos poco confortables, estoy deseando dormir en una blanda cama de dosel.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_03"); //Y, para desayunar, tomaré buen vino y algo de jamón de primera.
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_04"); //No pierdes ninguna oportunidad, ¿verdad?
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_00"); //Â¿Entonces la casa es tuya?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_01"); //SÃ­, toda mÃ­a, y amueblada.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_02"); //DespuÃ©s de varios aÃ±os en alojamientos poco confortables, estoy deseando dormir en una blanda cama de dosel.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_03"); //Y, para desayunar, tomarÃ© buen vino y algo de jamÃ³n de primera.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_04"); //No pierdes ninguna oportunidad, Â¿verdad?
 	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_05"); //Y que lo digas.
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourTrick ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_00"); //¿Y cómo lo has conseguido?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_01"); //¿Crees que Gerbrandt consiguió su fortuna de manera honesta?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_02"); //Por supuesto, nunca se ensució las manos. Tenía alguien que lo hacía por él.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_03"); //Por supuesto, en aquel entonces me enteré de muchas cosas, y. Gerbrandt acabó librándose de mí. Seguramente tenía miedo de que supiera demasiado.
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_04"); //Nunca me lo habías dicho.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_00"); //Â¿Y cÃ³mo lo has conseguido?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_01"); //Â¿Crees que Gerbrandt consiguiÃ³ su fortuna de manera honesta?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_02"); //Por supuesto, nunca se ensuciÃ³ las manos. TenÃ­a alguien que lo hacÃ­a por Ã©l.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_03"); //Por supuesto, en aquel entonces me enterÃ© de muchas cosas, y. Gerbrandt acabÃ³ librÃ¡ndose de mÃ­. Seguramente tenÃ­a miedo de que supiera demasiado.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_04"); //Nunca me lo habÃ­as dicho.
 	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_05"); //Nunca me lo preguntaste.
 	
 	Info_ClearChoices (DIA_DiegoNW_DeliveredLetter);
 	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,DIALOG_BACK,DIA_DiegoNW_DeliveredLetter_YourTrick_BACK);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"¿Y qué hay de mi parte?",DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"¿Qué hay de Gerbrandt?",DIA_DiegoNW_DeliveredLetter_Gerbrandt);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Â¿Y quÃ© hay de mi parte?",DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Â¿QuÃ© hay de Gerbrandt?",DIA_DiegoNW_DeliveredLetter_Gerbrandt);
 }; 
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD()
 {
 
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_15_00"); //¿Y qué hay de mi parte?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_01"); //Parece que a fin de cuentas no te has olvidado de todo lo que te enseñé.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_02"); //Pero tienes razón, no podría haberlo hecho sin tu ayuda. Toma tu parte.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_15_00"); //Â¿Y quÃ© hay de mi parte?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_01"); //Parece que a fin de cuentas no te has olvidado de todo lo que te enseÃ±Ã©.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_02"); //Pero tienes razÃ³n, no podrÃ­a haberlo hecho sin tu ayuda. Toma tu parte.
 	
 	CreateInvItems (self ,ItMi_Gold,500);
 	B_GiveInvItems (self,other,ItMi_Gold,500);
@@ -469,7 +469,7 @@ INSTANCE DIA_DiegoNW_CanYouTeach(C_INFO)
 	information	= DIA_DiegoNW_CanYouTeach_Info;
 	permanent	= TRUE;
 
-	description = "¿Puedes enseñarme algo?";
+	description = "Â¿Puedes enseÃ±arme algo?";
 };                       
 FUNC INT DIA_DiegoNW_CanYouTeach_Condition()
 {
@@ -481,10 +481,10 @@ FUNC INT DIA_DiegoNW_CanYouTeach_Condition()
 };
 FUNC VOID DIA_DiegoNW_CanYouTeach_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_CanYouTeach_15_00"); //¿Puedes enseñarme algo?
+	AI_Output (other,self ,"DIA_DiegoNW_CanYouTeach_15_00"); //Â¿Puedes enseÃ±arme algo?
 	if (Npc_KnowsInfo (other,DIA_DiegoNW_DeliveredLetter))
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_01"); //Sí, claro. Solo tienes que avisarme cuando estés listo.
+		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_01"); //SÃ­, claro. Solo tienes que avisarme cuando estÃ©s listo.
 		
 		Diego_Teach = TRUE;
 	}
@@ -512,7 +512,7 @@ INSTANCE DIA_DiegoNW_Teach(C_INFO)
 	information	= DIA_DiegoNW_Teach_Info;
 	permanent	= TRUE;
 
-	description = "Enséñame algo.";
+	description = "EnsÃ©Ã±ame algo.";
 };                       
 FUNC INT DIA_DiegoNW_Teach_Condition()
 {
@@ -524,8 +524,8 @@ FUNC INT DIA_DiegoNW_Teach_Condition()
 };
 FUNC VOID DIA_DiegoNW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_Teach_15_00"); //Enséñame.
-	AI_Output (self ,other,"DIA_DiegoNW_Teach_11_01"); //Te puedo enseñar a ser más diestro.
+	AI_Output (other,self ,"DIA_DiegoNW_Teach_15_00"); //EnsÃ©Ã±ame.
+	AI_Output (self ,other,"DIA_DiegoNW_Teach_11_01"); //Te puedo enseÃ±ar a ser mÃ¡s diestro.
 	
 	DiegoNW_Merke_Dex = other.attribute[ATR_DEXTERITY];
 	
@@ -539,7 +539,7 @@ func void DIA_DiegoNW_Teach_BACK()
 {
 	if (DiegoNW_Merke_DEX < other.attribute[ATR_DEXTERITY])
 	{
-		AI_Output (self, other, "DIA_DiegoNW_Teach_BACK_11_00"); //Ya te has vuelto más diestro. ¡Sigue así!
+		AI_Output (self, other, "DIA_DiegoNW_Teach_BACK_11_00"); //Ya te has vuelto mÃ¡s diestro. Â¡Sigue asÃ­!
 	};
 	Info_ClearChoices	(DIA_DiegoNW_Teach);
 };
@@ -597,31 +597,31 @@ func int DIA_DiegoNW_KnowWhereEnemy_Condition ()
 func void DIA_DiegoNW_KnowWhereEnemy_Info ()
 {
 	AI_Output			(other, self, "DIA_DiegoNW_KnowWhereEnemy_15_00"); //Voy a abandonar Khorinis.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_01"); //Una decisión inteligente. Ojalá pudiera irme contigo. Esta ciudad ha cambiado demasiado deprisa. Se acabaron los tiempos en los que te podías hacer rico rápidamente.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_02"); //Te puedo enseñar tiro con arco, a forzar cerraduras y destreza
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_03"); //Claro, estoy seguro de que te viene bien un ladrón ducho.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_01"); //Una decisiÃ³n inteligente. OjalÃ¡ pudiera irme contigo. Esta ciudad ha cambiado demasiado deprisa. Se acabaron los tiempos en los que te podÃ­as hacer rico rÃ¡pidamente.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_02"); //Te puedo enseÃ±ar tiro con arco, a forzar cerraduras y destreza
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_03"); //Claro, estoy seguro de que te viene bien un ladrÃ³n ducho.
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
-	B_LogEntry (TOPIC_Crew,"Por supuesto, Diego quiere venir. Tal y como lo ve él, cuanto antes salga de Khorinis, mejor. Podría enseñarme a ser más diestro y entrenarme para ser un buen arquero. También puede enseñarme a forzar cerraduras.");	
+	B_LogEntry (TOPIC_Crew,"Por supuesto, Diego quiere venir. Tal y como lo ve Ã©l, cuanto antes salga de Khorinis, mejor. PodrÃ­a enseÃ±arme a ser mÃ¡s diestro y entrenarme para ser un buen arquero. TambiÃ©n puede enseÃ±arme a forzar cerraduras.");	
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_DiegoNW_KnowWhereEnemy_15_04"); //Me lo pensaré. Por el momento, no me hacen falta más tripulantes.
-		AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_05"); //Tómate tu tiempo. No me voy a ir a ningún sitio.
+		AI_Output			(other,self , "DIA_DiegoNW_KnowWhereEnemy_15_04"); //Me lo pensarÃ©. Por el momento, no me hacen falta mÃ¡s tripulantes.
+		AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_05"); //TÃ³mate tu tiempo. No me voy a ir a ningÃºn sitio.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Quizá te avise cuando sea el momento.",DIA_DiegoNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"¿Por qué no te vienes?",DIA_DiegoNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"QuizÃ¡ te avise cuando sea el momento.",DIA_DiegoNW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Â¿Por quÃ© no te vienes?",DIA_DiegoNW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_Yes_15_00"); //¿Por qué no vienes conmigo? Nos encontraremos en el puerto.
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_01"); //Mmm. Tienes razón, Khorinis es un basurero. Me voy contigo.
+	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_Yes_15_00"); //Â¿Por quÃ© no vienes conmigo? Nos encontraremos en el puerto.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_01"); //Mmm. Tienes razÃ³n, Khorinis es un basurero. Me voy contigo.
 	
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -633,7 +633,7 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 	
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "NW_CITY_UPTOWN_PATH_23" )== 1)
     {
-		AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02"); //Espera, en un segundo estaré listo.
+		AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02"); //Espera, en un segundo estarÃ© listo.
 		AI_SetWalkmode 	(self, NPC_WALK);		
 		AI_GotoWP (self,"NW_CITY_UPTOWN_HUT_01_01");
 		CreateInvItems (self,ItAR_Diego,1);
@@ -642,7 +642,7 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 		AI_GotoWP (self,self.wp);
 	};
 	
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_03"); //Bien, estoy preparado. Te veré en el barco.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_03"); //Bien, estoy preparado. Te verÃ© en el barco.
 	
 	
 	if (MIS_ReadyforChapter6 == TRUE)
@@ -659,8 +659,8 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_DiegoNW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_No_15_00"); //Ya te avisaré cuando llegue el momento.
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_No_11_01"); //Hazlo. Y puede que incluso vaya contigo. ¿Quién sabe?
+	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_No_15_00"); //Ya te avisarÃ© cuando llegue el momento.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_No_11_01"); //Hazlo. Y puede que incluso vaya contigo. Â¿QuiÃ©n sabe?
 
 	Diego_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
@@ -676,7 +676,7 @@ instance DIA_DiegoNW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_DiegoNW_LeaveMyShip_Condition;
 	information	 = 	DIA_DiegoNW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Encárgate de la ciudad.";
+	description	 = 	"EncÃ¡rgate de la ciudad.";
 };
 func int DIA_DiegoNW_LeaveMyShip_Condition ()
 {	
@@ -688,11 +688,11 @@ func int DIA_DiegoNW_LeaveMyShip_Condition ()
 };
 func void DIA_DiegoNW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_00"); //Encárgate de la ciudad.
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_01"); //¿De verdad? ¿Ya no me necesitas? Oh, bien. No te olvides de pasar a saludar cuando vuelvas a la ciudad.
-	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_02"); //¿Crees que nos volveremos a encontrar?
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_03"); //Nunca olvidaré la cara que tenías cuando nos conocimos, después de que Bullit te tumbara.
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_04"); //No pueden ganarte la batalla. Nos volveremos a encontrar. Cuídate.
+	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_00"); //EncÃ¡rgate de la ciudad.
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_01"); //Â¿De verdad? Â¿Ya no me necesitas? Oh, bien. No te olvides de pasar a saludar cuando vuelvas a la ciudad.
+	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_02"); //Â¿Crees que nos volveremos a encontrar?
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_03"); //Nunca olvidarÃ© la cara que tenÃ­as cuando nos conocimos, despuÃ©s de que Bullit te tumbara.
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_04"); //No pueden ganarte la batalla. Nos volveremos a encontrar. CuÃ­date.
 	
 	
 	Diego_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
@@ -702,7 +702,7 @@ func void DIA_DiegoNW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 {
@@ -711,7 +711,7 @@ instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_DiegoNW_StillNeedYou_Condition;
 	information	 = 	DIA_DiegoNW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Vuelve. Quiero que me acompañes.";
+	description	 = 	"Vuelve. Quiero que me acompaÃ±es.";
 };
 
 func int DIA_DiegoNW_StillNeedYou_Condition ()
@@ -726,8 +726,8 @@ func int DIA_DiegoNW_StillNeedYou_Condition ()
 
 func void DIA_DiegoNW_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_DiegoNW_StillNeedYou_15_00"); //Vuelve. Quiero que me acompañes.
-	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_01"); //¿Qué ha pasado con tu decisión, amigo mío? Claro que iré contigo, pero decídete de una vez.
+	AI_Output	(other, self, "DIA_DiegoNW_StillNeedYou_15_00"); //Vuelve. Quiero que me acompaÃ±es.
+	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_01"); //Â¿QuÃ© ha pasado con tu decisiÃ³n, amigo mÃ­o? Claro que irÃ© contigo, pero decÃ­dete de una vez.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Diego_IsOnBoard	 = LOG_SUCCESS;
@@ -735,14 +735,14 @@ func void DIA_DiegoNW_StillNeedYou_Info ()
 	
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "NW_CITY_UPTOWN_PATH_23" )== 1)
     {
-		AI_Output (self ,other,"DIA_DiegoNW_StillNeedYou_11_02"); //Espera, en un segundo estaré listo.
+		AI_Output (self ,other,"DIA_DiegoNW_StillNeedYou_11_02"); //Espera, en un segundo estarÃ© listo.
 		AI_GotoWP (self,"NW_CITY_UPTOWN_HUT_01_01");
 		CreateInvItems (self,ItAR_Diego,1);
 		AI_EquipArmor (self,ItAr_Diego);
 		AI_GotoWP (self,self.wp);
 	};
 	
-	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_03"); //De acuerdo, vámonos.
+	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_03"); //De acuerdo, vÃ¡monos.
 	
 	AI_StopProcessInfos (self);
 

@@ -75,13 +75,13 @@ FUNC INT DIA_Joe_Hallo_Condition()
 };
 FUNC VOID DIA_Joe_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Oye, gracias, tÌo. Digo... gracias, de verdad. Y yo que pensaba que nunca saldrÌa de aquÌ...
+	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Oye, gracias, t√≠o. Digo... gracias, de verdad. Y yo que pensaba que nunca saldr√≠a de aqu√≠...
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP ((XP_Ambient*4));
 	
-	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//øQuÈ est·s haciendo AQUÕ?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Me quedÈ encerrado. La puerta estaba abierta y lo ˙nico que querÌa era echar un vistazo. Pero en cuanto entrÈ, el vigilante vino y cerrÛ la maldita puerta.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Esto es un poco humillante. Te agradecerÌa mucho si esto pudiera quedar entre t˙ y yo.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//¬øQu√© est√°s haciendo AQU√ç?
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Me qued√© encerrado. La puerta estaba abierta y lo √∫nico que quer√≠a era echar un vistazo. Pero en cuanto entr√©, el vigilante vino y cerr√≥ la maldita puerta.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Esto es un poco humillante. Te agradecer√≠a mucho si esto pudiera quedar entre t√∫ y yo.
 	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Entiendo. No es algo de lo que sentirse precisamente orgulloso.
 	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Creo que ahora necesito un trago.
 	AI_StopProcessInfos (self);
@@ -97,7 +97,7 @@ INSTANCE DIA_Joe_Perm   (C_INFO)
 	condition   = DIA_Joe_Perm_Condition;
 	information = DIA_Joe_Perm_Info;
 	permanent   = TRUE;
-	description	= "øVa todo bien?";
+	description	= "¬øVa todo bien?";
 };
 FUNC INT DIA_Joe_Perm_Condition()
 {	
@@ -108,7 +108,7 @@ FUNC INT DIA_Joe_Perm_Condition()
 };
 FUNC VOID DIA_Joe_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Joe_Perm_15_00");//øVa todo bien?
+	AI_Output (other, self,"DIA_Joe_Perm_15_00");//¬øVa todo bien?
 	AI_Output (self, other,"DIA_Joe_Perm_10_01");//Gracias por liberarme.
 	
 	AI_StopProcessInfos (self);
@@ -123,7 +123,7 @@ INSTANCE DIA_Joe_Sign   (C_INFO)
 	condition   = DIA_Joe_Sign_Condition;
 	information = DIA_Joe_Sign_Info;
 	permanent   = FALSE;
-	description	= "(Hacer la seÒal de los ladrones)";
+	description	= "(Hacer la se√±al de los ladrones)";
 };
 FUNC INT DIA_Joe_Sign_Condition()
 {	
@@ -136,8 +136,8 @@ FUNC INT DIA_Joe_Sign_Condition()
 FUNC VOID DIA_Joe_Sign_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Eh, øquÈ m·s da? Tenemos amigos mutuos. En ese caso, dÈjame mostrarte mi gratitud por el rescate.
-	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Toma estas ganz˙as. Estoy seguro de que te resultar·n ˙tiles.
+	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Eh, ¬øqu√© m√°s da? Tenemos amigos mutuos. En ese caso, d√©jame mostrarte mi gratitud por el rescate.
+	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Toma estas ganz√∫as. Estoy seguro de que te resultar√°n √∫tiles.
 	
 	B_GiveInvItems (self, other, ItKE_Lockpick, 5);
 	

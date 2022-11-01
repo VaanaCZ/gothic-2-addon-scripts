@@ -46,7 +46,7 @@ func int DIA_Wasili_HALLO_Condition ()
 
 func void DIA_Wasili_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Wasili_HALLO_01_00"); //Como se te ocurra tocar algo, te vas a llevar un par de capones, ¿te enteras?
+	AI_Output (self, other, "DIA_Wasili_HALLO_01_00"); //Como se te ocurra tocar algo, te vas a llevar un par de capones, Â¿te enteras?
 };
 
 
@@ -60,7 +60,7 @@ instance DIA_Wasili_Job (C_INFO)
 	condition	= DIA_Wasili_Job_Condition;
 	information	= DIA_Wasili_Job_Info;
 	permanent 	= FALSE;
-	description	= "¿A qué te dedicas?";
+	description	= "Â¿A quÃ© te dedicas?";
 };
 
 func int DIA_Wasili_Job_Condition ()
@@ -70,11 +70,11 @@ func int DIA_Wasili_Job_Condition ()
 
 func void DIA_Wasili_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Wasili_Job_15_00"); //¿A qué te dedicas?
-	AI_Output (self, other, "DIA_Wasili_Job_01_01"); //Onar quiere que me pase todo el día vigilando sus cosas.
-	AI_Output (self, other, "DIA_Wasili_Job_01_02"); //Le preocupa que desaparezca algo. En su lugar, yo también estaría preocupado.
-	AI_Output (self, other, "DIA_Wasili_Job_01_03"); //La mayoría de los mercenarios que ha contratado son antiguos presos de la colonia penal.
-	AI_Output (self, other, "DIA_Wasili_Job_01_04"); //Si no les vigila nadie, se llevan todo lo que no está clavado.
+	AI_Output (other, self, "DIA_Wasili_Job_15_00"); //Â¿A quÃ© te dedicas?
+	AI_Output (self, other, "DIA_Wasili_Job_01_01"); //Onar quiere que me pase todo el dÃ­a vigilando sus cosas.
+	AI_Output (self, other, "DIA_Wasili_Job_01_02"); //Le preocupa que desaparezca algo. En su lugar, yo tambiÃ©n estarÃ­a preocupado.
+	AI_Output (self, other, "DIA_Wasili_Job_01_03"); //La mayorÃ­a de los mercenarios que ha contratado son antiguos presos de la colonia penal.
+	AI_Output (self, other, "DIA_Wasili_Job_01_04"); //Si no les vigila nadie, se llevan todo lo que no estÃ¡ clavado.
 };
 
 
@@ -88,7 +88,7 @@ instance DIA_Wasili_Sammler	(C_INFO)
 	condition	= DIA_Wasili_Sammler_Condition;
 	information	= DIA_Wasili_Sammler_Info;
 	permanent 	= FALSE;
-	description	= "Aquí hay un montón de trastos.";
+	description	= "AquÃ­ hay un montÃ³n de trastos.";
 };
 
 func int DIA_Wasili_Sammler_Condition ()
@@ -98,10 +98,10 @@ func int DIA_Wasili_Sammler_Condition ()
 
 func void DIA_Wasili_Sammler_Info ()
 {
-	AI_Output (other, self, "DIA_Wasili_Sammler_15_00"); //Aquí hay un montón de trastos.
-	AI_Output (self, other, "DIA_Wasili_Sammler_01_01"); //Sí, y la mayoría son muy valiosos. Onar colecciona objetos de valor.
+	AI_Output (other, self, "DIA_Wasili_Sammler_15_00"); //AquÃ­ hay un montÃ³n de trastos.
+	AI_Output (self, other, "DIA_Wasili_Sammler_01_01"); //SÃ­, y la mayorÃ­a son muy valiosos. Onar colecciona objetos de valor.
 	AI_Output (self, other, "DIA_Wasili_Sammler_01_02"); //Alguien sencillo como yo no se puede permitir estos lujos. Yo me dedico a otras cosas.
-	AI_Output (other, self, "DIA_Wasili_Sammler_15_03"); //¿Y qué es?
+	AI_Output (other, self, "DIA_Wasili_Sammler_15_03"); //Â¿Y quÃ© es?
 	AI_Output (self, other, "DIA_Wasili_Sammler_01_04"); //Colecciono monedas antiguas.
 	
 	MIS_Wasili_BringOldCoin = LOG_RUNNING;
@@ -140,28 +140,28 @@ func void DIA_Wasili_FirstOldCoin_Info ()
 	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_15_00"); //Yo tengo una moneda antigua.
 	if (FirstOldCoin_angebotenXP_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_01"); //Um. Enséñamela.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_01"); //Um. EnsÃ©Ã±amela.
 	};
 
 	B_GiveInvItems (other, self, ItMi_OldCoin,1);
 
 	if (FirstOldCoin_angebotenXP_OneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_02"); //Oh, sí. No sacarás mucho en el mercado libre.
+	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_02"); //Oh, sÃ­. No sacarÃ¡s mucho en el mercado libre.
 	};
 
 	if (DIA_Wasili_FirstOldCoin_mehr_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_03"); //Te doy una moneda de oro por ella. Prácticamente equivale a lo que valía en tiempos.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_03"); //Te doy una moneda de oro por ella. PrÃ¡cticamente equivale a lo que valÃ­a en tiempos.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_04"); //Ya sabes lo máximo que voy a pagar, perro. Una moneda de oro y nada más.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_04"); //Ya sabes lo mÃ¡ximo que voy a pagar, perro. Una moneda de oro y nada mÃ¡s.
 	};
 	
 	Info_ClearChoices	(DIA_Wasili_FirstOldCoin);
-	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "No, creo que voy a quedármela.", DIA_Wasili_FirstOldCoin_nein );
-	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "No es suficiente. ¿Y 2?", DIA_Wasili_FirstOldCoin_mehr );
+	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "No, creo que voy a quedÃ¡rmela.", DIA_Wasili_FirstOldCoin_nein );
+	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "No es suficiente. Â¿Y 2?", DIA_Wasili_FirstOldCoin_mehr );
 	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "Trato hecho.", DIA_Wasili_FirstOldCoin_ok );
 
 	IF (FirstOldCoin_angebotenXP_OneTime == FALSE)
@@ -181,7 +181,7 @@ func void DIA_Wasili_FirstOldCoin_ok ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_03"); //Si tienes más, ya sabes dónde estoy.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_03"); //Si tienes mÃ¡s, ya sabes dÃ³nde estoy.
 		WasilisOldCoinOffer = 1;	
 	};
 
@@ -193,18 +193,18 @@ func void DIA_Wasili_FirstOldCoin_ok ()
 
 func void DIA_Wasili_FirstOldCoin_mehr ()
 {
-	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_mehr_15_00"); //No es suficiente. ¿Y 2?
+	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_mehr_15_00"); //No es suficiente. Â¿Y 2?
 
 	if (DIA_Wasili_FirstOldCoin_mehr_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_01"); //¡Ni hablar! ¡No estoy chiflado! Lárgate.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_01"); //Â¡Ni hablar! Â¡No estoy chiflado! LÃ¡rgate.
 		DIA_Wasili_FirstOldCoin_mehr_OneTime = TRUE;
 		B_GiveInvItems (self, other, ItMi_OldCoin,1);
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_02"); //Arrh. Maldita sea... Vale. 2 monedas de oro por cada moneda antigua que me traigas. Es mi última oferta.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_02"); //Arrh. Maldita sea... Vale. 2 monedas de oro por cada moneda antigua que me traigas. Es mi Ãºltima oferta.
 		WasilisOldCoinOffer =	2;
 		Info_AddChoice	(DIA_Wasili_FirstOldCoin, "En ese caso, 3 no suena mal.", DIA_Wasili_FirstOldCoin_ZumTeufel );
 	};
@@ -212,8 +212,8 @@ func void DIA_Wasili_FirstOldCoin_mehr ()
 
 func void DIA_Wasili_FirstOldCoin_nein ()
 {
-	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_nein_15_00"); //No, creo que voy a quedármela.
-	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_nein_01_01"); //No tiene ningún valor para ti. Ya volverás.
+	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_nein_15_00"); //No, creo que voy a quedÃ¡rmela.
+	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_nein_01_01"); //No tiene ningÃºn valor para ti. Ya volverÃ¡s.
 	B_GiveInvItems (self, other, ItMi_OldCoin,1);
 	WasilisOldCoinOffer = 0;
 	Info_ClearChoices	(DIA_Wasili_FirstOldCoin);
@@ -240,7 +240,7 @@ instance DIA_Wasili_BringOldCoin		(C_INFO)
 	information	 = 	DIA_Wasili_BringOldCoin_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Te interesan más monedas antiguas?";
+	description	 = 	"Â¿Te interesan mÃ¡s monedas antiguas?";
 };
 
 func int DIA_Wasili_BringOldCoin_Condition ()
@@ -257,8 +257,8 @@ var int OldCoinCounter;
 
 func void DIA_Wasili_BringOldCoin_Info ()
 {
-	AI_Output			(other, self, "DIA_Wasili_BringOldCoin_15_00"); //¿Te interesan más monedas antiguas?
-	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_01"); //Claro. ¿Aún te quedan?
+	AI_Output			(other, self, "DIA_Wasili_BringOldCoin_15_00"); //Â¿Te interesan mÃ¡s monedas antiguas?
+	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_01"); //Claro. Â¿AÃºn te quedan?
 
 	var int OldCoinCount;
 	var int XP_BringOldCoins;
@@ -286,7 +286,7 @@ func void DIA_Wasili_BringOldCoin_Info ()
 				B_GivePlayerXP (XP_BringOldCoins);
 			};
 
-	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_04"); //Gracias. Aquí tienes tu dinero. Tráeme todas las que encuentres.
+	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_04"); //Gracias. AquÃ­ tienes tu dinero. TrÃ¡eme todas las que encuentres.
 
 	OldCoinGeld	= (OldCoinCount * WasilisOldCoinOffer);
 
@@ -305,7 +305,7 @@ instance DIA_Wasili_PERM	(C_INFO)
 	condition	= DIA_Wasili_PERM_Condition;
 	information	= DIA_Wasili_PERM_Info;
 	permanent	= TRUE;
-	description	= "¿Ha intentado alguien robar algo?";
+	description	= "Â¿Ha intentado alguien robar algo?";
 };
 
 func int DIA_Wasili_PERM_Condition ()
@@ -318,33 +318,33 @@ func int DIA_Wasili_PERM_Condition ()
 
 func void DIA_Wasili_perm_Info ()
 {
-	AI_Output (other, self, "DIA_Wasili_PERM_15_00"); //¿Ha intentado alguien robar algo?
+	AI_Output (other, self, "DIA_Wasili_PERM_15_00"); //Â¿Ha intentado alguien robar algo?
 
 	if (Kapitel <= 2)
 	{
 		if (PETZCOUNTER_Farm_Theft > 0)
 		{
-			AI_Output (self, other, "DIA_Wasili_PERM_01_01"); //¿Además de ti?
+			AI_Output (self, other, "DIA_Wasili_PERM_01_01"); //Â¿AdemÃ¡s de ti?
 		};
-		AI_Output (self, other, "DIA_Wasili_PERM_01_02"); //¡Unos cuantos! ¡Y los pillé a todos!
+		AI_Output (self, other, "DIA_Wasili_PERM_01_02"); //Â¡Unos cuantos! Â¡Y los pillÃ© a todos!
 	};
 	
 	if (Kapitel == 3)
 	{
 		AI_Output (self, other, "DIA_Wasili_PERM_01_03"); //Hace unas cuantas noches, uno de los mercenarios rondaba la casa.
-		AI_Output (self, other, "DIA_Wasili_PERM_01_04"); //Llevaba puesta una túnica negra y no pude verlo.
+		AI_Output (self, other, "DIA_Wasili_PERM_01_04"); //Llevaba puesta una tÃºnica negra y no pude verlo.
 		AI_Output (self, other, "DIA_Wasili_PERM_01_05"); //Pero hice que huyera.
 	};
 	
 	if (kapitel == 4)
 	{
-		AI_Output (self, other, "DIA_Wasili_perm_01_06"); //No. Últimamente no.
+		AI_Output (self, other, "DIA_Wasili_perm_01_06"); //No. Ãšltimamente no.
 	};
 	
 	if (kapitel >= 5)
 	{
 		AI_Output (self, other, "DIA_Wasili_perm_01_07"); //Los mercenarios parecen prepararse para levantar el campamento.
-		AI_Output (self, other, "DIA_Wasili_perm_01_08"); //No me sorprendería que Lee y sus muchachos se fueran de la isla de la noche a la mañana.
+		AI_Output (self, other, "DIA_Wasili_perm_01_08"); //No me sorprenderÃ­a que Lee y sus muchachos se fueran de la isla de la noche a la maÃ±ana.
 	};
 };
 

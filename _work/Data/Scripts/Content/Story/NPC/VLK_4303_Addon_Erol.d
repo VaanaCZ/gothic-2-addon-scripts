@@ -20,7 +20,7 @@ instance VLK_4303_Addon_Erol (Npc_Default)
 	CreateInvItems (self, ItPo_Health_01, 3);									
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_Corristo , BodyTex_N, ITAR_VLK_L);

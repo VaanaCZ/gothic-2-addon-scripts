@@ -29,7 +29,7 @@ INSTANCE DIA_OCPAL_9_PEOPLE(C_INFO)
 	condition	= DIA_OCPAL_9_PEOPLE_Condition;
 	information	= DIA_OCPAL_9_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT DIA_OCPAL_9_PEOPLE_Condition()
@@ -39,8 +39,8 @@ FUNC INT DIA_OCPAL_9_PEOPLE_Condition()
 
 FUNC VOID DIA_OCPAL_9_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //¿Quién está al mando?
-	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Garond es el comandante del castillo. La verdad es que su posición no es envidiable.
+	AI_Output (other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Garond es el comandante del castillo. La verdad es que su posiciÃ³n no es envidiable.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_9_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_9_LOCATION_Condition;
 	information	= DIA_OCPAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "¿Qué sabes de este valle?";
+	description = "Â¿QuÃ© sabes de este valle?";
 };                       
 
 FUNC INT DIA_OCPAL_9_LOCATION_Condition()
@@ -62,8 +62,8 @@ FUNC INT DIA_OCPAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //¿Qué sabes de este valle?
-	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Los orcos han construido una alta muralla protectora en el este, supongo que para proteger sus pertrechos. Detrás de la muralla hay un lugar donde atracan sus barcos.
+	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //Â¿QuÃ© sabes de este valle?
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Los orcos han construido una alta muralla protectora en el este, supongo que para proteger sus pertrechos. DetrÃ¡s de la muralla hay un lugar donde atracan sus barcos.
 	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02"); //Espero que los orcos tarden en abastecerse. Ya nos cuesta afrontar lo que tienen ahora mismo.
 };
 
@@ -76,7 +76,7 @@ INSTANCE DIA_OCPAL_9_STANDARD(C_INFO)
 	condition	= DIA_OCPAL_9_STANDARD_Condition;
 	information	= DIA_OCPAL_9_STANDARD_Info;
 	permanent	= TRUE;
-	description = "¿Cómo van las cosas?";
+	description = "Â¿CÃ³mo van las cosas?";
 };
                        
 func INT DIA_OCPAL_9_STANDARD_Condition()
@@ -86,22 +86,22 @@ func INT DIA_OCPAL_9_STANDARD_Condition()
 
 FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //¿Cómo van las cosas?
+	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Â¿CÃ³mo van las cosas?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //¡Los dragones han vuelto a atacar! ¡No obstante, Innos nos protegerá en la batalla y las criaturas de Beliar van a pagarlo caro con su sangre!
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Â¡Los dragones han vuelto a atacar! Â¡No obstante, Innos nos protegerÃ¡ en la batalla y las criaturas de Beliar van a pagarlo caro con su sangre!
 	};
 
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //¡Cazadores de dragones! ¡Debían habernos enviado paladines!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Â¡Cazadores de dragones! Â¡DebÃ­an habernos enviado paladines!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //¡Ahora que hemos acabado con los ladrones, nos ocuparemos de los orcos!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //Â¡Ahora que hemos acabado con los ladrones, nos ocuparemos de los orcos!
 		};
 	};
 
@@ -113,7 +113,7 @@ FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //¡Traición! La puerta no debía haberse abierto. ¡Muerte a los traidores!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Â¡TraiciÃ³n! La puerta no debÃ­a haberse abierto. Â¡Muerte a los traidores!
 		};
 	};
 };

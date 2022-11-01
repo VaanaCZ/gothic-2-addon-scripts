@@ -1,6 +1,6 @@
 
-const int Value_Dragonegg 		= 200;//Joly: nicht ‰ndern
-const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
+const int Value_Dragonegg 		= 200;//Joly: nicht √§ndern
+const int Value_OrcEliteRing 	= 130;//Joly: nicht √§ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -23,7 +23,7 @@ const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amuleto m·gico de Angar";
+	description		= "Amuleto m√°gico de Angar";
 	
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= 10;
@@ -85,7 +85,7 @@ INSTANCE ItMW_1H_FerrosSword_Mis (C_Item)
 
 INSTANCE ItMi_KerolothsGeldbeutel_MIS(C_Item)
 {
-	name 				=	"BolsÛn de cuero de Kareloth";
+	name 				=	"Bols√≥n de cuero de Kareloth";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -110,7 +110,7 @@ FUNC VOID UseKerolothsGeldbeutel ()
 
 INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name 				=	"BolsÛn de cuero de Kareloth";
+	name 				=	"Bols√≥n de cuero de Kareloth";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -149,7 +149,7 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 };
 
 
-//Tabins Lurkerh‰ute von Engrom
+//Tabins Lurkerh√§ute von Engrom
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"En el interior est· grabado un nombre, Talbin.";
+	TEXT[0]				= 	"En el interior est√° grabado un nombre, Talbin.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -172,11 +172,11 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Drachen-Ei	(f¸r DJG only Ambient auftrag)
+//	Drachen-Ei	(f√ºr DJG only Ambient auftrag)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
-	name 					=	"Huevo de dragÛn";
+	name 					=	"Huevo de drag√≥n";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -187,23 +187,23 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"El huevo est· caliente y en su interior";
-	TEXT[1]					=	"se escuchan araÒazos.";
+	TEXT[0]					=	"El huevo est√° caliente y en su interior";
+	TEXT[1]					=	"se escuchan ara√±azos.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
 //---------------------------------------------------------------------
-//	OrcEliteRing (f¸r PAL only Ambient auftrag)
+//	OrcEliteRing (f√ºr PAL only Ambient auftrag)
 //---------------------------------------------------------------------
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
 {
-	name 					=	"Anillo de los seÒores de la guerra orcos";
+	name 					=	"Anillo de los se√±ores de la guerra orcos";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
-	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muﬂ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Mu√ü so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	value 					=	Value_OrcEliteRing;
 
@@ -217,7 +217,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 	description				= 	name;
 
 	TEXT[0]					=	"El anillo es basto y parece";
-	TEXT[1]					=	"extraÒamente frÌo.";
+	TEXT[1]					=	"extra√±amente fr√≠o.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -262,7 +262,7 @@ INSTANCE ItPo_DragonEggDrinkNeoras_MIS (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"PociÛn de secreciÛn de huevo de dragÛn";
+	description		= 	"Poci√≥n de secreci√≥n de huevo de drag√≥n";
 	
 	TEXT[3]			= 	"Efecto: desconocido.";				
 	
@@ -325,7 +325,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 		if (Use_Map_NewWorld_Orcelite_MIS_OneTime == FALSE)
 		&& (MIS_KillOrkOberst != 0)
 		{
-			B_LogEntry (TOPIC_OrcElite,"He encontrado un extraÒo mapa que llevaba el coronel orco. Parece un mapa estratÈgico de los orcos."); 
+			B_LogEntry (TOPIC_OrcElite,"He encontrado un extra√±o mapa que llevaba el coronel orco. Parece un mapa estrat√©gico de los orcos."); 
 			Use_Map_NewWorld_Orcelite_MIS_OneTime = TRUE;
 		};
 	};

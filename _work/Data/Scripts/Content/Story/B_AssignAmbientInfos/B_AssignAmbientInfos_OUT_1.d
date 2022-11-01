@@ -47,7 +47,7 @@ FUNC VOID DIA_OUT_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Desde que desapareció la barrera que rodeaba la penitenciaría, los bandidos nos han dado guerra de manera constante.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Desde que desapareciÃ³ la barrera que rodeaba la penitenciarÃ­a, los bandidos nos han dado guerra de manera constante.
 	};
 	if (randy == 1)
 	{
@@ -55,7 +55,7 @@ FUNC VOID DIA_OUT_1_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_02"); //No voy a dejar que nadie se aproveche de mí. Ni el rey, ni el gordo Onar. Solo lucho para mí.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_02"); //No voy a dejar que nadie se aproveche de mÃ­. Ni el rey, ni el gordo Onar. Solo lucho para mÃ­.
 	};
 	
 	AI_StopProcessInfos	(self);

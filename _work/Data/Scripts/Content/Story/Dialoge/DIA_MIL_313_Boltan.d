@@ -42,7 +42,7 @@ func int DIA_Boltan_HALLO_Condition ()
 
 func void DIA_Boltan_HALLO_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_00"); //¿Qué quieres?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_00"); //Â¿QuÃ© quieres?
 };
 
 // ************************************************
@@ -73,11 +73,11 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Sí, ve a despedirte de tu amigo.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //SÃ­, ve a despedirte de tu amigo.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //Hemos encerrado el cerdo que asesinó al paladín Lothar.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //Hemos encerrado el cerdo que asesinÃ³ al paladÃ­n Lothar.
 		};
 	}
 	else if (Canthar_Ausgeliefert == FALSE)
@@ -85,7 +85,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 	&& (Rengaru_Ausgeliefert == FALSE)
 	&& (Nagur_Ausgeliefert == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Por ahora todas las celdas están vacías.
+		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Por ahora todas las celdas estÃ¡n vacÃ­as.
 	}
 	else
 	{
@@ -99,7 +99,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Adelante, pero no te vayas mucho tiempo, ¿me oyes?
+			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Adelante, pero no te vayas mucho tiempo, Â¿me oyes?
 		};
 	};
 };		
@@ -129,9 +129,9 @@ func int DIA_Boltan_HalloBennet_Condition ()
 
 func void DIA_Boltan_HalloBennet_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //No habrás venido a sacar a tu amigo, ¿eh?
-	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //¡Ni hablar! ¡En cuanto dé la alarma, los muchachos llegarán en un instante!
-	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //¡Y entonces haremos picadillo a un mercenario! (risa maliciosa).
+	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //No habrÃ¡s venido a sacar a tu amigo, Â¿eh?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Â¡Ni hablar! Â¡En cuanto dÃ© la alarma, los muchachos llegarÃ¡n en un instante!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //Â¡Y entonces haremos picadillo a un mercenario! (risa maliciosa).
 };		
 	
 // ************************************************
@@ -159,10 +159,10 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 
 func void DIA_Boltan_HalloCanthar_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Eh, tú eres el tipo que se quejó del mercader Canthar.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Hay mucha gente que responde de él, gente respetable.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Seguro que no ha sido más que un malentendido. Suele suceder.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //En el futuro, debes tener más cuidado con quién metes en la cárcel.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Eh, tÃº eres el tipo que se quejÃ³ del mercader Canthar.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Hay mucha gente que responde de Ã©l, gente respetable.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Seguro que no ha sido mÃ¡s que un malentendido. Suele suceder.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //En el futuro, debes tener mÃ¡s cuidado con quiÃ©n metes en la cÃ¡rcel.
 };		
 
 

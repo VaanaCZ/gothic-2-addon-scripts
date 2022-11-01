@@ -32,7 +32,7 @@ INSTANCE MENU_OPT_VIDEO(C_MENU_DEF)
 
 INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Opciones de gráficos";
+	text[0]		=	"Opciones de grÃ¡ficos";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -50,7 +50,7 @@ INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_DEVICE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Tar. gráfica";
+	text[0]		=	"Tar. grÃ¡fica";
 	text[1]		=	"Para que los cambios tengan efecto, hay que reiniciar"; // Kommentar
 	
 	// Position und Dimension	
@@ -87,8 +87,8 @@ INSTANCE MENUITEM_VID_DEVICE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_RESOLUTION(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Resolución";
-	text[1]		= "Selecciona la resolución deseada y pulsa INTRO"; // Kommentar
+	text[0]		= "ResoluciÃ³n";
+	text[1]		= "Selecciona la resoluciÃ³n deseada y pulsa INTRO"; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_DY*1;
@@ -227,7 +227,7 @@ INSTANCE MENUITEM_VID_GAMMA_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

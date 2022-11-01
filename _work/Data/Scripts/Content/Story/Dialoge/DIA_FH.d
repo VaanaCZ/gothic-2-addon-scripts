@@ -24,7 +24,7 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("¡¡¡¡¡¡¡¡¡¡MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("Â¡Â¡Â¡Â¡Â¡Â¡Â¡Â¡Â¡Â¡MINUS-Gesichter gibtÂ´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
@@ -293,24 +293,24 @@ FUNC VOID DIA_FH_Choose_HeadMesh_Info()
 {	
 	Info_ClearChoices	(DIA_FH_Choose_HeadMesh);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Atrás" 				, DIA_FH_Choose_HeadMesh_7);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Psiónico" 	, DIA_FH_Choose_HeadMesh_6);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Ladrón" 		, DIA_FH_Choose_HeadMesh_5);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Calvo" 		, DIA_FH_Choose_HeadMesh_4);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Chulo" 		, DIA_FH_Choose_HeadMesh_3);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Guerrero" 	, DIA_FH_Choose_HeadMesh_2);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_CalvoGordo" 	, DIA_FH_Choose_HeadMesh_1);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "AtrÃ¡s" 				, DIA_FH_Choose_HeadMesh_7);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_PsiÃ³nico" 	, DIA_FH_Choose_HeadMesh_6);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_LadrÃ³n" 		, DIA_FH_Choose_HeadMesh_5);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Calvo" 		, DIA_FH_Choose_HeadMesh_4);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Chulo" 		, DIA_FH_Choose_HeadMesh_3);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Guerrero" 	, DIA_FH_Choose_HeadMesh_2);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_CalvoGordo" 	, DIA_FH_Choose_HeadMesh_1);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_PeloNena", DIA_FH_Choose_HeadMesh_17);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena8" 	, DIA_FH_Choose_HeadMesh_16);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena7" 	, DIA_FH_Choose_HeadMesh_15);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena6" 	, DIA_FH_Choose_HeadMesh_14);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena5" 	, DIA_FH_Choose_HeadMesh_13);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena4" 	, DIA_FH_Choose_HeadMesh_12);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena3" 	, DIA_FH_Choose_HeadMesh_11);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena2" 	, DIA_FH_Choose_HeadMesh_10);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena1" 	, DIA_FH_Choose_HeadMesh_9);
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_Humaná_Nena" 	, DIA_FH_Choose_HeadMesh_8);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_PeloNena", DIA_FH_Choose_HeadMesh_17);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena8" 	, DIA_FH_Choose_HeadMesh_16);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena7" 	, DIA_FH_Choose_HeadMesh_15);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena6" 	, DIA_FH_Choose_HeadMesh_14);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena5" 	, DIA_FH_Choose_HeadMesh_13);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena4" 	, DIA_FH_Choose_HeadMesh_12);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena3" 	, DIA_FH_Choose_HeadMesh_11);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena2" 	, DIA_FH_Choose_HeadMesh_10);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena1" 	, DIA_FH_Choose_HeadMesh_9);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Cabeza_HumanÃ¡_Nena" 	, DIA_FH_Choose_HeadMesh_8);
 };
 
 

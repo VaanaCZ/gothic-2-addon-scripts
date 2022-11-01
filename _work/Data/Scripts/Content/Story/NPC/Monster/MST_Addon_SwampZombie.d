@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_SwampZombie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Cad·ver de la ciÈnaga";
+	name							=	"Cad√°ver de la ci√©naga";
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZOMBIE;
 	level							=	15;

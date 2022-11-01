@@ -36,10 +36,10 @@ FUNC INT DIA_1061_Wache_Hallo_Condition()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//Alto. Por aquí no puedes pasar.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//Alto. Por aquÃ­ no puedes pasar.
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Quiero hablar con tu jefe.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(Irónico) Oh, así que quieres hablar con mi jefe. En ese caso sí te dejo pasar.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(Totalmente en serio) Pero solo si sabes cómo se llama... porque si no, me veré obligado a matarte. ¿Y bien?
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(IrÃ³nico) Oh, asÃ­ que quieres hablar con mi jefe. En ese caso sÃ­ te dejo pasar.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(Totalmente en serio) Pero solo si sabes cÃ³mo se llama... porque si no, me verÃ© obligado a matarte. Â¿Y bien?
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Lee",DIA_1061_Wache_Hallo_Lee);
@@ -54,7 +54,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Info()
 FUNC VOID DIA_1061_Wache_Hallo_Lee()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Lee_15_00");//Lee.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Lee_01_01");//¿Qué podría agregar? ¡Esto te va a costar la vida, tío!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Lee_01_01");//Â¿QuÃ© podrÃ­a agregar? Â¡Esto te va a costar la vida, tÃ­o!
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -63,9 +63,9 @@ FUNC VOID DIA_1061_Wache_Hallo_Lee()
 FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Dexter.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Bueno... supongo que conoces al jefe. Vale, te dejaré pasar. Pero te lo advierto.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Si te acercas demasiado a alguien, no vas a salir vivo de aquí.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Así que respira hondo y deja quietas las armas. Encontrarás a Dexter en la casa.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Bueno... supongo que conoces al jefe. Vale, te dejarÃ© pasar. Pero te lo advierto.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Si te acercas demasiado a alguien, no vas a salir vivo de aquÃ­.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//AsÃ­ que respira hondo y deja quietas las armas. EncontrarÃ¡s a Dexter en la casa.
 	
 	Knows_Dexter = TRUE;
 	BanditGuard.aivar[AIV_PASSGATE] = TRUE;
@@ -75,9 +75,9 @@ FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 FUNC VOID DIA_1061_Wache_Hallo_Diego()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Diego.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//¡Exacto!
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//No, solo estaba bromeando. No tienes ni idea de quién es mi jefe.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//No hay ningún motivo para que no te mate.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Â¡Exacto!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//No, solo estaba bromeando. No tienes ni idea de quiÃ©n es mi jefe.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//No hay ningÃºn motivo para que no te mate.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -86,7 +86,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 FUNC VOID DIA_1061_Wache_Hallo_Ahnung()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//Ni idea.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//Entonces morirás sin saberlo.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//Entonces morirÃ¡s sin saberlo.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -114,7 +114,7 @@ FUNC INT DIA_1061_Wache_Perm_Condition()
 };
 FUNC VOID DIA_1061_Wache_Perm_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Recuerda: si te andas con ojo saldrás vivo de aquí.
+	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Recuerda: si te andas con ojo saldrÃ¡s vivo de aquÃ­.
 	AI_StopProcessInfos (self);
 };
 	 

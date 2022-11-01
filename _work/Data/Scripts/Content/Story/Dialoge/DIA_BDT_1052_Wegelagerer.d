@@ -31,7 +31,7 @@ INSTANCE DIA_1052_Wegelagerer_Hello   (C_INFO)
 	condition   = DIA_1052_Wegelagerer_Hello_Condition;
 	information = DIA_1052_Wegelagerer_Hello_Info;
 	permanent   = FALSE;
-	description = "¿Quién eres tú?";
+	description = "Â¿QuiÃ©n eres tÃº?";
 };
 
 FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
@@ -47,8 +47,8 @@ FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
 
 FUNC VOID DIA_1052_Wegelagerer_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //¿Quién eres tú?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //¿Qué es esto? ¿Un interrogatorio?
+	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Â¿QuiÃ©n eres tÃº?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Â¿QuÃ© es esto? Â¿Un interrogatorio?
 	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //No tengo nada que decirte, aunque a lo mejor quieres hablar con mi amigo.
 	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Pero ten cuidado. No soporta a los forasteros.
 };

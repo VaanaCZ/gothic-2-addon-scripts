@@ -31,7 +31,7 @@ instance DIA_Grimbald_HALLO		(C_INFO)
 	condition	 = 	DIA_Grimbald_HALLO_Condition;
 	information	 = 	DIA_Grimbald_HALLO_Info;
 
-	description	 = 	"¿Esperas a alguien?";
+	description	 = 	"Â¿Esperas a alguien?";
 };
 
 func int DIA_Grimbald_HALLO_Condition ()
@@ -42,53 +42,53 @@ var int Grimbald_PissOff;
 
 func void DIA_Grimbald_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //¿Esperas a alguien?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //Â¿Esperas a alguien?
 	
 	if 	(
 		(Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Estoy cazando. Debería resultar evidente.
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Estoy cazando. DeberÃ­a resultar evidente.
 				Grimbald_PissOff = TRUE;
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Ya no. Ya has llegado, ¿no?
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Ya no. Ya has llegado, Â¿no?
 				
 				Info_ClearChoices	(DIA_Grimbald_HALLO);
 				Info_AddChoice	(DIA_Grimbald_HALLO, "Tengo cosas que hacer.", DIA_Grimbald_HALLO_nein );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "¿Qué tramas?", DIA_Grimbald_HALLO_Was );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "¿Por qué yo?", DIA_Grimbald_HALLO_ich );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Â¿QuÃ© tramas?", DIA_Grimbald_HALLO_Was );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Â¿Por quÃ© yo?", DIA_Grimbald_HALLO_ich );
 			};
 };
 
 func void DIA_Grimbald_HALLO_ich ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //¿Por qué yo?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //Pareces fuerte. Me vendría bien un tipo como tú.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //Â¿Por quÃ© yo?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //Pareces fuerte. Me vendrÃ­a bien un tipo como tÃº.
 };
 
 func void DIA_Grimbald_HALLO_Was ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //¿Qué tramas?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Quiero cazar a los chasqueadores ahí arriba, pero es posible que haya demasiados para que lo haga solo.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Â¿QuÃ© tramas?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Quiero cazar a los chasqueadores ahÃ­ arriba, pero es posible que haya demasiados para que lo haga solo.
 
 	Info_AddChoice	(DIA_Grimbald_HALLO, "No cuentes conmigo.", DIA_Grimbald_HALLO_Was_neinnein );
-	Info_AddChoice	(DIA_Grimbald_HALLO, "De acuerdo, te ayudaré. Tú primero.", DIA_Grimbald_HALLO_Was_ja );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "De acuerdo, te ayudarÃ©. TÃº primero.", DIA_Grimbald_HALLO_Was_ja );
 };
 func void DIA_Grimbald_HALLO_Was_neinnein ()
 {
 	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neinnein_15_00"); //No cuentes conmigo.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //Entonces lárgate, cobarde.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //Entonces lÃ¡rgate, cobarde.
 	Grimbald_PissOff = TRUE;
 	Info_ClearChoices	(DIA_Grimbald_HALLO);
 };
 
 func void DIA_Grimbald_HALLO_Was_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //De acuerdo, te ayudaré. Tú primero.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Desde luego. Pero no te acerques demasiado al troll negro. Te haría pedazos.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //De acuerdo, te ayudarÃ©. TÃº primero.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Desde luego. Pero no te acerques demasiado al troll negro. Te harÃ­a pedazos.
 	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //Y pobre de ti si te amilanas.
 	B_StartOtherRoutine	(self,"Jagd");
 	AI_StopProcessInfos (self);
@@ -97,7 +97,7 @@ func void DIA_Grimbald_HALLO_Was_ja ()
 func void DIA_Grimbald_HALLO_nein ()
 {
 	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //Tengo cosas que hacer.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //No digas tonterías. ¿Qué puedes tener que hacer por aquí que sea tan importante?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //No digas tonterÃ­as. Â¿QuÃ© puedes tener que hacer por aquÃ­ que sea tan importante?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ instance DIA_Grimbald_Jagd		(C_INFO)
 	information	 = 	DIA_Grimbald_Jagd_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Me enseñas a cazar?";
+	description	 = 	"Â¿Me enseÃ±as a cazar?";
 };
 
 func int DIA_Grimbald_Jagd_Condition ()
@@ -125,13 +125,13 @@ func int DIA_Grimbald_Jagd_Condition ()
 
 func void DIA_Grimbald_Jagd_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //¿Me enseñas a cazar?
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //Â¿Me enseÃ±as a cazar?
 	if 	((Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 		|| (Grimbald_PissOff == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Um. Muy bien. Por ahora no me has sido muy útil, pero no quiero ser duro.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Um. Muy bien. Por ahora no me has sido muy Ãºtil, pero no quiero ser duro.
 		Grimbald_TeachAnimalTrophy = TRUE;
 	}
 	else
@@ -140,7 +140,7 @@ func void DIA_Grimbald_Jagd_Info ()
 		B_Say_Gold (self, other, 200);
 	
 		Info_ClearChoices	(DIA_Grimbald_Jagd);
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Me lo pensaré.", DIA_Grimbald_Jagd_zuviel );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "Me lo pensarÃ©.", DIA_Grimbald_Jagd_zuviel );
 		Info_AddChoice	(DIA_Grimbald_Jagd, "De acuerdo.", DIA_Grimbald_Jagd_ja );
 	};
 };
@@ -151,20 +151,20 @@ func void DIA_Grimbald_Jagd_ja ()
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,200))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //Bien. Cuando quieras aprender algo, dímelo.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //Bien. Cuando quieras aprender algo, dÃ­melo.
 			Grimbald_TeachAnimalTrophy = TRUE;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //Si me traes el dinero, te enseñaré algo.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //Si me traes el dinero, te enseÃ±arÃ© algo.
 		};
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };  
 
 func void DIA_Grimbald_Jagd_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Me lo pensaré.
-	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Si tú lo dices.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Me lo pensarÃ©.
+	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Si tÃº lo dices.
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };
 
@@ -179,7 +179,7 @@ instance DIA_Grimbald_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grimbald_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grimbald_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Enséñame a cazar.";
+	description	 = 	"EnsÃ©Ã±ame a cazar.";
 };
 
 func int DIA_Grimbald_TEACHHUNTING_Condition ()
@@ -192,7 +192,7 @@ func int DIA_Grimbald_TEACHHUNTING_Condition ()
 var int DIA_Grimbald_TEACHHUNTING_OneTime;
 func void DIA_Grimbald_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //Enséñame a cazar.
+	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //EnsÃ©Ã±ame a cazar.
 	if (DIA_Grimbald_TEACHHUNTING_OneTime == FALSE)
 	{
 		B_StartOtherRoutine	(self,"JagdOver");
@@ -207,13 +207,13 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 			)
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //¿Qué es lo que quieres saber?
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Â¿QuÃ© es lo que quieres saber?
 	
 				Info_AddChoice		(DIA_Grimbald_TEACHHUNTING, DIALOG_BACK, DIA_Grimbald_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Aguijón de mosca de sangre",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("AguijÃ³n de mosca de sangre",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 				{ 
@@ -225,7 +225,7 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Quitar mandíbulas",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Quitar mandÃ­bulas",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
@@ -234,7 +234,7 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Ya sabes todo lo que podía enseñarte.
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Ya sabes todo lo que podÃ­a enseÃ±arte.
 			};
 };
 
@@ -247,7 +247,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Arrancar el aguijón de una mosca de sangre no tiene nada de particular. Solo hay que encontrar la base y dar un tajo firme con el cuchillo.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Arrancar el aguijÃ³n de una mosca de sangre no tiene nada de particular. Solo hay que encontrar la base y dar un tajo firme con el cuchillo.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -265,7 +265,7 @@ func void DIA_Grimbald_TEACHHUNTING_Claws ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Hay varios métodos para extraer las garras. En el caso de algunos animales, hace falta dar un fuerte golpe, y en otros, basta con cortarlas con un cuchillo.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Hay varios mÃ©todos para extraer las garras. En el caso de algunos animales, hace falta dar un fuerte golpe, y en otros, basta con cortarlas con un cuchillo.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -274,7 +274,7 @@ func void DIA_Grimbald_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //Los reptadores de la mina y los incursores de campo tienen fuertes mandíbulas se pueden arrancar de la cabeza de un tirón enérgico.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //Los reptadores de la mina y los incursores de campo tienen fuertes mandÃ­bulas se pueden arrancar de la cabeza de un tirÃ³n enÃ©rgico.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -283,7 +283,7 @@ func void DIA_Grimbald_TEACHHUNTING_CrawlerPlate ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Las placas de los reptadores de la mina están bien fijas a los cuerpos de las bestias, pero se pueden desprender con un objeto afilado y contundente.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Las placas de los reptadores de la mina estÃ¡n bien fijas a los cuerpos de las bestias, pero se pueden desprender con un objeto afilado y contundente.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -299,7 +299,7 @@ instance DIA_Grimbald_NovChase		(C_INFO)
 	condition	 = 	DIA_Grimbald_NovChase_Condition;
 	information	 = 	DIA_Grimbald_NovChase_Info;
 
-	description	 = 	"¿Has visto pasar por aquí a un novicio?";
+	description	 = 	"Â¿Has visto pasar por aquÃ­ a un novicio?";
 
 };
 
@@ -313,9 +313,9 @@ func int DIA_Grimbald_NovChase_Condition ()
 
 func void DIA_Grimbald_NovChase_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //¿Has visto pasar por aquí a un novicio?
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //Por aquí pasa mucha gente peculiar, como esos dos payasos que están en el arco de piedra.
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Hace un tiempo les acompañaba un novicio de los Magos del Fuego.
+	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //Â¿Has visto pasar por aquÃ­ a un novicio?
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //Por aquÃ­ pasa mucha gente peculiar, como esos dos payasos que estÃ¡n en el arco de piedra.
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Hace un tiempo les acompaÃ±aba un novicio de los Magos del Fuego.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -342,7 +342,7 @@ func int DIA_Grimbald_Trolltot_Condition ()
 
 func void DIA_Grimbald_Trolltot_Info ()
 {
-	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //El troll negro ha muerto. Muy bien. Pensaba que era imposible matarlos. No se me olvidará.
+	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //El troll negro ha muerto. Muy bien. Pensaba que era imposible matarlos. No se me olvidarÃ¡.
 	B_GivePlayerXP (XP_Ambient);
 };
 

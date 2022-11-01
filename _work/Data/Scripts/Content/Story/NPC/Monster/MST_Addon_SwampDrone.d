@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_SwampDrone(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Zángano de gas de la ciénaga";
+	name							= "ZÃ¡ngano de gas de la ciÃ©naga";
 	guild							= GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= ID_SWAMPDRONE;
 	level							= 10;

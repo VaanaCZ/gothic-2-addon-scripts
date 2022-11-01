@@ -85,12 +85,12 @@ func void DIA_Sonja_STANDARD_Info ()
 	else if (other.guild == GIL_DJG)
 	&& (Sonja_Says == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //El problema con vosotros es que preferÌs matar orcos que fornicar.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //El problema con vosotros es que prefer√≠s matar orcos que fornicar.
 		Sonja_Says = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_02"); //Si lo que buscas es conversaciÛn, Èchate una novia y c·sate con ella.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_02"); //Si lo que buscas es conversaci√≥n, √©chate una novia y c√°sate con ella.
 	};
 	AI_StopProcessInfos (self);
 };

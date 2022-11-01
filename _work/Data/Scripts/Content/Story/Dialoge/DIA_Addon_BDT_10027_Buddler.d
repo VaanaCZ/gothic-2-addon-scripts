@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10027_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10027_Buddler_Hi_Condition;
 	information = DIA_Addon_10027_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };
 FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 {	
@@ -36,7 +36,7 @@ FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//¿Qué tal todo?
+	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//Â¿QuÃ© tal todo?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
@@ -44,7 +44,7 @@ FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Mierda. Tendremos que volver a cavar nosotros, ¿eh?
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Mierda. Tendremos que volver a cavar nosotros, Â¿eh?
 	};
 };
 //---------------------------------------------------------------------
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Trabajo neuronal, chaval. Extraer oro es un procedimiento puramente mental. No intentes forzar la roca, es más dura que tú.
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Libera tu mente de todo e intenta fusionarte con el oro. Es como la meditación, es una oración.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Trabajo neuronal, chaval. Extraer oro es un procedimiento puramente mental. No intentes forzar la roca, es mÃ¡s dura que tÃº.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Libera tu mente de todo e intenta fusionarte con el oro. Es como la meditaciÃ³n, es una oraciÃ³n.
 	
 	B_Upgrade_Hero_HackChance(10);
 };

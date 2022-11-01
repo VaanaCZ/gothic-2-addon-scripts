@@ -272,12 +272,12 @@ func void PLAYER_HOTKEY_LAME_POTION()
 				}
 				else
 				{
-					Print ("¡No hay ninguna poción de maná disponible!");
+					Print ("Â¡No hay ninguna pociÃ³n de manÃ¡ disponible!");
 				};
 		 }
 		 else
 		 {
-				Print ("¡Ya se ha llegado al máximo de maná!");
+				Print ("Â¡Ya se ha llegado al mÃ¡ximo de manÃ¡!");
 		 };
 	};
 };
@@ -330,12 +330,12 @@ if (Npc_IsInState (hero,ZS_Dead)==FALSE)
 				}
 				else
 				{
-					Print ("¡No hay pociones de curación disponibles!");
+					Print ("Â¡No hay pociones de curaciÃ³n disponibles!");
 				};
 		 }
 		 else
 		 {
-				Print ("¡Fuerza vital máxima alcanzada!");
+				Print ("Â¡Fuerza vital mÃ¡xima alcanzada!");
 		 };
 	};
 };

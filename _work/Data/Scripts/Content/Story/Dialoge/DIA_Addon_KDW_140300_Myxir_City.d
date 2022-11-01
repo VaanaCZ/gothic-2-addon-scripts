@@ -30,7 +30,7 @@ instance DIA_Addon_Myxir_CITY_HelloCITY		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_HelloCITY_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Piensas quedarte ahora en la ciudad?";
+	description	 = 	"Â¿Piensas quedarte ahora en la ciudad?";
 };
 
 func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
@@ -40,7 +40,7 @@ func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
 var int DIA_Addon_Myxir_CITY_HelloCITY_OneTime;
 func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //¿Piensas quedarte ahora en la ciudad?
+	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Â¿Piensas quedarte ahora en la ciudad?
 	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Uno de nosotros tiene que QUEDARSE si Vatras se va de la ciudad.
 	
 	VatrasAbloeseIstDa = TRUE;
@@ -48,10 +48,10 @@ func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 	if (RavenIsDead == TRUE)
 	&& (DIA_Addon_Myxir_CITY_HelloCITY_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //Quería decirte una cosa más.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //QuerÃ­a decirte una cosa mÃ¡s.
 		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //Fue toda una proeza lo que hiciste en Jharkendar.
-		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Por desgracia, aún no he terminado con mis quehaceres en Khorinis.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Cierto, pero estoy seguro que pronto tendrás todo bajo control, Defensor.
+		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Por desgracia, aÃºn no he terminado con mis quehaceres en Khorinis.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Cierto, pero estoy seguro que pronto tendrÃ¡s todo bajo control, Defensor.
 		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //Ya veremos.
 		DIA_Addon_Myxir_CITY_HelloCITY_OneTime = TRUE;
 		B_GivePlayerXP (XP_Ambient);
@@ -68,7 +68,7 @@ instance DIA_Addon_Myxir_CITY_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Enséñame ese idioma.";
+	description	 = 	"EnsÃ©Ã±ame ese idioma.";
 };
 
 var int DIA_Addon_Myxir_CITY_Teach_NoPerm;

@@ -44,18 +44,18 @@ func int DIA_Orlan_Wein_Condition ()
 func void DIA_Orlan_Wein_Info ()
 {
 	AI_Output (other, self, "DIA_Orlan_Wein_15_00"); //Traigo el vino del monasterio.
-	AI_Output (self, other, "DIA_Orlan_Wein_05_01"); //Magnífico. Lo estaba esperando.
+	AI_Output (self, other, "DIA_Orlan_Wein_05_01"); //MagnÃ­fico. Lo estaba esperando.
 	AI_Output (self, other, "DIA_Orlan_Wein_05_02"); //Ya he acordado el precio con maese Gorax. Ahora mismo te doy las 100 monedas de oro.
 	
 	Info_ClearChoices (DIA_Orlan_Wein);
 	
 	Info_AddChoice (DIA_Orlan_Wein,"Muy bien. Entonces, dame el oro.",DIA_Orlan_Wein_JA);
-	Info_AddChoice (DIA_Orlan_Wein,"¿Quieres hacerme una jugarreta?",DIA_Orlan_Wein_NEIN);
+	Info_AddChoice (DIA_Orlan_Wein,"Â¿Quieres hacerme una jugarreta?",DIA_Orlan_Wein_NEIN);
 };
 FUNC VOID DIA_Orlan_Wein_JA()
 {
 	AI_Output (other, self, "DIA_Orlan_Wein_JA_15_00"); //Muy bien. Entonces, dame el oro.
-	AI_Output (self, other, "DIA_Orlan_Wein_JA_05_01"); //Aquí tienes. Ha sido un placer hacer negocios contigo.
+	AI_Output (self, other, "DIA_Orlan_Wein_JA_05_01"); //AquÃ­ tienes. Ha sido un placer hacer negocios contigo.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 100);
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -64,19 +64,19 @@ FUNC VOID DIA_Orlan_Wein_JA()
 };
 FUNC VOID DIA_Orlan_Wein_NEIN()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_NEIN_15_00"); //¿Quieres hacerme una jugarreta? Son 240 monedas de oro.
-	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_01"); //Así que Gorax te ha avisado, ¿eh? Muy bien. A lo mejor podemos llegar a un acuerdo. Mira, voy a darte 100 monedas de oro por el vino.
-	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_02"); //Si le dices a Gorax que te he engañado, te doy cuatro pergaminos de hechizos.
+	AI_Output (other, self, "DIA_Orlan_Wein_NEIN_15_00"); //Â¿Quieres hacerme una jugarreta? Son 240 monedas de oro.
+	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_01"); //AsÃ­ que Gorax te ha avisado, Â¿eh? Muy bien. A lo mejor podemos llegar a un acuerdo. Mira, voy a darte 100 monedas de oro por el vino.
+	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_02"); //Si le dices a Gorax que te he engaÃ±ado, te doy cuatro pergaminos de hechizos.
 	
 	Info_ClearChoices (DIA_Orlan_Wein);
-	Info_AddChoice (DIA_Orlan_Wein,"Limítate a darme las 240 monedas de oro.",DIA_Orlan_Wein_Nie);
+	Info_AddChoice (DIA_Orlan_Wein,"LimÃ­tate a darme las 240 monedas de oro.",DIA_Orlan_Wein_Nie);
 	Info_AddChoice (DIA_Orlan_Wein,"Vale, me parece justo. Dame esos pergaminos de hechizos.",DIA_Orlan_Wein_Okay);
-	Info_AddChoice (DIA_Orlan_Wein,"¿Qué clase de pergaminos son?",DIA_Orlan_Wein_Was);
+	Info_AddChoice (DIA_Orlan_Wein,"Â¿QuÃ© clase de pergaminos son?",DIA_Orlan_Wein_Was);
 };
 FUNC VOID DIA_Orlan_Wein_Nie()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_Nie_15_00"); //Limítate a darme las 240 monedas de oro.
-	AI_Output (self, other, "DIA_Orlan_Wein_Nie_05_01"); //No quieres hacer negocios, ¿eh? Muy bien, aquí tienes el oro.
+	AI_Output (other, self, "DIA_Orlan_Wein_Nie_15_00"); //LimÃ­tate a darme las 240 monedas de oro.
+	AI_Output (self, other, "DIA_Orlan_Wein_Nie_05_01"); //No quieres hacer negocios, Â¿eh? Muy bien, aquÃ­ tienes el oro.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 240);
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -93,7 +93,7 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 	B_GiveInvItems (self, other, ItmI_Gold, 100);
 	
 	AI_Output (other, self, "DIA_Orlan_Wein_Okay_15_00"); //Vale, me parece justo. Dame esos pergaminos de hechizos.
-	AI_Output (self, other, "DIA_Orlan_Wein_Okay_05_01"); //Aquí tienes los pergaminos de hechizos y el oro.
+	AI_Output (self, other, "DIA_Orlan_Wein_Okay_05_01"); //AquÃ­ tienes los pergaminos de hechizos y el oro.
 	
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
 	
@@ -106,8 +106,8 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 };
 FUNC VOID DIA_Orlan_Wein_Was()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_Was_15_00"); //¿Qué clase de pergaminos son?
-	AI_Output (self, other, "DIA_Orlan_Wein_Was_05_01"); //No tengo ni la menor idea. Son de un huésped que... eh... se los dejó olvidados... eso es.
+	AI_Output (other, self, "DIA_Orlan_Wein_Was_15_00"); //Â¿QuÃ© clase de pergaminos son?
+	AI_Output (self, other, "DIA_Orlan_Wein_Was_05_01"); //No tengo ni la menor idea. Son de un huÃ©sped que... eh... se los dejÃ³ olvidados... eso es.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WerBistDu
@@ -119,7 +119,7 @@ instance DIA_Orlan_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Orlan_WERBISTDU_Condition;
 	information	 = 	DIA_Orlan_WERBISTDU_Info;
 
-	description	 = 	"¿Quién eres tú?";
+	description	 = 	"Â¿QuiÃ©n eres tÃº?";
 };
 
 func int DIA_Orlan_WERBISTDU_Condition ()
@@ -129,11 +129,11 @@ func int DIA_Orlan_WERBISTDU_Condition ()
 
 func void DIA_Orlan_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_WERBISTDU_15_00"); //¿Quién eres tú?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_01"); //Soy Orlan, el dueño de este modesto mesón.
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_02"); //¿Qué buscas, forastero? ¿Una espada decente o una armadura de calidad?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_03"); //¿Un buen trago de los alambiques del campo o algo de información?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_04"); //Si oigo el sonido de tus monedas, puedo ofrecerte todo esto y mucho más.
+	AI_Output			(other, self, "DIA_Orlan_WERBISTDU_15_00"); //Â¿QuiÃ©n eres tÃº?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_01"); //Soy Orlan, el dueÃ±o de este modesto mesÃ³n.
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_02"); //Â¿QuÃ© buscas, forastero? Â¿Una espada decente o una armadura de calidad?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_03"); //Â¿Un buen trago de los alambiques del campo o algo de informaciÃ³n?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_04"); //Si oigo el sonido de tus monedas, puedo ofrecerte todo esto y mucho mÃ¡s.
 
 };
 
@@ -147,7 +147,7 @@ instance DIA_Addon_Orlan_Greg		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_Greg_Condition;
 	information	 = 	DIA_Addon_Orlan_Greg_Info;
 
-	description	 = 	"¿Conoces a ese tipo con parche?";
+	description	 = 	"Â¿Conoces a ese tipo con parche?";
 };
 
 func int DIA_Addon_Orlan_Greg_Condition ()
@@ -162,11 +162,11 @@ func int DIA_Addon_Orlan_Greg_Condition ()
 
 func void DIA_Addon_Orlan_Greg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_Greg_15_00"); //¿Conoces a ese tipo con parche?
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_01"); //Lo he visto antes por aquí. Menudo elemento.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_02"); //Cuando vino, se mudó a una de mis habitaciones de arriba, con una caja grande.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_03"); //Teníamos que reclamarle constantemente que pagara el alquiler de la habitación. Y aún así, se tomó su tiempecito.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_04"); //Entonces, un día, desapareció sin más junto con su caja. No quiero tener nada que ver con tipos así.
+	AI_Output	(other, self, "DIA_Addon_Orlan_Greg_15_00"); //Â¿Conoces a ese tipo con parche?
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_01"); //Lo he visto antes por aquÃ­. Menudo elemento.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_02"); //Cuando vino, se mudÃ³ a una de mis habitaciones de arriba, con una caja grande.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_03"); //TenÃ­amos que reclamarle constantemente que pagara el alquiler de la habitaciÃ³n. Y aÃºn asÃ­, se tomÃ³ su tiempecito.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_04"); //Entonces, un dÃ­a, desapareciÃ³ sin mÃ¡s junto con su caja. No quiero tener nada que ver con tipos asÃ­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -179,7 +179,7 @@ instance DIA_Addon_Orlan_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_Ranger_Condition;
 	information	 = 	DIA_Addon_Orlan_Ranger_Info;
 
-	description	 = 	"¿Estoy paranoico o no dejas de mirar mi anillo?";
+	description	 = 	"Â¿Estoy paranoico o no dejas de mirar mi anillo?";
 };
 func int DIA_Addon_Orlan_Ranger_Condition ()
 {
@@ -191,32 +191,32 @@ func int DIA_Addon_Orlan_Ranger_Condition ()
 };
 func void DIA_Addon_Orlan_Ranger_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_15_00"); //¿Estoy paranoico o no dejas de mirar mi anillo?
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_05_01"); //No sé muy bien cómo interpretarlo.
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_15_00"); //Â¿Estoy paranoico o no dejas de mirar mi anillo?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_05_01"); //No sÃ© muy bien cÃ³mo interpretarlo.
 
 	Orlan_KnowsSCAsRanger = TRUE;
 
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);
-	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "¡Amigo! ¡Pertenezco al 'Anillo de Agua'!", DIA_Addon_Orlan_Ranger_Idiot);
-	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Es una aguamarina. ¿Has visto ya alguna?", DIA_Addon_Orlan_Ranger_Aqua);
+	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Â¡Amigo! Â¡Pertenezco al 'Anillo de Agua'!", DIA_Addon_Orlan_Ranger_Idiot);
+	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Es una aguamarina. Â¿Has visto ya alguna?", DIA_Addon_Orlan_Ranger_Aqua);
 };
 func void DIA_Addon_Orlan_Ranger_Aqua()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Aqua_15_00"); //Es una aguamarina. ¿Habías visto alguna antes?
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_01"); //Pues sí. Bienvenido a nuestra sede, Hermano del Anillo.
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Aqua_15_00"); //Es una aguamarina. Â¿HabÃ­as visto alguna antes?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_01"); //Pues sÃ­. Bienvenido a nuestra sede, Hermano del Anillo.
 	if (Npc_KnowsInfo (other, DIA_Addon_Orlan_NoMeeting)) //verrissen
 	{
-		AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_02"); //…aunque no pareces precisamente un santo.
+		AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_02"); //â€¦aunque no pareces precisamente un santo.
 	};
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_03"); //¿Qué puedo hacer por ti?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_03"); //Â¿QuÃ© puedo hacer por ti?
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);
 	B_GivePlayerXP (XP_Ambient);
 };
 func void DIA_Addon_Orlan_Ranger_Idiot ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Lares_15_00"); //¡Amigo! ¡Pertenezco al 'Anillo de Agua'!
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_01"); //¿Sabes? Me sorprende que hayan cogido a un idiota como tú.
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_02"); //¿Qué quieres?
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Lares_15_00"); //Â¡Amigo! Â¡Pertenezco al 'Anillo de Agua'!
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_01"); //Â¿Sabes? Me sorprende que hayan cogido a un idiota como tÃº.
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_02"); //Â¿QuÃ© quieres?
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);	
 };
 
@@ -230,7 +230,7 @@ instance DIA_Addon_Orlan_Teleportstein		(C_INFO)
 	condition	= DIA_Addon_Orlan_Teleportstein_Condition;
 	information	= DIA_Addon_Orlan_Teleportstein_Info;
 
-	description	= "¿Has usado alguna piedra de teletransporte?";
+	description	= "Â¿Has usado alguna piedra de teletransporte?";
 };
 
 func int DIA_Addon_Orlan_Teleportstein_Condition ()
@@ -244,19 +244,19 @@ func int DIA_Addon_Orlan_Teleportstein_Condition ()
 
 func void DIA_Addon_Orlan_Teleportstein_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_Teleportstein_15_00"); //¿Has usado alguna vez una piedra de teletransporte?
-	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_01"); //¿Estás mal de la cabeza? Mientras algún Mago de Agua no me jure que no hay ningún peligro, no pienso acercarme a esas cosas.
+	AI_Output	(other, self, "DIA_Addon_Orlan_Teleportstein_15_00"); //Â¿Has usado alguna vez una piedra de teletransporte?
+	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_01"); //Â¿EstÃ¡s mal de la cabeza? Mientras algÃºn Mago de Agua no me jure que no hay ningÃºn peligro, no pienso acercarme a esas cosas.
 	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_02"); //Me ordenaron esconder una de esas piedras de teletransporte, pero, aparte de eso, procuro mantenerme alejado.
 
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Addon_Orlan_Teleportstein);
-	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "¿Puedo echar un vistazo a esta piedra de teletransporte?", DIA_Addon_Orlan_Teleportstein_sehen );
-	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "¿Dónde está esta piedra de teletransporte?", DIA_Addon_Orlan_Teleportstein_wo );
+	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Â¿Puedo echar un vistazo a esta piedra de teletransporte?", DIA_Addon_Orlan_Teleportstein_sehen );
+	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Â¿DÃ³nde estÃ¡ esta piedra de teletransporte?", DIA_Addon_Orlan_Teleportstein_wo );
 };
 func void DIA_Addon_Orlan_Teleportstein_sehen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_sehen_15_00"); //¿Puedo echarle un vistazo a esa piedra de teletransporte?
-	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_sehen_05_01"); //Por mí… Toma la llave. He cerrado la entrada.
+	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_sehen_15_00"); //Â¿Puedo echarle un vistazo a esa piedra de teletransporte?
+	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_sehen_05_01"); //Por mÃ­â€¦ Toma la llave. He cerrado la entrada.
 	CreateInvItems (self, ITKE_ORLAN_TELEPORTSTATION, 1);									
 	B_GiveInvItems (self, other, ITKE_ORLAN_TELEPORTSTATION, 1);
 	
@@ -267,8 +267,8 @@ func void DIA_Addon_Orlan_Teleportstein_sehen ()
 
 func void DIA_Addon_Orlan_Teleportstein_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_wo_15_00"); //¿Dónde está la piedra de teletransporte?
-	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_wo_05_01"); //Hay una cueva al sur, cerca de mi taberna. Allí es donde los Magos de Agua la encontraron.
+	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_wo_15_00"); //Â¿DÃ³nde estÃ¡ la piedra de teletransporte?
+	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_wo_05_01"); //Hay una cueva al sur, cerca de mi taberna. AllÃ­ es donde los Magos de Agua la encontraron.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -281,7 +281,7 @@ instance DIA_Addon_Orlan_NoMeeting (C_INFO)
 	condition	= DIA_Addon_Orlan_NoMeeting_Condition;
 	information	= DIA_Addon_Orlan_NoMeeting_Info;
 
-	description	= "¡He venido a unirme al Anillo de Agua!";
+	description	= "Â¡He venido a unirme al Anillo de Agua!";
 };
 func int DIA_Addon_Orlan_NoMeeting_Condition ()
 {
@@ -295,8 +295,8 @@ func int DIA_Addon_Orlan_NoMeeting_Condition ()
 };
 func void DIA_Addon_Orlan_NoMeeting_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_NoMeeting_15_00"); //¡He venido a unirme al Anillo de Agua!
-	AI_Output (self, other, "DIA_Addon_Orlan_NoMeeting_05_01"); //(brusco) Yo no veo ningún anillo. ¿Quieres beber algo?
+	AI_Output (other, self, "DIA_Addon_Orlan_NoMeeting_15_00"); //Â¡He venido a unirme al Anillo de Agua!
+	AI_Output (self, other, "DIA_Addon_Orlan_NoMeeting_05_01"); //(brusco) Yo no veo ningÃºn anillo. Â¿Quieres beber algo?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -309,7 +309,7 @@ instance DIA_Addon_Orlan_WhenRangerMeeting		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_WhenRangerMeeting_Condition;
 	information	 = 	DIA_Addon_Orlan_WhenRangerMeeting_Info;
 
-	description	 = 	"He oído que el 'Anillo' va a reunirse contigo en la taberna.";
+	description	 = 	"He oÃ­do que el 'Anillo' va a reunirse contigo en la taberna.";
 };
 
 func int DIA_Addon_Orlan_WhenRangerMeeting_Condition ()
@@ -323,34 +323,34 @@ func int DIA_Addon_Orlan_WhenRangerMeeting_Condition ()
 
 func void DIA_Addon_Orlan_WhenRangerMeeting_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_15_00"); //He oído que el 'Anillo' va a reunirse contigo en la taberna.
-	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_01"); //Eso es. Deberían estar a punto de empezar.
-	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_02"); //Me pregunto qué les habrá retrasado
+	AI_Output	(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_15_00"); //He oÃ­do que el 'Anillo' va a reunirse contigo en la taberna.
+	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_01"); //Eso es. DeberÃ­an estar a punto de empezar.
+	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_02"); //Me pregunto quÃ© les habrÃ¡ retrasado
 
 	B_GivePlayerXP (XP_Ambient);
 	B_Addon_Orlan_RangersReadyForcoming ();
 	self.flags = 0;
 
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "No deberían tardar en llegar.", DIA_Addon_Orlan_WhenRangerMeeting_theyCome );
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "¿La reunión es hoy?", DIA_Addon_Orlan_WhenRangerMeeting_Today );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "No deberÃ­an tardar en llegar.", DIA_Addon_Orlan_WhenRangerMeeting_theyCome );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "Â¿La reuniÃ³n es hoy?", DIA_Addon_Orlan_WhenRangerMeeting_Today );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_Today ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_Today_15_00"); //¿La reunión es hoy?
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_01"); //Sí, al menos que yo recuerde.
+	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_Today_15_00"); //Â¿La reuniÃ³n es hoy?
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_01"); //SÃ­, al menos que yo recuerde.
 	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_02"); //Espero que no se vuelva a retrasar tanto.
 	B_MakeRangerReadyForMeetingALL ();
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(más)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(mÃ¡s)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_theyCome ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_15_00"); //No deberían tardar en llegar.
+	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_15_00"); //No deberÃ­an tardar en llegar.
 	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_05_01"); //Ya veremos.
 	B_MakeRangerReadyForMeetingALL ();
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(más)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(mÃ¡s)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_Los ()
 {
@@ -359,7 +359,7 @@ func void DIA_Addon_Orlan_WhenRangerMeeting_Los ()
 };
 
 //-----------------------------------------------------
-// BESSERE RÜSTUNG
+// BESSERE RÃœSTUNG
 //-----------------------------------------------------
 
 instance DIA_Orlan_RUESTUNG		(C_INFO)
@@ -370,7 +370,7 @@ instance DIA_Orlan_RUESTUNG		(C_INFO)
 	information	 = 	DIA_Orlan_RUESTUNG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Qué tipo de armadura puedes ofrecerme?";
+	description	 = 	"Â¿QuÃ© tipo de armadura puedes ofrecerme?";
 };
 
 var int DIA_Orlan_RUESTUNG_noPerm;
@@ -389,22 +389,22 @@ func int DIA_Orlan_RUESTUNG_Condition ()
 
 func void DIA_Orlan_RUESTUNG_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_RUESTUNG_15_00"); //¿Qué tipo de armadura puedes ofrecerme?
-	AI_Output			(self, other, "DIA_Orlan_RUESTUNG_05_01"); //Aquí tengo una que seguro que te gusta.
+	AI_Output			(other, self, "DIA_Orlan_RUESTUNG_15_00"); //Â¿QuÃ© tipo de armadura puedes ofrecerme?
+	AI_Output			(self, other, "DIA_Orlan_RUESTUNG_05_01"); //AquÃ­ tengo una que seguro que te gusta.
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
 
 	Info_AddChoice			(DIA_Orlan_RUESTUNG, DIALOG_BACK	,	DIA_Orlan_RUESTUNG_BACK);	
-	Info_AddChoice			(DIA_Orlan_RUESTUNG, "Armadura de cuero. Protección: armas 25, flechas 20, fuego 5 (250 de oro)" , DIA_Orlan_RUESTUNG_Buy);	
+	Info_AddChoice			(DIA_Orlan_RUESTUNG, "Armadura de cuero. ProtecciÃ³n: armas 25, flechas 20, fuego 5 (250 de oro)" , DIA_Orlan_RUESTUNG_Buy);	
 };  
 
 func void DIA_Orlan_RUESTUNG_Buy ()
 {
-	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_Buy_15_00"); //Me gustaría comprar una armadura de cuero.
+	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_Buy_15_00"); //Me gustarÃ­a comprar una armadura de cuero.
 
 	if (B_GiveInvItems		(other, self, ItMi_Gold, VALUE_ITAR_Leather_L))
 		{
-			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_01"); //Sabia decisión.
+			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_01"); //Sabia decisiÃ³n.
 
 			CreateInvItems 		(self, ItAr_Leather_L, 1);
 			B_GiveInvItems		(self, other, ItAr_Leather_L, 1);
@@ -421,7 +421,7 @@ func void DIA_Orlan_RUESTUNG_Buy ()
 
 func void DIA_Orlan_RUESTUNG_BACK ()
 {
-	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_BACK_15_00"); //Me lo pensaré.
+	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_BACK_15_00"); //Me lo pensarÃ©.
 	AI_Output				(self, other,"DIA_Orlan_RUESTUNG_BACK_05_01"); //Como quieras. Pero no esperes demasiado.
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
@@ -440,7 +440,7 @@ instance DIA_Orlan_TRADE		(C_INFO)
 	trade		 = 	TRUE;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Enséñame tu mercancía.";
+	description	 = 	"EnsÃ©Ã±ame tu mercancÃ­a.";
 };
 
 func int DIA_Orlan_TRADE_Condition ()
@@ -453,7 +453,7 @@ func int DIA_Orlan_TRADE_Condition ()
 
 func void DIA_Orlan_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_TRADE_15_00"); //Muéstrame tu mercancía.
+	AI_Output			(other, self, "DIA_Orlan_TRADE_15_00"); //MuÃ©strame tu mercancÃ­a.
 	B_GiveTradeInv (self);
 	
 		//ADDON>
@@ -465,11 +465,11 @@ func void DIA_Orlan_TRADE_Info ()
 		//ADDON<
 		else if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_01"); //Por supuesto. Es un honor para mí recibir a un invitado tan importante.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_01"); //Por supuesto. Es un honor para mÃ­ recibir a un invitado tan importante.
 			}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG) || (hero.guild == GIL_MIL))
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_02"); //Por supuesto, señor.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_02"); //Por supuesto, seÃ±or.
 			}
 		else
 			{
@@ -489,7 +489,7 @@ instance DIA_Orlan_HotelZimmer		(C_INFO)
 	information	 = 	DIA_Orlan_HotelZimmer_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"¿Cuánto cobras por una habitación?";
+	description	 = 	"Â¿CuÃ¡nto cobras por una habitaciÃ³n?";
 };
 var int Orlan_SCGotHotelZimmer;
 var int Orlan_SCGotHotelZimmerDay;
@@ -504,14 +504,14 @@ func int DIA_Orlan_HotelZimmer_Condition ()
 
 func void DIA_Orlan_HotelZimmer_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_15_00"); //¿Cuánto cobras por una habitación?
+	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_15_00"); //Â¿CuÃ¡nto cobras por una habitaciÃ³n?
 	
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF)|| (SC_IsRanger == TRUE)||(SCIsWearingRangerRing == TRUE)|| (Orlan_KnowsSCAsRanger == TRUE))
 		{
 			//ADDON>
 			if ((SC_IsRanger == TRUE)||(SCIsWearingRangerRing == TRUE)|| (Orlan_KnowsSCAsRanger == TRUE))
 			{
-				AI_Output			(self, other, "DIA_Addon_Orlan_HotelZimmer_05_00"); //¿A un Hermano del Anillo? Nada.
+				AI_Output			(self, other, "DIA_Addon_Orlan_HotelZimmer_05_00"); //Â¿A un Hermano del Anillo? Nada.
 				Orlan_RangerHelpZimmer = TRUE;
 				Orlan_KnowsSCAsRanger = TRUE;
 			}
@@ -522,10 +522,10 @@ func void DIA_Orlan_HotelZimmer_Info ()
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_02"); //No osaría aceptar dinero de uno de los representantes de Innos en la tierra por mis servicios.
+				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_02"); //No osarÃ­a aceptar dinero de uno de los representantes de Innos en la tierra por mis servicios.
 			};
 			
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_03"); //Aquí está la llave de las habitaciones de arriba. Elige la que más te guste.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_03"); //AquÃ­ estÃ¡ la llave de las habitaciones de arriba. Elige la que mÃ¡s te guste.
 			CreateInvItems (self, ITKE_ORLAN_HOTELZIMMER, 1);									
 			B_GiveInvItems (self, other, ITKE_ORLAN_HOTELZIMMER, 1);					
 			Orlan_SCGotHotelZimmer = TRUE;
@@ -533,19 +533,19 @@ func void DIA_Orlan_HotelZimmer_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_04"); //Dame 50 monedas de oro por una semana, y elige tú la habitación.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_04"); //Dame 50 monedas de oro por una semana, y elige tÃº la habitaciÃ³n.
 		
 			Info_ClearChoices	(DIA_Orlan_HotelZimmer);
 			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Caro de narices.", DIA_Orlan_HotelZimmer_nein );
-			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Muy bien. Aquí tienes la pasta.", DIA_Orlan_HotelZimmer_ja );
+			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Muy bien. AquÃ­ tienes la pasta.", DIA_Orlan_HotelZimmer_ja );
 		};	
 };
 func void DIA_Orlan_HotelZimmer_ja ()
 {
 		if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(other, self, "DIA_Orlan_HotelZimmer_ja_15_00"); //Muy bien. Aquí tienes la pasta.
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_01"); //Toma la llave. Las habitaciones están arriba. No ensucies y paga a tiempo, ¿me oyes?
+			AI_Output			(other, self, "DIA_Orlan_HotelZimmer_ja_15_00"); //Muy bien. AquÃ­ tienes la pasta.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_01"); //Toma la llave. Las habitaciones estÃ¡n arriba. No ensucies y paga a tiempo, Â¿me oyes?
 			CreateInvItems (self, ITKE_ORLAN_HOTELZIMMER, 1);									
 			B_GiveInvItems (self, other, ITKE_ORLAN_HOTELZIMMER, 1);					
 			Orlan_SCGotHotelZimmerDay = Wld_GetDay(); 
@@ -561,7 +561,7 @@ func void DIA_Orlan_HotelZimmer_ja ()
 func void DIA_Orlan_HotelZimmer_nein ()
 {
 	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_nein_15_00"); //Es muy caro.
-	AI_Output			(self, other, "DIA_Orlan_HotelZimmer_nein_05_01"); //Entonces tendrás que buscar en otro lugar, amigo mío.
+	AI_Output			(self, other, "DIA_Orlan_HotelZimmer_nein_05_01"); //Entonces tendrÃ¡s que buscar en otro lugar, amigo mÃ­o.
 	Info_ClearChoices	(DIA_Orlan_HotelZimmer);
 };
 
@@ -626,15 +626,15 @@ func void DIA_Orlan_MieteFaellig_Info ()
 {
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_00"); //(Baboseando) Tu distinguida visita me llena de alegría. Quédate todo el tiempo que quieras. Es un honor.
+		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_00"); //(Baboseando) Tu distinguida visita me llena de alegrÃ­a. QuÃ©date todo el tiempo que quieras. Es un honor.
 		DIA_Orlan_MieteFaellig_NoMore = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_01"); //¿Cuándo voy a cobrar?
+		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_01"); //Â¿CuÃ¡ndo voy a cobrar?
 	
 		Info_ClearChoices	(DIA_Orlan_MieteFaellig);
-		Info_AddChoice	(DIA_Orlan_MieteFaellig, "No voy a pagarte nada más.", DIA_Orlan_MieteFaellig_nein );
+		Info_AddChoice	(DIA_Orlan_MieteFaellig, "No voy a pagarte nada mÃ¡s.", DIA_Orlan_MieteFaellig_nein );
 		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Ten las 50 monedas de oro.", DIA_Orlan_MieteFaellig_ja );
 	};
 };
@@ -650,8 +650,8 @@ func void DIA_Orlan_MieteFaellig_ja ()
 
 			if (DIA_Orlan_MieteFaellig_OneTime == FALSE)
 			{
-				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_02"); //¿Dónde andas todo el día?
-				AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_03"); //No querrás saberlo.
+				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_02"); //Â¿DÃ³nde andas todo el dÃ­a?
+				AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_03"); //No querrÃ¡s saberlo.
 				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_04"); //Um. Bueno, de todos modos no es de mi incumbencia.
 				DIA_Orlan_MieteFaellig_OneTime = TRUE;
 			};
@@ -661,7 +661,7 @@ func void DIA_Orlan_MieteFaellig_ja ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_05"); //Oye, ¿intentas engañarme? Ni siquiera tienes dinero para pagar esa comida. Te vas a enterar...
+			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_05"); //Oye, Â¿intentas engaÃ±arme? Ni siquiera tienes dinero para pagar esa comida. Te vas a enterar...
 			AI_StopProcessInfos (self);
 			B_Attack (self, other, AR_NONE, 1);
 		};
@@ -669,7 +669,7 @@ func void DIA_Orlan_MieteFaellig_ja ()
 
 func void DIA_Orlan_MieteFaellig_nein ()
 {
-	AI_Output			(other, self, "DIA_Orlan_MieteFaellig_nein_15_00"); //Ni hablar. No voy a pagarte nada más.
+	AI_Output			(other, self, "DIA_Orlan_MieteFaellig_nein_15_00"); //Ni hablar. No voy a pagarte nada mÃ¡s.
 	AI_Output			(self, other, "DIA_Orlan_MieteFaellig_nein_05_01"); //Te vas a enterar, estafador.
 	Orlan_AngriffWegenMiete = TRUE;
 	
@@ -705,16 +705,16 @@ func int DIA_Orlan_WETTKAMPFLAEUFT_Condition ()
 func void DIA_Orlan_WETTKAMPFLAEUFT_Info ()
 {
 			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_00"); //Por fin has venido. Te he estado esperando.
-			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_01"); //¿Qué ha pasado?
+			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_01"); //Â¿QuÃ© ha pasado?
 			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_02"); //Ya ha acabado el concurso de bebida.
-			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_03"); //¿Quién ha ganado?
+			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_03"); //Â¿QuiÃ©n ha ganado?
 	
 			if 	(
 				((Mob_HasItems	("CHEST_RUKHAR", ItFo_Booze)) == FALSE)
 				&& ((Mob_HasItems	("CHEST_RUKHAR", ItFo_Water)) == TRUE)
 				)
 					{
-						AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_04"); //Esta vez ha ganado Randolph. Rukhar ha debido de tener un mal día.
+						AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_04"); //Esta vez ha ganado Randolph. Rukhar ha debido de tener un mal dÃ­a.
 					}
 				else
 				{
@@ -724,7 +724,7 @@ func void DIA_Orlan_WETTKAMPFLAEUFT_Info ()
 			
 			if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 				{
-					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_06"); //Bueno, espero que fuera la última vez. No quiero que vuelva a repetirse ese tipo de follón en mi casa. Acuérdate.
+					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_06"); //Bueno, espero que fuera la Ãºltima vez. No quiero que vuelva a repetirse ese tipo de follÃ³n en mi casa. AcuÃ©rdate.
 				};
 			
 			B_GivePlayerXP (XP_Rukhar_WettkampfVorbei);	
@@ -775,9 +775,9 @@ func int DIA_Orlan_EINGEBROCKT_Condition ()
 
 func void DIA_Orlan_EINGEBROCKT_Info ()
 {
-			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_00"); //En menudo lío me has metido. Ahora puedo volver a hacer de vigía para Rukhar.
-			AI_Output	(other, self, "DIA_Orlan_EINGEBROCKT_15_01"); //¿Por qué?
-			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_02"); //Mientras celebre sus concursos ahí dentro, lo mejor es que no se entere ningún forastero. No es bueno para el negocio.
+			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_00"); //En menudo lÃ­o me has metido. Ahora puedo volver a hacer de vigÃ­a para Rukhar.
+			AI_Output	(other, self, "DIA_Orlan_EINGEBROCKT_15_01"); //Â¿Por quÃ©?
+			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_02"); //Mientras celebre sus concursos ahÃ­ dentro, lo mejor es que no se entere ningÃºn forastero. No es bueno para el negocio.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -790,7 +790,7 @@ instance DIA_Orlan_Perm		(C_INFO)
 	condition	 = 	DIA_Orlan_Perm_Condition;
 	information	 = 	DIA_Orlan_Perm_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Cómo va la taberna?";
+	description	 = 	"Â¿CÃ³mo va la taberna?";
 };
 
 func int DIA_Orlan_Perm_Condition ()
@@ -803,16 +803,16 @@ func int DIA_Orlan_Perm_Condition ()
 
 func void DIA_Orlan_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Orlan_Perm_15_00"); //¿Cómo va la taberna?
+	AI_Output (other, self, "DIA_Orlan_Perm_15_00"); //Â¿CÃ³mo va la taberna?
 	
 	if (Kapitel <= 2)
 	{
 		AI_Output (self, other, "DIA_Orlan_Perm_05_01"); //Ha habido tiempos mejores.
-		AI_Output (self, other, "DIA_Orlan_Perm_05_02"); //Los bolsillos de la gente no están tan abiertos como antes.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_02"); //Los bolsillos de la gente no estÃ¡n tan abiertos como antes.
 	}
 	else if (Kapitel >= 3)
 	{
-		AI_Output (self, other, "DIA_Orlan_Perm_05_03"); //Espero que los magos negros se vayan pronto. Si no, tendré que cerrar la taberna.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_03"); //Espero que los magos negros se vayan pronto. Si no, tendrÃ© que cerrar la taberna.
 		AI_Output (self, other, "DIA_Orlan_Perm_05_04"); //Casi nadie se atreve a venir.
 	};
 };
@@ -827,7 +827,7 @@ INSTANCE DIA_Orlan_Minenanteil (C_INFO)
 	condition	= DIA_Orlan_Minenanteil_Condition;
 	information	= DIA_Orlan_Minenanteil_Info;
 
-	description = "¿Vendes participaciones de las minas?";
+	description = "Â¿Vendes participaciones de las minas?";
 };   
                     
 FUNC INT DIA_Orlan_Minenanteil_Condition()
@@ -842,7 +842,7 @@ FUNC INT DIA_Orlan_Minenanteil_Condition()
 
 FUNC VOID DIA_Orlan_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Orlan_Minenanteil_15_00"); //¿Vendes participaciones de las minas?
+	AI_Output (other, self, "DIA_Orlan_Minenanteil_15_00"); //Â¿Vendes participaciones de las minas?
 	AI_Output (self, other, "DIA_Orlan_Minenanteil_05_01"); //Claro. Por el precio adecuado, puedes comprarme de todo.
 	B_GivePlayerXP (XP_Ambient);
 };	

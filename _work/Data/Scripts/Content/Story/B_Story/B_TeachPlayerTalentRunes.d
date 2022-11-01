@@ -27,7 +27,7 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentRunes,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentRunes,"Para crear una runa necesito el pergamino del conjuro y ciertos ingredientes para cada una de ellas. Puedo usar esos ingredientes y una piedra r鷑ica virgen para crear la runa deseada, en funci髇 de la tabla de runas.");
+	B_LogEntry (TOPIC_TalentRunes,"Para crear una runa necesito el pergamino del conjuro y ciertos ingredientes para cada una de ellas. Puedo usar esos ingredientes y una piedra r煤nica virgen para crear la runa deseada, en funci贸n de la tabla de runas.");
 	
 	var C_NPC ScrollTrader;
 	
@@ -82,17 +82,17 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_InstantFireball)		{	PLAYER_TALENT_RUNES[SPL_InstantFireball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_InstantFireball, 1);			
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''bola de fuego'': 1 brea.");	};	
 	if (spell == SPL_Zap)					{	PLAYER_TALENT_RUNES[SPL_Zap] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Zap, 1);						
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''rel醡pago peque駉'': 1 cristal de roca.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''rel谩mpago peque帽o'': 1 cristal de roca.");	};		
 	if (spell == SPL_SummonWolf)			{	PLAYER_TALENT_RUNES[SPL_SummonWolf]				= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumWolf, 1);					
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''convocar lobo'': 1 piel de lobo");	};		
 	if (spell == SPL_WINDFIST)				{	PLAYER_TALENT_RUNES[SPL_WINDFIST] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_WINDFIST, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''pu駉 del viento'': 1 carb髇.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''pu帽o del viento'': 1 carb贸n.");	};		
 	if (spell == SPL_Sleep)					{	PLAYER_TALENT_RUNES[SPL_Sleep] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Sleep, 1);					
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''dormir'': 1 hierba del pantano.");	};		
 	if (spell == SPL_MediumHeal)			{	PLAYER_TALENT_RUNES[SPL_MediumHeal] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_MediumHeal, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''curar heridas normales'': 1 hierba curativa.");	};		
 	if (spell == SPL_LightningFlash)		{	PLAYER_TALENT_RUNES[SPL_LightningFlash] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_LightningFlash, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'rel醡pago': 1 cristal de roca y 1 cuarzo glacial.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'rel谩mpago': 1 cristal de roca y 1 cuarzo glacial.");	};	
 	if (spell == SPL_ChargeFireball)		{	PLAYER_TALENT_RUNES[SPL_ChargeFireball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_ChargeFireball, 1);			
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'bola de fuego grande': 1 azufre y 1 brea.");	};		
 	if (spell == SPL_SummonSkeleton)		{	PLAYER_TALENT_RUNES[SPL_SummonSkeleton] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumSkel, 1);					
@@ -104,27 +104,27 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_ChargeZap)				{	PLAYER_TALENT_RUNES[SPL_ChargeZap] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_ThunderBall, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'bola relampagueante': 1 azufre y 1 cristal de roca.");	};		
 	if (spell == SPL_SummonGolem)			{	PLAYER_TALENT_RUNES[SPL_SummonGolem] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumGol, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''despertar a g髄em'': 1 coraz髇 de g髄em de piedra.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''despertar a g贸lem'': 1 coraz贸n de g贸lem de piedra.");	};	
 	if (spell == SPL_DestroyUndead)			{	PLAYER_TALENT_RUNES[SPL_DestroyUndead] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_HarmUndead, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''destruir muertos vivientes'': 1 agua bendita.");	};		
 	if (spell == SPL_Pyrokinesis)			{	PLAYER_TALENT_RUNES[SPL_Pyrokinesis] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_Pyrokinesis, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'gran tormenta de fuego': 1 azufre y 1 lengua de lagarto de fuego.");	};		
 	if (spell == SPL_Firestorm)				{	PLAYER_TALENT_RUNES[SPL_Firestorm] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firestorm, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'peque馻 tormenta de fuego': 1 azufre y 1 brea.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'peque帽a tormenta de fuego': 1 azufre y 1 brea.");	};		
 	if (spell == SPL_IceWave)				{	PLAYER_TALENT_RUNES[SPL_IceWave] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_IceWave, 1);					
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'ola de hielo': 1 cuarzo glacial y 1 aguamarina.");	};		
 	if (spell == SPL_SummonDemon)			{	PLAYER_TALENT_RUNES[SPL_SummonDemon] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumDemon, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''convocar demonio'': 1 coraz髇 de demonio.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''convocar demonio'': 1 coraz贸n de demonio.");	};		
 	if (spell == SPL_FullHeal)				{	PLAYER_TALENT_RUNES[SPL_FullHeal] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_FullHeal, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''curar heridas graves'': 1 ra韟 curativa");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa ''curar heridas graves'': 1 ra铆z curativa");	};	
 	if (spell == SPL_Firerain)				{	PLAYER_TALENT_RUNES[SPL_Firerain] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firerain, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'lluvia de fuego': 1 brea y 1 lengua de lagarto de fuego.");	};		
 	if (spell == SPL_BreathOfDeath)			{	PLAYER_TALENT_RUNES[SPL_BreathOfDeath]			= TRUE;	CreateInvItems (ScrollTrader, ItSc_BreathOfDeath, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'aliento mortal': 1 carb髇 y 1 perla negra.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'aliento mortal': 1 carb贸n y 1 perla negra.");	};		
 	if (spell == SPL_MassDeath)				{	PLAYER_TALENT_RUNES[SPL_MassDeath] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_MassDeath, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'oleada de muerte': 1 hueso de esqueleto y 1 perla negra.");	};		
 	if (spell == SPL_ArmyOfDarkness)		{	PLAYER_TALENT_RUNES[SPL_ArmyOfDarkness] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_ArmyOfDarkness, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'ej閞cito de las tinieblas': 1 hueso de esqueleto, 1 perla negra, 1 coraz髇 de g髄em de piedra y 1 coraz髇 de demonio.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'ej茅rcito de las tinieblas': 1 hueso de esqueleto, 1 perla negra, 1 coraz贸n de g贸lem de piedra y 1 coraz贸n de demonio.");	};		
 	if (spell == SPL_Shrink)				{	PLAYER_TALENT_RUNES[SPL_Shrink] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Shrink, 1);					
 	B_LogEntry (TOPIC_TalentRunes,"Ingredientes para la runa 'encoger monstruo': 1 hueso de trasgo y 1 diente de troll.");	};		
 	

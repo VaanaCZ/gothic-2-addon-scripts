@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Keiler(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Jabalí";
+	name							=	"JabalÃ­";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Keiler;
 	level							=	6;

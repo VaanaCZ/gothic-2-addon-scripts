@@ -42,7 +42,7 @@ FUNC INT DIA_Girion_Hallo_Condition()
 };
 FUNC VOID DIA_Girion_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Girion_Hallo_08_00"); //Soy Girion, maestro del combate con armas a dos manos y paladín del rey. ¿Por qué me molestas?
+	AI_Output (self, other, "DIA_Girion_Hallo_08_00"); //Soy Girion, maestro del combate con armas a dos manos y paladÃ­n del rey. Â¿Por quÃ© me molestas?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Can You Teach Me?
@@ -54,7 +54,7 @@ instance DIA_Girion_CanTeach		(C_INFO)
 	condition	 = 	DIA_Girion_CanTeach_Condition;
 	information	 = 	DIA_Girion_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"¿Podrías entrenarme?";
+	description	 = 	"Â¿PodrÃ­as entrenarme?";
 };
 func int DIA_Girion_CanTeach_Condition ()
 {	
@@ -65,19 +65,19 @@ func int DIA_Girion_CanTeach_Condition ()
 };
 func void DIA_Girion_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Girion_CanTeach_15_00"); //¿Puedes entrenarme?
+	AI_Output (other, self, "DIA_Girion_CanTeach_15_00"); //Â¿Puedes entrenarme?
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_01"); //Haces bien en entrenar en el más noble de todos los estilos. Es lo propio para un guerrero de Innos.
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_02"); //Te entrenaré. Ven a verme cuando estés listo.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_01"); //Haces bien en entrenar en el mÃ¡s noble de todos los estilos. Es lo propio para un guerrero de Innos.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_02"); //Te entrenarÃ©. Ven a verme cuando estÃ©s listo.
 		
 		Girion_Teach2H = TRUE;	
-		B_LogEntry (TOPIC_CityTeacher,"Girion, el paladín, puede enseñarme a luchar con armas a dos manos.");
+		B_LogEntry (TOPIC_CityTeacher,"Girion, el paladÃ­n, puede enseÃ±arme a luchar con armas a dos manos.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Girion_CanTeach_08_03"); //Si quieres aprender algo, tendrás que buscar un profesor de fuera de nuestra orden.
+		AI_Output (self, other, "DIA_Girion_CanTeach_08_03"); //Si quieres aprender algo, tendrÃ¡s que buscar un profesor de fuera de nuestra orden.
 		AI_Output (self, other, "DIA_Girion_CanTeach_08_04"); //Soy un guerrero, no un profesor.
 	};
 };
@@ -123,9 +123,9 @@ FUNC VOID DIA_Girion_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_00"); //Por supuesto, tu educación no ha terminado, pero no hay nada más que yo pueda enseñarte.
-		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_01"); //Si quieres mejorar más aún tu talento con la espada, deberás buscar un auténtico maestro de armas.
-		AI_Output (other,self,"DIA_DIA_Girion_Teach_15_02"); //¿Dónde puedo encontrar un hombre así?
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_00"); //Por supuesto, tu educaciÃ³n no ha terminado, pero no hay nada mÃ¡s que yo pueda enseÃ±arte.
+		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_01"); //Si quieres mejorar mÃ¡s aÃºn tu talento con la espada, deberÃ¡s buscar un autÃ©ntico maestro de armas.
+		AI_Output (other,self,"DIA_DIA_Girion_Teach_15_02"); //Â¿DÃ³nde puedo encontrar un hombre asÃ­?
 		AI_Output (self,other,"DIA_DIA_Girion_Teach_08_03"); //Lord Hagen es un maestro de armas. Seguro que te adiestra.
 		
 		DIA_Girion_Teach_permanent = TRUE;
@@ -141,19 +141,19 @@ FUNC VOID DIA_Girion_Teach_2H_1 ()
 	{
 		if (Girion_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_00"); //Lucha con honor. El combate es nuestra vida y, ¿qué es tu vida sin honor?
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_00"); //Lucha con honor. El combate es nuestra vida y, Â¿quÃ© es tu vida sin honor?
 		};
 		if (Girion_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_01"); //En el combate sé prudente y rápido. Sorprende a tu oponente.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_01"); //En el combate sÃ© prudente y rÃ¡pido. Sorprende a tu oponente.
 		};
 		if (Girion_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_02"); //Nunca acudas a un combate sin estar preparado. Nunca se sabe si va a ser el último.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_02"); //Nunca acudas a un combate sin estar preparado. Nunca se sabe si va a ser el Ãºltimo.
 		};
 		if (Girion_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_03"); //Un paladín siempre está preparado para el combate, pero nunca comienza una pelea que no pueda ganar.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_1_08_03"); //Un paladÃ­n siempre estÃ¡ preparado para el combate, pero nunca comienza una pelea que no pueda ganar.
 		};
 		
 		Girion_Labercount = Girion_Labercount +1;
@@ -176,11 +176,11 @@ FUNC VOID DIA_Girion_Teach_2H_5 ()
 	{
 		if (Girion_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_00"); //Un paladín no lucha sólo con la espada, también con su mente.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_00"); //Un paladÃ­n no lucha sÃ³lo con la espada, tambiÃ©n con su mente.
 		};
 		if (Girion_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_01"); //Tienes que saber cuándo te puedes retirar.
+			AI_Output (self,other,"DIA_DIA_Girion_Teach_2H_5_08_01"); //Tienes que saber cuÃ¡ndo te puedes retirar.
 		};
 		if (Girion_Labercount == 2)
 		{
@@ -228,7 +228,7 @@ func int DIA_Girion_CATCHPLAYERSTOLENSHIP_Condition ()
 {
 	if (Kapitel >= 5)
 	&& (MIS_ShipIsFree == TRUE) 
-	&& (Npc_GetDistToWP(self,"NW_CITY_WAY_TO_SHIP_25")<1000) //Joly: ist nur hier, wenn SC die Wachen überredet hat, ihm das Schiff zu geben.
+	&& (Npc_GetDistToWP(self,"NW_CITY_WAY_TO_SHIP_25")<1000) //Joly: ist nur hier, wenn SC die Wachen Ã¼berredet hat, ihm das Schiff zu geben.
 	{
 		return TRUE;
 	};
@@ -236,19 +236,19 @@ func int DIA_Girion_CATCHPLAYERSTOLENSHIP_Condition ()
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_Info ()
 {
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_08_00"); //¡Eh! ¿Puedes decirme lo que haces aquí?
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_08_00"); //Â¡Eh! Â¿Puedes decirme lo que haces aquÃ­?
 
 	Info_ClearChoices	(DIA_Girion_CATCHPLAYERSTOLENSHIP);
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "No sé de qué me hablas.", DIA_Girion_CATCHPLAYERSTOLENSHIP_no );
-	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Sal de mi camino o tendré que matarte.", DIA_Girion_CATCHPLAYERSTOLENSHIP_weg );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "No sÃ© de quÃ© me hablas.", DIA_Girion_CATCHPLAYERSTOLENSHIP_no );
+	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Sal de mi camino o tendrÃ© que matarte.", DIA_Girion_CATCHPLAYERSTOLENSHIP_weg );
 	Info_AddChoice	(DIA_Girion_CATCHPLAYERSTOLENSHIP, "Necesito un barco.", DIA_Girion_CATCHPLAYERSTOLENSHIP_ship );
 
 };
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_no ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_15_00"); //No sé de qué me hablas.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_01"); //Hablo de lo que hayas hecho ahí arriba con los guardias del barco. Esto me huele a cuerno quemado.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_15_00"); //No sÃ© de quÃ© me hablas.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_no_08_01"); //Hablo de lo que hayas hecho ahÃ­ arriba con los guardias del barco. Esto me huele a cuerno quemado.
 
 	if (hero.guild == GIL_KDF)
 	{
@@ -258,8 +258,8 @@ func void DIA_Girion_CATCHPLAYERSTOLENSHIP_no ()
 var int Girion_WantstoKillSC;
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_weg ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_15_00"); //Quítate de en medio o tendré que matarte.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_01"); //A lo mejor engañas a los guardias de la nave pero, amiguito, yo soy un hueso difícil de roer.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_15_00"); //QuÃ­tate de en medio o tendrÃ© que matarte.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_01"); //A lo mejor engaÃ±as a los guardias de la nave pero, amiguito, yo soy un hueso difÃ­cil de roer.
 	if (hero.guild == GIL_PAL)
 	{
 	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_weg_08_02"); //Aunque seas uno de los nuestros, eso no te da derecho a robar la propiedad del rey. Muere, maldito traidor.
@@ -271,12 +271,12 @@ func void DIA_Girion_CATCHPLAYERSTOLENSHIP_weg ()
 
 func void B_GirionStayOnShip()
 {
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_09"); //Cuando hayamos acabado con este asunto me devolverás el barco, ¿de acuerdo?
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_09"); //Cuando hayamos acabado con este asunto me devolverÃ¡s el barco, Â¿de acuerdo?
 };
 
 func void DIA_Girion_CATCHPLAYERSTOLENSHIP_ship ()
 {
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_00"); //Necesito el barco, así que lo cogeré.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_00"); //Necesito el barco, asÃ­ que lo cogerÃ©.
 	
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
@@ -284,20 +284,20 @@ func void DIA_Girion_CATCHPLAYERSTOLENSHIP_ship ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_02"); //Cómo te atreves, asqueroso hijo de...
+		AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_02"); //CÃ³mo te atreves, asqueroso hijo de...
 	};
 	
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_03"); //El mineral del Valle de las Minas no basta para satisfacer al rey. Yo estuve allí y ya no queda nada. La misión de Hagen es una farsa.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_04"); //La amenaza real está en una isla no lejos de aquí. Saldré para allí y acabaré con ella.
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_05"); //Puedes unirte a mí o tendré que eliminarte. Tú decides.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_06"); //Mmm. Parece que no tengo elección.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_03"); //El mineral del Valle de las Minas no basta para satisfacer al rey. Yo estuve allÃ­ y ya no queda nada. La misiÃ³n de Hagen es una farsa.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_04"); //La amenaza real estÃ¡ en una isla no lejos de aquÃ­. SaldrÃ© para allÃ­ y acabarÃ© con ella.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_05"); //Puedes unirte a mÃ­ o tendrÃ© que eliminarte. TÃº decides.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_06"); //Mmm. Parece que no tengo elecciÃ³n.
 	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_07"); //Correcto.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_08"); //Bueno, de acuerdo. Me uniré a ti, pero con una condición.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_08"); //Bueno, de acuerdo. Me unirÃ© a ti, pero con una condiciÃ³n.
 
 	B_GirionStayOnShip();
 
-	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_10"); //Tendré que aceptarla.
-	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_11"); //Entonces haz lo que tengas que hacer. Te esperaré aquí.
+	AI_Output			(other, self, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_15_10"); //TendrÃ© que aceptarla.
+	AI_Output			(self, other, "DIA_Girion_CATCHPLAYERSTOLENSHIP_ship_08_11"); //Entonces haz lo que tengas que hacer. Te esperarÃ© aquÃ­.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ship");
@@ -329,7 +329,7 @@ FUNC INT DIA_Girion_Verrat_Condition()
 
 FUNC VOID DIA_Girion_Verrat_Info()
 {
-	AI_Output			(self, other, "DIA_Girion_Verrat_08_00"); //¡Traidor!
+	AI_Output			(self, other, "DIA_Girion_Verrat_08_00"); //Â¡Traidor!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };

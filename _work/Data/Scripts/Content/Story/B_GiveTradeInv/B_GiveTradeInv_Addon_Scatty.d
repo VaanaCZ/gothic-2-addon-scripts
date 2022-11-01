@@ -19,7 +19,7 @@ FUNC VOID B_GiveTradeInv_Addon_Scatty (var C_NPC slf)
 		CreateInvItems (slf,ItFo_Bread , 5);
 		CreateInvItems (slf,ItFo_Water , 5);
 		CreateInvItems (slf,ItFo_Stew , 5);
-		//Tr‰nke
+		//Tr√§nke
 		CreateInvItems (slf,ItPo_Mana_02 	, 4); 
 		CreateInvItems (slf,ItPo_Health_02	, 4);
 		
@@ -47,7 +47,7 @@ FUNC VOID B_GiveTradeInv_Addon_Scatty (var C_NPC slf)
 		CreateInvItems (slf,ItFo_Bread , 5);
 		CreateInvItems (slf,ItFo_Water , 5);
 		CreateInvItems (slf,ItFo_Stew , 5);
-		//Tr‰nke
+		//Tr√§nke
 		CreateInvItems (slf,ItPo_Mana_02 	, 4); 
 		CreateInvItems (slf,ItPo_Health_02	, 4);
 		
@@ -68,7 +68,7 @@ FUNC VOID B_GiveTradeInv_Addon_Scatty (var C_NPC slf)
 		CreateInvItems (slf,ItFo_Bread , 5);
 		CreateInvItems (slf,ItFo_Water , 5);
 		CreateInvItems (slf,ItFo_Stew , 5);
-		//Tr‰nke
+		//Tr√§nke
 		CreateInvItems (slf,ItPo_Mana_02 	, 4); 
 		CreateInvItems (slf,ItPo_Health_02	, 4);
 		
@@ -90,7 +90,7 @@ FUNC VOID B_GiveTradeInv_Addon_Scatty (var C_NPC slf)
 		CreateInvItems (slf,ItFo_Bread , 5);
 		CreateInvItems (slf,ItFo_Water , 5);
 		CreateInvItems (slf,ItFo_Stew , 5);
-		//Tr‰nke
+		//Tr√§nke
 		CreateInvItems (slf,ItPo_Mana_02 	, 4); 
 		CreateInvItems (slf,ItPo_Health_02	, 4);
 		
@@ -112,7 +112,7 @@ FUNC VOID B_GiveTradeInv_Addon_Scatty (var C_NPC slf)
 		CreateInvItems (slf,ItFo_Bread , 5);
 		CreateInvItems (slf,ItFo_Water , 5);
 		CreateInvItems (slf,ItFo_Stew , 5);
-		//Tr‰nke
+		//Tr√§nke
 		CreateInvItems (slf,ItPo_Mana_02 	, 4); 
 		CreateInvItems (slf,ItPo_Health_02	, 4);
 		

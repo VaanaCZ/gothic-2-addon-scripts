@@ -40,7 +40,7 @@ FUNC INT DIA_Addon_Tonak_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Tonak_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Tonak_Hi_03_00"); //¿Qué quieres? Soy un trabajador prisionero. Yo no he hecho nada.
+	AI_Output (self, other, "DIA_Addon_Tonak_Hi_03_00"); //Â¿QuÃ© quieres? Soy un trabajador prisionero. Yo no he hecho nada.
 	AI_StopProcessInfos (self);
 };
 

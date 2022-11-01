@@ -1,5 +1,5 @@
 // ***********************
-// NSC benutzt Buchst‰nder
+// NSC benutzt Buchst√§nder
 // ***********************
 
 FUNC VOID ZS_Read_Bookstand ()

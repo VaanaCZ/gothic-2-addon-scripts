@@ -1,7 +1,7 @@
 // ********************
 // ZS_MM_Attack
 // ------------
-// für Monster und Orks
+// fÃ¼r Monster und Orks
 // ********************
 
 func void B_MM_AssessSurprise()
@@ -20,7 +20,7 @@ func void ZS_MM_Attack ()
 	Npc_PercEnable		(self, PERC_ASSESSDAMAGE		,	B_MM_AssessDamage);
 	Npc_PercEnable		(self, PERC_ASSESSWARN			, 	B_MM_AssessWarn);
 	
-	// ------ lokale Wahrnehmung für verwandelten SC ------
+	// ------ lokale Wahrnehmung fÃ¼r verwandelten SC ------
 	Npc_PercEnable (self, PERC_ASSESSSURPRISE , B_MM_AssessSurprise);
 
 	B_ValidateOther();
@@ -43,14 +43,14 @@ func void ZS_MM_Attack ()
 	AI_SetWalkmode 	(self, NPC_RUN);
 	
 	// ------ Hilfe anfordern ------
-	Npc_SendPassivePerc	(self, PERC_ASSESSWARN,	other, self); //Opfer,Täter	
+	Npc_SendPassivePerc	(self, PERC_ASSESSWARN,	other, self); //Opfer,TÃ¤ter	
 	
 	// ------ init aivars -------
 	self.aivar[AIV_PursuitEnd] = FALSE;
 	self.aivar[AIV_StateTime] = 0;
 	self.aivar[AIV_HitByOtherNpc] = 0;
-	self.aivar[AIV_SelectSpell] = 0; //Für Magier
-	self.aivar[AIV_TAPOSITION] = 0; //für Regeneration
+	self.aivar[AIV_SelectSpell] = 0; //FÃ¼r Magier
+	self.aivar[AIV_TAPOSITION] = 0; //fÃ¼r Regeneration
 };
 
 func int ZS_MM_Attack_Loop ()
@@ -125,7 +125,7 @@ func int ZS_MM_Attack_Loop ()
 		// ------ einmal pro Sekunde ------	
 		if (Npc_GetStateTime (self) > self.aivar[AIV_StateTime])
 		{
-			// ------ Feind kommt zurück ODER bleibt stehen ------
+			// ------ Feind kommt zurÃ¼ck ODER bleibt stehen ------
 			if (Npc_GetDistToNpc(self, other) < self.aivar[AIV_Dist])
 			|| ( (!C_BodyStateContains(other,BS_RUN)) && (!C_BodyStateContains(other, BS_JUMP)) )
 			{
@@ -231,7 +231,7 @@ func int ZS_MM_Attack_Loop ()
 		
 		return LOOP_CONTINUE;
 	}
-	else 										// NPC_GetTarget(self) == FALSE, also tot - other hier automatisch gelöscht
+	else 										// NPC_GetTarget(self) == FALSE, also tot - other hier automatisch gelÃ¶scht
 	{
 		// ------ Monster auf der Jagd --> Beute fressen kommt VOR NextTarget ------
 		if (self.aivar[AIV_MM_PRIORITY] == PRIO_EAT)
@@ -243,7 +243,7 @@ func int ZS_MM_Attack_Loop ()
 		};
 		
 		// ------ Monster NICHT auf der Jagd - weitere Feinde Attacken ------
-		Npc_PerceiveAll	(self);					// nötig, da Npc_GetNextTarget() auf der Liste der zuletzt Wahrgenommenen VOBs beruht, und das kann hier schon ne Weile her sein, denn ZS_Attack hat keine aktiven Wahrnehmungen
+		Npc_PerceiveAll	(self);					// nÃ¶tig, da Npc_GetNextTarget() auf der Liste der zuletzt Wahrgenommenen VOBs beruht, und das kann hier schon ne Weile her sein, denn ZS_Attack hat keine aktiven Wahrnehmungen
 		Npc_GetNextTarget (self); 				// wenn True, wird hier target neu ermittelt (NUR die zu denen ich Hostile bin!)
 		
 		// ----- ist neues Ziel gefunden, in Reichweite, nicht down, nicht im Dialog? Dann neues Ziel, sonst End ------
@@ -255,7 +255,7 @@ func int ZS_MM_Attack_Loop ()
 			self.aivar[AIV_LASTTARGET] = Hlp_GetInstanceID (other);
 			return LOOP_CONTINUE;
 		}
-		else 									// wenn false, wird other gelöscht!
+		else 									// wenn false, wird other gelÃ¶scht!
 		{
 			Npc_ClearAIQueue(self);
 			AI_StandUp		(self);
@@ -266,7 +266,7 @@ func int ZS_MM_Attack_Loop ()
 
 func void ZS_MM_Attack_End ()
 {
-	// ------ other wieder holen, ist hier auf jeden Fall gelöscht! ------
+	// ------ other wieder holen, ist hier auf jeden Fall gelÃ¶scht! ------
 	other = Hlp_GetNpc(self.aivar[AIV_LASTTARGET]);
 
 	// ------ MonsterMage steckt Spruch weg / Orc steckt Waffe weg ------

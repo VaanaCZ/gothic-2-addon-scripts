@@ -28,7 +28,7 @@ instance DIA_Addon_TAL_BDT_13_Hi(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Hi_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Hi_Info;
 	permanent	= TRUE;
-	description = "°Wie sieht's aus?   °<<FTSTAMP005751017_CINFODESCRIPTION>>";
+	description = "Â°Wie sieht's aus?   Â°<<FTSTAMP005751017_CINFODESCRIPTION>>";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
@@ -38,9 +38,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//°Wie sieht's aus?   °<<FTSTAMP005752061_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//°Entweder du wirst von 'nem Vieh gefressen oder du wirst von 'nem Vieh gefressen.   °<<FTSTAMP005753061_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//°Dieser Sumpf wird noch unser Grab ...   °<<FTSTAMP005754061_AIOUTPUT>>
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Â°Wie sieht's aus?   Â°<<FTSTAMP005752061_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//Â°Entweder du wirst von 'nem Vieh gefressen oder du wirst von 'nem Vieh gefressen.   Â°<<FTSTAMP005753061_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Â°Dieser Sumpf wird noch unser Grab ...   Â°<<FTSTAMP005754061_AIOUTPUT>>
 };
 // *************************************************************************
 // 							Tal
@@ -51,7 +51,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent	= TRUE;
-	description = "°Was weißt du über dieses Tal?   °<<FTSTAMP005755017_CINFODESCRIPTION>>";
+	description = "Â°Was weiÃŸt du Ã¼ber dieses Tal?   Â°<<FTSTAMP005755017_CINFODESCRIPTION>>";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
@@ -61,9 +61,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//°Was weißt du über dieses Tal?   °<<FTSTAMP005756062_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//°Hier gibt's haufenweise altes Zeug. Raven hat uns den Auftrag gegeben, alles einzusammeln.   °<<FTSTAMP005757062_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//°Keine Ahnung, was er damit will, aber niemand, der bei Verstand ist, wird seinen Hals für ein paar alte Steine riskieren ...   °<<FTSTAMP005758062_AIOUTPUT>>
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Â°Was weiÃŸt du Ã¼ber dieses Tal?   Â°<<FTSTAMP005756062_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Â°Hier gibt's haufenweise altes Zeug. Raven hat uns den Auftrag gegeben, alles einzusammeln.   Â°<<FTSTAMP005757062_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Â°Keine Ahnung, was er damit will, aber niemand, der bei Verstand ist, wird seinen Hals fÃ¼r ein paar alte Steine riskieren ...   Â°<<FTSTAMP005758062_AIOUTPUT>>
 };
 // *************************************************************************
 // 							News
@@ -74,7 +74,7 @@ instance DIA_Addon_TAL_BDT_13_News(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_News_Condition;
 	information	= DIA_Addon_TAL_BDT_13_News_Info;
 	permanent	= TRUE;
-	description = "°Gibt's was Neues?   °<<FTSTAMP005759017_CINFODESCRIPTION>>";
+	description = "Â°Gibt's was Neues?   Â°<<FTSTAMP005759017_CINFODESCRIPTION>>";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
@@ -84,13 +84,13 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//°Gibt's was Neues?   °<<FTSTAMP005760063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//°Diese Piraten haben wir ganz schön über's Ohr gehauen.   °<<FTSTAMP005761063_AIOUTPUT>>
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//°Sie haben uns Gefangene besorgt, aber nicht eine Münze dafür gesehen. Kein Wunder, dass die sauer sind.   °<<FTSTAMP005762063_AIOUTPUT>>
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Â°Gibt's was Neues?   Â°<<FTSTAMP005760063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Â°Diese Piraten haben wir ganz schÃ¶n Ã¼ber's Ohr gehauen.   Â°<<FTSTAMP005761063_AIOUTPUT>>
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Â°Sie haben uns Gefangene besorgt, aber nicht eine MÃ¼nze dafÃ¼r gesehen. Kein Wunder, dass die sauer sind.   Â°<<FTSTAMP005762063_AIOUTPUT>>
 	
 	if (BDT_13_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//°Aber was wollen sie machen? Das Lager angreifen? (lacht) HAHAHA.   °<<FTSTAMP005763064_AIOUTPUT>>
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//Â°Aber was wollen sie machen? Das Lager angreifen? (lacht) HAHAHA.   Â°<<FTSTAMP005763064_AIOUTPUT>>
 		BDT_13_einmal = TRUE;
 	};
 };

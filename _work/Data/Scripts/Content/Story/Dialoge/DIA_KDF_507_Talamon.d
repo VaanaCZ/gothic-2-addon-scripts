@@ -54,7 +54,7 @@ func int DIA_KDF_507_Talamon_FirstWarn_Condition()
 
 func void DIA_KDF_507_Talamon_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //No tienes permiso para seguir. ¡Date la vuelta!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //No tienes permiso para seguir. Â¡Date la vuelta!
 	//AI_Output (other, self,"DIA_KDF_507_Talamon_FirstWarn_15_01"); //
 	
 	AI_StopProcessInfos	(self);
@@ -92,7 +92,7 @@ FUNC INT DIA_KDF_507_Talamon_SecondWarn_Condition()
 
 func void DIA_KDF_507_Talamon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //¡Si no te das la vuelta, Innos te castigará con su cólera!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Â¡Si no te das la vuelta, Innos te castigarÃ¡ con su cÃ³lera!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,KDF_507_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -131,7 +131,7 @@ func void DIA_KDF_507_Talamon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;	//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -261,11 +261,11 @@ FUNC INT DIA_Talamon_KAP5_Stop_Condition()
 
 FUNC VOID DIA_Talamon_KAP5_Stop_Info()
 {
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //No tienes permiso para seguir. ¡Date la vuelta!
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //No tienes permiso para seguir. Â¡Date la vuelta!
 	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Pyrokar dice que tengo permiso para examinar el libro de Xardas.
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //Así que eso dice. De acuerdo, puedes pasar. El libro que buscas está allí, en la mesa de trabajo del alquimista.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //AsÃ­ que eso dice. De acuerdo, puedes pasar. El libro que buscas estÃ¡ allÃ­, en la mesa de trabajo del alquimista.
 
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamon guarda el libro de Xardas en una mesa de trabajo de alquimista, en el sótano."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamon guarda el libro de Xardas en una mesa de trabajo de alquimista, en el sÃ³tano."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -292,12 +292,12 @@ FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
 FUNC VOID DIA_Talamon_FoundSecretDoor_Info()
 {
 	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //He encontrado una puerta secreta.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(Sorprendido) ¿Qué? ¿Dónde?
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //Detrás de un estante.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //¿Qué hay detrás?
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //Parece una vieja cámara subterránea.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //Esto es importante. Informaré a Pyrokar ahora mismo.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Mientras tanto, averigua qué hay en este sótano.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(Sorprendido) Â¿QuÃ©? Â¿DÃ³nde?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //DetrÃ¡s de un estante.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Â¿QuÃ© hay detrÃ¡s?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //Parece una vieja cÃ¡mara subterrÃ¡nea.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //Esto es importante. InformarÃ© a Pyrokar ahora mismo.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Mientras tanto, averigua quÃ© hay en este sÃ³tano.
 	
 	MIS_ScoutLibrary = LOG_RUNNING;
 };
@@ -312,7 +312,7 @@ INSTANCE DIA_Talamon_ScoutSecretLibrary   (C_INFO)
 	condition   = DIA_Talamon_ScoutSecretLibrary_Condition;
 	information = DIA_Talamon_ScoutSecretLibrary_Info;
 	permanent   = TRUE;
-	description = "He estado en la cámara.";
+	description = "He estado en la cÃ¡mara.";
 };
 
 FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
@@ -326,21 +326,21 @@ FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
 
 FUNC VOID DIA_Talamon_ScoutSecretLibrary_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //He estado en la cámara.
-	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //¿Y qué has encontrado?
+	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //He estado en la cÃ¡mara.
+	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //Â¿Y quÃ© has encontrado?
 	
 	if (Npc_IsDead (SecretLibrarySkeleton))
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //Ahí abajo había un guerrero esqueleto que vigilaba una puerta. Lo he matado.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //AhÃ­ abajo habÃ­a un guerrero esqueleto que vigilaba una puerta. Lo he matado.
 		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //Muy bien.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //Nos encargaremos de la cámara cuando hayamos vencido al mal.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //Nos encargaremos de la cÃ¡mara cuando hayamos vencido al mal.
 	
 		MIS_ScoutLibrary = LOG_SUCCESS;
 		B_GivePlayerXP (XP_ScoutSecretLibrary);
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Ahí abajo hay un montón de monstruos.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //AhÃ­ abajo hay un montÃ³n de monstruos.
 		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Debe de haber algo. Sigue buscando, y no tengas piedad con esas bestias.
 	};
 };

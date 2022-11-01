@@ -31,7 +31,7 @@ INSTANCE DIA_Ruga_PICKPOCKET (C_INFO)
 	condition	= DIA_Ruga_PICKPOCKET_Condition;
 	information	= DIA_Ruga_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(SerÌa sencillo robar su llave)";
+	description = "(Ser√≠a sencillo robar su llave)";
 };                       
 
 FUNC INT DIA_Ruga_PICKPOCKET_Condition()
@@ -95,11 +95,11 @@ func int DIA_Ruga_Hallo_Condition ()
 };
 func void DIA_Ruga_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //øQuÈ haces aquÌ?
+	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //¬øQu√© haces aqu√≠?
 	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Entreno a los muchachos en el uso de la ballesta y les ayudo a mejorar su destreza.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Ruga, el guardia de la ciudad, puede ayudarme a mejorar la destreza y a enseÒarme a usar una ballesta. Pero para ello tengo que servir al Rey.");
+	B_LogEntry (Topic_CityTeacher, "Ruga, el guardia de la ciudad, puede ayudarme a mejorar la destreza y a ense√±arme a usar una ballesta. Pero para ello tengo que servir al Rey.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -111,7 +111,7 @@ instance DIA_Ruga_Train		(C_INFO)
 	condition	 = 	DIA_Ruga_Train_Condition;
 	information	 = 	DIA_Ruga_Train_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"øPodrÌas entrenarme?";
+	description	 = 	"¬øPodr√≠as entrenarme?";
 };
 
 func int DIA_Ruga_Train_Condition ()
@@ -123,7 +123,7 @@ func int DIA_Ruga_Train_Condition ()
 };
 func void DIA_Ruga_Train_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //øPodrÌas entrenarme?
+	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //¬øPodr√≠as entrenarme?
 	
 	if (hero.guild == GIL_MIL)
 	|| (hero.guild == GIL_PAL)
@@ -131,7 +131,7 @@ func void DIA_Ruga_Train_Info ()
 	{
 		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Claro. Si tienes suficiente experiencia, puedo echarte una mano.
 		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Recuerda en todo momento que la destreza y el combate a distancia van unidos, igual que el virote y la ballesta. Lo uno...
-		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //Ö no sirve de nada sin lo otro. Comprendo.
+		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //‚Ä¶ no sirve de nada sin lo otro. Comprendo.
 	
 		Ruga_TeachCrossbow = TRUE;
 		Ruga_TeachDEX 	   = TRUE;
@@ -139,13 +139,13 @@ func void DIA_Ruga_Train_Info ()
 	else if ((hero.guild == GIL_SLD)
 	|| 		 (hero.guild == GIL_DJG))
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Fuera de aquÌ, (con desprecio) mercenario.
+		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //Fuera de aqu√≠, (con desprecio) mercenario.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{	 
-		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //No, solo adiestro a los hombres que est·n al servicio del rey. A nadie m·s.
-		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Pero siempre nos viene bien incorporar a gente v·lida. Por lo tanto, si quieres alistarte en la milicia, ve a hablar con lord Andre.
+		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //No, solo adiestro a los hombres que est√°n al servicio del rey. A nadie m√°s.
+		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Pero siempre nos viene bien incorporar a gente v√°lida. Por lo tanto, si quieres alistarte en la milicia, ve a hablar con lord Andre.
 	};     
 };
 //**************************************
@@ -158,7 +158,7 @@ INSTANCE DIA_Ruga_Teach(C_INFO)
 	condition	= DIA_Ruga_Teach_Condition;
 	information	= DIA_Ruga_Teach_Info;
 	permanent	= TRUE;
-	description = "EnsÈÒame a usar una ballesta.";
+	description = "Ens√©√±ame a usar una ballesta.";
 };                       
 //-------------------------------------
 var int DIA_Ruga_Teach_permanent;
@@ -174,7 +174,7 @@ FUNC INT DIA_Ruga_Teach_Condition()
  
 FUNC VOID DIA_Ruga_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //EnsÈÒame a usar una ballesta.
+	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //Ens√©√±ame a usar una ballesta.
 
 	Info_ClearChoices 	(DIA_Ruga_Teach);
 	Info_AddChoice 		(DIA_Ruga_Teach,	DIALOG_BACK		,DIA_Ruga_Teach_Back);
@@ -186,7 +186,7 @@ FUNC VOID DIA_Ruga_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 90)
 	{
-		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //No puedo enseÒarte nada m·s. Es hora de que busques a otros tutores.
+		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //No puedo ense√±arte nada m√°s. Es hora de que busques a otros tutores.
 		DIA_Ruga_Teach_permanent = TRUE;
 		
 	};
@@ -224,7 +224,7 @@ instance DIA_Ruga_TEACHDEX		(C_INFO)
 	condition	 = 	DIA_Ruga_TEACHDEX_Condition;
 	information	 = 	DIA_Ruga_TEACHDEX_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Quiero ser m·s diestro.";
+	description	 = 	"Quiero ser m√°s diestro.";
 };
 //------------------------------------
 var int DIA_Ruga_TEACHDEX_permanent;
@@ -239,7 +239,7 @@ func int DIA_Ruga_TEACHDEX_Condition ()
 };
 func void DIA_Ruga_TEACHDEX_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //Quiero volverme m·s diestro.
+	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //Quiero volverme m√°s diestro.
 	
 	Info_ClearChoices   (DIA_Ruga_TEACHDEX);
 	Info_AddChoice 		(DIA_Ruga_TEACHDEX, DIALOG_BACK, DIA_Ruga_TEACHDEX_BACK);
@@ -251,7 +251,7 @@ func void DIA_Ruga_TEACHDEX_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //Esto es todo lo que puedo enseÒarte. Si quieres volverte m·s diestro, busca otro tutor.
+		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //Esto es todo lo que puedo ense√±arte. Si quieres volverte m√°s diestro, busca otro tutor.
 		DIA_Ruga_TEACHDEX_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Ruga_TEACHDEX);

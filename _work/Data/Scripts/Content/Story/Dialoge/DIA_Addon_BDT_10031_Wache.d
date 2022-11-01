@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_10031_Wache_Scatty_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Scatty_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Eh, ¿quieres seguir cavando? Pues no olvides equiparte con Scatty.
-	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//¿Qué necesito?
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Bueno, por lo menos una piqueta. Y algunas provisiones te irán bien.
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//¿Y qué tal unas pociones de curación? Hay reptadores de las minas allí abajo.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Eh, Â¿quieres seguir cavando? Pues no olvides equiparte con Scatty.
+	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//Â¿QuÃ© necesito?
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Bueno, por lo menos una piqueta. Y algunas provisiones te irÃ¡n bien.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Â¿Y quÃ© tal unas pociones de curaciÃ³n? Hay reptadores de las minas allÃ­ abajo.
 	AI_StopProcessInfos (self);
 };
 //----------------------------------------------------------------------
@@ -54,7 +54,7 @@ INSTANCE DIA_Addon_BDT_10031_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10031_Wache_Hi_Condition;
 	information = DIA_Addon_10031_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "¿Va todo bien?";
+	description = "Â¿Va todo bien?";
 };
 FUNC INT DIA_Addon_10031_Wache_Hi_Condition()
 {	
@@ -62,15 +62,15 @@ FUNC INT DIA_Addon_10031_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00");//¿Todo bien?
+	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00");//Â¿Todo bien?
 	
 	if (Sklaven_Flucht == TRUE)
 	&& (Wache_Joker == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//Madre mía. Los esclavos tenían prisa, por lo que veo.
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//¡Cuando oyeron que eran libres, salieron corriendo como liebres!
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//Madre mÃ­a. Los esclavos tenÃ­an prisa, por lo que veo.
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Â¡Cuando oyeron que eran libres, salieron corriendo como liebres!
 		Wache_Joker = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Sí, así que no causes ningún problema y todo irá bien.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//SÃ­, asÃ­ que no causes ningÃºn problema y todo irÃ¡ bien.
 	
 };

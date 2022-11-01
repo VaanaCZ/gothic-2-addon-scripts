@@ -3,7 +3,7 @@
 // ------------
 // aufgerufen durch Ansprechen (Wahrnehmung ASSESSTALK)
 // oder durch B_AssessPlayer (NSC hat Important-Info)
-// GILT AUCH FÜR MONSTER
+// GILT AUCH FÃœR MONSTER
 // ****************************************************
 
 func void B_AssessTalk ()
@@ -18,7 +18,7 @@ func void B_AssessTalk ()
 	{
 		PrintScreen (ConcatStrings("Voz:", IntToString(self.voice)), -1, 70, FONT_Screen, 2);
 		
-		PrintScreen ("¡SIN HÉROE!", -1, -1, FONT_Screen, 2);	
+		PrintScreen ("Â¡SIN HÃ‰ROE!", -1, -1, FONT_Screen, 2);	
 		PrintScreen (IntToString(self.aivar[AIV_FollowDist]), -1, 70, FONT_Screen, 2);
 		
 		if (C_NpcIsInQuarter (self) == Q_KASERNE)
@@ -59,7 +59,7 @@ func void B_AssessTalk ()
 		return;
 	};
 	
-	// ------ Exit-Conditions NUR für Monster
+	// ------ Exit-Conditions NUR fÃ¼r Monster
 	if (self.guild > GIL_SEPERATOR_HUM)
 	{
 		// ------ Monster hat keine Info ------
@@ -72,7 +72,7 @@ func void B_AssessTalk ()
 		};
 	};
 		
-	// ------ Exit-Conditions NUR für Humans ------
+	// ------ Exit-Conditions NUR fÃ¼r Humans ------
 	if (self.guild < GIL_SEPERATOR_HUM)
 	{
 		
@@ -82,7 +82,7 @@ func void B_AssessTalk ()
 			return;
 		};
 	
-		// ------ Spieler ist Mörder ------
+		// ------ Spieler ist MÃ¶rder ------
 		if (B_GetPlayerCrime(self) == CRIME_MURDER)
 		&& (C_WantToAttackMurder(self, other))
 		{
@@ -155,7 +155,7 @@ func void B_AssessTalk ()
 		}	
 		else //nicht sehen
 		{
-			//HACK: Im ObservePlayer kann ein NSC sitzen, ohne daß in der END-Routine des ZS sauber aufgestanden wird (klar, denn ZS_ObservePlayer_End hat kein StandUp o.ä. - darf dies auch nicht haben)
+			//HACK: Im ObservePlayer kann ein NSC sitzen, ohne daÃŸ in der END-Routine des ZS sauber aufgestanden wird (klar, denn ZS_ObservePlayer_End hat kein StandUp o.Ã¤. - darf dies auch nicht haben)
 			if (Npc_IsInState (self, ZS_ObservePlayer))
 			{
 				AI_StandUp 		(self);

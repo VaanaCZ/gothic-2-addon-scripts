@@ -7,7 +7,7 @@ instance VLK_438_Alrik (Npc_Default)
 	id 			= 438;
 	voice 		= 9;
 	flags       = 0;																
-	npctype		= NPCTYPE_FRIEND; //plündert nicht!!! (und ein Freischlag)
+	npctype		= NPCTYPE_FRIEND; //plÃ¼ndert nicht!!! (und ein Freischlag)
 	
 	// ------ AIVARs ------
 	aivar[AIV_ToughGuy] = TRUE;	
@@ -46,7 +46,7 @@ instance VLK_438_Alrik (Npc_Default)
 	daily_routine 		= Rtn_Start_438;
 };
 
-FUNC VOID Rtn_Start_438() //NICHT ÄNDERN --> DIALOG!
+FUNC VOID Rtn_Start_438() //NICHT Ã„NDERN --> DIALOG!
 {	
 	TA_Stand_Guarding	(10,55,19,15,"NW_CITY_PATH_HABOUR_16_01");
 	TA_Stand_Drinking	(19,15,03,30,"NW_CITY_HABOUR_TAVERN01_01");

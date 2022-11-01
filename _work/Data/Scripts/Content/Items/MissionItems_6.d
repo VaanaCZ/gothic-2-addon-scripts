@@ -1,11 +1,11 @@
 // *****************************************************************
 // //Joly: Auge Innos nicht dabei? Kein Problem. Xardas hilft auch dir Idiot!!!!!!!!!!!!
-// Vorsicht: Nur für D.A.U.s
+// Vorsicht: Nur fÃ¼r D.A.U.s
 // *****************************************************************
 
 INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
 {
-	name 				=	"Bolsón de cuero muy extraño";
+	name 				=	"BolsÃ³n de cuero muy extraÃ±o";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -70,8 +70,8 @@ func void Use_XardasErmahnungFuerIdioten ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Mi joven protegido, me decepcionas enormemente. ¿Cómo pudiste marcharte en el barco y no hacerte con el Ojo de Innos?"					);
-					Doc_PrintLines	( nDocID,  0, "Solo puedo esperar que haya límites para tu negligencia. De otra forma, nunca librarás al mundo del mal y me veré obligado personalmente a ejecutarte por tu estupidez."					);
+					Doc_PrintLines	( nDocID,  0, "Mi joven protegido, me decepcionas enormemente. Â¿CÃ³mo pudiste marcharte en el barco y no hacerte con el Ojo de Innos?"					);
+					Doc_PrintLines	( nDocID,  0, "Solo puedo esperar que haya lÃ­mites para tu negligencia. De otra forma, nunca librarÃ¡s al mundo del mal y me verÃ© obligado personalmente a ejecutarte por tu estupidez."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -101,7 +101,7 @@ INSTANCE ItWr_Krypta_Garon		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 
-	TEXT[3]				= 	"con caligrafía de trazo poco firme.";
+	TEXT[3]				= 	"con caligrafÃ­a de trazo poco firme.";
 };
 func void Use_Krypta_Garon ()
 {   
@@ -115,31 +115,31 @@ func void Use_Krypta_Garon ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "He fracasado. Han sido baldíos mis esfuerzos por mantener a Inubis en la senda del bien."					);
-					Doc_PrintLines	( nDocID,  0, "Al principio creí que estaba muerto. Pero todavía queda fuerza en los viejos huesos de Ivan."					);
-					Doc_PrintLines	( nDocID,  0, "Inubis ha vuelto de entre los muertos. Desterrado por la antigua orden de los paladines, ahora busca vengar su maldición."					);
-					Doc_PrintLines	( nDocID,  0, "Muchos de sus seguidores están con él. No tengo idea de cómo un señor de la guerra como Inubis ha podido volverse tan malvado."					);
-					Doc_PrintLines	( nDocID,  0, "Encontré su tumba en esta cripta. Pero no estoy seguro de si podré llegar a informar de mi descubrimiento. Por eso escribo estas líneas y espero que lleguen a encontrarse."					);
-					Doc_PrintLines	( nDocID,  0, "Cuidado. Un poderoso enemigo acecha las almas de los justos. Inubis no será el último."					);
+					Doc_PrintLines	( nDocID,  0, "He fracasado. Han sido baldÃ­os mis esfuerzos por mantener a Inubis en la senda del bien."					);
+					Doc_PrintLines	( nDocID,  0, "Al principio creÃ­ que estaba muerto. Pero todavÃ­a queda fuerza en los viejos huesos de Ivan."					);
+					Doc_PrintLines	( nDocID,  0, "Inubis ha vuelto de entre los muertos. Desterrado por la antigua orden de los paladines, ahora busca vengar su maldiciÃ³n."					);
+					Doc_PrintLines	( nDocID,  0, "Muchos de sus seguidores estÃ¡n con Ã©l. No tengo idea de cÃ³mo un seÃ±or de la guerra como Inubis ha podido volverse tan malvado."					);
+					Doc_PrintLines	( nDocID,  0, "EncontrÃ© su tumba en esta cripta. Pero no estoy seguro de si podrÃ© llegar a informar de mi descubrimiento. Por eso escribo estas lÃ­neas y espero que lleguen a encontrarse."					);
+					Doc_PrintLines	( nDocID,  0, "Cuidado. Un poderoso enemigo acecha las almas de los justos. Inubis no serÃ¡ el Ãºltimo."					);
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Que Innos guarde vuestras almas."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "                                 Ivan");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 
 }; 
 
 //****************************************************************************
-//				DragonIsle_Undead_Schlüssel
+//				DragonIsle_Undead_SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 
 //**********************************************************************************
-//	Knasttürschlüssel für Pedros Zelle auf DI
+//	KnasttÃ¼rschlÃ¼ssel fÃ¼r Pedros Zelle auf DI
 //**********************************************************************************
 
 INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
@@ -158,7 +158,7 @@ INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
-INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
+INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//SchlÃ¼ssel fÃ¼r erste TÃ¼r
 {
 	name 				=	"Llave de Archol";
 
@@ -177,12 +177,12 @@ INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
 };
 
 //**********************************************************************************
-//	Schlüssel zum Labyrinth der Untoten auf DI
+//	SchlÃ¼ssel zum Labyrinth der Untoten auf DI
 //**********************************************************************************
 
 INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 {
-	name 				=	"Llave del guardián de las llaves";
+	name 				=	"Llave del guardiÃ¡n de las llaves";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -198,12 +198,12 @@ INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 
 
 //**********************************************************************************
-//	Kammerschlüssel für´s Tor zum Saal des Untoten Drachen.
+//	KammerschlÃ¼ssel fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 	
 INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 {
-	name 				=	"Llave de la habitación del mago negro";
+	name 				=	"Llave de la habitaciÃ³n del mago negro";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -217,7 +217,7 @@ INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //**********************************************************************************
-//	Schriftrolle für´s Tor zum Saal des Untoten Drachen.
+//	Schriftrolle fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 	
 INSTANCE ItWr_LastDoorToUndeadDrgDI_MIS	(C_Item)
@@ -257,14 +257,14 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS ()
 					Doc_PrintLine	( nDocID,  0, "Que el Ojo del Poder ilumine tu camino.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"El pergamino del mago negro contiene las palabras KHADOSH EMEM KADAR. Parece una especie de fórmula mágica, pero, ¿para qué sirve? Y, ¿qué es el Ojo del Poder?"); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"El pergamino del mago negro contiene las palabras KHADOSH EMEM KADAR. Parece una especie de fÃ³rmula mÃ¡gica, pero, Â¿para quÃ© sirve? Y, Â¿quÃ© es el Ojo del Poder?"); 
 };
 //**********************************************************************************
-//	Schlüssel zur Truhe in der Kammer des OberDementors.
+//	SchlÃ¼ssel zur Truhe in der Kammer des OberDementors.
 //**********************************************************************************
 INSTANCE ItKe_ChestMasterDementor_MIS	(C_Item)
 {
@@ -293,7 +293,7 @@ INSTANCE ItKe_ChestMasterDementor_MIS	(C_Item)
 
 INSTANCE ItWr_Rezept_MegaDrink_MIS	(C_Item)
 {
-	name 				=	"Fórmula";
+	name 				=	"FÃ³rmula";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -317,14 +317,14 @@ func void Use_RezeptFuerMegaTrank ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "He recuperado un antiguo arte. Me temo que a Feodaron no le impresionaría mi descubrimiento."					);
-					Doc_PrintLines	( nDocID,  0, "Quiero decir, en pocas palabras, que tendría que mezclar a toda su progenie en mi laboratorio, en una poción. Si no se tirara todo el día sentado como una gallina sobre sus huevos, lo habría intentado. Pero todavía me inspira cierto respeto."					);
+					Doc_PrintLines	( nDocID,  0, "He recuperado un antiguo arte. Me temo que a Feodaron no le impresionarÃ­a mi descubrimiento."					);
+					Doc_PrintLines	( nDocID,  0, "Quiero decir, en pocas palabras, que tendrÃ­a que mezclar a toda su progenie en mi laboratorio, en una pociÃ³n. Si no se tirara todo el dÃ­a sentado como una gallina sobre sus huevos, lo habrÃ­a intentado. Pero todavÃ­a me inspira cierto respeto."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Embarla Firgasto"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "11 huevos de dragón, una perla negra pulverizada y azufre."					);
-					Doc_PrintLines	( nDocID,  0, "La emulsión se lleva al punto de ebullición y debe removerse constantemente mientras pasa por el alambique."					);
-					Doc_PrintLines	( nDocID,  0, "El elixir debe usarse con cuidado. Tiene potentes efectos secundarios y puede alterar todo el sistema de maná."					);
+					Doc_PrintLines	( nDocID,  0, "11 huevos de dragÃ³n, una perla negra pulverizada y azufre."					);
+					Doc_PrintLines	( nDocID,  0, "La emulsiÃ³n se lleva al punto de ebulliciÃ³n y debe removerse constantemente mientras pasa por el alambique."					);
+					Doc_PrintLines	( nDocID,  0, "El elixir debe usarse con cuidado. Tiene potentes efectos secundarios y puede alterar todo el sistema de manÃ¡."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -369,22 +369,22 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Ya llevo 36 días esperando a que me llamen. Estoy empezando a dudar que lo hagan. Pero he hecho todo lo que me han pedido. He estado haciendo sus recados como si fuera una vieja sirvienta."					);
+					Doc_PrintLines	( nDocID,  0, "Ya llevo 36 dÃ­as esperando a que me llamen. Estoy empezando a dudar que lo hagan. Pero he hecho todo lo que me han pedido. He estado haciendo sus recados como si fuera una vieja sirvienta."					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "El guardián de las llaves me ha enseñado a cerrar las rejas. Todavía no he llegado a hacerlo. Si las cosas siguen así, cualquiera podría cruzar la puerta.");
+					Doc_PrintLines	( nDocID,  0, "El guardiÃ¡n de las llaves me ha enseÃ±ado a cerrar las rejas. TodavÃ­a no he llegado a hacerlo. Si las cosas siguen asÃ­, cualquiera podrÃ­a cruzar la puerta.");
 					Doc_PrintLines	( nDocID,  0, "Es una pena que no recuerde las combinaciones.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Me habría colado hace mucho en el gran salón. Estoy impaciente por ver al guardián. Me pregunto si me dejarán verlo cuando sea uno de ellos."	);
+					Doc_PrintLines	( nDocID,  1, "Me habrÃ­a colado hace mucho en el gran salÃ³n. Estoy impaciente por ver al guardiÃ¡n. Me pregunto si me dejarÃ¡n verlo cuando sea uno de ellos."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Probé suerte el miércoles. Pero no conseguí pasar de las dos cámaras con palancas antes de poder siquiera pulsar los tres interruptores del ala oeste, en el orden correcto. ¡Ese perro cerró las cámaras! Mañana voy a probar a quitarle la llave...");
+					Doc_PrintLines	( nDocID,  1, "ProbÃ© suerte el miÃ©rcoles. Pero no conseguÃ­ pasar de las dos cÃ¡maras con palancas antes de poder siquiera pulsar los tres interruptores del ala oeste, en el orden correcto. Â¡Ese perro cerrÃ³ las cÃ¡maras! MaÃ±ana voy a probar a quitarle la llave...");
 					Doc_Show		( nDocID );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"El diario del mago negro novicio habla de cámaras con palancas, llaves maestras, interruptores y más cosas. Debo procurar no olvidarme, podría serme útil más adelante."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"El diario del mago negro novicio habla de cÃ¡maras con palancas, llaves maestras, interruptores y mÃ¡s cosas. Debo procurar no olvidarme, podrÃ­a serme Ãºtil mÃ¡s adelante."); 
 };
 
 //**********************************************************************************
@@ -416,13 +416,13 @@ func void Use_ZugBruecke ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "   ¡Último aviso!"					);
+					Doc_PrintLine	( nDocID,  0, "   Â¡Ãšltimo aviso!"					);
 					Doc_SetMargins	( nDocID, -1, 50, 50, 70, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "No me importa si puedes cruzar el puente desde el otro lado o no. Si por mí fuera, todos os pudriríais en el infierno."					);
-					Doc_PrintLines	( nDocID,  0, "Voy a dejar el puente plegado porque estoy en mi dominio. Y si pillo a uno más intentando pulsar los interruptores con un arco y una flecha para así pasar, ¡me encargaré personalmente de colgar al idiota del árbol más cercano!"	);
+					Doc_PrintLines	( nDocID,  0, "No me importa si puedes cruzar el puente desde el otro lado o no. Si por mÃ­ fuera, todos os pudrirÃ­ais en el infierno."					);
+					Doc_PrintLines	( nDocID,  0, "Voy a dejar el puente plegado porque estoy en mi dominio. Y si pillo a uno mÃ¡s intentando pulsar los interruptores con un arco y una flecha para asÃ­ pasar, Â¡me encargarÃ© personalmente de colgar al idiota del Ã¡rbol mÃ¡s cercano!"	);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -433,7 +433,7 @@ func void Use_ZugBruecke ()
 
 
 //**********************************************************************************
-//	ItMi_PowerEye zum öffnen der letzten Tür
+//	ItMi_PowerEye zum Ã¶ffnen der letzten TÃ¼r
 //**********************************************************************************
 
 INSTANCE ItMi_PowerEye (C_Item)

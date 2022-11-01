@@ -45,11 +45,11 @@ FUNC INT DIA_Godar_Hello_Condition()
 
 FUNC VOID DIA_Godar_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Godar_Hello_13_00"); //¿Eh? ¿Qué?
+	AI_Output (self ,other,"DIA_Godar_Hello_13_00"); //Â¿Eh? Â¿QuÃ©?
 };
 
 //*********************************************************************
-//	Wo kommt ihr überhaupt her? 
+//	Wo kommt ihr Ã¼berhaupt her? 
 //*********************************************************************
 INSTANCE DIA_Godar_ComeFrom   (C_INFO)
 {
@@ -58,7 +58,7 @@ INSTANCE DIA_Godar_ComeFrom   (C_INFO)
 	condition   = DIA_Godar_ComeFrom_Condition;
 	information = DIA_Godar_ComeFrom_Info;
 	permanent   = FALSE;
-	description	= "¿De dónde vienes?";
+	description	= "Â¿De dÃ³nde vienes?";
 };
 
 FUNC INT DIA_Godar_ComeFrom_Condition()
@@ -68,19 +68,19 @@ FUNC INT DIA_Godar_ComeFrom_Condition()
 
 FUNC VOID DIA_Godar_ComeFrom_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_15_00"); //¿De dónde vienes?
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_15_00"); //Â¿De dÃ³nde vienes?
 	AI_Output (self ,other,"DIA_Godar_ComeFrom_13_01"); //Venimos de... eh, la ciudad.
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
-	Info_AddChoice (DIA_Godar_ComeFrom,"¡Sois bandidos!",DIA_Godar_ComeFrom_Bandits);
-	Info_AddChoice (DIA_Godar_ComeFrom,"¿Por qué nunca te he visto por la ciudad?",DIA_Godar_ComeFrom_NotCity);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Â¡Sois bandidos!",DIA_Godar_ComeFrom_Bandits);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Â¿Por quÃ© nunca te he visto por la ciudad?",DIA_Godar_ComeFrom_NotCity);
 	Info_AddChoice (DIA_Godar_ComeFrom,"Ya veo. De la ciudad, pues.",DIA_Godar_ComeFrom_Understand);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_15_00"); //¡Sois bandidos!
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_13_01"); //¡Ten cuidado! ¡Intentas abarcar más de lo que puedes!
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_15_00"); //Â¡Sois bandidos!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_13_01"); //Â¡Ten cuidado! Â¡Intentas abarcar mÃ¡s de lo que puedes!
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 	Info_AddChoice (DIA_Godar_ComeFrom,"Tranquilo. No os voy a delatar.",DIA_Godar_ComeFrom_Bandits_KeepCalm);
@@ -90,7 +90,7 @@ FUNC VOID DIA_Godar_ComeFrom_Bandits ()
 FUNC VOID DIA_Godar_ComeFrom_Bandits_KeepCalm ()
 {
 	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_KeepCalm_15_00"); //Tranquilo. No os voy a delatar.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_KeepCalm_13_01"); //Eso espero, por tu bien. ¡Como lo hagas, te matamos!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_KeepCalm_13_01"); //Eso espero, por tu bien. Â¡Como lo hagas, te matamos!
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 };
@@ -107,7 +107,7 @@ FUNC VOID DIA_Godar_ComeFrom_Bandits_NoFear ()
 FUNC VOID DIA_Godar_ComeFrom_NotCity ()
 {
 	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_15_00"); //No te he visto antes en la ciudad.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_13_01"); //No aguanto a la gente que mete las narices en los asuntos ajenos, ¿te enteras?
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_13_01"); //No aguanto a la gente que mete las narices en los asuntos ajenos, Â¿te enteras?
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 	Info_AddChoice (DIA_Godar_ComeFrom,"No.",DIA_Godar_ComeFrom_NotCity_CutThroat);
@@ -125,7 +125,7 @@ FUNC VOID DIA_Godar_ComeFrom_NotCity_Forget ()
 FUNC VOID DIA_Godar_ComeFrom_NotCity_CutThroat ()
 {
 	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_CutThroat_15_00"); //No.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_CutThroat_13_01"); //Entonces tendré que hacértelo entender a palos.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_CutThroat_13_01"); //Entonces tendrÃ© que hacÃ©rtelo entender a palos.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -134,8 +134,8 @@ FUNC VOID DIA_Godar_ComeFrom_NotCity_CutThroat ()
 FUNC VOID DIA_Godar_ComeFrom_Understand ()
 {
 	AI_Output (other,self ,"DIA_Godar_ComeFrom_Understand_15_00"); //Ya veo. De la ciudad, pues.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_01"); //¿Ves? ¡Lo entiendes!
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_02"); //¡Ten, echa un trago!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_01"); //Â¿Ves? Â¡Lo entiendes!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_02"); //Â¡Ten, echa un trago!
 	
 	CreateInvItems (self,ItFo_Beer,1);
 	B_GiveInvItems (self,other,ItFo_Beer,1);
@@ -153,7 +153,7 @@ INSTANCE DIA_Godar_Plan   (C_INFO)
 	condition   = DIA_Godar_Plan_Condition;
 	information = DIA_Godar_Plan_Info;
 	permanent   = FALSE;
-	description	= "¿Qué estás haciendo aquí?";
+	description	= "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };
 
 FUNC INT DIA_Godar_Plan_Condition()
@@ -163,15 +163,15 @@ FUNC INT DIA_Godar_Plan_Condition()
 
 FUNC VOID DIA_Godar_Plan_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Plan_15_00"); //¿Qué haces aquí?
-	AI_Output (self ,other,"DIA_Godar_Plan_13_01"); //Nos enteramos de lo de la caza de dragones, así que hicimos el equipaje y vinimos.
+	AI_Output (other,self ,"DIA_Godar_Plan_15_00"); //Â¿QuÃ© haces aquÃ­?
+	AI_Output (self ,other,"DIA_Godar_Plan_13_01"); //Nos enteramos de lo de la caza de dragones, asÃ­ que hicimos el equipaje y vinimos.
 	AI_Output (self ,other,"DIA_Godar_Plan_13_02"); //Pero para ser sincero, los dragones me dan igual. Solo quiero un poco de oro.
-	AI_Output (self ,other,"DIA_Godar_Plan_13_03"); //Los dragones tienen oro, ¿no?
+	AI_Output (self ,other,"DIA_Godar_Plan_13_03"); //Los dragones tienen oro, Â¿no?
 	AI_Output (other,self ,"DIA_Godar_Plan_15_04"); //Desde luego.
 };
 
 //*********************************************************************
-//	Wisst ihr was über die Drachen? 
+//	Wisst ihr was Ã¼ber die Drachen? 
 //*********************************************************************
 INSTANCE DIA_Godar_DragonLore   (C_INFO)
 {
@@ -180,7 +180,7 @@ INSTANCE DIA_Godar_DragonLore   (C_INFO)
 	condition   = DIA_Godar_DragonLore_Condition;
 	information = DIA_Godar_DragonLore_Info;
 	permanent   = FALSE;
-	description	= "¿Qué sabes de los dragones?";
+	description	= "Â¿QuÃ© sabes de los dragones?";
 };
 
 FUNC INT DIA_Godar_DragonLore_Condition()
@@ -193,9 +193,9 @@ FUNC INT DIA_Godar_DragonLore_Condition()
 
 FUNC VOID DIA_Godar_DragonLore_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_DragonLore_15_00"); //¿Qué sabes de los dragones?
-	AI_Output (self ,other,"DIA_Godar_DragonLore_13_01"); //Solo las historias que les cuentan a los niños.
-	AI_Output (self ,other,"DIA_Godar_DragonLore_13_02"); //Ya sabes, lo de las vírgenes, el oro, el aliento de fuego y esas cosas.
+	AI_Output (other,self ,"DIA_Godar_DragonLore_15_00"); //Â¿QuÃ© sabes de los dragones?
+	AI_Output (self ,other,"DIA_Godar_DragonLore_13_01"); //Solo las historias que les cuentan a los niÃ±os.
+	AI_Output (self ,other,"DIA_Godar_DragonLore_13_02"); //Ya sabes, lo de las vÃ­rgenes, el oro, el aliento de fuego y esas cosas.
 };
 
 //*********************************************************************
@@ -208,7 +208,7 @@ INSTANCE DIA_Godar_Destination   (C_INFO)
 	condition   = DIA_Godar_Destination_Condition;
 	information = DIA_Godar_Destination_Info;
 	permanent   = FALSE;
-	description	= "¿Qué tenéis pensado hacer a partir de aquí?";
+	description	= "Â¿QuÃ© tenÃ©is pensado hacer a partir de aquÃ­?";
 };
 
 FUNC INT DIA_Godar_Destination_Condition()
@@ -221,14 +221,14 @@ FUNC INT DIA_Godar_Destination_Condition()
 
 FUNC VOID DIA_Godar_Destination_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Destination_15_00"); //¿Qué tenéis pensado hacer a partir de aquí?
-	AI_Output (self ,other,"DIA_Godar_Destination_13_01"); //Ni idea. Todavía nos lo estamos pensando.
+	AI_Output (other,self ,"DIA_Godar_Destination_15_00"); //Â¿QuÃ© tenÃ©is pensado hacer a partir de aquÃ­?
+	AI_Output (self ,other,"DIA_Godar_Destination_13_01"); //Ni idea. TodavÃ­a nos lo estamos pensando.
 	
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 		{
-			AI_Output (other,self ,"DIA_Godar_Destination_15_02"); //Podríais ir al castillo.
-			AI_Output (self ,other,"DIA_Godar_Destination_13_03"); //No iría por nada del mundo. Por allí andan los paladines.
-			AI_Output (self ,other,"DIA_Godar_Destination_13_04"); //No voy a volver a la cárcel. Estuve una vez y fue suficiente.
+			AI_Output (other,self ,"DIA_Godar_Destination_15_02"); //PodrÃ­ais ir al castillo.
+			AI_Output (self ,other,"DIA_Godar_Destination_13_03"); //No irÃ­a por nada del mundo. Por allÃ­ andan los paladines.
+			AI_Output (self ,other,"DIA_Godar_Destination_13_04"); //No voy a volver a la cÃ¡rcel. Estuve una vez y fue suficiente.
 		};
 };
 
@@ -242,7 +242,7 @@ INSTANCE DIA_Godar_Orks   (C_INFO)
 	condition   = DIA_Godar_Orks_Condition;
 	information = DIA_Godar_Orks_Info;
 	permanent   = FALSE;
-	description	= "¿Qué hay de los orcos?";
+	description	= "Â¿QuÃ© hay de los orcos?";
 };
 
 FUNC INT DIA_Godar_Orks_Condition()
@@ -255,11 +255,11 @@ FUNC INT DIA_Godar_Orks_Condition()
 
 FUNC VOID DIA_Godar_Orks_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Orks_15_00"); //¿Qué hay de los orcos?
+	AI_Output (other,self ,"DIA_Godar_Orks_15_00"); //Â¿QuÃ© hay de los orcos?
 	AI_Output (self ,other,"DIA_Godar_Orks_13_01"); //Tienen rodeado todo el castillo. No hay brechas.
 	AI_Output (self ,other,"DIA_Godar_Orks_13_02"); //Es una locura intentar infiltrarse. Si intentas luchar, eres hombre muerto.
 	AI_Output (self ,other,"DIA_Godar_Orks_13_03"); //Nadie consigue pasar.
-	AI_Output (other,self ,"DIA_Godar_Orks_15_04"); //¿Ah, sí?
+	AI_Output (other,self ,"DIA_Godar_Orks_15_04"); //Â¿Ah, sÃ­?
 };
 
 //*********************************************************************
@@ -272,7 +272,7 @@ INSTANCE DIA_Godar_Prison   (C_INFO)
 	condition   = DIA_Godar_Prison_Condition;
 	information = DIA_Godar_Prison_Info;
 	permanent   = FALSE;
-	description	= "¿Por qué estabas en chirona?";
+	description	= "Â¿Por quÃ© estabas en chirona?";
 };
 
 FUNC INT DIA_Godar_Prison_Condition()
@@ -286,21 +286,21 @@ FUNC INT DIA_Godar_Prison_Condition()
 
 FUNC VOID DIA_Godar_Prison_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_15_00"); //¿Por qué estabas en chirona?
+	AI_Output (other,self ,"DIA_Godar_Prison_15_00"); //Â¿Por quÃ© estabas en chirona?
 
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Godar_Prison_13_01"); //No voy a contártelo.
-			AI_Output (self ,other,"DIA_Godar_Prison_13_02"); //Los magos estáis compinchados con los paladines. No, amigo mío. Ni hablar.
+			AI_Output (self ,other,"DIA_Godar_Prison_13_01"); //No voy a contÃ¡rtelo.
+			AI_Output (self ,other,"DIA_Godar_Prison_13_02"); //Los magos estÃ¡is compinchados con los paladines. No, amigo mÃ­o. Ni hablar.
 		}
 	else
 		{		
-			AI_Output (self ,other,"DIA_Godar_Prison_13_03"); //El cerdo me pescó por cazar furtivamente. ¡Por dos liebres piojosas!
-			AI_Output (self ,other,"DIA_Godar_Prison_13_04"); //Me echaron 10 años por eso.
-			AI_Output (other,self ,"DIA_Godar_Prison_15_05"); //¿Eso fue todo?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_06"); //Bueno, también me defendí.
-			AI_Output (other,self ,"DIA_Godar_Prison_15_07"); //¿Y?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_08"); //No pude hacer nada al respecto. El tipo se tropezó y se partió el cuello. ¡Te lo juro!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_03"); //El cerdo me pescÃ³ por cazar furtivamente. Â¡Por dos liebres piojosas!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_04"); //Me echaron 10 aÃ±os por eso.
+			AI_Output (other,self ,"DIA_Godar_Prison_15_05"); //Â¿Eso fue todo?
+			AI_Output (self ,other,"DIA_Godar_Prison_13_06"); //Bueno, tambiÃ©n me defendÃ­.
+			AI_Output (other,self ,"DIA_Godar_Prison_15_07"); //Â¿Y?
+			AI_Output (self ,other,"DIA_Godar_Prison_13_08"); //No pude hacer nada al respecto. El tipo se tropezÃ³ y se partiÃ³ el cuello. Â¡Te lo juro!
 			
 			Info_ClearChoices (DIA_Godar_Prison);
 			Info_AddChoice (DIA_Godar_Prison,"Me resulta familiar.",DIA_Godar_Prison_Court);
@@ -311,7 +311,7 @@ FUNC VOID DIA_Godar_Prison_Info()
 FUNC VOID DIA_Godar_Prison_Court ()
 {
 	AI_Output (other,self ,"DIA_Godar_Prison_Court_15_00"); //Me resulta familiar.
-	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_01"); //Ya sabes a lo que me refiero. Los bastardos ricos no tienen ni idea que cómo se nos trata.
+	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_01"); //Ya sabes a lo que me refiero. Los bastardos ricos no tienen ni idea que cÃ³mo se nos trata.
 	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_02"); //No les preocupa absolutamente nada.
 	
 	Info_ClearChoices (DIA_Godar_Prison);
@@ -321,8 +321,8 @@ FUNC VOID DIA_Godar_Prison_Court ()
 FUNC VOID DIA_Godar_Prison_Pissoff ()
 {
 	AI_Output (other,self ,"DIA_Godar_Prison_Pissoff_15_00"); //No debiste dejar que te pillaran.
-	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_01"); //(Enojado) Apuesto a que no has estado en la cárcel, ¿verdad?
-	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_02"); //Entonces debería enseñarte lo que puede pasarle a uno en la cárcel.
+	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_01"); //(Enojado) Apuesto a que no has estado en la cÃ¡rcel, Â¿verdad?
+	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_02"); //Entonces deberÃ­a enseÃ±arte lo que puede pasarle a uno en la cÃ¡rcel.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -338,7 +338,7 @@ INSTANCE DIA_Godar_Hunting   (C_INFO)
 	condition   = DIA_Godar_Hunting_Condition;
 	information = DIA_Godar_Hunting_Info;
 	permanent   = FALSE;
-	description	= "¿Me enseñas a cazar?";
+	description	= "Â¿Me enseÃ±as a cazar?";
 };
 
 FUNC INT DIA_Godar_Hunting_Condition()
@@ -352,16 +352,16 @@ FUNC INT DIA_Godar_Hunting_Condition()
 
 FUNC VOID DIA_Godar_Hunting_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Hunting_15_00"); //¿Me enseñas a cazar?
+	AI_Output (other,self ,"DIA_Godar_Hunting_15_00"); //Â¿Me enseÃ±as a cazar?
 	if (GodarLikesYou == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_01"); //No hablarás en serio, ¿no? ¡Lárgate!
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_01"); //No hablarÃ¡s en serio, Â¿no? Â¡LÃ¡rgate!
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_03"); //Un animal tiene algo más que carne. Puedes vender las pieles y las garras y sacarte un buen dinero.
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_04"); //Estoy impaciente por agarrar un dragón.
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_03"); //Un animal tiene algo mÃ¡s que carne. Puedes vender las pieles y las garras y sacarte un buen dinero.
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_04"); //Estoy impaciente por agarrar un dragÃ³n.
 		
 		Godar_TeachAnimalTrophy = TRUE;
 	};	
@@ -377,7 +377,7 @@ INSTANCE DIA_Godar_Dragonstuff   (C_INFO)
 	condition   = DIA_Godar_Dragonstuff_Condition;
 	information = DIA_Godar_Dragonstuff_Info;
 	permanent   = TRUE;
-	description	= "Enséñame a destripar un dragón.";
+	description	= "EnsÃ©Ã±ame a destripar un dragÃ³n.";
 };
 var int Godar_TeachDragonStuff;
 FUNC INT DIA_Godar_Dragonstuff_Condition()
@@ -393,9 +393,9 @@ FUNC INT DIA_Godar_Dragonstuff_Condition()
 
 FUNC VOID DIA_Godar_Dragonstuff_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Dragonstuff_15_00"); //Enséñame a destripar un dragón.
+	AI_Output (other,self ,"DIA_Godar_Dragonstuff_15_00"); //EnsÃ©Ã±ame a destripar un dragÃ³n.
 	
-	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_01"); //Para quedarte con toda la pasta, ¿eh?
+	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_01"); //Para quedarte con toda la pasta, Â¿eh?
 	
 	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_02"); //Bueno, vale, pero te va a costar 1000 monedas de oro.
 
@@ -437,7 +437,7 @@ INSTANCE DIA_Godar_Teach   (C_INFO)
 	condition   = DIA_Godar_Teach_Condition;
 	information = DIA_Godar_Teach_Info;
 	permanent   = TRUE;
-	description	= "Enséñame a cazar.";
+	description	= "EnsÃ©Ã±ame a cazar.";
 };
 
 FUNC INT DIA_Godar_Teach_Condition()
@@ -451,7 +451,7 @@ FUNC INT DIA_Godar_Teach_Condition()
 
 FUNC VOID DIA_Godar_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Teach_15_00"); //Enséñame a cazar.
+	AI_Output (other,self ,"DIA_Godar_Teach_15_00"); //EnsÃ©Ã±ame a cazar.
 	if 	(
 			(Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -473,7 +473,7 @@ FUNC VOID DIA_Godar_Teach_Info()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Aguijón de mosca de sangre",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Godar_Teach_TROPHYS_BFSting);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("AguijÃ³n de mosca de sangre",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Godar_Teach_TROPHYS_BFSting);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 			{ 
@@ -483,11 +483,11 @@ FUNC VOID DIA_Godar_Teach_Info()
 			{
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Quitar escamas de dragón",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Godar_Teach_TROPHYS_DragonScale);
+					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Quitar escamas de dragÃ³n",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Godar_Teach_TROPHYS_DragonScale);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Recoger sangre de dragón",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)), DIA_Godar_Teach_TROPHYS_DragonBlood);
+					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Recoger sangre de dragÃ³n",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)), DIA_Godar_Teach_TROPHYS_DragonBlood);
 				};
 			};
 		}
@@ -515,7 +515,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_BFSting ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFSting_13_00"); //El método más rápido para sacar el aguijón de una mosca de sangre es apretar el abdomen antes de cortarlo.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFSting_13_00"); //El mÃ©todo mÃ¡s rÃ¡pido para sacar el aguijÃ³n de una mosca de sangre es apretar el abdomen antes de cortarlo.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -533,7 +533,7 @@ FUNC VOID DIA_Godar_Teach_Thief_Sneak()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Sneak_13_00"); //Cuando estés al acecho, usa calzado blando. Las suelas rígidas hacen mucho ruido.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Sneak_13_00"); //Cuando estÃ©s al acecho, usa calzado blando. Las suelas rÃ­gidas hacen mucho ruido.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -542,7 +542,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonScale_13_00"); //Para quitarle las escamas a un dragón hace falta mucha fuerza, pero tú la tienes.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonScale_13_00"); //Para quitarle las escamas a un dragÃ³n hace falta mucha fuerza, pero tÃº la tienes.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -551,7 +551,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_DragonBlood()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonBlood_13_00"); //Busca un punto blando en el vientre del dragón. En ese punto es más fácil extraerle su sangre.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonBlood_13_00"); //Busca un punto blando en el vientre del dragÃ³n. En ese punto es mÃ¡s fÃ¡cil extraerle su sangre.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -583,7 +583,7 @@ FUNC INT DIA_Godar_AllDragonsDead_Condition()
 FUNC VOID DIA_Godar_AllDragonsDead_Info()
 {
 	AI_Output	(other,self ,"DIA_Godar_AllDragonsDead_15_00"); //He matado a todos los dragones.
-	AI_Output 	(self ,other,"DIA_Godar_AllDragonsDead_13_01"); //¿Y qué? En el valle aún hay un montón de presas para nosotros.
+	AI_Output 	(self ,other,"DIA_Godar_AllDragonsDead_13_01"); //Â¿Y quÃ©? En el valle aÃºn hay un montÃ³n de presas para nosotros.
 };
 
 

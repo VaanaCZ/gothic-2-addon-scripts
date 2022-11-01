@@ -45,11 +45,11 @@ FUNC INT DIA_Kjorn_Hello_Condition()
 
 FUNC VOID DIA_Kjorn_Hello_Info()
 {
-	AI_Output	(self ,other,"DIA_Kjorn_Hello_06_00"); //¡Oye, ven aquí!
-	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_01"); //¿Qué es lo que quieres?
+	AI_Output	(self ,other,"DIA_Kjorn_Hello_06_00"); //Â¡Oye, ven aquÃ­!
+	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_01"); //Â¿QuÃ© es lo que quieres?
 	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_02"); //El valle es un lugar peligroso, y sin el equipo adecuado no vas a tardar en morir.
-	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_03"); //Y supongo que tú tienes el equipo adecuado.
-	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_04"); //Lo has adivinado. Podría llegar a vendértelo.
+	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_03"); //Y supongo que tÃº tienes el equipo adecuado.
+	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_04"); //Lo has adivinado. PodrÃ­a llegar a vendÃ©rtelo.
 };
 
 //*********************************************************************
@@ -63,7 +63,7 @@ INSTANCE DIA_Kjorn_TRADE   (C_INFO)
 	information = DIA_Kjorn_TRADE_Info;
 	Trade		= TRUE;
 	permanent   = TRUE;
-	description	= "¿Qué puedes ofrecerme?";
+	description	= "Â¿QuÃ© puedes ofrecerme?";
 				
 };
 
@@ -75,7 +75,7 @@ FUNC INT DIA_Kjorn_TRADE_Condition()
 FUNC VOID DIA_Kjorn_TRADE_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other,self ,"DIA_Kjorn_TRADE_15_00"); //¿Qué puedes ofrecerme?
+	AI_Output	(other,self ,"DIA_Kjorn_TRADE_15_00"); //Â¿QuÃ© puedes ofrecerme?
 
 };
 
@@ -89,7 +89,7 @@ INSTANCE DIA_Kjorn_SellInfos   (C_INFO)
 	condition   = DIA_Kjorn_SellInfos_Condition;
 	information = DIA_Kjorn_SellInfos_Info;
 	permanent   = FALSE;
-	description	= "¿También vendes información?";
+	description	= "Â¿TambiÃ©n vendes informaciÃ³n?";
 				
 };
 
@@ -100,14 +100,14 @@ FUNC INT DIA_Kjorn_SellInfos_Condition()
 
 FUNC VOID DIA_Kjorn_SellInfos_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_SellInfos_15_00"); //¿También vendes información?
-	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_01"); //Depende. Por el precio adecuado, te contaré todo lo que sé.
-	AI_Output 	(other,self ,"DIA_Kjorn_SellInfos_15_02"); //¿Cuánto cobras?
-	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_03"); //Esto... no sabría que decirte. No obstante, creo que 50 monedas de oro por cada dato que te dé es un precio justo.
+	AI_Output	(other,self ,"DIA_Kjorn_SellInfos_15_00"); //Â¿TambiÃ©n vendes informaciÃ³n?
+	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_01"); //Depende. Por el precio adecuado, te contarÃ© todo lo que sÃ©.
+	AI_Output 	(other,self ,"DIA_Kjorn_SellInfos_15_02"); //Â¿CuÃ¡nto cobras?
+	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_03"); //Esto... no sabrÃ­a que decirte. No obstante, creo que 50 monedas de oro por cada dato que te dÃ© es un precio justo.
 };
 
 //*********************************************************************
-//	Ich brauche Infos über.. 
+//	Ich brauche Infos Ã¼ber.. 
 //*********************************************************************
 INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 {
@@ -116,7 +116,7 @@ INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 	condition   = DIA_Kjorn_BuyInfos_Condition;
 	information = DIA_Kjorn_BuyInfos_Info;
 	permanent   = TRUE;
-	description	= "Necesito información.";
+	description	= "Necesito informaciÃ³n.";
 				
 };
 
@@ -130,15 +130,15 @@ FUNC INT DIA_Kjorn_BuyInfos_Condition()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_BuyInfos_15_00"); //Necesito información.
-	AI_Output 	(self ,other,"DIA_Kjorn_BuyInfos_06_01"); //¡50 monedas de oro!
+	AI_Output	(other,self ,"DIA_Kjorn_BuyInfos_15_00"); //Necesito informaciÃ³n.
+	AI_Output 	(self ,other,"DIA_Kjorn_BuyInfos_06_01"); //Â¡50 monedas de oro!
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 	Info_AddChoice (DIA_Kjorn_BuyInfos,"Es demasiado caro.",DIA_Kjorn_BuyInfos_HoldMoney);	
 	
 	IF (Npc_HasItems (other,ItMi_Gold) >=50)
 	{	
-		Info_AddChoice (DIA_Kjorn_BuyInfos,"Sí, ten.",DIA_Kjorn_BuyInfos_GiveMoney);
+		Info_AddChoice (DIA_Kjorn_BuyInfos,"SÃ­, ten.",DIA_Kjorn_BuyInfos_GiveMoney);
 	};	
 };
 
@@ -150,7 +150,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_HoldMoney ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_00"); //Sí, ten.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_00"); //SÃ­, ten.
 	
 	B_GiveInvItems (other,self,ItMi_Gold,50);
 	
@@ -158,7 +158,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 	
-	//----- Zurück -----
+	//----- ZurÃ¼ck -----
 	
 	Info_AddChoice (DIA_Kjorn_BuyInfos,DIALOG_BACK,DIA_Kjorn_BuyInfos_Back);
 	
@@ -170,7 +170,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	}
 	else if KjornToldDragon == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... más acerca de los dragones.",DIA_Kjorn_BuyInfos_Dragon2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... mÃ¡s acerca de los dragones.",DIA_Kjorn_BuyInfos_Dragon2);
 	};
 	
 	//----- Das Minental -----
@@ -181,7 +181,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	}
 	else if KjornToldColony == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... más acerca del Valle de las Minas.",DIA_Kjorn_BuyInfos_Colony2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... mÃ¡s acerca del Valle de las Minas.",DIA_Kjorn_BuyInfos_Colony2);
 	};
 	
 	//----- die Burg -----
@@ -199,16 +199,16 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	}
 	else if KjornToldOrks == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... más acerca de los orcos.",DIA_Kjorn_BuyInfos_Orks2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"... mÃ¡s acerca de los orcos.",DIA_Kjorn_BuyInfos_Orks2);
 	};	
 	
 };
 
-//------ Zurück -----
+//------ ZurÃ¼ck -----
 
 FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Back_15_00"); //Oye, devuélveme el dinero. He cambiado de idea.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Back_15_00"); //Oye, devuÃ©lveme el dinero. He cambiado de idea.
 	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Back_06_01"); //Haz lo que quieras.
 	
 	B_GiveInvItems (self,other,ItMi_Gold,50);
@@ -219,10 +219,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Dragon1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Háblame de los dragones.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Los dragones son criaturas antiguas y de increíble poder. Antaño había miles de ellos en el mundo.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_02"); //No obstante, han pasado más de cien años desde la última vez que se vio a uno de ellos.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Su sangre arde como el aceite hirviendo, y si te miran a los ojos, te petrifican el corazón. Al menos eso he oído...
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon1_15_00"); //HÃ¡blame de los dragones.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Los dragones son criaturas antiguas y de increÃ­ble poder. AntaÃ±o habÃ­a miles de ellos en el mundo.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_02"); //No obstante, han pasado mÃ¡s de cien aÃ±os desde la Ãºltima vez que se vio a uno de ellos.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Su sangre arde como el aceite hirviendo, y si te miran a los ojos, te petrifican el corazÃ³n. Al menos eso he oÃ­do...
 	
 	KjornToldDragon = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -230,12 +230,12 @@ FUNC VOID DIA_Kjorn_BuyInfos_Dragon1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Dragon2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Cuéntame algo más de los dragones.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon2_15_00"); //CuÃ©ntame algo mÃ¡s de los dragones.
 	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_01"); //No todos los dragones son iguales.
 	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_02"); //Algunos pueden cubrir el suelo con una capa de hielo de varios metros de espesor.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Otros prefieren vivir en ciénagas, o en volcanes.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Otros prefieren vivir en ciÃ©nagas, o en volcanes.
 	
-	B_LogEntry (TOPIC_DRACHENJAGD,"Kjorn, el cazador de dragones, cree que hay diferentes tipos de dragones. Algunos prefieren los lugares fríos y húmedos, mientras que otros prefieren el fuego."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"Kjorn, el cazador de dragones, cree que hay diferentes tipos de dragones. Algunos prefieren los lugares frÃ­os y hÃºmedos, mientras que otros prefieren el fuego."); 
 
 	KjornToldDragon = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -246,11 +246,11 @@ FUNC VOID DIA_Kjorn_BuyInfos_Dragon2 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Colony1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony1_15_00"); //Háblame del Valle de las Minas.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_01"); //El Valle de las Minas de Khorinis es famoso en todo el país por su mineral mágico.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_02"); //Estas montañas son el único lugar que cuentan con un yacimiento de mineral mágico.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_03"); //Un arma forjada de este mineral es prácticamente irrompible y atraviesa la armadura más robusta.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_04"); //Hasta hace unas semanas, una barrera mágica rodeaba todo el valle. Era impenetrable, y nadie podía salir.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony1_15_00"); //HÃ¡blame del Valle de las Minas.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_01"); //El Valle de las Minas de Khorinis es famoso en todo el paÃ­s por su mineral mÃ¡gico.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_02"); //Estas montaÃ±as son el Ãºnico lugar que cuentan con un yacimiento de mineral mÃ¡gico.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_03"); //Un arma forjada de este mineral es prÃ¡cticamente irrompible y atraviesa la armadura mÃ¡s robusta.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_04"); //Hasta hace unas semanas, una barrera mÃ¡gica rodeaba todo el valle. Era impenetrable, y nadie podÃ­a salir.
 
 	KjornToldColony = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -258,10 +258,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_Colony1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Colony2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony2_15_00"); //Cuéntame algo más del Valle de las Minas.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_01"); //El valle ha cambiado mucho estos últimos días.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_02"); //Cuando llegaron los orcos también aparecieron otras criaturas terribles, nunca vistas en esta región.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_03"); //Dicen que aún quedan unos cuantos cazadores solitarios, pero no sé siquiera si siguen vivos.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony2_15_00"); //CuÃ©ntame algo mÃ¡s del Valle de las Minas.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_01"); //El valle ha cambiado mucho estos Ãºltimos dÃ­as.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_02"); //Cuando llegaron los orcos tambiÃ©n aparecieron otras criaturas terribles, nunca vistas en esta regiÃ³n.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_03"); //Dicen que aÃºn quedan unos cuantos cazadores solitarios, pero no sÃ© siquiera si siguen vivos.
 	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_04"); //Parece que todas las criaturas de Beliar han llegado en tropel a este valle.
 	
 	KjornToldColony = 2;
@@ -272,9 +272,9 @@ FUNC VOID DIA_Kjorn_BuyInfos_Colony2 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_OldCamp1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Háblame del castillo.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //Se encuentra prácticamente en el centro del Valle de las Minas.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //Cuando el valle aún era una prisión, los magnates del mineral controlaban todo el comercio de mineral desde allí.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //HÃ¡blame del castillo.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //Se encuentra prÃ¡cticamente en el centro del Valle de las Minas.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //Cuando el valle aÃºn era una prisiÃ³n, los magnates del mineral controlaban todo el comercio de mineral desde allÃ­.
 	
 	KjornToldOldCamp = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -285,10 +285,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_OldCamp1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Orks1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks1_15_00"); //Háblame de los orcos.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_01"); //Los orcos no llevan por aquí mucho tiempo, al menos los que están frente al castillo.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_02"); //Me pregunto si están bien organizados. Los orcos suelen atacar a ciegas, en cualquier circunstancia.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_03"); //Estos orcos esperan el momento adecuado. Esperan, pero no se a qué.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks1_15_00"); //HÃ¡blame de los orcos.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_01"); //Los orcos no llevan por aquÃ­ mucho tiempo, al menos los que estÃ¡n frente al castillo.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_02"); //Me pregunto si estÃ¡n bien organizados. Los orcos suelen atacar a ciegas, en cualquier circunstancia.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_03"); //Estos orcos esperan el momento adecuado. Esperan, pero no se a quÃ©.
 	
 	KjornToldOrks = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -296,8 +296,8 @@ FUNC VOID DIA_Kjorn_BuyInfos_Orks1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Orks2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks2_15_00"); //Cuéntame algo más de los orcos.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_01"); //Los jefes de los orcos son guerreros de élite Esos guerreros son muy fuertes y llevan armaduras resistentes. Vencerlos es prácticamente imposible.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks2_15_00"); //CuÃ©ntame algo mÃ¡s de los orcos.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_01"); //Los jefes de los orcos son guerreros de Ã©lite Esos guerreros son muy fuertes y llevan armaduras resistentes. Vencerlos es prÃ¡cticamente imposible.
 	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_02"); //Una vez vi que uno derribaba un roble adulto de un solo hachazo.
 	
 	KjornToldOrks = 2;
@@ -314,7 +314,7 @@ INSTANCE DIA_Kjorn_AllDragonsDead   (C_INFO)
 	condition   = DIA_Kjorn_AllDragonsDead_Condition;
 	information = DIA_Kjorn_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "¡He matado a todos los dragones!";
+	description	= "Â¡He matado a todos los dragones!";
 				
 };
 
@@ -328,9 +328,9 @@ FUNC INT DIA_Kjorn_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Kjorn_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_AllDragonsDead_15_00"); //¡He matado a todos los dragones!
-	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_01"); //(Se ríe) Ya, y yo soy paladín.
-	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_02"); //A lo mejor has matado a uno, pero ¿a todos? Búscate a alguien que te crea.
+	AI_Output	(other,self ,"DIA_Kjorn_AllDragonsDead_15_00"); //Â¡He matado a todos los dragones!
+	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_01"); //(Se rÃ­e) Ya, y yo soy paladÃ­n.
+	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_02"); //A lo mejor has matado a uno, pero Â¿a todos? BÃºscate a alguien que te crea.
 };
 
 // ************************************************************

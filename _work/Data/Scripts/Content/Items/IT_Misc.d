@@ -2,8 +2,8 @@
 // Wert von Kram
 // ************************************************************************************************
 
-// Items für Objektbenutzung und Item-Interaktion...
-// z.B. Krautstampfer, Hammer, Kochlöffel, Laborflasche, Roheisen (Schmiede)
+// Items fÃ¼r Objektbenutzung und Item-Interaktion...
+// z.B. Krautstampfer, Hammer, KochlÃ¶ffel, Laborflasche, Roheisen (Schmiede)
 
 const int	Value_SwordBlade		= 10;
 const int	Value_SwordBladeHot		= 10;
@@ -66,7 +66,7 @@ const int   Value_InnosStatue		=  100;
 const int	Value_Sextant			= 1500;
 
 
-/*ursprüngliche Werte:
+/*ursprÃ¼ngliche Werte:
 const int	Value_SilverRing		 = 200;
 const int	Value_SilverNecklace	 = 100;
 const int	Value_SilverCandleHolder = 30 ;
@@ -94,7 +94,7 @@ const int	Value_Sextant			= 30  ;
 
 
 /*******************************************************************************************
-**	Items für Mobsi-Benutzung               					  		  				  **
+**	Items fÃ¼r Mobsi-Benutzung               					  		  				  **
 *******************************************************************************************/
 // Krautstampfen
 
@@ -134,7 +134,7 @@ INSTANCE ItMi_RuneBlank (C_Item)
 
 INSTANCE ItMi_Pliers (C_Item)
 {
-	name 				=	"Mandíbula";
+	name 				=	"MandÃ­bula";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MULTI;
@@ -188,7 +188,7 @@ INSTANCE ItMi_Hammer (C_Item)
 };
 
 /******************************************************************************************/
-// im Topf rühren
+// im Topf rÃ¼hren
 INSTANCE ItMi_Scoop (C_Item)
 {
 	name 				=	"Cuchara";
@@ -207,11 +207,11 @@ INSTANCE ItMi_Scoop (C_Item)
 	COUNT[5]			= 	value;
 };
 /******************************************************************************************/
-//	Pfanne zum Braten (für  Lagerfeuer)
+//	Pfanne zum Braten (fÃ¼r  Lagerfeuer)
 
 INSTANCE ItMi_Pan (C_Item)
 {
-	name 				=	"Sartén";
+	name 				=	"SartÃ©n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -227,11 +227,11 @@ INSTANCE ItMi_Pan (C_Item)
 	COUNT[5]			= 	value;
 };
 
-//Pfann für Herd
+//Pfann fÃ¼r Herd
 
 INSTANCE ItMi_PanFull (C_Item)
 {
-	name 				=	"Sartén";
+	name 				=	"SartÃ©n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -247,7 +247,7 @@ INSTANCE ItMi_PanFull (C_Item)
 	COUNT[5]			= 	value;
 };
 /******************************************************************************************/
-//	Säge für Baumstamm
+//	SÃ¤ge fÃ¼r Baumstamm
 
 INSTANCE ItMi_Saw (C_Item)
 {
@@ -268,7 +268,7 @@ INSTANCE ItMi_Saw (C_Item)
 };	   	   
 
 /******************************************************************************************/
-//	Items für Schmiede	    					 								 		  **
+//	Items fÃ¼r Schmiede	    					 								 		  **
 
 INSTANCE ItMiSwordraw (C_Item)
 {
@@ -350,7 +350,7 @@ INSTANCE ItMiSwordblade	(C_Item)
 
 
 /*******************************************************************************************
-**	Items für Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
+**	Items fÃ¼r Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
 *******************************************************************************************/
 
 /******************************************************************************************/
@@ -388,7 +388,7 @@ func void Use_Broom()
 // zum Rumklimpern
 INSTANCE ItMi_Lute (C_Item)
 {
-	name 				=	"Laúd";
+	name 				=	"LaÃºd";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -412,7 +412,7 @@ func void Use_Lute()
 
 
 /******************************************************************************************/
-// Für Babe-Putzen
+// FÃ¼r Babe-Putzen
 INSTANCE ItMi_Brush(C_Item)
 {
 	name 				=	"Cepillo";
@@ -498,7 +498,7 @@ func void Use_Alarmhorn()
 
 */
 //*******************************
-//Päckchen
+//PÃ¤ckchen
 //*******************************
 INSTANCE ItMi_Packet(C_Item)
 {
@@ -525,7 +525,7 @@ FUNC VOID UsePacket ()
 
 INSTANCE ItMi_Pocket(C_Item)//steht drin, weil auch in Welt verteilt!!
 {
-	name 				=	"Bolsón de cuero";
+	name 				=	"BolsÃ³n de cuero";
 
 	mainflag 			=	ITEM_KAT_NONE|ITEM_MULTI;
 	flags 				=	0;
@@ -551,7 +551,7 @@ FUNC VOID UsePocket ()
 };
 
 //******************************************************************************************
-//	Wertvolle Gegenstände
+//	Wertvolle GegenstÃ¤nde
 //******************************************************************************************
 INSTANCE ItMi_Nugget(C_Item)
 {
@@ -694,7 +694,7 @@ INSTANCE ItMi_SilverRing (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_SilverCup (C_Item)
 {
-	name 				=	"Cáliz de plata";
+	name 				=	"CÃ¡liz de plata";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -748,7 +748,7 @@ instance ItMi_GoldPlate (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_GoldCup (C_Item)
 {
-	name 				=	"Cáliz de oro";
+	name 				=	"CÃ¡liz de oro";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -766,7 +766,7 @@ INSTANCE ItMi_GoldCup (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_BloodCup_MIS (C_Item)
 {
-	name 				=	"Cáliz de sangre";
+	name 				=	"CÃ¡liz de sangre";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI | ITEM_MISSION;
@@ -776,7 +776,7 @@ INSTANCE ItMi_BloodCup_MIS (C_Item)
 	visual 				=	"ItMi_GoldCup.3DS";
 	material 			=	MAT_METAL;
 
-	description			= 	"Un cáliz de sangre";
+	description			= 	"Un cÃ¡liz de sangre";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
@@ -1058,7 +1058,7 @@ INSTANCE ItMi_HolyWater (C_Item)
 
 INSTANCE ItMi_Coal (C_Item)
 {
-	name 				=	"Carbón";
+	name 				=	"CarbÃ³n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1098,7 +1098,7 @@ INSTANCE ItMi_DarkPearl (C_Item)
 };
 //-------------------------------------------------------------
 //					Tabak Sorten 
-//		 Apfeltabak (Basis für alle anderen)
+//		 Apfeltabak (Basis fÃ¼r alle anderen)
 //-------------------------------------------------------------
 INSTANCE ItMi_ApfelTabak(C_Item)
 {

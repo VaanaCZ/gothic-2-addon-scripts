@@ -42,7 +42,7 @@ func int DIA_Dobar_HALLO_Condition ()
 func void DIA_Dobar_HALLO_Info ()
 {
 	
-	AI_Output (self, other, "DIA_Dobar_HALLO_08_00"); //(De manera gruñona) ¿Qué quieres?
+	AI_Output (self, other, "DIA_Dobar_HALLO_08_00"); //(De manera gruÃ±ona) Â¿QuÃ© quieres?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ich verstehe mich auf's schmieden.
@@ -54,7 +54,7 @@ instance DIA_Dobar_Talent		(C_INFO)
 	condition	 = 	DIA_Dobar_Talent_Condition;
 	information	 = 	DIA_Dobar_Talent_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Sé un par de cosas sobre el forjado.";
+	description	 =  "SÃ© un par de cosas sobre el forjado.";
 };
 func int DIA_Dobar_Talent_Condition ()
 {	
@@ -65,8 +65,8 @@ func int DIA_Dobar_Talent_Condition ()
 };
 func void DIA_Dobar_Talent_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Sé un par de cosas sobre el forjado.
-	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Bien... ¿y qué?
+	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //SÃ© un par de cosas sobre el forjado.
+	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Bien... Â¿y quÃ©?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Schmiede
@@ -78,7 +78,7 @@ instance DIA_Dobar_Schmiede		(C_INFO)
 	condition	 = 	DIA_Dobar_Schmiede_Condition;
 	information	 = 	DIA_Dobar_Schmiede_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"¿Puedo usar tu herrería?";
+	description	 = 	"Â¿Puedo usar tu herrerÃ­a?";
 };
 
 func int DIA_Dobar_Schmiede_Condition ()
@@ -90,9 +90,9 @@ func int DIA_Dobar_Schmiede_Condition ()
 };
 func void DIA_Dobar_Schmiede_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //¿Puedo usar tu herrería?
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //Tengo un montón que hacer. Nos molestaríamos mutuamente. Espera hasta el anochecer.
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Entonces Parlaf y yo nos iremos a dormir y tu podrás trabajar sin que te molesten.
+	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //Â¿Puedo usar tu herrerÃ­a?
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //Tengo un montÃ³n que hacer. Nos molestarÃ­amos mutuamente. Espera hasta el anochecer.
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Entonces Parlaf y yo nos iremos a dormir y tu podrÃ¡s trabajar sin que te molesten.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info beibringen
@@ -104,7 +104,7 @@ instance DIA_Dobar_beibringen		(C_INFO)
 	condition	 = 	DIA_Dobar_beibringen_Condition;
 	information	 = 	DIA_Dobar_beibringen_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"¿Puedes enseñarme algo?";
+	description	 = 	"Â¿Puedes enseÃ±arme algo?";
 };
 
 func int DIA_Dobar_beibringen_Condition ()
@@ -116,13 +116,13 @@ func int DIA_Dobar_beibringen_Condition ()
 };
 func void DIA_Dobar_beibringen_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //¿Puedes enseñarme algo?
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Así que ya conoces los fundamentos... Puedo enseñarte a mejorar tu trabajo.
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Entonces estarás en posición de hacer mejores armas.
+	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //Â¿Puedes enseÃ±arme algo?
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //AsÃ­ que ya conoces los fundamentos... Puedo enseÃ±arte a mejorar tu trabajo.
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Entonces estarÃ¡s en posiciÃ³n de hacer mejores armas.
 	
 	Dobar_Learnsmith = TRUE;
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Dobar puede enseñarme a forjar armas mejores.");
+	B_LogEntry		(TOPIC_Teacher_OC, "Dobar puede enseÃ±arme a forjar armas mejores.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Teach
@@ -133,7 +133,7 @@ instance DIA_Dobar_Teach		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Dobar_Teach_Condition;
 	information	 = 	DIA_Dobar_Teach_Info;
-	description	 = 	B_BuildLearnString ("¡Enséñame a forjar una buena espada!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
+	description	 = 	B_BuildLearnString ("Â¡EnsÃ©Ã±ame a forjar una buena espada!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
 	permanent	 =  TRUE;
 };
 func int DIA_Dobar_Teach_Condition ()
@@ -146,13 +146,13 @@ func int DIA_Dobar_Teach_Condition ()
 };
 func void DIA_Dobar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //¡Enséñame a forjar una buena espada!
+	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //Â¡EnsÃ©Ã±ame a forjar una buena espada!
 	
 	if B_TeachPlayerTalentSmith	(self, hero, WEAPON_1H_Special_01) 
 	{	
-		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Asegúrate de que el acero brille de forma homogénea, para que luego obtengas una hoja igual de homogénea.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Si recuerdas eso, las hojas que forjes serán más duras y afiladas.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //Eso es todo lo que necesitas saber. Si buscas acero aquí, en el castillo, habla con Engor.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //AsegÃºrate de que el acero brille de forma homogÃ©nea, para que luego obtengas una hoja igual de homogÃ©nea.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Si recuerdas eso, las hojas que forjes serÃ¡n mÃ¡s duras y afiladas.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //Eso es todo lo que necesitas saber. Si buscas acero aquÃ­, en el castillo, habla con Engor.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ instance DIA_Dobar_Waffe		(C_INFO)
 	condition	 = 	DIA_Dobar_Waffe_Condition;
 	information	 = 	DIA_Dobar_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"¿Podrías hacer un arma para mí?";
+	description	 = 	"Â¿PodrÃ­as hacer un arma para mÃ­?";
 };
 func int DIA_Dobar_Waffe_Condition ()
 {
@@ -173,7 +173,7 @@ func int DIA_Dobar_Waffe_Condition ()
 };
 func void DIA_Dobar_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //¿Podrías hacer un arma para mí?
+	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Â¿PodrÃ­as hacer un arma para mÃ­?
 	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //No tengo tiempo para eso. Tandor entrega las armas. Yo solo las hago, y Parlaf las afila.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
@@ -189,7 +189,7 @@ instance DIA_Dobar_NEWS		(C_INFO)
 	condition	 = 	DIA_Dobar_NEWS_Condition;
 	information	 = 	DIA_Dobar_NEWS_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Cómo va el trabajo?";
+	description	 = 	"Â¿CÃ³mo va el trabajo?";
 };
 func int DIA_Dobar_NEWS_Condition ()
 {
@@ -199,24 +199,24 @@ func void DIA_Dobar_NEWS_Info ()
 {
 	
 	
-	AI_Output (other, self, "DIA_Dobar_NEWS_15_00"); //¿Cómo va el trabajo?
+	AI_Output (other, self, "DIA_Dobar_NEWS_15_00"); //Â¿CÃ³mo va el trabajo?
 	
 	if (Dobar_einmalig == FALSE)
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //Forjo las armas para los caballeros del castillo. Desde que vinimos aquí, he estado totalmente ocupado haciendo armas nuevas.
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //Y las necesitaremos también. Enseñaremos a esos malditos orcos lo afiladas que son nuestras hojas.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //Forjo las armas para los caballeros del castillo. Desde que vinimos aquÃ­, he estado totalmente ocupado haciendo armas nuevas.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //Y las necesitaremos tambiÃ©n. EnseÃ±aremos a esos malditos orcos lo afiladas que son nuestras hojas.
 
 		if ((Npc_IsDead(Parlaf)) == FALSE)
 		{
 			B_TurnToNpc (self, Parlaf);
-			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //(Llama) Eh, Parlaf, afila bien esas hojas. ¡Los orcos son criaturas muy resistentes!
+			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //(Llama) Eh, Parlaf, afila bien esas hojas. Â¡Los orcos son criaturas muy resistentes!
 			B_TurnToNpc (self, other); 
 		};
 		Dobar_einmalig = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //Podría ir mejor. Si no me interrumpieras constantemente, quizá consiguiera terminar algo.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //PodrÃ­a ir mejor. Si no me interrumpieras constantemente, quizÃ¡ consiguiera terminar algo.
 	};
 };
 
@@ -232,7 +232,7 @@ INSTANCE DIA_Dobar_PICKPOCKET (C_INFO)
 	condition	= DIA_Dobar_PICKPOCKET_Condition;
 	information	= DIA_Dobar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Sería difícil robar su pepita de mineral)";
+	description = "(SerÃ­a difÃ­cil robar su pepita de mineral)";
 };                       
 
 FUNC INT DIA_Dobar_PICKPOCKET_Condition()

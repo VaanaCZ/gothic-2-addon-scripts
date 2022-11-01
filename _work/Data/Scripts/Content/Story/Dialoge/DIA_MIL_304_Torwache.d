@@ -28,7 +28,7 @@ instance DIA_Mil_304_Torwache_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Condition;
 	information	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"¿Qué tal van las cosas?";
+	description	 = 	"Â¿QuÃ© tal van las cosas?";
 };
 func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 {	
@@ -39,15 +39,15 @@ func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 };
 func void DIA_Mil_304_Torwache_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //¿Qué tal van las cosas?
+	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Â¿QuÃ© tal van las cosas?
 	if (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //No me quejo. Cumplo con mi obligación, que es lo que Innos espera de mí.
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //No me quejo. Cumplo con mi obligaciÃ³n, que es lo que Innos espera de mÃ­.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Eh, no me vengas con lo de '¿qué tal van las cosas?'. Largo de aquí, ¿vale?
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Eh, no me vengas con lo de 'Â¿quÃ© tal van las cosas?'. Largo de aquÃ­, Â¿vale?
 	};
 	 
 	AI_StopProcessInfos (self);

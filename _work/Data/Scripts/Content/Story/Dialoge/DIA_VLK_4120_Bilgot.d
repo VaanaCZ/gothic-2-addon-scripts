@@ -38,28 +38,28 @@ func int DIA_Bilgot_HALLO_Condition ()
 };
 func void DIA_Bilgot_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Bilgot_HALLO_05_00"); //Ey, ¿de dónde sales? ¿Vienes del castillo?
+	AI_Output (self, other, "DIA_Bilgot_HALLO_05_00"); //Ey, Â¿de dÃ³nde sales? Â¿Vienes del castillo?
 
-	Info_AddChoice	(DIA_Bilgot_HALLO, "Sí, vengo del castillo, ¿por qué?", DIA_Bilgot_HALLO_Burg );
-	Info_AddChoice	(DIA_Bilgot_HALLO, "Pasaba por aquí de casualidad...", DIA_Bilgot_HALLO_Zufall );
+	Info_AddChoice	(DIA_Bilgot_HALLO, "SÃ­, vengo del castillo, Â¿por quÃ©?", DIA_Bilgot_HALLO_Burg );
+	Info_AddChoice	(DIA_Bilgot_HALLO, "Pasaba por aquÃ­ de casualidad...", DIA_Bilgot_HALLO_Zufall );
 };
 func void DIA_Bilgot_HALLO_Zufall ()
 {
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Zufall_15_00"); //Pasaba por aquí por casualidad...
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_01"); //Chico, nadie pasa por aquí POR CASUALIDAD. Estamos bastante fastidiados, ¡rodeados de chasqueadores!
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_02"); //Hasta ahora no ha pasado ningún día en el que no haya caído uno de los nuestros.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_03"); //¿No me vas a decir de dónde vienes? Muy bien, ¡que los chasqueadores te lleven!
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Zufall_15_00"); //Pasaba por aquÃ­ por casualidad...
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_01"); //Chico, nadie pasa por aquÃ­ POR CASUALIDAD. Estamos bastante fastidiados, Â¡rodeados de chasqueadores!
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_02"); //Hasta ahora no ha pasado ningÃºn dÃ­a en el que no haya caÃ­do uno de los nuestros.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Zufall_05_03"); //Â¿No me vas a decir de dÃ³nde vienes? Muy bien, Â¡que los chasqueadores te lleven!
 	
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Bilgot_HALLO_Burg ()
 {
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_00"); //Sí, vengo del castillo, ¿por qué?
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_01"); //¿Cuál es la situación allí?
-	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_02"); //No es mejor que aquí. Los orcos siguen allí, si te refieres a eso.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_03"); //Maldición. Ya no se puede estar seguro en ninguna parte.
-	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_04"); //Te diré una cosa: si no estuviera aterrorizado, me piraría de aquí.
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_00"); //SÃ­, vengo del castillo, Â¿por quÃ©?
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_01"); //Â¿CuÃ¡l es la situaciÃ³n allÃ­?
+	AI_Output (other, self, "DIA_Bilgot_HALLO_Burg_15_02"); //No es mejor que aquÃ­. Los orcos siguen allÃ­, si te refieres a eso.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_03"); //MaldiciÃ³n. Ya no se puede estar seguro en ninguna parte.
+	AI_Output (self, other, "DIA_Bilgot_HALLO_Burg_05_04"); //Te dirÃ© una cosa: si no estuviera aterrorizado, me pirarÃ­a de aquÃ­.
 	
 	Info_ClearChoices	(DIA_Bilgot_HALLO);
 };
@@ -73,7 +73,7 @@ instance DIA_Bilgot_Job		(C_INFO)
 	condition	 = 	DIA_Bilgot_Job_Condition;
 	information	 = 	DIA_Bilgot_Job_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"De todas formas, ¿qué haces aquí?";
+	description	 = 	"De todas formas, Â¿quÃ© haces aquÃ­?";
 };
 func int DIA_Bilgot_Job_Condition ()
 {
@@ -81,12 +81,12 @@ func int DIA_Bilgot_Job_Condition ()
 };
 func void DIA_Bilgot_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Job_15_00"); //De todas formas, ¿qué haces aquí?
-	AI_Output (self, other, "DIA_Bilgot_Job_05_01"); //Soy el chico para todo de aquí. Cargo cosas, estoy atento a los chasqueadores, Bilgot esto, Bilgot lo otro...
-	AI_Output (self, other, "DIA_Bilgot_Job_05_02"); //Debería haberme quedado en casa con la parienta. No era muy distinto a esto, pero al menos allí había algo decente para comer.
+	AI_Output (other, self, "DIA_Bilgot_Job_15_00"); //De todas formas, Â¿quÃ© haces aquÃ­?
+	AI_Output (self, other, "DIA_Bilgot_Job_05_01"); //Soy el chico para todo de aquÃ­. Cargo cosas, estoy atento a los chasqueadores, Bilgot esto, Bilgot lo otro...
+	AI_Output (self, other, "DIA_Bilgot_Job_05_02"); //DeberÃ­a haberme quedado en casa con la parienta. No era muy distinto a esto, pero al menos allÃ­ habÃ­a algo decente para comer.
 	AI_Output (self, other, "DIA_Bilgot_Job_05_03"); //Y ahora yo soy todo lo que queda de los hombres de armas asignados a Fajeth.
-	AI_Output (self, other, "DIA_Bilgot_Job_05_04"); //¿Cómo iba a saber que esta expedición no regresaría?
-	AI_Output (self, other, "DIA_Bilgot_Job_05_05"); //Mi compañero Olav desapareció. Quizá ÉL lo consiguió...
+	AI_Output (self, other, "DIA_Bilgot_Job_05_04"); //Â¿CÃ³mo iba a saber que esta expediciÃ³n no regresarÃ­a?
+	AI_Output (self, other, "DIA_Bilgot_Job_05_05"); //Mi compaÃ±ero Olav desapareciÃ³. QuizÃ¡ Ã‰L lo consiguiÃ³...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hilfe
@@ -98,7 +98,7 @@ instance DIA_Bilgot_Hilfe		(C_INFO)
 	condition	 = 	DIA_Bilgot_Hilfe_Condition;
 	information	 = 	DIA_Bilgot_Hilfe_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"¿Qué sabes de los chasqueadores?";
+	description	 = 	"Â¿QuÃ© sabes de los chasqueadores?";
 };
 func int DIA_Bilgot_Hilfe_Condition ()
 {
@@ -109,18 +109,18 @@ func int DIA_Bilgot_Hilfe_Condition ()
 };
 func void DIA_Bilgot_Hilfe_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_00"); //¿Qué sabes de los chasqueadores?
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_01"); //¿Por qué quieres saber eso? ¡Y no me digas que no es más que simple curiosidad!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_00"); //Â¿QuÃ© sabes de los chasqueadores?
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_01"); //Â¿Por quÃ© quieres saber eso? Â¡Y no me digas que no es mÃ¡s que simple curiosidad!
 	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_02"); //Voy a cazar chasqueadores de esos.
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_03"); //Qué locura. Yo los he visto: son unas bestias sanguinarias.
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_03"); //QuÃ© locura. Yo los he visto: son unas bestias sanguinarias.
 	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_04"); //Entonces dime todo lo que sepas sobre ellos.
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_05"); //Mm... Podría ayudarte, ¡pero solo con una condición!
-	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_06"); //¿Qué es lo que quieres?
-	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_07"); //Si consigues matar a los chasqueadores, ¡me tienes que sacar de aquí!
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_05"); //Mm... PodrÃ­a ayudarte, Â¡pero solo con una condiciÃ³n!
+	AI_Output (other, self, "DIA_Bilgot_Hilfe_15_06"); //Â¿QuÃ© es lo que quieres?
+	AI_Output (self, other, "DIA_Bilgot_Hilfe_05_07"); //Si consigues matar a los chasqueadores, Â¡me tienes que sacar de aquÃ­!
 	
 	if ((Npc_IsDead (Fed)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bilgot_Hilfe_05_08"); //No podré aguantar aquí mucho más. ¿Has hablado con Fed? El tío está chalado, ¡y yo no quiero terminar como él!
+		AI_Output (self, other, "DIA_Bilgot_Hilfe_05_08"); //No podrÃ© aguantar aquÃ­ mucho mÃ¡s. Â¿Has hablado con Fed? El tÃ­o estÃ¡ chalado, Â¡y yo no quiero terminar como Ã©l!
 	};
 };
 
@@ -135,7 +135,7 @@ instance DIA_Bilgot_KNOWSLEADSNAPPER		(C_INFO)
 	condition	 = 	DIA_Bilgot_KNOWSLEADSNAPPER_Condition;
 	information	 = 	DIA_Bilgot_KNOWSLEADSNAPPER_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Dime lo que sabes y luego ¡te sacaré de aquí!";
+	description	 = 	"Dime lo que sabes y luego Â¡te sacarÃ© de aquÃ­!";
 };
 
 func int DIA_Bilgot_KNOWSLEADSNAPPER_Condition ()
@@ -149,21 +149,21 @@ func int DIA_Bilgot_KNOWSLEADSNAPPER_Condition ()
 
 func void DIA_Bilgot_KNOWSLEADSNAPPER_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_00"); //Dime lo que sabes y luego ¡te sacaré de aquí!
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_01"); //Sabía que podía contar contigo. Así que presta atención. He observado a los chasqueadores durante bastante tiempo.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_02"); //Son muy astutos y tienen cierta forma de... comunicación. Nunca van solos y siempre atacan en grupo.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_03"); //Pero hay algo más. Hay un lagarto entre ellos que es diferente. No se le suele ver, pero yo he podido verlo.
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_00"); //Dime lo que sabes y luego Â¡te sacarÃ© de aquÃ­!
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_01"); //SabÃ­a que podÃ­a contar contigo. AsÃ­ que presta atenciÃ³n. He observado a los chasqueadores durante bastante tiempo.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_02"); //Son muy astutos y tienen cierta forma de... comunicaciÃ³n. Nunca van solos y siempre atacan en grupo.
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_03"); //Pero hay algo mÃ¡s. Hay un lagarto entre ellos que es diferente. No se le suele ver, pero yo he podido verlo.
 	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_04"); //Las otras bestias se inclinan cuando pasan a su lado, pero nunca lo pierden de vista al hacerlo.
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_05"); //Si ése no se mueve, ningún lagarto próximo lo hará.
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_06"); //¿Dónde puedo encontrar a esa maldita bestia?
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_05"); //Si Ã©se no se mueve, ningÃºn lagarto prÃ³ximo lo harÃ¡.
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_06"); //Â¿DÃ³nde puedo encontrar a esa maldita bestia?
 	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_07"); //Lo he visto junto a los escalones de la vieja torre de vigilancia.
 
-	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //Bien. Creo que lo entiendo. ¡Gracias!
-	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_09"); //Recuerda, ¡me diste tu palabra!
+	AI_Output (other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //Bien. Creo que lo entiendo. Â¡Gracias!
+	AI_Output (self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_09"); //Recuerda, Â¡me diste tu palabra!
 
-	Wld_InsertNpc (NewMine_LeadSnapper,"OW_ORC_LOOKOUT_2_01"); //Der Rudelführer
+	Wld_InsertNpc (NewMine_LeadSnapper,"OW_ORC_LOOKOUT_2_01"); //Der RudelfÃ¼hrer
 	
-	B_LogEntry (TOPIC_FajethKillSnapper,"Bilgot me ha hablado de un líder de la manáda de chasqueadores. Se supone que está en la escalera de la vieja atalaya."); 
+	B_LogEntry (TOPIC_FajethKillSnapper,"Bilgot me ha hablado de un lÃ­der de la manÃ¡da de chasqueadores. Se supone que estÃ¡ en la escalera de la vieja atalaya."); 
 	
 	Log_CreateTopic (TOPIC_BilgotEscort,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BilgotEscort,LOG_RUNNING);
@@ -192,10 +192,10 @@ func int DIA_Bilgot_TAKEYOUWITHME_Condition ()
 };
 func void DIA_Bilgot_TAKEYOUWITHME_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //¡Es la hora, Bilgot! Recoge tus cosas: nos vamos.
-	//Joly: SC bringt den Typ bis zum Pass AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); //Großartig! Es reicht mir schon, wenn du mich über die große Brücke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
+	AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //Â¡Es la hora, Bilgot! Recoge tus cosas: nos vamos.
+	//Joly: SC bringt den Typ bis zum Pass AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); //GroÃŸartig! Es reicht mir schon, wenn du mich Ã¼ber die groÃŸe BrÃ¼cke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
 	//Joly: SC bringt den Typ bis zum Pass AI_Output (other, self, "DIA_Bilgot_TAKEYOUWITHME_15_02"); //Dann beeil dich!
-	AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //¡Estoy listo!
+	AI_Output (self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //Â¡Estoy listo!
 
 	Npc_ExchangeRoutine	(self, "FOLLOWTOOCBRIDGE");
 	Bilgot.flags	= 0;	
@@ -213,7 +213,7 @@ instance DIA_Bilgot_LAUFSCHNELLER		(C_INFO)
 	condition	 = 	DIA_Bilgot_LAUFSCHNELLER_Condition;
 	information	 = 	DIA_Bilgot_LAUFSCHNELLER_Info;
 	permanent	 =  FALSE;
-	description	 = 	"¡¿No puedes caminar un poco más rápido?!";
+	description	 = 	"Â¡Â¿No puedes caminar un poco mÃ¡s rÃ¡pido?!";
 };
 
 func int DIA_Bilgot_LAUFSCHNELLER_Condition ()
@@ -227,8 +227,8 @@ func int DIA_Bilgot_LAUFSCHNELLER_Condition ()
 
 func void DIA_Bilgot_LAUFSCHNELLER_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_LAUFSCHNELLER_15_00"); //¡¿No puedes caminar un poco más rápido?!
-	AI_Output (self, other, "DIA_Bilgot_LAUFSCHNELLER_05_01"); //Voy todo lo rápido que puedo.
+	AI_Output (other, self, "DIA_Bilgot_LAUFSCHNELLER_15_00"); //Â¡Â¿No puedes caminar un poco mÃ¡s rÃ¡pido?!
+	AI_Output (self, other, "DIA_Bilgot_LAUFSCHNELLER_05_01"); //Voy todo lo rÃ¡pido que puedo.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info BeiBrueckeAngekommen
@@ -252,10 +252,10 @@ func int DIA_Bilgot_BEIBRUECKEANGEKOMMEN_Condition ()
 
 func void DIA_Bilgot_BEIBRUECKEANGEKOMMEN_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_00"); //Vale, ya estamos. Ahora, a largarse de aquí. ¡Esta zona está al rojo!
-	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_01"); //¡Gracias!
-	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_02"); //Que no te coman. Sería una pena.
-	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_03"); //¡Hasta la próxima!
+	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_00"); //Vale, ya estamos. Ahora, a largarse de aquÃ­. Â¡Esta zona estÃ¡ al rojo!
+	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_01"); //Â¡Gracias!
+	AI_Output (other, self, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_15_02"); //Que no te coman. SerÃ­a una pena.
+	AI_Output (self, other, "DIA_Bilgot_BEIBRUECKEANGEKOMMEN_05_03"); //Â¡Hasta la prÃ³xima!
 	
 	AI_StopProcessInfos (self);	
 	TschuessBilgot = TRUE;
@@ -275,7 +275,7 @@ instance DIA_Bilgot_LetztePause		(C_INFO)
 	condition	 = 	DIA_Bilgot_LetztePause_Condition;
 	information	 = 	DIA_Bilgot_LetztePause_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"¿Qué haces aquí? Pensaba que te ibas a cruzar el paso...";
+	description	 = 	"Â¿QuÃ© haces aquÃ­? Pensaba que te ibas a cruzar el paso...";
 };
 
 func int DIA_Bilgot_LetztePause_Condition ()
@@ -288,10 +288,10 @@ func int DIA_Bilgot_LetztePause_Condition ()
 
 func void DIA_Bilgot_LetztePause_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_00"); //¿Qué haces aquí? Pensaba que ibas a cruzar el paso...
-	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_01"); //No puedo continuar. Déjame descansar un momento. Me recuperaré. ¡No te preocupes!
-	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_02"); //Si tú lo dices.
-	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_03"); //Solo un pequeño descanso.
+	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_00"); //Â¿QuÃ© haces aquÃ­? Pensaba que ibas a cruzar el paso...
+	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_01"); //No puedo continuar. DÃ©jame descansar un momento. Me recuperarÃ©. Â¡No te preocupes!
+	AI_Output (other, self, "DIA_Bilgot_LetztePause_15_02"); //Si tÃº lo dices.
+	AI_Output (self, other, "DIA_Bilgot_LetztePause_05_03"); //Solo un pequeÃ±o descanso.
 	
 	AI_StopProcessInfos (self);
 };
@@ -305,7 +305,7 @@ instance DIA_Bilgot_Olav		(C_INFO)
 	condition	 = 	DIA_Bilgot_Olav_Condition;
 	information	 = 	DIA_Bilgot_Olav_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Encontré a Olav.";
+	description	 = 	"EncontrÃ© a Olav.";
 };
 
 func int DIA_Bilgot_Olav_Condition ()
@@ -319,10 +319,10 @@ func int DIA_Bilgot_Olav_Condition ()
 
 func void DIA_Bilgot_Olav_Info ()
 {
-	AI_Output (other, self, "DIA_Bilgot_Olav_15_00"); //Encontré a Olav.
-	AI_Output (self, other, "DIA_Bilgot_Olav_05_01"); //¿Y qué anda haciendo?
-	AI_Output (other, self, "DIA_Bilgot_Olav_15_02"); //Está muerto. Los lobos se lo comieron.
-	AI_Output (self, other, "DIA_Bilgot_Olav_05_03"); //Maldición. Espero que, al menos, yo pueda salir de aquí.
+	AI_Output (other, self, "DIA_Bilgot_Olav_15_00"); //EncontrÃ© a Olav.
+	AI_Output (self, other, "DIA_Bilgot_Olav_05_01"); //Â¿Y quÃ© anda haciendo?
+	AI_Output (other, self, "DIA_Bilgot_Olav_15_02"); //EstÃ¡ muerto. Los lobos se lo comieron.
+	AI_Output (self, other, "DIA_Bilgot_Olav_05_03"); //MaldiciÃ³n. Espero que, al menos, yo pueda salir de aquÃ­.
 	
 	B_GivePlayerXP (XP_Ambient);
 };

@@ -20,23 +20,23 @@ FUNC VOID Bookstand_Milten_03_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Es tarde."					);
-					Doc_PrintLines	( nDocID,  0, "El colapso de la vieja mina provocó la caída de la moral de los barones del mineral."	);
-					Doc_PrintLines	( nDocID,  0, "Gómez es como un barril de pólvora a punto de explotar."					);
+					Doc_PrintLines	( nDocID,  0, "El colapso de la vieja mina provocÃ³ la caÃ­da de la moral de los barones del mineral."	);
+					Doc_PrintLines	( nDocID,  0, "GÃ³mez es como un barril de pÃ³lvora a punto de explotar."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Cree que se debería acusar al nuevo del derrumbamiento de la mina. Mira que es raro ese hombre. Será mejor que no vuelva a aparecer por aquí.");
+					Doc_PrintLines	( nDocID,  0, "Cree que se deberÃ­a acusar al nuevo del derrumbamiento de la mina. Mira que es raro ese hombre. SerÃ¡ mejor que no vuelva a aparecer por aquÃ­.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "El carácter de Gómez es más visceral que nunca y creo que puedo imaginarme lo que está planeando. Debemos avisar a los magos de agua antes de que sea demasiado tarde."					);
+					Doc_PrintLines	( nDocID,  1, "El carÃ¡cter de GÃ³mez es mÃ¡s visceral que nunca y creo que puedo imaginarme lo que estÃ¡ planeando. Debemos avisar a los magos de agua antes de que sea demasiado tarde."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Corristo"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quizá podamos evitar el desastre. Miedo me da pensar en lo que pasaría si la mina libre..."					);
+					Doc_PrintLines	( nDocID,  1, "QuizÃ¡ podamos evitar el desastre. Miedo me da pensar en lo que pasarÃ­a si la mina libre..."					);
 					Doc_Show		( nDocID );
 
 	};
@@ -62,9 +62,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Me he tomado la libertad de ponerme más cómodo. ¿Quién habría pensado que algún día sería el único mago del campamento?"					);
-					Doc_PrintLines	( nDocID,  0, "Bueno, tampoco puedo decir que me alegre de volver. De hecho, debería plantearme irme de aquí."	);
-					Doc_PrintLines	( nDocID,  0, "Esta expedición no está siendo precisamente un éxito."					);
+					Doc_PrintLines	( nDocID,  0, "Me he tomado la libertad de ponerme mÃ¡s cÃ³modo. Â¿QuiÃ©n habrÃ­a pensado que algÃºn dÃ­a serÃ­a el Ãºnico mago del campamento?"					);
+					Doc_PrintLines	( nDocID,  0, "Bueno, tampoco puedo decir que me alegre de volver. De hecho, deberÃ­a plantearme irme de aquÃ­."	);
+					Doc_PrintLines	( nDocID,  0, "Esta expediciÃ³n no estÃ¡ siendo precisamente un Ã©xito."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");
 			
@@ -74,9 +74,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Los raspadores se fueron ayer. Se llevaron a Diego, y no me sorprendería que huyera."					);
+					Doc_PrintLines	( nDocID,  1, "Los raspadores se fueron ayer. Se llevaron a Diego, y no me sorprenderÃ­a que huyera."					);
 					Doc_PrintLines	( nDocID,  1, "De todas maneras no parece que vaya a coger una piqueta."					);
-					Doc_PrintLines	( nDocID,  1, "Bueno, aprovecharé para aprender algo del arte de la alquimia."					);
+					Doc_PrintLines	( nDocID,  1, "Bueno, aprovecharÃ© para aprender algo del arte de la alquimia."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Milten"					);
 					Doc_Show		( nDocID );
@@ -130,7 +130,7 @@ FUNC VOID Bookstand_Engor_01_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Reservas");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Hemos encontrado algunas cosas, pero nada demasiado útil. El balance es el siguiente:"					);
+					Doc_PrintLines	( nDocID,  0, "Hemos encontrado algunas cosas, pero nada demasiado Ãºtil. El balance es el siguiente:"					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "3 cajones de harapos"	);
 					Doc_PrintLine	( nDocID,  0, "");
@@ -149,15 +149,15 @@ FUNC VOID Bookstand_Engor_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "3 cajones de herramientas"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "16 cajones de rocas (prácticamente sin mineral)"					);
+					Doc_PrintLines	( nDocID,  1, "16 cajones de rocas (prÃ¡cticamente sin mineral)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 cajón de cuchillas de afeitar oxidadas"					);
+					Doc_PrintLines	( nDocID,  1, "1 cajÃ³n de cuchillas de afeitar oxidadas"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "4 cajones de vajillas rotas"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "56 barriles de agua"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 cajón de algo viscoso (fuera lo que fuera, está estropeado)"					);
+					Doc_PrintLines	( nDocID,  1, "1 cajÃ³n de algo viscoso (fuera lo que fuera, estÃ¡ estropeado)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Engor"					);
 					Doc_Show		( nDocID );
