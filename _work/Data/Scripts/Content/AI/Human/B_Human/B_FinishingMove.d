@@ -1,7 +1,7 @@
 // ************************************************
 // B_FinishingMove
 // ---------------
-// FIX: stellt sicher, daﬂ NSC bei AI_FinishingMove
+// FIX: stellt sicher, da√ü NSC bei AI_FinishingMove
 // auf JEDEN Fall eine Waffe hat
 // ************************************************
 

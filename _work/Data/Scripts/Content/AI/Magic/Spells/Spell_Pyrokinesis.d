@@ -7,7 +7,7 @@ const int STEP_Firestorm			= 50;
 const int SPL_Damage_FireStorm 		= 75;
 
 	// obsolete:
-	const int SPL_PYRO_DAMAGE_PER_SEC = 20;	// wird in ZS_Pyro (Pyrokinese-Opfer) benutzt, dort KEIN Rüstungsschutz!
+	const int SPL_PYRO_DAMAGE_PER_SEC = 20;	// wird in ZS_Pyro (Pyrokinese-Opfer) benutzt, dort KEIN RÃ¼stungsschutz!
 	////////////
 
 INSTANCE Spell_Pyrokinesis (C_Spell_Proto)

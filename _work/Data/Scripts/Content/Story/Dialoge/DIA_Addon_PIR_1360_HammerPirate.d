@@ -29,7 +29,7 @@ instance DIA_Addon_HammerPirate_Hello(C_INFO)
 	condition	= DIA_Addon_HammerPirate_Hello_Condition;
 	information	= DIA_Addon_HammerPirate_Hello_Info;
 	permanent	= TRUE;
-	description = "Vöechno v po¯·dku?";
+	description = "V≈°echno v po≈ô√°dku?";
 };                       
 func INT DIA_Addon_HammerPirate_Hello_Condition()
 {
@@ -37,21 +37,21 @@ func INT DIA_Addon_HammerPirate_Hello_Condition()
 };
 func VOID DIA_Addon_HammerPirate_Hello_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_HammerPirate_Hello_15_00"); //Vöecko v pohodÏ?
+	AI_Output (other, self, "DIA_Addon_HammerPirate_Hello_15_00"); //V≈°ecko v pohodƒõ?
 	if (self.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
 		if (C_TowerBanditsDead() == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_01"); //JasnÏ, uû je to hotov˝. Ti ömejdi jsou teÔ na placiËku!
+			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_01"); //Jasnƒõ, u≈æ je to hotov√Ω. Ti ≈°mejdi jsou teƒè na placiƒçku!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_02"); //Tak pojÔme na to!
+			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_02"); //Tak pojƒème na to!
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //Ne! V˘bec mÏ to tady nebavÌ.
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //Ne! V≈Øbec mƒõ to tady nebav√≠.
 	};
 };
 
@@ -72,7 +72,7 @@ instance DIA_Addon_HammerPirate_Anheuern(C_INFO)
 	condition	= DIA_Addon_HammerPirate_Anheuern_Condition;
 	information	= DIA_Addon_HammerPirate_Anheuern_Info;
 	permanent	= FALSE;
-	description = "MÏl bys mi pomoci.";
+	description = "Mƒõl bys mi pomoci.";
 };                       
 FUNC INT DIA_Addon_HammerPirate_Anheuern_Condition()
 {
@@ -83,13 +83,13 @@ FUNC INT DIA_Addon_HammerPirate_Anheuern_Condition()
 };
 func VOID DIA_Addon_HammerPirate_Anheuern_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_00"); //NepovÌdej! Chceö, abych öel s tebou a pomoh ti zlikvidovat ty bandity.
-	AI_Output (other,self ,"DIA_Addon_PIR_6_JoinHenry_15_08"); //P¯esnÏ tak.
+	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_00"); //Nepov√≠dej! Chce≈°, abych ≈°el s tebou a pomoh ti zlikvidovat ty bandity.
+	AI_Output (other,self ,"DIA_Addon_PIR_6_JoinHenry_15_08"); //P≈ôesnƒõ tak.
 	if (!Npc_IsDead(SawPirate))
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //A proË se nezept·ö toho chl·pka s pilou?
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //A proƒç se nezept√°≈° toho chl√°pka s pilou?
 	};
-	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_02"); //J·... tohle nezvl·dnu...
+	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_02"); //J√°... tohle nezvl√°dnu...
 };
 // ------------------------------------------------------------
 // 						Komm (wieder) mit!
@@ -101,7 +101,7 @@ instance DIA_Addon_HammerPirate_ComeOn(C_INFO)
 	condition	= DIA_Addon_HammerPirate_ComeOn_Condition;
 	information	= DIA_Addon_HammerPirate_ComeOn_Info;
 	permanent	= TRUE;
-	description	= "PojÔ se mnou.";
+	description	= "Pojƒè se mnou.";
 };
 func int DIA_Addon_HammerPirate_ComeOn_Condition ()
 {
@@ -115,14 +115,14 @@ func int DIA_Addon_HammerPirate_ComeOn_Condition ()
 };
 func void DIA_Addon_HammerPirate_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_HammerPirate_ComeOn_15_00"); //PojÔ se mnou.
+	AI_Output (other, self, "DIA_Addon_HammerPirate_ComeOn_15_00"); //Pojƒè se mnou.
 	if (SawPirate.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_01"); //Henry pot¯ebuje, aby jeden z n·s z˘stal TADY.
+		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_01"); //Henry pot≈ôebuje, aby jeden z n√°s z≈Østal TADY.
 	}
 	else if (Npc_GetDistToWP (self, "ADW_PIRATECAMP_WAY_08") > 6000)
 	{	
-		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_02"); //Vraùme se kousek smÏrem k t·boru.
+		AI_Output (self ,other,"DIA_Addon_HammerPirate_ComeOn_07_02"); //Vra≈•me se kousek smƒõrem k t√°boru.
 		AI_StopProcessInfos (self);
 	}
 	else
@@ -144,7 +144,7 @@ INSTANCE DIA_Addon_HammerPirate_GoHome(C_INFO)
 	condition	= DIA_Addon_HammerPirate_GoHome_Condition;
 	information	= DIA_Addon_HammerPirate_GoHome_Info;
 	permanent	= TRUE;
-	description = "Uû tÏ nepot¯ebuju.";
+	description = "U≈æ tƒõ nepot≈ôebuju.";
 };                       
 FUNC INT DIA_Addon_HammerPirate_GoHome_Condition()
 {
@@ -156,8 +156,8 @@ FUNC INT DIA_Addon_HammerPirate_GoHome_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_HammerPirate_GoHome_15_00"); //Uû tÏ nepot¯ebuju.
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_01"); //Kdyû myslÌö.
+	AI_Output (other,self ,"DIA_Addon_HammerPirate_GoHome_15_00"); //U≈æ tƒõ nepot≈ôebuju.
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_01"); //Kdy≈æ mysl√≠≈°.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START"); 
@@ -186,8 +186,8 @@ FUNC INT DIA_Addon_HammerPirate_TooFar_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_TooFar_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_TooFar_07_01"); //Jestli chceö jÌt d·l tÌmhle smÏrem, tak teda ale beze mÏ.
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //MyslÌm, ûe teÔ p˘jdu zp·tky.
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_TooFar_07_01"); //Jestli chce≈° j√≠t d√°l t√≠mhle smƒõrem, tak teda ale beze mƒõ.
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //Mysl√≠m, ≈æe teƒè p≈Øjdu zp√°tky.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -220,8 +220,8 @@ FUNC INT DIA_Addon_HammerPirate_Success_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_Success_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_01"); //VÌö ty co? Trochu jsem o tom p¯emejölel. Ty nejseö tak öpatnej!
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_02"); //Tak j· se teda vr·tÌm do t·bora. MÏj se!
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_01"); //V√≠≈° ty co? Trochu jsem o tom p≈ôemej≈°lel. Ty nejse≈° tak ≈°patnej!
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_Success_07_02"); //Tak j√° se teda vr√°t√≠m do t√°bora. Mƒõj se!
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");

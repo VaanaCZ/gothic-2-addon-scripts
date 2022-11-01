@@ -20,7 +20,7 @@ FUNC VOID DIA_BDT_1013_BANDIT_FIRSTEXIT_Info()
 	&& (!Npc_IsDead (Ambusher_1014)) 
 	&& (!Npc_IsDead (Ambusher_1015))
 	{
-		AI_Output	(self, other, "DIA_BDT_1013_BANDIT_FIRSTEXIT_01_00"); //Bejt tebou, nahoru do jeskynÏ nechodÌm - mÌ k·moöi tam z tebe st·hnou k˘ûi. A vÏ¯ tomu, ûe bojovat umÌ.
+		AI_Output	(self, other, "DIA_BDT_1013_BANDIT_FIRSTEXIT_01_00"); //Bejt tebou, nahoru do jeskynƒõ nechod√≠m - m√≠ k√°mo≈°i tam z tebe st√°hnou k≈Ø≈æi. A vƒõ≈ô tomu, ≈æe bojovat um√≠.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -68,7 +68,7 @@ func int DIA_BDT_1013_BANDIT_WHERE_Condition ()
 
 func void DIA_BDT_1013_BANDIT_WHERE_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1013_BANDIT_WHERE_01_00"); //Hej, odkud to jdeö, hm?
+	AI_Output			(self, other, "DIA_BDT_1013_BANDIT_WHERE_01_00"); //Hej, odkud to jde≈°, hm?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
 	
@@ -79,22 +79,22 @@ func void DIA_BDT_1013_BANDIT_WHERE_Info ()
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN()
 {
 	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_15_00"); //Z hor.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_01"); //P¯esnÏ. P¯iöel jsi z hor. A to je pro tebe zlÈ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_01"); //P≈ôesnƒõ. P≈ôi≈°el jsi z hor. A to je pro tebe zl√©.
 	B_UseFakeScroll();
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_02"); //Velmi zlÈ.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_03"); //HledajÌ tÏ - cel· banda zlejch chlap˘.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_04"); //Je tady nÏkdo, s k˝m by sis mÏl za kaûdou cenu promluvit. PojÔ za mnou!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_02"); //Velmi zl√©.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_03"); //Hledaj√≠ tƒõ - cel√° banda zlejch chlap≈Ø.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_04"); //Je tady nƒõkdo, s k√Ωm by sis mƒõl za ka≈ædou cenu promluvit. Pojƒè za mnou!
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Moûn· pozdÏji...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Kdo se po mnÏ sh·nÌ?",DIA_BDT_1013_BANDIT_WHERE_WHO);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvnÌ!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo≈æn√° pozdƒõji...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Kdo se po mnƒõ sh√°n√≠?",DIA_BDT_1013_BANDIT_WHERE_WHO);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvn√≠!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_XARDAS()
 {
 	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_15_00"); //Byl jsem u Xardase...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01"); //To je ten star˝ ËarodÏj? ÿÌkajÌ mu Xardas... To bude Braga zajÌmat.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01"); //To je ten star√Ω ƒçarodƒõj? ≈ò√≠kaj√≠ mu Xardas... To bude Braga zaj√≠mat.
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -102,8 +102,8 @@ FUNC VOID DIA_BDT_1013_BANDIT_WHERE_XARDAS()
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_YES()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_YES_15_00"); //Fajn! Jdi prvnÌ!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_YES_01_01"); //Tak pojÔ za mnou, jeskynÏ je hned tady naho¯e.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_YES_15_00"); //Fajn! Jdi prvn√≠!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_YES_01_01"); //Tak pojƒè za mnou, jeskynƒõ je hned tady naho≈ôe.
 	
 	Npc_ExchangeRoutine	(self,"AMBUSH"); 
 	
@@ -112,66 +112,66 @@ FUNC VOID DIA_BDT_1013_BANDIT_WHERE_YES()
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_WHO()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_WHO_15_00"); //Kdo se po mnÏ sh·nÌ?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_01"); //Jde po tobÏ p˘lka Khorinidu a ty mi chceö tvrdit, ûe o tom nic nevÌö?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02"); //¡! Uû vÌm! Ty o tom prostÏ se mnou nechceö mluvit, hm? Jak chceö - je to tvoje vÏc.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_03"); //Tak jdeö, nebo ne?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_WHO_15_00"); //Kdo se po mnƒõ sh√°n√≠?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_01"); //Jde po tobƒõ p≈Ølka Khorinidu a ty mi chce≈° tvrdit, ≈æe o tom nic nev√≠≈°?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02"); //√Å! U≈æ v√≠m! Ty o tom prostƒõ se mnou nechce≈° mluvit, hm? Jak chce≈° - je to tvoje vƒõc.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_03"); //Tak jde≈°, nebo ne?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Moûn· pozdÏji.",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"S k˝m bych to mÏl mluvit?",DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvnÌ!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo≈æn√° pozdƒõji.",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"S k√Ωm bych to mƒõl mluvit?",DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvn√≠!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_15_00"); //S k˝m bych to mÏl mluvit?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_01"); //S m˝m öÈfem. Jmenuje se Brago. VysvÏtlÌ ti to lÌp neû j·.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_15_00"); //S k√Ωm bych to mƒõl mluvit?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_01"); //S m√Ωm ≈°√©fem. Jmenuje se Brago. Vysvƒõtl√≠ ti to l√≠p ne≈æ j√°.
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_02"); //Tak jak - jdeme?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Moûn· pozdÏji.",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Jak m·m vÏdÏt, ûe to nenÌ past?",DIA_BDT_1013_BANDIT_WHERE_NOTRAP);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvnÌ!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo≈æn√° pozdƒõji.",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Jak m√°m vƒõdƒõt, ≈æe to nen√≠ past?",DIA_BDT_1013_BANDIT_WHERE_NOTRAP);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvn√≠!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 	
 func void DIA_BDT_1013_BANDIT_WHERE_NOTRAP()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_15_00"); //Jak m·m vÏdÏt, ûe to nenÌ past?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_01"); //Hele, uû mÏ zaËÌn·ö unavovat. Kdyû o mou pomoc nestojÌö, ta si jdi do mÏsta a nech se strËit do basy!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02"); //BuÔ se mnou p˘jdeö hned, nebo na to m˘ûeme rovnou zapomenout, jasn˝?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_15_00"); //Jak m√°m vƒõdƒõt, ≈æe to nen√≠ past?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_01"); //Hele, u≈æ mƒõ zaƒç√≠n√°≈° unavovat. Kdy≈æ o mou pomoc nestoj√≠≈°, ta si jdi do mƒõsta a nech se strƒçit do basy!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02"); //Buƒè se mnou p≈Øjde≈° hned, nebo na to m≈Ø≈æeme rovnou zapomenout, jasn√Ω?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Moûn· pozdÏji.",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Pomalu, k·mo! Podruh˝ se nap·lit nenech·m.",DIA_BDT_1013_BANDIT_WHERE_DAMALS);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvnÌ!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo≈æn√° pozdƒõji.",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Pomalu, k√°mo! Podruh√Ω se nap√°lit nenech√°m.",DIA_BDT_1013_BANDIT_WHERE_DAMALS);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvn√≠!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_DAMALS()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00"); //Pomalu, k·mo! Podruh˝ se nap·lit nenech·m.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00"); //Pomalu, k√°mo! Podruh√Ω se nap√°lit nenech√°m.
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_01"); //Hm?
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02"); //Jeden chlapÌk navrhnul, abysme spoleËnÏ zÌskali nÏjakej amulet a pak se rozdÏlili o to, co z toho k·pne.
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03"); //Jakmile se n·m to poda¯ilo, spoleËnÏ s p¯·teli mÏ napadl.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_04"); //Tak to tak vypad·, ûe ses zapletl se öpatn˝mi lidmi - kde se to stalo?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02"); //Jeden chlap√≠k navrhnul, abysme spoleƒçnƒõ z√≠skali nƒõjakej amulet a pak se rozdƒõlili o to, co z toho k√°pne.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03"); //Jakmile se n√°m to poda≈ôilo, spoleƒçnƒõ s p≈ô√°teli mƒõ napadl.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_04"); //Tak to tak vypad√°, ≈æe ses zapletl se ≈°patn√Ωmi lidmi - kde se to stalo?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Na tom aû tak nez·leûÌ.",DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Byl jsem vÏznÏm v trestaneckÈ kolonii.",DIA_BDT_1013_BANDIT_WHERE_PRISONER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Na tom a≈æ tak nez√°le≈æ√≠.",DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Byl jsem vƒõznƒõm v trestaneck√© kolonii.",DIA_BDT_1013_BANDIT_WHERE_PRISONER);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_PRISONER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_00"); //Byl jsem vÏznÏm v tÏûa¯skÈ kolonii.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_01"); //(ohromenÏ) Ty jsi p¯iöel zpoza bariÈry? Chlape, tak to jsme tam byli spoleËnÏ.
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_02"); //NevÌm...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_03"); //Byl jsem kop·Ëem ve StarÈm t·bo¯e. NemÏl jsem s tÌm vöÌm moc co do ËinÏnÌ.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_04"); //(spiklenecky) Ale co je teÔ d˘leûitÏjöÌ - jsi v pÏknym malÈru!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_05"); //NÏkdo nabÌdl za tvou hlavu sluönou odmÏnu. A vyvÏsil nÏkolik ozn·menÌ - s tv˝m ksichtem!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_06"); //Bejt tebou, tak jsem velmi, velmi opatrnej. Je mezi n·ma p·r lidÌ, co by pro prachy zabili i vlastnÌ m·mu.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_07"); //Ale m·m dojem, ûe my chlapi z kolonie bysme mÏli drûet spolu!
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_08"); //Tak to abych ti podÏkoval.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_09"); //To nestojÌ za ¯eË. ProstÏ koukej z˘stat naûivu.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_00"); //Byl jsem vƒõznƒõm v tƒõ≈æa≈ôsk√© kolonii.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_01"); //(ohromenƒõ) Ty jsi p≈ôi≈°el zpoza bari√©ry? Chlape, tak to jsme tam byli spoleƒçnƒõ.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_02"); //Nev√≠m...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_03"); //Byl jsem kop√°ƒçem ve Star√©m t√°bo≈ôe. Nemƒõl jsem s t√≠m v≈°√≠m moc co do ƒçinƒõn√≠.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_04"); //(spiklenecky) Ale co je teƒè d≈Øle≈æitƒõj≈°√≠ - jsi v pƒõknym mal√©ru!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_05"); //Nƒõkdo nab√≠dl za tvou hlavu slu≈°nou odmƒõnu. A vyvƒõsil nƒõkolik ozn√°men√≠ - s tv√Ωm ksichtem!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_06"); //Bejt tebou, tak jsem velmi, velmi opatrnej. Je mezi n√°ma p√°r lid√≠, co by pro prachy zabili i vlastn√≠ m√°mu.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_07"); //Ale m√°m dojem, ≈æe my chlapi z kolonie bysme mƒõli dr≈æet spolu!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_08"); //Tak to abych ti podƒõkoval.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_09"); //To nestoj√≠ za ≈ôeƒç. Prostƒõ koukej z≈Østat na≈æivu.
 	
 	Bdt13_Friend = TRUE;
 	B_SetAttitude (self, ATT_FRIENDLY);
@@ -183,18 +183,18 @@ func void DIA_BDT_1013_BANDIT_WHERE_PRISONER()
 
 func void DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_15_00"); //Na tom aû tak nez·leûÌ.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_15_00"); //Na tom a≈æ tak nez√°le≈æ√≠.
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_01_01"); //Jak je libo. Tak jdeme, nebo ne?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvnÌ!",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvnÌ!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvn√≠!",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Fajn! Jdi prvn√≠!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func VOID DIA_BDT_1013_BANDIT_WHERE_LATER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00"); //Moûn· pozdÏji.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01"); //é·dnÈ pozdÏji neexistuje, k·mo!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00"); //Mo≈æn√° pozdƒõji.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01"); //≈Ω√°dn√© pozdƒõji neexistuje, k√°mo!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -226,13 +226,13 @@ func void DIA_1013_BANDIT_AMBUSH_Info ()
 	if (Npc_IsDead(Ambusher_1014))
 	&& (Npc_IsDead(Ambusher_1015))
 	{
-		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_00"); //To od tebe byla pÏkn· blbost, ûes öel za mnou.
+		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_00"); //To od tebe byla pƒõkn√° blbost, ≈æes ≈°el za mnou.
 		B_Attack 			(self, other, AR_SuddenEnemyInferno, 1);
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_01"); //Hej lidi, koukejte, koho jsem v·m p¯ivedl.
+		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_01"); //Hej lidi, koukejte, koho jsem v√°m p≈ôivedl.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -247,7 +247,7 @@ instance DIA_1013_BANDIT_NAME (C_INFO)
 	condition	 = 	DIA_1013_BANDIT_NAME_Condition;
 	information	 = 	DIA_1013_BANDIT_NAME_Info;
 	PERMANENT	 =  FALSE;	
-	description	 = 	"Kdo je ten chl·pek, co nabÌdl odmÏnu?";
+	description	 = 	"Kdo je ten chl√°pek, co nab√≠dl odmƒõnu?";
 };
 func int DIA_1013_BANDIT_NAME_Condition ()
 {	
@@ -258,14 +258,14 @@ func int DIA_1013_BANDIT_NAME_Condition ()
 };
 func void DIA_1013_BANDIT_NAME_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_00"); //Kdo je ten chl·pek, co nabÌdl odmÏnu?
-	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_01"); //To nevÌm, u n·s to vÌ jen jeden jedin˝.
-	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_02"); //A kdo to jako m· b˝t?
-	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_03"); //Hele, chlape, tak tohle ti fakt ¯Ìct nem˘ûu. VÌö, jak to chodÌ.
+	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_00"); //Kdo je ten chl√°pek, co nab√≠dl odmƒõnu?
+	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_01"); //To nev√≠m, u n√°s to v√≠ jen jeden jedin√Ω.
+	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_02"); //A kdo to jako m√° b√Ωt?
+	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_03"); //Hele, chlape, tak tohle ti fakt ≈ô√≠ct nem≈Ø≈æu. V√≠≈°, jak to chod√≠.
 	
 	Log_CreateTopic (Topic_Bandits,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Bandits,LOG_RUNNING);
-	B_LogEntry (Topic_Bandits,"Jdou po mnÏ nÏjacÌ banditi, kte¯Ì chtÏjÌ zÌskat odmÏnu, vypsanou na mou hlavu. ZajÌmalo by mÏ, co za tÌm vöÌm vÏzÌ.");
+	B_LogEntry (Topic_Bandits,"Jdou po mnƒõ nƒõjac√≠ banditi, kte≈ô√≠ chtƒõj√≠ z√≠skat odmƒõnu, vypsanou na mou hlavu. Zaj√≠malo by mƒõ, co za t√≠m v≈°√≠m vƒõz√≠.");
 	MIS_Steckbriefe = LOG_RUNNING;
 };
 
@@ -279,7 +279,7 @@ instance DIA_1013_BANDIT_DEXTER		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_DEXTER_Condition;
 	information	 = 	DIA_1013_BANDIT_DEXTER_Info;
 	PERMANENT	 =  TRUE;	
-	description	 = 	"10 zlat˝ch za jmÈno toho, co vypsal tu odmÏnu.";
+	description	 = 	"10 zlat√Ωch za jm√©no toho, co vypsal tu odmƒõnu.";
 };
 func int DIA_1013_BANDIT_DEXTER_Condition ()
 {	
@@ -292,13 +292,13 @@ func int DIA_1013_BANDIT_DEXTER_Condition ()
 };
 func void DIA_1013_BANDIT_DEXTER_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_00"); //10 zlat˝ch za jmÈno toho, co vypsal tu odmÏnu.
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_01"); //Ach jo, chlape, tohle fakt nem˘ûu udÏlat.
-	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_02"); //Tak uû to vyklop!
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_03"); //(s hlubok˝m povzdechem) Ale, chlape! No dobr·. Jmenuje se Dexter. PoblÌû farmy velkostatk·¯e narazÌö na takovou strmou sk·lu.
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_04"); //⁄plnÏ naho¯e je str·ûnÌ vÏû a nÏkolik dol˘. NÏkde poblÌû m· sv˘j ˙kryt.
+	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_00"); //10 zlat√Ωch za jm√©no toho, co vypsal tu odmƒõnu.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_01"); //Ach jo, chlape, tohle fakt nem≈Ø≈æu udƒõlat.
+	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_02"); //Tak u≈æ to vyklop!
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_03"); //(s hlubok√Ωm povzdechem) Ale, chlape! No dobr√°. Jmenuje se Dexter. Pobl√≠≈æ farmy velkostatk√°≈ôe naraz√≠≈° na takovou strmou sk√°lu.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_04"); //√öplnƒõ naho≈ôe je str√°≈æn√≠ vƒõ≈æ a nƒõkolik dol≈Ø. Nƒõkde pobl√≠≈æ m√° sv≈Øj √∫kryt.
 	
-	B_LogEntry (Topic_Bandits,"Bandity vede Dexter. Skr˝v· se v dolu poblÌû velkostatk·¯ova sÌdla.");
+	B_LogEntry (Topic_Bandits,"Bandity vede Dexter. Skr√Ωv√° se v dolu pobl√≠≈æ velkostatk√°≈ôova s√≠dla.");
 	
 	if (B_GiveInvItems(other, self, itmi_gold, 10))
 	{
@@ -306,11 +306,11 @@ func void DIA_1013_BANDIT_DEXTER_Info ()
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_06"); //… - teÔ jsem si vzpomnÏl, ûe vlastnÏ nem·m 10 zlat˝ch, co bych mohl postr·dat.
-		AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_07"); //Co?! J·... Hm - zapomeÚ na to - je to moje chyba. NemÏl jsem ti to jmÈno ¯Ìkat d¯Ìv, neû jsi mi uk·zal zlato.
+		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_06"); //√â - teƒè jsem si vzpomnƒõl, ≈æe vlastnƒõ nem√°m 10 zlat√Ωch, co bych mohl postr√°dat.
+		AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_07"); //Co?! J√°... Hm - zapome≈à na to - je to moje chyba. Nemƒõl jsem ti to jm√©no ≈ô√≠kat d≈ô√≠v, ne≈æ jsi mi uk√°zal zlato.
 	};
 	
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_08"); //A hlavnÏ jim ne¯Ìkej, kdo ti vyklopil.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_08"); //A hlavnƒõ jim ne≈ô√≠kej, kdo ti vyklopil.
 			
 	Bdt13_Dexter_verraten = TRUE;
 };
@@ -325,7 +325,7 @@ instance DIA_1013_BANDIT_PIC		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_PIC_Condition;
 	information	 = 	DIA_1013_BANDIT_PIC_Info;
 	PERMANENT	 =  FALSE;	
-	description	 = 	"M˘ûu dostat ten obr·zek?";
+	description	 = 	"M≈Ø≈æu dostat ten obr√°zek?";
 };
 func int DIA_1013_BANDIT_PIC_Condition ()
 {	
@@ -336,8 +336,8 @@ func int DIA_1013_BANDIT_PIC_Condition ()
 };
 func void DIA_1013_BANDIT_PIC_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_PIC_15_00"); //M˘ûu dostat ten obr·zek?
-	AI_Output (self, other, "DIA_1013_BANDIT_PIC_01_01"); //JasnÏ (smÏje se) - konec konc˘, je tam TVŸJ ksicht.
+	AI_Output (other, self, "DIA_1013_BANDIT_PIC_15_00"); //M≈Ø≈æu dostat ten obr√°zek?
+	AI_Output (self, other, "DIA_1013_BANDIT_PIC_01_01"); //Jasnƒõ (smƒõje se) - konec konc≈Ø, je tam TV≈ÆJ ksicht.
 	B_GiveInvItems (self, other, ItWr_Poster_MIS,1);
 };
 
@@ -351,7 +351,7 @@ instance DIA_1013_BANDIT_FromMaleth		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_FromMaleth_Condition;
 	information	 = 	DIA_1013_BANDIT_FromMaleth_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jeden z farm·¯˘ z venkova mÏ poslal...";
+	description	 = 	"Jeden z farm√°≈ô≈Ø z venkova mƒõ poslal...";
 };
 func int DIA_1013_BANDIT_FromMaleth_Condition ()
 {	
@@ -363,9 +363,9 @@ func int DIA_1013_BANDIT_FromMaleth_Condition ()
 };
 func void DIA_1013_BANDIT_FromMaleth_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_00"); //Jeden z farm·¯˘ z venkova mÏ poslal.
-	AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_01"); //Co? Farm·¯i o tom ˙krytu vÏdÌ?
-	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_02"); //Vöimli si, ûe jim mizejÌ ovce.
+	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_00"); //Jeden z farm√°≈ô≈Ø z venkova mƒõ poslal.
+	AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_01"); //Co? Farm√°≈ôi o tom √∫krytu vƒõd√≠?
+	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_02"); //V≈°imli si, ≈æe jim mizej√≠ ovce.
 	
 	var C_NPC b14; b14 = Hlp_GetNpc(Bdt_1014_Bandit_L);
 	var C_NPC b15; b15 = Hlp_GetNpc(Bdt_1015_Bandit_L);
@@ -373,13 +373,13 @@ func void DIA_1013_BANDIT_FromMaleth_Info ()
 	if (Npc_IsDead (b14))
 	&& (Npc_IsDead (b15))
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_03"); //Sakra! Tak to bych sebou mÏl hodit. Kdyû naöli ten ˙kryt pr·zdn˝, moûn· po mnÏ jeötÏ p·trajÌ.
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_03"); //Sakra! Tak to bych sebou mƒõl hodit. Kdy≈æ na≈°li ten √∫kryt pr√°zdn√Ω, mo≈æn√° po mnƒõ je≈°tƒõ p√°traj√≠.
 	}
 	else //mindestens einer lebt noch
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_04"); //ChtÏjÌ tÏ vidÏt mrtvÈho.
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_05"); //PoËkej - nehodl·ö mÏ oddÏlat, ûe ne - po tom, co jsem ti pomohl?
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_06"); //Jen do toho, pozabÌjej vöechny ostatnÌ, kdyû tak baûÌö po krvi - j· s tÌm nechci nic mÌt!
+		AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_04"); //Chtƒõj√≠ tƒõ vidƒõt mrtv√©ho.
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_05"); //Poƒçkej - nehodl√°≈° mƒõ oddƒõlat, ≈æe ne - po tom, co jsem ti pomohl?
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_06"); //Jen do toho, pozab√≠jej v≈°echny ostatn√≠, kdy≈æ tak ba≈æ√≠≈° po krvi - j√° s t√≠m nechci nic m√≠t!
 	};
 	
 	Bdt_1013_Away = TRUE;
@@ -400,7 +400,7 @@ instance DIA_1013_BANDIT_FromCavalorn (C_INFO)
 	condition	 = 	DIA_1013_BANDIT_FromCavalorn_Condition;
 	information	 = 	DIA_1013_BANDIT_FromCavalorn_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Tady za chvÌli bude pÏkn· mela!";
+	description	 = 	"Tady za chv√≠li bude pƒõkn√° mela!";
 };
 func int DIA_1013_BANDIT_FromCavalorn_Condition ()
 {	
@@ -412,10 +412,10 @@ func int DIA_1013_BANDIT_FromCavalorn_Condition ()
 };
 func void DIA_1013_BANDIT_FromCavalorn_Info ()
 {
-	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_00"); //Ned·vno tu bylo pÏknÏ horko.
-	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_01"); //Co se dÏje?
-	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_02"); //äel tu po tobÏ nÏjak˝ Cavalorn.
-	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_03"); //Sakra! On jeötÏ ûije? Tak to teda mizÌm.
+	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_00"); //Ned√°vno tu bylo pƒõknƒõ horko.
+	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_01"); //Co se dƒõje?
+	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_02"); //≈†el tu po tobƒõ nƒõjak√Ω Cavalorn.
+	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_03"); //Sakra! On je≈°tƒõ ≈æije? Tak to teda miz√≠m.
 
 	Bdt_1013_Away = TRUE;
 	B_GivePlayerXP (XP_BanditWeg);
@@ -441,7 +441,7 @@ instance DIA_1013_BANDIT_PERM		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_PERM_Condition;
 	information	 = 	DIA_1013_BANDIT_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Je tu jeötÏ nÏco dalöÌho, co by mÏ mÏlo zajÌmat?";
+	description	 = 	"Je tu je≈°tƒõ nƒõco dal≈°√≠ho, co by mƒõ mƒõlo zaj√≠mat?";
 };
 func int DIA_1013_BANDIT_PERM_Condition ()
 {	
@@ -453,17 +453,17 @@ func int DIA_1013_BANDIT_PERM_Condition ()
 };
 func void DIA_1013_BANDIT_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_PERM_15_00"); //Je tu jeötÏ nÏco dalöÌho, co by mÏ mÏlo zajÌmat?
+	AI_Output (other, self, "DIA_1013_BANDIT_PERM_15_00"); //Je tu je≈°tƒõ nƒõco dal≈°√≠ho, co by mƒõ mƒõlo zaj√≠mat?
 
 	if (bdt13_Gossip_Wildnis == FALSE)
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_01"); //MyslÌö tady v okolÌ? Jestli chceö z˘stat naûivu, nesch·zej z cesty.
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_02"); //»Ìm d·l zajdeö do divoËiny, tÌm vÏtöÌ na tebe bude ËÌhat nebezpeËÌ.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_01"); //Mysl√≠≈° tady v okol√≠? Jestli chce≈° z≈Østat na≈æivu, nesch√°zej z cesty.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_02"); //ƒå√≠m d√°l zajde≈° do divoƒçiny, t√≠m vƒõt≈°√≠ na tebe bude ƒç√≠hat nebezpeƒç√≠.
 		bdt13_Gossip_Wildnis = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_03"); //Uû jsem ti ¯ekl vöechno, co jsem vÏdÏl.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_03"); //U≈æ jsem ti ≈ôekl v≈°echno, co jsem vƒõdƒõl.
 	};
 };
 

@@ -77,13 +77,13 @@ FUNC INT DIA_Addon_Scatty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Jak jdou kšefty?
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//Od tı doby, co se otevøela ta hrobka, se nikdo po zboí moc neshání.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Havran u nemá pro otroky vyuití, proto teï dolují zlato. Na Bloodwynùv rozkaz.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//A kopáèi si z toho nic nedìlaj. (mumlá) Bezstarostnı kopáèi nejsou dobrı pro obchod.
+	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Jak jdou kÅ¡efty?
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//Od tÃ½ doby, co se otevÅ™ela ta hrobka, se nikdo po zboÅ¾Ã­ moc neshÃ¡nÃ­.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Havran uÅ¾ nemÃ¡ pro otroky vyuÅ¾itÃ­, proto teÄ dolujÃ­ zlato. Na BloodwynÅ¯v rozkaz.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//A kopÃ¡Äi si z toho nic nedÄ›laj. (mumlÃ¡) BezstarostnÃ½ kopÃ¡Äi nejsou dobrÃ½ pro obchod.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty prodává rùzné zboí.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty prodÃ¡vÃ¡ rÅ¯znÃ© zboÅ¾Ã­.");
 };
 /*
 	Ich bin hier auch sowas wie der Proviantmeister. Wenn du was brauchst, kannst du mit mir handeln. 
@@ -112,11 +112,11 @@ FUNC INT DIA_Addon_Scatty_last_Condition()
 FUNC VOID DIA_Addon_Scatty_last_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Bloodwyn? On to tu vede?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Dohlíí na dùl, ale sem dolù skoro nikdy nechodí. Vìtšinou bıvá v chrámu s Havranem.
-	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Co pøesnì myslíš tím "skoro nikdy"?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Naposledy jsem ho vidìl, kdy vyšel z hrobky.
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(rychle) ...ne, vlastnì poèkej! Naposledy tu byl, kdy poslal otroky dolovat zlato.
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Na rozdíl od Havrana ho toti zlato nesmírnì zajímá.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//DohlÃ­Å¾Ã­ na dÅ¯l, ale sem dolÅ¯ skoro nikdy nechodÃ­. VÄ›tÅ¡inou bÃ½vÃ¡ v chrÃ¡mu s Havranem.
+	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Co pÅ™esnÄ› myslÃ­Å¡ tÃ­m "skoro nikdy"?
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Naposledy jsem ho vidÄ›l, kdyÅ¾ vyÅ¡el z hrobky.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//(rychle) ...ne, vlastnÄ› poÄkej! Naposledy tu byl, kdyÅ¾ poslal otroky dolovat zlato.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Na rozdÃ­l od Havrana ho totiÅ¾ zlato nesmÃ­rnÄ› zajÃ­mÃ¡.
 };
 //---------------------------------------------------------------------
 //	Info Gruft
@@ -139,12 +139,12 @@ FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Gruft_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Z jaké hrobky?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Z prokletı hrobky! Její stráci zabili spoustu lidí!
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//Stráci? To mluvíš o tìch kamennıch obludách? Celkem placatí, s kulatou hlavou?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Jo, to je pøesnì ono! Vynoøovali se z kamene po tuctech.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//U od zaèátku jsem vìdìl, e jsme tu hrobku mìli nechat na pokoji.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Jene Havran byl tím kopáním pøímo posedlej. A kdy jsme hrobku koneènì odkryli, napochodoval tam i se svejma stráema.
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//Z jakÃ© hrobky?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//Z prokletÃ½ hrobky! JejÃ­ strÃ¡Å¾ci zabili spoustu lidÃ­!
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//StrÃ¡Å¾ci? To mluvÃ­Å¡ o tÄ›ch kamennÃ½ch obludÃ¡ch? Celkem placatÃ­, s kulatou hlavou?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Jo, to je pÅ™esnÄ› ono! VynoÅ™ovali se z kamene po tuctech.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//UÅ¾ od zaÄÃ¡tku jsem vÄ›dÄ›l, Å¾e jsme tu hrobku mÄ›li nechat na pokoji.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//JenÅ¾e Havran byl tÃ­m kopÃ¡nÃ­m pÅ™Ã­mo posedlej. A kdyÅ¾ jsme hrobku koneÄnÄ› odkryli, napochodoval tam i se svejma strÃ¡Å¾ema.
 };
 //---------------------------------------------------------------------
 //	Info GruftAgain
@@ -156,7 +156,7 @@ INSTANCE DIA_Addon_Scatty_GruftAgain   (C_INFO)
 	condition   = DIA_Addon_Scatty_GruftAgain_Condition;
 	information = DIA_Addon_Scatty_GruftAgain_Info;
 	permanent   = FALSE;
-	description = "A co chtìl Havran v hrobce?";
+	description = "A co chtÄ›l Havran v hrobce?";
 };
 FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 {	
@@ -167,17 +167,17 @@ FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_GruftAgain_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Co Havran v té hrobce chtìl?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(zarazí se) Hmm, seš pìknì zvìdavej. Pøipomínáš mi jednoho chlápka, kterıho jsem kdysi znával.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Ten byl taky tak zvìdavej. A ho to nakonec znièilo.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Mluv k vìci, co se stalo v té hrobce?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//No, ehm... mám dìsnì vyschlo v hubì...
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Hele, Scatty, TEÏ NE. Tohle je dùleitı! Co tam Havran chtìl?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//No dobøe. (zhluboka se nadechne) On... nìco... nìco vyvolal. Poøád pøitom hulákal òákou cizí øeèí.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Najednou hrobku osvítilo jasnı svìtlo a pak jsem slyšel vıkøik, kterej byl jak rána do hlavy - démonickej vıkøik.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Co Havran v tÃ© hrobce chtÄ›l?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//(zarazÃ­ se) Hmm, seÅ¡ pÄ›knÄ› zvÄ›davej. PÅ™ipomÃ­nÃ¡Å¡ mi jednoho chlÃ¡pka, kterÃ½ho jsem kdysi znÃ¡val.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//Ten byl taky tak zvÄ›davej. AÅ¾ ho to nakonec zniÄilo.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Mluv k vÄ›ci, co se stalo v tÃ© hrobce?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//No, ehm... mÃ¡m dÄ›snÄ› vyschlo v hubÄ›...
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Hele, Scatty, TEÄ NE. Tohle je dÅ¯leÅ¾itÃ½! Co tam Havran chtÄ›l?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//No dobÅ™e. (zhluboka se nadechne) On... nÄ›co... nÄ›co vyvolal. PoÅ™Ã¡d pÅ™itom hulÃ¡kal ÅˆÃ¡kou cizÃ­ Å™eÄÃ­.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Najednou hrobku osvÃ­tilo jasnÃ½ svÄ›tlo a pak jsem slyÅ¡el vÃ½kÅ™ik, kterej byl jak rÃ¡na do hlavy - dÃ©monickej vÃ½kÅ™ik.
 	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//A pak?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//Víc u nevím. Pak z tı hrobky vylez Bloodwyn a øek mi, abych vypadnul. A to jsem taky udìlal.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Netrvalo douho a Havran i jeho chlapi zmizeli zpátky v chrámu. Od tı doby u Havrana nikdo nevidìl.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//VÃ­c uÅ¾ nevÃ­m. Pak z tÃ½ hrobky vylez Bloodwyn a Å™ek mi, abych vypadnul. A to jsem taky udÄ›lal.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Netrvalo douho a Havran i jeho chlapi zmizeli zpÃ¡tky v chrÃ¡mu. Od tÃ½ doby uÅ¾ Havrana nikdo nevidÄ›l.
 };
 //---------------------------------------------------------------------
 //	Info Trinken
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Scatty_Trinken   (C_INFO)
 	condition   = DIA_Addon_Scatty_Trinken_Condition;
 	information = DIA_Addon_Scatty_Trinken_Info;
 	permanent   = FALSE;
-	description = "Nedal by sis nìco k pití?";
+	description = "Nedal by sis nÄ›co k pitÃ­?";
 };
 FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 {	
@@ -200,9 +200,9 @@ FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Trinken_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Dal by sis nìco k pití?
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Pivo by bodlo, ale tady v táboøe asi tìko òákı bude.
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Moná e Lucia ještì nìjakı korblík má.
+	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Dal by sis nÄ›co k pitÃ­?
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Pivo by bodlo, ale tady v tÃ¡boÅ™e asi tÄ›Å¾ko ÅˆÃ¡kÃ½ bude.
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//MoÅ¾nÃ¡ Å¾e Lucia jeÅ¡tÄ› nÄ›jakÃ½ korblÃ­k mÃ¡.
 };
 //---------------------------------------------------------------------
 //	Info Bier geben
@@ -214,7 +214,7 @@ INSTANCE DIA_Addon_Scatty_Bier   (C_INFO)
 	condition   = DIA_Addon_Scatty_Bier_Condition;
 	information = DIA_Addon_Scatty_Bier_Info;
 	permanent   = FALSE;
-	description = "Na zdraví. (pøedat pivo)";
+	description = "Na zdravÃ­. (pÅ™edat pivo)";
 };
 FUNC INT DIA_Addon_Scatty_Bier_Condition()
 {	
@@ -226,13 +226,13 @@ FUNC INT DIA_Addon_Scatty_Bier_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Bier_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//Tady máš.
+	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//Tady mÃ¡Å¡.
 	
 	if B_GiveInvItems (other, self, ItFo_Beer, 1)
 	{
 		AI_UseItem (self, ItFo_Beer);
 	};
-	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Mmm, to je dobrı. Díky, seš mùj hrdina.
+	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Mmm, to je dobrÃ½. DÃ­ky, seÅ¡ mÅ¯j hrdina.
 	
 	B_GivePlayerXP (XP_Ambient* 5);
 };
@@ -256,9 +256,9 @@ FUNC INT DIA_Addon_Scatty_Gold_Condition()
 FUNC VOID DIA_Addon_Scatty_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Vzít krumpáè a rubat zlato, to umí kadej.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Ale spousta nuggetù se tímhle zpùsobem rozbije. A proto by to mìli dìlat jenom ti, kteøí dolování trochu rozumìj.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//A budeš trochu zkušenìjší, mùu tì nauèit víc.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//VzÃ­t krumpÃ¡Ä a rubat zlato, to umÃ­ kaÅ¾dej.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Ale spousta nuggetÅ¯ se tÃ­mhle zpÅ¯sobem rozbije. A proto by to mÄ›li dÄ›lat jenom ti, kteÅ™Ã­ dolovÃ¡nÃ­ trochu rozumÄ›j.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//AÅ¾ budeÅ¡ trochu zkuÅ¡enÄ›jÅ¡Ã­, mÅ¯Å¾u tÄ› nauÄit vÃ­c.
 
 	B_Upgrade_Hero_HackChance(5);
 };
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_Scatty_teach   (C_INFO)
 	condition   = DIA_Addon_Scatty_teach_Condition;
 	information = DIA_Addon_Scatty_teach_Info;
 	permanent   = TRUE;
-	description = "Nauèit se dolovat zlato (Cena: 2 VB/10 procent)";
+	description = "NauÄit se dolovat zlato (Cena: 2 VB/10 procent)";
 };
 FUNC INT DIA_Addon_Scatty_teach_Condition()
 {	
@@ -286,14 +286,14 @@ FUNC INT DIA_Addon_Scatty_teach_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Povìz mi nìco víc o dolování zlata.
+	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//PovÄ›z mi nÄ›co vÃ­c o dolovÃ¡nÃ­ zlata.
 	
 	if (other.lp >= 1)  
 	{
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Pøedevším bys mìl vìdìt, e zlato není ruda. Je mìkkı jako máslo. Kdy udeøíš moc tvrdì, všecko se rozsype.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Kadej kopáè má vlastní triky, jak z kamene dostat co nejvìtší zlatı valouny.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Tyhle triky koneckoncù dìlaj rozdíl mezi obyèejnım kopáèem a dobrım kopáèem.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//A hlavnì platí, e uèení dìlá mistra. Jedinì kdy budeš nìjakou chvíli kopat, pùjde ti to líp.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//PÅ™edevÅ¡Ã­m bys mÄ›l vÄ›dÄ›t, Å¾e zlato nenÃ­ ruda. Je mÄ›kkÃ½ jako mÃ¡slo. KdyÅ¾ udeÅ™Ã­Å¡ moc tvrdÄ›, vÅ¡ecko se rozsype.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//KaÅ¾dej kopÃ¡Ä mÃ¡ vlastnÃ­ triky, jak z kamene dostat co nejvÄ›tÅ¡Ã­ zlatÃ½ valouny.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//Tyhle triky koneckoncÅ¯ dÄ›laj rozdÃ­l mezi obyÄejnÃ½m kopÃ¡Äem a dobrÃ½m kopÃ¡Äem.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//A hlavnÄ› platÃ­, Å¾e uÄenÃ­ dÄ›lÃ¡ mistra. JedinÄ› kdyÅ¾ budeÅ¡ nÄ›jakou chvÃ­li kopat, pÅ¯jde ti to lÃ­p.
 		
 		other.lp = (other.lp -1);
 		B_Upgrade_Hero_HackChance(10);
@@ -315,7 +315,7 @@ INSTANCE DIA_Addon_Scatty_tot   (C_INFO)
 	condition   = DIA_Addon_Scatty_tot_Condition;
 	information = DIA_Addon_Scatty_tot_Info;
 	permanent   = FALSE;
-	description = "Bloodwyn je mrtvı.";
+	description = "Bloodwyn je mrtvÃ½.";
 };
 FUNC INT DIA_Addon_Scatty_tot_Condition()
 {	
@@ -327,7 +327,7 @@ FUNC INT DIA_Addon_Scatty_tot_Condition()
 FUNC VOID DIA_Addon_Scatty_tot_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Bloodwyn je mrtvej.
-	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hm, moc lidem bych to nepøál, ale Bloodwyn je lepší mrtvej..
+	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hm, moc lidem bych to nepÅ™Ã¡l, ale Bloodwyn je lepÅ¡Ã­ mrtvej..
 };
 //---------------------------------------------------------------------
 //	Info trade

@@ -280,7 +280,7 @@ func int C_ScCanUpgrateBeliarsWeapon ()
 		return TRUE;
 	};
 };
-func void B_UpgrateBeliarsWeapon ()//Joly: vorher C_ScCanUpgrateBeliarsWeapon ausführen!!!!!!
+func void B_UpgrateBeliarsWeapon ()//Joly: vorher C_ScCanUpgrateBeliarsWeapon ausfÃ¼hren!!!!!!
 {
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//// LebensenergieAbzug beim Upgraden

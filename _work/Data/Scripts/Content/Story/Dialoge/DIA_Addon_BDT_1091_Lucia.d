@@ -71,7 +71,7 @@ FUNC INT DIA_Addon_Lucia_Hi_Condition()
 FUNC VOID DIA_Addon_Lucia_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Hi_15_00");//Tak co? Jak to jde?
-	AI_Output (self, other, "DIA_Addon_Lucia_Hi_16_01");//Poslyš, jestli chceš nìco k jídlu, zajdi za Snafem. A jestli chceš nìco k pití, pak seš na správnım místì.
+	AI_Output (self, other, "DIA_Addon_Lucia_Hi_16_01");//PoslyÅ¡, jestli chceÅ¡ nÄ›co k jÃ­dlu, zajdi za Snafem. A jestli chceÅ¡ nÄ›co k pitÃ­, pak seÅ¡ na sprÃ¡vnÃ½m mÃ­stÄ›.
 };
 //---------------------------------------------------------------------
 //	Info was
@@ -95,13 +95,13 @@ FUNC INT DIA_Addon_Lucia_was_Condition()
 FUNC VOID DIA_Addon_Lucia_was_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_was_15_00");//Tak co tu teda pijete?
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");//Piva u máme jenom trochu. Jedinı pivo na ostrovì sem pøinesli paladinové.
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");//Jediná dobrá vìc, kterou s sebou ti chlapi pøinesli.
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//Jinak tu pijeme, co teèe. Mám tu pálenku, koøalku a bílej rum...
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//(vdìènì) Hmm... TOHLE bys mìl vyzkoušet – mám recept od Samuela. Ten staroch se fakt vyzná.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");//Piva uÅ¾ mÃ¡me jenom trochu. JedinÃ½ pivo na ostrovÄ› sem pÅ™inesli paladinovÃ©.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");//JedinÃ¡ dobrÃ¡ vÄ›c, kterou s sebou ti chlapi pÅ™inesli.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//Jinak tu pijeme, co teÄe. MÃ¡m tu pÃ¡lenku, koÅ™alku a bÃ­lej rum...
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//(vdÄ›ÄnÄ›) Hmm... TOHLE bys mÄ›l vyzkouÅ¡et â€“ mÃ¡m recept od Samuela. Ten staroch se fakt vyznÃ¡.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Lucia mi mùe prodat nìjakou koøalku.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Lucia mi mÅ¯Å¾e prodat nÄ›jakou koÅ™alku.");
 };
 //---------------------------------------------------------------------
 //	Info Khorinis
@@ -113,7 +113,7 @@ INSTANCE DIA_Addon_Lucia_Khorinis   (C_INFO)
 	condition   = DIA_Addon_Lucia_Khorinis_Condition;
 	information = DIA_Addon_Lucia_Khorinis_Info;
 	permanent   = FALSE;
-	description = "Nepocházíš náhodou z Khorinidu?";
+	description = "NepochÃ¡zÃ­Å¡ nÃ¡hodou z Khorinidu?";
 };
 FUNC INT DIA_Addon_Lucia_Khorinis_Condition()
 {	
@@ -127,17 +127,17 @@ FUNC INT DIA_Addon_Lucia_Khorinis_Condition()
 FUNC VOID DIA_Addon_Lucia_Khorinis_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Khorinis_15_00");//Copak ty nejsi z Khorinidu?
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Ani mi to nepøipomínej! V tom mìstì byl pøíšernej ivot.
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//Dokud tam ještì pøijídìly lodì s novejma trestancema, byl tam aspoò ruch.
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//Ale ti druzí chlapi... (smìje se) Ne, díky. Moná je to tím, e jsme na ostrovì... no, u je to stejnì pryè.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Ani mi to nepÅ™ipomÃ­nej! V tom mÄ›stÄ› byl pÅ™Ã­Å¡ernej Å¾ivot.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//Dokud tam jeÅ¡tÄ› pÅ™ijÃ­Å¾dÄ›ly lodÄ› s novejma trestancema, byl tam aspoÅˆ ruch.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//Ale ti druzÃ­ chlapi... (smÄ›je se) Ne, dÃ­ky. MoÅ¾nÃ¡ je to tÃ­m, Å¾e jsme na ostrovÄ›... no, uÅ¾ je to stejnÄ› pryÄ.
 
 	if (MIS_LuciasLetter != 0)
 	|| (SC_KnowsLuciaCaughtByBandits != 0)
 	|| (Nadja_GaveLuciaInfo != 0)
 	{
-		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_06"); //S Elvrichem u jsem skonèila!
-		AI_Output (other,self , "DIA_Addon_Lucia_Khorinis_15_04"); //Proè?
-		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_05"); //Je to mìkkota! Kdy mì banditi unášeli, nehnul pro mì ani prstem!
+		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_06"); //S Elvrichem uÅ¾ jsem skonÄila!
+		AI_Output (other,self , "DIA_Addon_Lucia_Khorinis_15_04"); //ProÄ?
+		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_05"); //Je to mÄ›kkota! KdyÅ¾ mÄ› banditi unÃ¡Å¡eli, nehnul pro mÄ› ani prstem!
 		TOPIC_END_Lucia = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	};
@@ -153,7 +153,7 @@ INSTANCE DIA_Addon_Lucia_Jetzt   (C_INFO)
 	condition   = DIA_Addon_Lucia_Jetzt_Condition;
 	information = DIA_Addon_Lucia_Jetzt_Info;
 	permanent   = FALSE;
-	description = "Co chceš dìlat?";
+	description = "Co chceÅ¡ dÄ›lat?";
 };
 FUNC INT DIA_Addon_Lucia_Jetzt_Condition()
 {	
@@ -164,10 +164,10 @@ FUNC INT DIA_Addon_Lucia_Jetzt_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Jetzt_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Jetzt_15_00");//Co chceš dìlat?
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//Uvidíme. Prozatím tu zùstanu se Snafem, Fiskem a ostatníma.
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//U jsi mluvil s Thorusem? (obrátí oèi v sloup) Pøi Innosovi, to je ale kus chlapa!
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(smìje se) Promiò, radši se vrátíme k vìci. Nemám ádnej cíl, jen se tak nechávám unášet.
+	AI_Output (other, self, "DIA_Addon_Lucia_Jetzt_15_00");//Co chceÅ¡ dÄ›lat?
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//UvidÃ­me. ProzatÃ­m tu zÅ¯stanu se Snafem, Fiskem a ostatnÃ­ma.
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//UÅ¾ jsi mluvil s Thorusem? (obrÃ¡tÃ­ oÄi v sloup) PÅ™i Innosovi, to je ale kus chlapa!
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(smÄ›je se) PromiÅˆ, radÅ¡i se vrÃ¡tÃ­me k vÄ›ci. NemÃ¡m Å¾Ã¡dnej cÃ­l, jen se tak nechÃ¡vÃ¡m unÃ¡Å¡et.
 };
 //---------------------------------------------------------------------
 //	Info Paladine
@@ -179,7 +179,7 @@ INSTANCE DIA_Addon_Lucia_Paladine   (C_INFO)
 	condition   = DIA_Addon_Lucia_Paladine_Condition;
 	information = DIA_Addon_Lucia_Paladine_Info;
 	permanent   = FALSE;
-	description = "Ty ty paladiny zrovna v lásce nemáš, co?";
+	description = "Ty ty paladiny zrovna v lÃ¡sce nemÃ¡Å¡, co?";
 };
 FUNC INT DIA_Addon_Lucia_Paladine_Condition()
 {	
@@ -190,18 +190,18 @@ FUNC INT DIA_Addon_Lucia_Paladine_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_15_00");//Ty paladiny moc ráda nemáš, co?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Ty fanatickı vrahouny, co si nechávaj platit od ohnivejch mágù? Ne.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Ten lord Hagen s tou svojí sebrankou obsadili celı mìsto a všichni se jim klanìj.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_03");//Ale já to dìlat nechtìla. Nemínila jsem èekat, a zavøou i Èervenou lucernu a vsadí mì do elez.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_15_00");//Ty paladiny moc rÃ¡da nemÃ¡Å¡, co?
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Ty fanatickÃ½ vrahouny, co si nechÃ¡vaj platit od ohnivejch mÃ¡gÅ¯? Ne.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Ten lord Hagen s tou svojÃ­ sebrankou obsadili celÃ½ mÄ›sto a vÅ¡ichni se jim klanÄ›j.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_03");//Ale jÃ¡ to dÄ›lat nechtÄ›la. NemÃ­nila jsem Äekat, aÅ¾ zavÅ™ou i ÄŒervenou lucernu a vsadÃ­ mÄ› do Å¾elez.
 	
 	if (Npc_GetTrueGuild (other) != GIL_SLD)
 	&& (Npc_GetTrueGuild (other) != GIL_DJG)
 	{
 		Info_ClearChoices (DIA_Addon_Lucia_Paladine);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Ukonèit rozhovor.",DIA_Addon_Lucia_Paladine_BACK);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Paladinové nebojují jeho jménem. Innos si své váleèníky vybírá sám.",DIA_Addon_Lucia_Paladine_WAHL);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Paladinové jsou Innosovımi váleèníky, ádní vrahové.",DIA_Addon_Lucia_Paladine_MURDER);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"UkonÄit rozhovor.",DIA_Addon_Lucia_Paladine_BACK);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"PaladinovÃ© nebojujÃ­ jeho jmÃ©nem. Innos si svÃ© vÃ¡leÄnÃ­ky vybÃ­rÃ¡ sÃ¡m.",DIA_Addon_Lucia_Paladine_WAHL);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"PaladinovÃ© jsou InnosovÃ½mi vÃ¡leÄnÃ­ky, Å¾Ã¡dnÃ­ vrahovÃ©.",DIA_Addon_Lucia_Paladine_MURDER);
 		
 	};
 };
@@ -211,34 +211,34 @@ FUNC VOID DIA_Addon_Lucia_Paladine_BACK()
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_WAHL()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WAHL_15_00");//Paladinové jen nebojují v Innosovì jménu. To on sám si vybírá své bojovníky.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_01");//Vánì? A já si myslím, e se ti lidi vybírají sami.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_02");//Ale trochu mì udivuješ – mluvíš, jako bys byl jedním z nich.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WAHL_15_00");//PaladinovÃ© jen nebojujÃ­ v InnosovÄ› jmÃ©nu. To on sÃ¡m si vybÃ­rÃ¡ svÃ© bojovnÃ­ky.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_01");//VÃ¡Å¾nÄ›? A jÃ¡ si myslÃ­m, Å¾e se ti lidi vybÃ­rajÃ­ sami.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_02");//Ale trochu mÄ› udivujeÅ¡ â€“ mluvÃ­Å¡, jako bys byl jednÃ­m z nich.
 	
-	Info_AddChoice (DIA_Addon_Lucia_Paladine,"U jsi nìkdy nìkoho zabila?",DIA_Addon_Lucia_Paladine_KILL);
+	Info_AddChoice (DIA_Addon_Lucia_Paladine,"UÅ¾ jsi nÄ›kdy nÄ›koho zabila?",DIA_Addon_Lucia_Paladine_KILL);
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_KILL()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//U jsi nìkdy nìkoho zabila?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_01");//Ne, a jsem fakt ráda.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//Prosím, u nikdy nemluv tak vánì.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Dej si radši nìco k pití a vychutnej si kadı okamik, kterı nám bohové dávají.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//UÅ¾ jsi nÄ›kdy nÄ›koho zabila?
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_01");//Ne, a jsem fakt rÃ¡da.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//ProsÃ­m, uÅ¾ nikdy nemluv tak vÃ¡Å¾nÄ›.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Dej si radÅ¡i nÄ›co k pitÃ­ a vychutnej si kaÅ¾dÃ½ okamÅ¾ik, kterÃ½ nÃ¡m bohovÃ© dÃ¡vajÃ­.
 	
 	Info_ClearChoices (DIA_Addon_Lucia_Paladine);
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_WEIB()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WEIB_15_00");//Ty tedy odmítáš Innose, enštino?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_01");//Jak bych mohla? To jenom lidi zneuívají jeho jméno.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_02");//Já nikdy o Innosovì boství ani na okamik nezapochybovala.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WEIB_15_00");//Ty tedy odmÃ­tÃ¡Å¡ Innose, Å¾enÅ¡tino?
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_01");//Jak bych mohla? To jenom lidi zneuÅ¾Ã­vajÃ­ jeho jmÃ©no.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_02");//JÃ¡ nikdy o InnosovÄ› boÅ¾stvÃ­ ani na okamÅ¾ik nezapochybovala.
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_MURDER()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//Paladinové jsou Innosovi váleèníci, ádní vrazi.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_01");//Vánì? Vdy mají na meèích taky krev – úplnì stejnì jako piráti nebo banditi.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//Jedinej rozdíl je, e vradìj v Innosovì jménu a ne proto, aby pøeili.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//PaladinovÃ© jsou Innosovi vÃ¡leÄnÃ­ci, Å¾Ã¡dnÃ­ vrazi.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_01");//VÃ¡Å¾nÄ›? VÅ¾dyÅ¥ majÃ­ na meÄÃ­ch taky krev â€“ ÃºplnÄ› stejnÄ› jako pirÃ¡ti nebo banditi.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//Jedinej rozdÃ­l je, Å¾e vraÅ¾dÄ›j v InnosovÄ› jmÃ©nu a ne proto, aby pÅ™eÅ¾ili.
 	
-	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Ty nevìøíš v Innose?",DIA_Addon_Lucia_Paladine_WEIB);
+	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Ty nevÄ›Å™Ã­Å¡ v Innose?",DIA_Addon_Lucia_Paladine_WEIB);
 };
 //---------------------------------------------------------------------
 //	Info Attentat
@@ -262,7 +262,7 @@ FUNC INT DIA_Addon_Lucia_Attentat_Condition()
 FUNC VOID DIA_Addon_Lucia_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Lucia_Attentat_16_00");//Vùbec nic.
+	AI_Output (self, other, "DIA_Addon_Lucia_Attentat_16_00");//VÅ¯bec nic.
 };
 //---------------------------------------------------------------------
 //	Info Trade
@@ -275,7 +275,7 @@ INSTANCE DIA_Addon_Lucia_Trade   (C_INFO)
 	information = DIA_Addon_Lucia_Trade_Info;
 	permanent   = TRUE;
 	trade		= TRUE;
-	description = "Rád bych si dal nìco k pití.";
+	description = "RÃ¡d bych si dal nÄ›co k pitÃ­.";
 };
 FUNC INT DIA_Addon_Lucia_Trade_Condition()
 {	
@@ -286,7 +286,7 @@ FUNC INT DIA_Addon_Lucia_Trade_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Trade_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Trade_15_00");//Dej mi nìco k pití.
+	AI_Output (other, self, "DIA_Addon_Lucia_Trade_15_00");//Dej mi nÄ›co k pitÃ­.
 	B_GiveTradeInv(self);
 };
 //---------------------------------------------------------------------
@@ -299,7 +299,7 @@ INSTANCE DIA_Addon_Lucia_lernen   (C_INFO)
 	condition   = DIA_Addon_Lucia_lernen_Condition;
 	information = DIA_Addon_Lucia_lernen_Info;
 	permanent   = FALSE;
-	description = "Mùeš mì nìèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };
 FUNC INT DIA_Addon_Lucia_lernen_Condition()
 {	
@@ -310,11 +310,11 @@ FUNC INT DIA_Addon_Lucia_lernen_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_lernen_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_lernen_15_00");//Mùeš mì nìèemu nauèit?
-	AI_Output (self, other, "DIA_Addon_Lucia_lernen_16_01");//(smìje se) Moc ráda. Mùeš se u mì pocvièit v obratnosti.
+	AI_Output (other, self, "DIA_Addon_Lucia_lernen_15_00");//MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?
+	AI_Output (self, other, "DIA_Addon_Lucia_lernen_16_01");//(smÄ›je se) Moc rÃ¡da. MÅ¯Å¾eÅ¡ se u mÄ› pocviÄit v obratnosti.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Lucia mi pomùe vylepšit obratnost.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Lucia mi pomÅ¯Å¾e vylepÅ¡it obratnost.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -326,7 +326,7 @@ instance DIA_Addon_Lucia_TEACH		(C_INFO)
 	condition	 = 	DIA_Addon_Lucia_TEACH_Condition;
 	information	 = 	DIA_Addon_Lucia_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtìl bych bıt o nìco obratnìjší.";
+	description	 = 	"ChtÄ›l bych bÃ½t o nÄ›co obratnÄ›jÅ¡Ã­.";
 };
 func int DIA_Addon_Lucia_TEACH_Condition ()
 {	
@@ -337,7 +337,7 @@ func int DIA_Addon_Lucia_TEACH_Condition ()
 };
 func void DIA_Addon_Lucia_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_TEACH_15_00"); //Chci bıt obratnìjší.
+	AI_Output (other, self, "DIA_Addon_Lucia_TEACH_15_00"); //Chci bÃ½t obratnÄ›jÅ¡Ã­.
 	
 	Info_ClearChoices   (DIA_Addon_Lucia_TEACH);
 	Info_AddChoice 		(DIA_Addon_Lucia_TEACH, DIALOG_BACK, DIA_Addon_Lucia_TEACH_BACK);

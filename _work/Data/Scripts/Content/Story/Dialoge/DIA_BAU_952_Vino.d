@@ -47,12 +47,12 @@ func int DIA_Vino_HALLO_Condition ()
 };
 func void DIA_Vino_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //A jak jde práce?
-	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Jako vdycky. Spousta døiny, málo penìz a s trochou smùly zejtra pøijdou skøeti a srovnají naši farmu se zemí.
+	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //A jak jde prÃ¡ce?
+	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Jako vÅ¾dycky. Spousta dÅ™iny, mÃ¡lo penÄ›z a s trochou smÅ¯ly zejtra pÅ™ijdou skÅ™eti a srovnajÃ­ naÅ¡i farmu se zemÃ­.
 	
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_HALLO_05_02"); //Královští paladinové obsadili celé mìsto. Ale nechce se mi vìøit, e by odtamtud zvedli ty svı velebnı zadky a šli nám pomoct, a nás napadnou skøeti.
+			AI_Output (self, other, "DIA_Vino_HALLO_05_02"); //KrÃ¡lovÅ¡tÃ­ paladinovÃ© obsadili celÃ© mÄ›sto. Ale nechce se mi vÄ›Å™it, Å¾e by odtamtud zvedli ty svÃ½ velebnÃ½ zadky a Å¡li nÃ¡m pomoct, aÅ¾ nÃ¡s napadnou skÅ™eti.
 		};
 };
 
@@ -66,7 +66,7 @@ instance DIA_Vino_SeekWork		(C_INFO)
 	condition	= DIA_Vino_SeekWork_Condition;
 	information	= DIA_Vino_SeekWork_Info;
 	permanent 	= FALSE;
-	description	= "Mùu ti pomoct? Hledám práci.";
+	description	= "MÅ¯Å¾u ti pomoct? HledÃ¡m prÃ¡ci.";
 	
 };
 func int DIA_Vino_SeekWork_Condition ()
@@ -81,42 +81,42 @@ func int DIA_Vino_SeekWork_Condition ()
 };
 func void DIA_Vino_SeekWork_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //Mùu ti pomoct? Hledám práci.
+	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //MÅ¯Å¾u ti pomoct? HledÃ¡m prÃ¡ci.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //Víš nìco o polních pracech?
-		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //Co je tom tak sloitého?
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //Ach! V tom pøípadì... Mám dojem, e si vystaèíme sami. Díky.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //VÃ­Å¡ nÄ›co o polnÃ­ch pracech?
+		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //Co je tom tak sloÅ¾itÃ©ho?
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //Ach! V tom pÅ™Ã­padÄ›... MÃ¡m dojem, Å¾e si vystaÄÃ­me sami. DÃ­ky.
 		
 		if (!Npc_IsDead(Lobart))
 		{
-			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //Pokud chceš pro Lobarta pracovat jako nádeník, musím tì varovat. Lidem jako ty platí fakt mizernì!
+			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //Pokud chceÅ¡ pro Lobarta pracovat jako nÃ¡denÃ­k, musÃ­m tÄ› varovat. Lidem jako ty platÃ­ fakt mizernÄ›!
 		
 			if ( (Mob_HasItems("CHEST_LOBART", ITAR_Bau_L) == TRUE) || (Npc_HasItems (lobart, itar_bau_l) > 0) )
 			&& (Lobart_Kleidung_Verkauft == FALSE)
 			&& ( (Npc_KnowsInfo (other, DIA_Lobart_KLEIDUNG)) || (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW)) )
 			{
-				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //Nabídl, e mi prodá nìjaké šaty se slevou, kdy mu pomùu na farmì.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Hmm. Nemám pro tebe nic, ale mùeš mnì a chlapùm pøinést nìco k pití.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //Pøines mi láhev vína a já øeknu Lobartovi, es nám opravdu pomohl (s vısmìšnım úšklebkem).
+				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //NabÃ­dl, Å¾e mi prodÃ¡ nÄ›jakÃ© Å¡aty se slevou, kdyÅ¾ mu pomÅ¯Å¾u na farmÄ›.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Hmm. NemÃ¡m pro tebe nic, ale mÅ¯Å¾eÅ¡ mnÄ› a chlapÅ¯m pÅ™inÃ©st nÄ›co k pitÃ­.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //PÅ™ines mi lÃ¡hev vÃ­na a jÃ¡ Å™eknu Lobartovi, Å¾es nÃ¡m opravdu pomohl (s vÃ½smÄ›Å¡nÃ½m ÃºÅ¡klebkem).
 				
 				MIS_Vino_Wein = LOG_RUNNING;
 				
 				Log_CreateTopic (TOPIC_Vino,LOG_MISSION);
 				Log_SetTopicStatus (TOPIC_Vino,LOG_RUNNING);
-				B_LogEntry (TOPIC_Vino,"Jestli Vinovi pøinesu láhev vína, poví Lobartovi, e jsem mu pomohl.");
+				B_LogEntry (TOPIC_Vino,"Jestli Vinovi pÅ™inesu lÃ¡hev vÃ­na, povÃ­ Lobartovi, Å¾e jsem mu pomohl.");
 				
 			}
 			else
 			{	
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_08"); //Ale ode mì to nemáš, jasnı?
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_08"); //Ale ode mÄ› to nemÃ¡Å¡, jasnÃ½?
 			};
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //Neøekl bych. Práce, kterou nabízím, by nìkoho jako ty urèitì nezajímala.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //NeÅ™ekl bych. PrÃ¡ce, kterou nabÃ­zÃ­m, by nÄ›koho jako ty urÄitÄ› nezajÃ­mala.
 	};
 };
 
@@ -130,7 +130,7 @@ instance DIA_Vino_BringWine		(C_INFO)
 	condition	= DIA_Vino_BringWine_Condition;
 	information	= DIA_Vino_BringWine_Info;
 	permanent 	= FALSE;
-	description	= "Tady je to víno.";
+	description	= "Tady je to vÃ­no.";
 	
 };
 func int DIA_Vino_BringWine_Condition ()
@@ -144,16 +144,16 @@ func int DIA_Vino_BringWine_Condition ()
 };
 func void DIA_Vino_BringWine_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_BringWine_15_00"); //Tady je to víno.
+	AI_Output (other, self, "DIA_Vino_BringWine_15_00"); //Tady je to vÃ­no.
 	B_GiveInvItems (other,self, itfo_wine, 1);
-	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //Radìji se nemám ptát, kdes ho sebral, co? (smích) Koho to zajímá?
+	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //RadÄ›ji se nemÃ¡m ptÃ¡t, kdes ho sebral, co? (smÃ­ch) Koho to zajÃ­mÃ¡?
 	if (!Npc_IsDead (Lobart))
 	{
-		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //Jinak díky.
+		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //Jinak dÃ­ky.
 
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Lobart o tobì uslyší jen to nejlepší.
+			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Lobart o tobÄ› uslyÅ¡Ã­ jen to nejlepÅ¡Ã­.
 		};
 	};
 	
@@ -174,7 +174,7 @@ instance DIA_Vino_ToTheCity (C_INFO)
 	condition	= DIA_Vino_ToTheCity_Condition;
 	information	= DIA_Vino_ToTheCity_Info;
 	permanent 	= FALSE;
-	description	= "Mám namíøeno do mìsta.";
+	description	= "MÃ¡m namÃ­Å™eno do mÄ›sta.";
 };
 
 func int DIA_Vino_ToTheCity_Condition ()
@@ -187,15 +187,15 @@ func int DIA_Vino_ToTheCity_Condition ()
 
 func void DIA_Vino_ToTheCity_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //Mám namíøeno do mìsta.
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //MÃ¡m namÃ­Å™eno do mÄ›sta.
 	AI_Output (self, other, "DIA_Vino_ToTheCity_05_01"); //A?
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //Mùeš mi o mìstì øíct nìco zajímavého?
-	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //Ne. Ale Maleth tam obèas zajde - snad se od nìj nìco dozvíš - myslím nìco, co by tì mohlo zajímat.
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //MÅ¯Å¾eÅ¡ mi o mÄ›stÄ› Å™Ã­ct nÄ›co zajÃ­mavÃ©ho?
+	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //Ne. Ale Maleth tam obÄas zajde - snad se od nÄ›j nÄ›co dozvÃ­Å¡ - myslÃ­m nÄ›co, co by tÄ› mohlo zajÃ­mat.
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//								Gerüchte (PERM)
+//								GerÃ¼chte (PERM)
 ///////////////////////////////////////////////////////////////////////
 
 // --------------------------
@@ -210,7 +210,7 @@ instance DIA_Vino_PERM (C_INFO)
 	condition	= DIA_Vino_PERM_Condition;
 	information	= DIA_Vino_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Nìjaké zajímavé novinky?";
+	description	= "NÄ›jakÃ© zajÃ­mavÃ© novinky?";
 };
 func int DIA_Vino_PERM_Condition ()
 {
@@ -222,26 +222,26 @@ func int DIA_Vino_PERM_Condition ()
 };
 func void DIA_Vino_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //Nìjaké zajímavé novinky?
+	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //NÄ›jakÃ© zajÃ­mavÃ© novinky?
 	
 	if (Vino_Gossip_Orks == FALSE)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //Pøísahal bych, e jsem pøede dvìma dny na kraji lesa zahlédl skøeta.
-		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //Od té doby mám v noci vdycky alespoò jedno oko otevøené.
+		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //PÅ™Ã­sahal bych, Å¾e jsem pÅ™ede dvÄ›ma dny na kraji lesa zahlÃ©dl skÅ™eta.
+		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //Od tÃ© doby mÃ¡m v noci vÅ¾dycky alespoÅˆ jedno oko otevÅ™enÃ©.
 		Vino_Gossip_Orks = TRUE;
 		Knows_Ork = TRUE;
 	}
 	else if (Vino_Gossip_Bugs == FALSE)
 	&& 		(MIS_AndreHelpLobart == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Ti obrovští odporní brouci u jsou vánì hodnì otravní. Jsou všude. Seerou, co uvidí, kdy na to nedáš pozor.
-		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //Pøed nìkolika dny jsem leel v trávì, myslel si na své, chvilku jsem si zdøímnul a najednou koukám, jak mi jedna z tìch zatracenejch vìcí oulává botu!
-		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //Mìls mì vidìt, jak jsem mazal. Od tı doby se nemùu ani poøádnì vyspat.
+		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Ti obrovÅ¡tÃ­ odpornÃ­ brouci uÅ¾ jsou vÃ¡Å¾nÄ› hodnÄ› otravnÃ­. Jsou vÅ¡ude. SeÅ¾erou, co uvidÃ­, kdyÅ¾ na to nedÃ¡Å¡ pozor.
+		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //PÅ™ed nÄ›kolika dny jsem leÅ¾el v trÃ¡vÄ›, myslel si na svÃ©, chvilku jsem si zdÅ™Ã­mnul a najednou koukÃ¡m, jak mi jedna z tÄ›ch zatracenejch vÄ›cÃ­ oÅ¾uÅ¾lÃ¡vÃ¡ botu!
+		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //MÄ›ls mÄ› vidÄ›t, jak jsem mazal. Od tÃ½ doby se nemÅ¯Å¾u ani poÅ™Ã¡dnÄ› vyspat.
 		Vino_Gossip_Bugs = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //Nìco, co by stálo za øeè? Nic.
+		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //NÄ›co, co by stÃ¡lo za Å™eÄ? Nic.
 	};
 };
 
@@ -309,14 +309,14 @@ func void DIA_Vino_DMTAMSTART_Info ()
 	&& (DIA_Vino_DMTAMSTART_OneTime == FALSE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Je to mizérie. Domobrana našla mojí palírnu.
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //Doufám, e nikdy nezjistí, e patøí mnì.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Je to mizÃ©rie. Domobrana naÅ¡la mojÃ­ palÃ­rnu.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //DoufÃ¡m, Å¾e nikdy nezjistÃ­, Å¾e patÅ™Ã­ mnÄ›.
 		B_GivePlayerXP (XP_AmbientKap3);
 		DIA_Vino_DMTAMSTART_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //Ti bastardi v èernıch kápích jsou snad všude. Nìkdo by jim ty jejich kápì mìl omotat kolem krku.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //Ti bastardi v ÄernÃ½ch kÃ¡pÃ­ch jsou snad vÅ¡ude. NÄ›kdo by jim ty jejich kÃ¡pÄ› mÄ›l omotat kolem krku.
 	};
 };
 
@@ -332,7 +332,7 @@ instance DIA_Vino_Obesessed		(C_INFO)
 	information	 = 	DIA_Vino_Obesessed_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co se dìje?";
+	description	 = 	"Co se dÄ›je?";
 };
 
 func int DIA_Vino_Obesessed_Condition ()
@@ -357,7 +357,7 @@ func void DIA_Vino_Obesessed_Info ()
 	else
 	{
 	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //Co je s tebou?
-	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //(øve) Zatracenì, zmizni. Jinak mì zabijou.
+	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //(Å™ve) ZatracenÄ›, zmizni. Jinak mÄ› zabijou.
 	AI_StopProcessInfos (self);
 	DMT_Vino1.aivar[AIV_EnemyOverride] = FALSE;
 	DMT_Vino2.aivar[AIV_EnemyOverride] = FALSE;
@@ -377,7 +377,7 @@ instance DIA_Vino_Heilung		(C_INFO)
 	information	 = 	DIA_Vino_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ty vùbec nejsi pøi smyslech.";
+	description	 = 	"Ty vÅ¯bec nejsi pÅ™i smyslech.";
 };
 
 func int DIA_Vino_Heilung_Condition ()
@@ -392,17 +392,17 @@ func int DIA_Vino_Heilung_Condition ()
 var int DIA_Vino_Heilung_oneTime;
 func void DIA_Vino_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //Ty vùbec nejsi pøi smyslech.
-	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Moje hlava... U to nemùu dıl vydret.
+	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //Ty vÅ¯bec nejsi pÅ™i smyslech.
+	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Moje hlava... UÅ¾ to nemÅ¯Å¾u dÃ½l vydrÅ¾et.
 
 	if (DIA_Vino_Heilung_oneTime == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //Mìli bychom zajít do kláštera. Pyrokar, nejvyšší mág, ti snad pomùe.
-		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //Myslíš? Fajn. Tak to zkusíme.
+		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //MÄ›li bychom zajÃ­t do klÃ¡Å¡tera. Pyrokar, nejvyÅ¡Å¡Ã­ mÃ¡g, ti snad pomÅ¯Å¾e.
+		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //MyslÃ­Å¡? Fajn. Tak to zkusÃ­me.
 		B_NpcClearObsessionByDMT (self);
-		B_StartOtherRoutine  (Vino,"Klášter"); 
+		B_StartOtherRoutine  (Vino,"KlÃ¡Å¡ter"); 
 		
-		B_LogEntry (TOPIC_DEMENTOREN,"Vino je posedlı. Poslal jsem ho do kláštera, kde ho snad vyléèí. Doufám, e tam v poøádku dorazí."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Vino je posedlÃ½. Poslal jsem ho do klÃ¡Å¡tera, kde ho snad vylÃ©ÄÃ­. DoufÃ¡m, Å¾e tam v poÅ™Ã¡dku dorazÃ­."); 
 	
 		B_GivePlayerXP (XP_VinoFreeFromDMT);
 		DIA_Vino_Heilung_oneTime = TRUE;
@@ -457,7 +457,7 @@ instance DIA_Vino_PERM4OBSESSED		(C_INFO)
 	information	 = 	DIA_Vino_PERM4OBSESSED_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak se máš?";
+	description	 = 	"Jak se mÃ¡Å¡?";
 };
 
 func int DIA_Vino_PERM4OBSESSED_Condition ()
@@ -474,12 +474,12 @@ var int DIA_Vino_PERM4OBSESSED_XP_oneTime;
 
 func void DIA_Vino_PERM4OBSESSED_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //Jak se máš?
-	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Jo, jo, u je to v poøádku. Mám dojem, e mi tihle chlapci mùou pomoct. Ale ještì je mi dost divnì.
+	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Jo, jo, uÅ¾ je to v poÅ™Ã¡dku. MÃ¡m dojem, Å¾e mi tihle chlapci mÅ¯Å¾ou pomoct. Ale jeÅ¡tÄ› je mi dost divnÄ›.
 
 	if (DIA_Vino_PERM4OBSESSED_XP_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_02"); //Ale musím uznat, e jejich víno je to nejlepší, co jsem zatím mìl monost ochutnat.
+	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_02"); //Ale musÃ­m uznat, Å¾e jejich vÃ­no je to nejlepÅ¡Ã­, co jsem zatÃ­m mÄ›l moÅ¾nost ochutnat.
 	B_GivePlayerXP (XP_Ambient);
 	DIA_Vino_PERM4OBSESSED_XP_oneTime = TRUE; 
 	};
@@ -496,7 +496,7 @@ instance DIA_Vino_PERM45UND6		(C_INFO)
 	information	 = 	DIA_Vino_PERM45UND6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co je nového?";
+	description	 = 	"Co je novÃ©ho?";
 };
 
 func int DIA_Vino_PERM45UND6_Condition ()
@@ -511,22 +511,22 @@ func int DIA_Vino_PERM45UND6_Condition ()
 
 func void DIA_Vino_PERM45UND6_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //Co je nového?
+	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //Co je novÃ©ho?
 
 	if (hero.guild == GIL_PAL)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //Poèet skøetù v okolí se nepøíjemnì zvıšil.
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Vy paladinové s nima zatoèíte, ne?
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //PoÄet skÅ™etÅ¯ v okolÃ­ se nepÅ™Ã­jemnÄ› zvÃ½Å¡il.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Vy paladinovÃ© s nima zatoÄÃ­te, ne?
 	}
 	else	//hero.guild == GIL_DJG
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_03"); //Bojím se, e u brzy budeme muset všeho nechat a pøidat se k vám, oldákùm na Onarovì farmì.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_03"); //BojÃ­m se, Å¾e uÅ¾ brzy budeme muset vÅ¡eho nechat a pÅ™idat se k vÃ¡m, Å¾oldÃ¡kÅ¯m na OnarovÄ› farmÄ›.
 	};
 	
 	if (FoundVinosKellerei == TRUE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //Bohuel, domobrana mì ještì nepøestala hledat. Jen doufám, e mì nechytí.
+		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //BohuÅ¾el, domobrana mÄ› jeÅ¡tÄ› nepÅ™estala hledat. Jen doufÃ¡m, Å¾e mÄ› nechytÃ­.
 	};
 };
 

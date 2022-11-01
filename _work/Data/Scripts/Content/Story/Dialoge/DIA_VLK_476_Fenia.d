@@ -20,12 +20,12 @@ FUNC VOID DIA_Fenia_EXIT_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //Pìknej den, pane paladin.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //PÄ›knej den, pane paladin.
 	};
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //Pøeju bezpeènou cestu, ctihodnı mágu.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //PÅ™eju bezpeÄnou cestu, ctihodnÃ½ mÃ¡gu.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -90,13 +90,13 @@ FUNC VOID DIA_Fenia_Hallo_Info()
 {
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //Vypadáš nìjak utrmácenì. Dlouho jsi nespal, co?
-			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Moc dlouho, dalo by se øíct.
+			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //VypadÃ¡Å¡ nÄ›jak utrmÃ¡cenÄ›. Dlouho jsi nespal, co?
+			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Moc dlouho, dalo by se Å™Ã­ct.
 		};
-	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //Pojï sem, blí. Se mnou najdeš to, co hledáš!
+	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //PojÄ sem, blÃ­Å¾. Se mnou najdeÅ¡ to, co hledÃ¡Å¡!
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Fenia prodává pøi cestì do pøístavu jídlo.");
+	B_LogEntry (Topic_CityTrader,"Fenia prodÃ¡vÃ¡ pÅ™i cestÄ› do pÅ™Ã­stavu jÃ­dlo.");
 };
 
 
@@ -111,7 +111,7 @@ instance DIA_Fenia_HANDELN		(C_INFO)
 	information	 = 	DIA_Fenia_HANDELN_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 
 func int DIA_Fenia_HANDELN_Condition ()
@@ -124,7 +124,7 @@ func int DIA_Fenia_HANDELN_Condition ()
 func void DIA_Fenia_HANDELN_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Fenia_HANDELN_15_00"); //Uka mi své zboí.
+	AI_Output			(other, self, "DIA_Fenia_HANDELN_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -137,7 +137,7 @@ instance DIA_Fenia_Infos		(C_INFO)
 	condition	 = 	DIA_Fenia_Infos_Condition;
 	information	 = 	DIA_Fenia_Infos_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Øíkala jsi, e máš, co potøebuju. Tıká se to i informací?";
+	description	 = 	"Å˜Ã­kala jsi, Å¾e mÃ¡Å¡, co potÅ™ebuju. TÃ½kÃ¡ se to i informacÃ­?";
 };
 
 func int DIA_Fenia_Infos_Condition ()
@@ -149,8 +149,8 @@ func int DIA_Fenia_Infos_Condition ()
 };
 func void DIA_Fenia_Infos_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_15_00"); //Øíkala jsi, e máš, co potøebuju. Tıká se to i informací?
-	AI_Output			(self, other, "DIA_Fenia_Infos_17_01"); //Ale samozøejmì. Co bys chtìl vìdìt?
+	AI_Output			(other, self, "DIA_Fenia_Infos_15_00"); //Å˜Ã­kala jsi, Å¾e mÃ¡Å¡, co potÅ™ebuju. TÃ½kÃ¡ se to i informacÃ­?
+	AI_Output			(self, other, "DIA_Fenia_Infos_17_01"); //Ale samozÅ™ejmÄ›. Co bys chtÄ›l vÄ›dÄ›t?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Fenia_MoreTraders (C_INFO)
 	condition	= DIA_Fenia_MoreTraders_Condition;
 	information	= DIA_Fenia_MoreTraders_Info;
 	permanent 	= FALSE;
-	description	= "Jsou tady v pøístavu ještì nìjací další kupci?";
+	description	= "Jsou tady v pÅ™Ã­stavu jeÅ¡tÄ› nÄ›jacÃ­ dalÅ¡Ã­ kupci?";
 };
 
 func int DIA_Fenia_MoreTraders_Condition ()
@@ -175,9 +175,9 @@ func int DIA_Fenia_MoreTraders_Condition ()
 };
 func void DIA_Fenia_MoreTraders_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Jsou tady v pøístavu ještì nìjací další kupci?
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Kdy se pustíš po molu nalevo, narazíš na Halvora, mého mue. Prodává ryby.
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Na opaèném konci je Brahim, kartograf.
+	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Jsou tady v pÅ™Ã­stavu jeÅ¡tÄ› nÄ›jacÃ­ dalÅ¡Ã­ kupci?
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //KdyÅ¾ se pustÃ­Å¡ po molu nalevo, narazÃ­Å¡ na Halvora, mÃ©ho muÅ¾e. ProdÃ¡vÃ¡ ryby.
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Na opaÄnÃ©m konci je Brahim, kartograf.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -190,7 +190,7 @@ instance DIA_Fenia_OV (C_INFO)
 	condition	= DIA_Fenia_OV_Condition;
 	information	= DIA_Fenia_OV_Info;
 	permanent 	= FALSE;
-	description	= "Znáš nìkoho z horní ètvrti?";
+	description	= "ZnÃ¡Å¡ nÄ›koho z hornÃ­ Ätvrti?";
 };
 
 func int DIA_Fenia_OV_Condition ()
@@ -203,8 +203,8 @@ func int DIA_Fenia_OV_Condition ()
 };
 func void DIA_Fenia_OV_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Znáš nìkoho z horní ètvrti?
-	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(smích) Kdybych znala nìkoho z horní ètvrti, tak bych tady nebyla, hochu.
+	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //ZnÃ¡Å¡ nÄ›koho z hornÃ­ Ätvrti?
+	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(smÃ­ch) Kdybych znala nÄ›koho z hornÃ­ Ätvrti, tak bych tady nebyla, hochu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -217,7 +217,7 @@ instance DIA_Fenia_Interesting (C_INFO)
 	condition	= DIA_Fenia_Interesting_Condition;
 	information	= DIA_Fenia_Interesting_Info;
 	permanent 	= FALSE;
-	description	= "Na co zajímavého mùu tady v pøístavu narazit?";
+	description	= "Na co zajÃ­mavÃ©ho mÅ¯Å¾u tady v pÅ™Ã­stavu narazit?";
 };
 
 func int DIA_Fenia_Interesting_Condition ()
@@ -229,11 +229,11 @@ func int DIA_Fenia_Interesting_Condition ()
 };
 func void DIA_Fenia_Interesting_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //Co je tady v pøístavu zajímavého k vidìní?
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //No, jestli hledáš nìjakou zábavu, zajdi do Kardifovy krèmy na molu. Kadou chvíli se tam nìco semele.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //To mùeš jen tìko minout. Ten chlápek, co stojí u vchodu, urèitì upoutá tvoji pozornost.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //Kromì toho je tady ještì ta velká loï paladinù. Králova majestátní váleèná galeona. To je to jedinı, co tady stojí za zhlédnutí.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //Najdeš ji, kdy se od toho chlápka dáš doleva a pak kolem skalnatého srázu.
+	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //Co je tady v pÅ™Ã­stavu zajÃ­mavÃ©ho k vidÄ›nÃ­?
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //No, jestli hledÃ¡Å¡ nÄ›jakou zÃ¡bavu, zajdi do Kardifovy krÄmy na molu. KaÅ¾dou chvÃ­li se tam nÄ›co semele.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //To mÅ¯Å¾eÅ¡ jen tÄ›Å¾ko minout. Ten chlÃ¡pek, co stojÃ­ u vchodu, urÄitÄ› upoutÃ¡ tvoji pozornost.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //KromÄ› toho je tady jeÅ¡tÄ› ta velkÃ¡ loÄ paladinÅ¯. KrÃ¡lova majestÃ¡tnÃ­ vÃ¡leÄnÃ¡ galeona. To je to jedinÃ½, co tady stojÃ­ za zhlÃ©dnutÃ­.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //NajdeÅ¡ ji, kdyÅ¾ se od toho chlÃ¡pka dÃ¡Å¡ doleva a pak kolem skalnatÃ©ho srÃ¡zu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -246,7 +246,7 @@ instance DIA_Fenia_Aufregend (C_INFO)
 	condition	= DIA_Fenia_Aufregend_Condition;
 	information	= DIA_Fenia_Aufregend_Info;
 	permanent 	= FALSE;
-	description	= "Stalo se poslední dobou nìco zajímavého?";
+	description	= "Stalo se poslednÃ­ dobou nÄ›co zajÃ­mavÃ©ho?";
 };
 
 func int DIA_Fenia_Aufregend_Condition ()
@@ -258,11 +258,11 @@ func int DIA_Fenia_Aufregend_Condition ()
 };
 func void DIA_Fenia_Aufregend_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Stalo se v poslední dobì nìco zajímavého?
-	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Dalo by se to tak øíct. Nìco takovıho u tu dlouho nebylo.
-	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Bìel tudy nìjakı zlodìj. Musel v dolní èásti mìsta ukrást luk.
-	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Samozøejmì e domobrana pøišla moc pozdì. Jako vdycky.
-	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Utekl jim - staèilo mu jen seskoèit do pøístavu a byl pryè.
+	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Stalo se v poslednÃ­ dobÄ› nÄ›co zajÃ­mavÃ©ho?
+	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Dalo by se to tak Å™Ã­ct. NÄ›co takovÃ½ho uÅ¾ tu dlouho nebylo.
+	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //BÄ›Å¾el tudy nÄ›jakÃ½ zlodÄ›j. Musel v dolnÃ­ ÄÃ¡sti mÄ›sta ukrÃ¡st luk.
+	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //SamozÅ™ejmÄ› Å¾e domobrana pÅ™iÅ¡la moc pozdÄ›. Jako vÅ¾dycky.
+	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Utekl jim - staÄilo mu jen seskoÄit do pÅ™Ã­stavu a byl pryÄ.
 };
 
 

@@ -1,7 +1,7 @@
 INSTANCE NONE_ADDON_115_Eremit (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Poustevník";
+	name 		= "PoustevnÃ­k";
 	guild 		= GIL_NONE;
 	id 			= 115;
 	voice 		= 4;

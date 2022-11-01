@@ -32,7 +32,7 @@ instance DIA_Rukhar_HALLO		(C_INFO)
 	condition	 = 	DIA_Rukhar_HALLO_Condition;
 	information	 = 	DIA_Rukhar_HALLO_Info;
 
-	description	 = 	"Je tady dobrÈ pivo?";
+	description	 = 	"Je tady dobr√© pivo?";
 };
 
 func int DIA_Rukhar_HALLO_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Rukhar_HALLO_Condition ()
 
 func void DIA_Rukhar_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_HALLO_15_00"); //Je tady dobrÈ pivo?
-	AI_Output			(self, other, "DIA_Rukhar_HALLO_12_01"); //NenÌ to zrovna excelentnÌ, ale v tÏchhle temnejch Ëasech si nem˘ûeö moc vybÌrat.
+	AI_Output			(other, self, "DIA_Rukhar_HALLO_15_00"); //Je tady dobr√© pivo?
+	AI_Output			(self, other, "DIA_Rukhar_HALLO_12_01"); //Nen√≠ to zrovna excelentn√≠, ale v tƒõchhle temnejch ƒçasech si nem≈Ø≈æe≈° moc vyb√≠rat.
 
 };
 
@@ -57,7 +57,7 @@ instance DIA_Rukhar_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Rukhar_WASMACHSTDU_Condition;
 	information	 = 	DIA_Rukhar_WASMACHSTDU_Info;
 
-	description	 = 	"Co tady dÏl·ö?";
+	description	 = 	"Co tady dƒõl√°≈°?";
 };
 
 func int DIA_Rukhar_WASMACHSTDU_Condition ()
@@ -70,14 +70,14 @@ func int DIA_Rukhar_WASMACHSTDU_Condition ()
 
 func void DIA_Rukhar_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_WASMACHSTDU_15_00"); //Co tady dÏl·ö?
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_01"); //Aû do minulÈho t˝dne jsem d¯el jak mezek na polÌch velkostatk·¯e.
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_02"); //Jednoho dne uû jsem toho prostÏ mÏl dost, a tak jsem odtamtud vypadnul.
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_03"); //TeÔ jsem sv˝m vlastnÌm p·nem. Vöechno, co vlastnÌm, je tady v tÈ truhle. A to je taky vöe, co pot¯ebuju.
-	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_04"); //MÏl bys z·jem o menöÌ soutÏû?
+	AI_Output			(other, self, "DIA_Rukhar_WASMACHSTDU_15_00"); //Co tady dƒõl√°≈°?
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_01"); //A≈æ do minul√©ho t√Ωdne jsem d≈ôel jak mezek na pol√≠ch velkostatk√°≈ôe.
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_02"); //Jednoho dne u≈æ jsem toho prostƒõ mƒõl dost, a tak jsem odtamtud vypadnul.
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_03"); //Teƒè jsem sv√Ωm vlastn√≠m p√°nem. V≈°echno, co vlastn√≠m, je tady v t√© truhle. A to je taky v≈°e, co pot≈ôebuju.
+	AI_Output			(self, other, "DIA_Rukhar_WASMACHSTDU_12_04"); //Mƒõl bys z√°jem o men≈°√≠ soutƒõ≈æ?
 	Log_CreateTopic (TOPIC_Wettsaufen, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wettsaufen, LOG_RUNNING);
-	B_LogEntry (TOPIC_Wettsaufen,"V hospodÏ se uzavÌrajÌ s·zky."); 
+	B_LogEntry (TOPIC_Wettsaufen,"V hospodƒõ se uzav√≠raj√≠ s√°zky."); 
 
 };
 
@@ -92,7 +92,7 @@ instance DIA_Rukhar_WETTKAMPF		(C_INFO)
 	condition	 = 	DIA_Rukhar_WETTKAMPF_Condition;
 	information	 = 	DIA_Rukhar_WETTKAMPF_Info;
 
-	description	 = 	"A jak· soutÏû by to mÏla b˝t?";
+	description	 = 	"A jak√° soutƒõ≈æ by to mƒõla b√Ωt?";
 };
 
 func int DIA_Rukhar_WETTKAMPF_Condition ()
@@ -105,13 +105,13 @@ func int DIA_Rukhar_WETTKAMPF_Condition ()
 
 func void DIA_Rukhar_WETTKAMPF_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_00"); //A jak· soutÏû by to mÏla b˝t?
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_01"); //ÿÌk·m tomu DO DNA.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_02"); //Pravidla jsou docela jednoduch·.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_03"); //Budeme se st¯Ìdat v objedn·v·nÌ korbel˘ toho nejlepöÌho piva, co m˘ûe ten chlap nabÌdnout.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_04"); //Kaûd˝ korbel musÌö do sebe hodit na ex. NesmÌ po nÏm zbejt na stole ani mokrej krouûek.
-	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_05"); //Kdo vydrûÌ nejd˝l, vyhr·v·. Poraûen˝ platÌ ˙tratu a s·zku. Tak co, jdeö do toho?
-	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_06"); //Moûn· jindy, aû nebudu mÌt tak naspÏch.
+	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_00"); //A jak√° soutƒõ≈æ by to mƒõla b√Ωt?
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_01"); //≈ò√≠k√°m tomu DO DNA.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_02"); //Pravidla jsou docela jednoduch√°.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_03"); //Budeme se st≈ô√≠dat v objedn√°v√°n√≠ korbel≈Ø toho nejlep≈°√≠ho piva, co m≈Ø≈æe ten chlap nab√≠dnout.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_04"); //Ka≈æd√Ω korbel mus√≠≈° do sebe hodit na ex. Nesm√≠ po nƒõm zbejt na stole ani mokrej krou≈æek.
+	AI_Output			(self, other, "DIA_Rukhar_WETTKAMPF_12_05"); //Kdo vydr≈æ√≠ nejd√Ωl, vyhr√°v√°. Pora≈æen√Ω plat√≠ √∫tratu a s√°zku. Tak co, jde≈° do toho?
+	AI_Output			(other, self, "DIA_Rukhar_WETTKAMPF_15_06"); //Mo≈æn√° jindy, a≈æ nebudu m√≠t tak naspƒõch.
 
 };
 
@@ -125,7 +125,7 @@ instance DIA_Rukhar_HOLERANDOLPH		(C_INFO)
 	condition	 = 	DIA_Rukhar_HOLERANDOLPH_Condition;
 	information	 = 	DIA_Rukhar_HOLERANDOLPH_Info;
 
-	description	 = 	"A m˘ûu si tedy vsadit na nÏkoho jinÈho?";
+	description	 = 	"A m≈Ø≈æu si tedy vsadit na nƒõkoho jin√©ho?";
 };
 
 func int DIA_Rukhar_HOLERANDOLPH_Condition ()
@@ -138,11 +138,11 @@ func int DIA_Rukhar_HOLERANDOLPH_Condition ()
 
 func void DIA_Rukhar_HOLERANDOLPH_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_HOLERANDOLPH_15_00"); //M˘ûu si taky vsadit na nÏkoho jinÈho?
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_01"); //Samoz¯ejmÏ. Kdyû dok·ûeö sehnat nÏkoho, kdo bude mÌt odvahu se mi postavit, pak se se mnou m˘ûeö vsadit.
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_02"); //Vöichni d·vajÌ stejn˝ vklad. VÌtÏz bere vöechno. V˝öka s·zky z·leûÌ jen na tvÈ penÏûence.
-	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_03"); //DohoÔ mi nÏkoho, kdo bude mÌt dost odvahy si to se mnou rozdat, a m˘ûeö si vsadit.
-	B_LogEntry (TOPIC_Wettsaufen,"Rukhar tÈ svÈ h¯e ¯Ìk· NA EX! Ne, dÌky, ale to mÏ nezajÌm·. Radöi najdu nÏkoho jinÈho, z koho m˘ûe dÏlat kaöpara."); 
+	AI_Output			(other, self, "DIA_Rukhar_HOLERANDOLPH_15_00"); //M≈Ø≈æu si taky vsadit na nƒõkoho jin√©ho?
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_01"); //Samoz≈ôejmƒõ. Kdy≈æ dok√°≈æe≈° sehnat nƒõkoho, kdo bude m√≠t odvahu se mi postavit, pak se se mnou m≈Ø≈æe≈° vsadit.
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_02"); //V≈°ichni d√°vaj√≠ stejn√Ω vklad. V√≠tƒõz bere v≈°echno. V√Ω≈°ka s√°zky z√°le≈æ√≠ jen na tv√© penƒõ≈æence.
+	AI_Output			(self, other, "DIA_Rukhar_HOLERANDOLPH_12_03"); //Dohoƒè mi nƒõkoho, kdo bude m√≠t dost odvahy si to se mnou rozdat, a m≈Ø≈æe≈° si vsadit.
+	B_LogEntry (TOPIC_Wettsaufen,"Rukhar t√© sv√© h≈ôe ≈ô√≠k√° NA EX! Ne, d√≠ky, ale to mƒõ nezaj√≠m√°. Rad≈°i najdu nƒõkoho jin√©ho, z koho m≈Ø≈æe dƒõlat ka≈°para."); 
 
 };
 
@@ -157,7 +157,7 @@ instance DIA_Rukhar_RANDOLPHWILL		(C_INFO)
 	information	 = 	DIA_Rukhar_RANDOLPHWILL_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"M·m nÏkoho, kdo by s tebou chtÏl soupe¯it.";
+	description	 = 	"M√°m nƒõkoho, kdo by s tebou chtƒõl soupe≈ôit.";
 };
 
 var int DIA_Rukhar_RANDOLPHWILL_noPerm;
@@ -176,13 +176,13 @@ func int DIA_Rukhar_RANDOLPHWILL_Condition ()
 
 func void DIA_Rukhar_RANDOLPHWILL_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_15_00"); //M·m nÏkoho, kdo by chtÏl s tebou soupe¯it.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_01"); //Kdo by to mohl b˝t?
+	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_15_00"); //M√°m nƒõkoho, kdo by chtƒõl s tebou soupe≈ôit.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_01"); //Kdo by to mohl b√Ωt?
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_15_02"); //Randolph.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_03"); //Ho, hÛ. Chvastoun Randolph? Dobr·. ProË ne.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_04"); //Poöli mi sem toho straöpytla a j· za¯ÌdÌm zbytek.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_05"); //Sebere se aû tak za dva dny. Kdo vÌ? T¯eba budeö mÌt ötÏstÌ a on se pak jeötÏ nÏkdy postavÌ.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_06"); //Jak· je tvoje s·zka?
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_03"); //Ho, h√≥. Chvastoun Randolph? Dobr√°. Proƒç ne.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_04"); //Po≈°li mi sem toho stra≈°pytla a j√° za≈ô√≠d√≠m zbytek.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_05"); //Sebere se a≈æ tak za dva dny. Kdo v√≠? T≈ôeba bude≈° m√≠t ≈°tƒõst√≠ a on se pak je≈°tƒõ nƒõkdy postav√≠.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_12_06"); //Jak√° je tvoje s√°zka?
 
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
 
@@ -190,12 +190,12 @@ func void DIA_Rukhar_RANDOLPHWILL_Info ()
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "100", DIA_Rukhar_RANDOLPHWILL_100 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "50", DIA_Rukhar_RANDOLPHWILL_50 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "20", DIA_Rukhar_RANDOLPHWILL_20 );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 zlat˝ch", DIA_Rukhar_RANDOLPHWILL_10 );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 zlat√Ωch", DIA_Rukhar_RANDOLPHWILL_10 );
 };
 func void DIA_Rukhar_RANDOLPHWILL_annehmen ()
 {
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_annehmen_12_00"); //Vezmu si tvou s·zku a bude u mÏ aû do konce soutÏûe, dobr·?
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_annehmen_12_00"); //Vezmu si tvou s√°zku a bude u mƒõ a≈æ do konce soutƒõ≈æe, dobr√°?
 	DIA_Rukhar_RANDOLPHWILL_noPerm = TRUE;
 };
 
@@ -207,68 +207,68 @@ func void DIA_Rukhar_RANDOLPHWILL_mehr ()
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "50", DIA_Rukhar_RANDOLPHWILL_100 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "50", DIA_Rukhar_RANDOLPHWILL_50 );
 	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "20", DIA_Rukhar_RANDOLPHWILL_20 );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 zlat˝ch", DIA_Rukhar_RANDOLPHWILL_10 );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "10 zlat√Ωch", DIA_Rukhar_RANDOLPHWILL_10 );
 };
 
 
 func void DIA_Rukhar_RANDOLPHWILL_nix ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_nix_15_00"); //Nic.
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_nix_12_01"); //Tak to m˘ûem na celou vÏc zapomenout.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_nix_12_01"); //Tak to m≈Ø≈æem na celou vƒõc zapomenout.
 
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Rukhar_RANDOLPHWILL_10 ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_10_15_00"); //10 zlat˝ch
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_10_12_01"); //Hele, tohle nem˘ûeö myslet v·ûnÏ. O nÏco vÌc zlata tÏ snad nezabije.
+	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_10_15_00"); //10 zlat√Ωch
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_10_12_01"); //Hele, tohle nem≈Ø≈æe≈° myslet v√°≈ænƒõ. O nƒõco v√≠c zlata tƒõ snad nezabije.
 
 	Rukhar_Einsatz = 10;
 	Rukhar_Gewinn = 20;
 
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s·zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P¯ijmout s·zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s√°zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P≈ôijmout s√°zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
 func void DIA_Rukhar_RANDOLPHWILL_20 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_20_15_00"); //20
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_20_12_01"); //Kdyû uû se chceö vs·zet, tak to laskavÏ dÏlej po¯·dnÏ.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_20_12_01"); //Kdy≈æ u≈æ se chce≈° vs√°zet, tak to laskavƒõ dƒõlej po≈ô√°dnƒõ.
 
 	Rukhar_Einsatz = 20;
 	Rukhar_Gewinn = 40;
 	
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s·zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P¯ijmout s·zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s√°zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P≈ôijmout s√°zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
 func void DIA_Rukhar_RANDOLPHWILL_50 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_50_15_00"); //50
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_50_12_01"); //Nedrû se tak p¯i zdi. Trochu odvahy.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_50_12_01"); //Nedr≈æ se tak p≈ôi zdi. Trochu odvahy.
 
 	Rukhar_Einsatz = 50;
 	Rukhar_Gewinn = 100;
 	
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s·zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P¯ijmout s·zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s√°zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P≈ôijmout s√°zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
 func void DIA_Rukhar_RANDOLPHWILL_100 ()
 {
 	AI_Output			(other, self, "DIA_Rukhar_RANDOLPHWILL_100_15_00"); //100
-	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_100_12_01"); //To jsem chtÏl slyöet.
+	AI_Output			(self, other, "DIA_Rukhar_RANDOLPHWILL_100_12_01"); //To jsem chtƒõl sly≈°et.
 	
 	Rukhar_Einsatz = 100;
 	Rukhar_Gewinn = 200;
 	
 	Info_ClearChoices	(DIA_Rukhar_RANDOLPHWILL);
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s·zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
-	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P¯ijmout s·zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(Zvolit jinou s√°zku.)", DIA_Rukhar_RANDOLPHWILL_mehr );
+	Info_AddChoice	(DIA_Rukhar_RANDOLPHWILL, "(P≈ôijmout s√°zku.)", DIA_Rukhar_RANDOLPHWILL_annehmen );
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -282,7 +282,7 @@ instance DIA_Rukhar_ICHSEHEDICH		(C_INFO)
 	information	 = 	DIA_Rukhar_ICHSEHEDICH_Info;
 	permanent	 = 	TRUE;
 	
-	description	=	"Tady je m˘j vklad.";
+	description	=	"Tady je m≈Øj vklad.";
 };
 
 var int DIA_Rukhar_ICHSEHEDICH_noPerm;
@@ -301,18 +301,18 @@ func int DIA_Rukhar_ICHSEHEDICH_Condition ()
 
 func void DIA_Rukhar_ICHSEHEDICH_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_ICHSEHEDICH_15_00"); //Tady je m˘j vklad.
+	AI_Output			(other, self, "DIA_Rukhar_ICHSEHEDICH_15_00"); //Tady je m≈Øj vklad.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold, Rukhar_Einsatz))
 		{
-			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_01"); //Dobr·. Moc tady Randolpha nezdrûuj, slyöÌö?
+			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_01"); //Dobr√°. Moc tady Randolpha nezdr≈æuj, sly≈°√≠≈°?
 			DIA_Rukhar_ICHSEHEDICH_noPerm = TRUE;
 			MIS_Rukhar_Wettkampf = LOG_RUNNING; 
 			B_GivePlayerXP (XP_Ambient);
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_02"); //To je sranda. Vraù se, aû budeö mÌt dost penÏz.
+			AI_Output			(self, other, "DIA_Rukhar_ICHSEHEDICH_12_02"); //To je sranda. Vra≈• se, a≈æ bude≈° m√≠t dost penƒõz.
 		};
 	AI_StopProcessInfos (self);
 };
@@ -329,7 +329,7 @@ instance DIA_Rukhar_GELDZURUECK		(C_INFO)
 	information	 = 	DIA_Rukhar_GELDZURUECK_Info;
 	permanent	 = 	TRUE;
 	
-	description	 = 	"Chci zp·tky svoje penÌze.";
+	description	 = 	"Chci zp√°tky svoje pen√≠ze.";
 };
 
 func int DIA_Rukhar_GELDZURUECK_Condition ()
@@ -345,8 +345,8 @@ func int DIA_Rukhar_GELDZURUECK_Condition ()
 
 func void DIA_Rukhar_GELDZURUECK_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_GELDZURUECK_15_00"); //Chci zp·tky svoje penÌze.
-	AI_Output			(self, other, "DIA_Rukhar_GELDZURUECK_12_01"); //HernÌ s·zky jsou s·zkami cti, k·mo. MÏl sis to rozmyslet d¯Ìv.
+	AI_Output			(other, self, "DIA_Rukhar_GELDZURUECK_15_00"); //Chci zp√°tky svoje pen√≠ze.
+	AI_Output			(self, other, "DIA_Rukhar_GELDZURUECK_12_01"); //Hern√≠ s√°zky jsou s√°zkami cti, k√°mo. Mƒõl sis to rozmyslet d≈ô√≠v.
 
 	AI_StopProcessInfos (self);
 };
@@ -363,7 +363,7 @@ instance DIA_Rukhar_HAENSELN		(C_INFO)
 	information	 = 	DIA_Rukhar_HAENSELN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vypad·ö, ûe sis vzal vÏtöÌ sousto, neû dok·ûeö spolknout.";
+	description	 = 	"Vypad√°≈°, ≈æe sis vzal vƒõt≈°√≠ sousto, ne≈æ dok√°≈æe≈° spolknout.";
 };
 
 func int DIA_Rukhar_HAENSELN_Condition ()
@@ -381,11 +381,11 @@ var int DIA_Rukhar_HAENSELN_nureimalgeld;
 
 func void DIA_Rukhar_HAENSELN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rukhar_HAENSELN_15_00"); //Vypad·ö, ûe sis vzal vÏtöÌ sousto, neû dok·ûeö spolknout.
+	AI_Output			(other, self, "DIA_Rukhar_HAENSELN_15_00"); //Vypad√°≈°, ≈æe sis vzal vƒõt≈°√≠ sousto, ne≈æ dok√°≈æe≈° spolknout.
 
 	if	(DIA_Rukhar_HAENSELN_nureimalgeld == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_01"); //Tady jsou tvÈ penÌze a uû ani slovo.
+			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_01"); //Tady jsou tv√© pen√≠ze a u≈æ ani slovo.
 			B_GivePlayerXP (XP_Rukhar_Lost);
 
 			IntToFloat (Rukhar_Gewinn);
@@ -397,7 +397,7 @@ func void DIA_Rukhar_HAENSELN_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_02"); //JeötÏ si to s tebou vy¯ÌdÌm, na to se m˘ûeö spolehnout.
+			AI_Output			(self, other, "DIA_Rukhar_HAENSELN_12_02"); //Je≈°tƒõ si to s tebou vy≈ô√≠d√≠m, na to se m≈Ø≈æe≈° spolehnout.
 		};
 
 	AI_StopProcessInfos (self);
@@ -413,7 +413,7 @@ instance DIA_Rukhar_Perm		(C_INFO)
 	condition	 = 	DIA_Rukhar_Perm_Condition;
 	information	 = 	DIA_Rukhar_Perm_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Stalo se jeötÏ nÏco, co by st·lo za ¯eË?";
+	description	 = 	"Stalo se je≈°tƒõ nƒõco, co by st√°lo za ≈ôeƒç?";
 };
 
 func int DIA_Rukhar_Perm_Condition ()
@@ -425,8 +425,8 @@ func int DIA_Rukhar_Perm_Condition ()
 };
 func void DIA_Rukhar_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Rukhar_Perm_15_00"); //Stalo se jeötÏ nÏco, co by st·lo za ¯eË?
-	AI_Output (self, other, "DIA_Rukhar_Perm_12_01"); //Nic, o Ëem bych vÏdÏl. Nikdo mi nic ne¯ekl.
+	AI_Output (other, self, "DIA_Rukhar_Perm_15_00"); //Stalo se je≈°tƒõ nƒõco, co by st√°lo za ≈ôeƒç?
+	AI_Output (self, other, "DIA_Rukhar_Perm_12_01"); //Nic, o ƒçem bych vƒõdƒõl. Nikdo mi nic ne≈ôekl.
 };
 
 

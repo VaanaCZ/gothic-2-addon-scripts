@@ -1,6 +1,6 @@
 FUNC INT B_GoldMob_Bestimmung()
 {
-	//bin ich mobsi X und habe ich noch Gold ¸brig?
+	//bin ich mobsi X und habe ich noch Gold √ºbrig?
 	if Hlp_StrCmp (Npc_GetNearestWP (self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount)
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount +1);
@@ -153,7 +153,7 @@ INSTANCE PC_Goldhacken_Addon_Hour (C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Tak si trochu zak·cÌme."; 
+	description		= "Tak si trochu zak√°c√≠me."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Hour_Condition ()
@@ -200,7 +200,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 8)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-				PrintScreen ("Vydoloval jsi 3 zlatÈ nuggety!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Vydoloval jsi 3 zlat√© nuggety!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				
 			}
@@ -208,32 +208,32 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 5)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-				PrintScreen ("Vydoloval jsi 2 zlatÈ nuggety!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Vydoloval jsi 2 zlat√© nuggety!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			}
 			else
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-				PrintScreen ("Vydoloval jsi 1 zlat˝ nugget!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Vydoloval jsi 1 zlat√Ω nugget!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			};
 		}
 		else
 		{
-			PrintScreen ("Vöude lÌtajÌ odötÏpky zlata...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("V≈°ude l√≠taj√≠ od≈°tƒõpky zlata...", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("Uû tu nic nenÌ.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("U≈æ tu nic nen√≠.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
 //*******************************************************
-//	Goldhacken Tr¸mmerschlag
+//	Goldhacken Tr√ºmmerschlag
 //*******************************************************
 INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 {
@@ -242,7 +242,7 @@ INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 	condition		= PC_Goldhacken_Addon_TSchlag_Condition;
 	information		= PC_Goldhacken_Addon_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Po¯·dnÏ do toho praöti."; 
+	description		= "Po≈ô√°dnƒõ do toho pra≈°ti."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_TSchlag_Condition ()
@@ -261,7 +261,7 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		
 	if (TruemmerChance < 5)
 	{
-			PrintScreen ("Ani ùuk...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Ani ≈•uk...", -1, -1, FONT_ScreenSmall, 2);	
 	}
 	else
 	{
@@ -273,19 +273,19 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-			PrintScreen ("Vydoloval jsi 3 zlatÈ nuggety!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Vydoloval jsi 3 zlat√© nuggety!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-			PrintScreen ("Vydoloval jsi 2 zlatÈ nuggety!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Vydoloval jsi 2 zlat√© nuggety!", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-			PrintScreen ("Vydoloval jsi 1 zlat˝ nugget!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Vydoloval jsi 1 zlat√Ω nugget!", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 	Truemmer_Count = 0;
@@ -302,7 +302,7 @@ INSTANCE PC_Goldhacken_Addon_Chance (C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(ohodnoù si vlastnÌ schopnosti)"; 
+	description		= "(ohodno≈• si vlastn√≠ schopnosti)"; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Chance_Condition ()
@@ -319,23 +319,23 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	
 	if (Hero_HackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("mizern˝ zaË·teËnÌk (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("mizern√Ω zaƒç√°teƒçn√≠k (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("obstojn˝ kop·Ë (" , IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("obstojn√Ω kop√°ƒç (" , IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("zkuöen˝ zlatokop (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("zku≈°en√Ω zlatokop (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("prav˝ zlatokop ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("prav√Ω zlatokop ( ", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("zatracenÏ dobr˝ zlatokop ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("zatracenƒõ dobr√Ω zlatokop ( ", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 98) 
 	{
@@ -343,7 +343,7 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	}
 	else
 	{
-		ConcatText = ConcatStrings ("zlatokopeck˝ guru ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("zlatokopeck√Ω guru ( ", IntToString (Hero_HackChance));
 	};
 	
 	ConcatText = ConcatStrings (concatText, " procent)");

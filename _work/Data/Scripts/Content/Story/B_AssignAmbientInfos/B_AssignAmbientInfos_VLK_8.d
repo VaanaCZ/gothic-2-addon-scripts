@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_8_JOIN(C_INFO)
 	condition	= DIA_VLK_8_JOIN_Condition;
 	information	= DIA_VLK_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "Chci se stát obèanem tohoto mìsta!";
+	description = "Chci se stÃ¡t obÄanem tohoto mÄ›sta!";
 };                       
 
 FUNC INT DIA_VLK_8_JOIN_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_VLK_8_JOIN_Condition()
 
 FUNC VOID DIA_VLK_8_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //Chci se stát obèanem tohoto mìsta!
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //A proè to øíkáš mnì? Zajdi za jedním z øemeslnických mistrù v dolní èásti mìsta. Možná, když budeš mít štìstí, bude nìkterý z nich hledat uèedníka.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //Jindy bys mohl zajít za místodržícím a nechat se zapsat do registru mìšanù.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //Ale teï na to mùžeš rovnou zapomenout. Od té doby, co sem pøišli paladinové, nemá místodržící žádné pravomoci.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //A jejich velitel, lord Hagen, zaruèenì nemá na podobné vìci èas.
+	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //Chci se stÃ¡t obÄanem tohoto mÄ›sta!
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //A proÄ to Å™Ã­kÃ¡Å¡ mnÄ›? Zajdi za jednÃ­m z Å™emeslnickÃ½ch mistrÅ¯ v dolnÃ­ ÄÃ¡sti mÄ›sta. MoÅ¾nÃ¡, kdyÅ¾ budeÅ¡ mÃ­t Å¡tÄ›stÃ­, bude nÄ›kterÃ½ z nich hledat uÄednÃ­ka.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //Jindy bys mohl zajÃ­t za mÃ­stodrÅ¾Ã­cÃ­m a nechat se zapsat do registru mÄ›Å¡Å¥anÅ¯.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //Ale teÄ na to mÅ¯Å¾eÅ¡ rovnou zapomenout. Od tÃ© doby, co sem pÅ™iÅ¡li paladinovÃ©, nemÃ¡ mÃ­stodrÅ¾Ã­cÃ­ Å¾Ã¡dnÃ© pravomoci.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //A jejich velitel, lord Hagen, zaruÄenÄ› nemÃ¡ na podobnÃ© vÄ›ci Äas.
 };
 
 // *************************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_VLK_8_PEOPLE(C_INFO)
 	condition	= DIA_VLK_8_PEOPLE_Condition;
 	information	= DIA_VLK_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo v tomhle mìstì požívá nejvìtší vážnosti?";
+	description = "Kdo v tomhle mÄ›stÄ› poÅ¾Ã­vÃ¡ nejvÄ›tÅ¡Ã­ vÃ¡Å¾nosti?";
 };                       
 
 FUNC INT DIA_VLK_8_PEOPLE_Condition()
@@ -69,8 +69,8 @@ FUNC INT DIA_VLK_8_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_8_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //Kdo v tomhle mìstì požívá nejvìtší vážnosti?
-	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //Kromì paladinù... øemeslniètí mistøi v dolní èásti mìsta. Ti jsou také velmi vážení.
+	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //Kdo v tomhle mÄ›stÄ› poÅ¾Ã­vÃ¡ nejvÄ›tÅ¡Ã­ vÃ¡Å¾nosti?
+	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //KromÄ› paladinÅ¯... Å™emeslniÄtÃ­ mistÅ™i v dolnÃ­ ÄÃ¡sti mÄ›sta. Ti jsou takÃ© velmi vÃ¡Å¾enÃ­.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_8_LOCATION(C_INFO)
 	condition	= DIA_VLK_8_LOCATION_Condition;
 	information	= DIA_VLK_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co je tu zajímavého k vidìní?";
+	description = "Co je tu zajÃ­mavÃ©ho k vidÄ›nÃ­?";
 };                       
 
 FUNC INT DIA_VLK_8_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_8_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_8_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Co je tu zajímavého k vidìní?
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //V pøístavu je obrovská loï, kterou paladinové pøipluli. Je to neuvìøitelnì velké plavidlo. Mìl by ses na nìj podívat.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //Ale nedokážu si pøedstavit, že by tì pustili na palubu. Paladinové støeží svoji loï jako korunovaèní klenoty.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //Není divu. Taky to je jediná námoøní loï široko daleko.
+	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Co je tu zajÃ­mavÃ©ho k vidÄ›nÃ­?
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //V pÅ™Ã­stavu je obrovskÃ¡ loÄ, kterou paladinovÃ© pÅ™ipluli. Je to neuvÄ›Å™itelnÄ› velkÃ© plavidlo. MÄ›l by ses na nÄ›j podÃ­vat.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //Ale nedokÃ¡Å¾u si pÅ™edstavit, Å¾e by tÄ› pustili na palubu. PaladinovÃ© stÅ™eÅ¾Ã­ svoji loÄ jako korunovaÄnÃ­ klenoty.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //NenÃ­ divu. Taky to je jedinÃ¡ nÃ¡moÅ™nÃ­ loÄ Å¡iroko daleko.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_VLK_8_STANDARD(C_INFO)
 	condition	= DIA_VLK_8_STANDARD_Condition;
 	information	= DIA_VLK_8_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_VLK_8_STANDARD_Condition()
 {
@@ -115,13 +115,13 @@ func INT DIA_VLK_8_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_8_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //V poslední dobì mají starosti všichni.
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Jako by nestaèilo, že se tu usadili paladinové. Teï tu ještì neustále mizejí lidi, a to tím nejpodivnìjším zpùsobem.
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //Je èas, aby v tom domobrana koneènì nìco udìlala.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //V poslednÃ­ dobÄ› majÃ­ starosti vÅ¡ichni.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Jako by nestaÄilo, Å¾e se tu usadili paladinovÃ©. TeÄ tu jeÅ¡tÄ› neustÃ¡le mizejÃ­ lidi, a to tÃ­m nejpodivnÄ›jÅ¡Ã­m zpÅ¯sobem.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //Je Äas, aby v tom domobrana koneÄnÄ› nÄ›co udÄ›lala.
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
 				Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -133,25 +133,25 @@ FUNC VOID DIA_VLK_8_STANDARD_Info()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Všichni èekají na to, až paladinové oznámí, proè tu doopravdy jsou. Pøedpokládám, že kvùli skøetùm. Urèitì co nevidìt zaútoèí!
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //Paladinové možná mají Innosovo požehnání, ale až se objeví skøeti, bude to na nás.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //VÅ¡ichni ÄekajÃ­ na to, aÅ¾ paladinovÃ© oznÃ¡mÃ­, proÄ tu doopravdy jsou. PÅ™edpoklÃ¡dÃ¡m, Å¾e kvÅ¯li skÅ™etÅ¯m. UrÄitÄ› co nevidÄ›t zaÃºtoÄÃ­!
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //PaladinovÃ© moÅ¾nÃ¡ majÃ­ Innosovo poÅ¾ehnÃ¡nÃ­, ale aÅ¾ se objevÃ­ skÅ™eti, bude to na nÃ¡s.
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Øíká se, že tu paladinové jsou jen kvùli tomu, aby dostali všechnu rudu z ostrova. Prý kvùli válce na pevninì.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //Víš, co to znamená? Královi je úplnì volný, jestli tady chcípnem, až skøeti zaútoèí.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Budu se snažit být na palubì, až budou paladinové zvedat kotvy.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Å˜Ã­kÃ¡ se, Å¾e tu paladinovÃ© jsou jen kvÅ¯li tomu, aby dostali vÅ¡echnu rudu z ostrova. PrÃ½ kvÅ¯li vÃ¡lce na pevninÄ›.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //VÃ­Å¡, co to znamenÃ¡? KrÃ¡lovi je ÃºplnÄ› volnÃ½, jestli tady chcÃ­pnem, aÅ¾ skÅ™eti zaÃºtoÄÃ­.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Budu se snaÅ¾it bÃ½t na palubÄ›, aÅ¾ budou paladinovÃ© zvedat kotvy.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //Øíká se, že skøeti pøiletí do našeho mìsta na dracích, co jsou velcí jako polovina mìsta! Nemáme žádnou šanci!
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //Å˜Ã­kÃ¡ se, Å¾e skÅ™eti pÅ™iletÃ­ do naÅ¡eho mÄ›sta na dracÃ­ch, co jsou velcÃ­ jako polovina mÄ›sta! NemÃ¡me Å¾Ã¡dnou Å¡anci!
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //Mezi lidmi se povídá, že draci byli poraženi. Mùže to být pravda?
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //Mezi lidmi se povÃ­dÃ¡, Å¾e draci byli poraÅ¾eni. MÅ¯Å¾e to bÃ½t pravda?
 	};
 };
 

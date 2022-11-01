@@ -45,30 +45,30 @@ func VOID DIA_Addon_BenchPirate_Hello_Info()
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_01"); //Greg uû je koneËnÏ zp·tky. Uû bylo naËase.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_01"); //Greg u≈æ je koneƒçnƒõ zp√°tky. U≈æ bylo naƒçase.
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_02"); //Francis by mÏl obstarat Ú·k˝ d¯evo na palis·du. Douf·m, ûe to na nÏj nenÌ moc.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_02"); //Francis by mƒõl obstarat ≈à√°k√Ω d≈ôevo na palis√°du. Douf√°m, ≈æe to na nƒõj nen√≠ moc.
 		}
 		else 
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_03"); //Tak teda hur· na bandity. Kdyû je na naöÌ stranÏ Greg, nebojÌme se jich.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_03"); //Tak teda hur√° na bandity. Kdy≈æ je na na≈°√≠ stranƒõ Greg, neboj√≠me se jich.
 		};
 	}
 	else
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, velitel t·bora, nenÌ nic neû öaöek. Copak ho nÏkdo bere v·ûnÏ?
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, velitel t√°bora, nen√≠ nic ne≈æ ≈°a≈°ek. Copak ho nƒõkdo bere v√°≈ænƒõ?
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg vÏ¯Ì Francisovi, protoûe je moc hloupej na to, aby ho moh podv·dÏt! Ale to z nÏj p¯eci nedÏl· naöeho öÈfa.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg vƒõ≈ô√≠ Francisovi, proto≈æe je moc hloupej na to, aby ho moh podv√°dƒõt! Ale to z nƒõj p≈ôeci nedƒõl√° na≈°eho ≈°√©fa.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Jestli se Greg brzo nevr·tÌ a j· brzo neucejtÌm palubu pod nohama, dostanu suchozemskou nemoc!
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Jestli se Greg brzo nevr√°t√≠ a j√° brzo neucejt√≠m palubu pod nohama, dostanu suchozemskou nemoc!
 		};
 	};	
 };
@@ -90,7 +90,7 @@ INSTANCE DIA_Addon_BenchPirate_Anheuern(C_INFO)
 	condition	= DIA_Addon_BenchPirate_Anheuern_Condition;
 	information	= DIA_Addon_BenchPirate_Anheuern_Info;
 	permanent	= FALSE;
-	description = "MÏl bys mi pomoci.";
+	description = "Mƒõl bys mi pomoci.";
 };                       
 FUNC INT DIA_Addon_BenchPirate_Anheuern_Condition()
 {
@@ -101,9 +101,9 @@ FUNC INT DIA_Addon_BenchPirate_Anheuern_Condition()
 };
 func VOID DIA_Addon_BenchPirate_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_00"); //M·ö mi pomoct.
+	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_00"); //M√°≈° mi pomoct.
 	AI_Output (self ,other,"DIA_Addon_BenchPirate_Anheuern_07_01"); //Rozkazy od Grega?
-	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_08"); //P¯esnÏ tak.
+	AI_Output (other,self ,"DIA_Addon_BenchPirate_Anheuern_15_08"); //P≈ôesnƒõ tak.
 };
 
 // ------------------------------------------------------------
@@ -116,7 +116,7 @@ instance DIA_Addon_BenchPirate_ComeOn(C_INFO)
 	condition	= DIA_Addon_BenchPirate_ComeOn_Condition;
 	information	= DIA_Addon_BenchPirate_ComeOn_Info;
 	permanent	= TRUE;
-	description	= "KaÚon Ëek·.";
+	description	= "Ka≈àon ƒçek√°.";
 };
 func int DIA_Addon_BenchPirate_ComeOn_Condition ()
 {
@@ -129,15 +129,15 @@ func int DIA_Addon_BenchPirate_ComeOn_Condition ()
 };
 func void DIA_Addon_BenchPirate_ComeOn_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_BenchPirate_ComeOn_15_01"); //KaÚon Ëek·.
+	AI_Output	(other, self, "DIA_Addon_BenchPirate_ComeOn_15_01"); //Ka≈àon ƒçek√°.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //P¯esnÏ tam teÔ mÌ¯Ìm.
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //P≈ôesnƒõ tam teƒè m√≠≈ô√≠m.
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //Rozkaz, kapit·ne!
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //Rozkaz, kapit√°ne!
 		if (C_BodyStateContains (self, BS_SIT))
 		{
 			AI_StandUp (self);
@@ -160,7 +160,7 @@ INSTANCE DIA_Addon_BenchPirate_GoHome(C_INFO)
 	condition	= DIA_Addon_BenchPirate_GoHome_Condition;
 	information	= DIA_Addon_BenchPirate_GoHome_Info;
 	permanent	= TRUE;
-	description = "Uû tÏ nepot¯ebuju.";
+	description = "U≈æ tƒõ nepot≈ôebuju.";
 };                       
 FUNC INT DIA_Addon_BenchPirate_GoHome_Condition()
 {
@@ -172,8 +172,8 @@ FUNC INT DIA_Addon_BenchPirate_GoHome_Condition()
 
 FUNC VOID DIA_Addon_BenchPirate_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_BenchPirate_GoHome_15_00"); //Uû tÏ nepot¯ebuju.
-	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_01"); //Jdu zp·tky do t·bora, kapit·ne.
+	AI_Output (other,self ,"DIA_Addon_BenchPirate_GoHome_15_00"); //U≈æ tƒõ nepot≈ôebuju.
+	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_01"); //Jdu zp√°tky do t√°bora, kapit√°ne.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -202,15 +202,15 @@ FUNC INT DIA_Addon_BenchPirate_TooFar_Condition()
 
 FUNC VOID DIA_Addon_BenchPirate_TooFar_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_BenchPirate_TooFar_07_01"); //Uû jsme moc daleko od t·bora. 
-	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_02"); //Tohle se mi v˘bec nelÌbÌ.
+	AI_Output (self ,other,"DIA_Addon_BenchPirate_TooFar_07_01"); //U≈æ jsme moc daleko od t√°bora. 
+	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_02"); //Tohle se mi v≈Øbec nel√≠b√≠.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_02"); //VracÌm se do t·bora!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_02"); //Vrac√≠m se do t√°bora!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_03"); //J· i ostatnÌ chlapi jdem zp·tky do t·bora!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_03"); //J√° i ostatn√≠ chlapi jdem zp√°tky do t√°bora!
 	};
 		
 	B_Addon_PiratesGoHome();

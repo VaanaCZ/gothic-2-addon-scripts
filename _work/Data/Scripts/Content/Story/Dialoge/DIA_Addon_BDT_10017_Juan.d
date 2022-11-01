@@ -72,11 +72,11 @@ FUNC INT DIA_Addon_Juan_HI_Condition()
 FUNC VOID DIA_Addon_Juan_HI_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Juan_HI_15_00");//Jak to jde?
-	AI_Output (self,other,"DIA_Addon_Juan_HI_13_01");//Co chceš? Chceš mi øíct nìco dùleitıho? Jestli ne, tak mùeš zase jít.
+	AI_Output (self,other,"DIA_Addon_Juan_HI_13_01");//Co chceÅ¡? ChceÅ¡ mi Å™Ã­ct nÄ›co dÅ¯leÅ¾itÃ½ho? Jestli ne, tak mÅ¯Å¾eÅ¡ zase jÃ­t.
 	
 	if !Npc_IsDead (Freund)
 	{
-		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//Jinak z tebe mùj kámoš nadìlá sekanou. Tak co je?
+		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//Jinak z tebe mÅ¯j kÃ¡moÅ¡ nadÄ›lÃ¡ sekanou. Tak co je?
 		B_StartOtherRoutine (Freund,"STAND");
 	};
 };	
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_Juan_Losung   (C_INFO)
 	condition   = DIA_Addon_Juan_Losung_Condition;
 	information = DIA_Addon_Juan_Losung_Info;
 	permanent   = FALSE;
-	description = "Prı máš nìco zajímavého na prodej...";
+	description = "PrÃ½ mÃ¡Å¡ nÄ›co zajÃ­mavÃ©ho na prodej...";
 };
 FUNC INT DIA_Addon_Juan_Losung_Condition()
 {	
@@ -103,12 +103,12 @@ FUNC INT DIA_Addon_Juan_Losung_Condition()
 };
 FUNC VOID DIA_Addon_Juan_Losung_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Prı máš na prodej nìco zajímavého.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//Take Esteban mì chce vodit za nos? U celı dny makám jak barevnej a musím se schovávat v tıhle mizernı díøe.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//A on mi sem kliïánko pošle nìkoho s dalšíma krámama? Já nejsem ádnı skladištì!
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//No a? To není mùj problém.
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Ale to si piš, e jo, o to se postarám. Chceš zásilku? Dobøe, mùeš za ni zaplatit!
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Seeò si zlato u Estebana, u Havrana nebo já nevím kde. Mnì je to fuk. Ale kadej, kdo chce tohle zboí, za nìj musí zaplatit!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//PrÃ½ mÃ¡Å¡ na prodej nÄ›co zajÃ­mavÃ©ho.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//TakÅ¾e Esteban mÄ› chce vodit za nos? UÅ¾ celÃ½ dny makÃ¡m jak barevnej a musÃ­m se schovÃ¡vat v tÃ½hle mizernÃ½ dÃ­Å™e.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//A on mi sem kliÄÃ¡nko poÅ¡le nÄ›koho s dalÅ¡Ã­ma krÃ¡mama? JÃ¡ nejsem Å¾Ã¡dnÃ½ skladiÅ¡tÄ›!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//No a? To nenÃ­ mÅ¯j problÃ©m.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Ale to si piÅ¡, Å¾e jo, o to se postarÃ¡m. ChceÅ¡ zÃ¡silku? DobÅ™e, mÅ¯Å¾eÅ¡ za ni zaplatit!
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//SeÅ¾eÅˆ si zlato u Estebana, u Havrana nebo jÃ¡ nevÃ­m kde. MnÄ› je to fuk. Ale kaÅ¾dej, kdo chce tohle zboÅ¾Ã­, za nÄ›j musÃ­ zaplatit!
 };
 
 //---------------------------------------------------------------------
@@ -121,7 +121,7 @@ INSTANCE DIA_Addon_Juan_AufsMaul (C_INFO)
 	condition   = DIA_Addon_Juan_AufsMaul_Condition;
 	information = DIA_Addon_Juan_AufsMaul_Info;
 	permanent   = FALSE;
-	description = "Mì neposlal Esteban!";
+	description = "MÄ› neposlal Esteban!";
 };
 FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 {	
@@ -132,8 +132,8 @@ FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 };
 FUNC VOID DIA_Addon_Juan_AufsMaul_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //Nepøicházím od Estebana!
-	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Fakt? No, tak to teda... Moment! Stùj, máš nìco na rameni.
+	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //NepÅ™ichÃ¡zÃ­m od Estebana!
+	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Fakt? No, tak to teda... Moment! StÅ¯j, mÃ¡Å¡ nÄ›co na rameni.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);

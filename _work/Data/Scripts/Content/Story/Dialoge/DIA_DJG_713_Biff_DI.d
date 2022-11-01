@@ -46,16 +46,16 @@ func int DIA_Biff_DI_HALLO_Condition ()
 
 func void DIA_Biff_DI_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //A? Kde je to bohatstvÌ, cos mi sliboval?
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //A? Kde je to bohatstv√≠, cos mi sliboval?
 
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_ORKS)==FALSE)
 		{
-				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //A co jsem ¯Ìkal p¯edtÌm, jeötÏ na mo¯i?
+				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //A co jsem ≈ô√≠kal p≈ôedt√≠m, je≈°tƒõ na mo≈ôi?
 		};
 
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //TeÔ tady m·ö hlÌdat loÔ.
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //Nerad bych celou cestu nazp·tek plaval.
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Do kelu. Kdybych to byl vÏdÏl, z˘stal bych radÏj v Khorinidu.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Teƒè tady m√°≈° hl√≠dat loƒè.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //Nerad bych celou cestu nazp√°tek plaval.
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Do kelu. Kdybych to byl vƒõdƒõl, z≈Østal bych radƒõj v Khorinidu.
 	AI_StopProcessInfos (self);
 };
 
@@ -70,7 +70,7 @@ instance DIA_Biff_DI_perm		(C_INFO)
 	information	 = 	DIA_Biff_DI_perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Na palubÏ vöechno v po¯·dku?";
+	description	 = 	"Na palubƒõ v≈°echno v po≈ô√°dku?";
 };
 
 func int DIA_Biff_DI_perm_Condition ()
@@ -84,8 +84,8 @@ func int DIA_Biff_DI_perm_Condition ()
 
 func void DIA_Biff_DI_perm_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //Na palubÏ vöechno v po¯·dku?
-	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //(podr·ûdÏnÏ) Jo, jo. Je tu klid.
+	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //Na palubƒõ v≈°echno v po≈ô√°dku?
+	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //(podr√°≈ædƒõnƒõ) Jo, jo. Je tu klid.
 	AI_StopProcessInfos (self);
 };
 
@@ -114,12 +114,12 @@ func int DIA_Biff_DI_ORKS_Condition ()
 
 func void DIA_Biff_DI_ORKS_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //Ty zavöiven˝ bestie!
-	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Co tady naho¯e ksakru dÏl·ö? MÏls hlÌdat loÔ.
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //Ta se jen tak nepotopÌ, chlape.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //Ty zav≈°iven√Ω bestie!
+	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Co tady naho≈ôe ksakru dƒõl√°≈°? Mƒõls hl√≠dat loƒè.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //Ta se jen tak nepotop√≠, chlape.
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -146,10 +146,10 @@ func int DIA_Biff_DI_UNDEADDRGDEAD_Condition ()
 func void DIA_Biff_DI_UNDEADDRGDEAD_Info ()
 {
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //A bylo to tak?
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Je to tak teÔ.
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //M˘ûu teÔ...
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //M˘ûeö vyrabovat celej ostrov, kdyû na to p¯ijde.
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //SkvÏl˝.
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Je to tak teƒè.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //M≈Ø≈æu teƒè...
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //M≈Ø≈æe≈° vyrabovat celej ostrov, kdy≈æ na to p≈ôijde.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Skvƒõl√Ω.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"PlunderTempel");
@@ -181,7 +181,7 @@ func int DIA_Biff_DI_plunder_Condition ()
 
 func void DIA_Biff_DI_plunder_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_plunder_07_00"); //Sakra. TeÔ ne.
+	AI_Output			(self, other, "DIA_Biff_DI_plunder_07_00"); //Sakra. Teƒè ne.
 	AI_StopProcessInfos (self);
 };
 

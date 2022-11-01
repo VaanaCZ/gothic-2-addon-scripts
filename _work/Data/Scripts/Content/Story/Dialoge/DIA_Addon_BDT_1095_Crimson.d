@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Crimson_Hi   (C_INFO)
 	condition   = DIA_Addon_Crimson_Hi_Condition;
 	information = DIA_Addon_Crimson_Hi_Info;
 	permanent   = FALSE;
-	description = "Co to dìláš? Tavíš zlato?";
+	description = "Co to dÄ›lÃ¡Å¡? TavÃ­Å¡ zlato?";
 };
 FUNC INT DIA_Addon_Crimson_Hi_Condition()
 {	
@@ -71,10 +71,10 @@ FUNC INT DIA_Addon_Crimson_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Co to dìláš? Tavíš zlato?
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Ne, èistím tu zeleninu. Samozøejmì e tavím zlato – a vyrábím z nìj mince.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//Protoe – jen si to pøedstav – jednou veèer sem pøišel Havran a dal mi do ruky razidlo mincí.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Z jedinıho zlatıho nuggetu mùu vyrobit hromádku penízù – jsem tak dobrej, e nikdo nepozná rozdíl!
+	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Co to dÄ›lÃ¡Å¡? TavÃ­Å¡ zlato?
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Ne, ÄistÃ­m tu zeleninu. SamozÅ™ejmÄ› Å¾e tavÃ­m zlato â€“ a vyrÃ¡bÃ­m z nÄ›j mince.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//ProtoÅ¾e â€“ jen si to pÅ™edstav â€“ jednou veÄer sem pÅ™iÅ¡el Havran a dal mi do ruky razidlo mincÃ­.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Z jedinÃ½ho zlatÃ½ho nuggetu mÅ¯Å¾u vyrobit hromÃ¡dku penÃ­zÅ¯ â€“ jsem tak dobrej, Å¾e nikdo nepoznÃ¡ rozdÃ­l!
 };
 //---------------------------------------------------------------------
 //	Info How
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Crimson_How   (C_INFO)
 	condition   = DIA_Addon_Crimson_How_Condition;
 	information = DIA_Addon_Crimson_How_Info;
 	permanent   = FALSE;
-	description = "Kolik zlaákù mi dáš za jeden nugget?";
+	description = "Kolik zlaÅ¥Ã¡kÅ¯ mi dÃ¡Å¡ za jeden nugget?";
 };
 FUNC INT DIA_Addon_Crimson_How_Condition()
 {	
@@ -97,8 +97,8 @@ FUNC INT DIA_Addon_Crimson_How_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_How_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//Kolik mincí mi dáš za jeden nugget?
-	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//No, to vùbec nevím, ale udìlám ti zvláštní cenu. Za jeden nugget ti dám...
+	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//Kolik mincÃ­ mi dÃ¡Å¡ za jeden nugget?
+	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//No, to vÅ¯bec nevÃ­m, ale udÄ›lÃ¡m ti zvlÃ¡Å¡tnÃ­ cenu. Za jeden nugget ti dÃ¡m...
 	B_Say_Gold (self, other, 10);
 };	
 //---------------------------------------------------------------------
@@ -111,7 +111,7 @@ INSTANCE DIA_Addon_Crimson_Feilsch   (C_INFO)
 	condition   = DIA_Addon_Crimson_Feilsch_Condition;
 	information = DIA_Addon_Crimson_Feilsch_Info;
 	permanent   = FALSE;
-	description = "Trochu si zasmlouváme!";
+	description = "Trochu si zasmlouvÃ¡me!";
 };
 FUNC INT DIA_Addon_Crimson_Feilsch_Condition()
 {	
@@ -122,10 +122,10 @@ FUNC INT DIA_Addon_Crimson_Feilsch_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Feilsch_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");//Pojïme smlouvat!
-	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");//Hmm – ne. Tohle je standardní cena, kterou dostává KADEJ.
-	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//Já myslel, e to byla zvláštní cena.
-	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//To je. Pro mì je zvláštní zákazník kadej.
+	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");//PojÄme smlouvat!
+	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");//Hmm â€“ ne. Tohle je standardnÃ­ cena, kterou dostÃ¡vÃ¡ KAÅ½DEJ.
+	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//JÃ¡ myslel, Å¾e to byla zvlÃ¡Å¡tnÃ­ cena.
+	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//To je. Pro mÄ› je zvlÃ¡Å¡tnÃ­ zÃ¡kaznÃ­k kaÅ¾dej.
 };	
 //---------------------------------------------------------------------
 //	Info Gold tauschen
@@ -137,7 +137,7 @@ INSTANCE DIA_Addon_Crimson_Gold   (C_INFO)
 	condition   = DIA_Addon_Crimson_Gold_Condition;
 	information = DIA_Addon_Crimson_Gold_Info;
 	permanent   = TRUE;
-	description = "Vymìnit zlaté nuggety...";
+	description = "VymÄ›nit zlatÃ© nuggety...";
 };
 FUNC INT DIA_Addon_Crimson_Gold_Condition()
 {	
@@ -148,19 +148,19 @@ FUNC INT DIA_Addon_Crimson_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Gold_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Gold_15_00");//Pojïme obchodovat.
+	AI_Output (other, self, "DIA_Addon_Crimson_Gold_15_00");//PojÄme obchodovat.
 	
 	Info_ClearChoices (DIA_Addon_Crimson_Gold);
 	Info_AddChoice (DIA_Addon_Crimson_Gold,DIALOG_BACK,DIA_Addon_Crimson_Gold_BACK);
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Vymìnit všechny zlaté nugety",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Vymìnit 1 zlatı nugget",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"VymÄ›nit vÅ¡echny zlatÃ© nugety",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"VymÄ›nit 1 zlatÃ½ nugget",DIA_Addon_Crimson_Gold_1);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_Gold_10_01");//Ale ty u sebe nemáš ádnı nuggety.
+		AI_Output (self, other, "DIA_Addon_Crimson_Gold_10_01");//Ale ty u sebe nemÃ¡Å¡ Å¾Ã¡dnÃ½ nuggety.
 	};
 };	
 FUNC VOID DIA_Addon_Crimson_Gold_BACK()
@@ -180,8 +180,8 @@ FUNC VOID DIA_Addon_Crimson_Gold_ALLE()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Vymìnit všechny zlaté nugety",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Vymìnit 1 zlatı nugget",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"VymÄ›nit vÅ¡echny zlatÃ© nugety",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"VymÄ›nit 1 zlatÃ½ nugget",DIA_Addon_Crimson_Gold_1);
 	};
 };
 FUNC VOID DIA_Addon_Crimson_Gold_1()
@@ -194,8 +194,8 @@ FUNC VOID DIA_Addon_Crimson_Gold_1()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Vymìnit všechny zlaté nugety",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Vymìnit 1 zlatı nugget",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"VymÄ›nit vÅ¡echny zlatÃ© nugety",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"VymÄ›nit 1 zlatÃ½ nugget",DIA_Addon_Crimson_Gold_1);
 	};
 };
 FUNC VOID B_Say_CrimsonBeliar()
@@ -213,7 +213,7 @@ INSTANCE DIA_Addon_Crimson_Raven   (C_INFO)
 	condition   = DIA_Addon_Crimson_Raven_Condition;
 	information = DIA_Addon_Crimson_Raven_Info;
 	permanent   = FALSE;
-	description = "Co víš o Havranovi?";
+	description = "Co vÃ­Å¡ o Havranovi?";
 };
 FUNC INT DIA_Addon_Crimson_Raven_Condition()
 {	
@@ -224,14 +224,14 @@ FUNC INT DIA_Addon_Crimson_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Raven_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Co víš o Havranovi?
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//Tomu neuvìøíš. Já tam byl a vidìl jsem, co v tı hrobce dìlal!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//(ustrašenì) Mumlal a opakoval òákı divnı slova. Furt dokola.
+	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Co vÃ­Å¡ o Havranovi?
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//Tomu neuvÄ›Å™Ã­Å¡. JÃ¡ tam byl a vidÄ›l jsem, co v tÃ½ hrobce dÄ›lal!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//(ustraÅ¡enÄ›) Mumlal a opakoval ÅˆÃ¡kÃ½ divnÃ½ slova. Furt dokola.
 	B_Say_CrimsonBeliar();
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//(nahlas) A pak z hrobky vyšlehlo oslepující svìtlo a já zaslech ten VİKØIK.
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//(zvolá) Ach bozi, ten hlas! Znìlo to, jako kdy se blíí konec svìta!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Havran s tím mluvil, povídali si – Havran a TEN hlas!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Nepamatuju se, co øíkali, vím jen, e jsem se zmátoøil a za pár hodin zpátky v táboøe.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//(nahlas) A pak z hrobky vyÅ¡lehlo oslepujÃ­cÃ­ svÄ›tlo a jÃ¡ zaslech ten VÃKÅ˜IK.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//(zvolÃ¡) Ach bozi, ten hlas! ZnÄ›lo to, jako kdyÅ¾ se blÃ­Å¾Ã­ konec svÄ›ta!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Havran s tÃ­m mluvil, povÃ­dali si â€“ Havran a TEN hlas!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Nepamatuju se, co Å™Ã­kali, vÃ­m jen, Å¾e jsem se zmÃ¡toÅ™il aÅ¾ za pÃ¡r hodin zpÃ¡tky v tÃ¡boÅ™e.
 };	
 //---------------------------------------------------------------------
 //	Info FATAGN
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_Crimson_FATAGN   (C_INFO)
 	condition   = DIA_Addon_Crimson_FATAGN_Condition;
 	information = DIA_Addon_Crimson_FATAGN_Info;
 	permanent   = TRUE;
-	description = "Mohl bys mi ještì jednou zopakovat, co Havran øíkal?";
+	description = "Mohl bys mi jeÅ¡tÄ› jednou zopakovat, co Havran Å™Ã­kal?";
 };
 FUNC INT DIA_Addon_Crimson_FATAGN_Condition()
 {	
@@ -261,14 +261,14 @@ FUNC VOID DIA_Addon_Crimson_FATAGN_Info()
 	
 	if (Crimson_SayBeliar <= 3)
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_01");//Jasnì, seš pøipravenej?
+		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_01");//JasnÄ›, seÅ¡ pÅ™ipravenej?
 		
 		Info_ClearChoices (DIA_Addon_Crimson_FATAGN);
 		Info_AddChoice (DIA_Addon_Crimson_FATAGN,"Tak fajn.",DIA_Addon_Crimson_FATAGN_LOS);	
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_02");//Myslím, e to radši nechám bıt.
+		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_02");//MyslÃ­m, Å¾e to radÅ¡i nechÃ¡m bÃ½t.
 	};
 };	
 FUNC VOID DIA_Addon_Crimson_FATAGN_LOS()

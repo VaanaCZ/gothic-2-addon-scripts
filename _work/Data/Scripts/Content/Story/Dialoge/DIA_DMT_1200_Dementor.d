@@ -26,7 +26,7 @@ FUNC VOID DIA_BridgeDementor_EXIT_Info()
 
 };	
 ///////////////////////////////////////////////////////////////////////
-//	Info BridgeDementor (steht an der Brücke)
+//	Info BridgeDementor (steht an der BrÃ¼cke)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_BridgeDementor		(C_INFO)
 {
@@ -53,9 +53,9 @@ func void DIA_BridgeDementor_Info ()
 	Wld_PlayEffect("spellFX_Fear",  self, self, 0, 0, 0, FALSE );
 	AI_PlayAni (self,"T_PRACTICEMAGIC5");	
 	
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //Vìdìli jsme, e pøijdeš!
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //Mùj Pán dosáhne vítìzství a pøevezme vládu nad celım svìtem.
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Ty popletenej hlupáku! Nemáš ani tušení, komu ses postavil, a já tì znièím právì teï a právì tady!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //VÄ›dÄ›li jsme, Å¾e pÅ™ijdeÅ¡!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //MÅ¯j PÃ¡n dosÃ¡hne vÃ­tÄ›zstvÃ­ a pÅ™evezme vlÃ¡du nad celÃ½m svÄ›tem.
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Ty popletenej hlupÃ¡ku! NemÃ¡Å¡ ani tuÅ¡enÃ­, komu ses postavil, a jÃ¡ tÄ› zniÄÃ­m prÃ¡vÄ› teÄ a prÃ¡vÄ› tady!
 
 	Npc_SetRefuseTalk (self,30);	
 };

@@ -47,25 +47,25 @@ FUNC VOID DIA_GornOW_Hello_Info()
 	VAR C_NPC Milten;
 	Milten			= Hlp_GetNpc(PC_Mage_OW);
 	
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Konec s tím flákáním - jsi volnı!
-	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //U bylo naèase, aby mì odsud nìkdo dostal.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Rozhodnì jsem ale neèekal, e bys to byl ty. Jsem sakra rád, e tì vidím.
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(s úšklebkem) Garond øíká, e moc jíš a e u si nemùe dovolit tì vykrmovat.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Kdy u o tom mluvíš, pár piv by se docela šiklo. Vypadnìme odsud, ta díra mì zaèíná nudit.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Konec s tÃ­m flÃ¡kÃ¡nÃ­m - jsi volnÃ½!
+	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //UÅ¾ bylo naÄase, aby mÄ› odsud nÄ›kdo dostal.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//RozhodnÄ› jsem ale neÄekal, Å¾e bys to byl ty. Jsem sakra rÃ¡d, Å¾e tÄ› vidÃ­m.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(s ÃºÅ¡klebkem) Garond Å™Ã­kÃ¡, Å¾e moc jÃ­Å¡ a Å¾e uÅ¾ si nemÅ¯Å¾e dovolit tÄ› vykrmovat.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//KdyÅ¾ uÅ¾ o tom mluvÃ­Å¡, pÃ¡r piv by se docela Å¡iklo. VypadnÄ›me odsud, ta dÃ­ra mÄ› zaÄÃ­nÃ¡ nudit.
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Poèkej, mám tady nìco, co by se ti mohlo hodit.
-		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //Našel jsem tady v cele tohle brnìní. Musel ho tu schovat nìjakı vìzeò.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //PoÄkej, mÃ¡m tady nÄ›co, co by se ti mohlo hodit.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //NaÅ¡el jsem tady v cele tohle brnÄ›nÃ­. Musel ho tu schovat nÄ›jakÃ½ vÄ›zeÅˆ.
 		B_GiveInvItems (self, other, itar_sld_M, 1);
-		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Na mì je moc malé, ale tobì by mohlo padnout.
-		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //Díky! Uvidíme se u Miltena.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Na mÄ› je moc malÃ©, ale tobÄ› by mohlo padnout.
+		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //DÃ­ky! UvidÃ­me se u Miltena.
 	}
 	else
 	{
 		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//Fajn, u Miltena.
 	};
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//Jasná vìc.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//JasnÃ¡ vÄ›c.
 	
 	AI_StopProcessInfos (self);
 	
@@ -100,20 +100,20 @@ FUNC INT DIA_GornOW_MetMilten_Condition()
 };
 FUNC VOID DIA_GornOW_MetMilten_Info()
 {	
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Poslouchej - tady jsem se matlal u dost dlouho. Je naèase, abych vidìl také nìco jiného ne jen tohle údolí.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Jak ses dostal skrz prùsmyk?
-	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//Skrz opuštìnı dùl vede cesta.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Dobrá. Poèkám na tu pravou chvíli a pak odsud vypadnu.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Poslouchej - tady jsem se matlal uÅ¾ dost dlouho. Je naÄase, abych vidÄ›l takÃ© nÄ›co jinÃ©ho neÅ¾ jen tohle ÃºdolÃ­.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Jak ses dostal skrz prÅ¯smyk?
+	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//Skrz opuÅ¡tÄ›nÃ½ dÅ¯l vede cesta.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//DobrÃ¡. PoÄkÃ¡m na tu pravou chvÃ­li a pak odsud vypadnu.
 	
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//A kam pùjdeme?
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Slyšel jsem, e Lee je ještì naivu. Chtìl bych se k nìmu znovu pøipojit.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//A kam pÅ¯jdeme?
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//SlyÅ¡el jsem, Å¾e Lee je jeÅ¡tÄ› naÅ¾ivu. ChtÄ›l bych se k nÄ›mu znovu pÅ™ipojit.
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//V tom pøípadì bì na Onarovu farmu. Lee a jeho chlapci jsou tam. Potøebuje dobré chlapy, jako jsi ty.
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//To zní dobøe. Pùjdu se podívat, jak se jim vede.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//V tom pÅ™Ã­padÄ› bÄ›Å¾ na Onarovu farmu. Lee a jeho chlapci jsou tam. PotÅ™ebuje dobrÃ© chlapy, jako jsi ty.
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//To znÃ­ dobÅ™e. PÅ¯jdu se podÃ­vat, jak se jim vede.
 	};
 };	
 
@@ -127,7 +127,7 @@ INSTANCE DIA_GornOW_SeeYou (C_INFO)
 	condition	= DIA_GornOW_SeeYou_Condition;
 	information	= DIA_GornOW_Seeyou_Info;
 	permanent	= TRUE;
-	description = "Ještì se uvidíme.";
+	description = "JeÅ¡tÄ› se uvidÃ­me.";
 };                       
 FUNC INT DIA_GornOW_SeeYou_Condition()
 {
@@ -140,8 +140,8 @@ FUNC INT DIA_GornOW_SeeYou_Condition()
  
 FUNC VOID DIA_GornOW_SeeYou_Info()
 {	
-	AI_Output	(other,self ,"DIA_GornOW_SeeYou_15_00");//Ještì se uvidíme.
-	AI_Output	(self ,other,"DIA_GornOW_SeeYou_12_01");//S tím poèítej.
+	AI_Output	(other,self ,"DIA_GornOW_SeeYou_15_00");//JeÅ¡tÄ› se uvidÃ­me.
+	AI_Output	(self ,other,"DIA_GornOW_SeeYou_12_01");//S tÃ­m poÄÃ­tej.
 	
 	/*
 	if (other.guild == GIL_KDF)

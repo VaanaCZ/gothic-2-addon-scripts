@@ -33,7 +33,7 @@ instance DIA_Oric_HALLO		(C_INFO)
 	condition	 = 	DIA_Oric_HALLO_Condition;
 	information	 = 	DIA_Oric_HALLO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Co je tvoje práce?";
+	description	 = 	"Co je tvoje prÃ¡ce?";
 };
 
 func int DIA_Oric_HALLO_Condition ()
@@ -42,10 +42,10 @@ func int DIA_Oric_HALLO_Condition ()
 };
 func void DIA_Oric_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Oric_HALLO_15_00"); //Co máš za úkol?
-	AI_Output (self, other, "DIA_Oric_HALLO_11_01"); //Jsem královskı dùstojník pro strategické záleitosti a momentálnì podléhám velení ctihodného velitele Garonda.
-	AI_Output (self, other, "DIA_Oric_HALLO_11_02"); //Jsme poslední paladinové tady na hradì. Všichni ostatní odešli nebo padli.
-	AI_Output (self, other, "DIA_Oric_HALLO_11_03"); //Na našich bedrech teï spoèívá úspìch celé vıpravy. A my se o to postaráme. U Innose - postaráme se o to.
+	AI_Output (other, self, "DIA_Oric_HALLO_15_00"); //Co mÃ¡Å¡ za Ãºkol?
+	AI_Output (self, other, "DIA_Oric_HALLO_11_01"); //Jsem krÃ¡lovskÃ½ dÅ¯stojnÃ­k pro strategickÃ© zÃ¡leÅ¾itosti a momentÃ¡lnÄ› podlÃ©hÃ¡m velenÃ­ ctihodnÃ©ho velitele Garonda.
+	AI_Output (self, other, "DIA_Oric_HALLO_11_02"); //Jsme poslednÃ­ paladinovÃ© tady na hradÄ›. VÅ¡ichni ostatnÃ­ odeÅ¡li nebo padli.
+	AI_Output (self, other, "DIA_Oric_HALLO_11_03"); //Na naÅ¡ich bedrech teÄ spoÄÃ­vÃ¡ ÃºspÄ›ch celÃ© vÃ½pravy. A my se o to postarÃ¡me. U Innose - postarÃ¡me se o to.
 
 };
 
@@ -59,7 +59,7 @@ instance DIA_Oric_Bruder		(C_INFO)
 	condition	 = 	DIA_Oric_Bruder_Condition;
 	information	 = 	DIA_Oric_Bruder_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Mám pro tebe zprávu.";
+	description	 = 	"MÃ¡m pro tebe zprÃ¡vu.";
 };
 
 func int DIA_Oric_Bruder_Condition ()
@@ -72,12 +72,12 @@ func int DIA_Oric_Bruder_Condition ()
 };
 func void DIA_Oric_Bruder_Info ()
 {
-	AI_Output (other, self, "DIA_Oric_Bruder_15_00"); //Mám pro tebe zprávu.
+	AI_Output (other, self, "DIA_Oric_Bruder_15_00"); //MÃ¡m pro tebe zprÃ¡vu.
 	AI_Output (self, other, "DIA_Oric_Bruder_11_01"); //Co je?
-	AI_Output (other, self, "DIA_Oric_Bruder_15_02"); //Tvùj bratr zemøel. Dostal se a do prùsmyku.
-	AI_Output (self, other, "DIA_Oric_Bruder_11_03"); //(šeptá)...mùj bratr
-	AI_Output (self, other, "DIA_Oric_Bruder_11_04"); //Innos mì krutì zkouší. Ale zemøel jako jeho sluebník...
-	AI_Output (self, other, "DIA_Oric_Bruder_11_05"); //Tahle zpráva je jako šíp, kterı se mi zabodává do srdce. Budu hledat novou sílu v modlitbách.
+	AI_Output (other, self, "DIA_Oric_Bruder_15_02"); //TvÅ¯j bratr zemÅ™el. Dostal se aÅ¾ do prÅ¯smyku.
+	AI_Output (self, other, "DIA_Oric_Bruder_11_03"); //(Å¡eptÃ¡)...mÅ¯j bratr
+	AI_Output (self, other, "DIA_Oric_Bruder_11_04"); //Innos mÄ› krutÄ› zkouÅ¡Ã­. Ale zemÅ™el jako jeho sluÅ¾ebnÃ­k...
+	AI_Output (self, other, "DIA_Oric_Bruder_11_05"); //Tahle zprÃ¡va je jako Å¡Ã­p, kterÃ½ se mi zabodÃ¡vÃ¡ do srdce. Budu hledat novou sÃ­lu v modlitbÃ¡ch.
 	OricBruder = TRUE;
 	
 	B_GivePlayerXP (XP_Ambient);
@@ -95,7 +95,7 @@ INSTANCE DIA_Oric_ScoutMine   (C_INFO)
 	condition   = DIA_Oric_ScoutMine_Condition;
 	information = DIA_Oric_ScoutMine_Info;
 	permanent   = FALSE;
-	description = "Mám se vydat k dolùm.";
+	description = "MÃ¡m se vydat k dolÅ¯m.";
 };
 
 FUNC INT DIA_Oric_ScoutMine_Condition()
@@ -113,9 +113,9 @@ FUNC INT DIA_Oric_ScoutMine_Condition()
 
 FUNC VOID DIA_Oric_ScoutMine_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_ScoutMine_15_00"); //Mám se vydat k dolùm.
-	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_01"); //Dej si pozor, nebude to ádná hraèka. Nejdøíve ze všeho vyhledej paladiny. Oni vedou ty tøi skupiny.
-	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_02"); //Pokud bys o tom chtìl vìdìt víc, promluv si s Parcivalem.
+	AI_Output (other,self ,"DIA_Oric_ScoutMine_15_00"); //MÃ¡m se vydat k dolÅ¯m.
+	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_01"); //Dej si pozor, nebude to Å¾Ã¡dnÃ¡ hraÄka. NejdÅ™Ã­ve ze vÅ¡eho vyhledej paladiny. Oni vedou ty tÅ™i skupiny.
+	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_02"); //Pokud bys o tom chtÄ›l vÄ›dÄ›t vÃ­c, promluv si s Parcivalem.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm
@@ -141,20 +141,20 @@ func int DIA_Oric_Perm_Condition ()
 func void DIA_Oric_Perm_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Oric_Perm_15_00"); //Jak to vypadá?
+	AI_Output (other, self, "DIA_Oric_Perm_15_00"); //Jak to vypadÃ¡?
 	
 	if (MIS_ScoutMine == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Oric_Perm_11_01"); //Musíš najít všechny horníky a navíc i jejich rudu. Potom zkusíme pøijít na zpùsob, jak tohle údolí opustit.
+		AI_Output (self, other, "DIA_Oric_Perm_11_01"); //MusÃ­Å¡ najÃ­t vÅ¡echny hornÃ­ky a navÃ­c i jejich rudu. Potom zkusÃ­me pÅ™ijÃ­t na zpÅ¯sob, jak tohle ÃºdolÃ­ opustit.
 	}
 	else if (MIS_ScoutMine == LOG_SUCCESS)
  	{
-		AI_Output (self, other, "DIA_Oric_Perm_11_02"); //Nadìje vıpravy klesly na úplné dno. Ale nevzdáme to, protoe Innos je s námi. Vyvede nás bezpeènì z údolí.
+		AI_Output (self, other, "DIA_Oric_Perm_11_02"); //NadÄ›je vÃ½pravy klesly na ÃºplnÃ© dno. Ale nevzdÃ¡me to, protoÅ¾e Innos je s nÃ¡mi. Vyvede nÃ¡s bezpeÄnÄ› z ÃºdolÃ­.
 	}
 	else //noch nicht angenommen
 	{
-		AI_Output (self, other, "DIA_Oric_Perm_11_03"); //Tvùj pøíchod je pro nás znamením nadìje.
-		AI_Output (self, other, "DIA_Oric_Perm_11_04"); //Potøebujeme tì. Bì si promluvit s Garondem - on ti všechno vysvìtlí.
+		AI_Output (self, other, "DIA_Oric_Perm_11_03"); //TvÅ¯j pÅ™Ã­chod je pro nÃ¡s znamenÃ­m nadÄ›je.
+		AI_Output (self, other, "DIA_Oric_Perm_11_04"); //PotÅ™ebujeme tÄ›. BÄ›Å¾ si promluvit s Garondem - on ti vÅ¡echno vysvÄ›tlÃ­.
 	};
 };
 
@@ -238,7 +238,7 @@ INSTANCE DIA_Oric_IAmBack   (C_INFO)
 	condition   = DIA_Oric_IAmBack_Condition;
 	information = DIA_Oric_IAmBack_Info;
 
-	description = "U jsem zpìt.";
+	description = "UÅ¾ jsem zpÄ›t.";
 };
 
 FUNC INT DIA_Oric_IAmBack_Condition()
@@ -252,19 +252,19 @@ FUNC INT DIA_Oric_IAmBack_Condition()
 
 FUNC VOID DIA_Oric_IAmBack_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_IAmBack_15_00"); //U jsem zpìt.
-	AI_Output (self ,other,"DIA_Oric_IAmBack_11_01"); //Nikdy bych neøekl, e tì tu ještì uvidím - ne potom, èeho jsem byl svìdkem, kdy jsi tu byl pøed nìkolika dny.
+	AI_Output (other,self ,"DIA_Oric_IAmBack_15_00"); //UÅ¾ jsem zpÄ›t.
+	AI_Output (self ,other,"DIA_Oric_IAmBack_11_01"); //Nikdy bych neÅ™ekl, Å¾e tÄ› tu jeÅ¡tÄ› uvidÃ­m - ne potom, Äeho jsem byl svÄ›dkem, kdyÅ¾ jsi tu byl pÅ™ed nÄ›kolika dny.
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Oric_IAmBack_11_02"); //Vítám tì jménem našeho øádu.
+		AI_Output (self, other, "DIA_Oric_IAmBack_11_02"); //VÃ­tÃ¡m tÄ› jmÃ©nem naÅ¡eho Å™Ã¡du.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Oric_IAmBack_11_03"); //Vidím, e se z tebe stal mág. Máš mé uznání.
+		AI_Output (self, other, "DIA_Oric_IAmBack_11_03"); //VidÃ­m, Å¾e se z tebe stal mÃ¡g. MÃ¡Å¡ mÃ© uznÃ¡nÃ­.
 	};
 	
-	AI_Output (self ,other,"DIA_Oric_IAmBack_11_04"); //Ké by byl tvùj pøíchod dobrım znamením.
+	AI_Output (self ,other,"DIA_Oric_IAmBack_11_04"); //KÃ©Å¾ by byl tvÅ¯j pÅ™Ã­chod dobrÃ½m znamenÃ­m.
 };
 
 //***********************************************
@@ -278,7 +278,7 @@ INSTANCE DIA_Oric_CanHelp   (C_INFO)
 	condition   = DIA_Oric_CanHelp_Condition;
 	information = DIA_Oric_CanHelp_Info;
 
-	description = "Mohu nìjak pomoci?";
+	description = "Mohu nÄ›jak pomoci?";
 };
 
 FUNC INT DIA_Oric_CanHelp_Condition()
@@ -293,47 +293,47 @@ FUNC INT DIA_Oric_CanHelp_Condition()
 
 FUNC VOID DIA_Oric_CanHelp_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_CanHelp_15_00"); //Mohu nìjak pomoci?
-	AI_Output (self ,other,"DIA_Oric_CanHelp_11_01"); //Momentálnì se zdá, e jsme udìlali všechno, co bylo v našich silách.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_11_02"); //Ale pøesto je tady jedna vìc. Nìco velice dùleitého, co bys pro nás mohl udìlat vnì tìchto zdí.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_15_00"); //Mohu nÄ›jak pomoci?
+	AI_Output (self ,other,"DIA_Oric_CanHelp_11_01"); //MomentÃ¡lnÄ› se zdÃ¡, Å¾e jsme udÄ›lali vÅ¡echno, co bylo v naÅ¡ich silÃ¡ch.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_11_02"); //Ale pÅ™esto je tady jedna vÄ›c. NÄ›co velice dÅ¯leÅ¾itÃ©ho, co bys pro nÃ¡s mohl udÄ›lat vnÄ› tÄ›chto zdÃ­.
 	AI_Output (self ,other,"DIA_Oric_CanHelp_11_03"); //Chceme useknout hadovi jeho hlavu.
 	
 	Info_ClearChoices (DIA_Oric_CanHelp);
-	Info_AddChoice (DIA_Oric_CanHelp,"Myslím, e se budeš muset poohlédnout po nìkom jiném.",DIA_Oric_CanHelp_NotYourMan); 
-	Info_AddChoice (DIA_Oric_CanHelp,"Co tím myslíš?",DIA_Oric_CanHelp_WhatYouMean);
+	Info_AddChoice (DIA_Oric_CanHelp,"MyslÃ­m, Å¾e se budeÅ¡ muset poohlÃ©dnout po nÄ›kom jinÃ©m.",DIA_Oric_CanHelp_NotYourMan); 
+	Info_AddChoice (DIA_Oric_CanHelp,"Co tÃ­m myslÃ­Å¡?",DIA_Oric_CanHelp_WhatYouMean);
 
 };
 
 FUNC VOID DIA_Oric_CanHelp_NotYourMan ()
 {
-	AI_Output (other,self ,"DIA_Oric_CanHelp_NotYourMan_15_00"); //Myslím, e byste si mìli najít nìkoho jiného.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_NotYourMan_11_01"); //Nemùu postrádat jediného ze svıch lidí - jsi naše jediná nadìje.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_NotYourMan_15_00"); //MyslÃ­m, Å¾e byste si mÄ›li najÃ­t nÄ›koho jinÃ©ho.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_NotYourMan_11_01"); //NemÅ¯Å¾u postrÃ¡dat jedinÃ©ho ze svÃ½ch lidÃ­ - jsi naÅ¡e jedinÃ¡ nadÄ›je.
 };
 
 FUNC VOID DIA_Oric_CanHelp_WhatYouMean ()
 {
-	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_00"); //Co tím myslíš?
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_01"); //Víme o jednom z jejich vùdcù. Jmenuje se Hosh-Pak.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_02"); //Je to jeden z nejvlivnìjších šamanù mezi skøety.
-	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_03"); //A co mám udìlat?
+	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_00"); //Co tÃ­m myslÃ­Å¡?
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_01"); //VÃ­me o jednom z jejich vÅ¯dcÅ¯. Jmenuje se Hosh-Pak.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_02"); //Je to jeden z nejvlivnÄ›jÅ¡Ã­ch Å¡amanÅ¯ mezi skÅ™ety.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_03"); //A co mÃ¡m udÄ›lat?
 	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_04"); //Zabij ho.
-	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_05"); //ertuješ!?
+	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_05"); //Å½ertujeÅ¡!?
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_06"); //Jsi jedinı, koho mùeme postrádat. Všechny ostatní rytíøe potøebujeme tady.
+		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_06"); //Jsi jedinÃ½, koho mÅ¯Å¾eme postrÃ¡dat. VÅ¡echny ostatnÃ­ rytÃ­Å™e potÅ™ebujeme tady.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_07"); //Není pro mì snadné chtít po tobì nìco takového, mistøe. Ale jsi pro tenhle úkol nejvhodnìjší ze všech.
+		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_07"); //NenÃ­ pro mÄ› snadnÃ© chtÃ­t po tobÄ› nÄ›co takovÃ©ho, mistÅ™e. Ale jsi pro tenhle Ãºkol nejvhodnÄ›jÅ¡Ã­ ze vÅ¡ech.
 	}
 	else
 	{	
-		AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_08"); //Chceš nám pøece pomoci, ne? V tom pøípadì...
+		AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_08"); //ChceÅ¡ nÃ¡m pÅ™ece pomoci, ne? V tom pÅ™Ã­padÄ›...
 	};
 	
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_09"); //Hosh-Pakùv stan je za nepøátelskou linií, na ostrohu na jih odsud.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_10"); //Skoro ho mùeš vidìt z okna.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_09"); //Hosh-PakÅ¯v stan je za nepÅ™Ã¡telskou liniÃ­, na ostrohu na jih odsud.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_10"); //Skoro ho mÅ¯Å¾eÅ¡ vidÄ›t z okna.
 	
 
 	Info_ClearChoices (DIA_Oric_CanHelp);
@@ -341,7 +341,7 @@ FUNC VOID DIA_Oric_CanHelp_WhatYouMean ()
 };
 
 //***********************************************
-//	Ich brauche noch Ausrüstung.
+//	Ich brauche noch AusrÃ¼stung.
 //***********************************************
 
 INSTANCE DIA_Oric_NeedStuff   (C_INFO)
@@ -351,7 +351,7 @@ INSTANCE DIA_Oric_NeedStuff   (C_INFO)
 	condition   = DIA_Oric_NeedStuff_Condition;
 	information = DIA_Oric_NeedStuff_Info;
 
-	description = "Budu potøebovat nìco vıbavy.";
+	description = "Budu potÅ™ebovat nÄ›co vÃ½bavy.";
 };
 
 FUNC INT DIA_Oric_NeedStuff_Condition()
@@ -365,21 +365,21 @@ FUNC INT DIA_Oric_NeedStuff_Condition()
 
 FUNC VOID DIA_Oric_NeedStuff_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_15_00"); //Budu potøebovat pár vìcí.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_01"); //U toho nemáme moc, co bychom ti mohli dát.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_02"); //No, ale mohu ti nabídnout toto.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_15_00"); //Budu potÅ™ebovat pÃ¡r vÄ›cÃ­.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_01"); //UÅ¾ toho nemÃ¡me moc, co bychom ti mohli dÃ¡t.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_02"); //No, ale mohu ti nabÃ­dnout toto.
 	
 	Info_ClearChoices (DIA_Oric_NeedStuff);
-	Info_AddChoice (DIA_Oric_NeedStuff,"nebo 1 elixír obratnosti",DIA_Oric_NeedStuff_Dexterity);
-	Info_AddChoice (DIA_Oric_NeedStuff,"nebo 1 elixír síly",DIA_Oric_NeedStuff_Strength);
-	Info_AddChoice (DIA_Oric_NeedStuff,"nebo 3 elixíry many",DIA_Oric_NeedStuff_Mana);	
-	Info_AddChoice (DIA_Oric_NeedStuff,"3 elixíry hojivé síly",DIA_Oric_NeedStuff_Health); 
+	Info_AddChoice (DIA_Oric_NeedStuff,"nebo 1 elixÃ­r obratnosti",DIA_Oric_NeedStuff_Dexterity);
+	Info_AddChoice (DIA_Oric_NeedStuff,"nebo 1 elixÃ­r sÃ­ly",DIA_Oric_NeedStuff_Strength);
+	Info_AddChoice (DIA_Oric_NeedStuff,"nebo 3 elixÃ­ry many",DIA_Oric_NeedStuff_Mana);	
+	Info_AddChoice (DIA_Oric_NeedStuff,"3 elixÃ­ry hojivÃ© sÃ­ly",DIA_Oric_NeedStuff_Health); 
 };
 
 FUNC VOID DIA_Oric_NeedStuff_Health ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Health_15_00"); //Vezmu si ty léèivé lektvary.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Health_11_01"); //Dobrá volba. A ti jsou k uitku.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Health_15_00"); //Vezmu si ty lÃ©ÄivÃ© lektvary.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Health_11_01"); //DobrÃ¡ volba. AÅ¥ ti jsou k uÅ¾itku.
 	
 	CreateInvItems (self,ItPo_Health_03,3);
 	B_GiveInvItems (self ,other,ItPo_Health_03,3);
@@ -390,7 +390,7 @@ FUNC VOID DIA_Oric_NeedStuff_Health ()
 FUNC VOID DIA_Oric_NeedStuff_Mana ()
 {
 	AI_Output (other,self ,"DIA_Oric_NeedStuff_Mana_15_00"); //Vezmu si ty lektvary s manou.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Mana_11_01"); //Doufám, e ti pomohou. Nech tì Innos ochraòuje.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Mana_11_01"); //DoufÃ¡m, Å¾e ti pomohou. NechÅ¥ tÄ› Innos ochraÅˆuje.
 	
 	CreateInvItems (self,ItPo_Mana_03,3);
 	B_GiveInvItems (self ,other,ItPo_Health_03,3);
@@ -400,8 +400,8 @@ FUNC VOID DIA_Oric_NeedStuff_Mana ()
 
 FUNC VOID DIA_Oric_NeedStuff_Strength ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Strength_15_00"); //Vezmu si elixír síly.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Strength_11_01"); //Tady je, urèitì se ti bude hodit. Pøeji ti hodnì štìstí.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Strength_15_00"); //Vezmu si elixÃ­r sÃ­ly.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Strength_11_01"); //Tady je, urÄitÄ› se ti bude hodit. PÅ™eji ti hodnÄ› Å¡tÄ›stÃ­.
 
 	CreateInvItems (self,ItPo_Perm_STR,1);
 	B_GiveInvItems (self ,other,ItPo_Perm_STR,1);
@@ -411,8 +411,8 @@ FUNC VOID DIA_Oric_NeedStuff_Strength ()
 
 FUNC VOID DIA_Oric_NeedStuff_Dexterity ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Dexterity_15_00"); //Vezmu si elixír obratnosti.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Dexterity_11_01"); //Nech tvoje šípy nikdy neminou cíl. Tady ho máš.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Dexterity_15_00"); //Vezmu si elixÃ­r obratnosti.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Dexterity_11_01"); //NechÅ¥ tvoje Å¡Ã­py nikdy neminou cÃ­l. Tady ho mÃ¡Å¡.
 
 	CreateInvItems (self,ItPo_Perm_DEX,1);
 	B_GiveInvItems (self ,other,ItPo_Perm_DEX,1);
@@ -431,7 +431,7 @@ INSTANCE DIA_Oric_NoMurder   (C_INFO)
 	condition   = DIA_Oric_NoMurder_Condition;
 	information = DIA_Oric_NoMurder_Info;
 
-	description = "Nezavradím Hosh-Paka tak zbabìlım zpùsobem.";
+	description = "NezavraÅ¾dÃ­m Hosh-Paka tak zbabÄ›lÃ½m zpÅ¯sobem.";
 };
 
 FUNC INT DIA_Oric_NoMurder_Condition()
@@ -445,11 +445,11 @@ FUNC INT DIA_Oric_NoMurder_Condition()
 
 FUNC VOID DIA_Oric_NoMurder_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_NoMurder_15_00"); //Nezavradím Hosh-Paka tak zbabìlım zpùsobem.
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_01"); //Dokáeš si vùbec pøedstavit, v jak strašné pozici se nacházíme?
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_02"); //Obléhá nás obrovská armáda skøetù. Docházejí nám zásoby.
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_03"); //Pokud se nám nepodaøí dostat rudu na loï, zpustoší skøeti celé království.
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_04"); //Všechno bude znièeno.
+	AI_Output (other,self ,"DIA_Oric_NoMurder_15_00"); //NezavraÅ¾dÃ­m Hosh-Paka tak zbabÄ›lÃ½m zpÅ¯sobem.
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_01"); //DokÃ¡Å¾eÅ¡ si vÅ¯bec pÅ™edstavit, v jak straÅ¡nÃ© pozici se nachÃ¡zÃ­me?
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_02"); //OblÃ©hÃ¡ nÃ¡s obrovskÃ¡ armÃ¡da skÅ™etÅ¯. DochÃ¡zejÃ­ nÃ¡m zÃ¡soby.
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_03"); //Pokud se nÃ¡m nepodaÅ™Ã­ dostat rudu na loÄ, zpustoÅ¡Ã­ skÅ™eti celÃ© krÃ¡lovstvÃ­.
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_04"); //VÅ¡echno bude zniÄeno.
 };
 
 //***********************************************
@@ -463,7 +463,7 @@ INSTANCE DIA_Oric_WillHelp   (C_INFO)
 	condition   = DIA_Oric_WillHelp_Condition;
 	information = DIA_Oric_WillHelp_Info;
 	permanent   = FALSE;
-	description = "Dobrá. Zabiju Hosh-Paka.";
+	description = "DobrÃ¡. Zabiju Hosh-Paka.";
 };
 
 FUNC INT DIA_Oric_WillHelp_Condition()
@@ -477,14 +477,14 @@ FUNC INT DIA_Oric_WillHelp_Condition()
 
 FUNC VOID DIA_Oric_WillHelp_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_WillHelp_15_00"); //Dobrá. Zabiju Hosh-Paka.
-	AI_Output (self ,other,"DIA_Oric_WillHelp_11_01"); //To rád slyším.
-	AI_Output (self ,other,"DIA_Oric_WillHelp_11_02"); //Hosh-Pakùv stan je na malém ostrohu. U jsi ho musel vidìt.
-	AI_Output (self ,other,"DIA_Oric_WillHelp_11_03"); //Není daleko od cesty vedoucí k našemu dolu. Pøímo ve stínu té velké hory.
+	AI_Output (other,self ,"DIA_Oric_WillHelp_15_00"); //DobrÃ¡. Zabiju Hosh-Paka.
+	AI_Output (self ,other,"DIA_Oric_WillHelp_11_01"); //To rÃ¡d slyÅ¡Ã­m.
+	AI_Output (self ,other,"DIA_Oric_WillHelp_11_02"); //Hosh-PakÅ¯v stan je na malÃ©m ostrohu. UÅ¾ jsi ho musel vidÄ›t.
+	AI_Output (self ,other,"DIA_Oric_WillHelp_11_03"); //NenÃ­ daleko od cesty vedoucÃ­ k naÅ¡emu dolu. PÅ™Ã­mo ve stÃ­nu tÃ© velkÃ© hory.
 	
 	Log_CreateTopic (TOPIC_KillHoshPak, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KillHoshPak, LOG_RUNNING);
-	B_LogEntry (TOPIC_KillHoshPak,"Oric chce, abych odstranil skøetího šamana Hosh-Paka. Jeho stan najdu na malém útesu kousek za hradem."); 
+	B_LogEntry (TOPIC_KillHoshPak,"Oric chce, abych odstranil skÅ™etÃ­ho Å¡amana Hosh-Paka. Jeho stan najdu na malÃ©m Ãºtesu kousek za hradem."); 
 
 	MIS_KillHoshPak = LOG_RUNNING;
 };
@@ -500,7 +500,7 @@ INSTANCE DIA_Oric_HoshDead   (C_INFO)
 	condition   = DIA_Oric_HoshDead_Condition;
 	information = DIA_Oric_HoshDead_Info;
 	permanent   = FALSE;
-	description = "Hosh-Pak je mrtvı!";
+	description = "Hosh-Pak je mrtvÃ½!";
 };
 
 FUNC INT DIA_Oric_HoshDead_Condition()
@@ -514,9 +514,9 @@ FUNC INT DIA_Oric_HoshDead_Condition()
 
 FUNC VOID DIA_Oric_HoshDead_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_HoshDead_15_00"); //Hosh-Pak je mrtvı!
-	AI_Output (self ,other,"DIA_Oric_HoshDead_11_01"); //Vıbornì, to by mìlo zasadit skøetùm slušnou ránu. Moná máme pøece jenom nìjakou šanci.
-	AI_Output (self ,other,"DIA_Oric_HoshDead_11_02"); //Myslím, e bychom tím mìli získat alespoò tıden èasu.
+	AI_Output (other,self ,"DIA_Oric_HoshDead_15_00"); //Hosh-Pak je mrtvÃ½!
+	AI_Output (self ,other,"DIA_Oric_HoshDead_11_01"); //VÃ½bornÄ›, to by mÄ›lo zasadit skÅ™etÅ¯m sluÅ¡nou rÃ¡nu. MoÅ¾nÃ¡ mÃ¡me pÅ™ece jenom nÄ›jakou Å¡anci.
+	AI_Output (self ,other,"DIA_Oric_HoshDead_11_02"); //MyslÃ­m, Å¾e bychom tÃ­m mÄ›li zÃ­skat alespoÅˆ tÃ½den Äasu.
 	
 	MIS_KillHoshPak = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KillHosh_Pak);
@@ -536,7 +536,7 @@ INSTANCE DIA_Oric_AnyNews   (C_INFO)
 	information = DIA_Oric_AnyNews_Info;
 	permanent	 = 	TRUE;
 
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };
 
 FUNC INT DIA_Oric_AnyNews_Condition()
@@ -551,23 +551,23 @@ FUNC INT DIA_Oric_AnyNews_Condition()
 FUNC VOID DIA_Oric_AnyNews_Info()
 {
 
-	AI_Output (other,self ,"DIA_Oric_AnyNews_15_00"); //Co je nového?
+	AI_Output (other,self ,"DIA_Oric_AnyNews_15_00"); //Co je novÃ©ho?
 	
 	if (MIS_OCGateOpen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_01"); //Myslíš kromì toho, e nás napadli skøeti?
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_01"); //MyslÃ­Å¡ kromÄ› toho, Å¾e nÃ¡s napadli skÅ™eti?
 	}
 	else if (MIS_AllDragonsDead == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_02"); //Ano. Jsi náš hrdina. Zabít všechny draky není ádná procházka rùovım sadem, øekl bych.
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_02"); //Ano. Jsi nÃ¡Å¡ hrdina. ZabÃ­t vÅ¡echny draky nenÃ­ Å¾Ã¡dnÃ¡ prochÃ¡zka rÅ¯Å¾ovÃ½m sadem, Å™ekl bych.
 	}
 	else if (MIS_KillHoshPak == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_03"); //Zdá se, e skøetù se hluboce dotkla Hosh-Pakova smrt.
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_03"); //ZdÃ¡ se, Å¾e skÅ™etÅ¯ se hluboce dotkla Hosh-Pakova smrt.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_04"); //Skøetù je èím dál tím víc. To není dobré.
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_04"); //SkÅ™etÅ¯ je ÄÃ­m dÃ¡l tÃ­m vÃ­c. To nenÃ­ dobrÃ©.
 	};
 };
 
@@ -581,7 +581,7 @@ instance DIA_Oric_DragonPlettBericht		(C_INFO)
 	condition	 = 	DIA_Oric_DragonPlettBericht_Condition;
 	information	 = 	DIA_Oric_DragonPlettBericht_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Potøebuju víc informací o dracích.";
+	description	 = 	"PotÅ™ebuju vÃ­c informacÃ­ o dracÃ­ch.";
 };
 
 func int DIA_Oric_DragonPlettBericht_Condition ()
@@ -602,15 +602,15 @@ var int Oric_DragonCounter;
 var int Oric_FirstQuestion;
 func void DIA_Oric_DragonPlettBericht_Info ()
 {
-	AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_00"); //Potøebuju víc informací o dracích.
+	AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_00"); //PotÅ™ebuju vÃ­c informacÃ­ o dracÃ­ch.
 	
 	if (MIS_KilledDragons == 1)
 	{
-		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_01"); //Jednoho jsem u zabil. Mùeš mi øíct, kde najdu ty ostatní?
+		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_01"); //Jednoho jsem uÅ¾ zabil. MÅ¯Å¾eÅ¡ mi Å™Ã­ct, kde najdu ty ostatnÃ­?
 	}
 	else if (MIS_KilledDragons != 0) 
 	{
-		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_02"); //Mám pocit, e jsem se ještì nedostal ke všem drakùm. e bych nìco pøehlédl?
+		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_02"); //MÃ¡m pocit, Å¾e jsem se jeÅ¡tÄ› nedostal ke vÅ¡em drakÅ¯m. Å½e bych nÄ›co pÅ™ehlÃ©dl?
 	};
 	
 	if ((Oric_DragonCounter < MIS_KilledDragons) || (Oric_FirstQuestion == FALSE))
@@ -622,30 +622,30 @@ func void DIA_Oric_DragonPlettBericht_Info ()
 		if ((Npc_IsDead(Swampdragon))== FALSE)
 		&& (Oric_SwampdragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_03"); //Na západ od starého hradu vznikla bìhem nìkolika posledních dnù velká baina. Nezdá se ti to nìjak podezøelé?
-			B_LogEntry (TOPIC_DRACHENJAGD,"Oric mi dal aspoò nìjakou stopu: západnì od hradu se pøed nìkolika dny znièehonic objevila hluboká baina. To je opravdu podezøelé."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_03"); //Na zÃ¡pad od starÃ©ho hradu vznikla bÄ›hem nÄ›kolika poslednÃ­ch dnÅ¯ velkÃ¡ baÅ¾ina. NezdÃ¡ se ti to nÄ›jak podezÅ™elÃ©?
+			B_LogEntry (TOPIC_DRACHENJAGD,"Oric mi dal aspoÅˆ nÄ›jakou stopu: zÃ¡padnÄ› od hradu se pÅ™ed nÄ›kolika dny zniÄehonic objevila hlubokÃ¡ baÅ¾ina. To je opravdu podezÅ™elÃ©."); 
 			Oric_SwampdragonInfo_OneTime = TRUE;
 		}
 		else if ((Npc_IsDead(Rockdragon))==FALSE)
 		&& (Oric_RockdragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_04"); //Daleko za sopkou na jihu je skalní pevnost.
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_05"); //Naši špehové hlásí, e ta pevnost je silnì støeená. Moná se tam ukrıvá jeden z nich.
-			B_LogEntry (TOPIC_DRACHENJAGD,"Paladinští zvìdové sdìlili Oricovi, e kamenná tvrz za sopkou na jihu je silnì støeena. Oric se domnívá, e tam nìkde bude i drak."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_04"); //Daleko za sopkou na jihu je skalnÃ­ pevnost.
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_05"); //NaÅ¡i Å¡pehovÃ© hlÃ¡sÃ­, Å¾e ta pevnost je silnÄ› stÅ™eÅ¾enÃ¡. MoÅ¾nÃ¡ se tam ukrÃ½vÃ¡ jeden z nich.
+			B_LogEntry (TOPIC_DRACHENJAGD,"PaladinÅ¡tÃ­ zvÄ›dovÃ© sdÄ›lili Oricovi, Å¾e kamennÃ¡ tvrz za sopkou na jihu je silnÄ› stÅ™eÅ¾ena. Oric se domnÃ­vÃ¡, Å¾e tam nÄ›kde bude i drak."); 
 			Oric_RockdragonInfo_OneTime = TRUE;
 		}
 		else if ((Npc_IsDead(FireDragon))==FALSE)
 		&& (Oric_FiredragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_06"); //Kdy draci naposledy zaútoèili, øíkalo se, e jeden zmizel poblí sopky na jih odsud. Mìl bys to tam prozkoumat.
-			B_LogEntry (TOPIC_DRACHENJAGD,"Poslední drak, kterı napadl hrad v Hornickém údolí, byl poté spatøen poblí sopky."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_06"); //KdyÅ¾ draci naposledy zaÃºtoÄili, Å™Ã­kalo se, Å¾e jeden zmizel poblÃ­Å¾ sopky na jih odsud. MÄ›l bys to tam prozkoumat.
+			B_LogEntry (TOPIC_DRACHENJAGD,"PoslednÃ­ drak, kterÃ½ napadl hrad v HornickÃ©m ÃºdolÃ­, byl potÃ© spatÅ™en poblÃ­Å¾ sopky."); 
 			Oric_FiredragonInfo_OneTime = TRUE;
 		}
 		else if ((Npc_IsDead(IceDragon))==FALSE)
 		&& (Oric_IcedragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_07"); //Na západ odsud je zamrzlı kraj. Nepøekvapilo by mì, kdyby se tam ukrıval jeden z drakù.
-			B_LogEntry (TOPIC_DRACHENJAGD,"Podle Orica by drak mohl sídlit v zamrzlé oblasti na západì."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_07"); //Na zÃ¡pad odsud je zamrzlÃ½ kraj. NepÅ™ekvapilo by mÄ›, kdyby se tam ukrÃ½val jeden z drakÅ¯.
+			B_LogEntry (TOPIC_DRACHENJAGD,"Podle Orica by drak mohl sÃ­dlit v zamrzlÃ© oblasti na zÃ¡padÄ›."); 
 			Oric_IcedragonInfo_OneTime = TRUE;
 		};
 		Oric_DragonCounter = MIS_KilledDragons;
@@ -653,7 +653,7 @@ func void DIA_Oric_DragonPlettBericht_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_08"); //V tuto chvíli pro tebe bohuel nic nemám.
+		AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_08"); //V tuto chvÃ­li pro tebe bohuÅ¾el nic nemÃ¡m.
 	};
 };
 
@@ -735,7 +735,7 @@ INSTANCE DIA_Oric_PICKPOCKET (C_INFO)
 	condition	= DIA_Oric_PICKPOCKET_Condition;
 	information	= DIA_Oric_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kráde tohoto svitku bude zatracenì tìká.)";
+	description = "(KrÃ¡deÅ¾ tohoto svitku bude zatracenÄ› tÄ›Å¾kÃ¡.)";
 };                       
 
 FUNC INT DIA_Oric_PICKPOCKET_Condition()

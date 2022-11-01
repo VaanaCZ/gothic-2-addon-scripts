@@ -44,8 +44,8 @@ FUNC INT DIA_Grimes_Hallo_Condition()
 }; 
 FUNC VOID DIA_Grimes_Hallo_Info()
 {	
-	AI_Output (self,other,"DIA_Grimes_Hallo_05_00");//Ty? Kdo by to byl øekl, e se znovu setkáme.
-	AI_Output (self,other,"DIA_Grimes_Hallo_05_01");//Tak to vypadá, e oba víme, jak zùstat naivu. No, jak vidíš propadl jsem prospektorství.
+	AI_Output (self,other,"DIA_Grimes_Hallo_05_00");//Ty? Kdo by to byl Å™ekl, Å¾e se znovu setkÃ¡me.
+	AI_Output (self,other,"DIA_Grimes_Hallo_05_01");//Tak to vypadÃ¡, Å¾e oba vÃ­me, jak zÅ¯stat naÅ¾ivu. No, jak vidÃ­Å¡ propadl jsem prospektorstvÃ­.
 	
 	if (Grimes_First == FALSE)
 	{
@@ -68,7 +68,7 @@ INSTANCE DIA_Grimes_Erz(C_INFO)
 	condition	= DIA_Grimes_Erz_Condition;
 	information	= DIA_Grimes_Erz_Info;
 	permanent	= FALSE;
-	description	= "Kolik rudy u jsi vytìil?";
+	description	= "Kolik rudy uÅ¾ jsi vytÄ›Å¾il?";
 };                       
 
 FUNC INT DIA_Grimes_Erz_Condition()
@@ -81,9 +81,9 @@ FUNC INT DIA_Grimes_Erz_Condition()
 }; 
 FUNC VOID DIA_Grimes_Erz_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Kolik rudy u jsi vytìil?
-	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//Nìkolik beden. Ale nic z toho tady nezùstalo.
-	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Paladin Marcos se rozhodl vzít rudu do hradu, protoe nás poøád ohroovali skøeti.
+	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Kolik rudy uÅ¾ jsi vytÄ›Å¾il?
+	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//NÄ›kolik beden. Ale nic z toho tady nezÅ¯stalo.
+	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Paladin Marcos se rozhodl vzÃ­t rudu do hradu, protoÅ¾e nÃ¡s poÅ™Ã¡d ohroÅ¾ovali skÅ™eti.
 };
 // ************************************************************
 // 			 Weg
@@ -95,7 +95,7 @@ INSTANCE DIA_Grimes_Weg(C_INFO)
 	condition	= DIA_Grimes_Weg_Condition;
 	information	= DIA_Grimes_Weg_Info;
 	permanent	= FALSE;
-	description = "Víš, jakou cestou se vydal Marcos?";
+	description = "VÃ­Å¡, jakou cestou se vydal Marcos?";
 };                       
 
 FUNC INT DIA_Grimes_Weg_Condition()
@@ -108,9 +108,9 @@ FUNC INT DIA_Grimes_Weg_Condition()
 }; 
 FUNC VOID DIA_Grimes_Weg_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//Víš, kudy se Marcos vydal?
-	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//Nešel pøímou cestou - místo toho chtìl pøejít øeku tam, kde byla zamrzlá.
-	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//Chtìl si to zkrátit a dostat se k hradu ze západu.
+	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//VÃ­Å¡, kudy se Marcos vydal?
+	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//NeÅ¡el pÅ™Ã­mou cestou - mÃ­sto toho chtÄ›l pÅ™ejÃ­t Å™eku tam, kde byla zamrzlÃ¡.
+	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//ChtÄ›l si to zkrÃ¡tit a dostat se k hradu ze zÃ¡padu.
 };
 // ************************************************************
 // 			  Grimes
@@ -122,7 +122,7 @@ INSTANCE DIA_Grimes_Grimes(C_INFO)
 	condition	= DIA_Grimes_Grimes_Condition;
 	information	= DIA_Grimes_Grimes_Info;
 	permanent	= FALSE;
-	description	= "Nechceš opustit údolí?";
+	description	= "NechceÅ¡ opustit ÃºdolÃ­?";
 };                       
 
 FUNC INT DIA_Grimes_Grimes_Condition()
@@ -134,11 +134,11 @@ FUNC INT DIA_Grimes_Grimes_Condition()
 }; 
 FUNC VOID DIA_Grimes_Grimes_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//Nechceš opustit údolí?
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//Ne, zùstanu a budu tìit rudu.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//Nenechám se zastavit nìkolika skøety - u jsem pøeèkal horší èasy.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//Pamatuješ, jak jsme tìili ve starém dole a najednou se dovnitø provalila voda...
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_04");//Ale to jsou staré pøíbìhy.
+	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//NechceÅ¡ opustit ÃºdolÃ­?
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//Ne, zÅ¯stanu a budu tÄ›Å¾it rudu.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//NenechÃ¡m se zastavit nÄ›kolika skÅ™ety - uÅ¾ jsem pÅ™eÄkal horÅ¡Ã­ Äasy.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//PamatujeÅ¡, jak jsme tÄ›Å¾ili ve starÃ©m dole a najednou se dovnitÅ™ provalila voda...
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_04");//Ale to jsou starÃ© pÅ™Ã­bÄ›hy.
 };
 // ************************************************************
 // 			  Grimes
@@ -163,7 +163,7 @@ FUNC INT DIA_Grimes_PERM_Condition()
 FUNC VOID DIA_Grimes_PERM_Info()
 {	
 	AI_Output (other,self,"DIA_Grimes_PERM_15_00");//Jak to jinak jde?
-	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Tahle skála je zatracené nepoddajná - úplnì jako by se snaila nám zabránit v získávání rudy.
+	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Tahle skÃ¡la je zatracenÃ© nepoddajnÃ¡ - ÃºplnÄ› jako by se snaÅ¾ila nÃ¡m zabrÃ¡nit v zÃ­skÃ¡vÃ¡nÃ­ rudy.
 };
 
 
@@ -208,12 +208,12 @@ func void DIA_Grimes_PICKPOCKET_BACK()
 
 
 /*
-	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen müssen.  
+	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen mÃ¼ssen.  
 	Ich habe ihn gefunden. 
-	Er hält sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
+	Er hÃ¤lt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
 	Innos sei dank...
 	
 	Nein, bisher nicht. 
-	Dann hoffe ich, das er ein Versteck für sich und das Erz gefunden hat.
+	Dann hoffe ich, das er ein Versteck fÃ¼r sich und das Erz gefunden hat.
 */
 

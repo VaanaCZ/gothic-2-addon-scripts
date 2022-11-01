@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_4_JOIN(C_INFO)
 	condition	= DIA_PAL_4_JOIN_Condition;
 	information	= DIA_PAL_4_JOIN_Info;
 	permanent	= TRUE;
-	description = "Jak bych se mohl stát paladinem?";
+	description = "Jak bych se mohl stÃ¡t paladinem?";
 };                       
 
 FUNC INT DIA_PAL_4_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_PAL_4_JOIN_Condition()
 
 FUNC VOID DIA_PAL_4_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //Jak bych se mohl stát paladinem?
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Pokud to myslíš vánì, mìl bys nejprve vstoupit do jejich slueb.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Zajdi do kasáren a promluv si s lordem Andrem. Nech se pøijmout k domobranì.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Pak moná dostaneš šanci ukázat, co v tobì vìzí.
+	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //Jak bych se mohl stÃ¡t paladinem?
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Pokud to myslÃ­Å¡ vÃ¡Å¾nÄ›, mÄ›l bys nejprve vstoupit do jejich sluÅ¾eb.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Zajdi do kasÃ¡ren a promluv si s lordem Andrem. Nech se pÅ™ijmout k domobranÄ›.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Pak moÅ¾nÃ¡ dostaneÅ¡ Å¡anci ukÃ¡zat, co v tobÄ› vÄ›zÃ­.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_PAL_4_PEOPLE(C_INFO)
 	condition	= DIA_PAL_4_PEOPLE_Condition;
 	information	= DIA_PAL_4_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tomu tady velí?";
+	description = "Kdo tomu tady velÃ­?";
 };                       
 
 FUNC INT DIA_PAL_4_PEOPLE_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_PAL_4_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_4_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //Kdo tomu tady velí?
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Velitelem všech jednotek na ostrovì je lord Hagen. Ten také po celou dobu naší pøítomnosti ve mìstì zastává úøad místodrícího.
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Ale je velmi zaneprázdnìnı. Pokud potøebuješ nìco zaøídit, zajdi do kasáren za lordem Andrem.
+	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //Kdo tomu tady velÃ­?
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Velitelem vÅ¡ech jednotek na ostrovÄ› je lord Hagen. Ten takÃ© po celou dobu naÅ¡Ã­ pÅ™Ã­tomnosti ve mÄ›stÄ› zastÃ¡vÃ¡ ÃºÅ™ad mÃ­stodrÅ¾Ã­cÃ­ho.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Ale je velmi zaneprÃ¡zdnÄ›nÃ½. Pokud potÅ™ebujeÅ¡ nÄ›co zaÅ™Ã­dit, zajdi do kasÃ¡ren za lordem Andrem.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_4_LOCATION(C_INFO)
 	condition	= DIA_PAL_4_LOCATION_Condition;
 	information	= DIA_PAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co vy paladinové dìláte tady v Khorinidu?";
+	description = "Co vy paladinovÃ© dÄ›lÃ¡te tady v Khorinidu?";
 };                       
 
 FUNC INT DIA_PAL_4_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_LOCATION_15_00"); //Co dìláte vy, paladinové, tady v Khorinidu?
-	AI_Output (self, other, "DIA_PAL_4_LOCATION_04_01"); //To ti nemùu øíct.
+	AI_Output (other, self, "DIA_PAL_4_LOCATION_15_00"); //Co dÄ›lÃ¡te vy, paladinovÃ©, tady v Khorinidu?
+	AI_Output (self, other, "DIA_PAL_4_LOCATION_04_01"); //To ti nemÅ¯Å¾u Å™Ã­ct.
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE DIA_PAL_4_STANDARD(C_INFO)
 	condition	= DIA_PAL_4_STANDARD_Condition;
 	information	= DIA_PAL_4_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };
                        
 func INT DIA_PAL_4_STANDARD_Condition()
@@ -120,7 +120,7 @@ func INT DIA_PAL_4_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_4_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_PAL_4_STANDARD_15_00"); //Co je novÃ©ho?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_4_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //Teï kdy víme, e máme co do èinìní s draky, zaène náš velitel urèitì brzy nìco dìlat.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //TeÄ kdyÅ¾ vÃ­me, Å¾e mÃ¡me co do ÄinÄ›nÃ­ s draky, zaÄne nÃ¡Å¡ velitel urÄitÄ› brzy nÄ›co dÄ›lat.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //Ještì stále nemáme ádné zprávy od našich muù z Hornického údolí. To je velmi znepokojivé.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //JeÅ¡tÄ› stÃ¡le nemÃ¡me Å¾Ã¡dnÃ© zprÃ¡vy od naÅ¡ich muÅ¾Å¯ z HornickÃ©ho ÃºdolÃ­. To je velmi znepokojivÃ©.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Díky Innosovi! Draèí hrozba byla zaehnána. Teï u se musíme jen vypoøádat s tìmi skøety a cesta k rudì je volná.
+			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //DÃ­ky Innosovi! DraÄÃ­ hrozba byla zaÅ¾ehnÃ¡na. TeÄ uÅ¾ se musÃ­me jen vypoÅ™Ã¡dat s tÄ›mi skÅ™ety a cesta k rudÄ› je volnÃ¡.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //Nemám èas zabıvat se kadım drbem, co se po mìstì šíøí.
+		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //NemÃ¡m Äas zabÃ½vat se kaÅ¾dÃ½m drbem, co se po mÄ›stÄ› Å¡Ã­Å™Ã­.
 	};
 };
 

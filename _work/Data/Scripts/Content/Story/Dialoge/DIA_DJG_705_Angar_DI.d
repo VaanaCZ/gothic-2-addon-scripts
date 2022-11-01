@@ -33,7 +33,7 @@ instance DIA_Angar_DI_HALLO		(C_INFO)
 	information	 = 	DIA_Angar_DI_HALLO_Info;
 	permanent	 = 	TRUE;
 
-	description 	 =  "Jak se m·ö?";
+	description 	 =  "Jak se m√°≈°?";
 };
 
 func int DIA_Angar_DI_HALLO_Condition ()
@@ -46,16 +46,16 @@ func int DIA_Angar_DI_HALLO_Condition ()
 
 func void DIA_Angar_DI_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_HALLO_15_00"); //Jak se m·ö?
+	AI_Output			(other, self, "DIA_Angar_DI_HALLO_15_00"); //Jak se m√°≈°?
 
 	if ((Npc_IsDead(UndeadDragon)) == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_01"); //Od t˝ doby, co jsme na ostrovÏ, je ta bolest ËÌm d·l tÌm nesnesitelnÏjöÌ.
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_02"); //»ert aby to spral. Uû by to snad mohlo skonËit.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_01"); //Od t√Ω doby, co jsme na ostrovƒõ, je ta bolest ƒç√≠m d√°l t√≠m nesnesitelnƒõj≈°√≠.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_02"); //ƒåert aby to spral. U≈æ by to snad mohlo skonƒçit.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_03"); //NedÏlej si se mnou starosti. ProstÏ odsud vypadni.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_03"); //Nedƒõlej si se mnou starosti. Prostƒõ odsud vypadni.
 	};
 
 };
@@ -84,18 +84,18 @@ func int DIA_Angar_DI_ORKS_Condition ()
 
 func void DIA_Angar_DI_ORKS_Info ()
 {
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_00"); //MÏli bysme sebou zatracenÏ mrsknout. DalöÌ sk¯etÌ ˙tok n·s bude st·t ûivot.
-	AI_Output			(other, self, "DIA_Angar_DI_ORKS_15_01"); //DÏl·m, co m˘ûu.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_02"); //To nestaËÌ.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_00"); //Mƒõli bysme sebou zatracenƒõ mrsknout. Dal≈°√≠ sk≈ôet√≠ √∫tok n√°s bude st√°t ≈æivot.
+	AI_Output			(other, self, "DIA_Angar_DI_ORKS_15_01"); //Dƒõl√°m, co m≈Ø≈æu.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_02"); //To nestaƒç√≠.
 
 	Info_ClearChoices	(DIA_Angar_DI_ORKS);
-	Info_AddChoice	(DIA_Angar_DI_ORKS, "KlÌdek.", DIA_Angar_DI_ORKS_no );
-	Info_AddChoice	(DIA_Angar_DI_ORKS, "Nech toho skuhr·nÌ a radöi mi pojÔ pomoct.", DIA_Angar_DI_ORKS_follow );
+	Info_AddChoice	(DIA_Angar_DI_ORKS, "Kl√≠dek.", DIA_Angar_DI_ORKS_no );
+	Info_AddChoice	(DIA_Angar_DI_ORKS, "Nech toho skuhr√°n√≠ a rad≈°i mi pojƒè pomoct.", DIA_Angar_DI_ORKS_follow );
 };
 func void DIA_Angar_DI_ORKS_follow ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //Tak mi pomoz a p¯estaÚ skuËet.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //Jo. Jdi prvnÌ. Hni se.
+	AI_Output			(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //Tak mi pomoz a p≈ôesta≈à skuƒçet.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //Jo. Jdi prvn√≠. Hni se.
 	AI_StopProcessInfos (self); 
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"FollowDI");
@@ -104,8 +104,8 @@ func void DIA_Angar_DI_ORKS_follow ()
 
 func void DIA_Angar_DI_ORKS_no ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //KlÌdek.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //To se ti snadno ¯ekne. NejspÌö se tady z toho zbl·znÌm.
+	AI_Output			(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //Kl√≠dek.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //To se ti snadno ≈ôekne. Nejsp√≠≈° se tady z toho zbl√°zn√≠m.
 	AI_StopProcessInfos (self); 
 };
 
@@ -120,7 +120,7 @@ instance DIA_Angar_DI_FOLLOW		(C_INFO)
 	information	 = 	DIA_Angar_DI_FOLLOW_Info;
 	permanent	 = 	TRUE;
 
-	description  =  "TeÔ se drû radöi vzadu.";
+	description  =  "Teƒè se dr≈æ rad≈°i vzadu.";
 
 };
 
@@ -134,27 +134,27 @@ func int DIA_Angar_DI_FOLLOW_Condition ()
 
 func void DIA_Angar_DI_FOLLOW_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_00"); //Z˘staÚ vzadu.
+	AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_00"); //Z≈Østa≈à vzadu.
 
 	if (Npc_GetDistToWP(self,"SKELETTE")<4000) 
 		{
-			AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //O zbytek se postar·m s·m.
-			AI_Output			(self ,other, "DIA_Angar_DI_FOLLOW_04_02"); //HodnÏ ötÏstÌ.
+			AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //O zbytek se postar√°m s√°m.
+			AI_Output			(self ,other, "DIA_Angar_DI_FOLLOW_04_02"); //Hodnƒõ ≈°tƒõst√≠.
 			
 			AI_StopProcessInfos (self); 
-			Npc_ExchangeRoutine	(self,"ZaËÌt");
+			Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 			Angar_DI_Party = LOG_SUCCESS; //Joly: (Schluss mit Follow)
 			B_GivePlayerXP (XP_Ambient);
 		}
 	else
 		{	
-			AI_Output			(self, other, "DIA_Angar_DI_FOLLOW_04_03"); //Jasn· vÏc.
+			AI_Output			(self, other, "DIA_Angar_DI_FOLLOW_04_03"); //Jasn√° vƒõc.
 
 			AI_StopProcessInfos (self); 
 						
 			if (Npc_GetDistToWP(self,"SHIP")<10000) 
 			{
-				Npc_ExchangeRoutine	(self,"ZaËÌt");
+				Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 			}
 			else
 			{			
@@ -172,7 +172,7 @@ func void DIA_Angar_DI_FOLLOW_Info ()
 				}
 				else
 				{
-					Npc_ExchangeRoutine	(self,"ZaËÌt");
+					Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 				};
 			};
 		};
@@ -191,7 +191,7 @@ instance DIA_Angar_DI_FOLLOWAGAIN		(C_INFO)
 	information	 = 	DIA_Angar_DI_FOLLOWAGAIN_Info;
 	permanent	 = 	TRUE;
 
-	description  =  "PojÔ za mnou.";
+	description  =  "Pojƒè za mnou.";
 
 };
 
@@ -205,8 +205,8 @@ func int DIA_Angar_DI_FOLLOWAGAIN_Condition ()
 
 func void DIA_Angar_DI_FOLLOWAGAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_FOLLOWAGAIN_15_00"); //PojÔ za mnou.
-	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWAGAIN_04_01"); //Jdi prvnÌ.
+	AI_Output			(other, self, "DIA_Angar_DI_FOLLOWAGAIN_15_00"); //Pojƒè za mnou.
+	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWAGAIN_04_01"); //Jdi prvn√≠.
 	Angar_DI_Party = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"FollowDI");
@@ -239,7 +239,7 @@ func int DIA_Angar_DI_FOLLOWSTOP_Condition ()
 
 func void DIA_Angar_DI_FOLLOWSTOP_Info ()
 {
-	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWSTOP_04_00"); //Aarh! Ta bolest mÏ p¯iv·dÌ k öÌlenstvÌ!
+	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWSTOP_04_00"); //Aarh! Ta bolest mƒõ p≈ôiv√°d√≠ k ≈°√≠lenstv√≠!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -267,20 +267,20 @@ func int DIA_Angar_DI_UNDEADDRGDEAD_Condition ()
 func void DIA_Angar_DI_UNDEADDRGDEAD_Info ()
 {
 	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //Dostal ses z toho.
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //M˘ûeme uû odsud koneËnÏ vypadnout?
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //Jo. Nep¯Ìtel byl poraûen.
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //Tak to nesmÌme d·l ztr·cet Ëas. Zajdi kapit·novi ¯Ìct, aby zvednul kotvy.
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //M≈Ø≈æeme u≈æ odsud koneƒçnƒõ vypadnout?
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //Jo. Nep≈ô√≠tel byl pora≈æen.
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //Tak to nesm√≠me d√°l ztr√°cet ƒças. Zajdi kapit√°novi ≈ô√≠ct, aby zvednul kotvy.
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //Douf·m, ûe v·s, odpadl˝ch Ëlen˘ sekty, nenÌ vÌc.
-		AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Vöechno je moûnÈ. I kdyû P·traËi byli velmi d˘kladnÌ. Dokonce m·lem dostali i mÏ. Kdo vÌ?
+		AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //Douf√°m, ≈æe v√°s, odpadl√Ωch ƒçlen≈Ø sekty, nen√≠ v√≠c.
+		AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //V≈°echno je mo≈æn√©. I kdy≈æ P√°traƒçi byli velmi d≈Økladn√≠. Dokonce m√°lem dostali i mƒõ. Kdo v√≠?
 	};
 
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //Co budeö dÏlat d·l?
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Moûn· se usadÌm na venkovÏ a zaËnu farma¯it. V·lËenÌ uû mÏ dost unavuje.
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //Co bude≈° dƒõlat d√°l?
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Mo≈æn√° se usad√≠m na venkovƒõ a zaƒçnu farma≈ôit. V√°lƒçen√≠ u≈æ mƒõ dost unavuje.
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 };
 
 // ************************************************************
@@ -330,7 +330,7 @@ instance DIA_Angar_DI_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_DI_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_DI_FOUNDAMULETT_Info;
 
-	description	 = 	"Naöel jsem tv˘j amulet.";
+	description	 = 	"Na≈°el jsem tv≈Øj amulet.";
 };
 
 func int DIA_Angar_DI_FOUNDAMULETT_Condition ()

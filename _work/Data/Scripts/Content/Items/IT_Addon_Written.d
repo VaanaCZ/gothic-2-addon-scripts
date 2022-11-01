@@ -3,7 +3,7 @@
 //**********************************************************************************
 INSTANCE ITWr_Addon_Hinweis_02		(C_Item)
 {
-	name 				=	"D˘leûit· zpr·va";
+	name 				=	"D≈Øle≈æit√° zpr√°va";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -15,7 +15,7 @@ INSTANCE ITWr_Addon_Hinweis_02		(C_Item)
 	on_state[0]			=   Use_Hinweis_02;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "Z hospody v t·bo¯e bandit˘";
+	TEXT[0]				=  "Z hospody v t√°bo≈ôe bandit≈Ø";
 };
 func void Use_Hinweis_02 ()
 {
@@ -31,10 +31,10 @@ func void Use_Hinweis_02 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Hele lidi,");
 					Doc_PrintLines	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Lou zmizel v baûin·ch. NejspÌö ho seûrali moË·lovÌ ûraloci.");	
-					Doc_PrintLines	( nDocID,  0, "A co h˘¯ - spolu s nÌm zmizel i klÌË ode dve¯Ì."					);
+					Doc_PrintLines	( nDocID,  0, "Lou zmizel v ba≈æin√°ch. Nejsp√≠≈° ho se≈ærali moƒç√°lov√≠ ≈æraloci.");	
+					Doc_PrintLines	( nDocID,  0, "A co h≈Ø≈ô - spolu s n√≠m zmizel i kl√≠ƒç ode dve≈ô√≠."					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Jestli ho najdeö, m˘ûeö si nechat vöecky Louovy vÏci!");	
+					Doc_PrintLines	( nDocID,  0, "Jestli ho najde≈°, m≈Ø≈æe≈° si nechat v≈°ecky Louovy vƒõci!");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Snaf");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -45,7 +45,7 @@ func void Use_Hinweis_02 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Health_04		(C_Item)
 {
-	name 				=	"Recept na lÈËiv˝ lektvar";
+	name 				=	"Recept na l√©ƒçiv√Ω lektvar";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -56,10 +56,10 @@ INSTANCE ITWr_Addon_Health_04		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_Heilrezept_04;
 	scemeName			=	"MAP";
-	description			= 	"»ist· ûivotnÌ energie";
+	description			= 	"ƒåist√° ≈æivotn√≠ energie";
 	
-	TEXT[2]				=	"Jak namÌchat mocn˝ elixÌr.";
-	TEXT[3]				=	"K pouûitÌ pot¯ebujeö zn·t lÈËivÈ elixÌry.";
+	TEXT[2]				=	"Jak nam√≠chat mocn√Ω elix√≠r.";
+	TEXT[3]				=	"K pou≈æit√≠ pot≈ôebuje≈° zn√°t l√©ƒçiv√© elix√≠ry.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -74,7 +74,7 @@ func void Use_Heilrezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Health_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"K v˝robÏ lektvaru ËistÈ ûivotnÈ energie pot¯ebuji 1 luËnÌ pohanku a 3 lÈËivÈ esence.");
+				B_LogEntry (TOPIC_TalentAlchemy,"K v√Ωrobƒõ lektvaru ƒçist√© ≈æivotn√© energie pot≈ôebuji 1 luƒçn√≠ pohanku a 3 l√©ƒçiv√© esence.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -85,13 +85,13 @@ func void Use_Heilrezept_04 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Jak vyrobit lektvar ËistÈ ûivotnÌ energie:");
+					Doc_PrintLines	( nDocID,  0, "Jak vyrobit lektvar ƒçist√© ≈æivotn√≠ energie:");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Pot¯ebujeö jednu luËnÌ pohanku a t¯i esence hojivÈ sÌly.");	
-					Doc_PrintLines	( nDocID,  0, "Vöe dob¯e smÌchej a sva¯ podle receptu na lÈËivÈ lektvary.");	
+					Doc_PrintLines	( nDocID,  0, "Pot≈ôebuje≈° jednu luƒçn√≠ pohanku a t≈ôi esence hojiv√© s√≠ly.");	
+					Doc_PrintLines	( nDocID,  0, "V≈°e dob≈ôe sm√≠chej a sva≈ô podle receptu na l√©ƒçiv√© lektvary.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Tento lektvar mohou vyr·bÏt pouze alchymistÈ, kte¯Ì znajÌ recept na lÈËivÈ lektvary.");	
+					Doc_PrintLines	( nDocID,  0, "Tento lektvar mohou vyr√°bƒõt pouze alchymist√©, kte≈ô√≠ znaj√≠ recept na l√©ƒçiv√© lektvary.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -114,10 +114,10 @@ INSTANCE ITWr_Addon_Mana_04		(C_Item)
 	on_state[0]			=   Use_Manarezept_04;
 	scemeName			=	"MAP";
 
-	description			= 	"»ist· mana";
+	description			= 	"ƒåist√° mana";
 	
-	TEXT[2]				=	"Jak namÌchat mocn˝ elixÌr.";
-	TEXT[3]				=	"K pouûitÌ pot¯ebujeö zn·t lektvary many.";
+	TEXT[2]				=	"Jak nam√≠chat mocn√Ω elix√≠r.";
+	TEXT[3]				=	"K pou≈æit√≠ pot≈ôebuje≈° zn√°t lektvary many.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -132,7 +132,7 @@ func void Use_Manarezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Mana_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"K v˝robÏ lektvaru many pot¯ebuji 1 luËnÌ pohanku a 3 esence many.");
+				B_LogEntry (TOPIC_TalentAlchemy,"K v√Ωrobƒõ lektvaru many pot≈ôebuji 1 luƒçn√≠ pohanku a 3 esence many.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -143,13 +143,13 @@ func void Use_Manarezept_04 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Jak vytvo¯it lektvar many:");
+					Doc_PrintLines	( nDocID,  0, "Jak vytvo≈ôit lektvar many:");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Pot¯ebujeö jednu luËnÌ pohanku a t¯i esence magickÈ sÌly.");	
-					Doc_PrintLines	( nDocID,  0, "Vöe dob¯e smÌchej a sva¯ podle receptu na lektvary many.");	
+					Doc_PrintLines	( nDocID,  0, "Pot≈ôebuje≈° jednu luƒçn√≠ pohanku a t≈ôi esence magick√© s√≠ly.");	
+					Doc_PrintLines	( nDocID,  0, "V≈°e dob≈ôe sm√≠chej a sva≈ô podle receptu na lektvary many.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Tento lektvar mohou vyr·bÏt pouze alchymistÈ, kte¯Ì znajÌ recept na lektvary many.");	
+					Doc_PrintLines	( nDocID,  0, "Tento lektvar mohou vyr√°bƒõt pouze alchymist√©, kte≈ô√≠ znaj√≠ recept na lektvary many.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -160,7 +160,7 @@ func void Use_Manarezept_04 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 {
-	name 				=	"D˘leûit˝ tip";
+	name 				=	"D≈Øle≈æit√Ω tip";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -172,7 +172,7 @@ INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 	on_state[0]			=   Use_Hinweis_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "Z chatrËe v baûinÏ.";
+	TEXT[0]				=  "Z chatrƒçe v ba≈æinƒõ.";
 };
 func void Use_Hinweis_01 ()
 {
@@ -186,11 +186,11 @@ func void Use_Hinweis_01 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "ZdravÌm,");
-					Doc_PrintLines	( nDocID,  0, "VÏci v truhl·ch maj slouûit pro p¯Ìpad nouze.");	
-					Doc_PrintLines	( nDocID,  0, "A jsou pro KAéD›HO. Takûe kdyû budete nÏco pot¯ebovat, klidnÏ si to vemte.");	
-					Doc_PrintLines	( nDocID,  0, "Ale vemte si jenom tolik, kolik pot¯ebujete."					);
-					Doc_PrintLines	( nDocID,  0, "Kdyû to tak bude dÏlat kaûdej, bude to fungovat."					);
+					Doc_PrintLine	( nDocID,  0, "Zdrav√≠m,");
+					Doc_PrintLines	( nDocID,  0, "Vƒõci v truhl√°ch maj slou≈æit pro p≈ô√≠pad nouze.");	
+					Doc_PrintLines	( nDocID,  0, "A jsou pro KA≈ΩD√ùHO. Tak≈æe kdy≈æ budete nƒõco pot≈ôebovat, klidnƒõ si to vemte.");	
+					Doc_PrintLines	( nDocID,  0, "Ale vemte si jenom tolik, kolik pot≈ôebujete."					);
+					Doc_PrintLines	( nDocID,  0, "Kdy≈æ to tak bude dƒõlat ka≈ædej, bude to fungovat."					);
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Fletcher");
@@ -202,7 +202,7 @@ func void Use_Hinweis_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_William_01		(C_Item)
 {
-	name 				=	"Zpr·va";
+	name 				=	"Zpr√°va";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -214,7 +214,7 @@ INSTANCE ITWr_Addon_William_01		(C_Item)
 	on_state[0]			=   Use_William_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Tohle mÏl u sebe ryb·¯ William.";
+	Text[0]				=	"Tohle mƒõl u sebe ryb√°≈ô William.";
 };
 func void Use_William_01 ()
 {
@@ -229,14 +229,14 @@ func void Use_William_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Williame. ");
-					Doc_PrintLines	( nDocID,  0, "Aû bude ˙plnÏk, odl·k·me hlÌdku.");	
-					Doc_PrintLines	( nDocID,  0, "Vpliû se dovnit¯, ale buÔ opatrn˝!");	
-					Doc_PrintLines	( nDocID,  0, "Z baûiny se dostaneö, kdyû p˘jdeö po cestÏ z kl·d."					);
-					Doc_PrintLines	( nDocID,  0, "T·bor pir·t˘ je na druhÈ stranÏ ˙dolÌ, aû na z·padÏ."					);
-					Doc_PrintLines	( nDocID,  0, "Odsud uû s lodÌ zmizÌö snadno.");	
+					Doc_PrintLines	( nDocID,  0, "A≈æ bude √∫plnƒõk, odl√°k√°me hl√≠dku.");	
+					Doc_PrintLines	( nDocID,  0, "Vpli≈æ se dovnit≈ô, ale buƒè opatrn√Ω!");	
+					Doc_PrintLines	( nDocID,  0, "Z ba≈æiny se dostane≈°, kdy≈æ p≈Øjde≈° po cestƒõ z kl√°d."					);
+					Doc_PrintLines	( nDocID,  0, "T√°bor pir√°t≈Ø je na druh√© stranƒõ √∫dol√≠, a≈æ na z√°padƒõ."					);
+					Doc_PrintLines	( nDocID,  0, "Odsud u≈æ s lod√≠ zmiz√≠≈° snadno.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Tajn˝ p¯Ìznivce");	
+					Doc_PrintLine	( nDocID,  0, "Tajn√Ω p≈ô√≠znivce");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
@@ -256,8 +256,8 @@ INSTANCE ITWr_Addon_MCELIXIER_01		(C_Item)
 	on_state[0]			=   Use_MCELIXIER_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Recept na elixÌr pozmÏnÏnÈ mysli.";
-	Text[1]				= 	"Tento lektvar pom˘ûe obnovit ztracenÈ vzpomÌnky.";
+	Text[0]				= 	"Recept na elix√≠r pozmƒõnƒõn√© mysli.";
+	Text[1]				= 	"Tento lektvar pom≈Ø≈æe obnovit ztracen√© vzpom√≠nky.";
 };
 func void Use_MCELIXIER_01 ()
 {
@@ -271,13 +271,13 @@ func void Use_MCELIXIER_01 ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "ElixÌr pozmÏnÏnÈ mysli");	
+					Doc_PrintLine	( nDocID,  0, "Elix√≠r pozmƒõnƒõn√© mysli");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "K namÌch·nÌ tohoto lektvaru pot¯ebujeö dvÏ ûihadla z krvav˝ch much.");	
-					Doc_PrintLines	( nDocID,  0, "D·le p¯idej jeden extrakt z many a jednu lÈËivou esenci.");	
-					Doc_PrintLines	( nDocID,  0, "Vöe p¯iveÔ k varu a p¯ihoÔ s·Ëek ËervenÈho pep¯e."					);
+					Doc_PrintLines	( nDocID,  0, "K nam√≠ch√°n√≠ tohoto lektvaru pot≈ôebuje≈° dvƒõ ≈æihadla z krvav√Ωch much.");	
+					Doc_PrintLines	( nDocID,  0, "D√°le p≈ôidej jeden extrakt z many a jednu l√©ƒçivou esenci.");	
+					Doc_PrintLines	( nDocID,  0, "V≈°e p≈ôiveƒè k varu a p≈ôihoƒè s√°ƒçek ƒçerven√©ho pep≈ôe."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "O namÌch·nÌ tohoto lektvaru nechù se pokouöÌ pouze alchymista dob¯e znal˝ svÈho oboru, jenû umÌ zÌskat jed ze ûihadel.");	
+					Doc_PrintLines	( nDocID,  0, "O nam√≠ch√°n√≠ tohoto lektvaru nech≈• se pokou≈°√≠ pouze alchymista dob≈ôe znal√Ω sv√©ho oboru, jen≈æ um√≠ z√≠skat jed ze ≈æihadel.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -287,7 +287,7 @@ func void Use_MCELIXIER_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Pirates_01		(C_Item)
 {
-	name 				=	"UmaötÏn· zpr·va";
+	name 				=	"Uma≈°tƒõn√° zpr√°va";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -299,7 +299,7 @@ INSTANCE ITWr_Addon_Pirates_01		(C_Item)
 	on_state[0]			=   Use_Pirates_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"Tuhle zpr·vu jsi naöel v AngusovÏ kapse.";
+	TEXT[0]				=	"Tuhle zpr√°vu jsi na≈°el v Angusovƒõ kapse.";
 };
 func void Use_Pirates_01 ()
 {
@@ -312,25 +312,25 @@ func void Use_Pirates_01 ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Pir·t˘m:"					);
+					Doc_PrintLine	( nDocID,  0, "Pir√°t≈Øm:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Dostal jsem poslednÌ dod·vku urËenou pro n·s.");	
-					Doc_PrintLine	( nDocID,  0, "Pak v·m ji p¯inesu do jeskynÌ. Sejdeme se tam.");	
-					Doc_PrintLines	( nDocID,  0, "ZaplatÌm dvojn·sobnou hodnotu ve zlatÏ."					);
+					Doc_PrintLines	( nDocID,  0, "Dostal jsem posledn√≠ dod√°vku urƒçenou pro n√°s.");	
+					Doc_PrintLine	( nDocID,  0, "Pak v√°m ji p≈ôinesu do jeskyn√≠. Sejdeme se tam.");	
+					Doc_PrintLines	( nDocID,  0, "Zaplat√≠m dvojn√°sobnou hodnotu ve zlatƒõ."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Takhle se to dÏl·");	
+					Doc_PrintLines	( nDocID,  0, "Takhle se to dƒõl√°");	
 					Doc_PrintLine	( nDocID,  0, "Tom");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
-//	Rezept f¸r gr¸nene Novizen
+//	Rezept f√ºr gr√ºnene Novizen
 //**********************************************************************************
 INSTANCE ITWr_Addon_Joint_01		(C_Item)
 {
-	name 				=	"Zelen˝ novic";
+	name 				=	"Zelen√Ω novic";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -356,14 +356,14 @@ func void Use_Joint_Rezept_01 ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Zelen˝ novic"					);
+					Doc_PrintLine	( nDocID,  0, "Zelen√Ω novic"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "(...) Tyhle öpeky se sice balÌ dob¯e, ale v naöem t·bo¯e v baûin·ch jsme mÏli o t¯Ìdu lepöÌ zboûÌ.");	
+					Doc_PrintLines	( nDocID,  0, "(...) Tyhle ≈°peky se sice bal√≠ dob≈ôe, ale v na≈°em t√°bo≈ôe v ba≈æin√°ch jsme mƒõli o t≈ô√≠du lep≈°√≠ zbo≈æ√≠.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Kdybych tak mÏl v˝taûek ze dvou lodyh tr·vy z baûin a p¯idal k nim luËnÌ pohanku, mohl bych namÌchat jointa stejnÏ dobrÈho, jako b˝val zelen˝ novic."					);
+					Doc_PrintLines	( nDocID,  0, "Kdybych tak mƒõl v√Ωta≈æek ze dvou lodyh tr√°vy z ba≈æin a p≈ôidal k nim luƒçn√≠ pohanku, mohl bych nam√≠chat jointa stejnƒõ dobr√©ho, jako b√Ωval zelen√Ω novic."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Zelen˝ novic tiöÌ veökerou bolest a vyËistÌ ti hlavu.");	
+					Doc_PrintLines	( nDocID,  0, "Zelen√Ω novic ti≈°√≠ ve≈°kerou bolest a vyƒçist√≠ ti hlavu.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -374,7 +374,7 @@ func void Use_Joint_Rezept_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Lou_Rezept		(C_Item)
 {
-	name 				=	"Recept na Lou˘v cloum·k";
+	name 				=	"Recept na Lou≈Øv cloum√°k";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -386,7 +386,7 @@ INSTANCE ITWr_Addon_Lou_Rezept		(C_Item)
 	on_state[0]			=   UseLouRezept;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Recept na v˝robu Louova cloum·ka";
+	Text[0]				= 	"Recept na v√Ωrobu Louova cloum√°ka";
 };
 func void UseLouRezept ()
 {
@@ -401,18 +401,18 @@ func void UseLouRezept ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Recept na Lou˘v cloum·k"					);
+					Doc_PrintLine	( nDocID,  0, "Recept na Lou≈Øv cloum√°k"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Ingredience pro v˝robu cloum·ka:");	
+					Doc_PrintLine	( nDocID,  0, "Ingredience pro v√Ωrobu cloum√°ka:");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Vezmi jednu l·hev, dva tu¯Ìny a po¯·dnou porci tr·vy z baûin.");	
-					Doc_PrintLines	( nDocID,  0, "P¯idej rozemletÈ zuby moË·lovÈho ûraloka."					);
-					Doc_PrintLines	( nDocID,  0, "Vöechno nasypej do l·hve a sva¯ s pan·kem rumu."					);
+					Doc_PrintLines	( nDocID,  0, "Vezmi jednu l√°hev, dva tu≈ô√≠ny a po≈ô√°dnou porci tr√°vy z ba≈æin.");	
+					Doc_PrintLines	( nDocID,  0, "P≈ôidej rozemlet√© zuby moƒç√°lov√©ho ≈æraloka."					);
+					Doc_PrintLines	( nDocID,  0, "V≈°echno nasypej do l√°hve a sva≈ô s pan√°kem rumu."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Na zdravÌ.");	
+					Doc_PrintLine	( nDocID,  0, "Na zdrav√≠.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Podle starÈho slepce je zdravÏjöÌ, kdyû se nenad˝ch·ö v˝par˘.");	
+					Doc_PrintLines	( nDocID,  0, "Podle star√©ho slepce je zdravƒõj≈°√≠, kdy≈æ se nenad√Ωch√°≈° v√Ωpar≈Ø.");	
 					Doc_Show		( nDocID );
 
 };
@@ -421,7 +421,7 @@ func void UseLouRezept ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Lou_Rezept2		(C_Item)
 {
-	name 				=	"Recept na Lou˘v supercloum·k";
+	name 				=	"Recept na Lou≈Øv supercloum√°k";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -433,7 +433,7 @@ INSTANCE ITWr_Addon_Lou_Rezept2		(C_Item)
 	on_state[0]			=   UseLouRezept2;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Recept na v˝robu Louova supercloum·ku.";
+	Text[0]				= 	"Recept na v√Ωrobu Louova supercloum√°ku.";
 };
 func void UseLouRezept2 ()
 {
@@ -447,13 +447,13 @@ func void UseLouRezept2 ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Lou˘v supercloum·k"					);
+					Doc_PrintLine	( nDocID,  0, "Lou≈Øv supercloum√°k"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Vezmi star˝ dobr˝ Lou˘v cloum·k a znovu jej p¯edestiluj.");
+					Doc_PrintLines	( nDocID,  0, "Vezmi star√Ω dobr√Ω Lou≈Øv cloum√°k a znovu jej p≈ôedestiluj.");
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "To by ale mÏli dÏlat jen ti nejzkuöenÏjöÌ paliËi.");	
+					Doc_PrintLines	( nDocID,  0, "To by ale mƒõli dƒõlat jen ti nejzku≈°enƒõj≈°√≠ paliƒçi.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Jestli to zkusÌ nÏjak· nezkuöen· lama, m˘ûe z toho oslepnout nebo rovnou zcepenÏt.");	
+					Doc_PrintLines	( nDocID,  0, "Jestli to zkus√≠ nƒõjak√° nezku≈°en√° lama, m≈Ø≈æe z toho oslepnout nebo rovnou zcepenƒõt.");	
 					
 					Doc_Show		( nDocID );
 
@@ -464,7 +464,7 @@ func void UseLouRezept2 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Piratentod		(C_Item)
 {
-	name 				=	"Rychl˝ herynek";
+	name 				=	"Rychl√Ω herynek";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -476,7 +476,7 @@ INSTANCE ITWr_Addon_Piratentod		(C_Item)
 	on_state[0]			=   UseRezeptPiratentod;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Recept na rychlÈho herynka";
+	Text[0]				=	"Recept na rychl√©ho herynka";
 };
 func void UseRezeptPiratentod ()
 {
@@ -490,16 +490,16 @@ func void UseRezeptPiratentod ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Rychl˝ herynek (ode mÏ)"					);
+					Doc_PrintLine	( nDocID,  0, "Rychl√Ω herynek (ode mƒõ)"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "MalÈ povzbuzenÌ pro skuteËnÈ muûe");	
+					Doc_PrintLine	( nDocID,  0, "Mal√© povzbuzen√≠ pro skuteƒçn√© mu≈æe");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Jako obvykle pot¯ebujeö l·hev, kterou naplnÌö mÏrkou rumu a p¯id·ö Ëerstvou rybu.");	
-					Doc_PrintLines	( nDocID,  0, "Aû tekutina zaËne fialovÏt, vyjmeö rybu a mÌsto nÌ p¯isypeö ËerstvÏ natrhanÈ"					);
-					Doc_PrintLines	( nDocID,  0, "chÚapavËÌ b˝lÌ, aby dodalo chuù i aroma."					);
+					Doc_PrintLines	( nDocID,  0, "Jako obvykle pot≈ôebuje≈° l√°hev, kterou napln√≠≈° mƒõrkou rumu a p≈ôid√°≈° ƒçerstvou rybu.");	
+					Doc_PrintLines	( nDocID,  0, "A≈æ tekutina zaƒçne fialovƒõt, vyjme≈° rybu a m√≠sto n√≠ p≈ôisype≈° ƒçerstvƒõ natrhan√©"					);
+					Doc_PrintLines	( nDocID,  0, "ch≈àapavƒç√≠ b√Ωl√≠, aby dodalo chu≈• i aroma."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Ale opatrnÏ, tohle pitÌ je celkem zabij·k.");	
+					Doc_PrintLines	( nDocID,  0, "Ale opatrnƒõ, tohle pit√≠ je celkem zabij√°k.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_Show		( nDocID );
 
@@ -507,7 +507,7 @@ func void UseRezeptPiratentod ()
 //------------------------------------------------------------------------------------------
 INSTANCE Fakescroll_Addon (C_Item)
 {	
-	name 					=	"Kousek papÌru";
+	name 					=	"Kousek pap√≠ru";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	
@@ -529,7 +529,7 @@ INSTANCE Fakescroll_Addon (C_Item)
 //------------------------------------------------------------------------------------------
 INSTANCE ItWr_Addon_AxtAnleitung (C_ITEM)
 {	
-	name 				=	"N·vod na sekyru bandit˘";
+	name 				=	"N√°vod na sekyru bandit≈Ø";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -541,7 +541,7 @@ INSTANCE ItWr_Addon_AxtAnleitung (C_ITEM)
 	on_state[0]			=   UseAxtAnleitung;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"N·vod na v˝robu lehkÈ a ostrÈ sekyry.";
+	Text[0]				= 	"N√°vod na v√Ωrobu lehk√© a ostr√© sekyry.";
 };
 func void UseAxtAnleitung ()
 {
@@ -556,18 +556,18 @@ func void UseAxtAnleitung ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Sekyra bandit˘"					);
+					Doc_PrintLine	( nDocID,  0, "Sekyra bandit≈Ø"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "JednoruËnÌ sekyra");	
+					Doc_PrintLine	( nDocID,  0, "Jednoruƒçn√≠ sekyra");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Tuhle zvl·ötnÌ sekyru vykov· kaûd˝, kdo zn· alespoÚ z·klady kova¯iny.");	
-					Doc_PrintLines	( nDocID,  0, "Pot¯ebujeö dva kousky rozp·lenÈho surovÈho ûeleza."					);
-					Doc_PrintLines	( nDocID,  0, "Kousek rudy a t¯i zuby z vlka, chÚapavce nebo podobnÈ öelmy."					);
+					Doc_PrintLines	( nDocID,  0, "Tuhle zvl√°≈°tn√≠ sekyru vykov√° ka≈æd√Ω, kdo zn√° alespo≈à z√°klady kova≈ôiny.");	
+					Doc_PrintLines	( nDocID,  0, "Pot≈ôebuje≈° dva kousky rozp√°len√©ho surov√©ho ≈æeleza."					);
+					Doc_PrintLines	( nDocID,  0, "Kousek rudy a t≈ôi zuby z vlka, ch≈àapavce nebo podobn√© ≈°elmy."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Rudu, zuby a ûelezo poloû na kovadlinu a vöechno po¯·dnÏ skuj dohromady.");	
+					Doc_PrintLine	( nDocID,  0, "Rudu, zuby a ≈æelezo polo≈æ na kovadlinu a v≈°echno po≈ô√°dnƒõ skuj dohromady.");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Hotov· sekyra bude velmi lehce ovladateln· a v boji mimo¯·dnÏ ˙Ëinn·.");
+					Doc_PrintLine	( nDocID,  0, "Hotov√° sekyra bude velmi lehce ovladateln√° a v boji mimo≈ô√°dnƒõ √∫ƒçinn√°.");
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
@@ -576,7 +576,7 @@ func void UseAxtAnleitung ()
 //------------------------------------------------------------------------------------------
 INSTANCE ItWr_Addon_SUMMONANCIENTGHOST (C_ITEM)
 {	
-	name 				=	"Vyvol·v·m 'Quarhodrona'";
+	name 				=	"Vyvol√°v√°m 'Quarhodrona'";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -588,7 +588,7 @@ INSTANCE ItWr_Addon_SUMMONANCIENTGHOST (C_ITEM)
 	on_state[0]			=   UseSummonAncientGhost;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"TÌmto kouzeln˝m svitkem lze p¯ivolat Quarhodrona.";
+	Text[0]				=	"T√≠mto kouzeln√Ωm svitkem lze p≈ôivolat Quarhodrona.";
 };
 func void UseSummonAncientGhost ()
 {
@@ -621,7 +621,7 @@ func void UseSummonAncientGhost ()
 
 instance ItWr_Map_AddonWorld (C_Item)
 {
-	name 		= "ZapomenutÈ ˙dolÌ stavitel˘.";  
+	name 		= "Zapomenut√© √∫dol√≠ stavitel≈Ø.";  
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;

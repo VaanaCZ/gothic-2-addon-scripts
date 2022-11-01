@@ -31,7 +31,7 @@ INSTANCE DIA_Rangar_PICKPOCKET (C_INFO)
 	condition	= DIA_Rangar_PICKPOCKET_Condition;
 	information	= DIA_Rangar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klíè pùjde ukrást snadno.)";
+	description = "(Tento klÃ­Ä pÅ¯jde ukrÃ¡st snadno.)";
 };                       
 
 FUNC INT DIA_Rangar_PICKPOCKET_Condition()
@@ -98,9 +98,9 @@ FUNC INT DIA_Rangar_Hallo_Condition()
 FUNC VOID DIA_Rangar_Hallo_Info()
 {
 	AI_Output (other, self, "DIA_Rangar_Hallo_15_00");//Zdar, jak se vede?
-	AI_Output (self, other, "DIA_Rangar_Hallo_07_01");//Ne mi paladinové dají nìjaké další pøíkazy, mùu si tady v klidu dát nìkolik piv. Co víc by si jeden mohl pøát? (zašklebí se)
-	AI_Output (other, self, "DIA_Rangar_Hallo_15_02");//Pracuješ pro paladiny?
-	AI_Output (self, other, "DIA_Rangar_Hallo_07_03");//Jo, podávám jim hlášení o dìní ve mìstì. Momentálnì je tady docela klid.
+	AI_Output (self, other, "DIA_Rangar_Hallo_07_01");//NeÅ¾ mi paladinovÃ© dajÃ­ nÄ›jakÃ© dalÅ¡Ã­ pÅ™Ã­kazy, mÅ¯Å¾u si tady v klidu dÃ¡t nÄ›kolik piv. Co vÃ­c by si jeden mohl pÅ™Ã¡t? (zaÅ¡klebÃ­ se)
+	AI_Output (other, self, "DIA_Rangar_Hallo_15_02");//PracujeÅ¡ pro paladiny?
+	AI_Output (self, other, "DIA_Rangar_Hallo_07_03");//Jo, podÃ¡vÃ¡m jim hlÃ¡Å¡enÃ­ o dÄ›nÃ­ ve mÄ›stÄ›. MomentÃ¡lnÄ› je tady docela klid.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ork
@@ -112,7 +112,7 @@ INSTANCE DIA_Rangar_Ork   (C_INFO)
 	condition   = DIA_Rangar_Ork_Condition;
 	information = DIA_Rangar_Ork_Info;
 	permanent   = FALSE;
-	description = "Jak to vypadá se skøety?";
+	description = "Jak to vypadÃ¡ se skÅ™ety?";
 };
 
 FUNC INT DIA_Rangar_Ork_Condition()
@@ -126,9 +126,9 @@ FUNC INT DIA_Rangar_Ork_Condition()
 };
 FUNC VOID DIA_Rangar_Ork_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Ork_15_00");//Jak to vypadá se skøety?
-	AI_Output (self, other, "DIA_Rangar_Ork_07_01");//Není dùvod si dìlat tìkou hlavu - my z mìstské stráe a paladinové máme všechno pod kontrolou.
-	AI_Output (self, other, "DIA_Rangar_Ork_07_02");//Bì domù a nech nás dìlat naši práci. Dohlííme na mìsto a jeho obèany. -ŠKYT-
+	AI_Output (other, self, "DIA_Rangar_Ork_15_00");//Jak to vypadÃ¡ se skÅ™ety?
+	AI_Output (self, other, "DIA_Rangar_Ork_07_01");//NenÃ­ dÅ¯vod si dÄ›lat tÄ›Å¾kou hlavu - my z mÄ›stskÃ© strÃ¡Å¾e a paladinovÃ© mÃ¡me vÅ¡echno pod kontrolou.
+	AI_Output (self, other, "DIA_Rangar_Ork_07_02");//BÄ›Å¾ domÅ¯ a nech nÃ¡s dÄ›lat naÅ¡i prÃ¡ci. DohlÃ­Å¾Ã­me na mÄ›sto a jeho obÄany. -Å KYT-
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ork
@@ -140,7 +140,7 @@ INSTANCE DIA_Rangar_Bier   (C_INFO)
 	condition   = DIA_Rangar_Bier_Condition;
 	information = DIA_Rangar_Bier_Info;
 	permanent   = TRUE;
-	description = "Dal by sis ještì pivo?";
+	description = "Dal by sis jeÅ¡tÄ› pivo?";
 };
 
 FUNC INT DIA_Rangar_Bier_Condition()
@@ -154,19 +154,19 @@ FUNC INT DIA_Rangar_Bier_Condition()
 };
 FUNC VOID DIA_Rangar_Bier_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Bier_15_00");//Dal by sis ještì pivo?
+	AI_Output (other, self, "DIA_Rangar_Bier_15_00");//Dal by sis jeÅ¡tÄ› pivo?
 	
 	if B_GiveInvItems (other, self, ItFo_Beer, 1)
 	{
 		if (Knows_Paladins == FALSE)
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_01");//Ááá - nic se nevyrovná správnì vychlazenımu pivku.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_01");//ÃÃ¡Ã¡ - nic se nevyrovnÃ¡ sprÃ¡vnÄ› vychlazenÃ½mu pivku.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (other, self, "DIA_Rangar_Bier_15_02");//Chystal ses øíct nìco o skøetech.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_03");//Jo, no jo, jasnì. Skøeti nepøedstavují pro mìsto vùbec ádnou hrozbu.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_04");//Obsadili Hornické údolí. A prùsmyk drí paladinové.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_05");//Neproklouzne kolem nich ani myš.
+			AI_Output (other, self, "DIA_Rangar_Bier_15_02");//Chystal ses Å™Ã­ct nÄ›co o skÅ™etech.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_03");//Jo, no jo, jasnÄ›. SkÅ™eti nepÅ™edstavujÃ­ pro mÄ›sto vÅ¯bec Å¾Ã¡dnou hrozbu.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_04");//Obsadili HornickÃ© ÃºdolÃ­. A prÅ¯smyk drÅ¾Ã­ paladinovÃ©.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_05");//Neproklouzne kolem nich ani myÅ¡.
 			
 			Knows_Paladins = 1;
 			Info_ClearChoices (DIA_Rangar_Bier);
@@ -174,29 +174,29 @@ FUNC VOID DIA_Rangar_Bier_Info()
 		else if (Knows_Paladins == 1) 
 		&& (Knows_Ork == TRUE)
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_06");//Poøádnou pintu rozhodnì neodmítnu.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_06");//PoÅ™Ã¡dnou pintu rozhodnÄ› neodmÃ­tnu.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (other, self, "DIA_Rangar_Bier_15_07");//Dokonce vidìli skøeta hned za mìstem.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_08");//No jo, jasnì, nebezpeènı skøet za mìstem. Opravdu pøíšernı skøet. Urèitì co nevidìt zaútoèí na mìsto.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_09");//Poslouchej, toho tlustıho skøeta nakopeme do toho jeho tlustıho zadku ve chvíli, kdy se moc pøiblíí k mìstu. Jasan?
+			AI_Output (other, self, "DIA_Rangar_Bier_15_07");//Dokonce vidÄ›li skÅ™eta hned za mÄ›stem.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_08");//No jo, jasnÄ›, nebezpeÄnÃ½ skÅ™et za mÄ›stem. Opravdu pÅ™Ã­Å¡ernÃ½ skÅ™et. UrÄitÄ› co nevidÄ›t zaÃºtoÄÃ­ na mÄ›sto.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_09");//Poslouchej, toho tlustÃ½ho skÅ™eta nakopeme do toho jeho tlustÃ½ho zadku ve chvÃ­li, kdy se moc pÅ™iblÃ­Å¾Ã­ k mÄ›stu. Jasan?
 			AI_Output (other, self, "DIA_Rangar_Bier_15_10");//Aha.
 			Knows_Paladins = 2;
 			Info_ClearChoices (DIA_Rangar_Bier);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_11");//Dobrı hoøkı pivko je to nejlepší, co mùe bıt.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_11");//DobrÃ½ hoÅ™kÃ½ pivko je to nejlepÅ¡Ã­, co mÅ¯Å¾e bÃ½t.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (self, other, "DIA_Rangar_Bier_07_12");//Víš, nenarazíš èasto na nìkoho, kdo by tì pozval na pivo. Jsi docela fajn.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_12");//VÃ­Å¡, nenarazÃ­Å¡ Äasto na nÄ›koho, kdo by tÄ› pozval na pivo. Jsi docela fajn.
 			Info_ClearChoices (DIA_Rangar_Bier);
 		};
 		
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Rangar_Bier_07_13");//Jasnì e si ještì dám pivo. Jedno pro mì.
+		AI_Output (self, other, "DIA_Rangar_Bier_07_13");//JasnÄ› Å¾e si jeÅ¡tÄ› dÃ¡m pivo. Jedno pro mÄ›.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -211,7 +211,7 @@ instance DIA_Addon_Rangar_Erwischt		(C_INFO)
 	condition	 = 	DIA_Addon_Rangar_Erwischt_Condition;
 	information	 = 	DIA_Addon_Rangar_Erwischt_Info;
 
-	description	 = 	"Co tam dìláš?";
+	description	 = 	"Co tam dÄ›lÃ¡Å¡?";
 };
 
 var int DIA_Addon_Rangar_Erwischt_OneTime;
@@ -228,13 +228,13 @@ func int DIA_Addon_Rangar_Erwischt_Condition ()
 
 func void DIA_Addon_Rangar_Erwischt_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_00"); //Co to tam dìláš?
-	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_01"); //(cítí se zaskoèen) Hmmm, no, já... Do toho ti nic není. Vypadni.
-	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_02"); //Martin bude mít radost, a mu øeknu, kdo se mu pøehrabuje ve vìcech, kdy tu není.
-	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_03"); //(pohrdavì) Dìlej si, co chceš. Já si teda pùjdu po svém.
+	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_00"); //Co to tam dÄ›lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_01"); //(cÃ­tÃ­ se zaskoÄen) Hmmm, no, jÃ¡... Do toho ti nic nenÃ­. Vypadni.
+	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_02"); //Martin bude mÃ­t radost, aÅ¾ mu Å™eknu, kdo se mu pÅ™ehrabuje ve vÄ›cech, kdyÅ¾ tu nenÃ­.
+	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_03"); //(pohrdavÄ›) DÄ›lej si, co chceÅ¡. JÃ¡ si teda pÅ¯jdu po svÃ©m.
 	B_GivePlayerXP (XP_Addon_Martin_GotRangar);
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"Zaèít");
+	Npc_ExchangeRoutine	(self,"ZaÄÃ­t");
 	SC_GotRangar = TRUE;
 };
 
@@ -249,7 +249,7 @@ instance DIA_Addon_Rangar_nachhaken		(C_INFO)
 	information	 = 	DIA_Addon_Rangar_nachhaken_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vánì si myslíš, e s tím uteèeš?";
+	description	 = 	"VÃ¡Å¾nÄ› si myslÃ­Å¡, Å¾e s tÃ­m uteÄeÅ¡?";
 };
 
 func int DIA_Addon_Rangar_nachhaken_Condition ()
@@ -263,6 +263,6 @@ func int DIA_Addon_Rangar_nachhaken_Condition ()
 
 func void DIA_Addon_Rangar_nachhaken_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Rangar_nachhaken_15_00"); //To si vánì myslíš, e se ti s tímhle podaøí zmizet?
-	AI_Output	(self, other, "DIA_Addon_Rangar_nachhaken_07_01"); //(lhostejnì) To je štráchù pro trochu dlabance.
+	AI_Output	(other, self, "DIA_Addon_Rangar_nachhaken_15_00"); //To si vÃ¡Å¾nÄ› myslÃ­Å¡, Å¾e se ti s tÃ­mhle podaÅ™Ã­ zmizet?
+	AI_Output	(self, other, "DIA_Addon_Rangar_nachhaken_07_01"); //(lhostejnÄ›) To je Å¡trÃ¡chÅ¯ pro trochu dlabance.
 };

@@ -41,46 +41,46 @@ func int DIA_Bronko_HALLO_Condition ()
 func void DIA_Bronko_HALLO_Info ()
 {
 	AI_Output			(self, other, "DIA_Bronko_HALLO_06_00"); //(otcovsky) Tak kampak, co?
-	AI_Output			(other, self, "DIA_Bronko_HALLO_15_01"); //Ty jsi tady öÈf?
+	AI_Output			(other, self, "DIA_Bronko_HALLO_15_01"); //Ty jsi tady ≈°√©f?
 
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //NÏjakou ti vrazÌm, ty lot¯e.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //Nƒõjakou ti vraz√≠m, ty lot≈ôe.
 		};
 		
-	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Jestli se chceö poflakovat po mym pozemku, zaplaù mi 5 zlat˝ch, jinak si koledujeö o pÏknej n·¯ez!
+	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Jestli se chce≈° poflakovat po mym pozemku, zapla≈• mi 5 zlat√Ωch, jinak si koleduje≈° o pƒõknej n√°≈ôez!
 	
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
-	Info_AddChoice	(DIA_Bronko_HALLO, "ZapomeÚ na to. Nic ode mÏ nedostaneö.", DIA_Bronko_HALLO_vergisses );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Kdyû jinak ned·ö - tady jsou penÌze.", DIA_Bronko_HALLO_hiergeld );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Tv˘j pozemek? Ty jsi zdejöÌ statk·¯?", DIA_Bronko_HALLO_deinland );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Zapome≈à na to. Nic ode mƒõ nedostane≈°.", DIA_Bronko_HALLO_vergisses );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Kdy≈æ jinak ned√°≈° - tady jsou pen√≠ze.", DIA_Bronko_HALLO_hiergeld );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Tv≈Øj pozemek? Ty jsi zdej≈°√≠ statk√°≈ô?", DIA_Bronko_HALLO_deinland );
 
 };
 
 func void DIA_Bronko_HALLO_deinland ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //Tv˘j pozemek? Ty jsi zdejöÌ statk·¯?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //To se m˘ûeö vsadit. ProË bych po tobÏ jinak chtÏl m˝tn˝?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //Je mi jedno, jestli se na mÏ budeö vypt·vat ostatnÌch. He, he!
+	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //Tv≈Øj pozemek? Ty jsi zdej≈°√≠ statk√°≈ô?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //To se m≈Ø≈æe≈° vsadit. Proƒç bych po tobƒõ jinak chtƒõl m√Ωtn√Ω?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //Je mi jedno, jestli se na mƒõ bude≈° vypt√°vat ostatn√≠ch. He, he!
 
 };
 
 func void DIA_Bronko_HALLO_hiergeld ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_hiergeld_15_00"); //Kdyû jinak ned·ö - tady jsou penÌze.
+	AI_Output			(other, self, "DIA_Bronko_HALLO_hiergeld_15_00"); //Kdy≈æ jinak ned√°≈° - tady jsou pen√≠ze.
 
 	if ((Npc_HasItems (other,ItMi_Gold)) >= 5)
 		{
 			B_GiveInvItems (other, self, ItMi_Gold, 5);						
 
-			AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_01"); //(ökodolibÏ) DÌky. A hezk˝ den.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_01"); //(≈°kodolibƒõ) D√≠ky. A hezk√Ω den.
 		
 			AI_StopProcessInfos (self);	 
 		}
 	else
 		{
-		 	AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_02"); //Nem·ö ani 5 zlat˝ch. SnaûÌö se mÏ oblafnout, co?
+		 	AI_Output			(self, other, "DIA_Bronko_HALLO_hiergeld_06_02"); //Nem√°≈° ani 5 zlat√Ωch. Sna≈æ√≠≈° se mƒõ oblafnout, co?
 		 	
 		 	AI_StopProcessInfos (self);	 	
 		 	B_Attack (self, other, AR_NONE, 1);	
@@ -89,35 +89,35 @@ func void DIA_Bronko_HALLO_hiergeld ()
 
 func void DIA_Bronko_HALLO_vergisses ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_vergisses_15_00"); //ZapomeÚ na to. Nic ode mÏ nedostaneö.
+	AI_Output			(other, self, "DIA_Bronko_HALLO_vergisses_15_00"); //Zapome≈à na to. Nic ode mƒõ nedostane≈°.
 
 	if ((hero.guild == GIL_NONE)||(hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_01"); //Tak to je mi lÌto. Trochu ti p¯ismahnu k˘ûi.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_01"); //Tak to je mi l√≠to. Trochu ti p≈ôismahnu k≈Ø≈æi.
 		}
 	else
 		{
 			if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 			{
-				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_02"); //Vy hoöi od mÏstskÈ str·ûe nem·te dost penÏz, co?
+				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_02"); //Vy ho≈°i od mƒõstsk√© str√°≈æe nem√°te dost penƒõz, co?
 			};
 	
 			if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_03"); //Je mi jedno, jestli jsi m·g. MusÌö zaplatit, jasn˝?
+				AI_Output			(self, other, "DIA_Bronko_HALLO_vergisses_06_03"); //Je mi jedno, jestli jsi m√°g. Mus√≠≈° zaplatit, jasn√Ω?
 			};		
 		};
 
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
-	Info_AddChoice	(DIA_Bronko_HALLO, "Kdyû jinak ned·ö - tady jsou penÌze.", DIA_Bronko_HALLO_hiergeld );
-	Info_AddChoice	(DIA_Bronko_HALLO, "Tak si je zkus vzÌt.", DIA_Bronko_HALLO_attack );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Kdy≈æ jinak ned√°≈° - tady jsou pen√≠ze.", DIA_Bronko_HALLO_hiergeld );
+	Info_AddChoice	(DIA_Bronko_HALLO, "Tak si je zkus vz√≠t.", DIA_Bronko_HALLO_attack );
 };
 
 func void DIA_Bronko_HALLO_attack ()
 {
-	AI_Output			(other, self, "DIA_Bronko_HALLO_attack_15_00"); //Tak si je zkus vzÌt.
-	AI_Output			(self, other, "DIA_Bronko_HALLO_attack_06_01"); //Fajn, v tom p¯ÌpadÏ...
+	AI_Output			(other, self, "DIA_Bronko_HALLO_attack_15_00"); //Tak si je zkus vz√≠t.
+	AI_Output			(self, other, "DIA_Bronko_HALLO_attack_06_01"); //Fajn, v tom p≈ô√≠padƒõ...
 
 	AI_StopProcessInfos (self);	 	
 	B_Attack (self, other, AR_NONE, 1);	
@@ -134,7 +134,7 @@ instance DIA_Bronko_KEINBAUER		(C_INFO)
 	information	 = 	DIA_Bronko_KEINBAUER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Takov˝ sedl·k jako ty? To bys mÏ rozesm·l. Vûdyù jsi hotov· nicka!";
+	description	 = 	"Takov√Ω sedl√°k jako ty? To bys mƒõ rozesm√°l. V≈ædy≈• jsi hotov√° nicka!";
 };
 
 var int DIA_Bronko_KEINBAUER_noPerm;
@@ -153,8 +153,8 @@ func int DIA_Bronko_KEINBAUER_Condition ()
 
 func void DIA_Bronko_KEINBAUER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //Ty, farm·¯? Nenech se vysm·t. Ve skuteËnosti nejsi nikdo.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //Cooo? Chceö, abych ti zmaloval ksicht?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //Ty, farm√°≈ô? Nenech se vysm√°t. Ve skuteƒçnosti nejsi nikdo.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //Cooo? Chce≈°, abych ti zmaloval ksicht?
 
 	Info_ClearChoices	(DIA_Bronko_KEINBAUER);
 
@@ -162,23 +162,23 @@ func void DIA_Bronko_KEINBAUER_Info ()
 		{
 			if(Babera_BronkoKeinBauer == TRUE)
 				{
-					Info_AddChoice	(DIA_Bronko_KEINBAUER, "(Vyhroûovat Broncovi, ûe p¯ivedeö ûoldnÈ¯e.)", DIA_Bronko_KEINBAUER_SLD );
+					Info_AddChoice	(DIA_Bronko_KEINBAUER, "(Vyhro≈æovat Broncovi, ≈æe p≈ôivede≈° ≈æoldn√©≈ôe.)", DIA_Bronko_KEINBAUER_SLD );
 				};
 			if (MIS_Sekob_Bronko_eingeschuechtert == LOG_RUNNING)
 				{	
-					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Sekob je zdejöÌ sedl·k a ty nejsi nic jinÈho neû druho¯ad˝ podvodnÌËek.", DIA_Bronko_KEINBAUER_sekobderbauer );
+					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Sekob je zdej≈°√≠ sedl√°k a ty nejsi nic jin√©ho ne≈æ druho≈ôad√Ω podvodn√≠ƒçek.", DIA_Bronko_KEINBAUER_sekobderbauer );
 				};
 		};
 
-	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Dobr·, tak se teda podÌv·me, co m·ö.", DIA_Bronko_KEINBAUER_attack );
-	Info_AddChoice	(DIA_Bronko_KEINBAUER, "NevadÌ!", DIA_Bronko_KEINBAUER_schongut );
+	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Dobr√°, tak se teda pod√≠v√°me, co m√°≈°.", DIA_Bronko_KEINBAUER_attack );
+	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Nevad√≠!", DIA_Bronko_KEINBAUER_schongut );
 
 };
 
 func void DIA_Bronko_KEINBAUER_attack ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_attack_15_00"); //Dobr·, tak se teda podÌv·me, co m·ö.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_attack_06_01"); //Doufal jsem, ûe to ¯ekneö.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_attack_15_00"); //Dobr√°, tak se teda pod√≠v√°me, co m√°≈°.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_attack_06_01"); //Doufal jsem, ≈æe to ≈ôekne≈°.
 	
 	AI_StopProcessInfos (self);	 	
 	B_Attack (self, other, AR_NONE, 1);	
@@ -186,15 +186,15 @@ func void DIA_Bronko_KEINBAUER_attack ()
 
 func void DIA_Bronko_KEINBAUER_sekobderbauer ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //ZdejöÌ farm·¯ je Sekob a ty nejsi nic neû mizern˝ podvodnÌk, co se snaûÌ lidem tahat penÌze z kapes.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //To ¯Ìk· kdo?
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_02"); //To ¯Ìk·m j·. Sekob chce, aby ses vr·til k pr·ci mÌsto toho, aby ses tady fl·kal.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //Tak co? Co udÏl·ö teÔ?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Zdej≈°√≠ farm√°≈ô je Sekob a ty nejsi nic ne≈æ mizern√Ω podvodn√≠k, co se sna≈æ√≠ lidem tahat pen√≠ze z kapes.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //To ≈ô√≠k√° kdo?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_02"); //To ≈ô√≠k√°m j√°. Sekob chce, aby ses vr√°til k pr√°ci m√≠sto toho, aby ses tady fl√°kal.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //Tak co? Co udƒõl√°≈° teƒè?
 };
 
 func void DIA_Bronko_KEINBAUER_schongut ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_schongut_15_00"); //NevadÌ!
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_schongut_15_00"); //Nevad√≠!
 	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_schongut_06_01"); //Zmiz!
 
  	AI_StopProcessInfos (self);	 	
@@ -202,20 +202,20 @@ func void DIA_Bronko_KEINBAUER_schongut ()
 
 func void DIA_Bronko_KEINBAUER_SLD ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //Fajn, tak to bych mÏl Onarovi ¯Ìct, ûe je tady nÏjakej uûvanÏnej farm·¯, co odmÌt· platit n·jem.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Ehm. PoËkej chvilku. Onar na mÏ poöle vöechny svoje ûold·ky.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //Fajn, tak to bych mƒõl Onarovi ≈ô√≠ct, ≈æe je tady nƒõjakej u≈ævanƒõnej farm√°≈ô, co odm√≠t√° platit n√°jem.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Ehm. Poƒçkej chvilku. Onar na mƒõ po≈°le v≈°echny svoje ≈æold√°ky.
 	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_02"); //A co?
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //Dobr·, dobr·. D·m ti, co chceö, ale netahej do toho ûold·ky, fajn?
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //Dobr√°, dobr√°. D√°m ti, co chce≈°, ale netahej do toho ≈æold√°ky, fajn?
 
 	if (B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self,ItMi_Gold)))
 	{
-		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Tady, d·m ti vöechno svoje zlato.
+		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Tady, d√°m ti v≈°echno svoje zlato.
 	};
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //A vr·tÌm se na pole. Vöechno, jen ne ûold·ky.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //A vr√°t√≠m se na pole. V≈°echno, jen ne ≈æold√°ky.
 
 	AI_StopProcessInfos (self);	 	
 	DIA_Bronko_KEINBAUER_noPerm = TRUE;
-	Npc_ExchangeRoutine	(self,"ZaËÌt"); 
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t"); 
 	MIS_Sekob_Bronko_eingeschuechtert = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -231,7 +231,7 @@ instance DIA_Bronko_FLEISSIG		(C_INFO)
 	information	 = 	DIA_Bronko_FLEISSIG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"(VysmÌvat se Broncovi)";
+	description	 = 	"(Vysm√≠vat se Broncovi)";
 };
 
 func int DIA_Bronko_FLEISSIG_Condition ()
@@ -250,20 +250,20 @@ func void DIA_Bronko_FLEISSIG_Info ()
 	
 	if (MIS_Sekob_Bronko_eingeschuechtert == LOG_SUCCESS)
 		{
-			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_00"); //Tak? Piln˝ jako vËeliËka, co?
+			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_00"); //Tak? Piln√Ω jako vƒçeliƒçka, co?
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_01"); //Tak? Po¯·d jeötÏ m·ö tak nevym·chanou hubu?
+			AI_Output			(other, self, "DIA_Bronko_FLEISSIG_15_01"); //Tak? Po≈ô√°d je≈°tƒõ m√°≈° tak nevym√°chanou hubu?
 		};
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_02"); //Ty jsi ûold·k, ûe jo? MÏl jsem to vÏdÏt.
+			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_02"); //Ty jsi ≈æold√°k, ≈æe jo? Mƒõl jsem to vƒõdƒõt.
 		}
 	else if (MIS_Sekob_Bronko_eingeschuechtert == LOG_SUCCESS)
 		{
-			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_03"); //(vystraöenÏ) Nevykec·ö to ûold·k˘m, ûe ne?
+			AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_03"); //(vystra≈°enƒõ) Nevykec√°≈° to ≈æold√°k≈Øm, ≈æe ne?
 		};
 
 	if 	(
@@ -272,14 +272,14 @@ func void DIA_Bronko_FLEISSIG_Info ()
 		|| 	(hero.guild == GIL_DJG)
 		)
 			{
-				AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_04"); //Nemlaù mÏ, prosÌm.
+				AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_04"); //Nemla≈• mƒõ, pros√≠m.
 			};
 
-	AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_05"); //Vr·tÌm se ke svÈ pr·ci, fajn?
+	AI_Output			(self, other, "DIA_Bronko_FLEISSIG_06_05"); //Vr√°t√≠m se ke sv√© pr√°ci, fajn?
 
 	MIS_Sekob_Bronko_eingeschuechtert	= LOG_SUCCESS;
 	AI_StopProcessInfos (self);	 
-	Npc_ExchangeRoutine	(self,"ZaËÌt"); 
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t"); 
 };
 
 

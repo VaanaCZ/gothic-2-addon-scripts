@@ -41,11 +41,11 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Hej, jak to jde?
-	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Jsem naivu, a to je to hlavní.
+	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Jsem naÅ¾ivu, a to je to hlavnÃ­.
 	
 	if (Monty_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Jestli si chceš o nìèem promluvit, zajdi za Patrickem.
+		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Jestli si chceÅ¡ o nÄ›Äem promluvit, zajdi za Patrickem.
 		Monty_einmal = TRUE;
 	};
 };
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Pøi dolování je nejdùleitìjší úhel, jakım vedeš rány.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Ne moc naplocho a ne moc prudce – tak se nejlíp dostaneš k nuggetùm.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//PÅ™i dolovÃ¡nÃ­ je nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ Ãºhel, jakÃ½m vedeÅ¡ rÃ¡ny.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Ne moc naplocho a ne moc prudce â€“ tak se nejlÃ­p dostaneÅ¡ k nuggetÅ¯m.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

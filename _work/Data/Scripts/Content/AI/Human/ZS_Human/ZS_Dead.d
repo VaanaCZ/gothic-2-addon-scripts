@@ -1,8 +1,8 @@
 // *****************************************
 // ZS_Dead
 // -------
-// wird auch nach jedem Load Game ausgef¸hrt
-// wird auch vom Spieler ausgef¸hrt
+// wird auch nach jedem Load Game ausgef√ºhrt
+// wird auch vom Spieler ausgef√ºhrt
 // *****************************************
 
 func void ZS_Dead ()
@@ -97,7 +97,7 @@ func void ZS_Dead ()
 		};
 	};
 		
-		//------Addon Garaz Minecrawler Hˆhle------egal wer tˆtet----
+		//------Addon Garaz Minecrawler H√∂hle------egal wer t√∂tet----
 		if  Hlp_GetInstanceID (self) == Hlp_GetInstanceID (Goldminecrawler)
 		{
 			if (Minecrawler_Killed >= 9)
@@ -115,10 +115,10 @@ func void ZS_Dead ()
 			};
 		};
 		
-	// ------ weil sonst H‰ndler bevor man zum ersten Mal TRADE gew‰hlt hat nix haben ------
+	// ------ weil sonst H√§ndler bevor man zum ersten Mal TRADE gew√§hlt hat nix haben ------
 	B_GiveTradeInv(self);//Joly:	STEHEN LASSEN!!!!!!!!!!!!!!!
 
-	// ------ Monster-Inventory abh‰ngig vom Spieler-Talent ------
+	// ------ Monster-Inventory abh√§ngig vom Spieler-Talent ------
 	B_GiveDeathInv(self);
 	B_ClearRuneInv(self); //klaue alle runen!!
 	
@@ -126,7 +126,7 @@ func void ZS_Dead ()
 	B_DeletePetzCrime (self); //hat bei CRIME_NONE (oder keiner Home-Location) keine Auswirkungen
 	self.aivar[AIV_NpcSawPlayerCommit] = CRIME_NONE;
 	
-	// ------ Equippte Waffen kˆnnen nicht genommen werden! ------
+	// ------ Equippte Waffen k√∂nnen nicht genommen werden! ------
 	AI_UnequipWeapons (self);
 	
 	self.aivar[AIV_TAPOSITION] = FALSE;

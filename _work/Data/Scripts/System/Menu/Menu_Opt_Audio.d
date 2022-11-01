@@ -43,7 +43,7 @@ const int MENU_SOUND_DY = 550;
 INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "NASTAVENÕ ZVUKU";
+	text[0]		= "NASTAVEN√ç ZVUKU";
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TITLE_Y;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Hlasitost efekt˘";
-	text[1]		= "Hlasitost zvukov˝ch efekt˘ a ¯eËi"; // Kommentar
+	text[0]		= "Hlasitost efekt≈Ø";
+	text[1]		= "Hlasitost zvukov√Ωch efekt≈Ø a ≈ôeƒçi"; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		= MENU_START_SOUND_Y + MENU_SOUND_DY*0;
@@ -98,7 +98,7 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Hudba";
-	text[1]		= "Hlasitost hudby na pozadÌ"; // Kommentar
+	text[1]		= "Hlasitost hudby na pozad√≠"; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*1;
@@ -134,7 +134,7 @@ instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Zap/vyp hudbu";
-	text[1]		= "ZapÌn· a vypÌn· hudbu na pozadÌ"; // Kommentar
+	text[1]		= "Zap√≠n√° a vyp√≠n√° hudbu na pozad√≠"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*2;
@@ -176,8 +176,8 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "OvladaË zvuku";
-	text[1]		= "⁄Ëinky se projevÌ aû po restartov·nÌ"; // Kommentar
+	text[0]		= "Ovladaƒç zvuku";
+	text[1]		= "√öƒçinky se projev√≠ a≈æ po restartov√°n√≠"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*3;
@@ -226,7 +226,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
 	// PATCH 1.30 - added 5.1 and 7.1 speaker system flags
-	text[0]		=   "2 reproduktory|sluch·tka|surround|4 reproduktory|reproduktory 5.1|reproduktory 7.1";
+	text[0]		=   "2 reproduktory|sluch√°tka|surround|4 reproduktory|reproduktory 5.1|reproduktory 7.1";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -242,8 +242,8 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "OzvÏna";
-	text[1]		= "Efekty ozvÏny v jeskynÌch apod."; // Kommentar
+	text[0]		= "Ozvƒõna";
+	text[1]		= "Efekty ozvƒõny v jeskyn√≠ch apod."; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5;
@@ -275,8 +275,8 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB_SPEECH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "OzvÏny ¯eËi";
-	text[1]		= "Efekty ozvÏny mluvenÈho slova.";
+	text[0]		= "Ozvƒõny ≈ôeƒçi";
+	text[1]		= "Efekty ozvƒõny mluven√©ho slova.";
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6;
@@ -291,7 +291,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
-	text[0]		=   "nijak|st¯ednÏ|plnÏ";
+	text[0]		=   "nijak|st≈ôednƒõ|plnƒõ";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6 + MENU_CHOICE_YPLUS;
@@ -310,7 +310,7 @@ instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Kvalita zvuku";
-	text[1]		= "ZmÏny se projevÌ aû po restartov·nÌ."; // Kommentar
+	text[1]		= "Zmƒõny se projev√≠ a≈æ po restartov√°n√≠."; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*7;
@@ -342,7 +342,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZPÃT";
+	text[0]		=	"ZPƒöT";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesveränderung (unwissend zusammengebraut)																		//
+//	Trank der GeistesverÃ¤nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -18,12 +18,12 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Lektvar pozmìnìné mysli";
+	description		= 	"Lektvar pozmÄ›nÄ›nÃ© mysli";
 	
-	TEXT[2]			=   "Pøed pouitím je tøeba uèinit BEZPEÈNOSTNÍ OPATØENÍ!";
+	TEXT[2]			=   "PÅ™ed pouÅ¾itÃ­m je tÅ™eba uÄinit BEZPEÄŒNOSTNÃ OPATÅ˜ENÃ!";
 	
-	TEXT[3]			= 	"Mùe silnì ovlivnit mysl toho,";	
-	TEXT[4]			= 	"kdo jej vypije, nebo ho zabít.";
+	TEXT[3]			= 	"MÅ¯Å¾e silnÄ› ovlivnit mysl toho,";	
+	TEXT[4]			= 	"kdo jej vypije, nebo ho zabÃ­t.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesveränderung (wissend zusammengebraut)																		//
+//	Trank der GeistesverÃ¤nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -55,12 +55,12 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Lektvar pozmìnìné mysli";
+	description		= 	"Lektvar pozmÄ›nÄ›nÃ© mysli";
 	
-	TEXT[2]			=   "Pøed pouitím je tøeba uèinit BEZPEÈNOSTNÍ OPATØENÍ!";
+	TEXT[2]			=   "PÅ™ed pouÅ¾itÃ­m je tÅ™eba uÄinit BEZPEÄŒNOSTNÃ OPATÅ˜ENÃ!";
 	
-	TEXT[3]			= 	"Mùe silnì ovlivnit mysl toho,";	
-	TEXT[4]			= 	"kdo jej vypije, nebo ho zabít.";
+	TEXT[3]			= 	"MÅ¯Å¾e silnÄ› ovlivnit mysl toho,";	
+	TEXT[4]			= 	"kdo jej vypije, nebo ho zabÃ­t.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -93,10 +93,10 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
 
-	description		= 	"Èistá ivotní energie";
+	description		= 	"ÄŒistÃ¡ Å¾ivotnÃ­ energie";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"Kompletní regenerace";
+	TEXT[2]			= 	"KompletnÃ­ regenerace";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -126,10 +126,10 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	effect			=	"SPELLFX_MANAPOTION"; 
 
 
-	description		= 	"Èistá mana";
+	description		= 	"ÄŒistÃ¡ mana";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"Kompletní regenerace many";
+	TEXT[2]			= 	"KompletnÃ­ regenerace many";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

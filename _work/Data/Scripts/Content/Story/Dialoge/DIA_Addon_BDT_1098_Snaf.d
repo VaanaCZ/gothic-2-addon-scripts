@@ -74,7 +74,7 @@ FUNC INT DIA_Addon_Snaf_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Snaf_Hi_01_00"); //Tak co, chceš jíst, nebo vanit?
+	AI_Output (self, other, "DIA_Addon_Snaf_Hi_01_00"); //Tak co, chceÅ¡ jÃ­st, nebo Å¾vanit?
 };
 //---------------------------------------------------------------------
 //	Was gibt's denn leckeres?
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Snaf_Cook (C_INFO)
 	condition   = DIA_Addon_Snaf_Cook_Condition;
 	information = DIA_Addon_Snaf_Cook_Info;
 	permanent   = FALSE;
-	description = "Copak tu máš dobrého?";
+	description = "Copak tu mÃ¡Å¡ dobrÃ©ho?";
 };
 FUNC INT DIA_Addon_Snaf_Cook_Condition()
 {	
@@ -94,42 +94,42 @@ FUNC INT DIA_Addon_Snaf_Cook_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Cook_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_15_00"); //Co bude dneska dobrıho?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_01_01"); //Chci vyzkoušet novı jídlo – pálivı nudlièky ve cloumákovı omáèce.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_15_00"); //Co bude dneska dobrÃ½ho?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_01_01"); //Chci vyzkouÅ¡et novÃ½ jÃ­dlo â€“ pÃ¡livÃ½ nudliÄky ve cloumÃ¡kovÃ½ omÃ¡Äce.
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Cook);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"Pálivé nudlièky?",DIA_Addon_Snaf_Cook_FEUER);	
-	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"Cloumáková omáèka?",DIA_Addon_Snaf_Cook_HAMMER);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"PÃ¡livÃ© nudliÄky?",DIA_Addon_Snaf_Cook_FEUER);	
+	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"CloumÃ¡kovÃ¡ omÃ¡Äka?",DIA_Addon_Snaf_Cook_HAMMER);
 };
 //---------------------------------------------------------------------
 FUNC VOID DIA_Addon_Snaf_Cook_FEUER()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//Pálivé nudlièky?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//Køupavı, krásnì opeèenı maso s nakládanejma ohnivejma kopøivama.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Ale neboj – všecky ingredience u mám.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//PÃ¡livÃ© nudliÄky?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//KÅ™upavÃ½, krÃ¡snÄ› opeÄenÃ½ maso s naklÃ¡danejma ohnivejma kopÅ™ivama.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Ale neboj â€“ vÅ¡ecky ingredience uÅ¾ mÃ¡m.
 };
 FUNC VOID DIA_Addon_Snaf_Cook_HAMMER()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_15_00");//Cloumáková omáèka?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//Ta omáèka se dìlá z koøalky – cloumáka. Mám tu recept od jistıho Lou.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//Kdy seeneš všecko potøebnı a v alchymistickı kolonì destiluješ koøalku, udìlám z ní tu omáèku. Co ty na to?
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_15_00");//CloumÃ¡kovÃ¡ omÃ¡Äka?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//Ta omÃ¡Äka se dÄ›lÃ¡ z koÅ™alky â€“ cloumÃ¡ka. MÃ¡m tu recept od jistÃ½ho Lou.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//KdyÅ¾ seÅ¾eneÅ¡ vÅ¡ecko potÅ™ebnÃ½ a v alchymistickÃ½ kolonÄ› destilujeÅ¡ koÅ™alku, udÄ›lÃ¡m z nÃ­ tu omÃ¡Äku. Co ty na to?
 	
-	Info_AddChoice (DIA_Addon_Snaf_Cook,"Na to nemám èas.",DIA_Addon_Snaf_Cook_NO);
-	Info_AddChoice (DIA_Addon_Snaf_Cook,"Dobøe, udìlám to.",DIA_Addon_Snaf_Cook_YES);
+	Info_AddChoice (DIA_Addon_Snaf_Cook,"Na to nemÃ¡m Äas.",DIA_Addon_Snaf_Cook_NO);
+	Info_AddChoice (DIA_Addon_Snaf_Cook,"DobÅ™e, udÄ›lÃ¡m to.",DIA_Addon_Snaf_Cook_YES);
 	
 };
 FUNC VOID DIA_Addon_Snaf_Cook_NO ()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_NO_15_00");//Na tohle nemám èas.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_NO_01_01");//Pak na to zapomeò.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_NO_15_00");//Na tohle nemÃ¡m Äas.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_NO_01_01");//Pak na to zapomeÅˆ.
 	
 	MIS_SnafHammer = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Addon_Snaf_Cook);
 };
 FUNC VOID DIA_Addon_Snaf_Cook_YES()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_YES_15_00");//Dobøe, udìlám to.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_YES_01_01");//Prima, tady máš recept.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_YES_15_00");//DobÅ™e, udÄ›lÃ¡m to.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_YES_01_01");//Prima, tady mÃ¡Å¡ recept.
 	
 	B_GiveInvItems (self, other,ItWr_Addon_Lou_Rezept,1);
 	MIS_SnafHammer = LOG_RUNNING;
@@ -137,7 +137,7 @@ FUNC VOID DIA_Addon_Snaf_Cook_YES()
 	
 	Log_CreateTopic (Topic_Addon_Hammer,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Hammer,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Hammer,"Snaf do své omáèky potøebuje trochu koøalky. Dal mi recept na cloumák, kterı mùu namíchat na laboratorním stole.");
+	B_LogEntry (Topic_Addon_Hammer,"Snaf do svÃ© omÃ¡Äky potÅ™ebuje trochu koÅ™alky. Dal mi recept na cloumÃ¡k, kterÃ½ mÅ¯Å¾u namÃ­chat na laboratornÃ­m stole.");
 };
 //---------------------------------------------------------------------
 //	Info Booze
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Snaf_Booze   (C_INFO)
 	condition   = DIA_Addon_Snaf_Booze_Condition;
 	information = DIA_Addon_Snaf_Booze_Info;
 	permanent   = FALSE;
-	description = "Uvaøil jsem ten cloumák.";
+	description = "UvaÅ™il jsem ten cloumÃ¡k.";
 };
 FUNC INT DIA_Addon_Snaf_Booze_Condition()
 {	
@@ -165,10 +165,10 @@ FUNC VOID DIA_Addon_Snaf_Booze_Info()
 {
 	B_GiveInvItems (other, self, ItFo_Addon_LousHammer, 1);
 	
-	AI_Output (other, self, "DIA_Addon_Snaf_Booze_15_00");//Destiloval jsem tu koøalku.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_01");//Vıbornì, tak to dodìláme.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//Tumáš, mùeš to hned ochutnat. Poøádnì to posílí pae.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//A jestli budeš ještì nìco potøebovat, tak odteïka máš všecky informace zadarmo.
+	AI_Output (other, self, "DIA_Addon_Snaf_Booze_15_00");//Destiloval jsem tu koÅ™alku.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_01");//VÃ½bornÄ›, tak to dodÄ›lÃ¡me.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//TumÃ¡Å¡, mÅ¯Å¾eÅ¡ to hned ochutnat. PoÅ™Ã¡dnÄ› to posÃ­lÃ­ paÅ¾e.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//A jestli budeÅ¡ jeÅ¡tÄ› nÄ›co potÅ™ebovat, tak odteÄka mÃ¡Å¡ vÅ¡ecky informace zadarmo.
 	Snaf_Tip_Kosten = 0;
 	B_GiveInvItems (self, other, ItFo_Addon_FireStew,1);
 	MIS_SnafHammer = LOG_SUCCESS;
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Snaf_Attentat   (C_INFO)
 	condition   = DIA_Addon_Snaf_Attentat_Condition;
 	information = DIA_Addon_Snaf_Attentat_Info;
 	permanent   = FALSE;
-	description = "Co víš o tom útoku?";
+	description = "Co vÃ­Å¡ o tom Ãºtoku?";
 };
 FUNC INT DIA_Addon_Snaf_Attentat_Condition()
 {	
@@ -196,34 +196,34 @@ FUNC INT DIA_Addon_Snaf_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Co víš o tom útoku?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_01"); //Myslíš tu vìc s Estebanem?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //Však víš, jak to je. Barman slyší všecko, ale nikdy není na nièí stranì.
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Co vÃ­Å¡ o tom Ãºtoku?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_01"); //MyslÃ­Å¡ tu vÄ›c s Estebanem?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //VÅ¡ak vÃ­Å¡, jak to je. Barman slyÅ¡Ã­ vÅ¡ecko, ale nikdy nenÃ­ na niÄÃ­ stranÄ›.
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Aspoò mi povìz, za kım bych mìl jít.",DIA_Addon_Snaf_Attentat_GoWhere);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Co bys na mém místì dìlal ty?",DIA_Addon_Snaf_Attentat_YouBeingMe);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Take víš nìco?",DIA_Addon_Snaf_Attentat_Something);	
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"AspoÅˆ mi povÄ›z, za kÃ½m bych mÄ›l jÃ­t.",DIA_Addon_Snaf_Attentat_GoWhere);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Co bys na mÃ©m mÃ­stÄ› dÄ›lal ty?",DIA_Addon_Snaf_Attentat_YouBeingMe);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"TakÅ¾e vÃ­Å¡ nÄ›co?",DIA_Addon_Snaf_Attentat_Something);	
 };
 	
 func void DIA_Addon_Snaf_Attentat_Something()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Tak zaslechl jsi nìco?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //To jsem neøek.
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Tak zaslechl jsi nÄ›co?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //To jsem neÅ™ek.
 };
 func void DIA_Addon_Snaf_Attentat_GoWhere()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_GoWhere_15_00"); //Tak mi aspoò poraï, za kım bych mìl jít.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_GoWhere_01_01"); //Ale no tak! Jakej by v tom byl rozdíl? Zapomeò na to!
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_GoWhere_15_00"); //Tak mi aspoÅˆ poraÄ, za kÃ½m bych mÄ›l jÃ­t.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_GoWhere_01_01"); //Ale no tak! Jakej by v tom byl rozdÃ­l? ZapomeÅˆ na to!
 };
 func void DIA_Addon_Snaf_Attentat_YouBeingMe()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //A co bys na mım místì dìlal ty?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Trochu bych popøemıšlel, jestli náhodou nevím, kdo to má na svìdomí.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Za prvé – nejspíš je to nìkdo z banditù, èili nìkdo z tohohle tábora.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Za druhé – kdy je to nìkdo z tohohle tábora, znamená to, e tì sleduje.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //A za tøetí – pokud si myslí, e seš na Estebanovì stranì, dá si bacha, aby se neprozradil.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //Take NEJZAJÍMAVÌJŠÍ otázka zní, jakı máš vùbec šance toho chlapa najít?
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //A co bys na mÃ½m mÃ­stÄ› dÄ›lal ty?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Trochu bych popÅ™emÃ½Å¡lel, jestli nÃ¡hodou nevÃ­m, kdo to mÃ¡ na svÄ›domÃ­.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Za prvÃ© â€“ nejspÃ­Å¡ je to nÄ›kdo z banditÅ¯, Äili nÄ›kdo z tohohle tÃ¡bora.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Za druhÃ© â€“ kdyÅ¾ je to nÄ›kdo z tohohle tÃ¡bora, znamenÃ¡ to, Å¾e tÄ› sleduje.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //A za tÅ™etÃ­ â€“ pokud si myslÃ­, Å¾e seÅ¡ na EstebanovÄ› stranÄ›, dÃ¡ si bacha, aby se neprozradil.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //TakÅ¾e NEJZAJÃMAVÄšJÅ Ã otÃ¡zka znÃ­, jakÃ½ mÃ¡Å¡ vÅ¯bec Å¡ance toho chlapa najÃ­t?
 
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
 };
@@ -238,7 +238,7 @@ instance DIA_Addon_Snaf_Abrechnung   (C_INFO)
 	condition   = DIA_Addon_Snaf_Abrechnung_Condition;
 	information = DIA_Addon_Snaf_Abrechnung_Info;
 	permanent   = TRUE;
-	description = "Jakou mám šanci, e toho chlapa najdu?";
+	description = "Jakou mÃ¡m Å¡anci, Å¾e toho chlapa najdu?";
 };
 FUNC INT DIA_Addon_Snaf_Abrechnung_Condition()
 {	
@@ -251,42 +251,42 @@ FUNC INT DIA_Addon_Snaf_Abrechnung_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Abrechnung_15_00"); //Jaké mám šance najít toho chlapa?
+	AI_Output (other, self, "DIA_Addon_Snaf_Abrechnung_15_00"); //JakÃ© mÃ¡m Å¡ance najÃ­t toho chlapa?
 	AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_01"); //Hmmm...
 	
 	if (Senyan_Erpressung == LOG_RUNNING) 
 	&& (!Npc_IsDead (Senyan))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //Dost bídnı. Pár lidí u si všimlo, e ses zaplet se Senyanem.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //Musíš se s ním pøestat stıkat, jinak nikdy nebudeš mít šanci najít toho, kdo má ten útok na svìdomí.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //Dost bÃ­dnÃ½. PÃ¡r lidÃ­ uÅ¾ si vÅ¡imlo, Å¾e ses zaplet se Senyanem.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //MusÃ­Å¡ se s nÃ­m pÅ™estat stÃ½kat, jinak nikdy nebudeÅ¡ mÃ­t Å¡anci najÃ­t toho, kdo mÃ¡ ten Ãºtok na svÄ›domÃ­.
 		
 		if (Snaf_Tip_Senyan == FALSE)
 		{
-			B_LogEntry (Topic_Addon_Senyan,"Mìl bych nìjak skoncovat se Senyanem, ale nebylo by moc chytré na nìj pøímo zaútoèit. Napøed bych si s ním mìl promluvit.");
+			B_LogEntry (Topic_Addon_Senyan,"MÄ›l bych nÄ›jak skoncovat se Senyanem, ale nebylo by moc chytrÃ© na nÄ›j pÅ™Ã­mo zaÃºtoÄit. NapÅ™ed bych si s nÃ­m mÄ›l promluvit.");
 			Snaf_Tip_Senyan = TRUE;
 		};
 	}
 	else if (Npc_IsDead(Senyan))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_04"); //Oddìlal jsi jednoho z Estebanovejch lidí. Ten chlap, po kterım jdeš, si teï bude myslet, e jsi na jeho stranì.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_05"); //Ale jen tak se ti neprozradí. Stejnì budeš muset zjistit víc.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_04"); //OddÄ›lal jsi jednoho z Estebanovejch lidÃ­. Ten chlap, po kterÃ½m jdeÅ¡, si teÄ bude myslet, Å¾e jsi na jeho stranÄ›.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_05"); //Ale jen tak se ti neprozradÃ­. StejnÄ› budeÅ¡ muset zjistit vÃ­c.
 	}
 	else if (Finn_Petzt == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Finn je dost nervní od tı doby, co jsi s ním mluvil.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //A kadej tu ví, e byl s Estebanem velice zadobøe.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //To znamená, es mu nejspíš øek nìco, co nechtìl slyšet.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //To urèitì potìší toho, koho hledáš.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //Jene se taky nakrásnì mùe stát, e s tím pobìí za Estebanem – (ironicky) ale to víš jistì sám.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Finn je dost nervnÃ­ od tÃ½ doby, co jsi s nÃ­m mluvil.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //A kaÅ¾dej tu vÃ­, Å¾e byl s Estebanem velice zadobÅ™e.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //To znamenÃ¡, Å¾es mu nejspÃ­Å¡ Å™ek nÄ›co, co nechtÄ›l slyÅ¡et.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //To urÄitÄ› potÄ›Å¡Ã­ toho, koho hledÃ¡Å¡.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //JenÅ¾e se taky nakrÃ¡snÄ› mÅ¯Å¾e stÃ¡t, Å¾e s tÃ­m pobÄ›Å¾Ã­ za Estebanem â€“ (ironicky) ale to vÃ­Å¡ jistÄ› sÃ¡m.
 	}
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //Prej jsi Finnovi øek, e pracuješ pro Estebana.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //Nevím, co máš za lubem, ale ten, koho hledáš, si teï na tebe bude dávat mnohem vìtší pozor.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //Prej jsi Finnovi Å™ek, Å¾e pracujeÅ¡ pro Estebana.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //NevÃ­m, co mÃ¡Å¡ za lubem, ale ten, koho hledÃ¡Å¡, si teÄ na tebe bude dÃ¡vat mnohem vÄ›tÅ¡Ã­ pozor.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_13"); //Ale nic ještì není jistı.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_13"); //Ale nic jeÅ¡tÄ› nenÃ­ jistÃ½.
 	};
 	
 	//------------------- Abschied ----------------------------------
@@ -294,15 +294,15 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 	{
 		if (Snaf_Einmal == FALSE)
 		{
-			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14"); //Díky.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(stroze) Hele, neøek jsem ti nic, co bys u nevìdìl, jasnı?
+			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14"); //DÃ­ky.
+			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(stroze) Hele, neÅ™ek jsem ti nic, co bys uÅ¾ nevÄ›dÄ›l, jasnÃ½?
 			
 			Snaf_Einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_16"); //Já vím.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_17"); //Pøesnì tak.
+			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_16"); //JÃ¡ vÃ­m.
+			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_17"); //PÅ™esnÄ› tak.
 		};
 	};
 };
@@ -317,7 +317,7 @@ instance DIA_Addon_Snaf_HOCH (C_INFO)
 	condition   = DIA_Addon_Snaf_HOCH_Condition;
 	information = DIA_Addon_Snaf_HOCH_Info;
 	permanent   = FALSE;
-	description = "Podle Huna bych se tu mìl s nìkım setkat.";
+	description = "Podle Huna bych se tu mÄ›l s nÄ›kÃ½m setkat.";
 };
 FUNC INT DIA_Addon_Snaf_HOCH_Condition()
 {	
@@ -328,9 +328,9 @@ FUNC INT DIA_Addon_Snaf_HOCH_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_HOCH_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_HOCH_15_00"); //Posílá mì Huno.
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Vypadá to, es u toho chlapa našel.
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //Pokraèuj do dalšího patra, nìkdo tam na tebe èeká.
+	AI_Output (other, self, "DIA_Addon_Snaf_HOCH_15_00"); //PosÃ­lÃ¡ mÄ› Huno.
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //VypadÃ¡ to, Å¾es uÅ¾ toho chlapa naÅ¡el.
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //PokraÄuj do dalÅ¡Ã­ho patra, nÄ›kdo tam na tebe ÄekÃ¡.
 		
 	AI_StopProcessInfos (self);
 	AI_Teleport (Fisk,"BL_INN_UP_06");
@@ -351,7 +351,7 @@ instance DIA_Addon_Snaf_People (C_INFO)
 	condition   = DIA_Addon_Snaf_People_Condition;
 	information = DIA_Addon_Snaf_People_Info;
 	permanent   = TRUE;
-	description = "Co si zdejší lidi myslí o Estebanovi?";
+	description = "Co si zdejÅ¡Ã­ lidi myslÃ­ o Estebanovi?";
 };
 FUNC INT DIA_Addon_Snaf_People_Condition()
 {	
@@ -364,14 +364,14 @@ FUNC INT DIA_Addon_Snaf_People_Condition()
 FUNC VOID DIA_Addon_Snaf_People_Info()
 {
 	
-	AI_Output (other, self, "DIA_Addon_Snaf_People_15_00"); //Co si zdejší lidi myslí o Estebanovi?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_01_01"); //To budeš muset trochu upøesnit.
+	AI_Output (other, self, "DIA_Addon_Snaf_People_15_00"); //Co si zdejÅ¡Ã­ lidi myslÃ­ o Estebanovi?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_01_01"); //To budeÅ¡ muset trochu upÅ™esnit.
 	if (Kosten_Einmal == FALSE)
 	&& (MIS_SnafHammer != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //Kadá informace tì bude stát...
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //KaÅ¾dÃ¡ informace tÄ› bude stÃ¡t...
 		AI_Output (other, self, "DIA_Addon_Snaf_People_15_03"); //Kolik?
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //...10 zlatıch.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //...10 zlatÃ½ch.
 		
 		Snaf_Tip_Kosten = 10;
 		Kosten_Einmal = TRUE;
@@ -393,7 +393,7 @@ FUNC VOID DIA_Addon_Snaf_People_Info()
 // --------------------------------------------
 	func void B_Addon_Snaf_NotEnough()
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_NotEnough_01_00"); //Nemáš dost penìz, hochu!
+		AI_Output (self, other, "DIA_Addon_Snaf_NotEnough_01_00"); //NemÃ¡Å¡ dost penÄ›z, hochu!
 	};
 
 FUNC VOID DIA_Addon_Snaf_People_BACK()
@@ -405,7 +405,7 @@ FUNC VOID DIA_Addon_Snaf_People_Paul()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Paul_15_00"); //A co Paul?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //Nemyslím, e má Estebana nìjak zvláš v lásce. Od tı doby, co zaèal dìlat pro Huna, se u do dolu nedostal.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //NemyslÃ­m, Å¾e mÃ¡ Estebana nÄ›jak zvlÃ¡Å¡Å¥ v lÃ¡sce. Od tÃ½ doby, co zaÄal dÄ›lat pro Huna, se uÅ¾ do dolu nedostal.
 	}
 	else
 	{
@@ -414,17 +414,17 @@ FUNC VOID DIA_Addon_Snaf_People_Paul()
 };
 FUNC VOID DIA_Addon_Snaf_People_Huno()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Co si Huno myslí o Estebanovi?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //Á, Huno! O nìm nevím skoro nic.
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(ušklíbá se) Tahle informace je pochopitelnì zdarma.
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Co si Huno myslÃ­ o Estebanovi?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //Ã, Huno! O nÄ›m nevÃ­m skoro nic.
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(uÅ¡klÃ­bÃ¡ se) Tahle informace je pochopitelnÄ› zdarma.
 };
 FUNC VOID DIA_Addon_Snaf_People_Fisk()
 {
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Fisk_15_00"); //A co Fisk?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Fisk je Fisk. Platí Estebanovi poplatky a rozdìluje zboí, kterı vìtšinou získává od pirátù.
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //Nezdá se mi, e by se o Estebana nìjak staral.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Fisk je Fisk. PlatÃ­ Estebanovi poplatky a rozdÄ›luje zboÅ¾Ã­, kterÃ½ vÄ›tÅ¡inou zÃ­skÃ¡vÃ¡ od pirÃ¡tÅ¯.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //NezdÃ¡ se mi, Å¾e by se o Estebana nÄ›jak staral.
 	}
 	else
 	{
@@ -433,10 +433,10 @@ FUNC VOID DIA_Addon_Snaf_People_Fisk()
 };
 FUNC VOID DIA_Addon_Snaf_People_Emilio()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Emilio_15_00"); //Emilio. Co ten si myslí o Estebanovi?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Emilio_15_00"); //Emilio. Co ten si myslÃ­ o Estebanovi?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Emilio_01_01"); //Neøek bych, e by Estebanovi nosil kytky na hrob, jestli víš, co tím myslím.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Emilio_01_01"); //NeÅ™ek bych, Å¾e by Estebanovi nosil kytky na hrob, jestli vÃ­Å¡, co tÃ­m myslÃ­m.
 	}
 	else
 	{
@@ -448,7 +448,7 @@ FUNC VOID DIA_Addon_Snaf_People_Senyan()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Senyan_15_00"); //A co Senyan?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //Senyan je jeden z Estebanovejch chlapù. U òákou dobu pro nìj dìlá.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //Senyan je jeden z Estebanovejch chlapÅ¯. UÅ¾ ÅˆÃ¡kou dobu pro nÄ›j dÄ›lÃ¡.
 	}
 	else
 	{
@@ -457,8 +457,8 @@ FUNC VOID DIA_Addon_Snaf_People_Senyan()
 };
 FUNC VOID DIA_Addon_Snaf_People_Lennar()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //Co si Lennar myslí o Estebanovi?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //Pokud vím, tak Lennar nemyslí VÙBEC.
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //Co si Lennar myslÃ­ o Estebanovi?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //Pokud vÃ­m, tak Lennar nemyslÃ­ VÅ®BEC.
 };
 
 func VOID DIA_Addon_Snaf_People_Finn()
@@ -466,8 +466,8 @@ func VOID DIA_Addon_Snaf_People_Finn()
 	AI_Output (other, self, "DIA_Addon_Snaf_People_Finn_15_00"); //A co Finn?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Dobrej kopáè. Má na zlato prostì nos.
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Esteban ho má kvùli tomu rád. Myslím, e si ho fakt váí.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Dobrej kopÃ¡Ä. MÃ¡ na zlato prostÄ› nos.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Esteban ho mÃ¡ kvÅ¯li tomu rÃ¡d. MyslÃ­m, Å¾e si ho fakt vÃ¡Å¾Ã­.
 	}
 	else
 	{
@@ -485,7 +485,7 @@ instance DIA_Addon_Snaf_Himself (C_INFO)
 	condition   = DIA_Addon_Snaf_Himself_Condition;
 	information = DIA_Addon_Snaf_Himself_Info;
 	permanent   = FALSE;
-	description = "A co si o Estebanovi myslíš TY?";
+	description = "A co si o Estebanovi myslÃ­Å¡ TY?";
 };
 FUNC INT DIA_Addon_Snaf_Himself_Condition()
 {	
@@ -497,8 +497,8 @@ FUNC INT DIA_Addon_Snaf_Himself_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Himself_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //A co si o Estebanovi myslíš TY?
-	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //Kadej, kdo o nìm mluví, je za chvíli mrtvej.
+	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //A co si o Estebanovi myslÃ­Å¡ TY?
+	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //KaÅ¾dej, kdo o nÄ›m mluvÃ­, je za chvÃ­li mrtvej.
 	//AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_02"); //Und?
 	//AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_03"); //Ende der Geschichte. //wav fehlt
 };
@@ -524,8 +524,8 @@ FUNC INT DIA_Addon_Snaf_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //Jak jdou kšefty?
-	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Dobøe! Estebanova smrt je pro nìkterı místní velkej dùvod k oslavì.
+	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //Jak jdou kÅ¡efty?
+	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //DobÅ™e! Estebanova smrt je pro nÄ›kterÃ½ mÃ­stnÃ­ velkej dÅ¯vod k oslavÄ›.
 };
 
 

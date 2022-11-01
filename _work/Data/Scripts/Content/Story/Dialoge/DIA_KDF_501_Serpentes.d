@@ -44,17 +44,17 @@ func int DIA_Serpentes_NOTALK_Condition ()
 };
 func void DIA_Serpentes_NOTALK_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_10_00"); //(káravì) Odvauješ se oslovit mì, novici? Vra se ke své práci.
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_10_00"); //(kÃ¡ravÄ›) OdvaÅ¾ujeÅ¡ se oslovit mÄ›, novici? VraÅ¥ se ke svÃ© prÃ¡ci.
 	
 	Info_ClearChoices (DIA_Serpentes_NOTALK);
 	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"Zrovna jsem na odchodu. (KONEC)",DIA_Serpentes_NOTALK_EXIT);
-	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"Mám ještì jednu otázku...",DIA_Serpentes_NOTALK_QUESTION);
+	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"MÃ¡m jeÅ¡tÄ› jednu otÃ¡zku...",DIA_Serpentes_NOTALK_QUESTION);
 };
 FUNC VOID DIA_Serpentes_NOTALK_QUESTION()
 {
-	AI_Output (other, self, "DIA_Serpentes_NOTALK_QUESTION_15_00"); //Mám ještì jednu otázku.
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_01"); //(vztekle) Zdá se, e to nechápeš. Já sám si rozhodnu, kdy s tebou budu mluvit. Kdo si myslíš, e jsi?
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_02"); //A teï si bì po svém!
+	AI_Output (other, self, "DIA_Serpentes_NOTALK_QUESTION_15_00"); //MÃ¡m jeÅ¡tÄ› jednu otÃ¡zku.
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_01"); //(vztekle) ZdÃ¡ se, Å¾e to nechÃ¡peÅ¡. JÃ¡ sÃ¡m si rozhodnu, kdy s tebou budu mluvit. Kdo si myslÃ­Å¡, Å¾e jsi?
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_02"); //A teÄ si bÄ›Å¾ po svÃ©m!
 	
 	AI_StopProcessInfos (self);
 };
@@ -86,7 +86,7 @@ func int DIA_Serpentes_GOAWAY_Condition ()
 };
 func void DIA_Serpentes_GOAWAY_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_GOAWAY_10_00"); //Tvá pøítomnost dokazuje nejen nedostatek úcty, ale také tvou hloupost, novici!
+	AI_Output (self, other, "DIA_Serpentes_GOAWAY_10_00"); //TvÃ¡ pÅ™Ã­tomnost dokazuje nejen nedostatek Ãºcty, ale takÃ© tvou hloupost, novici!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ instance DIA_Serpentes_YOURSTORY		(C_INFO)
 	condition	 = 	DIA_Serpentes_YOURSTORY_Condition;
 	information	 = 	DIA_Serpentes_YOURSTORY_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Slyšel jsem, e jsi sloil zkoušku ohnì.";
+	description	 = 	"SlyÅ¡el jsem, Å¾e jsi sloÅ¾il zkouÅ¡ku ohnÄ›.";
 };
 func int DIA_Serpentes_YOURSTORY_Condition ()
 {	
@@ -113,11 +113,11 @@ func int DIA_Serpentes_YOURSTORY_Condition ()
 };
 func void DIA_Serpentes_YOURSTORY_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_00"); //Slyšel jsem, e jsi sloil zkoušku ohnì.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_01"); //(samolibì) To ti pøi vší skromnosti mohu øíct. Kdokoliv jinı, kdo se o to pokoušel, zemøel.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_02"); //(blahosklonnì) Vánì bys nemìl tu zkoušku podstupovat. Tvùj duch je slabı. Lepší bude, kdy budeš slouit nìkolik let v klášteøe, tøeba budeš bìhem nìkolika let vyvolen.
-	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_03"); //Já tu zkoušku sloím.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_04"); //Pokud to je vùle Innosova, tak ano. Ale jestli ne - pak seleš.
+	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_00"); //SlyÅ¡el jsem, Å¾e jsi sloÅ¾il zkouÅ¡ku ohnÄ›.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_01"); //(samolibÄ›) To ti pÅ™i vÅ¡Ã­ skromnosti mohu Å™Ã­ct. Kdokoliv jinÃ½, kdo se o to pokouÅ¡el, zemÅ™el.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_02"); //(blahosklonnÄ›) VÃ¡Å¾nÄ› bys nemÄ›l tu zkouÅ¡ku podstupovat. TvÅ¯j duch je slabÃ½. LepÅ¡Ã­ bude, kdyÅ¾ budeÅ¡ slouÅ¾it nÄ›kolik let v klÃ¡Å¡teÅ™e, tÅ™eba budeÅ¡ bÄ›hem nÄ›kolika let vyvolen.
+	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_03"); //JÃ¡ tu zkouÅ¡ku sloÅ¾Ã­m.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_04"); //Pokud to je vÅ¯le Innosova, tak ano. Ale jestli ne - pak selÅ¾eÅ¡.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEST
@@ -129,7 +129,7 @@ instance DIA_Serpentes_TEST		(C_INFO)
 	condition	 = 	DIA_Serpentes_TEST_Condition;
 	information	 = 	DIA_Serpentes_TEST_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jsem pøipraven podrobit se tvé zkoušce, Mistøe.";
+	description	 = 	"Jsem pÅ™ipraven podrobit se tvÃ© zkouÅ¡ce, MistÅ™e.";
 };
 func int DIA_Serpentes_TEST_Condition ()
 {	
@@ -141,12 +141,12 @@ func int DIA_Serpentes_TEST_Condition ()
 };
 func void DIA_Serpentes_TEST_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_TEST_15_00"); //Jsem pøipraven podrobit se tvé zkoušce, Mistøe.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_01"); //Take chceš tu zkoušku podstoupit. O nìco takového mùe ádat jen odvánı novic. Odvaha však není vše, co je zapotøebí.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_02"); //Jsi dost chytrı na to, abys tu zkoušku sloil? Jsi dost silnı, aby ses postavil nebezpeèím, je na tebe èekají?
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_03"); //Jestli ne, zaplatíš za to ivotem.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_04"); //A nyní poslouchej znìní zkoušky: Na Místì kamenù hledej toho, kdo nebyl nikdy zrozen - najdeš toho, kdo byl kdysi pøivolán.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_05"); //Pøemo toho, koho pøemoci nelze - utkej se s ivoucí skálou, bojuj s neumírajícím kamenem - a zniè jej.
+	AI_Output (other, self, "DIA_Serpentes_TEST_15_00"); //Jsem pÅ™ipraven podrobit se tvÃ© zkouÅ¡ce, MistÅ™e.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_01"); //TakÅ¾e chceÅ¡ tu zkouÅ¡ku podstoupit. O nÄ›co takovÃ©ho mÅ¯Å¾e Å¾Ã¡dat jen odvÃ¡Å¾nÃ½ novic. Odvaha vÅ¡ak nenÃ­ vÅ¡e, co je zapotÅ™ebÃ­.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_02"); //Jsi dost chytrÃ½ na to, abys tu zkouÅ¡ku sloÅ¾il? Jsi dost silnÃ½, aby ses postavil nebezpeÄÃ­m, jeÅ¾ na tebe ÄekajÃ­?
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_03"); //Jestli ne, zaplatÃ­Å¡ za to Å¾ivotem.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_04"); //A nynÃ­ poslouchej znÄ›nÃ­ zkouÅ¡ky: Na MÃ­stÄ› kamenÅ¯ hledej toho, kdo nebyl nikdy zrozen - najdeÅ¡ toho, kdo byl kdysi pÅ™ivolÃ¡n.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_05"); //PÅ™emoÅ¾ toho, koho pÅ™emoci nelze - utkej se s Å¾ivoucÃ­ skÃ¡lou, bojuj s neumÃ­rajÃ­cÃ­m kamenem - a zniÄ jej.
 	
 	//----- Der Magische Golem ----
 	Wld_InsertNpc 	(MagicGolem, 			"FP_MAGICGOLEM");
@@ -156,7 +156,7 @@ func void DIA_Serpentes_TEST_Info ()
 	MIS_GOLEM = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_Golem,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Golem,LOG_RUNNING);
-	B_LogEntry (TOPIC_Golem,"Serpentes mì podrobil zkoušce. Mám najít 'toho, kdo byl kdysi vyvolán', oivlı kámen, a pøemoci jej.");
+	B_LogEntry (TOPIC_Golem,"Serpentes mÄ› podrobil zkouÅ¡ce. MÃ¡m najÃ­t 'toho, kdo byl kdysi vyvolÃ¡n', oÅ¾ivlÃ½ kÃ¡men, a pÅ™emoci jej.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info NOIDEA
@@ -168,7 +168,7 @@ instance DIA_Serpentes_NOIDEA		(C_INFO)
 	condition	 = 	DIA_Serpentes_NOIDEA_Condition;
 	information	 = 	DIA_Serpentes_NOIDEA_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Co to mùe bıt za bytost?";
+	description	 = 	"Co to mÅ¯Å¾e bÃ½t za bytost?";
 };
 func int DIA_Serpentes_NOIDEA_Condition ()
 {	
@@ -180,9 +180,9 @@ func int DIA_Serpentes_NOIDEA_Condition ()
 };
 func void DIA_Serpentes_NOIDEA_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_NOIDEA_15_00"); //ivoucí skála? Co to mùe bıt za stvoøení?
-	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_01"); //Øekl jsem ti vše. (vısmìšnì) Nebo se ti zdá ta zkouška pøíliš obtíná?
-	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_02"); //Nyní poznáš, co to obnáší podstoupit zkoušku ohnì - na ádné další tvé otázky u nebudu odpovídat.
+	AI_Output (other, self, "DIA_Serpentes_NOIDEA_15_00"); //Å½ivoucÃ­ skÃ¡la? Co to mÅ¯Å¾e bÃ½t za stvoÅ™enÃ­?
+	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_01"); //Å˜ekl jsem ti vÅ¡e. (vÃ½smÄ›Å¡nÄ›) Nebo se ti zdÃ¡ ta zkouÅ¡ka pÅ™Ã­liÅ¡ obtÃ­Å¾nÃ¡?
+	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_02"); //NynÃ­ poznÃ¡Å¡, co to obnÃ¡Å¡Ã­ podstoupit zkouÅ¡ku ohnÄ› - na Å¾Ã¡dnÃ© dalÅ¡Ã­ tvÃ© otÃ¡zky uÅ¾ nebudu odpovÃ­dat.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ func int DIA_Serpentes_NOHELP_Condition ()
 };
 func void DIA_Serpentes_NOHELP_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_NOHELP_10_00"); //(opovrlivì) Bì a splò svùj úkol, novici!
+	AI_Output (self, other, "DIA_Serpentes_NOHELP_10_00"); //(opovrÅ¾livÄ›) BÄ›Å¾ a splÅˆ svÅ¯j Ãºkol, novici!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -242,23 +242,23 @@ func void DIA_Serpentes_SUCCESS_Info ()
 	garwig = Hlp_GetNpc (NOV_608_Garwig);
 	
 	AI_Output (other, self, "DIA_Serpentes_SUCCESS_15_00"); //Porazil jsem toho golema.
-	AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_01"); //Coe? Vánì jsi to dokázal? Ale bez Innosova kladiva bys golema nemohl nikdy pøemoci.
+	AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_01"); //CoÅ¾e? VÃ¡Å¾nÄ› jsi to dokÃ¡zal? Ale bez Innosova kladiva bys golema nemohl nikdy pÅ™emoci.
 	
 	if (Npc_IsDead (garwig))
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_02"); //(vítìznì) Ale teï ses sám prozradil! Byls to ty, kdo zabil Garwiga!
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_03"); //ÈEKÁ TÌ TREST ZA VRADU INNOSOVA SLUEBNÍKA!!!
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_02"); //(vÃ­tÄ›znÄ›) Ale teÄ ses sÃ¡m prozradil! Byls to ty, kdo zabil Garwiga!
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_03"); //ÄŒEKÃ TÄš TREST ZA VRAÅ½DU INNOSOVA SLUÅ½EBNÃKA!!!
 		
 		AI_StopProcessInfos (self);
 		B_Attack  (self, other, AR_HumanMurderedHuman, 0);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_04"); //(lítostivì) Ale musím uznat, e úkol, kterı jsem ti zadal, jsi splnil.
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_04"); //(lÃ­tostivÄ›) Ale musÃ­m uznat, Å¾e Ãºkol, kterÃ½ jsem ti zadal, jsi splnil.
 	};
 	if (Npc_HasItems (other, Holy_Hammer_Mis) >= 1)
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_05"); //Mìl jsem to kladivo vzít sám.
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_05"); //MÄ›l jsem to kladivo vzÃ­t sÃ¡m.
 		
 		Npc_RemoveInvItems (other, Holy_Hammer_MIS,1); 
 		Wld_InsertItem (Holy_Hammer_MIS,"FP_HAMMER");
@@ -280,7 +280,7 @@ INSTANCE DIA_Serpentes_PERM   (C_INFO)
 	information = DIA_Serpentes_PERM_Info;
 	permanent   = TRUE;
 
-	description = "Chceš mi øíct ještì nìco?";
+	description = "ChceÅ¡ mi Å™Ã­ct jeÅ¡tÄ› nÄ›co?";
 };
 FUNC INT DIA_Serpentes_PERM_Condition()
 {	
@@ -292,15 +292,15 @@ FUNC INT DIA_Serpentes_PERM_Condition()
 };
 FUNC VOID DIA_Serpentes_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Serpentes_PERM_15_00"); //Chceš mi øíct ještì nìco?
+	AI_Output (other, self, "DIA_Serpentes_PERM_15_00"); //ChceÅ¡ mi Å™Ã­ct jeÅ¡tÄ› nÄ›co?
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Serpentes_PERM_10_01"); //Ne. Teï ne, bratøe.
+			AI_Output (self, other, "DIA_Serpentes_PERM_10_01"); //Ne. TeÄ ne, bratÅ™e.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Serpentes_PERM_10_02"); //Odchod. Víš, co musíš udìlat.
+			AI_Output (self, other, "DIA_Serpentes_PERM_10_02"); //Odchod. VÃ­Å¡, co musÃ­Å¡ udÄ›lat.
 		};
 	AI_StopProcessInfos (self);
 };
@@ -392,63 +392,63 @@ func int DIA_Serpentes_MinenAnteile_Condition ()
 
 func void DIA_Serpentes_MinenAnteile_Info ()
 {
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_00"); //Ne tak rychle. Mám pro tebe ještì jeden úkol.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_00"); //Ne tak rychle. MÃ¡m pro tebe jeÅ¡tÄ› jeden Ãºkol.
 
 	if (hero.guild == GIL_KDF)
 	{
 		AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_15_01"); //(s povzdychem) A to?
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_02"); //Teï, kdy jsi èlenem bratrstva ohnì, musíš splnit své povinnosti související s tím, kdy se staneš jedním z nás.
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_03"); //Církev nezajímají jen vìci kolem magie - jak sám víš, je to také nejvyšší autorita v oblastech práva.
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_04"); //Poslední pøípad pøed námi otevírá bezednou propast a jednou provdy se s ním musíme vypoøádat.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_02"); //TeÄ, kdyÅ¾ jsi Älenem bratrstva ohnÄ›, musÃ­Å¡ splnit svÃ© povinnosti souvisejÃ­cÃ­ s tÃ­m, kdyÅ¾ se staneÅ¡ jednÃ­m z nÃ¡s.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_03"); //CÃ­rkev nezajÃ­majÃ­ jen vÄ›ci kolem magie - jak sÃ¡m vÃ­Å¡, je to takÃ© nejvyÅ¡Å¡Ã­ autorita v oblastech prÃ¡va.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_04"); //PoslednÃ­ pÅ™Ã­pad pÅ™ed nÃ¡mi otevÃ­rÃ¡ bezednou propast a jednou provÅ¾dy se s nÃ­m musÃ­me vypoÅ™Ã¡dat.
 		
 		Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "U takhle mám dost svıch starostí. Najdi si nìkoho jiného.", DIA_Serpentes_MinenAnteile_nein );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "UÅ¾ takhle mÃ¡m dost svÃ½ch starostÃ­. Najdi si nÄ›koho jinÃ©ho.", DIA_Serpentes_MinenAnteile_nein );
 		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "O co jde?", DIA_Serpentes_MinenAnteile_was );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Není to snad záleitost domobrany?", DIA_Serpentes_MinenAnteile_miliz );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "NenÃ­ to snad zÃ¡leÅ¾itost domobrany?", DIA_Serpentes_MinenAnteile_miliz );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_05"); //Nájemnı oldák tvého kalibru by nám v tom mohl pomoci.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_05"); //NÃ¡jemnÃ½ Å¾oldÃ¡k tvÃ©ho kalibru by nÃ¡m v tom mohl pomoci.
 		
 		Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "U takhle mám dost svıch starostí. Najdi si nìkoho jiného.", DIA_Serpentes_MinenAnteile_nein );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Koho mám zabít?", DIA_Serpentes_MinenAnteile_KillSLD );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "UÅ¾ takhle mÃ¡m dost svÃ½ch starostÃ­. Najdi si nÄ›koho jinÃ©ho.", DIA_Serpentes_MinenAnteile_nein );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Koho mÃ¡m zabÃ­t?", DIA_Serpentes_MinenAnteile_KillSLD );
 	};
 };
 func void DIA_Serpentes_MinenAnteile_miliz ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_miliz_15_00"); //Není to snad záleitost domobrany?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_miliz_10_01"); //Domobrana je zodpovìdná jen za mìsto. Tahle záleitost má ovšem dalekosáhlé dùsledky.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_miliz_15_00"); //NenÃ­ to snad zÃ¡leÅ¾itost domobrany?
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_miliz_10_01"); //Domobrana je zodpovÄ›dnÃ¡ jen za mÄ›sto. Tahle zÃ¡leÅ¾itost mÃ¡ ovÅ¡em dalekosÃ¡hlÃ© dÅ¯sledky.
 
 };
 
 func void DIA_Serpentes_MinenAnteile_nein ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_nein_15_00"); //U takhle mám dost svıch starostí. Najdi si nìkoho jiného.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_01"); //(rozzlobenì) To je uráka. Nikdy se nedostaneš do vyšších magickıch kruhù, pokud nejsi ochoten vykonat slubu pro svoje bratrstvo.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_02"); //Ukládám ti dùtku. Doufám, e se to u víckrát nestane - jinak by to s tebou špatnì dopadlo.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_nein_15_00"); //UÅ¾ takhle mÃ¡m dost svÃ½ch starostÃ­. Najdi si nÄ›koho jinÃ©ho.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_01"); //(rozzlobenÄ›) To je urÃ¡Å¾ka. Nikdy se nedostaneÅ¡ do vyÅ¡Å¡Ã­ch magickÃ½ch kruhÅ¯, pokud nejsi ochoten vykonat sluÅ¾bu pro svoje bratrstvo.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_02"); //UklÃ¡dÃ¡m ti dÅ¯tku. DoufÃ¡m, Å¾e se to uÅ¾ vÃ­ckrÃ¡t nestane - jinak by to s tebou Å¡patnÄ› dopadlo.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Serpentes_MinenAnteile_was ()
 {
 	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_15_00"); //O co jde?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_01"); //Ve mìstì je nìkdo, kdo prodal falešné podíly na rudné doly v bıvalé trestanecké kolonii.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_02"); //Ty papíry jsou zcela bezcenné a nemají ádnı vıznam, vánì. Pøesto by mohly mezi lidem vyvolat potíe, co si nyní nemùeme dovolit.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_03"); //Ten švindlíø nejspíš oslovil všechny vıznamné obchodníky ve mìstì a okolí a dokonce se mu evidentnì podaøilo nìkterım z nich èást tìch falešnıch podílovıch listù prodat.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_04"); //Najdi toho padoucha a pøiveï jej pøed tribunál. V takovıchto tìkıch èasech nemùeme trpìt takovéhle podvodníky a mrchorouty.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_05"); //Musíme ho exemplárnì potrestat, abychom odradili ostatní podobné zlotøilce.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_01"); //Ve mÄ›stÄ› je nÄ›kdo, kdo prodal faleÅ¡nÃ© podÃ­ly na rudnÃ© doly v bÃ½valÃ© trestaneckÃ© kolonii.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_02"); //Ty papÃ­ry jsou zcela bezcennÃ© a nemajÃ­ Å¾Ã¡dnÃ½ vÃ½znam, vÃ¡Å¾nÄ›. PÅ™esto by mohly mezi lidem vyvolat potÃ­Å¾e, coÅ¾ si nynÃ­ nemÅ¯Å¾eme dovolit.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_03"); //Ten Å¡vindlÃ­Å™ nejspÃ­Å¡ oslovil vÅ¡echny vÃ½znamnÃ© obchodnÃ­ky ve mÄ›stÄ› a okolÃ­ a dokonce se mu evidentnÄ› podaÅ™ilo nÄ›kterÃ½m z nich ÄÃ¡st tÄ›ch faleÅ¡nÃ½ch podÃ­lovÃ½ch listÅ¯ prodat.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_04"); //Najdi toho padoucha a pÅ™iveÄ jej pÅ™ed tribunÃ¡l. V takovÃ½chto tÄ›Å¾kÃ½ch Äasech nemÅ¯Å¾eme trpÄ›t takovÃ©hle podvodnÃ­ky a mrchoÅ¾routy.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_05"); //MusÃ­me ho exemplÃ¡rnÄ› potrestat, abychom odradili ostatnÃ­ podobnÃ© zlotÅ™ilce.
 	
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Zkusím tu záleitost nìjak vyøídit.", DIA_Serpentes_MinenAnteile_was_ja );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "ZkusÃ­m tu zÃ¡leÅ¾itost nÄ›jak vyÅ™Ã­dit.", DIA_Serpentes_MinenAnteile_was_ja );
 
 };
 func void DIA_Serpentes_MinenAnteile_was_ja ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_00"); //Zkusím tu záleitost nìjak vyøídit.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_01"); //Ještì jedna vìc. A budeš ty obchodníky navštìvovat, nedej najevo, e se pídíš po tìch podílovıch listech.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_02"); //Øekl bych, e je budou chtít prodat dál a rozhodnì by ti je nenabízeli, pokud jim dojde, e jednáš z rozkazu církve, rozumíš?
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_00"); //ZkusÃ­m tu zÃ¡leÅ¾itost nÄ›jak vyÅ™Ã­dit.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_01"); //JeÅ¡tÄ› jedna vÄ›c. AÅ¾ budeÅ¡ ty obchodnÃ­ky navÅ¡tÄ›vovat, nedej najevo, Å¾e se pÃ­dÃ­Å¡ po tÄ›ch podÃ­lovÃ½ch listech.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_02"); //Å˜ekl bych, Å¾e je budou chtÃ­t prodat dÃ¡l a rozhodnÄ› by ti je nenabÃ­zeli, pokud jim dojde, Å¾e jednÃ¡Å¡ z rozkazu cÃ­rkve, rozumÃ­Å¡?
 	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_03"); //Ano.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_04"); //Tak vzhùru do práce. Pøeji ti brzkı úspìch, bratøe.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_04"); //Tak vzhÅ¯ru do prÃ¡ce. PÅ™eji ti brzkÃ½ ÃºspÄ›ch, bratÅ™e.
 	Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
 	
 	MIS_Serpentes_MinenAnteil_KDF = LOG_RUNNING;	
@@ -502,32 +502,32 @@ func void DIA_Serpentes_MinenAnteile_was_ja ()
 
 	Log_CreateTopic (TOPIC_MinenAnteile, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MinenAnteile, LOG_RUNNING);
-	B_LogEntry (TOPIC_MinenAnteile,"Nìjakı tuneláø tu obchodníkùm prodává ilegální akcie rudnıch dolù a vydìlává na tom poøádnı balík. Musím zjistit, kdo za tím vìzí, a Serpentovi pak musím všechny ty padìlky odevzdat."); 
+	B_LogEntry (TOPIC_MinenAnteile,"NÄ›jakÃ½ tunelÃ¡Å™ tu obchodnÃ­kÅ¯m prodÃ¡vÃ¡ ilegÃ¡lnÃ­ akcie rudnÃ½ch dolÅ¯ a vydÄ›lÃ¡vÃ¡ na tom poÅ™Ã¡dnÃ½ balÃ­k. MusÃ­m zjistit, kdo za tÃ­m vÄ›zÃ­, a Serpentovi pak musÃ­m vÅ¡echny ty padÄ›lky odevzdat."); 
 };
 
 func void DIA_Serpentes_MinenAnteile_KillSLD ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_Kill_15_00"); //Koho mám zabít?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_01"); //Innosi, slituj se. Nikoho, samozøejmì. Tahle záleitost vyaduje trošku jemnìjší jednání, ty neomalenı hulváte.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_02"); //Salandril, alchymista z horního konce mìsta, se provinil vánım zloèinem a musí za nìj bıt potrestán.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_03"); //Odmítl však pøijít do kláštera, kde mìl stanout pøed soudem. Pøiveï ho sem.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_04"); //Jak to udìláš, to u je na tobì. Samozøejmì e za to dostaneš odpovídající odmìnu.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_Kill_15_00"); //Koho mÃ¡m zabÃ­t?
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_01"); //Innosi, slituj se. Nikoho, samozÅ™ejmÄ›. Tahle zÃ¡leÅ¾itost vyÅ¾aduje troÅ¡ku jemnÄ›jÅ¡Ã­ jednÃ¡nÃ­, ty neomalenÃ½ hulvÃ¡te.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_02"); //Salandril, alchymista z hornÃ­ho konce mÄ›sta, se provinil vÃ¡Å¾nÃ½m zloÄinem a musÃ­ za nÄ›j bÃ½t potrestÃ¡n.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_03"); //OdmÃ­tl vÅ¡ak pÅ™ijÃ­t do klÃ¡Å¡tera, kde mÄ›l stanout pÅ™ed soudem. PÅ™iveÄ ho sem.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_04"); //Jak to udÄ›lÃ¡Å¡, to uÅ¾ je na tobÄ›. SamozÅ™ejmÄ› Å¾e za to dostaneÅ¡ odpovÃ­dajÃ­cÃ­ odmÄ›nu.
 	
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Není to snad záleitost domobrany?", DIA_Serpentes_MinenAnteile_miliz );
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "ádnı problém. Postarám se o to.", DIA_Serpentes_MinenAnteile_was_jaSLD );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "NenÃ­ to snad zÃ¡leÅ¾itost domobrany?", DIA_Serpentes_MinenAnteile_miliz );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Å½Ã¡dnÃ½ problÃ©m. PostarÃ¡m se o to.", DIA_Serpentes_MinenAnteile_was_jaSLD );
 };
 
 var int MIS_Serpentes_BringSalandril_SLD;
 func void DIA_Serpentes_MinenAnteile_was_jaSLD ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_jaSLD_15_00"); //ádnı problém. Postarám se o to.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_jaSLD_10_01"); //Dobrá. Oèekáváme, e to bìhem nìkolika dní zaøídíš.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_jaSLD_15_00"); //Å½Ã¡dnÃ½ problÃ©m. PostarÃ¡m se o to.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_jaSLD_10_01"); //DobrÃ¡. OÄekÃ¡vÃ¡me, Å¾e to bÄ›hem nÄ›kolika dnÃ­ zaÅ™Ã­dÃ­Å¡.
 	MIS_Serpentes_BringSalandril_SLD = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
 
 	Log_CreateTopic (TOPIC_MinenAnteile, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MinenAnteile, LOG_RUNNING);
-	B_LogEntry (TOPIC_MinenAnteile,"Musím pøed soud do kláštera pøivést Salandrila, alchymistu z horní khorinidské ètvrti. Nemusí mì zajímat, co vlastnì spáchal, hlavnì kdy za to dostanu zaplaceno."); 
+	B_LogEntry (TOPIC_MinenAnteile,"MusÃ­m pÅ™ed soud do klÃ¡Å¡tera pÅ™ivÃ©st Salandrila, alchymistu z hornÃ­ khorinidskÃ© Ätvrti. NemusÃ­ mÄ› zajÃ­mat, co vlastnÄ› spÃ¡chal, hlavnÄ› kdyÅ¾ za to dostanu zaplaceno."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -541,7 +541,7 @@ instance DIA_Serpentes_MinenAnteileBringen		(C_INFO)
 	information	 = 	DIA_Serpentes_MinenAnteileBringen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co se tıèe tìch padìlanıch dùlních akcií...";
+	description	 = 	"Co se tÃ½Äe tÄ›ch padÄ›lanÃ½ch dÅ¯lnÃ­ch akciÃ­...";
 };
 
 func int DIA_Serpentes_MinenAnteileBringen_Condition ()
@@ -567,14 +567,14 @@ func void DIA_Serpentes_MinenAnteileBringen_Info ()
 
 		 if (SerpentesMinenAnteilCount == 1)
 			{
-				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_00"); //Podaøilo se mi získat ty podílové listy.
+				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_00"); //PodaÅ™ilo se mi zÃ­skat ty podÃ­lovÃ© listy.
 				B_GivePlayerXP (XP_BringSerpentesMinenAnteil);
 				B_GiveInvItems (other, self, ItWr_MinenAnteil_Mis,1);
 				SerpentesMinenAnteilCounter = SerpentesMinenAnteilCounter + 1;
 			}
 			else
 			{
-				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_01"); //Podaøilo se mi získat nìkolik podílovıch listù.
+				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_01"); //PodaÅ™ilo se mi zÃ­skat nÄ›kolik podÃ­lovÃ½ch listÅ¯.
 	
 				B_GiveInvItems (other, self, ItWr_MinenAnteil_Mis,  SerpentesMinenAnteilCount);
 	
@@ -594,20 +594,20 @@ func void DIA_Serpentes_MinenAnteileBringen_Info ()
 
 		if (SerpentesMinenAnteilCounter < SalandrilVerteilteMinenAnteil)
 		{
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_02"); //Velmi dobøe. Musíš stáhnout z obìhu úplnì všechny. Je to pro naše lidi jako jed. Pøines mi je všechny.
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_03"); //Dám ti vše potøebné.
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_02"); //Velmi dobÅ™e. MusÃ­Å¡ stÃ¡hnout z obÄ›hu ÃºplnÄ› vÅ¡echny. Je to pro naÅ¡e lidi jako jed. PÅ™ines mi je vÅ¡echny.
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_03"); //DÃ¡m ti vÅ¡e potÅ™ebnÃ©.
 		}
 		else if (SerpentesMinenAnteilCounter == SalandrilVerteilteMinenAnteil) //Joly:kein Exploid
 		{
-			AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_04"); //Myslím, e by to mìly bıt všechny.
-			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_05"); //Dobrá práce. Zaslouíš si svou odmìnu.
-			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_06"); //Vezmi si tenhle ochrannı amulet. Pomùe ti na cestách, na nì se ještì budeš muset vypravit.
+			AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_04"); //MyslÃ­m, Å¾e by to mÄ›ly bÃ½t vÅ¡echny.
+			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_05"); //DobrÃ¡ prÃ¡ce. ZaslouÅ¾Ã­Å¡ si svou odmÄ›nu.
+			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_06"); //Vezmi si tenhle ochrannÃ½ amulet. PomÅ¯Å¾e ti na cestÃ¡ch, na nÄ›Å¾ se jeÅ¡tÄ› budeÅ¡ muset vypravit.
 			CreateInvItems (self, ItAm_Prot_Mage_01, 1); 
 			B_GiveInvItems (self, other, ItAm_Prot_Mage_01, 1);
 		}
 		else	//Joly: zur Sicherheit!
 		{
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_07"); //Je tohle opravdu poslední?
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_07"); //Je tohle opravdu poslednÃ­?
 		};
 		
 		SerpentesMinenAnteilGeld	= (SerpentesMinenAnteilCount * SerpentesMinenAnteilOffer);
@@ -626,7 +626,7 @@ instance DIA_Serpentes_GOTSalandril		(C_INFO)
 	condition	 = 	DIA_Serpentes_GOTSalandril_Condition;
 	information	 = 	DIA_Serpentes_GOTSalandril_Info;
 
-	description	 = 	"U vím, kdo šíøil ty ilegální akcie.";
+	description	 = 	"UÅ¾ vÃ­m, kdo Å¡Ã­Å™il ty ilegÃ¡lnÃ­ akcie.";
 };
 
 func int DIA_Serpentes_GOTSalandril_Condition ()
@@ -640,8 +640,8 @@ func int DIA_Serpentes_GOTSalandril_Condition ()
 
 func void DIA_Serpentes_GOTSalandril_Info ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_GOTSalandril_15_00"); //Vím, kdo vypustil ty podílové listy do obìhu. Byl to Salandril, alchymista z horní èásti mìsta.
-	AI_Output			(self, other, "DIA_Serpentes_GOTSalandril_10_01"); //Tak jej pøiveï sem. Musíme s ním probrat pár vìcí.
+	AI_Output			(other, self, "DIA_Serpentes_GOTSalandril_15_00"); //VÃ­m, kdo vypustil ty podÃ­lovÃ© listy do obÄ›hu. Byl to Salandril, alchymista z hornÃ­ ÄÃ¡sti mÄ›sta.
+	AI_Output			(self, other, "DIA_Serpentes_GOTSalandril_10_01"); //Tak jej pÅ™iveÄ sem. MusÃ­me s nÃ­m probrat pÃ¡r vÄ›cÃ­.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -656,7 +656,7 @@ instance DIA_Serpentes_SalandrilHERE		(C_INFO)
 	condition	 = 	DIA_Serpentes_SalandrilHERE_Condition;
 	information	 = 	DIA_Serpentes_SalandrilHERE_Info;
 
-	description	 = 	"Salandril je tady, v klášteøe.";
+	description	 = 	"Salandril je tady, v klÃ¡Å¡teÅ™e.";
 };
 
 func int DIA_Serpentes_SalandrilHERE_Condition ()
@@ -681,12 +681,12 @@ func int DIA_Serpentes_SalandrilHERE_Condition ()
 
 func void DIA_Serpentes_SalandrilHERE_Info ()
 {
-	AI_Output		(other, self, "DIA_Serpentes_SalandrilHERE_15_00"); //Salandril je tady, v klášteøe.
-	AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_01"); //Dobrá práce. Vyøídíme to s ním pozdìji.
+	AI_Output		(other, self, "DIA_Serpentes_SalandrilHERE_15_00"); //Salandril je tady, v klÃ¡Å¡teÅ™e.
+	AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_01"); //DobrÃ¡ prÃ¡ce. VyÅ™Ã­dÃ­me to s nÃ­m pozdÄ›ji.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_02"); //Tady je tvoje odmìna. A nikomu ani slovo, rozumíš?
+		AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_02"); //Tady je tvoje odmÄ›na. A nikomu ani slovo, rozumÃ­Å¡?
 		CreateInvItems (self, ItMi_Gold, 400);									
 		B_GiveInvItems (self, other, ItMi_Gold, 400);					
 	};
@@ -705,7 +705,7 @@ instance DIA_Serpentes_SalandrilDEAD		(C_INFO)
 	condition	 = 	DIA_Serpentes_SalandrilDEAD_Condition;
 	information	 = 	DIA_Serpentes_SalandrilDEAD_Info;
 
-	description	 = 	"Salandril je mrtvı.";
+	description	 = 	"Salandril je mrtvÃ½.";
 };
 
 func int DIA_Serpentes_SalandrilDEAD_Condition ()
@@ -725,8 +725,8 @@ func int DIA_Serpentes_SalandrilDEAD_Condition ()
 
 func void DIA_Serpentes_SalandrilDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_SalandrilDEAD_15_00"); //Salandril je mrtvı.
-	AI_Output			(self, other, "DIA_Serpentes_SalandrilDEAD_10_01"); //Inu, v tom pøípadì zùstane jeho skutek nepotrestán. Nech se Innos slituje nad jeho ubohou duší.
+	AI_Output			(other, self, "DIA_Serpentes_SalandrilDEAD_15_00"); //Salandril je mrtvÃ½.
+	AI_Output			(self, other, "DIA_Serpentes_SalandrilDEAD_10_01"); //Inu, v tom pÅ™Ã­padÄ› zÅ¯stane jeho skutek nepotrestÃ¡n. NechÅ¥ se Innos slituje nad jeho ubohou duÅ¡Ã­.
 	TOPIC_END_MinenAnteile = TRUE;
 	B_GivePlayerXP 	(XP_Ambient);
 };

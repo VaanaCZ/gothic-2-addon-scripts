@@ -46,7 +46,7 @@ func int DIA_Wasili_HALLO_Condition ()
 
 func void DIA_Wasili_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Wasili_HALLO_01_00"); //Neodvauj se ani pomyslet na to, e bys tu mohl nìco ukrást. Jinak slízneš ránu do hlavy, jasnı?
+	AI_Output (self, other, "DIA_Wasili_HALLO_01_00"); //NeodvaÅ¾uj se ani pomyslet na to, Å¾e bys tu mohl nÄ›co ukrÃ¡st. Jinak slÃ­zneÅ¡ rÃ¡nu do hlavy, jasnÃ½?
 };
 
 
@@ -60,7 +60,7 @@ instance DIA_Wasili_Job (C_INFO)
 	condition	= DIA_Wasili_Job_Condition;
 	information	= DIA_Wasili_Job_Info;
 	permanent 	= FALSE;
-	description	= "Co je tvoje práce?";
+	description	= "Co je tvoje prÃ¡ce?";
 };
 
 func int DIA_Wasili_Job_Condition ()
@@ -70,11 +70,11 @@ func int DIA_Wasili_Job_Condition ()
 
 func void DIA_Wasili_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Wasili_Job_15_00"); //Co je tvoje práce?
-	AI_Output (self, other, "DIA_Wasili_Job_01_01"); //Onar po mnì chce, abych celı den dohlíel na jeho vìci.
-	AI_Output (self, other, "DIA_Wasili_Job_01_02"); //Dìlá si starosti, e se nìco pokazí. A já taky - na tomhle místì...
-	AI_Output (self, other, "DIA_Wasili_Job_01_03"); //Vìtšina z tìch oldákù, co najal, jsou bıvalí vìzni z trestanecké kolonie.
-	AI_Output (self, other, "DIA_Wasili_Job_01_04"); //Kdy se nikdo z nás nekouká, odnesou všechno, co není pøišroubovanı.
+	AI_Output (other, self, "DIA_Wasili_Job_15_00"); //Co je tvoje prÃ¡ce?
+	AI_Output (self, other, "DIA_Wasili_Job_01_01"); //Onar po mnÄ› chce, abych celÃ½ den dohlÃ­Å¾el na jeho vÄ›ci.
+	AI_Output (self, other, "DIA_Wasili_Job_01_02"); //DÄ›lÃ¡ si starosti, Å¾e se nÄ›co pokazÃ­. A jÃ¡ taky - na tomhle mÃ­stÄ›...
+	AI_Output (self, other, "DIA_Wasili_Job_01_03"); //VÄ›tÅ¡ina z tÄ›ch Å¾oldÃ¡kÅ¯, co najal, jsou bÃ½valÃ­ vÄ›zni z trestaneckÃ© kolonie.
+	AI_Output (self, other, "DIA_Wasili_Job_01_04"); //KdyÅ¾ se nikdo z nÃ¡s nekoukÃ¡, odnesou vÅ¡echno, co nenÃ­ pÅ™iÅ¡roubovanÃ½.
 };
 
 
@@ -88,7 +88,7 @@ instance DIA_Wasili_Sammler	(C_INFO)
 	condition	= DIA_Wasili_Sammler_Condition;
 	information	= DIA_Wasili_Sammler_Info;
 	permanent 	= FALSE;
-	description	= "Je tady spousta haraburdí.";
+	description	= "Je tady spousta haraburdÃ­.";
 };
 
 func int DIA_Wasili_Sammler_Condition ()
@@ -98,11 +98,11 @@ func int DIA_Wasili_Sammler_Condition ()
 
 func void DIA_Wasili_Sammler_Info ()
 {
-	AI_Output (other, self, "DIA_Wasili_Sammler_15_00"); //Je tady spousta haraburdí.
-	AI_Output (self, other, "DIA_Wasili_Sammler_01_01"); //Jo, a spousta z nìj je hodnì drahá. Onar sbírá cennosti.
-	AI_Output (self, other, "DIA_Wasili_Sammler_01_02"); //Obyèejnı èlovìk jako já si takovı luxus nemùe dovolit. Záleí mi na jinıch vìcech.
+	AI_Output (other, self, "DIA_Wasili_Sammler_15_00"); //Je tady spousta haraburdÃ­.
+	AI_Output (self, other, "DIA_Wasili_Sammler_01_01"); //Jo, a spousta z nÄ›j je hodnÄ› drahÃ¡. Onar sbÃ­rÃ¡ cennosti.
+	AI_Output (self, other, "DIA_Wasili_Sammler_01_02"); //ObyÄejnÃ½ ÄlovÄ›k jako jÃ¡ si takovÃ½ luxus nemÅ¯Å¾e dovolit. ZÃ¡leÅ¾Ã­ mi na jinÃ½ch vÄ›cech.
 	AI_Output (other, self, "DIA_Wasili_Sammler_15_03"); //A to jako?
-	AI_Output (self, other, "DIA_Wasili_Sammler_01_04"); //Sbírám staré mince.
+	AI_Output (self, other, "DIA_Wasili_Sammler_01_04"); //SbÃ­rÃ¡m starÃ© mince.
 	
 	MIS_Wasili_BringOldCoin = LOG_RUNNING;
 };
@@ -118,7 +118,7 @@ instance DIA_Wasili_FirstOldCoin		(C_INFO)
 	information	 = 	DIA_Wasili_FirstOldCoin_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mám tady pár starıch mincí.";
+	description	 = 	"MÃ¡m tady pÃ¡r starÃ½ch mincÃ­.";
 };
 
 var int Wasili_BringOldCoin_NoMore;
@@ -137,10 +137,10 @@ var int FirstOldCoin_angebotenXP_OneTime;
 var int DIA_Wasili_FirstOldCoin_mehr_OneTime;
 func void DIA_Wasili_FirstOldCoin_Info ()
 {
-	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_15_00"); //Mám tady pár starıch mincí.
+	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_15_00"); //MÃ¡m tady pÃ¡r starÃ½ch mincÃ­.
 	if (FirstOldCoin_angebotenXP_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_01"); //Mmh. Uka.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_01"); //Mmh. UkaÅ¾.
 	};
 
 	B_GiveInvItems (other, self, ItMi_OldCoin,1);
@@ -152,16 +152,16 @@ func void DIA_Wasili_FirstOldCoin_Info ()
 
 	if (DIA_Wasili_FirstOldCoin_mehr_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_03"); //Dám ti za nì zlaák. Pøesnì tolik, jaká je jejich hodnota.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_03"); //DÃ¡m ti za nÄ› zlaÅ¥Ã¡k. PÅ™esnÄ› tolik, jakÃ¡ je jejich hodnota.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_04"); //Ty moc dobøe víš, kolik jsem za nì ochoten zaplatit, ty pse. Jeden zlatı. Nic víc.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_01_04"); //Ty moc dobÅ™e vÃ­Å¡, kolik jsem za nÄ› ochoten zaplatit, ty pse. Jeden zlatÃ½. Nic vÃ­c.
 	};
 	
 	Info_ClearChoices	(DIA_Wasili_FirstOldCoin);
-	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "No, mám dojem, e si to teda vezmu.", DIA_Wasili_FirstOldCoin_nein );
-	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "To nestaèí. Co takhle 2?", DIA_Wasili_FirstOldCoin_mehr );
+	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "No, mÃ¡m dojem, Å¾e si to teda vezmu.", DIA_Wasili_FirstOldCoin_nein );
+	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "To nestaÄÃ­. Co takhle 2?", DIA_Wasili_FirstOldCoin_mehr );
 	Info_AddChoice	(DIA_Wasili_FirstOldCoin, "Dohodnuto.", DIA_Wasili_FirstOldCoin_ok );
 
 	IF (FirstOldCoin_angebotenXP_OneTime == FALSE)
@@ -173,15 +173,15 @@ func void DIA_Wasili_FirstOldCoin_Info ()
 func void DIA_Wasili_FirstOldCoin_ok ()
 {
 	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_ok_15_00"); //Dohodnuto.
-	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_01"); //Dobrá.
+	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_01"); //DobrÃ¡.
 
 	if (WasilisOldCoinOffer == 2)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_02"); //Tady jsou dva zlaté.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_02"); //Tady jsou dva zlatÃ©.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_03"); //Kdybys jich mìl takovıch víc, víš, kde mì najdeš.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ok_01_03"); //Kdybys jich mÄ›l takovÃ½ch vÃ­c, vÃ­Å¡, kde mÄ› najdeÅ¡.
 		WasilisOldCoinOffer = 1;	
 	};
 
@@ -193,27 +193,27 @@ func void DIA_Wasili_FirstOldCoin_ok ()
 
 func void DIA_Wasili_FirstOldCoin_mehr ()
 {
-	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_mehr_15_00"); //To nestaèí. Co takhle 2?
+	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_mehr_15_00"); //To nestaÄÃ­. Co takhle 2?
 
 	if (DIA_Wasili_FirstOldCoin_mehr_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_01"); //Nezájem! Nejsem blázen! Zmizni.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_01"); //NezÃ¡jem! Nejsem blÃ¡zen! Zmizni.
 		DIA_Wasili_FirstOldCoin_mehr_OneTime = TRUE;
 		B_GiveInvItems (self, other, ItMi_OldCoin,1);
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_02"); //Arrh. Sakra. Dobrá. 2 zlaté za kadou starou minci, kterou mi pøineseš. To je moje poslední nabídka.
+		AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_mehr_01_02"); //Arrh. Sakra. DobrÃ¡. 2 zlatÃ© za kaÅ¾dou starou minci, kterou mi pÅ™ineseÅ¡. To je moje poslednÃ­ nabÃ­dka.
 		WasilisOldCoinOffer =	2;
-		Info_AddChoice	(DIA_Wasili_FirstOldCoin, "V tom pøípadì nejsou 3 tak špatné.", DIA_Wasili_FirstOldCoin_ZumTeufel );
+		Info_AddChoice	(DIA_Wasili_FirstOldCoin, "V tom pÅ™Ã­padÄ› nejsou 3 tak Å¡patnÃ©.", DIA_Wasili_FirstOldCoin_ZumTeufel );
 	};
 };
 
 func void DIA_Wasili_FirstOldCoin_nein ()
 {
-	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_nein_15_00"); //No, mám dojem, e si to teda vezmu.
-	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_nein_01_01"); //Nemaj pro tebe ádnou hodnotu. Však ty se vrátíš.
+	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_nein_15_00"); //No, mÃ¡m dojem, Å¾e si to teda vezmu.
+	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_nein_01_01"); //Nemaj pro tebe Å¾Ã¡dnou hodnotu. VÅ¡ak ty se vrÃ¡tÃ­Å¡.
 	B_GiveInvItems (self, other, ItMi_OldCoin,1);
 	WasilisOldCoinOffer = 0;
 	Info_ClearChoices	(DIA_Wasili_FirstOldCoin);
@@ -221,8 +221,8 @@ func void DIA_Wasili_FirstOldCoin_nein ()
 
 func void DIA_Wasili_FirstOldCoin_ZumTeufel ()
 {
-	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_ZumTeufel_15_00"); //V tom pøípadì nejsou 3 tak špatné.
-	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ZumTeufel_01_01"); //Táhni do pekel, ty bastarde.
+	AI_Output			(other, self, "DIA_Wasili_FirstOldCoin_ZumTeufel_15_00"); //V tom pÅ™Ã­padÄ› nejsou 3 tak Å¡patnÃ©.
+	AI_Output			(self, other, "DIA_Wasili_FirstOldCoin_ZumTeufel_01_01"); //TÃ¡hni do pekel, ty bastarde.
 	AI_StopProcessInfos (self);
 	Wasili_BringOldCoin_NoMore = TRUE;
 	WasilisOldCoinOffer = 0;
@@ -240,7 +240,7 @@ instance DIA_Wasili_BringOldCoin		(C_INFO)
 	information	 = 	DIA_Wasili_BringOldCoin_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Máš zájem o další staré mince?";
+	description	 = 	"MÃ¡Å¡ zÃ¡jem o dalÅ¡Ã­ starÃ© mince?";
 };
 
 func int DIA_Wasili_BringOldCoin_Condition ()
@@ -257,8 +257,8 @@ var int OldCoinCounter;
 
 func void DIA_Wasili_BringOldCoin_Info ()
 {
-	AI_Output			(other, self, "DIA_Wasili_BringOldCoin_15_00"); //Máš zájem o další staré mince?
-	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_01"); //Jasnì. Máš ještì nìjaké?
+	AI_Output			(other, self, "DIA_Wasili_BringOldCoin_15_00"); //MÃ¡Å¡ zÃ¡jem o dalÅ¡Ã­ starÃ© mince?
+	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_01"); //JasnÄ›. MÃ¡Å¡ jeÅ¡tÄ› nÄ›jakÃ©?
 
 	var int OldCoinCount;
 	var int XP_BringOldCoins;
@@ -276,7 +276,7 @@ func void DIA_Wasili_BringOldCoin_Info ()
 			}
 		else
 			{
-				AI_Output		(other, self, "DIA_Wasili_BringOldCoin_15_03"); //Pár.
+				AI_Output		(other, self, "DIA_Wasili_BringOldCoin_15_03"); //PÃ¡r.
 	
 				B_GiveInvItems (other, self, ItMi_OldCoin,  OldCoinCount);
 	
@@ -286,7 +286,7 @@ func void DIA_Wasili_BringOldCoin_Info ()
 				B_GivePlayerXP (XP_BringOldCoins);
 			};
 
-	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_04"); //Díky. Tady jsou tvoje peníze. Pøines mi všechno, co najdeš.
+	AI_Output			(self, other, "DIA_Wasili_BringOldCoin_01_04"); //DÃ­ky. Tady jsou tvoje penÃ­ze. PÅ™ines mi vÅ¡echno, co najdeÅ¡.
 
 	OldCoinGeld	= (OldCoinCount * WasilisOldCoinOffer);
 
@@ -305,7 +305,7 @@ instance DIA_Wasili_PERM	(C_INFO)
 	condition	= DIA_Wasili_PERM_Condition;
 	information	= DIA_Wasili_PERM_Info;
 	permanent	= TRUE;
-	description	= "U se nìkdo pokusil nìco ukrást?";
+	description	= "UÅ¾ se nÄ›kdo pokusil nÄ›co ukrÃ¡st?";
 };
 
 func int DIA_Wasili_PERM_Condition ()
@@ -318,33 +318,33 @@ func int DIA_Wasili_PERM_Condition ()
 
 func void DIA_Wasili_perm_Info ()
 {
-	AI_Output (other, self, "DIA_Wasili_PERM_15_00"); //U se nìkdo pokusil nìco ukrást?
+	AI_Output (other, self, "DIA_Wasili_PERM_15_00"); //UÅ¾ se nÄ›kdo pokusil nÄ›co ukrÃ¡st?
 
 	if (Kapitel <= 2)
 	{
 		if (PETZCOUNTER_Farm_Theft > 0)
 		{
-			AI_Output (self, other, "DIA_Wasili_PERM_01_01"); //Myslíš kromì tebe?
+			AI_Output (self, other, "DIA_Wasili_PERM_01_01"); //MyslÃ­Å¡ kromÄ› tebe?
 		};
-		AI_Output (self, other, "DIA_Wasili_PERM_01_02"); //Párkrát! A vdycky jsem je chytil!
+		AI_Output (self, other, "DIA_Wasili_PERM_01_02"); //PÃ¡rkrÃ¡t! A vÅ¾dycky jsem je chytil!
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Wasili_PERM_01_03"); //Pøed pár dny se v noci jeden ze oldnéøù plíil po domì.
-		AI_Output (self, other, "DIA_Wasili_PERM_01_04"); //Mìl na sobì èernou róbu s kapucí, take jsem ho nemohl poznat.
-		AI_Output (self, other, "DIA_Wasili_PERM_01_05"); //Ale pøinutil jsem ho, aby utekl.
+		AI_Output (self, other, "DIA_Wasili_PERM_01_03"); //PÅ™ed pÃ¡r dny se v noci jeden ze Å¾oldnÃ©Å™Å¯ plÃ­Å¾il po domÄ›.
+		AI_Output (self, other, "DIA_Wasili_PERM_01_04"); //MÄ›l na sobÄ› Äernou rÃ³bu s kapucÃ­, takÅ¾e jsem ho nemohl poznat.
+		AI_Output (self, other, "DIA_Wasili_PERM_01_05"); //Ale pÅ™inutil jsem ho, aby utekl.
 	};
 	
 	if (kapitel == 4)
 	{
-		AI_Output (self, other, "DIA_Wasili_perm_01_06"); //Ne. Poslední dobou ne.
+		AI_Output (self, other, "DIA_Wasili_perm_01_06"); //Ne. PoslednÃ­ dobou ne.
 	};
 	
 	if (kapitel >= 5)
 	{
-		AI_Output (self, other, "DIA_Wasili_perm_01_07"); //Ti oldnéøi vypadají, jako by byli pøipraveni rozbít tábor.
-		AI_Output (self, other, "DIA_Wasili_perm_01_08"); //Je mi jedno, jestli Lee se svımi hochy pøes noc opustí ostrov.
+		AI_Output (self, other, "DIA_Wasili_perm_01_07"); //Ti Å¾oldnÃ©Å™i vypadajÃ­, jako by byli pÅ™ipraveni rozbÃ­t tÃ¡bor.
+		AI_Output (self, other, "DIA_Wasili_perm_01_08"); //Je mi jedno, jestli Lee se svÃ½mi hochy pÅ™es noc opustÃ­ ostrov.
 	};
 };
 

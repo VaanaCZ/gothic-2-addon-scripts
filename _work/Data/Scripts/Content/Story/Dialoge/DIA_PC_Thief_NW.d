@@ -32,7 +32,7 @@ FUNC VOID DIA_DiegoNW_EXIT_Info()
 
 
 // ************************************************************
-// 	  	  Wie laufen die Gesch‰fte? (perm)
+// 	  	  Wie laufen die Gesch√§fte? (perm)
 // ************************************************************
 
 INSTANCE DIA_DiegoNW_Perm(C_INFO)
@@ -55,9 +55,9 @@ FUNC INT DIA_DiegoNW_Perm_Condition()
 FUNC VOID DIA_DiegoNW_Perm_Info()
 {	
 	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_00"); //Jak jdou obchody?
-	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_01"); //MizernÏ. NÏkdo mi mÏl ¯Ìct, ûe to s Khorinidem ölo k öÌpku.
-	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_02"); //No nevÌm. J· to mÏsto zn·m jenom takhle.
-	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_03"); //MÏl jsi ho vidÏt p¯ed p·r lety. To by se ti v·ûnÏ lÌbilo.
+	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_01"); //Mizernƒõ. Nƒõkdo mi mƒõl ≈ô√≠ct, ≈æe to s Khorinidem ≈°lo k ≈°√≠pku.
+	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_02"); //No nev√≠m. J√° to mƒõsto zn√°m jenom takhle.
+	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_03"); //Mƒõl jsi ho vidƒõt p≈ôed p√°r lety. To by se ti v√°≈ænƒõ l√≠bilo.
 };
 
 
@@ -91,15 +91,15 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Info()
 {	
 	if (Diego_IsDead == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_01"); //No teda, ty kouk·ö jak vyoran· myö!
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_02"); //(smÏje se) Myslels, ûe jsem to koupil, co?
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_03"); //ChvÌli jsem byl v bezvÏdomÌ, ale jak vidÌö, po¯·d ûiju.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_04"); //Nejd˘leûitÏjöÌ je, ûe teÔ jsme oba tady.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_05"); //MusÌö mi pomoct.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_01"); //No teda, ty kouk√°≈° jak vyoran√° my≈°!
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_02"); //(smƒõje se) Myslels, ≈æe jsem to koupil, co?
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_03"); //Chv√≠li jsem byl v bezvƒõdom√≠, ale jak vid√≠≈°, po≈ô√°d ≈æiju.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_04"); //Nejd≈Øle≈æitƒõj≈°√≠ je, ≈æe teƒè jsme oba tady.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_05"); //Mus√≠≈° mi pomoct.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_11_00"); //Fajn ûe jsi tady. Budeö mi muset pomoct.
+		AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_11_00"); //Fajn ≈æe jsi tady. Bude≈° mi muset pomoct.
 	};
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 	
@@ -108,65 +108,65 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Info()
 	//	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Wer bist du?",DIA_DiegoNW_NeedHelp_WhoAreYou);//Joly:macht keinen Sinn. Ohne mit Diego gesprochen zu haben -> Kein DiegoNW !! Hauptstory Kapitel 2 OW!!!!
 	};
 	
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co je tohle za öaty?",DIA_DiegoNW_NeedHelp_Clothes);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co tady dÏl·ö?",DIA_DiegoNW_NeedHelp_Plan);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co je tohle za ≈°aty?",DIA_DiegoNW_NeedHelp_Clothes);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co tady dƒõl√°≈°?",DIA_DiegoNW_NeedHelp_Plan);
 	Info_AddChoice (DIA_DiegoNW_NeedHelp,"O co jde?",DIA_DiegoNW_NeedHelp_Problem);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Plan()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Plan_15_00"); //Co tady dÏl·ö?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_01"); //Pozoroval jsem str·ûe. Jsou po¯·d na nohou.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_02"); //ÿekl bych, ûe proklouznout mezi nimi nebude nijak snadn˝.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Plan_15_00"); //Co tady dƒõl√°≈°?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_01"); //Pozoroval jsem str√°≈æe. Jsou po≈ô√°d na nohou.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_02"); //≈òekl bych, ≈æe proklouznout mezi nimi nebude nijak snadn√Ω.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_WhoAreYou()
 {
 	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_00"); //Kdo jsi?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_01"); //Asi to bude m˝m obleËenÌm. Str·ûe mÏ nechtÏjÌ pustit do mÏsta.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_02"); //Proto jsem p¯ed mÏstem koupil od jednoho obchodnÌka tyhle hadry. Douf·m, ûe si na mÏ vzpomÌn·ö. Jsem Diego.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_03"); //Tenkr·t v base jsem tÏ nauËil vöechno, co jsi pot¯eboval vÏdÏt, abys p¯eûil.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_04"); //P¯ece jsi to vöechno nemohl zapomenout.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_05"); //Ehm... co vöechno se vlastnÏ stalo?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_06"); //No to mÏ podrû, ty si v·ûnÏ nic nepamatujeö.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_07"); //Hele, v·ûnÏ teÔ nem·m Ëas ti vöechno vysvÏtlovat. ÿeknu to takhle: b˝vali jsme zatracenÏ dob¯Ì p¯·telÈ a nÏkolikr·t jsem ti zachr·nil ûivot.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_08"); //A teÔ pot¯ebuji tvou pomoc.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_01"); //Asi to bude m√Ωm obleƒçen√≠m. Str√°≈æe mƒõ nechtƒõj√≠ pustit do mƒõsta.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_02"); //Proto jsem p≈ôed mƒõstem koupil od jednoho obchodn√≠ka tyhle hadry. Douf√°m, ≈æe si na mƒõ vzpom√≠n√°≈°. Jsem Diego.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_03"); //Tenkr√°t v base jsem tƒõ nauƒçil v≈°echno, co jsi pot≈ôeboval vƒõdƒõt, abys p≈ôe≈æil.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_04"); //P≈ôece jsi to v≈°echno nemohl zapomenout.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_05"); //Ehm... co v≈°echno se vlastnƒõ stalo?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_06"); //No to mƒõ podr≈æ, ty si v√°≈ænƒõ nic nepamatuje≈°.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_07"); //Hele, v√°≈ænƒõ teƒè nem√°m ƒças ti v≈°echno vysvƒõtlovat. ≈òeknu to takhle: b√Ωvali jsme zatracenƒõ dob≈ô√≠ p≈ô√°tel√© a nƒõkolikr√°t jsem ti zachr√°nil ≈æivot.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_08"); //A teƒè pot≈ôebuji tvou pomoc.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Clothes()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_00"); //Co je tohle za öaty?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_01"); //Koupil jsem je p¯ed mÏstem od jednoho obchodnÌka. Str·ûe mÏ poprvÈ nechtÏly pustit dovnit¯.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_02"); //Taky nenÌ nutn˝, aby cel˝ svÏt vÏdÏl, odkud jsem.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_00"); //Co je tohle za ≈°aty?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_01"); //Koupil jsem je p≈ôed mƒõstem od jednoho obchodn√≠ka. Str√°≈æe mƒõ poprv√© nechtƒõly pustit dovnit≈ô.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_02"); //Taky nen√≠ nutn√Ω, aby cel√Ω svƒõt vƒõdƒõl, odkud jsem.
 	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_03"); //To je fakt.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_04"); //Taky to tak vidÌm. Ale i kdyû jsem zahodil sv˘j h·bit stÌna, jsem po¯·d tÌm, k˝m jsem byl vûdycky.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_05"); //A s tÌmhle mÏstem m·m velk˝ pl·ny.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_04"); //Taky to tak vid√≠m. Ale i kdy≈æ jsem zahodil sv≈Øj h√°bit st√≠na, jsem po≈ô√°d t√≠m, k√Ωm jsem byl v≈ædycky.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_05"); //A s t√≠mhle mƒõstem m√°m velk√Ω pl√°ny.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem ()
 {
 	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_00"); //Co jako?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_01"); //HodnÏ vÏcÌ se zmÏnilo, co jsem odeöel. MusÌm se znovu postavit na nohy.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_02"); //V Ëem je problÈm?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_03"); //MusÌm se dostat do hornÌ Ë·sti mÏsta.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_04"); //Nejsem ale obËanem mÏsta a nem·m dost penÏz, abych podplatil str·ûe. Ale naötÏstÌ tady jsi ty!
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_05"); //Takûe po mnÏ chceö, abych ti p˘jËil nÏjakÈ penÌze?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_06"); //Nesmysl. NÏjakÈ zlato m·m - dokonce spoustu zlata! Bohuûel ho nem·m s sebou.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_07"); //Takûe mi to moje zlato p¯ineseö.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_01"); //Hodnƒõ vƒõc√≠ se zmƒõnilo, co jsem ode≈°el. Mus√≠m se znovu postavit na nohy.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_02"); //V ƒçem je probl√©m?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_03"); //Mus√≠m se dostat do horn√≠ ƒç√°sti mƒõsta.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_04"); //Nejsem ale obƒçanem mƒõsta a nem√°m dost penƒõz, abych podplatil str√°≈æe. Ale na≈°tƒõst√≠ tady jsi ty!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_05"); //Tak≈æe po mnƒõ chce≈°, abych ti p≈Øjƒçil nƒõjak√© pen√≠ze?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_06"); //Nesmysl. Nƒõjak√© zlato m√°m - dokonce spoustu zlata! Bohu≈æel ho nem√°m s sebou.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_07"); //Tak≈æe mi to moje zlato p≈ôinese≈°.
 	
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Na to nem·m Ëas.",DIA_DiegoNW_NeedHelp_Problem_NoTime);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co z toho budu mÌt?",DIA_DiegoNW_NeedHelp_Problem_Reward);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Dobr·, pom˘ûu ti.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Na to nem√°m ƒças.",DIA_DiegoNW_NeedHelp_Problem_NoTime);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co z toho budu m√≠t?",DIA_DiegoNW_NeedHelp_Problem_Reward);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Dobr√°, pom≈Ø≈æu ti.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_NoTime()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_00"); //Na to nem·m Ëas.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_01"); //Hele, j· myslel, ûe jsme k·moöi! Byl jsem to koneckonc˘ j·, kdo ti zachr·nil kejh·k, kdyû tÏ hodili do kolonie.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_02"); //P¯eh·nÌö.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_03"); //V·ûnÏ? Tak se zkus na chvilku zamyslet, jak by to s tebou dopadlo, kdybych ti tehdy nevysvÏtlil, jak se chovat.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_04"); //RudnÌ baroni by si tÏ dali k snÌdani, Ëekala by tÏ mizern· smrt v dolech.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_00"); //Na to nem√°m ƒças.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_01"); //Hele, j√° myslel, ≈æe jsme k√°mo≈°i! Byl jsem to koneckonc≈Ø j√°, kdo ti zachr√°nil kejh√°k, kdy≈æ tƒõ hodili do kolonie.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_02"); //P≈ôeh√°n√≠≈°.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_03"); //V√°≈ænƒõ? Tak se zkus na chvilku zamyslet, jak by to s tebou dopadlo, kdybych ti tehdy nevysvƒõtlil, jak se chovat.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_04"); //Rudn√≠ baroni by si tƒõ dali k sn√≠dani, ƒçekala by tƒõ mizern√° smrt v dolech.
 
 	MIS_HelpDiegoNW = LOG_FAILED;
 	
@@ -175,67 +175,67 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Problem_NoTime()
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_Reward()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_Reward_15_00"); //Co z toho budu mÌt?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_Reward_11_01"); //Ptal jsem se snad nÏkdy j· tebe, co dostanu na opl·tku? Jsme p¯·telÈ, copak to je m·lo?
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_Reward_15_00"); //Co z toho budu m√≠t?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_Reward_11_01"); //Ptal jsem se snad nƒõkdy j√° tebe, co dostanu na opl√°tku? Jsme p≈ô√°tel√©, copak to je m√°lo?
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_15_00"); //Dobr·, pom˘ûu ti.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_01"); //No tak poslouchej. Kdyû jeötÏ st·vala bariÈra, schoval jsem si mal˝ poklad na horöÌ Ëasy.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_02"); //Akor·t uû je to dost dlouho, takûe jsem si ho zapomnÏl vzÌt.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_03"); //A teÔ se odsud nem˘ûu hnout.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_11_03"); //Abych to zkr·til, prostÏ bÏû do HornickÈho ˙dolÌ a p¯ines mi moje zlato.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_15_00"); //Dobr√°, pom≈Ø≈æu ti.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_01"); //No tak poslouchej. Kdy≈æ je≈°tƒõ st√°vala bari√©ra, schoval jsem si mal√Ω poklad na hor≈°√≠ ƒçasy.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_02"); //Akor√°t u≈æ je to dost dlouho, tak≈æe jsem si ho zapomnƒõl vz√≠t.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_03"); //A teƒè se odsud nem≈Ø≈æu hnout.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_11_03"); //Abych to zkr√°til, prostƒõ bƒõ≈æ do Hornick√©ho √∫dol√≠ a p≈ôines mi moje zlato.
 
 	MIS_HelpDiegoNW = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_HelpDiegoNW,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HelpDiegoNW,LOG_RUNNING);
-	B_LogEntry (TOPIC_HelpDiegoNW,"Diegovo zlato je ukryto v HornickÈm ˙dolÌ. Pot¯ebuje se dostat mezi smet·nku, a tak mÏ pro nÏ poslal.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"Diegovo zlato je ukryto v Hornick√©m √∫dol√≠. Pot≈ôebuje se dostat mezi smet√°nku, a tak mƒõ pro nƒõ poslal.");
 	
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co chceö s tÌm zlatem dÏlat?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Kde jsi to zlato zÌskal?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Co chce≈° s t√≠m zlatem dƒõlat?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Kde jsi to zlato z√≠skal?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold);
 	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Kam jsi to zlato ukryl?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_15_00"); //Co chceö s tÌm zlatem dÏlat?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_01"); //V hornÌ Ë·sti mÏsta je obchodnÌk, co mu musÌm zaplatit dluh. Pot¯ebuju to d·t koneËnÏ do po¯·dku.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_02"); //A pak budu moct zaËÌt ˙plnÏ novej ûivot!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_15_00"); //Co chce≈° s t√≠m zlatem dƒõlat?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_01"); //V horn√≠ ƒç√°sti mƒõsta je obchodn√≠k, co mu mus√≠m zaplatit dluh. Pot≈ôebuju to d√°t koneƒçnƒõ do po≈ô√°dku.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_02"); //A pak budu moct zaƒç√≠t √∫plnƒõ novej ≈æivot!
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_15_00"); //Kde jsi to zlato zÌskal?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_01"); //Jsem snad jedinej, kdo si v HornickÈm ˙dolÌ öet¯il pro str˝Ëka P¯Ìhodu?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_02"); //ätÌpnout p·r nuget˘ byla hraËka. DÏlal jsem to prostÏ pro p¯Ìpad, ûe bysme se nakonec dostali ven.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_HowGold_11_03"); //Vöichni se jako divÌ hnali po rudÏ, takûe o zlato se nikdo nestaral. 
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_15_00"); //Kde jsi to zlato z√≠skal?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_01"); //Jsem snad jedinej, kdo si v Hornick√©m √∫dol√≠ ≈°et≈ôil pro str√Ωƒçka P≈ô√≠hodu?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_02"); //≈†t√≠pnout p√°r nuget≈Ø byla hraƒçka. Dƒõlal jsem to prostƒõ pro p≈ô√≠pad, ≈æe bysme se nakonec dostali ven.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_HowGold_11_03"); //V≈°ichni se jako div√≠ hnali po rudƒõ, tak≈æe o zlato se nikdo nestaral. 
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold()
 {
 	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_00"); //Kam jsi to zlato ukryl?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_01"); //Je p¯Ìmo na trûnici. Nad opuötÏn˝m dolem. Jsou v koûenÈ kabele.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_01"); //Je p≈ô√≠mo na tr≈ænici. Nad opu≈°tƒõn√Ωm dolem. Jsou v ko≈æen√© kabele.
 	if (Diego_angekommen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_01"); //TakovÈ pozn·mky si nechej pro sebe. To vÌm taky, ûe jsme museli projÌt p¯Ìmo kolem toho.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_02"); //ProstÏ mi p¯ines ten vak.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_01"); //Takov√© pozn√°mky si nechej pro sebe. To v√≠m taky, ≈æe jsme museli proj√≠t p≈ô√≠mo kolem toho.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_02"); //Prostƒõ mi p≈ôines ten vak.
 	};
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_02"); //NezapomeÚ se ale p¯esvÏdËit, ûe tam opravdu je, aù se nevracÌö s pr·zdnou.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_03"); //Jak to pozn·m?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_04"); //Ten vak je pln˝ zlata. Je to spousta zlata!
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_02"); //Nezapome≈à se ale p≈ôesvƒõdƒçit, ≈æe tam opravdu je, a≈• se nevrac√≠≈° s pr√°zdnou.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_03"); //Jak to pozn√°m?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_04"); //Ten vak je pln√Ω zlata. Je to spousta zlata!
 					
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"ZkusÌm to tvoje zlato najÌt.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt);		
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Zkus√≠m to tvoje zlato naj√≠t.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt);		
 	
-	B_LogEntry (TOPIC_HelpDiegoNW,"Diegovo zlato je ukryto kdesi na starÈ obchodnÌ cestÏ, nad opuötÏn˝m dolem - tam, kudy kdysi lanovkou dopravovali do kolonie zboûÌ.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"Diegovo zlato je ukryto kdesi na star√© obchodn√≠ cestƒõ, nad opu≈°tƒõn√Ωm dolem - tam, kudy kdysi lanovkou dopravovali do kolonie zbo≈æ√≠.");
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_TryIt_15_00"); //ZkusÌm to tvoje zlato najÌt.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_TryIt_11_01"); //(zaöklebÌ se) Jen do toho. Budeme si kvit.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_TryIt_15_00"); //Zkus√≠m to tvoje zlato naj√≠t.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_TryIt_11_01"); //(za≈°kleb√≠ se) Jen do toho. Budeme si kvit.
 
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 };
@@ -251,7 +251,7 @@ INSTANCE DIA_DiegoNW_HelpYou(C_INFO)
 	condition	= DIA_DiegoNW_HelpYou_Condition;
 	information	= DIA_DiegoNW_HelpYou_Info;
 	permanent	= FALSE;
-	description	= "Dobr·, p¯ece jenom ti pom˘ûu.";
+	description	= "Dobr√°, p≈ôece jenom ti pom≈Ø≈æu.";
 };                       
 FUNC INT DIA_DiegoNW_HelpYou_Condition()
 {
@@ -264,18 +264,18 @@ FUNC INT DIA_DiegoNW_HelpYou_Condition()
 };
 FUNC VOID DIA_DiegoNW_HelpYou_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_00"); //Dobr·, p¯ece jenom ti pom˘ûu.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_01"); //VÏdÏl jsem to.
-	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_02"); //Fajn, p¯ejdÏme rovnou k vÏci.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_03"); //Takûe. V HornickÈm ˙dolÌ jsem si schoval poklad, a ty mi ho p¯ineseö.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_06"); //J· mezitÌm z˘stanu tady a vöechno p¯ipravÌm.
+	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_00"); //Dobr√°, p≈ôece jenom ti pom≈Ø≈æu.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_01"); //Vƒõdƒõl jsem to.
+	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_02"); //Fajn, p≈ôejdƒõme rovnou k vƒõci.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_03"); //Tak≈æe. V Hornick√©m √∫dol√≠ jsem si schoval poklad, a ty mi ho p≈ôinese≈°.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_06"); //J√° mezit√≠m z≈Østanu tady a v≈°echno p≈ôiprav√≠m.
 	DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold();
 	DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt();
 
 	MIS_HelpDiegoNW = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_HelpDiegoNW,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HelpDiegoNW,LOG_RUNNING);
-	B_LogEntry (TOPIC_HelpDiegoNW,"Diegovo zlato je ukryto v HornickÈm ˙dolÌ. Pot¯ebuje se dostat mezi smet·nku, a tak mÏ pro nÏ poslal.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"Diegovo zlato je ukryto v Hornick√©m √∫dol√≠. Pot≈ôebuje se dostat mezi smet√°nku, a tak mƒõ pro nƒõ poslal.");
 };
 
 //***********************************************
@@ -289,7 +289,7 @@ INSTANCE DIA_DiegoNW_HaveYourGold(C_INFO)
 	condition	= DIA_DiegoNW_HaveYourGold_Condition;
 	information	= DIA_DiegoNW_HaveYourGold_Info;
 	permanent	= TRUE;
-	description	= "Naöel jsem tvoje zlato!";
+	description	= "Na≈°el jsem tvoje zlato!";
 };            
 
 FUNC INT DIA_DiegoNW_HaveYourGold_Condition()
@@ -305,15 +305,15 @@ FUNC INT DIA_DiegoNW_HaveYourGold_Condition()
 
 FUNC VOID B_DIEGONW_DIEGOSREVENGE ()
 {
-	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_05"); //Prefekt. Gerbrandt by se mÏl radöi mÌt na pozoru.
+	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_05"); //Prefekt. Gerbrandt by se mƒõl rad≈°i m√≠t na pozoru.
 };
 
 var int DiegosRevenge;
 
 FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_HaveYourGold_15_00"); //Naöel jsem tvoje zlato!
-	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_01"); //V˝bornÏ. Ukaû.
+	AI_Output (other,self ,"DIA_DiegoNW_HaveYourGold_15_00"); //Na≈°el jsem tvoje zlato!
+	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_01"); //V√Ωbornƒõ. Uka≈æ.
 	
 	IF (Npc_HasItems (other,ItSe_DiegosTreasure_Mis) >=1)
 	{
@@ -323,9 +323,9 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 	}
 	else if (Npc_HasItems (other,ItMi_Gold < DiegosTreasure))
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_02"); //Ale to nenÌ vöechno! NevÏ¯Ìö mi? Pot¯ebuju vöechno.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_03"); //Pokud m˘j pl·n vyjde, zbude dost i na tebe.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_04"); //Takûe se snaû, aby nic nechybÏlo. Je to d˘leûitÈ!
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_02"); //Ale to nen√≠ v≈°echno! Nevƒõ≈ô√≠≈° mi? Pot≈ôebuju v≈°echno.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_03"); //Pokud m≈Øj pl√°n vyjde, zbude dost i na tebe.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_04"); //Tak≈æe se sna≈æ, aby nic nechybƒõlo. Je to d≈Øle≈æit√©!
 	}
 	else
 	{
@@ -337,9 +337,9 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 	if (Npc_IsDead (Gerbrandt) == FALSE)
 	&& (DiegosRevenge == TRUE)
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_06"); //Poslouchej, jeötÏ se musÌm postarat o ty str·ûe.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_07"); //ChtÏl bych, abys donesl tenhle dopis Gerbrandtovi. Je to jeden z tÏch tlust˝ch obchodnÌk˘ v hornÌ Ëtvrti.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_08"); //Pozdravuj ho ode mne. Pak se s tebou setk·m p¯ed Gerbrandtov˝m domem.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_06"); //Poslouchej, je≈°tƒõ se mus√≠m postarat o ty str√°≈æe.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_07"); //Chtƒõl bych, abys donesl tenhle dopis Gerbrandtovi. Je to jeden z tƒõch tlust√Ωch obchodn√≠k≈Ø v horn√≠ ƒçtvrti.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_08"); //Pozdravuj ho ode mne. Pak se s tebou setk√°m p≈ôed Gerbrandtov√Ωm domem.
 
 		CreateInvItems (self ,ItWr_DiegosLetter_MIS,1);
 		B_GiveInvItems (self,other,ItWr_DiegosLetter_MIS,1);
@@ -352,7 +352,7 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 
 		Log_CreateTopic (TOPIC_DiegosResidence,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_DiegosResidence,LOG_RUNNING);
-		B_LogEntry (TOPIC_DiegosResidence,"Diego mi p¯edal dopis pro obchodnÌka Gerbrandta.");
+		B_LogEntry (TOPIC_DiegosResidence,"Diego mi p≈ôedal dopis pro obchodn√≠ka Gerbrandta.");
 		
 		AI_StopProcessInfos (self);
 	};		
@@ -372,7 +372,7 @@ INSTANCE DIA_DiegoNW_DeliveredLetter(C_INFO)
 	condition	= DIA_DiegoNW_DeliveredLetter_Condition;
 	information	= DIA_DiegoNW_DeliveredLetter_Info;
 	permanent	= FALSE;
-	description	= "DoruËil jsem ten dopis.";
+	description	= "Doruƒçil jsem ten dopis.";
 };
                        
 FUNC INT DIA_DiegoNW_DeliveredLetter_Condition()
@@ -387,61 +387,61 @@ FUNC INT DIA_DiegoNW_DeliveredLetter_Condition()
 FUNC VOID DIA_DiegoNW_DeliveredLetter_Info()
 {
 		
-	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_00"); //DoruËil jsem ten dopis.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_01"); //Velmi dob¯e. Jak to Gerbrandt vzal?
-	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_02"); //Vypadal docela öokovanÏ a okamûitÏ se ztratil.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_03"); //(spokojenÏ) To bych ¯ekl.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_04"); //Ob·v·m se, ûe ze vöeho nejd¯Ìv budu muset dohlÌdnout na vybavenÌ sv˝ho nov˝ho domu. Jestli si dob¯e pamatuju, tak Gerbrandt mÏl straönej vkus, co se n·bytku t˝k·.
+	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_00"); //Doruƒçil jsem ten dopis.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_01"); //Velmi dob≈ôe. Jak to Gerbrandt vzal?
+	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_02"); //Vypadal docela ≈°okovanƒõ a okam≈æitƒõ se ztratil.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_03"); //(spokojenƒõ) To bych ≈ôekl.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_04"); //Ob√°v√°m se, ≈æe ze v≈°eho nejd≈ô√≠v budu muset dohl√≠dnout na vybaven√≠ sv√Ωho nov√Ωho domu. Jestli si dob≈ôe pamatuju, tak Gerbrandt mƒõl stra≈°nej vkus, co se n√°bytku t√Ωk√°.
 	  
 	B_GivePlayerXP (XP_DiegoHasANewHome);
 
 	Wld_AssignRoomToGuild ("reich01",		GIL_PUBLIC);
 
 	Info_ClearChoices (DIA_DiegoNW_DeliveredLetter);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"A jak jsi to vlastnÏ udÏlal?",DIA_DiegoNW_DeliveredLetter_YourTrick);	
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Takûe ten d˘m je tv˘j?",DIA_DiegoNW_DeliveredLetter_YourHouse);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"A jak jsi to vlastnƒõ udƒõlal?",DIA_DiegoNW_DeliveredLetter_YourTrick);	
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Tak≈æe ten d≈Øm je tv≈Øj?",DIA_DiegoNW_DeliveredLetter_YourHouse);
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_Gerbrandt ()
 {
 	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_15_00"); //A co Gerbrandt?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_01"); //Uû si uûÌval toho pohodln˝ho ûivota dost dlouho.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_02"); //On si ûil tady, uprost¯ed luxusu, zatÌmco j· dlabal v dolech v˝var z krys.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_03"); //NetuöÌm, kam mÏl namÌ¯eno, ale do Khorinidu uû nikdy nevkroËÌ - na to dohlÌdnu.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_04"); //Kdybys ho hledal, najdeö ho asi v p¯ÌstavnÌ Ëtvrti.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_01"); //U≈æ si u≈æ√≠val toho pohodln√Ωho ≈æivota dost dlouho.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_02"); //On si ≈æil tady, uprost≈ôed luxusu, zat√≠mco j√° dlabal v dolech v√Ωvar z krys.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_03"); //Netu≈°√≠m, kam mƒõl nam√≠≈ôeno, ale do Khorinidu u≈æ nikdy nevkroƒç√≠ - na to dohl√≠dnu.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_04"); //Kdybys ho hledal, najde≈° ho asi v p≈ô√≠stavn√≠ ƒçtvrti.
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourHouse()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_00"); //Takûe ten d˘m je tv˘j?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_01"); //Ano, od sklepa aû po p˘du, vËetnÏ vöeho n·bytku.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_02"); //Po nÏkolika letech str·ven˝ch ve vöÌ t˝ mizÈrii se tÏöÌm, aû se vyspÌm v posteli s nebesama.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_03"); //A k snÌdani si pak d·m dobr˝ vÌno a öùavnatou öunËiËku.
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_04"); //Chyt·ö ötÏstÌ za paËesy, co?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_05"); //Se vsaÔ.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_00"); //Tak≈æe ten d≈Øm je tv≈Øj?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_01"); //Ano, od sklepa a≈æ po p≈Ødu, vƒçetnƒõ v≈°eho n√°bytku.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_02"); //Po nƒõkolika letech str√°ven√Ωch ve v≈°√≠ t√Ω miz√©rii se tƒõ≈°√≠m, a≈æ se vysp√≠m v posteli s nebesama.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_03"); //A k sn√≠dani si pak d√°m dobr√Ω v√≠no a ≈°≈•avnatou ≈°unƒçiƒçku.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_04"); //Chyt√°≈° ≈°tƒõst√≠ za paƒçesy, co?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_05"); //Se vsaƒè.
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourTrick ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_00"); //A jak jsi to vlastnÏ udÏlal?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_01"); //MyslÌö snad, ûe Gerbrandt p¯iöel ke vöemu tomu bohatstvÌ poctiv˝m obchodem?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_02"); //Kdyû p¯iölo na nÏjakou levotu, tak si s·m ruce pochopitelnÏ nikdy nezaöpinil. Na to mÏl pomocnÌka.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_03"); //Samoz¯ejmÏ ûe jsem tu a tam nÏco pochytil. Gerbrandt se mÏ nakonec zbavil. NejspÌö se b·l, ûe toho vÌm moc.
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_04"); //O tom jsi mi nikdy ne¯ekl.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_00"); //A jak jsi to vlastnƒõ udƒõlal?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_01"); //Mysl√≠≈° snad, ≈æe Gerbrandt p≈ôi≈°el ke v≈°emu tomu bohatstv√≠ poctiv√Ωm obchodem?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_02"); //Kdy≈æ p≈ôi≈°lo na nƒõjakou levotu, tak si s√°m ruce pochopitelnƒõ nikdy neza≈°pinil. Na to mƒõl pomocn√≠ka.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_03"); //Samoz≈ôejmƒõ ≈æe jsem tu a tam nƒõco pochytil. Gerbrandt se mƒõ nakonec zbavil. Nejsp√≠≈° se b√°l, ≈æe toho v√≠m moc.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_04"); //O tom jsi mi nikdy ne≈ôekl.
 	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_05"); //Nikdy ses neptal.
 	
 	Info_ClearChoices (DIA_DiegoNW_DeliveredLetter);
 	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,DIALOG_BACK,DIA_DiegoNW_DeliveredLetter_YourTrick_BACK);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"A co m˘j podÌl?",DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"A co m≈Øj pod√≠l?",DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD);
 	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"A co Gerbrandt?",DIA_DiegoNW_DeliveredLetter_Gerbrandt);
 }; 
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD()
 {
 
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_15_00"); //A co m˘j podÌl?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_01"); //Zd· se, ûes nakonec p¯ece jenom nezapomnÏl na vöechno, co jsem tÏ nauËil.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_02"); //Ale m·ö pravdu, bez tebe bych to nedok·zal. Tady je tv˘j dÌl.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_15_00"); //A co m≈Øj pod√≠l?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_01"); //Zd√° se, ≈æes nakonec p≈ôece jenom nezapomnƒõl na v≈°echno, co jsem tƒõ nauƒçil.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_02"); //Ale m√°≈° pravdu, bez tebe bych to nedok√°zal. Tady je tv≈Øj d√≠l.
 	
 	CreateInvItems (self ,ItMi_Gold,500);
 	B_GiveInvItems (self,other,ItMi_Gold,500);
@@ -469,7 +469,7 @@ INSTANCE DIA_DiegoNW_CanYouTeach(C_INFO)
 	information	= DIA_DiegoNW_CanYouTeach_Info;
 	permanent	= TRUE;
 
-	description = "M˘ûeö mÏ nÏËemu nauËit?";
+	description = "M≈Ø≈æe≈° mƒõ nƒõƒçemu nauƒçit?";
 };                       
 FUNC INT DIA_DiegoNW_CanYouTeach_Condition()
 {
@@ -481,16 +481,16 @@ FUNC INT DIA_DiegoNW_CanYouTeach_Condition()
 };
 FUNC VOID DIA_DiegoNW_CanYouTeach_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_CanYouTeach_15_00"); //M˘ûeö mÏ nÏËemu nauËit?
+	AI_Output (other,self ,"DIA_DiegoNW_CanYouTeach_15_00"); //M≈Ø≈æe≈° mƒõ nƒõƒçemu nauƒçit?
 	if (Npc_KnowsInfo (other,DIA_DiegoNW_DeliveredLetter))
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_01"); //Ale jistÏ. Jen mi ¯ekni, aû budeö p¯ipraven˝.
+		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_01"); //Ale jistƒõ. Jen mi ≈ôekni, a≈æ bude≈° p≈ôipraven√Ω.
 		
 		Diego_Teach = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_02"); //Nejd¯Ìv se musÌm postarat o vlastnÌ z·leûitosti.
+		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_02"); //Nejd≈ô√≠v se mus√≠m postarat o vlastn√≠ z√°le≈æitosti.
 	};
 };
 
@@ -512,7 +512,7 @@ INSTANCE DIA_DiegoNW_Teach(C_INFO)
 	information	= DIA_DiegoNW_Teach_Info;
 	permanent	= TRUE;
 
-	description = "M˘ûeö mÏ nÏËemu nauËit?";
+	description = "M≈Ø≈æe≈° mƒõ nƒõƒçemu nauƒçit?";
 };                       
 FUNC INT DIA_DiegoNW_Teach_Condition()
 {
@@ -524,8 +524,8 @@ FUNC INT DIA_DiegoNW_Teach_Condition()
 };
 FUNC VOID DIA_DiegoNW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_Teach_15_00"); //UË mÏ.
-	AI_Output (self ,other,"DIA_DiegoNW_Teach_11_01"); //NauËÌm tÏ, jak b˝t o nÏco obratnÏjöÌ.
+	AI_Output (other,self ,"DIA_DiegoNW_Teach_15_00"); //Uƒç mƒõ.
+	AI_Output (self ,other,"DIA_DiegoNW_Teach_11_01"); //Nauƒç√≠m tƒõ, jak b√Ωt o nƒõco obratnƒõj≈°√≠.
 	
 	DiegoNW_Merke_Dex = other.attribute[ATR_DEXTERITY];
 	
@@ -539,7 +539,7 @@ func void DIA_DiegoNW_Teach_BACK()
 {
 	if (DiegoNW_Merke_DEX < other.attribute[ATR_DEXTERITY])
 	{
-		AI_Output (self, other, "DIA_DiegoNW_Teach_BACK_11_00"); //Uû jsi obratnÏjöÌ. Jen tak d·l!
+		AI_Output (self, other, "DIA_DiegoNW_Teach_BACK_11_00"); //U≈æ jsi obratnƒõj≈°√≠. Jen tak d√°l!
 	};
 	Info_ClearChoices	(DIA_DiegoNW_Teach);
 };
@@ -582,7 +582,7 @@ instance DIA_DiegoNW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_DiegoNW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_DiegoNW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Odch·zÌm z Khorinidu.";
+	description	 = 	"Odch√°z√≠m z Khorinidu.";
 };
 
 func int DIA_DiegoNW_KnowWhereEnemy_Condition ()
@@ -596,32 +596,32 @@ func int DIA_DiegoNW_KnowWhereEnemy_Condition ()
 
 func void DIA_DiegoNW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_DiegoNW_KnowWhereEnemy_15_00"); //Odch·zÌm z Khorinidu.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_01"); //MoudrÈ rozhodnutÌ. P¯·l bych si jÌt s tebou. Tohle mÏsto se aû moc rychle zmÏnilo - Ëasy, kdy jsi mohl rychle zbohatnout, uû jsou pryË.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_02"); //Mohl bych tÏ uËit luËiötnictvÌ, p·ËenÌ z·mk˘ a navyöov·nÌ obratnosti.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_03"); //NavÌc by se ti urËitÏ hodil nÏjak˝ sluön˝ zlodÏj.
+	AI_Output			(other, self, "DIA_DiegoNW_KnowWhereEnemy_15_00"); //Odch√°z√≠m z Khorinidu.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_01"); //Moudr√© rozhodnut√≠. P≈ô√°l bych si j√≠t s tebou. Tohle mƒõsto se a≈æ moc rychle zmƒõnilo - ƒçasy, kdy jsi mohl rychle zbohatnout, u≈æ jsou pryƒç.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_02"); //Mohl bych tƒõ uƒçit luƒçi≈°tnictv√≠, p√°ƒçen√≠ z√°mk≈Ø a navy≈°ov√°n√≠ obratnosti.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_03"); //Nav√≠c by se ti urƒçitƒõ hodil nƒõjak√Ω slu≈°n√Ω zlodƒõj.
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
-	B_LogEntry (TOPIC_Crew,"Diego chce jÌt samoz¯ejmÏ se mnou. VidÌ to tak, ûe ËÌm d¯Ìv Khorinis opustÌ, tÌm lÌp. Mohl by mi uk·zat, jak se st·t obratnÏjöÌm, a vycviËit mÏ v lukost¯elbÏ. TakÈ se se mnou podÏlÌ o umÏnÌ p·Ëit z·mky.");	
+	B_LogEntry (TOPIC_Crew,"Diego chce j√≠t samoz≈ôejmƒõ se mnou. Vid√≠ to tak, ≈æe ƒç√≠m d≈ô√≠v Khorinis opust√≠, t√≠m l√≠p. Mohl by mi uk√°zat, jak se st√°t obratnƒõj≈°√≠m, a vycviƒçit mƒõ v lukost≈ôelbƒõ. Tak√© se se mnou podƒõl√≠ o umƒõn√≠ p√°ƒçit z√°mky.");	
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_DiegoNW_KnowWhereEnemy_15_04"); //Nech·m si to projÌt hlavou. Moment·lnÏ je moje pos·dka v plnÈm stavu.
-		AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_05"); //Rozmysli si to. Tak jako tak mÏ najdeö tady.
+		AI_Output			(other,self , "DIA_DiegoNW_KnowWhereEnemy_15_04"); //Nech√°m si to proj√≠t hlavou. Moment√°lnƒõ je moje pos√°dka v pln√©m stavu.
+		AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_05"); //Rozmysli si to. Tak jako tak mƒõ najde≈° tady.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Snad ti d·m vÏdÏt, aû p¯ijde ten prav˝ Ëas.",DIA_DiegoNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Nechceö jÌt taky?",DIA_DiegoNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Snad ti d√°m vƒõdƒõt, a≈æ p≈ôijde ten prav√Ω ƒças.",DIA_DiegoNW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Nechce≈° j√≠t taky?",DIA_DiegoNW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_Yes_15_00"); //Tak pojeÔ se mnou. Setk·me se v p¯Ìstavu.
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_01"); //Hmm. M·ö pravdu, Khorinis je ûumpa. Jdu s tebou.
+	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_Yes_15_00"); //Tak pojeƒè se mnou. Setk√°me se v p≈ô√≠stavu.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_01"); //Hmm. M√°≈° pravdu, Khorinis je ≈æumpa. Jdu s tebou.
 	
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -633,7 +633,7 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 	
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "NW_CITY_UPTOWN_PATH_23" )== 1)
     {
-		AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02"); //PoËkej, za minutu budu p¯ipravenej.
+		AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02"); //Poƒçkej, za minutu budu p≈ôipravenej.
 		AI_SetWalkmode 	(self, NPC_WALK);		
 		AI_GotoWP (self,"NW_CITY_UPTOWN_HUT_01_01");
 		CreateInvItems (self,ItAR_Diego,1);
@@ -642,7 +642,7 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 		AI_GotoWP (self,self.wp);
 	};
 	
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_03"); //Tak, jsem p¯ipravenej. UvidÌme se u lodi.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_03"); //Tak, jsem p≈ôipravenej. Uvid√≠me se u lodi.
 	
 	
 	if (MIS_ReadyforChapter6 == TRUE)
@@ -659,8 +659,8 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_DiegoNW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_No_15_00"); //Moûn· ti d·m vÏdÏt, aû nadejde Ëas.
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_No_11_01"); //Jak myslÌö. A moûn· s tebou dokonce i p˘jdu. Kdo vÌ?
+	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_No_15_00"); //Mo≈æn√° ti d√°m vƒõdƒõt, a≈æ nadejde ƒças.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_No_11_01"); //Jak mysl√≠≈°. A mo≈æn√° s tebou dokonce i p≈Øjdu. Kdo v√≠?
 
 	Diego_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
@@ -676,7 +676,7 @@ instance DIA_DiegoNW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_DiegoNW_LeaveMyShip_Condition;
 	information	 = 	DIA_DiegoNW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"DohlÌdni radöi na mÏsto.";
+	description	 = 	"Dohl√≠dni rad≈°i na mƒõsto.";
 };
 func int DIA_DiegoNW_LeaveMyShip_Condition ()
 {	
@@ -688,21 +688,21 @@ func int DIA_DiegoNW_LeaveMyShip_Condition ()
 };
 func void DIA_DiegoNW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_00"); //DohlÌdni radöi na mÏsto.
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_01"); //V·ûnÏ? Uû mÏ nepot¯ebujeö? No dobr·. NezapomeÚ se stavit, aû budeö zp·tky ve mÏstÏ.
-	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_02"); //MyslÌö, ûe se jeötÏ setk·me?
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_03"); //Nikdy nezapomenu na ten v˝raz, co jsi mÏl ve tv·¯i, kdyû ses v·lel po zemi po tÈ r·nÏ od Bullita a my se poprvÈ setkali.
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_04"); //NemajÌ öanci sehnat nÏkoho lepöÌho, neû jsi ty. MÃLI bychom se znovu setkat. D·vej na sebe pozor.
+	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_00"); //Dohl√≠dni rad≈°i na mƒõsto.
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_01"); //V√°≈ænƒõ? U≈æ mƒõ nepot≈ôebuje≈°? No dobr√°. Nezapome≈à se stavit, a≈æ bude≈° zp√°tky ve mƒõstƒõ.
+	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_02"); //Mysl√≠≈°, ≈æe se je≈°tƒõ setk√°me?
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_03"); //Nikdy nezapomenu na ten v√Ωraz, co jsi mƒõl ve tv√°≈ôi, kdy≈æ ses v√°lel po zemi po t√© r√°nƒõ od Bullita a my se poprv√© setkali.
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_04"); //Nemaj√≠ ≈°anci sehnat nƒõkoho lep≈°√≠ho, ne≈æ jsi ty. MƒöLI bychom se znovu setkat. D√°vej na sebe pozor.
 	
 	
 	Diego_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
 	
-	Npc_ExchangeRoutine (self,"ZaËÌt"); 
+	Npc_ExchangeRoutine (self,"Zaƒç√≠t"); 
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 {
@@ -711,7 +711,7 @@ instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_DiegoNW_StillNeedYou_Condition;
 	information	 = 	DIA_DiegoNW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Rozmyslel jsem si to. Chci, abys öel se mnou.";
+	description	 = 	"Rozmyslel jsem si to. Chci, abys ≈°el se mnou.";
 };
 
 func int DIA_DiegoNW_StillNeedYou_Condition ()
@@ -726,8 +726,8 @@ func int DIA_DiegoNW_StillNeedYou_Condition ()
 
 func void DIA_DiegoNW_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_DiegoNW_StillNeedYou_15_00"); //Rozmyslel jsem si to. Chci, abys öel se mnou.
-	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_01"); //Kam se podÏla tvoje rozhodnost? JasnÏ ûe s tebou p˘jdu - ale uû se sakra rozhodni.
+	AI_Output	(other, self, "DIA_DiegoNW_StillNeedYou_15_00"); //Rozmyslel jsem si to. Chci, abys ≈°el se mnou.
+	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_01"); //Kam se podƒõla tvoje rozhodnost? Jasnƒõ ≈æe s tebou p≈Øjdu - ale u≈æ se sakra rozhodni.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Diego_IsOnBoard	 = LOG_SUCCESS;
@@ -735,14 +735,14 @@ func void DIA_DiegoNW_StillNeedYou_Info ()
 	
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "NW_CITY_UPTOWN_PATH_23" )== 1)
     {
-		AI_Output (self ,other,"DIA_DiegoNW_StillNeedYou_11_02"); //PoËkej, za minutu budu p¯ipravenej.
+		AI_Output (self ,other,"DIA_DiegoNW_StillNeedYou_11_02"); //Poƒçkej, za minutu budu p≈ôipravenej.
 		AI_GotoWP (self,"NW_CITY_UPTOWN_HUT_01_01");
 		CreateInvItems (self,ItAR_Diego,1);
 		AI_EquipArmor (self,ItAr_Diego);
 		AI_GotoWP (self,self.wp);
 	};
 	
-	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_03"); //Dobr·, m˘ûeme jÌt.
+	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_03"); //Dobr√°, m≈Ø≈æeme j√≠t.
 	
 	AI_StopProcessInfos (self);
 

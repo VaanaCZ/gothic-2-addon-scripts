@@ -2,7 +2,7 @@
 instance DMT_1299_OberDementor_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Èerný mág";	
+	name 		= "ÄŒernÃ½ mÃ¡g";	
 	guild 		= GIL_DMT;
 	id 			= 1299;
 	voice 		= 09;	

@@ -36,24 +36,24 @@ FUNC INT DIA_Addon_10019_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Takûe jdeö do dolu?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Tak≈æe jde≈° do dolu?
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
-	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"VlastnÏ bych r·d vidÏl Havrana.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
+	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Vlastnƒõ bych r√°d vidƒõl Havrana.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
 	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Ano.",DIA_Addon_BDT_10019_Wache_Hi_Ja);
 };
 FUNC VOID B_Say_Wache_kaputt()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//ProË jsou mrtvÌ?
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(Ô·belsk˝ chechot) Umakali se k smrti.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Proƒç jsou mrtv√≠?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(ƒè√°belsk√Ω chechot) Umakali se k smrti.
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//VlastnÏ chci vidÏt Havrana.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//(varovnÏ) Hele, jen si zkus vlÈzt do toho chr·mu a budeö mrtvej jako tady ti vÏzni.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Radöi hejbni kostrou a padej do dolu.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//Vlastnƒõ chci vidƒõt Havrana.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//(varovnƒõ) Hele, jen si zkus vl√©zt do toho chr√°mu a bude≈° mrtvej jako tady ti vƒõzni.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Rad≈°i hejbni kostrou a padej do dolu.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
@@ -61,7 +61,7 @@ FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Ja()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//Jo.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Tak si d·vej bacha. A to lÌp neû ti, co sou tu teÔ vöude rozkouskovan˝.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Tak si d√°vej bacha. A to l√≠p ne≈æ ti, co sou tu teƒè v≈°ude rozkouskovan√Ω.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);

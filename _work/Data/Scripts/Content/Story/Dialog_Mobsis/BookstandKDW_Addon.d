@@ -22,40 +22,40 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 
 					Doc_PrintLine	( nDocID,  0, "Kruhy vody"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Runy vody a pøísady, které potøebuješ k jejich vytvoøení.");
+					Doc_PrintLines	( nDocID,  0, "Runy vody a pÅ™Ã­sady, kterÃ© potÅ™ebujeÅ¡ k jejich vytvoÅ™enÃ­.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Vìtrná smrš");
-					Doc_PrintLine	( nDocID,  0, "Køídla krvavé mouchy");
+					Doc_PrintLine	( nDocID,  0, "VÄ›trnÃ¡ smrÅ¡Å¥");
+					Doc_PrintLine	( nDocID,  0, "KÅ™Ã­dla krvavÃ© mouchy");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Ledovı oštìp");
-					Doc_PrintLine	( nDocID,  0, "Køemen z ledovce");
+					Doc_PrintLine	( nDocID,  0, "LedovÃ½ oÅ¡tÄ›p");
+					Doc_PrintLine	( nDocID,  0, "KÅ™emen z ledovce");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Gejzír");
-					Doc_PrintLine	( nDocID,  0, "Akvamarín");
+					Doc_PrintLine	( nDocID,  0, "GejzÃ­r");
+					Doc_PrintLine	( nDocID,  0, "AkvamarÃ­n");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Bouøe");
-					Doc_PrintLine	( nDocID,  0, "Køemen z ledovce");
-					Doc_PrintLine	( nDocID,  0, "Køídla krvavé mouchy");
+					Doc_PrintLine	( nDocID,  0, "BouÅ™e");
+					Doc_PrintLine	( nDocID,  0, "KÅ™emen z ledovce");
+					Doc_PrintLine	( nDocID,  0, "KÅ™Ã­dla krvavÃ© mouchy");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Vodní pìst");
-					Doc_PrintLine	( nDocID,  0, "Akvamarín");
-					Doc_PrintLine	( nDocID,  0, "Kamennı krystal");
+					Doc_PrintLine	( nDocID,  0, "VodnÃ­ pÄ›st");
+					Doc_PrintLine	( nDocID,  0, "AkvamarÃ­n");
+					Doc_PrintLine	( nDocID,  0, "KamennÃ½ krystal");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "K vytvoøení runy vdy potøebuješ JEDNU z uvedenıch pøísad."					);
+					Doc_PrintLines	( nDocID,  1, "K vytvoÅ™enÃ­ runy vÅ¾dy potÅ™ebujeÅ¡ JEDNU z uvedenÃ½ch pÅ™Ã­sad."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Uivatel musí znát patøièné zaklínadlo a musí mít u sebe èistı runovı kámen spolu se svitkem zvoleného kouzla."					);
+					Doc_PrintLines	( nDocID,  1, "UÅ¾ivatel musÃ­ znÃ¡t patÅ™iÄnÃ© zaklÃ­nadlo a musÃ­ mÃ­t u sebe ÄistÃ½ runovÃ½ kÃ¡men spolu se svitkem zvolenÃ©ho kouzla."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Teprve po dokonèení tìchto pøíprav mùe pøistoupit k práci s runovou tabulkou."					);
+					Doc_PrintLines	( nDocID,  1, "Teprve po dokonÄenÃ­ tÄ›chto pÅ™Ã­prav mÅ¯Å¾e pÅ™istoupit k prÃ¡ci s runovou tabulkou."					);
 					Doc_Show		( nDocID );
 	};
 };

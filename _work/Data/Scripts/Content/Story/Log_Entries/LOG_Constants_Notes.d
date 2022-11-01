@@ -1,34 +1,34 @@
 // *******************
 // LOG_Topic Constants 
 // -------------------
-// (für LOG_NOTE)
+// (fÃ¼r LOG_NOTE)
 // *******************
-// ------ Händler ------
-const string	TOPIC_Trader_OC				=   "Obchodování na hradì";
-const string	TOPIC_CityTrader			=	"Obchodování v Khorinidu";
-const string	Topic_OutTrader				=	"Obchodování v divoèinì";
-const string	Topic_SoldierTrader			=	"Obchodování na Onarovì statku";
+// ------ HÃ¤ndler ------
+const string	TOPIC_Trader_OC				=   "ObchodovÃ¡nÃ­ na hradÄ›";
+const string	TOPIC_CityTrader			=	"ObchodovÃ¡nÃ­ v Khorinidu";
+const string	Topic_OutTrader				=	"ObchodovÃ¡nÃ­ v divoÄinÄ›";
+const string	Topic_SoldierTrader			=	"ObchodovÃ¡nÃ­ na OnarovÄ› statku";
 
 
 // ------ Lehrer ------
-const string	TOPIC_Teacher				=	"Uèení";
-const string	TOPIC_Teacher_OC			=   "Uèení na hradì";
-const string	Topic_SoldierTeacher		=	"Uèení na Onarovì statku";
-const string	Topic_OutTeacher			=	"Uèení v divoèinì";
-const string	TOPIC_CityTeacher			=	"Uèení v Khorinidu";
+const string	TOPIC_Teacher				=	"UÄenÃ­";
+const string	TOPIC_Teacher_OC			=   "UÄenÃ­ na hradÄ›";
+const string	Topic_SoldierTeacher		=	"UÄenÃ­ na OnarovÄ› statku";
+const string	Topic_OutTeacher			=	"UÄenÃ­ v divoÄinÄ›";
+const string	TOPIC_CityTeacher			=	"UÄenÃ­ v Khorinidu";
 //ADDON
-const string	TOPIC_Addon_KDWTeacher		=	"Uèení u mágù vody";
+const string	TOPIC_Addon_KDWTeacher		=	"UÄenÃ­ u mÃ¡gÅ¯ vody";
 
 // ------ Micro - Talente ------
-const string	TOPIC_TalentSmith			=	"Kování";
+const string	TOPIC_TalentSmith			=	"KovÃ¡nÃ­";
 const string	TOPIC_TalentRunes			=	"Runy";
 const string	TOPIC_TalentAlchemy			=	"Lektvary";
-const string	TOPIC_TalentAnimalTrophy	=	"Lovecké trofeje";
-const string	TOPIC_TalentMagicCircle		= 	"Magické kruhy";
-const string	TOPIC_WispDetector			= 	"Hledání bludièky";
-const string	TOPIC_Language				= 	"Jazyk stavitelù";
+const string	TOPIC_TalentAnimalTrophy	=	"LoveckÃ© trofeje";
+const string	TOPIC_TalentMagicCircle		= 	"MagickÃ© kruhy";
+const string	TOPIC_WispDetector			= 	"HledÃ¡nÃ­ bludiÄky";
+const string	TOPIC_Language				= 	"Jazyk stavitelÅ¯";
 
 // ------ Sonstiges ------
-const string	Topic_Bonus					=	"Zvláštnosti"; //z.B. täglich essen abholen...
-const string	Topic_Diebesgilde			=	"Zlodìjskı cech"; 
+const string	Topic_Bonus					=	"ZvlÃ¡Å¡tnosti"; //z.B. tÃ¤glich essen abholen...
+const string	Topic_Diebesgilde			=	"ZlodÄ›jskÃ½ cech"; 
 

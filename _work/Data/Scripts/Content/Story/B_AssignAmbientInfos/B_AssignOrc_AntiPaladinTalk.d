@@ -7,22 +7,22 @@ func void B_AssignORC_AntiPaladinTalk (var C_NPC Antipaladin)
 {	
 	 	if (AntiPaladinTalkcount == 0)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_01"); //KHROKGNAR! Pán teï øíkat paladinovi! Pán mít pravda. Pán mít vdycky pravda.
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_02"); //My, vùdci skøetí armáda, pøijít zabít velkého paladina.
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_03"); //Zneškodnit Hagen a jeho mui. Ty u jim nepomoct.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_01"); //KHROKGNAR! PÃ¡n teÄ Å™Ã­kat paladinovi! PÃ¡n mÃ­t pravda. PÃ¡n mÃ­t vÅ¾dycky pravda.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_02"); //My, vÅ¯dci skÅ™etÃ­ armÃ¡da, pÅ™ijÃ­t zabÃ­t velkÃ©ho paladina.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_03"); //ZneÅ¡kodnit Hagen a jeho muÅ¾i. Ty uÅ¾ jim nepomoct.
 			B_GivePlayerXP (XP_Ambient);
 		}
 		else if (AntiPaladinTalkcount == 1)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_04"); //Pán øíkat skøetím vùdcùm, pøinést hlava velkého paladina. Teï zemøít skøetí rukou. KHROKGNAR!
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_04"); //PÃ¡n Å™Ã­kat skÅ™etÃ­m vÅ¯dcÅ¯m, pÅ™inÃ©st hlava velkÃ©ho paladina. TeÄ zemÅ™Ã­t skÅ™etÃ­ rukou. KHROKGNAR!
 		}
 		else if (AntiPaladinTalkcount == 2)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_05"); //My, vùdci skøetí armády pøijít zabít tebe, paladin.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_05"); //My, vÅ¯dci skÅ™etÃ­ armÃ¡dy pÅ™ijÃ­t zabÃ­t tebe, paladin.
 		}
 		else 
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_06"); //KHROKGNAR! My tì zabít, paladin.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_06"); //KHROKGNAR! My tÄ› zabÃ­t, paladin.
 		};
 		AntiPaladinTalkcount = AntiPaladinTalkcount + 1;
 		TalkedTo_AntiPaladin = TRUE;

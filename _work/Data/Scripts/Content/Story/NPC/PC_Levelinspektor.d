@@ -1,7 +1,7 @@
 INSTANCE PC_Levelinspektor(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "Úroveò Inspector";
+	name 			= "ÃšroveÅˆ Inspector";
 	Npctype			= NPCTYPE_MAIN;
 	flags			= NPC_FLAG_GHOST;
 	guild			= GIL_NONE;
@@ -24,11 +24,11 @@ INSTANCE PC_Levelinspektor(NPC_DEFAULT)
 	Mdl_SetVisualBody (self,	"hum_body_Naked0", 	BodyTex_Player,	0,			"Hum_Head_Pony", 	FACE_N_Player,	0, 			ITAR_PAL_H);
 
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //hÃ¤ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 			0);
 
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hängt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//hÃ¤ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);
@@ -100,7 +100,7 @@ INSTANCE PC_Levelinspektor(NPC_DEFAULT)
 	PLAYER_TALENT_RUNES[SPL_ArmyOfDarkness] 		= TRUE;
 	PLAYER_TALENT_RUNES[SPL_Shrink] 				= TRUE;
 
-	B_SetFightSkills (self, 100); //Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills (self, 100); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	//-------- inventory --------
 	EquipItem (self, ItMw_ShortSword3);

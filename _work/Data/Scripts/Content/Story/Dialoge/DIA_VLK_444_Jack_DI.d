@@ -48,25 +48,25 @@ func void DIA_Jack_DI_GREET_Info ()
 {
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //Doufám, e víš, co dìláš, chlapèe.
-		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //U to nebude trvat dlouho.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Zachovej si chladnou hlavu a vra se v jednom kuse.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //DoufÃ¡m, Å¾e vÃ­Å¡, co dÄ›lÃ¡Å¡, chlapÄe.
+		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //UÅ¾ to nebude trvat dlouho.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Zachovej si chladnou hlavu a vraÅ¥ se v jednom kuse.
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
 		if (DIA_Jack_DI_GREET_OneTime == FALSE)
 		{
-			AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_03"); //Co tam dole dìláš?
+			AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_03"); //Co tam dole dÄ›lÃ¡Å¡?
 			B_GivePlayerXP (XP_Ambient);
 			DIA_Jack_DI_GREET_OneTime = TRUE;
 		};
 
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //I kdyby se mìlo samo peklo zjevit, já tu loï odsud dostanu. S tebou, nebo bez tebe. Slyšíš?
-		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //Nic takovıho. Jdu do toho.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //Tak to sebou hoï.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //I kdyby se mÄ›lo samo peklo zjevit, jÃ¡ tu loÄ odsud dostanu. S tebou, nebo bez tebe. SlyÅ¡Ã­Å¡?
+		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //Nic takovÃ½ho. Jdu do toho.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //Tak to sebou hoÄ.
 		AI_StopProcessInfos (self);
-		Npc_ExchangeRoutine	(self,"Zaèít");	
+		Npc_ExchangeRoutine	(self,"ZaÄÃ­t");	
 	};
 };
 
@@ -81,7 +81,7 @@ instance DIA_Jack_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jack_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Dokázal jsem to. Znièil jsem nepøítele.";
+	description = 	"DokÃ¡zal jsem to. ZniÄil jsem nepÅ™Ã­tele.";
 
 };
 
@@ -94,19 +94,19 @@ func int DIA_Jack_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jack_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //Dokázal jsem to. Znièil jsem nepøítele.
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //Doufal jsem, e všechno dobøe dopadne. Ale musim pøiznat, e posledních pár hodin jsem si tím nebyl vùbec jistej.
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //Tak u mùem znovu vyplout?
+	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //DokÃ¡zal jsem to. ZniÄil jsem nepÅ™Ã­tele.
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //Doufal jsem, Å¾e vÅ¡echno dobÅ™e dopadne. Ale musim pÅ™iznat, Å¾e poslednÃ­ch pÃ¡r hodin jsem si tÃ­m nebyl vÅ¯bec jistej.
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //Tak uÅ¾ mÅ¯Å¾em znovu vyplout?
 
 	Info_ClearChoices	(DIA_Jack_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Ještì minutku.", DIA_Jack_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Ano, tak to skonèeme.", DIA_Jack_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "JeÅ¡tÄ› minutku.", DIA_Jack_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Ano, tak to skonÄeme.", DIA_Jack_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jack_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Jack_DI_UndeadDragonDead_moment_15_00"); //Ještì poèkej. Je tu nìco dalšího, co musím udìlat.
-	AI_Output			(self, other, "DIA_Jack_DI_UndeadDragonDead_moment_14_01"); //Hoï sebou, jasnı? Nechci tu dostat kurdìje.
+	AI_Output			(other, self, "DIA_Jack_DI_UndeadDragonDead_moment_15_00"); //JeÅ¡tÄ› poÄkej. Je tu nÄ›co dalÅ¡Ã­ho, co musÃ­m udÄ›lat.
+	AI_Output			(self, other, "DIA_Jack_DI_UndeadDragonDead_moment_14_01"); //HoÄ sebou, jasnÃ½? Nechci tu dostat kurdÄ›je.
 	AI_StopProcessInfos (self);
 };
 

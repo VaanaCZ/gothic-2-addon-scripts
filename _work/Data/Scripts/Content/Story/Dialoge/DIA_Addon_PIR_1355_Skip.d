@@ -77,17 +77,17 @@ FUNC INT DIA_Addon_Skip_Hello_Condition()
 };
 func VOID DIA_Addon_Skip_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_00"); //A hele, copak to tu máme, to u ses zase pøiplet do cesty starımu Skipovi?
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_01"); //(pøehnanì) Já tì znám!
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_02"); //Zátoka u mìsta, pamatuješ?
-	AI_Output (other,self ,"DIA_Addon_Skip_Hello_15_03"); //Skip, e jo?
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_04"); //(hrdì) Vidím, e jsem na tebe udìlal dojem.
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_05"); //Ale mezitím jsem ten tvùj ksicht zahlíd i JINDE.
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_06"); //Ale jistì!
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_00"); //A hele, copak to tu mÃ¡me, to uÅ¾ ses zase pÅ™iplet do cesty starÃ½mu Skipovi?
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_01"); //(pÅ™ehnanÄ›) JÃ¡ tÄ› znÃ¡m!
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_02"); //ZÃ¡toka u mÄ›sta, pamatujeÅ¡?
+	AI_Output (other,self ,"DIA_Addon_Skip_Hello_15_03"); //Skip, Å¾e jo?
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_04"); //(hrdÄ›) VidÃ­m, Å¾e jsem na tebe udÄ›lal dojem.
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_05"); //Ale mezitÃ­m jsem ten tvÅ¯j ksicht zahlÃ­d i JINDE.
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_06"); //Ale jistÄ›!
 	B_UseFakeScroll ();
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_07"); //No, podoba sice nic moc, ale urèitì seš to TY!
-	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_08"); //Si to tak neber, já na tìch plakátech vypadám úplnì stejnì blbì.
-	Npc_ExchangeRoutine	(self,"Zaèít");
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_07"); //No, podoba sice nic moc, ale urÄitÄ› seÅ¡ to TY!
+	AI_Output (self ,other,"DIA_Addon_Skip_Hello_08_08"); //Si to tak neber, jÃ¡ na tÄ›ch plakÃ¡tech vypadÃ¡m ÃºplnÄ› stejnÄ› blbÄ›.
+	Npc_ExchangeRoutine	(self,"ZaÄÃ­t");
 };
 
 // ************************************************************
@@ -100,7 +100,7 @@ instance DIA_Addon_SkipADW_BaltramPaket		(C_INFO)
 	condition	= DIA_Addon_SkipADW_BaltramPaket_Condition;
 	information	= DIA_Addon_SkipADW_BaltramPaket_Info;
 
-	description	= "Mám tu pro tebe balíèek, kterı ti posílá Baltram.";
+	description	= "MÃ¡m tu pro tebe balÃ­Äek, kterÃ½ ti posÃ­lÃ¡ Baltram.";
 };
 func int DIA_Addon_SkipADW_BaltramPaket_Condition ()
 {
@@ -111,10 +111,10 @@ func int DIA_Addon_SkipADW_BaltramPaket_Condition ()
 };
 func void DIA_Addon_SkipADW_BaltramPaket_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_SkipADW_BaltramPaket_15_00"); //Mám pro tebe balík od Baltrama.
-	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_01"); //(šklebí se) To teda musel fakt pøebrat, kdy nám svı zboí posílá a SEM.
+	AI_Output	(other, self, "DIA_Addon_SkipADW_BaltramPaket_15_00"); //MÃ¡m pro tebe balÃ­k od Baltrama.
+	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_01"); //(Å¡klebÃ­ se) To teda musel fakt pÅ™ebrat, kdyÅ¾ nÃ¡m svÃ½ zboÅ¾Ã­ posÃ­lÃ¡ aÅ¾ SEM.
 	B_GiveInvItems (other, self, ItMi_Packet_Baltram4Skip_Addon,1);
-	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_02"); //Tumáš, dej mu tyhle dvì flašky rumu. Tu tøetí jsem vyslopal, kdy jsem tu na nìj èekal.
+	AI_Output	(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_02"); //TumÃ¡Å¡, dej mu tyhle dvÄ› flaÅ¡ky rumu. Tu tÅ™etÃ­ jsem vyslopal, kdyÅ¾ jsem tu na nÄ›j Äekal.
 	B_GiveInvItems (self, other, ItFo_Addon_Rum, 2);		
 	B_GivePlayerXP (XP_Addon_Skip_BaltramPaket);
 	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,LogText_Addon_SkipsRumToBaltram); 
@@ -131,7 +131,7 @@ INSTANCE DIA_Addon_Skip_Job(C_INFO)
 	condition	= DIA_Addon_Skip_Job_Condition;
 	information	= DIA_Addon_Skip_Job_Info;
 
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 FUNC INT DIA_Addon_Skip_Job_Condition()
 {
@@ -140,8 +140,8 @@ FUNC INT DIA_Addon_Skip_Job_Condition()
 
 FUNC VOID DIA_Addon_Skip_Job_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_Job_15_00"); //Co tu dìláš?
-	AI_Output (self ,other, "DIA_Addon_Skip_Job_08_01"); //Právì jsem se vrátil z Khorinidu a teï èekám, a se vrátí Greg.
+	AI_Output (other, self, "DIA_Addon_Skip_Job_15_00"); //Co tu dÄ›lÃ¡Å¡?
+	AI_Output (self ,other, "DIA_Addon_Skip_Job_08_01"); //PrÃ¡vÄ› jsem se vrÃ¡til z Khorinidu a teÄ ÄekÃ¡m, aÅ¾ se vrÃ¡tÃ­ Greg.
 };
 
 // ************************************************************
@@ -154,7 +154,7 @@ instance DIA_Addon_Skip_ADW_GregGetroffen		(C_INFO)
 	condition	= DIA_Addon_Skip_ADW_GregGetroffen_Condition;
 	information	= DIA_Addon_Skip_ADW_GregGetroffen_Info;
 
-	description	= "V Khorinidu jsem vidìl Grega.";
+	description	= "V Khorinidu jsem vidÄ›l Grega.";
 };
 func int DIA_Addon_Skip_ADW_GregGetroffen_Condition ()
 {
@@ -167,16 +167,16 @@ func int DIA_Addon_Skip_ADW_GregGetroffen_Condition ()
 };
 func void DIA_Addon_Skip_ADW_GregGetroffen_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Skip_ADW_GregGetroffen_15_00"); //Grega jsem vidìl v Khorinidu.
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_01"); //Vánì? A sakra! To se nìco muselo pìknì podìlat!
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_02"); //U pøed èasem mìl bejt tady i s naší lodí.
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_03"); //(zamyšlenì) Myslím, e bych se mìl vrátit do Khorinidu a poèkat na nìj tam.
-	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_04"); //(povzdech) Ale urèitì ne dneska, dyk jsem sotva dorazil.
+	AI_Output (other, self, "DIA_Addon_Skip_ADW_GregGetroffen_15_00"); //Grega jsem vidÄ›l v Khorinidu.
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_01"); //VÃ¡Å¾nÄ›? A sakra! To se nÄ›co muselo pÄ›knÄ› podÄ›lat!
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_02"); //UÅ¾ pÅ™ed Äasem mÄ›l bejt tady i s naÅ¡Ã­ lodÃ­.
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_03"); //(zamyÅ¡lenÄ›) MyslÃ­m, Å¾e bych se mÄ›l vrÃ¡tit do Khorinidu a poÄkat na nÄ›j tam.
+	AI_Output (self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_04"); //(povzdech) Ale urÄitÄ› ne dneska, dyk jsem sotva dorazil.
 	B_GivePlayerXP (XP_Ambient);
 };
 
 // ************************************************************
-// 			  			Überfahrt - PERM
+// 			  			Ãœberfahrt - PERM
 // ************************************************************
 var int Skip_Transport_Variation;
 // ------------------------------------------------------------
@@ -187,7 +187,7 @@ instance DIA_Addon_Skip_Transport(C_INFO)
 	condition	= DIA_Addon_Skip_Transport_Condition;
 	information	= DIA_Addon_Skip_Transport_Info;
 	permanent	= TRUE;
-	description = "Mùeš mì zavést do Khorinidu?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› zavÃ©st do Khorinidu?";
 };                       
 FUNC INT DIA_Addon_Skip_Transport_Condition()
 {
@@ -199,15 +199,15 @@ FUNC INT DIA_Addon_Skip_Transport_Condition()
 };
 FUNC VOID DIA_Addon_Skip_Transport_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_Transport_15_00"); //Mùeš mì dopravit do Khorinidu?
+	AI_Output (other,self ,"DIA_Addon_Skip_Transport_15_00"); //MÅ¯Å¾eÅ¡ mÄ› dopravit do Khorinidu?
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_01"); //Ani nápad, zrovna jdu pryè. Musím si napøed dát poøádnıho loka koøalky.
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_01"); //Ani nÃ¡pad, zrovna jdu pryÄ. MusÃ­m si napÅ™ed dÃ¡t poÅ™Ã¡dnÃ½ho loka koÅ™alky.
 	}
 	else if (Skip_Transport_Variation == 0)
 	{
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_02"); //Zbláznil ses? Dyk jsme pøišli vo LOÏ, èoveèe!
-		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_03"); //Nebudu vytahovat naši poslední loï jenom proto, e seš línej pohnout zadkem a dostat se do Khorinidu SÁM!
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_02"); //ZblÃ¡znil ses? Dyk jsme pÅ™iÅ¡li vo LOÄ, ÄoveÄe!
+		AI_Output (self ,other,"DIA_Addon_Skip_Transport_08_03"); //Nebudu vytahovat naÅ¡i poslednÃ­ loÄ jenom proto, Å¾e seÅ¡ lÃ­nej pohnout zadkem a dostat se do Khorinidu SÃM!
 		Skip_Transport_Variation = 1;
 	}
 	else
@@ -217,7 +217,7 @@ FUNC VOID DIA_Addon_Skip_Transport_Info()
 };
 
 // ************************************************************
-// 			 			Banditen + Rüstung
+// 			 			Banditen + RÃ¼stung
 // ************************************************************
 // ------------------------------------------------------------
 // 							About Bandits
@@ -229,7 +229,7 @@ INSTANCE DIA_Addon_Skip_Bandits(C_INFO)
 	condition	= DIA_Addon_Skip_Bandits_Condition;
 	information	= DIA_Addon_Skip_Bandits_Info;
 
-	description = "Co bys mi øekl o tìch banditech?";
+	description = "Co bys mi Å™ekl o tÄ›ch banditech?";
 };                       
 FUNC INT DIA_Addon_Skip_Bandits_Condition()
 {
@@ -237,26 +237,26 @@ FUNC INT DIA_Addon_Skip_Bandits_Condition()
 };
 func VOID DIA_Addon_Skip_Bandits_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_Bandits_15_00"); //Co bys mi povìdìl o banditech?
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_01"); //O banditech? Útoèej na nás!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_02"); //Proè si myslíš, e stavíme tu palisádu?
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_03"); //A to jsme sem ty šmejdy sami dopravili.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_04"); //Døív jsme s nima vobchodovali. Ti maj tolik zlata, e nevìdìj, co s ním, to ti øeknu!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_05"); //Za flašku rumu by zaplatili cokoliv.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_06"); //Ale ty doby u jsou dávno pryè. Teï spolu válèíme!
+	AI_Output (other, self, "DIA_Addon_Skip_Bandits_15_00"); //Co bys mi povÄ›dÄ›l o banditech?
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_01"); //O banditech? ÃštoÄej na nÃ¡s!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_02"); //ProÄ si myslÃ­Å¡, Å¾e stavÃ­me tu palisÃ¡du?
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_03"); //A to jsme sem ty Å¡mejdy sami dopravili.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_04"); //DÅ™Ã­v jsme s nima vobchodovali. Ti maj tolik zlata, Å¾e nevÄ›dÄ›j, co s nÃ­m, to ti Å™eknu!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_05"); //Za flaÅ¡ku rumu by zaplatili cokoliv.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_06"); //Ale ty doby uÅ¾ jsou dÃ¡vno pryÄ. TeÄ spolu vÃ¡lÄÃ­me!
 	AI_Output (other, self, "DIA_Addon_Erol_Bandits_15_06"); //Co se stalo?
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_07"); //Ti hajzlové nezaplatili za poslední dodávku.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_08"); //Tak jsem za nima šel, abych zjistil, co se stalo s naším zlatem.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_09"); //Jene sotva jsem vlez do bainy, ty svinì na mì zaútoèily!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_10"); //A to ještì není všecko. Zabili Anguse a Hanke! Dva naše nejlepší lidi!
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_11"); //Take bych ti radil, aby ses vod tı bainy drel dál.
-	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_12"); //Jdou po kadım, kdo nevypadá stejnì vošuntìle jak voni.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_07"); //Ti hajzlovÃ© nezaplatili za poslednÃ­ dodÃ¡vku.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_08"); //Tak jsem za nima Å¡el, abych zjistil, co se stalo s naÅ¡Ã­m zlatem.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_09"); //JenÅ¾e sotva jsem vlez do baÅ¾iny, ty svinÄ› na mÄ› zaÃºtoÄily!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_10"); //A to jeÅ¡tÄ› nenÃ­ vÅ¡ecko. Zabili Anguse a Hanke! Dva naÅ¡e nejlepÅ¡Ã­ lidi!
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_11"); //TakÅ¾e bych ti radil, aby ses vod tÃ½ baÅ¾iny drÅ¾el dÃ¡l.
+	AI_Output (self, other, "DIA_Addon_Skip_Bandits_08_12"); //Jdou po kaÅ¾dÃ½m, kdo nevypadÃ¡ stejnÄ› voÅ¡untÄ›le jak voni.
 	
 	
 };
 
 // ------------------------------------------------------------
-// 						Banditenrüstung
+// 						BanditenrÃ¼stung
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_ArmorPrice(C_INFO)
 {
@@ -265,7 +265,7 @@ INSTANCE DIA_Addon_Skip_ArmorPrice(C_INFO)
 	condition	= DIA_Addon_Skip_ArmorPrice_Condition;
 	information	= DIA_Addon_Skip_ArmorPrice_Info;
 
-	description = "Potøebuji zbroj banditù.";
+	description = "PotÅ™ebuji zbroj banditÅ¯.";
 };                       
 FUNC INT DIA_Addon_Skip_ArmorPrice_Condition()
 {
@@ -277,19 +277,19 @@ FUNC INT DIA_Addon_Skip_ArmorPrice_Condition()
 };
 func VOID DIA_Addon_Skip_ArmorPrice_Info()
 {	
-	AI_Output (other,self , "DIA_Addon_Skip_ArmorPrice_15_00"); //Potøebuju zbroj banditù.
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_01"); //Ty tam chceš jít? Zbláznil ses? 
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_02"); //Jestli zjistìj, e k nim nepatøíš, nadìlaj z tebe sekanou!
-	AI_Output (other, self, "DIA_Addon_Skip_ArmorPrice_15_02"); //Máš ponìtí, kde bych takovou zbroj sehnal?
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_03"); //(s povzdechem) Ty se jen tak nevzdáš, co? No dobøe, jeden kousek jsme tu mìli.
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_04"); //Greg ho má nejspíš poøád ve svı chajdì.
-	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_05"); //Moná by ti ji moh prodat, a se vrátí.
+	AI_Output (other,self , "DIA_Addon_Skip_ArmorPrice_15_00"); //PotÅ™ebuju zbroj banditÅ¯.
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_01"); //Ty tam chceÅ¡ jÃ­t? ZblÃ¡znil ses? 
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_02"); //Jestli zjistÄ›j, Å¾e k nim nepatÅ™Ã­Å¡, nadÄ›laj z tebe sekanou!
+	AI_Output (other, self, "DIA_Addon_Skip_ArmorPrice_15_02"); //MÃ¡Å¡ ponÄ›tÃ­, kde bych takovou zbroj sehnal?
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_03"); //(s povzdechem) Ty se jen tak nevzdÃ¡Å¡, co? No dobÅ™e, jeden kousek jsme tu mÄ›li.
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_04"); //Greg ho mÃ¡ nejspÃ­Å¡ poÅ™Ã¡d ve svÃ½ chajdÄ›.
+	AI_Output (self ,other, "DIA_Addon_Skip_ArmorPrice_08_05"); //MoÅ¾nÃ¡ by ti ji moh prodat, aÅ¾ se vrÃ¡tÃ­.
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Skip se domnívá, e zbroj by mìla bıt v Gregovì chatrèi."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Skip se domnÃ­vÃ¡, Å¾e zbroj by mÄ›la bÃ½t v GregovÄ› chatrÄi."); 
 };
 
 // ------------------------------------------------------------
-// 						In Gregs Hütte
+// 						In Gregs HÃ¼tte
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_GregsHut(C_INFO)
 {
@@ -298,7 +298,7 @@ INSTANCE DIA_Addon_Skip_GregsHut(C_INFO)
 	condition	= DIA_Addon_Skip_GregsHut_Condition;
 	information	= DIA_Addon_Skip_GregsHut_Info;
 	permanent	= FALSE;
-	description = "Nevíš, jak se dostanu do Gregovy chatrèe?";
+	description = "NevÃ­Å¡, jak se dostanu do Gregovy chatrÄe?";
 };                       
 FUNC INT DIA_Addon_Skip_GregsHut_Condition()
 {
@@ -311,18 +311,18 @@ FUNC INT DIA_Addon_Skip_GregsHut_Condition()
 
 FUNC VOID DIA_Addon_Skip_GregsHut_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_GregsHut_15_00"); //Neporadil bys mi, jak se do té jeho chajdy dostat?
+	AI_Output (other,self ,"DIA_Addon_Skip_GregsHut_15_00"); //Neporadil bys mi, jak se do tÃ© jeho chajdy dostat?
 	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_01"); //Tak to prrr! Ne tak rychle!
-	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_02"); //Snad tì nenapadlo, e by ses Gregovi hrabal ve vìcech, e ne?
-	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_03"); //Kdy vodjídìl, svìøil klíè Francisovi a nakázal mu, aby do jeho chajdy NIKOHO nepouštìl.
+	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_02"); //Snad tÄ› nenapadlo, Å¾e by ses Gregovi hrabal ve vÄ›cech, Å¾e ne?
+	AI_Output (self ,other,"DIA_Addon_Skip_GregsHut_08_03"); //KdyÅ¾ vodjÃ­Å¾dÄ›l, svÄ›Å™il klÃ­Ä Francisovi a nakÃ¡zal mu, aby do jeho chajdy NIKOHO nepouÅ¡tÄ›l.
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Francis má klíè ke Gregovì chatrèi, ale dostal rozkaz, aby tam nikoho nepouštìl."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Francis mÃ¡ klÃ­Ä ke GregovÄ› chatrÄi, ale dostal rozkaz, aby tam nikoho nepouÅ¡tÄ›l."); 
 	
 	Knows_GregsHut = TRUE;
 };
 
 // ------------------------------------------------------------
-//					Über Francis --> Samuel
+//					Ãœber Francis --> Samuel
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_Francis (C_INFO)
 {
@@ -331,7 +331,7 @@ INSTANCE DIA_Addon_Skip_Francis (C_INFO)
 	condition	= DIA_Addon_Skip_Francis_Condition;
 	information	= DIA_Addon_Skip_Francis_Info;
 	permanent	= FALSE;
-	description = "Co bys mi øekl o Francisovi?";
+	description = "Co bys mi Å™ekl o Francisovi?";
 };   
 FUNC INT DIA_Addon_Skip_Francis_Condition()
 {
@@ -344,14 +344,14 @@ FUNC INT DIA_Addon_Skip_Francis_Condition()
 FUNC VOID DIA_Addon_Skip_Francis_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Skip_Francis_15_00"); //Co bys mi prozradil o Francisovi?
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_01"); //Francis je náš pokladník.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_02"); //Kapitán mu vìøí - a nejspíš proto mu taky svìøil velení.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_03"); //Jene nikdo z chlapù ho nebere vánì.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_04"); //Jestli chceš vìdìt víc, promluv si se Samuelem.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_05"); //Hledal klid, a tak se usadil v malı jeskyni na severu.
-	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_06"); //V táboøe není ani ivá duše. Samuel NEVÍ úplnì o všem.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_01"); //Francis je nÃ¡Å¡ pokladnÃ­k.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_02"); //KapitÃ¡n mu vÄ›Å™Ã­ - a nejspÃ­Å¡ proto mu taky svÄ›Å™il velenÃ­.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_03"); //JenÅ¾e nikdo z chlapÅ¯ ho nebere vÃ¡Å¾nÄ›.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_04"); //Jestli chceÅ¡ vÄ›dÄ›t vÃ­c, promluv si se Samuelem.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_05"); //Hledal klid, a tak se usadil v malÃ½ jeskyni na severu.
+	AI_Output (self ,other,"DIA_Addon_Skip_Francis_08_06"); //V tÃ¡boÅ™e nenÃ­ ani Å¾ivÃ¡ duÅ¡e. Samuel NEVÃ ÃºplnÄ› o vÅ¡em.
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Mìl bych si promluvit se Samuelem, tøeba mi pomùe."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"MÄ›l bych si promluvit se Samuelem, tÅ™eba mi pomÅ¯Å¾e."); 
 };
 	
 	
@@ -368,7 +368,7 @@ INSTANCE DIA_Addon_Skip_Raven(C_INFO)
 	condition	= DIA_Addon_Skip_Raven_Condition;
 	information	= DIA_Addon_Skip_Raven_Info;
 	permanent	= FALSE;
-	description = "Setkal ses nìkdy s Havranem?";
+	description = "Setkal ses nÄ›kdy s Havranem?";
 };                       
 FUNC INT DIA_Addon_Skip_Raven_Condition()
 {
@@ -379,12 +379,12 @@ FUNC INT DIA_Addon_Skip_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Skip_Raven_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_Raven_15_00"); //Setkal ses nìkdy s Havranem?
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_01"); //Jasnì, kdy jsem byl s Henrym u brány, vidìl jsem, jak Havran poslal pár svejch chlapù do vìe na jihu.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_02"); //Vocuï z tábora je to co by kamenem dohodil. (smìje se) Nejspíš nás maj špehovat.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_03"); //A taky jsem vidìl, jak vyhrouje svejm lidem, kterı ho nechtìli poslouchat.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_04"); //S kadım, kdo do puntíku nesplní jeho rozkazy, udìlá krátkej proces.
-	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_05"); //Dej na mì: vod Havrana se dr dál.
+	AI_Output (other,self ,"DIA_Addon_Skip_Raven_15_00"); //Setkal ses nÄ›kdy s Havranem?
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_01"); //JasnÄ›, kdyÅ¾ jsem byl s Henrym u brÃ¡ny, vidÄ›l jsem, jak Havran poslal pÃ¡r svejch chlapÅ¯ do vÄ›Å¾e na jihu.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_02"); //VocuÄ z tÃ¡bora je to co by kamenem dohodil. (smÄ›je se) NejspÃ­Å¡ nÃ¡s maj Å¡pehovat.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_03"); //A taky jsem vidÄ›l, jak vyhroÅ¾uje svejm lidem, kterÃ½ ho nechtÄ›li poslouchat.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_04"); //S kaÅ¾dÃ½m, kdo do puntÃ­ku nesplnÃ­ jeho rozkazy, udÄ›lÃ¡ krÃ¡tkej proces.
+	AI_Output (self ,other,"DIA_Addon_Skip_Raven_08_05"); //Dej na mÄ›: vod Havrana se drÅ¾ dÃ¡l.
 };
 
 
@@ -405,7 +405,7 @@ INSTANCE DIA_Addon_Skip_AngusHank(C_INFO)
 	condition	= DIA_Addon_Skip_AngusHank_Condition;
 	information	= DIA_Addon_Skip_AngusHank_Info;
 
-	description = "Povìz mi o Angusovi a Hankovi nìco víc.";
+	description = "PovÄ›z mi o Angusovi a Hankovi nÄ›co vÃ­c.";
 };                       
 FUNC INT DIA_Addon_Skip_AngusHank_Condition()
 {
@@ -416,23 +416,23 @@ FUNC INT DIA_Addon_Skip_AngusHank_Condition()
 };
 func VOID DIA_Addon_Skip_AngusHank_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_AngusnHank_15_00"); //Povìz mi víc o Angusovi a Hankovi.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_01"); //Angus a Hank se mìli pøed táborem setkat s òákejma banditama.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_02"); //Nesli všechny monı zásoby. Všecko, co si u nás ti parchanti vobjednali.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_03"); //Kujnou ocel, paklíèe a kdo ví co ještì. 
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_04"); //Ale nikdy se u nevrátili. Ta svinì banditská je urèitì vodkráglovala!
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_05"); //Morgan a Bill po nich pátrali, ale bez úspìchu.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_06"); //Bill byl pìknì znièenej – voba byli naši kámoši.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_07"); //Je eštì mladej, take si to moc bere.
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_08"); //My vostatní jsme to zvládli bez problémù. To zboí si mùem dovolit ztratit. (povzdech) Ale mìli u sebe i spoustu koøalky...
-	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_09"); //(rozzuøenì) Mluvím aspoò o 20 lahvích!
+	AI_Output (other,self ,"DIA_Addon_Skip_AngusnHank_15_00"); //PovÄ›z mi vÃ­c o Angusovi a Hankovi.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_01"); //Angus a Hank se mÄ›li pÅ™ed tÃ¡borem setkat s ÅˆÃ¡kejma banditama.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_02"); //Nesli vÅ¡echny moÅ¾nÃ½ zÃ¡soby. VÅ¡ecko, co si u nÃ¡s ti parchanti vobjednali.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_03"); //Kujnou ocel, paklÃ­Äe a kdo vÃ­ co jeÅ¡tÄ›. 
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_04"); //Ale nikdy se uÅ¾ nevrÃ¡tili. Ta svinÄ› banditskÃ¡ je urÄitÄ› vodkrÃ¡glovala!
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_05"); //Morgan a Bill po nich pÃ¡trali, ale bez ÃºspÄ›chu.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_06"); //Bill byl pÄ›knÄ› zniÄenej â€“ voba byli naÅ¡i kÃ¡moÅ¡i.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_07"); //Je eÅ¡tÄ› mladej, takÅ¾e si to moc bere.
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_08"); //My vostatnÃ­ jsme to zvlÃ¡dli bez problÃ©mÅ¯. To zboÅ¾Ã­ si mÅ¯Å¾em dovolit ztratit. (povzdech) Ale mÄ›li u sebe i spoustu koÅ™alky...
+	AI_Output (self ,other,"DIA_Addon_Skip_AngusnHank_08_09"); //(rozzuÅ™enÄ›) MluvÃ­m aspoÅˆ o 20 lahvÃ­ch!
 	MIS_ADDON_SkipsGrog = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_SkipsGrog,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_SkipsGrog,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Banditi prı Skipovi ukradli 20 lahví koøalky. Chce své lahve zpátky.");
-	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"Angus a Hank se nejspíš setkali s tlupou banditù. Pak u je nikdo nevidìl.");
-	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"Hledání Morgana a Billa je stále neúspìšné.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Banditi prÃ½ Skipovi ukradli 20 lahvÃ­ koÅ™alky. Chce svÃ© lahve zpÃ¡tky.");
+	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"Angus a Hank se nejspÃ­Å¡ setkali s tlupou banditÅ¯. Pak uÅ¾ je nikdo nevidÄ›l.");
+	Log_AddEntry	(TOPIC_Addon_SkipsGrog,"HledÃ¡nÃ­ Morgana a Billa je stÃ¡le neÃºspÄ›Å¡nÃ©.");
 };
 
 // ------------------------------------------------------------
@@ -457,19 +457,19 @@ FUNC INT DIA_Addon_Skip_AngusHankDead_Condition()
 };
 func VOID DIA_Addon_Skip_AngusHankDead_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_00"); //Co se tıèe Anguse a Hanka...
+	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_00"); //Co se tÃ½Äe Anguse a Hanka...
 	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_01"); //Co?
-	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_01"); //Našel jsem je.
+	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_01"); //NaÅ¡el jsem je.
 	//AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_02"); //Sie sind tot, richtig?
-	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_03"); //Jsou mrtví.
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_03"); //(pro sebe) Take zaklepali baèkorama – chudáci!
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_04"); //No, ale to se dalo èekat.
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_05"); //Mìl by sis promluvit s Billem, jestlis to u neudìlal.
-	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_06"); //Ale øekni mu to šetrnì, je eštì mladej.
+	AI_Output (other, self, "DIA_Addon_Skip_AngusnHankDead_15_03"); //Jsou mrtvÃ­.
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_03"); //(pro sebe) TakÅ¾e zaklepali baÄkorama â€“ chudÃ¡ci!
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_04"); //No, ale to se dalo Äekat.
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_05"); //MÄ›l by sis promluvit s Billem, jestlis to uÅ¾ neudÄ›lal.
+	AI_Output (self ,other, "DIA_Addon_Skip_AngusnHankDead_08_06"); //Ale Å™ekni mu to Å¡etrnÄ›, je eÅ¡tÄ› mladej.
 };
 
 // ------------------------------------------------------------
-// 			 			Kenne den Mörder
+// 			 			Kenne den MÃ¶rder
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Skip_AngusHankMurder(C_INFO)
 {
@@ -478,7 +478,7 @@ INSTANCE DIA_Addon_Skip_AngusHankMurder(C_INFO)
 	condition	= DIA_Addon_Skip_AngusHankMurder_Condition;
 	information	= DIA_Addon_Skip_AngusHankMurder_Info;
 	permanent	= FALSE;
-	description = "U vím, kdo zabil Anguse a Hanka.";
+	description = "UÅ¾ vÃ­m, kdo zabil Anguse a Hanka.";
 };                       
 FUNC INT DIA_Addon_Skip_AngusHankMurder_Condition()
 {
@@ -490,21 +490,21 @@ FUNC INT DIA_Addon_Skip_AngusHankMurder_Condition()
 };
 func VOID DIA_Addon_Skip_AngusHankMurder_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_JuanMurder_15_00"); //Vím, kdo zabil Anguse a Hanka.
+	AI_Output (other, self, "DIA_Addon_Skip_JuanMurder_15_00"); //VÃ­m, kdo zabil Anguse a Hanka.
 	if (MIS_ADDON_SkipsGrog == LOG_SUCCESS)
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_01"); //Tak to máš kliku, jene voba jsou mrtví, tak kdo by se vo to víc staral?
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_02"); //Pomstou eštì nikdy ádnej pirát nezbohatnul.
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_03"); //Hlavnì jestli dostanu zpátky svojí koøalku.
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_01"); //Tak to mÃ¡Å¡ kliku, jenÅ¾e voba jsou mrtvÃ­, tak kdo by se vo to vÃ­c staral?
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_02"); //Pomstou eÅ¡tÄ› nikdy Å¾Ã¡dnej pirÃ¡t nezbohatnul.
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_03"); //HlavnÄ› jestli dostanu zpÃ¡tky svojÃ­ koÅ™alku.
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_04"); //Je mi fuk, kdo je zabil, ale kde je moje koøalka?!
+		AI_Output (self ,other, "DIA_Addon_Skip_AngusHankMurder_08_04"); //Je mi fuk, kdo je zabil, ale kde je moje koÅ™alka?!
 	};
 };
 
 // ------------------------------------------------------------
-// 							Grog zurück
+// 							Grog zurÃ¼ck
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_Grog		(C_INFO)
 {
@@ -513,7 +513,7 @@ instance DIA_Addon_Skip_Grog		(C_INFO)
 	condition	= DIA_Addon_Skip_Grog_Condition;
 	information	= DIA_Addon_Skip_Grog_Info;
 	permanent	= TRUE;
-	description	= "Tady máš svıch 20 lahví.";
+	description	= "Tady mÃ¡Å¡ svÃ½ch 20 lahvÃ­.";
 };
 func int DIA_Addon_Skip_Grog_Condition ()
 {
@@ -524,18 +524,18 @@ func int DIA_Addon_Skip_Grog_Condition ()
 };
 func void DIA_Addon_Skip_Grog_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_00"); //Co se tıèe tı koøalky...
+	AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_00"); //Co se tÃ½Äe tÃ½ koÅ™alky...
 		
 	if (Npc_HasItems (other,Itfo_Addon_Grog)>= 20)
 	{
 		Info_ClearChoices	(DIA_Addon_Skip_Grog);
 		Info_AddChoice	(DIA_Addon_Skip_Grog, DIALOG_BACK, DIA_Addon_Skip_Grog_back );
-		Info_AddChoice	(DIA_Addon_Skip_Grog, "Tady máš svıch 20 lahví.", DIA_Addon_Skip_Grog_geben );
+		Info_AddChoice	(DIA_Addon_Skip_Grog, "Tady mÃ¡Å¡ svÃ½ch 20 lahvÃ­.", DIA_Addon_Skip_Grog_geben );
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_01"); //Postrádáš 20 lahví, e jo?
-		AI_Output	(self, other, "DIA_Addon_Skip_Grog_08_02"); //Jo, sakra, všecky mı zásoby.
+		AI_Output	(other, self, "DIA_Addon_Skip_Grog_15_01"); //PostrÃ¡dÃ¡Å¡ 20 lahvÃ­, Å¾e jo?
+		AI_Output	(self, other, "DIA_Addon_Skip_Grog_08_02"); //Jo, sakra, vÅ¡ecky mÃ½ zÃ¡soby.
 	};
 };
 func void DIA_Addon_Skip_Grog_back ()
@@ -544,37 +544,37 @@ func void DIA_Addon_Skip_Grog_back ()
 };
 func void DIA_Addon_Skip_Grog_geben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_00"); //Tady máš svıch 20 lahví.
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_00"); //Tady mÃ¡Å¡ svÃ½ch 20 lahvÃ­.
 	B_GiveInvItems (other, self, Itfo_Addon_Grog, 20);
 	
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Skip dostal zpátky svıch 20 lahví koøalky a je spokojenı.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Skip dostal zpÃ¡tky svÃ½ch 20 lahvÃ­ koÅ™alky a je spokojenÃ½.");
 	
 	MIS_ADDON_SkipsGrog = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_SkipsGrog);
 
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_01"); //Coe? Fakt? Jen tak?
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_01"); //CoÅ¾e? Fakt? Jen tak?
 	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_02"); //Noooo...
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_03"); //No dobøe, zaplatím ti za nì.
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_04"); //Nemáš nìco zajímavìjšího ne zlato?
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_05"); //Hmm, mrknu se. Mám tu tuhlecten prsten.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_06"); //Pøed lety jsem ho vyhrál v jednı zaplivanı pøístavní krèmì.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_07"); //Tenkrát ten chlápek tvrdil, e je magickej, ale nemám tucha, jestli je to pravda.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_08"); //Chtìl bys ho místo penìz?
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_03"); //No dobÅ™e, zaplatÃ­m ti za nÄ›.
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_geben_15_04"); //NemÃ¡Å¡ nÄ›co zajÃ­mavÄ›jÅ¡Ã­ho neÅ¾ zlato?
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_05"); //Hmm, mrknu se. MÃ¡m tu tuhlecten prsten.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_06"); //PÅ™ed lety jsem ho vyhrÃ¡l v jednÃ½ zaplivanÃ½ pÅ™Ã­stavnÃ­ krÄmÄ›.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_07"); //TenkrÃ¡t ten chlÃ¡pek tvrdil, Å¾e je magickej, ale nemÃ¡m tucha, jestli je to pravda.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_geben_08_08"); //ChtÄ›l bys ho mÃ­sto penÄ›z?
 	
 	Info_ClearChoices	(DIA_Addon_Skip_Grog);
-	Info_AddChoice	(DIA_Addon_Skip_Grog, "Dej mi peníze.", DIA_Addon_Skip_Grog_gold );
+	Info_AddChoice	(DIA_Addon_Skip_Grog, "Dej mi penÃ­ze.", DIA_Addon_Skip_Grog_gold );
 	Info_AddChoice	(DIA_Addon_Skip_Grog, "Dej mi prsten.", DIA_Addon_Skip_Grog_ring );
 };
 func void DIA_Addon_Skip_Grog_ring ()
 {
 	AI_Output			(other, self, "DIA_Addon_Skip_Grog_ring_15_00"); //Dej mi ten prsten.
-	AI_Output			(self, other, "DIA_Addon_Skip_Grog_ring_08_01"); //Tumáš.
+	AI_Output			(self, other, "DIA_Addon_Skip_Grog_ring_08_01"); //TumÃ¡Å¡.
 	B_GiveInvItems (self, other, ItRi_Prot_Edge_02, 1);		
 	Info_ClearChoices	(DIA_Addon_Skip_Grog);
 };
 func void DIA_Addon_Skip_Grog_gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Skip_Grog_gold_15_00"); //Dej mi peníze.
+	AI_Output			(other, self, "DIA_Addon_Skip_Grog_gold_15_00"); //Dej mi penÃ­ze.
 	AI_Output			(self, other, "DIA_Addon_Skip_Grog_gold_08_01"); //Fajn.
 	var int GrogKohle;
 	GrogKohle = (Value_Grog * 20);
@@ -594,7 +594,7 @@ INSTANCE DIA_Addon_Skip_News(C_INFO)
 	condition	= DIA_Addon_Skip_News_Condition;
 	information	= DIA_Addon_Skip_News_Info;
 	permanent	= FALSE;
-	description = "Máš nìco na prodej?";
+	description = "MÃ¡Å¡ nÄ›co na prodej?";
 };                       
 FUNC INT DIA_Addon_Skip_News_Condition()
 {
@@ -603,8 +603,8 @@ FUNC INT DIA_Addon_Skip_News_Condition()
 
 FUNC VOID DIA_Addon_Skip_News_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Skip_News_15_00"); //Nemáš nìco na prodej?
-	AI_Output (self ,other,"DIA_Addon_Skip_News_08_01"); //Jestli chceš vobchodovat, zajdi za Garettem, ten se nám stará vo zásoby.
+	AI_Output (other,self ,"DIA_Addon_Skip_News_15_00"); //NemÃ¡Å¡ nÄ›co na prodej?
+	AI_Output (self ,other,"DIA_Addon_Skip_News_08_01"); //Jestli chceÅ¡ vobchodovat, zajdi za Garettem, ten se nÃ¡m starÃ¡ vo zÃ¡soby.
 
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_GarettTrade);
@@ -627,7 +627,7 @@ INSTANCE DIA_Addon_Skip_Anheuern(C_INFO)
 	condition	= DIA_Addon_Skip_Anheuern_Condition;
 	information	= DIA_Addon_Skip_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Máš mi prı pomoci.";
+	description = "MÃ¡Å¡ mi prÃ½ pomoci.";
 };                       
 FUNC INT DIA_Addon_Skip_Anheuern_Condition()
 {
@@ -638,18 +638,18 @@ FUNC INT DIA_Addon_Skip_Anheuern_Condition()
 };
 func VOID DIA_Addon_Skip_Anheuern_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_00"); //Máš mi pomoct.
-	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_01"); //S èím?
-	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_01"); //Kaòon èeká.
+	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_00"); //MÃ¡Å¡ mi pomoct.
+	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_01"); //S ÄÃ­m?
+	AI_Output (other, self, "DIA_Addon_Skip_Anheuern_15_01"); //KaÅˆon ÄekÃ¡.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_02"); //Vidím, e sis vzal ještì pár chlapù, vıbornì! 
+		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_02"); //VidÃ­m, Å¾e sis vzal jeÅ¡tÄ› pÃ¡r chlapÅ¯, vÃ½bornÄ›! 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_03"); //Radši si s sebou vem ještì pár chlapù!
+		AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_03"); //RadÅ¡i si s sebou vem jeÅ¡tÄ› pÃ¡r chlapÅ¯!
 	};
-	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_04"); //Ten kaòon je pekelnì nebezpeènej!
+	AI_Output (self, other, "DIA_Addon_Skip_Anheuern_08_04"); //Ten kaÅˆon je pekelnÄ› nebezpeÄnej!
 };
 
 // ------------------------------------------------------------
@@ -662,7 +662,7 @@ instance DIA_Addon_Skip_ComeOn(C_INFO)
 	condition	= DIA_Addon_Skip_ComeOn_Condition;
 	information	= DIA_Addon_Skip_ComeOn_Info;
 	permanent	= TRUE;
-	description	= "Pojï se mnou.";
+	description	= "PojÄ se mnou.";
 };
 func int DIA_Addon_Skip_ComeOn_Condition ()
 {
@@ -675,15 +675,15 @@ func int DIA_Addon_Skip_ComeOn_Condition ()
 };
 func void DIA_Addon_Skip_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Skip_ComeOn_15_00"); //Pojï se mnou.
+	AI_Output (other, self, "DIA_Addon_Skip_ComeOn_15_00"); //PojÄ se mnou.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_02"); //Poèkej, napøed se vrátíme do kaòonu...
+		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_02"); //PoÄkej, napÅ™ed se vrÃ¡tÃ­me do kaÅˆonu...
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_01"); //Pojïme!
+		AI_Output (self ,other, "DIA_Addon_Skip_ComeOn_08_01"); //PojÄme!
 		if (C_BodyStateContains (self, BS_SIT))
 		{
 			AI_StandUp (self);
@@ -708,7 +708,7 @@ INSTANCE DIA_Addon_Skip_GoHome(C_INFO)
 	condition	= DIA_Addon_Skip_GoHome_Condition;
 	information	= DIA_Addon_Skip_GoHome_Info;
 	permanent	= TRUE;
-	description = "U tì nepotøebuju.";
+	description = "UÅ¾ tÄ› nepotÅ™ebuju.";
 };                       
 FUNC INT DIA_Addon_Skip_GoHome_Condition()
 {
@@ -720,8 +720,8 @@ FUNC INT DIA_Addon_Skip_GoHome_Condition()
 
 FUNC VOID DIA_Addon_Skip_GoHome_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Skip_GoHome_15_00"); //U tì nepotøebuju.
-	AI_Output (self, other, "DIA_Addon_Skip_GoHome_08_01"); //No tak dobøe, sejdeme se v táboøe.
+	AI_Output (other, self, "DIA_Addon_Skip_GoHome_15_00"); //UÅ¾ tÄ› nepotÅ™ebuju.
+	AI_Output (self, other, "DIA_Addon_Skip_GoHome_08_01"); //No tak dobÅ™e, sejdeme se v tÃ¡boÅ™e.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -749,14 +749,14 @@ FUNC INT DIA_Addon_Skip_TooFar_Condition()
 };
 func VOID DIA_Addon_Skip_TooFar_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_01"); //To u je dost daleko!
+	AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_01"); //To uÅ¾ je dost daleko!
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_02"); //Jestli chceš jít dál, tak s náma nepoèítej!
+		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_02"); //Jestli chceÅ¡ jÃ­t dÃ¡l, tak s nÃ¡ma nepoÄÃ­tej!
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_03"); //Jestli chceš jít dál, tak se mnou nepoèítej!
+		AI_Output (self ,other, "DIA_Addon_Skip_TooFar_08_03"); //Jestli chceÅ¡ jÃ­t dÃ¡l, tak se mnou nepoÄÃ­tej!
 	};
 	
 	B_Addon_PiratesGoHome();
@@ -787,8 +787,8 @@ FUNC INT DIA_Addon_Skip_Treffpunkt_Condition()
 };
 func VOID DIA_Addon_Skip_Treffpunkt_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_00"); //Jestli se nìjak ztratíme, sejdem se tady.
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_02"); //Tak pojïme!
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_00"); //Jestli se nÄ›jak ztratÃ­me, sejdem se tady.
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_02"); //Tak pojÄme!
 		
 	AI_StopProcessInfos (self); 
 };
@@ -815,7 +815,7 @@ FUNC INT DIA_Addon_Skip_Orks_Condition()
 };
 func VOID DIA_Addon_Skip_Orks_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_01"); //Skøeti! Nesnáším skøety!
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_01"); //SkÅ™eti! NesnÃ¡Å¡Ã­m skÅ™ety!
 
 	AI_StopProcessInfos (self); 
 };
@@ -842,9 +842,9 @@ FUNC INT DIA_Addon_Skip_AllRazorsDead_Condition()
 };
 func VOID DIA_Addon_Skip_AllRazorsDead_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_03"); //Nejspíš u jsme zlikvidovali všecky bøitovce.
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_04"); //Ale jestli chceš, mùem tu ještì chvíli pobíhat.
-	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_05"); //Pokud zùstanem v kaòonu. 
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_03"); //NejspÃ­Å¡ uÅ¾ jsme zlikvidovali vÅ¡ecky bÅ™itovce.
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_04"); //Ale jestli chceÅ¡, mÅ¯Å¾em tu jeÅ¡tÄ› chvÃ­li pobÃ­hat.
+	AI_Output (self ,other, "DIA_Addon_Skip_Add_08_05"); //Pokud zÅ¯stanem v kaÅˆonu. 
 	
 	AI_StopProcessInfos (self); 
 };

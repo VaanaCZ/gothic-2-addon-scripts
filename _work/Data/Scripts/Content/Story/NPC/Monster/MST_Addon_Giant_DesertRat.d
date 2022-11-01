@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_DesertRat(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"PouötnÌ krysa";
+	name							=	"Pou≈°tn√≠ krysa";
 	guild							=	GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Giant_Rat;
 	level							=	10;

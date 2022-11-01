@@ -14,7 +14,7 @@ func void B_MM_AssessDamage ()
 	if (Npc_HasItems (other, Holy_Hammer_MIS) > 0)
 	{
 		var C_NPC MagGol; MagGol = Hlp_GetNpc(MagicGolem);
-		Npc_GetInvItem(other, Holy_Hammer_MIS); //befüllt 'item'
+		Npc_GetInvItem(other, Holy_Hammer_MIS); //befÃ¼llt 'item'
 		var C_ITEM OthWeap; OthWeap = Npc_GetReadiedWeapon(other);
 		
 		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(MagGol))

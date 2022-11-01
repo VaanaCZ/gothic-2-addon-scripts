@@ -40,11 +40,11 @@ FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//U jsem pro rudobarony døel dost dlouho. Teï se tu pro zmìnu mùe lopotit zase nìkdo jinej.
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//UÅ¾ jsem pro rudobarony dÅ™el dost dlouho. TeÄ se tu pro zmÄ›nu mÅ¯Å¾e lopotit zase nÄ›kdo jinej.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Sakra, to teï jako máme zase dolovat sami nebo co?
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Sakra, to teÄ jako mÃ¡me zase dolovat sami nebo co?
 	};
 };
 //---------------------------------------------------------------------
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//To chce makat hlavnì hlavou, hochu. Dolování zlata je èistì mentální záleitost. Kámen k nièemu nepøinutíš – je tvrdší ne ty.
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Otevøi svou mysl a splyò se silou zlata. Je to jako meditace, jako modlitba.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//To chce makat hlavnÄ› hlavou, hochu. DolovÃ¡nÃ­ zlata je ÄistÄ› mentÃ¡lnÃ­ zÃ¡leÅ¾itost. KÃ¡men k niÄemu nepÅ™inutÃ­Å¡ â€“ je tvrdÅ¡Ã­ neÅ¾ ty.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//OtevÅ™i svou mysl a splyÅˆ se silou zlata. Je to jako meditace, jako modlitba.
 	
 	B_Upgrade_Hero_HackChance(10);
 };

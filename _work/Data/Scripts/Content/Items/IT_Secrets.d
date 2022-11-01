@@ -4,7 +4,7 @@
 //****************************************************************************
 INSTANCE ItSe_ErzFisch (C_Item)
 {	
-	name 				=	"Balonov· ryba";
+	name 				=	"Balonov√° ryba";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -17,7 +17,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 	on_state[0]			=	Use_ErzFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"V tÈto rybÏ je cosi ukryto.";		
+	TEXT[2]				= 	"V t√©to rybƒõ je cosi ukryto.";		
 	
 };
 
@@ -31,7 +31,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_GoldFisch (C_Item)
 {	
-	name 				=	"TÏûk· ryba";
+	name 				=	"Tƒõ≈æk√° ryba";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -44,7 +44,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 	on_state[0]			=	Use_GoldFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"V tÈto rybÏ je cosi ukryto.";		
+	TEXT[2]				= 	"V t√©to rybƒõ je cosi ukryto.";		
 	
 };
 
@@ -58,7 +58,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_Ringfisch (C_Item)
 {	
-	name 				=	"Mal· ryba";
+	name 				=	"Mal√° ryba";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -71,7 +71,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 	on_state[0]			=	Use_Ringfisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"V tÈto rybÏ je cosi ukryto.";		
+	TEXT[2]				= 	"V t√©to rybƒõ je cosi ukryto.";		
 	
 };
 
@@ -98,7 +98,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 	on_state[0]			=	Use_LockpickFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"V tÈto rybÏ je cosi ukryto.";		
+	TEXT[2]				= 	"V t√©to rybƒõ je cosi ukryto.";		
 	
 };
 
@@ -116,7 +116,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 //------------- 25 Gold -----------------------
 INSTANCE ItSe_GoldPocket25	(C_Item)
 {
-	name 				=	"MÏöec";
+	name 				=	"Mƒõ≈°ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -128,11 +128,11 @@ INSTANCE ItSe_GoldPocket25	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket25;
 	
-	description			= 	"MÏöec.";
+	description			= 	"Mƒõ≈°ec.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"V mÏöci cink· nÏkolik mincÌ.";
+	TEXT[2]				= 	"V mƒõ≈°ci cink√° nƒõkolik minc√≠.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -145,7 +145,7 @@ FUNC VOID GoldPocket25 ()
 //------------- 50 Gold -----------------------
 INSTANCE ItSe_GoldPocket50	(C_Item)
 {
-	name 				=	"MÏöec";
+	name 				=	"Mƒõ≈°ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -157,11 +157,11 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket50;
 	
-	description			= 	"MÏöec.";
+	description			= 	"Mƒõ≈°ec.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Tento v·Ëek je pln˝ mincÌ.";
+	TEXT[2]				= 	"Tento v√°ƒçek je pln√Ω minc√≠.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -174,7 +174,7 @@ FUNC VOID GoldPocket50 ()
 //------------- 100 Gold -----------------------
 INSTANCE ItSe_GoldPocket100	(C_Item)
 {
-	name 				=	"MÏöec";
+	name 				=	"Mƒõ≈°ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -186,12 +186,12 @@ INSTANCE ItSe_GoldPocket100	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket100;
 	
-	description			= 	"MÏöec.";
+	description			= 	"Mƒõ≈°ec.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Po¯·dnÏ tÏûk˝ v·Ëek,";
-	TEXT[3]				= 	"nadit˝ mincemi.";
+	TEXT[2]				= 	"Po≈ô√°dnƒõ tƒõ≈æk√Ω v√°ƒçek,";
+	TEXT[3]				= 	"nadit√Ω mincemi.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -203,7 +203,7 @@ FUNC VOID GoldPocket100 ()
 //------------- Hannas Beutel -----------------------
 INSTANCE ItSe_HannasBeutel	(C_Item)
 {
-	name 				=	"MÏöec";
+	name 				=	"Mƒõ≈°ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -215,7 +215,7 @@ INSTANCE ItSe_HannasBeutel	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   HannasBeutel;
 	
-	description			= 	"MÏöec.";
+	description			= 	"Mƒõ≈°ec.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";

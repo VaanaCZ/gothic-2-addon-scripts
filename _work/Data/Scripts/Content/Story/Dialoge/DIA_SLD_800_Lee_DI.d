@@ -31,7 +31,7 @@ instance DIA_Lee_DI_Hallo		(C_INFO)
 	condition	 = 	DIA_Lee_DI_Hallo_Condition;
 	information	 = 	DIA_Lee_DI_Hallo_Info;
 
-	description	 = 	"Co za práci si vezmeš?";
+	description	 = 	"Co za prÃ¡ci si vezmeÅ¡?";
 };
 func int DIA_Lee_DI_Hallo_Condition ()
 {	
@@ -43,8 +43,8 @@ func int DIA_Lee_DI_Hallo_Condition ()
 
 func void DIA_Lee_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Co za práci si vezmeš?
-	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Nìkdo musí na loï dohlíet. Zùstanu tady a postarám se o to, aby tady byla, a se vrátíš.
+	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Co za prÃ¡ci si vezmeÅ¡?
+	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //NÄ›kdo musÃ­ na loÄ dohlÃ­Å¾et. ZÅ¯stanu tady a postarÃ¡m se o to, aby tady byla, aÅ¾ se vrÃ¡tÃ­Å¡.
 	
 };
 
@@ -60,7 +60,7 @@ instance DIA_Lee_DI_PERM6		(C_INFO)
 	information	 = 	DIA_Lee_DI_PERM6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co moje loï?";
+	description	 = 	"Co moje loÄ?";
 };
 
 func int DIA_Lee_DI_PERM6_Condition ()
@@ -74,15 +74,15 @@ func int DIA_Lee_DI_PERM6_Condition ()
 
 func void DIA_Lee_DI_PERM6_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Co moje loï?
+	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Co moje loÄ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_01"); //Neboj se. Mám všechno pod kontrolou.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_01"); //Neboj se. MÃ¡m vÅ¡echno pod kontrolou.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //Všechno je v poøádku. Jen a se ti mizerní skøeti vrátí. Uštìdøím jim další vıprask.
+		AI_Output			(self, other, "DIA_Lee_DI_PERM6_04_02"); //VÅ¡echno je v poÅ™Ã¡dku. Jen aÅ¥ se ti mizernÃ­ skÅ™eti vrÃ¡tÃ­. UÅ¡tÄ›dÅ™Ã­m jim dalÅ¡Ã­ vÃ½prask.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -100,7 +100,7 @@ INSTANCE DIA_Lee_DI_Teach(C_INFO)
 	information	= DIA_Lee_DI_Teach_Info;
 	permanent	= TRUE;
 	
-	description = "Potøebuji vıcvik.";
+	description = "PotÅ™ebuji vÃ½cvik.";
 };                       
 
 FUNC INT DIA_Lee_DI_Teach_Condition()
@@ -113,8 +113,8 @@ FUNC INT DIA_Lee_DI_Teach_Condition()
  
 FUNC VOID DIA_Lee_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //Potøebuji se vycvièit.
-	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //V èem pøesnì se chceš zlepšit?
+	AI_Output (other,self ,"DIA_Lee_DI_Teach_15_00"); //PotÅ™ebuji se vycviÄit.
+	AI_Output (self,other ,"DIA_Lee_DI_Teach_04_01"); //V Äem pÅ™esnÄ› se chceÅ¡ zlepÅ¡it?
 	
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -128,7 +128,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Tvoje obrana je strašná, ale bude to muset staèit.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //Tvoje obrana je straÅ¡nÃ¡, ale bude to muset staÄit.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -143,7 +143,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_5_04_00"); //Máš moc tuhá zápìstí. Zbraò musíš dret volnìji.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_5_04_00"); //MÃ¡Å¡ moc tuhÃ¡ zÃ¡pÄ›stÃ­. ZbraÅˆ musÃ­Å¡ drÅ¾et volnÄ›ji.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -158,7 +158,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //Vdycky mìj na pamìti, e švih vychází z bokù, ne ze zápìstí.
+		AI_Output(self,other,"DIA_DIA_Lee_DI_Teach_2H_1_04_00"); //VÅ¾dycky mÄ›j na pamÄ›ti, Å¾e Å¡vih vychÃ¡zÃ­ z bokÅ¯, ne ze zÃ¡pÄ›stÃ­.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //I ten nejsilnìjší vıpad je k nièemu, kdy nic nezasáhne. Svou sílu tedy pouívej s rozvahou.
+		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //I ten nejsilnÄ›jÅ¡Ã­ vÃ½pad je k niÄemu, kdyÅ¾ nic nezasÃ¡hne. Svou sÃ­lu tedy pouÅ¾Ã­vej s rozvahou.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -200,7 +200,7 @@ instance DIA_Lee_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Lee_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Teï si pùjdeme po svém.";
+	description = 	"TeÄ si pÅ¯jdeme po svÃ©m.";
 };
 
 func int DIA_Lee_DI_UndeadDragonDead_Condition ()
@@ -214,26 +214,26 @@ func int DIA_Lee_DI_UndeadDragonDead_Condition ()
 var int DIA_Lee_DI_UndeadDragonDead_OneTime;
 func void DIA_Lee_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Mùeme vyrazit. Nepøítel je mrtvı.
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Vıbornì. V tom pøípadì øekni kapitánovi, a zvedne kotvy.
+	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //MÅ¯Å¾eme vyrazit. NepÅ™Ã­tel je mrtvÃ½.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //VÃ½bornÄ›. V tom pÅ™Ã­padÄ› Å™ekni kapitÃ¡novi, aÅ¥ zvedne kotvy.
 
 	if (DIA_Lee_DI_UndeadDragonDead_OneTime == FALSE)
 	&& (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Vezmeš mì na pevninu, e?
-			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Ano. Khorinis to bez tebe zvládne.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
-			AI_Output (self ,other, "DIA_Lee_Add_04_2&"); //Pak budu moct koneènì navštívit krále, co u dlouho odkládám.
-			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Na tuhle chvíli jsem èekal strašnì dlouho.
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Co myslíš? Nemìla by bıt trpìlivost nakonec odmìnìna?
-			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //Trpìlivost a pár pádnıch argumentù.
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(zasmìje se) Jo. Bez trochy hrubé síly by to nešlo. Byla èest jít do bitvy po tvém boku.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //VezmeÅ¡ mÄ› na pevninu, Å¾e?
+			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Ano. Khorinis to bez tebe zvlÃ¡dne.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			AI_Output (self ,other, "DIA_Lee_Add_04_2&"); //Pak budu moct koneÄnÄ› navÅ¡tÃ­vit krÃ¡le, coÅ¾ uÅ¾ dlouho odklÃ¡dÃ¡m.
+			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Na tuhle chvÃ­li jsem Äekal straÅ¡nÄ› dlouho.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Co myslÃ­Å¡? NemÄ›la by bÃ½t trpÄ›livost nakonec odmÄ›nÄ›na?
+			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //TrpÄ›livost a pÃ¡r pÃ¡dnÃ½ch argumentÅ¯.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(zasmÄ›je se) Jo. Bez trochy hrubÃ© sÃ­ly by to neÅ¡lo. Byla Äest jÃ­t do bitvy po tvÃ©m boku.
 			DIA_Lee_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Snad se po tomhle dobrodruství naše cesty zase nìkdy zkøíí.
+	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_08"); //Snad se po tomhle dobrodruÅ¾stvÃ­ naÅ¡e cesty zase nÄ›kdy zkÅ™Ã­Å¾Ã­.
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"Zaèít");
+	Npc_ExchangeRoutine	(self,"ZaÄÃ­t");
 };
 
 // ************************************************************

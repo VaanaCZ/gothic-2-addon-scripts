@@ -77,11 +77,11 @@ FUNC INT DIA_Ignaz_Hallo_Condition()
 };
 FUNC VOID DIA_Ignaz_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_00");//Á - pøišel jsi právì vèas. Potøebuju pro své magické pokusy nìjakého asistenta.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_01");//Jsem si jistı, e jsi celı nedoèkavı, jak mi ve vìdeckém zájmu udìlat malou laskavost.
-	AI_Output (other, self, "DIA_Ignaz_Hallo_15_02");//Pomalu, pøíteli. Nejdøív mi øekni, o co vlastnì jde.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_03");//Vymyslel jsem nové kouzlo. Kouzlo zapomnìní.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_04");//U jsem úspìšnì provedl nìkolik praktickıch zkoušek, ale na finální test se mi nedostává èasu.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_00");//Ã - pÅ™iÅ¡el jsi prÃ¡vÄ› vÄas. PotÅ™ebuju pro svÃ© magickÃ© pokusy nÄ›jakÃ©ho asistenta.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_01");//Jsem si jistÃ½, Å¾e jsi celÃ½ nedoÄkavÃ½, jak mi ve vÄ›deckÃ©m zÃ¡jmu udÄ›lat malou laskavost.
+	AI_Output (other, self, "DIA_Ignaz_Hallo_15_02");//Pomalu, pÅ™Ã­teli. NejdÅ™Ã­v mi Å™ekni, o co vlastnÄ› jde.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_03");//Vymyslel jsem novÃ© kouzlo. Kouzlo zapomnÄ›nÃ­.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_04");//UÅ¾ jsem ÃºspÄ›Å¡nÄ› provedl nÄ›kolik praktickÃ½ch zkouÅ¡ek, ale na finÃ¡lnÃ­ test se mi nedostÃ¡vÃ¡ Äasu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lerninhalte Traenke
@@ -93,7 +93,7 @@ INSTANCE DIA_Ignaz_Traenke   (C_INFO)
 	condition   = DIA_Ignaz_Traenke_Condition;
 	information = DIA_Ignaz_Traenke_Info;
 	permanent   = FALSE;
-	description = "Co z toho budu mít, kdy ti pomùu?";
+	description = "Co z toho budu mÃ­t, kdyÅ¾ ti pomÅ¯Å¾u?";
 };
 
 FUNC INT DIA_Ignaz_Traenke_Condition()
@@ -105,10 +105,10 @@ FUNC INT DIA_Ignaz_Traenke_Condition()
 };
 FUNC VOID DIA_Ignaz_Traenke_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//Co z toho budu mít, kdy ti pomùu?
-	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//Mùu tì nauèit, jak se pøipravují lektvary.
-	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//Znám recepty na léèivou esenci, esenci many a lektvar rychlosti.
-	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//Außerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
+	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//Co z toho budu mÃ­t, kdyÅ¾ ti pomÅ¯Å¾u?
+	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//MÅ¯Å¾u tÄ› nauÄit, jak se pÅ™ipravujÃ­ lektvary.
+	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//ZnÃ¡m recepty na lÃ©Äivou esenci, esenci many a lektvar rychlosti.
+	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//AuÃŸerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ INSTANCE DIA_Ignaz_Experiment   (C_INFO)
 	condition   = DIA_Ignaz_Experiment_Condition;
 	information = DIA_Ignaz_Experiment_Info;
 	permanent   = FALSE;
-	description = "Øekni mi o tom experimentu a kouzlu víc.";
+	description = "Å˜ekni mi o tom experimentu a kouzlu vÃ­c.";
 };
 
 FUNC INT DIA_Ignaz_Experiment_Condition()
@@ -130,16 +130,16 @@ FUNC INT DIA_Ignaz_Experiment_Condition()
 };
 FUNC VOID DIA_Ignaz_Experiment_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");//Øekni mi o tom experimentu a kouzlu víc.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");//To kouzlo má za následek, e si urèitá osoba nepamatuje rùzné události.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");//U se mi podaøilo zjistit, e to funguje, pokud je dotyèná osoba naštvaná - napøíklad pokud jí nìkdo právì dal nakládaèku, nebo ji oloupil.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");//Dokonce i kdy je jen svìdkem takové události, tak se jí to pak vymae z pamìti.
-	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");//To bych jako mìl nìkoho srazit na zem a pak na nìj seslat kouzlo?
-	AI_Output (other, self, "DIA_Ignaz_Add_15_00"); //Funguje to jen v pøípadì, e je obì po boji OPRAVDU naštvaná.
-	AI_Output (other, self, "DIA_Ignaz_Add_15_01"); //(pro sebe) Tady v pøístavní ètvrti se to mlátí poøád. Radìji bych si mìl obì vyhlídnout nìkde jinde.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");//Ano, mám dojem, es trefil høebíèek na hlavièku. Ale abys nìkoho naštval, staèí, abys ho napadl, nemusíš ho srazit k zemi.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");//Take by sis mìl vybrat nìkoho, kdo je o samotì - pokud kolem budou lidé, jen se dostaneš do potíí s lordem Andrem.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_07");//Taky nemá ádnı smysl sesílat kouzlo na nìkoho, kdo na tebe právì útoèí. Poèkej na ten správnı okamik.
+	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");//Å˜ekni mi o tom experimentu a kouzlu vÃ­c.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");//To kouzlo mÃ¡ za nÃ¡sledek, Å¾e si urÄitÃ¡ osoba nepamatuje rÅ¯znÃ© udÃ¡losti.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");//UÅ¾ se mi podaÅ™ilo zjistit, Å¾e to funguje, pokud je dotyÄnÃ¡ osoba naÅ¡tvanÃ¡ - napÅ™Ã­klad pokud jÃ­ nÄ›kdo prÃ¡vÄ› dal naklÃ¡daÄku, nebo ji oloupil.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");//Dokonce i kdyÅ¾ je jen svÄ›dkem takovÃ© udÃ¡losti, tak se jÃ­ to pak vymaÅ¾e z pamÄ›ti.
+	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");//To bych jako mÄ›l nÄ›koho srazit na zem a pak na nÄ›j seslat kouzlo?
+	AI_Output (other, self, "DIA_Ignaz_Add_15_00"); //Funguje to jen v pÅ™Ã­padÄ›, Å¾e je obÄ›Å¥ po boji OPRAVDU naÅ¡tvanÃ¡.
+	AI_Output (other, self, "DIA_Ignaz_Add_15_01"); //(pro sebe) Tady v pÅ™Ã­stavnÃ­ Ätvrti se to mlÃ¡tÃ­ poÅ™Ã¡d. RadÄ›ji bych si mÄ›l obÄ›Å¥ vyhlÃ­dnout nÄ›kde jinde.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");//Ano, mÃ¡m dojem, Å¾es trefil hÅ™ebÃ­Äek na hlaviÄku. Ale abys nÄ›koho naÅ¡tval, staÄÃ­, abys ho napadl, nemusÃ­Å¡ ho srazit k zemi.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");//TakÅ¾e by sis mÄ›l vybrat nÄ›koho, kdo je o samotÄ› - pokud kolem budou lidÃ©, jen se dostaneÅ¡ do potÃ­Å¾Ã­ s lordem Andrem.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_07");//Taky nemÃ¡ Å¾Ã¡dnÃ½ smysl sesÃ­lat kouzlo na nÄ›koho, kdo na tebe prÃ¡vÄ› ÃºtoÄÃ­. PoÄkej na ten sprÃ¡vnÃ½ okamÅ¾ik.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info teilnhemen
@@ -151,7 +151,7 @@ INSTANCE DIA_Ignaz_teilnehmen   (C_INFO)
 	condition   = DIA_Ignaz_teilnehmen_Condition;
 	information = DIA_Ignaz_teilnehmen_Info;
 	permanent   = FALSE;
-	description = "Dobrá, vyzkouším to kouzlo.";
+	description = "DobrÃ¡, vyzkouÅ¡Ã­m to kouzlo.";
 };
 
 FUNC INT DIA_Ignaz_teilnehmen_Condition()
@@ -163,17 +163,17 @@ FUNC INT DIA_Ignaz_teilnehmen_Condition()
 };
 FUNC VOID DIA_Ignaz_teilnehmen_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_teilnehmen_15_00");//Dobrá, vyzkouším to kouzlo.
-	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_01");//Tak si vezmi tenhle svitek a vyzkoušej si ivot pokusné myši.
-	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_02");//A to provedeš, tak se vra o tom poreferovat.
+	AI_Output (other, self, "DIA_Ignaz_teilnehmen_15_00");//DobrÃ¡, vyzkouÅ¡Ã­m to kouzlo.
+	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_01");//Tak si vezmi tenhle svitek a vyzkouÅ¡ej si Å¾ivot pokusnÃ© myÅ¡i.
+	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_02");//AÅ¾ to provedeÅ¡, tak se vraÅ¥ o tom poreferovat.
 	
 	B_GiveInvItems (self, other, ITSC_Charm,1);
 	MIS_Ignaz_Charm = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Ignaz,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Ignaz,LOG_RUNNING);
-	B_LogEntry (TOPIC_Ignaz,"Mám vyzkoušet nové Ignazovo kouzlo - kouzlo zapomnìní. Kdy se na mì nìkdo pøi bitce nebo z jiného dùvodu rozhnìvá, urèitì se se mnou u nebude chtít bavit. A tehdy nastane pravá chvíle pro pouití tohoto zaklínadla.");
-	B_LogEntry (TOPIC_Ignaz,"Tohle je ideální pøíleitost vyzkoušet to kouzlo - pod jeho pùsobením také zapomene ohlásit mimoøádnou událost. Nemyslím si, e by menší rvaèka v pøístavu vzbudila velkı rozruch.");
+	B_LogEntry (TOPIC_Ignaz,"MÃ¡m vyzkouÅ¡et novÃ© Ignazovo kouzlo - kouzlo zapomnÄ›nÃ­. KdyÅ¾ se na mÄ› nÄ›kdo pÅ™i bitce nebo z jinÃ©ho dÅ¯vodu rozhnÄ›vÃ¡, urÄitÄ› se se mnou uÅ¾ nebude chtÃ­t bavit. A tehdy nastane pravÃ¡ chvÃ­le pro pouÅ¾itÃ­ tohoto zaklÃ­nadla.");
+	B_LogEntry (TOPIC_Ignaz,"Tohle je ideÃ¡lnÃ­ pÅ™Ã­leÅ¾itost vyzkouÅ¡et to kouzlo - pod jeho pÅ¯sobenÃ­m takÃ© zapomene ohlÃ¡sit mimoÅ™Ã¡dnou udÃ¡lost. NemyslÃ­m si, Å¾e by menÅ¡Ã­ rvaÄka v pÅ™Ã­stavu vzbudila velkÃ½ rozruch.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -201,8 +201,8 @@ FUNC INT DIA_Ignaz_Running_Condition()
 FUNC VOID DIA_Ignaz_Running_Info()
 {
 	AI_Output (other, self, "DIA_Ignaz_Running_15_00");//K tomu experimentu...
-	AI_Output (self, other, "DIA_Ignaz_Running_14_01");//Tak co, uspìl jsi? Nebo jsi to kouzlo jen tak zbùhdarma vyplıtval? Co?
-	AI_Output (self, other, "DIA_Ignaz_Running_14_02");//Jestli potøebuješ další svitky, tak si je ode mì mùeš koupit.
+	AI_Output (self, other, "DIA_Ignaz_Running_14_01");//Tak co, uspÄ›l jsi? Nebo jsi to kouzlo jen tak zbÅ¯hdarma vyplÃ½tval? Co?
+	AI_Output (self, other, "DIA_Ignaz_Running_14_02");//Jestli potÅ™ebujeÅ¡ dalÅ¡Ã­ svitky, tak si je ode mÄ› mÅ¯Å¾eÅ¡ koupit.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -215,7 +215,7 @@ INSTANCE DIA_Ignaz_Danach   (C_INFO)
 	condition   = DIA_Ignaz_Danach_Condition;
 	information = DIA_Ignaz_Danach_Info;
 	permanent   = FALSE;
-	description = "Pouil jsem ten svitek.";
+	description = "PouÅ¾il jsem ten svitek.";
 };
 FUNC INT DIA_Ignaz_Danach_Condition()
 {	
@@ -227,20 +227,20 @@ FUNC INT DIA_Ignaz_Danach_Condition()
 };
 FUNC VOID DIA_Ignaz_Danach_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Danach_15_00");//Pouil jsem ten svitek.
+	AI_Output (other, self, "DIA_Ignaz_Danach_15_00");//PouÅ¾il jsem ten svitek.
 	AI_Output (self, other, "DIA_Ignaz_Danach_14_01");//Fajn, fajn. A povedlo se?
 	AI_Output (other, self, "DIA_Ignaz_Danach_15_02");//Ano, funguje to.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_03");//Vıbornì. Malı krok pro vìdu, ale obrovskı pro mì!
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_04");//Teï mùu nìco ze svého èasu vyuít na to, abych tì zasvìtil do tajù alchymie.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_05");//Taky ti mùu dát nìkolik uiteènıch vìcí, jestli máš zájem.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_03");//VÃ½bornÄ›. MalÃ½ krok pro vÄ›du, ale obrovskÃ½ pro mÄ›!
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_04");//TeÄ mÅ¯Å¾u nÄ›co ze svÃ©ho Äasu vyuÅ¾Ã­t na to, abych tÄ› zasvÄ›til do tajÅ¯ alchymie.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_05");//Taky ti mÅ¯Å¾u dÃ¡t nÄ›kolik uÅ¾iteÄnÃ½ch vÄ›cÃ­, jestli mÃ¡Å¡ zÃ¡jem.
 	
 	Ignaz_TeachAlchemy = TRUE;
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Ignaz mi ukáe nìkteré recepty na míchání lektvarù. ije v pøístavní ètvrti.");
+	B_LogEntry (Topic_CityTeacher,"Ignaz mi ukÃ¡Å¾e nÄ›kterÃ© recepty na mÃ­chÃ¡nÃ­ lektvarÅ¯. Å½ije v pÅ™Ã­stavnÃ­ Ätvrti.");
 	MIS_Ignaz_Charm = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MIS_Ignaz_Charm);
 	
-	//PATCH fallls alle Scrolls aufgekauft oder geplündert wurden
+	//PATCH fallls alle Scrolls aufgekauft oder geplÃ¼ndert wurden
 	CreateInvItems (self,ITSC_Charm		, 3);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -254,7 +254,7 @@ INSTANCE DIA_Ignaz_Trade   (C_INFO)
 	information = DIA_Ignaz_Trade_Info;
 	permanent   = TRUE;
 	trade 		= TRUE;
-	description = "Uka mi své zboí.";
+	description = "UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 FUNC INT DIA_Ignaz_Trade_Condition()
 {	
@@ -267,7 +267,7 @@ FUNC INT DIA_Ignaz_Trade_Condition()
 FUNC VOID DIA_Ignaz_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Ignaz_Trade_15_00");//Uka mi své zboí.
+	AI_Output (other, self, "DIA_Ignaz_Trade_15_00");//UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -280,7 +280,7 @@ INSTANCE DIA_Ignaz_Teach   (C_INFO)
 	condition   = DIA_Ignaz_Teach_Condition;
 	information = DIA_Ignaz_Teach_Info;
 	permanent   = TRUE;
-	description = "Nauè mì nìco z alchymie.";
+	description = "NauÄ mÄ› nÄ›co z alchymie.";
 };
 //----------------------------------------
 var int DIA_Ignaz_Teach_permanent;
@@ -298,7 +298,7 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//Nauè mì nìco z alchymie.
+	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//NauÄ mÄ› nÄ›co z alchymie.
 	
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
@@ -323,26 +323,26 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Esence hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Esence hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
 		talente = (talente + 1);
 	};
 	if (talente > 0)
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //K pøípravì lektvaru s pomocí alchymistické kolony potøebuješ laboratorní baòku.
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //Na kadı lektvar budeš taky potøebovat rùzné rostliny a další ingredience.
-			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benötigten Pflanzen dafür sehr selten sind.
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //K pÅ™Ã­pravÄ› lektvaru s pomocÃ­ alchymistickÃ© kolony potÅ™ebujeÅ¡ laboratornÃ­ baÅˆku.
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //Na kaÅ¾dÃ½ lektvar budeÅ¡ taky potÅ™ebovat rÅ¯znÃ© rostliny a dalÅ¡Ã­ ingredience.
+			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benÃ¶tigten Pflanzen dafÃ¼r sehr selten sind.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //Co bys rád vìdìl?
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //Co bys rÃ¡d vÄ›dÄ›l?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //U znáš všechno, èemu bych tì mohl nauèit.
+		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //UÅ¾ znÃ¡Å¡ vÅ¡echno, Äemu bych tÄ› mohl nauÄit.
 		DIA_Ignaz_Teach_permanent = TRUE;
 	};
 };

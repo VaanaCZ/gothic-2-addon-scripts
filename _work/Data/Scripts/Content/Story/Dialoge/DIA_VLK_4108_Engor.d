@@ -41,14 +41,14 @@ func int DIA_Engor_HALLO_Condition ()
 func void DIA_Engor_HALLO_Info ()
 {
 	
- 	AI_Output (self, other, "DIA_Engor_HALLO_13_00"); //Ah, ty jsi ten chlapÌk, kter˝ p¯eûil cestu pr˘smykem.
+ 	AI_Output (self, other, "DIA_Engor_HALLO_13_00"); //Ah, ty jsi ten chlap√≠k, kter√Ω p≈ôe≈æil cestu pr≈Øsmykem.
 	AI_Output (other, self, "DIA_Engor_HALLO_15_01"); //Ano.
-	AI_Output (self, other, "DIA_Engor_HALLO_13_02"); //V˝bornÏ. J· jsem Engor - m·m na starosti z·sobov·nÌ.
-	AI_Output (self, other, "DIA_Engor_HALLO_13_03"); //Jen si nemysli, ûe ti d·m nÏco zadarmo!
-	AI_Output (self, other, "DIA_Engor_HALLO_13_04"); //Ale pokud m·ö po kaps·ch zlato, jsem vûdy ochoten uzav¯Ìt obchod.
+	AI_Output (self, other, "DIA_Engor_HALLO_13_02"); //V√Ωbornƒõ. J√° jsem Engor - m√°m na starosti z√°sobov√°n√≠.
+	AI_Output (self, other, "DIA_Engor_HALLO_13_03"); //Jen si nemysli, ≈æe ti d√°m nƒõco zadarmo!
+	AI_Output (self, other, "DIA_Engor_HALLO_13_04"); //Ale pokud m√°≈° po kaps√°ch zlato, jsem v≈ædy ochoten uzav≈ô√≠t obchod.
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
-	B_LogEntry(TOPIC_Trader_OC, "Engor se star· o z·sobov·nÌ hradu a bokem taky trochu obchoduje.");  
+	B_LogEntry(TOPIC_Trader_OC, "Engor se star√° o z√°sobov√°n√≠ hradu a bokem taky trochu obchoduje.");  
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Handeln
@@ -61,7 +61,7 @@ instance DIA_Engor_HANDELN		(C_INFO)
 	information	 = 	DIA_Engor_HANDELN_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Ukaû mi svÈ zboûÌ.";
+	description	 = 	"Uka≈æ mi sv√© zbo≈æ√≠.";
 };
 
 func int DIA_Engor_HANDELN_Condition ()
@@ -88,7 +88,7 @@ func void DIA_Engor_HANDELN_Info ()
 	CreateInvItems 	(self, ItRw_Arrow, McArrowAmount );
 	//////////////////////////////////////////////////////////////////////////////////////
 
-	AI_Output			(other, self, "DIA_Engor_HANDELN_15_00"); //Ukaû mi svÈ zboûÌ.
+	AI_Output			(other, self, "DIA_Engor_HANDELN_15_00"); //Uka≈æ mi sv√© zbo≈æ√≠.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ABOUTPARLAF
@@ -99,7 +99,7 @@ instance DIA_Engor_ABOUTPARLAF		(C_INFO)
 	nr		 	 = 	2;
 	condition	 = 	DIA_Engor_ABOUTPARLAF_Condition;
 	information	 = 	DIA_Engor_ABOUTPARLAF_Info;
-	description	 = 	"Ty m·ö na starosti p¯ÌdÏly potravin, nem˝lÌm-li se.";
+	description	 = 	"Ty m√°≈° na starosti p≈ô√≠dƒõly potravin, nem√Ωl√≠m-li se.";
 };
 
 func int DIA_Engor_ABOUTPARLAF_Condition ()
@@ -111,9 +111,9 @@ func int DIA_Engor_ABOUTPARLAF_Condition ()
 };
 func void DIA_Engor_ABOUTPARLAF_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_ABOUTPARLAF_15_00"); //Ty jsi jedin˝, kdo vyd·v· potraviny, nem˝lÌm-li se.
-	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_01"); //To je pravda. ProË? M·m tÏ teÔ taky nakrmit?
-	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_02"); //Pokud nÏco chceö, zaplatÌö za to - stejnÏ jako vöichni ostatnÌ.
+	AI_Output (other, self, "DIA_Engor_ABOUTPARLAF_15_00"); //Ty jsi jedin√Ω, kdo vyd√°v√° potraviny, nem√Ωl√≠m-li se.
+	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_01"); //To je pravda. Proƒç? M√°m tƒõ teƒè taky nakrmit?
+	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_02"); //Pokud nƒõco chce≈°, zaplat√≠≈° za to - stejnƒõ jako v≈°ichni ostatn√≠.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ruestung
@@ -125,7 +125,7 @@ instance DIA_Engor_Ruestung		(C_INFO)
 	condition	 = 	DIA_Engor_Ruestung_Condition;
 	information	 = 	DIA_Engor_Ruestung_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"M·ö pro mÏ nÏco zajÌmavÈho?";
+	description	 = 	"M√°≈° pro mƒõ nƒõco zaj√≠mav√©ho?";
 };
 
 func int DIA_Engor_Ruestung_Condition ()
@@ -137,9 +137,9 @@ func int DIA_Engor_Ruestung_Condition ()
 };
 func void DIA_Engor_Ruestung_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_Ruestung_15_00"); //M·ö pro mÏ nÏco zajÌmavÈho?
-	AI_Output (self, other, "DIA_Engor_Ruestung_13_01"); //M˘ûu ti sehnat lepöÌ brnÏnÌ - tÏûkÈ brnÏnÌ domobrany, pokud m·ö z·jem.
-	AI_Output (self, other, "DIA_Engor_Ruestung_13_02"); //Samoz¯ejmÏ to nenÌ levnÈ. Tak seûeÚ zlato a j· ti d·m brnÏnÌ.
+	AI_Output (other, self, "DIA_Engor_Ruestung_15_00"); //M√°≈° pro mƒõ nƒõco zaj√≠mav√©ho?
+	AI_Output (self, other, "DIA_Engor_Ruestung_13_01"); //M≈Ø≈æu ti sehnat lep≈°√≠ brnƒõn√≠ - tƒõ≈æk√© brnƒõn√≠ domobrany, pokud m√°≈° z√°jem.
+	AI_Output (self, other, "DIA_Engor_Ruestung_13_02"); //Samoz≈ôejmƒõ to nen√≠ levn√©. Tak se≈æe≈à zlato a j√° ti d√°m brnƒõn√≠.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info RSkaufen
@@ -151,7 +151,7 @@ instance DIA_Engor_RSkaufen		(C_INFO)
 	condition	 = 	DIA_Engor_RSkaufen_Condition;
 	information	 = 	DIA_Engor_RSkaufen_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Koupit tÏûkou zbroj domobrany (Ochrana: zbranÏ 60, öÌpy 60. Cena: 2500 zlat˝ch)"; 
+	description	 = 	"Koupit tƒõ≈ækou zbroj domobrany (Ochrana: zbranƒõ 60, ≈°√≠py 60. Cena: 2500 zlat√Ωch)"; 
 };
 //--------------------------------------
 var int DIA_Engor_RSkaufen_perm;
@@ -169,14 +169,14 @@ func void DIA_Engor_RSkaufen_Info ()
 {
 	if (B_GiveInvItems (other, self, Itmi_Gold,2500))
 	{
-		AI_Output (other, self, "DIA_Engor_RSkaufen_15_00"); //Dej mi to brnÏnÌ.
-		AI_Output (self, other, "DIA_Engor_RSkaufen_13_01"); //Tady ho m·ö, dob¯e tÏ ochr·nÌ - je to zatracenÏ dobr· pr·ce.
+		AI_Output (other, self, "DIA_Engor_RSkaufen_15_00"); //Dej mi to brnƒõn√≠.
+		AI_Output (self, other, "DIA_Engor_RSkaufen_13_01"); //Tady ho m√°≈°, dob≈ôe tƒõ ochr√°n√≠ - je to zatracenƒõ dobr√° pr√°ce.
 		B_GiveInvItems (self,other, ITAR_MIL_M,1);
 		DIA_Engor_RSkaufen_perm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Engor_RSkaufen_13_02"); //Nejd¯Ìve seûeÚ zlato.
+		AI_Output (self, other, "DIA_Engor_RSkaufen_13_02"); //Nejd≈ô√≠ve se≈æe≈à zlato.
 	};
 };
 
@@ -189,7 +189,7 @@ instance DIA_Engor_HELP		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Engor_HELP_Condition;
 	information	 = 	DIA_Engor_HELP_Info;
-	description	 = 	"Moûn· bych ti mohl s tvou pracÌ pomoci.";
+	description	 = 	"Mo≈æn√° bych ti mohl s tvou prac√≠ pomoci.";
 };
 
 func int DIA_Engor_HELP_Condition ()
@@ -201,36 +201,36 @@ func int DIA_Engor_HELP_Condition ()
 };
 func void DIA_Engor_HELP_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_15_00"); //Moûn· ti mohl s nÏËÌm pomoci.
-	AI_Output (self, other, "DIA_Engor_HELP_13_01"); //Hmm.. JistÏ, proË ne? Pot¯eboval bych pomoc.
-	AI_Output (other, self, "DIA_Engor_HELP_15_02"); //Tak, co je t¯eba udÏlat?
-	AI_Output (self, other, "DIA_Engor_HELP_13_03"); //Naöe z·soby jÌdla jsou malÈ. P¯edevöÌm jsme tÈmÏ¯ bez masa.
-	AI_Output (self, other, "DIA_Engor_HELP_13_04"); //Tak pokud m˘ûeö sehnat nÏjakÈ maso, syrovÈ nebo va¯enÈ, öunku nebo klob·sky, bylo by to kvitov·no s velk˝m povdÏkem. Co tomu ¯Ìk·ö, pom˘ûeö n·m?
+	AI_Output (other, self, "DIA_Engor_HELP_15_00"); //Mo≈æn√° ti mohl s nƒõƒç√≠m pomoci.
+	AI_Output (self, other, "DIA_Engor_HELP_13_01"); //Hmm.. Jistƒõ, proƒç ne? Pot≈ôeboval bych pomoc.
+	AI_Output (other, self, "DIA_Engor_HELP_15_02"); //Tak, co je t≈ôeba udƒõlat?
+	AI_Output (self, other, "DIA_Engor_HELP_13_03"); //Na≈°e z√°soby j√≠dla jsou mal√©. P≈ôedev≈°√≠m jsme t√©mƒõ≈ô bez masa.
+	AI_Output (self, other, "DIA_Engor_HELP_13_04"); //Tak pokud m≈Ø≈æe≈° sehnat nƒõjak√© maso, syrov√© nebo va≈ôen√©, ≈°unku nebo klob√°sky, bylo by to kvitov√°no s velk√Ωm povdƒõkem. Co tomu ≈ô√≠k√°≈°, pom≈Ø≈æe≈° n√°m?
 
 	
 	Info_ClearChoices (DIA_Engor_HELP);
-	Info_AddChoice (DIA_Engor_HELP,"Na to nem·m Ëas.",DIA_Engor_HELP_NO);
-	Info_AddChoice (DIA_Engor_HELP,"NemÏj strach, nÏjakÈ maso seûenu.",DIA_Engor_HELP_YES);
+	Info_AddChoice (DIA_Engor_HELP,"Na to nem√°m ƒças.",DIA_Engor_HELP_NO);
+	Info_AddChoice (DIA_Engor_HELP,"Nemƒõj strach, nƒõjak√© maso se≈æenu.",DIA_Engor_HELP_YES);
 	
 	
 };
 FUNC VOID DIA_Engor_HELP_NO()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_NO_15_00"); //Na to nem·m Ëas.
-	AI_Output (self, other, "DIA_Engor_HELP_NO_13_01"); //Tak proË mrh·ö tÌm m˝m?
+	AI_Output (other, self, "DIA_Engor_HELP_NO_15_00"); //Na to nem√°m ƒças.
+	AI_Output (self, other, "DIA_Engor_HELP_NO_13_01"); //Tak proƒç mrh√°≈° t√≠m m√Ωm?
 	
 	MIS_Engor_BringMeat = LOG_OBSOLETE; 
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Engor_HELP_YES()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_YES_15_00"); //NemÏj strach, nÏjakÈ maso seûenu.
-	AI_Output (self, other, "DIA_Engor_HELP_YES_13_01"); //TakovÈ dva tucty po¯·dn˝ch kus˘ masa by mi pomohly nasytit nejmÈnÏ sto hladov˝ch krk˘. Vraù se, aû budeö mÌt maso. TeÔ se musÌm vr·tit ke svÈ pr·ci.
+	AI_Output (other, self, "DIA_Engor_HELP_YES_15_00"); //Nemƒõj strach, nƒõjak√© maso se≈æenu.
+	AI_Output (self, other, "DIA_Engor_HELP_YES_13_01"); //Takov√© dva tucty po≈ô√°dn√Ωch kus≈Ø masa by mi pomohly nasytit nejm√©nƒõ sto hladov√Ωch krk≈Ø. Vra≈• se, a≈æ bude≈° m√≠t maso. Teƒè se mus√≠m vr√°tit ke sv√© pr√°ci.
 
 	Log_CreateTopic (TOPIC_BringMeat, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BringMeat, LOG_RUNNING);
-	B_LogEntry  (TOPIC_BringMeat,"Engor pot¯ebuje dva tucty porcÌ masa, aby mohl z·sobit svÈ muûe.");
-	B_LogEntry  (TOPIC_BringMeat,"Nez·leûÌ na tom, p˘jde-li o klob·sy, öunku, peËenÈ Ëi syrovÈ maso. Jenom aby chlapi mÏli co zakousnout.");  
+	B_LogEntry  (TOPIC_BringMeat,"Engor pot≈ôebuje dva tucty porc√≠ masa, aby mohl z√°sobit sv√© mu≈æe.");
+	B_LogEntry  (TOPIC_BringMeat,"Nez√°le≈æ√≠ na tom, p≈Øjde-li o klob√°sy, ≈°unku, peƒçen√© ƒçi syrov√© maso. Jenom aby chlapi mƒõli co zakousnout.");  
 
 	
 	MIS_Engor_BringMeat = LOG_RUNNING;  
@@ -246,7 +246,7 @@ instance DIA_Engor_BRINGMEAT		(C_INFO)
 	condition	 = 	DIA_Engor_BRINGMEAT_Condition;
 	information	 = 	DIA_Engor_BRINGMEAT_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tum·ö, nÏco jsem pro tebe sehnal. (p¯edat maso)";
+	description	 = 	"Tum√°≈°, nƒõco jsem pro tebe sehnal. (p≈ôedat maso)";
 };
 
 func int DIA_Engor_BRINGMEAT_Condition ()
@@ -268,7 +268,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	var string ConcatBacon;
 	var string ConcatSausage;
 	
-	AI_Output (other, self, "DIA_Engor_BRINGMEAT_15_00"); //Tady, nÏco jsem ti sehnal.
+	AI_Output (other, self, "DIA_Engor_BRINGMEAT_15_00"); //Tady, nƒõco jsem ti sehnal.
 	
 // ***** Rohes Fleisch *****
 	if (Npc_HasItems (hero,ItFoMuttonRaw) >= 1) 
@@ -280,7 +280,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 		
 			Meat_Counter = (Meat_Counter + (Meat_Amount - Meat_Counter));
 		}
-		else if (Npc_HasItems (hero, ItFoMuttonRaw) < Meat_Amount) // muss hier stehen, wegen n‰chster Zeile
+		else if (Npc_HasItems (hero, ItFoMuttonRaw) < Meat_Amount) // muss hier stehen, wegen n√§chster Zeile
 		&& (Meat_Counter < Meat_Amount) 
 		{
 			Meat_Counter = Meat_Counter + (Npc_HasItems (hero,ItFoMuttonRaw));
@@ -288,7 +288,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 			//B_GiveInvItems (hero, self,ItFoMuttonRaw, (Npc_HasItems (hero,ItFoMuttonRaw))); 
 		
 			ConcatRaw = IntToString (Npc_HasItems (other,ItFoMuttonRaw));
-			ConcatRaw = ConcatStrings (ConcatRaw, " P¯edat syrovÈ maso");
+			ConcatRaw = ConcatStrings (ConcatRaw, " P≈ôedat syrov√© maso");
 			 
 			AI_PrintScreen (ConcatRaw, -1, 35, FONT_ScreenSmall, 2);
 			Npc_RemoveInvItems (other, ItFoMuttonRaw,(Npc_HasItems (other,ItFoMuttonRaw)));
@@ -311,7 +311,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 			//B_GiveInvItems (hero, self,ItFoMutton, (Npc_HasItems (hero,ItFoMutton)));
 			
 			ConcatMutton = IntToString (Npc_HasItems (other,ItFoMutton));
-			ConcatMutton = ConcatStrings (ConcatMutton, " P¯edat peËenÈ maso");
+			ConcatMutton = ConcatStrings (ConcatMutton, " P≈ôedat peƒçen√© maso");
 			 
 			AI_PrintScreen (ConcatMutton, -1, 38, FONT_ScreenSmall, 2);
 			Npc_RemoveInvItems (other, ItFoMutton,(Npc_HasItems (other,ItFoMutton)));
@@ -334,14 +334,14 @@ func void DIA_Engor_BRINGMEAT_Info ()
 			//B_GiveInvItems (hero, self,ItFo_Bacon, (Npc_HasItems (hero,ItFo_Bacon)));
 			
 			ConcatBacon =  IntToString (Npc_HasItems (other,ItFo_Bacon));
-			ConcatBacon = ConcatStrings (ConcatBacon, " P¯edat öunku");
+			ConcatBacon = ConcatStrings (ConcatBacon, " P≈ôedat ≈°unku");
 			
 			AI_PrintScreen (ConcatBacon, -1, 41, FONT_ScreenSmall, 3);
 			
 			Npc_RemoveInvItems (other, ItFo_Bacon,(Npc_HasItems (other,ItFo_Bacon)));
 		};
 	};
-	// ***** W¸rste *****	
+	// ***** W√ºrste *****	
 	if (Npc_HasItems (hero,ItFo_Sausage) >= 1) 
 	{
 		if (Npc_HasItems (hero, ItFo_Sausage) >= Meat_Amount) 
@@ -359,7 +359,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 			//B_GiveInvItems (hero, self,ItFo_Sausage, (Npc_HasItems (hero,ItFo_Sausage)));
 			
 			ConcatSausage =  IntToString (Npc_HasItems (other,ItFo_Sausage));
-			ConcatSausage = ConcatStrings (ConcatSausage, " P¯edat klob·su");
+			ConcatSausage = ConcatStrings (ConcatSausage, " P≈ôedat klob√°su");
 			
 			AI_PrintScreen (ConcatSausage, -1, 44, FONT_ScreenSmall, 3);
 			Npc_RemoveInvItems (other, ItFo_Sausage,(Npc_HasItems (other,ItFo_Sausage)));	
@@ -370,24 +370,24 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	{	
 		var string GesamtFleisch;
 		
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_01"); //Pro zaË·tek to nenÌ öpatnÈ, ale pot¯ebuji toho vÌc.
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_01"); //Pro zaƒç√°tek to nen√≠ ≈°patn√©, ale pot≈ôebuji toho v√≠c.
 		
 		GesamtFleisch = IntToString (Meat_Counter);
-		GesamtFleisch = ConcatStrings ("Celkem p¯ed·no masa:",GesamtFleisch);
+		GesamtFleisch = ConcatStrings ("Celkem p≈ôed√°no masa:",GesamtFleisch);
 		
 		AI_PrintScreen (GesamtFleisch, -1, 48, FONT_ScreenSmall, 3);
 	};
 	if (Meat_counter >= Meat_Amount)
 	{
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_02"); //V˝bornÏ, p¯inesl jsi dostatek masa. NÏjakou dobu to vydrûÌ.
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_03"); //Ale nemysli si, ûe ti d·m nÏco zadarmo!
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_02"); //V√Ωbornƒõ, p≈ôinesl jsi dostatek masa. Nƒõjakou dobu to vydr≈æ√≠.
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_03"); //Ale nemysli si, ≈æe ti d√°m nƒõco zadarmo!
 		/*
 		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_04"); //Hm...
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_05"); //Na schˆn. Du hast mir geholfen, du kriegst was umsonst. Ich gebe dir eine Information. 	
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_05"); //Na sch√∂n. Du hast mir geholfen, du kriegst was umsonst. Ich gebe dir eine Information. 	
 		*/
 		MIS_Engor_BringMeat = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BringMeat);
-		Log_AddEntry (TOPIC_BringMeat,"Engor uû dostal maso a postar· se, aby si je ostatnÌ mezi sebou spravedlivÏ rozdÏlili."); 
+		Log_AddEntry (TOPIC_BringMeat,"Engor u≈æ dostal maso a postar√° se, aby si je ostatn√≠ mezi sebou spravedlivƒõ rozdƒõlili."); 
 	};
 };
 
@@ -400,7 +400,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 //*************************************
 
 ///////////////////////////////////////////////////////////////////////
-//	Wie laufen die Gesch‰fte?
+//	Wie laufen die Gesch√§fte?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Engor_Business		(C_INFO)
 {
@@ -427,15 +427,15 @@ func void DIA_Engor_Business_Info ()
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 		{
-			AI_Output (self, other, "DIA_Engor_Business_13_01"); //Jen tak tak. Douf·m, ûe drakobijci majÌ tolik zlata jako kec˘.
+			AI_Output (self, other, "DIA_Engor_Business_13_01"); //Jen tak tak. Douf√°m, ≈æe drakobijci maj√≠ tolik zlata jako kec≈Ø.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Engor_Business_13_02"); //Vöiv·ci! PaladinovÈ pr·vÏ teÔ nic nekupujÌ.
+			AI_Output (self, other, "DIA_Engor_Business_13_02"); //V≈°iv√°ci! Paladinov√© pr√°vƒõ teƒè nic nekupuj√≠.
 		};
 
-	AI_Output (self, other, "DIA_Engor_Business_13_03"); //Co ty, vybral sis nÏco?
+	AI_Output (self, other, "DIA_Engor_Business_13_03"); //Co ty, vybral sis nƒõco?
 };
 
 
@@ -452,7 +452,7 @@ INSTANCE DIA_Engor_PICKPOCKET (C_INFO)
 	condition	= DIA_Engor_PICKPOCKET_Condition;
 	information	= DIA_Engor_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kr·deû tÈto mapy by byla riskantnÌ.)";
+	description = "(Kr√°de≈æ t√©to mapy by byla riskantn√≠.)";
 };                       
 
 FUNC INT DIA_Engor_PICKPOCKET_Condition()

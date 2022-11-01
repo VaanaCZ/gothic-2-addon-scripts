@@ -82,7 +82,7 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "StandardBook Page 2"	);
@@ -105,7 +105,7 @@ INSTANCE StandardBuch (C_ITEM)
 
 instance ItWr_Map_NewWorld (C_Item)
 {
-	name 		= "Mapa území Khorinidu";  // 
+	name 		= "Mapa ÃºzemÃ­ Khorinidu";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -143,7 +143,7 @@ instance ItWr_Map_NewWorld (C_Item)
 
 instance ItWr_Map_NewWorld_City (C_Item)
 {
-	name 		= "Mapa mìsta Khorinidu";  // 
+	name 		= "Mapa mÄ›sta Khorinidu";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -181,7 +181,7 @@ instance ItWr_Map_NewWorld_City (C_Item)
 
 instance ItWr_Map_OldWorld (C_Item)
 {
-	name 		= "Mapa Hornického údolí";
+	name 		= "Mapa HornickÃ©ho ÃºdolÃ­";
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -224,7 +224,7 @@ var int Lerne_Zweihand;
 //---------------------------------------------------------------------------------------------------------------------------
 INSTANCE ItWr_EinhandBuch (C_ITEM)
 {
-	name 					=	"Umìní boje";
+	name 					=	"UmÄ›nÃ­ boje";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -235,10 +235,10 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Jianské umìní obrany";
+	description				= 	"JiÅ¾anskÃ© umÄ›nÃ­ obrany";
 	
-	TEXT[2] 				=  "Kniha o umìní boje";
-	TEXT[3] 				=  "jednoruèními zbranìmi.";
+	TEXT[2] 				=  "Kniha o umÄ›nÃ­ boje";
+	TEXT[3] 				=  "jednoruÄnÃ­mi zbranÄ›mi.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseEinhandBuch;
@@ -267,20 +267,20 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Jianské umìní obrany"	);
+					Doc_PrintLines	( nDocID,  0, "JiÅ¾anskÃ© umÄ›nÃ­ obrany"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Jiané na rozdíl od seveøanù spoléhají daleko ménì na fyzickou sílu. V horkém podnebí své domoviny dávají pøednost lehké zbroji, která jim nijak nebrání v pohybu. Proto se i jejich styl boje velmi liší od toho, na kterı jsme zvyklí u nás."					);
+					Doc_PrintLines	( nDocID,  0, "JiÅ¾anÃ© na rozdÃ­l od seveÅ™anÅ¯ spolÃ©hajÃ­ daleko mÃ©nÄ› na fyzickou sÃ­lu. V horkÃ©m podnebÃ­ svÃ© domoviny dÃ¡vajÃ­ pÅ™ednost lehkÃ© zbroji, kterÃ¡ jim nijak nebrÃ¡nÃ­ v pohybu. Proto se i jejich styl boje velmi liÅ¡Ã­ od toho, na kterÃ½ jsme zvyklÃ­ u nÃ¡s."					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Snad nejznámìjší fintou, kterou jiané pouívají, je jednoruèní blok a krok vzad. Krokem vzad zmírníte sílu útoèníkova úderu a zároveò zaujmete lepší pozici pro rychlı protiútok."	);
+					Doc_PrintLines	( nDocID,  1, "Snad nejznÃ¡mÄ›jÅ¡Ã­ fintou, kterou jiÅ¾anÃ© pouÅ¾Ã­vajÃ­, je jednoruÄnÃ­ blok a krok vzad. Krokem vzad zmÃ­rnÃ­te sÃ­lu ÃºtoÄnÃ­kova Ãºderu a zÃ¡roveÅˆ zaujmete lepÅ¡Ã­ pozici pro rychlÃ½ protiÃºtok."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -291,7 +291,7 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 //---------------------------------------------------------------------------------------------------------------------------
 INSTANCE ItWr_ZweihandBuch (C_ITEM)
 {
-	name 					=	"Bojová taktika";
+	name 					=	"BojovÃ¡ taktika";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -302,10 +302,10 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Blok obouruèní zbraní";
+	description				= 	"Blok obouruÄnÃ­ zbranÃ­";
 	
-	TEXT[2] 				=  "Kniha o umìní boje";
-	TEXT[3] 				=  "obouruèními zbranìmi.";
+	TEXT[2] 				=  "Kniha o umÄ›nÃ­ boje";
+	TEXT[3] 				=  "obouruÄnÃ­mi zbranÄ›mi.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseZweihandBuch;
@@ -333,20 +333,20 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Blok obouruèní zbraní"	);
+					Doc_PrintLines	( nDocID,  0, "Blok obouruÄnÃ­ zbranÃ­"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Silní váleèníci dokáí blokováním a odraením soupeøova meèe ztlumit úder a zároveò svého soka donutit, aby zcela zmìnil postoj i útoènou taktiku."					);
+					Doc_PrintLines	( nDocID,  0, "SilnÃ­ vÃ¡leÄnÃ­ci dokÃ¡Å¾Ã­ blokovÃ¡nÃ­m a odraÅ¾enÃ­m soupeÅ™ova meÄe ztlumit Ãºder a zÃ¡roveÅˆ svÃ©ho soka donutit, aby zcela zmÄ›nil postoj i ÃºtoÄnou taktiku."					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Nepøítel se musí stáhnout, jeho postup se zpomalí a vy získáte pøíleitost pøevzít iniciativu a dobøe míøenou ranou svého soka udolat. "	);
+					Doc_PrintLines	( nDocID,  1, "NepÅ™Ã­tel se musÃ­ stÃ¡hnout, jeho postup se zpomalÃ­ a vy zÃ­skÃ¡te pÅ™Ã­leÅ¾itost pÅ™evzÃ­t iniciativu a dobÅ™e mÃ­Å™enou ranou svÃ©ho soka udolat. "	);
 					
 					Doc_Show		( nDocID );
 };

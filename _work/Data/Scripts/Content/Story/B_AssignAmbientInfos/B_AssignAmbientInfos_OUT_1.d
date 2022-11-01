@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Od té doby, co bariéra kolem trestanecké kolonie vzala za své, máme neustále problémy s bandity.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Od tÃ© doby, co bariÃ©ra kolem trestaneckÃ© kolonie vzala za svÃ©, mÃ¡me neustÃ¡le problÃ©my s bandity.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_01"); //Na domobranu není ádnı spoleh. Musíme se umìt bránit sami.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_01"); //Na domobranu nenÃ­ Å¾Ã¡dnÃ½ spoleh. MusÃ­me se umÄ›t brÃ¡nit sami.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_02"); //Nenechám se nikım vyuívat. Ani králem, ani Onarem. Co dìlám, dìlám jen kvùli sobì.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_02"); //NenechÃ¡m se nikÃ½m vyuÅ¾Ã­vat. Ani krÃ¡lem, ani Onarem. Co dÄ›lÃ¡m, dÄ›lÃ¡m jen kvÅ¯li sobÄ›.
 	};
 	
 	AI_StopProcessInfos	(self);

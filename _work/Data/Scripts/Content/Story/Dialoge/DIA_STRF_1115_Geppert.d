@@ -54,38 +54,38 @@ func void DIA_Geppert_HALLO_Info ()
 		Kervo_GotStuff = TRUE;
 	};	
 	
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //Stùj! Kdo tam?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //Nepøišel jsi kvùli tomu, abys mì poslal zpátky do dolù, e ne?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //V tom pøípadì tì musím zklamat. Není ádnej zpùsob, jak mì dostat zpátky.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //StÅ¯j! Kdo tam?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //NepÅ™iÅ¡el jsi kvÅ¯li tomu, abys mÄ› poslal zpÃ¡tky do dolÅ¯, Å¾e ne?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //V tom pÅ™Ã­padÄ› tÄ› musÃ­m zklamat. NenÃ­ Å¾Ã¡dnej zpÅ¯sob, jak mÄ› dostat zpÃ¡tky.
 	
 
 	Info_ClearChoices	(DIA_Geppert_HALLO);
-	Info_AddChoice	(DIA_Geppert_HALLO, "Co tady dìláš?", DIA_Geppert_HALLO_Wasmachtihr );
-	Info_AddChoice	(DIA_Geppert_HALLO, "Ty jsi trestanec na útìku, co?", DIA_Geppert_HALLO_Flucht );
+	Info_AddChoice	(DIA_Geppert_HALLO, "Co tady dÄ›lÃ¡Å¡?", DIA_Geppert_HALLO_Wasmachtihr );
+	Info_AddChoice	(DIA_Geppert_HALLO, "Ty jsi trestanec na ÃºtÄ›ku, co?", DIA_Geppert_HALLO_Flucht );
 };
 
 func void DIA_Geppert_HALLO_Flucht ()
 {
-	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //Ty jsi trestanec na útìku, co?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //Jak bystrı úsudek. Proè bych se jinak hrabal v tıhle špinavı díøe?
+	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //Ty jsi trestanec na ÃºtÄ›ku, co?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //Jak bystrÃ½ Ãºsudek. ProÄ bych se jinak hrabal v tÃ½hle Å¡pinavÃ½ dÃ­Å™e?
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
 func void DIA_Geppert_HALLO_Wasmachtihr ()
 {
-	AI_Output			(other, self, "DIA_Geppert_HALLO_Wasmachtihr_15_00"); //Co tady dìláš?
+	AI_Output			(other, self, "DIA_Geppert_HALLO_Wasmachtihr_15_00"); //Co tady dÄ›lÃ¡Å¡?
 	
 	if 	((other.guild == GIL_MIL) || (other.guild == GIL_PAL))
 			{
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_01"); //Co je to za pitomou otázku? Schovávám se tu pøed vojákama.
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_02"); //Pøestaò chodit kolem horkı kaše. Buï mì zabij, nebo se ztra.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_01"); //Co je to za pitomou otÃ¡zku? SchovÃ¡vÃ¡m se tu pÅ™ed vojÃ¡kama.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_02"); //PÅ™estaÅˆ chodit kolem horkÃ½ kaÅ¡e. BuÄ mÄ› zabij, nebo se ztraÅ¥.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //Blbá otázka. Schovávám se, co jinıho? Ty vojenskı svinì maj svı špehy úplnì všude.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //BlbÃ¡ otÃ¡zka. SchovÃ¡vÃ¡m se, co jinÃ½ho? Ty vojenskÃ½ svinÄ› maj svÃ½ Å¡pehy ÃºplnÄ› vÅ¡ude.
 			};
 
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //Nevrátím se do toho dolu, a tím to vadne.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //NevrÃ¡tÃ­m se do toho dolu, a tÃ­m to vadne.
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
@@ -100,7 +100,7 @@ instance DIA_Geppert_BRATEN		(C_INFO)
 	information	 = 	DIA_Geppert_BRATEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ta peèenì pìknì voní.";
+	description	 = 	"Ta peÄenÄ› pÄ›knÄ› vonÃ­.";
 };
 
 func int DIA_Geppert_BRATEN_Condition ()
@@ -113,8 +113,8 @@ func int DIA_Geppert_BRATEN_Condition ()
 
 func void DIA_Geppert_BRATEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //Ta peèenì pìknì voní.
-	AI_Output			(self, other, "DIA_Geppert_BRATEN_10_01"); //Nedotıkat se!
+	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //Ta peÄenÄ› pÄ›knÄ› vonÃ­.
+	AI_Output			(self, other, "DIA_Geppert_BRATEN_10_01"); //NedotÃ½kat se!
 	AI_StopProcessInfos (self);
 };
 

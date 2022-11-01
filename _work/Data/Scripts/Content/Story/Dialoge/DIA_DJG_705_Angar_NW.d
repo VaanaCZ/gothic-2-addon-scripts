@@ -21,7 +21,7 @@ FUNC VOID DIA_Angar_NW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getˆtet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen get√∂tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Angar_NW_AllDragonsDead(C_INFO)
@@ -40,10 +40,10 @@ FUNC INT DIA_Angar_NW_AllDragonsDead_Condition()
 FUNC VOID DIA_Angar_NW_AllDragonsDead_Info()
 {	
 	AI_Output (other,self ,"DIA_Angar_NW_AllDragonsDead_15_00"); //Jak se vede?
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Docela dob¯e. Ale po¯·d m·m ty öÌlenÈ bolesti. I kdyû od tÈ doby, co nejsem v HornickÈm ˙dolÌ, se to dost zlepöilo.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Docela dob≈ôe. Ale po≈ô√°d m√°m ty ≈°√≠len√© bolesti. I kdy≈æ od t√© doby, co nejsem v Hornick√©m √∫dol√≠, se to dost zlep≈°ilo.
 	if (Angar_IsOnBoard != LOG_SUCCESS) 
 	{
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //Z˘stanu tady. Takûe kdybys mÏ pot¯eboval, vÌö, kde mÏ hledat.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //Z≈Østanu tady. Tak≈æe kdybys mƒõ pot≈ôeboval, v√≠≈°, kde mƒõ hledat.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Angar_NW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Angar_NW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Angar_NW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Chyst·m se opustit Khorinis. Chceö se p¯idat?";
+	description	 = 	"Chyst√°m se opustit Khorinis. Chce≈° se p≈ôidat?";
 };
 func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 {	
@@ -70,30 +70,30 @@ func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 };
 func void DIA_Angar_NW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Chyst·m se opustit Khorinis. Chceö se p¯idat?
-	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //»Ìm d·l budu od HornickÈho ˙dolÌ, tÌm lÌp. Kdy vyrazÌme?
+	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Chyst√°m se opustit Khorinis. Chce≈° se p≈ôidat?
+	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //ƒå√≠m d√°l budu od Hornick√©ho √∫dol√≠, t√≠m l√≠p. Kdy vyraz√≠me?
 		
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	
-	B_LogEntry (TOPIC_Crew,"Angar je r·d za kaûdou mÌli, o kterou se vzd·lÌ od HornickÈho ˙dolÌ. NabÌdl mi, ûe mÏ na cestÏ doprovodÌ.");  
+	B_LogEntry (TOPIC_Crew,"Angar je r√°d za ka≈ædou m√≠li, o kterou se vzd√°l√≠ od Hornick√©ho √∫dol√≠. Nab√≠dl mi, ≈æe mƒõ na cestƒõ doprovod√≠.");  
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Moment·lnÏ m·m dost lidÌ na to, aby mohli ¯Ìdit loÔ. Moûn· se k tobÏ pozdÏji jeötÏ vr·tÌm.
-		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Fajn. Budu tady, kdybys mÏ pot¯eboval.
+		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Moment√°lnƒõ m√°m dost lid√≠ na to, aby mohli ≈ô√≠dit loƒè. Mo≈æn√° se k tobƒõ pozdƒõji je≈°tƒõ vr√°t√≠m.
+		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Fajn. Budu tady, kdybys mƒõ pot≈ôeboval.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"D·m ti vÏdÏt, aû budeme vyplouvat.",DIA_Angar_NW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Zajdi tedy do p¯Ìstavu. Pak se tam potk·me.",DIA_Angar_NW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"D√°m ti vƒõdƒõt, a≈æ budeme vyplouvat.",DIA_Angar_NW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Zajdi tedy do p≈ô√≠stavu. Pak se tam potk√°me.",DIA_Angar_NW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Zajdi tedy do p¯Ìstavu. Pak se tam potk·me.
-	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //To se mi lÌbÌ.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Zajdi tedy do p≈ô√≠stavu. Pak se tam potk√°me.
+	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //To se mi l√≠b√≠.
 	 
                                                                                                                                                   
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -116,8 +116,8 @@ FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //D·m ti vÏdÏt, aû budeme vyplouvat.
-	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //Dobr·.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //D√°m ti vƒõdƒõt, a≈æ budeme vyplouvat.
+	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //Dobr√°.
 
 	Angar_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
@@ -133,7 +133,7 @@ instance DIA_Angar_NW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Angar_NW_LeaveMyShip_Condition;
 	information	 = 	DIA_Angar_NW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Z˘staÚ tady a starej se o svÈ problÈmy.";
+	description	 = 	"Z≈Østa≈à tady a starej se o sv√© probl√©my.";
 };
 func int DIA_Angar_NW_LeaveMyShip_Condition ()
 {	
@@ -145,17 +145,17 @@ func int DIA_Angar_NW_LeaveMyShip_Condition ()
 };
 func void DIA_Angar_NW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Z˘staÚ tady a starej se o svÈ problÈmy.
-	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //Dobr·. Vr·tÌm se. Moûn· to bude tak lepöÌ.
+	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Z≈Østa≈à tady a starej se o sv√© probl√©my.
+	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //Dobr√°. Vr√°t√≠m se. Mo≈æn√° to bude tak lep≈°√≠.
 	
 	Angar_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
 	
-	Npc_ExchangeRoutine (self,"ZaËÌt"); 
+	Npc_ExchangeRoutine (self,"Zaƒç√≠t"); 
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 {
@@ -164,7 +164,7 @@ instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Angar_NW_StillNeedYou_Condition;
 	information	 = 	DIA_Angar_NW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Vraù se na palubu.";
+	description	 = 	"Vra≈• se na palubu.";
 };
 
 func int DIA_Angar_NW_StillNeedYou_Condition ()
@@ -179,8 +179,8 @@ func int DIA_Angar_NW_StillNeedYou_Condition ()
 
 func void DIA_Angar_NW_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Vraù se na palubu.
-	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Jsi horöÌ neû j·. Trochu vÌc rozhodnosti by ti jen prospÏlo. JeötÏ se uvidÌme.
+	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Vra≈• se na palubu.
+	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Jsi hor≈°√≠ ne≈æ j√°. Trochu v√≠c rozhodnosti by ti jen prospƒõlo. Je≈°tƒõ se uvid√≠me.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Angar_IsOnBoard	 = LOG_SUCCESS;
@@ -245,7 +245,7 @@ instance DIA_Angar_NW_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_NW_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_NW_FOUNDAMULETT_Info;
 
-	description	 = 	"Naöel jsem tv˘j amulet.";
+	description	 = 	"Na≈°el jsem tv≈Øj amulet.";
 };
 
 func int DIA_Angar_NW_FOUNDAMULETT_Condition ()

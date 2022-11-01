@@ -29,7 +29,7 @@ instance DIA_Pepe_Hallo (C_INFO)
 	condition	= DIA_Pepe_Hallo_Condition;
 	information	= DIA_Pepe_Hallo_Info;
 	permanent	= FALSE;
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };
 func int DIA_Pepe_Hallo_Condition ()
 {
@@ -37,13 +37,13 @@ func int DIA_Pepe_Hallo_Condition ()
 };
 func void DIA_Pepe_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Hallo_15_00"); //Co tady dìláš?
-	AI_Output (self, other, "DIA_Pepe_Hallo_03_01"); //(otrávenì) Hlídám ovce! (vzdychá) A pokud je to moné, vyhıbám se problémùm.
+	AI_Output (other, self, "DIA_Pepe_Hallo_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other, "DIA_Pepe_Hallo_03_01"); //(otrÃ¡venÄ›) HlÃ­dÃ¡m ovce! (vzdychÃ¡) A pokud je to moÅ¾nÃ©, vyhÃ½bÃ¡m se problÃ©mÅ¯m.
 	
 	if ((hero.guild != GIL_SLD)&&(hero.guild != GIL_DJG))
 	{
 		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Moc to nefunguje, co?
-		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //Pff, zvláš s tìmi oldáky. Jsem opravdu rád, e mùu bıt tady na pastvinì. I kdy to mùe bıt nebezpeèné tak jako tak.
+		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //Pff, zvlÃ¡Å¡Å¥ s tÄ›mi Å¾oldÃ¡ky. Jsem opravdu rÃ¡d, Å¾e mÅ¯Å¾u bÃ½t tady na pastvinÄ›. I kdyÅ¾ to mÅ¯Å¾e bÃ½t nebezpeÄnÃ© tak jako tak.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Pepe_Danger (C_INFO)
 	condition	= DIA_Pepe_Danger_Condition;
 	information	= DIA_Pepe_Danger_Info;
 	permanent 	= FALSE;
-	description	= "Co je na pastvinì tak nebezpeèného?";
+	description	= "Co je na pastvinÄ› tak nebezpeÄnÃ©ho?";
 };
 func int DIA_Pepe_Danger_Condition ()
 {
@@ -68,9 +68,9 @@ func int DIA_Pepe_Danger_Condition ()
 };
 func void DIA_Pepe_Danger_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Co je tak nebezpeèného na pastvinì?
-	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //Po okolí se tu potuluje smeèka vlkù. Poslední dobou sem ty zatracenı bestie pøicházej serat nìkterou z mejch ovcí skoro kadej den.
-	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //Ještì pøed pár dny jsem mìl dvakrát tolik ovcí. Nechci ani pomyslet na to, co se mnou Onar udìlá, a na to pøijde.
+	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Co je tak nebezpeÄnÃ©ho na pastvinÄ›?
+	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //Po okolÃ­ se tu potuluje smeÄka vlkÅ¯. PoslednÃ­ dobou sem ty zatracenÃ½ bestie pÅ™ichÃ¡zej seÅ¾rat nÄ›kterou z mejch ovcÃ­ skoro kaÅ¾dej den.
+	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //JeÅ¡tÄ› pÅ™ed pÃ¡r dny jsem mÄ›l dvakrÃ¡t tolik ovcÃ­. Nechci ani pomyslet na to, co se mnou Onar udÄ›lÃ¡, aÅ¾ na to pÅ™ijde.
 };
 
 // ************************************************************
@@ -83,7 +83,7 @@ instance DIA_Pepe_WhyNotSLD	(C_INFO)
 	condition	= DIA_Pepe_WhyNotSLD_Condition;
 	information	= DIA_Pepe_WhyNotSLD_Info;
 	PERMANENT 	= FALSE;
-	description	= "Proè jsi o tìch vlcích neøekl oldákùm? Mìl jsem dojem, e pro vás pracují.";
+	description	= "ProÄ jsi o tÄ›ch vlcÃ­ch neÅ™ekl Å¾oldÃ¡kÅ¯m? MÄ›l jsem dojem, Å¾e pro vÃ¡s pracujÃ­.";
 };
 func int DIA_Pepe_WhyNotSLD_Condition ()
 {
@@ -95,11 +95,11 @@ func int DIA_Pepe_WhyNotSLD_Condition ()
 };
 func void DIA_Pepe_WhyNotSLD_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //Proè jsi o tìch vlcích neøekl oldákùm? Mìl jsem dojem, e pro vás pracují.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Jo, já vim. Mìl jsem to udìlat. Ale nestalo se, sakra.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //A teï, kdy je tolik ovcí pryè, mám strach o tom nìkomu cokoli øíct.
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //Ale právì jsi to øekl MNÌ.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //(zlostnì) U toho taky lituju.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //ProÄ jsi o tÄ›ch vlcÃ­ch neÅ™ekl Å¾oldÃ¡kÅ¯m? MÄ›l jsem dojem, Å¾e pro vÃ¡s pracujÃ­.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Jo, jÃ¡ vim. MÄ›l jsem to udÄ›lat. Ale nestalo se, sakra.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //A teÄ, kdyÅ¾ je tolik ovcÃ­ pryÄ, mÃ¡m strach o tom nÄ›komu cokoli Å™Ã­ct.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //Ale prÃ¡vÄ› jsi to Å™ekl MNÄš.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //(zlostnÄ›) UÅ¾ toho taky lituju.
 };
 
 // ************************************************************
@@ -112,7 +112,7 @@ instance DIA_Pepe_KillWolves (C_INFO)
 	condition	= DIA_Pepe_KillWolves_Condition;
 	information	= DIA_Pepe_KillWolves_Info;
 	permanent 	= FALSE;
-	description	= "Co kdy ty vlky zabiju?";
+	description	= "Co kdyÅ¾ ty vlky zabiju?";
 };
 func int DIA_Pepe_KillWolves_Condition ()
 {
@@ -123,11 +123,11 @@ func int DIA_Pepe_KillWolves_Condition ()
 };
 func void DIA_Pepe_KillWolves_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //Co kdy ty vlky zabiju?
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //(posmìšnì) Ty? A sám? Ha, ha. Tomu nevìøím. To bych døív uvìøil tomu, e to udìlá mùj chlebodárce.
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Zapomeò na to. Byl to jen návrh. Zajdu za chlapama a uvidím, co tomu øeknou ONI.
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //(vydìšenì) Poèkej chvilku. Fajn, fajn! Ehm... Jsi nejvìtší ze všech nejvìtších a klidnì zvládneš sto vlkù najednou. ádnı problém!
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //Nejèastìji se skrıvají mezi stromy poblí pastviny. (stranou) Mám dojem, e jsou jen ètyøi.
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //Co kdyÅ¾ ty vlky zabiju?
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //(posmÄ›Å¡nÄ›) Ty? A sÃ¡m? Ha, ha. Tomu nevÄ›Å™Ã­m. To bych dÅ™Ã­v uvÄ›Å™il tomu, Å¾e to udÄ›lÃ¡ mÅ¯j chlebodÃ¡rce.
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //ZapomeÅˆ na to. Byl to jen nÃ¡vrh. Zajdu za chlapama a uvidÃ­m, co tomu Å™eknou ONI.
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //(vydÄ›Å¡enÄ›) PoÄkej chvilku. Fajn, fajn! Ehm... Jsi nejvÄ›tÅ¡Ã­ ze vÅ¡ech nejvÄ›tÅ¡Ã­ch a klidnÄ› zvlÃ¡dneÅ¡ sto vlkÅ¯ najednou. Å½Ã¡dnÃ½ problÃ©m!
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //NejÄastÄ›ji se skrÃ½vajÃ­ mezi stromy poblÃ­Å¾ pastviny. (stranou) MÃ¡m dojem, Å¾e jsou jen ÄtyÅ™i.
 	
 	AI_StopProcessInfos (self);
 	
@@ -140,7 +140,7 @@ func void DIA_Pepe_KillWolves_Info ()
 	
 	Log_CreateTopic (TOPIC_PepeWolves,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_PepeWolves,LOG_RUNNING);
-	B_LogEntry (TOPIC_PepeWolves,"Pepeho ovce ohroují ètyøi vlci. Mìl bych je zahnat.");
+	B_LogEntry (TOPIC_PepeWolves,"Pepeho ovce ohroÅ¾ujÃ­ ÄtyÅ™i vlci. MÄ›l bych je zahnat.");
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ instance DIA_Pepe_KilledWolves		(C_INFO)
 	condition	 = 	DIA_Pepe_KilledWolves_Condition;
 	information	 = 	DIA_Pepe_KilledWolves_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Oddìlal jsem ty vlky.";
+	description	 = 	"OddÄ›lal jsem ty vlky.";
 };
 func int DIA_Pepe_KilledWolves_Condition ()
 {
@@ -164,28 +164,28 @@ func int DIA_Pepe_KilledWolves_Condition ()
 };
 func void DIA_Pepe_KilledWolves_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_KilledWolves_15_00"); //Oddìlal jsem ty vlky.
+	AI_Output (other, self, "DIA_Pepe_KilledWolves_15_00"); //OddÄ›lal jsem ty vlky.
 
 	if (Npc_IsDead(PEPES_YWolf1))
 	&& (Npc_IsDead(PEPES_YWolf2))
 	&& (Npc_IsDead(PEPES_YWolf3))
 	&& (Npc_IsDead(PEPES_YWolf4))
 	{
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //(uasle) Dokázals to! Díky Innosovi!
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //Ale ještì poøád nevím, jak øíct Onarovi, e pøišel o tolik ovcí.
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //(pro sebe) Všechno je to chyba toho zatraceného Bullca!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //(uÅ¾asle) DokÃ¡zals to! DÃ­ky Innosovi!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //Ale jeÅ¡tÄ› poÅ™Ã¡d nevÃ­m, jak Å™Ã­ct Onarovi, Å¾e pÅ™iÅ¡el o tolik ovcÃ­.
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //(pro sebe) VÅ¡echno je to chyba toho zatracenÃ©ho Bullca!
 
 		MIS_Pepe_KillWolves = LOG_SUCCESS;
 		B_GivePlayerXP (XP_PepeWolves);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_04"); //Nedìlej si ze mì blázny. Ty bestie ještì nejsou všechny mrtvé.
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_04"); //NedÄ›lej si ze mÄ› blÃ¡zny. Ty bestie jeÅ¡tÄ› nejsou vÅ¡echny mrtvÃ©.
 	};
 };
 
 // ************************************************************
-// 					Was hast du über Bullco gesagt?
+// 					Was hast du Ã¼ber Bullco gesagt?
 // ************************************************************
 instance DIA_Pepe_Bullco (C_INFO)
 {
@@ -194,7 +194,7 @@ instance DIA_Pepe_Bullco (C_INFO)
 	condition	 = 	DIA_Pepe_Bullco_Condition;
 	information	 = 	DIA_Pepe_Bullco_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Cos to øíkal o tom Bullcovi?";
+	description	 = 	"Cos to Å™Ã­kal o tom Bullcovi?";
 };
 func int DIA_Pepe_Bullco_Condition ()
 {
@@ -207,17 +207,17 @@ func int DIA_Pepe_Bullco_Condition ()
 };
 func void DIA_Pepe_Bullco_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Cos to øíkal o tom Bullcovi?
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //Je to jeden ze oldákù. Je to vlastnì jeho práce, hlídat pastviny.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //Ale místo toho se se svım kámošem Sylviem jen celı dny poflakujou kolem Thekly v kuchyni.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //Je to chyba tìch bastardù, e kvùli tìm ovcím nedostanu tejdenní mzdu.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Kdybych mu alespoò mohl za to dát do zubù. Ale proti nìmu nikdo nemá ádnou šanci. Ten chlap je zabiják.
+	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Cos to Å™Ã­kal o tom Bullcovi?
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //Je to jeden ze Å¾oldÃ¡kÅ¯. Je to vlastnÄ› jeho prÃ¡ce, hlÃ­dat pastviny.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //Ale mÃ­sto toho se se svÃ½m kÃ¡moÅ¡em Sylviem jen celÃ½ dny poflakujou kolem Thekly v kuchyni.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //Je to chyba tÄ›ch bastardÅ¯, Å¾e kvÅ¯li tÄ›m ovcÃ­m nedostanu tejdennÃ­ mzdu.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Kdybych mu alespoÅˆ mohl za to dÃ¡t do zubÅ¯. Ale proti nÄ›mu nikdo nemÃ¡ Å¾Ã¡dnou Å¡anci. Ten chlap je zabijÃ¡k.
 
 	MIS_Pepe_KickBullco = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_KickBullco,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_KickBullco,LOG_RUNNING);
-	B_LogEntry (TOPIC_KickBullco,"Bullco se mìl o Pepeho ovce líp starat. Pepe teï chce nìkomu dát poøádnì za vyuèenou.");
+	B_LogEntry (TOPIC_KickBullco,"Bullco se mÄ›l o Pepeho ovce lÃ­p starat. Pepe teÄ chce nÄ›komu dÃ¡t poÅ™Ã¡dnÄ› za vyuÄenou.");
 };
 
 // ************************************************************
@@ -230,7 +230,7 @@ instance DIA_Pepe_BullcoDefeated (C_INFO)
 	condition	 = 	DIA_Pepe_BullcoDefeated_Condition;
 	information	 = 	DIA_Pepe_BullcoDefeated_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Bullco dostal, co si zaslouil.";
+	description	 = 	"Bullco dostal, co si zaslouÅ¾il.";
 };
 func int DIA_Pepe_BullcoDefeated_Condition ()
 {
@@ -245,8 +245,8 @@ func int DIA_Pepe_BullcoDefeated_Condition ()
 };
 func void DIA_Pepe_BullcoDefeated_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Bullco dostal, co si zaslouil. Postaral jsem se o to.
-	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Ta svinì si to zaslouila.
+	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Bullco dostal, co si zaslouÅ¾il. Postaral jsem se o to.
+	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Ta svinÄ› si to zaslouÅ¾ila.
 
 	MIS_Pepe_KickBullco = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KickBullco);
@@ -262,7 +262,7 @@ instance DIA_Pepe_PERM		(C_INFO)
 	condition	= DIA_Pepe_PERM_Condition;
 	information	= DIA_Pepe_PERM_Info;
 	permanent	= TRUE;
-	description	= "Jak se máš? A co tvoje ovce?";
+	description	= "Jak se mÃ¡Å¡? A co tvoje ovce?";
 };
 
 func int DIA_Pepe_PERM_Condition ()
@@ -275,26 +275,26 @@ func int DIA_Pepe_PERM_Condition ()
 
 func void DIA_Pepe_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_PERM_15_00"); //Jak se máš? A co tvoje ovce?
+	AI_Output (other, self, "DIA_Pepe_PERM_15_00"); //Jak se mÃ¡Å¡? A co tvoje ovce?
 
 	if (kapitel <= 1)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_01"); //V pohodì. A stejnì tak ovce. Ty, co tu poøád ještì jsou, se mají dobøe.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_01"); //V pohodÄ›. A stejnÄ› tak ovce. Ty, co tu poÅ™Ã¡d jeÅ¡tÄ› jsou, se majÃ­ dobÅ™e.
 	};
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Fajn. Ale ty vlci se jednou vrátìj. A asi jich bude ještì víc!
+		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Fajn. Ale ty vlci se jednou vrÃ¡tÄ›j. A asi jich bude jeÅ¡tÄ› vÃ­c!
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //Slyšel jsem hodnì divnı vìci. Nìjakı hrozivì vypadající postavy otravují u Sekoba. Obklíèily jeho dùm.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //SlyÅ¡el jsem hodnÄ› divnÃ½ vÄ›ci. NÄ›jakÃ½ hrozivÄ› vypadajÃ­cÃ­ postavy otravujÃ­ u Sekoba. ObklÃ­Äily jeho dÅ¯m.
 	}
 	
 	if (kapitel >= 4)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_04"); //Slyšel jsem, e se na Lobartovì farmì rozvalují nìjací oldáci. Nìkdo by jim moná mìl pomoct.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_04"); //SlyÅ¡el jsem, Å¾e se na LobartovÄ› farmÄ› rozvalujÃ­ nÄ›jacÃ­ Å¾oldÃ¡ci. NÄ›kdo by jim moÅ¾nÃ¡ mÄ›l pomoct.
 	};
 };
 
@@ -308,7 +308,7 @@ instance DIA_Pepe_Liesel		(C_INFO)
 	condition	 = 	DIA_Pepe_Liesel_Condition;
 	information	 = 	DIA_Pepe_Liesel_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mùu si koupit ovci?";
+	description	 = 	"MÅ¯Å¾u si koupit ovci?";
 };
 func int DIA_Pepe_Liesel_Condition ()
 {
@@ -319,9 +319,9 @@ func int DIA_Pepe_Liesel_Condition ()
 };
 func void DIA_Pepe_Liesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //Mùu si koupit ovci?
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //Kdykoli, kdy za ni dáš dost penìz. Jedna ovce stojí 100 zlatıch.
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //Kdy zaplatíš, mùeš si ovci vzít. Ale musíš se o ni dobøe postarat.
+	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //MÅ¯Å¾u si koupit ovci?
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //Kdykoli, kdyÅ¾ za ni dÃ¡Å¡ dost penÄ›z. Jedna ovce stojÃ­ 100 zlatÃ½ch.
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //KdyÅ¾ zaplatÃ­Å¡, mÅ¯Å¾eÅ¡ si ovci vzÃ­t. Ale musÃ­Å¡ se o ni dobÅ™e postarat.
 };
 
 // ************************************************************
@@ -336,7 +336,7 @@ instance DIA_Pepe_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Pepe_BuyLiesel_Condition;
 	information	 = 	DIA_Pepe_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tady je 100 zlatıch. Tak mi dej ovci.";
+	description	 = 	"Tady je 100 zlatÃ½ch. Tak mi dej ovci.";
 };
 func int DIA_Pepe_BuyLiesel_Condition ()
 {	
@@ -347,24 +347,24 @@ func int DIA_Pepe_BuyLiesel_Condition ()
 };
 func void DIA_Pepe_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Tady je 100 zlatıch. Tak mi dej ovci.
+	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Tady je 100 zlatÃ½ch. Tak mi dej ovci.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 100))
 	{
 		if (Pepe_SchafGekauft == 0)
 		{
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //Fajn. Tak si vezmi Betsy - najdeš ji na pastvinì.
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //Prostì øekni, a jde za tebou. Na ovci je docela chytrá. Starej se o ni dobøe!
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //Fajn. Tak si vezmi Betsy - najdeÅ¡ ji na pastvinÄ›.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //ProstÄ› Å™ekni, aÅ¥ jde za tebou. Na ovci je docela chytrÃ¡. Starej se o ni dobÅ™e!
 		}
 		else
 		{
 			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_03"); //Zase? Fajn. Vezmi si Betsy.
-			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Betsy? Ale u ta minulá ovce se jmenovala Betsy.
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //Všechny ovce se jmenují Betsy.
+			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Betsy? Ale uÅ¾ ta minulÃ¡ ovce se jmenovala Betsy.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //VÅ¡echny ovce se jmenujÃ­ Betsy.
 			if (Pepe_SchafGekauft == 3)
 			{
-				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_06"); //Samozøejmì kromì beranù.
-				AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_07"); //A jak se jmenují oni?
+				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_06"); //SamozÅ™ejmÄ› kromÄ› beranÅ¯.
+				AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_07"); //A jak se jmenujÃ­ oni?
 				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_08"); //Bruce.
 			};
 		};
@@ -376,7 +376,7 @@ func void DIA_Pepe_BuyLiesel_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_09"); //Nemáš dost zlata. Nemùu ti tu ovci dát levnìji.
+		AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_09"); //NemÃ¡Å¡ dost zlata. NemÅ¯Å¾u ti tu ovci dÃ¡t levnÄ›ji.
 	};
 };
 

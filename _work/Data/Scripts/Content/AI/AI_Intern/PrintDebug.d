@@ -4,7 +4,7 @@
 //##
 //########################################################################
 
-//-------- PrintDebug-Kan‰le --------
+//-------- PrintDebug-Kan√§le --------
 const int	PD_TA_FRAME 				= 1;
 const int	PD_TA_LOOP 					= 2;
 const int	PD_TA_CHECK 				= 3;
@@ -46,8 +46,8 @@ func void PrintDebugS (var string txt)
 //////////////////////////////////////////////////////////////////////////
 //	PrintDebugNpc
 //	-------------
-//	Gibt eine Debug-Meldung im zSpy aus. Dabei muﬂ in 'type' ein
-//	Debug-Channel und in 'text' der eigentliche Meldungstext ¸bergeben
+//	Gibt eine Debug-Meldung im zSpy aus. Dabei mu√ü in 'type' ein
+//	Debug-Channel und in 'text' der eigentliche Meldungstext √ºbergeben
 //	werden.
 //	Die Meldung erscheint im Format:
 //
@@ -96,14 +96,14 @@ func void PrintGlobals (var int channel)
 	//-------- global 'other' --------
 	if (Hlp_IsValidNpc(other))
 	{
-		pipe = ConcatStrings("...jin˝:  ",	other.name);
+		pipe = ConcatStrings("...jin√Ω:  ",	other.name);
 		PrintDebugNpc 		(channel,		pipe);
 	};
 	
 	//-------- global 'victim' --------
 	if (Hlp_IsValidNpc(victim))
 	{
-		pipe = ConcatStrings("...obÏù: ",	victim.name);
+		pipe = ConcatStrings("...obƒõ≈•: ",	victim.name);
 		PrintDebugNpc 		(channel,		pipe);
 	};
 	
@@ -117,7 +117,7 @@ func void PrintGlobals (var int channel)
 	//-------- global 'item' --------
 	if (Hlp_IsValidItem(item))
 	{
-		pipe = ConcatStrings("...p¯edmÏt:   ",	item.name);
+		pipe = ConcatStrings("...p≈ôedmƒõt:   ",	item.name);
 		PrintDebugNpc 		(channel,		pipe);
 	};
 
@@ -156,7 +156,7 @@ func void PrintGuild (var int channel, var int guild)
 //////////////////////////////////////////////////////////////////////////
 //	PrintAttitudes
 //	--------------
-//	Gibt die Attit¸den von 'self' auf dem zSpy aus
+//	Gibt die Attit√ºden von 'self' auf dem zSpy aus
 //////////////////////////////////////////////////////////////////////////
 func void PrintAttitudes (var int channel)
 {
@@ -170,7 +170,7 @@ func void PrintAttitudes (var int channel)
 	temp_attitude	=	Npc_GetAttitude ( self, hero);
 	perm_attitude	=	Npc_GetPermAttitude	( self, hero);
 	
-	// Check Block auf tempor‰re Attit¸de des Nsc¥s
+	// Check Block auf tempor√§re Attit√ºde des Nsc¬¥s
 	if (temp_attitude	==	ATT_HOSTILE)
 	{
 		PrintDebugNpc( channel, "TempAttitude == ATT_HOSTILE");			

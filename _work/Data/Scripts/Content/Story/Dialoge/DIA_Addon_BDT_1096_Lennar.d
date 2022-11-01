@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Lennar_EXIT   (C_INFO)
 	condition   = DIA_Addon_Lennar_EXIT_Condition;
 	information = DIA_Addon_Lennar_EXIT_Info;
 	permanent   = TRUE;
-	description = "U musím jít.";
+	description = "UÅ¾ musÃ­m jÃ­t.";
 };
 FUNC INT DIA_Addon_Lennar_EXIT_Condition()
 {	
@@ -62,7 +62,7 @@ INSTANCE DIA_Addon_Lennar_Hi   (C_INFO)
 	condition   = DIA_Addon_Lennar_Hi_Condition;
 	information = DIA_Addon_Lennar_Hi_Info;
 	permanent   = FALSE;
-	description	= "Zdravím.";
+	description	= "ZdravÃ­m.";
 };
 FUNC INT DIA_Addon_Lennar_Hi_Condition()
 {	
@@ -70,10 +70,10 @@ FUNC INT DIA_Addon_Lennar_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_00");//Zdravím.
-	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_01");//Zdravím. Jsem Lennar. Vítej v kopáèskım táboøe.
-	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_02");//Kopáèskım? Já myslel, e tohle bıval tábor banditù.
-	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_03");//To jo, ale banditi sem taky pøišli kopat. (pokrèí rameny) Take co?
+	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_00");//ZdravÃ­m.
+	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_01");//ZdravÃ­m. Jsem Lennar. VÃ­tej v kopÃ¡ÄskÃ½m tÃ¡boÅ™e.
+	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_02");//KopÃ¡ÄskÃ½m? JÃ¡ myslel, Å¾e tohle bÃ½val tÃ¡bor banditÅ¯.
+	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_03");//To jo, ale banditi sem taky pÅ™iÅ¡li kopat. (pokrÄÃ­ rameny) TakÅ¾e co?
 };
 
 //---------------------------------------------------------------------
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Lennar_Attentat   (C_INFO)
 	condition   = DIA_Addon_Lennar_Attentat_Condition;
 	information = DIA_Addon_Lennar_Attentat_Info;
 	permanent   = FALSE;
-	description	= "K tomu pokusu o zavradìní Estebana...";
+	description	= "K tomu pokusu o zavraÅ¾dÄ›nÃ­ Estebana...";
 };
 FUNC INT DIA_Addon_Lennar_Attentat_Condition()
 {	
@@ -98,16 +98,16 @@ FUNC INT DIA_Addon_Lennar_Attentat_Condition()
 FUNC VOID DIA_Addon_Lennar_Attentat_Info()
 {
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentast auf Esteban
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_00"); //(naivnì) Ano?
-	AI_Output (other, self, "DIA_Addon_Lennar_ATTENTAT_15_01"); //Máš tušení, kdo za tím stojí?
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_02"); //(nadšenì) Jasnì!
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_03"); //(horeènatì) Já ti to øeknu! Vsadím se, e za tím vìzí Emilio!
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_04"); //(horeènatì) Vdycky se do dolu hnal jak šílenec a kopal, co mu síly staèily.
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_05"); //(potutelnì) Ale od toho útoku u jenom sedí na lavièce a nehne ani prstem.
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_06"); //(vysvìtluje) Je to jasnı! Do dolu se dostane, jedinì kdy mu Esteban dá èervenej kámen.
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_07"); //(spiklenecky) Ale vsadím se, e se mu neodvauje podívat do oèí.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_00"); //(naivnÄ›) Ano?
+	AI_Output (other, self, "DIA_Addon_Lennar_ATTENTAT_15_01"); //MÃ¡Å¡ tuÅ¡enÃ­, kdo za tÃ­m stojÃ­?
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_02"); //(nadÅ¡enÄ›) JasnÄ›!
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_03"); //(horeÄnatÄ›) JÃ¡ ti to Å™eknu! VsadÃ­m se, Å¾e za tÃ­m vÄ›zÃ­ Emilio!
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_04"); //(horeÄnatÄ›) VÅ¾dycky se do dolu hnal jak Å¡Ã­lenec a kopal, co mu sÃ­ly staÄily.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_05"); //(potutelnÄ›) Ale od toho Ãºtoku uÅ¾ jenom sedÃ­ na laviÄce a nehne ani prstem.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_06"); //(vysvÄ›tluje) Je to jasnÃ½! Do dolu se dostane, jedinÄ› kdyÅ¾ mu Esteban dÃ¡ Äervenej kÃ¡men.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_07"); //(spiklenecky) Ale vsadÃ­m se, Å¾e se mu neodvaÅ¾uje podÃ­vat do oÄÃ­.
 
-	B_LogEntry (Topic_Addon_Esteban, "Lennar podezírá Emilia, protoe u k Estebanovi nepøišel.");
+	B_LogEntry (Topic_Addon_Esteban, "Lennar podezÃ­rÃ¡ Emilia, protoÅ¾e uÅ¾ k Estebanovi nepÅ™iÅ¡el.");
 };
 
 //---------------------------------------------------------------------
@@ -120,7 +120,7 @@ INSTANCE DIA_Addon_Lennar_Inspektor (C_INFO)
 	condition   = DIA_Addon_Lennar_Inspektor_Condition;
 	information = DIA_Addon_Lennar_Inspektor_Info;
 	permanent   = FALSE;
-	description	= "A co by Emilio z Estebanovy smrti mìl?";
+	description	= "A co by Emilio z Estebanovy smrti mÄ›l?";
 };
 FUNC INT DIA_Addon_Lennar_Inspektor_Condition()
 {	
@@ -131,9 +131,9 @@ FUNC INT DIA_Addon_Lennar_Inspektor_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Inspektor_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Inspektor_15_00"); //A co by Emilio z Estebanovy smrti mìl?
-	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_01"); //Co já vím? Moná má v dole òákıho kámoše, kterej by se rád dostal na Estebanovo místo.
-	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_02"); //(pro sebe) Jo, to by dávalo smysl.
+	AI_Output (other, self, "DIA_Addon_Lennar_Inspektor_15_00"); //A co by Emilio z Estebanovy smrti mÄ›l?
+	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_01"); //Co jÃ¡ vÃ­m? MoÅ¾nÃ¡ mÃ¡ v dole ÅˆÃ¡kÃ½ho kÃ¡moÅ¡e, kterej by se rÃ¡d dostal na Estebanovo mÃ­sto.
+	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_02"); //(pro sebe) Jo, to by dÃ¡valo smysl.
 };
 
 //----------------------------------------------------------------------
@@ -161,9 +161,9 @@ FUNC VOID DIA_Addon_Lennar_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_00");//Ty pro mì vánì máš èervenej kámen.
-	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_01");//Vıbornì. Teï budu drtit ty zatracenı šutry na prášek – u pøesnì vím, kam pùjdu!
-	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_02");//A ještì jedna vìc – kdy doluješ, dávej pozor, abys nedával moc SILNİ rány. Jinak se ti krumpáè v tom zlatì zaklíní.
+	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_00");//Ty pro mÄ› vÃ¡Å¾nÄ› mÃ¡Å¡ Äervenej kÃ¡men.
+	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_01");//VÃ½bornÄ›. TeÄ budu drtit ty zatracenÃ½ Å¡utry na prÃ¡Å¡ek â€“ uÅ¾ pÅ™esnÄ› vÃ­m, kam pÅ¯jdu!
+	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_02");//A jeÅ¡tÄ› jedna vÄ›c â€“ kdyÅ¾ dolujeÅ¡, dÃ¡vej pozor, abys nedÃ¡val moc SILNÃ rÃ¡ny. Jinak se ti krumpÃ¡Ä v tom zlatÄ› zaklÃ­nÃ­.
 	
 	B_Upgrade_Hero_HackChance(10);
 	
@@ -183,7 +183,7 @@ INSTANCE DIA_Addon_Lennar_Gold   (C_INFO)
 	condition   = DIA_Addon_Lennar_Gold_Condition;
 	information = DIA_Addon_Lennar_Gold_Info;
 	permanent   = FALSE;
-	description = "Mùeš mì nauèit, jak dolovat zlato?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nauÄit, jak dolovat zlato?";
 };
 FUNC INT DIA_Addon_Lennar_Gold_Condition()
 {	
@@ -194,13 +194,13 @@ FUNC INT DIA_Addon_Lennar_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Gold_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_00"); //Mùeš mì nauèit zlatokopectví?
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_01"); //Urèitì, ale a tì to nauèím, budeš dolovat víc zlata.
-	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_02"); //Právì proto se ptám.
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_03"); //Jasnì, ale kdy toho víc vydoluješ, bylo by fér se o to taky podìlit.
+	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit zlatokopectvÃ­?
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_01"); //UrÄitÄ›, ale aÅ¾ tÄ› to nauÄÃ­m, budeÅ¡ dolovat vÃ­c zlata.
+	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_02"); //PrÃ¡vÄ› proto se ptÃ¡m.
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_03"); //JasnÄ›, ale kdyÅ¾ toho vÃ­c vydolujeÅ¡, bylo by fÃ©r se o to taky podÄ›lit.
 	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_04"); //No...
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_05"); //Taky mi ten podíl mùeš dát napøed. Øeknìme...
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_06"); //tak padesát zlaákù.
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_05"); //Taky mi ten podÃ­l mÅ¯Å¾eÅ¡ dÃ¡t napÅ™ed. Å˜eknÄ›me...
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_06"); //tak padesÃ¡t zlaÅ¥Ã¡kÅ¯.
 };
 
 //---------------------------------------------------------------------
@@ -215,7 +215,7 @@ INSTANCE DIA_Addon_Lennar_Train   (C_INFO)
 	condition   = DIA_Addon_Lennar_Train_Condition;
 	information = DIA_Addon_Lennar_Train_Info;
 	permanent   = TRUE;
-	description = "Nauè mì dolovat zlato! (50 zlatıch)";
+	description = "NauÄ mÄ› dolovat zlato! (50 zlatÃ½ch)";
 };
 FUNC INT DIA_Addon_Lennar_Train_Condition()
 {	
@@ -227,20 +227,20 @@ FUNC INT DIA_Addon_Lennar_Train_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Train_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Train_15_00"); //Nauè mì dolovat zlato!
+	AI_Output (other, self, "DIA_Addon_Lennar_Train_15_00"); //NauÄ mÄ› dolovat zlato!
 	
 	if B_GiveInvItems (other, self, itmi_gold, 50)
 	{
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_01"); //Dobøe. Kdy postupuješ dál, dávej pravidelnı rány – nijak to nepøehánìj, ale zase u toho neusni.
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_02"); //A taky nemla poøád do jednoho místa – sna se to opracovávat tak, abys získal slušnej nugget.
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_03"); //Kdy to takhle budeš dìlat, za chvíli z tebe bude mistr.
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_01"); //DobÅ™e. KdyÅ¾ postupujeÅ¡ dÃ¡l, dÃ¡vej pravidelnÃ½ rÃ¡ny â€“ nijak to nepÅ™ehÃ¡nÄ›j, ale zase u toho neusni.
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_02"); //A taky nemlaÅ¥ poÅ™Ã¡d do jednoho mÃ­sta â€“ snaÅ¾ se to opracovÃ¡vat tak, abys zÃ­skal sluÅ¡nej nugget.
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_03"); //KdyÅ¾ to takhle budeÅ¡ dÄ›lat, za chvÃ­li z tebe bude mistr.
 		
 		B_Upgrade_Hero_HackChance(10);
 		Lennar_TeachGold = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_04"); //Napøed chci vidìt svùj podíl!
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_04"); //NapÅ™ed chci vidÄ›t svÅ¯j podÃ­l!
 	};
 };
 //----------------------------------------------------------------------
@@ -253,7 +253,7 @@ INSTANCE DIA_Addon_Lennar_Hacker   (C_INFO)
 	condition   = DIA_Addon_Lennar_Hacker_Condition;
 	information = DIA_Addon_Lennar_Hacker_Info;
 	permanent   = TRUE;
-	Description = "Je všechno v poøádku?"; 
+	Description = "Je vÅ¡echno v poÅ™Ã¡dku?"; 
 };
 FUNC INT DIA_Addon_Lennar_Hacker_Condition()
 {	
@@ -264,8 +264,8 @@ FUNC INT DIA_Addon_Lennar_Hacker_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Hacker_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Lennar_Hacker_15_00"); //Je všecko v poøádku?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Lennar_Hacker_01_01"); //Hezky pravidelnì – jen tak získáš pìknì velkı nuggety!
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Lennar_Hacker_15_00"); //Je vÅ¡ecko v poÅ™Ã¡dku?
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Lennar_Hacker_01_01"); //Hezky pravidelnÄ› â€“ jen tak zÃ­skÃ¡Å¡ pÄ›knÄ› velkÃ½ nuggety!
 };
 
 

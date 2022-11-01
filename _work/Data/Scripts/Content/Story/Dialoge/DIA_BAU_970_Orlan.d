@@ -31,7 +31,7 @@ instance DIA_Orlan_Wein		(C_INFO)
 	condition	 = 	DIA_Orlan_Wein_Condition;
 	information	 = 	DIA_Orlan_Wein_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"P¯inesl jsem vÌno z kl·ötera.";
+	description	 = 	"P≈ôinesl jsem v√≠no z kl√°≈°tera.";
 };
 func int DIA_Orlan_Wein_Condition ()
 {	
@@ -43,19 +43,19 @@ func int DIA_Orlan_Wein_Condition ()
 };
 func void DIA_Orlan_Wein_Info ()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_15_00"); //P¯inesl jsem vÌno z kl·ötera.
-	AI_Output (self, other, "DIA_Orlan_Wein_05_01"); //V˝bornÏ. To je to, na co jsem Ëekal.
-	AI_Output (self, other, "DIA_Orlan_Wein_05_02"); //Uû jsem p¯istoupil na Goraxovu cenu. Hned teÔ ti d·m 100 zlat˝ch.
+	AI_Output (other, self, "DIA_Orlan_Wein_15_00"); //P≈ôinesl jsem v√≠no z kl√°≈°tera.
+	AI_Output (self, other, "DIA_Orlan_Wein_05_01"); //V√Ωbornƒõ. To je to, na co jsem ƒçekal.
+	AI_Output (self, other, "DIA_Orlan_Wein_05_02"); //U≈æ jsem p≈ôistoupil na Goraxovu cenu. Hned teƒè ti d√°m 100 zlat√Ωch.
 	
 	Info_ClearChoices (DIA_Orlan_Wein);
 	
-	Info_AddChoice (DIA_Orlan_Wein,"Dobr·, tak mi dej to zlato.",DIA_Orlan_Wein_JA);
-	Info_AddChoice (DIA_Orlan_Wein,"SnaûÌö se mÏ nap·lit? Cena je 240 zlaù·k˘.",DIA_Orlan_Wein_NEIN);
+	Info_AddChoice (DIA_Orlan_Wein,"Dobr√°, tak mi dej to zlato.",DIA_Orlan_Wein_JA);
+	Info_AddChoice (DIA_Orlan_Wein,"Sna≈æ√≠≈° se mƒõ nap√°lit? Cena je 240 zla≈•√°k≈Ø.",DIA_Orlan_Wein_NEIN);
 };
 FUNC VOID DIA_Orlan_Wein_JA()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_JA_15_00"); //Dobr·, tak mi dej to zlato.
-	AI_Output (self, other, "DIA_Orlan_Wein_JA_05_01"); //Tady m·ö. Bylo mi potÏöenÌm s tebou obchodovat.
+	AI_Output (other, self, "DIA_Orlan_Wein_JA_15_00"); //Dobr√°, tak mi dej to zlato.
+	AI_Output (self, other, "DIA_Orlan_Wein_JA_05_01"); //Tady m√°≈°. Bylo mi potƒõ≈°en√≠m s tebou obchodovat.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 100);
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -64,19 +64,19 @@ FUNC VOID DIA_Orlan_Wein_JA()
 };
 FUNC VOID DIA_Orlan_Wein_NEIN()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_NEIN_15_00"); //PokouöÌö se mÏ obrat? Cena je 240 zlat˝ch.
-	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_01"); //Gorax tÏ varoval, co? Dobr·, moûn· bychom na tom mohli vydÏlat oba. Hele - d·m ti za to vÌno 100 zlat˝ch.
-	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_02"); //ÿekneö Goraxovi, ûe jsem tÏ nat·hl, a j· ti d·m »TYÿI magickÈ svitky.
+	AI_Output (other, self, "DIA_Orlan_Wein_NEIN_15_00"); //Pokou≈°√≠≈° se mƒõ obrat? Cena je 240 zlat√Ωch.
+	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_01"); //Gorax tƒõ varoval, co? Dobr√°, mo≈æn√° bychom na tom mohli vydƒõlat oba. Hele - d√°m ti za to v√≠no 100 zlat√Ωch.
+	AI_Output (self, other, "DIA_Orlan_Wein_NEIN_05_02"); //≈òekne≈° Goraxovi, ≈æe jsem tƒõ nat√°hl, a j√° ti d√°m ƒåTY≈òI magick√© svitky.
 	
 	Info_ClearChoices (DIA_Orlan_Wein);
-	Info_AddChoice (DIA_Orlan_Wein,"Hej, prostÏ mi dej 240 zlat˝ch.",DIA_Orlan_Wein_Nie);
-	Info_AddChoice (DIA_Orlan_Wein,"Dobr·, to znÌ docela fÈrovÏ. Dej mi ty svitky.",DIA_Orlan_Wein_Okay);
+	Info_AddChoice (DIA_Orlan_Wein,"Hej, prostƒõ mi dej 240 zlat√Ωch.",DIA_Orlan_Wein_Nie);
+	Info_AddChoice (DIA_Orlan_Wein,"Dobr√°, to zn√≠ docela f√©rovƒõ. Dej mi ty svitky.",DIA_Orlan_Wein_Okay);
 	Info_AddChoice (DIA_Orlan_Wein,"Co to je za svitky?",DIA_Orlan_Wein_Was);
 };
 FUNC VOID DIA_Orlan_Wein_Nie()
 {
-	AI_Output (other, self, "DIA_Orlan_Wein_Nie_15_00"); //Hej, prostÏ mi dej 240 zlat˝ch.
-	AI_Output (self, other, "DIA_Orlan_Wein_Nie_05_01"); //Copak na tom nechceö vydÏlat? (povzdych) Dobr·, tady je zlato.
+	AI_Output (other, self, "DIA_Orlan_Wein_Nie_15_00"); //Hej, prostƒõ mi dej 240 zlat√Ωch.
+	AI_Output (self, other, "DIA_Orlan_Wein_Nie_05_01"); //Copak na tom nechce≈° vydƒõlat? (povzdych) Dobr√°, tady je zlato.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 240);
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -92,7 +92,7 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 100);
 	
-	AI_Output (other, self, "DIA_Orlan_Wein_Okay_15_00"); //Dobr·, to znÌ docela fÈrovÏ. Dej mi ty svitky.
+	AI_Output (other, self, "DIA_Orlan_Wein_Okay_15_00"); //Dobr√°, to zn√≠ docela f√©rovƒõ. Dej mi ty svitky.
 	AI_Output (self, other, "DIA_Orlan_Wein_Okay_05_01"); //Tady jsou svitky a zlato.
 	
 	B_GiveInvItems (other, self, ItFo_Wine, 12);
@@ -107,7 +107,7 @@ FUNC VOID DIA_Orlan_Wein_Okay()
 FUNC VOID DIA_Orlan_Wein_Was()
 {
 	AI_Output (other, self, "DIA_Orlan_Wein_Was_15_00"); //Co to je za svitky?
-	AI_Output (self, other, "DIA_Orlan_Wein_Was_05_01"); //NetuöÌm - o tomhle j· nic nevÌm. Jsou od hosta, co... ehm... je tady zapomnÏl, jo.
+	AI_Output (self, other, "DIA_Orlan_Wein_Was_05_01"); //Netu≈°√≠m - o tomhle j√° nic nev√≠m. Jsou od hosta, co... ehm... je tady zapomnƒõl, jo.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WerBistDu
@@ -130,10 +130,10 @@ func int DIA_Orlan_WERBISTDU_Condition ()
 func void DIA_Orlan_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Orlan_WERBISTDU_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_01"); //Jsem Orlan, majitel tÈhle skromnÈ hospody.
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_02"); //Co sh·nÌö, cizinËe? Moûn· po¯·dn˝ meË nebo snad kus dobrÈho brnÏnÌ?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_03"); //Douöek nÏËeho dobrÈho z venkovsk˝ch palÌren, nebo jen nÏjakou informaci?
-	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_04"); //M˘ûu ti to nabÌdnout vöechno a dokonce jeötÏ vÌc, pokud jsou tvÈ mince pravÈ.
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_01"); //Jsem Orlan, majitel t√©hle skromn√© hospody.
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_02"); //Co sh√°n√≠≈°, cizinƒçe? Mo≈æn√° po≈ô√°dn√Ω meƒç nebo snad kus dobr√©ho brnƒõn√≠?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_03"); //Dou≈°ek nƒõƒçeho dobr√©ho z venkovsk√Ωch pal√≠ren, nebo jen nƒõjakou informaci?
+	AI_Output			(self, other, "DIA_Orlan_WERBISTDU_05_04"); //M≈Ø≈æu ti to nab√≠dnout v≈°echno a dokonce je≈°tƒõ v√≠c, pokud jsou tv√© mince prav√©.
 
 };
 
@@ -147,7 +147,7 @@ instance DIA_Addon_Orlan_Greg		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_Greg_Condition;
 	information	 = 	DIA_Addon_Orlan_Greg_Info;
 
-	description	 = 	"Zn·ö toho chl·pka s p·skou p¯es oko?";
+	description	 = 	"Zn√°≈° toho chl√°pka s p√°skou p≈ôes oko?";
 };
 
 func int DIA_Addon_Orlan_Greg_Condition ()
@@ -162,11 +162,11 @@ func int DIA_Addon_Orlan_Greg_Condition ()
 
 func void DIA_Addon_Orlan_Greg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_Greg_15_00"); //Zn·ö toho chl·pka s p·skou p¯es oko?
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_01"); //Uû jsem ho tu vidÏl. Je pÏknÏ nep¯Ìjemn˝.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_02"); //Onehd· si do jednoho z m˝ch pokoj˘ naho¯e odnesl velkou bednu.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_03"); //Po¯·d jsem ho uh·nÏl, aby za ten pokoj zaplatil, ale on si jednom hledÏl sv˝ho.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_04"); //A pak jednoho dne prostÏ zmizel i s tou bednou. S takov˝mi jako on nechci nic mÌt.
+	AI_Output	(other, self, "DIA_Addon_Orlan_Greg_15_00"); //Zn√°≈° toho chl√°pka s p√°skou p≈ôes oko?
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_01"); //U≈æ jsem ho tu vidƒõl. Je pƒõknƒõ nep≈ô√≠jemn√Ω.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_02"); //Onehd√° si do jednoho z m√Ωch pokoj≈Ø naho≈ôe odnesl velkou bednu.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_03"); //Po≈ô√°d jsem ho uh√°nƒõl, aby za ten pokoj zaplatil, ale on si jednom hledƒõl sv√Ωho.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Greg_05_04"); //A pak jednoho dne prostƒõ zmizel i s tou bednou. S takov√Ωmi jako on nechci nic m√≠t.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -179,7 +179,7 @@ instance DIA_Addon_Orlan_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_Ranger_Condition;
 	information	 = 	DIA_Addon_Orlan_Ranger_Info;
 
-	description	 = 	"Zd· se mi to, nebo furt zÌr·ö na m˘j prsten?";
+	description	 = 	"Zd√° se mi to, nebo furt z√≠r√°≈° na m≈Øj prsten?";
 };
 func int DIA_Addon_Orlan_Ranger_Condition ()
 {
@@ -191,32 +191,32 @@ func int DIA_Addon_Orlan_Ranger_Condition ()
 };
 func void DIA_Addon_Orlan_Ranger_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_15_00"); //To se mi zd·, nebo po¯·d zÌr·ö na m˘j prsten?
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_05_01"); //NÏjak nevÌm, co si o tom myslet.
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_15_00"); //To se mi zd√°, nebo po≈ô√°d z√≠r√°≈° na m≈Øj prsten?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_05_01"); //Nƒõjak nev√≠m, co si o tom myslet.
 
 	Orlan_KnowsSCAsRanger = TRUE;
 
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);
-	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Ale no tak! J· pat¯Ìm ke kruhu vody!", DIA_Addon_Orlan_Ranger_Idiot);
-	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Je to akvamarÌn. Uû jsi nÏkdy nÏjak˝ vidÏl?", DIA_Addon_Orlan_Ranger_Aqua);
+	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Ale no tak! J√° pat≈ô√≠m ke kruhu vody!", DIA_Addon_Orlan_Ranger_Idiot);
+	Info_AddChoice	(DIA_Addon_Orlan_Ranger, "Je to akvamar√≠n. U≈æ jsi nƒõkdy nƒõjak√Ω vidƒõl?", DIA_Addon_Orlan_Ranger_Aqua);
 };
 func void DIA_Addon_Orlan_Ranger_Aqua()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Aqua_15_00"); //To je akvamarÌn. Uû jsi nÏkdy takov˝ vidÏl?
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_01"); //Ano, vidÏl. Tak vÌtej v naöem hlavnÌm stanu, brat¯e z kruhu.
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Aqua_15_00"); //To je akvamar√≠n. U≈æ jsi nƒõkdy takov√Ω vidƒõl?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_01"); //Ano, vidƒõl. Tak v√≠tej v na≈°em hlavn√≠m stanu, brat≈ôe z kruhu.
 	if (Npc_KnowsInfo (other, DIA_Addon_Orlan_NoMeeting)) //verrissen
 	{
-		AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_02"); //...i kdyû zrovna nevypad·ö, ûe bys öel na olt·¯ zapalovat svÌËky.
+		AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_02"); //...i kdy≈æ zrovna nevypad√°≈°, ≈æe bys ≈°el na olt√°≈ô zapalovat sv√≠ƒçky.
 	};
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_03"); //Co pro tebe m˘ûu udÏlat?
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Aqua_05_03"); //Co pro tebe m≈Ø≈æu udƒõlat?
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);
 	B_GivePlayerXP (XP_Ambient);
 };
 func void DIA_Addon_Orlan_Ranger_Idiot ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Lares_15_00"); //»lovÏËe! J· pat¯Ìm ke kruhu vody!
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_01"); //V·ûnÏ? TÏûko se vÏ¯Ì, ûe by mezi sebe vzali takov˝ho hÚupa.
-	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_02"); //Co chceö?
+	AI_Output (other, self, "DIA_Addon_Orlan_Ranger_Lares_15_00"); //ƒålovƒõƒçe! J√° pat≈ô√≠m ke kruhu vody!
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_01"); //V√°≈ænƒõ? Tƒõ≈æko se vƒõ≈ô√≠, ≈æe by mezi sebe vzali takov√Ωho h≈àupa.
+	AI_Output (self, other, "DIA_Addon_Orlan_Ranger_Lares_05_02"); //Co chce≈°?
 	Info_ClearChoices	(DIA_Addon_Orlan_Ranger);	
 };
 
@@ -230,7 +230,7 @@ instance DIA_Addon_Orlan_Teleportstein		(C_INFO)
 	condition	= DIA_Addon_Orlan_Teleportstein_Condition;
 	information	= DIA_Addon_Orlan_Teleportstein_Info;
 
-	description	= "Uû jsi nÏkdy pouûÌval teleportaËnÌ k·men?";
+	description	= "U≈æ jsi nƒõkdy pou≈æ√≠val teleportaƒçn√≠ k√°men?";
 };
 
 func int DIA_Addon_Orlan_Teleportstein_Condition ()
@@ -244,31 +244,31 @@ func int DIA_Addon_Orlan_Teleportstein_Condition ()
 
 func void DIA_Addon_Orlan_Teleportstein_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_Teleportstein_15_00"); //Uû jsi nÏkdy pouûÌval teleportaËnÌ k·men?
-	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_01"); //Zbl·znil ses? Nikdo z vodnÌch m·g˘ se nem˘ûe zaruËit, ûe je to ˙plnÏ bez rizika, takûe se k podobn˝m vÏcem ani nep¯ibliûuju.
-	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_02"); //Jen mi rozk·zali, abych jeden z tÏch teleportaËnÌch kamen˘ ukryl, jinak bych se od nich drûel d·l.
+	AI_Output	(other, self, "DIA_Addon_Orlan_Teleportstein_15_00"); //U≈æ jsi nƒõkdy pou≈æ√≠val teleportaƒçn√≠ k√°men?
+	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_01"); //Zbl√°znil ses? Nikdo z vodn√≠ch m√°g≈Ø se nem≈Ø≈æe zaruƒçit, ≈æe je to √∫plnƒõ bez rizika, tak≈æe se k podobn√Ωm vƒõcem ani nep≈ôibli≈æuju.
+	AI_Output	(self, other, "DIA_Addon_Orlan_Teleportstein_05_02"); //Jen mi rozk√°zali, abych jeden z tƒõch teleportaƒçn√≠ch kamen≈Ø ukryl, jinak bych se od nich dr≈æel d√°l.
 
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Addon_Orlan_Teleportstein);
-	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "M˘ûu se podÌvat na tenhle teleportaËnÌ k·men?:", DIA_Addon_Orlan_Teleportstein_sehen );
-	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Kde je ten teleportaËnÌ k·men?", DIA_Addon_Orlan_Teleportstein_wo );
+	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "M≈Ø≈æu se pod√≠vat na tenhle teleportaƒçn√≠ k√°men?:", DIA_Addon_Orlan_Teleportstein_sehen );
+	Info_AddChoice	(DIA_Addon_Orlan_Teleportstein, "Kde je ten teleportaƒçn√≠ k√°men?", DIA_Addon_Orlan_Teleportstein_wo );
 };
 func void DIA_Addon_Orlan_Teleportstein_sehen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_sehen_15_00"); //A m˘ûu se na ten teleportaËnÌ k·men mrknout?
-	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_sehen_05_01"); //MnÏ je to fuk. Tady m·ö klÌË - zablokoval jsem vchod.
+	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_sehen_15_00"); //A m≈Ø≈æu se na ten teleportaƒçn√≠ k√°men mrknout?
+	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_sehen_05_01"); //Mnƒõ je to fuk. Tady m√°≈° kl√≠ƒç - zablokoval jsem vchod.
 	CreateInvItems (self, ITKE_ORLAN_TELEPORTSTATION, 1);									
 	B_GiveInvItems (self, other, ITKE_ORLAN_TELEPORTSTATION, 1);
 	
 	Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Orlan umÌstil teleportaËnÌ k·men do jeskynÏ jihoz·padnÏ od jeho hospody."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"Orlan um√≠stil teleportaƒçn√≠ k√°men do jeskynƒõ jihoz√°padnƒõ od jeho hospody."); 
 };
 
 func void DIA_Addon_Orlan_Teleportstein_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_wo_15_00"); //Kde je ten teleportaËnÌ k·men?
-	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_wo_05_01"); //Kousek na jih od mojÌ hospody je jeskynÏ. Tam m·govÈ vody jednu z tÏch vÏcÌ naöli.
+	AI_Output			(other, self, "DIA_Addon_Orlan_Teleportstein_wo_15_00"); //Kde je ten teleportaƒçn√≠ k√°men?
+	AI_Output			(self, other, "DIA_Addon_Orlan_Teleportstein_wo_05_01"); //Kousek na jih od moj√≠ hospody je jeskynƒõ. Tam m√°gov√© vody jednu z tƒõch vƒõc√≠ na≈°li.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -281,7 +281,7 @@ instance DIA_Addon_Orlan_NoMeeting (C_INFO)
 	condition	= DIA_Addon_Orlan_NoMeeting_Condition;
 	information	= DIA_Addon_Orlan_NoMeeting_Info;
 
-	description	= "Jsem tu, abych se p¯ipojil ke 'kruhu vody'!";
+	description	= "Jsem tu, abych se p≈ôipojil ke 'kruhu vody'!";
 };
 func int DIA_Addon_Orlan_NoMeeting_Condition ()
 {
@@ -295,8 +295,8 @@ func int DIA_Addon_Orlan_NoMeeting_Condition ()
 };
 func void DIA_Addon_Orlan_NoMeeting_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Orlan_NoMeeting_15_00"); //P¯iöel jsem se p¯idat ke kruhu vody!
-	AI_Output (self, other, "DIA_Addon_Orlan_NoMeeting_05_01"); //(˙seËnÏ) NevidÌm û·dn˝ prsten. Mohu v·m nabÌdnout pitÌ, cizinËe?
+	AI_Output (other, self, "DIA_Addon_Orlan_NoMeeting_15_00"); //P≈ôi≈°el jsem se p≈ôidat ke kruhu vody!
+	AI_Output (self, other, "DIA_Addon_Orlan_NoMeeting_05_01"); //(√∫seƒçnƒõ) Nevid√≠m ≈æ√°dn√Ω prsten. Mohu v√°m nab√≠dnout pit√≠, cizinƒçe?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -309,7 +309,7 @@ instance DIA_Addon_Orlan_WhenRangerMeeting		(C_INFO)
 	condition	 = 	DIA_Addon_Orlan_WhenRangerMeeting_Condition;
 	information	 = 	DIA_Addon_Orlan_WhenRangerMeeting_Info;
 
-	description	 = 	"Slyöel jsem, ûe 'kruh' se sch·zÌ pr·vÏ ve tvÈ hospodÏ.";
+	description	 = 	"Sly≈°el jsem, ≈æe 'kruh' se sch√°z√≠ pr√°vƒõ ve tv√© hospodƒõ.";
 };
 
 func int DIA_Addon_Orlan_WhenRangerMeeting_Condition ()
@@ -323,34 +323,34 @@ func int DIA_Addon_Orlan_WhenRangerMeeting_Condition ()
 
 func void DIA_Addon_Orlan_WhenRangerMeeting_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_15_00"); //Slyöel jsem, ûe se v tvÈ hospodÏ brzy sejde cel˝ kruh.
-	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_01"); //To je pravda, za chvÌli uû by mÏli zaËÌt.
-	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_02"); //Co jim to tak dlouho trv·?
+	AI_Output	(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_15_00"); //Sly≈°el jsem, ≈æe se v tv√© hospodƒõ brzy sejde cel√Ω kruh.
+	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_01"); //To je pravda, za chv√≠li u≈æ by mƒõli zaƒç√≠t.
+	AI_Output	(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_05_02"); //Co jim to tak dlouho trv√°?
 
 	B_GivePlayerXP (XP_Ambient);
 	B_Addon_Orlan_RangersReadyForcoming ();
 	self.flags = 0;
 
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "Za chvÌli by tu mÏli b˝t.", DIA_Addon_Orlan_WhenRangerMeeting_theyCome );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "Za chv√≠li by tu mƒõli b√Ωt.", DIA_Addon_Orlan_WhenRangerMeeting_theyCome );
 	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "On je ten sraz dneska?", DIA_Addon_Orlan_WhenRangerMeeting_Today );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_Today ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_Today_15_00"); //Ono je to setk·nÌ dneska?
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_01"); //Ano, aspoÚ pokud si vzpomÌn·m.
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_02"); //Douf·m, ûe uû se nikdy takhle nezpozdÌ.
+	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_Today_15_00"); //Ono je to setk√°n√≠ dneska?
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_01"); //Ano, aspo≈à pokud si vzpom√≠n√°m.
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_Today_05_02"); //Douf√°m, ≈æe u≈æ se nikdy takhle nezpozd√≠.
 	B_MakeRangerReadyForMeetingALL ();
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(vÌce)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(v√≠ce)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_theyCome ()
 {
-	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_15_00"); //Uû tu mÏli d·vno b˝t.
-	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_05_01"); //UvidÌme.
+	AI_Output			(other, self, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_15_00"); //U≈æ tu mƒõli d√°vno b√Ωt.
+	AI_Output			(self, other, "DIA_Addon_Orlan_WhenRangerMeeting_theyCome_05_01"); //Uvid√≠me.
 	B_MakeRangerReadyForMeetingALL ();
 	Info_ClearChoices	(DIA_Addon_Orlan_WhenRangerMeeting);	
-	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(vÌce)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
+	Info_AddChoice	(DIA_Addon_Orlan_WhenRangerMeeting, "(v√≠ce)", DIA_Addon_Orlan_WhenRangerMeeting_Los );
 };
 func void DIA_Addon_Orlan_WhenRangerMeeting_Los ()
 {
@@ -359,7 +359,7 @@ func void DIA_Addon_Orlan_WhenRangerMeeting_Los ()
 };
 
 //-----------------------------------------------------
-// BESSERE R‹STUNG
+// BESSERE R√úSTUNG
 //-----------------------------------------------------
 
 instance DIA_Orlan_RUESTUNG		(C_INFO)
@@ -370,7 +370,7 @@ instance DIA_Orlan_RUESTUNG		(C_INFO)
 	information	 = 	DIA_Orlan_RUESTUNG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jakou zbroj mi m˘ûeö nabÌdnout?";
+	description	 = 	"Jakou zbroj mi m≈Ø≈æe≈° nab√≠dnout?";
 };
 
 var int DIA_Orlan_RUESTUNG_noPerm;
@@ -389,22 +389,22 @@ func int DIA_Orlan_RUESTUNG_Condition ()
 
 func void DIA_Orlan_RUESTUNG_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_RUESTUNG_15_00"); //Jakou zbroj mi m˘ûeö nabÌdnout?
-	AI_Output			(self, other, "DIA_Orlan_RUESTUNG_05_01"); //M·m tady jeden velmi pÏkn˝ kousek, kter˝ se ti urËitÏ bude lÌbit.
+	AI_Output			(other, self, "DIA_Orlan_RUESTUNG_15_00"); //Jakou zbroj mi m≈Ø≈æe≈° nab√≠dnout?
+	AI_Output			(self, other, "DIA_Orlan_RUESTUNG_05_01"); //M√°m tady jeden velmi pƒõkn√Ω kousek, kter√Ω se ti urƒçitƒõ bude l√≠bit.
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
 
 	Info_AddChoice			(DIA_Orlan_RUESTUNG, DIALOG_BACK	,	DIA_Orlan_RUESTUNG_BACK);	
-	Info_AddChoice			(DIA_Orlan_RUESTUNG, "Koûen· zbroj. Ochrana: zbranÏ 25, öÌpy 20, oheÚ 5 (250 zlaù·k˘)" , DIA_Orlan_RUESTUNG_Buy);	
+	Info_AddChoice			(DIA_Orlan_RUESTUNG, "Ko≈æen√° zbroj. Ochrana: zbranƒõ 25, ≈°√≠py 20, ohe≈à 5 (250 zla≈•√°k≈Ø)" , DIA_Orlan_RUESTUNG_Buy);	
 };  
 
 func void DIA_Orlan_RUESTUNG_Buy ()
 {
-	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_Buy_15_00"); //ChtÏl bych si koupit lehkou zbroj.
+	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_Buy_15_00"); //Chtƒõl bych si koupit lehkou zbroj.
 
 	if (B_GiveInvItems		(other, self, ItMi_Gold, VALUE_ITAR_Leather_L))
 		{
-			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_01"); //MoudrÈ rozhodnutÌ.
+			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_01"); //Moudr√© rozhodnut√≠.
 
 			CreateInvItems 		(self, ItAr_Leather_L, 1);
 			B_GiveInvItems		(self, other, ItAr_Leather_L, 1);
@@ -413,7 +413,7 @@ func void DIA_Orlan_RUESTUNG_Buy ()
 		}
 	else
 		{
-			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_02"); //Je mi lÌto. Dokud nem·ö penÌze, û·dnÈ obchody nebudou.
+			AI_Output			(self, other,"DIA_Orlan_RUESTUNG_Buy_05_02"); //Je mi l√≠to. Dokud nem√°≈° pen√≠ze, ≈æ√°dn√© obchody nebudou.
 		};
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
@@ -421,8 +421,8 @@ func void DIA_Orlan_RUESTUNG_Buy ()
 
 func void DIA_Orlan_RUESTUNG_BACK ()
 {
-	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_BACK_15_00"); //Budu o tom p¯em˝ölet.
-	AI_Output				(self, other,"DIA_Orlan_RUESTUNG_BACK_05_01"); //Jak chceö. Ale neot·lej p¯Ìliö dlouho.
+	AI_Output				(other, self,"DIA_Orlan_RUESTUNG_BACK_15_00"); //Budu o tom p≈ôem√Ω≈°let.
+	AI_Output				(self, other,"DIA_Orlan_RUESTUNG_BACK_05_01"); //Jak chce≈°. Ale neot√°lej p≈ô√≠li≈° dlouho.
 
 	Info_ClearChoices		(DIA_Orlan_RUESTUNG);
 };
@@ -440,7 +440,7 @@ instance DIA_Orlan_TRADE		(C_INFO)
 	trade		 = 	TRUE;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ukaû mi svÈ zboûÌ.";
+	description	 = 	"Uka≈æ mi sv√© zbo≈æ√≠.";
 };
 
 func int DIA_Orlan_TRADE_Condition ()
@@ -453,27 +453,27 @@ func int DIA_Orlan_TRADE_Condition ()
 
 func void DIA_Orlan_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_TRADE_15_00"); //Ukaû mi svÈ zboûÌ.
+	AI_Output			(other, self, "DIA_Orlan_TRADE_15_00"); //Uka≈æ mi sv√© zbo≈æ√≠.
 	B_GiveTradeInv (self);
 	
 		//ADDON>
 		if ((SC_IsRanger == TRUE) || (Orlan_KnowsSCAsRanger == TRUE)||(SCIsWearingRangerRing == TRUE))
 			{
-				AI_Output			(self, other, "DIA_Addon_Orlan_TRADE_05_00"); //JasnÏ, bratr z 'kruhu'.
+				AI_Output			(self, other, "DIA_Addon_Orlan_TRADE_05_00"); //Jasnƒõ, bratr z 'kruhu'.
 				Orlan_KnowsSCAsRanger = TRUE;
 			}
 		//ADDON<
 		else if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_01"); //Samoz¯ejmÏ. Je to pro mÏ velk· Ëest, p¯ijmout tak d˘leûit˝ ˙kol.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_01"); //Samoz≈ôejmƒõ. Je to pro mƒõ velk√° ƒçest, p≈ôijmout tak d≈Øle≈æit√Ω √∫kol.
 			}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG) || (hero.guild == GIL_MIL))
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_02"); //ZajistÈ, pane.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_02"); //Zajist√©, pane.
 			}
 		else
 			{
-				AI_Output			(self, other, "DIA_Orlan_TRADE_05_03"); //Pokud na to m·ö.
+				AI_Output			(self, other, "DIA_Orlan_TRADE_05_03"); //Pokud na to m√°≈°.
 			};
 };
 
@@ -489,7 +489,7 @@ instance DIA_Orlan_HotelZimmer		(C_INFO)
 	information	 = 	DIA_Orlan_HotelZimmer_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Kolik si ˙Ëtujeö za pokoj?";
+	description	 = 	"Kolik si √∫ƒçtuje≈° za pokoj?";
 };
 var int Orlan_SCGotHotelZimmer;
 var int Orlan_SCGotHotelZimmerDay;
@@ -504,7 +504,7 @@ func int DIA_Orlan_HotelZimmer_Condition ()
 
 func void DIA_Orlan_HotelZimmer_Info ()
 {
-	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_15_00"); //Kolik si ˙Ëtujeö za pokoj?
+	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_15_00"); //Kolik si √∫ƒçtuje≈° za pokoj?
 	
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF)|| (SC_IsRanger == TRUE)||(SCIsWearingRangerRing == TRUE)|| (Orlan_KnowsSCAsRanger == TRUE))
 		{
@@ -518,14 +518,14 @@ func void DIA_Orlan_HotelZimmer_Info ()
 			//ADDON<
 			else if (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_01"); //Pro kr·lovy rytÌ¯e m·m vûdycky voln˝ pokoj. Samoz¯ejmÏ zdarma.
+				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_01"); //Pro kr√°lovy ryt√≠≈ôe m√°m v≈ædycky voln√Ω pokoj. Samoz≈ôejmƒõ zdarma.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_02"); //Nikdy bych si nedovolil br·t penÌze od z·stupc˘ Innose.
+				AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_02"); //Nikdy bych si nedovolil br√°t pen√≠ze od z√°stupc≈Ø Innose.
 			};
 			
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_03"); //Tady je klÌË od ho¯ejöÌch pokoj˘. Jeden z nich si zaber.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_03"); //Tady je kl√≠ƒç od ho≈ôej≈°√≠ch pokoj≈Ø. Jeden z nich si zaber.
 			CreateInvItems (self, ITKE_ORLAN_HOTELZIMMER, 1);									
 			B_GiveInvItems (self, other, ITKE_ORLAN_HOTELZIMMER, 1);					
 			Orlan_SCGotHotelZimmer = TRUE;
@@ -533,19 +533,19 @@ func void DIA_Orlan_HotelZimmer_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_04"); //Dej mi 50 zlat˝ch na t˝den a m˘ûeö si vybrat nÏkter˝ z pokoj˘.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_05_04"); //Dej mi 50 zlat√Ωch na t√Ωden a m≈Ø≈æe≈° si vybrat nƒõkter√Ω z pokoj≈Ø.
 		
 			Info_ClearChoices	(DIA_Orlan_HotelZimmer);
-			Info_AddChoice	(DIA_Orlan_HotelZimmer, "To je zatracenÏ drahÈ.", DIA_Orlan_HotelZimmer_nein );
-			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Dobr·. Tady jsou prachy.", DIA_Orlan_HotelZimmer_ja );
+			Info_AddChoice	(DIA_Orlan_HotelZimmer, "To je zatracenƒõ drah√©.", DIA_Orlan_HotelZimmer_nein );
+			Info_AddChoice	(DIA_Orlan_HotelZimmer, "Dobr√°. Tady jsou prachy.", DIA_Orlan_HotelZimmer_ja );
 		};	
 };
 func void DIA_Orlan_HotelZimmer_ja ()
 {
 		if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(other, self, "DIA_Orlan_HotelZimmer_ja_15_00"); //Dobr·. Tady jsou prachy.
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_01"); //Tady m·ö klÌË. Pokoje jsou naho¯e nad schody. Ale moc to tam nezamaû a plaù vËas, jasnÈ?
+			AI_Output			(other, self, "DIA_Orlan_HotelZimmer_ja_15_00"); //Dobr√°. Tady jsou prachy.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_01"); //Tady m√°≈° kl√≠ƒç. Pokoje jsou naho≈ôe nad schody. Ale moc to tam nezama≈æ a pla≈• vƒças, jasn√©?
 			CreateInvItems (self, ITKE_ORLAN_HOTELZIMMER, 1);									
 			B_GiveInvItems (self, other, ITKE_ORLAN_HOTELZIMMER, 1);					
 			Orlan_SCGotHotelZimmerDay = Wld_GetDay(); 
@@ -553,15 +553,15 @@ func void DIA_Orlan_HotelZimmer_ja ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_02"); //Nem·ö 50 babek. Nejd¯Ìv penÌze, pak z·bava.
+			AI_Output			(self, other, "DIA_Orlan_HotelZimmer_ja_05_02"); //Nem√°≈° 50 babek. Nejd≈ô√≠v pen√≠ze, pak z√°bava.
 		};
 	Info_ClearChoices	(DIA_Orlan_HotelZimmer);
 };
 
 func void DIA_Orlan_HotelZimmer_nein ()
 {
-	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_nein_15_00"); //Tak to je zatracenÏ drah˝.
-	AI_Output			(self, other, "DIA_Orlan_HotelZimmer_nein_05_01"); //Tak to by ses mÏl poohlÈdnout po nÏËem jinÈm, p¯Ìteli.
+	AI_Output			(other, self, "DIA_Orlan_HotelZimmer_nein_15_00"); //Tak to je zatracenƒõ drah√Ω.
+	AI_Output			(self, other, "DIA_Orlan_HotelZimmer_nein_05_01"); //Tak to by ses mƒõl poohl√©dnout po nƒõƒçem jin√©m, p≈ô√≠teli.
 	Info_ClearChoices	(DIA_Orlan_HotelZimmer);
 };
 
@@ -626,33 +626,33 @@ func void DIA_Orlan_MieteFaellig_Info ()
 {
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_00"); //(˙lisnÏ) Jsem potÏöen tvou ctihodnou n·vötÏvou. Z˘staÚ tu tak dlouho, jak budeö chtÌt. Je to pro mÏ Ëest.
+		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_00"); //(√∫lisnƒõ) Jsem potƒõ≈°en tvou ctihodnou n√°v≈°tƒõvou. Z≈Østa≈à tu tak dlouho, jak bude≈° cht√≠t. Je to pro mƒõ ƒçest.
 		DIA_Orlan_MieteFaellig_NoMore = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_01"); //Kdy koneËnÏ dostanu n·jem?
+		AI_Output	(self, other, "DIA_Orlan_MieteFaellig_05_01"); //Kdy koneƒçnƒõ dostanu n√°jem?
 	
 		Info_ClearChoices	(DIA_Orlan_MieteFaellig);
-		Info_AddChoice	(DIA_Orlan_MieteFaellig, "ZapomeÚ na to, uû ti ned·m ani zl·manou greöli.", DIA_Orlan_MieteFaellig_nein );
-		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Tady je tv˝ch 50 zlat˝ch.", DIA_Orlan_MieteFaellig_ja );
+		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Zapome≈à na to, u≈æ ti ned√°m ani zl√°manou gre≈°li.", DIA_Orlan_MieteFaellig_nein );
+		Info_AddChoice	(DIA_Orlan_MieteFaellig, "Tady je tv√Ωch 50 zlat√Ωch.", DIA_Orlan_MieteFaellig_ja );
 	};
 };
 
 var int DIA_Orlan_MieteFaellig_OneTime;
 func void DIA_Orlan_MieteFaellig_ja ()
 {
-		AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_00"); //Tady je tv˝ch 50 zlat˝ch.
+		AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_00"); //Tady je tv√Ωch 50 zlat√Ωch.
 	
 		if (B_GiveInvItems (other, self, ItMi_Gold,50))
 		{
-			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_01"); //Fajn, uû bylo naËase.
+			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_01"); //Fajn, u≈æ bylo naƒçase.
 
 			if (DIA_Orlan_MieteFaellig_OneTime == FALSE)
 			{
-				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_02"); //Kde ses cel˝ den toulal?
-				AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_03"); //Do toho ti nic nenÌ.
-				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_04"); //Mmh. Dobr·, stejnÏ to nenÌ moje vÏc.
+				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_02"); //Kde ses cel√Ω den toulal?
+				AI_Output			(other, self, "DIA_Orlan_MieteFaellig_ja_15_03"); //Do toho ti nic nen√≠.
+				AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_04"); //Mmh. Dobr√°, stejnƒõ to nen√≠ moje vƒõc.
 				DIA_Orlan_MieteFaellig_OneTime = TRUE;
 			};
 			
@@ -661,7 +661,7 @@ func void DIA_Orlan_MieteFaellig_ja ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_05"); //Hele, pokouöÌö se mÏ podvÈst? Nem·ö dost penÏz ani na to, abys zaplatil tohle jÌdlo. J· ti uk·ûu, ty, ty...
+			AI_Output			(self, other, "DIA_Orlan_MieteFaellig_ja_05_05"); //Hele, pokou≈°√≠≈° se mƒõ podv√©st? Nem√°≈° dost penƒõz ani na to, abys zaplatil tohle j√≠dlo. J√° ti uk√°≈æu, ty, ty...
 			AI_StopProcessInfos (self);
 			B_Attack (self, other, AR_NONE, 1);
 		};
@@ -669,8 +669,8 @@ func void DIA_Orlan_MieteFaellig_ja ()
 
 func void DIA_Orlan_MieteFaellig_nein ()
 {
-	AI_Output			(other, self, "DIA_Orlan_MieteFaellig_nein_15_00"); //ZapomeÚ na to. Uû ti nezaplatÌm.
-	AI_Output			(self, other, "DIA_Orlan_MieteFaellig_nein_05_01"); //Fajn, j· ti uk·ûu, ty mizernej podvodnÌku.
+	AI_Output			(other, self, "DIA_Orlan_MieteFaellig_nein_15_00"); //Zapome≈à na to. U≈æ ti nezaplat√≠m.
+	AI_Output			(self, other, "DIA_Orlan_MieteFaellig_nein_05_01"); //Fajn, j√° ti uk√°≈æu, ty mizernej podvodn√≠ku.
 	Orlan_AngriffWegenMiete = TRUE;
 	
 	Info_ClearChoices	(DIA_Orlan_MieteFaellig);
@@ -704,35 +704,35 @@ func int DIA_Orlan_WETTKAMPFLAEUFT_Condition ()
 
 func void DIA_Orlan_WETTKAMPFLAEUFT_Info ()
 {
-			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_00"); //Tak p¯ece ses uk·zal. »ekal jsem na tebe.
+			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_00"); //Tak p≈ôece ses uk√°zal. ƒåekal jsem na tebe.
 			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_01"); //Co se stalo?
-			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_02"); //SoutÏû v pitÌ skonËila.
-			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_03"); //Kdo vyhr·l?
+			AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_02"); //Soutƒõ≈æ v pit√≠ skonƒçila.
+			AI_Output			(other, self, "DIA_Orlan_WETTKAMPFLAEUFT_15_03"); //Kdo vyhr√°l?
 	
 			if 	(
 				((Mob_HasItems	("CHEST_RUKHAR", ItFo_Booze)) == FALSE)
 				&& ((Mob_HasItems	("CHEST_RUKHAR", ItFo_Water)) == TRUE)
 				)
 					{
-						AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_04"); //Tentokr·t Randolph. Rukhar musel mÌt öpatnej den.
+						AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_04"); //Tentokr√°t Randolph. Rukhar musel m√≠t ≈°patnej den.
 					}
 				else
 				{
-					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_05"); //Rukhar to uû zase Randolphovi nandal. To se dalo jen oËek·vat.
+					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_05"); //Rukhar to u≈æ zase Randolphovi nandal. To se dalo jen oƒçek√°vat.
 					Rukhar_Won_Wettkampf = TRUE;
 				};
 			
 			if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 				{
-					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_06"); //Tak dobr·, douf·m, ûe to bylo naposledy. O takovÈhle pozdviûenÌ ve svÈm lok·le nestojÌm, zapiöte si to vöichni za uöi.
+					AI_Output			(self, other, "DIA_Orlan_WETTKAMPFLAEUFT_05_06"); //Tak dobr√°, douf√°m, ≈æe to bylo naposledy. O takov√©hle pozdvi≈æen√≠ ve sv√©m lok√°le nestoj√≠m, zapi≈°te si to v≈°ichni za u≈°i.
 				};
 			
 			B_GivePlayerXP (XP_Rukhar_WettkampfVorbei);	
 
 			AI_StopProcessInfos (self);
 		
-			Npc_ExchangeRoutine	(self,"ZaËÌt"); 
-			B_StartotherRoutine	(Randolph,"ZaËÌt");
+			Npc_ExchangeRoutine	(self,"Zaƒç√≠t"); 
+			B_StartotherRoutine	(Randolph,"Zaƒç√≠t");
 
 			if (Hlp_IsValidNpc (Rukhar))
 				{
@@ -775,9 +775,9 @@ func int DIA_Orlan_EINGEBROCKT_Condition ()
 
 func void DIA_Orlan_EINGEBROCKT_Info ()
 {
-			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_00"); //Tos mÏ dostal do pÏknÈ kaöe. TeÔ abych Rukharovi jeötÏ nalil.
-			AI_Output	(other, self, "DIA_Orlan_EINGEBROCKT_15_01"); //ProË?
-			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_02"); //Dokud si tady po¯·d· ty svÈ soutÏûe, je lepöÌ, aby se o tom nikdo z venku nedozvÏdÏl. NenÌ to dobrÈ pro obchod, jasn˝?
+			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_00"); //Tos mƒõ dostal do pƒõkn√© ka≈°e. Teƒè abych Rukharovi je≈°tƒõ nalil.
+			AI_Output	(other, self, "DIA_Orlan_EINGEBROCKT_15_01"); //Proƒç?
+			AI_Output	(self, other, "DIA_Orlan_EINGEBROCKT_05_02"); //Dokud si tady po≈ô√°d√° ty sv√© soutƒõ≈æe, je lep≈°√≠, aby se o tom nikdo z venku nedozvƒõdƒõl. Nen√≠ to dobr√© pro obchod, jasn√Ω?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -790,7 +790,7 @@ instance DIA_Orlan_Perm		(C_INFO)
 	condition	 = 	DIA_Orlan_Perm_Condition;
 	information	 = 	DIA_Orlan_Perm_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co tv· hospoda? Jak to jde?";
+	description	 = 	"Co tv√° hospoda? Jak to jde?";
 };
 
 func int DIA_Orlan_Perm_Condition ()
@@ -807,13 +807,13 @@ func void DIA_Orlan_Perm_Info ()
 	
 	if (Kapitel <= 2)
 	{
-		AI_Output (self, other, "DIA_Orlan_Perm_05_01"); //Uû to bylo lepöÌ, vöak vÌö.
-		AI_Output (self, other, "DIA_Orlan_Perm_05_02"); //LidÈ uû nesahajÌ do sv˝ch mÏöc˘ tak ochotnÏ, jak by mÏli.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_01"); //U≈æ to bylo lep≈°√≠, v≈°ak v√≠≈°.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_02"); //Lid√© u≈æ nesahaj√≠ do sv√Ωch mƒõ≈°c≈Ø tak ochotnƒõ, jak by mƒõli.
 	}
 	else if (Kapitel >= 3)
 	{
-		AI_Output (self, other, "DIA_Orlan_Perm_05_03"); //Snad ty Ëern˝ m·govÈ brzy odt·hnou, jinak m˘ûu hospodu zav¯Ìt.
-		AI_Output (self, other, "DIA_Orlan_Perm_05_04"); //Uû se skoro nikdo neodv·ûÌ zajÌt aû sem.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_03"); //Snad ty ƒçern√Ω m√°gov√© brzy odt√°hnou, jinak m≈Ø≈æu hospodu zav≈ô√≠t.
+		AI_Output (self, other, "DIA_Orlan_Perm_05_04"); //U≈æ se skoro nikdo neodv√°≈æ√≠ zaj√≠t a≈æ sem.
 	};
 };
 
@@ -827,7 +827,7 @@ INSTANCE DIA_Orlan_Minenanteil (C_INFO)
 	condition	= DIA_Orlan_Minenanteil_Condition;
 	information	= DIA_Orlan_Minenanteil_Info;
 
-	description = "Prod·v·ö d˘lnÌ akcie?";
+	description = "Prod√°v√°≈° d≈Øln√≠ akcie?";
 };   
                     
 FUNC INT DIA_Orlan_Minenanteil_Condition()
@@ -842,8 +842,8 @@ FUNC INT DIA_Orlan_Minenanteil_Condition()
 
 FUNC VOID DIA_Orlan_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Orlan_Minenanteil_15_00"); //Prod·v·ö d˘lnÌ akcie?
-	AI_Output (self, other, "DIA_Orlan_Minenanteil_05_01"); //JasnÏ. Ode mÏ dostaneö vöechno, tedy pokud na to m·ö.
+	AI_Output (other, self, "DIA_Orlan_Minenanteil_15_00"); //Prod√°v√°≈° d≈Øln√≠ akcie?
+	AI_Output (self, other, "DIA_Orlan_Minenanteil_05_01"); //Jasnƒõ. Ode mƒõ dostane≈° v≈°echno, tedy pokud na to m√°≈°.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

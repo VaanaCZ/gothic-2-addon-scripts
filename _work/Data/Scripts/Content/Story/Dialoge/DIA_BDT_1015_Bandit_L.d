@@ -42,7 +42,7 @@ func int DIA_1015_BANDIT_AMBUSH_Condition ()
 };
 func void DIA_1015_BANDIT_AMBUSH_Info ()
 {
-	AI_Output			(self, other, "DIA_1015_BANDIT_AMBUSH_06_00"); //Hej, nevidìli jsme se už nìkde?
+	AI_Output			(self, other, "DIA_1015_BANDIT_AMBUSH_06_00"); //Hej, nevidÄ›li jsme se uÅ¾ nÄ›kde?
 	
 	AI_StopProcessInfos (self);
 	

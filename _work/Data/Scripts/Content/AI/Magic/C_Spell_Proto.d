@@ -14,11 +14,11 @@ PROTOTYPE C_Spell_Proto(C_Spell)
 	targetCollectElev			=	60;
 };
 
-// Spells, die gecastet werden solange man die Tasten gedrückt hält
+// Spells, die gecastet werden solange man die Tasten gedrÃ¼ckt hÃ¤lt
 
 // Auf Programm-Seite ist das Aufrechterhalten des Spells aber die INVEST-Phase!! 
-// Das bedeutet, daß die Damage_per_Level Angabe in der Spells_Params.d erst beim stoppen (eigentlich CASTEN) 
-// des Spells aufgerufen wird! Der Abzug von Schaden beim Opfer muß also im zs_"Victim"-Script des Opfers erfolgen...
+// Das bedeutet, daÃŸ die Damage_per_Level Angabe in der Spells_Params.d erst beim stoppen (eigentlich CASTEN) 
+// des Spells aufgerufen wird! Der Abzug von Schaden beim Opfer muÃŸ also im zs_"Victim"-Script des Opfers erfolgen...
 
 /* */
 
@@ -28,11 +28,11 @@ PROTOTYPE C_Spell_Proto(C_Spell)
 
 /*
 
-SPL_DONTINVEST 			// Es können keine weiteren Manapunkte investiert werden. Erst durch CTRL loslassen geht der Spell ab
-SPL_RECEIVEINVEST		// Wirkung durchgeführt, es können weitere Invest kommen, zB.bei Heal nach jedem Pöppel
+SPL_DONTINVEST 			// Es kÃ¶nnen keine weiteren Manapunkte investiert werden. Erst durch CTRL loslassen geht der Spell ab
+SPL_RECEIVEINVEST		// Wirkung durchgefÃ¼hrt, es kÃ¶nnen weitere Invest kommen, zB.bei Heal nach jedem PÃ¶ppel
 SPL_SENDCAST			// Starte den Zauber-Effekt (wie CTRL loslassen), automatischer Abbruch
 SPL_SENDSTOP			// Beende Zauber ohne Effekt
-SPL_NEXTLEVEL			// setze den Spruch auf den nächsten Level
+SPL_NEXTLEVEL			// setze den Spruch auf den nÃ¤chsten Level
 
 TARGET_COLLECT_NONE 					// target will be set by effect (range, azi, elev)
 TARGET_COLLECT_CASTER					// target is the caster

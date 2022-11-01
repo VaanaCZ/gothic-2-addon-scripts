@@ -33,7 +33,7 @@ const int	Value_Planeberry		=	10;		const int	HP_Planeberry		=	5;
 
 INSTANCE ItPl_Weed(C_Item)
 {	
-	name 				=	"Tr·va";
+	name 				=	"Tr√°va";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -55,7 +55,7 @@ INSTANCE ItPl_Weed(C_Item)
 
 INSTANCE ItPl_Beet (C_Item)
 {	
-	name 				=	"Tu¯Ìn";
+	name 				=	"Tu≈ô√≠n";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -80,7 +80,7 @@ func void Use_Beet ()
 /******************************************************************************************/	
 INSTANCE ItPl_SwampHerb(C_Item)
 {	
-	name 				=	"Tr·va z baûin";
+	name 				=	"Tr√°va z ba≈æin";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -109,7 +109,7 @@ INSTANCE ItPl_SwampHerb(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_01(C_Item)
 {	
-	name 				=	"Ohniv· kop¯iva";
+	name 				=	"Ohniv√° kop≈ôiva";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -137,7 +137,7 @@ INSTANCE ItPl_Mana_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_02(C_Item)
 {	
-	name 				=	"OhnivÈ b˝lÌ";
+	name 				=	"Ohniv√© b√Ωl√≠";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -165,7 +165,7 @@ INSTANCE ItPl_Mana_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_03(C_Item)
 {	
-	name 				=	"Ohniv˝ ko¯en";
+	name 				=	"Ohniv√Ω ko≈ôen";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -193,7 +193,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01(C_Item)
 {	
-	name 				=	"LÈËiv· rostlina";
+	name 				=	"L√©ƒçiv√° rostlina";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -222,7 +222,7 @@ INSTANCE ItPl_Health_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_02(C_Item)
 {	
-	name 				=	"LÈËiv· bylina";
+	name 				=	"L√©ƒçiv√° bylina";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -250,7 +250,7 @@ INSTANCE ItPl_Health_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_03(C_Item)
 {	
-	name 				=	"LÈËiv˝ ko¯en";
+	name 				=	"L√©ƒçiv√Ω ko≈ôen";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -276,7 +276,7 @@ INSTANCE ItPl_Health_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Dex_Herb_01(C_Item)
 {	
-	name 				=	"GoblinÌ bobule";
+	name 				=	"Goblin√≠ bobule";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -304,7 +304,7 @@ INSTANCE ItPl_Dex_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Strength_Herb_01(C_Item)
 {	
-	name 				=	"DraËÌ ko¯en";
+	name 				=	"Draƒç√≠ ko≈ôen";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -334,7 +334,7 @@ INSTANCE ItPl_Strength_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Speed_Herb_01(C_Item)
 {	
-	name 				=	"ChÚapavËÌ b˝lÌ";
+	name 				=	"Ch≈àapavƒç√≠ b√Ωl√≠";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -366,7 +366,7 @@ INSTANCE ItPl_Speed_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_01(C_Item)
 {	
-	name 				=	"Tmav· houba";
+	name 				=	"Tmav√° houba";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -407,7 +407,7 @@ INSTANCE ItPl_Mushroom_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_02(C_Item)
 {	
-	name 				=	"Otrok˘v chlÈb";
+	name 				=	"Otrok≈Øv chl√©b";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -434,7 +434,7 @@ INSTANCE ItPl_Mushroom_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Blueplant(C_Item)
 {	
-	name 				=	"Modr˝ bez";
+	name 				=	"Modr√Ω bez";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -464,7 +464,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Forestberry (C_Item)
 {	
-	name 				=	"LesnÌ bobule";
+	name 				=	"Lesn√≠ bobule";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -493,7 +493,7 @@ INSTANCE ItPl_Forestberry (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Planeberry (C_Item)
 {	
-	name 				=	"LuËnÌ bobule";
+	name 				=	"Luƒçn√≠ bobule";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -523,13 +523,13 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von tempor‰ren und permanten Tr‰nken
+//		Pflanze zum brauen von tempor√§ren und permanten Tr√§nken
 //******************************************************************************************
 
 
 INSTANCE ItPl_Temp_Herb(C_Item)
 {	
-	name 				=	"LuËnÌ pohanka";
+	name 				=	"Luƒçn√≠ pohanka";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -557,7 +557,7 @@ INSTANCE ItPl_Temp_Herb(C_Item)
 
 INSTANCE ItPl_Perm_Herb(C_Item)
 {	
-	name 				=	"Kr·lovsk˝ öùovÌk";
+	name 				=	"Kr√°lovsk√Ω ≈°≈•ov√≠k";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	

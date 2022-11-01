@@ -52,7 +52,7 @@ FUNC INT DIA_Hagen_PMSchulden_Condition()
 
 FUNC VOID DIA_Hagen_PMSchulden_Info()
 {
-	AI_Output (self, other, "DIA_Hagen_PMSchulden_04_00"); //Dobøe e jsi pøišel. Mùeš hned zaplatit tu pokutu.
+	AI_Output (self, other, "DIA_Hagen_PMSchulden_04_00"); //DobÅ™e Å¾e jsi pÅ™iÅ¡el. MÅ¯Å¾eÅ¡ hned zaplatit tu pokutu.
 
 	if (B_GetTotalPetzCounter(self) > Hagen_LastPetzCounter)
 	{
@@ -65,51 +65,51 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 		
 		if (Hagen_Schulden > 1000)	{	Hagen_Schulden = 1000;	};
 		
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_01"); //Nebereš zákony mìsta moc vánì, co?
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_02"); //Seznam tvıch prohøeškù zase narostl.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_01"); //NebereÅ¡ zÃ¡kony mÄ›sta moc vÃ¡Å¾nÄ›, co?
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_02"); //Seznam tvÃ½ch prohÅ™eÅ¡kÅ¯ zase narostl.
 		if (Hagen_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_03"); //A neøíkej mi, es to nevìdìl!
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_03"); //A neÅ™Ã­kej mi, Å¾es to nevÄ›dÄ›l!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_04"); //Zaplatíš maximální pokutu.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_04"); //ZaplatÃ­Å¡ maximÃ¡lnÃ­ pokutu.
 			B_Say_Gold (self, other, Hagen_Schulden);
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Hagen_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_05"); //No, zdá se, e se situace zmìnila.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_05"); //No, zdÃ¡ se, Å¾e se situace zmÄ›nila.
 		
 		if (Hagen_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_06"); //Nejsou u ádní svìdkové tvé vrady!
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_06"); //Nejsou uÅ¾ Å¾Ã¡dnÃ­ svÄ›dkovÃ© tvÃ© vraÅ¾dy!
 		};
 		
 		if (Hagen_LastPetzCrime == CRIME_THEFT)
 		|| ( (Hagen_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_07"); //Nikdo u nebude svìdèit, e tì vidìl krást!
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_07"); //Nikdo uÅ¾ nebude svÄ›dÄit, Å¾e tÄ› vidÄ›l krÃ¡st!
 		};
 		
 		if (Hagen_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Hagen_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_08"); //U nezbyli ádní svìdci té tvé rvaèky.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_08"); //UÅ¾ nezbyli Å¾Ã¡dnÃ­ svÄ›dci tÃ© tvÃ© rvaÄky.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_09"); //Všechna obvinìní proti tobì byla staena.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_09"); //VÅ¡echna obvinÄ›nÃ­ proti tobÄ› byla staÅ¾ena.
 		};
 		
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_10"); //Nevím, co se tam ve mìstì stalo - a ani to vìdìt nechci.
-		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_11"); //Dávej si prostì pozor, aby ses tady nedostal do problémù.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_10"); //NevÃ­m, co se tam ve mÄ›stÄ› stalo - a ani to vÄ›dÄ›t nechci.
+		AI_Output (self, other, "DIA_Hagen_PMSchulden_04_11"); //DÃ¡vej si prostÄ› pozor, aby ses tady nedostal do problÃ©mÅ¯.
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_12"); //Tak nebo tak, rozhodl jsem se prominout ti tvé dluhy.
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_13"); //Dej si pozor, a se nedostaneš do ádnıch dalších nesnází.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_12"); //Tak nebo tak, rozhodl jsem se prominout ti tvÃ© dluhy.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_13"); //Dej si pozor, aÅ¥ se nedostaneÅ¡ do Å¾Ã¡dnÃ½ch dalÅ¡Ã­ch nesnÃ¡zÃ­.
 	
 			Hagen_Schulden			= 0;
 			Hagen_LastPetzCounter 	= 0;
@@ -117,9 +117,9 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_14"); //Nakonec stejnì zaplatíš všechny své závazky v plné vıši.
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_14"); //Nakonec stejnÄ› zaplatÃ­Å¡ vÅ¡echny svÃ© zÃ¡vazky v plnÃ© vÃ½Å¡i.
 			B_Say_Gold (self, other, Hagen_Schulden);
-			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_15"); //Tak co, chceš zaplatit?
+			AI_Output (self, other, "DIA_Hagen_PMSchulden_04_15"); //Tak co, chceÅ¡ zaplatit?
 		};
 	};
 	
@@ -128,8 +128,8 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Hagen_PMSchulden);
 		Info_ClearChoices  	(DIA_Hagen_PETZMASTER);
-		Info_AddChoice		(DIA_Hagen_PMSchulden,"Nemám dost penìz!",DIA_Hagen_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Hagen_PMSchulden,"Kolik e to bylo?",DIA_Hagen_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Hagen_PMSchulden,"NemÃ¡m dost penÄ›z!",DIA_Hagen_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Hagen_PMSchulden,"Kolik Å¾e to bylo?",DIA_Hagen_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Hagen_Schulden)
 		{
 			Info_AddChoice 	(DIA_Hagen_PMSchulden,"Chci tu pokutu zaplatit!",DIA_Hagen_PETZMASTER_PayNow);
@@ -139,13 +139,13 @@ FUNC VOID DIA_Hagen_PMSchulden_Info()
 
 func void DIA_Hagen_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Hagen_PMSchulden_HowMuchAgain_15_00"); //Kolik e to bylo?
+	AI_Output (other, self, "DIA_Hagen_PMSchulden_HowMuchAgain_15_00"); //Kolik Å¾e to bylo?
 	B_Say_Gold (self, other, Hagen_Schulden);
 
 	Info_ClearChoices  	(DIA_Hagen_PMSchulden);
 	Info_ClearChoices  	(DIA_Hagen_PETZMASTER);
-	Info_AddChoice		(DIA_Hagen_PMSchulden,"Nemám dost penìz!",DIA_Hagen_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Hagen_PMSchulden,"Kolik e to bylo?",DIA_Hagen_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Hagen_PMSchulden,"NemÃ¡m dost penÄ›z!",DIA_Hagen_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Hagen_PMSchulden,"Kolik Å¾e to bylo?",DIA_Hagen_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Hagen_Schulden)
 	{
 		Info_AddChoice 	(DIA_Hagen_PMSchulden,"Chci tu pokutu zaplatit!",DIA_Hagen_PETZMASTER_PayNow);
@@ -177,61 +177,61 @@ FUNC INT DIA_Hagen_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Hagen_PETZMASTER_Info()
 {
-	Hagen_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Hagen_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Hagen noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_00"); //Tvá povìst tì pøedchází. Porušil jsi zákony mìsta.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_00"); //TvÃ¡ povÄ›st tÄ› pÅ™edchÃ¡zÃ­. PoruÅ¡il jsi zÃ¡kony mÄ›sta.
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_01"); //Dostal ses do pìkné šlamastyky.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_02"); //Vrada je vánı zloèin!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_01"); //Dostal ses do pÄ›knÃ© Å¡lamastyky.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_02"); //VraÅ¾da je vÃ¡Å¾nÃ½ zloÄin!
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Hagen_Schulden = Hagen_Schulden + 500;						//PLUS Mörder-Malus
+		Hagen_Schulden = Hagen_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_03"); //Nemluvì o tvıch dalších prohøešcích.
+			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_03"); //NemluvÄ› o tvÃ½ch dalÅ¡Ã­ch prohÅ™eÅ¡cÃ­ch.
 		};
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_04"); //Stráe mají pøíkazy na místì popravit kadého vraha.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_05"); //Vrada je v tomto mìstì nepøípustná. Mùeš však dát svou lítost najevo zaplacením pokuty.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_04"); //StrÃ¡Å¾e majÃ­ pÅ™Ã­kazy na mÃ­stÄ› popravit kaÅ¾dÃ©ho vraha.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_05"); //VraÅ¾da je v tomto mÄ›stÄ› nepÅ™Ã­pustnÃ¡. MÅ¯Å¾eÅ¡ vÅ¡ak dÃ¡t svou lÃ­tost najevo zaplacenÃ­m pokuty.
 
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_06"); //Jsi obvinìn z krádee!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_06"); //Jsi obvinÄ›n z krÃ¡deÅ¾e!
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_07"); //Nemluvì o dalších vìcech, které se ke mnì donesly.
+			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_07"); //NemluvÄ› o dalÅ¡Ã­ch vÄ›cech, kterÃ© se ke mnÄ› donesly.
 		};
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_08"); //To je porušení mìstskıch zákonù. Za to zaplatíš.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_08"); //To je poruÅ¡enÃ­ mÄ›stskÃ½ch zÃ¡konÅ¯. Za to zaplatÃ­Å¡.
 		
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_09"); //Zapletl ses do rvaèky. Tím pádem jsi porušil zákon.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_09"); //Zapletl ses do rvaÄky. TÃ­m pÃ¡dem jsi poruÅ¡il zÃ¡kon.
 		
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_10"); //A co to bylo s tou ovcí?
+			AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_10"); //A co to bylo s tou ovcÃ­?
 		};
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_11"); //Porušení zákonù mìsta je porušením zákonù samotného Innose.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_12"); //Budeš za to muset zaplatit.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_11"); //PoruÅ¡enÃ­ zÃ¡konÅ¯ mÄ›sta je poruÅ¡enÃ­m zÃ¡konÅ¯ samotnÃ©ho Innose.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_12"); //BudeÅ¡ za to muset zaplatit.
 		
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getÃ¶tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_13"); //Zasedl sis na naše ovce - poprvé jsem tomu ani nechtìl vìøit.
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_14"); //Proè se musím poøád zaobírat takovımi prkotinami?
-		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_15"); //Budeš muset zaplatit náhradu škody!
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_13"); //Zasedl sis na naÅ¡e ovce - poprvÃ© jsem tomu ani nechtÄ›l vÄ›Å™it.
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_14"); //ProÄ se musÃ­m poÅ™Ã¡d zaobÃ­rat takovÃ½mi prkotinami?
+		AI_Output (self, other, "DIA_Hagen_PETZMASTER_04_15"); //BudeÅ¡ muset zaplatit nÃ¡hradu Å¡kody!
 		
 		Hagen_Schulden = 100;
 	};
@@ -244,7 +244,7 @@ FUNC VOID DIA_Hagen_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Hagen_PMSchulden);
 	Info_ClearChoices  	(DIA_Hagen_PETZMASTER);
-	Info_AddChoice		(DIA_Hagen_PETZMASTER,"Nemám dost penìz!",DIA_Hagen_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Hagen_PETZMASTER,"NemÃ¡m dost penÄ›z!",DIA_Hagen_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Hagen_Schulden)
 	{
 		Info_AddChoice 	(DIA_Hagen_PETZMASTER,"Chci tu pokutu zaplatit!",DIA_Hagen_PETZMASTER_PayNow);
@@ -255,7 +255,7 @@ func void DIA_Hagen_PETZMASTER_PayNow()
 {
 	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayNow_15_00"); //Chci tu pokutu zaplatit!
 	B_GiveInvItems (other, self, itmi_gold, Hagen_Schulden);
-	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayNow_04_01"); //Dobrá! Dohlédnu na to, aby se o tom dozvìdìl kadı ve mìstì - to ti alespoò èásteènì vylepší reputaci.
+	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayNow_04_01"); //DobrÃ¡! DohlÃ©dnu na to, aby se o tom dozvÄ›dÄ›l kaÅ¾dÃ½ ve mÄ›stÄ› - to ti alespoÅˆ ÄÃ¡steÄnÄ› vylepÅ¡Ã­ reputaci.
 
 	B_GrantAbsolution (LOC_CITY);
 	
@@ -269,9 +269,9 @@ func void DIA_Hagen_PETZMASTER_PayNow()
 
 func void DIA_Hagen_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayLater_15_00"); //Nemám dost penìz!
-	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_01"); //Tak si nìjaké co nejrychleji seeò.
-	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_02"); //A varuji tì: jestli se proviníš ještì nìèím, jen si to zhoršíš.
+	AI_Output (other, self, "DIA_Hagen_PETZMASTER_PayLater_15_00"); //NemÃ¡m dost penÄ›z!
+	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_01"); //Tak si nÄ›jakÃ© co nejrychleji seÅ¾eÅˆ.
+	AI_Output (self, other, "DIA_Hagen_PETZMASTER_PayLater_04_02"); //A varuji tÄ›: jestli se provinÃ­Å¡ jeÅ¡tÄ› nÄ›ÄÃ­m, jen si to zhorÅ¡Ã­Å¡.
 	
 	Hagen_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Hagen_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -301,17 +301,17 @@ func int DIA_Lord_Hagen_Hallo_Condition ()
 };
 func void DIA_Lord_Hagen_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_00"); //U jsem o tobì slyšel.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_00"); //UÅ¾ jsem o tobÄ› slyÅ¡el.
 	if (Npc_KnowsInfo (other, DIA_Lothar_EyeInnos))
 	|| (Andre_EyeInnos == TRUE)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_03"); //Lothar mi oznámil, e prı se mnou chceš mluvit.
-		AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_01"); //Jsi ten cizinec, kterı se doaduje Innosova oka.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_03"); //Lothar mi oznÃ¡mil, Å¾e prÃ½ se mnou chceÅ¡ mluvit.
+		AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_01"); //Jsi ten cizinec, kterÃ½ se doÅ¾aduje Innosova oka.
 	};
 	
 	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_02"); //Jsem lord Hagen.
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_03"); //Královskı paladin, váleèník našeho Pána Innose a nejvyšší velitel Khorinidu.
-	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_04"); //Mám spoustu práce. Take neplıtvej mım èasem - a radìji mi øekni, proè tu jsi.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_03"); //KrÃ¡lovskÃ½ paladin, vÃ¡leÄnÃ­k naÅ¡eho PÃ¡na Innose a nejvyÅ¡Å¡Ã­ velitel Khorinidu.
+	AI_Output (self, other, "DIA_Lord_Hagen_Hallo_04_04"); //MÃ¡m spoustu prÃ¡ce. TakÅ¾e neplÃ½tvej mÃ½m Äasem - a radÄ›ji mi Å™ekni, proÄ tu jsi.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -324,7 +324,7 @@ INSTANCE DIA_Lord_Hagen_Frieden (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Frieden_Condition;
 	information	 = 	DIA_Lord_Hagen_Frieden_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Pøináším návrh pøímìøí od oldnéøù!";
+	description	 =  "PÅ™inÃ¡Å¡Ã­m nÃ¡vrh pÅ™Ã­mÄ›Å™Ã­ od Å¾oldnÃ©Å™Å¯!";
 };
 func int DIA_Lord_Hagen_Frieden_Condition ()
 {	
@@ -336,20 +336,20 @@ func int DIA_Lord_Hagen_Frieden_Condition ()
 };
 func void DIA_Lord_Hagen_Frieden_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Frieden_15_00"); //Pøináším návrh pøímìøí od oldnéøù!
+	AI_Output (other, self, "DIA_Lord_Hagen_Frieden_15_00"); //PÅ™inÃ¡Å¡Ã­m nÃ¡vrh pÅ™Ã­mÄ›Å™Ã­ od Å¾oldnÃ©Å™Å¯!
 	B_GiveInvItems (other, self, itwr_Passage_MIS, 1);
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_01"); //(nevrle) Hm - uka!
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_01"); //(nevrle) Hm - ukaÅ¾!
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_02"); //Generála Leeho znám. Vím také o okolnostech, za jakıch byl odsouzen k nucenım pracem v kolonii.
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_03"); //Povauji ho za èestného mue. Jsem ochoten mu jeho prohøešky odpustit - ale jenom jemu!
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_04"); //To se netıká jeho muù. Vìtšina z nich jsou hanební hrdloøezové a svùj trest si plnì zasluhují!
-	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_05"); //Jim rozhodnì nic neprominu. Mùeš jim to oznámit.
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_02"); //GenerÃ¡la Leeho znÃ¡m. VÃ­m takÃ© o okolnostech, za jakÃ½ch byl odsouzen k nucenÃ½m pracem v kolonii.
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_03"); //PovaÅ¾uji ho za ÄestnÃ©ho muÅ¾e. Jsem ochoten mu jeho prohÅ™eÅ¡ky odpustit - ale jenom jemu!
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_04"); //To se netÃ½kÃ¡ jeho muÅ¾Å¯. VÄ›tÅ¡ina z nich jsou hanebnÃ­ hrdloÅ™ezovÃ© a svÅ¯j trest si plnÄ› zasluhujÃ­!
+	AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_05"); //Jim rozhodnÄ› nic neprominu. MÅ¯Å¾eÅ¡ jim to oznÃ¡mit.
 	Hagen_FriedenAbgelehnt = TRUE;
 	if (!Npc_KnowsInfo (other, DIA_Lord_Hagen_Armee))
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_06"); //Je to všechno?
+		AI_Output (self, other, "DIA_Lord_Hagen_Frieden_04_06"); //Je to vÅ¡echno?
 	};
-	B_LogEntry (Topic_Frieden,"Lord Hagen je ochoten zprostit viny Leeho, ale nikoliv ostatní oldnéøe."); 
+	B_LogEntry (Topic_Frieden,"Lord Hagen je ochoten zprostit viny Leeho, ale nikoliv ostatnÃ­ Å¾oldnÃ©Å™e."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -362,7 +362,7 @@ INSTANCE DIA_Lord_Hagen_Armee (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Armee_Condition;
 	information	 = 	DIA_Lord_Hagen_Armee_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Nedaleko se shromaïují zástupy zlıch stvùr. V Hornickém údolí.";
+	description	 =  "Nedaleko se shromaÅ¾ÄujÃ­ zÃ¡stupy zlÃ½ch stvÅ¯r. V HornickÃ©m ÃºdolÃ­.";
 };
 func int DIA_Lord_Hagen_Armee_Condition ()
 {	
@@ -374,20 +374,20 @@ func int DIA_Lord_Hagen_Armee_Condition ()
 };
 func void DIA_Lord_Hagen_Armee_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_00"); //Nedaleko se shromaïují zástupy zlıch stvùr. V Hornickém údolí.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_01"); //V Hornickém údolí? Vyslali jsme tam vıpravu. Neustále nám docházejí zprávy o tom, e prùsmyk okupují skøeti.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_02"); //Ale o armádì zla se ke mnì ještì nic nedoneslo.
+	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_00"); //Nedaleko se shromaÅ¾ÄujÃ­ zÃ¡stupy zlÃ½ch stvÅ¯r. V HornickÃ©m ÃºdolÃ­.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_01"); //V HornickÃ©m ÃºdolÃ­? Vyslali jsme tam vÃ½pravu. NeustÃ¡le nÃ¡m dochÃ¡zejÃ­ zprÃ¡vy o tom, Å¾e prÅ¯smyk okupujÃ­ skÅ™eti.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_02"); //Ale o armÃ¡dÄ› zla se ke mnÄ› jeÅ¡tÄ› nic nedoneslo.
 	if (Npc_KnowsInfo (other, DIA_Lord_Hagen_Frieden))
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_03"); //Není to jen nìjakı ubohı trik, kterı mì má pøesvìdèit o nezbytnosti spojit síly se oldnéøi?
+		AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_03"); //NenÃ­ to jen nÄ›jakÃ½ ubohÃ½ trik, kterÃ½ mÄ› mÃ¡ pÅ™esvÄ›dÄit o nezbytnosti spojit sÃ­ly se Å¾oldnÃ©Å™i?
 		AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_04"); //Ne.
 	};
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_05"); //(skepticky) Co to má bıt za armádu?
-	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_06"); //Armáda drakù, která kolem sebe shromádila zástupy pøisluhovaèù.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_07"); //Draci? Podle starıch spisù to u je nìkolik století, co nìkdo naposledy vidìl draka.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_08"); //Povìz - proè bych mìl vìøit jedinému tvému slovu?
-	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_09"); //Jenome otázka není, jestli mi mùeš vìøit. Otázka je, jestli si mùeš dovolit mi NEVÌØIT v pøípadì, e mluvím pravdu.
-	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_10"); //Dokud nebudu mít dùkaz, nemohu tam vyslat více muù.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_05"); //(skepticky) Co to mÃ¡ bÃ½t za armÃ¡du?
+	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_06"); //ArmÃ¡da drakÅ¯, kterÃ¡ kolem sebe shromÃ¡Å¾dila zÃ¡stupy pÅ™isluhovaÄÅ¯.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_07"); //Draci? Podle starÃ½ch spisÅ¯ to uÅ¾ je nÄ›kolik stoletÃ­, co nÄ›kdo naposledy vidÄ›l draka.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_08"); //PovÄ›z - proÄ bych mÄ›l vÄ›Å™it jedinÃ©mu tvÃ©mu slovu?
+	AI_Output (other, self, "DIA_Lord_Hagen_Armee_15_09"); //JenomÅ¾e otÃ¡zka nenÃ­, jestli mi mÅ¯Å¾eÅ¡ vÄ›Å™it. OtÃ¡zka je, jestli si mÅ¯Å¾eÅ¡ dovolit mi NEVÄšÅ˜IT v pÅ™Ã­padÄ›, Å¾e mluvÃ­m pravdu.
+	AI_Output (self, other, "DIA_Lord_Hagen_Armee_04_10"); //Dokud nebudu mÃ­t dÅ¯kaz, nemohu tam vyslat vÃ­ce muÅ¾Å¯.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -400,7 +400,7 @@ INSTANCE DIA_Lord_Hagen_Proof (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Proof_Condition;
 	information	 = 	DIA_Lord_Hagen_Proof_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Take chceš, abych ti pøinesl nìjakı dùkaz?";
+	description	 =  "TakÅ¾e chceÅ¡, abych ti pÅ™inesl nÄ›jakÃ½ dÅ¯kaz?";
 };
 func int DIA_Lord_Hagen_Proof_Condition ()
 {	
@@ -412,18 +412,18 @@ func int DIA_Lord_Hagen_Proof_Condition ()
 };
 func void DIA_Lord_Hagen_Proof_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_00"); //Take chceš, abych ti pøinesl nìjakı dùkaz?
+	AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_00"); //TakÅ¾e chceÅ¡, abych ti pÅ™inesl nÄ›jakÃ½ dÅ¯kaz?
 
 	IF (hero.guild != GIL_NONE)
 	&& (hero.guild != GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_01"); //Pøesnì tak. Projdi prùsmykem a dostaò se do Hornického údolí. A tam budeš, najdi mou vıpravu - a a se ti to podaøí, promluv si s velitelem Garondem.
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_02"); //Pokud nìkdo ví, jaká tam panuje situace, tak je to on.
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_03"); //Jestli tvoje slova potvrdí, jsem pøipraven ti pomoci.
-		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_04"); //Znamená to, e mi pak dáš Innosovo oko?
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_05"); //Innosovo oko... dobrá. Pøines mi dùkaz a já pak dohlédnu na to, abys smìl nosit ten amulet.
-		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_06"); //Mám tedy v tomto ohledu tvoje slovo?
-		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_07"); //Samozøejmì - máš ho mít.
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_01"); //PÅ™esnÄ› tak. Projdi prÅ¯smykem a dostaÅˆ se do HornickÃ©ho ÃºdolÃ­. AÅ¾ tam budeÅ¡, najdi mou vÃ½pravu - a aÅ¾ se ti to podaÅ™Ã­, promluv si s velitelem Garondem.
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_02"); //Pokud nÄ›kdo vÃ­, jakÃ¡ tam panuje situace, tak je to on.
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_03"); //Jestli tvoje slova potvrdÃ­, jsem pÅ™ipraven ti pomoci.
+		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_04"); //ZnamenÃ¡ to, Å¾e mi pak dÃ¡Å¡ Innosovo oko?
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_05"); //Innosovo oko... dobrÃ¡. PÅ™ines mi dÅ¯kaz a jÃ¡ pak dohlÃ©dnu na to, abys smÄ›l nosit ten amulet.
+		AI_Output (other, self, "DIA_Lord_Hagen_Proof_15_06"); //MÃ¡m tedy v tomto ohledu tvoje slovo?
+		AI_Output (self, other, "DIA_Lord_Hagen_Proof_04_07"); //SamozÅ™ejmÄ› - mÃ¡Å¡ ho mÃ­t.
 		Hagen_BringProof = TRUE;
 	}
 	else
@@ -449,7 +449,7 @@ INSTANCE DIA_Lord_Hagen_Auge (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Auge_Condition;
 	information	 = 	DIA_Lord_Hagen_Auge_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Co víš o Innosovu oku?";
+	description	 =  "Co vÃ­Å¡ o Innosovu oku?";
 };
 func int DIA_Lord_Hagen_Auge_Condition ()
 {	
@@ -457,14 +457,14 @@ func int DIA_Lord_Hagen_Auge_Condition ()
 };
 func void DIA_Lord_Hagen_Auge_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_00"); //Co víš o Innosovu oku?
-	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_01"); //Je to posvátnı artefakt. (zadumanì) Ve starıch proroctvích se øíká, e je nìjak spojen s draky.
-	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_02"); //V tìchto spisech je ale také zmínka o tom, e jej mùe nosit jen Innosùv vyvolenı.
+	AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_00"); //Co vÃ­Å¡ o Innosovu oku?
+	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_01"); //Je to posvÃ¡tnÃ½ artefakt. (zadumanÄ›) Ve starÃ½ch proroctvÃ­ch se Å™Ã­kÃ¡, Å¾e je nÄ›jak spojen s draky.
+	AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_02"); //V tÄ›chto spisech je ale takÃ© zmÃ­nka o tom, Å¾e jej mÅ¯Å¾e nosit jen InnosÅ¯v vyvolenÃ½.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_03"); //JÁ jsem Innosùv vyvolenı!
-		AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_04"); //Potom moná budeš moci ten amulet nosit.
+		AI_Output (other, self, "DIA_Lord_Hagen_Auge_15_03"); //JÃ jsem InnosÅ¯v vyvolenÃ½!
+		AI_Output (self, other, "DIA_Lord_Hagen_Auge_04_04"); //Potom moÅ¾nÃ¡ budeÅ¡ moci ten amulet nosit.
 	};
 };
 
@@ -478,7 +478,7 @@ INSTANCE DIA_Lord_Hagen_Pass (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Pass_Condition;
 	information	 = 	DIA_Lord_Hagen_Pass_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Jak se mám dostat pøes ten prùsmyk?";
+	description	 =  "Jak se mÃ¡m dostat pÅ™es ten prÅ¯smyk?";
 };
 func int DIA_Lord_Hagen_Pass_Condition ()
 {	
@@ -490,9 +490,9 @@ func int DIA_Lord_Hagen_Pass_Condition ()
 };
 func void DIA_Lord_Hagen_Pass_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Pass_15_00"); //Jak se mám dostat pøes ten prùsmyk?
-	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_01"); //Dám ti klíè od vrat v prùsmyku. Budeš si ale muset najít zpùsob, jak proklouznout mezi vojskem skøetù.
-	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_02"); //Nech tì Innos ochraòuje.
+	AI_Output (other, self, "DIA_Lord_Hagen_Pass_15_00"); //Jak se mÃ¡m dostat pÅ™es ten prÅ¯smyk?
+	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_01"); //DÃ¡m ti klÃ­Ä od vrat v prÅ¯smyku. BudeÅ¡ si ale muset najÃ­t zpÅ¯sob, jak proklouznout mezi vojskem skÅ™etÅ¯.
+	AI_Output (self, other, "DIA_Lord_Hagen_Pass_04_02"); //NechÅ¥ tÄ› Innos ochraÅˆuje.
 		
 	AI_StopProcessInfos (self);
 	MIS_OLDWORLD = LOG_RUNNING;
@@ -502,14 +502,14 @@ func void DIA_Lord_Hagen_Pass_Info ()
 	
 	Log_CreateTopic (Topic_MISOLDWORLD,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MISOLDWORLD,LOG_RUNNING);
-	B_LogEntry (Topic_MISOLDWORLD,"Lord Hagen chce, abych mu o armádách zla pøinesl nìjakı dùkaz. Musím se vydat do Hornického údolí a promluvit si tam s velitelem Garondem.");
+	B_LogEntry (Topic_MISOLDWORLD,"Lord Hagen chce, abych mu o armÃ¡dÃ¡ch zla pÅ™inesl nÄ›jakÃ½ dÅ¯kaz. MusÃ­m se vydat do HornickÃ©ho ÃºdolÃ­ a promluvit si tam s velitelem Garondem.");
 	
 	if (Fernando_ImKnast == FALSE)
 	{
 		B_StartOtherRoutine (Fernando,"WAIT"); 
 	};
 	
-	Wld_InsertNpc (BDT_1020_Bandit_L, "NW_TROLLAREA_PATH_47");	//Joly: //ADDON stört dann nicht mehr
+	Wld_InsertNpc (BDT_1020_Bandit_L, "NW_TROLLAREA_PATH_47");	//Joly: //ADDON stÃ¶rt dann nicht mehr
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -522,7 +522,7 @@ instance DIA_Addon_Lord_Hagen_Ornament		(C_INFO)
 	condition	= DIA_Addon_Lord_Hagen_Ornament_Condition;
 	information	= DIA_Addon_Lord_Hagen_Ornament_Info;
 
-	description	= "Hledám kovovı ornament.";
+	description	= "HledÃ¡m kovovÃ½ ornament.";
 };
 
 func int DIA_Addon_Lord_Hagen_Ornament_Condition ()
@@ -536,9 +536,9 @@ func int DIA_Addon_Lord_Hagen_Ornament_Condition ()
 
 func void DIA_Addon_Lord_Hagen_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lord_Hagen_GiveOrnament_15_00"); //Hledám kovovı ornament. Mìl by bıt nìkde u kamenného kruhu u Lobartova statku.
-	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_01"); //Jestli myslíš tohleto, tak to jsme povaovali za magickou runu, ale pak jsme zjistili, e je to úplnì k nièemu.
-	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_02"); //Klidnì si to vem, mnì to k nièemu není.
+	AI_Output	(other, self, "DIA_Addon_Lord_Hagen_GiveOrnament_15_00"); //HledÃ¡m kovovÃ½ ornament. MÄ›l by bÃ½t nÄ›kde u kamennÃ©ho kruhu u Lobartova statku.
+	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_01"); //Jestli myslÃ­Å¡ tohleto, tak to jsme povaÅ¾ovali za magickou runu, ale pak jsme zjistili, Å¾e je to ÃºplnÄ› k niÄemu.
+	AI_Output	(self, other, "DIA_Addon_Lord_Hagen_GiveOrnament_04_02"); //KlidnÄ› si to vem, mnÄ› to k niÄemu nenÃ­.
 	
 	CreateInvItems (self, ItMi_Ornament_Addon, 1);									
 	B_GiveInvItems (self, other, ItMi_Ornament_Addon, 1);	
@@ -556,7 +556,7 @@ INSTANCE DIA_Lord_Hagen_Khorinis (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Khorinis_Condition;
 	information	 = 	DIA_Lord_Hagen_Khorinis_Info;
 	permanent	 = 	FALSE;
-	description	 =  "Proè jste pøišli do Khorinidu?";
+	description	 =  "ProÄ jste pÅ™iÅ¡li do Khorinidu?";
 };
 func int DIA_Lord_Hagen_Khorinis_Condition ()
 {	
@@ -568,9 +568,9 @@ func int DIA_Lord_Hagen_Khorinis_Condition ()
 };
 func void DIA_Lord_Hagen_Khorinis_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Khorinis_15_00"); //Proè jste pøišli do Khorinidu?
-	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_01"); //Plníme dùleitı úkol ve prospìch království. Naše rozkazy pocházejí pøímo od krále Rhobara.
-	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_02"); //Øekl jsem ti, e jsme poslali vıpravu do Hornického údolí. Proto tu jsme.
+	AI_Output (other, self, "DIA_Lord_Hagen_Khorinis_15_00"); //ProÄ jste pÅ™iÅ¡li do Khorinidu?
+	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_01"); //PlnÃ­me dÅ¯leÅ¾itÃ½ Ãºkol ve prospÄ›ch krÃ¡lovstvÃ­. NaÅ¡e rozkazy pochÃ¡zejÃ­ pÅ™Ã­mo od krÃ¡le Rhobara.
+	AI_Output (self, other, "DIA_Lord_Hagen_Khorinis_04_02"); //Å˜ekl jsem ti, Å¾e jsme poslali vÃ½pravu do HornickÃ©ho ÃºdolÃ­. Proto tu jsme.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -583,7 +583,7 @@ INSTANCE DIA_Lord_Hagen_Minental (C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Minental_Condition;
 	information	 = 	DIA_Lord_Hagen_Minental_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Co dìlají vaši mui v Hornickém údolí?";
+	description	 =  "Co dÄ›lajÃ­ vaÅ¡i muÅ¾i v HornickÃ©m ÃºdolÃ­?";
 };
 func int DIA_Lord_Hagen_Minental_Condition ()
 {	
@@ -595,33 +595,33 @@ func int DIA_Lord_Hagen_Minental_Condition ()
 };
 func void DIA_Lord_Hagen_Minental_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_00"); //Co dìlají vaši mui v Hornickém údolí?
+	AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_00"); //Co dÄ›lajÃ­ vaÅ¡i muÅ¾i v HornickÃ©m ÃºdolÃ­?
 
 	if (Hagen_BringProof == FALSE)
 	{
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_01"); //Nevidím dùvod, proè bych ti mìl nìco takového øíkat!
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_01"); //NevidÃ­m dÅ¯vod, proÄ bych ti mÄ›l nÄ›co takovÃ©ho Å™Ã­kat!
 	}
 	else
 	{
 		if (Garond.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_02"); //Byl jsi tam. Mìl bys to vìdìt.
+			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_02"); //Byl jsi tam. MÄ›l bys to vÄ›dÄ›t.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_03"); //Dobrá, protoe tam máš tak jako tak namíøeno, tak ti to mùu øíct.
+			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_03"); //DobrÃ¡, protoÅ¾e tam mÃ¡Å¡ tak jako tak namÃ­Å™eno, tak ti to mÅ¯Å¾u Å™Ã­ct.
 		};
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_04"); //Jde o magickou rudu. Mùe rozhodnout o vısledku války.
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_05"); //Bez dostatku zbraní ukutıch z magické rudy nemá královská armáda ani tu nejmenší šanci obstát v boji proti elitním skøetím váleèníkùm.
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_04"); //Jde o magickou rudu. MÅ¯Å¾e rozhodnout o vÃ½sledku vÃ¡lky.
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_05"); //Bez dostatku zbranÃ­ ukutÃ½ch z magickÃ© rudy nemÃ¡ krÃ¡lovskÃ¡ armÃ¡da ani tu nejmenÅ¡Ã­ Å¡anci obstÃ¡t v boji proti elitnÃ­m skÅ™etÃ­m vÃ¡leÄnÃ­kÅ¯m.
 		if (other.guild != GIL_SLD)
 		{
-			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_06"); //A doly tady na ostrovì jsou poslední, ke kterım ještì máme pøístup.
+			AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_06"); //A doly tady na ostrovÄ› jsou poslednÃ­, ke kterÃ½m jeÅ¡tÄ› mÃ¡me pÅ™Ã­stup.
 		};
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_07"); //Jakmile naši loï plnì naloíme rudou, vrátíme se zpátky na pevninu.
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_07"); //Jakmile naÅ¡i loÄ plnÄ› naloÅ¾Ã­me rudou, vrÃ¡tÃ­me se zpÃ¡tky na pevninu.
 		KnowsPaladins_Ore = TRUE;
 		
-		AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_08"); //Válka se skøety se tedy nevyvíjí moc dobøe, co?
-		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_09"); //U tak jsem toho øekl víc, ne je zdrávo.
+		AI_Output (other, self, "DIA_Lord_Hagen_Minental_15_08"); //VÃ¡lka se skÅ™ety se tedy nevyvÃ­jÃ­ moc dobÅ™e, co?
+		AI_Output (self, other, "DIA_Lord_Hagen_Minental_04_09"); //UÅ¾ tak jsem toho Å™ekl vÃ­c, neÅ¾ je zdrÃ¡vo.
 	};
 };
 
@@ -635,7 +635,7 @@ instance DIA_Hagen_CanTeach		(C_INFO)
 	condition	 = 	DIA_Hagen_CanTeach_Condition;
 	information	 = 	DIA_Hagen_CanTeach_Info;
 	PERMANENT 	 =  FALSE;
-	description	 = 	"Hledám mistra meèe.";
+	description	 = 	"HledÃ¡m mistra meÄe.";
 };
 func int DIA_Hagen_CanTeach_Condition ()
 {	
@@ -649,11 +649,11 @@ func int DIA_Hagen_CanTeach_Condition ()
 };
 func void DIA_Hagen_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Hagen_CanTeach_15_00"); //Hledám mistra meèe.
-	AI_Output (self, other, "DIA_Hagen_CanTeach_04_01"); //Vánì? Jednoho jsi právì našel.
+	AI_Output (other, self, "DIA_Hagen_CanTeach_15_00"); //HledÃ¡m mistra meÄe.
+	AI_Output (self, other, "DIA_Hagen_CanTeach_04_01"); //VÃ¡Å¾nÄ›? Jednoho jsi prÃ¡vÄ› naÅ¡el.
 	
 	LordHagen_Teach2H = TRUE;
-	B_LogEntry (TOPIC_CityTeacher,"Lord Hagen mì zasvìtí do tajù boje s obouruèními zbranìmi.");
+	B_LogEntry (TOPIC_CityTeacher,"Lord Hagen mÄ› zasvÄ›tÃ­ do tajÅ¯ boje s obouruÄnÃ­mi zbranÄ›mi.");
 };
 //**************************************
 //			Ich will trainieren
@@ -665,7 +665,7 @@ INSTANCE DIA_Hagen_Teach(C_INFO)
 	condition	= DIA_Hagen_Teach_Condition;
 	information	= DIA_Hagen_Teach_Info;
 	permanent	= TRUE;
-	description = "Tak zaènìme (osvojit si dovednost obouruèního boje).";
+	description = "Tak zaÄnÄ›me (osvojit si dovednost obouruÄnÃ­ho boje).";
 };                       
 //----------------------------------
 var int DIA_Hagen_Teach_permanent;
@@ -681,7 +681,7 @@ FUNC INT DIA_Hagen_Teach_Condition()
  
 FUNC VOID DIA_Hagen_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Hagen_Teach_15_00"); //Zaènìme.
+	AI_Output (other,self ,"DIA_Hagen_Teach_15_00"); //ZaÄnÄ›me.
 	
 	Info_ClearChoices 	(DIA_Hagen_Teach);
 	Info_AddChoice 		(DIA_Hagen_Teach,	DIALOG_BACK		,DIA_Hagen_Teach_Back);
@@ -693,8 +693,8 @@ FUNC VOID DIA_Hagen_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 100)
 	{
-		AI_Output (self,other,"DIA_Hagen_Teach_04_00"); //Teï jsi sám dobrım mistrem meèe. U tì nemohu dál uèit.
-		AI_Output (self,other,"DIA_Hagen_Teach_04_01"); //Nech tvé další skutky provází moudrost mistra meèe.
+		AI_Output (self,other,"DIA_Hagen_Teach_04_00"); //TeÄ jsi sÃ¡m dobrÃ½m mistrem meÄe. UÅ¾ tÄ› nemohu dÃ¡l uÄit.
+		AI_Output (self,other,"DIA_Hagen_Teach_04_01"); //NechÅ¥ tvÃ© dalÅ¡Ã­ skutky provÃ¡zÃ­ moudrost mistra meÄe.
 		DIA_Hagen_Teach_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Hagen_Teach);
@@ -738,7 +738,7 @@ INSTANCE DIA_Lord_Hagen_Knight		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_Knight_Condition;
 	information	 = 	DIA_Lord_Hagen_Knight_Info;
 	permanent	 = 	TRUE; 
-	description	 = 	"Chtìl bych vstoupit do sluby øádu.";
+	description	 = 	"ChtÄ›l bych vstoupit do sluÅ¾by Å™Ã¡du.";
 };
 FUNC INT DIA_Lord_Hagen_Knight_Condition ()
 {	
@@ -750,23 +750,23 @@ FUNC INT DIA_Lord_Hagen_Knight_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_Knight_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_Knight_15_00"); //Chtìl bych vstoupit do sluby øádu.
+	AI_Output			(other, self, "DIA_Lord_Hagen_Knight_15_00"); //ChtÄ›l bych vstoupit do sluÅ¾by Å™Ã¡du.
 	
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_Knight_04_01"); //Dobrá, u jsi dokázal, e máš dost odvahy, schopností a zkušeností, abys mohl slouit Innosovi.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_02"); //Tvé skutky jsou dostateènım dùkazem èistého srdce.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_03"); //Je-li to tvé pøání, vítám tì v našem øádu.
+		AI_Output			(self, other, "DIA_Lord_Hagen_Knight_04_01"); //DobrÃ¡, uÅ¾ jsi dokÃ¡zal, Å¾e mÃ¡Å¡ dost odvahy, schopnostÃ­ a zkuÅ¡enostÃ­, abys mohl slouÅ¾it Innosovi.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_02"); //TvÃ© skutky jsou dostateÄnÃ½m dÅ¯kazem ÄistÃ©ho srdce.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_03"); //Je-li to tvÃ© pÅ™Ã¡nÃ­, vÃ­tÃ¡m tÄ› v naÅ¡em Å™Ã¡du.
 		
 		Info_ClearChoices (DIA_Lord_Hagen_Knight);
-		Info_AddChoice (DIA_Lord_Hagen_Knight,"Ještì si nejsem tak úplnì jistı.",DIA_Lord_Hagen_Knight_No);
-		Info_AddChoice (DIA_Lord_Hagen_Knight,"Jsem pøipraven!",DIA_Lord_Hagen_Knight_Yes);
+		Info_AddChoice (DIA_Lord_Hagen_Knight,"JeÅ¡tÄ› si nejsem tak ÃºplnÄ› jistÃ½.",DIA_Lord_Hagen_Knight_No);
+		Info_AddChoice (DIA_Lord_Hagen_Knight,"Jsem pÅ™ipraven!",DIA_Lord_Hagen_Knight_Yes);
 	}
 	else
 	{
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_04"); //Bıt Innosovım váleèníkem znamená zasvìtit všechny své èiny Innosovım zámìrùm.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_05"); //Do øádu jsou pøijati jen nejèestnìjší a nejstateènìjší váleèníci.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_06"); //Pokud jsi pevnì rozhodnut stát se paladinem, musíš nejprve prokázat, e jsi toho hoden.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_04"); //BÃ½t InnosovÃ½m vÃ¡leÄnÃ­kem znamenÃ¡ zasvÄ›tit vÅ¡echny svÃ© Äiny InnosovÃ½m zÃ¡mÄ›rÅ¯m.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_05"); //Do Å™Ã¡du jsou pÅ™ijati jen nejÄestnÄ›jÅ¡Ã­ a nejstateÄnÄ›jÅ¡Ã­ vÃ¡leÄnÃ­ci.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Knight_04_06"); //Pokud jsi pevnÄ› rozhodnut stÃ¡t se paladinem, musÃ­Å¡ nejprve prokÃ¡zat, Å¾e jsi toho hoden.
 	};
 	
 	Hagen_GaveInfoKnight = TRUE;	
@@ -774,22 +774,22 @@ FUNC VOID DIA_Lord_Hagen_Knight_Info ()
 
 FUNC VOID DIA_Lord_Hagen_Knight_No ()
 {
-	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_No_15_00"); //Ještì si nejsem tak úplnì jistı.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_No_04_01"); //Tak jdi a oèisti své srdce od pochybností. Vra se, a budeš pøipraven.
+	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_No_15_00"); //JeÅ¡tÄ› si nejsem tak ÃºplnÄ› jistÃ½.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_No_04_01"); //Tak jdi a oÄisti svÃ© srdce od pochybnostÃ­. VraÅ¥ se, aÅ¾ budeÅ¡ pÅ™ipraven.
 
 	Info_ClearChoices (DIA_Lord_Hagen_Knight);
 };
 
 FUNC VOID DIA_Lord_Hagen_Knight_Yes()
 {
-	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_00"); //Jsem pøipraven!
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_01"); //(vánì) Tak budi dle tvé vùle!
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_02"); //(vánì) Mnoho muù se vydalo touto cestou a poloili své ivoty ve jménu Innose.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_03"); //(vánì) Pøísaháš, e tvé skutky budou dìlat jejich smrti èest a budou hlásat slávu Innosovu?
-	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_04"); //Pøísahám!
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_05"); //Od této chvíle tì tedy prohlašuji èlenem našeho spoleèenstva.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_06"); //Zároveò tì ustanovuji Innosovım váleèníkem.
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_07"); //Dávám ti zbranì a zbroj rytíøe. Nos je s hrdostí, rytíøi!
+	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_00"); //Jsem pÅ™ipraven!
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_01"); //(vÃ¡Å¾nÄ›) Tak budiÅ¾ dle tvÃ© vÅ¯le!
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_02"); //(vÃ¡Å¾nÄ›) Mnoho muÅ¾Å¯ se vydalo touto cestou a poloÅ¾ili svÃ© Å¾ivoty ve jmÃ©nu Innose.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_03"); //(vÃ¡Å¾nÄ›) PÅ™Ã­sahÃ¡Å¡, Å¾e tvÃ© skutky budou dÄ›lat jejich smrti Äest a budou hlÃ¡sat slÃ¡vu Innosovu?
+	AI_Output (other,self ,"DIA_Lord_Hagen_Knight_Yes_15_04"); //PÅ™Ã­sahÃ¡m!
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_05"); //Od tÃ©to chvÃ­le tÄ› tedy prohlaÅ¡uji Älenem naÅ¡eho spoleÄenstva.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_06"); //ZÃ¡roveÅˆ tÄ› ustanovuji InnosovÃ½m vÃ¡leÄnÃ­kem.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_07"); //DÃ¡vÃ¡m ti zbranÄ› a zbroj rytÃ­Å™e. Nos je s hrdostÃ­, rytÃ­Å™i!
 
 	CreateInvItems (self,ITAR_PAL_M,1);
 	B_GiveInvItems (self,other,ITAR_PAL_M,1);
@@ -808,14 +808,14 @@ FUNC VOID DIA_Lord_Hagen_Knight_Yes()
 	AI_UnequipArmor (other);
 	AI_EquipArmor 	(other,ITAR_PAL_M);
 
-	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_08"); //Dále, na základì tvé hodnosti, ti dovoluji pøístup do kláštera.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_08"); //DÃ¡le, na zÃ¡kladÄ› tvÃ© hodnosti, ti dovoluji pÅ™Ã­stup do klÃ¡Å¡tera.
 
 	if ((Npc_IsDead(Albrecht))== FALSE)
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_09"); //Albrecht tì nauèí naší magii, staèí, kdy za ním zajdeš a promluvíš si s ním.
+		AI_Output (self ,other,"DIA_Lord_Hagen_Knight_Yes_04_09"); //Albrecht tÄ› nauÄÃ­ naÅ¡Ã­ magii, staÄÃ­, kdyÅ¾ za nÃ­m zajdeÅ¡ a promluvÃ­Å¡ si s nÃ­m.
 	};
 	
-	AI_Output (self ,other,"DIA_Lord_Hagen_Add_04_02"); //A jsou ti samozøejmì otevøeny naše ubikace na horním konci mìsta.
+	AI_Output (self ,other,"DIA_Lord_Hagen_Add_04_02"); //A jsou ti samozÅ™ejmÄ› otevÅ™eny naÅ¡e ubikace na hornÃ­m konci mÄ›sta.
 
 	hero.guild = GIL_PAL;
 	Npc_SetTrueGuild (other, GIL_PAL);
@@ -825,7 +825,7 @@ FUNC VOID DIA_Lord_Hagen_Knight_Yes()
 
 
 //***********************************************
-//	Wie kann ich mich würdig erweisen
+//	Wie kann ich mich wÃ¼rdig erweisen
 //***********************************************
 
 INSTANCE DIA_Lord_Hagen_WhatProof		(C_INFO)
@@ -835,7 +835,7 @@ INSTANCE DIA_Lord_Hagen_WhatProof		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_WhatProof_Condition;
 	information	 = 	DIA_Lord_Hagen_WhatProof_Info;
 	permanent	 = 	FALSE; 
-	description	 = 	"Jak mohu dokázat, e jsem toho hoden?";
+	description	 = 	"Jak mohu dokÃ¡zat, Å¾e jsem toho hoden?";
 };
 
 FUNC INT DIA_Lord_Hagen_WhatProof_Condition ()
@@ -849,15 +849,15 @@ FUNC INT DIA_Lord_Hagen_WhatProof_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_WhatProof_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_00"); //Jak mohu dokázat, e jsem toho hoden?
-	AI_Output			(self, other, "DIA_Lord_Hagen_WhatProof_04_01"); //To prokáí tvé skutky.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_02"); //Bojujeme v Innosovu jménu za svobodu a spravedlnost.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_03"); //Bojujeme proti Beliarovi a jeho pohùnkùm, kteøí chtìjí znièit Innosùv øád.
-	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_04"); //Rozumím.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_05"); //Vùbec nièemu nerozumíš! Naše èest je náš ivot a náš ivot je Innos.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_06"); //Kadı paladin, jen se spravedlivì bije, šíøí dál slávu Innose a mnozí z nás ji poloili ivot na oltáø vìèného boje dobra a zla.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_07"); //My všichni ctíme tuto tradici. Pokud seleme, pošpiníme skutky našich padlıch druhù.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_08"); //Jen ten, kdo tohle beze zbytku pochopí, je hoden stát se paladinem.
+	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_00"); //Jak mohu dokÃ¡zat, Å¾e jsem toho hoden?
+	AI_Output			(self, other, "DIA_Lord_Hagen_WhatProof_04_01"); //To prokÃ¡Å¾Ã­ tvÃ© skutky.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_02"); //Bojujeme v Innosovu jmÃ©nu za svobodu a spravedlnost.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_03"); //Bojujeme proti Beliarovi a jeho pohÅ¯nkÅ¯m, kteÅ™Ã­ chtÄ›jÃ­ zniÄit InnosÅ¯v Å™Ã¡d.
+	AI_Output			(other, self, "DIA_Lord_Hagen_WhatProof_15_04"); //RozumÃ­m.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_05"); //VÅ¯bec niÄemu nerozumÃ­Å¡! NaÅ¡e Äest je nÃ¡Å¡ Å¾ivot a nÃ¡Å¡ Å¾ivot je Innos.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_06"); //KaÅ¾dÃ½ paladin, jenÅ¾ se spravedlivÄ› bije, Å¡Ã­Å™Ã­ dÃ¡l slÃ¡vu Innose a mnozÃ­ z nÃ¡s jiÅ¾ poloÅ¾ili Å¾ivot na oltÃ¡Å™ vÄ›ÄnÃ©ho boje dobra a zla.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_07"); //My vÅ¡ichni ctÃ­me tuto tradici. Pokud selÅ¾eme, poÅ¡pinÃ­me skutky naÅ¡ich padlÃ½ch druhÅ¯.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_WhatProof_04_08"); //Jen ten, kdo tohle beze zbytku pochopÃ­, je hoden stÃ¡t se paladinem.
 };
 
 
@@ -920,21 +920,21 @@ FUNC INT DIA_Lord_Hagen_KAP3U4_PERM_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_KAP3U4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_Lord_Hagen_KAP3U4_PERM_15_00"); //Jak to vypadá?
+	AI_Output (other,self ,"DIA_Lord_Hagen_KAP3U4_PERM_15_00"); //Jak to vypadÃ¡?
 	
 	if (MIS_OLDWORLD == LOG_SUCCESS)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_04"); //Musím najít zpùsob, jak tuhle vıpravu zachránit.
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_05"); //Musíme s tìmi draky nìco udìlat.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_04"); //MusÃ­m najÃ­t zpÅ¯sob, jak tuhle vÃ½pravu zachrÃ¡nit.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_05"); //MusÃ­me s tÄ›mi draky nÄ›co udÄ›lat.
 		if (Hagen_KnowsEyeKaputt == FALSE)
 		{
-			AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_06"); //(k sobì) Moná by nás teï mohlo zachránit Innosovo oko.
+			AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_06"); //(k sobÄ›) MoÅ¾nÃ¡ by nÃ¡s teÄ mohlo zachrÃ¡nit Innosovo oko.
 		};
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_01"); //Asi jsem pøišel o rozum. Jsem voják, ne byrokrat.
-		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_02"); //S tímhle vším papírováním, které mám na krku, si sotva dokáu vzpomenout, jaké to je tøímat meè.
+		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_01"); //Asi jsem pÅ™iÅ¡el o rozum. Jsem vojÃ¡k, ne byrokrat.
+		AI_Output (self ,other,"DIA_Lord_Hagen_KAP3U4_PERM_04_02"); //S tÃ­mhle vÅ¡Ã­m papÃ­rovÃ¡nÃ­m, kterÃ© mÃ¡m na krku, si sotva dokÃ¡Å¾u vzpomenout, jakÃ© to je tÅ™Ã­mat meÄ.
 	};
 };
 
@@ -949,7 +949,7 @@ INSTANCE DIA_Lord_Hagen_EyeBroken(C_INFO)
 	condition	= DIA_Lord_Hagen_EyeBroken_Condition;
 	information	= DIA_Lord_Hagen_EyeBroken_Info;
 	permanent	= FALSE;
-	description = "Já Oko mám - ale je rozbité.";
+	description = "JÃ¡ Oko mÃ¡m - ale je rozbitÃ©.";
 };                       
 FUNC INT DIA_Lord_Hagen_EyeBroken_Condition()
 {
@@ -963,9 +963,9 @@ FUNC INT DIA_Lord_Hagen_EyeBroken_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_EyeBroken_Info()
 {	
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_07"); //Já Oko mám - ale je rozbité.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_08"); //COE? U Innose! Cos to udìlal? To Oko potøebujeme!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_09"); //Promluv si s Pyrokarem! Musí existovat nìjakı zpùsob, jak jej zase opravit.
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_07"); //JÃ¡ Oko mÃ¡m - ale je rozbitÃ©.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_08"); //COÅ½E? U Innose! Cos to udÄ›lal? To Oko potÅ™ebujeme!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_09"); //Promluv si s Pyrokarem! MusÃ­ existovat nÄ›jakÃ½ zpÅ¯sob, jak jej zase opravit.
 	Hagen_KnowsEyeKaputt = TRUE;
 };
 
@@ -980,7 +980,7 @@ instance DIA_Lord_Hagen_BACKINTOWN		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_BACKINTOWN_Condition;
 	information	 = 	DIA_Lord_Hagen_BACKINTOWN_Info;
 	permanent	 = 	FALSE; 
-	description	 = 	"Pøináším ti zprávu od Garonda.";
+	description	 = 	"PÅ™inÃ¡Å¡Ã­m ti zprÃ¡vu od Garonda.";
 };
 func int DIA_Lord_Hagen_BACKINTOWN_Condition ()
 {	
@@ -993,20 +993,20 @@ func int DIA_Lord_Hagen_BACKINTOWN_Condition ()
 };
 func void DIA_Lord_Hagen_BACKINTOWN_Info ()
 {
-	AI_Output	(other, self, "DIA_Lord_Hagen_BACKINTOWN_15_00"); //Pøináším novinky od Garonda. Dal mi pro tebe tenhle dopis.
+	AI_Output	(other, self, "DIA_Lord_Hagen_BACKINTOWN_15_00"); //PÅ™inÃ¡Å¡Ã­m novinky od Garonda. Dal mi pro tebe tenhle dopis.
 	B_GiveInvItems 	(other, self,ItWr_PaladinLetter_MIS,1);
 	B_UseFakeScroll 	();  
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_01"); //Naše postavení je horší, ne jsem se obával. Ale podej mi hlášení o situaci v Hornickém údolí.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_02"); //Paladinové jsou obklíèeni na hradì v Hornickém údolí, všude kolem jsou skøeti.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_03"); //Pøi dolování byly obrovské ztráty a skoro ádná ruda u nezbıvá.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_04"); //No, pokud mùu øíct svùj názor, tak kdy tìm chlapíkùm nikdo nepomùe, jsou ztraceni. Tak to alespoò vypadá.
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_05"); //Najdu zpùsob, jak tu vıpravu zachránit. Udìlal jsi toho pro nás tolik. Innos se ti odvdìèí.
-	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_06"); //Nechci jeho vdìènost. Chci jeho oko.
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_07"); //Ano, samozøejmì. Plním své sliby. Vezmi si tenhle dopis. Otevøe ti brány kláštera.
-	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_08"); //Promluv si s Pyrokarem, nejvyšším ohnivım mágem, a proka se mu touhle listinou. Zaøídí ti pøístup k Innosovu oku.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_01"); //NaÅ¡e postavenÃ­ je horÅ¡Ã­, neÅ¾ jsem se obÃ¡val. Ale podej mi hlÃ¡Å¡enÃ­ o situaci v HornickÃ©m ÃºdolÃ­.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_02"); //PaladinovÃ© jsou obklÃ­Äeni na hradÄ› v HornickÃ©m ÃºdolÃ­, vÅ¡ude kolem jsou skÅ™eti.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_03"); //PÅ™i dolovÃ¡nÃ­ byly obrovskÃ© ztrÃ¡ty a skoro Å¾Ã¡dnÃ¡ ruda uÅ¾ nezbÃ½vÃ¡.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_04"); //No, pokud mÅ¯Å¾u Å™Ã­ct svÅ¯j nÃ¡zor, tak kdyÅ¾ tÄ›m chlapÃ­kÅ¯m nikdo nepomÅ¯Å¾e, jsou ztraceni. Tak to alespoÅˆ vypadÃ¡.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_05"); //Najdu zpÅ¯sob, jak tu vÃ½pravu zachrÃ¡nit. UdÄ›lal jsi toho pro nÃ¡s tolik. Innos se ti odvdÄ›ÄÃ­.
+	AI_Output (other, self, "DIA_Lord_Hagen_BACKINTOWN_15_06"); //Nechci jeho vdÄ›Änost. Chci jeho oko.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_07"); //Ano, samozÅ™ejmÄ›. PlnÃ­m svÃ© sliby. Vezmi si tenhle dopis. OtevÅ™e ti brÃ¡ny klÃ¡Å¡tera.
+	AI_Output (self, other, "DIA_Lord_Hagen_BACKINTOWN_04_08"); //Promluv si s Pyrokarem, nejvyÅ¡Å¡Ã­m ohnivÃ½m mÃ¡gem, a prokaÅ¾ se mu touhle listinou. ZaÅ™Ã­dÃ­ ti pÅ™Ã­stup k Innosovu oku.
 	
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_00"); //A ještì nìco, ne pùjdeš.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_01"); //Na dùkaz mé vdìènosti si vezmi tuhle runu. Pøenese tì bezpeènì zpátky do mìsta, kdykoliv si zamaneš.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_00"); //A jeÅ¡tÄ› nÄ›co, neÅ¾ pÅ¯jdeÅ¡.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_01"); //Na dÅ¯kaz mÃ© vdÄ›Änosti si vezmi tuhle runu. PÅ™enese tÄ› bezpeÄnÄ› zpÃ¡tky do mÄ›sta, kdykoliv si zamaneÅ¡.
 	B_GiveInvItems (self, other, ItRu_TeleportSeaport, 1);
 	
 	
@@ -1015,13 +1015,13 @@ func void DIA_Lord_Hagen_BACKINTOWN_Info ()
 	MIS_InnosEyeStolen = TRUE;
 	MIS_OLDWORLD = LOG_SUCCESS;
 	
-	B_LogEntry (TOPIC_INNOSEYE,"Lord Hagen mi pøedal zprávu, která pøimìje mistra Pyrokara, aby mi v klášteøe vydal Innosovo oko.");
+	B_LogEntry (TOPIC_INNOSEYE,"Lord Hagen mi pÅ™edal zprÃ¡vu, kterÃ¡ pÅ™imÄ›je mistra Pyrokara, aby mi v klÃ¡Å¡teÅ™e vydal Innosovo oko.");
 
 			Wld_InsertNpc 		(VLK_4250_Jorgen,"NW_MONASTERY_BRIDGE_01");
 			Wld_InsertNpc		(BDT_1050_Landstreicher, "NW_TROLLAREA_NOVCHASE_01");
 			Wld_InsertNpc		(BDT_1051_Wegelagerer, "NW_TROLLAREA_RITUALFOREST_09"); 
 			Wld_InsertNpc		(BDT_1052_Wegelagerer, "NW_TROLLAREA_RITUALFOREST_09");
-			B_KillNpc 			(BDT_1020_Bandit_L);	//Joly: macht Platz für DMT_1200_Dementor
+			B_KillNpc 			(BDT_1020_Bandit_L);	//Joly: macht Platz fÃ¼r DMT_1200_Dementor
 			Wld_InsertNpc		(DMT_1200_Dementor, "NW_TROLLAREA_RITUALPATH_01");
 			//Wld_InsertNpc		(DMT_1201_Dementor, "NW_TROLLAREA_RITUALPATH_01");
 			Wld_InsertNpc		(DMT_1202_Dementor, "NW_TROLLAREA_RITUAL_01");
@@ -1069,7 +1069,7 @@ INSTANCE DIA_Lord_Hagen_RescueBennet		(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_RescueBennet_Condition;
 	information	 = 	DIA_Lord_Hagen_RescueBennet_Info;
 	permanent	 = 	TRUE; 
-	description	 = 	"Potøeboval bych si s tebou promluvit o Bennetovi.";
+	description	 = 	"PotÅ™eboval bych si s tebou promluvit o Bennetovi.";
 };
 
 FUNC INT DIA_Lord_Hagen_RescueBennet_Condition ()
@@ -1083,38 +1083,38 @@ FUNC INT DIA_Lord_Hagen_RescueBennet_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_15_00"); //Potøeboval bych si s tebou promluvit o Bennetovi.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_15_00"); //PotÅ™eboval bych si s tebou promluvit o Bennetovi.
 	
 	if (Hagen_einmalBennet == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_04_01"); //Ale to je pøece ten oldák, co zavradil jednoho z mıch muù.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_04_01"); //Ale to je pÅ™ece ten Å¾oldÃ¡k, co zavraÅ¾dil jednoho z mÃ½ch muÅ¾Å¯.
 		Hagen_einmalBennet = TRUE;
 	};
 	
 	Info_ClearChoices  (DIA_Lord_Hagen_RescueBennet);
 	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,DIALOG_BACK,DIA_Lord_Hagen_RescueBennet_Back);
-	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Jak si mùeš bıt tak jistı, e je vrahem právì Bennet?",DIA_Lord_Hagen_RescueBennet_WhySure);
+	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Jak si mÅ¯Å¾eÅ¡ bÃ½t tak jistÃ½, Å¾e je vrahem prÃ¡vÄ› Bennet?",DIA_Lord_Hagen_RescueBennet_WhySure);
 	/*
 	if (RescueBennet_KnowsWitness == TRUE)
 	{
 		Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Wer ist der Zeuge?",DIA_Lord_Hagen_RescueBennet_Witness);
 	};
 	*/
-	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Vìøím, e je Bennet nevinnı.",DIA_Lord_Hagen_RescueBennet_Innoscent);
+	Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"VÄ›Å™Ã­m, Å¾e je Bennet nevinnÃ½.",DIA_Lord_Hagen_RescueBennet_Innoscent);
 		
 	if (MIS_RescueBennet == LOG_RUNNING)
 	&& (MIS_RitualInnosEyeRepair == LOG_RUNNING)
 	&& (Hagen_KnowsEyeKaputt == TRUE)
 	{
-		Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Bennet by nám mohl pomoci opravit Innosovo oko.",DIA_Lord_Hagen_RescueBennet_Hilfe);
+		Info_AddChoice (DIA_Lord_Hagen_RescueBennet,"Bennet by nÃ¡m mohl pomoci opravit Innosovo oko.",DIA_Lord_Hagen_RescueBennet_Hilfe);
 	};
 };
 
 func void DIA_Lord_Hagen_RescueBennet_Hilfe()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_16"); //Bennet by nám mohl pomoci opravit Innosovo oko.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_17"); //I kdyby dokázal pøitáhnout na zem moc samotného Innose...
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_18"); //Zavradil paladina. Za to bude popraven!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_16"); //Bennet by nÃ¡m mohl pomoci opravit Innosovo oko.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_17"); //I kdyby dokÃ¡zal pÅ™itÃ¡hnout na zem moc samotnÃ©ho Innose...
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_18"); //ZavraÅ¾dil paladina. Za to bude popraven!
 };
 
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Back()
@@ -1124,16 +1124,16 @@ FUNC VOID DIA_Lord_Hagen_RescueBennet_Back()
 
 FUNC VOID DIA_Lord_Hagen_RescueBennet_WhySure()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_WhySure_15_00"); //Jak si mùeš bıt tak jistı, e je vrahem právì Bennet?
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_01"); //Máme svìdka.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_02"); //Jak vidíš, není o vinì toho oldáka ádnıch pochyb.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_WhySure_15_00"); //Jak si mÅ¯Å¾eÅ¡ bÃ½t tak jistÃ½, Å¾e je vrahem prÃ¡vÄ› Bennet?
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_01"); //MÃ¡me svÄ›dka.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_WhySure_04_02"); //Jak vidÃ­Å¡, nenÃ­ o vinÄ› toho Å¾oldÃ¡ka Å¾Ã¡dnÃ½ch pochyb.
 	//neu zusammengefasst M.F.
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //Kdo je tím svìdkem?
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, tajemník místodrícího. On tu vradu vidìl.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Jeho popis padne bez jakıchkoliv pochyb na Benneta. Co se mì tıèe, vìc je vyøízena.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Ten oldák bude viset za velezradu.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //Kdo je tÃ­m svÄ›dkem?
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, tajemnÃ­k mÃ­stodrÅ¾Ã­cÃ­ho. On tu vraÅ¾du vidÄ›l.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Jeho popis padne bez jakÃ½chkoliv pochyb na Benneta. Co se mÄ› tÃ½Äe, vÄ›c je vyÅ™Ã­zena.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Ten Å¾oldÃ¡k bude viset za velezradu.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Svìdkem je tajemník místodrícího, Cornelius. Tvrdí, e celou vradu vidìl."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"SvÄ›dkem je tajemnÃ­k mÃ­stodrÅ¾Ã­cÃ­ho, Cornelius. TvrdÃ­, Å¾e celou vraÅ¾du vidÄ›l."); 
 
 	RecueBennet_KnowsCornelius = TRUE;
 	//RescueBennet_KnowsWitness = TRUE; 
@@ -1142,22 +1142,22 @@ FUNC VOID DIA_Lord_Hagen_RescueBennet_WhySure()
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Witness()
 {
 	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //Wer ist der Zeuge?
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, der Sekretär des Statthalters, hat den Mord gesehen.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Seine Beschreibung trifft zweifelsfrei auf Bennet zu. Damit ist die Sache für mich erledigt.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Der Söldner wird wegen Landesverrats hängen.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, der SekretÃ¤r des Statthalters, hat den Mord gesehen.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Seine Beschreibung trifft zweifelsfrei auf Bennet zu. Damit ist die Sache fÃ¼r mich erledigt.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Der SÃ¶ldner wird wegen Landesverrats hÃ¤ngen.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Cornelius, der Sekretär des Stadthalters, ist also der Zeuge. Er behauptet, den Mord beobachtet zu haben."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Cornelius, der SekretÃ¤r des Stadthalters, ist also der Zeuge. Er behauptet, den Mord beobachtet zu haben."); 
 
 	RecueBennet_KnowsCornelius = TRUE;
 };
 */
 FUNC VOID DIA_Lord_Hagen_RescueBennet_Innoscent()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Innoscent_15_00"); //Vìøím, e Bennet je nevinnı.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_01"); //Dùkazy jsou jasné. Je vinen.
-	AI_Output			(other,self , "DIA_Lord_Hagen_RescueBennet_Innoscent_15_02"); //A co kdy je dùkaz mylnı?
-	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_03"); //Dávej pozor, co øíkáš. Vznášíš váné obvinìní.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_04"); //Pokud mi nemùeš pøedloit dùkazy o tom, e svìdek lhal, radìji mlè.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RescueBennet_Innoscent_15_00"); //VÄ›Å™Ã­m, Å¾e Bennet je nevinnÃ½.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_01"); //DÅ¯kazy jsou jasnÃ©. Je vinen.
+	AI_Output			(other,self , "DIA_Lord_Hagen_RescueBennet_Innoscent_15_02"); //A co kdyÅ¾ je dÅ¯kaz mylnÃ½?
+	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_03"); //DÃ¡vej pozor, co Å™Ã­kÃ¡Å¡. VznÃ¡Å¡Ã­Å¡ vÃ¡Å¾nÃ© obvinÄ›nÃ­.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_RescueBennet_Innoscent_04_04"); //Pokud mi nemÅ¯Å¾eÅ¡ pÅ™edloÅ¾it dÅ¯kazy o tom, Å¾e svÄ›dek lhal, radÄ›ji mlÄ.
 };
 
 
@@ -1188,27 +1188,27 @@ FUNC INT DIA_Lord_Hagen_Cornelius_Condition ()
 FUNC VOID DIA_Lord_Hagen_Cornelius_Info ()
 {
 	AI_Output			(other, self, "DIA_Lord_Hagen_Cornelius_15_00"); //Cornelius lhal.
-	AI_Output			(self, other, "DIA_Lord_Hagen_Cornelius_04_01"); //Jak to víš?
-	AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_02"); //Mám jeho deník. Je v nìm všechno.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_03"); //(zuøivì) Ten slizkı bastard!
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_04"); //Pod vahou novıch dùkazù mi nic jiného nezbıvá.
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_05"); //Z moci úøadu svìøeného mi králem a církví prohlašuji...
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_06"); //...e vìzeò Bennet je zbaven všech obvinìní a tudí svobodnı èlovìk.
+	AI_Output			(self, other, "DIA_Lord_Hagen_Cornelius_04_01"); //Jak to vÃ­Å¡?
+	AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_02"); //MÃ¡m jeho denÃ­k. Je v nÄ›m vÅ¡echno.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_03"); //(zuÅ™ivÄ›) Ten slizkÃ½ bastard!
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_04"); //Pod vahou novÃ½ch dÅ¯kazÅ¯ mi nic jinÃ©ho nezbÃ½vÃ¡.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_05"); //Z moci ÃºÅ™adu svÄ›Å™enÃ©ho mi krÃ¡lem a cÃ­rkvÃ­ prohlaÅ¡uji...
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_06"); //...Å¾e vÄ›zeÅˆ Bennet je zbaven vÅ¡ech obvinÄ›nÃ­ a tudÃ­Å¾ svobodnÃ½ ÄlovÄ›k.
 	
 	B_StartOtherRoutine (Bennet,"START");
 	B_StartOtherRoutine (Hodges,"START");
 	
-	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_07"); //Cornelius bude s okamitou platností vzat do vazby pro køivopøísenictví.
+	AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_07"); //Cornelius bude s okamÅ¾itou platnostÃ­ vzat do vazby pro kÅ™ivopÅ™Ã­seÅ¾nictvÃ­.
 	
 	if (Npc_IsDead (Cornelius) == TRUE)
 	{
-		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_08"); //Ušetøi si námahu. Cornelius je mrtvı.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_09"); //V tom pøípadì se mu ji dostalo spravedlivého trestu. Dobrá práce.
+		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_08"); //UÅ¡etÅ™i si nÃ¡mahu. Cornelius je mrtvÃ½.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_09"); //V tom pÅ™Ã­padÄ› se mu jiÅ¾ dostalo spravedlivÃ©ho trestu. DobrÃ¡ prÃ¡ce.
 	}
 	else if (CorneliusFlee == TRUE)
 	{
-		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_10"); //Ukrıvá se.
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_11"); //Døíve nebo pozdìji se objeví. Pak ho zatkneme.
+		AI_Output			(other,self , "DIA_Lord_Hagen_Cornelius_15_10"); //UkrÃ½vÃ¡ se.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_11"); //DÅ™Ã­ve nebo pozdÄ›ji se objevÃ­. Pak ho zatkneme.
 		B_StartOtherRoutine (Cornelius,"FLED");
 	}
 	else 
@@ -1223,7 +1223,7 @@ FUNC VOID DIA_Lord_Hagen_Cornelius_Info ()
 	
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_12"); //Tvé skutky jsou ke cti nás všech.
+		AI_Output			(self ,other, "DIA_Lord_Hagen_Cornelius_04_12"); //TvÃ© skutky jsou ke cti nÃ¡s vÅ¡ech.
 	};
 };
 //--------Hier endet der gesamte Befreie den Schmied Klumpatsch-------------
@@ -1242,7 +1242,7 @@ INSTANCE DIA_Lord_Hagen_AugeAmStart	(C_INFO)
 	condition	 = 	DIA_Lord_Hagen_AugeAmStart_Condition;
 	information	 = 	DIA_Lord_Hagen_AugeAmStart_Info;
 	permanent	 = 	FALSE; 
-	description	 = 	"Pøináším Oko!";
+	description	 = 	"PÅ™inÃ¡Å¡Ã­m Oko!";
 };
 
 FUNC INT DIA_Lord_Hagen_AugeAmStart_Condition ()
@@ -1256,15 +1256,15 @@ FUNC INT DIA_Lord_Hagen_AugeAmStart_Condition ()
 
 FUNC VOID DIA_Lord_Hagen_AugeAmStart_Info ()
 {
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_10"); //Pøináším Oko!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_11"); //(uctivì) Neseš Oko!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_10"); //PÅ™inÃ¡Å¡Ã­m Oko!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_11"); //(uctivÄ›) NeseÅ¡ Oko!
 	if (Hagen_KnowsEyeKaputt == TRUE)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_12"); //A dal jsi jej zpìt dohromady!
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_12"); //A dal jsi jej zpÄ›t dohromady!
 	};
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_13"); //V tom pøípadì jsi Innosùv vyvolenı!
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_14"); //Vyrazím na cestu a zabiju všechny draky v Hornickém údolí!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_15"); //Nech tì Innos doprovází a svou mocí znièí zlo!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_13"); //V tom pÅ™Ã­padÄ› jsi InnosÅ¯v vyvolenÃ½!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_14"); //VyrazÃ­m na cestu a zabiju vÅ¡echny draky v HornickÃ©m ÃºdolÃ­!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_15"); //NechÅ¥ tÄ› Innos doprovÃ¡zÃ­ a svou mocÃ­ zniÄÃ­ zlo!
 };
 
 
@@ -1315,7 +1315,7 @@ instance DIA_Lord_Hagen_ANTIPALADINE(C_INFO)
 	information	 = 	DIA_Lord_Hagen_ANTIPALADINE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Na zemi útoèí elitní skøetí váleèníci.";
+	description	 = 	"Na zemi ÃºtoÄÃ­ elitnÃ­ skÅ™etÃ­ vÃ¡leÄnÃ­ci.";
 };
 
 func int DIA_Lord_Hagen_ANTIPALADINE_Condition ()
@@ -1331,44 +1331,44 @@ var int Hagen_SawOrcRing;
 
 func void DIA_Lord_Hagen_ANTIPALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_00"); //Na zemi útoèí elitní skøetí váleèníci.
+	AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_00"); //Na zemi ÃºtoÄÃ­ elitnÃ­ skÅ™etÃ­ vÃ¡leÄnÃ­ci.
 
 	Log_CreateTopic (TOPIC_OrcElite, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcElite, LOG_RUNNING);
-	B_LogEntry (TOPIC_OrcElite,"Zpravil jsem lorda Hagena o postupujících tlupách skøetích nájezdníkù."); 
+	B_LogEntry (TOPIC_OrcElite,"Zpravil jsem lorda Hagena o postupujÃ­cÃ­ch tlupÃ¡ch skÅ™etÃ­ch nÃ¡jezdnÃ­kÅ¯."); 
 
 	if (TalkedTo_AntiPaladin == TRUE)
 	&& (MIS_KillOrkOberst == 0)
 		{
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_01"); //Co tì k tomu vede?
-			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_02"); //Mluvil jsem s jedním z nich. Padlo tvoje jméno.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_01"); //Co tÄ› k tomu vede?
+			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_02"); //Mluvil jsem s jednÃ­m z nich. Padlo tvoje jmÃ©no.
 		};
 
-		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_03"); //Nesmysl. Moji lidé zatím ádnou masivní invazi skøetù nehlásili.
-		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_04"); //Moná se v nedalekıch lesích ztratil nìkterı z jejich zvìdù.
+		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_03"); //Nesmysl. Moji lidÃ© zatÃ­m Å¾Ã¡dnou masivnÃ­ invazi skÅ™etÅ¯ nehlÃ¡sili.
+		AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_04"); //MoÅ¾nÃ¡ se v nedalekÃ½ch lesÃ­ch ztratil nÄ›kterÃ½ z jejich zvÄ›dÅ¯.
 
 	if (Npc_HasItems (other,ItRi_OrcEliteRing))
 		{
-			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_05"); //Nebyli to ádní zvìdové. Jednomu z nich jsem vzal tento prsten.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_06"); //Uka mi ho.
+			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_05"); //Nebyli to Å¾Ã¡dnÃ­ zvÄ›dovÃ©. Jednomu z nich jsem vzal tento prsten.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_06"); //UkaÅ¾ mi ho.
 			B_GiveInvItems 		(other, self, ItRi_OrcEliteRing,1);
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_07"); //Hmm. Tak to je docela znepokojivé.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_08"); //Tohle je znamení jejich moci. Take skøeti opustili své palisády a bojují na otevøeném prostranství.
-			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_09"); //Zatím jsem jich moc nevidìl. Hlavnì jejich velitele a jen pár bojovníkù.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_10"); //Vánì? V tom pøípadì musejí mít za lubem nìco jiného. To mi ke skøetùm moc nesedne, e by jejich vùdci sami opustili své ochranné palisády.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_11"); //Mohla by to však bıt ideální pøíleitost, jak jim uštìdøit citelnı úder.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_12"); //Pokud by pøišli o své velitele, spadne jim morálka na bod mrazu.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_13"); //Máš novı úkol, rytíøi. Zabij všechny skøetí velitele, které v téhle oblasti najdeš.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_14"); //Pøines mi jejich prsteny. To by mohlo skøety srazit na kolena.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_07"); //Hmm. Tak to je docela znepokojivÃ©.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_08"); //Tohle je znamenÃ­ jejich moci. TakÅ¾e skÅ™eti opustili svÃ© palisÃ¡dy a bojujÃ­ na otevÅ™enÃ©m prostranstvÃ­.
+			AI_Output			(other, self, "DIA_Lord_Hagen_ANTIPALADINE_15_09"); //ZatÃ­m jsem jich moc nevidÄ›l. HlavnÄ› jejich velitele a jen pÃ¡r bojovnÃ­kÅ¯.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_10"); //VÃ¡Å¾nÄ›? V tom pÅ™Ã­padÄ› musejÃ­ mÃ­t za lubem nÄ›co jinÃ©ho. To mi ke skÅ™etÅ¯m moc nesedne, Å¾e by jejich vÅ¯dci sami opustili svÃ© ochrannÃ© palisÃ¡dy.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_11"); //Mohla by to vÅ¡ak bÃ½t ideÃ¡lnÃ­ pÅ™Ã­leÅ¾itost, jak jim uÅ¡tÄ›dÅ™it citelnÃ½ Ãºder.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_12"); //Pokud by pÅ™iÅ¡li o svÃ© velitele, spadne jim morÃ¡lka na bod mrazu.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_13"); //MÃ¡Å¡ novÃ½ Ãºkol, rytÃ­Å™i. Zabij vÅ¡echny skÅ™etÃ­ velitele, kterÃ© v tÃ©hle oblasti najdeÅ¡.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_14"); //PÅ™ines mi jejich prsteny. To by mohlo skÅ™ety srazit na kolena.
 			
-			B_LogEntry (TOPIC_OrcElite,"Podaøilo se mi pøinést lordu Hagenovi dùkaz - prsten skøetího vojevùdce. Poádal mì, abych mu pøinesl všechny, které najdu."); 
+			B_LogEntry (TOPIC_OrcElite,"PodaÅ™ilo se mi pÅ™inÃ©st lordu Hagenovi dÅ¯kaz - prsten skÅ™etÃ­ho vojevÅ¯dce. PoÅ¾Ã¡dal mÄ›, abych mu pÅ™inesl vÅ¡echny, kterÃ© najdu."); 
 	
 			if (Npc_IsDead(Ingmar)==FALSE)
 			&& (MIS_KillOrkOberst == 0)
 			{
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_15"); //Poraï se s Ingmarem. Mùe ti prozradit pár taktik, které by se ti pøi bojích se skøetími veliteli mohly hodit.
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_16"); //Skøetí elitní bojovníci jsou jeho specialita. Mìl s nimi èasto co do èinìní.
-			B_LogEntry (TOPIC_OrcElite,"Elitní skøetí váleèníci jsou Ingmarovou specialitou."); 
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_15"); //PoraÄ se s Ingmarem. MÅ¯Å¾e ti prozradit pÃ¡r taktik, kterÃ© by se ti pÅ™i bojÃ­ch se skÅ™etÃ­mi veliteli mohly hodit.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_16"); //SkÅ™etÃ­ elitnÃ­ bojovnÃ­ci jsou jeho specialita. MÄ›l s nimi Äasto co do ÄinÄ›nÃ­.
+			B_LogEntry (TOPIC_OrcElite,"ElitnÃ­ skÅ™etÃ­ vÃ¡leÄnÃ­ci jsou Ingmarovou specialitou."); 
 			};
 			
 
@@ -1379,11 +1379,11 @@ func void DIA_Lord_Hagen_ANTIPALADINE_Info ()
 		{
 			if  (MIS_KillOrkOberst == LOG_SUCCESS)
 			{
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_17"); //Tvoje pouhé tvrzení, e jsi zabil jednoho ze skøetích velitelù, mi nestaèí.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_17"); //Tvoje pouhÃ© tvrzenÃ­, Å¾e jsi zabil jednoho ze skÅ™etÃ­ch velitelÅ¯, mi nestaÄÃ­.
 			};
-			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_18"); //Pokud to nemám brát na lehkou váhu, potøebuji nìjakı hmatatelnìjší dùkaz.
+			AI_Output			(self, other, "DIA_Lord_Hagen_ANTIPALADINE_04_18"); //Pokud to nemÃ¡m brÃ¡t na lehkou vÃ¡hu, potÅ™ebuji nÄ›jakÃ½ hmatatelnÄ›jÅ¡Ã­ dÅ¯kaz.
 		
-			B_LogEntry (TOPIC_OrcElite,"Hagen mi poøád nechce vìøit. ádá dùkaz, e elitní váleèníci skuteènì útoèí na civilizované kraje. No, spíš by mì pøekvapilo, kdyby to bylo naopak."); 
+			B_LogEntry (TOPIC_OrcElite,"Hagen mi poÅ™Ã¡d nechce vÄ›Å™it. Å½Ã¡dÃ¡ dÅ¯kaz, Å¾e elitnÃ­ vÃ¡leÄnÃ­ci skuteÄnÄ› ÃºtoÄÃ­ na civilizovanÃ© kraje. No, spÃ­Å¡ by mÄ› pÅ™ekvapilo, kdyby to bylo naopak."); 
 		};
 };
 
@@ -1398,7 +1398,7 @@ instance DIA_Lord_Hagen_RINGEBRINGEN		(C_INFO)
 	information	 = 	DIA_Lord_Hagen_RINGEBRINGEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Je tady ještì jedna vìc, kterou musím ohlednì tìch skøetích velitelù nahlásit.";
+	description	 = 	"Je tady jeÅ¡tÄ› jedna vÄ›c, kterou musÃ­m ohlednÄ› tÄ›ch skÅ™etÃ­ch velitelÅ¯ nahlÃ¡sit.";
 };
 
 func int DIA_Lord_Hagen_RINGEBRINGEN_Condition ()
@@ -1415,29 +1415,29 @@ var int OrkRingCounter;
 
 func void DIA_Lord_Hagen_RINGEBRINGEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_00"); //Je tady ještì jedna vìc, kterou musím ohlednì tìch skøetích velitelù nahlásit.
-	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_01"); //Tak povídej.
+	AI_Output			(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_00"); //Je tady jeÅ¡tÄ› jedna vÄ›c, kterou musÃ­m ohlednÄ› tÄ›ch skÅ™etÃ­ch velitelÅ¯ nahlÃ¡sit.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_01"); //Tak povÃ­dej.
 
 	var int Ringcount;
 	var int XP_PAL_OrcRings;
 	var int OrcRingGeld;
 	var int HagensRingOffer;
 
-	HagensRingOffer = 150; //Joly: Geld für einen Orkring
+	HagensRingOffer = 150; //Joly: Geld fÃ¼r einen Orkring
 
 	Ringcount = Npc_HasItems(other, ItRi_OrcEliteRing);
 
 
 	if (Ringcount == 1)
 		{
-			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_02"); //Mám pro tebe další skøetí prsten.
+			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_02"); //MÃ¡m pro tebe dalÅ¡Ã­ skÅ™etÃ­ prsten.
 			B_GivePlayerXP (XP_PAL_OrcRing);
 			B_GiveInvItems (other, self, ItRi_OrcEliteRing,1);
 			OrkRingCounter = OrkRingCounter + 1;
 		}
 		else
 		{
-			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_03"); //Mám pro tebe další skøetí prsteny.
+			AI_Output		(other, self, "DIA_Lord_Hagen_RINGEBRINGEN_15_03"); //MÃ¡m pro tebe dalÅ¡Ã­ skÅ™etÃ­ prsteny.
 
 			B_GiveInvItems (other, self, ItRi_OrcEliteRing,  Ringcount);
 
@@ -1447,24 +1447,24 @@ func void DIA_Lord_Hagen_RINGEBRINGEN_Info ()
 			B_GivePlayerXP (XP_PAL_OrcRings);
 		};
 
-	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_04"); //Jsem na tebe hrdı. Jen tak dál!
+	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_04"); //Jsem na tebe hrdÃ½. Jen tak dÃ¡l!
 
 	if (OrkRingCounter <= 10)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_05"); //Moná tam ještì nìkde nìjakı je.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_05"); //MoÅ¾nÃ¡ tam jeÅ¡tÄ› nÄ›kde nÄ›jakÃ½ je.
 	}
 	else if	(OrkRingCounter <= 20)
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_06"); //Brzy je srazíme na kolena.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_06"); //Brzy je srazÃ­me na kolena.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_07"); //Vánì by mì pøekvapilo, kdyby se jich tu potulovalo o mnoho víc.
-		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_08"); //Jejich prsteny mi samozøejmì mùeš nosit i nadále, ale myslím, e skøeti u náš vzkaz pochopili.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_07"); //VÃ¡Å¾nÄ› by mÄ› pÅ™ekvapilo, kdyby se jich tu potulovalo o mnoho vÃ­c.
+		AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_08"); //Jejich prsteny mi samozÅ™ejmÄ› mÅ¯Å¾eÅ¡ nosit i nadÃ¡le, ale myslÃ­m, Å¾e skÅ™eti uÅ¾ nÃ¡Å¡ vzkaz pochopili.
 		TOPIC_END_OrcElite = TRUE;
 	};
 
-	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_09"); //Poèkej. Tady máš nìjaké zlato na své vybavení.
+	AI_Output			(self, other, "DIA_Lord_Hagen_RINGEBRINGEN_04_09"); //PoÄkej. Tady mÃ¡Å¡ nÄ›jakÃ© zlato na svÃ© vybavenÃ­.
 
 	OrcRingGeld	= (Ringcount * HagensRingOffer);	
 
@@ -1516,7 +1516,7 @@ INSTANCE DIA_Lord_Hagen_AllDragonsDead(C_INFO)
 	condition	= DIA_Lord_Hagen_AllDragonsDead_Condition;
 	information	= DIA_Lord_Hagen_AllDragonsDead_Info;
 	permanent	= FALSE;
-	description = "Draci jsou mrtví.";
+	description = "Draci jsou mrtvÃ­.";
 };                       
 FUNC INT DIA_Lord_Hagen_AllDragonsDead_Condition()
 {
@@ -1527,17 +1527,17 @@ FUNC INT DIA_Lord_Hagen_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_00"); //Draci jsou mrtví.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_19"); //Vìdìl jsem, e ti Innos dá sílu porazit draky!
+	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_00"); //Draci jsou mrtvÃ­.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_19"); //VÄ›dÄ›l jsem, Å¾e ti Innos dÃ¡ sÃ­lu porazit draky!
 	AI_Output (self ,other,"DIA_Lord_Hagen_AllDragonsDead_04_02"); //Kde je ruda?
-	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_03"); //Skøeti ještì poøád obléhají hrad v Hornickém údolí. Garond nemá ádnou šanci opevnìní opustit, dokud obléhání neskonèí.
+	AI_Output (other,self ,"DIA_Lord_Hagen_AllDragonsDead_15_03"); //SkÅ™eti jeÅ¡tÄ› poÅ™Ã¡d oblÃ©hajÃ­ hrad v HornickÃ©m ÃºdolÃ­. Garond nemÃ¡ Å¾Ã¡dnou Å¡anci opevnÄ›nÃ­ opustit, dokud oblÃ©hÃ¡nÃ­ neskonÄÃ­.
 	
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_20"); //(zuøivì) Zatracenì!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_21"); //Jestlie Garond nedokáe tu situaci zvládnout, budu se o to muset postarat sám.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_22"); //Pár skøetù mì nezastaví! Mì ne!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_23"); //U jsem informoval své mue. Jsme pøipraveni k odjezdu.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_24"); //Pojedeme VŠICHNI. Nechám na lodi jen nezbytnou posádku.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_25"); //To by mìlo staèit na to, abychom s tìmi skøety koneènì zametli!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_20"); //(zuÅ™ivÄ›) ZatracenÄ›!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_21"); //JestliÅ¾e Garond nedokÃ¡Å¾e tu situaci zvlÃ¡dnout, budu se o to muset postarat sÃ¡m.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_22"); //PÃ¡r skÅ™etÅ¯ mÄ› nezastavÃ­! MÄ› ne!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_23"); //UÅ¾ jsem informoval svÃ© muÅ¾e. Jsme pÅ™ipraveni k odjezdu.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_24"); //Pojedeme VÅ ICHNI. NechÃ¡m na lodi jen nezbytnou posÃ¡dku.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_25"); //To by mÄ›lo staÄit na to, abychom s tÄ›mi skÅ™ety koneÄnÄ› zametli!
 
 	MIS_SCVisitShip = LOG_RUNNING;
 	AI_StopProcessInfos (self);
@@ -1555,7 +1555,7 @@ INSTANCE DIA_Lord_Hagen_NeedShip(C_INFO)
 	condition	= DIA_Lord_Hagen_NeedShip_Condition;
 	information	= DIA_Lord_Hagen_NeedShip_Info;
 	permanent	= FALSE;
-	description = "Potøebuji loï.";
+	description = "PotÅ™ebuji loÄ.";
 };                       
 FUNC INT DIA_Lord_Hagen_NeedShip_Condition()
 {
@@ -1566,21 +1566,21 @@ FUNC INT DIA_Lord_Hagen_NeedShip_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_NeedShip_Info()
 {	
-	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_00"); //Potøebuji loï.
+	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_00"); //PotÅ™ebuji loÄ.
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_01"); //To hodnì lidí, vojáku.
+		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_01"); //To hodnÄ› lidÃ­, vojÃ¡ku.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_02"); //(zasmìje se) To slyším skoro kadı den, ctihodnosti. Ale...
+		AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_02"); //(zasmÄ›je se) To slyÅ¡Ã­m skoro kaÅ¾dÃ½ den, ctihodnosti. Ale...
 	};
 
-	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_03"); //Nemáš dokonce ani kapitána, o posádce nemluvì.
-	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_04"); //Co ta loï v pøístavu?
-	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_05"); //Ta je moje a moje také zùstane. A nadejde èas, odvezeme s ní rudu.
-	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_06"); //Ale a to bude za námi, mùeš se mì zeptat znovu.
+	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_03"); //NemÃ¡Å¡ dokonce ani kapitÃ¡na, o posÃ¡dce nemluvÄ›.
+	AI_Output (other,self ,"DIA_Lord_Hagen_NeedShip_15_04"); //Co ta loÄ v pÅ™Ã­stavu?
+	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_05"); //Ta je moje a moje takÃ© zÅ¯stane. AÅ¾ nadejde Äas, odvezeme s nÃ­ rudu.
+	AI_Output (self ,other,"DIA_Lord_Hagen_NeedShip_04_06"); //Ale aÅ¾ to bude za nÃ¡mi, mÅ¯Å¾eÅ¡ se mÄ› zeptat znovu.
 };
 
 
@@ -1595,7 +1595,7 @@ INSTANCE DIA_Lord_Hagen_GateOpen (C_INFO)
 	condition	= DIA_Lord_Hagen_GateOpen_Condition;
 	information	= DIA_Lord_Hagen_GateOpen_Info;
 	permanent	= FALSE;
-	description = "Skøeti vtrhli do hradu v Hornickém údolí!";
+	description = "SkÅ™eti vtrhli do hradu v HornickÃ©m ÃºdolÃ­!";
 };                       
 FUNC INT DIA_Lord_Hagen_GateOpen_Condition()
 {
@@ -1607,10 +1607,10 @@ FUNC INT DIA_Lord_Hagen_GateOpen_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_GateOpen_Info()
 {	
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_29"); //Skøeti vtrhli do hradu v Hornickém údolí!
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_30"); //U Innose! Co pøesnì se tam stalo?
-	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_31"); //Nìjak se musela otevøít brána.
-	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_32"); //Nìjak?! Jak by to bylo moné... Na hradì musí bıt zrádce!
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_29"); //SkÅ™eti vtrhli do hradu v HornickÃ©m ÃºdolÃ­!
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_30"); //U Innose! Co pÅ™esnÄ› se tam stalo?
+	AI_Output (other, self, "DIA_Lord_Hagen_Add_15_31"); //NÄ›jak se musela otevÅ™Ã­t brÃ¡na.
+	AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_32"); //NÄ›jak?! Jak by to bylo moÅ¾nÃ©... Na hradÄ› musÃ­ bÃ½t zrÃ¡dce!
 };
 
 // ************************************************************
@@ -1624,7 +1624,7 @@ INSTANCE DIA_Lord_Hagen_Perm5 (C_INFO)
 	condition	= DIA_Lord_Hagen_Perm5_Condition;
 	information	= DIA_Lord_Hagen_Perm5_Info;
 	permanent	= TRUE;
-	description = "Na co èekáš?";
+	description = "Na co ÄekÃ¡Å¡?";
 };                       
 FUNC INT DIA_Lord_Hagen_Perm5_Condition()
 {
@@ -1635,14 +1635,14 @@ FUNC INT DIA_Lord_Hagen_Perm5_Condition()
 };
 FUNC VOID DIA_Lord_Hagen_Perm5_Info()
 {	
-	AI_Output (other,self, "DIA_Lord_Hagen_Add_15_33"); //Na co èekáš?
+	AI_Output (other,self, "DIA_Lord_Hagen_Add_15_33"); //Na co ÄekÃ¡Å¡?
 	if (MIS_OCGateOpen == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_26"); //Èekáme na vıstroj a proviant. Pak vyrazíme!
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_26"); //ÄŒekÃ¡me na vÃ½stroj a proviant. Pak vyrazÃ­me!
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_27"); //Teï, kdy jsou na hradì skøeti, potøebujeme proviantu ještì víc ne pøedtím.
-		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_28"); //To ale náš odchod o moc nezdrí.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_27"); //TeÄ, kdyÅ¾ jsou na hradÄ› skÅ™eti, potÅ™ebujeme proviantu jeÅ¡tÄ› vÃ­c neÅ¾ pÅ™edtÃ­m.
+		AI_Output (self ,other, "DIA_Lord_Hagen_Add_04_28"); //To ale nÃ¡Å¡ odchod o moc nezdrÅ¾Ã­.
 	};
 };

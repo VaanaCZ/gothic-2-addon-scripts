@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10030_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10030_Buddler_Hi_Condition;
 	information = DIA_Addon_10030_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Jsi v po¯·dku?";
+	description = "Jsi v po≈ô√°dku?";
 };
 FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 {	
@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10030_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//Jsi v po¯·dku?
+	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//Jsi v po≈ô√°dku?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Otroci n·m z cesty odstraÚujou velk˝ kusy.
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(öklebÌ se) A my tak m˘ûem mnohem lÌp sklÌzet zlat˝ ovoce.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Otroci n√°m z cesty odstra≈àujou velk√Ω kusy.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(≈°kleb√≠ se) A my tak m≈Ø≈æem mnohem l√≠p skl√≠zet zlat√Ω ovoce.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//A teÔ si posbÌr·me sv˝ zlat˝ ötÏstÌ.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//A teƒè si posb√≠r√°me sv√Ω zlat√Ω ≈°tƒõst√≠.
 		AI_StopProcessInfos(self);
 	};
 };

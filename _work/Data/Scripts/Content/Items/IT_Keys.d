@@ -11,7 +11,7 @@ const int	Value_Key_03			=	3;
 
 INSTANCE ItKe_Lockpick (C_Item)
 {
-	name 				=	"PaklÌË";
+	name 				=	"Pakl√≠ƒç";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -26,12 +26,12 @@ INSTANCE ItKe_Lockpick (C_Item)
 };
 
 //******************************************************************************************
-//	Prototyp Schl¸ssel
+//	Prototyp Schl√ºssel
 //******************************************************************************************
 
 INSTANCE ItKe_Key_01(C_Item)
 {
-	name 				=	"KlÌË";
+	name 				=	"Kl√≠ƒç";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -47,7 +47,7 @@ INSTANCE ItKe_Key_01(C_Item)
 
 INSTANCE ItKe_Key_02(C_Item)
 {
-	name 				=	"KlÌË";
+	name 				=	"Kl√≠ƒç";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -63,7 +63,7 @@ INSTANCE ItKe_Key_02(C_Item)
 
 INSTANCE ItKe_Key_03(C_Item)
 {
-	name 				=	"KlÌË";
+	name 				=	"Kl√≠ƒç";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -77,12 +77,12 @@ INSTANCE ItKe_Key_03(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //****************************************************************************
-//			Turm Schl¸ssel City
+//			Turm Schl√ºssel City
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_City_Tower_01(C_Item)
 {
-	name 				=	"KlÌË od vÏûe";
+	name 				=	"Kl√≠ƒç od vƒõ≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -99,12 +99,12 @@ INSTANCE ItKe_City_Tower_01(C_Item)
 	
 };
 //****************************************************************************
-//			Turm Schl¸ssel City 02
+//			Turm Schl√ºssel City 02
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_City_Tower_02(C_Item)
 {
-	name 				=	"KlÌË od vÏûe";
+	name 				=	"Kl√≠ƒç od vƒõ≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -121,12 +121,12 @@ INSTANCE ItKe_City_Tower_02(C_Item)
 	
 };
 //****************************************************************************
-//			Turm Schl¸ssel City 03
+//			Turm Schl√ºssel City 03
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_City_Tower_03(C_Item)
 {
-	name 				=	"KlÌË od vÏûe";
+	name 				=	"Kl√≠ƒç od vƒõ≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -143,12 +143,12 @@ INSTANCE ItKe_City_Tower_03(C_Item)
 	
 };
 //****************************************************************************
-//			Turm Schl¸ssel City 04
+//			Turm Schl√ºssel City 04
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_City_Tower_04(C_Item)
 {
-	name 				=	"KlÌË od vÏûe";
+	name 				=	"Kl√≠ƒç od vƒõ≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -165,12 +165,12 @@ INSTANCE ItKe_City_Tower_04(C_Item)
 	
 };
 //****************************************************************************
-//			Turm Schl¸ssel City 05
+//			Turm Schl√ºssel City 05
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_City_Tower_05(C_Item)
 {
-	name 				=	"KlÌË od vÏûe";
+	name 				=	"Kl√≠ƒç od vƒõ≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -187,12 +187,12 @@ INSTANCE ItKe_City_Tower_05(C_Item)
 	
 };
 //****************************************************************************
-//			Turm Schl¸ssel City 06
+//			Turm Schl√ºssel City 06
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_City_Tower_06(C_Item)
 {
-	name 				=	"KlÌË od vÏûe";
+	name 				=	"Kl√≠ƒç od vƒõ≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;

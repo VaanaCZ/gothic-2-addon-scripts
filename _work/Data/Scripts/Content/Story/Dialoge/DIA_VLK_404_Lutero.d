@@ -54,12 +54,12 @@ FUNC INT DIA_Lutero_Hallo_Condition()
 };
 FUNC VOID DIA_Lutero_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Jmenuju se Lutero. Obchoduju se vším, na co si vzpomeneš.
-	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Jaké zboí mi mùeš nabídnout?
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //No, hlavnì vzácné a neobvyklé vìci. Vdycky jsem se snail vyhovìt zákazníkovu pøání.
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Jmenuju se Lutero. Obchoduju se vÅ¡Ã­m, na co si vzpomeneÅ¡.
+	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //JakÃ© zboÅ¾Ã­ mi mÅ¯Å¾eÅ¡ nabÃ­dnout?
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //No, hlavnÄ› vzÃ¡cnÃ© a neobvyklÃ© vÄ›ci. VÅ¾dycky jsem se snaÅ¾il vyhovÄ›t zÃ¡kaznÃ­kovu pÅ™Ã¡nÃ­.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Lutero prodává v horní ètvrti neobvyklé a vzácné vìci."); 
+	B_LogEntry (TOPIC_CityTrader, "Lutero prodÃ¡vÃ¡ v hornÃ­ Ätvrti neobvyklÃ© a vzÃ¡cnÃ© vÄ›ci."); 
 };
 //************************************************************
 //	GetLost
@@ -87,11 +87,11 @@ FUNC VOID DIA_Lutero_GetLost_Info()
 {	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //Zmizni, koøene! Nemáš co dìlat? Tak si koukej sehnat práci - ale nìkde jinde!
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //Zmizni, koÅ™ene! NemÃ¡Å¡ co dÄ›lat? Tak si koukej sehnat prÃ¡ci - ale nÄ›kde jinde!
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Co tady chceš, novici? Nemìl bys bıt v klášteøe?
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Co tady chceÅ¡, novici? NemÄ›l bys bÃ½t v klÃ¡Å¡teÅ™e?
 	};
 	AI_StopProcessInfos (self);
 };
@@ -105,7 +105,7 @@ INSTANCE DIA_Lutero_Snapper(C_INFO)
 	condition	= DIA_Lutero_Snapper_Condition;
 	information	= DIA_Lutero_Snapper_Info;
 	permanent	= FALSE;
-	description = "Hledáš nìco konkrétního?";
+	description = "HledÃ¡Å¡ nÄ›co konkrÃ©tnÃ­ho?";
 };                       
 
 FUNC INT DIA_Lutero_Snapper_Condition()
@@ -118,26 +118,26 @@ FUNC INT DIA_Lutero_Snapper_Condition()
 };
 FUNC VOID DIA_Lutero_Snapper_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Hledáš nìco konkrétního?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Pro svùj souèasnı úkol potøebuju drápy chòapavce.
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Ale ne jen tak ledajaké drápy. Musí to bıt nìco zvláštního - drápy mocné bestie, co u zabila mnoho muù, nebo nìco takového.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Kde najdu chòapavce?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Na tomhle ostrovì jich pár je, ale vìtšina z nich ije v Hornickém údolí.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //A co z toho budu mít?
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //HledÃ¡Å¡ nÄ›co konkrÃ©tnÃ­ho?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Pro svÅ¯j souÄasnÃ½ Ãºkol potÅ™ebuju drÃ¡py chÅˆapavce.
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Ale ne jen tak ledajakÃ© drÃ¡py. MusÃ­ to bÃ½t nÄ›co zvlÃ¡Å¡tnÃ­ho - drÃ¡py mocnÃ© bestie, co uÅ¾ zabila mnoho muÅ¾Å¯, nebo nÄ›co takovÃ©ho.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Kde najdu chÅˆapavce?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Na tomhle ostrovÄ› jich pÃ¡r je, ale vÄ›tÅ¡ina z nich Å¾ije v HornickÃ©m ÃºdolÃ­.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //A co z toho budu mÃ­t?
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_06"); //Mùu ti opatøit nìjakı runovı kámen.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_06"); //MÅ¯Å¾u ti opatÅ™it nÄ›jakÃ½ runovÃ½ kÃ¡men.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Mùu ti dát prsten nepøemoitelnosti.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //MÅ¯Å¾u ti dÃ¡t prsten nepÅ™emoÅ¾itelnosti.
 	};
-	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Uvidím, co se dá dìlat.
+	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //UvidÃ­m, co se dÃ¡ dÄ›lat.
 	
 	Log_CreateTopic (Topic_Lutero,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lutero,LOG_RUNNING);
-	B_LogEntry (Topic_Lutero,"Obchodník Lutero hledá drápy zvláš silného chòapavce.");
+	B_LogEntry (Topic_Lutero,"ObchodnÃ­k Lutero hledÃ¡ drÃ¡py zvlÃ¡Å¡Å¥ silnÃ©ho chÅˆapavce.");
 	
 	Lutero_Krallen = LOG_RUNNING;
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Lutero_Kralle(C_INFO)
 	condition	= DIA_Lutero_Kralle_Condition;
 	information	= DIA_Lutero_Kralle_Info;
 	permanent	= FALSE;
-	description = "Mám pro tebe drápy jednoho zvláštního chòapavce.";
+	description = "MÃ¡m pro tebe drÃ¡py jednoho zvlÃ¡Å¡tnÃ­ho chÅˆapavce.";
 };                       
 
 FUNC INT DIA_Lutero_Kralle_Condition()
@@ -164,22 +164,22 @@ FUNC INT DIA_Lutero_Kralle_Condition()
 };
 FUNC VOID DIA_Lutero_Kralle_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //Mám pro tebe nìjaké zajímavé drápy chòapavce.
+	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //MÃ¡m pro tebe nÄ›jakÃ© zajÃ­mavÃ© drÃ¡py chÅˆapavce.
 	Lutero_Krallen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Mùj zákazník to rád uslyší.
+	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //MÅ¯j zÃ¡kaznÃ­k to rÃ¡d uslyÅ¡Ã­.
 	B_GiveInvItems (other, self, ItAt_ClawLeader,1);
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Nemám ten runovı kámen tady u sebe. Ale vím, kde ho mùeš najít.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //A pùjdeš z mìsta do hospody, projdeš pod mostem.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Je tam jeskynì, moji pøátelé tam mají v truhle uloené runové kameny. Tady je klíè.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //NemÃ¡m ten runovÃ½ kÃ¡men tady u sebe. Ale vÃ­m, kde ho mÅ¯Å¾eÅ¡ najÃ­t.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //AÅ¾ pÅ¯jdeÅ¡ z mÄ›sta do hospody, projdeÅ¡ pod mostem.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Je tam jeskynÄ›, moji pÅ™Ã¡telÃ© tam majÃ­ v truhle uloÅ¾enÃ© runovÃ© kameny. Tady je klÃ­Ä.
 		B_GiveInvItems (self, other, ITKE_RUNE_MIS,1); 
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_05"); //Tady je ten prsten, co jsem si slíbil.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_05"); //Tady je ten prsten, co jsem si slÃ­bil.
 		B_GiveInvItems (self, other, ItRi_Prot_Total_01,1);
 	};
 };
@@ -193,7 +193,7 @@ INSTANCE DIA_Lutero_Trade(C_INFO)
 	condition	= DIA_Lutero_Trade_Condition;
 	information	= DIA_Lutero_Trade_Info;
 	permanent	= TRUE;
-	description = "Uka mi své zboí.";
+	description = "UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Lutero_Trade_Condition()
@@ -206,7 +206,7 @@ FUNC INT DIA_Lutero_Trade_Condition()
 FUNC VOID DIA_Lutero_Trade_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Lutero_Trade_15_00"); //Uka mi své zboí.
+	AI_Output (other ,self,"DIA_Lutero_Trade_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 };
 
 

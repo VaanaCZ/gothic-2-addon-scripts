@@ -77,9 +77,9 @@ FUNC INT DIA_Addon_Bill_Hello_Condition()
 func VOID DIA_Addon_Bill_Hello_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Bill_Hello_15_00"); //Jak se ti vede?
-	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_01"); //Co je? Poslal tì sem Henry?
-	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_02"); //Vyøiï mu, e ty fošny dostane, hned jak tady skonèím.
-	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_03"); //A jestli nemùe tak dlouho èekat, tak a si vezme pilu a naøee si je sám.
+	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_01"); //Co je? Poslal tÄ› sem Henry?
+	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_02"); //VyÅ™iÄ mu, Å¾e ty foÅ¡ny dostane, hned jak tady skonÄÃ­m.
+	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_03"); //A jestli nemÅ¯Å¾e tak dlouho Äekat, tak aÅ¥ si vezme pilu a naÅ™eÅ¾e si je sÃ¡m.
 	
 	Npc_ExchangeRoutine (self, "START");
 };
@@ -94,7 +94,7 @@ INSTANCE DIA_Addon_Bill_Planks(C_INFO)
 	condition	= DIA_Addon_Bill_Planks_Condition;
 	information	= DIA_Addon_Bill_Planks_Info;
 
-	description = "Na co jsou vám všechny tyhle fošny?";
+	description = "Na co jsou vÃ¡m vÅ¡echny tyhle foÅ¡ny?";
 };                       
 FUNC INT DIA_Addon_Bill_Planks_Condition()
 {
@@ -106,13 +106,13 @@ FUNC INT DIA_Addon_Bill_Planks_Condition()
 
 FUNC VOID DIA_Addon_Bill_Planks_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Bill_Planks_15_00"); //Na co ta prkna potøebujete?
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_01"); //No pøeci na palisádu, ty troubo.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_02"); //Greg si myslí, e je dobrı takhle opevnit tábor.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_03"); //Ale podle mì jsme si tu práci mohli ušetøit.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_04"); //Pokud nás banditi vánì chtìjí napadnout, pak je tahle smìšná palisádièka stejnì nezastaví.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_05"); //Nikdy jsme je tady v našem údolí nemìli trpìt.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_06"); //Kdybych to byl vìdìl, zùstal bych v Khorinidu.
+	AI_Output (other, self, "DIA_Addon_Bill_Planks_15_00"); //Na co ta prkna potÅ™ebujete?
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_01"); //No pÅ™eci na palisÃ¡du, ty troubo.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_02"); //Greg si myslÃ­, Å¾e je dobrÃ½ takhle opevnit tÃ¡bor.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_03"); //Ale podle mÄ› jsme si tu prÃ¡ci mohli uÅ¡etÅ™it.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_04"); //Pokud nÃ¡s banditi vÃ¡Å¾nÄ› chtÄ›jÃ­ napadnout, pak je tahle smÄ›Å¡nÃ¡ palisÃ¡diÄka stejnÄ› nezastavÃ­.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_05"); //Nikdy jsme je tady v naÅ¡em ÃºdolÃ­ nemÄ›li trpÄ›t.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_06"); //Kdybych to byl vÄ›dÄ›l, zÅ¯stal bych v Khorinidu.
 };
 	
 // ************************************************************
@@ -127,7 +127,7 @@ instance DIA_Addon_Bill_Perm		(C_INFO)
 	condition	= DIA_Addon_Bill_Perm_Condition;
 	information	= DIA_Addon_Bill_Perm_Info;
 	permanent	= TRUE;
-	description	= "Mùu ti pomoct s øezáním?";
+	description	= "MÅ¯Å¾u ti pomoct s Å™ezÃ¡nÃ­m?";
 };
 func int DIA_Addon_Bill_Perm_Condition ()
 {
@@ -139,11 +139,11 @@ func int DIA_Addon_Bill_Perm_Condition ()
 };
 func void DIA_Addon_Bill_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bill_Perm_15_00"); //Mùu ti pomoct s tím øezáním?
-	AI_Output	(self, other, "DIA_Addon_Bill_Perm_03_01"); //Ne, zvládnu to sám.
+	AI_Output	(other, self, "DIA_Addon_Bill_Perm_15_00"); //MÅ¯Å¾u ti pomoct s tÃ­m Å™ezÃ¡nÃ­m?
+	AI_Output	(self, other, "DIA_Addon_Bill_Perm_03_01"); //Ne, zvlÃ¡dnu to sÃ¡m.
 	if (Bill_Perm_Once == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Bill_Perm_03_02"); //Pøidal jsem se sem pøed nedávnem, a kdybych teï za sebe nechal nìkoho makat, nepomohlo by mi to, jestli mì chápeš.
+		AI_Output (self, other, "DIA_Addon_Bill_Perm_03_02"); //PÅ™idal jsem se sem pÅ™ed nedÃ¡vnem, a kdybych teÄ za sebe nechal nÄ›koho makat, nepomohlo by mi to, jestli mÄ› chÃ¡peÅ¡.
 		Bill_Perm_Once = TRUE;
 	};
 };
@@ -158,7 +158,7 @@ instance DIA_Addon_Bill_Perm2		(C_INFO)
 	condition	= DIA_Addon_Bill_Perm2_Condition;
 	information	= DIA_Addon_Bill_Perm2_Info;
 	permanent	= TRUE;
-	description	= "Co teï dìláš?";
+	description	= "Co teÄ dÄ›lÃ¡Å¡?";
 };
 func int DIA_Addon_Bill_Perm2_Condition ()
 {
@@ -169,12 +169,12 @@ func int DIA_Addon_Bill_Perm2_Condition ()
 };
 func void DIA_Addon_Bill_Perm2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bill_Perm2_15_00"); //Co teï budeš dìlat?
-	AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_01"); //Dám si pauzu.
+	AI_Output	(other, self, "DIA_Addon_Bill_Perm2_15_00"); //Co teÄ budeÅ¡ dÄ›lat?
+	AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_01"); //DÃ¡m si pauzu.
 	if (!Npc_IsDead(Francis))
 	{
-		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_02"); //(škodolibì) Mou práci dostal Francis.
-		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_03"); //Bude øezat tak dlouho, dokud mu neupadnou ruce.
+		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_02"); //(Å¡kodolibÄ›) Mou prÃ¡ci dostal Francis.
+		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_03"); //Bude Å™ezat tak dlouho, dokud mu neupadnou ruce.
 	};
 };
 
@@ -195,7 +195,7 @@ INSTANCE DIA_Addon_Bill_AngusnHank(C_INFO)
 	condition	= DIA_Addon_Bill_AngusnHank_Condition;
 	information	= DIA_Addon_Bill_AngusnHank_Info;
 	permanent	= FALSE;
-	description = "Hledám Anguse a Hanka.";
+	description = "HledÃ¡m Anguse a Hanka.";
 };                       
 FUNC INT DIA_Addon_Bill_AngusnHank_Condition()
 {
@@ -207,15 +207,15 @@ FUNC INT DIA_Addon_Bill_AngusnHank_Condition()
 };
 func VOID DIA_Addon_Bill_AngusnHank_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_00"); //Hledám Anguse a Hanka.
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_01"); //(povzdychne si) Nemám ponìtí, kde jsou – nejspíš je dostali banditi.
-	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_02"); //Vy jste byli pøátelé, e jo?
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_03"); //Vím akorát to, e se s banditama scházeli v jeskyni nedaleko odsud.
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_04"); //Musí to bejt kus od tábora, smìrem na vıchod. 
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_05"); //Ale pøesnì to nevím, nikdy jsem tam nebyl.
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_06"); //Moná by ses na to mohl zeptat Krokodıla Jacka, ten kolem tábora obchází furt.
+	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_00"); //HledÃ¡m Anguse a Hanka.
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_01"); //(povzdychne si) NemÃ¡m ponÄ›tÃ­, kde jsou â€“ nejspÃ­Å¡ je dostali banditi.
+	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_02"); //Vy jste byli pÅ™Ã¡telÃ©, Å¾e jo?
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_03"); //VÃ­m akorÃ¡t to, Å¾e se s banditama schÃ¡zeli v jeskyni nedaleko odsud.
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_04"); //MusÃ­ to bejt kus od tÃ¡bora, smÄ›rem na vÃ½chod. 
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_05"); //Ale pÅ™esnÄ› to nevÃ­m, nikdy jsem tam nebyl.
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_06"); //MoÅ¾nÃ¡ by ses na to mohl zeptat KrokodÃ½la Jacka, ten kolem tÃ¡bora obchÃ¡zÃ­ furt.
 
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Angus a Hank mìli vıchodnì od tábora svou jeskyni. Víc by mi o ní mohl øíci Krokodıl Jack.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"Angus a Hank mÄ›li vÃ½chodnÄ› od tÃ¡bora svou jeskyni. VÃ­c by mi o nÃ­ mohl Å™Ã­ci KrokodÃ½l Jack.");
 };
 
 // ------------------------------------------------------------
@@ -228,7 +228,7 @@ INSTANCE DIA_Addon_Bill_FoundFriends(C_INFO)
 	condition	= DIA_Addon_Bill_FoundFriends_Condition;
 	information	= DIA_Addon_Bill_FoundFriends_Info;
 	permanent	= FALSE;
-	description = "Našel jsem tvé pøátele.";
+	description = "NaÅ¡el jsem tvÃ© pÅ™Ã¡tele.";
 };                       
 FUNC INT DIA_Addon_Bill_FoundFriends_Condition()
 {
@@ -239,26 +239,26 @@ FUNC INT DIA_Addon_Bill_FoundFriends_Condition()
 };
 FUNC VOID DIA_Addon_Bill_FoundFriends_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_00"); //Našel jsem tvé pøátele.
+	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_00"); //NaÅ¡el jsem tvÃ© pÅ™Ã¡tele.
 	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_01"); //A co? Kde jsou?
-	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_02"); //Jsou mrtví.
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_03"); //(nenávistnì) To udìlali ti zatracení banditi!
+	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_02"); //Jsou mrtvÃ­.
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_03"); //(nenÃ¡vistnÄ›) To udÄ›lali ti zatracenÃ­ banditi!
 	if (SC_Knows_JuanMurderedAngus == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_06"); //Je to moné.
+		AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_06"); //Je to moÅ¾nÃ©.
 	};
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_04"); //Ty prokletı svinì! A se smaej v pekle!
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_05"); //(pro sebe, nenávistnì) Kdybych jen vìdìl, která kurva to udìlala!
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_04"); //Ty prokletÃ½ svinÄ›! AÅ¥ se smaÅ¾ej v pekle!
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_05"); //(pro sebe, nenÃ¡vistnÄ›) Kdybych jen vÄ›dÄ›l, kterÃ¡ kurva to udÄ›lala!
 	
 	MIS_Addon_Bill_SearchAngusMurder = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_KillJuan,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_KillJuan,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Billa zdrtilo, kdy se dozvìdìl o smrti Anguse a Hanka. Chce znát jména jejich vrahù.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"Billa zdrtilo, kdyÅ¾ se dozvÄ›dÄ›l o smrti Anguse a Hanka. Chce znÃ¡t jmÃ©na jejich vrahÅ¯.");
 };	
 
 // ------------------------------------------------------------
-// 						Ich kenne den Mörder
+// 						Ich kenne den MÃ¶rder
 // ------------------------------------------------------------
 instance DIA_Addon_Bill_JuanMurder		(C_INFO)
 {
@@ -267,7 +267,7 @@ instance DIA_Addon_Bill_JuanMurder		(C_INFO)
 	condition	= DIA_Addon_Bill_JuanMurder_Condition;
 	information	= DIA_Addon_Bill_JuanMurder_Info;
 
-	description	= "Vím, kdo zabil Anguse a Hanka.";
+	description	= "VÃ­m, kdo zabil Anguse a Hanka.";
 };
 func int DIA_Addon_Bill_JuanMurder_Condition ()
 {
@@ -279,13 +279,13 @@ func int DIA_Addon_Bill_JuanMurder_Condition ()
 };
 func void DIA_Addon_Bill_JuanMurder_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_00"); //Vím, kdo zabil Anguse a Hanka.
-	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_01"); //(vzrušenì) Kdo? Kdo to byl?
-	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_02"); //Jmenuje se Juan, patøí k banditùm.
-	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_03"); //Musíš toho hajzla dostat, slyšíš?
-	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_04"); //Tohle mu nesmí projít.
+	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_00"); //VÃ­m, kdo zabil Anguse a Hanka.
+	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_01"); //(vzruÅ¡enÄ›) Kdo? Kdo to byl?
+	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_02"); //Jmenuje se Juan, patÅ™Ã­ k banditÅ¯m.
+	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_03"); //MusÃ­Å¡ toho hajzla dostat, slyÅ¡Ã­Å¡?
+	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_04"); //Tohle mu nesmÃ­ projÃ­t.
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Mám zabít Juana, abych pomstil Anguse a Hanka.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"MÃ¡m zabÃ­t Juana, abych pomstil Anguse a Hanka.");
 };
 
 // ------------------------------------------------------------
@@ -298,7 +298,7 @@ INSTANCE DIA_Addon_Bill_KilledEsteban(C_INFO)
 	condition	= DIA_Addon_Bill_KilledEsteban_Condition;
 	information	= DIA_Addon_Bill_KilledEsteban_Info;
 
-	description = "Juan u to má za sebou.";
+	description = "Juan uÅ¾ to mÃ¡ za sebou.";
 };                       
 FUNC INT DIA_Addon_Bill_KilledEsteban_Condition()
 {
@@ -310,12 +310,12 @@ FUNC INT DIA_Addon_Bill_KilledEsteban_Condition()
 };
 FUNC VOID DIA_Addon_Bill_KilledEsteban_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_00"); //Juan u to má za sebou.
-	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_01"); //(nadšenì) Fakt? A bolelo to?
-	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_02"); //Nevaò!
-	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_03"); //(povzdychne si) No, aspoò es tu svini zabil.
+	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_00"); //Juan uÅ¾ to mÃ¡ za sebou.
+	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_01"); //(nadÅ¡enÄ›) Fakt? A bolelo to?
+	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_02"); //NeÅ¾vaÅˆ!
+	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_03"); //(povzdychne si) No, aspoÅˆ Å¾es tu svini zabil.
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Juan je vyøízenı, co Billa velice potìšilo.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"Juan je vyÅ™Ã­zenÃ½, coÅ¾ Billa velice potÄ›Å¡ilo.");
 	MIS_Addon_Bill_SearchAngusMurder = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Bill_KillAngusMurder);
 	
@@ -338,7 +338,7 @@ instance DIA_Addon_Bill_Khorinis		(C_INFO)
 	condition	= DIA_Addon_Bill_Khorinis_Condition;
 	information	= DIA_Addon_Bill_Khorinis_Info;
 
-	description	= "Byls nìkdy v Khorinidu?";
+	description	= "Byls nÄ›kdy v Khorinidu?";
 };
 func int DIA_Addon_Bill_Khorinis_Condition ()
 {
@@ -350,14 +350,14 @@ func int DIA_Addon_Bill_Khorinis_Condition ()
 func void DIA_Addon_Bill_Khorinis_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Bill_Khorinis_15_00"); //Byls v Khorinidu?
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_01"); //Jo, trochu jsem kapsaøil a sem tam òákej švindl, abych se udrel nad vodou.
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_02"); //Ale jak zaèalo pøijídìt èím dál tím míò lodí, kšefty šly taky èím dál hùø.
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_03"); //A v jednı chvíli u mì pøestalo bavit pro pár krajícù furt zdrhat pøed domobranou.
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_04"); //A tak jsem se pøidal ke Gregovi a teï trèím tady.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_01"); //Jo, trochu jsem kapsaÅ™il a sem tam ÅˆÃ¡kej Å¡vindl, abych se udrÅ¾el nad vodou.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_02"); //Ale jak zaÄalo pÅ™ijÃ­Å¾dÄ›t ÄÃ­m dÃ¡l tÃ­m mÃ­Åˆ lodÃ­, kÅ¡efty Å¡ly taky ÄÃ­m dÃ¡l hÅ¯Å™.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_03"); //A v jednÃ½ chvÃ­li uÅ¾ mÄ› pÅ™estalo bavit pro pÃ¡r krajÃ­cÅ¯ furt zdrhat pÅ™ed domobranou.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_04"); //A tak jsem se pÅ™idal ke Gregovi a teÄ trÄÃ­m tady.
 
 	if (GregIsBAck == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_05"); //(povzdychne si) Celı dny øeu døevo na palisádu, která je stejnì k nièemu.
+		AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_05"); //(povzdychne si) CelÃ½ dny Å™eÅ¾u dÅ™evo na palisÃ¡du, kterÃ¡ je stejnÄ› k niÄemu.
 	};
 };
 
@@ -371,7 +371,7 @@ instance DIA_Addon_Bill_TeachPlayer		(C_INFO)
 	condition	= DIA_Addon_Bill_TeachPlayer_Condition;
 	information	= DIA_Addon_Bill_TeachPlayer_Info;
 	
-	description	= "Mùeš mì nìèemu nauèit?";
+	description	= "MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };
 func int DIA_Addon_Bill_TeachPlayer_Condition ()
 {
@@ -382,9 +382,9 @@ func int DIA_Addon_Bill_TeachPlayer_Condition ()
 };
 func void DIA_Addon_Bill_TeachPlayer_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bill_TeachPlayer_15_00"); //Mùeš mì nìèemu nauèit?
-	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_01"); //No, mohl bych ti ukázat, jak nepozorovanì vybírat cizí kapsy.
-	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_02"); //Ale musíš bejt aspoò trochu obratnej, jinak máš smùlu.
+	AI_Output	(other, self, "DIA_Addon_Bill_TeachPlayer_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?
+	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_01"); //No, mohl bych ti ukÃ¡zat, jak nepozorovanÄ› vybÃ­rat cizÃ­ kapsy.
+	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_02"); //Ale musÃ­Å¡ bejt aspoÅˆ trochu obratnej, jinak mÃ¡Å¡ smÅ¯lu.
 
 	Bill_Addon_TeachPickPocket = TRUE;
 };
@@ -399,7 +399,7 @@ instance DIA_Addon_Bill_LearnTalent		(C_INFO)
 	condition	= DIA_Addon_Bill_LearnTalent_Condition;
 	information	= DIA_Addon_Bill_LearnTalent_Info;
 	permanent 	= TRUE;
-	description	= "Uka mi, jak vybírat cizí kapsy. (10 VB)";
+	description	= "UkaÅ¾ mi, jak vybÃ­rat cizÃ­ kapsy. (10 VB)";
 };
 func int DIA_Addon_Bill_LearnTalent_Condition ()
 {
@@ -411,26 +411,26 @@ func int DIA_Addon_Bill_LearnTalent_Condition ()
 };
 func void DIA_Addon_Bill_LearnTalent_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //Uka mi, jak vybírat kapsy.
+	AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //UkaÅ¾ mi, jak vybÃ­rat kapsy.
 	
-	if (other.attribute[ATR_DEXTERITY] >= 40) //braucht man für Francis
+	if (other.attribute[ATR_DEXTERITY] >= 40) //braucht man fÃ¼r Francis
 	{
 		if (B_TeachThiefTalent (self, other, NPC_TALENT_PICKPOCKET))
 		{
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_01"); //Napøed se musíš postarat, aby se tvá obì cejtila úplnì v bezpeèí.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_02"); //Nejlepší je k nìkomu pøijít a zaèít klábosit, to funguje jak kouzlo.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_03"); //A pak je èas na zlodìjskej hmat, ale pozor, a si nikdo nièeho nevšimne.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_01"); //NapÅ™ed se musÃ­Å¡ postarat, aby se tvÃ¡ obÄ›Å¥ cejtila ÃºplnÄ› v bezpeÄÃ­.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_02"); //NejlepÅ¡Ã­ je k nÄ›komu pÅ™ijÃ­t a zaÄÃ­t klÃ¡bosit, to funguje jak kouzlo.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_03"); //A pak je Äas na zlodÄ›jskej hmat, ale pozor, aÅ¥ si nikdo niÄeho nevÅ¡imne.
 
-			AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_05"); //Ještì nìco?
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_06"); //Jo, cviè se v obratnosti. Èím budeš obratnìjší, tím líp ti to pùjde.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_07"); //A tím døív ulehèíš svejm obìtem o rùznı vìci, ani by si tì všimly.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_08"); //To je všecko, aspoò teoreticky.
+			AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_05"); //JeÅ¡tÄ› nÄ›co?
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_06"); //Jo, cviÄ se v obratnosti. ÄŒÃ­m budeÅ¡ obratnÄ›jÅ¡Ã­, tÃ­m lÃ­p ti to pÅ¯jde.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_07"); //A tÃ­m dÅ™Ã­v ulehÄÃ­Å¡ svejm obÄ›tem o rÅ¯znÃ½ vÄ›ci, aniÅ¾ by si tÄ› vÅ¡imly.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_08"); //To je vÅ¡ecko, aspoÅˆ teoreticky.
 		};
 	}
 	else 
 	{
-		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_09"); //Zapomeò na to! Nejsi dost obratnej!
-		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_10"); //Buï se napøed pocviè v obratnosti, nebo si najdi lepšího uèitele.
+		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_09"); //ZapomeÅˆ na to! Nejsi dost obratnej!
+		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_10"); //BuÄ se napÅ™ed pocviÄ v obratnosti, nebo si najdi lepÅ¡Ã­ho uÄitele.
 	};
 };
 

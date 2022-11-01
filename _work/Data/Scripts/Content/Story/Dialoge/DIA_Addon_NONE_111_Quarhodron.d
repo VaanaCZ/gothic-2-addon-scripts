@@ -46,23 +46,23 @@ func void DIA_Addon_Quarhodron_Hello_Info ()
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] == TRUE)
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //Proè rušíš mùj odpoèinek, stráèe?
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //(rozzuøenì) Povìz, èeho ode mne ádáš?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //ProÄ ruÅ¡Ã­Å¡ mÅ¯j odpoÄinek, strÃ¡Å¾Äe?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //(rozzuÅ™enÄ›) PovÄ›z, Äeho ode mne Å¾Ã¡dÃ¡Å¡?
 		 
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Co je v tom Adanovì chrámu?", DIA_Addon_Quarhodron_Hello_schwert );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Nìkdo násilím vnikl do Adanova chrámu.", DIA_Addon_Quarhodron_Hello_raven );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Umoni mi pøístup do Adanova chrámu.", DIA_Addon_Quarhodron_Hello_tempel );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "V zemi vypukla zemìtøesení.", DIA_Addon_Quarhodron_Hello_erdbeben );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Co je v tom AdanovÄ› chrÃ¡mu?", DIA_Addon_Quarhodron_Hello_schwert );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "NÄ›kdo nÃ¡silÃ­m vnikl do Adanova chrÃ¡mu.", DIA_Addon_Quarhodron_Hello_raven );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "UmoÅ¾ni mi pÅ™Ã­stup do Adanova chrÃ¡mu.", DIA_Addon_Quarhodron_Hello_tempel );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "V zemi vypukla zemÄ›tÅ™esenÃ­.", DIA_Addon_Quarhodron_Hello_erdbeben );
 		DIA_Addon_Quarhodron_Hello_NoPerm = TRUE;
-		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnütz herum.
+		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnÃ¼tz herum.
 		SC_TalkedToGhost = TRUE;
 	}
 	else
 	{
 		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_02"); //Bengla anthani, Osiri?
 		B_Say (other, self, "$CANTUNDERSTANDTHIS");	
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_03"); //(hlasitì) Bengla anthani?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_03"); //(hlasitÄ›) Bengla anthani?
 		AI_StopProcessInfos (self);
 	};
 };
@@ -73,52 +73,52 @@ func void B_Quarhodron_Hello_KommZumPunkt ()
 	if (DIA_Addon_Quarhodron_Hello_ChoiceCounter >= 3)
 	&& (B_Quarhodron_Hello_KommZumPunkt_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Moudrost našich pøedkù je skuteènì nesmírná.", DIA_Addon_Quarhodron_Hello_frech );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Moudrost naÅ¡ich pÅ™edkÅ¯ je skuteÄnÄ› nesmÃ­rnÃ¡.", DIA_Addon_Quarhodron_Hello_frech );
 		B_Quarhodron_Hello_KommZumPunkt_OneTime = TRUE;
 	};
 };
 
 func void DIA_Addon_Quarhodron_Hello_erdbeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Zemi nièí zemìtøesení. Musíme nìco udìlat, jinak se celı ostrov potopí do moøe.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //Není nièeho, co by mohlo bıti vykonáno.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //Hnìv Adanùv padl na Jharkendar, by ztrestal nevìøící.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Zemi niÄÃ­ zemÄ›tÅ™esenÃ­. MusÃ­me nÄ›co udÄ›lat, jinak se celÃ½ ostrov potopÃ­ do moÅ™e.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //NenÃ­ niÄeho, co by mohlo bÃ½ti vykonÃ¡no.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //HnÄ›v AdanÅ¯v padl na Jharkendar, by ztrestal nevÄ›Å™Ã­cÃ­.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_raven ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //Kdosi vnikl do Adanova chrámu.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Hloupost. Já sám dveøe zapeèetil. Nelze se tam dostati.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //Kdosi vnikl do Adanova chrÃ¡mu.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Hloupost. JÃ¡ sÃ¡m dveÅ™e zapeÄetil. Nelze se tam dostati.
 	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_02"); //Opravdu?
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_tempel ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //Pus mì do Adanova chrámu.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //Chrám zùstane navìky uzavøen. Tak rozhodla rada.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //PusÅ¥ mÄ› do Adanova chrÃ¡mu.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //ChrÃ¡m zÅ¯stane navÄ›ky uzavÅ™en. Tak rozhodla rada.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_schwert ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Co v tom Adanovì chrámu vlastnì je?
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //Mùj nejhlubší al, mé nejvìtší zklamání.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Co v tom AdanovÄ› chrÃ¡mu vlastnÄ› je?
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //MÅ¯j nejhlubÅ¡Ã­ Å¾al, mÃ© nejvÄ›tÅ¡Ã­ zklamÃ¡nÃ­.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_frech ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //Moudrost našich pøedkù je skuteènì ohromná.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //Mu tvého postavení se mnou ale nemùe hovoøiti.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //Mám neodbytnı dojem, e nejsi tím, kım se zdáš.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //Potøebuješ-li mou pomoc, musíš nejprve dokázat, e jsi jí hoden.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //Odpovìz na mé otázky, abych mìl jistotu, e nejsi cizincem.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //Moudrost naÅ¡ich pÅ™edkÅ¯ je skuteÄnÄ› ohromnÃ¡.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //MuÅ¾ tvÃ©ho postavenÃ­ se mnou ale nemÅ¯Å¾e hovoÅ™iti.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //MÃ¡m neodbytnÃ½ dojem, Å¾e nejsi tÃ­m, kÃ½m se zdÃ¡Å¡.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //PotÅ™ebujeÅ¡-li mou pomoc, musÃ­Å¡ nejprve dokÃ¡zat, Å¾e jsi jÃ­ hoden.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //OdpovÄ›z na mÃ© otÃ¡zky, abych mÄ›l jistotu, Å¾e nejsi cizincem.
 	
 	Log_CreateTopic (TOPIC_Addon_Quarhodron, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Quarhodron, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron mi pomùe, pouze kdy mu prokáu svou cenu. Poloil mi nìkolik obtínıch otázek - dokud na nì neodpovím, nemohu s jeho pomocí poèítat."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron mi pomÅ¯Å¾e, pouze kdyÅ¾ mu prokÃ¡Å¾u svou cenu. PoloÅ¾il mi nÄ›kolik obtÃ­Å¾nÃ½ch otÃ¡zek - dokud na nÄ› neodpovÃ­m, nemohu s jeho pomocÃ­ poÄÃ­tat."); 
 
 	Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
 };
@@ -153,14 +153,14 @@ var int B_Quarhodron_Fragen_ChoicesOneTime;
 
 func void B_Quarhodron_TestFailed ()
 {
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Špatné odpovìdi odhalily, e nemáš dobré úmysly.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Å patnÃ© odpovÄ›di odhalily, Å¾e nemÃ¡Å¡ dobrÃ© Ãºmysly.
 		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_01"); //Nepomohu ti.
 		AI_StopProcessInfos (self);	
 };
 
 func void B_Quarhodron_Fragen_Choices ()
 {
-	Log_AddEntry  (TOPIC_Addon_Quarhodron," --- QUARHODRONOVY OTÁZKY ---"); 
+	Log_AddEntry  (TOPIC_Addon_Quarhodron," --- QUARHODRONOVY OTÃZKY ---"); 
 
 	if (Quarhodrons_NextQuestion == Quarhodron_AlleFragenGestellt)
 	{
@@ -171,8 +171,8 @@ func void B_Quarhodron_Fragen_Choices ()
 		if (Quarhodrons_NextQuestion == 1)
 		&& (Quarhodrons_RichtigeAntworten == 0)
 		{
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //Nevìøím ti.
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Vra se, teprve a se rozhodneš øíci mi pravdu.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //NevÄ›Å™Ã­m ti.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //VraÅ¥ se, teprve aÅ¾ se rozhodneÅ¡ Å™Ã­ci mi pravdu.
 			AI_StopProcessInfos (self);
 		}
 		else 
@@ -181,9 +181,9 @@ func void B_Quarhodron_Fragen_Choices ()
 			{
 				if (B_Quarhodron_Fragen_ChoicesOneTime == FALSE)
 				{
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //(pøemıšlí) Máš schopnosti strácù smrti, jinak bys mì neprobudil. To je zjevné.
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Jsi-li vskutku tím, kım tvrdíš, mìl bys znát odpovìdi na všechny mé otázky.
-					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //A na jednu.
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //(pÅ™emÃ½Å¡lÃ­) MÃ¡Å¡ schopnosti strÃ¡Å¾cÅ¯ smrti, jinak bys mÄ› neprobudil. To je zjevnÃ©.
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Jsi-li vskutku tÃ­m, kÃ½m tvrdÃ­Å¡, mÄ›l bys znÃ¡t odpovÄ›di na vÅ¡echny mÃ© otÃ¡zky.
+					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //AÅ¾ na jednu.
 					
 					B_Quarhodron_Fragen_ChoicesOneTime = TRUE;
 				};
@@ -192,38 +192,38 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion == 7)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Kdo uzavøel portál, aby svìt ochránil pøed zlem?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo uzavøel portál, aby zem zachránil pøed zlem? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Kdo uzavÅ™el portÃ¡l, aby svÄ›t ochrÃ¡nil pÅ™ed zlem?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo uzavÅ™el portÃ¡l, aby zem zachrÃ¡nil pÅ™ed zlem? ---"); 
 				Quarhodrons_NextQuestion = Quarhodron_AlleFragenGestellt;
 			}
 			else if (Quarhodrons_NextQuestion == 6)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //Kdo zmíròuje utrpení a stará se o nemocné?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo tiší bolest a stará se o jharkendarské nemocné? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //Kdo zmÃ­rÅˆuje utrpenÃ­ a starÃ¡ se o nemocnÃ©?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo tiÅ¡Ã­ bolest a starÃ¡ se o jharkendarskÃ© nemocnÃ©? ---"); 
 				Quarhodrons_NextQuestion = 7;
 			}
 			else if (Quarhodrons_NextQuestion == 5)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_06"); //Kdo má poslední slovo v Radì pìti?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo mìl poslední slovo v Radì pìti? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_06"); //Kdo mÃ¡ poslednÃ­ slovo v RadÄ› pÄ›ti?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo mÄ›l poslednÃ­ slovo v RadÄ› pÄ›ti? ---"); 
 				Quarhodrons_NextQuestion = 6;
 			}	
 			else if (Quarhodrons_NextQuestion == 4)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Kdo na nás pøivolal zlo?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo má na svìdomí zlo, je zachvátilo lid Jharkendaru? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Kdo na nÃ¡s pÅ™ivolal zlo?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo mÃ¡ na svÄ›domÃ­ zlo, jeÅ¾ zachvÃ¡tilo lid Jharkendaru? ---"); 
 				Quarhodrons_NextQuestion = 5;
 			}
 			else if (Quarhodrons_NextQuestion == 3)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //Kdo mi mùe udìliti pøímı pøíkaz?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo mùe Quarhodronovi pøímo rozkazovat? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //Kdo mi mÅ¯Å¾e udÄ›liti pÅ™Ã­mÃ½ pÅ™Ã­kaz?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo mÅ¯Å¾e Quarhodronovi pÅ™Ã­mo rozkazovat? ---"); 
 				Quarhodrons_NextQuestion = 4;
 			}	
 			else if (Quarhodrons_NextQuestion == 2)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Kdo kdysi chránil jharkendarskı lid pøed útoky nepøátel?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo kdysi chránil lid Jharkendaru pøed nepøátelskımi útoky? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Kdo kdysi chrÃ¡nil jharkendarskÃ½ lid pÅ™ed Ãºtoky nepÅ™Ã¡tel?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kdo kdysi chrÃ¡nil lid Jharkendaru pÅ™ed nepÅ™Ã¡telskÃ½mi Ãºtoky? ---"); 
 				Quarhodrons_NextQuestion = 3;
 			};
 			
@@ -231,18 +231,18 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion >= Quarhodron_AlleFragenGestellt)
 			{
-				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Tohle nemùu vìdìt.", DIA_Addon_Quarhodron_Fragen_NoPlan );
+				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Tohle nemÅ¯Å¾u vÄ›dÄ›t.", DIA_Addon_Quarhodron_Fragen_NoPlan );
 			}
 			else
 			{
-				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Nevím.", DIA_Addon_Quarhodron_Fragen_NoPlan );
+				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "NevÃ­m.", DIA_Addon_Quarhodron_Fragen_NoPlan );
 			};
 			
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Uèenci.", DIA_Addon_Quarhodron_Fragen_gele );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Stráci smrti.", DIA_Addon_Quarhodron_Fragen_totenw );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Knìí.", DIA_Addon_Quarhodron_Fragen_prie );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Váleènická kasta.", DIA_Addon_Quarhodron_Fragen_warr );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Léèitelé.", DIA_Addon_Quarhodron_Fragen_heiler );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "UÄenci.", DIA_Addon_Quarhodron_Fragen_gele );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "StrÃ¡Å¾ci smrti.", DIA_Addon_Quarhodron_Fragen_totenw );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "KnÄ›Å¾Ã­.", DIA_Addon_Quarhodron_Fragen_prie );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "VÃ¡leÄnickÃ¡ kasta.", DIA_Addon_Quarhodron_Fragen_warr );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "LÃ©ÄitelÃ©.", DIA_Addon_Quarhodron_Fragen_heiler );
 		};
 	};
 };
@@ -256,19 +256,19 @@ func void DIA_Addon_Quarhodron_Fragen_Info ()
 	
 	if (DIA_Addon_Quarhodron_Fragen_Info_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //Jsem Quarhodron, starı jharkendarskı váleèník.
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //Probudil jsi mì.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //Jsem Quarhodron, starÃ½ jharkendarskÃ½ vÃ¡leÄnÃ­k.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //Probudil jsi mÄ›.
 		
 		DIA_Addon_Quarhodron_Fragen_Info_OneTime = TRUE;
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_03"); //Ke které jharkendarské kastì náleíš?
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_03"); //Ke kterÃ© jharkendarskÃ© kastÄ› nÃ¡leÅ¾Ã­Å¡?
 
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_warr ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_warr_15_00"); //Váleènická kasta.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_warr_15_00"); //VÃ¡leÄnickÃ¡ kasta.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 3)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	if (Quarhodrons_NextQuestion == 5)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
@@ -276,21 +276,21 @@ func void DIA_Addon_Quarhodron_Fragen_warr ()
 };
 func void DIA_Addon_Quarhodron_Fragen_prie ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //Knìí.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //KnÄ›Å¾Ã­.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 4)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_gele ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_gele_15_00"); //Uèenci.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_gele_15_00"); //UÄenci.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 6)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_totenw ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_totenw_15_00"); //Stráci smrti.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_totenw_15_00"); //StrÃ¡Å¾ci smrti.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	
@@ -298,19 +298,19 @@ func void DIA_Addon_Quarhodron_Fragen_totenw ()
 };
 func void DIA_Addon_Quarhodron_Fragen_heiler ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_heiler_15_00"); //Léèitelé.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_heiler_15_00"); //LÃ©ÄitelÃ©.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 7)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_NoPlan ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_NoPlan_15_00"); //Nevím.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_NoPlan_15_00"); //NevÃ­m.
 	
 	if (Quarhodrons_NextQuestion == Quarhodron_AlleFragenGestellt)
 	&& (Quarhodrons_RichtigeAntworten >= 6) 
 	{
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_01"); //Dobøe. Vìøím ti a pomohu ti.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_01"); //DobÅ™e. VÄ›Å™Ã­m ti a pomohu ti.
 		QuarhodronIstZufrieden = TRUE;
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Fragen);
 	}
@@ -320,7 +320,7 @@ func void DIA_Addon_Quarhodron_Fragen_NoPlan ()
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_02"); //Tak u mì nezdruj.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_02"); //Tak uÅ¾ mÄ› nezdrÅ¾uj.
 		AI_StopProcessInfos (self);	
 	};
 };
@@ -335,7 +335,7 @@ instance DIA_Addon_Quarhodron_GibMirKey		(C_INFO)
 	condition	 = 	DIA_Addon_Quarhodron_GibMirKey_Condition;
 	information	 = 	DIA_Addon_Quarhodron_GibMirKey_Info;
 
-	description	 = 	"(poádat o klíè ke chrámu)";
+	description	 = 	"(poÅ¾Ã¡dat o klÃ­Ä ke chrÃ¡mu)";
 };
 func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 {
@@ -346,27 +346,27 @@ func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 };
 func void DIA_Addon_Quarhodron_GibMirKey_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //Tak poslouchej. Jeden fakt zlej chlápek vniknul do Adanova chrámu.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Pokud mì hned teï nepustíš do chrámu, nejspíš u bude pøíliš pozdì a všechno bude ztraceno.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //To není moné! Veleknìz KHARDIMON a já jsme v Jharkendaru jediní, kdo znají tajemství otevøení brány do Adanova chrámu.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //No, pak to ten tvùj kámoš KHARDIMON nejspíš vyvanil.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Povídám ti, e brána je otevøená – vidìl jsem to na vlastní oèi.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //Z tvého hlasu cítím, e díš pravdu. U o tvıch slovech nebudu pochybovati.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //To doufám.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //Pak si vezmi heslo. Jest vepsáno na této kamenné tabulce. Vyslov je u zavøené chrámové brány a otevøe se.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //Tak poslouchej. Jeden fakt zlej chlÃ¡pek vniknul do Adanova chrÃ¡mu.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Pokud mÄ› hned teÄ nepustÃ­Å¡ do chrÃ¡mu, nejspÃ­Å¡ uÅ¾ bude pÅ™Ã­liÅ¡ pozdÄ› a vÅ¡echno bude ztraceno.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //To nenÃ­ moÅ¾nÃ©! VeleknÄ›z KHARDIMON a jÃ¡ jsme v Jharkendaru jedinÃ­, kdo znajÃ­ tajemstvÃ­ otevÅ™enÃ­ brÃ¡ny do Adanova chrÃ¡mu.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //No, pak to ten tvÅ¯j kÃ¡moÅ¡ KHARDIMON nejspÃ­Å¡ vyÅ¾vanil.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //PovÃ­dÃ¡m ti, Å¾e brÃ¡na je otevÅ™enÃ¡ â€“ vidÄ›l jsem to na vlastnÃ­ oÄi.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //Z tvÃ©ho hlasu cÃ­tÃ­m, Å¾e dÃ­Å¡ pravdu. UÅ¾ o tvÃ½ch slovech nebudu pochybovati.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //To doufÃ¡m.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //Pak si vezmi heslo. Jest vepsÃ¡no na tÃ©to kamennÃ© tabulce. Vyslov je u zavÅ™enÃ© chrÃ¡movÃ© brÃ¡ny a otevÅ™e se.
 	CreateInvItems (self, ItMi_TempelTorKey, 1);									
 	B_GiveInvItems (self, other, ItMi_TempelTorKey, 1);		
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //(u polomrtvı) Mùj èas je u konce. Bìda, u ti více nepomohu.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //(u polomrtvı) Však pamatuj: pozor na komnaty Adanovy. Jinak jsi synem smrti.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_10"); //Poèkej. Co je s tìmi komnatami?
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //(u polomrtvı) Síly mne opouštìjí. Sbohem. Sejdeme se v øíši mrtvıch.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //(uÅ¾ polomrtvÃ½) MÅ¯j Äas je u konce. BÄ›da, uÅ¾ ti vÃ­ce nepomohu.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //(uÅ¾ polomrtvÃ½) VÅ¡ak pamatuj: pozor na komnaty Adanovy. Jinak jsi synem smrti.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_10"); //PoÄkej. Co je s tÄ›mi komnatami?
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //(uÅ¾ polomrtvÃ½) SÃ­ly mne opouÅ¡tÄ›jÃ­. Sbohem. Sejdeme se v Å™Ã­Å¡i mrtvÃ½ch.
 	AI_StopProcessInfos (self);
 	
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron mi dal kamennou tabulku, která mi otevøe vstup do Adanova chrámu."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron mi dal kamennou tabulku, kterÃ¡ mi otevÅ™e vstup do Adanova chrÃ¡mu."); 
 	
 	Log_CreateTopic (TOPIC_Addon_Kammern, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Kammern, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kammern,"Quarhodron se zmínil o 'komnatách Adanovıch', kterıch bych se mìl vyvarovat. Mìl bych zjistit, co tím pøesnì myslel, jinak mùu v chrámu padnout do pìkné pasti."); 
+	B_LogEntry (TOPIC_Addon_Kammern,"Quarhodron se zmÃ­nil o 'komnatÃ¡ch AdanovÃ½ch', kterÃ½ch bych se mÄ›l vyvarovat. MÄ›l bych zjistit, co tÃ­m pÅ™esnÄ› myslel, jinak mÅ¯Å¾u v chrÃ¡mu padnout do pÄ›knÃ© pasti."); 
 
 	Ghost_SCKnowsHow2GetInAdanosTempel = TRUE;
 };

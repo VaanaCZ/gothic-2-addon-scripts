@@ -85,7 +85,7 @@ func void DIA_Addon_Elvrich_BanditsThere_Info ()
 	&& (Npc_IsDead(BDT_10309_Addon_RangerBandit_L))	
 	&& (Npc_IsDead(BDT_10310_Addon_RangerBandit_M))	
 	{
-		AI_Output	(self, other, "DIA_Addon_Elvrich_BanditsThere_04_00"); //Díky bohùm, banditi jsou pryè. Zachránils mi krk.
+		AI_Output	(self, other, "DIA_Addon_Elvrich_BanditsThere_04_00"); //DÃ­ky bohÅ¯m, banditi jsou pryÄ. ZachrÃ¡nils mi krk.
 		DIA_Addon_Elvrich_BanditsThere_NoPerm = TRUE;
 		self.aivar[AIV_NoFightParker] = FALSE;
 	}
@@ -117,12 +117,12 @@ func int DIA_Addon_Elvrich_Wer_Condition ()
 func void DIA_Addon_Elvrich_Wer_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_00"); //Kdo jsi?
-	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_01"); //Jmenuju se Elvrich. Jdu z mìsta.
+	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_01"); //Jmenuju se Elvrich. Jdu z mÄ›sta.
 	if (MIS_Thorben_BringElvrichBack == LOG_RUNNING)
 	{
-		AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_02"); //Mistr Thorben mi øíkal, e jsi zmizel.
+		AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_02"); //Mistr Thorben mi Å™Ã­kal, Å¾e jsi zmizel.
 	};
-	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_03"); //Tyhle zatracení šmejdi mì sem dovlekli a dreli mì v zajetí.
+	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_03"); //Tyhle zatracenÃ­ Å¡mejdi mÄ› sem dovlekli a drÅ¾eli mÄ› v zajetÃ­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -135,7 +135,7 @@ instance DIA_Addon_Elvrich_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Elvrich_MissingPeople_Info;
 
-	description	 = 	"Ve mìstì se pohøešuje spousta lidí.";
+	description	 = 	"Ve mÄ›stÄ› se pohÅ™eÅ¡uje spousta lidÃ­.";
 };
 
 func int DIA_Addon_Elvrich_MissingPeople_Condition ()
@@ -150,8 +150,8 @@ func int DIA_Addon_Elvrich_MissingPeople_Condition ()
 
 func void DIA_Addon_Elvrich_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_MissingPeople_15_00"); //Ve mìstì se pohøešuje spousta lidí.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_MissingPeople_04_01"); //O ádnejch pohøešovanejch nic nevím. Mùu ti akorát øíct, co se stalo MNÌ.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_MissingPeople_15_00"); //Ve mÄ›stÄ› se pohÅ™eÅ¡uje spousta lidÃ­.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_MissingPeople_04_01"); //O Å¾Ã¡dnejch pohÅ™eÅ¡ovanejch nic nevÃ­m. MÅ¯Å¾u ti akorÃ¡t Å™Ã­ct, co se stalo MNÄš.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -164,7 +164,7 @@ instance DIA_Addon_Elvrich_WhatExactly		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_WhatExactly_Condition;
 	information	 = 	DIA_Addon_Elvrich_WhatExactly_Info;
 
-	description	 = 	"Co pøesnì se ti stalo?";
+	description	 = 	"Co pÅ™esnÄ› se ti stalo?";
 };
 
 func int DIA_Addon_Elvrich_WhatExactly_Condition ()
@@ -177,64 +177,64 @@ func int DIA_Addon_Elvrich_WhatExactly_Condition ()
 
 func void DIA_Addon_Elvrich_WhatExactly_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_WhatExactly_15_00"); //A co se ti pøesnì stalo?
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_01"); //Zrovna jsem mìl schùzku se svou dívkou.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_02"); //Jmenuje se Lucia. Chtìli jsme spolu utéct do hor, daleko od mìsta a od tìch, co tam ijou.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_03"); //Akorát jsem dorazil na místo srazu, kdy se z køoví najednou vynoøili tihle banditi a oba nás zajali.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_04"); //Samozøejmì e jsem bojoval, ale nebylo to k nièemu. Bylo jich moc. Nevidìls je náhodou?
+	AI_Output	(other, self, "DIA_Addon_Elvrich_WhatExactly_15_00"); //A co se ti pÅ™esnÄ› stalo?
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_01"); //Zrovna jsem mÄ›l schÅ¯zku se svou dÃ­vkou.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_02"); //Jmenuje se Lucia. ChtÄ›li jsme spolu utÃ©ct do hor, daleko od mÄ›sta a od tÄ›ch, co tam Å¾ijou.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_03"); //AkorÃ¡t jsem dorazil na mÃ­sto srazu, kdyÅ¾ se z kÅ™ovÃ­ najednou vynoÅ™ili tihle banditi a oba nÃ¡s zajali.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_04"); //SamozÅ™ejmÄ› Å¾e jsem bojoval, ale nebylo to k niÄemu. Bylo jich moc. NevidÄ›ls je nÃ¡hodou?
 
 	Info_ClearChoices	(DIA_Addon_Elvrich_WhatExactly);
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Co po tobì ty banditi chtìli?", DIA_Addon_Elvrich_WhatExactly_Want );
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Vyprávìj mi o Lucii.", DIA_Addon_Elvrich_WhatExactly_lucia );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Co po tobÄ› ty banditi chtÄ›li?", DIA_Addon_Elvrich_WhatExactly_Want );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "VyprÃ¡vÄ›j mi o Lucii.", DIA_Addon_Elvrich_WhatExactly_lucia );
 };
 func void DIA_Addon_Elvrich_WhatExactly_Want ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Want_15_00"); //Co s tebou ti banditi zamıšleli?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Want_04_01"); //Obèas jsem je v noci slyšel, jak se baví. Nic jsem sice z jejich hovoru nepochytil, ale myslím, e z nás chtìli udìlat otroky.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Want_15_00"); //Co s tebou ti banditi zamÃ½Å¡leli?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Want_04_01"); //ObÄas jsem je v noci slyÅ¡el, jak se bavÃ­. Nic jsem sice z jejich hovoru nepochytil, ale myslÃ­m, Å¾e z nÃ¡s chtÄ›li udÄ›lat otroky.
 
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Kam tì chtìli odvléct?", DIA_Addon_Elvrich_WhatExactly_Pirates );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Kam tÄ› chtÄ›li odvlÃ©ct?", DIA_Addon_Elvrich_WhatExactly_Pirates );
 };
 func void DIA_Addon_Elvrich_WhatExactly_Pirates ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Pirates_15_00"); //Kam tì to vlekli?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_01"); //Nìkam sem na ostrovì Khorinidu, ale myslím, e bez lodi se tam nedá dostat.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_02"); //Odtáhli mì k nìjakımu kotvišti na pobøeí, kde táboøili nìjací piráti.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_03"); //Jeden z banditù k nim šel vyjednávat. Docela fest se hádali.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_04"); //Myslím, e chtìl, aby nás piráti nìkam odvezli.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_05"); //Ale piráti nechtìli. Tak se banditi stáhli a od tı doby jsme trèeli tady.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_06"); //Øek bych, e to prohráli. A pak jsi pøišel ty.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Pirates_15_00"); //Kam tÄ› to vlekli?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_01"); //NÄ›kam sem na ostrovÄ› Khorinidu, ale myslÃ­m, Å¾e bez lodi se tam nedÃ¡ dostat.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_02"); //OdtÃ¡hli mÄ› k nÄ›jakÃ½mu kotviÅ¡ti na pobÅ™eÅ¾Ã­, kde tÃ¡boÅ™ili nÄ›jacÃ­ pirÃ¡ti.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_03"); //Jeden z banditÅ¯ k nim Å¡el vyjednÃ¡vat. Docela fest se hÃ¡dali.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_04"); //MyslÃ­m, Å¾e chtÄ›l, aby nÃ¡s pirÃ¡ti nÄ›kam odvezli.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_05"); //Ale pirÃ¡ti nechtÄ›li. Tak se banditi stÃ¡hli a od tÃ½ doby jsme trÄeli tady.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_06"); //Å˜ek bych, Å¾e to prohrÃ¡li. A pak jsi pÅ™iÅ¡el ty.
 	
 	Elvrich_SCKnowsPirats = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Elvricha, uèedníka khorinidského tesaøe Thorbena, unesli bandité, kteøí se nejspíš spolèili s piráty."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Elvricha, uÄednÃ­ka khorinidskÃ©ho tesaÅ™e Thorbena, unesli banditÃ©, kteÅ™Ã­ se nejspÃ­Å¡ spolÄili s pirÃ¡ty."); 
 	
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Piráti? Tady v Khorinidu?", DIA_Addon_Elvrich_WhatExactly_Here );
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Kde ti  piráti kotví?", DIA_Addon_Elvrich_WhatExactly_pirat );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "PirÃ¡ti? Tady v Khorinidu?", DIA_Addon_Elvrich_WhatExactly_Here );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Kde ti  pirÃ¡ti kotvÃ­?", DIA_Addon_Elvrich_WhatExactly_pirat );
 };
 func void DIA_Addon_Elvrich_WhatExactly_Here ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Here_15_00"); //V Khorinidu a piráti?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_01"); //Moc toho o nich nevím. Poprvé jsem je vidìl na tom kotvišti.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_02"); //Vdycky se drej vzadu a jsou to samí v Khorinidu hledaní zloèinci.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_03"); //Bojej se šibenice, a proto se taky nestıkaj s nikım z mìsta.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Here_15_00"); //V Khorinidu a pirÃ¡ti?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_01"); //Moc toho o nich nevÃ­m. PoprvÃ© jsem je vidÄ›l na tom kotviÅ¡ti.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_02"); //VÅ¾dycky se drÅ¾ej vzadu a jsou to samÃ­ v Khorinidu hledanÃ­ zloÄinci.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_03"); //Bojej se Å¡ibenice, a proto se taky nestÃ½kaj s nikÃ½m z mÄ›sta.
 };
 func void DIA_Addon_Elvrich_WhatExactly_lucia ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_lucia_15_00"); //Vyprávìj mi o Lucii.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_lucia_04_01"); //Je to holka z pøístavní ètvrti. Pracovala pro toho dìsnıho Bromora. Je vánì pìkná.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_lucia_15_00"); //VyprÃ¡vÄ›j mi o Lucii.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_lucia_04_01"); //Je to holka z pÅ™Ã­stavnÃ­ Ätvrti. Pracovala pro toho dÄ›snÃ½ho Bromora. Je vÃ¡Å¾nÄ› pÄ›knÃ¡.
 };
 func void DIA_Addon_Elvrich_WhatExactly_pirat ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_pirat_15_00"); //Kde mají piráti to kotvištì?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_01"); //Nedaleko khorinidskıho pøístavu.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_02"); //Kdy se postavíš na pobøeí a budeš koukat na moøe, je to doprava podél pobøeí. Ale potøebuješ loï.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_03"); //První malá zátoka, na kterou narazíš, je to kotvištì, o kterım jsem mluvil.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_pirat_15_00"); //Kde majÃ­ pirÃ¡ti to kotviÅ¡tÄ›?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_01"); //Nedaleko khorinidskÃ½ho pÅ™Ã­stavu.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_02"); //KdyÅ¾ se postavÃ­Å¡ na pobÅ™eÅ¾Ã­ a budeÅ¡ koukat na moÅ™e, je to doprava podÃ©l pobÅ™eÅ¾Ã­. Ale potÅ™ebujeÅ¡ loÄ.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_03"); //PrvnÃ­ malÃ¡ zÃ¡toka, na kterou narazÃ­Å¡, je to kotviÅ¡tÄ›, o kterÃ½m jsem mluvil.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Zjistil jsem, jak se dostat k pirátskému kotvišti. Kdy se postavím k molu v khorinidském pøístavu èelem k moøi, musím plavat doprava podél pobøeí."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Zjistil jsem, jak se dostat k pirÃ¡tskÃ©mu kotviÅ¡ti. KdyÅ¾ se postavÃ­m k molu v khorinidskÃ©m pÅ™Ã­stavu Äelem k moÅ™i, musÃ­m plavat doprava podÃ©l pobÅ™eÅ¾Ã­."); 
 
 	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, DIALOG_BACK, DIA_Addon_Elvrich_WhatExactly_Back );
 };
@@ -253,7 +253,7 @@ instance DIA_Addon_Elvrich_Bromor		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_Bromor_Condition;
 	information	 = 	DIA_Addon_Elvrich_Bromor_Info;
 
-	description	 = 	"Bromor tvrdí, e Lucia odešla i se zlatou mísou.";
+	description	 = 	"Bromor tvrdÃ­, Å¾e Lucia odeÅ¡la i se zlatou mÃ­sou.";
 };
 
 func int DIA_Addon_Elvrich_Bromor_Condition ()
@@ -267,12 +267,12 @@ func int DIA_Addon_Elvrich_Bromor_Condition ()
 
 func void DIA_Addon_Elvrich_Bromor_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_Bromor_15_00"); //Bromor øíká, e Lucia odešla se zlatou mísou.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_Bromor_04_01"); //No, Lucia ji opravdu Bromorovi ukradla, ale banditi jí ji urèitì sebrali.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_Bromor_15_00"); //Bromor Å™Ã­kÃ¡, Å¾e Lucia odeÅ¡la se zlatou mÃ­sou.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_Bromor_04_01"); //No, Lucia ji opravdu Bromorovi ukradla, ale banditi jÃ­ ji urÄitÄ› sebrali.
 
 	Log_CreateTopic (TOPIC_Addon_BromorsGold, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BromorsGold, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BromorsGold,"Bromorùv zlatı pohár nejspíš teï mají bandité ze severních lesù za Sekobovım statkem."); 
+	B_LogEntry (TOPIC_Addon_BromorsGold,"BromorÅ¯v zlatÃ½ pohÃ¡r nejspÃ­Å¡ teÄ majÃ­ banditÃ© ze severnÃ­ch lesÅ¯ za SekobovÃ½m statkem."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -285,7 +285,7 @@ instance DIA_Addon_Elvrich_WhereIsLucia		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_WhereIsLucia_Condition;
 	information	 = 	DIA_Addon_Elvrich_WhereIsLucia_Info;
 
-	description	 = 	"Kde je Lucie teï?";
+	description	 = 	"Kde je Lucie teÄ?";
 };
 
 func int DIA_Addon_Elvrich_WhereIsLucia_Condition ()
@@ -299,14 +299,14 @@ func int DIA_Addon_Elvrich_WhereIsLucia_Condition ()
 
 func void DIA_Addon_Elvrich_WhereIsLucia_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_WhereIsLucia_15_00"); //Kde je Lucia teï?
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_01"); //Rozdìlili jsme na velkı køiovatce pøed Onarovım statkem.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_02"); //Banditi Lucii odtáhli do lesa za Sekobovım statkem.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_03"); //Ké ji Innos ochraòuje.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_WhereIsLucia_15_00"); //Kde je Lucia teÄ?
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_01"); //RozdÄ›lili jsme na velkÃ½ kÅ™iÅ¾ovatce pÅ™ed OnarovÃ½m statkem.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_02"); //Banditi Lucii odtÃ¡hli do lesa za SekobovÃ½m statkem.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_03"); //KÃ©Å¾ ji Innos ochraÅˆuje.
 
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Bandité Lucii unesli a do lesù za Sekobovım statkem kdesi na severu."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"BanditÃ© Lucii unesli aÅ¾ do lesÅ¯ za SekobovÃ½m statkem kdesi na severu."); 
 
 	SC_KnowsLuciaCaughtByBandits = TRUE;
 };
@@ -321,7 +321,7 @@ instance DIA_Addon_Elvrich_FernandosWaffen		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_FernandosWaffen_Condition;
 	information	 = 	DIA_Addon_Elvrich_FernandosWaffen_Info;
 
-	description	 = 	"Dostali ti bandité, kteøí tì vìznili, zásilku zbraní?";
+	description	 = 	"Dostali ti banditÃ©, kteÅ™Ã­ tÄ› vÄ›znili, zÃ¡silku zbranÃ­?";
 };
 
 func int DIA_Addon_Elvrich_FernandosWaffen_Condition ()
@@ -335,14 +335,14 @@ func int DIA_Addon_Elvrich_FernandosWaffen_Condition ()
 
 func void DIA_Addon_Elvrich_FernandosWaffen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_FernandosWaffen_15_00"); //Nenesli ti banditi, co tì tu dreli, nìjakou zásobu zbraní?
-	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_01"); //Jojo, bylo jich tolik, e je sotva unesli.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_02"); //Táhli jich celou hromadu a zmizeli smìrem k Sekobovì statku.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_FernandosWaffen_15_00"); //Nenesli ti banditi, co tÄ› tu drÅ¾eli, nÄ›jakou zÃ¡sobu zbranÃ­?
+	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_01"); //Jojo, bylo jich tolik, Å¾e je sotva unesli.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_02"); //TÃ¡hli jich celou hromadu a zmizeli smÄ›rem k SekobovÄ› statku.
 	B_GivePlayerXP (XP_Ambient);
 
 	Log_CreateTopic (TOPIC_Addon_BanditTrader, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BanditTrader, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Cesta mì zavedla na sever, do lesù za Sekobovım statkem. Nìkde tu prı sídlí bandité, kteøí obdreli spoustu zbraní."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Cesta mÄ› zavedla na sever, do lesÅ¯ za SekobovÃ½m statkem. NÄ›kde tu prÃ½ sÃ­dlÃ­ banditÃ©, kteÅ™Ã­ obdrÅ¾eli spoustu zbranÃ­."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -355,7 +355,7 @@ instance DIA_Addon_Elvrich_LuciaLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_LuciaLetter_Condition;
 	information	 = 	DIA_Addon_Elvrich_LuciaLetter_Info;
 
-	description	 = 	"Našel jsem dopis od tvé Lucie.";
+	description	 = 	"NaÅ¡el jsem dopis od tvÃ© Lucie.";
 };
 
 func int DIA_Addon_Elvrich_LuciaLetter_Condition ()
@@ -369,16 +369,16 @@ func int DIA_Addon_Elvrich_LuciaLetter_Condition ()
 
 func void DIA_Addon_Elvrich_LuciaLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_LuciaLetter_15_00"); //Našel jsem dopis od Lucie.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_01"); //(nadšenì) Coe? Dej ho sem!
+	AI_Output	(other, self, "DIA_Addon_Elvrich_LuciaLetter_15_00"); //NaÅ¡el jsem dopis od Lucie.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_01"); //(nadÅ¡enÄ›) CoÅ¾e? Dej ho sem!
 	B_UseFakeScroll ();
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_02"); //(zoufale) NE! Tomu nevìøím! Ne, tomu prostì nemùu uvìøit.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_03"); //(zoufale) Pøece mì takhle neopustí!
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_04"); //(zoufale) Vem si ten dopis, nechci ho. Pevnì vìøím, e se ke mnì jednou pøece jenom vrátí.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_02"); //(zoufale) NE! Tomu nevÄ›Å™Ã­m! Ne, tomu prostÄ› nemÅ¯Å¾u uvÄ›Å™it.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_03"); //(zoufale) PÅ™ece mÄ› takhle neopustÃ­!
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_04"); //(zoufale) Vem si ten dopis, nechci ho. PevnÄ› vÄ›Å™Ã­m, Å¾e se ke mnÄ› jednou pÅ™ece jenom vrÃ¡tÃ­.
 	
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Elvrich nechce vìøit, e Lucie odešla s bandity dobrovolnì. Stále doufá, e se vrátí, a to i pøesto, e mu poslala dopis na rozlouèenou."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Elvrich nechce vÄ›Å™it, Å¾e Lucie odeÅ¡la s bandity dobrovolnÄ›. StÃ¡le doufÃ¡, Å¾e se vrÃ¡tÃ­, a to i pÅ™esto, Å¾e mu poslala dopis na rozlouÄenou."); 
 
 	B_GivePlayerXP (XP_Addon_LuciasLetter);
 	MIS_LuciasLetter = LOG_SUCCESS;
@@ -395,7 +395,7 @@ instance DIA_Addon_Elvrich_WasNun		(C_INFO)
 	information	 = 	DIA_Addon_Elvrich_WasNun_Info;
 	permanent	 = 	FALSE;
 
-	description	 = 	"Mìl by ses rychle vrátit do mìsta!";
+	description	 = 	"MÄ›l by ses rychle vrÃ¡tit do mÄ›sta!";
 };
 
 func int DIA_Addon_Elvrich_WasNun_Condition ()
@@ -408,16 +408,16 @@ func int DIA_Addon_Elvrich_WasNun_Condition ()
 
 func void DIA_Addon_Elvrich_WasNun_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_00"); //Mìl by ses rychle vrátit do mìsta.
-	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_01"); //Co jinıho mùu dìlat? Vrátím se rovnou k mistru Thorbenovi.
-	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_02"); //Podíváš se po tìch banditech?
-	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_03"); //No ano, myslím, e jo.
-	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_04"); //Kdybys našel Lucii, pøivedeš ji do mìsta, e jo?
-	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_05"); //Uvidím, co se dá dìlat.
+	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_00"); //MÄ›l by ses rychle vrÃ¡tit do mÄ›sta.
+	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_01"); //Co jinÃ½ho mÅ¯Å¾u dÄ›lat? VrÃ¡tÃ­m se rovnou k mistru Thorbenovi.
+	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_02"); //PodÃ­vÃ¡Å¡ se po tÄ›ch banditech?
+	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_03"); //No ano, myslÃ­m, Å¾e jo.
+	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_04"); //Kdybys naÅ¡el Lucii, pÅ™ivedeÅ¡ ji do mÄ›sta, Å¾e jo?
+	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_05"); //UvidÃ­m, co se dÃ¡ dÄ›lat.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Elvrich se vrátil zpátky ke svému mistrovi, tesaøi Thorbenovi."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Elvrich se vrÃ¡til zpÃ¡tky ke svÃ©mu mistrovi, tesaÅ™i Thorbenovi."); 
 
 	Elvrich_GoesBack2Thorben = TRUE;
 	Npc_ExchangeRoutine	(self,"BACKINTHECITY");
@@ -447,7 +447,7 @@ func int DIA_Addon_Elvrich_PERM_Condition ()
 };
 func void DIA_Addon_Elvrich_PERM_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Elvrich_PERM_04_00"); //Díky za záchranu!
+	AI_Output (self, other, "DIA_Addon_Elvrich_PERM_04_00"); //DÃ­ky za zÃ¡chranu!
 };
 
 

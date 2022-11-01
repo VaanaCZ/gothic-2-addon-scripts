@@ -272,12 +272,12 @@ func void PLAYER_HOTKEY_LAME_POTION()
 				}
 				else
 				{
-					Print ("ádné lektvary doplòující manu nejsou k dispozici!");
+					Print ("Å½Ã¡dnÃ© lektvary doplÅˆujÃ­cÃ­ manu nejsou k dispozici!");
 				};
 		 }
 		 else
 		 {
-				Print ("Manu u máš doplnìnou na maximum!");
+				Print ("Manu uÅ¾ mÃ¡Å¡ doplnÄ›nou na maximum!");
 		 };
 	};
 };
@@ -330,12 +330,12 @@ if (Npc_IsInState (hero,ZS_Dead)==FALSE)
 				}
 				else
 				{
-					Print ("ádné léèivé lektvary nejsou k dispozici!");
+					Print ("Å½Ã¡dnÃ© lÃ©ÄivÃ© lektvary nejsou k dispozici!");
 				};
 		 }
 		 else
 		 {
-				Print ("ivoty u máš doplnìné na maximum!");
+				Print ("Å½ivoty uÅ¾ mÃ¡Å¡ doplnÄ›nÃ© na maximum!");
 		 };
 	};
 };

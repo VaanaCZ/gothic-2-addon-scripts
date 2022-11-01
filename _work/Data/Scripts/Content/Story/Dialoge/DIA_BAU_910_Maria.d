@@ -42,8 +42,8 @@ func int DIA_Maria_Hallo_Condition ()
 func void DIA_Maria_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Maria_Hallo_15_00"); //Kdo jsi?
-	AI_Output (self, other, "DIA_Maria_Hallo_17_01"); //Jsem Onarova ena, Maria.
-	AI_Output (self, other, "DIA_Maria_Hallo_17_02"); //Co tady chceš?
+	AI_Output (self, other, "DIA_Maria_Hallo_17_01"); //Jsem Onarova Å¾ena, Maria.
+	AI_Output (self, other, "DIA_Maria_Hallo_17_02"); //Co tady chceÅ¡?
 };
 
 // ************************************************************
@@ -56,7 +56,7 @@ instance DIA_Maria_Umsehen		(C_INFO)
 	condition	= DIA_Maria_Umsehen_Condition;
 	information	= DIA_Maria_Umsehen_Info;
 	permanent  	= FALSE;
-	description = "Jen jsem se tu chtìl porozhlédnout...";
+	description = "Jen jsem se tu chtÄ›l porozhlÃ©dnout...";
 };
 
 func int DIA_Maria_Umsehen_Condition ()
@@ -69,9 +69,9 @@ func int DIA_Maria_Umsehen_Condition ()
 
 func void DIA_Maria_Umsehen_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Umsehen_15_00"); //Jen jsem si to chtìl tady prohlédnout.
-	AI_Output (self, other, "DIA_Maria_Umsehen_17_01"); //S tolika chlapama na farmì se teï nemùu uvnitø domu moc zdrovat.
-	AI_Output (self, other, "DIA_Maria_Umsehen_17_02"); //Prostì sem jen tak vpadli.
+	AI_Output (other, self, "DIA_Maria_Umsehen_15_00"); //Jen jsem si to chtÄ›l tady prohlÃ©dnout.
+	AI_Output (self, other, "DIA_Maria_Umsehen_17_01"); //S tolika chlapama na farmÄ› se teÄ nemÅ¯Å¾u uvnitÅ™ domu moc zdrÅ¾ovat.
+	AI_Output (self, other, "DIA_Maria_Umsehen_17_02"); //ProstÄ› sem jen tak vpadli.
 };
 
 // ************************************************************
@@ -84,7 +84,7 @@ instance DIA_Maria_Soeldner	(C_INFO)
 	condition	= DIA_Maria_Soeldner_Condition;
 	information	= DIA_Maria_Soeldner_Info;
 	permanent  	= FALSE;
-	description = "Obtìují tì ti oldáci?";
+	description = "ObtÄ›Å¾ujÃ­ tÄ› ti Å¾oldÃ¡ci?";
 };
 
 func int DIA_Maria_Soeldner_Condition ()
@@ -97,23 +97,23 @@ func int DIA_Maria_Soeldner_Condition ()
 
 func void DIA_Maria_Soeldner_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //Obtìují tì ti oldáci?
+	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //ObtÄ›Å¾ujÃ­ tÄ› ti Å¾oldÃ¡ci?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_01"); //Hele, zapomeò na to, co jsem právì øekla - je tu teï mnohem bezpeènìji, co se ti chlapi objevili.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_01"); //Hele, zapomeÅˆ na to, co jsem prÃ¡vÄ› Å™ekla - je tu teÄ mnohem bezpeÄnÄ›ji, co se ti chlapi objevili.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //No, pøinejmenším je tu teï, co jsou tu oldáci, mnohem bezpeènìji.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //No, pÅ™inejmenÅ¡Ã­m je tu teÄ, co jsou tu Å¾oldÃ¡ci, mnohem bezpeÄnÄ›ji.
 		};
 
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Dokud jsme tu byli sami, pokadé pøišla domobrana z mìsta a sebrala naši úrodu.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Sebrali nejlepší èást úrody. A taky si vzali pár ovcí. Nedali nám za to vùbec nic.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //Nìkteøí z tìch nièemù se tu dokonce odváili krást.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Dokud jsme tu byli sami, pokaÅ¾dÃ© pÅ™iÅ¡la domobrana z mÄ›sta a sebrala naÅ¡i Ãºrodu.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Sebrali nejlepÅ¡Ã­ ÄÃ¡st Ãºrody. A taky si vzali pÃ¡r ovcÃ­. Nedali nÃ¡m za to vÅ¯bec nic.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //NÄ›kteÅ™Ã­ z tÄ›ch niÄemÅ¯ se tu dokonce odvÃ¡Å¾ili krÃ¡st.
 	if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //Nevysvìtluj si to nijak zle, vojáku. Vím, e takoví nejsou všichni.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //NevysvÄ›tluj si to nijak zle, vojÃ¡ku. VÃ­m, Å¾e takovÃ­ nejsou vÅ¡ichni.
 		};	
 };
 
@@ -142,10 +142,10 @@ func int DIA_Maria_Mission_Condition ()
 func void DIA_Maria_Mission_Info ()
 {
 	AI_Output (other, self, "DIA_Maria_Mission_15_00"); //Tak co ti ukradli?
-	AI_Output (self, other, "DIA_Maria_Mission_17_01"); //Vìtšinou zlato a støíbro. Taky nám sebrali svatební dar. Zlatı tác.
+	AI_Output (self, other, "DIA_Maria_Mission_17_01"); //VÄ›tÅ¡inou zlato a stÅ™Ã­bro. Taky nÃ¡m sebrali svatebnÃ­ dar. ZlatÃ½ tÃ¡c.
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Maria_Mission_17_02"); //Vsadím se, e teï se na nìm usazuje prach v truhle nìjakého mizerného mìstského stráného.
+		AI_Output (self, other, "DIA_Maria_Mission_17_02"); //VsadÃ­m se, Å¾e teÄ se na nÄ›m usazuje prach v truhle nÄ›jakÃ©ho mizernÃ©ho mÄ›stskÃ©ho strÃ¡Å¾nÃ©ho.
 	};
 	MIS_Maria_BringPlate = LOG_RUNNING;
 };
@@ -160,7 +160,7 @@ instance DIA_Maria_BringPlate	(C_INFO)
 	condition	= DIA_Maria_BringPlate_Condition;
 	information	= DIA_Maria_BringPlate_Info;
 	permanent  	= FALSE;
-	description = "Mám u sebe zlatı tác. Není náhodou tvùj?";
+	description = "MÃ¡m u sebe zlatÃ½ tÃ¡c. NenÃ­ nÃ¡hodou tvÅ¯j?";
 };
 
 func int DIA_Maria_BringPlate_Condition ()
@@ -174,8 +174,8 @@ func int DIA_Maria_BringPlate_Condition ()
 func void DIA_Maria_BringPlate_Info ()
 {
 	B_GiveInvItems (other, self, ItMi_MariasGoldPlate, 1);
-	AI_Output (other, self, "DIA_Maria_BringPlate_15_00"); //Mám u sebe zlatı tác. Není náhodou tvùj?
-	AI_Output (self, other, "DIA_Maria_BringPlate_17_01"); //Ano! To je on! Tisíceré díky!
+	AI_Output (other, self, "DIA_Maria_BringPlate_15_00"); //MÃ¡m u sebe zlatÃ½ tÃ¡c. NenÃ­ nÃ¡hodou tvÅ¯j?
+	AI_Output (self, other, "DIA_Maria_BringPlate_17_01"); //Ano! To je on! TisÃ­cerÃ© dÃ­ky!
 	
 	MIS_Maria_BringPlate = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Maria_Teller);
@@ -195,7 +195,7 @@ instance DIA_Maria_Belohnung	(C_INFO)
 	condition	= DIA_Maria_Belohnung_Condition;
 	information	= DIA_Maria_Belohnung_Info;
 	permanent  	= TRUE;
-	description = "A co takhle nìjakou odmìnu?";
+	description = "A co takhle nÄ›jakou odmÄ›nu?";
 };
 
 func int DIA_Maria_Belohnung_Condition ()
@@ -209,51 +209,51 @@ func int DIA_Maria_Belohnung_Condition ()
 
 func void DIA_Maria_Belohnung_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Belohnung_15_00"); //A co takhle nìjakou odmìnu?
+	AI_Output (other, self, "DIA_Maria_Belohnung_15_00"); //A co takhle nÄ›jakou odmÄ›nu?
 	
 	
 	if (other.guild == GIL_SLD)
 	|| (Npc_KnowsInfo (other, DIA_Onar_HowMuch))
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_01"); //Pracuješ pro mého manela jako oldnéø, ne?
-		AI_Output (other, self, "DIA_Maria_Belohnung_15_02"); //Správnì.
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_03"); //Kolik ti platí?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_01"); //PracujeÅ¡ pro mÃ©ho manÅ¾ela jako Å¾oldnÃ©Å™, ne?
+		AI_Output (other, self, "DIA_Maria_Belohnung_15_02"); //SprÃ¡vnÄ›.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_03"); //Kolik ti platÃ­?
 		B_Say_Gold (other, self, SOLD);
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_04"); //To tedy moc není. Zajdi za ním a øekni mu, a ti pøidá.
-		AI_Output (other, self, "DIA_Maria_Belohnung_15_05"); //A myslíš, e to udìlá?
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_06"); //Ví, co by se stalo, kdyby ne. Vìø mi.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_04"); //To tedy moc nenÃ­. Zajdi za nÃ­m a Å™ekni mu, aÅ¥ ti pÅ™idÃ¡.
+		AI_Output (other, self, "DIA_Maria_Belohnung_15_05"); //A myslÃ­Å¡, Å¾e to udÄ›lÃ¡?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_06"); //VÃ­, co by se stalo, kdyby ne. VÄ›Å™ mi.
 		Maria_MehrGold = TRUE;
 		Maria_Belohnung = TRUE;
 	}
 	else if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //Chceš se tady na farmì nechat najmout jako oldák?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //ChceÅ¡ se tady na farmÄ› nechat najmout jako Å¾oldÃ¡k?
 		Info_ClearChoices (DIA_Maria_Belohnung);
-		Info_AddChoice (DIA_Maria_Belohnung, "Ne - vánì ne.", DIA_Maria_Belohnung_Gold);
+		Info_AddChoice (DIA_Maria_Belohnung, "Ne - vÃ¡Å¾nÄ› ne.", DIA_Maria_Belohnung_Gold);
 		Info_AddChoice (DIA_Maria_Belohnung, "Ano.", DIA_Maria_Belohnung_SOLD);
 	}
 	else
 	{
 		B_GiveInvItems (self, other, itmi_gold, 50);
 		Maria_Belohnung = TRUE;
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_08"); //Tady, vezmi si to. Zaslouíš si to.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_08"); //Tady, vezmi si to. ZaslouÅ¾Ã­Å¡ si to.
 	};
 };
 
 func void DIA_Maria_Belohnung_Gold()
 {
-	AI_Output (other, self, "DIA_Maria_Belohnung_Gold_15_00"); //Ne - vánì ne.
+	AI_Output (other, self, "DIA_Maria_Belohnung_Gold_15_00"); //Ne - vÃ¡Å¾nÄ› ne.
 	B_GiveInvItems (self, other, itmi_gold, 50);
 	Maria_Belohnung = TRUE;
-	AI_Output (self, other, "DIA_Maria_Belohnung_Gold_17_01"); //Tak si na oplátku vezmi tohle zlato. Zaslouil sis to.
+	AI_Output (self, other, "DIA_Maria_Belohnung_Gold_17_01"); //Tak si na oplÃ¡tku vezmi tohle zlato. ZaslouÅ¾il sis to.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 
 func void DIA_Maria_Belohnung_SOLD()
 {
 	AI_Output (other, self, "DIA_Maria_Belohnung_SOLD_15_00"); //Ano.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //Dobrá, pokud tady pracuješ, tak dohlédnu na to, abys dostával slušnı old.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Vra se, a si s mım manelem promluvíš o tvém platu.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //DobrÃ¡, pokud tady pracujeÅ¡, tak dohlÃ©dnu na to, abys dostÃ¡val sluÅ¡nÃ½ Å¾old.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //VraÅ¥ se, aÅ¾ si s mÃ½m manÅ¾elem promluvÃ­Å¡ o tvÃ©m platu.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 		
@@ -267,7 +267,7 @@ instance DIA_Maria_AboutOnar	(C_INFO)
 	condition	= DIA_Maria_AboutOnar_Condition;
 	information	= DIA_Maria_AboutOnar_Info;
 	permanent  	= FALSE;
-	description = "Povìz mi nìco o Onarovi.";
+	description = "PovÄ›z mi nÄ›co o Onarovi.";
 };
 
 func int DIA_Maria_AboutOnar_Condition ()
@@ -280,12 +280,12 @@ func int DIA_Maria_AboutOnar_Condition ()
 
 func void DIA_Maria_AboutOnar_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //Øekni mi nìco o Onarovi.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //Je to fajn chlap. Trochu nabruèenı a hodnì netrpìlivı, ale všichni máme své chyby.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //Øekla jsem svému mui, proè ty vojáky nechá, aby s ním takhle zacházeli.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_03"); //Dìlej nìco, øíkám.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Tak najal oldnéøe. Teï se cítím jako uprostøed války.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //Ale my vlastnì jsme ve válce, nebo ne?
+	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //Å˜ekni mi nÄ›co o Onarovi.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //Je to fajn chlap. Trochu nabruÄenÃ½ a hodnÄ› netrpÄ›livÃ½, ale vÅ¡ichni mÃ¡me svÃ© chyby.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //Å˜ekla jsem svÃ©mu muÅ¾i, proÄ ty vojÃ¡ky nechÃ¡, aby s nÃ­m takhle zachÃ¡zeli.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_03"); //DÄ›lej nÄ›co, Å™Ã­kÃ¡m.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Tak najal Å¾oldnÃ©Å™e. TeÄ se cÃ­tÃ­m jako uprostÅ™ed vÃ¡lky.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //Ale my vlastnÄ› jsme ve vÃ¡lce, nebo ne?
 };
 
 // ************************************************************
@@ -298,7 +298,7 @@ instance DIA_Maria_PERM	(C_INFO)
 	condition	= DIA_Maria_PERM_Condition;
 	information	= DIA_Maria_PERM_Info;
 	permanent  	= FALSE;
-	description = "Stalo se poslední dobou nìco zajímavého?";
+	description = "Stalo se poslednÃ­ dobou nÄ›co zajÃ­mavÃ©ho?";
 };
 
 func int DIA_Maria_PERM_Condition ()
@@ -311,21 +311,21 @@ func int DIA_Maria_PERM_Condition ()
 
 func void DIA_Maria_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //Stalo se poslední dobou nìco zajímavého?
+	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //Stalo se poslednÃ­ dobou nÄ›co zajÃ­mavÃ©ho?
 	if (Kapitel <= 2)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //Prošli tudy paladinové.
-		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //Nejdøív jsme si mysleli, e pøišli napadnout farmu, ale ve skuteènosti mìli namíøeno do Hornického údolí.
+		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //ProÅ¡li tudy paladinovÃ©.
+		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //NejdÅ™Ã­v jsme si mysleli, Å¾e pÅ™iÅ¡li napadnout farmu, ale ve skuteÄnosti mÄ›li namÃ­Å™eno do HornickÃ©ho ÃºdolÃ­.
 	}
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Wasili naèapal pøed pár dny v noci zlodìje. Jinak je tady klid.
+		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Wasili naÄapal pÅ™ed pÃ¡r dny v noci zlodÄ›je. Jinak je tady klid.
 	};
 	
 	if (Kapitel >= 4)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_04"); //Je to tu mnohem klidnìjší, co nìkteøí ze oldnéøù odešli.
+		AI_Output (self, other, "DIA_Maria_PERM_17_04"); //Je to tu mnohem klidnÄ›jÅ¡Ã­, co nÄ›kteÅ™Ã­ ze Å¾oldnÃ©Å™Å¯ odeÅ¡li.
 	};
 };
 			

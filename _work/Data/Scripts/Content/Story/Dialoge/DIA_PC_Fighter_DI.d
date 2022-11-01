@@ -33,7 +33,7 @@ INSTANCE DIA_Gorn_DI_Hallo (C_INFO)
 	information	= DIA_Gorn_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Vöechno v po¯·dku?";
+	description = "V≈°echno v po≈ô√°dku?";
 };                       
 
 FUNC INT DIA_Gorn_DI_Hallo_Condition()
@@ -46,15 +46,15 @@ FUNC INT DIA_Gorn_DI_Hallo_Condition()
 
 FUNC VOID DIA_Gorn_DI_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Gorn_DI_Hallo_15_00"); //Vöechno v po¯·dku?
+	AI_Output (other,self ,"DIA_Gorn_DI_Hallo_15_00"); //V≈°echno v po≈ô√°dku?
 
 	if (ORkSturmDI == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //ZatÌm ano. NezapomeÚ, ûe bych chtÏl vidÏt nÏjakou po¯·dnou akci.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //Zat√≠m ano. Nezapome≈à, ≈æe bych chtƒõl vidƒõt nƒõjakou po≈ô√°dnou akci.
 		}
 	else
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //Je tam naho¯e vÌc sk¯et˘? ZaveÔ je ke mnÏ. Pr·vÏ se zaËÌn·m dost·vat do n·lady.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //Je tam naho≈ôe v√≠c sk≈ôet≈Ø? Zaveƒè je ke mnƒõ. Pr√°vƒõ se zaƒç√≠n√°m dost√°vat do n√°lady.
 		};
 };
 
@@ -71,7 +71,7 @@ INSTANCE DIA_Gorn_DI_Teach(C_INFO)
 	information	= DIA_Gorn_DI_Teach_Info;
 	permanent	= TRUE;
 	
-	description = "Pot¯ebuji v˝cvik.";
+	description = "Pot≈ôebuji v√Ωcvik.";
 };                       
 
 FUNC INT DIA_Gorn_DI_Teach_Condition()
@@ -84,8 +84,8 @@ FUNC INT DIA_Gorn_DI_Teach_Condition()
  
 FUNC VOID DIA_Gorn_DI_Teach_Info()
 {	
-	AI_Output (other, self , 	"DIA_Gorn_DI_Teach_15_00"); //Pot¯ebuji v˝cvik.
-	AI_Output (self, other, 	"DIA_Gorn_DI_Teach_12_01"); //To nem˘ûe uökodit.
+	AI_Output (other, self , 	"DIA_Gorn_DI_Teach_15_00"); //Pot≈ôebuji v√Ωcvik.
+	AI_Output (self, other, 	"DIA_Gorn_DI_Teach_12_01"); //To nem≈Ø≈æe u≈°kodit.
 	
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -97,7 +97,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_1_12_00"); //No. B˝val jsi lepöÌ.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_1_12_00"); //No. B√Ωval jsi lep≈°√≠.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -109,7 +109,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Drû zbraÚ o nÏco v˝ö. Tenhle kryt by prorazil i slepec svou holÌ.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Dr≈æ zbra≈à o nƒõco v√Ω≈°. Tenhle kryt by prorazil i slepec svou hol√≠.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -133,7 +133,7 @@ instance DIA_Gorn_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Gorn_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Z˘stal jsi u lodi?";
+	description = 	"Z≈Østal jsi u lodi?";
 };
 
 func int DIA_Gorn_DI_UndeadDragonDead_Condition ()
@@ -147,36 +147,36 @@ func int DIA_Gorn_DI_UndeadDragonDead_Condition ()
 var int DIA_Gorn_DI_UndeadDragonDead_OneTime;
 func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //Z˘stal jsi u lodi?
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Samoz¯ejmÏ. Jen si p¯edstav, co by se stalo, kdyby tady uû nebyla.
+	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //Z≈Østal jsi u lodi?
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Samoz≈ôejmƒõ. Jen si p≈ôedstav, co by se stalo, kdyby tady u≈æ nebyla.
 
 	if (DIA_Gorn_DI_UndeadDragonDead_OneTime == FALSE)
 		{
 			if (hero.guild == GIL_DJG)
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //Co bude teÔ?
-				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Nic nebude. Chci dom˘.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(smÏje se) Dom˘? A kde to m· b˝t? Pokud vÌm, nic takovÈho tÏ neËek·.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Nech mÏ h·dat. Zapadneme do dalöÌ hospody a zt¯Ìsk·me se do nÏmoty.
-				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //Hmm. Moûn·.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Hej, uû toho nech, chlape. Je po vöem.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //Co bude teƒè?
+				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Nic nebude. Chci dom≈Ø.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(smƒõje se) Dom≈Ø? A kde to m√° b√Ωt? Pokud v√≠m, nic takov√©ho tƒõ neƒçek√°.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Nech mƒõ h√°dat. Zapadneme do dal≈°√≠ hospody a zt≈ô√≠sk√°me se do nƒõmoty.
+				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //Hmm. Mo≈æn√°.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Hej, u≈æ toho nech, chlape. Je po v≈°em.
 			};
 			DIA_Gorn_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_plunder))
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //NÏkdo to musÌ vy¯Ìdit Biffovi, jinak na tomhle ostrovÏ shnije.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //Nƒõkdo to mus√≠ vy≈ô√≠dit Biffovi, jinak na tomhle ostrovƒõ shnije.
 
 				if (Npc_IsDead(Biff_DI)== FALSE)
 					{
-						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //Vr·tÌ se vËas.
+						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //Vr√°t√≠ se vƒças.
 					};
 			};			
 	
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Uû tady nem·me co pohled·vat. ÿekni kapit·novi, aby se p¯ipravil k vyplutÌ.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //U≈æ tady nem√°me co pohled√°vat. ≈òekni kapit√°novi, aby se p≈ôipravil k vyplut√≠.
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine	(self,"ZaËÌt");
+	Npc_ExchangeRoutine	(self,"Zaƒç√≠t");
 };
 
 // ************************************************************

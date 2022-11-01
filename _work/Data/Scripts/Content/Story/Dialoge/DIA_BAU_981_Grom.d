@@ -31,7 +31,7 @@ instance DIA_Grom_HALLO		(C_INFO)
 	condition	 = 	DIA_Grom_HALLO_Condition;
 	information	 = 	DIA_Grom_HALLO_Info;
 
-	description	 = 	"Je vöechno v po¯·dku?";
+	description	 = 	"Je v≈°echno v po≈ô√°dku?";
 };
 
 func int DIA_Grom_HALLO_Condition ()
@@ -41,25 +41,25 @@ func int DIA_Grom_HALLO_Condition ()
 
 func void DIA_Grom_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Je vöechno v po¯·dku?
-	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //¡, nÏjak˝ nezn·m˝ poutnÌk. M·m moc pr·ce, tak co chceö?
+	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Je v≈°echno v po≈ô√°dku?
+	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //√Å, nƒõjak√Ω nezn√°m√Ω poutn√≠k. M√°m moc pr√°ce, tak co chce≈°?
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
-	Info_AddChoice	(DIA_Grom_HALLO, "Co je tu zajÌmavÈho k vidÏnÌ?", DIA_Grom_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Grom_HALLO, "Co tady dÏl·ö?", DIA_Grom_HALLO_was );
+	Info_AddChoice	(DIA_Grom_HALLO, "Co je tu zaj√≠mav√©ho k vidƒõn√≠?", DIA_Grom_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Grom_HALLO, "Co tady dƒõl√°≈°?", DIA_Grom_HALLO_was );
 };
 
 func void DIA_Grom_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Co je tu zajÌmavÈho k vidÏnÌ?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //ZajÌmavÈ je slabÈ slovo. Kdyû se vyd·ö hloubÏjö do lesa, narazÌö na po¯·dnÏ odporn˝ chlapÌky.
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Jsou okolo deseti stop vysok˝, chlupat˝ a maj fakt öpatnou n·ladu. Jestli na nÏ nejsi dost siln˝, tak tam radÏji ani nechoÔ.
+	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Co je tu zaj√≠mav√©ho k vidƒõn√≠?
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Zaj√≠mav√© je slab√© slovo. Kdy≈æ se vyd√°≈° hloubƒõj≈° do lesa, naraz√≠≈° na po≈ô√°dnƒõ odporn√Ω chlap√≠ky.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Jsou okolo deseti stop vysok√Ω, chlupat√Ω a maj fakt ≈°patnou n√°ladu. Jestli na nƒõ nejsi dost siln√Ω, tak tam radƒõji ani nechoƒè.
 };
 
 func void DIA_Grom_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Co tady dÏl·ö?
-	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //To, co d¯evorubci a lovci obvykle dÏl·vajÌ.
+	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Co tady dƒõl√°≈°?
+	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //To, co d≈ôevorubci a lovci obvykle dƒõl√°vaj√≠.
 	Info_AddChoice	(DIA_Grom_HALLO, DIALOG_BACK, DIA_Grom_HALLO_BACK );
 };
 
@@ -79,7 +79,7 @@ INSTANCE DIA_Grom_AskTeacher (C_INFO)
 	condition	= DIA_Grom_AskTeacher_Condition;
 	information	= DIA_Grom_AskTeacher_Info;
 
-	description = "M˘ûeö mÏ nauËit nÏco o lovu?";
+	description = "M≈Ø≈æe≈° mƒõ nauƒçit nƒõco o lovu?";
 };                       
 
 FUNC INT DIA_Grom_AskTeacher_Condition()
@@ -92,12 +92,12 @@ FUNC INT DIA_Grom_AskTeacher_Condition()
 
 FUNC VOID DIA_Grom_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //M˘ûeö mÏ nauËit nÏco o lovu?
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //JasnÏ. Ale nejd¯Ìv mi dej nÏco po¯·dn˝ho na zub. UmÌr·m tady hlady.
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Dal bych si l·hev mlÌka, bochnÌk chleba a tlustou öunku. Pak tÏ nauËÌm, Ëemu budeö chtÌt.
+	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //M≈Ø≈æe≈° mƒõ nauƒçit nƒõco o lovu?
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Jasnƒõ. Ale nejd≈ô√≠v mi dej nƒõco po≈ô√°dn√Ωho na zub. Um√≠r√°m tady hlady.
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Dal bych si l√°hev ml√≠ka, bochn√≠k chleba a tlustou ≈°unku. Pak tƒõ nauƒç√≠m, ƒçemu bude≈° cht√≠t.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
-	B_LogEntry (TOPIC_GromAskTeacher,"Lovec Grom se se mnou podÏlÌ o svÈ poznatky, pokud mu p¯inesu l·hev mlÈka, krajÌc chleba a öunku."); 
+	B_LogEntry (TOPIC_GromAskTeacher,"Lovec Grom se se mnou podƒõl√≠ o sv√© poznatky, pokud mu p≈ôinesu l√°hev ml√©ka, kraj√≠c chleba a ≈°unku."); 
 };
 
 
@@ -112,7 +112,7 @@ INSTANCE DIA_Grom_PayTeacher (C_INFO)
 	condition	= DIA_Grom_PayTeacher_Condition;
 	information	= DIA_Grom_PayTeacher_Info;
  
- 	description = "Tady m·ö jÌdlo, cos chtÏl.";
+ 	description = "Tady m√°≈° j√≠dlo, cos chtƒõl.";
 };                       
 
 FUNC INT DIA_Grom_PayTeacher_Condition()
@@ -130,8 +130,8 @@ FUNC VOID DIA_Grom_PayTeacher_Info()
 	B_GiveInvItems (other, self, Itfo_Milk, 1);
 	B_GiveInvItems (other, self, Itfo_Bread, 1);
 	B_GiveInvItems (other, self, Itfo_Bacon, 1);
-	AI_Output(other,self,"DIA_Grom_PayTeacher_15_00"); //Tady m·ö jÌdlo, cos chtÏl.
-	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01"); //V˝bornÏ. A teÔ?
+	AI_Output(other,self,"DIA_Grom_PayTeacher_15_00"); //Tady m√°≈° j√≠dlo, cos chtƒõl.
+	AI_Output(self,other,"DIA_Grom_PayTeacher_08_01"); //V√Ωbornƒõ. A teƒè?
 	Grom_TeachAnimalTrophy = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -146,7 +146,7 @@ instance DIA_Grom_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grom_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grom_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"R·d bych se nauËil nÏjak˝m loveck˝m technik·m.";
+	description	 = 	"R√°d bych se nauƒçil nƒõjak√Ωm loveck√Ωm technik√°m.";
 };
 
 func int DIA_Grom_TEACHHUNTING_Condition ()
@@ -159,7 +159,7 @@ func int DIA_Grom_TEACHHUNTING_Condition ()
 
 func void DIA_Grom_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //R·d bych se nauËil nÏjak˝m loveck˝m technik·m.
+	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //R√°d bych se nauƒçil nƒõjak√Ωm loveck√Ωm technik√°m.
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -168,35 +168,35 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			)
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Co chceö vÏdÏt?
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Co chce≈° vƒõdƒõt?
 		
 
 			Info_AddChoice		(DIA_Grom_TEACHHUNTING, DIALOG_BACK, DIA_Grom_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("StaûenÌ z k˘ûe",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Grom_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Sta≈æen√≠ z k≈Ø≈æe",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Grom_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("VyjmutÌ zub˘",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Vyjmut√≠ zub≈Ø",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Vy¯ÌznutÌ srdce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Vy≈ô√≠znut√≠ srdce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("VyjmutÌ kusadel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Vyjmut√≠ kusadel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Roh stÌnovÈ öelmy",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Roh st√≠nov√© ≈°elmy",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Nem˘ûu tÏ nauËit nic, co bys jeötÏ neznal.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Nem≈Ø≈æu tƒõ nauƒçit nic, co bys je≈°tƒõ neznal.
 		};
 };
 
@@ -210,7 +210,7 @@ func void DIA_Grom_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //VeÔ ¯ez kolem konËetin tak, abys mohl st·hnout k˘ûi. DÏlej to od hlavy k ocasu, ne naopak.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Veƒè ≈ôez kolem konƒçetin tak, abys mohl st√°hnout k≈Ø≈æi. Dƒõlej to od hlavy k ocasu, ne naopak.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -220,7 +220,7 @@ func void DIA_Grom_TEACHHUNTING_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Kdyû chceö oddÏlit zuby, musÌö d·vat dobr˝ pozor, aby se p¯i odlamov·nÌ od lebky nezlomily.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Kdy≈æ chce≈° oddƒõlit zuby, mus√≠≈° d√°vat dobr√Ω pozor, aby se p≈ôi odlamov√°n√≠ od lebky nezlomily.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Srdce zÌsk·ö tak, ûe öikovnÏ ¯Ìzneö do hrudi zvÌ¯ete. Ale obvykle to stojÌ za to jen v p¯ÌpadÏ, ûe se jedn· zvÌ¯e magickÈho p˘vodu.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Srdce z√≠sk√°≈° tak, ≈æe ≈°ikovnƒõ ≈ô√≠zne≈° do hrudi zv√≠≈ôete. Ale obvykle to stoj√≠ za to jen v p≈ô√≠padƒõ, ≈æe se jedn√° zv√≠≈ôe magick√©ho p≈Øvodu.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Kusadla d˘lnÌch Ëerv˘ a polnÌch ök˘dc˘ lze zÌskat jen za pomoci velmi silnÈ kovovÈ p·ky, protoûe jsou zaklÌnÏny hluboko v pevn˝ch tk·nÌch hlavy.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Kusadla d≈Øln√≠ch ƒçerv≈Ø a poln√≠ch ≈°k≈Ødc≈Ø lze z√≠skat jen za pomoci velmi siln√© kovov√© p√°ky, proto≈æe jsou zakl√≠nƒõny hluboko v pevn√Ωch tk√°n√≠ch hlavy.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -250,7 +250,7 @@ func void DIA_Grom_TEACHHUNTING_ShadowHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Abys zÌskal roh stÌnovÈ öelmy, op¯i se vöÌ silou o lebku a z·roveÚ tahej za roh. Pak tu vÏc tvrdou ËepelÌ u¯Ìzni.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Abys z√≠skal roh st√≠nov√© ≈°elmy, op≈ôi se v≈°√≠ silou o lebku a z√°rove≈à tahej za roh. Pak tu vƒõc tvrdou ƒçepel√≠ u≈ô√≠zni.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

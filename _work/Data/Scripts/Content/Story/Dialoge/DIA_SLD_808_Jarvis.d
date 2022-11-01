@@ -45,9 +45,9 @@ FUNC INT DIA_Jarvis_Hello_Condition()
  
 FUNC VOID DIA_Jarvis_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Hej! Neznám tì odnìkud?
-	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //To je monı. Taky jsem byl v kolonii.
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //Správnì... co chceš?
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Hej! NeznÃ¡m tÄ› odnÄ›kud?
+	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //To je moÅ¾nÃ½. Taky jsem byl v kolonii.
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //SprÃ¡vnÄ›... co chceÅ¡?
 };
 	
 // ************************************************************
@@ -70,9 +70,9 @@ FUNC INT DIA_Jarvis_DieLage_Condition()
  
 FUNC VOID DIA_Jarvis_DieLage_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Jak to vypadá?
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //Právì teï máme skuteènı problém. Mezi oldáky se vytváøí dvì frakce.
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Sylvio a jeho lidé pochybují, e Lee se drí správného zámìru.
+	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Jak to vypadÃ¡?
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //PrÃ¡vÄ› teÄ mÃ¡me skuteÄnÃ½ problÃ©m. Mezi Å¾oldÃ¡ky se vytvÃ¡Å™Ã­ dvÄ› frakce.
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Sylvio a jeho lidÃ© pochybujÃ­, Å¾e Lee se drÅ¾Ã­ sprÃ¡vnÃ©ho zÃ¡mÄ›ru.
 };
 	
 // ************************************************************
@@ -85,7 +85,7 @@ instance DIA_Jarvis_TwoFronts (C_INFO)
 	condition	= DIA_Jarvis_TwoFronts_Condition;
 	information	= DIA_Jarvis_TwoFronts_Info;
 	permanent	= FALSE;
-	description = "Jak to, e jsou tu dvì frakce?";
+	description = "Jak to, Å¾e jsou tu dvÄ› frakce?";
 };                       
 
 FUNC INT DIA_Jarvis_TwoFronts_Condition()
@@ -98,14 +98,14 @@ FUNC INT DIA_Jarvis_TwoFronts_Condition()
  
 FUNC VOID DIA_Jarvis_TwoFronts_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Jak to, e jsou tu dvì frakce?
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //Vìtšina z nás se vrátila z kolonie s Leem.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //Ale nìkteøí ze oldákù se k nám pøipojili pozdìji.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //Nepøišli z kolonie, ale bojovali daleko na jihu se skøety.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //Nìjak se dozvìdìli, e Lee potøeboval lidi. Jejich vùdcem byl Sylvio.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //On souhlasil s tím, e Lee zùstane velitelem, ale teï se snaí poštvat ostatní oldáky proti nìmu a jeho zámìrùm.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //Hodnì Leeovıch lidí si nemyslí, e je to velkej problém. Ale já ty tıpky, jako je Sylvio, znám.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Aby dosáhl svého, bude to klidnì hnát na ostøí noe.
+	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Jak to, Å¾e jsou tu dvÄ› frakce?
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //VÄ›tÅ¡ina z nÃ¡s se vrÃ¡tila z kolonie s Leem.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //Ale nÄ›kteÅ™Ã­ ze Å¾oldÃ¡kÅ¯ se k nÃ¡m pÅ™ipojili pozdÄ›ji.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //NepÅ™iÅ¡li z kolonie, ale bojovali daleko na jihu se skÅ™ety.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //NÄ›jak se dozvÄ›dÄ›li, Å¾e Lee potÅ™eboval lidi. Jejich vÅ¯dcem byl Sylvio.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //On souhlasil s tÃ­m, Å¾e Lee zÅ¯stane velitelem, ale teÄ se snaÅ¾Ã­ poÅ¡tvat ostatnÃ­ Å¾oldÃ¡ky proti nÄ›mu a jeho zÃ¡mÄ›rÅ¯m.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //HodnÄ› LeeovÃ½ch lidÃ­ si nemyslÃ­, Å¾e je to velkej problÃ©m. Ale jÃ¡ ty tÃ½pky, jako je Sylvio, znÃ¡m.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Aby dosÃ¡hl svÃ©ho, bude to klidnÄ› hnÃ¡t na ostÅ™Ã­ noÅ¾e.
 };
 	
 // ************************************************************
@@ -118,7 +118,7 @@ instance DIA_Jarvis_LeesPlan (C_INFO)
 	condition	= DIA_Jarvis_LeesPlan_Condition;
 	information	= DIA_Jarvis_LeesPlan_Info;
 	permanent	= FALSE;
-	description = "Víš, jaké jsou Leeovy zámìry?";
+	description = "VÃ­Å¡, jakÃ© jsou Leeovy zÃ¡mÄ›ry?";
 };                       
 
 FUNC INT DIA_Jarvis_LeesPlan_Condition()
@@ -131,13 +131,13 @@ FUNC INT DIA_Jarvis_LeesPlan_Condition()
  
 FUNC VOID DIA_Jarvis_LeesPlan_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //Víš, co chce Lee dìlat?
+	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //VÃ­Å¡, co chce Lee dÄ›lat?
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 	{
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Lee chce, abychom poèkali a nechali paladiny ve mìstì vyhladovìt.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Lee chce, abychom poÄkali a nechali paladiny ve mÄ›stÄ› vyhladovÄ›t.
 	};
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Chce nás všechny dostat z ostrova. A Innos ví, e nemám nic proti tomu odsud vypadnout.
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //Skuteènì nevím, co pøesnì má za lubem, ale já mu vìøím. Vedl nás doteïka dobøe.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Chce nÃ¡s vÅ¡echny dostat z ostrova. A Innos vÃ­, Å¾e nemÃ¡m nic proti tomu odsud vypadnout.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //SkuteÄnÄ› nevÃ­m, co pÅ™esnÄ› mÃ¡ za lubem, ale jÃ¡ mu vÄ›Å™Ã­m. Vedl nÃ¡s doteÄka dobÅ™e.
 };
 
 // ************************************************************
@@ -150,7 +150,7 @@ instance DIA_Jarvis_SylviosPlan (C_INFO)
 	condition	= DIA_Jarvis_SylviosPlan_Condition;
 	information	= DIA_Jarvis_SylviosPlan_Info;
 	permanent	= FALSE;
-	description = "Víš, co má Sylvio v plánu?";
+	description = "VÃ­Å¡, co mÃ¡ Sylvio v plÃ¡nu?";
 };                       
 
 FUNC INT DIA_Jarvis_SylviosPlan_Condition()
@@ -163,11 +163,11 @@ FUNC INT DIA_Jarvis_SylviosPlan_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosPlan_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //Víš, co má Sylvio v plánu?
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Sylvio zjistil, e nìkteøí z paladinù se pøesunuli do staré kolonie.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //Øíká, e zbytek paladinù by se nás tady neodváil napadnout, a chce z toho vytìit co nejvíc.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //Drancování malıch farem, pøepadávání vojenskıch hlídek mimo mìsta, olupování poutníkù, prostì takovéhle vìci.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //Ale Lee si myslí, e by to byla ta nejhorší vìc, jakou bychom v naší situaci mohli udìlat.
+	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //VÃ­Å¡, co mÃ¡ Sylvio v plÃ¡nu?
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Sylvio zjistil, Å¾e nÄ›kteÅ™Ã­ z paladinÅ¯ se pÅ™esunuli do starÃ© kolonie.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //Å˜Ã­kÃ¡, Å¾e zbytek paladinÅ¯ by se nÃ¡s tady neodvÃ¡Å¾il napadnout, a chce z toho vytÄ›Å¾it co nejvÃ­c.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //DrancovÃ¡nÃ­ malÃ½ch farem, pÅ™epadÃ¡vÃ¡nÃ­ vojenskÃ½ch hlÃ­dek mimo mÄ›sta, olupovÃ¡nÃ­ poutnÃ­kÅ¯, prostÄ› takovÃ©hle vÄ›ci.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //Ale Lee si myslÃ­, Å¾e by to byla ta nejhorÅ¡Ã­ vÄ›c, jakou bychom v naÅ¡Ã­ situaci mohli udÄ›lat.
 };
 
 // ************************************************************
@@ -180,7 +180,7 @@ instance DIA_Jarvis_WannaJoin (C_INFO)
 	condition	= DIA_Jarvis_WannaJoin_Condition;
 	information	= DIA_Jarvis_WannaJoin_Info;
 	permanent	= FALSE;
-	description = "Chtìl bych se stát oldákem!";
+	description = "ChtÄ›l bych se stÃ¡t Å¾oldÃ¡kem!";
 };                       
 
 FUNC INT DIA_Jarvis_WannaJoin_Condition()
@@ -193,11 +193,11 @@ FUNC INT DIA_Jarvis_WannaJoin_Condition()
  
 FUNC VOID DIA_Jarvis_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //Chtìl bych se stát oldákem!
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Nejsem si jistej, e je to dobrej nápad.
-	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //Kde je problém?
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //No, buï budu hlasovat pro, nebo proti.
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //A v situaci, ve které jsme, bych pro tebe urèitì hlasoval, kdybych si byl jistej, e jsi na Leeho stranì!
+	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //ChtÄ›l bych se stÃ¡t Å¾oldÃ¡kem!
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Nejsem si jistej, Å¾e je to dobrej nÃ¡pad.
+	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //Kde je problÃ©m?
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //No, buÄ budu hlasovat pro, nebo proti.
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //A v situaci, ve kterÃ© jsme, bych pro tebe urÄitÄ› hlasoval, kdybych si byl jistej, Å¾e jsi na Leeho stranÄ›!
 };
 
 // ************************************************************
@@ -210,7 +210,7 @@ instance DIA_Jarvis_MissionKO (C_INFO)
 	condition	= DIA_Jarvis_MissionKO_Condition;
 	information	= DIA_Jarvis_MissionKO_Info;
 	permanent	= FALSE;
-	description = "Take co bych mìl dìlat?";
+	description = "TakÅ¾e co bych mÄ›l dÄ›lat?";
 };                       
 
 FUNC INT DIA_Jarvis_MissionKO_Condition()
@@ -224,15 +224,15 @@ FUNC INT DIA_Jarvis_MissionKO_Condition()
  
 FUNC VOID DIA_Jarvis_MissionKO_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //Take co bych mìl dìlat?
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //To je jednoduché. Zmla pár Sylviovıch hochù! Tímhle zpùsobem budou obì strany pøesnì vìdìt, kde stojíš.
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //A pokud se budeš pøi souboji dret pravidel, dokonce získáš respekt ostatních.
+	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //TakÅ¾e co bych mÄ›l dÄ›lat?
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //To je jednoduchÃ©. ZmlaÅ¥ pÃ¡r SylviovÃ½ch hochÅ¯! TÃ­mhle zpÅ¯sobem budou obÄ› strany pÅ™esnÄ› vÄ›dÄ›t, kde stojÃ­Å¡.
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //A pokud se budeÅ¡ pÅ™i souboji drÅ¾et pravidel, dokonce zÃ­skÃ¡Å¡ respekt ostatnÃ­ch.
 	
 	MIS_Jarvis_SldKO = LOG_RUNNING;
 	self.aivar[AIV_IGNORE_Murder] = TRUE;
 	Log_CreateTopic (TOPIC_JarvisSLDKo,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_JarvisSLDKo,LOG_RUNNING);
-	B_LogEntry (TOPIC_JarvisSLDKo,"Jarvis mi dá svùj hlas, pokud se mi podaøí porazit Sylviovy hochy.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Jarvis mi dÃ¡ svÅ¯j hlas, pokud se mi podaÅ™Ã­ porazit Sylviovy hochy.");
 };
 
 // ************************************************************
@@ -245,7 +245,7 @@ instance DIA_Jarvis_DuellRegeln (C_INFO)
 	condition	= DIA_Jarvis_DuellRegeln_Condition;
 	information	= DIA_Jarvis_DuellRegeln_Info;
 	permanent	= FALSE;
-	description = "Jaká jsou pravidla pro souboj?";
+	description = "JakÃ¡ jsou pravidla pro souboj?";
 };                       
 
 FUNC INT DIA_Jarvis_DuellRegeln_Condition()
@@ -258,11 +258,11 @@ FUNC INT DIA_Jarvis_DuellRegeln_Condition()
  
 FUNC VOID DIA_Jarvis_DuellRegeln_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Jaká jsou pravidla pro souboj?
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //Bì za Torlofem a nech si to vysvìtlit, pokud tì to zajímá.
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //Take u si rozumíme: Nezajímá mì, jestli dodruješ pravidla nebo ne. Prostì a ti chlapi leí drkou v bahnì!
+	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //JakÃ¡ jsou pravidla pro souboj?
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //BÄ›Å¾ za Torlofem a nech si to vysvÄ›tlit, pokud tÄ› to zajÃ­mÃ¡.
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //TakÅ¾e uÅ¾ si rozumÃ­me: NezajÃ­mÃ¡ mÄ›, jestli dodrÅ¾ujeÅ¡ pravidla nebo ne. ProstÄ› aÅ¥ ti chlapi leÅ¾Ã­ drÅ¾kou v bahnÄ›!
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"A já se ádnımi soubojovımi pravidly øídit nemusím...");
+	B_LogEntry (TOPIC_JarvisSLDKo,"A jÃ¡ se Å¾Ã¡dnÃ½mi soubojovÃ½mi pravidly Å™Ã­dit nemusÃ­m...");
 };
 
 // ************************************************************
@@ -275,7 +275,7 @@ instance DIA_Jarvis_SylviosMen (C_INFO)
 	condition	= DIA_Jarvis_SylviosMen_Condition;
 	information	= DIA_Jarvis_SylviosMen_Info;
 	permanent	= FALSE;
-	description = "Kteøí z oldákù jsou Sylviovi mui?";
+	description = "KteÅ™Ã­ z Å¾oldÃ¡kÅ¯ jsou Sylviovi muÅ¾i?";
 };                       
 
 FUNC INT DIA_Jarvis_SylviosMen_Condition()
@@ -288,12 +288,12 @@ FUNC INT DIA_Jarvis_SylviosMen_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosMen_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //Kteøí ze oldákù jsou Sylviovi mui?
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Je to šest chlapù. První je Sylvio sám a jeho pravá ruka Bullco.
+	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //KteÅ™Ã­ ze Å¾oldÃ¡kÅ¯ jsou Sylviovi muÅ¾i?
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Je to Å¡est chlapÅ¯. PrvnÃ­ je Sylvio sÃ¡m a jeho pravÃ¡ ruka Bullco.
 	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_02"); //A pak jsou tu Rod, Sentenza, Fester a Raoul.
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //Zbytek chlapù je buï neutrálních, nebo na Leeovì stranì.
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //Zbytek chlapÅ¯ je buÄ neutrÃ¡lnÃ­ch, nebo na LeeovÄ› stranÄ›.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"K Sylviovım chlapùm patøí jeho velitel Bullco, Rod, Sentenza, Fester a Raoul.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"K SylviovÃ½m chlapÅ¯m patÅ™Ã­ jeho velitel Bullco, Rod, Sentenza, Fester a Raoul.");
 };
 
 // ************************************************************
@@ -306,7 +306,7 @@ instance DIA_Jarvis_HowMany (C_INFO)
 	condition	= DIA_Jarvis_HowMany_Condition;
 	information	= DIA_Jarvis_HowMany_Info;
 	permanent	= FALSE;
-	description = "Kolik Sylviovıch lidí bych mìl pøemoci?";
+	description = "Kolik SylviovÃ½ch lidÃ­ bych mÄ›l pÅ™emoci?";
 };                       
 
 FUNC INT DIA_Jarvis_HowMany_Condition()
@@ -319,12 +319,12 @@ FUNC INT DIA_Jarvis_HowMany_Condition()
  
 FUNC VOID DIA_Jarvis_HowMany_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //Kolik Sylviovıch chlapù mám porazit?
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Pokud srazíš tøi z nich k zemi, pak nám dokáeš, na které jsi stranì.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Koho z nich si vybereš, to je tvoje vìc.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //Alespoò jedna malá rada: Tohle není o tom dokázat si kurá. Nechoï pøímo proti Sylviovi samotnému - nadìlal by z tebe sekanou.
+	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //Kolik SylviovÃ½ch chlapÅ¯ mÃ¡m porazit?
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Pokud srazÃ­Å¡ tÅ™i z nich k zemi, pak nÃ¡m dokÃ¡Å¾eÅ¡, na kterÃ© jsi stranÄ›.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Koho z nich si vybereÅ¡, to je tvoje vÄ›c.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //AlespoÅˆ jedna malÃ¡ rada: Tohle nenÃ­ o tom dokÃ¡zat si kurÃ¡Å¾. NechoÄ pÅ™Ã­mo proti Sylviovi samotnÃ©mu - nadÄ›lal by z tebe sekanou.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Postaèí, kdy porazím tøi Sylviovy kumpány - se Sylviem samotnım bych se do køíku radši pouštìt nemìl.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"PostaÄÃ­, kdyÅ¾ porazÃ­m tÅ™i Sylviovy kumpÃ¡ny - se Sylviem samotnÃ½m bych se do kÅ™Ã­Å¾ku radÅ¡i pouÅ¡tÄ›t nemÄ›l.");
 };
 
 // ************************************************************
@@ -337,7 +337,7 @@ instance DIA_Jarvis_HowManyLeft (C_INFO)
 	condition	= DIA_Jarvis_HowManyLeft_Condition;
 	information	= DIA_Jarvis_HowManyLeft_Info;
 	permanent	= TRUE;
-	description = "Kolik Sylviovıch muù je ještì stále na mém seznamu?";
+	description = "Kolik SylviovÃ½ch muÅ¾Å¯ je jeÅ¡tÄ› stÃ¡le na mÃ©m seznamu?";
 };                       
 
 FUNC INT DIA_Jarvis_HowManyLeft_Condition()
@@ -351,7 +351,7 @@ FUNC INT DIA_Jarvis_HowManyLeft_Condition()
  
 FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Kolik Sylviovıch muù mám ještì na seznamu?
+	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Kolik SylviovÃ½ch muÅ¾Å¯ mÃ¡m jeÅ¡tÄ› na seznamu?
 	
 	var int victories;
 	victories = 0;
@@ -360,14 +360,14 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	|| (Bullco.aivar[AIV_KilledByPlayer] == TRUE)
 	{
 		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_01"); //Porazil jsem Bullca.
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //Slyšel jsem. To nebylo zlı.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //SlyÅ¡el jsem. To nebylo zlÃ½.
 		victories = victories + 1; 
 
 	};
 	if (Rod.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| (Rod.aivar[AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_03"); //Rod vypadá trochu unavenì.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_03"); //Rod vypadÃ¡ trochu unavenÄ›.
 		victories = victories + 1;
 	};
 	if (Sentenza.aivar[AIV_DefeatedByPlayer] == TRUE)
@@ -375,7 +375,7 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (Npc_KnowsInfo (other, DIA_Sentenza_Hello))
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Sentenza se pokusil ze mì dostat nìjakou zlatku - to nebylo chytrı.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Sentenza se pokusil ze mÄ› dostat nÄ›jakou zlatku - to nebylo chytrÃ½.
 		}
 		else
 		{
@@ -390,11 +390,11 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (MIS_Fester_KillBugs == LOG_OBSOLETE)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_06"); //Fester se mì pokusil oblafnout - to byla velká chyba.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_06"); //Fester se mÄ› pokusil oblafnout - to byla velkÃ¡ chyba.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Fester dostal, co si zaslouil.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Fester dostal, co si zaslouÅ¾il.
 		};
 		victories = victories + 1;
 	};
@@ -404,15 +404,15 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (victories == 0)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //A to samé Raoul...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //A to samÃ© Raoul...
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //Byl jsem se na Raoula podívat...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //Byl jsem se na Raoula podÃ­vat...
 		};
 	
 		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_10"); //A?
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //Potøeboval poøádnou nakládaèku.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //PotÅ™eboval poÅ™Ã¡dnou naklÃ¡daÄku.
 		victories = victories + 1;
 	};
 	
@@ -422,36 +422,36 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{	
 		if (victories == 0)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //Doteï jsi nesloil jedinıho Sylviova chlapa.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //DoteÄ jsi nesloÅ¾il jedinÃ½ho Sylviova chlapa.
 		}
 		else // 1-2
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //Dobøe - jen pokraèuj.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //DobÅ™e - jen pokraÄuj.
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //Oèekávám od tebe, e zøídíš alespoò tøi z nich.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //OÄekÃ¡vÃ¡m od tebe, Å¾e zÅ™Ã­dÃ­Å¡ alespoÅˆ tÅ™i z nich.
 	}
 	else // 3 oder mehr
 	{	
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //To staèí, to staèí.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //To staÄÃ­, to staÄÃ­.
 		if (victories == 6)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //Ty jsi skuteènì napráskal kadımu z nich, jo?
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //Ty jsi skuteÄnÄ› naprÃ¡skal kaÅ¾dÃ½mu z nich, jo?
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //Udìlal jsi na mì dojem - a se mì Lee zeptá, budu bez váhání hlasovat pro tebe.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //UdÄ›lal jsi na mÄ› dojem - aÅ¾ se mÄ› Lee zeptÃ¡, budu bez vÃ¡hÃ¡nÃ­ hlasovat pro tebe.
 		
 		MIS_Jarvis_SldKO = LOG_SUCCESS;
 		
 		self.aivar[AIV_IGNORE_Murder] = FALSE;
 		
 		B_GivePlayerXP ((XP_Ambient)*victories);
-		B_LogEntry (TOPIC_SLDRespekt,"Kdy se budu chtít pøipojit k oldákùm, Jarvis bude pro.");
+		B_LogEntry (TOPIC_SLDRespekt,"KdyÅ¾ se budu chtÃ­t pÅ™ipojit k Å¾oldÃ¡kÅ¯m, Jarvis bude pro.");
 	};
 };
 
 
 // ###############################
 // ##							##
-// 			Höhere Gilden
+// 			HÃ¶here Gilden
 // ##							##
 // ###############################
 
@@ -469,7 +469,7 @@ instance DIA_Jarvis_PERM (C_INFO)
 	condition	= DIA_Jarvis_PERM_Condition;
 	information	= DIA_Jarvis_PERM_Info;
 	permanent	= FALSE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 
 FUNC INT DIA_Jarvis_PERM_Condition()
@@ -482,7 +482,7 @@ FUNC INT DIA_Jarvis_PERM_Condition()
  
 FUNC VOID DIA_Jarvis_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_PERM_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_Jarvis_PERM_15_00"); //Co je novÃ©ho?
 	
 	if (Kapitel <= 3)
 	{
@@ -491,18 +491,18 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 			if (other.guild == GIL_SLD)
 			|| (other.guild == GIL_DJG)
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //Teï jsi jeden z nás. To je dobøe.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //TeÄ jsi jeden z nÃ¡s. To je dobÅ™e.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //Vybral sis špatnì, mohl ses stát jedním z nás.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //Vybral sis Å¡patnÄ›, mohl ses stÃ¡t jednÃ­m z nÃ¡s.
 			};
 		
 			Jarvis_GuildComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_03"); //Poslední dobou Sylviovi lidé dost zkrotli. (divokı smích)
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_03"); //PoslednÃ­ dobou Sylviovi lidÃ© dost zkrotli. (divokÃ½ smÃ­ch)
 		};
 	};
 	
@@ -510,13 +510,13 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 	{
 		if (Jarvis_SylvioComment == FALSE)
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Sylvio je koneènì pryè. Po tom, co se doslechl o dracích, se on a pár jeho chlapù vydali do tìaøské kolonie.
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //Pravdìpodobnì si myslí, e by tam mohlo bıt nìco víc.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Sylvio je koneÄnÄ› pryÄ. Po tom, co se doslechl o dracÃ­ch, se on a pÃ¡r jeho chlapÅ¯ vydali do tÄ›Å¾aÅ™skÃ© kolonie.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //PravdÄ›podobnÄ› si myslÃ­, Å¾e by tam mohlo bÃ½t nÄ›co vÃ­c.
 			Jarvis_SylvioComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Nic, teï u je všechno v klidu. Nemùu se doèkat toho, a uvidím, jak tohle všechno dopadne.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Nic, teÄ uÅ¾ je vÅ¡echno v klidu. NemÅ¯Å¾u se doÄkat toho, aÅ¾ uvidÃ­m, jak tohle vÅ¡echno dopadne.
 		};
 	};
 };

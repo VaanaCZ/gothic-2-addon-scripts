@@ -41,7 +41,7 @@ func int DIA_Thekla_HALLO_Condition ()
 
 func void DIA_Thekla_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Thekla_HALLO_17_00"); //Co dìláš tady v kuchyni?
+	AI_Output (self, other, "DIA_Thekla_HALLO_17_00"); //Co dÄ›lÃ¡Å¡ tady v kuchyni?
 };
 
 // ************************************************************
@@ -54,7 +54,7 @@ instance DIA_Thekla_Lecker		(C_INFO)
 	condition	= DIA_Thekla_Lecker_Condition;
 	information	= DIA_Thekla_Lecker_Info;
 	permanent 	= FALSE;
-	description	= "Nìco tady vıbornì voní!";
+	description	= "NÄ›co tady vÃ½bornÄ› vonÃ­!";
 };
 
 func int DIA_Thekla_Lecker_Condition ()
@@ -67,9 +67,9 @@ func int DIA_Thekla_Lecker_Condition ()
 
 func void DIA_Thekla_Lecker_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Lecker_15_00"); //Nìco tady vıbornì voní!
-	AI_Output (self, other, "DIA_Thekla_Lecker_17_01"); //No jasnì! Takové jako ty dobøe znám! Takovıch se tady po okolí potulují spousty.
-	AI_Output (self, other, "DIA_Thekla_Lecker_17_02"); //Nejdøív se snaí vetøít do tvojí pøíznì a pak, kdy je potøebuješ, nejsou nikde k nalezení!
+	AI_Output (other, self, "DIA_Thekla_Lecker_15_00"); //NÄ›co tady vÃ½bornÄ› vonÃ­!
+	AI_Output (self, other, "DIA_Thekla_Lecker_17_01"); //No jasnÄ›! TakovÃ© jako ty dobÅ™e znÃ¡m! TakovÃ½ch se tady po okolÃ­ potulujÃ­ spousty.
+	AI_Output (self, other, "DIA_Thekla_Lecker_17_02"); //NejdÅ™Ã­v se snaÅ¾Ã­ vetÅ™Ã­t do tvojÃ­ pÅ™Ã­znÄ› a pak, kdyÅ¾ je potÅ™ebujeÅ¡, nejsou nikde k nalezenÃ­!
 };
 
 // ************************************************************
@@ -85,7 +85,7 @@ instance DIA_Thekla_Hunger		(C_INFO)
 	condition	= DIA_Thekla_Hunger_Condition;
 	information	= DIA_Thekla_Hunger_Info;
 	permanent 	= FALSE;
-	description	= "Mám hlad!";
+	description	= "MÃ¡m hlad!";
 };
 
 func int DIA_Thekla_Hunger_Condition ()
@@ -98,26 +98,26 @@ func int DIA_Thekla_Hunger_Condition ()
 
 func void DIA_Thekla_Hunger_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Hunger_15_00"); //Mám hlad!
+	AI_Output (other, self, "DIA_Thekla_Hunger_15_00"); //MÃ¡m hlad!
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_01"); //Neservíruju tulákùm. Jídlo je jen pro lidi, co tu pracují.
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_02"); //(pohrdavì) A pro tu oldáckou chátru, samozøejmì.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_01"); //NeservÃ­ruju tulÃ¡kÅ¯m. JÃ­dlo je jen pro lidi, co tu pracujÃ­.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_02"); //(pohrdavÄ›) A pro tu Å¾oldÃ¡ckou chÃ¡tru, samozÅ™ejmÄ›.
 	}
 	else if (other.guild == GIL_SLD)
 	|| 		(other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_03"); //Tady, tvùj dlabanec.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_03"); //Tady, tvÅ¯j dlabanec.
 		B_GiveInvItems (self, other, ItFo_XPStew, 1);
 		Thekla_GaveStew = TRUE;
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_04"); //Tady se jídlo vojákùm nepodává.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_04"); //Tady se jÃ­dlo vojÃ¡kÅ¯m nepodÃ¡vÃ¡.
 	}
 	else //Pal, Kdf oder Nov
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_05"); //Jak by se dal odmítnout Innosùv zmocnìnec?
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_05"); //Jak by se dal odmÃ­tnout InnosÅ¯v zmocnÄ›nec?
 		B_GiveInvItems (self, other, ItFo_XPStew, 1);
 		Thekla_GaveStew = TRUE;
 	};
@@ -134,7 +134,7 @@ instance DIA_Thekla_Arbeit		(C_INFO)
 	condition	= DIA_Thekla_Arbeit_Condition;
 	information	= DIA_Thekla_Arbeit_Info;
 	permanent 	= FALSE;
-	description	= "Hledám práci.";
+	description	= "HledÃ¡m prÃ¡ci.";
 };
 
 func int DIA_Thekla_Arbeit_Condition ()
@@ -147,9 +147,9 @@ func int DIA_Thekla_Arbeit_Condition ()
 
 func void DIA_Thekla_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Arbeit_15_00"); //Hledám práci...
-	AI_Output (self, other, "DIA_Thekla_Arbeit_17_01"); //Chceš pracovat tady na farmì?
-	AI_Output (self, other, "DIA_Thekla_Arbeit_17_02"); //O tom mùe rozhodnout pouze Onar. Farma patøí jemu, stejnì jako celé údolí.
+	AI_Output (other, self, "DIA_Thekla_Arbeit_15_00"); //HledÃ¡m prÃ¡ci...
+	AI_Output (self, other, "DIA_Thekla_Arbeit_17_01"); //ChceÅ¡ pracovat tady na farmÄ›?
+	AI_Output (self, other, "DIA_Thekla_Arbeit_17_02"); //O tom mÅ¯Å¾e rozhodnout pouze Onar. Farma patÅ™Ã­ jemu, stejnÄ› jako celÃ© ÃºdolÃ­.
 };
 
 // ************************************************************
@@ -163,7 +163,7 @@ instance DIA_Thekla_WannaJoin		(C_INFO)
 	condition	= DIA_Thekla_WannaJoin_Condition;
 	information	= DIA_Thekla_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Vlastnì jsem se chtìl pøipojit k oldnéøùm.";
+	description	= "VlastnÄ› jsem se chtÄ›l pÅ™ipojit k Å¾oldnÃ©Å™Å¯m.";
 };
 
 func int DIA_Thekla_WannaJoin_Condition ()
@@ -177,9 +177,9 @@ func int DIA_Thekla_WannaJoin_Condition ()
 
 func void DIA_Thekla_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_WannaJoin_15_00"); //Vlastnì jsem se chtìl pøipojit k oldnéøùm.
-	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_01"); //Take ty jsi další z tìch lotrù z trestanecké kolonie?
-	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_02"); //To se dalo èekat! Nech mì na pokoji! Takovıch jako ty u je tady v okolí a dost!
+	AI_Output (other, self, "DIA_Thekla_WannaJoin_15_00"); //VlastnÄ› jsem se chtÄ›l pÅ™ipojit k Å¾oldnÃ©Å™Å¯m.
+	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_01"); //TakÅ¾e ty jsi dalÅ¡Ã­ z tÄ›ch lotrÅ¯ z trestaneckÃ© kolonie?
+	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_02"); //To se dalo Äekat! Nech mÄ› na pokoji! TakovÃ½ch jako ty uÅ¾ je tady v okolÃ­ aÅ¾ dost!
 };
 
 // ************************************************************
@@ -193,7 +193,7 @@ instance DIA_Thekla_Schlafen		(C_INFO)
 	condition	= DIA_Thekla_Schlafen_Condition;
 	information	= DIA_Thekla_Schlafen_Info;
 	permanent 	= FALSE;
-	description	= "Potøebuju se nìkde vyspat.";
+	description	= "PotÅ™ebuju se nÄ›kde vyspat.";
 };
 
 func int DIA_Thekla_Schlafen_Condition ()
@@ -206,8 +206,8 @@ func int DIA_Thekla_Schlafen_Condition ()
 
 func void DIA_Thekla_Schlafen_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Schlafen_15_00"); //Potøebuju se nìkde vyspat.
-	AI_Output (self, other, "DIA_Thekla_Schlafen_17_01"); //Ani nepomysli na to, e by ses mohl vyspat v mojí kuchyni. Najdi si nìco ve stodole.
+	AI_Output (other, self, "DIA_Thekla_Schlafen_15_00"); //PotÅ™ebuju se nÄ›kde vyspat.
+	AI_Output (self, other, "DIA_Thekla_Schlafen_17_01"); //Ani nepomysli na to, Å¾e by ses mohl vyspat v mojÃ­ kuchyni. Najdi si nÄ›co ve stodole.
 };
 		
 // ************************************************************
@@ -221,7 +221,7 @@ instance DIA_Thekla_Problem		(C_INFO)
 	condition	= DIA_Thekla_Problem_Condition;
 	information	= DIA_Thekla_Problem_Info;
 	permanent 	= FALSE;
-	description	= "Co máš za problémy se oldáky?";
+	description	= "Co mÃ¡Å¡ za problÃ©my se Å¾oldÃ¡ky?";
 };
 
 func int DIA_Thekla_Problem_Condition ()
@@ -235,14 +235,14 @@ func int DIA_Thekla_Problem_Condition ()
 
 func void DIA_Thekla_Problem_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Problem_15_00"); //Co máš za problémy se oldáky?
-	AI_Output (self, other, "DIA_Thekla_Problem_17_01"); //Ach, ti pitomci mi vánì lezou na nervy! Obzvláš Sylvio a jeho tlustej kámoš Bullco.
-	AI_Output (self, other, "DIA_Thekla_Problem_17_02"); //Ti dva tu sedí celé dny a ztrpèují mi ivot.
-	AI_Output (self, other, "DIA_Thekla_Problem_17_03"); //Ta polívka je moc horká, maso moc tuhı a tak poøád dokola.
+	AI_Output (other, self, "DIA_Thekla_Problem_15_00"); //Co mÃ¡Å¡ za problÃ©my se Å¾oldÃ¡ky?
+	AI_Output (self, other, "DIA_Thekla_Problem_17_01"); //Ach, ti pitomci mi vÃ¡Å¾nÄ› lezou na nervy! ObzvlÃ¡Å¡Å¥ Sylvio a jeho tlustej kÃ¡moÅ¡ Bullco.
+	AI_Output (self, other, "DIA_Thekla_Problem_17_02"); //Ti dva tu sedÃ­ celÃ© dny a ztrpÄujÃ­ mi Å¾ivot.
+	AI_Output (self, other, "DIA_Thekla_Problem_17_03"); //Ta polÃ­vka je moc horkÃ¡, maso moc tuhÃ½ a tak poÅ™Ã¡d dokola.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (other, self, "DIA_Thekla_Problem_15_04"); //A proè s tím teda nìco neudìláš?
-		AI_Output (self, other, "DIA_Thekla_Problem_17_05"); //A co jako mám dìlat, pane Chytrolín? Praštit je váleèkem? To si mùu dovolit na farmáøe, ale tihle podlí bastardi mi to prostì vrátí.
+		AI_Output (other, self, "DIA_Thekla_Problem_15_04"); //A proÄ s tÃ­m teda nÄ›co neudÄ›lÃ¡Å¡?
+		AI_Output (self, other, "DIA_Thekla_Problem_17_05"); //A co jako mÃ¡m dÄ›lat, pane ChytrolÃ­n? PraÅ¡tit je vÃ¡leÄkem? To si mÅ¯Å¾u dovolit na farmÃ¡Å™e, ale tihle podlÃ­ bastardi mi to prostÄ› vrÃ¡tÃ­.
 	};
 };
 
@@ -257,7 +257,7 @@ instance DIA_Thekla_Manieren		(C_INFO)
 	condition	= DIA_Thekla_Manieren_Condition;
 	information	= DIA_Thekla_Manieren_Info;
 	permanent 	= FALSE;
-	description	= "Chceš, abych ty dva nauèil slušnım zpùsobùm?";
+	description	= "ChceÅ¡, abych ty dva nauÄil sluÅ¡nÃ½m zpÅ¯sobÅ¯m?";
 };
 
 func int DIA_Thekla_Manieren_Condition ()
@@ -273,10 +273,10 @@ func int DIA_Thekla_Manieren_Condition ()
 
 func void DIA_Thekla_Manieren_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Manieren_15_00"); //Chceš, abych ty dva nauèil slušnım zpùsobùm?
-	AI_Output (self, other, "DIA_Thekla_Manieren_17_01"); //Udìláš líp, kdy to nebudeš zkoušet, drahoušku. Co vím, tak Sylvio má magickou zbroj. Jeho nemùeš porazit.
+	AI_Output (other, self, "DIA_Thekla_Manieren_15_00"); //ChceÅ¡, abych ty dva nauÄil sluÅ¡nÃ½m zpÅ¯sobÅ¯m?
+	AI_Output (self, other, "DIA_Thekla_Manieren_17_01"); //UdÄ›lÃ¡Å¡ lÃ­p, kdyÅ¾ to nebudeÅ¡ zkouÅ¡et, drahouÅ¡ku. Co vÃ­m, tak Sylvio mÃ¡ magickou zbroj. Jeho nemÅ¯Å¾eÅ¡ porazit.
 	AI_Output (other, self, "DIA_Thekla_Manieren_15_02"); //A co Bullco?
-	AI_Output (self, other, "DIA_Thekla_Manieren_17_03"); //Ten chlap je silnej jako hovado. Co pamatuju, srazil kadıho, kdo jemu nebo Sylviovi dìlal potíe.
+	AI_Output (self, other, "DIA_Thekla_Manieren_17_03"); //Ten chlap je silnej jako hovado. Co pamatuju, srazil kaÅ¾dÃ½ho, kdo jemu nebo Sylviovi dÄ›lal potÃ­Å¾e.
 };
 		
 // ************************************************************
@@ -308,18 +308,18 @@ func void DIA_Thekla_AfterFight_Info ()
 {
 	if (Bullco.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_00"); //Vánì bys mìl nechat Bullca na pokoji, drahoušku.
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_01"); //To musí bıt poøádná fuška srazit to tlustı prase.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_00"); //VÃ¡Å¾nÄ› bys mÄ›l nechat Bullca na pokoji, drahouÅ¡ku.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_01"); //To musÃ­ bÃ½t poÅ™Ã¡dnÃ¡ fuÅ¡ka srazit to tlustÃ½ prase.
 	}
 	else //Sylvio oder Bullco gewonnen
 	{
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_02"); //Dostals docela nakládaèku, drahoušku.
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_03"); //Neøíkala jsem ti to snad? Teï víš, co jsem mìla na mysli.
-		AI_Output (other, self, "DIA_Thekla_AfterFight_15_04"); //Jsem rád, e se dobøe bavíš.
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_05"); //Tak teï tak neprotahuj oblièej. Nejsi první, kdo od toho neøáda dostal napráskáno.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_02"); //Dostals docela naklÃ¡daÄku, drahouÅ¡ku.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_03"); //NeÅ™Ã­kala jsem ti to snad? TeÄ vÃ­Å¡, co jsem mÄ›la na mysli.
+		AI_Output (other, self, "DIA_Thekla_AfterFight_15_04"); //Jsem rÃ¡d, Å¾e se dobÅ™e bavÃ­Å¡.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_05"); //Tak teÄ tak neprotahuj obliÄej. Nejsi prvnÃ­, kdo od toho neÅ™Ã¡da dostal naprÃ¡skÃ¡no.
 	};
 	
-	AI_Output (self, other, "DIA_Thekla_AfterFight_17_06"); //Tady, dej si trochu vıvaru, a se ti vrátí síla.
+	AI_Output (self, other, "DIA_Thekla_AfterFight_17_06"); //Tady, dej si trochu vÃ½varu, aÅ¥ se ti vrÃ¡tÃ­ sÃ­la.
 	B_GiveInvItems (self, other, ItFo_XPStew, 1);	
 	Thekla_GaveStew = TRUE;
 };
@@ -334,7 +334,7 @@ instance DIA_Thekla_SagittaPaket (C_INFO)
 	condition	= DIA_Thekla_SagittaPaket_Condition;
 	information	= DIA_Thekla_SagittaPaket_Info;
 	permanent 	= TRUE;
-	description	= "Tady je balík od Sagitty.";
+	description	= "Tady je balÃ­k od Sagitty.";
 };
 
 func int DIA_Thekla_SagittaPaket_Condition ()
@@ -349,8 +349,8 @@ func int DIA_Thekla_SagittaPaket_Condition ()
 func void DIA_Thekla_SagittaPaket_Info ()
 {
 	B_GiveInvItems (other, self, ItMi_TheklasPaket, 1);
-	AI_Output (other, self, "DIA_Thekla_SagittaPaket_15_00"); //Tady je balík od Sagitty.
-	AI_Output (self, other, "DIA_Thekla_SagittaPaket_17_01"); //Díky moc. Tak jsi byl pøece jen k nìèemu dobrı.
+	AI_Output (other, self, "DIA_Thekla_SagittaPaket_15_00"); //Tady je balÃ­k od Sagitty.
+	AI_Output (self, other, "DIA_Thekla_SagittaPaket_17_01"); //DÃ­ky moc. Tak jsi byl pÅ™ece jen k nÄ›Äemu dobrÃ½.
 	MIS_Thekla_Paket = LOG_SUCCESS;
 	B_GivePlayerXP (XP_TheklasPaket);		
 };
@@ -370,7 +370,7 @@ instance DIA_Thekla_PERM		(C_INFO)
 	condition	= DIA_Thekla_PERM_Condition;
 	information	= DIA_Thekla_PERM_Info;
 	permanent	= TRUE;
-	description	= "Mùu dostat ještì trochu toho vıvaru?";
+	description	= "MÅ¯Å¾u dostat jeÅ¡tÄ› trochu toho vÃ½varu?";
 };
 func int DIA_Thekla_PERM_Condition()
 {
@@ -382,19 +382,19 @@ func int DIA_Thekla_PERM_Condition()
 
 func void DIA_Thekla_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Thekla_PERM_15_00"); //Mùu dostat ještì trochu toho vıvaru?
+	AI_Output (other, self, "DIA_Thekla_PERM_15_00"); //MÅ¯Å¾u dostat jeÅ¡tÄ› trochu toho vÃ½varu?
 	
 	if (MIS_Thekla_Paket == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Thekla_PERM_17_01"); //U nic nemám.
-		AI_Output (other, self, "DIA_Thekla_PERM_15_02"); //Ani malièkou misku?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_01"); //UÅ¾ nic nemÃ¡m.
+		AI_Output (other, self, "DIA_Thekla_PERM_15_02"); //Ani maliÄkou misku?
 		AI_Output (self, other, "DIA_Thekla_PERM_17_03"); //Ne.
-		AI_Output (other, self, "DIA_Thekla_PERM_15_04"); //A mùu alespoò vylízat hrnec?
-		AI_Output (self, other, "DIA_Thekla_PERM_17_05"); //Necháš toho?!
-		AI_Output (self, other, "DIA_Thekla_PERM_17_06"); //Kdy tak prahneš po mém vıvaru, mìl bys pro to nìco udìlat.
+		AI_Output (other, self, "DIA_Thekla_PERM_15_04"); //A mÅ¯Å¾u alespoÅˆ vylÃ­zat hrnec?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_05"); //NechÃ¡Å¡ toho?!
+		AI_Output (self, other, "DIA_Thekla_PERM_17_06"); //KdyÅ¾ tak prahneÅ¡ po mÃ©m vÃ½varu, mÄ›l bys pro to nÄ›co udÄ›lat.
 		AI_Output (other, self, "DIA_Thekla_PERM_15_07"); //Co?
-		AI_Output (self, other, "DIA_Thekla_PERM_17_08"); //Zajdi za Sagittou, léèitelkou, co ije za Sekobovou farmou, a pøines mi od ní svazek bylinek.
-		AI_Output (self, other, "DIA_Thekla_PERM_17_09"); //Kdy mi pøineseš ty bylinky, udìlám ti trochu vıvaru.
+		AI_Output (self, other, "DIA_Thekla_PERM_17_08"); //Zajdi za Sagittou, lÃ©Äitelkou, co Å¾ije za Sekobovou farmou, a pÅ™ines mi od nÃ­ svazek bylinek.
+		AI_Output (self, other, "DIA_Thekla_PERM_17_09"); //KdyÅ¾ mi pÅ™ineseÅ¡ ty bylinky, udÄ›lÃ¡m ti trochu vÃ½varu.
 		
 		MIS_Thekla_Paket = LOG_RUNNING;
 		
@@ -402,7 +402,7 @@ func void DIA_Thekla_PERM_Info()
 		
 		Log_CreateTopic (TOPIC_TheklaEintopf,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_TheklaEintopf,LOG_RUNNING);
-		B_LogEntry (TOPIC_TheklaEintopf,"Kdy Thekle pøinesu byliny od léèitelky Sagitty, uvaøí mi ještì další lektvar. Sagitta pøebıvá kousek za Sekobovım statkem.");
+		B_LogEntry (TOPIC_TheklaEintopf,"KdyÅ¾ Thekle pÅ™inesu byliny od lÃ©Äitelky Sagitty, uvaÅ™Ã­ mi jeÅ¡tÄ› dalÅ¡Ã­ lektvar. Sagitta pÅ™ebÃ½vÃ¡ kousek za SekobovÃ½m statkem.");
 		
 	}
 	else if (MIS_Thekla_Paket == LOG_SUCCESS)
@@ -411,14 +411,14 @@ func void DIA_Thekla_PERM_Info()
 		{
 			if (Thekla_MehrEintopfKap1 == FALSE)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_10"); //Dobrá. Tak budu hodná. Tady. A mi neumøeš hlady pøed oèima.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_10"); //DobrÃ¡. Tak budu hodnÃ¡. Tady. AÅ¥ mi neumÅ™eÅ¡ hlady pÅ™ed oÄima.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap1 = TRUE;
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_11"); //Hej, hej, hej, ne tak rychle! Dám ti vìdìt, a pro tebe najdu nìjakou práci.
-				AI_Output (self, other, "DIA_Thekla_PERM_17_12"); //A PAK dostaneš víc vıvaru, je to jasnı?
+				AI_Output (self, other, "DIA_Thekla_PERM_17_11"); //Hej, hej, hej, ne tak rychle! DÃ¡m ti vÄ›dÄ›t, aÅ¾ pro tebe najdu nÄ›jakou prÃ¡ci.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_12"); //A PAK dostaneÅ¡ vÃ­c vÃ½varu, je to jasnÃ½?
 			};
 		};
 		
@@ -428,7 +428,7 @@ func void DIA_Thekla_PERM_Info()
 			if (Thekla_MehrEintopfKap3 == FALSE)
 			&& (MIS_RescueBennet == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_13"); //Slyšela jsem, es pomohl Bennetovi z vìzení. Dobrá práce, hochu.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_13"); //SlyÅ¡ela jsem, Å¾es pomohl Bennetovi z vÄ›zenÃ­. DobrÃ¡ prÃ¡ce, hochu.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap3 = TRUE;
 			}
@@ -437,11 +437,11 @@ func void DIA_Thekla_PERM_Info()
 				if (MIS_RescueBennet != LOG_SUCCESS)
 				{
 					AI_Output (self, other, "DIA_Thekla_PERM_17_14"); //Ty bastardi od domobrany hodili Benneta do lochu.
-					AI_Output (self, other, "DIA_Thekla_PERM_17_15"); //Udìlej mi laskavost a dostaò ho odtamtud, jo? A já ti zatím udìlám trochu toho bájeènıho vıvaru.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_15"); //UdÄ›lej mi laskavost a dostaÅˆ ho odtamtud, jo? A jÃ¡ ti zatÃ­m udÄ›lÃ¡m trochu toho bÃ¡jeÄnÃ½ho vÃ½varu.
 				}
 				else
 				{
-					AI_Output (self, other, "DIA_Thekla_PERM_17_16"); //U mi nic nezbylo. Vra se pozdìjc.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_16"); //UÅ¾ mi nic nezbylo. VraÅ¥ se pozdÄ›jc.
 				};
 			};
 		};
@@ -450,21 +450,21 @@ func void DIA_Thekla_PERM_Info()
 		{
 			if (Thekla_MehrEintopfKap5 == FALSE)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_17"); //Ty jsi poøád hladovej, co? A co vlastnì poøád dìláš?
-				AI_Output (other, self, "DIA_Thekla_PERM_15_18"); //Sejmul jsem pár drakù.
-				AI_Output (self, other, "DIA_Thekla_PERM_17_19"); //Ó! Tak to mám dojem, e nadešla chvíle na poøádnej hrnec vıvaru.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_17"); //Ty jsi poÅ™Ã¡d hladovej, co? A co vlastnÄ› poÅ™Ã¡d dÄ›lÃ¡Å¡?
+				AI_Output (other, self, "DIA_Thekla_PERM_15_18"); //Sejmul jsem pÃ¡r drakÅ¯.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_19"); //Ã“! Tak to mÃ¡m dojem, Å¾e nadeÅ¡la chvÃ­le na poÅ™Ã¡dnej hrnec vÃ½varu.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap5 = TRUE;
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_20"); //Pozdì. U ádnı vıvar nezbyl.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_20"); //PozdÄ›. UÅ¾ Å¾Ã¡dnÃ½ vÃ½var nezbyl.
 			};
 		};
 	}
 	else //Running oder Failed
 	{
-		AI_Output (self, other, "DIA_Thekla_PERM_17_21"); //ádné bylinky, ádnı vıvar - víme?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_21"); //Å½Ã¡dnÃ© bylinky, Å¾Ã¡dnÃ½ vÃ½var - vÃ­me?
 	};
 };
 

@@ -23,7 +23,7 @@ instance VLK_494_Attila (Npc_Default)
 	EquipItem			(self, ItRw_Mil_Crossbow);
 	
 	// ------ Inventory ------
-	CreateInvItem (self, ItKe_ThiefGuildKey_MIS);  // Schlüssel zur geheimen Diebesgilde
+	CreateInvItem (self, ItKe_ThiefGuildKey_MIS);  // SchlÃ¼ssel zur geheimen Diebesgilde
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_L_Tough_Santino, BodyTex_L, ITAR_Leather_L);	
@@ -33,8 +33,8 @@ instance VLK_494_Attila (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 30); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 30); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 	
 	// ------ TA ------
 	daily_routine 		= Rtn_Start_494;

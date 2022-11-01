@@ -8,14 +8,14 @@ func void B_MalcomExident()
 		if (!Npc_IsDead(Malcom))
 		{
 			AI_Teleport (Malcom,"ADW_PIRATECAMP_SECRETCAVE_02");
-			B_StartOtherRoutine	(Malcom,"ZaËÌt");			
+			B_StartOtherRoutine	(Malcom,"Zaƒç√≠t");			
 			Npc_ChangeAttribute	(Malcom, ATR_HITPOINTS, -Malcom.attribute[ATR_HITPOINTS_MAX]);
 			AI_Teleport (Malcom,"ADW_PIRATECAMP_SECRETCAVE_02");
 			Malcom_Accident = TRUE;
 			
 			if (!Npc_IsDead(Owen))
 			{
-				B_StartOtherRoutine	(Owen,"ZaËÌt");
+				B_StartOtherRoutine	(Owen,"Zaƒç√≠t");
 			};
 		};
 	};

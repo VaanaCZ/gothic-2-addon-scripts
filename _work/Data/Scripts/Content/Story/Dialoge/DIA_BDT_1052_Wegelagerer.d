@@ -48,9 +48,9 @@ FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
 FUNC VOID DIA_1052_Wegelagerer_Hello_Info()
 {
 	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Kdo jsi?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Co to je? NÏjak˝ v˝slech?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Nem·m, co bych ti ¯ekl, ale moûn· by sis chtÏl promluvit tady s m˝m k·moöem.
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Ale bacha, cizince nem· zrovna v l·sce.
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Co to je? Nƒõjak√Ω v√Ωslech?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Nem√°m, co bych ti ≈ôekl, ale mo≈æn√° by sis chtƒõl promluvit tady s m√Ωm k√°mo≈°em.
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Ale bacha, cizince nem√° zrovna v l√°sce.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ func int DIA_Wegelagerer_ANGRIFF2_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF2_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //Jak chceö, k·mo. Tohle si vypijeö.
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //Jak chce≈°, k√°mo. Tohle si vypije≈°.
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,40);
 

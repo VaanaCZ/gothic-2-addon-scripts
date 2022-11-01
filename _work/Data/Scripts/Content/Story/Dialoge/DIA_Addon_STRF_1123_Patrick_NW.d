@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Patrick_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Patrick_NW_Hi_Condition;
 	information = DIA_Addon_Patrick_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "Take u je ti dobøe?";
+	description = "TakÅ¾e uÅ¾ je ti dobÅ™e?";
 };
 FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 {		
@@ -72,12 +72,12 @@ FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//Tak co, je všecko v poøádku?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//Všecko je fajn. Vodní mágové nás bezpeènì odvedli z toho proklatıho údolí.
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//A co budeš dìlat teï?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Budu dál bojovat za Leeho. A jednou snad opustíme tenhle ostrov.
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//Tak co, je vÅ¡ecko v poÅ™Ã¡dku?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//VÅ¡ecko je fajn. VodnÃ­ mÃ¡govÃ© nÃ¡s bezpeÄnÄ› odvedli z toho proklatÃ½ho ÃºdolÃ­.
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//A co budeÅ¡ dÄ›lat teÄ?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Budu dÃ¡l bojovat za Leeho. A jednou snad opustÃ­me tenhle ostrov.
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//A pak?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Uvidíme. Pokud je ještì poøád válka, pùjdem proti skøetùm, ale to se uvidí.
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//UvidÃ­me. Pokud je jeÅ¡tÄ› poÅ™Ã¡d vÃ¡lka, pÅ¯jdem proti skÅ™etÅ¯m, ale to se uvidÃ­.
 };
 
 

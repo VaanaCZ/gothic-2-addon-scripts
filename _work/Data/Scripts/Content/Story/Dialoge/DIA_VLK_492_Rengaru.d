@@ -66,7 +66,7 @@ instance DIA_Rengaru_Hauab		(C_INFO)
 	condition	 = 	DIA_Rengaru_Hauab_Condition;
 	information	 = 	DIA_Rengaru_Hauab_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 func int DIA_Rengaru_Hauab_Condition ()
 {	
@@ -78,8 +78,8 @@ func int DIA_Rengaru_Hauab_Condition ()
 };
 func void DIA_Rengaru_Hauab_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_Hauab_15_00"); //Co tady dìláš?
-	AI_Output (self, other, "DIA_Rengaru_Hauab_07_01"); //Nejsem si jistej, jestli ti do toho nìco je. Ztra se!
+	AI_Output (other, self, "DIA_Rengaru_Hauab_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other, "DIA_Rengaru_Hauab_07_01"); //Nejsem si jistej, jestli ti do toho nÄ›co je. ZtraÅ¥ se!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -92,7 +92,7 @@ instance DIA_Rengaru_HALLODIEB		(C_INFO)
 	condition	 = 	DIA_Rengaru_HALLODIEB_Condition;
 	information	 = 	DIA_Rengaru_HALLODIEB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Jora øíkal, e máš jeho peníze...";
+	description	 = 	"Jora Å™Ã­kal, Å¾e mÃ¡Å¡ jeho penÃ­ze...";
 };
 func int DIA_Rengaru_HALLODIEB_Condition ()
 {
@@ -104,8 +104,8 @@ func int DIA_Rengaru_HALLODIEB_Condition ()
 
 func void DIA_Rengaru_HALLODIEB_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_HALLODIEB_15_00"); //Jora øíkal, e máš jeho peníze.
-	AI_Output (self, other, "DIA_Rengaru_HALLODIEB_07_01"); //Sakra! Padám pryè!
+	AI_Output (other, self, "DIA_Rengaru_HALLODIEB_15_00"); //Jora Å™Ã­kal, Å¾e mÃ¡Å¡ jeho penÃ­ze.
+	AI_Output (self, other, "DIA_Rengaru_HALLODIEB_07_01"); //Sakra! PadÃ¡m pryÄ!
 
 	AI_StopProcessInfos (self);
 
@@ -121,7 +121,7 @@ instance DIA_Rengaru_GOTYOU		(C_INFO)
 	condition	 = 	DIA_Rengaru_GOTYOU_Condition;
 	information	 = 	DIA_Rengaru_GOTYOU_Info;
 	permanent	 =  FALSE;	
-	description	 = 	"Mám tì!";
+	description	 = 	"MÃ¡m tÄ›!";
 };
 
 func int DIA_Rengaru_GOTYOU_Condition ()
@@ -136,32 +136,32 @@ func void DIA_Rengaru_GOTYOU_Info ()
 {
 	B_GivePlayerXP (XP_RengaruGotThief);
 	
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_00"); //Mám tì!
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_07_01"); //Co ode mì chceš?
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_02"); //Okradl jsi Joru za denního svìtla a on si toho ani nevšiml.
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_03"); //Tak jsem ti pøišel øíct, e jsi zavšivenej zlodìj a e...
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_00"); //MÃ¡m tÄ›!
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_07_01"); //Co ode mÄ› chceÅ¡?
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_02"); //Okradl jsi Joru za dennÃ­ho svÄ›tla a on si toho ani nevÅ¡iml.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_03"); //Tak jsem ti pÅ™iÅ¡el Å™Ã­ct, Å¾e jsi zavÅ¡ivenej zlodÄ›j a Å¾e...
 	
 	Info_ClearChoices (DIA_Rengaru_GOTYOU); 
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "Zaslouím si nìjakı podíl na koøisti.", DIA_Rengaru_GOTYOU_Anteil );
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "Udìláš líp, kdy mu to hned vrátíš.", DIA_Rengaru_GOTYOU_YouThief );
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "A teï mi øekni, kdo jsi.", DIA_Rengaru_GOTYOU_WhoAreYou );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "ZaslouÅ¾Ã­m si nÄ›jakÃ½ podÃ­l na koÅ™isti.", DIA_Rengaru_GOTYOU_Anteil );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "UdÄ›lÃ¡Å¡ lÃ­p, kdyÅ¾ mu to hned vrÃ¡tÃ­Å¡.", DIA_Rengaru_GOTYOU_YouThief );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "A teÄ mi Å™ekni, kdo jsi.", DIA_Rengaru_GOTYOU_WhoAreYou );
 };
 func void DIA_Rengaru_GOTYOU_YouThief ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_YouThief_15_00"); //...udìláš líp, kdy mu to hned vrátíš.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_YouThief_15_00"); //...udÄ›lÃ¡Å¡ lÃ­p, kdyÅ¾ mu to hned vrÃ¡tÃ­Å¡.
 
 	if (Npc_HasItems (self, Itmi_Gold) >= 1)
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_01"); //Tady jsou prachy, chlape! Ale teï mì nech jít, u to nikdy neudìlám.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_01"); //Tady jsou prachy, chlape! Ale teÄ mÄ› nech jÃ­t, uÅ¾ to nikdy neudÄ›lÃ¡m.
 		B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self, ItMi_Gold));
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_02"); //Já u to zlato nemám.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_02"); //JÃ¡ uÅ¾ to zlato nemÃ¡m.
 		
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)    
 		{
-			AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_03"); //Ale proè ti to vlastnì øíkám? Ty u jsi mì okradl!
+			AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_03"); //Ale proÄ ti to vlastnÄ› Å™Ã­kÃ¡m? Ty uÅ¾ jsi mÄ› okradl!
 		};
 	};	
 	Info_ClearChoices	(DIA_Rengaru_GOTYOU);
@@ -169,61 +169,61 @@ func void DIA_Rengaru_GOTYOU_YouThief ()
 
 func void DIA_Rengaru_GOTYOU_Anteil ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_15_00"); //...si zaslouím si nìjakı podíl na koøisti.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_15_00"); //...si zaslouÅ¾Ã­m si nÄ›jakÃ½ podÃ­l na koÅ™isti.
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)    
 	&& (Npc_HasItems (self, ItMi_Gold) < 1)
 	{ 
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_07_01"); //Vzal sis všechno, co jsem mìl u sebe, u kdy jsi mì srazil na zem! Tak mì nech jít!
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_07_01"); //Vzal sis vÅ¡echno, co jsem mÄ›l u sebe, uÅ¾ kdyÅ¾ jsi mÄ› srazil na zem! Tak mÄ› nech jÃ­t!
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else
 	{	//HACK MF. self/other - falsch gesprochen, kein Ersatz...
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_15_02"); //Dobrá, vypadá to, e nemám navybranou. Dám ti pùlku.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_15_02"); //DobrÃ¡, vypadÃ¡ to, Å¾e nemÃ¡m navybranou. DÃ¡m ti pÅ¯lku.
 		
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
-		Info_AddChoice		(DIA_Rengaru_GOTYOU, "Ne - dáš mi to všechno!", DIA_Rengaru_GOTYOU_Anteil_alles );
-		Info_AddChoice		(DIA_Rengaru_GOTYOU, "Fajn, tak mi dej pùlku.", DIA_Rengaru_GOTYOU_Anteil_GehtKlar );
+		Info_AddChoice		(DIA_Rengaru_GOTYOU, "Ne - dÃ¡Å¡ mi to vÅ¡echno!", DIA_Rengaru_GOTYOU_Anteil_alles );
+		Info_AddChoice		(DIA_Rengaru_GOTYOU, "Fajn, tak mi dej pÅ¯lku.", DIA_Rengaru_GOTYOU_Anteil_GehtKlar );
 	};
 };
 func void DIA_Rengaru_GOTYOU_Anteil_alles ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_alles_15_00"); //Ne - dáš mi to všechno!
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_alles_15_00"); //Ne - dÃ¡Å¡ mi to vÅ¡echno!
 	
 	if (Npc_HasItems (self, Itmi_Gold) >= 2)
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_02"); //Take ty mì chceš okrást. Fajn, tak si to zlato vezmi. A teï mì nech na pokoji.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_02"); //TakÅ¾e ty mÄ› chceÅ¡ okrÃ¡st. Fajn, tak si to zlato vezmi. A teÄ mÄ› nech na pokoji.
 		B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self, ItMi_Gold) );
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_03"); //Dal bych ti to zlato, ale u ho nemám.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_03"); //Dal bych ti to zlato, ale uÅ¾ ho nemÃ¡m.
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	};
 };
 
 func void DIA_Rengaru_GOTYOU_Anteil_GehtKlar ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_15_00"); //Fajn, tak mi dej pùlku.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_15_00"); //Fajn, tak mi dej pÅ¯lku.
 	
 	if B_GiveInvItems (self, other, ItMi_Gold, (Npc_HasItems (self, ItMi_Gold))/2 )
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_01"); //Tady je tvoje polovina! A teï mì nech jít!
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_01"); //Tady je tvoje polovina! A teÄ mÄ› nech jÃ­t!
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_02"); //Chtìl bych ti dát polovinu toho zlata, ale já u ho nemám.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_02"); //ChtÄ›l bych ti dÃ¡t polovinu toho zlata, ale jÃ¡ uÅ¾ ho nemÃ¡m.
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	};
 };
 func void DIA_Rengaru_GOTYOU_WhoAreYou ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_00"); //...a teï mi øekni, kdo jsi.
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_01"); //Jsem jen ubohej chudák, co se snaí vyjít s penìzma, jak se dá.
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_02"); //Co ještì mùu udìlat? Ve mìstì o práci nezavadíš.
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_03"); //Dobrá, to vím. Ušetøi mì toho fòukání!
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_00"); //...a teÄ mi Å™ekni, kdo jsi.
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_01"); //Jsem jen ubohej chudÃ¡k, co se snaÅ¾Ã­ vyjÃ­t s penÄ›zma, jak se dÃ¡.
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_02"); //Co jeÅ¡tÄ› mÅ¯Å¾u udÄ›lat? Ve mÄ›stÄ› o prÃ¡ci nezavadÃ­Å¡.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_03"); //DobrÃ¡, to vÃ­m. UÅ¡etÅ™i mÄ› toho fÅˆukÃ¡nÃ­!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info InKnast
@@ -235,7 +235,7 @@ instance DIA_Rengaru_INKNAST		(C_INFO)
 	condition	 = 	DIA_Rengaru_INKNAST_Condition;
 	information	 = 	DIA_Rengaru_INKNAST_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Mìl bych tì pøedhodit domobranì.";
+	description	 = 	"MÄ›l bych tÄ› pÅ™edhodit domobranÄ›.";
 };
 
 func int DIA_Rengaru_INKNAST_Condition ()
@@ -248,28 +248,28 @@ func int DIA_Rengaru_INKNAST_Condition ()
 
 func void DIA_Rengaru_INKNAST_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_15_00"); //Mìl bych tì pøedhodit domobranì.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_07_01"); //Co ještì chceš? Nemám co ztratit! Nech mì jít, chlape!
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_15_00"); //MÄ›l bych tÄ› pÅ™edhodit domobranÄ›.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_07_01"); //Co jeÅ¡tÄ› chceÅ¡? NemÃ¡m co ztratit! Nech mÄ› jÃ­t, chlape!
 	
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Proè bych to jako mìl dìlat?", DIA_Rengaru_INKNAST_keinKnast );
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Postarám se, abys skonèil za møíema.", DIA_Rengaru_INKNAST_Knast );
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Ztra se! A u tady ten svuj ksicht víckrát neukazuj!", DIA_Rengaru_INKNAST_HauAb );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "ProÄ bych to jako mÄ›l dÄ›lat?", DIA_Rengaru_INKNAST_keinKnast );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "PostarÃ¡m se, abys skonÄil za mÅ™Ã­Å¾ema.", DIA_Rengaru_INKNAST_Knast );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "ZtraÅ¥ se! A uÅ¾ tady ten svuj ksicht vÃ­ckrÃ¡t neukazuj!", DIA_Rengaru_INKNAST_HauAb );
 };
 func void DIA_Rengaru_INKNAST_HauAb ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_HauAb_15_00"); //Ztra se! A u tady ten svùj ksicht víckrát neukazuj!
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_HauAb_07_01"); //Nebudeš toho litovat! Díky, chlape!
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_HauAb_15_00"); //ZtraÅ¥ se! A uÅ¾ tady ten svÅ¯j ksicht vÃ­ckrÃ¡t neukazuj!
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_HauAb_07_01"); //NebudeÅ¡ toho litovat! DÃ­ky, chlape!
 	
-	Npc_ExchangeRoutine	(self,"Zaèít"); 	
+	Npc_ExchangeRoutine	(self,"ZaÄÃ­t"); 	
 	AI_StopProcessInfos (self);
 	
 	Diebesgilde_Okay = (Diebesgilde_Okay + 1);
 };
 func void DIA_Rengaru_INKNAST_Knast ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_Knast_15_00"); //Postarám se, abys skonèil za møíema.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_01"); //(unavenì) U nechci ádné potíe. Jestli máš dojem, e je to to, co bys mìl udìlat, tak si poslu.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_02"); //(varovnì) Dávej si bacha - mí kamarádi nebudou právì odvázanı z toho, co tady vyvádíš.
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_Knast_15_00"); //PostarÃ¡m se, abys skonÄil za mÅ™Ã­Å¾ema.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_01"); //(unavenÄ›) UÅ¾ nechci Å¾Ã¡dnÃ© potÃ­Å¾e. Jestli mÃ¡Å¡ dojem, Å¾e je to to, co bys mÄ›l udÄ›lat, tak si posluÅ¾.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_02"); //(varovnÄ›) DÃ¡vej si bacha - mÃ­ kamarÃ¡di nebudou prÃ¡vÄ› odvÃ¡zanÃ½ z toho, co tady vyvÃ¡dÃ­Å¡.
 
 	
 	Rengaru_InKnast		= TRUE; 	
@@ -279,9 +279,9 @@ func void DIA_Rengaru_INKNAST_Knast ()
 
 func void DIA_Rengaru_INKNAST_keinKnast ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_keinKnast_15_00"); //Proè bych to jako mìl dìlat?
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_01"); //Ve mìstì se vdycky hodí znát ty pravé lidi - a stát na jejich stranì.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_02"); //Mohl bych za tebe ztratit dobré slovo. Víc ani nechci, ani nemùu udìlat. Zbytek je na tobì.
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_keinKnast_15_00"); //ProÄ bych to jako mÄ›l dÄ›lat?
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_01"); //Ve mÄ›stÄ› se vÅ¾dycky hodÃ­ znÃ¡t ty pravÃ© lidi - a stÃ¡t na jejich stranÄ›.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_02"); //Mohl bych za tebe ztratit dobrÃ© slovo. VÃ­c ani nechci, ani nemÅ¯Å¾u udÄ›lat. Zbytek je na tobÄ›.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info LastInfoKap1
@@ -293,7 +293,7 @@ instance DIA_Rengaru_LastInfoKap1		(C_INFO)
 	condition	 = 	DIA_Rengaru_LastInfoKap1_Condition;
 	information	 = 	DIA_Rengaru_LastInfoKap1_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"Tak co? V poøádku?";
+	description	 = 	"Tak co? V poÅ™Ã¡dku?";
 };
 func int DIA_Rengaru_LastInfoKap1_Condition ()
 {
@@ -305,15 +305,15 @@ func int DIA_Rengaru_LastInfoKap1_Condition ()
 
 func void DIA_Rengaru_LastInfoKap1_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_LastInfoKap1_15_00"); //Tak co? V poøádku?
+	AI_Output (other, self, "DIA_Rengaru_LastInfoKap1_15_00"); //Tak co? V poÅ™Ã¡dku?
 	
 	if (Rengaru_InKnast	== TRUE)
 	{
-		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_01"); //Jen si poslu, ještì si ze mì utahuj. Nakonec stejnì slízneš to, co teï provádíš mnì. Slibuju!
+		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_01"); //Jen si posluÅ¾, jeÅ¡tÄ› si ze mÄ› utahuj. Nakonec stejnÄ› slÃ­zneÅ¡ to, co teÄ provÃ¡dÃ­Å¡ mnÄ›. Slibuju!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_02"); //Co ještì chceš? Nic dalšího u jsem neukradl, vánì, chlape!
+		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_02"); //Co jeÅ¡tÄ› chceÅ¡? Nic dalÅ¡Ã­ho uÅ¾ jsem neukradl, vÃ¡Å¾nÄ›, chlape!
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -326,7 +326,7 @@ INSTANCE DIA_Rengaru_Zeichen   (C_INFO)
 	condition   = DIA_Rengaru_Zeichen_Condition;
 	information = DIA_Rengaru_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Pøedvést zlodìjskı signál.)";
+	description = "(PÅ™edvÃ©st zlodÄ›jskÃ½ signÃ¡l.)";
 };
 
 FUNC INT DIA_Rengaru_Zeichen_Condition()
@@ -342,10 +342,10 @@ FUNC VOID DIA_Rengaru_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
 	
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_00");//Hej, jsi jedním z nás.
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_01");//Tak teï ti nìco øeknu. Jestli chceš nìkomu odlehèit o pár zlaákù, tak si dávej zvláš pozor na kupce!
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_02");//Jsou tak nepøíjemnì všímaví, co se tıèe jejich vlastních vìcí. Ale mùu ti dát tip.
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_03");//Pokus se zvolenou vìc jednou rukou otoèit a tou druhou mezitím odvádìj jejich pozornost.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_00");//Hej, jsi jednÃ­m z nÃ¡s.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_01");//Tak teÄ ti nÄ›co Å™eknu. Jestli chceÅ¡ nÄ›komu odlehÄit o pÃ¡r zlaÅ¥Ã¡kÅ¯, tak si dÃ¡vej zvlÃ¡Å¡Å¥ pozor na kupce!
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_02");//Jsou tak nepÅ™Ã­jemnÄ› vÅ¡Ã­mavÃ­, co se tÃ½Äe jejich vlastnÃ­ch vÄ›cÃ­. Ale mÅ¯Å¾u ti dÃ¡t tip.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_03");//Pokus se zvolenou vÄ›c jednou rukou otoÄit a tou druhou mezitÃ­m odvÃ¡dÄ›j jejich pozornost.
 	
 	B_RaiseAttribute(other, ATR_DEXTERITY, 1);
 	Snd_Play ("LEVELUP"); 

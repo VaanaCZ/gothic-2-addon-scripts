@@ -45,8 +45,8 @@ FUNC INT DIA_Opolos_Hello_Condition()
 };
 FUNC VOID DIA_Opolos_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Opolos_Hello_12_00"); //Ahoj, ty musíš bıt ten novı chlapík.
-	AI_Output (self ,other,"DIA_Opolos_Hello_12_01"); //Jsem Opolos. Starám se tady o ovce.
+	AI_Output (self ,other,"DIA_Opolos_Hello_12_00"); //Ahoj, ty musÃ­Å¡ bÃ½t ten novÃ½ chlapÃ­k.
+	AI_Output (self ,other,"DIA_Opolos_Hello_12_01"); //Jsem Opolos. StarÃ¡m se tady o ovce.
 };
 // *************************************************************************
 // 							Wurst verteilen
@@ -58,7 +58,7 @@ INSTANCE DIA_Opolos_Wurst(C_INFO)
 	condition	= DIA_Opolos_Wurst_Condition;
 	information	= DIA_Opolos_Wurst_Info;
 	permanent	= FALSE;
-	description = "Mám tu pro tebe skopovou klobásu...";
+	description = "MÃ¡m tu pro tebe skopovou klobÃ¡su...";
 };                       
 
 FUNC INT DIA_Opolos_Wurst_Condition()
@@ -74,8 +74,8 @@ FUNC INT DIA_Opolos_Wurst_Condition()
 
 FUNC VOID DIA_Opolos_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Opolos_Wurst_15_00"); //Mám tu pro tebe skopovou klobásu.
-	AI_Output (self, other, "DIA_Opolos_Wurst_12_01"); //No èlovìèe, to je skvìlı! Koneènì další vıborná skopová klobása.
+	AI_Output (other, self, "DIA_Opolos_Wurst_15_00"); //MÃ¡m tu pro tebe skopovou klobÃ¡su.
+	AI_Output (self, other, "DIA_Opolos_Wurst_12_01"); //No ÄlovÄ›Äe, to je skvÄ›lÃ½! KoneÄnÄ› dalÅ¡Ã­ vÃ½bornÃ¡ skopovÃ¡ klobÃ¡sa.
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
 	
@@ -98,7 +98,7 @@ INSTANCE DIA_Opolos_HowLong   (C_INFO)
 	condition   = DIA_Opolos_HowLong_Condition;
 	information = DIA_Opolos_HowLong_Info;
 	permanent   = FALSE;
-	description	= "Jak dlouho u jsi v klášteøe?";
+	description	= "Jak dlouho uÅ¾ jsi v klÃ¡Å¡teÅ™e?";
 };
 FUNC INT DIA_Opolos_HowLong_Condition()
 {
@@ -109,16 +109,16 @@ FUNC INT DIA_Opolos_HowLong_Condition()
 };
 FUNC VOID DIA_Opolos_HowLong_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_HowLong_15_00"); //Jak dlouho u jsi v klášteøe?
-	AI_Output (self ,other,"DIA_Opolos_HowLong_12_01"); //Jsem tady tøi roky. Ale zatím jsem vùbec nestudoval, i kdy bych rád.
-	AI_Output (other,self ,"DIA_Opolos_HowLong_15_02"); //Proè ne?
-	AI_Output (self ,other,"DIA_Opolos_HowLong_12_03"); //Mojí prací je starat se o ovce - ne studovat spisy.
-	AI_Output (self ,other,"DIA_Opolos_HowLong_12_04"); //Dokud mì mistr Parlan neuvolní z téhle sluby, nemùu studovat v knihovnì.
+	AI_Output (other,self ,"DIA_Opolos_HowLong_15_00"); //Jak dlouho uÅ¾ jsi v klÃ¡Å¡teÅ™e?
+	AI_Output (self ,other,"DIA_Opolos_HowLong_12_01"); //Jsem tady tÅ™i roky. Ale zatÃ­m jsem vÅ¯bec nestudoval, i kdyÅ¾ bych rÃ¡d.
+	AI_Output (other,self ,"DIA_Opolos_HowLong_15_02"); //ProÄ ne?
+	AI_Output (self ,other,"DIA_Opolos_HowLong_12_03"); //MojÃ­ pracÃ­ je starat se o ovce - ne studovat spisy.
+	AI_Output (self ,other,"DIA_Opolos_HowLong_12_04"); //Dokud mÄ› mistr Parlan neuvolnÃ­ z tÃ©hle sluÅ¾by, nemÅ¯Å¾u studovat v knihovnÄ›.
 	
 	MIS_HelpOpolos = LOG_RUNNING;
 	Log_CreateTopic (Topic_OpolosStudy,LOG_MISSION);
 	Log_SetTopicStatus (Topic_OpolosStudy,LOG_RUNNING);
-	B_LogEntry (Topic_OpolosStudy,"Opolos hlídá ovce, ale rád by si prostudoval i spisky v knihovnì.");
+	B_LogEntry (Topic_OpolosStudy,"Opolos hlÃ­dÃ¡ ovce, ale rÃ¡d by si prostudoval i spisky v knihovnÄ›.");
 };
 //*********************************************************************
 //		Auf was muss ich hier im Kloster achten?
@@ -130,7 +130,7 @@ INSTANCE DIA_Opolos_Monastery   (C_INFO)
 	condition   = DIA_Opolos_Monastery_Condition;
 	information = DIA_Opolos_Monastery_Info;
 	permanent   = FALSE;
-	description	= "Jak se mám tady v klášteøe chovat?";
+	description	= "Jak se mÃ¡m tady v klÃ¡Å¡teÅ™e chovat?";
 };
 FUNC INT DIA_Opolos_Monastery_Condition()
 {	
@@ -142,10 +142,10 @@ FUNC INT DIA_Opolos_Monastery_Condition()
 };
 FUNC VOID DIA_Opolos_Monastery_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_Monastery_15_00"); //Jak se mám tady v klášteøe chovat?
-	AI_Output (self ,other,"DIA_Opolos_Monastery_12_01"); //Nikdy neli mágùm. Neprohøeš se proti bratrovi ze spoleèenstva.
-	AI_Output (self ,other,"DIA_Opolos_Monastery_12_02"); //Respektuj majetek spoleèenstva. Pokud tato pravidla porušíš, budeš se zodpovídat mistru Parlanovi.
-	AI_Output (self ,other,"DIA_Opolos_Monastery_12_03"); //Kromì toho bych tì mìl varovat, aby ses mìl na pozoru pøed Agonem. Kdy nebudeš dost opatrnı, skonèíš jako Babo.
+	AI_Output (other,self ,"DIA_Opolos_Monastery_15_00"); //Jak se mÃ¡m tady v klÃ¡Å¡teÅ™e chovat?
+	AI_Output (self ,other,"DIA_Opolos_Monastery_12_01"); //Nikdy nelÅ¾i mÃ¡gÅ¯m. NeprohÅ™eÅ¡ se proti bratrovi ze spoleÄenstva.
+	AI_Output (self ,other,"DIA_Opolos_Monastery_12_02"); //Respektuj majetek spoleÄenstva. Pokud tato pravidla poruÅ¡Ã­Å¡, budeÅ¡ se zodpovÃ­dat mistru Parlanovi.
+	AI_Output (self ,other,"DIA_Opolos_Monastery_12_03"); //KromÄ› toho bych tÄ› mÄ›l varovat, aby ses mÄ›l na pozoru pÅ™ed Agonem. KdyÅ¾ nebudeÅ¡ dost opatrnÃ½, skonÄÃ­Å¡ jako Babo.
 };
 //*********************************************************************
 //		Kannst du mir was beibringen?
@@ -157,7 +157,7 @@ INSTANCE DIA_Opolos_beibringen   (C_INFO)
 	condition   = DIA_Opolos_beibringen_Condition;
 	information = DIA_Opolos_beibringen_Info;
 	permanent   = FALSE;
-	description	= "Mùeš mì nìèemu nauèit?";
+	description	= "MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };
 FUNC INT DIA_Opolos_beibringen_Condition()
 {	
@@ -170,16 +170,16 @@ FUNC INT DIA_Opolos_beibringen_Condition()
 };
 FUNC VOID DIA_Opolos_beibringen_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_beibringen_15_00"); //Mohl bys mì nìco nauèit?
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_01"); //Jasnì, kdysi jsem bıval docela dobrı rváè. Mùu ti ukázat, jak posílit pae.
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_02"); //Ale já bych se rád nauèil nìco o lektvarech, hlavnì o tìch magickıch.
-	AI_Output (other,self ,"DIA_Opolos_beibringen_15_03"); //Jak bych ti s tím jen mohl pomoci?
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_04"); //No, kdybys pracoval pro Neorase, urèitì by se ti naskytla pøíleitost 'vypùjèit' si na chvíli jeden z jeho receptù.
-	AI_Output (self ,other,"DIA_Opolos_beibringen_12_05"); //Kdy mi ho pøineseš, abych se na nìj mohl podívat, nìco tì urèitì nauèím.
+	AI_Output (other,self ,"DIA_Opolos_beibringen_15_00"); //Mohl bys mÄ› nÄ›co nauÄit?
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_01"); //JasnÄ›, kdysi jsem bÃ½val docela dobrÃ½ rvÃ¡Ä. MÅ¯Å¾u ti ukÃ¡zat, jak posÃ­lit paÅ¾e.
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_02"); //Ale jÃ¡ bych se rÃ¡d nauÄil nÄ›co o lektvarech, hlavnÄ› o tÄ›ch magickÃ½ch.
+	AI_Output (other,self ,"DIA_Opolos_beibringen_15_03"); //Jak bych ti s tÃ­m jen mohl pomoci?
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_04"); //No, kdybys pracoval pro Neorase, urÄitÄ› by se ti naskytla pÅ™Ã­leÅ¾itost 'vypÅ¯jÄit' si na chvÃ­li jeden z jeho receptÅ¯.
+	AI_Output (self ,other,"DIA_Opolos_beibringen_12_05"); //KdyÅ¾ mi ho pÅ™ineseÅ¡, abych se na nÄ›j mohl podÃ­vat, nÄ›co tÄ› urÄitÄ› nauÄÃ­m.
 	
 	Log_CreateTopic (Topic_OpolosRezept,LOG_MISSION);
 	Log_SetTopicStatus(Topic_OpolosRezept,LOG_RUNNING);
-	B_LogEntry (Topic_OpolosRezept,"Opolos chce letmo nahlédnout do receptu na lektvary many. Kdy budu pracovat pro Neorase, moná bych si mohl nìjakı takovı spisek pùjèit.");
+	B_LogEntry (Topic_OpolosRezept,"Opolos chce letmo nahlÃ©dnout do receptu na lektvary many. KdyÅ¾ budu pracovat pro Neorase, moÅ¾nÃ¡ bych si mohl nÄ›jakÃ½ takovÃ½ spisek pÅ¯jÄit.");
 };
 //*********************************************************************
 // rezept
@@ -191,7 +191,7 @@ INSTANCE DIA_Opolos_rezept   (C_INFO)
 	condition   = DIA_Opolos_rezept_Condition;
 	information = DIA_Opolos_rezept_Info;
 	permanent   = TRUE;
-	description	= "Co se tıèe toho receptu...";
+	description	= "Co se tÃ½Äe toho receptu...";
 };
 //-----------------------------------
 var int DIA_Opolos_rezept_permanent;
@@ -209,12 +209,12 @@ FUNC VOID DIA_Opolos_rezept_Info()
 {
 	if (Npc_HasItems (other, ItWr_Manarezept) >= 1)
 	{
-		AI_Output (other,self ,"DIA_Opolos_rezept_15_00"); //Mám ten recept, kterı jsi chtìl.
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_01"); //Dobrá, pùjè mi ho, a si ho pøeètu.
+		AI_Output (other,self ,"DIA_Opolos_rezept_15_00"); //MÃ¡m ten recept, kterÃ½ jsi chtÄ›l.
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_01"); //DobrÃ¡, pÅ¯jÄ mi ho, aÅ¥ si ho pÅ™eÄtu.
 		B_UseFakeScroll ();
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_02"); //Aha... hm... ano... jo takhle... dobrá, dobrá...
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_02"); //Aha... hm... ano... jo takhle... dobrÃ¡, dobrÃ¡...
 		B_UseFakeScroll ();
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_03"); //A je to. Pokud chceš, mùu tì nìco nauèit.
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_03"); //A je to. Pokud chceÅ¡, mÅ¯Å¾u tÄ› nÄ›co nauÄit.
 		
 		DIA_Opolos_rezept_permanent = TRUE;
 		Opolos_TeachSTR = TRUE;
@@ -223,13 +223,13 @@ FUNC VOID DIA_Opolos_rezept_Info()
 		B_GivePlayerXP (XP_Ambient);
 		
 		Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-		B_LogEntry (Topic_KlosterTeacher,"S Opolovou pomocí se mohu stát silnìjším.");
+		B_LogEntry (Topic_KlosterTeacher,"S Opolovou pomocÃ­ se mohu stÃ¡t silnÄ›jÅ¡Ã­m.");
 
 	}
 	else if (MIS_NEORASRezept == LOG_SUCCESS)
 	{
-		AI_Output (other,self ,"DIA_Opolos_rezept_15_04"); //U jsem ten recept vrátil Neorasovi.
-		AI_Output (self ,other,"DIA_Opolos_rezept_12_05"); //A dopr... Asi se tady nic nenauèím. Ale co. Stejnì ti nìco ukáu.
+		AI_Output (other,self ,"DIA_Opolos_rezept_15_04"); //UÅ¾ jsem ten recept vrÃ¡til Neorasovi.
+		AI_Output (self ,other,"DIA_Opolos_rezept_12_05"); //A dopr... Asi se tady nic nenauÄÃ­m. Ale co. StejnÄ› ti nÄ›co ukÃ¡Å¾u.
 		
 		Opolos_Rezept = LOG_FAILED;
 		
@@ -237,11 +237,11 @@ FUNC VOID DIA_Opolos_rezept_Info()
 		Opolos_TeachSTR = TRUE;
 		
 		Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-		B_LogEntry (Topic_KlosterTeacher,"S Opolovou pomocí se mohu stát silnìjším.");
+		B_LogEntry (Topic_KlosterTeacher,"S Opolovou pomocÃ­ se mohu stÃ¡t silnÄ›jÅ¡Ã­m.");
 	}
 	else 
 	{
-		AI_Output (other,self ,"DIA_Opolos_rezept_15_06"); //K tomu se dostanu pozdìji.
+		AI_Output (other,self ,"DIA_Opolos_rezept_15_06"); //K tomu se dostanu pozdÄ›ji.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -254,7 +254,7 @@ instance DIA_Opolos_TEACH_STR		(C_INFO)
 	condition	 = 	DIA_Opolos_TEACH_STR_Condition;
 	information	 = 	DIA_Opolos_TEACH_STR_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chci se stát silnìjším.";
+	description	 = 	"Chci se stÃ¡t silnÄ›jÅ¡Ã­m.";
 };
 func int DIA_Opolos_TEACH_STR_Condition ()
 {	
@@ -267,7 +267,7 @@ func int DIA_Opolos_TEACH_STR_Condition ()
 };
 func void DIA_Opolos_TEACH_STR_Info ()
 {
-		AI_Output (other, self, "DIA_Opolos_TEACH_STR_15_00"); //Chtìl bych se stát silnìjším.
+		AI_Output (other, self, "DIA_Opolos_TEACH_STR_15_00"); //ChtÄ›l bych se stÃ¡t silnÄ›jÅ¡Ã­m.
 		
 		Info_ClearChoices   (DIA_Opolos_TEACH_STR);	
 		Info_AddChoice 		(DIA_Opolos_TEACH_STR,DIALOG_BACK,DIA_Opolos_TEACH_STR_BACK);		
@@ -278,7 +278,7 @@ FUNC VOID DIA_Opolos_TEACH_STR_BACK()
 {
 	if (other.attribute[ATR_STRENGTH] >= T_MED)  
 	{
-		AI_Output (self, other, "DIA_Opolos_TEACH_STR_12_00"); //U teï jsi dost silnı. Tìko bych tì nauèil nìco nového.
+		AI_Output (self, other, "DIA_Opolos_TEACH_STR_12_00"); //UÅ¾ teÄ jsi dost silnÃ½. TÄ›Å¾ko bych tÄ› nauÄil nÄ›co novÃ©ho.
 	};
 	
 	Info_ClearChoices   (DIA_Opolos_TEACH_STR);	
@@ -324,11 +324,11 @@ FUNC INT DIA_Opolos_Agon_Condition()
 FUNC VOID DIA_Opolos_Agon_Info()
 {
 	AI_Output (other,self ,"DIA_Opolos_Agon_15_00"); //Kdo jsou Agon a Babo?
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_01"); //Agon se staré o bylinkovou zahradu. Je také novic, ale chová se, jako by byl sám vyvolenı.
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_02"); //Babo pøišel do kláštera krátce pøed tebou. Zpoèátku pomáhal Agonovi v zahradì.
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_03"); //Ale museli se asi nìjak poprat a od té doby Babo jen zametá dvùr.
-	AI_Output (other,self ,"DIA_Opolos_Agon_15_04"); //Víš, co se stalo?
-	AI_Output (self ,other,"DIA_Opolos_Agon_12_05"); //Ne tak docela pøesnì. Na to se budeš muset zeptat jich. Ale Agonovo slovo má vìtší váhu ne kohokoliv z novicù, protoe je synovec místodrícího.
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_01"); //Agon se starÃ© o bylinkovou zahradu. Je takÃ© novic, ale chovÃ¡ se, jako by byl sÃ¡m vyvolenÃ½.
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_02"); //Babo pÅ™iÅ¡el do klÃ¡Å¡tera krÃ¡tce pÅ™ed tebou. ZpoÄÃ¡tku pomÃ¡hal Agonovi v zahradÄ›.
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_03"); //Ale museli se asi nÄ›jak poprat a od tÃ© doby Babo jen zametÃ¡ dvÅ¯r.
+	AI_Output (other,self ,"DIA_Opolos_Agon_15_04"); //VÃ­Å¡, co se stalo?
+	AI_Output (self ,other,"DIA_Opolos_Agon_12_05"); //Ne tak docela pÅ™esnÄ›. Na to se budeÅ¡ muset zeptat jich. Ale Agonovo slovo mÃ¡ vÄ›tÅ¡Ã­ vÃ¡hu neÅ¾ kohokoliv z novicÅ¯, protoÅ¾e je synovec mÃ­stodrÅ¾Ã­cÃ­ho.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SHEEP
@@ -340,7 +340,7 @@ instance DIA_Opolos_LIESEL		(C_INFO)
 	condition	 = 	DIA_Opolos_LIESEL_Condition;
 	information	 = 	DIA_Opolos_LIESEL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Podívej, pøivedl jsem ti Betsy.";
+	description	 = 	"PodÃ­vej, pÅ™ivedl jsem ti Betsy.";
 };
 func int DIA_Opolos_LIESEL_Condition ()
 {	
@@ -354,7 +354,7 @@ func void DIA_Opolos_LIESEL_Info ()
 {
 	
 	
-	AI_Output (other, self, "DIA_Opolos_LIESEL_15_00"); //Podívej, pøivedl jsem Betsy. Mùu ji nechat u tebe?
+	AI_Output (other, self, "DIA_Opolos_LIESEL_15_00"); //PodÃ­vej, pÅ™ivedl jsem Betsy. MÅ¯Å¾u ji nechat u tebe?
 	
 	Npc_PerceiveAll (self);
 	
@@ -367,12 +367,12 @@ func void DIA_Opolos_LIESEL_Info ()
 		other.start_aistate = ZS_MM_AllScheduler; 
 		
 		Liesel_Giveaway = TRUE;
-		AI_Output (self, hero, "DIA_Opolos_LIESEL_12_01"); //Ano, samozøejmì. Hezké zvíøátko. Dobøe se o ni postarám.
+		AI_Output (self, hero, "DIA_Opolos_LIESEL_12_01"); //Ano, samozÅ™ejmÄ›. HezkÃ© zvÃ­Å™Ã¡tko. DobÅ™e se o ni postarÃ¡m.
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Opolos_Add_15_00"); //Hm... zdá se, e jsem to špatnì zaloil. Vrátím se pozdìji.
+		AI_Output (other, self, "DIA_Opolos_Add_15_00"); //Hm... zdÃ¡ se, Å¾e jsem to Å¡patnÄ› zaloÅ¾il. VrÃ¡tÃ­m se pozdÄ›ji.
 	};
 	
 	
@@ -388,7 +388,7 @@ INSTANCE DIA_Opolos_Biblothek   (C_INFO)
 	condition   = DIA_Opolos_Biblothek_Condition;
 	information = DIA_Opolos_Biblothek_Info;
 	permanent   = TRUE;
-	description	= "Co se tıèe knihovny...";
+	description	= "Co se tÃ½Äe knihovny...";
 };
 FUNC INT DIA_Opolos_Biblothek_Condition()
 {
@@ -400,24 +400,24 @@ FUNC INT DIA_Opolos_Biblothek_Condition()
 };
 FUNC VOID DIA_Opolos_Biblothek_Info()
 {
-	AI_Output (other ,self,"DIA_Opolos_Biblothek_15_00"); //Co se tıèe knihovny...
+	AI_Output (other ,self,"DIA_Opolos_Biblothek_15_00"); //Co se tÃ½Äe knihovny...
 	
 	if (Parlan_Erlaubnis == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_01"); //Je to ta zamèená místnost nalevo, vedle vrat.
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_02"); //Ale klíè dostaneš a ve chvíli, kdy mistr Parlan dojde k názoru, e mùeš studovat.
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_01"); //Je to ta zamÄenÃ¡ mÃ­stnost nalevo, vedle vrat.
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_02"); //Ale klÃ­Ä dostaneÅ¡ aÅ¾ ve chvÃ­li, kdy mistr Parlan dojde k nÃ¡zoru, Å¾e mÅ¯Å¾eÅ¡ studovat.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_03"); //Ty máš víc štìstí ne rozumu! Máš klíè ke knihovnì, a pøitom jsi tady jenom takovou chvilku.
-		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_04"); //Vyuij té pøíleitosti a uè se ze starıch spisù!
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_03"); //Ty mÃ¡Å¡ vÃ­c Å¡tÄ›stÃ­ neÅ¾ rozumu! MÃ¡Å¡ klÃ­Ä ke knihovnÄ›, a pÅ™itom jsi tady jenom takovou chvilku.
+		AI_Output (self ,other,"DIA_Opolos_Biblothek_12_04"); //VyuÅ¾ij tÃ© pÅ™Ã­leÅ¾itosti a uÄ se ze starÃ½ch spisÅ¯!
 	};
 	
 	
 	AI_StopProcessInfos (self);
 };
 //*********************************************************************
-//		Sc hat Opolos das Studieren ermöglicht (Kap. 2)
+//		Sc hat Opolos das Studieren ermÃ¶glicht (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Opolos_HelloAgain   (C_INFO)
 {
@@ -439,8 +439,8 @@ FUNC INT DIA_Opolos_HelloAgain_Condition()
 };
 FUNC VOID DIA_Opolos_HelloAgain_Info()
 {
-	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_00"); //Ahoj. Dìkuji, es mi pomohl. Pokusím se z téhle šance vytìit co nejvíc a nauèit se tolik, co jen pùjde.
-	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_01"); //Ale urèitì nemáš èas jen tak klábosit s obyèejnım novicem, mistøe.
+	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_00"); //Ahoj. DÄ›kuji, Å¾es mi pomohl. PokusÃ­m se z tÃ©hle Å¡ance vytÄ›Å¾it co nejvÃ­c a nauÄit se tolik, co jen pÅ¯jde.
+	AI_Output (self ,other,"DIA_Opolos_HelloAgain_12_01"); //Ale urÄitÄ› nemÃ¡Å¡ Äas jen tak klÃ¡bosit s obyÄejnÃ½m novicem, mistÅ™e.
 	
 	B_GivePlayerXP (XP_Ambient); 
 	AI_StopProcessInfos (self);
@@ -471,12 +471,12 @@ FUNC VOID DIA_Opolos_HowIsIt_Info()
 	
 	if (MIS_HelpOpolos == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_01"); //Vıbornì. Od chvíle, co mohu studovat, je všechno vynikající.
+		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_01"); //VÃ½bornÄ›. Od chvÃ­le, co mohu studovat, je vÅ¡echno vynikajÃ­cÃ­.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_02"); //Poslušnì plním všechny zadané úkoly, mistøe.
-		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_03"); //Kadı den pøede mne Innos klade nové vızvy. Budu nadále pracovat na vlastním zdokonalování.
+		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_02"); //PosluÅ¡nÄ› plnÃ­m vÅ¡echny zadanÃ© Ãºkoly, mistÅ™e.
+		AI_Output (self ,other,"DIA_Opolos_HowIsIt_12_03"); //KaÅ¾dÃ½ den pÅ™ede mne Innos klade novÃ© vÃ½zvy. Budu nadÃ¡le pracovat na vlastnÃ­m zdokonalovÃ¡nÃ­.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -547,7 +547,7 @@ INSTANCE DIA_Opolos_Kap3_PERM   (C_INFO)
 	condition   = DIA_Opolos_Kap3_PERM_Condition;
 	information = DIA_Opolos_Kap3_PERM_Info;
 	permanent   = TRUE;
-	description = "Jak je oveèkám?";
+	description = "Jak je oveÄkÃ¡m?";
 };
 FUNC INT DIA_Opolos_Kap3_PERM_Condition()
 {
@@ -559,18 +559,18 @@ FUNC INT DIA_Opolos_Kap3_PERM_Condition()
 };
 FUNC VOID DIA_Opolos_Kap3_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_15_00"); //Jak je oveèkám?
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_01"); //Jak by jim asi tak bylo? Stojí tady a pøevykují trávu.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_02"); //Radši bych vìdìl, co se dìje venku. Zdá se, e mágové jsou nìjak pøehnanì nervózní.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_15_00"); //Jak je oveÄkÃ¡m?
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_01"); //Jak by jim asi tak bylo? StojÃ­ tady a pÅ™eÅ¾vykujÃ­ trÃ¡vu.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_12_02"); //RadÅ¡i bych vÄ›dÄ›l, co se dÄ›je venku. ZdÃ¡ se, Å¾e mÃ¡govÃ© jsou nÄ›jak pÅ™ehnanÄ› nervÃ³znÃ­.
 
 	Info_ClearChoices (DIA_Opolos_Kap3_PERM);
 	Info_AddChoice (DIA_Opolos_Kap3_PERM,DIALOG_BACK,DIA_Opolos_Kap3_PERM_BACK);
-	Info_AddChoice (DIA_Opolos_Kap3_PERM,"V Hornickém údolí se objevili draci.",DIA_Opolos_Kap3_PERM_DRAGONS);
-	Info_AddChoice (DIA_Opolos_Kap3_PERM,"Po krajinì se potulují divní lidé v èernıch róbách.",DIA_Opolos_Kap3_PERM_DMT);
+	Info_AddChoice (DIA_Opolos_Kap3_PERM,"V HornickÃ©m ÃºdolÃ­ se objevili draci.",DIA_Opolos_Kap3_PERM_DRAGONS);
+	Info_AddChoice (DIA_Opolos_Kap3_PERM,"Po krajinÄ› se potulujÃ­ divnÃ­ lidÃ© v ÄernÃ½ch rÃ³bÃ¡ch.",DIA_Opolos_Kap3_PERM_DMT);
 	
 	if (MIS_NOVIZENCHASE == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_Opolos_Kap3_PERM,"Pedro nás zradil.",DIA_Opolos_Kap3_PERM_PEDRO);
+		Info_AddChoice (DIA_Opolos_Kap3_PERM,"Pedro nÃ¡s zradil.",DIA_Opolos_Kap3_PERM_PEDRO);
 	};
 };
 
@@ -583,11 +583,11 @@ var int Opolos_Dragons;
 
 FUNC VOID DIA_Opolos_Kap3_PERM_DRAGONS()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_00"); //V Hornickém údolí jsou draci. Spoleènì s armádou skøetù obléhají královské jednotky.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_01"); //Draci? Vdycky jsem si myslel, e existují jenom ve strašidelnıch pøíbìzích.
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_02"); //Jsou tam, vìø mi.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_03"); //Ale královští paladini si s nimi snad poradí, ne?
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_04"); //Uvidíme.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_00"); //V HornickÃ©m ÃºdolÃ­ jsou draci. SpoleÄnÄ› s armÃ¡dou skÅ™etÅ¯ oblÃ©hajÃ­ krÃ¡lovskÃ© jednotky.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_01"); //Draci? VÅ¾dycky jsem si myslel, Å¾e existujÃ­ jenom ve straÅ¡idelnÃ½ch pÅ™Ã­bÄ›zÃ­ch.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_02"); //Jsou tam, vÄ›Å™ mi.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DRAGONS_12_03"); //Ale krÃ¡lovÅ¡tÃ­ paladini si s nimi snad poradÃ­, ne?
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DRAGONS_15_04"); //UvidÃ­me.
 	
 	if (Opolos_Dragons == FALSE)
 	{
@@ -600,11 +600,11 @@ var int Opolos_DMT;
 
 FUNC VOID DIA_Opolos_Kap3_PERM_DMT()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_00"); //Po krajinì se potulují divní lidé v èernıch róbách.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_01"); //Jak to myslíš? Jací divní lidé?
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_02"); //Nikdo neví, odkud pøišli. Nosí dlouhé èerné pláštì a tváøe mají zakryté.
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_03"); //Vypadá to na nìjaké mágy. Nebo aspoò na nìkoho, kdo umí kouzlit.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_04"); //To zní nepøíjemnì, ale jsem si jistı, e nejvyšší rada tenhle problém vyøeší.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_00"); //Po krajinÄ› se potulujÃ­ divnÃ­ lidÃ© v ÄernÃ½ch rÃ³bÃ¡ch.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_01"); //Jak to myslÃ­Å¡? JacÃ­ divnÃ­ lidÃ©?
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_02"); //Nikdo nevÃ­, odkud pÅ™iÅ¡li. NosÃ­ dlouhÃ© ÄernÃ© plÃ¡Å¡tÄ› a tvÃ¡Å™e majÃ­ zakrytÃ©.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_DMT_15_03"); //VypadÃ¡ to na nÄ›jakÃ© mÃ¡gy. Nebo aspoÅˆ na nÄ›koho, kdo umÃ­ kouzlit.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_DMT_12_04"); //To znÃ­ nepÅ™Ã­jemnÄ›, ale jsem si jistÃ½, Å¾e nejvyÅ¡Å¡Ã­ rada tenhle problÃ©m vyÅ™eÅ¡Ã­.
 	
 	if (Opolos_DMT == FALSE)
 	{
@@ -617,10 +617,10 @@ var int Opolos_Pedro;
 
 FUNC VOID DIA_Opolos_Kap3_PERM_PEDRO()
 {
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_00"); //Pedro nás zradil.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_01"); //Slyšel jsem o tom, ale nevìdìl jsem, e o tom také víš. Proto jsem nic neøíkal.
-	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_02"); //Nepøítel je silnìjší ne my. Chci øíct - dokáeme ho porazit?
-	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_03"); //Ještì nejsme mrtví.
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_00"); //Pedro nÃ¡s zradil.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_01"); //SlyÅ¡el jsem o tom, ale nevÄ›dÄ›l jsem, Å¾e o tom takÃ© vÃ­Å¡. Proto jsem nic neÅ™Ã­kal.
+	AI_Output (self ,other,"DIA_Opolos_Kap3_PERM_PEDRO_12_02"); //NepÅ™Ã­tel je silnÄ›jÅ¡Ã­ neÅ¾ my. Chci Å™Ã­ct - dokÃ¡Å¾eme ho porazit?
+	AI_Output (other,self ,"DIA_Opolos_Kap3_PERM_PEDRO_15_03"); //JeÅ¡tÄ› nejsme mrtvÃ­.
 	
 	if (Opolos_Pedro == FALSE)
 	{

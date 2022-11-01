@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------------
 func void B_Dragon_Undead_Bla()
 {
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_00"); //Tak co, mladej? Máš teda originální kopii?
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_00"); //Tak co, mladej? MÃ¡Å¡ teda originÃ¡lnÃ­ kopii?
 };
 
 // *************************************************************************
@@ -59,70 +59,70 @@ FUNC INT DIA_Dragon_Undead_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Undead_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_00"); //Tak jsi mì koneènì našel. Na tvùj pøíjezd jsem èekal tak dlouho.
-	AI_Output (other, self, "DIA_Dragon_Undead_Hello_15_01"); //Tak pokraèuj. Pøestaò pøedstírat, e sis to takhle pøedstavoval.
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_02"); //(hluènı smích) Co ty mùeš vìdìt o mıch zámìrech?
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_03"); //Neposlal jsem snad Pátraèe, aby tì vlákali mnì do cesty?
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_04"); //Nenechával jsem ti snad stopy o své existenci tak na oèích, es je nemohl minout?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_00"); //Tak jsi mÄ› koneÄnÄ› naÅ¡el. Na tvÅ¯j pÅ™Ã­jezd jsem Äekal tak dlouho.
+	AI_Output (other, self, "DIA_Dragon_Undead_Hello_15_01"); //Tak pokraÄuj. PÅ™estaÅˆ pÅ™edstÃ­rat, Å¾e sis to takhle pÅ™edstavoval.
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_02"); //(hluÄnÃ½ smÃ­ch) Co ty mÅ¯Å¾eÅ¡ vÄ›dÄ›t o mÃ½ch zÃ¡mÄ›rech?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_03"); //Neposlal jsem snad PÃ¡traÄe, aby tÄ› vlÃ¡kali mnÄ› do cesty?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_04"); //NenechÃ¡val jsem ti snad stopy o svÃ© existenci tak na oÄÃ­ch, Å¾es je nemohl minout?
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_05"); //A nepøispìla snad draèí vejce k vylepšení tvé zbroje, take ses sem mohl snadnìji dostat?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_05"); //A nepÅ™ispÄ›la snad draÄÃ­ vejce k vylepÅ¡enÃ­ tvÃ© zbroje, takÅ¾e ses sem mohl snadnÄ›ji dostat?
 	};
 
 	if (hero.guild == GIL_PAL)
 	{	
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_06"); //Nebyli snad znovuzrození paladinové dostateènım dùvodem, abys zaèal pátrat po skryté moci v pozadí?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_06"); //Nebyli snad znovuzrozenÃ­ paladinovÃ© dostateÄnÃ½m dÅ¯vodem, abys zaÄal pÃ¡trat po skrytÃ© moci v pozadÃ­?
 	};
 
 	if (hero.guild == GIL_KDF)
 	{	
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_07"); //Nebylo snad prokletí tvého rodu dostateènım dùvodem, abys zaèal pátrat po skryté síle v pozadí?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_07"); //Nebylo snad prokletÃ­ tvÃ©ho rodu dostateÄnÃ½m dÅ¯vodem, abys zaÄal pÃ¡trat po skrytÃ© sÃ­le v pozadÃ­?
 	};
 
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_08"); //A se budeš vykrucovat, jak chceš, tohle všechno popøít nemùeš.
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_08"); //AÅ¥ se budeÅ¡ vykrucovat, jak chceÅ¡, tohle vÅ¡echno popÅ™Ã­t nemÅ¯Å¾eÅ¡.
 	
 	//ADDON
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_01"); //Pouze jedno nikdo nepøedpovìdìl! 
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_02"); //Znièil jsi jednoho z mıch sluebníkù! Byl vyvolen, aby nosil Dráp.
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_03"); //Ale jak vidím, nyní jej nosíš ty. Za tu uráku zemøeš!
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_01"); //Pouze jedno nikdo nepÅ™edpovÄ›dÄ›l! 
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_02"); //ZniÄil jsi jednoho z mÃ½ch sluÅ¾ebnÃ­kÅ¯! Byl vyvolen, aby nosil DrÃ¡p.
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_03"); //Ale jak vidÃ­m, nynÃ­ jej nosÃ­Å¡ ty. Za tu urÃ¡Å¾ku zemÅ™eÅ¡!
 	
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Dost øeèí.", DIA_Dragon_Undead_Hello_attack );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Jménem koho vedeš své taení proti lidstvu?", DIA_Dragon_Undead_Hello_Auftraggeber );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Proè jsi tady?", DIA_Dragon_Undead_Hello_warum );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Dost Å™eÄÃ­.", DIA_Dragon_Undead_Hello_attack );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "JmÃ©nem koho vedeÅ¡ svÃ© taÅ¾enÃ­ proti lidstvu?", DIA_Dragon_Undead_Hello_Auftraggeber );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "ProÄ jsi tady?", DIA_Dragon_Undead_Hello_warum );
 	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Kdo jsi?", DIA_Dragon_Undead_Hello_wer );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Hlavním nepøítelem je nemrtvı drak. Musím ho zabít, ještì ne z tohoto zatraceného ostrova odletí."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"HlavnÃ­m nepÅ™Ã­telem je nemrtvÃ½ drak. MusÃ­m ho zabÃ­t, jeÅ¡tÄ› neÅ¾ z tohoto zatracenÃ©ho ostrova odletÃ­."); 
 };
 func void DIA_Dragon_Undead_Hello_wer ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_01"); //(smích) Ještì poøád se na to musíš ptát? Zeptej se sám sebe, ty hlupáku. Víš, kdo jsem.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_02"); //Nenesu ádné jméno. Stejnì jako ty.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_03"); //Mùj stvoøitel mi dal boskou moc. Stejnì jako ty v sobì nosíš moc svého boha.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_01"); //(smÃ­ch) JeÅ¡tÄ› poÅ™Ã¡d se na to musÃ­Å¡ ptÃ¡t? Zeptej se sÃ¡m sebe, ty hlupÃ¡ku. VÃ­Å¡, kdo jsem.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_02"); //Nenesu Å¾Ã¡dnÃ© jmÃ©no. StejnÄ› jako ty.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_03"); //MÅ¯j stvoÅ™itel mi dal boÅ¾skou moc. StejnÄ› jako ty v sobÄ› nosÃ­Å¡ moc svÃ©ho boha.
 
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_04"); //Mım osudem je znièení svìta.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_04"); //MÃ½m osudem je zniÄenÃ­ svÄ›ta.
 	
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_05"); //Stejnì jako je tvùj osud pøedurèen bezúhonností a poctivostí paladinù.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_05"); //StejnÄ› jako je tvÅ¯j osud pÅ™edurÄen bezÃºhonnostÃ­ a poctivostÃ­ paladinÅ¯.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_06"); //Stejnì jako tvá ruka pøináší jistou smrt, drakobijèe.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_06"); //StejnÄ› jako tvÃ¡ ruka pÅ™inÃ¡Å¡Ã­ jistou smrt, drakobijÄe.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_07"); //Stejnì jako je tvım údìlem kázat Innosovo uèení, mágu ohnì.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_07"); //StejnÄ› jako je tvÃ½m ÃºdÄ›lem kÃ¡zat Innosovo uÄenÃ­, mÃ¡gu ohnÄ›.
 		};
 
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_08"); //Necítíš to pouto, co nás spolu pojí? Ano, ty víš, kdo jsem.
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_09"); //(rozzlobenì) Ne. To nemùe bıt pravda. Xardas vdycky øíkal...
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_10"); //Xardas je slabı a ty pro mì nepøedstavuješ ádnou hrozbu. Pro tebe je ctí, e ses se mnou mohl vùbec setkat.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_11"); //Tak stojí psáno. Nadešel èas pøijmout svùj osud.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_08"); //NecÃ­tÃ­Å¡ to pouto, co nÃ¡s spolu pojÃ­? Ano, ty vÃ­Å¡, kdo jsem.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_09"); //(rozzlobenÄ›) Ne. To nemÅ¯Å¾e bÃ½t pravda. Xardas vÅ¾dycky Å™Ã­kal...
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_10"); //Xardas je slabÃ½ a ty pro mÄ› nepÅ™edstavujeÅ¡ Å¾Ã¡dnou hrozbu. Pro tebe je ctÃ­, Å¾e ses se mnou mohl vÅ¯bec setkat.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_11"); //Tak stojÃ­ psÃ¡no. NadeÅ¡el Äas pÅ™ijmout svÅ¯j osud.
 	
 	
 
@@ -130,32 +130,32 @@ func void DIA_Dragon_Undead_Hello_wer ()
 
 func void DIA_Dragon_Undead_Hello_warum ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_warum_15_00"); //Proè jsi tady?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_01"); //Boství, je mi bylo propùjèeno, mì podnítilo k tomu, abych tento svìt utopil v øece násilí.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_02"); //Jedinì tehdy, a poslední pevnost poctivıch padne, si budu moci odpoèinout.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_warum_15_00"); //ProÄ jsi tady?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_01"); //BoÅ¾stvÃ­, jeÅ¾ mi bylo propÅ¯jÄeno, mÄ› podnÃ­tilo k tomu, abych tento svÄ›t utopil v Å™ece nÃ¡silÃ­.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_02"); //JedinÄ› tehdy, aÅ¾ poslednÃ­ pevnost poctivÃ½ch padne, si budu moci odpoÄinout.
 
 };
 
 func void DIA_Dragon_Undead_Hello_Auftraggeber ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_Auftraggeber_15_00"); //Jménem koho vedeš své taení proti lidstvu?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_01"); //Mım pánem je samotná Tma. Znáš ji. Slyšíš její volání.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_03"); //Má vojska povstanou v jejím jménu a zahalí svìt do temnoty.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_Auftraggeber_15_00"); //JmÃ©nem koho vedeÅ¡ svÃ© taÅ¾enÃ­ proti lidstvu?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_01"); //MÃ½m pÃ¡nem je samotnÃ¡ Tma. ZnÃ¡Å¡ ji. SlyÅ¡Ã­Å¡ jejÃ­ volÃ¡nÃ­.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_03"); //MÃ¡ vojska povstanou v jejÃ­m jmÃ©nu a zahalÃ­ svÄ›t do temnoty.
 };
 
 func void DIA_Dragon_Undead_Hello_attack ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_attack_15_00"); //Dost øeèí. Zaenu tì zpìt pod kamení, z pod nìho ses vyhrabal, ty zrùdo.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_01"); //(smích) Ještì nejsi schopen mì porazit. Od mého cíle mì u dìlí jen nepatrná chvilka.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_attack_15_00"); //Dost Å™eÄÃ­. ZaÅ¾enu tÄ› zpÄ›t pod kamenÃ­, z pod nÄ›hoÅ¾ ses vyhrabal, ty zrÅ¯do.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_01"); //(smÃ­ch) JeÅ¡tÄ› nejsi schopen mÄ› porazit. Od mÃ©ho cÃ­le mÄ› uÅ¾ dÄ›lÃ­ jen nepatrnÃ¡ chvilka.
 	//ADDON
 	if (C_ScHasEquippedBeliarsWeapon())
 	|| (C_ScHasReadiedBeliarsWeapon())
 	|| (C_ScHasBeliarsRune())
 	{
-		AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_04"); //Ty vánì vìøíš, e mì tím Drápem zraníš? (smìje se)
+		AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_04"); //Ty vÃ¡Å¾nÄ› vÄ›Å™Ã­Å¡, Å¾e mÄ› tÃ­m DrÃ¡pem zranÃ­Å¡? (smÄ›je se)
 	};
 	//ADDON ENDE
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_02"); //Tvé kosti mi poslouí k tomu, abych mohl nechat vát zhoubnı vítr smrti nad povrchem celého svìta.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_02"); //TvÃ© kosti mi poslouÅ¾Ã­ k tomu, abych mohl nechat vÃ¡t zhoubnÃ½ vÃ­tr smrti nad povrchem celÃ©ho svÄ›ta.
 		
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 

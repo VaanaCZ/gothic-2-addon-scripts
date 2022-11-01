@@ -43,14 +43,14 @@ func int DIA_Egill_HALLO_Condition ()
 func void DIA_Egill_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_HALLO_15_00"); //Co se stalo?
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //U je to hodnì dlouho, co jsme na našem pozemku naposledy vidìli nìjakého cizince, co nás nechtìl stáhnout z kùe.
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Doufám, e se v tobì nemılím.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //UÅ¾ je to hodnÄ› dlouho, co jsme na naÅ¡em pozemku naposledy vidÄ›li nÄ›jakÃ©ho cizince, co nÃ¡s nechtÄ›l stÃ¡hnout z kÅ¯Å¾e.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //DoufÃ¡m, Å¾e se v tobÄ› nemÃ½lÃ­m.
 	AI_Output			(self, other, "DIA_Egill_HALLO_08_03"); //Jsem Egill.
 	
 	if (Hlp_IsValidNpc (Ehnim))
 		&& (!C_NpcIsDown (Ehnim))
 		{
-			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //A támhle ten divnej ptáèek je mùj bratr Ehnim.
+			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //A tÃ¡mhle ten divnej ptÃ¡Äek je mÅ¯j bratr Ehnim.
 		};
 };
 
@@ -65,7 +65,7 @@ instance DIA_Egill_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Egill_FELDARBEIT_Condition;
 	information	 = 	DIA_Egill_FELDARBEIT_Info;
 
-	description	 = 	"Jak jdou polní práce?";
+	description	 = 	"Jak jdou polnÃ­ prÃ¡ce?";
 };
 
 func int DIA_Egill_FELDARBEIT_Condition ()
@@ -78,8 +78,8 @@ func int DIA_Egill_FELDARBEIT_Condition ()
 
 func void DIA_Egill_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Jak jdou polní práce?
-	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //Vıbornì. Kdyby ty mizernı polní škùdci poøád nenièili naši úrodu...
+	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Jak jdou polnÃ­ prÃ¡ce?
+	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //VÃ½bornÄ›. Kdyby ty mizernÃ½ polnÃ­ Å¡kÅ¯dci poÅ™Ã¡d neniÄili naÅ¡i Ãºrodu...
 
 };
 
@@ -94,7 +94,7 @@ instance DIA_Egill_FELDRAEUBER		(C_INFO)
 	condition	 = 	DIA_Egill_FELDRAEUBER_Condition;
 	information	 = 	DIA_Egill_FELDRAEUBER_Info;
 
-	description	 = 	"Proè s tìmi škùdci nìco neudìláte?";
+	description	 = 	"ProÄ s tÄ›mi Å¡kÅ¯dci nÄ›co neudÄ›lÃ¡te?";
 };
 
 func int DIA_Egill_FELDRAEUBER_Condition ()
@@ -107,9 +107,9 @@ func int DIA_Egill_FELDRAEUBER_Condition ()
 
 func void DIA_Egill_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //Proè s tìmi škùdci nìco neudìláte?
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Si dìláš srandu. Od tı doby, co jsem na tıhle farmì, u jsem jich zabil tolik, e u to ani nespoèítám.
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Ale bohuel, vdycky pøijdou další.
+	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //ProÄ s tÄ›mi Å¡kÅ¯dci nÄ›co neudÄ›lÃ¡te?
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Si dÄ›lÃ¡Å¡ srandu. Od tÃ½ doby, co jsem na tÃ½hle farmÄ›, uÅ¾ jsem jich zabil tolik, Å¾e uÅ¾ to ani nespoÄÃ­tÃ¡m.
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Ale bohuÅ¾el, vÅ¾dycky pÅ™ijdou dalÅ¡Ã­.
 };
 
 
@@ -123,7 +123,7 @@ instance DIA_Egill_STREIT2		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT2_Condition;
 	information	 = 	DIA_Egill_STREIT2_Info;
 
-	description	 = 	"Tvùj bratr mi vyprávìl nìco podobnıho.";
+	description	 = 	"TvÅ¯j bratr mi vyprÃ¡vÄ›l nÄ›co podobnÃ½ho.";
 };
 
 func int DIA_Egill_STREIT2_Condition ()
@@ -144,11 +144,11 @@ func int DIA_Egill_STREIT2_Condition ()
 
 func void DIA_Egill_STREIT2_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //Tvùj bratr mi vyprávìl nìco podobnıho.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //(prohnanì) Aha. Co pøesnì øíkal?
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //e taky sejmul spoustu polních škùdcù.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Co? Ten bøídil nedokáe sám ani najít cestu domù.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Øekni mu, e se takhle nemùe vytahovat.
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //TvÅ¯j bratr mi vyprÃ¡vÄ›l nÄ›co podobnÃ½ho.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //(prohnanÄ›) Aha. Co pÅ™esnÄ› Å™Ã­kal?
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Å½e taky sejmul spoustu polnÃ­ch Å¡kÅ¯dcÅ¯.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Co? Ten bÅ™Ã­dil nedokÃ¡Å¾e sÃ¡m ani najÃ­t cestu domÅ¯.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Å˜ekni mu, Å¾e se takhle nemÅ¯Å¾e vytahovat.
 
 	AI_StopProcessInfos (self);
 };
@@ -165,7 +165,7 @@ instance DIA_Egill_STREIT4		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT4_Condition;
 	information	 = 	DIA_Egill_STREIT4_Info;
 
-	description	 = 	"Ehnim je kvùli tomu trochu naštvanej.";
+	description	 = 	"Ehnim je kvÅ¯li tomu trochu naÅ¡tvanej.";
 };
 
 func int DIA_Egill_STREIT4_Condition ()
@@ -185,8 +185,8 @@ func int DIA_Egill_STREIT4_Condition ()
 
 func void DIA_Egill_STREIT4_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim je kvùli tomu trochu naštvanej.
-	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //A se tak nenaparuje, nebo mu utrhnu hlavu. Øekni mu to.
+	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim je kvÅ¯li tomu trochu naÅ¡tvanej.
+	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //AÅ¥ se tak nenaparuje, nebo mu utrhnu hlavu. Å˜ekni mu to.
 
 	AI_StopProcessInfos (self);
 };
@@ -217,7 +217,7 @@ func int DIA_Egill_PERMKAP1_Condition ()
 
 func void DIA_Egill_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //Nenadìlal u jsi dost škody? Mám dojem, e bys mìl vypadnout. Hned.
+	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //NenadÄ›lal uÅ¾ jsi dost Å¡kody? MÃ¡m dojem, Å¾e bys mÄ›l vypadnout. Hned.
 
 	AI_StopProcessInfos (self);
 };

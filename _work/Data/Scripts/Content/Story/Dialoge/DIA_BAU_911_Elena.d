@@ -31,7 +31,7 @@ instance DIA_Elena_HALLO		(C_INFO)
 	condition	= DIA_Elena_HALLO_Condition;
 	information	= DIA_Elena_HALLO_Info;
 	permanent	= FALSE;
-	description	= "Haló, krásná paní.";
+	description	= "HalÃ³, krÃ¡snÃ¡ panÃ­.";
 };
 
 func int DIA_Elena_HALLO_Condition ()
@@ -41,14 +41,14 @@ func int DIA_Elena_HALLO_Condition ()
 
 func void DIA_Elena_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //Haló, krásná paní.
+	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //HalÃ³, krÃ¡snÃ¡ panÃ­.
 	if (other.guild == GIL_NONE)
 	{
 		AI_Output (self, other, "DIA_Elena_HALLO_16_01"); //Hm. Odkud jsi utekl?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Elena_HALLO_16_02"); //Co chceš?
+		AI_Output (self, other, "DIA_Elena_HALLO_16_02"); //Co chceÅ¡?
 	};
 };
 
@@ -63,7 +63,7 @@ instance DIA_Elena_Aufstand		(C_INFO)
 	condition	= DIA_Elena_Aufstand_Condition;
 	information	= DIA_Elena_Aufstand_Info;
 	permanent	= FALSE;
-	description	= "Øíká se, e jste se postavili králi?";
+	description	= "Å˜Ã­kÃ¡ se, Å¾e jste se postavili krÃ¡li?";
 };
 
 func int DIA_Elena_Aufstand_Condition ()
@@ -76,11 +76,11 @@ func int DIA_Elena_Aufstand_Condition ()
 
 func void DIA_Elena_Aufstand_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Øíká se, e jste se postavili králi?
-	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Mùj otec se rozhodl, e nadešel èas na to, abychom se zaèali spoléhat sami na sebe.
+	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Å˜Ã­kÃ¡ se, Å¾e jste se postavili krÃ¡li?
+	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //MÅ¯j otec se rozhodl, Å¾e nadeÅ¡el Äas na to, abychom se zaÄali spolÃ©hat sami na sebe.
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //Domobrana nám nikdy nepomohla. Vdycky jen pøišli a sebrali nám naše zásoby jídla.
+		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //Domobrana nÃ¡m nikdy nepomohla. VÅ¾dycky jen pÅ™iÅ¡li a sebrali nÃ¡m naÅ¡e zÃ¡soby jÃ­dla.
 	};
 };
 
@@ -94,7 +94,7 @@ instance DIA_Elena_Arbeit		(C_INFO)
 	condition	= DIA_Elena_Arbeit_Condition;
 	information	= DIA_Elena_Arbeit_Info;
 	permanent	= FALSE;
-	description	= "Jaká práce je tady na farmì k dispozici?";
+	description	= "JakÃ¡ prÃ¡ce je tady na farmÄ› k dispozici?";
 };
 
 func int DIA_Elena_Arbeit_Condition ()
@@ -108,12 +108,12 @@ func int DIA_Elena_Arbeit_Condition ()
 
 func void DIA_Elena_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Jaká práce je tady na farmì k dispozici?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Mùj otec platí kadému, kdo pomáhá bránit farmu.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //Mìl bys zájem? Nevypadáš jako nìkdo, kdo by se hrnul do práce námezdního rolníka.
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Kolik tvùj otec platí?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //To bys mìl projednat spíš s ním.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Vím jen, e kadı oldák tady dennì dostává old.
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //JakÃ¡ prÃ¡ce je tady na farmÄ› k dispozici?
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //MÅ¯j otec platÃ­ kaÅ¾dÃ©mu, kdo pomÃ¡hÃ¡ brÃ¡nit farmu.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //MÄ›l bys zÃ¡jem? NevypadÃ¡Å¡ jako nÄ›kdo, kdo by se hrnul do prÃ¡ce nÃ¡mezdnÃ­ho rolnÃ­ka.
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Kolik tvÅ¯j otec platÃ­?
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //To bys mÄ›l projednat spÃ­Å¡ s nÃ­m.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //VÃ­m jen, Å¾e kaÅ¾dÃ½ Å¾oldÃ¡k tady dennÄ› dostÃ¡vÃ¡ Å¾old.
 };
 
 // ************************************************************
@@ -126,7 +126,7 @@ instance DIA_Elena_Regeln		(C_INFO)
 	condition	= DIA_Elena_Regeln_Condition;
 	information	= DIA_Elena_Regeln_Info;
 	permanent	= FALSE;
-	description	= "Máte tu nìjaká pravidla, která bych mìl dodrovat?";
+	description	= "MÃ¡te tu nÄ›jakÃ¡ pravidla, kterÃ¡ bych mÄ›l dodrÅ¾ovat?";
 };
 
 func int DIA_Elena_Regeln_Condition ()
@@ -140,11 +140,11 @@ func int DIA_Elena_Regeln_Condition ()
 
 func void DIA_Elena_Regeln_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //Máte tu nìjaká pravidla, která bych mìl dodrovat?
-	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //Nedotıkej se tu nièeho, co není tvoje.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //Vyhıbej se místùm, na kterıch nemáš co dìlat.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //A kdy budeš muset zaèít bojovat, dr se poblí oldákù.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Pokud zaèneš hádku s farmáøi, budou tady všichni proti tobì.
+	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //MÃ¡te tu nÄ›jakÃ¡ pravidla, kterÃ¡ bych mÄ›l dodrÅ¾ovat?
+	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //NedotÃ½kej se tu niÄeho, co nenÃ­ tvoje.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //VyhÃ½bej se mÃ­stÅ¯m, na kterÃ½ch nemÃ¡Å¡ co dÄ›lat.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //A kdyÅ¾ budeÅ¡ muset zaÄÃ­t bojovat, drÅ¾ se poblÃ­Å¾ Å¾oldÃ¡kÅ¯.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Pokud zaÄneÅ¡ hÃ¡dku s farmÃ¡Å™i, budou tady vÅ¡ichni proti tobÄ›.
 };
 
 
@@ -158,7 +158,7 @@ instance DIA_Elena_AUFGABE		(C_INFO)
 	condition	= DIA_Elena_AUFGABE_Condition;
 	information	= DIA_Elena_AUFGABE_Info;
 	permanent 	= FALSE;
-	description	= "Jakou práci tu vykonáváš?";
+	description	= "Jakou prÃ¡ci tu vykonÃ¡vÃ¡Å¡?";
 };
 
 func int DIA_Elena_AUFGABE_Condition ()
@@ -171,12 +171,12 @@ func int DIA_Elena_AUFGABE_Condition ()
 
 func void DIA_Elena_AUFGABE_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Jakou práci tu vykonáváš?
-	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //Prodávám zboí, které vyrobíme. Jestli chceš nìco koupit, staèí dát vìdìt.
-	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Ale dovol mi tì varovat. Nestojím o ádné smlouvání a nemám ráda dlouhé prsty, rozumíme si?
+	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Jakou prÃ¡ci tu vykonÃ¡vÃ¡Å¡?
+	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //ProdÃ¡vÃ¡m zboÅ¾Ã­, kterÃ© vyrobÃ­me. Jestli chceÅ¡ nÄ›co koupit, staÄÃ­ dÃ¡t vÄ›dÄ›t.
+	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Ale dovol mi tÄ› varovat. NestojÃ­m o Å¾Ã¡dnÃ© smlouvÃ¡nÃ­ a nemÃ¡m rÃ¡da dlouhÃ© prsty, rozumÃ­me si?
 	
 	Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTrader,"Ellena prodává na Onarovì statku rùzné zboí.");
+	B_LogEntry (Topic_SoldierTrader,"Ellena prodÃ¡vÃ¡ na OnarovÄ› statku rÅ¯znÃ© zboÅ¾Ã­.");
 };
 
 // ************************************************************
@@ -194,7 +194,7 @@ instance DIA_Elena_TRADE		(C_INFO)
 	condition	= DIA_Elena_TRADE_Condition;
 	information	= DIA_Elena_TRADE_Info;
 	permanent	= TRUE;
-	description	= "Uka mi své zboí!";
+	description	= "UkaÅ¾ mi svÃ© zboÅ¾Ã­!";
 	trade		= TRUE;
 };
 
@@ -209,9 +209,9 @@ func int DIA_Elena_TRADE_Condition ()
 
 func void DIA_Elena_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_TRADE_15_00"); //Uka mi své zboí!
+	AI_Output			(other, self, "DIA_Elena_TRADE_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­!
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Elena_TRADE_16_01"); //Co ti mùu nabídnout?
+	AI_Output			(self, other, "DIA_Elena_TRADE_16_01"); //Co ti mÅ¯Å¾u nabÃ­dnout?
 };
 
 // ************************************************************
@@ -224,7 +224,7 @@ instance DIA_Elena_PERM		(C_INFO)
 	condition	= DIA_Elena_PERM_Condition;
 	information	= DIA_Elena_PERM_Info;
 	permanent	= TRUE;
-	description	= "Stalo se tu poslední dobou nìco dùleitého?";
+	description	= "Stalo se tu poslednÃ­ dobou nÄ›co dÅ¯leÅ¾itÃ©ho?";
 };
 
 func int DIA_Elena_PERM_Condition ()
@@ -237,30 +237,30 @@ func int DIA_Elena_PERM_Condition ()
 
 func void DIA_Elena_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //Stalo se tu poslední dobou nìco dùleitého?
+	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //Stalo se tu poslednÃ­ dobou nÄ›co dÅ¯leÅ¾itÃ©ho?
 
 	if (kapitel <= 1)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Pøed pár dny mùj otec rozhlásil, e u dál nesmíme nic prodávat ve mìstì.
-		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Tak teï zùstávám na farmì a prodávám své zboí jenom návštìvníkùm statku.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //PÅ™ed pÃ¡r dny mÅ¯j otec rozhlÃ¡sil, Å¾e uÅ¾ dÃ¡l nesmÃ­me nic prodÃ¡vat ve mÄ›stÄ›.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Tak teÄ zÅ¯stÃ¡vÃ¡m na farmÄ› a prodÃ¡vÃ¡m svÃ© zboÅ¾Ã­ jenom nÃ¡vÅ¡tÄ›vnÃ­kÅ¯m statku.
 	
 		Elena_Trade_mit_mir = TRUE;
 	}
 	else if (Kapitel == 2)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Domobrana napadá sousední farmy èím dál tím èastìji. Je to jen otázka èasu, kdy mùj otec zasáhne.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Domobrana napadÃ¡ sousednÃ­ farmy ÄÃ­m dÃ¡l tÃ­m ÄastÄ›ji. Je to jen otÃ¡zka Äasu, kdy mÅ¯j otec zasÃ¡hne.
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //V zemi je teï nebezpeèno. Skoro nikdo si netroufne ani za humna. U je to pìknì dlouho, co se nìkdo od nás naposledy vypravil do mìsta.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //V zemi je teÄ nebezpeÄno. Skoro nikdo si netroufne ani za humna. UÅ¾ je to pÄ›knÄ› dlouho, co se nÄ›kdo od nÃ¡s naposledy vypravil do mÄ›sta.
 	}
 	else if (kapitel == 4)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //oldnéøi byli èím dál tím víc nesví. Ale jakmile odtáhl Sylvio se svımi kumpány, vypadají u trochu klidnìji.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //Å½oldnÃ©Å™i byli ÄÃ­m dÃ¡l tÃ­m vÃ­c nesvÃ­. Ale jakmile odtÃ¡hl Sylvio se svÃ½mi kumpÃ¡ny, vypadajÃ­ uÅ¾ trochu klidnÄ›ji.
 	}
 	else //Kapitel 5
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_06"); //Všichni tu mluví o hrozícím skøetím útoku. Ale já tomu moc nevìøím. Podle mì jsme tady na farmì pøed nimi v bezpeèí.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_06"); //VÅ¡ichni tu mluvÃ­ o hrozÃ­cÃ­m skÅ™etÃ­m Ãºtoku. Ale jÃ¡ tomu moc nevÄ›Å™Ã­m. Podle mÄ› jsme tady na farmÄ› pÅ™ed nimi v bezpeÄÃ­.
 	};
 };
 
@@ -282,7 +282,7 @@ instance DIA_Elena_MINENANTEIL		(C_INFO)
 	condition	 = 	DIA_Elena_MINENANTEIL_Condition;
 	information	 = 	DIA_Elena_MINENANTEIL_Info;
 
-	description  =  "Prodáváš dùlní akcie?";
+	description  =  "ProdÃ¡vÃ¡Å¡ dÅ¯lnÃ­ akcie?";
 };
 
 func int DIA_Elena_MINENANTEIL_Condition ()
@@ -297,8 +297,8 @@ func int DIA_Elena_MINENANTEIL_Condition ()
 
 func void DIA_Elena_MINENANTEIL_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //Prodáváš dùlní akcie?
-	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //No a co? Sám jsem za nì zaplatil poslední drobné.
+	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //ProdÃ¡vÃ¡Å¡ dÅ¯lnÃ­ akcie?
+	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //No a co? SÃ¡m jsem za nÄ› zaplatil poslednÃ­ drobnÃ©.
 	B_GivePlayerXP (XP_Ambient);
 };
 

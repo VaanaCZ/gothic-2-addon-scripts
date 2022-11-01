@@ -72,32 +72,32 @@ func void DIA_AmbientDementor_Info ()
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 		{	
-			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Pøišel jsi nás rušit v obøadu? Jeho duše náleí nám. Teï u ho nezachráníš, mágu.
+			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //PÅ™iÅ¡el jsi nÃ¡s ruÅ¡it v obÅ™adu? Jeho duÅ¡e nÃ¡leÅ¾Ã­ nÃ¡m. TeÄ uÅ¾ ho nezachrÃ¡nÃ­Å¡, mÃ¡gu.
 		}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 		{
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 				{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(smìje se) Pøišel jsi, abys pošpinil mé jméno i mou práci? Udìlal jsi osudovou chybu.
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Nikomu se ještì nepodaøilo projít mou kryptou. Mìl by ses vrátit, protoe do posvátnıch Irdorathskıch síní se nikdy nedostaneš.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(smÄ›je se) PÅ™iÅ¡el jsi, abys poÅ¡pinil mÃ© jmÃ©no i mou prÃ¡ci? UdÄ›lal jsi osudovou chybu.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Nikomu se jeÅ¡tÄ› nepodaÅ™ilo projÃ­t mou kryptou. MÄ›l by ses vrÃ¡tit, protoÅ¾e do posvÃ¡tnÃ½ch IrdorathskÃ½ch sÃ­nÃ­ se nikdy nedostaneÅ¡.
 				}
 				else
 				{	
 				 	if (randy == 0)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //U ji zašel moc daleko, mrzkı èerve. Nikdy se do naší tajné svatynì nedostaneš.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //UÅ¾ ji zaÅ¡el moc daleko, mrzkÃ½ Äerve. Nikdy se do naÅ¡Ã­ tajnÃ© svatynÄ› nedostaneÅ¡.
 					};
 					if (randy == 1)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //Zùstaò stát, kde jsi. U ani krok!
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //ZÅ¯staÅˆ stÃ¡t, kde jsi. UÅ¾ ani krok!
 					};
 					if (randy == 2)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Dostal ses daleko, ale pøes mì nepøejdeš.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Dostal ses daleko, ale pÅ™es mÄ› nepÅ™ejdeÅ¡.
 					};
 					if (randy == 3)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_06"); //Pøišel jsi zmìøit síly s Pánem, ale nejdøíve se musíš dostat pøes mì.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_06"); //PÅ™iÅ¡el jsi zmÄ›Å™it sÃ­ly s PÃ¡nem, ale nejdÅ™Ã­ve se musÃ­Å¡ dostat pÅ™es mÄ›.
 					};
 				};	
 		}
@@ -105,38 +105,38 @@ func void DIA_AmbientDementor_Info ()
 		{
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Ubohej rádobykouzelníèku, tvá síla se nikdy nebude moci mìøit s Pánovou mocí.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Ubohej rÃ¡dobykouzelnÃ­Äku, tvÃ¡ sÃ­la se nikdy nebude moci mÄ›Å™it s PÃ¡novou mocÃ­.
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //Vybral sis cestu magie, abys nás mohl porazit. Chytrı tah. Ale ve tvém podání je stejnì k nièemu.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //Vybral sis cestu magie, abys nÃ¡s mohl porazit. ChytrÃ½ tah. Ale ve tvÃ©m podÃ¡nÃ­ je stejnÄ› k niÄemu.
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Nemùeš nás zastavit ani jako mág.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //NemÅ¯Å¾eÅ¡ nÃ¡s zastavit ani jako mÃ¡g.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mùj Pán tì znièí. Tvá ubohá komediantská kouzla tì nemùou zachránit.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //MÅ¯j PÃ¡n tÄ› zniÄÃ­. TvÃ¡ ubohÃ¡ komediantskÃ¡ kouzla tÄ› nemÅ¯Å¾ou zachrÃ¡nit.
 			};
 		}
 	else
 		{	
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Zachraò se, dokud mùeš. Dál u není úniku.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //ZachraÅˆ se, dokud mÅ¯Å¾eÅ¡. DÃ¡l uÅ¾ nenÃ­ Ãºniku.
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Teï pocítíš Pánovu moc. Nemùeš jí uniknout.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //TeÄ pocÃ­tÃ­Å¡ PÃ¡novu moc. NemÅ¯Å¾eÅ¡ jÃ­ uniknout.
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Pán si ádá tvou hlavu. Teï u tì nic nezachrání.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //PÃ¡n si Å¾Ã¡dÃ¡ tvou hlavu. TeÄ uÅ¾ tÄ› nic nezachrÃ¡nÃ­.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Chytil ses do pasti a teï nastal èas, abychom tì odstranili z tohoto svìta.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Chytil ses do pasti a teÄ nastal Äas, abychom tÄ› odstranili z tohoto svÄ›ta.
 			};
 		};
 };

@@ -44,9 +44,9 @@ FUNC INT DIA_Cipher_Hello_Condition()
 FUNC VOID DIA_Cipher_Hello_Info()
 {	
 	AI_Output (other, self, "DIA_Cipher_Hello_15_00"); //Jak se vede?
-	AI_Output (self, other, "DIA_Cipher_Hello_07_01"); //Hej, neznám tì odnìkud?
-	AI_Output (other, self, "DIA_Cipher_Hello_15_02"); //Je to moné...
-	AI_Output (self, other, "DIA_Cipher_Hello_07_03"); //Pokoušel jsem se v kolonii obchodovat s trávou z bain, vzpomínáš?
+	AI_Output (self, other, "DIA_Cipher_Hello_07_01"); //Hej, neznÃ¡m tÄ› odnÄ›kud?
+	AI_Output (other, self, "DIA_Cipher_Hello_15_02"); //Je to moÅ¾nÃ©...
+	AI_Output (self, other, "DIA_Cipher_Hello_07_03"); //PokouÅ¡el jsem se v kolonii obchodovat s trÃ¡vou z baÅ¾in, vzpomÃ­nÃ¡Å¡?
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ instance DIA_Cipher_TradeWhat (C_INFO)
 	condition	= DIA_Cipher_TradeWhat_Condition;
 	information	= DIA_Cipher_TradeWhat_Info;
 	permanent	= FALSE;
-	description = "A s èímpak obchoduješ nyní?";
+	description = "A s ÄÃ­mpak obchodujeÅ¡ nynÃ­?";
 };                       
 
 FUNC INT DIA_Cipher_TradeWhat_Condition()
@@ -73,21 +73,21 @@ FUNC INT DIA_Cipher_TradeWhat_Condition()
  
 FUNC VOID DIA_Cipher_TradeWhat_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_TradeWhat_15_00"); //A s èímpak obchoduješ teï?
+	AI_Output (other, self, "DIA_Cipher_TradeWhat_15_00"); //A s ÄÃ­mpak obchodujeÅ¡ teÄ?
 	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_01"); //Ani se neptej.
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_02"); //Pøinesl jsem si s sebou z hornické kolonie celı pytlík téhle trávy.
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_03"); //Hodnì oldákù dostane tu a tam chu si trochu zakouøit. Vydìlal jsem si takhle bokem trochu penìz.
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_04"); //Ale nìjakı bastard mi ukradl z truhly všechnu trávu!
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_02"); //PÅ™inesl jsem si s sebou z hornickÃ© kolonie celÃ½ pytlÃ­k tÃ©hle trÃ¡vy.
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_03"); //HodnÄ› Å¾oldÃ¡kÅ¯ dostane tu a tam chuÅ¥ si trochu zakouÅ™it. VydÄ›lal jsem si takhle bokem trochu penÄ›z.
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_04"); //Ale nÄ›jakÃ½ bastard mi ukradl z truhly vÅ¡echnu trÃ¡vu!
 	
 	Log_CreateTopic (Topic_CipherPaket,LOG_MISSION);
 	Log_SetTopicStatus (Topic_CipherPaket,LOG_RUNNING);
-	B_LogEntry (Topic_CipherPaket, "oldnéøi Cipherovi se ztratil balík trávy z bain.");
+	B_LogEntry (Topic_CipherPaket, "Å½oldnÃ©Å™i Cipherovi se ztratil balÃ­k trÃ¡vy z baÅ¾in.");
 	
 	
 	if (!Npc_IsDead (Bodo))
 	{
-		AI_Output (self, other, "DIA_Cipher_TradeWhat_07_05"); //Jsem si docela jistej, e to byl Bodo. Obıvá stejnou místnost jako já a vdycky se na mì køení jako nìjakej idiot.
-		B_LogEntry (Topic_CipherPaket, "Domnívá se, e zlodìjem je Bodo.");
+		AI_Output (self, other, "DIA_Cipher_TradeWhat_07_05"); //Jsem si docela jistej, Å¾e to byl Bodo. ObÃ½vÃ¡ stejnou mÃ­stnost jako jÃ¡ a vÅ¾dycky se na mÄ› kÅ™enÃ­ jako nÄ›jakej idiot.
+		B_LogEntry (Topic_CipherPaket, "DomnÃ­vÃ¡ se, Å¾e zlodÄ›jem je Bodo.");
 	};
 	
 	MIS_Cipher_Paket = LOG_RUNNING;
@@ -104,7 +104,7 @@ instance DIA_Cipher_DoWithThief (C_INFO)
 	condition	= DIA_Cipher_DoWithThief_Condition;
 	information	= DIA_Cipher_DoWithThief_Info;
 	permanent	= FALSE;
-	description = "Co tedy hodláš s tím zlodìjem udìlat?";
+	description = "Co tedy hodlÃ¡Å¡ s tÃ­m zlodÄ›jem udÄ›lat?";
 };                       
 
 FUNC INT DIA_Cipher_DoWithThief_Condition()
@@ -117,14 +117,14 @@ FUNC INT DIA_Cipher_DoWithThief_Condition()
  
 FUNC VOID DIA_Cipher_DoWithThief_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_00"); //Co tedy chceš s tím zlodìjem udìlat?
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_01"); //Jednou ho urèitì nachytám, jak bude kouøit mojí trávu.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_02"); //A pak si najdu nìjaké odlehlé místo a dám mu takovou lekci, na kterou do smrti nezapomene.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_03"); //Kdybych ho napadnul tady uprostøed dvora, ostatní by si toho všimli a já bych si to odskákal.
+	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_00"); //Co tedy chceÅ¡ s tÃ­m zlodÄ›jem udÄ›lat?
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_01"); //Jednou ho urÄitÄ› nachytÃ¡m, jak bude kouÅ™it mojÃ­ trÃ¡vu.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_02"); //A pak si najdu nÄ›jakÃ© odlehlÃ© mÃ­sto a dÃ¡m mu takovou lekci, na kterou do smrti nezapomene.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_03"); //Kdybych ho napadnul tady uprostÅ™ed dvora, ostatnÃ­ by si toho vÅ¡imli a jÃ¡ bych si to odskÃ¡kal.
 	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_04"); //Jak to?
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_05"); //To je jednoduché. Nemùeme zmlátit farmáøe, jinak bychom Leeovi zaplatili pokutu. Takhle to chce Onar.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_06"); //A èím více svìdkù u toho je, tím více poprasku kolem toho bude. A to by se nám prodrailo.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_07"); //Take tu vìc vyøídím hezky nenápadnì.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_05"); //To je jednoduchÃ©. NemÅ¯Å¾eme zmlÃ¡tit farmÃ¡Å™e, jinak bychom Leeovi zaplatili pokutu. Takhle to chce Onar.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_06"); //A ÄÃ­m vÃ­ce svÄ›dkÅ¯ u toho je, tÃ­m vÃ­ce poprasku kolem toho bude. A to by se nÃ¡m prodraÅ¾ilo.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_07"); //TakÅ¾e tu vÄ›c vyÅ™Ã­dÃ­m hezky nenÃ¡padnÄ›.
 };
 
 // ************************************************************
@@ -138,7 +138,7 @@ instance DIA_Cipher_WannaJoin (C_INFO)
 	condition	= DIA_Cipher_WannaJoin_Condition;
 	information	= DIA_Cipher_WannaJoin_Info;
 	permanent	= FALSE;
-	description = "Chci se pøidat k Leeovım lidem!";
+	description = "Chci se pÅ™idat k LeeovÃ½m lidem!";
 };                       
 
 FUNC INT DIA_Cipher_WannaJoin_Condition()
@@ -152,14 +152,14 @@ FUNC INT DIA_Cipher_WannaJoin_Condition()
  
 FUNC VOID DIA_Cipher_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_00"); //Chci se pøidat k Leeovım lidem!
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_01"); //Leeovım lidem?! Jestli Lee bude pokraèovat tímhle zpùsobem, tak u brzy jeho nebudou!
-	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_02"); //Proè?
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_03"); //Lee byl vdycky kliïas. To byl v kolonii taky.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_04"); //Ale poslední dobou to u pøehání. Chce si sem prostì jen tak sednout a èekat, dokud paladinové neumøou hlady.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_05"); //Sylvio si myslí, e bychom mìli trochu vyèistit malé farmy a okolí mìsta.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_06"); //Myslím, e by se mìl co nejdøíve úplnì zmìnit.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_07"); //V tıhle chvíli tu vìtšina z nás sedí s rukama v klínì - i tak se chceš k nám poøád pøidat?
+	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_00"); //Chci se pÅ™idat k LeeovÃ½m lidem!
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_01"); //LeeovÃ½m lidem?! Jestli Lee bude pokraÄovat tÃ­mhle zpÅ¯sobem, tak uÅ¾ brzy jeho nebudou!
+	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_02"); //ProÄ?
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_03"); //Lee byl vÅ¾dycky kliÄas. To byl v kolonii taky.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_04"); //Ale poslednÃ­ dobou to uÅ¾ pÅ™ehÃ¡nÃ­. Chce si sem prostÄ› jen tak sednout a Äekat, dokud paladinovÃ© neumÅ™ou hlady.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_05"); //Sylvio si myslÃ­, Å¾e bychom mÄ›li trochu vyÄistit malÃ© farmy a okolÃ­ mÄ›sta.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_06"); //MyslÃ­m, Å¾e by se mÄ›l co nejdÅ™Ã­ve ÃºplnÄ› zmÄ›nit.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_07"); //V tÃ½hle chvÃ­li tu vÄ›tÅ¡ina z nÃ¡s sedÃ­ s rukama v klÃ­nÄ› - i tak se chceÅ¡ k nÃ¡m poÅ™Ã¡d pÅ™idat?
 };
 
 // ************************************************************
@@ -173,7 +173,7 @@ instance DIA_Cipher_YesJoin (C_INFO)
 	condition	= DIA_Cipher_YesJoin_Condition;
 	information	= DIA_Cipher_YesJoin_Info;
 	permanent	= FALSE;
-	description = "Chci se stát jedním z vás a je mi jedno jak!";
+	description = "Chci se stÃ¡t jednÃ­m z vÃ¡s a je mi jedno jak!";
 };                       
 
 FUNC INT DIA_Cipher_YesJoin_Condition()
@@ -187,17 +187,17 @@ FUNC INT DIA_Cipher_YesJoin_Condition()
  
 FUNC VOID DIA_Cipher_YesJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_YesJoin_15_00"); //Chci se stát jedním z vás a je mi jedno jak!
-	AI_Output (self, other, "DIA_Cipher_YesJoin_07_01"); //U víš, e musíme nechat o kadém novém rekrutovi hlasovat?
-	AI_Output (other, self, "DIA_Cipher_YesJoin_15_02"); //Na co naráíš?
-	AI_Output (self, other, "DIA_Cipher_YesJoin_07_03"); //No, u jsem hodnì dlouho nic nekouøil. Pøines mi trochu trávy z bain a dostaneš mùj hlas.
-	AI_Output (self, other, "DIA_Cipher_YesJoin_07_04"); //Jistì se ti podaøí nìjakou splašit.
+	AI_Output (other, self, "DIA_Cipher_YesJoin_15_00"); //Chci se stÃ¡t jednÃ­m z vÃ¡s a je mi jedno jak!
+	AI_Output (self, other, "DIA_Cipher_YesJoin_07_01"); //UÅ¾ vÃ­Å¡, Å¾e musÃ­me nechat o kaÅ¾dÃ©m novÃ©m rekrutovi hlasovat?
+	AI_Output (other, self, "DIA_Cipher_YesJoin_15_02"); //Na co narÃ¡Å¾Ã­Å¡?
+	AI_Output (self, other, "DIA_Cipher_YesJoin_07_03"); //No, uÅ¾ jsem hodnÄ› dlouho nic nekouÅ™il. PÅ™ines mi trochu trÃ¡vy z baÅ¾in a dostaneÅ¡ mÅ¯j hlas.
+	AI_Output (self, other, "DIA_Cipher_YesJoin_07_04"); //JistÄ› se ti podaÅ™Ã­ nÄ›jakou splaÅ¡it.
 	
 	MIS_Cipher_BringWeed = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_CipherHerb,LOG_MISSION);
 	Log_SetTopicStatus(Topic_CipherHerb,LOG_RUNNING);
-	B_LogEntry (Topic_CipherHerb,"Cipher se za mì zaruèí, pokud mu pøinesu nìjakou trávu z bain.");
+	B_LogEntry (Topic_CipherHerb,"Cipher se za mÄ› zaruÄÃ­, pokud mu pÅ™inesu nÄ›jakou trÃ¡vu z baÅ¾in.");
 };
 
 // ************************************************************
@@ -211,7 +211,7 @@ instance DIA_Cipher_Joints (C_INFO)
 	condition	= DIA_Cipher_Joints_Condition;
 	information	= DIA_Cipher_Joints_Info;
 	permanent	= TRUE;
-	description = "Co se tıèe trávy z bain...";
+	description = "Co se tÃ½Äe trÃ¡vy z baÅ¾in...";
 };                       
 
 FUNC INT DIA_Cipher_Joints_Condition()
@@ -224,60 +224,60 @@ FUNC INT DIA_Cipher_Joints_Condition()
  
 FUNC VOID DIA_Cipher_Joints_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_Joints_15_00"); //Co se tıèe trávy z bain...
+	AI_Output (other, self, "DIA_Cipher_Joints_15_00"); //Co se tÃ½Äe trÃ¡vy z baÅ¾in...
 	
 	if (MIS_Cipher_Paket == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Cipher_Joints_07_01"); //Pøinesl jsi mi zpátky mùj balíèek trávy! Teï bude všechno v poøádku.
+		AI_Output (self, other, "DIA_Cipher_Joints_07_01"); //PÅ™inesl jsi mi zpÃ¡tky mÅ¯j balÃ­Äek trÃ¡vy! TeÄ bude vÅ¡echno v poÅ™Ã¡dku.
 		if (other.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Cipher_Joints_07_02"); //Samozøejmì budu hlasovat pro tebe.
+			AI_Output (self, other, "DIA_Cipher_Joints_07_02"); //SamozÅ™ejmÄ› budu hlasovat pro tebe.
 			
-			B_LogEntry (TOPIC_SLDRespekt,"Kdy se budu chtít pøidat k oldnéøùm, Cipher se za mì pøimluví.");
+			B_LogEntry (TOPIC_SLDRespekt,"KdyÅ¾ se budu chtÃ­t pÅ™idat k Å¾oldnÃ©Å™Å¯m, Cipher se za mÄ› pÅ™imluvÃ­.");
 		};
 		
-		MIS_Cipher_BringWeed = LOG_OBSOLETE; //Cipher ist glücklich
+		MIS_Cipher_BringWeed = LOG_OBSOLETE; //Cipher ist glÃ¼cklich
 	}
 	else //normal Running
 	{
 		Info_ClearChoices (DIA_Cipher_Joints);
-		Info_AddChoice (DIA_Cipher_Joints, "Uvidím, co se dá dìlat...", DIA_Cipher_Joints_Running);
+		Info_AddChoice (DIA_Cipher_Joints, "UvidÃ­m, co se dÃ¡ dÄ›lat...", DIA_Cipher_Joints_Running);
 		if (Npc_HasItems (other, itmi_joint) > 0)
 		{
-			Info_AddChoice (DIA_Cipher_Joints, "Tady máš pár stébel...", DIA_Cipher_Joints_Success);
+			Info_AddChoice (DIA_Cipher_Joints, "Tady mÃ¡Å¡ pÃ¡r stÃ©bel...", DIA_Cipher_Joints_Success);
 		};
 	};
 };
 
 func void DIA_Cipher_Joints_Running()
 {
-	AI_Output (other, self, "DIA_Cipher_Joints_Running_15_00"); //Uvidím, co se dá dìlat...
+	AI_Output (other, self, "DIA_Cipher_Joints_Running_15_00"); //UvidÃ­m, co se dÃ¡ dÄ›lat...
 	Info_ClearChoices (DIA_Cipher_Joints);
 };
 
 func void DIA_Cipher_Joints_Success()
 {
-	AI_Output (other, self, "DIA_Cipher_Joints_Success_15_00"); //Tady máš pár stébel.
+	AI_Output (other, self, "DIA_Cipher_Joints_Success_15_00"); //Tady mÃ¡Å¡ pÃ¡r stÃ©bel.
 	
 	if (B_GiveInvItems (other, self, itmi_joint, 10))
 	{
-		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_01"); //Ach! Ty jsi mùj èlovìk!
+		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_01"); //Ach! Ty jsi mÅ¯j ÄlovÄ›k!
 		if (other.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_02"); //Máš mùj hlas.
+			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_02"); //MÃ¡Å¡ mÅ¯j hlas.
 		};
 		MIS_Cipher_BringWeed = LOG_SUCCESS;
-		B_LogEntry (TOPIC_SLDRespekt,"Kdy se budu chtít pøidat k oldnéøùm, Cipher se za mì pøimluví.");
+		B_LogEntry (TOPIC_SLDRespekt,"KdyÅ¾ se budu chtÃ­t pÅ™idat k Å¾oldnÃ©Å™Å¯m, Cipher se za mÄ› pÅ™imluvÃ­.");
 		B_GivePlayerXP (XP_CipherWeed);
 		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_03"); //To je všechno? Tohle vykouøím na jeden zátah!
-		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_04"); //To je nejménì na deset špekù.
+		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_03"); //To je vÅ¡echno? Tohle vykouÅ™Ã­m na jeden zÃ¡tah!
+		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_04"); //To je nejmÃ©nÄ› na deset Å¡pekÅ¯.
 		if (other.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_05"); //V kadém pøípadì máš mùj hlas, aby ses k nám pøidal.
+			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_05"); //V kaÅ¾dÃ©m pÅ™Ã­padÄ› mÃ¡Å¡ mÅ¯j hlas, aby ses k nÃ¡m pÅ™idal.
 		};
 	};
 
@@ -296,7 +296,7 @@ instance DIA_Cipher_TRADE (C_INFO)
 	condition	= DIA_Cipher_TRADE_Condition;
 	information	= DIA_Cipher_TRADE_Info;
 	permanent	= TRUE;
-	description = "Uka mi své zboí.";
+	description = "UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 	trade		= TRUE;
 };                       
 
@@ -310,14 +310,14 @@ FUNC INT DIA_Cipher_TRADE_Condition()
  
 FUNC VOID DIA_Cipher_TRADE_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_TRADE_15_00"); //Uka mi své zboí.
+	AI_Output (other, self, "DIA_Cipher_TRADE_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 	if (Npc_HasItems(self, itmi_joint) > 0)
 	{
-		AI_Output (self, other, "DIA_Cipher_TRADE_07_01"); //Jistì. Jak je libo.
+		AI_Output (self, other, "DIA_Cipher_TRADE_07_01"); //JistÄ›. Jak je libo.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cipher_TRADE_07_02"); //V téhle chvíli nemám ádnou trávu. Nechceš nìco jiného?
+		AI_Output (self, other, "DIA_Cipher_TRADE_07_02"); //V tÃ©hle chvÃ­li nemÃ¡m Å¾Ã¡dnou trÃ¡vu. NechceÅ¡ nÄ›co jinÃ©ho?
 	};
 };
 
@@ -332,7 +332,7 @@ instance DIA_Cipher_DarDieb (C_INFO)
 	condition	= DIA_Cipher_DarDieb_Condition;
 	information	= DIA_Cipher_DarDieb_Info;
 	permanent	= FALSE;
-	description = "Vím, kdo ti sebral tvojí trávu.";
+	description = "VÃ­m, kdo ti sebral tvojÃ­ trÃ¡vu.";
 };                       
 
 FUNC INT DIA_Cipher_DarDieb_Condition()
@@ -346,14 +346,14 @@ FUNC INT DIA_Cipher_DarDieb_Condition()
  
 FUNC VOID DIA_Cipher_DarDieb_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_00"); //Vím, kdo ti sebral tu trávu.
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_00"); //VÃ­m, kdo ti sebral tu trÃ¡vu.
 	AI_Output (self, other, "DIA_Cipher_DarDieb_07_01"); //Kdo? Byl to Bodo?
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_02"); //Ne - udìlal to jeden z oldákù. Jmenuje se Dar.
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_02"); //Ne - udÄ›lal to jeden z Å¾oldÃ¡kÅ¯. Jmenuje se Dar.
 	AI_Output (self, other, "DIA_Cipher_DarDieb_07_03"); //Ten parchant - kde je?
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_04"); //Tím, e ho najdeš, si nepomùeš. U nemá ten balíèek u sebe. Prodal ho v Khorinidu.
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_04"); //TÃ­m, Å¾e ho najdeÅ¡, si nepomÅ¯Å¾eÅ¡. UÅ¾ nemÃ¡ ten balÃ­Äek u sebe. Prodal ho v Khorinidu.
 	AI_Output (self, other, "DIA_Cipher_DarDieb_07_05"); //KDE JE!?!
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_06"); //Za tou budovou s kuchyní, na rohu.
-	AI_Output (self, other, "DIA_Cipher_DarDieb_07_07"); //JÁ SI TO S NÍM VYØÍDÍM!
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_06"); //Za tou budovou s kuchynÃ­, na rohu.
+	AI_Output (self, other, "DIA_Cipher_DarDieb_07_07"); //JÃ SI TO S NÃM VYÅ˜ÃDÃM!
 	
 	AI_StopProcessInfos(self);
 	other.aivar[AIV_INVINCIBLE] = FALSE;
@@ -371,7 +371,7 @@ instance DIA_Cipher_DarLOST (C_INFO)
 	condition	= DIA_Cipher_DarLOST_Condition;
 	information	= DIA_Cipher_DarLOST_Info;
 	permanent	= FALSE;
-	description = "Vánì jsi dal Darovi co proto... cítíš se teï líp?";
+	description = "VÃ¡Å¾nÄ› jsi dal Darovi co proto... cÃ­tÃ­Å¡ se teÄ lÃ­p?";
 };                       
 
 FUNC INT DIA_Cipher_DarLOST_Condition()
@@ -384,10 +384,10 @@ FUNC INT DIA_Cipher_DarLOST_Condition()
  
 FUNC VOID DIA_Cipher_DarLOST_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_DarLOST_15_00"); //Skuteènì jsi dal Darovi co proto. Cítíš se teï líp?
-	AI_Output (self, other, "DIA_Cipher_DarLOST_07_01"); //(povzdech) Joo, cítím se fajn.
-	AI_Output (other, self, "DIA_Cipher_DarLOST_15_02"); //Pøedpokládám, e ON ne...
-	AI_Output (self, other, "DIA_Cipher_DarLOST_07_03"); //Ten malej ebrák se nemá co štrachat v mojí truhle!
+	AI_Output (other, self, "DIA_Cipher_DarLOST_15_00"); //SkuteÄnÄ› jsi dal Darovi co proto. CÃ­tÃ­Å¡ se teÄ lÃ­p?
+	AI_Output (self, other, "DIA_Cipher_DarLOST_07_01"); //(povzdech) Joo, cÃ­tÃ­m se fajn.
+	AI_Output (other, self, "DIA_Cipher_DarLOST_15_02"); //PÅ™edpoklÃ¡dÃ¡m, Å¾e ON ne...
+	AI_Output (self, other, "DIA_Cipher_DarLOST_07_03"); //Ten malej Å¾ebrÃ¡k se nemÃ¡ co Å¡trachat v mojÃ­ truhle!
 	
 	B_GivePlayerXP ((XP_Ambient)*2);
 };
@@ -403,7 +403,7 @@ instance DIA_Cipher_KrautPaket (C_INFO)
 	condition	= DIA_Cipher_KrautPaket_Condition;
 	information	= DIA_Cipher_KrautPaket_Info;
 	permanent	= FALSE;
-	description = "Není tenhle balíèek trávy náhodou tvùj?";
+	description = "NenÃ­ tenhle balÃ­Äek trÃ¡vy nÃ¡hodou tvÅ¯j?";
 };                       
 
 FUNC INT DIA_Cipher_KrautPaket_Condition()
@@ -417,18 +417,18 @@ FUNC INT DIA_Cipher_KrautPaket_Condition()
  
 FUNC VOID DIA_Cipher_KrautPaket_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_00"); //Není tenhle balíèek trávy náhodou tvùj?
+	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_00"); //NenÃ­ tenhle balÃ­Äek trÃ¡vy nÃ¡hodou tvÅ¯j?
 	B_GiveInvItems (other, self, ItMi_HerbPaket, 1);
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_01"); //No, jasnì! Kde jsi ho sebral?
-	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_02"); //To je dlouhı pøíbìh...
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_01"); //No, jasnÄ›! Kde jsi ho sebral?
+	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_02"); //To je dlouhÃ½ pÅ™Ã­bÄ›h...
 	
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_03"); //To nevadí, opravdu jsi slušnej chlapík.
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_04"); //Tady, vezmi si tohle jako odmìnu. Uij si to!
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_03"); //To nevadÃ­, opravdu jsi sluÅ¡nej chlapÃ­k.
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_04"); //Tady, vezmi si tohle jako odmÄ›nu. UÅ¾ij si to!
 	B_GiveInvItems (self, other, itmi_gold, 200);
 	B_GiveInvItems (self, other, itmi_joint, 10);
 	B_GivePlayerXP (XP_Cipher_KrautPaket);
 	
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_05"); //Teï mì nech trochu pracovat...
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_05"); //TeÄ mÄ› nech trochu pracovat...
 	CreateInvItems (self, itmi_joint, 40);
 	Npc_RemoveInvItems (self, ItMi_HerbPaket, 1);
 	

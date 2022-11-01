@@ -1,6 +1,6 @@
 INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 {
-	name 				=	"Rezavı klíè";
+	name 				=	"RezavÃ½ klÃ­Ä";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -12,8 +12,8 @@ INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Pasuje k tìmto dveøím:";
-	TEXT[3]				=   "Teleportaèní kámen k chrámovému portálu";
+	TEXT[2]				=	"Pasuje k tÄ›mto dveÅ™Ã­m:";
+	TEXT[3]				=   "TeleportaÄnÃ­ kÃ¡men k chrÃ¡movÃ©mu portÃ¡lu";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
@@ -31,8 +31,8 @@ INSTANCE ITKE_Greg_ADDON_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Klíè od klášterní";
-	TEXT[3]				=   "Kapitánova chatrè";
+	TEXT[2]				=	"KlÃ­Ä od klÃ¡Å¡ternÃ­";
+	TEXT[3]				=   "KapitÃ¡nova chatrÄ";
 	TEXT[4]				=   "Greg";	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -49,10 +49,10 @@ INSTANCE ITKE_Addon_Tavern_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Louùv klíè";
+	description			= 	"LouÅ¯v klÃ­Ä";
 	
-	TEXT[2]				=	"Pasuje ke dveøím v hospodì";
-	TEXT[3]				=   "v táboøe banditù";
+	TEXT[2]				=	"Pasuje ke dveÅ™Ã­m v hospodÄ›";
+	TEXT[3]				=   "v tÃ¡boÅ™e banditÅ¯";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -69,10 +69,10 @@ INSTANCE ITKE_Addon_Esteban_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Estebanùv klíè";
+	description			= 	"EstebanÅ¯v klÃ­Ä";
 	
-	TEXT[2]				=	"Pasuje k zámku u truhlice";
-	TEXT[3]				=   "v jeho skrıši";
+	TEXT[2]				=	"Pasuje k zÃ¡mku u truhlice";
+	TEXT[3]				=   "v jeho skrÃ½Å¡i";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -90,10 +90,10 @@ INSTANCE ITKE_ORLAN_TELEPORTSTATION (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Orlanùv klíè";
+	description			= 	"OrlanÅ¯v klÃ­Ä";
 	
-	TEXT[2]				=	"Pasuje ke dveøím v jeskyni";
-	TEXT[3]				=   "jinì od jeho hospody";
+	TEXT[2]				=	"Pasuje ke dveÅ™Ã­m v jeskyni";
+	TEXT[3]				=   "jiÅ¾nÄ› od jeho hospody";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -114,8 +114,8 @@ INSTANCE ITKE_CANYONLIBRARY_HIERARCHY_BOOKS_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"od šamana ve skøetím táboøe";
-	TEXT[3]				=   "pøed knihovnou uèencù";
+	TEXT[2]				=	"od Å¡amana ve skÅ™etÃ­m tÃ¡boÅ™e";
+	TEXT[3]				=   "pÅ™ed knihovnou uÄencÅ¯";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -132,9 +132,9 @@ INSTANCE ITKE_ADDON_BUDDLER_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Klíè od truhlice";
+	description			= 	"KlÃ­Ä od truhlice";
 	
-	TEXT[2]				=	"Z tábora banditù";
+	TEXT[2]				=	"Z tÃ¡bora banditÅ¯";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -152,9 +152,9 @@ INSTANCE ITKE_ADDON_SKINNER (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Klíè od truhlice";
+	description			= 	"KlÃ­Ä od truhlice";
 	
-	TEXT[2]				=	"Skinnerùv klíè";
+	TEXT[2]				=	"SkinnerÅ¯v klÃ­Ä";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -172,9 +172,9 @@ INSTANCE ITKE_Addon_Thorus (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Thorùv klíè";
+	description			= 	"ThorÅ¯v klÃ­Ä";
 	
-	TEXT[2]				=	"Pasuje k zámku u truhlice";
+	TEXT[2]				=	"Pasuje k zÃ¡mku u truhlice";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

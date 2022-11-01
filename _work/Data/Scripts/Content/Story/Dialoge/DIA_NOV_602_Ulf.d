@@ -30,7 +30,7 @@ instance DIA_Ulf_Hallo		(C_INFO)
 	condition	 = 	DIA_Ulf_Hallo_Condition;
 	information	 = 	DIA_Ulf_Hallo_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Ulf_Hallo_Condition ()
@@ -44,16 +44,16 @@ func int DIA_Ulf_Hallo_Condition ()
 };
 func void DIA_Ulf_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Hallo_15_00"); //Co tady dìláš?
+	AI_Output (other, self, "DIA_Ulf_Hallo_15_00"); //Co tady dÄ›lÃ¡Å¡?
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_01"); //Snaím se splnit úkoly, které mi dal klášter, ke tvé spokojenosti.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_01"); //SnaÅ¾Ã­m se splnit Ãºkoly, kterÃ© mi dal klÃ¡Å¡ter, ke tvÃ© spokojenosti.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_02"); //Jsem novic z kláštera. Vykonávám pochùzky pro mágy a také pro paladiny.
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_03"); //Zásobil jsem tøi hostinské ve mìstì vínem z kláštera.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_02"); //Jsem novic z klÃ¡Å¡tera. VykonÃ¡vÃ¡m pochÅ¯zky pro mÃ¡gy a takÃ© pro paladiny.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_03"); //ZÃ¡sobil jsem tÅ™i hostinskÃ© ve mÄ›stÄ› vÃ­nem z klÃ¡Å¡tera.
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -66,7 +66,7 @@ instance DIA_Ulf_Wirte		(C_INFO)
 	condition	 = 	DIA_Ulf_Wirte_Condition;
 	information	 = 	DIA_Ulf_Wirte_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kdo jsou ti tøi krèmáøi?";
+	description	 = 	"Kdo jsou ti tÅ™i krÄmÃ¡Å™i?";
 };
 
 func int DIA_Ulf_Wirte_Condition ()
@@ -80,9 +80,9 @@ func int DIA_Ulf_Wirte_Condition ()
 };
 func void DIA_Ulf_Wirte_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Wirte_15_00"); //Kdo jsou ti tøi krèmáøi?
-	AI_Output (self, other, "DIA_Ulf_Wirte_03_01"); //Jeden z nich je ten dobrı mu tady za barem.
-	AI_Output (self, other, "DIA_Ulf_Wirte_03_02"); //Pak je tady Caragon, kterı má svou tavernu na chrámovém námìstí, a Kardif, majitel nálevny v pøístavní ètvrti.
+	AI_Output (other, self, "DIA_Ulf_Wirte_15_00"); //Kdo jsou ti tÅ™i krÄmÃ¡Å™i?
+	AI_Output (self, other, "DIA_Ulf_Wirte_03_01"); //Jeden z nich je ten dobrÃ½ muÅ¾ tady za barem.
+	AI_Output (self, other, "DIA_Ulf_Wirte_03_02"); //Pak je tady Caragon, kterÃ½ mÃ¡ svou tavernu na chrÃ¡movÃ©m nÃ¡mÄ›stÃ­, a Kardif, majitel nÃ¡levny v pÅ™Ã­stavnÃ­ Ätvrti.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Kloster
@@ -94,7 +94,7 @@ instance DIA_Ulf_Kloster		(C_INFO)
 	condition	 = 	DIA_Ulf_Kloster_Condition;
 	information	 = 	DIA_Ulf_Kloster_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Co mi mùeš øíct o klášteru?";
+	description	 = 	"Co mi mÅ¯Å¾eÅ¡ Å™Ã­ct o klÃ¡Å¡teru?";
 };
 
 func int DIA_Ulf_Kloster_Condition ()
@@ -108,9 +108,9 @@ func int DIA_Ulf_Kloster_Condition ()
 };
 func void DIA_Ulf_Kloster_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Kloster_15_00"); //Co mi mùeš øíct o klášteru?
-	AI_Output (self, other, "DIA_Ulf_Kloster_03_01"); //My novicové hledáme osvícení v modlitbách k Innosovi a od mágù se uèíme základùm víry.
-	AI_Output (self, other, "DIA_Ulf_Kloster_03_02"); //Tím, e jim slouíme, slouíme Innosovi a pøipravujeme se na splynutí s Ohnìm.
+	AI_Output (other, self, "DIA_Ulf_Kloster_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ct o klÃ¡Å¡teru?
+	AI_Output (self, other, "DIA_Ulf_Kloster_03_01"); //My novicovÃ© hledÃ¡me osvÃ­cenÃ­ v modlitbÃ¡ch k Innosovi a od mÃ¡gÅ¯ se uÄÃ­me zÃ¡kladÅ¯m vÃ­ry.
+	AI_Output (self, other, "DIA_Ulf_Kloster_03_02"); //TÃ­m, Å¾e jim slouÅ¾Ã­me, slouÅ¾Ã­me Innosovi a pÅ™ipravujeme se na splynutÃ­ s OhnÄ›m.
 };
 ///////////////////////////////////////////////////////////////////////
 //	bring mich zum Kloster
@@ -122,7 +122,7 @@ instance DIA_Ulf_Bringen	(C_INFO)
 	condition	 = 	DIA_Ulf_Bringen_Condition;
 	information	 = 	DIA_Ulf_Bringen_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Odveï mì do kláštera.";
+	description	 = 	"OdveÄ mÄ› do klÃ¡Å¡tera.";
 };
 
 func int DIA_Ulf_Bringen_Condition ()
@@ -137,12 +137,12 @@ func int DIA_Ulf_Bringen_Condition ()
 };
 func void DIA_Ulf_Bringen_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Bringen_15_00"); //Odveï mì do kláštera.
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_01"); //Na to zapomeò. Víš, kolika pøíšerám jsem se musel cestou sem vyhıbat?
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_02"); //Kdy pomyslím na všechny ty vlky, skøety a další potvory, jsem rád, e u odsud nemusím.
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_03"); //Kromì toho se do kláštera stejnì nedostaneš.
-	AI_Output (other, self, "DIA_Ulf_Bringen_15_04"); //Proè ne?
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_05"); //Vstup je povolen jen mágùm, paladinùm a novicùm.
+	AI_Output (other, self, "DIA_Ulf_Bringen_15_00"); //OdveÄ mÄ› do klÃ¡Å¡tera.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_01"); //Na to zapomeÅˆ. VÃ­Å¡, kolika pÅ™Ã­Å¡erÃ¡m jsem se musel cestou sem vyhÃ½bat?
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_02"); //KdyÅ¾ pomyslÃ­m na vÅ¡echny ty vlky, skÅ™ety a dalÅ¡Ã­ potvory, jsem rÃ¡d, Å¾e uÅ¾ odsud nemusÃ­m.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_03"); //KromÄ› toho se do klÃ¡Å¡tera stejnÄ› nedostaneÅ¡.
+	AI_Output (other, self, "DIA_Ulf_Bringen_15_04"); //ProÄ ne?
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_05"); //Vstup je povolen jen mÃ¡gÅ¯m, paladinÅ¯m a novicÅ¯m.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Kloster
@@ -154,7 +154,7 @@ instance DIA_Ulf_Aufnahme		(C_INFO)
 	condition	 = 	DIA_Ulf_Aufnahme_Condition;
 	information	 = 	DIA_Ulf_Aufnahme_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak se mùu stát novicem?";
+	description	 = 	"Jak se mÅ¯Å¾u stÃ¡t novicem?";
 };
 
 func int DIA_Ulf_Aufnahme_Condition ()
@@ -167,15 +167,15 @@ func int DIA_Ulf_Aufnahme_Condition ()
 };
 func void DIA_Ulf_Aufnahme_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_00"); //Jak se mùu stát novicem?
-	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_01"); //Kdy èlovìk cítí hlubokou touhu...
-	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_02"); //Hele - øekni mi jenom ty základní podmínky.
-	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_03"); //Musíš pøinést dar. Ovci a...
+	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_00"); //Jak se mÅ¯Å¾u stÃ¡t novicem?
+	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_01"); //KdyÅ¾ ÄlovÄ›k cÃ­tÃ­ hlubokou touhu...
+	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_02"); //Hele - Å™ekni mi jenom ty zÃ¡kladnÃ­ podmÃ­nky.
+	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_03"); //MusÃ­Å¡ pÅ™inÃ©st dar. Ovci a...
 	B_Say_Gold (self, other, Summe_Kloster);
 	
 	Log_CreateTopic (Topic_Kloster,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Kloster,LOG_RUNNING);
-	B_LogEntry (Topic_Kloster,"Chci-li se stát novicem v Innosovì klášteøe, potøebuji ovci a 1000 zlaákù.");
+	B_LogEntry (Topic_Kloster,"Chci-li se stÃ¡t novicem v InnosovÄ› klÃ¡Å¡teÅ™e, potÅ™ebuji ovci a 1000 zlaÅ¥Ã¡kÅ¯.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gold
@@ -187,7 +187,7 @@ instance DIA_Ulf_Gold		(C_INFO)
 	condition	 = 	DIA_Ulf_Gold_Condition;
 	information	 = 	DIA_Ulf_Gold_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak mám asi sehnat tolik penìz?";
+	description	 = 	"Jak mÃ¡m asi sehnat tolik penÄ›z?";
 };
 
 func int DIA_Ulf_Gold_Condition ()
@@ -200,8 +200,8 @@ func int DIA_Ulf_Gold_Condition ()
 };
 func void DIA_Ulf_Gold_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Gold_15_00"); //Jak mám asi sehnat tolik penìz?
-	AI_Output (self, other, "DIA_Ulf_Gold_03_01"); //Protoe evidentnì neznáš nikoho, kdo by tu èástku sloil za tebe, nezbıvá ti ne zaèít pracovat.
+	AI_Output (other, self, "DIA_Ulf_Gold_15_00"); //Jak mÃ¡m asi sehnat tolik penÄ›z?
+	AI_Output (self, other, "DIA_Ulf_Gold_03_01"); //ProtoÅ¾e evidentnÄ› neznÃ¡Å¡ nikoho, kdo by tu ÄÃ¡stku sloÅ¾il za tebe, nezbÃ½vÃ¡ ti neÅ¾ zaÄÃ­t pracovat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Schaf
@@ -226,10 +226,10 @@ func int DIA_Ulf_Schaf_Condition ()
 };
 func void DIA_Ulf_Schaf_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Schaf_15_00"); //Kde najdu nìjakou ovci?
-	AI_Output (self, other, "DIA_Ulf_Schaf_03_01"); //U farmáøù, pochopitelnì. Ale nedostaneš ji jen tak.
+	AI_Output (other, self, "DIA_Ulf_Schaf_15_00"); //Kde najdu nÄ›jakou ovci?
+	AI_Output (self, other, "DIA_Ulf_Schaf_03_01"); //U farmÃ¡Å™Å¯, pochopitelnÄ›. Ale nedostaneÅ¡ ji jen tak.
 	
-	B_LogEntry (Topic_Kloster,"Ovci mohu získat od nìkterého sedláka.");
+	B_LogEntry (Topic_Kloster,"Ovci mohu zÃ­skat od nÄ›kterÃ©ho sedlÃ¡ka.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Suche
@@ -254,13 +254,13 @@ func int DIA_Ulf_Suche_Condition ()
 };
 func void DIA_Ulf_Suche_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Suche_03_00"); //Hele, víš, co se stalo?
-	AI_Output (other, self, "DIA_Ulf_Suche_15_01"); //Byl jsi vybrán.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_02"); //No bezva. Pøesnì ve chvíli, kdy si chci loknout pìknì vychlazeného piva, vynoøí se zpoza rohu Daron a øekne mi, e jsem byl vyvolenı.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_03"); //Kdo by to kdy øekl? Vùle Innosova je nevyzpytatelná. A co tì sem pøivádí?
-	AI_Output (other, self, "DIA_Ulf_Suche_15_04"); //Poádal jsem o zkoušku ohnì.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_05"); //To pøece není moné?! Chlapèe, jsi zatracenì odvánı. Znamená to také, e budeš hledat "to, co vìøící najde za cestou"?
-	AI_Output (other, self, "DIA_Ulf_Suche_15_06"); //Vypadá to tak.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_00"); //Hele, vÃ­Å¡, co se stalo?
+	AI_Output (other, self, "DIA_Ulf_Suche_15_01"); //Byl jsi vybrÃ¡n.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_02"); //No bezva. PÅ™esnÄ› ve chvÃ­li, kdy si chci loknout pÄ›knÄ› vychlazenÃ©ho piva, vynoÅ™Ã­ se zpoza rohu Daron a Å™ekne mi, Å¾e jsem byl vyvolenÃ½.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_03"); //Kdo by to kdy Å™ekl? VÅ¯le Innosova je nevyzpytatelnÃ¡. A co tÄ› sem pÅ™ivÃ¡dÃ­?
+	AI_Output (other, self, "DIA_Ulf_Suche_15_04"); //PoÅ¾Ã¡dal jsem o zkouÅ¡ku ohnÄ›.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_05"); //To pÅ™ece nenÃ­ moÅ¾nÃ©?! ChlapÄe, jsi zatracenÄ› odvÃ¡Å¾nÃ½. ZnamenÃ¡ to takÃ©, Å¾e budeÅ¡ hledat "to, co vÄ›Å™Ã­cÃ­ najde za cestou"?
+	AI_Output (other, self, "DIA_Ulf_Suche_15_06"); //VypadÃ¡ to tak.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Rausgefunden
@@ -272,7 +272,7 @@ instance DIA_Ulf_Rausgefunden		(C_INFO)
 	condition	 = 	DIA_Ulf_Rausgefunden_Condition;
 	information	 = 	DIA_Ulf_Rausgefunden_Info;
 	permanent	 = 	FALSE;
-	description  = "U jsi nìco našel?";
+	description  = "UÅ¾ jsi nÄ›co naÅ¡el?";
 };
 func int DIA_Ulf_Rausgefunden_Condition ()
 {	
@@ -285,10 +285,10 @@ func int DIA_Ulf_Rausgefunden_Condition ()
 };
 func void DIA_Ulf_Rausgefunden_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Rausgefunden_15_00"); //U jsi nìco našel?
+	AI_Output (other, self, "DIA_Ulf_Rausgefunden_15_00"); //UÅ¾ jsi nÄ›co naÅ¡el?
 	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_01"); //No, jenom jsem sledoval Agona - ale ztratil jsem ho.
-	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_02"); //A teï... co to øíkají? Sleduj Innosova znamení. Nerozumím tak úplnì tomu kousku o cestì.
-	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_03"); //No co, budu hledat dál.
+	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_02"); //A teÄ... co to Å™Ã­kajÃ­? Sleduj Innosova znamenÃ­. NerozumÃ­m tak ÃºplnÄ› tomu kousku o cestÄ›.
+	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_03"); //No co, budu hledat dÃ¡l.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "FOLLOW");
@@ -304,7 +304,7 @@ instance DIA_Ulf_Folgen		(C_INFO)
 	condition	 = 	DIA_Ulf_Folgen_Condition;
 	information	 = 	DIA_Ulf_Folgen_Info;
 	permanent	 = 	FALSE;
-	description  = "Hej, ty mì sleduješ?";
+	description  = "Hej, ty mÄ› sledujeÅ¡?";
 };
 func int DIA_Ulf_Folgen_Condition ()
 {	
@@ -317,8 +317,8 @@ func int DIA_Ulf_Folgen_Condition ()
 };
 func void DIA_Ulf_Folgen_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Folgen_15_00"); //Hej, ty mì sleduješ?
-	AI_Output (self, other, "DIA_Ulf_Folgen_03_01"); //Nesmysl. Prostì jen náhodou jdu stejnım smìrem.
+	AI_Output (other, self, "DIA_Ulf_Folgen_15_00"); //Hej, ty mÄ› sledujeÅ¡?
+	AI_Output (self, other, "DIA_Ulf_Folgen_03_01"); //Nesmysl. ProstÄ› jen nÃ¡hodou jdu stejnÃ½m smÄ›rem.
 	
 	AI_StopProcessInfos (self);
 };
@@ -332,7 +332,7 @@ instance DIA_Ulf_Stop		(C_INFO)
 	condition	 = 	DIA_Ulf_Stop_Condition;
 	information	 = 	DIA_Ulf_Stop_Info;
 	permanent	 = 	FALSE;
-	description  = "Pøestaò za mnou bìhat!";
+	description  = "PÅ™estaÅˆ za mnou bÄ›hat!";
 };
 func int DIA_Ulf_Stop_Condition ()
 {	
@@ -345,8 +345,8 @@ func int DIA_Ulf_Stop_Condition ()
 };
 func void DIA_Ulf_Stop_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Stop_15_00"); //Pøestaò za mnou bìhat!
-	AI_Output (self, other, "DIA_Ulf_Stop_03_01"); //Já tì nesleduji. Ale prosím, pokud si to myslíš, pùjdu tedy jinudy.
+	AI_Output (other, self, "DIA_Ulf_Stop_15_00"); //PÅ™estaÅˆ za mnou bÄ›hat!
+	AI_Output (self, other, "DIA_Ulf_Stop_03_01"); //JÃ¡ tÄ› nesleduji. Ale prosÃ­m, pokud si to myslÃ­Å¡, pÅ¯jdu tedy jinudy.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "SUCHE");
@@ -374,41 +374,41 @@ func int DIA_Ulf_Abrechnung_Condition ()
 };
 func void DIA_Ulf_Abrechnung_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_00"); //Take se opìt setkáváme. Víš, pøemıšlel jsem. Vìøím, e touha stát se mágem je ve mnì hluboko zakoøenìná.
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_15_01"); //Ale no tak - nedìlej to.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_02"); //Nemám na vıbìr. ivot novice není pro mì.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_03"); //Prostì se musím stát mágem. Potom bude všechno v poøádku. A teï si vezmu to, k èemu jsem oprávnìn.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_04"); //Máš nìjaká poslední slova?
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_00"); //TakÅ¾e se opÄ›t setkÃ¡vÃ¡me. VÃ­Å¡, pÅ™emÃ½Å¡lel jsem. VÄ›Å™Ã­m, Å¾e touha stÃ¡t se mÃ¡gem je ve mnÄ› hluboko zakoÅ™enÄ›nÃ¡.
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_15_01"); //Ale no tak - nedÄ›lej to.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_02"); //NemÃ¡m na vÃ½bÄ›r. Å½ivot novice nenÃ­ pro mÄ›.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_03"); //ProstÄ› se musÃ­m stÃ¡t mÃ¡gem. Potom bude vÅ¡echno v poÅ™Ã¡dku. A teÄ si vezmu to, k Äemu jsem oprÃ¡vnÄ›n.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_04"); //MÃ¡Å¡ nÄ›jakÃ¡ poslednÃ­ slova?
 	
 	Info_ClearChoices (DIA_Ulf_Abrechnung);
-	Info_AddChoice (DIA_Ulf_Abrechnung,"Pøestaò, nechci tì zabít.",DIA_Ulf_Abrechnung_Lass);
-	Info_AddChoice (DIA_Ulf_Abrechnung,"Tak pojïme pøímo k vìci - musím se vrátit do kláštera.",DIA_Ulf_Abrechnung_Schnell);
-	Info_AddChoice (DIA_Ulf_Abrechnung,"Nemáš nìco ke kouøení?",DIA_Ulf_Abrechnung_Rauch);
+	Info_AddChoice (DIA_Ulf_Abrechnung,"PÅ™estaÅˆ, nechci tÄ› zabÃ­t.",DIA_Ulf_Abrechnung_Lass);
+	Info_AddChoice (DIA_Ulf_Abrechnung,"Tak pojÄme pÅ™Ã­mo k vÄ›ci - musÃ­m se vrÃ¡tit do klÃ¡Å¡tera.",DIA_Ulf_Abrechnung_Schnell);
+	Info_AddChoice (DIA_Ulf_Abrechnung,"NemÃ¡Å¡ nÄ›co ke kouÅ™enÃ­?",DIA_Ulf_Abrechnung_Rauch);
 };
 FUNC VOID DIA_Ulf_Abrechnung_Lass()
 {
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_Lass_15_00"); //Pøestaò, nechci tì zabít.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Lass_03_01"); //Velká huba. Ale víš, e proti mnì nemáš šanci! Tak jedem!
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_Lass_15_00"); //PÅ™estaÅˆ, nechci tÄ› zabÃ­t.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Lass_03_01"); //VelkÃ¡ huba. Ale vÃ­Å¡, Å¾e proti mnÄ› nemÃ¡Å¡ Å¡anci! Tak jedem!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);
 };
 FUNC VOID DIA_Ulf_Abrechnung_Schnell()
 {
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_Schnell_15_00"); //Pojïme pøímo k jádru vìci - potøebuji se dostat zpátky do kláštera.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Schnell_03_01"); //U nikam nepùjdeš!
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_Schnell_15_00"); //PojÄme pÅ™Ã­mo k jÃ¡dru vÄ›ci - potÅ™ebuji se dostat zpÃ¡tky do klÃ¡Å¡tera.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Schnell_03_01"); //UÅ¾ nikam nepÅ¯jdeÅ¡!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);
 };
 FUNC VOID DIA_Ulf_Abrechnung_Rauch()
 {
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_Rauch_15_00"); //Nemáš nìco ke kouøení?
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_01"); //Máš štìstí. Nìco bych tu mìl.
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_Rauch_15_00"); //NemÃ¡Å¡ nÄ›co ke kouÅ™enÃ­?
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_01"); //MÃ¡Å¡ Å¡tÄ›stÃ­. NÄ›co bych tu mÄ›l.
 	
 	B_GiveInvItems (self, other, ITmi_Joint,1);
 	B_UseItem (other, itmI_Joint);
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_02"); //Pojïme na to.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_02"); //PojÄme na to.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);
@@ -438,8 +438,8 @@ func int DIA_Ulf_Troll_Condition ()
 };
 func void DIA_Ulf_Troll_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Troll_03_00"); //Hele, vánì si myslíš, e jdeme dobøe? Nìkde tady ije trol.
-	AI_Output (self, other, "DIA_Ulf_Troll_03_01"); //Myslím, e bychom se radši mìli vydat jinım smìrem.
+	AI_Output (self, other, "DIA_Ulf_Troll_03_00"); //Hele, vÃ¡Å¾nÄ› si myslÃ­Å¡, Å¾e jdeme dobÅ™e? NÄ›kde tady Å¾ije trol.
+	AI_Output (self, other, "DIA_Ulf_Troll_03_01"); //MyslÃ­m, Å¾e bychom se radÅ¡i mÄ›li vydat jinÃ½m smÄ›rem.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"WAIT");

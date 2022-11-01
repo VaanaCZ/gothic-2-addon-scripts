@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcWarrior(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Skøetí váleèník";
+	name							=	"SkÅ™etÃ­ vÃ¡leÄnÃ­k";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCWARRIOR;
 	voice							=	18;
@@ -125,7 +125,7 @@ INSTANCE OrcWarrior_Sit (Mst_Default_OrcWarrior)
 // ------ Ork vor Stadt ------
 INSTANCE OrcWarrior_Harad (Mst_Default_OrcWarrior)
 {
-	name							=	"Skøetí vyzvìdaè";
+	name							=	"SkÅ™etÃ­ vyzvÄ›daÄ";
 	
 	level							=	15;
 	

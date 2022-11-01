@@ -19,7 +19,7 @@ func int B_TeachThiefTalent (var C_NPC slf, var C_NPC oth, var int talent)
 	&& (talent!=NPC_TALENT_ACROBAT) 
 	&& (talent!=NPC_TALENT_PICKPOCKET)
 	{
-		Print ("*** CHYBA: nesprávný parametr ***");
+		Print ("*** CHYBA: nesprÃ¡vnÃ½ parametr ***");
 		return FALSE;
 	};
 	

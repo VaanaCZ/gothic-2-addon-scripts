@@ -47,15 +47,15 @@ FUNC VOID DIA_OWPAL_4_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_00"); //Innos je mou ctÌ a m· Ëest je m˝m ûivotem.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_00"); //Innos je mou ct√≠ a m√° ƒçest je m√Ωm ≈æivotem.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //VydrûÌme tu tak dlouho, dokud nad n·mi bude bdÌt Innosovo svÏtlo.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Vydr≈æ√≠me tu tak dlouho, dokud nad n√°mi bude bd√≠t Innosovo svƒõtlo.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //S Innosovou pomocÌ musÌme odsud ta stvo¯enÌ zla vyhnat.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //S Innosovou pomoc√≠ mus√≠me odsud ta stvo≈ôen√≠ zla vyhnat.
 	};
 	
 	AI_StopProcessInfos	(self);

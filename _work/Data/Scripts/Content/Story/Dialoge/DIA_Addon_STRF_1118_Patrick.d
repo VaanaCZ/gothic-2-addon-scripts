@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Patrick_Hi   (C_INFO)
 	condition   = DIA_Addon_Patrick_Hi_Condition;
 	information = DIA_Addon_Patrick_Hi_Info;
 	permanent   = FALSE;
-	description = "Posílají mì mágové vody. Mám tì osvobodit.";
+	description = "PosÃ­lajÃ­ mÄ› mÃ¡govÃ© vody. MÃ¡m tÄ› osvobodit.";
 };
 FUNC INT DIA_Addon_Patrick_Hi_Condition()
 {	
@@ -36,40 +36,40 @@ FUNC INT DIA_Addon_Patrick_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//Posílají mì mágové vody. Mám vás osvobodit.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//(opatrnì) Vánì? A proè bych ti mìl vìøit?
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//PosÃ­lajÃ­ mÄ› mÃ¡govÃ© vody. MÃ¡m vÃ¡s osvobodit.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//(opatrnÄ›) VÃ¡Å¾nÄ›? A proÄ bych ti mÄ›l vÄ›Å™it?
 	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_02");//Chcete se odsud dostat, nebo ne?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//Samozøejmì e jo, ale...
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//Posílá mì Vatras, a to by ti mìlo staèit. Jinak si tu klidnì mùete všichni shnít v tıhle díøe, mnì je to fuk.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//(rychle) No dobøe, vìøím ti.
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//(zmatenì) Vánì? Wow, to šlo rychleji, ne jsem si myslel. Prima, tak teï ještì potøebujeme plán.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Pokus o útìk je hodnì riskantní. William to zkusil a koupil to.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//Zdejší vìzni jsou vesmìs samí rolníci a dìlníci – vìøí mi, ale sami se utéct neodváí.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//SamozÅ™ejmÄ› Å¾e jo, ale...
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//PosÃ­lÃ¡ mÄ› Vatras, a to by ti mÄ›lo staÄit. Jinak si tu klidnÄ› mÅ¯Å¾ete vÅ¡ichni shnÃ­t v tÃ½hle dÃ­Å™e, mnÄ› je to fuk.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//(rychle) No dobÅ™e, vÄ›Å™Ã­m ti.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//(zmatenÄ›) VÃ¡Å¾nÄ›? Wow, to Å¡lo rychleji, neÅ¾ jsem si myslel. Prima, tak teÄ jeÅ¡tÄ› potÅ™ebujeme plÃ¡n.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Pokus o ÃºtÄ›k je hodnÄ› riskantnÃ­. William to zkusil a koupil to.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//ZdejÅ¡Ã­ vÄ›zni jsou vesmÄ›s samÃ­ rolnÃ­ci a dÄ›lnÃ­ci â€“ vÄ›Å™Ã­ mi, ale sami se utÃ©ct neodvÃ¡Å¾Ã­.
 		
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
-	Info_AddChoice (DIA_Addon_Patrick_Hi,"A co mám podle tebe dìlat? Vyprosit ti u Havrana propuštìní?",DIA_Addon_Patrick_Hi_Raven);
-	Info_AddChoice (DIA_Addon_Patrick_Hi,"To mám vymlátit všecky bandity, aby ses vùbec pohnul?",DIA_Addon_Patrick_Hi_Kill);
+	Info_AddChoice (DIA_Addon_Patrick_Hi,"A co mÃ¡m podle tebe dÄ›lat? Vyprosit ti u Havrana propuÅ¡tÄ›nÃ­?",DIA_Addon_Patrick_Hi_Raven);
+	Info_AddChoice (DIA_Addon_Patrick_Hi,"To mÃ¡m vymlÃ¡tit vÅ¡ecky bandity, aby ses vÅ¯bec pohnul?",DIA_Addon_Patrick_Hi_Kill);
 };
 FUNC VOID B_Say_Patrick_Plan()
 {
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//To ale není ádnı plán.
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//Postarej se, aby nás nenapadly stráe, a pak odsud zmizíme.
-	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//Dobøe, zaøídím to. Vyøiï ostatním, a se pøipraví.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//To ale nenÃ­ Å¾Ã¡dnÃ½ plÃ¡n.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//Postarej se, aby nÃ¡s nenapadly strÃ¡Å¾e, a pak odsud zmizÃ­me.
+	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//DobÅ™e, zaÅ™Ã­dÃ­m to. VyÅ™iÄ ostatnÃ­m, aÅ¥ se pÅ™ipravÃ­.
 	
 	
-	B_LogEntry (Topic_Addon_Sklaven,"Otroci se neodváí uniknout. Musím najít nìjakı zpùsob, jak je nepozorovanì dostat z tábora.");
+	B_LogEntry (Topic_Addon_Sklaven,"Otroci se neodvÃ¡Å¾Ã­ uniknout. MusÃ­m najÃ­t nÄ›jakÃ½ zpÅ¯sob, jak je nepozorovanÄ› dostat z tÃ¡bora.");
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//Co mám udìlat – vyprosit ti u Havrana milost?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//(šklebí se) To není špatnej nápad.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//Co mÃ¡m udÄ›lat â€“ vyprosit ti u Havrana milost?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//(Å¡klebÃ­ se) To nenÃ­ Å¡patnej nÃ¡pad.
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Kill()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Kill_15_00");//To se odsud nehnete, dokud nepobiju všecky bandity?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Kill_07_01");//(vydìšenì) To by bylo šílenství!
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Kill_15_00");//To se odsud nehnete, dokud nepobiju vÅ¡ecky bandity?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Kill_07_01");//(vydÄ›Å¡enÄ›) To by bylo Å¡Ã­lenstvÃ­!
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Addon_Patrick_ready   (C_INFO)
 	condition   = DIA_Addon_Patrick_ready_Condition;
 	information = DIA_Addon_Patrick_ready_Info;
 	permanent   = FALSE;
-	description = "Všecko je v pohodì, u se mùete vypaøit.";
+	description = "VÅ¡ecko je v pohodÄ›, uÅ¾ se mÅ¯Å¾ete vypaÅ™it.";
 };
 FUNC INT DIA_Addon_Patrick_ready_Condition()
 {	
@@ -104,11 +104,11 @@ FUNC INT DIA_Addon_Patrick_ready_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_ready_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_00");//Všecko je v pohodì, mùete se vypaøit.
-	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_01");//Vıbornì. Znám v bainì jednu jeskyni, kde se zatím mùem ukrıt. Jene co dál?
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_02");//Bìte z bainy smìrem k jihozápadu. Vodní mágové si zøídili tábor kousek od rozvalin starého chrámu.
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_03");//Ukáou vám cestu z tohohle údolí.
-	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_04");//Díky, moc ti dìkuju. (zaèíná øeènit) Jsme ti všichni hluboce zavázáni...
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_00");//VÅ¡ecko je v pohodÄ›, mÅ¯Å¾ete se vypaÅ™it.
+	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_01");//VÃ½bornÄ›. ZnÃ¡m v baÅ¾inÄ› jednu jeskyni, kde se zatÃ­m mÅ¯Å¾em ukrÃ½t. JenÅ¾e co dÃ¡l?
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_02");//BÄ›Å¾te z baÅ¾iny smÄ›rem k jihozÃ¡padu. VodnÃ­ mÃ¡govÃ© si zÅ™Ã­dili tÃ¡bor kousek od rozvalin starÃ©ho chrÃ¡mu.
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_03");//UkÃ¡Å¾ou vÃ¡m cestu z tohohle ÃºdolÃ­.
+	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_04");//DÃ­ky, moc ti dÄ›kuju. (zaÄÃ­nÃ¡ Å™eÄnit) Jsme ti vÅ¡ichni hluboce zavÃ¡zÃ¡ni...
 	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_05");//To nic.
 	
 	Sklaven_Flucht = TRUE; 
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Patrick_Killer   (C_INFO)
 	condition   = DIA_Addon_Patrick_Killer_Condition;
 	information = DIA_Addon_Patrick_Killer_Info;
 	permanent   = FALSE;
-	description = "Strá u to má za sebou, mùeš jít.";
+	description = "StrÃ¡Å¾ uÅ¾ to mÃ¡ za sebou, mÅ¯Å¾eÅ¡ jÃ­t.";
 };
 FUNC INT DIA_Addon_Patrick_Killer_Condition()
 {	
@@ -164,8 +164,8 @@ FUNC INT DIA_Addon_Patrick_Killer_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Killer_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//Stráe jsou mrtvé, u mùete jít.
-	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//A co se stane, a opustíme dùl? Ostatní stráe nás rozsekají! Ne, je to moc riskantní.
+	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//StrÃ¡Å¾e jsou mrtvÃ©, uÅ¾ mÅ¯Å¾ete jÃ­t.
+	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//A co se stane, aÅ¾ opustÃ­me dÅ¯l? OstatnÃ­ strÃ¡Å¾e nÃ¡s rozsekajÃ­! Ne, je to moc riskantnÃ­.
 };
 //---------------------------------------------------------------------
 //	Hoehle
@@ -177,7 +177,7 @@ INSTANCE DIA_Addon_Patrick_Hoehle   (C_INFO)
 	condition   = DIA_Addon_Patrick_Hoehle_Condition;
 	information = DIA_Addon_Patrick_Hoehle_Info;
 	permanent   = TRUE;
-	description = "Vy nechcete odejít?";
+	description = "Vy nechcete odejÃ­t?";
 };
 FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 {	
@@ -189,7 +189,7 @@ FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 FUNC VOID DIA_Addon_Patrick_Hoehle_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Patrick_Hoehle_15_00");//To se odsud nechcete dostat?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//Samozøejmì e jo, jen èekáme na správnou pøíleitost.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//SamozÅ™ejmÄ› Å¾e jo, jen ÄekÃ¡me na sprÃ¡vnou pÅ™Ã­leÅ¾itost.
 };
 
 

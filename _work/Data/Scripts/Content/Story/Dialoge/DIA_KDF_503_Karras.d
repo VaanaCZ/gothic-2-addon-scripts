@@ -45,20 +45,20 @@ func void DIA_Karras_Hello_Info ()
 {
 	if (hero.guild == GIL_NOV)
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_00"); //Co pro tebe mohu udìlat, novici?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_00"); //Co pro tebe mohu udÄ›lat, novici?
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_01"); //Co pro tebe mohu udìlat, bratøe?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_01"); //Co pro tebe mohu udÄ›lat, bratÅ™e?
 	}
 	else if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_02"); //Do tìchto komnat zavítají ctihodní Innosovi váleèníci jen zøídka.
-		AI_Output			(self, other, "DIA_Karras_Hello_10_03"); //Co pro tebe mohu udìlat?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_02"); //Do tÄ›chto komnat zavÃ­tajÃ­ ctihodnÃ­ Innosovi vÃ¡leÄnÃ­ci jen zÅ™Ã­dka.
+		AI_Output			(self, other, "DIA_Karras_Hello_10_03"); //Co pro tebe mohu udÄ›lat?
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Karras_Hello_10_04"); //(nedùvìøivì) Co tady dìláš?
+		AI_Output			(self, other, "DIA_Karras_Hello_10_04"); //(nedÅ¯vÄ›Å™ivÄ›) Co tady dÄ›lÃ¡Å¡?
 	};
 	
 };
@@ -72,7 +72,7 @@ instance DIA_Karras_Mission		(C_INFO)
 	condition	 = 	DIA_Karras_Mission_Condition;
 	information	 = 	DIA_Karras_Mission_Info;
 	permanent    =  FALSE;
-	description	 = 	"Pøišel jsem si pøeèíst nìjaké svaté texty.";
+	description	 = 	"PÅ™iÅ¡el jsem si pÅ™eÄÃ­st nÄ›jakÃ© svatÃ© texty.";
 };
 func int DIA_Karras_Mission_Condition ()
 {	
@@ -83,9 +83,9 @@ func int DIA_Karras_Mission_Condition ()
 };
 func void DIA_Karras_Mission_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_Mission_15_00"); //Pøišel jsem si pøeèíst nìjaké svaté texty.
-	AI_Output (self, other, "DIA_Karras_Mission_10_01"); //Rozumím. Jestli se ti podaøí najít mezi nároènım studiem nìjakı volnı èas, stav se za mnou.
-	AI_Output (self, other, "DIA_Karras_Mission_10_02"); //Je tady ještì jedna záleitost, ke které bych potøeboval diskrétního novice.
+	AI_Output (other, self, "DIA_Karras_Mission_15_00"); //PÅ™iÅ¡el jsem si pÅ™eÄÃ­st nÄ›jakÃ© svatÃ© texty.
+	AI_Output (self, other, "DIA_Karras_Mission_10_01"); //RozumÃ­m. Jestli se ti podaÅ™Ã­ najÃ­t mezi nÃ¡roÄnÃ½m studiem nÄ›jakÃ½ volnÃ½ Äas, stav se za mnou.
+	AI_Output (self, other, "DIA_Karras_Mission_10_02"); //Je tady jeÅ¡tÄ› jedna zÃ¡leÅ¾itost, ke kterÃ© bych potÅ™eboval diskrÃ©tnÃ­ho novice.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -97,7 +97,7 @@ instance DIA_Karras_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Karras_Aufgabe_Condition;
 	information	 = 	DIA_Karras_Aufgabe_Info;
 	permanent    =  FALSE;
-	description	 = 	"Máš pro mì nìjakı úkol?";
+	description	 = 	"MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ Ãºkol?";
 };
 func int DIA_Karras_Aufgabe_Condition ()
 {	
@@ -108,20 +108,20 @@ func int DIA_Karras_Aufgabe_Condition ()
 };
 func void DIA_Karras_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_Aufgabe_15_00"); //Máš pro mì nìjakı úkol?
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_01"); //Ano. Tıká se to toho bláznivého Ignaze. ije v Khorinidu a experimentuje s rùznımi lektvary a léèivımi odvary. Ale také s kouzly a magií.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_02"); //A to mì trápí. Ptám se sám sebe, jestli se jeho magie neprotiví Innosovi.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_03"); //Abych se mohl pøesvìdèit, potøebuji nìjaké jeho kouzelné svitky.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_04"); //Chci, abys šel do mìsta a získal pro mì tøi jeho magické svitky.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_05"); //Ale nikomu ani muk - je to jasné?
-	AI_Output (other, self, "DIA_Karras_Aufgabe_15_06"); //Jasnì.
-	AI_Output (self, other, "DIA_Karras_Aufgabe_10_07"); //Tady máš 150 zlatıch. To by mìlo pokrıt tvé vıdaje.
+	AI_Output (other, self, "DIA_Karras_Aufgabe_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ Ãºkol?
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_01"); //Ano. TÃ½kÃ¡ se to toho blÃ¡znivÃ©ho Ignaze. Å½ije v Khorinidu a experimentuje s rÅ¯znÃ½mi lektvary a lÃ©ÄivÃ½mi odvary. Ale takÃ© s kouzly a magiÃ­.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_02"); //A to mÄ› trÃ¡pÃ­. PtÃ¡m se sÃ¡m sebe, jestli se jeho magie neprotivÃ­ Innosovi.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_03"); //Abych se mohl pÅ™esvÄ›dÄit, potÅ™ebuji nÄ›jakÃ© jeho kouzelnÃ© svitky.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_04"); //Chci, abys Å¡el do mÄ›sta a zÃ­skal pro mÄ› tÅ™i jeho magickÃ© svitky.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_05"); //Ale nikomu ani muk - je to jasnÃ©?
+	AI_Output (other, self, "DIA_Karras_Aufgabe_15_06"); //JasnÄ›.
+	AI_Output (self, other, "DIA_Karras_Aufgabe_10_07"); //Tady mÃ¡Å¡ 150 zlatÃ½ch. To by mÄ›lo pokrÃ½t tvÃ© vÃ½daje.
 	
 	MIS_KarrasVergessen = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_KarrasCharm,LOG_MISSION);
 	Log_SetTopicStatus  (Topic_KarrasCharm,LOG_RUNNING);
-	B_LogEntry (Topic_KarrasCharm,"Mistr Karras mì poslal do mìsta, kde mu mám obstarat tøi svitky s kouzly, které vyrábí a prodává Ignaz.");
+	B_LogEntry (Topic_KarrasCharm,"Mistr Karras mÄ› poslal do mÄ›sta, kde mu mÃ¡m obstarat tÅ™i svitky s kouzly, kterÃ© vyrÃ¡bÃ­ a prodÃ¡vÃ¡ Ignaz.");
 
 	B_GiveInvItems (self, other, ItMi_Gold,150);
 };
@@ -135,7 +135,7 @@ instance DIA_Karras_Success		(C_INFO)
 	condition	 = 	DIA_Karras_Success_Condition;
 	information	 = 	DIA_Karras_Success_Info;
 	permanent    =  FALSE;
-	description	 = 	"Tady jsou ty magické svitky, které jsi chtìl.";
+	description	 = 	"Tady jsou ty magickÃ© svitky, kterÃ© jsi chtÄ›l.";
 };
 func int DIA_Karras_Success_Condition ()
 {	
@@ -147,10 +147,10 @@ func int DIA_Karras_Success_Condition ()
 };
 func void DIA_Karras_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_Success_15_00"); //Tady jsou ty magické svitky, které jsi chtìl.
-	AI_Output (self, other, "DIA_Karras_Success_10_01"); //Velmi dobøe, mùj mladı pøíteli.
-	AI_Output (self, other, "DIA_Karras_Success_10_02"); //Ale teï je naèase, aby ses vìnoval svım studiím.
-	AI_Output (self, other, "DIA_Karras_Success_10_03"); //Za odmìnu si vezmi tenhle èarovnı svitek.
+	AI_Output (other, self, "DIA_Karras_Success_15_00"); //Tady jsou ty magickÃ© svitky, kterÃ© jsi chtÄ›l.
+	AI_Output (self, other, "DIA_Karras_Success_10_01"); //Velmi dobÅ™e, mÅ¯j mladÃ½ pÅ™Ã­teli.
+	AI_Output (self, other, "DIA_Karras_Success_10_02"); //Ale teÄ je naÄase, aby ses vÄ›noval svÃ½m studiÃ­m.
+	AI_Output (self, other, "DIA_Karras_Success_10_03"); //Za odmÄ›nu si vezmi tenhle ÄarovnÃ½ svitek.
 	
 	MIS_KarrasVergessen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KarrasCharm);
@@ -167,7 +167,7 @@ instance DIA_Karras_Trade		(C_INFO)
 	condition	 = 	DIA_Karras_Trade_Condition;
 	information	 = 	DIA_Karras_Trade_Info;
 	permanent    =  TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 	trade		 =  TRUE; 
 };
 func int DIA_Karras_Trade_Condition ()
@@ -180,7 +180,7 @@ func int DIA_Karras_Trade_Condition ()
 func void DIA_Karras_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Karras_Trade_15_00"); //Uka mi své zboí.
+	AI_Output (other, self, "DIA_Karras_Trade_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info JOB
@@ -192,7 +192,7 @@ instance DIA_Karras_JOB		(C_INFO)
 	condition	 = 	DIA_Karras_JOB_Condition;
 	information	 = 	DIA_Karras_JOB_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co máš pøesnì na starosti?";
+	description	 = 	"Co mÃ¡Å¡ pÅ™esnÄ› na starosti?";
 };
 func int DIA_Karras_JOB_Condition ()
 {	
@@ -200,19 +200,19 @@ func int DIA_Karras_JOB_Condition ()
 };
 func void DIA_Karras_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_JOB_15_00"); //Co máš pøesnì na starosti?
-	AI_Output (self, other, "DIA_Karras_JOB_10_01"); //Mım úkolem je cvièit mágy v umìní sférické manifestace.
-	AI_Output (other, self, "DIA_Karras_JOB_15_02"); //Co to znamená?
-	AI_Output (self, other, "DIA_Karras_JOB_10_03"); //No, uèím je, jak vyvolávat stvoøení z jinıch sfér.
-	AI_Output (self, other, "DIA_Karras_JOB_10_04"); //Vìtšinou se tomu øíká prostì vyvolávání, i kdy tenhle vıraz naprosto nestaèí k popsání umìní stvoøení sluebníka.
-	AI_Output (self, other, "DIA_Karras_JOB_10_05"); //Navíc mám nìkolik zajímavıch svitkù s kouzly, které u Goraxe nenajdeš.
+	AI_Output (other, self, "DIA_Karras_JOB_15_00"); //Co mÃ¡Å¡ pÅ™esnÄ› na starosti?
+	AI_Output (self, other, "DIA_Karras_JOB_10_01"); //MÃ½m Ãºkolem je cviÄit mÃ¡gy v umÄ›nÃ­ sfÃ©rickÃ© manifestace.
+	AI_Output (other, self, "DIA_Karras_JOB_15_02"); //Co to znamenÃ¡?
+	AI_Output (self, other, "DIA_Karras_JOB_10_03"); //No, uÄÃ­m je, jak vyvolÃ¡vat stvoÅ™enÃ­ z jinÃ½ch sfÃ©r.
+	AI_Output (self, other, "DIA_Karras_JOB_10_04"); //VÄ›tÅ¡inou se tomu Å™Ã­kÃ¡ prostÄ› vyvolÃ¡vÃ¡nÃ­, i kdyÅ¾ tenhle vÃ½raz naprosto nestaÄÃ­ k popsÃ¡nÃ­ umÄ›nÃ­ stvoÅ™enÃ­ sluÅ¾ebnÃ­ka.
+	AI_Output (self, other, "DIA_Karras_JOB_10_05"); //NavÃ­c mÃ¡m nÄ›kolik zajÃ­mavÃ½ch svitkÅ¯ s kouzly, kterÃ© u Goraxe nenajdeÅ¡.
 	
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Karras_JOB_10_06"); //Ale nabízím je jen èlenùm našeho øádu.
+		AI_Output (self, other, "DIA_Karras_JOB_10_06"); //Ale nabÃ­zÃ­m je jen ÄlenÅ¯m naÅ¡eho Å™Ã¡du.
 	};
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTrader,"Mistr Karras z kláštera mì mùe zásobit svitky s kouzly - pokud se tedy stanu mágem ohnì.");
+	B_LogEntry (Topic_KlosterTrader,"Mistr Karras z klÃ¡Å¡tera mÄ› mÅ¯Å¾e zÃ¡sobit svitky s kouzly - pokud se tedy stanu mÃ¡gem ohnÄ›.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -224,7 +224,7 @@ instance DIA_Karras_TEACH		(C_INFO)
 	condition	 = 	DIA_Karras_TEACH_Condition;
 	information	 = 	DIA_Karras_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Rád bych se od tebe nìèemu pøiuèil (vytvoøit runy).";
+	description	 = 	"RÃ¡d bych se od tebe nÄ›Äemu pÅ™iuÄil (vytvoÅ™it runy).";
 };
 
 func int DIA_Karras_TEACH_Condition ()
@@ -238,7 +238,7 @@ func void DIA_Karras_TEACH_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "DIA_Karras_TEACH_15_00"); //Uè mì.
+	AI_Output (other, self, "DIA_Karras_TEACH_15_00"); //UÄ mÄ›.
 	
 		Info_ClearChoices   (DIA_Karras_TEACH);
 		
@@ -280,7 +280,7 @@ func void DIA_Karras_TEACH_Info ()
 		};
 		if 	(abletolearn < 1)
 		{
-			AI_Output (self, other, "DIA_Karras_TEACH_10_01"); //V tuhle chvíli není nic, co by ses ode mì mohl nauèit.
+			AI_Output (self, other, "DIA_Karras_TEACH_10_01"); //V tuhle chvÃ­li nenÃ­ nic, co by ses ode mÄ› mohl nauÄit.
 		}
 		else
 		{
@@ -326,7 +326,7 @@ instance DIA_Karras_CIRCLE4		(C_INFO)
 	condition	 = 	DIA_Karras_CIRCLE4_Condition;
 	information	 = 	DIA_Karras_CIRCLE4_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtìl bych se nauèit ètvrtı kruh magie.";
+	description	 = 	"ChtÄ›l bych se nauÄit ÄtvrtÃ½ kruh magie.";
 };
 func int DIA_Karras_CIRCLE4_Condition ()
 {	
@@ -337,19 +337,19 @@ func int DIA_Karras_CIRCLE4_Condition ()
 };
 func void DIA_Karras_CIRCLE4_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_CIRCLE4_15_00"); //Chtìl bych se nauèit ètvrtı kruh magie.
+	AI_Output (other, self, "DIA_Karras_CIRCLE4_15_00"); //ChtÄ›l bych se nauÄit ÄtvrtÃ½ kruh magie.
 	
 	if (MIS_ReadyforChapter4 == TRUE)
 	{
 		if B_TeachMagicCircle (self,other, 4)
 		{
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_01"); //Dobrá. Všechna znamení jsou splnìna. Vstup nyní do ètvrtého kruhu, aby se v tobì probudila síla nové magie.
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_02"); //Prošel jsi dlouhou cestou a Innos bude i nadále osvìtlovat tvou stezku.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_01"); //DobrÃ¡. VÅ¡echna znamenÃ­ jsou splnÄ›na. Vstup nynÃ­ do ÄtvrtÃ©ho kruhu, aby se v tobÄ› probudila sÃ­la novÃ© magie.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_02"); //ProÅ¡el jsi dlouhou cestou a Innos bude i nadÃ¡le osvÄ›tlovat tvou stezku.
 		};
 	}
 	else
 	{
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_03"); //Ještì stále není vše hotovo.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_03"); //JeÅ¡tÄ› stÃ¡le nenÃ­ vÅ¡e hotovo.
 	};
 };
 /////////////////////////////////////////////////////////////////////////
@@ -362,7 +362,7 @@ instance DIA_Karras_CIRCLE5		(C_INFO)
 	condition	 = 	DIA_Karras_CIRCLE5_Condition;
 	information	 = 	DIA_Karras_CIRCLE5_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtìl bych se nauèit pátı kruh magie.";
+	description	 = 	"ChtÄ›l bych se nauÄit pÃ¡tÃ½ kruh magie.";
 };
 func int DIA_Karras_CIRCLE5_Condition ()
 {	
@@ -373,22 +373,22 @@ func int DIA_Karras_CIRCLE5_Condition ()
 };
 func void DIA_Karras_CIRCLE5_Info ()
 {
-	AI_Output (other, self, "DIA_Karras_CIRCLE5_15_00"); //Chtìl bych se nauèit pátı kruh magie.
+	AI_Output (other, self, "DIA_Karras_CIRCLE5_15_00"); //ChtÄ›l bych se nauÄit pÃ¡tÃ½ kruh magie.
 	
 	if (Kapitel >= 5)
 	{
 		if B_TeachMagicCircle (self,other, 5)
 		{
-			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_01"); //V tom pøípadì nyní vstup do pátého kruhu magie. Budeš vládnout ještì silnìjší magií ne kdykoliv pøedtím.
-			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_02"); //Uívej její moc s rozvahou, bratøe - temnota je stále pøíliš silná a naši nepøátelé té.
-			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_03"); //Do šestého a nejvyššího kruhu magie tì doprovodit nemohu. A pøijde správnı èas, zasvìtí tì sám Pyrokar.
+			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_01"); //V tom pÅ™Ã­padÄ› nynÃ­ vstup do pÃ¡tÃ©ho kruhu magie. BudeÅ¡ vlÃ¡dnout jeÅ¡tÄ› silnÄ›jÅ¡Ã­ magiÃ­ neÅ¾ kdykoliv pÅ™edtÃ­m.
+			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_02"); //UÅ¾Ã­vej jejÃ­ moc s rozvahou, bratÅ™e - temnota je stÃ¡le pÅ™Ã­liÅ¡ silnÃ¡ a naÅ¡i nepÅ™Ã¡telÃ© tÃ©Å¾.
+			AI_Output (self, other, "DIA_Karras_CIRCLE5_10_03"); //Do Å¡estÃ©ho a nejvyÅ¡Å¡Ã­ho kruhu magie tÄ› doprovodit nemohu. AÅ¾ pÅ™ijde sprÃ¡vnÃ½ Äas, zasvÄ›tÃ­ tÄ› sÃ¡m Pyrokar.
 			
-			B_LogEntry (Topic_KlosterTeacher,"Mistr Pyrokar mì zasvìtí do šestého kruhu magie.");
+			B_LogEntry (Topic_KlosterTeacher,"Mistr Pyrokar mÄ› zasvÄ›tÃ­ do Å¡estÃ©ho kruhu magie.");
 		};
 	}
 	else
 	{
-			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_04"); //Èas ještì nedozrál.
+			AI_Output (self, other, "DIA_Karras_CIRCLE4_10_04"); //ÄŒas jeÅ¡tÄ› nedozrÃ¡l.
 	};
 };
 //#####################################################################
@@ -478,15 +478,15 @@ func void DIA_Karras_ChasePedro_Info ()
 {
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_00"); //Nesmíš ztrácet èas, bratøe. Musíš dohonit Pedra a vrátit klášteru Innosovo oko.
-		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_01"); //Pokud nebude Oko navráceno, budeme všichni ztraceni.
+		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_00"); //NesmÃ­Å¡ ztrÃ¡cet Äas, bratÅ™e. MusÃ­Å¡ dohonit Pedra a vrÃ¡tit klÃ¡Å¡teru Innosovo oko.
+		AI_Output (self ,other,"DIA_Karras_ChasePedro_10_01"); //Pokud nebude Oko navrÃ¡ceno, budeme vÅ¡ichni ztraceni.
 	}
 	else
 	{
-		AI_Output	(self ,other, "DIA_Karras_ChasePedro_10_02"); //Co tady dìláš? Nemìl bys bıt na cestì za tím bezpáteøním zrádcem Pedrem?
+		AI_Output	(self ,other, "DIA_Karras_ChasePedro_10_02"); //Co tady dÄ›lÃ¡Å¡? NemÄ›l bys bÃ½t na cestÄ› za tÃ­m bezpÃ¡teÅ™nÃ­m zrÃ¡dcem Pedrem?
 	
 		Info_ClearChoices (DIA_Karras_ChasePedro);
-		Info_AddChoice (DIA_Karras_ChasePedro,"Pozdìji. Nejprve si musím nìco zaøídit.",DIA_Karras_ChasePedro_Later);
+		Info_AddChoice (DIA_Karras_ChasePedro,"PozdÄ›ji. Nejprve si musÃ­m nÄ›co zaÅ™Ã­dit.",DIA_Karras_ChasePedro_Later);
 		Info_AddChoice (DIA_Karras_ChasePedro,"Nedostane se nijak daleko.",DIA_Karras_ChasePedro_WontEscape);
 	};
 
@@ -494,10 +494,10 @@ func void DIA_Karras_ChasePedro_Info ()
 
 func void DIA_Karras_ChasePedro_Later ()
 {
-	AI_Output (other,self ,"DIA_Karras_ChasePedro_Later_15_00"); //Pozdìji. Nejprve si musím nìco zaøídit.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_01"); //Uvìdomuješ si vùbec, co tahle ztráta pro klášter znamená? Innosovo oko je mocná zbraò.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_02"); //Nikdo nemùe tušit, co s tím amuletem nepøítel zamıšlí, ale nìco rozhodnì plánuje a my mu to musíme pøekazit.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_03"); //Take se okamitì vydej na cestu za tím zlodìjem!
+	AI_Output (other,self ,"DIA_Karras_ChasePedro_Later_15_00"); //PozdÄ›ji. Nejprve si musÃ­m nÄ›co zaÅ™Ã­dit.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_01"); //UvÄ›domujeÅ¡ si vÅ¯bec, co tahle ztrÃ¡ta pro klÃ¡Å¡ter znamenÃ¡? Innosovo oko je mocnÃ¡ zbraÅˆ.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_02"); //Nikdo nemÅ¯Å¾e tuÅ¡it, co s tÃ­m amuletem nepÅ™Ã­tel zamÃ½Å¡lÃ­, ale nÄ›co rozhodnÄ› plÃ¡nuje a my mu to musÃ­me pÅ™ekazit.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_Later_10_03"); //TakÅ¾e se okamÅ¾itÄ› vydej na cestu za tÃ­m zlodÄ›jem!
 
 	AI_StopProcessInfos (self);
 };
@@ -505,10 +505,10 @@ func void DIA_Karras_ChasePedro_Later ()
 FUNC VOID DIA_Karras_ChasePedro_WontEscape ()
 {
 	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_00"); //Nedostane se nijak daleko.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_01"); //To doufám, pro tvoje vlastní dobro. Pokud by mìl uniknout jen proto, e se tady poflakuješ, sám tì dokopu pøed tribunál.
-	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_02"); //Z èeho bys mì obvinil?
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_03"); //Ze spolèování s nepøítelem. Nepotøebuješ velkou fantazii, aby sis dokázal pøedstavit, jakı by tì za to potkal trest.
-	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_04"); //Take u neztrácej èas, protoe tvùj další osud bude záviset na tom, za jakıch okolností se pøíštì setkáme.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_01"); //To doufÃ¡m, pro tvoje vlastnÃ­ dobro. Pokud by mÄ›l uniknout jen proto, Å¾e se tady poflakujeÅ¡, sÃ¡m tÄ› dokopu pÅ™ed tribunÃ¡l.
+	AI_Output (other,self ,"DIA_Karras_ChasePedro_WontEscape_15_02"); //Z Äeho bys mÄ› obvinil?
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_03"); //Ze spolÄovÃ¡nÃ­ s nepÅ™Ã­telem. NepotÅ™ebujeÅ¡ velkou fantazii, aby sis dokÃ¡zal pÅ™edstavit, jakÃ½ by tÄ› za to potkal trest.
+	AI_Output (self ,other,"DIA_Karras_ChasePedro_WontEscape_10_04"); //TakÅ¾e uÅ¾ neztrÃ¡cej Äas, protoÅ¾e tvÅ¯j dalÅ¡Ã­ osud bude zÃ¡viset na tom, za jakÃ½ch okolnostÃ­ se pÅ™Ã­Å¡tÄ› setkÃ¡me.
 
 	AI_StopProcessInfos (self);
 };
@@ -540,7 +540,7 @@ func int DIA_Karras_NeedInfo_Condition ()
 func void DIA_Karras_NeedInfo_Info ()
 {
 	
-	AI_Output (self ,other,"DIA_Karras_NeedInfo_10_00"); //Víš všechno, co potøebuješ. A u jsi na cestì!
+	AI_Output (self ,other,"DIA_Karras_NeedInfo_10_00"); //VÃ­Å¡ vÅ¡echno, co potÅ™ebujeÅ¡. AÅ¥ uÅ¾ jsi na cestÄ›!
 	
 	AI_StopProcessInfos (self);
 };
@@ -559,7 +559,7 @@ instance DIA_Karras_InnosEyeRetrieved		(C_INFO)
 	condition	 = 	DIA_Karras_InnosEyeRetrieved_Condition;
 	information	 = 	DIA_Karras_InnosEyeRetrieved_Info;
 	permanent	 = 	FALSE;
-	description	 =	"Pøinesl jsem zpátky Innosovo oko.";
+	description	 =	"PÅ™inesl jsem zpÃ¡tky Innosovo oko.";
 };
 
 func int DIA_Karras_InnosEyeRetrieved_Condition ()
@@ -573,12 +573,12 @@ func int DIA_Karras_InnosEyeRetrieved_Condition ()
 func void DIA_Karras_InnosEyeRetrieved_Info ()
 {
 	
-	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_00"); //Pøinesl jsem zpátky Innosovo oko.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_01"); //To mi spadl kámen ze srdce, e se ti podaøilo Innosovo oko nepøíteli uzmout.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_02"); //Ale nebezpeèí nebylo odvráceno. Zlo kuje další plány a pokraèuje s nebıvalou agresivitou.
-	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_03"); //To u mi také došlo.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_04"); //Nedìlej si ze mì šprouchlata. Situace je váná, velice váná, a nemùeme vìdìt, komu je moné dùvìøovat.
-	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_05"); //Nepøíteli se u podaøilo uvést v pokušení novice Pedra a mùe se mu to podaøit u mnohıch dalších.
+	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_00"); //PÅ™inesl jsem zpÃ¡tky Innosovo oko.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_01"); //To mi spadl kÃ¡men ze srdce, Å¾e se ti podaÅ™ilo Innosovo oko nepÅ™Ã­teli uzmout.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_02"); //Ale nebezpeÄÃ­ nebylo odvrÃ¡ceno. Zlo kuje dalÅ¡Ã­ plÃ¡ny a pokraÄuje s nebÃ½valou agresivitou.
+	AI_Output (other,self ,"DIA_Karras_InnosEyeRetrieved_15_03"); //To uÅ¾ mi takÃ© doÅ¡lo.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_04"); //NedÄ›lej si ze mÄ› Å¡prÅ¥ouchlata. Situace je vÃ¡Å¾nÃ¡, velice vÃ¡Å¾nÃ¡, a nemÅ¯Å¾eme vÄ›dÄ›t, komu je moÅ¾nÃ© dÅ¯vÄ›Å™ovat.
+	AI_Output (self ,other,"DIA_Karras_InnosEyeRetrieved_10_05"); //NepÅ™Ã­teli se uÅ¾ podaÅ™ilo uvÃ©st v pokuÅ¡enÃ­ novice Pedra a mÅ¯Å¾e se mu to podaÅ™it u mnohÃ½ch dalÅ¡Ã­ch.
 
 	B_GivePlayerXP (XP_AMBIENT);
 };
@@ -593,7 +593,7 @@ INSTANCE DIA_Karras_KAP3_Perm   (C_INFO)
 	condition   = DIA_Karras_KAP3_Perm_Condition;
 	information = DIA_Karras_KAP3_Perm_Info;
 	permanent   = TRUE;
-	description = "Jak pokraèují tvá studia?";
+	description = "Jak pokraÄujÃ­ tvÃ¡ studia?";
 };
 FUNC INT DIA_Karras_KAP3_Perm_Condition()
 {
@@ -605,38 +605,38 @@ FUNC INT DIA_Karras_KAP3_Perm_Condition()
 };
 FUNC VOID DIA_Karras_KAP3_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_00"); //Jak pokraèují tvá studia?
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_00"); //Jak pokraÄujÃ­ tvÃ¡ studia?
 
 	if (MIS_KarrasResearchDMT == FALSE)
 	&& (PyrokarToldKarrasToResearchDMT == TRUE)
 	&& (hero.guild == GIL_KDF)
 	{
 		
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_01"); //Podaøilo se mi pøijít na nìco ohlednì Pátraèù.
-		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_02"); //A co to má bıt?
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_03"); //Jsou zcela jasnì démonického pùvodu. Tedy pøinejmenším jsou - nebo alespoò byli - pod vlivem démonù.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_04"); //Kdy na nì narazíš, buï opatrnı.
-		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_05"); //Jak novátorskı pøístup.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_06"); //Je mi líto, ale nemám dost materiálù, abych mohl vyvozovat pøesnìjší stanoviska.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_07"); //Ale kdyby se ti podaøilo získat od nich nìco, co bych mohl podrobit zkoumání...
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_01"); //PodaÅ™ilo se mi pÅ™ijÃ­t na nÄ›co ohlednÄ› PÃ¡traÄÅ¯.
+		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_02"); //A co to mÃ¡ bÃ½t?
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_03"); //Jsou zcela jasnÄ› dÃ©monickÃ©ho pÅ¯vodu. Tedy pÅ™inejmenÅ¡Ã­m jsou - nebo alespoÅˆ byli - pod vlivem dÃ©monÅ¯.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_04"); //KdyÅ¾ na nÄ› narazÃ­Å¡, buÄ opatrnÃ½.
+		AI_Output (other,self ,"DIA_Karras_KAP3_Perm_15_05"); //Jak novÃ¡torskÃ½ pÅ™Ã­stup.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_06"); //Je mi lÃ­to, ale nemÃ¡m dost materiÃ¡lÅ¯, abych mohl vyvozovat pÅ™esnÄ›jÅ¡Ã­ stanoviska.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_07"); //Ale kdyby se ti podaÅ™ilo zÃ­skat od nich nÄ›co, co bych mohl podrobit zkoumÃ¡nÃ­...
 		
 		MIS_KarrasResearchDMT = LOG_RUNNING;
-		B_LogEntry (TOPIC_DEMENTOREN,"Karras potøebuje nìco, co bylo v pøímém kontaktu s pátraèi. Jen tak bude moci pokraèovat ve svıch vızkumech."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Karras potÅ™ebuje nÄ›co, co bylo v pÅ™Ã­mÃ©m kontaktu s pÃ¡traÄi. Jen tak bude moci pokraÄovat ve svÃ½ch vÃ½zkumech."); 
 
 		Info_ClearChoices (DIA_Karras_KAP3_Perm);
 		Info_AddChoice (DIA_Karras_KAP3_Perm,DIALOG_BACK,DIA_Karras_KAP3_Perm_Back);
-		Info_AddChoice (DIA_Karras_KAP3_Perm,"Uvidím, co se dá dìlat.",DIA_Karras_KAP3_Perm_WillSee);
-		Info_AddChoice (DIA_Karras_KAP3_Perm,"Mohl by do toho bıt nìjakım zpùsobem zapletenı Spáè?",DIA_Karras_KAP3_Perm_Sleeper);
-		Info_AddChoice (DIA_Karras_KAP3_Perm,"A jaké materiály bys potøeboval?",DIA_Karras_KAP3_Perm_Material);
+		Info_AddChoice (DIA_Karras_KAP3_Perm,"UvidÃ­m, co se dÃ¡ dÄ›lat.",DIA_Karras_KAP3_Perm_WillSee);
+		Info_AddChoice (DIA_Karras_KAP3_Perm,"Mohl by do toho bÃ½t nÄ›jakÃ½m zpÅ¯sobem zapletenÃ½ SpÃ¡Ä?",DIA_Karras_KAP3_Perm_Sleeper);
+		Info_AddChoice (DIA_Karras_KAP3_Perm,"A jakÃ© materiÃ¡ly bys potÅ™eboval?",DIA_Karras_KAP3_Perm_Material);
 	}
 	else if MIS_KarrasResearchDMT == LOG_RUNNING 
 	{
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_08"); //Ještì stále pracuji na interpretaci dùkazù souvisejících s Pátraèi.
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_09"); //Samozøejmì - jakmile nìco zjistím, dám ti okamitì vìdìt.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_08"); //JeÅ¡tÄ› stÃ¡le pracuji na interpretaci dÅ¯kazÅ¯ souvisejÃ­cÃ­ch s PÃ¡traÄi.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_09"); //SamozÅ™ejmÄ› - jakmile nÄ›co zjistÃ­m, dÃ¡m ti okamÅ¾itÄ› vÄ›dÄ›t.
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_10"); //Nepøítel má mnoho tváøí. Je velmi obtíné urèit, která z nich pøedstavuje pro klášter nejvìtší nebezpeèí.
+		AI_Output (self ,other,"DIA_Karras_KAP3_Perm_10_10"); //NepÅ™Ã­tel mÃ¡ mnoho tvÃ¡Å™Ã­. Je velmi obtÃ­Å¾nÃ© urÄit, kterÃ¡ z nich pÅ™edstavuje pro klÃ¡Å¡ter nejvÄ›tÅ¡Ã­ nebezpeÄÃ­.
 	};
 };
 
@@ -648,31 +648,31 @@ FUNC VOID DIA_Karras_KAP3_Perm_Back()
 
 FUNC VOID DIA_Karras_KAP3_Perm_Sleeper()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Sleeper_15_00"); //Mohl by do toho bıt nìjakım zpùsobem zapletenı Spáè?
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_01"); //Ten pøíbìh o Spáèovi jsem slyšel. Ale tak obecnì, e k tomu nemám co øíci.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_02"); //Démonù je bezpoèet a zapletenı do toho mùe bıt kterıkoliv z nich.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Sleeper_15_00"); //Mohl by do toho bÃ½t nÄ›jakÃ½m zpÅ¯sobem zapletenÃ½ SpÃ¡Ä?
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_01"); //Ten pÅ™Ã­bÄ›h o SpÃ¡Äovi jsem slyÅ¡el. Ale tak obecnÄ›, Å¾e k tomu nemÃ¡m co Å™Ã­ci.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Sleeper_10_02"); //DÃ©monÅ¯ je bezpoÄet a zapletenÃ½ do toho mÅ¯Å¾e bÃ½t kterÃ½koliv z nich.
 };
 
 FUNC VOID DIA_Karras_KAP3_Perm_Corpse()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Corpse_15_00"); //Take chceš, abych ti pøinesl mrtvolu?
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_01"); //Ne, copak ses zbláznil? Nebezpeèí, které by pøedstavovala pøítomnost démonického stvoøení za zdmi kláštera, by bylo pøíliš velké.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_02"); //Bude staèit, kdy najdeš nìjaké pøedmìty, které jsou pro tyto tvory typické.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_03"); //Zbytky démonické aury, která je obklopuje, by mìly pro bliší zkoumání staèit.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Corpse_15_00"); //TakÅ¾e chceÅ¡, abych ti pÅ™inesl mrtvolu?
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_01"); //Ne, copak ses zblÃ¡znil? NebezpeÄÃ­, kterÃ© by pÅ™edstavovala pÅ™Ã­tomnost dÃ©monickÃ©ho stvoÅ™enÃ­ za zdmi klÃ¡Å¡tera, by bylo pÅ™Ã­liÅ¡ velkÃ©.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_02"); //Bude staÄit, kdyÅ¾ najdeÅ¡ nÄ›jakÃ© pÅ™edmÄ›ty, kterÃ© jsou pro tyto tvory typickÃ©.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Corpse_10_03"); //Zbytky dÃ©monickÃ© aury, kterÃ¡ je obklopuje, by mÄ›ly pro bliÅ¾Å¡Ã­ zkoumÃ¡nÃ­ staÄit.
 };
 
 FUNC VOID DIA_Karras_KAP3_Perm_Material()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Material_15_00"); //A jaké materiály bys potøeboval?
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Material_10_01"); //Co já vím - nìjaké pøedmìty, které jsou pro tato stvoøení typické.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_Material_15_00"); //A jakÃ© materiÃ¡ly bys potÅ™eboval?
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_Material_10_01"); //Co jÃ¡ vÃ­m - nÄ›jakÃ© pÅ™edmÄ›ty, kterÃ© jsou pro tato stvoÅ™enÃ­ typickÃ©.
 	
-	Info_AddChoice (DIA_Karras_KAP3_Perm,"Take ty chceš, abych ti pøinesl mrtvolu?",DIA_Karras_KAP3_Perm_Corpse);
+	Info_AddChoice (DIA_Karras_KAP3_Perm,"TakÅ¾e ty chceÅ¡, abych ti pÅ™inesl mrtvolu?",DIA_Karras_KAP3_Perm_Corpse);
 };
 
 FUNC VOID DIA_Karras_KAP3_Perm_WillSee()
 {
-	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_WillSee_15_00"); //Pokusím se.
-	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_WillSee_10_01"); //To by bylo opravdu vıborné. Mezitím se budu vìnovat svému vlastnímu vızkumu.
+	AI_Output (other,self ,"DIA_Karras_KAP3_Perm_WillSee_15_00"); //PokusÃ­m se.
+	AI_Output (self ,other,"DIA_Karras_KAP3_Perm_WillSee_10_01"); //To by bylo opravdu vÃ½bornÃ©. MezitÃ­m se budu vÄ›novat svÃ©mu vlastnÃ­mu vÃ½zkumu.
 	Info_ClearChoices (DIA_Karras_KAP3_Perm);
 };
 
@@ -687,7 +687,7 @@ INSTANCE DIA_Karras_HaveBook   (C_INFO)
 	condition   = DIA_Karras_HaveBook_Condition;
 	information = DIA_Karras_HaveBook_Info;
 	permanent   = FALSE;
-	description = "Získal jsem Almanach posedlıch.";
+	description = "ZÃ­skal jsem Almanach posedlÃ½ch.";
 };
 FUNC INT DIA_Karras_HaveBook_Condition()
 {
@@ -701,20 +701,20 @@ FUNC INT DIA_Karras_HaveBook_Condition()
 var int KarrasGotResearchDMTBook_Day;
 FUNC VOID DIA_Karras_HaveBook_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_HaveBook_15_00"); //Mám u sebe Almanach posedlıch. Moná by se ti mohl k nìèemu hodit.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_01"); //Uka mi ho.
+	AI_Output (other,self ,"DIA_Karras_HaveBook_15_00"); //MÃ¡m u sebe Almanach posedlÃ½ch. MoÅ¾nÃ¡ by se ti mohl k nÄ›Äemu hodit.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_01"); //UkaÅ¾ mi ho.
 	
 	Npc_RemoveInvItems	(other,	ITWR_DementorObsessionBook_MIS,	1);
     AI_PrintScreen (PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);	// "1 Gegenstand gegeben"	
 		
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_02"); //Ano, to by mìlo staèit. Prozkoumám tu knihu.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_03"); //Ale jedním si u jsem jistı.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_04"); //Pátraèi jsou podle mì zcela zvrácená forma ivota vytvoøená Beliarem.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_05"); //Ta stvoøení jsou èásteènì démonického a èásteènì lidského pùvodu.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_06"); //Ale poøád nedokáu pøesnì urèit, jestli stojíme pøed typickou duchovní posedlostí, nebo èistì fyzickou mutací.
-	AI_Output (self ,other,"DIA_Karras_HaveBook_10_07"); //Pøijï pozdìji. Pak budu urèitì vìdìt nìco víc.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_02"); //Ano, to by mÄ›lo staÄit. ProzkoumÃ¡m tu knihu.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_03"); //Ale jednÃ­m si uÅ¾ jsem jistÃ½.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_04"); //PÃ¡traÄi jsou podle mÄ› zcela zvrÃ¡cenÃ¡ forma Å¾ivota vytvoÅ™enÃ¡ Beliarem.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_05"); //Ta stvoÅ™enÃ­ jsou ÄÃ¡steÄnÄ› dÃ©monickÃ©ho a ÄÃ¡steÄnÄ› lidskÃ©ho pÅ¯vodu.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_06"); //Ale poÅ™Ã¡d nedokÃ¡Å¾u pÅ™esnÄ› urÄit, jestli stojÃ­me pÅ™ed typickou duchovnÃ­ posedlostÃ­, nebo ÄistÄ› fyzickou mutacÃ­.
+	AI_Output (self ,other,"DIA_Karras_HaveBook_10_07"); //PÅ™ijÄ pozdÄ›ji. Pak budu urÄitÄ› vÄ›dÄ›t nÄ›co vÃ­c.
 	MIS_KarrasResearchDMT = LOG_SUCCESS;
-	B_LogEntry (TOPIC_DEMENTOREN,"Karras pro svùj další vızkum potøebuje Almanach posedlıch. Vrátím se k nìmu pozdìji."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"Karras pro svÅ¯j dalÅ¡Ã­ vÃ½zkum potÅ™ebuje Almanach posedlÃ½ch. VrÃ¡tÃ­m se k nÄ›mu pozdÄ›ji."); 
 	KarrasGotResearchDMTBook_Day = Wld_GetDay(); 
 	B_GivePlayerXP (XP_KarrasResearchDMT);
 };
@@ -731,7 +731,7 @@ INSTANCE DIA_Karras_ResearchDMTEnd   (C_INFO)
 	information = DIA_Karras_ResearchDMTEnd_Info;
 	permanent   = TRUE;
 
-	description = "U jsi pøišel na nìco nového ohlednì pátraèù?";
+	description = "UÅ¾ jsi pÅ™iÅ¡el na nÄ›co novÃ©ho ohlednÄ› pÃ¡traÄÅ¯?";
 };
 FUNC INT DIA_Karras_ResearchDMTEnd_Condition()
 {
@@ -745,33 +745,33 @@ FUNC INT DIA_Karras_ResearchDMTEnd_Condition()
 
 FUNC VOID DIA_Karras_ResearchDMTEnd_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_ResearchDMTEnd_15_00"); //U jsi pøišel na nìco nového ohlednì Pátraèù?
+	AI_Output (other,self ,"DIA_Karras_ResearchDMTEnd_15_00"); //UÅ¾ jsi pÅ™iÅ¡el na nÄ›co novÃ©ho ohlednÄ› PÃ¡traÄÅ¯?
 
 	if (KarrasGotResearchDMTBook_Day <= (Wld_GetDay()-2))
 	{
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_01"); //Ano. U vím, kdo nebo co jsou Pátraèi skuteènì zaè.
-		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_02"); //Nenapínej mì!
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_03"); //Kdysi to bıvali lidé, jako ty nebo já. Udìlali osudnou chybu, kdy zasvìtili svùj ivot neèisté magii velice mocného arcidémona.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_04"); //Pod vlivem tohoto arcidémona a velice mocnıch drog ili pouze proto, aby mu slouili, a se z nich staly jen pouhé stíny sebe sama.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_05"); //Dnes nejsou nic víc ne nástroje zla bez vlastní vùle, a nikdy nepøestanou lovit následovníky Innose.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_06"); //Musíme bıt opatrní. Zdá se sice, e se zatím vyhıbají tìmto posvátnım Innosovım síním.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_07"); //Ale pokud bude jejich moc nadále rùst, netuším, jestli tu budeme v bezpeèí.
-		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_08"); //Díky. To bylo vánì povzbudivé.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_09"); //Opravdu? To ovšem nastoluje další otázky. Napøíklad, kım byli pøedtím a jakı arcidémon z nich udìlal to, èím jsou dnes?
-		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_10"); //Mám jisté podezøení. Celé to zní jako bratrstvo Spáèe. Znám ty chlapíky.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_11"); //Doufám, e víš, do èeho se to zaplétáš. Dávej na sebe pozor, bratøe.
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_12"); //Abych nezapomnìl. Tady je tvùj almanach. U ho nebudu potøebovat.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_01"); //Ano. UÅ¾ vÃ­m, kdo nebo co jsou PÃ¡traÄi skuteÄnÄ› zaÄ.
+		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_02"); //NenapÃ­nej mÄ›!
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_03"); //Kdysi to bÃ½vali lidÃ©, jako ty nebo jÃ¡. UdÄ›lali osudnou chybu, kdyÅ¾ zasvÄ›tili svÅ¯j Å¾ivot neÄistÃ© magii velice mocnÃ©ho arcidÃ©mona.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_04"); //Pod vlivem tohoto arcidÃ©mona a velice mocnÃ½ch drog Å¾ili pouze proto, aby mu slouÅ¾ili, aÅ¾ se z nich staly jen pouhÃ© stÃ­ny sebe sama.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_05"); //Dnes nejsou nic vÃ­c neÅ¾ nÃ¡stroje zla bez vlastnÃ­ vÅ¯le, a nikdy nepÅ™estanou lovit nÃ¡sledovnÃ­ky Innose.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_06"); //MusÃ­me bÃ½t opatrnÃ­. ZdÃ¡ se sice, Å¾e se zatÃ­m vyhÃ½bajÃ­ tÄ›mto posvÃ¡tnÃ½m InnosovÃ½m sÃ­nÃ­m.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_07"); //Ale pokud bude jejich moc nadÃ¡le rÅ¯st, netuÅ¡Ã­m, jestli tu budeme v bezpeÄÃ­.
+		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_08"); //DÃ­ky. To bylo vÃ¡Å¾nÄ› povzbudivÃ©.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_09"); //Opravdu? To ovÅ¡em nastoluje dalÅ¡Ã­ otÃ¡zky. NapÅ™Ã­klad, kÃ½m byli pÅ™edtÃ­m a jakÃ½ arcidÃ©mon z nich udÄ›lal to, ÄÃ­m jsou dnes?
+		AI_Output (other ,self,"DIA_Karras_ResearchDMTEnd_15_10"); //MÃ¡m jistÃ© podezÅ™enÃ­. CelÃ© to znÃ­ jako bratrstvo SpÃ¡Äe. ZnÃ¡m ty chlapÃ­ky.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_11"); //DoufÃ¡m, Å¾e vÃ­Å¡, do Äeho se to zaplÃ©tÃ¡Å¡. DÃ¡vej na sebe pozor, bratÅ™e.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_12"); //Abych nezapomnÄ›l. Tady je tvÅ¯j almanach. UÅ¾ ho nebudu potÅ™ebovat.
 
 		CreateInvItems	(other,	ITWR_DementorObsessionBook_MIS,	1);
 		AI_PrintScreen	(PRINT_ItemErhalten, -1, YPOS_ItemTaken, FONT_ScreenSmall, 2);	// "1 Gegenstand erhalten"
 
 		SC_KnowsMadPsi = TRUE;
-		B_LogEntry (TOPIC_DEMENTOREN,"Karrasovy studie byly úspìšné. Vypadá to, e pátraèi jsou nìjak spojeni se Spáèovım bratrstvem."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Karrasovy studie byly ÃºspÄ›Å¡nÃ©. VypadÃ¡ to, Å¾e pÃ¡traÄi jsou nÄ›jak spojeni se SpÃ¡ÄovÃ½m bratrstvem."); 
 		B_GivePlayerXP (XP_SC_KnowsMadPsi);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_13"); //Pracuji na tom. Pøijï pozdìji.
+		AI_Output (self ,other,"DIA_Karras_ResearchDMTEnd_10_13"); //Pracuji na tom. PÅ™ijÄ pozdÄ›ji.
 	};
 };
 
@@ -787,7 +787,7 @@ INSTANCE DIA_Karras_Prot_BlackEye   (C_INFO)
 	information = DIA_Karras_Prot_BlackEye_Info;
 	permanent   = TRUE;
 
-	description = "Existuje zpùsob, jak se ochránit pøed mentálními útoky pátraèù?";
+	description = "Existuje zpÅ¯sob, jak se ochrÃ¡nit pÅ™ed mentÃ¡lnÃ­mi Ãºtoky pÃ¡traÄÅ¯?";
 };
 FUNC INT DIA_Karras_Prot_BlackEye_Condition()
 {
@@ -801,21 +801,21 @@ FUNC INT DIA_Karras_Prot_BlackEye_Condition()
 };
 FUNC VOID DIA_Karras_Prot_BlackEye_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_00"); //Existuje zpùsob, jak se ochránit pøed mentálními útoky Pátraèù?
+	AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_00"); //Existuje zpÅ¯sob, jak se ochrÃ¡nit pÅ™ed mentÃ¡lnÃ­mi Ãºtoky PÃ¡traÄÅ¯?
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_01"); //Jistì. Amulet s kamenem z posvátné pùdy by mìl mít poadovanı ochrannı efekt.
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_02"); //Bohuel nemám dostatek takovıch kamenù.
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_03"); //Jsou z nich postaveny nìkteré ze svatyní, které jsme vybudovali.
-		AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_04"); //Dobrá. Však já u nìjaké nìkde splaším.
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_05"); //Ano, udìlej to. Ale a tì ani nenapadne nìjak poškodit ty svatynì, slyšíš?
-		B_LogEntry (TOPIC_DEMENTOREN,"Karras mì mùe pøed mentálními útoky pátraèù trochu ochránit. Potøebuje k tomu ale kámen z posvátné pùdy, jakı lze získat v nìkterıch svatyních."); 
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_01"); //JistÄ›. Amulet s kamenem z posvÃ¡tnÃ© pÅ¯dy by mÄ›l mÃ­t poÅ¾adovanÃ½ ochrannÃ½ efekt.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_02"); //BohuÅ¾el nemÃ¡m dostatek takovÃ½ch kamenÅ¯.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_03"); //Jsou z nich postaveny nÄ›kterÃ© ze svatynÃ­, kterÃ© jsme vybudovali.
+		AI_Output (other,self ,"DIA_Karras_Prot_BlackEye_15_04"); //DobrÃ¡. VÅ¡ak jÃ¡ uÅ¾ nÄ›jakÃ© nÄ›kde splaÅ¡Ã­m.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_05"); //Ano, udÄ›lej to. Ale aÅ¥ tÄ› ani nenapadne nÄ›jak poÅ¡kodit ty svatynÄ›, slyÅ¡Ã­Å¡?
+		B_LogEntry (TOPIC_DEMENTOREN,"Karras mÄ› mÅ¯Å¾e pÅ™ed mentÃ¡lnÃ­mi Ãºtoky pÃ¡traÄÅ¯ trochu ochrÃ¡nit. PotÅ™ebuje k tomu ale kÃ¡men z posvÃ¡tnÃ© pÅ¯dy, jakÃ½ lze zÃ­skat v nÄ›kterÃ½ch svatynÃ­ch."); 
 		MIS_Karras_FindBlessedStone = LOG_RUNNING;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_06"); //Nemám tušení. Stále toho vím pøíliš málo, ne abych znal odpovìï. Zeptej se mì pozdìji.
+		AI_Output (self ,other,"DIA_Karras_Prot_BlackEye_10_06"); //NemÃ¡m tuÅ¡enÃ­. StÃ¡le toho vÃ­m pÅ™Ã­liÅ¡ mÃ¡lo, neÅ¾ abych znal odpovÄ›Ä. Zeptej se mÄ› pozdÄ›ji.
 	};
 };
 
@@ -830,7 +830,7 @@ INSTANCE DIA_Karras_KarrasBlessedStone   (C_INFO)
 	condition   = DIA_Karras_KarrasBlessedStone_Condition;
 	information = DIA_Karras_KarrasBlessedStone_Info;
 
-	description = "Mám nìkolik kamenù z posvìcené pùdy.";
+	description = "MÃ¡m nÄ›kolik kamenÅ¯ z posvÄ›cenÃ© pÅ¯dy.";
 };
 FUNC INT DIA_Karras_KarrasBlessedStone_Condition()
 {
@@ -844,14 +844,14 @@ FUNC INT DIA_Karras_KarrasBlessedStone_Condition()
 var int KarrasMakesBlessedStone_Day;
 FUNC VOID DIA_Karras_KarrasBlessedStone_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_KarrasBlessedStone_15_00"); //Mám nìkolik kamenù z posvìcené pùdy.
+	AI_Output (other,self ,"DIA_Karras_KarrasBlessedStone_15_00"); //MÃ¡m nÄ›kolik kamenÅ¯ z posvÄ›cenÃ© pÅ¯dy.
 	B_GiveInvItems (other, self, ItMi_KarrasBlessedStone_Mis,1);
-	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_01"); //Vıbornì. Doufám, e všechny svatynì jsou stále na svıch místech.
-	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_02"); //Dobrá. Udìlám ti ochrannı amulet proti èernému pohledu Pátraèù.
-	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_03"); //Dej mi trochu èasu. Dám se hned do práce.
+	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_01"); //VÃ½bornÄ›. DoufÃ¡m, Å¾e vÅ¡echny svatynÄ› jsou stÃ¡le na svÃ½ch mÃ­stech.
+	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_02"); //DobrÃ¡. UdÄ›lÃ¡m ti ochrannÃ½ amulet proti ÄernÃ©mu pohledu PÃ¡traÄÅ¯.
+	AI_Output (self ,other,"DIA_Karras_KarrasBlessedStone_10_03"); //Dej mi trochu Äasu. DÃ¡m se hned do prÃ¡ce.
 	KarrasMakesBlessedStone_Day = Wld_GetDay(); 
 	MIS_Karras_FindBlessedStone	= LOG_SUCCESS;
-	B_LogEntry (TOPIC_DEMENTOREN,"Karras mi dá amulet, kterı mì ochrání pøed mentálními útoky pátraèù. Velmi mi to usnadní ivot."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"Karras mi dÃ¡ amulet, kterÃ½ mÄ› ochrÃ¡nÃ­ pÅ™ed mentÃ¡lnÃ­mi Ãºtoky pÃ¡traÄÅ¯. Velmi mi to usnadnÃ­ Å¾ivot."); 
 	B_GivePlayerXP (XP_Karras_FoundBlessedStone);
 	AI_StopProcessInfos (self);
 };
@@ -868,7 +868,7 @@ INSTANCE DIA_Karras_ItAm_Prot_BlackEye_Mis   (C_INFO)
 	information = DIA_Karras_ItAm_Prot_BlackEye_Mis_Info;
 	permanent	 = 	TRUE;
 
-	description = "Tak co je s tím ochrannım amuletem, cos mi slíbil?";
+	description = "Tak co je s tÃ­m ochrannÃ½m amuletem, cos mi slÃ­bil?";
 };
 var int DIA_Karras_ItAm_Prot_BlackEye_Mis_NoPerm;
 FUNC INT DIA_Karras_ItAm_Prot_BlackEye_Mis_Condition()
@@ -883,22 +883,22 @@ FUNC INT DIA_Karras_ItAm_Prot_BlackEye_Mis_Condition()
 
 FUNC VOID DIA_Karras_ItAm_Prot_BlackEye_Mis_Info()
 {
-	AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_00"); //Tak co je s tím ochrannım amuletem, cos mi slíbil?
+	AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_00"); //Tak co je s tÃ­m ochrannÃ½m amuletem, cos mi slÃ­bil?
 	
 	if (KarrasMakesBlessedStone_Day<=(Wld_GetDay()-2))
 	{
-		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_01"); //Jsem hotov. Tady je, podívej. Vypadá nakonec nádhernì.
+		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_01"); //Jsem hotov. Tady je, podÃ­vej. VypadÃ¡ nakonec nÃ¡dhernÄ›.
 		CreateInvItems (self, ItAm_Prot_BlackEye_Mis, 1);									
 		B_GiveInvItems (self, other, ItAm_Prot_BlackEye_Mis, 1);					
-		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_02"); //Nos ho stále u sebe a Pátraèi tì nebudou moci stáhnout do své duševní propasti.
-		AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_03"); //Dìkuji.
-		B_LogEntry (TOPIC_DEMENTOREN,"Karras mi dal amulet, kterı mì ochrání pøed èernımi pohledy pátraèù."); 
+		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_02"); //Nos ho stÃ¡le u sebe a PÃ¡traÄi tÄ› nebudou moci stÃ¡hnout do svÃ© duÅ¡evnÃ­ propasti.
+		AI_Output (other,self ,"DIA_Karras_ItAm_Prot_BlackEye_Mis_15_03"); //DÄ›kuji.
+		B_LogEntry (TOPIC_DEMENTOREN,"Karras mi dal amulet, kterÃ½ mÄ› ochrÃ¡nÃ­ pÅ™ed ÄernÃ½mi pohledy pÃ¡traÄÅ¯."); 
 		DIA_Karras_ItAm_Prot_BlackEye_Mis_NoPerm = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_04"); //Trpìlivost. Ještì na tom pracuji.
+		AI_Output (self ,other,"DIA_Karras_ItAm_Prot_BlackEye_Mis_10_04"); //TrpÄ›livost. JeÅ¡tÄ› na tom pracuji.
 	};
 };
 

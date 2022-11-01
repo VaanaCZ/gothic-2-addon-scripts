@@ -77,10 +77,10 @@ func int DIA_Attila_Hallo_Condition ()
 };
 func void DIA_Attila_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_Hallo_09_00"); //(potichu) Á - koneènì. U jsem na tebe èekal, cizinèe.
+	AI_Output (self, other, "DIA_Attila_Hallo_09_00"); //(potichu) Ã - koneÄnÄ›. UÅ¾ jsem na tebe Äekal, cizinÄe.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Co ode mì chceš?",DIA_Attila_Hallo_Was);
+	Info_AddChoice		(DIA_Attila_Hallo,"Co ode mÄ› chceÅ¡?",DIA_Attila_Hallo_Was);
 	Info_AddChoice		(DIA_Attila_Hallo,"Kdo jsi?",DIA_Attila_Hallo_Wer);
 	
 	B_GivePlayerXP (XP_Attila_MetHim);
@@ -88,22 +88,22 @@ func void DIA_Attila_Hallo_Info ()
 FUNC VOID DIA_Attila_Hallo_Wer()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //Kdo jsi?
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Øíkají mi Attila... Ale copak je moje jméno dùleité? Naše jména jsou nepodstatná.
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //To bys mìl vìdìt líp ne já, cizinèe. (tichı smích)
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Å˜Ã­kajÃ­ mi Attila... Ale copak je moje jmÃ©no dÅ¯leÅ¾itÃ©? NaÅ¡e jmÃ©na jsou nepodstatnÃ¡.
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //To bys mÄ›l vÄ›dÄ›t lÃ­p neÅ¾ jÃ¡, cizinÄe. (tichÃ½ smÃ­ch)
 	
 	Knows_Attila_Wer = TRUE;
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
 	if (Knows_Attila_Was == FALSE)
 	{
-		Info_AddChoice		(DIA_Attila_Hallo,"Co ode mì chceš?",DIA_Attila_Hallo_Was);
+		Info_AddChoice		(DIA_Attila_Hallo,"Co ode mÄ› chceÅ¡?",DIA_Attila_Hallo_Was);
 	};
-	Info_AddChoice		(DIA_Attila_Hallo,"Co je to za frašku?",DIA_Attila_Hallo_Theater);
+	Info_AddChoice		(DIA_Attila_Hallo,"Co je to za fraÅ¡ku?",DIA_Attila_Hallo_Theater);
 }; 
 FUNC VOID DIA_Attila_Hallo_Was()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Was_15_00"); //Co ode mì chceš?
-	AI_Output (self, other, "DIA_Attila_Hallo_Was_09_01"); //Jsem tu, abych ti vysvìtlil pár vìcí. A pak jsem tu proto, abych tì zabil.
+	AI_Output (other, self, "DIA_Attila_Hallo_Was_15_00"); //Co ode mÄ› chceÅ¡?
+	AI_Output (self, other, "DIA_Attila_Hallo_Was_09_01"); //Jsem tu, abych ti vysvÄ›tlil pÃ¡r vÄ›cÃ­. A pak jsem tu proto, abych tÄ› zabil.
 	Knows_Attila_Was = TRUE;
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
@@ -112,89 +112,89 @@ FUNC VOID DIA_Attila_Hallo_Was()
 		Info_AddChoice		(DIA_Attila_Hallo,"Kdo jsi?",DIA_Attila_Hallo_Wer);
 	};
 		Info_AddChoice		(DIA_Attila_Hallo,"Kdo ti za to zaplatil?",DIA_Attila_Hallo_Auftrag);
-		Info_AddChoice		(DIA_Attila_Hallo,"Co je to za frašku?",DIA_Attila_Hallo_Theater);
+		Info_AddChoice		(DIA_Attila_Hallo,"Co je to za fraÅ¡ku?",DIA_Attila_Hallo_Theater);
 };
 FUNC VOID DIA_Attila_Hallo_Theater()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Theater_15_00"); //Co je to za frašku?
-	AI_Output (self, other, "DIA_Attila_Hallo_Theater_09_01"); //Nemìl bys svou cestu konèit tak neznalı. Povauj to za poslední ukázku úcty k odsouzenému.
+	AI_Output (other, self, "DIA_Attila_Hallo_Theater_15_00"); //Co je to za fraÅ¡ku?
+	AI_Output (self, other, "DIA_Attila_Hallo_Theater_09_01"); //NemÄ›l bys svou cestu konÄit tak neznalÃ½. PovaÅ¾uj to za poslednÃ­ ukÃ¡zku Ãºcty k odsouzenÃ©mu.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Teï u pùjdu. (KONEC)",DIA_Attila_Hallo_Ende);
+	Info_AddChoice		(DIA_Attila_Hallo,"TeÄ uÅ¾ pÅ¯jdu. (KONEC)",DIA_Attila_Hallo_Ende);
 	Info_AddChoice		(DIA_Attila_Hallo,"Kdo ti za to zaplatil?",DIA_Attila_Hallo_Auftrag);
-	Info_AddChoice		(DIA_Attila_Hallo,"Proè mì chceš zabít?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"ProÄ mÄ› chceÅ¡ zabÃ­t?",DIA_Attila_Hallo_Warum);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Ende()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Ende_15_00"); //Právì odcházím.
-	AI_Output (self, other, "DIA_Attila_Hallo_Ende_09_01"); //Je mi líto... to ti nemùu dovolit. Smiø se s tím. Nastal èas zemøít.
+	AI_Output (other, self, "DIA_Attila_Hallo_Ende_15_00"); //PrÃ¡vÄ› odchÃ¡zÃ­m.
+	AI_Output (self, other, "DIA_Attila_Hallo_Ende_09_01"); //Je mi lÃ­to... to ti nemÅ¯Å¾u dovolit. SmiÅ™ se s tÃ­m. Nastal Äas zemÅ™Ã­t.
 	AI_DrawWeapon (self);
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
 	Info_AddChoice		(DIA_Attila_Hallo,"Kdo ti za to zaplatil?",DIA_Attila_Hallo_Auftrag);
-	Info_AddChoice		(DIA_Attila_Hallo,"Proè mì chceš zabít?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"ProÄ mÄ› chceÅ¡ zabÃ­t?",DIA_Attila_Hallo_Warum);
 };
 FUNC VOID DIA_Attila_Hallo_Auftrag()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Auftrag_15_00"); //Kdo ti za to zaplatil?
-	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_01"); //Moji zamìstnavatelé pracují v utajení, stejnì jako já.
-	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_02"); //Souèástí naší dohody je i podmínka, e nebudu zmiòovat ani jejich jména, ani jejich adresy.
+	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_01"); //Moji zamÄ›stnavatelÃ© pracujÃ­ v utajenÃ­, stejnÄ› jako jÃ¡.
+	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_02"); //SouÄÃ¡stÃ­ naÅ¡Ã­ dohody je i podmÃ­nka, Å¾e nebudu zmiÅˆovat ani jejich jmÃ©na, ani jejich adresy.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Proè mì chceš zabít?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"ProÄ mÄ› chceÅ¡ zabÃ­t?",DIA_Attila_Hallo_Warum);
 };
 FUNC VOID DIA_Attila_Hallo_Warum()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Warum_15_00"); //Proè mì chceš zabít?
+	AI_Output (other, self, "DIA_Attila_Hallo_Warum_15_00"); //ProÄ mÄ› chceÅ¡ zabÃ­t?
 	
 	if (Betrayal_Halvor == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_01"); //Udal jsi Halvora. Teï sedí ve vìzení. To nebylo souèástí plánu.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_01"); //Udal jsi Halvora. TeÄ sedÃ­ ve vÄ›zenÃ­. To nebylo souÄÃ¡stÃ­ plÃ¡nu.
 	}; 
 	if (Rengaru_InKnast == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_02"); //Prodal jsi Rengara. Je to jen malej zlodìjíèek, ale tos nemìl dìlat.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_02"); //Prodal jsi Rengara. Je to jen malej zlodÄ›jÃ­Äek, ale tos nemÄ›l dÄ›lat.
 	};
 	if (Nagur_Ausgeliefert == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_03"); //Nagur je kvùli tobì za møíemi. Neodpustitelná chyba, jak se zdá.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_03"); //Nagur je kvÅ¯li tobÄ› za mÅ™Ã­Å¾emi. NeodpustitelnÃ¡ chyba, jak se zdÃ¡.
 	};
 	
-	AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_04"); //Mí zamìstnavatelé z toho nemají zrovna velkou radost. Aby ti zabránili udìlat nìjakou další chybu, poslali mì.
+	AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_04"); //MÃ­ zamÄ›stnavatelÃ© z toho nemajÃ­ zrovna velkou radost. Aby ti zabrÃ¡nili udÄ›lat nÄ›jakou dalÅ¡Ã­ chybu, poslali mÄ›.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Mùu ti dát zlato...",DIA_Attila_Hallo_Gold);
-	Info_AddChoice		(DIA_Attila_Hallo,"Tak mì alespoò nech tasit zbraò.",DIA_Attila_Hallo_Attacke);
+	Info_AddChoice		(DIA_Attila_Hallo,"MÅ¯Å¾u ti dÃ¡t zlato...",DIA_Attila_Hallo_Gold);
+	Info_AddChoice		(DIA_Attila_Hallo,"Tak mÄ› alespoÅˆ nech tasit zbraÅˆ.",DIA_Attila_Hallo_Attacke);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Gold()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Gold_15_00"); //Mùu ti dát zlato - spoustu zlata.
-	AI_Output (self, other, "DIA_Attila_Hallo_Gold_09_01"); //Smùla. Proto tady nejsem. Jedinou cenu, kterou zaplatíš, je tvùj ivot. A to právì teï.
+	AI_Output (other, self, "DIA_Attila_Hallo_Gold_15_00"); //MÅ¯Å¾u ti dÃ¡t zlato - spoustu zlata.
+	AI_Output (self, other, "DIA_Attila_Hallo_Gold_09_01"); //SmÅ¯la. Proto tady nejsem. Jedinou cenu, kterou zaplatÃ­Å¡, je tvÅ¯j Å¾ivot. A to prÃ¡vÄ› teÄ.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Attacke()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Attacke_15_00"); //Tak mì alespoò nech tasit zbraò.
+	AI_Output (other, self, "DIA_Attila_Hallo_Attacke_15_00"); //Tak mÄ› alespoÅˆ nech tasit zbraÅˆ.
 	if (Npc_HasEquippedWeapon (other) == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_01"); //Dobrá, tak se pøiprav na svùj poslední boj.
+		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_01"); //DobrÃ¡, tak se pÅ™iprav na svÅ¯j poslednÃ­ boj.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1);	
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_02"); //ádná se ti u opasku nehoupe. U ti nezbıvá mnoho èasu, cizinèe. Smrt u tì oèekává.
+		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_02"); //Å½Ã¡dnÃ¡ se ti u opasku nehoupe. UÅ¾ ti nezbÃ½vÃ¡ mnoho Äasu, cizinÄe. Smrt uÅ¾ tÄ› oÄekÃ¡vÃ¡.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 2);	
 	};
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Willkommen Schlüssel für die Diebesgilde 
+//	Info Willkommen SchlÃ¼ssel fÃ¼r die Diebesgilde 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Willkommen  	(C_INFO)
 {
@@ -217,13 +217,13 @@ func int DIA_Attila_Willkommen_Condition ()
 
 func void DIA_Attila_Willkommen_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_00"); //Á - koneènì. U jsem na tebe èekal, cizinèe.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_00"); //Ã - koneÄnÄ›. UÅ¾ jsem na tebe Äekal, cizinÄe.
 	B_GivePlayerXP (XP_Attila_Friend);
-	AI_Output (other, self, "DIA_Attila_Willkommen_15_01"); //Kdo jsi a co ode mì chceš?
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_02"); //To není dùleité. Co je dùleité, jsou tvé skutky. Zùstal jsi vìrnı, dokonce ani bys o tom vìdìl.
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_03"); //Jistí dobrodinci si všimli tvé loajality. A nabídli ti šanci. Tak ji vyuij.
-	AI_Output (other, self, "DIA_Attila_Willkommen_15_04"); //Hele, prostì mi øekni, proè jsi tady.
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_05"); //Mám pro tebe dárek. Ostatní u je na tobì, cizinèe. (tichı smích)
+	AI_Output (other, self, "DIA_Attila_Willkommen_15_01"); //Kdo jsi a co ode mÄ› chceÅ¡?
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_02"); //To nenÃ­ dÅ¯leÅ¾itÃ©. Co je dÅ¯leÅ¾itÃ©, jsou tvÃ© skutky. ZÅ¯stal jsi vÄ›rnÃ½, dokonce aniÅ¾ bys o tom vÄ›dÄ›l.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_03"); //JistÃ­ dobrodinci si vÅ¡imli tvÃ© loajality. A nabÃ­dli ti Å¡anci. Tak ji vyuÅ¾ij.
+	AI_Output (other, self, "DIA_Attila_Willkommen_15_04"); //Hele, prostÄ› mi Å™ekni, proÄ jsi tady.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_05"); //MÃ¡m pro tebe dÃ¡rek. OstatnÃ­ uÅ¾ je na tobÄ›, cizinÄe. (tichÃ½ smÃ­ch)
 	
 	B_GiveInvItems (self,other,ItKe_ThiefGuildKey_MIS,1);
 	Attila_Key = TRUE;
@@ -231,7 +231,7 @@ func void DIA_Attila_Willkommen_Info ()
 	Npc_ExchangeRoutine (self, "AFTER");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Übergabe
+//	Info Nach Schluessel Ãœbergabe
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_NachSchluessel		(C_INFO)
 {
@@ -254,12 +254,12 @@ func int DIA_Attila_NachSchluessel_Condition ()
 
 func void DIA_Attila_NachSchluessel_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_00"); //Mùj úkol je splnìn, alespoò prozatím.
-	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_01"); //Ale moná se naše cesty znovu setkají.
+	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_00"); //MÅ¯j Ãºkol je splnÄ›n, alespoÅˆ prozatÃ­m.
+	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_01"); //Ale moÅ¾nÃ¡ se naÅ¡e cesty znovu setkajÃ­.
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Übergabe Wer bist du?
+//	Info Nach Schluessel Ãœbergabe Wer bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Wer		(C_INFO)
 {
@@ -282,8 +282,8 @@ func int DIA_Attila_Wer_Condition ()
 func void DIA_Attila_Wer_Info ()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //Kdo jsi?
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Øíkají mi Attila... Ale copak je moje jméno dùleité? Naše jména jsou nepodstatná.
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //To bys mìl vìdìt líp ne já, cizinèe. (tichı smích)
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Å˜Ã­kajÃ­ mi Attila... Ale copak je moje jmÃ©no dÅ¯leÅ¾itÃ©? NaÅ¡e jmÃ©na jsou nepodstatnÃ¡.
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //To bys mÄ›l vÄ›dÄ›t lÃ­p neÅ¾ jÃ¡, cizinÄe. (tichÃ½ smÃ­ch)
 	
 	AI_StopProcessInfos (self);
 };

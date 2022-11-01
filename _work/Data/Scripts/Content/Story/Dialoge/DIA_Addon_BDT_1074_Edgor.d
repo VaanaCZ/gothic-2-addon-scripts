@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Edgor_EXIT_Info()
 	if Npc_KnowsInfo (other, DIA_Addon_Edgor_MIS2)
 	&& (Edgor_Exiteinmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //Rád jsem tì poznal.
+		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //RÃ¡d jsem tÄ› poznal.
 		Edgor_Exiteinmal = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -78,11 +78,11 @@ FUNC INT DIA_Addon_Edgor_Hi_Condition()
 FUNC VOID DIA_Addon_Edgor_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Jak to jde?
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Chceš vìdìt, jak to jde? Tak já ti to teda povím.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Napøed mì sem jednı bouølivı noci pøivlekli piráti. Èoveèe, blil jsem jak Alík, to teda jo!
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Pak Havran zavøel dùl, protoe òácí magoøi byli moc zlatachtiví.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //A pak se stal velitelem lovcù Franco - zabil kadıho, kdo byl proti nìmu.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Øek bych, e pìknì blbì.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //ChceÅ¡ vÄ›dÄ›t, jak to jde? Tak jÃ¡ ti to teda povÃ­m.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //NapÅ™ed mÄ› sem jednÃ½ bouÅ™livÃ½ noci pÅ™ivlekli pirÃ¡ti. ÄŒoveÄe, blil jsem jak AlÃ­k, to teda jo!
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Pak Havran zavÅ™el dÅ¯l, protoÅ¾e ÅˆÃ¡cÃ­ magoÅ™i byli moc zlatachtivÃ­.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //A pak se stal velitelem lovcÅ¯ Franco - zabil kaÅ¾dÃ½ho, kdo byl proti nÄ›mu.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Å˜ek bych, Å¾e pÄ›knÄ› blbÄ›.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -115,8 +115,8 @@ FUNC INT DIA_Addon_Edgor_Franco_Condition()
 FUNC VOID DIA_Addon_Edgor_Franco_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //Jak se stal Franco velitelem?
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //Jednoduše – prostì zabil svıho pøedchùdce Fletchera.
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher byl fajn, ale Franco si na nás furt vymejšlí pitomosti.
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //JednoduÅ¡e â€“ prostÄ› zabil svÃ½ho pÅ™edchÅ¯dce Fletchera.
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher byl fajn, ale Franco si na nÃ¡s furt vymejÅ¡lÃ­ pitomosti.
 };	
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Edgor_MIS2   (C_INFO)
 	condition   = DIA_Addon_Edgor_MIS2_Condition;
 	information = DIA_Addon_Edgor_MIS2_Info;
 	permanent   = FALSE;
-	description = "Franco mì poslal pro nìjakou kamennou tabulku.";
+	description = "Franco mÄ› poslal pro nÄ›jakou kamennou tabulku.";
 };
 FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 {	
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_MIS2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco mì sem poslal pro kamennou tabulku, našel jsi ji?
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Èéèe, po tı jsem se ani nekoukal. Vím akorát, e má bejt v òákı starı budovì hluboko v bainách.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //A vnitøní hlas mi øíká 'Edgore, dr se vod tìch starejch budov v bainách co nejdál'.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Rozhodnì nebudu riskovat krk pro takovou pijavici, jako je Franco.
+	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco mÄ› sem poslal pro kamennou tabulku, naÅ¡el jsi ji?
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //ÄŒÃ©Äe, po tÃ½ jsem se ani nekoukal. VÃ­m akorÃ¡t, Å¾e mÃ¡ bejt v ÅˆÃ¡kÃ½ starÃ½ budovÄ› hluboko v baÅ¾inÃ¡ch.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //A vnitÅ™nÃ­ hlas mi Å™Ã­kÃ¡ 'Edgore, drÅ¾ se vod tÄ›ch starejch budov v baÅ¾inÃ¡ch co nejdÃ¡l'.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //RozhodnÄ› nebudu riskovat krk pro takovou pijavici, jako je Franco.
 	
-	B_LogEntry (Topic_Addon_Stoneplate,"Edgor se k té kamenné tabulce nikdy nedostal, ale podle nìj se nachází kdesi ve staré budovì v bainì.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Edgor se k tÃ© kamennÃ© tabulce nikdy nedostal, ale podle nÄ›j se nachÃ¡zÃ­ kdesi ve starÃ© budovÄ› v baÅ¾inÄ›.");
 };
 //---------------------------------------------------------------------
 //	Info Wegbeschreibung
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Edgor_Weg   (C_INFO)
 	condition   = DIA_Addon_Edgor_Weg_Condition;
 	information = DIA_Addon_Edgor_Weg_Info;
 	permanent   = FALSE;
-	description = "Kde pøesnì ta stará budova je?";
+	description = "Kde pÅ™esnÄ› ta starÃ¡ budova je?";
 };
 FUNC INT DIA_Addon_Edgor_Weg_Condition()
 {	
@@ -169,11 +169,11 @@ FUNC INT DIA_Addon_Edgor_Weg_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Kde pøesnì má ta stará budova bıt?
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Bì doleva pøes tady ten velkej kámen a za chvíli narazíš na další šutrák.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Za ním zaboè doleva. Víc nevím, u je to dìsnì dlouho.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Ale ty rozvaliny by mìly bejt nìkde vejš, akorát je to všecko zarostlı, take to není vidìt.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Snad budeš mít štìstí a najdeš to.
+	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Kde pÅ™esnÄ› mÃ¡ ta starÃ¡ budova bÃ½t?
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //BÄ›Å¾ doleva pÅ™es tady ten velkej kÃ¡men a za chvÃ­li narazÃ­Å¡ na dalÅ¡Ã­ Å¡utrÃ¡k.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Za nÃ­m zaboÄ doleva. VÃ­c nevÃ­m, uÅ¾ je to dÄ›snÄ› dlouho.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Ale ty rozvaliny by mÄ›ly bejt nÄ›kde vejÅ¡, akorÃ¡t je to vÅ¡ecko zarostlÃ½, takÅ¾e to nenÃ­ vidÄ›t.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Snad budeÅ¡ mÃ­t Å¡tÄ›stÃ­ a najdeÅ¡ to.
 };
 //---------------------------------------------------------------------
 //	Info Found
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Edgor_Found   (C_INFO)
 	condition   = DIA_Addon_Edgor_Found_Condition;
 	information = DIA_Addon_Edgor_Found_Info;
 	permanent   = FALSE;
-	description = "Našel jsem tu kamennou tabulku!";
+	description = "NaÅ¡el jsem tu kamennou tabulku!";
 };
 FUNC INT DIA_Addon_Edgor_Found_Condition()
 {	
@@ -198,9 +198,9 @@ FUNC INT DIA_Addon_Edgor_Found_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Found_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//Našel jsem tu kamennou tabulku!
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(znudìnì) Vánì? To seš teda fakt stateènej.
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(znudìnì) Tak to sis urèitì zaslouil cestu do tábora. (zívá)
+	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//NaÅ¡el jsem tu kamennou tabulku!
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(znudÄ›nÄ›) VÃ¡Å¾nÄ›? To seÅ¡ teda fakt stateÄnej.
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(znudÄ›nÄ›) Tak to sis urÄitÄ› zaslouÅ¾il cestu do tÃ¡bora. (zÃ­vÃ¡)
 };
 //---------------------------------------------------------------------
 //	Info Teach
@@ -212,7 +212,7 @@ INSTANCE DIA_Addon_Edgor_Teach   (C_INFO)
 	condition   = DIA_Addon_Edgor_Teach_Condition;
 	information = DIA_Addon_Edgor_Teach_Info;
 	permanent   = FALSE;
-	description = "Mùeš mì nìèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };
 FUNC INT DIA_Addon_Edgor_Teach_Condition()
 {	
@@ -223,20 +223,20 @@ FUNC INT DIA_Addon_Edgor_Teach_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Mùeš mì nìco nauèit?
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//O krvavejch mouchách vím fakt dost. Tu mizernou havì snad nesnáším ještì víc ne Franca!
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Ale vím, jak z jejich tìl vyndávat ihadla a køídla. (šílenì) Jo, poøádnì je roztrhat!
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Krom toho dokáu získat i vımìšek z jejich ihadel.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Jestli chceš, mùu tì tyhle fígle nauèit.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Ale ani kuøe zadarmo nehrabe, to je ti doufám jasnı.
+	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//O krvavejch mouchÃ¡ch vÃ­m fakt dost. Tu mizernou havÄ›Å¥ snad nesnÃ¡Å¡Ã­m jeÅ¡tÄ› vÃ­c neÅ¾ Franca!
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Ale vÃ­m, jak z jejich tÄ›l vyndÃ¡vat Å¾ihadla a kÅ™Ã­dla. (Å¡Ã­lenÄ›) Jo, poÅ™Ã¡dnÄ› je roztrhat!
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Krom toho dokÃ¡Å¾u zÃ­skat i vÃ½mÄ›Å¡ek z jejich Å¾ihadel.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Jestli chceÅ¡, mÅ¯Å¾u tÄ› tyhle fÃ­gle nauÄit.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Ale ani kuÅ™e zadarmo nehrabe, to je ti doufÃ¡m jasnÃ½.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor ví spoustu vìcí o krvavıch mouchách a o tom, jak z nich získávat trofeje.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor vÃ­ spoustu vÄ›cÃ­ o krvavÃ½ch mouchÃ¡ch a o tom, jak z nich zÃ­skÃ¡vat trofeje.");	
 	Edgor_Teach = TRUE;
 };
 FUNC VOID B_Edgor_NotEnoughGold()
 {
-	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Napøed vysol zlato. A tím myslím poctivı mince, o nuggety nestojím.
+	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//NapÅ™ed vysol zlato. A tÃ­m myslÃ­m poctivÃ½ mince, o nuggety nestojÃ­m.
 };
 //---------------------------------------------------------------------
 //	Info Train (Bloodflys)
@@ -248,7 +248,7 @@ INSTANCE DIA_Addon_Edgor_TrainStart   (C_INFO)
 	condition   = DIA_Addon_Edgor_Start_Condition;
 	information = DIA_Addon_Edgor_Start_Info;
 	permanent   = TRUE;
-	description = "K tìm krvavım mouchám...";
+	description = "K tÄ›m krvavÃ½m mouchÃ¡m...";
 };
 FUNC INT DIA_Addon_Edgor_Start_Condition()
 {	
@@ -259,8 +259,8 @@ FUNC INT DIA_Addon_Edgor_Start_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Start_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00");//K tìm krvavım mouchám...
-	AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01");//Co chceš vìdìt?
+	AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00");//K tÄ›m krvavÃ½m mouchÃ¡m...
+	AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01");//Co chceÅ¡ vÄ›dÄ›t?
 	
 	Info_ClearChoices (DIA_Addon_Edgor_TrainStart);
 	Info_AddChoice    (DIA_Addon_Edgor_TrainStart,DIALOG_BACK,DIA_Addon_Edgor_TrainStart_BACK);
@@ -268,15 +268,15 @@ FUNC VOID DIA_Addon_Edgor_Start_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "Vyjmutí ihadel krvavıch much (Cena: 5 VB, 100 zlatıch)",DIA_Addon_Edgor_TrainStart_Sting);
+		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "VyjmutÃ­ Å¾ihadel krvavÃ½ch much (Cena: 5 VB, 100 zlatÃ½ch)",DIA_Addon_Edgor_TrainStart_Sting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Vyjmutí køídel krvavıch much (Cena: 5 VB, 100 zlatıch)",DIA_Addon_Edgor_TrainStart_Wing);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "VyjmutÃ­ kÅ™Ã­del krvavÃ½ch much (Cena: 5 VB, 100 zlatÃ½ch)",DIA_Addon_Edgor_TrainStart_Wing);
 	};
 	if (Knows_Bloodfly == FALSE)
 	{
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"Získání jedu ze ihadla (Cena: 1 VB, 100 zlatıch)",DIA_Addon_Edgor_TrainStart_GIFT);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"ZÃ­skÃ¡nÃ­ jedu ze Å¾ihadla (Cena: 1 VB, 100 zlatÃ½ch)",DIA_Addon_Edgor_TrainStart_GIFT);
 	};
 };	
 FUNC VOID DIA_Addon_Edgor_TrainStart_BACK()
@@ -289,9 +289,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Sting()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00");//Jak vyjmu krvavım mouchám ihadla?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01");//Obrátíš tu mrtvou mrchu na bøicho a køíovım øezem ji otevøeš. Chytneš vnitønosti a proøízneš celou tkáò na zádech.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02");//Pak staèí jen škubnout a ihadlo je venku.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00");//Jak vyjmu krvavÃ½m mouchÃ¡m Å¾ihadla?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01");//ObrÃ¡tÃ­Å¡ tu mrtvou mrchu na bÅ™icho a kÅ™Ã­Å¾ovÃ½m Å™ezem ji otevÅ™eÅ¡. ChytneÅ¡ vnitÅ™nosti a proÅ™Ã­zneÅ¡ celou tkÃ¡Åˆ na zÃ¡dech.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02");//Pak staÄÃ­ jen Å¡kubnout a Å¾ihadlo je venku.
 		};
 	}
 	else
@@ -306,8 +306,8 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Wing()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Jak získám køídla?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Jednou rukou popadni køídla a druhou je odøízni podél svrchní vrstvy kùe.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Jak zÃ­skÃ¡m kÅ™Ã­dla?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Jednou rukou popadni kÅ™Ã­dla a druhou je odÅ™Ã­zni podÃ©l svrchnÃ­ vrstvy kÅ¯Å¾e.
 		};
 	}
 	else
@@ -322,9 +322,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_GIFT()
 	{
 		if (other.lp >= 1)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Jak získám vımìšek z ihadel krvavıch much?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Shora ihadlo po délce naøízni a léèivı vımìšek hned vyteèe.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Tak mùeš ze ihadla bezpeènì všecko vyslopnout – nebo to pøidat do nìjakıho lektvaru.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Jak zÃ­skÃ¡m vÃ½mÄ›Å¡ek z Å¾ihadel krvavÃ½ch much?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Shora Å¾ihadlo po dÃ©lce naÅ™Ã­zni a lÃ©ÄivÃ½ vÃ½mÄ›Å¡ek hned vyteÄe.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Tak mÅ¯Å¾eÅ¡ ze Å¾ihadla bezpeÄnÄ› vÅ¡ecko vyslopnout â€“ nebo to pÅ™idat do nÄ›jakÃ½ho lektvaru.
 			
 			other.lp = (other.lp - 1);
 			Knows_Bloodfly = TRUE; 

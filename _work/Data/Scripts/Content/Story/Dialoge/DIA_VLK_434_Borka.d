@@ -76,11 +76,11 @@ func int DIA_Borka_PISSOFF_Condition ()
 };
 func void DIA_Borka_PISSOFF_Info ()
 {
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Hej, ty! Jak se vede? Nezáleí na tom, co máš v plánu - na to bude dost èasu pozdìji.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Stojíš pøímo pøed perlou Khorinidu - ÈERVENOU LUCERNOU. Je to ten nejkrásnìjší nevìstinec v celé Myrtanì, to si piš!
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //Kotví tu námoøníci ze všech koutù zemì, jen aby tu mohli strávit pár nocí.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //A teï máš tuhle šanci - ne, èest - právì ty! Mùeš strávit noc s Nadjou, nejvášnivìjším kvìtem, jakı kdy bohové stvoøili!
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //Pojï dál a uij si to, o èem se jinım ani nesnilo!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Hej, ty! Jak se vede? NezÃ¡leÅ¾Ã­ na tom, co mÃ¡Å¡ v plÃ¡nu - na to bude dost Äasu pozdÄ›ji.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //StojÃ­Å¡ pÅ™Ã­mo pÅ™ed perlou Khorinidu - ÄŒERVENOU LUCERNOU. Je to ten nejkrÃ¡snÄ›jÅ¡Ã­ nevÄ›stinec v celÃ© MyrtanÄ›, to si piÅ¡!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //KotvÃ­ tu nÃ¡moÅ™nÃ­ci ze vÅ¡ech koutÅ¯ zemÄ›, jen aby tu mohli strÃ¡vit pÃ¡r nocÃ­.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //A teÄ mÃ¡Å¡ tuhle Å¡anci - ne, Äest - prÃ¡vÄ› ty! MÅ¯Å¾eÅ¡ strÃ¡vit noc s Nadjou, nejvÃ¡Å¡nivÄ›jÅ¡Ã­m kvÄ›tem, jakÃ½ kdy bohovÃ© stvoÅ™ili!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //PojÄ dÃ¡l a uÅ¾ij si to, o Äem se jinÃ½m ani nesnilo!
 	
 	AI_StopProcessInfos (self);
 };
@@ -109,8 +109,8 @@ func int DIA_Borka_TROUBLE_Condition ()
 };
 func void DIA_Borka_TROUBLE_Info ()
 {
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Proè postáváš takhle stranou? Pojï dál a uvidíš naši vášnivou Nadju.
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Plameny, které v tobì tahle noèní bytost zaehne, dají tvému ivotu novı smysl!
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //ProÄ postÃ¡vÃ¡Å¡ takhle stranou? PojÄ dÃ¡l a uvidÃ­Å¡ naÅ¡i vÃ¡Å¡nivou Nadju.
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Plameny, kterÃ© v tobÄ› tahle noÄnÃ­ bytost zaÅ¾ehne, dajÃ­ tvÃ©mu Å¾ivotu novÃ½ smysl!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ instance DIA_Borka_Smoke		(C_INFO)
 	condition	 = 	DIA_Borka_Smoke_Condition;
 	information	 = 	DIA_Borka_Smoke_Info;
 	permanent	 =  TRUE;
-	description	 =  "Nevíš, kde bych sehnal nìco ke kouøení?";
+	description	 =  "NevÃ­Å¡, kde bych sehnal nÄ›co ke kouÅ™enÃ­?";
 };
 
 func int DIA_Borka_Smoke_Condition ()
@@ -136,7 +136,7 @@ func int DIA_Borka_Smoke_Condition ()
 };
 func void DIA_Borka_Smoke_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Nevíš, kde bych si mohl koupit nìjaké kuøivo - trávu nebo nìco takového?
+	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //NevÃ­Å¡, kde bych si mohl koupit nÄ›jakÃ© kuÅ™ivo - trÃ¡vu nebo nÄ›co takovÃ©ho?
 	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //Ne, jdi do hajzlu.
 	AI_StopProcessInfos (self);
 };
@@ -150,7 +150,7 @@ instance DIA_Borka_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Borka_BUYHERB_Condition;
 	information	 = 	DIA_Borka_BUYHERB_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Slyšel jsem, e prodáváš trávu.";
+	description	 = 	"SlyÅ¡el jsem, Å¾e prodÃ¡vÃ¡Å¡ trÃ¡vu.";
 };
 func int DIA_Borka_BUYHERB_Condition ()
 {
@@ -166,34 +166,34 @@ func void DIA_Borka_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //Slyšel jsem, e prodáváš drogy.
+	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //SlyÅ¡el jsem, Å¾e prodÃ¡vÃ¡Å¡ drogy.
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_01"); //Je mi líto, pane stráník. To musí bıt nìjaká mılka, o ádnıch drogách nic nevím.
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_01"); //Je mi lÃ­to, pane strÃ¡Å¾nÃ­k. To musÃ­ bÃ½t nÄ›jakÃ¡ mÃ½lka, o Å¾Ã¡dnÃ½ch drogÃ¡ch nic nevÃ­m.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //To øíká kdo?
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //To Å™Ã­kÃ¡ kdo?
 	
 		Info_ClearChoices 	(DIA_Borka_BUYHERB);
-		Info_AddChoice		(DIA_Borka_BUYHERB,"Na tom a tak nezáleí.",DIA_Borka_BUYHERB_Egal);
+		Info_AddChoice		(DIA_Borka_BUYHERB,"Na tom aÅ¾ tak nezÃ¡leÅ¾Ã­.",DIA_Borka_BUYHERB_Egal);
 		Info_AddChoice		(DIA_Borka_BUYHERB,"Nadja.",DIA_Borka_BUYHERB_Nadja);
 	};
 };
 FUNC VOID DIA_Borka_BUYHERB_Egal ()
 {
-	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //To sem nepatøí.
-	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Jenom chci vìdìt, kdo tì posílá, abych mìl jistotu, e jsi v poøádku.
+	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //To sem nepatÅ™Ã­.
+	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Jenom chci vÄ›dÄ›t, kdo tÄ› posÃ­lÃ¡, abych mÄ›l jistotu, Å¾e jsi v poÅ™Ã¡dku.
 	
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
 	Info_AddChoice		(DIA_Borka_BUYHERB,"Nadja.",DIA_Borka_BUYHERB_Nadja);
-	Info_AddChoice		(DIA_Borka_BUYHERB,"Tak chceš uzavøít obchod, nebo ne?",DIA_Borka_BUYHERB_Deal);
+	Info_AddChoice		(DIA_Borka_BUYHERB,"Tak chceÅ¡ uzavÅ™Ã­t obchod, nebo ne?",DIA_Borka_BUYHERB_Deal);
 };
 FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 {
 	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //Nadja.
-	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Co ty víš - ptáèek si prostì zaštìbetal. Nemùeš vìøit všemu, co ti ta holka nakuká.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Co ty vÃ­Å¡ - ptÃ¡Äek si prostÄ› zaÅ¡tÄ›betal. NemÅ¯Å¾eÅ¡ vÄ›Å™it vÅ¡emu, co ti ta holka nakukÃ¡.
 	
 	Nadja_Victim = TRUE; 
 	Undercover_Failed = TRUE;
@@ -201,9 +201,9 @@ FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 };
 FUNC VOID DIA_Borka_BUYHERB_Deal ()
 {
-	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //Tak chceš uzavøít obchod, nebo ne?
+	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //Tak chceÅ¡ uzavÅ™Ã­t obchod, nebo ne?
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //...no dobøe... tak tedy budeme obchodovat. Dej mi 50 zlaákù a já ti za nì dám nìco ke kouøení. A ádné smlouvání.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //...no dobÅ™e... tak tedy budeme obchodovat. Dej mi 50 zlaÅ¥Ã¡kÅ¯ a jÃ¡ ti za nÄ› dÃ¡m nÄ›co ke kouÅ™enÃ­. A Å¾Ã¡dnÃ© smlouvÃ¡nÃ­.
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
 	Borka_Deal = TRUE;
 };	
@@ -217,7 +217,7 @@ instance DIA_Borka_SECOND_CHANCE		(C_INFO)
 	condition	 = 	DIA_Borka_SECOND_CHANCE_Condition;
 	information	 = 	DIA_Borka_SECOND_CHANCE_Info;
 	permanent	 =  TRUE;  	
-	description	 = 	"Tak uzavøeme obchod (zaplatit 50 zlaákù).";
+	description	 = 	"Tak uzavÅ™eme obchod (zaplatit 50 zlaÅ¥Ã¡kÅ¯).";
 };
 func int DIA_Borka_SECOND_CHANCE_Condition ()
 {	
@@ -232,11 +232,11 @@ func int DIA_Borka_SECOND_CHANCE_Condition ()
 };
 func void DIA_Borka_SECOND_CHANCE_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //Tak dobøe, tady je to zlato.
+	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //Tak dobÅ™e, tady je to zlato.
 	B_GiveInvItems (hero, self, ItMi_Gold, 50);
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //Dobrá...
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //DobrÃ¡...
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //...tady je èerstvı, pryskyøicí vylepšenı joint.
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //...tady je ÄerstvÃ½, pryskyÅ™icÃ­ vylepÅ¡enÃ½ joint.
 	B_GiveInvItems (self, hero, ItMi_Joint, 1);
 	Borka_Deal = 2;
 	AI_StopProcessInfos (self);

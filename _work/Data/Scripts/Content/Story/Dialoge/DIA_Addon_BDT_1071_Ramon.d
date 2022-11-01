@@ -60,16 +60,16 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 	{
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_00"); //Tak co se tam stalo?
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_01"); //Uzemnil jsem Franca.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //Take teï je na TOBÌ, aby ti líní psi poøádnì makali?
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Hele, nenechám se otravovat od nìjakejch lovcù. Chci se dostat do tábora.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Tak na to zapomeò. Sejmul jsi Franca, take teï to tu vedeš ty. Šupito presto, do práce.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Jestli to tu vedu, pak rozhoduju, kdo je právì na øadì.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //A rozhodl jsem se, e další pùjdu JÁ!
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(smìje se) To není tak lehkı. O NIKOHO jsme neádali, take dovnitø nepùjde NIKDO.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Thorus mùe lovcùm poslat novıho velitele a pak si mùu vevnitø trochu oddáchnout.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_09"); //(smìje se) Ty se jen tak nevzdáš, co? No dobøe, pohni zadkem, a u jsi uvnitø.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Thorus se postará, aby lovci nezùstali dlouho bez velitele.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_11"); //Na co èekáš? A koukej si vzít krumpáè!
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //TakÅ¾e teÄ je na TOBÄš, aby ti lÃ­nÃ­ psi poÅ™Ã¡dnÄ› makali?
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Hele, nenechÃ¡m se otravovat od nÄ›jakejch lovcÅ¯. Chci se dostat do tÃ¡bora.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Tak na to zapomeÅˆ. Sejmul jsi Franca, takÅ¾e teÄ to tu vedeÅ¡ ty. Å upito presto, do prÃ¡ce.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Jestli to tu vedu, pak rozhoduju, kdo je prÃ¡vÄ› na Å™adÄ›.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //A rozhodl jsem se, Å¾e dalÅ¡Ã­ pÅ¯jdu JÃ!
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(smÄ›je se) To nenÃ­ tak lehkÃ½. O NIKOHO jsme neÅ¾Ã¡dali, takÅ¾e dovnitÅ™ nepÅ¯jde NIKDO.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Thorus mÅ¯Å¾e lovcÅ¯m poslat novÃ½ho velitele a pak si mÅ¯Å¾u vevnitÅ™ trochu oddÃ¡chnout.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_09"); //(smÄ›je se) Ty se jen tak nevzdÃ¡Å¡, co? No dobÅ™e, pohni zadkem, aÅ¥ uÅ¾ jsi uvnitÅ™.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Thorus se postarÃ¡, aby lovci nezÅ¯stali dlouho bez velitele.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_11"); //Na co ÄekÃ¡Å¡? A koukej si vzÃ­t krumpÃ¡Ä!
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
 		Player_HasTalkedToBanditCamp = TRUE;
@@ -84,31 +84,31 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 	}
 	else if (Ramon_News == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_12"); //Hele, co chceš? Nedokáu si pøedstavit, e by tì jen tak mirnyx-tırnyx pustili pro tábora.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_12"); //Hele, co chceÅ¡? NedokÃ¡Å¾u si pÅ™edstavit, Å¾e by tÄ› jen tak mirnyx-tÃ½rnyx pustili pro tÃ¡bora.
 		
 		if Npc_KnowsInfo (other, DIA_Addon_Franco_HI)
 		{
-			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //Posílá mì Franco. Chce vìdìt, jestli nìkoho v táboøe nepotøebujete.
+			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //PosÃ­lÃ¡ mÄ› Franco. Chce vÄ›dÄ›t, jestli nÄ›koho v tÃ¡boÅ™e nepotÅ™ebujete.
 		};
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //Jo, nìkoho potøebujem. Vèera natáhnul brka další chlápek
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Ten debil si zahrával s Estebanem.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //Jo, nÄ›koho potÅ™ebujem. VÄera natÃ¡hnul brka dalÅ¡Ã­ chlÃ¡pek
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Ten debil si zahrÃ¡val s Estebanem.
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_16"); //Kdo je Esteban?
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Velitel dolního tábora. Rozhoduje, kdo pùjde do dolu.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_18"); //Tak vyøiï Francovi, e Thorus chce novıho chlapa, jasnı?
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Velitel dolnÃ­ho tÃ¡bora. Rozhoduje, kdo pÅ¯jde do dolu.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_18"); //Tak vyÅ™iÄ Francovi, Å¾e Thorus chce novÃ½ho chlapa, jasnÃ½?
 		
 		Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Franco,"Thorus potøebuje v táboøe nìkoho nového. To bude Franca zajímat.");
+		B_LogEntry (Topic_Addon_Franco,"Thorus potÅ™ebuje v tÃ¡boÅ™e nÄ›koho novÃ©ho. To bude Franca zajÃ­mat.");
 		
 		Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? TEN Thorus?",DIA_Addon_Ramon_FirstWarn_YES);
-		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? Nikdy jsem o nìm neslyšel...",DIA_Addon_Ramon_FirstWarn_NO);
+		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? Nikdy jsem o nÄ›m neslyÅ¡el...",DIA_Addon_Ramon_FirstWarn_NO);
 		
 		Ramon_News = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_19"); //Hele, zpomal! Tady není nic k vidìní. Koukej vypadnout!
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_19"); //Hele, zpomal! Tady nenÃ­ nic k vidÄ›nÃ­. Koukej vypadnout!
 		AI_StopProcessInfos(self);
 	};
 				
@@ -118,22 +118,22 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 FUNC VOID DIA_Addon_Ramon_FirstWarn_YES()
 {
 	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_00"); //Thorus? TEN Thorus.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //Jo, TEN Thorus. TEN chlap, kterej chtìl novı lidi.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //Ten chlap, kterej rozhoduje, kdy a jestli vùbec se nìkdo novej dostane z bainy a do tábora.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //Nechceš mi snad namluvit, e ho znáš nìkdy z døívìjška.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //Jo, TEN Thorus. TEN chlap, kterej chtÄ›l novÃ½ lidi.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //Ten chlap, kterej rozhoduje, kdy a jestli vÅ¯bec se nÄ›kdo novej dostane z baÅ¾iny a do tÃ¡bora.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //NechceÅ¡ mi snad namluvit, Å¾e ho znÃ¡Å¡ nÄ›kdy z dÅ™Ã­vÄ›jÅ¡ka.
 	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_04"); //No... ano.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_05"); //Poslyš – Thoruse zná KADİ.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //Ale stejnì dovnitø nepùjdeš – a já mu nic vzkazovat NEBUDU!
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_05"); //PoslyÅ¡ â€“ Thoruse znÃ¡ KAÅ½DÃ.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //Ale stejnÄ› dovnitÅ™ nepÅ¯jdeÅ¡ â€“ a jÃ¡ mu nic vzkazovat NEBUDU!
 	
 	Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 };
 FUNC VOID DIA_Addon_Ramon_FirstWarn_NO()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_NO_15_00"); //Thorus? O tom jsem nikdy neslyšel.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_01"); //Èoveèe, ty ho neznáš? Dyk to bejval šéf stráí ve Starım táboøe.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_02"); //Je to chlap, kterımu tu kadej vìøí.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_03"); //ádá o novı lidi a rozhoduje, kdy a jestli vùbec se nìkdo z novì pøíchozích dostane do tábora.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_04"); //Jestli ještì nìjakou dobu pøeiješ, urèitì ho poznáš.
+	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_NO_15_00"); //Thorus? O tom jsem nikdy neslyÅ¡el.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_01"); //ÄŒoveÄe, ty ho neznÃ¡Å¡? Dyk to bejval Å¡Ã©f strÃ¡Å¾Ã­ ve StarÃ½m tÃ¡boÅ™e.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_02"); //Je to chlap, kterÃ½mu tu kaÅ¾dej vÄ›Å™Ã­.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_03"); //Å½Ã¡dÃ¡ o novÃ½ lidi a rozhoduje, kdy a jestli vÅ¯bec se nÄ›kdo z novÄ› pÅ™Ã­chozÃ­ch dostane do tÃ¡bora.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_04"); //Jestli jeÅ¡tÄ› nÄ›jakou dobu pÅ™eÅ¾ijeÅ¡, urÄitÄ› ho poznÃ¡Å¡.
 	
 	Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 };
@@ -164,7 +164,7 @@ FUNC INT DIA_Addon_Ramon_SecondWarn_Condition()
 
 func void DIA_Addon_Ramon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Ramon_SecondWarn_07_00"); //Ještì krok a bude to tvùj poslední!
+	AI_Output (self, other,"DIA_Addon_Ramon_SecondWarn_07_00"); //JeÅ¡tÄ› krok a bude to tvÅ¯j poslednÃ­!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_1071_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -202,7 +202,7 @@ func void DIA_Addon_Ramon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_Ramon_Attack_07_00"); //Nìkterı lidi se nikdy nepouèí.
+	AI_Output (self, other,"DIA_Addon_Ramon_Attack_07_00"); //NÄ›kterÃ½ lidi se nikdy nepouÄÃ­.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -217,7 +217,7 @@ INSTANCE DIA_Addon_Ramon_News (C_INFO)
 	condition	= DIA_Addon_Ramon_News_Condition;
 	information	= DIA_Addon_Ramon_News_Info;
 	permanent	= FALSE;
-	description	= "Já jsem ten novı.";
+	description	= "JÃ¡ jsem ten novÃ½.";
 };                       
 
 FUNC INT DIA_Addon_Ramon_News_Condition()
@@ -229,8 +229,8 @@ FUNC INT DIA_Addon_Ramon_News_Condition()
 };
 func void DIA_Addon_Ramon_News_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_News_15_00"); //Já jsem ten novej.
-	AI_Output (self, other,"DIA_Addon_Ramon_News_07_01"); //Hele, nesna se mì napálit. O tom, kdo z vás se dostane do tábora, furt ještì rozhoduje Franco.
+	AI_Output (other, self,"DIA_Addon_Ramon_News_15_00"); //JÃ¡ jsem ten novej.
+	AI_Output (self, other,"DIA_Addon_Ramon_News_07_01"); //Hele, nesnaÅ¾ se mÄ› napÃ¡lit. O tom, kdo z vÃ¡s se dostane do tÃ¡bora, furt jeÅ¡tÄ› rozhoduje Franco.
 };
 // ************************************************************
 // 			Lie
@@ -242,7 +242,7 @@ INSTANCE DIA_Addon_Ramon_Lie (C_INFO)
 	condition	= DIA_Addon_Ramon_Lie_Condition;
 	information	= DIA_Addon_Ramon_Lie_Info;
 	permanent	= FALSE;
-	description	= "Posílá mì Franco...";
+	description	= "PosÃ­lÃ¡ mÄ› Franco...";
 };                       
 
 FUNC INT DIA_Addon_Ramon_Lie_Condition()
@@ -255,8 +255,8 @@ FUNC INT DIA_Addon_Ramon_Lie_Condition()
 };
 func void DIA_Addon_Ramon_Lie_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_Lie_15_00"); //Posílá mì Franco.
-	AI_Output (self, other,"DIA_Addon_Ramon_Lie_07_01"); //Tak to teda ne. Koukej zmizet, ne ti zpøelámu hnáty.
+	AI_Output (other, self,"DIA_Addon_Ramon_Lie_15_00"); //PosÃ­lÃ¡ mÄ› Franco.
+	AI_Output (self, other,"DIA_Addon_Ramon_Lie_07_01"); //Tak to teda ne. Koukej zmizet, neÅ¾ ti zpÅ™elÃ¡mu hnÃ¡ty.
 	
 	AI_StopProcessInfos (self);
 };
@@ -270,7 +270,7 @@ INSTANCE DIA_Addon_Ramon_Perm (C_INFO)
 	condition	= DIA_Addon_Ramon_Perm_Condition;
 	information	= DIA_Addon_Ramon_Perm_Info;
 	permanent	= TRUE;
-	description	= "Je všecko pod kontrolou?";
+	description	= "Je vÅ¡ecko pod kontrolou?";
 };                       
 
 FUNC INT DIA_Addon_Ramon_Perm_Condition()
@@ -283,8 +283,8 @@ FUNC INT DIA_Addon_Ramon_Perm_Condition()
 };
 func void DIA_Addon_Ramon_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_Perm_15_00"); //Je všecko pod kontrolou?
-	AI_Output (self, other,"DIA_Addon_Ramon_Perm_07_01"); //Všecko je v pohodì, pokud se sem nepokouší vloudit nìkdo, kdo tu NEMÁ CO DÌLAT
+	AI_Output (other, self,"DIA_Addon_Ramon_Perm_15_00"); //Je vÅ¡ecko pod kontrolou?
+	AI_Output (self, other,"DIA_Addon_Ramon_Perm_07_01"); //VÅ¡ecko je v pohodÄ›, pokud se sem nepokouÅ¡Ã­ vloudit nÄ›kdo, kdo tu NEMÃ CO DÄšLAT
 	
 	AI_StopProcessInfos (self);
 };

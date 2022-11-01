@@ -30,7 +30,7 @@ instance DIA_Addon_Riordian_HelloADW		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_HelloADW_Condition;
 	information	 = 	DIA_Addon_Riordian_HelloADW_Info;
 
-	description	 = 	"Ty jsi tady èekal TOHLE?";
+	description	 = 	"Ty jsi tady Äekal TOHLE?";
 };
 
 func int DIA_Addon_Riordian_HelloADW_Condition ()
@@ -40,10 +40,10 @@ func int DIA_Addon_Riordian_HelloADW_Condition ()
 
 func void DIA_Addon_Riordian_HelloADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_HelloADW_15_00"); //Ty jsi tu èekal TOHLE?
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_01"); //Ne, vùbec ne. Úplnì mì omraèuje, jak obrovské tohle mìsto muselo bıt.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_02"); //Vìtšina budov je pohøbena pod vrstvou kamení a zemì, ale po celém kraji jsou roztroušeny rozvaliny, které pøeily celé vìky.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_03"); //Muselo mít tisíce obyvatel.
+	AI_Output	(other, self, "DIA_Addon_Riordian_HelloADW_15_00"); //Ty jsi tu Äekal TOHLE?
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_01"); //Ne, vÅ¯bec ne. ÃšplnÄ› mÄ› omraÄuje, jak obrovskÃ© tohle mÄ›sto muselo bÃ½t.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_02"); //VÄ›tÅ¡ina budov je pohÅ™bena pod vrstvou kamenÃ­ a zemÄ›, ale po celÃ©m kraji jsou roztrouÅ¡eny rozvaliny, kterÃ© pÅ™eÅ¾ily celÃ© vÄ›ky.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_03"); //Muselo mÃ­t tisÃ­ce obyvatel.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -70,13 +70,13 @@ func int DIA_Addon_Riordian_WhatToFind_Condition ()
 func void DIA_Addon_Riordian_WhatToFind_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Riordian_WhatToFind_15_00"); //Co tam najdu?
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_01"); //Ve velké bainì na vıchodì je obrovská pevnost
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_02"); //Podle toho, co jsme odsud vypozorovali, se tam usadili bandité.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_03"); //Bıt tebou, tak bych tam dolù nechodil. Postavili tam spoustu tìce støeenıch základen.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_04"); //Mìl by ses bainì vyhıbat, dokud nebudeš zkušenìjší, nebo ne zjistíš, jak bandity obejít.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_05"); //Na západì jsme narazili na nìjaké piráty.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_06"); //Nevím to jistì, ale myslím, e o nás u taky vìdí.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_07"); //Ale nezdá se, e bychom je tu nìjak znervózòovali.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_01"); //Ve velkÃ© baÅ¾inÄ› na vÃ½chodÄ› je obrovskÃ¡ pevnost
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_02"); //Podle toho, co jsme odsud vypozorovali, se tam usadili banditÃ©.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_03"); //BÃ½t tebou, tak bych tam dolÅ¯ nechodil. Postavili tam spoustu tÄ›Å¾ce stÅ™eÅ¾enÃ½ch zÃ¡kladen.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_04"); //MÄ›l by ses baÅ¾inÄ› vyhÃ½bat, dokud nebudeÅ¡ zkuÅ¡enÄ›jÅ¡Ã­, nebo neÅ¾ zjistÃ­Å¡, jak bandity obejÃ­t.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_05"); //Na zÃ¡padÄ› jsme narazili na nÄ›jakÃ© pirÃ¡ty.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_06"); //NevÃ­m to jistÄ›, ale myslÃ­m, Å¾e o nÃ¡s uÅ¾ taky vÄ›dÃ­.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_07"); //Ale nezdÃ¡ se, Å¾e bychom je tu nÄ›jak znervÃ³zÅˆovali.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ instance DIA_Addon_Riordian_Gegend		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Gegend_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Povìz mi o tomhle místì nìco víc.";
+	description	 = 	"PovÄ›z mi o tomhle mÃ­stÄ› nÄ›co vÃ­c.";
 };
 
 func int DIA_Addon_Riordian_Gegend_Condition ()
@@ -104,8 +104,8 @@ func int DIA_Addon_Riordian_Gegend_Condition ()
 var int DIA_Addon_Riordian_Gegend_Info_OneTime;
 func void DIA_Addon_Riordian_Gegend_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Gegend_15_00"); //Povìz mi víc o tomhle kraji.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Gegend_10_01"); //Co chceš vìdìt?
+	AI_Output	(other, self, "DIA_Addon_Riordian_Gegend_15_00"); //PovÄ›z mi vÃ­c o tomhle kraji.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Gegend_10_01"); //Co chceÅ¡ vÄ›dÄ›t?
 	
 	Info_ClearChoices	(DIA_Addon_Riordian_Gegend);
 	Info_AddChoice	(DIA_Addon_Riordian_Gegend, DIALOG_BACK, DIA_Addon_Riordian_Gegend_Back );
@@ -113,16 +113,16 @@ func void DIA_Addon_Riordian_Gegend_Info ()
 	if (DIA_Addon_Riordian_Gegend_Info_OneTime == FALSE)
 	&& (Npc_HasItems (other,ItWr_Map_AddonWorld) == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Dá se nìkde sehnat mapa téhle oblasti?", DIA_Addon_Riordian_Gegend_map );
+		Info_AddChoice	(DIA_Addon_Riordian_Gegend, "DÃ¡ se nÄ›kde sehnat mapa tÃ©hle oblasti?", DIA_Addon_Riordian_Gegend_map );
 		DIA_Addon_Riordian_Gegend_Info_OneTime = TRUE;
 	};
 	
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Kde jsi vidìl ty piráty?", DIA_Addon_Riordian_Gegend_Piraten );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Mùeš mi ještì zopakovat, kde jsou ti banditi?", DIA_Addon_Riordian_Gegend_bandits );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Byl jsi vùbec nìkdy na západì?", DIA_Addon_Riordian_Gegend_west );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Mùeš mi zopakovat, co to bylo na vıchodì?", DIA_Addon_Riordian_Gegend_ost );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Naè narazím, vydám-li se k jihu?", DIA_Addon_Riordian_Gegend_sued );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Co leí na severu?", DIA_Addon_Riordian_Gegend_nord );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Kde jsi vidÄ›l ty pirÃ¡ty?", DIA_Addon_Riordian_Gegend_Piraten );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "MÅ¯Å¾eÅ¡ mi jeÅ¡tÄ› zopakovat, kde jsou ti banditi?", DIA_Addon_Riordian_Gegend_bandits );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Byl jsi vÅ¯bec nÄ›kdy na zÃ¡padÄ›?", DIA_Addon_Riordian_Gegend_west );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "MÅ¯Å¾eÅ¡ mi zopakovat, co to bylo na vÃ½chodÄ›?", DIA_Addon_Riordian_Gegend_ost );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "NaÄ narazÃ­m, vydÃ¡m-li se k jihu?", DIA_Addon_Riordian_Gegend_sued );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Co leÅ¾Ã­ na severu?", DIA_Addon_Riordian_Gegend_nord );
 };
 func void DIA_Addon_Riordian_Gegend_Back ()
 {
@@ -130,55 +130,55 @@ func void DIA_Addon_Riordian_Gegend_Back ()
 };
 func void DIA_Addon_Riordian_Gegend_map ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_map_15_00"); //Nemáš nìjakou mapu tohohle kraje?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_map_10_01"); //Jednu vyrobil Cronos. Urèitì ti ji dá.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_map_15_00"); //NemÃ¡Å¡ nÄ›jakou mapu tohohle kraje?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_map_10_01"); //Jednu vyrobil Cronos. UrÄitÄ› ti ji dÃ¡.
 };
 func void DIA_Addon_Riordian_Gegend_bandits ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_bandits_15_00"); //Mùeš mi ještì zopakovat, kde byli ti banditi?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_01"); //Mají tam na vıchodì nìjakou pevnost s mnoha základnami.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_02"); //Dostaneš se k nim jenom pøes tu velkou bainu.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_bandits_15_00"); //MÅ¯Å¾eÅ¡ mi jeÅ¡tÄ› zopakovat, kde byli ti banditi?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_01"); //MajÃ­ tam na vÃ½chodÄ› nÄ›jakou pevnost s mnoha zÃ¡kladnami.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_02"); //DostaneÅ¡ se k nim jenom pÅ™es tu velkou baÅ¾inu.
 };
 func void DIA_Addon_Riordian_Gegend_Piraten ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_Piraten_15_00"); //Kde jste zahlédli ty piráty?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_01"); //Pobíhali nedaleko odsud smìrem na západ.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_02"); //Myslím, e byli na lovu.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_Piraten_15_00"); //Kde jste zahlÃ©dli ty pirÃ¡ty?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_01"); //PobÃ­hali nedaleko odsud smÄ›rem na zÃ¡pad.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_Piraten_10_02"); //MyslÃ­m, Å¾e byli na lovu.
 };
 
 func void DIA_Addon_Riordian_Gegend_nord ()
 {
 	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_nord_15_00"); //A co je na severu?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_01"); //Jsou-li záznamy stavitelù dùvìryhodné, pak by se tam mìlo nacházet velké údolí obklopené útesy.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_02"); //Tamìjší krajina je suchá a písèitá.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_01"); //Jsou-li zÃ¡znamy stavitelÅ¯ dÅ¯vÄ›ryhodnÃ©, pak by se tam mÄ›lo nachÃ¡zet velkÃ© ÃºdolÃ­ obklopenÃ© Ãºtesy.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_02"); //TamÄ›jÅ¡Ã­ krajina je suchÃ¡ a pÃ­sÄitÃ¡.
 };
 
 func void DIA_Addon_Riordian_Gegend_sued ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_sued_15_00"); //Kam bych došel, kdybych se vydal na jih?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_01"); //Zemì na jihu je velice zvlnìná.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_02"); //Najdeš tam serpentiny, vodopády a rozervaná skaliska.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_sued_15_00"); //Kam bych doÅ¡el, kdybych se vydal na jih?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_01"); //ZemÄ› na jihu je velice zvlnÄ›nÃ¡.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_02"); //NajdeÅ¡ tam serpentiny, vodopÃ¡dy a rozervanÃ¡ skaliska.
 };
 
 func void DIA_Addon_Riordian_Gegend_ost ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_ost_15_00"); //Ještì jednou, co leí na vıchodì?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_01"); //Velká baina. Ta oblast je velice nebezpeèná.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_02"); //Obcházejí tam nejen banditi, ale i nesmírnì nebezpeèná zvíøata.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_03"); //Mìl bys bıt opatrnı.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_ost_15_00"); //JeÅ¡tÄ› jednou, co leÅ¾Ã­ na vÃ½chodÄ›?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_01"); //VelkÃ¡ baÅ¾ina. Ta oblast je velice nebezpeÄnÃ¡.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_02"); //ObchÃ¡zejÃ­ tam nejen banditi, ale i nesmÃ­rnÄ› nebezpeÄnÃ¡ zvÃ­Å™ata.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_03"); //MÄ›l bys bÃ½t opatrnÃ½.
 };
 var int DIA_Addon_Riordian_Gegend_west_OneTime;
 func void DIA_Addon_Riordian_Gegend_west ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_west_15_00"); //Byls vùbec nìkdy na západì?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_01"); //Ne, ale nìkde tím smìrem leí pobøeí.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_02"); //A tam si nejspíš svùj tábor zøídili i piráti.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_west_15_00"); //Byls vÅ¯bec nÄ›kdy na zÃ¡padÄ›?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_01"); //Ne, ale nÄ›kde tÃ­m smÄ›rem leÅ¾Ã­ pobÅ™eÅ¾Ã­.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_02"); //A tam si nejspÃ­Å¡ svÅ¯j tÃ¡bor zÅ™Ã­dili i pirÃ¡ti.
 
 	if (DIA_Addon_Riordian_Gegend_west_OneTime == FALSE)
 	&& (Npc_HasItems (VLK_4304_Addon_William,ITWr_Addon_William_01))
 	{
-		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_03"); //Na vıchodì, nedaleko odsud, jsme našli tìlo rybáøe.
-		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_04"); //Mìl by ses tam podívat.
+		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_03"); //Na vÃ½chodÄ›, nedaleko odsud, jsme naÅ¡li tÄ›lo rybÃ¡Å™e.
+		AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_04"); //MÄ›l by ses tam podÃ­vat.
 		B_LogEntry (TOPIC_Addon_MissingPeople,LogText_Addon_WilliamLeiche); 
 		DIA_Addon_Riordian_Gegend_west_OneTime = TRUE;
 	};
@@ -194,7 +194,7 @@ instance DIA_Addon_Riordian_HousesOfRulers		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_HousesOfRulers_Condition;
 	information	 = 	DIA_Addon_Riordian_HousesOfRulers_Info;
 
-	description	 = 	"Posílá mì Saturas.";
+	description	 = 	"PosÃ­lÃ¡ mÄ› Saturas.";
 };
 
 func int DIA_Addon_Riordian_HousesOfRulers_Condition ()
@@ -207,9 +207,9 @@ func int DIA_Addon_Riordian_HousesOfRulers_Condition ()
 
 func void DIA_Addon_Riordian_HousesOfRulers_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_HousesOfRulers_15_00"); //Posílá mì Saturas. Mám prohledat pìt sídel Jharkendaru.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_01"); //Trvalo mi dlouho, ne jsem ze záznamù stavitelù vyèetl, kde se jednotlivá sídla nacházejí.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_02"); //Ale teï u ti to mùu øíct pøesnì.
+	AI_Output	(other, self, "DIA_Addon_Riordian_HousesOfRulers_15_00"); //PosÃ­lÃ¡ mÄ› Saturas. MÃ¡m prohledat pÄ›t sÃ­del Jharkendaru.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_01"); //Trvalo mi dlouho, neÅ¾ jsem ze zÃ¡znamÅ¯ stavitelÅ¯ vyÄetl, kde se jednotlivÃ¡ sÃ­dla nachÃ¡zejÃ­.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_02"); //Ale teÄ uÅ¾ ti to mÅ¯Å¾u Å™Ã­ct pÅ™esnÄ›.
 	MIS_Riordian_HousesOfRulers = LOG_RUNNING;
 };
 
@@ -223,7 +223,7 @@ instance DIA_Addon_Riordian_WhereAreHouses		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_WhereAreHouses_Condition;
 	information	 = 	DIA_Addon_Riordian_WhereAreHouses_Info;
 
-	description	 = 	"Kde najdu tìch 5 obydlí?";
+	description	 = 	"Kde najdu tÄ›ch 5 obydlÃ­?";
 };
 
 func int DIA_Addon_Riordian_WhereAreHouses_Condition ()
@@ -237,35 +237,35 @@ func int DIA_Addon_Riordian_WhereAreHouses_Condition ()
 var int B_WhreAreHousesOfRulersOneTime;
 func void B_WhreAreHousesOfRulers ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_00"); //Dùm uèencù je velká knihovna. Musí leet kdesi daleko na severu.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_01"); //Váleèníci sídlili v pevnosti ve skalách na západì.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_02"); //Pøíbytky knìí a strácù smrti se nacházely blízko sebe. Mìl bys je najít na jihozápadì.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_03"); //A léèitelé si svùj dùm vystavìli na jihovıchodì.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_00"); //DÅ¯m uÄencÅ¯ je velkÃ¡ knihovna. MusÃ­ leÅ¾et kdesi daleko na severu.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_01"); //VÃ¡leÄnÃ­ci sÃ­dlili v pevnosti ve skalÃ¡ch na zÃ¡padÄ›.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_02"); //PÅ™Ã­bytky knÄ›Å¾Ã­ a strÃ¡Å¾cÅ¯ smrti se nachÃ¡zely blÃ­zko sebe. MÄ›l bys je najÃ­t na jihozÃ¡padÄ›.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_03"); //A lÃ©ÄitelÃ© si svÅ¯j dÅ¯m vystavÄ›li na jihovÃ½chodÄ›.
 
 	if (B_WhreAreHousesOfRulersOneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_04"); //Pokud jejich domy ještì stojí, poznáš je podle vzhledu.
+		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_04"); //Pokud jejich domy jeÅ¡tÄ› stojÃ­, poznÃ¡Å¡ je podle vzhledu.
 		B_WhreAreHousesOfRulersOneTime = TRUE;
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_05"); //Jsou vysoké a ke vchodu vede strmé schodištì s vysokımi sloupy po stranách.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_05"); //Jsou vysokÃ© a ke vchodu vede strmÃ© schodiÅ¡tÄ› s vysokÃ½mi sloupy po stranÃ¡ch.
 
 	if (B_WhreAreHousesOfRulersOneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_06"); //Doufám, e ti to pomùe.
+		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_06"); //DoufÃ¡m, Å¾e ti to pomÅ¯Å¾e.
 	};
 
 	Log_CreateTopic (TOPIC_Addon_HousesOfRulers, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_HousesOfRulers, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Uèenci sídlili ve velké knihovnì, která leí kdesi na severu."); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Váleèníci si zøídili pevnost mezi útesy kdesi na vıchodì."); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Knìí a stráci smrti bydleli blízko sebe. Jejich domy se nacházejí na jihozápadì."); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Dùm léèitelù by mìl stát na jihovıchodì."); 
+	B_LogEntry (TOPIC_Addon_HousesOfRulers,"UÄenci sÃ­dlili ve velkÃ© knihovnÄ›, kterÃ¡ leÅ¾Ã­ kdesi na severu."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"VÃ¡leÄnÃ­ci si zÅ™Ã­dili pevnost mezi Ãºtesy kdesi na vÃ½chodÄ›."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"KnÄ›Å¾Ã­ a strÃ¡Å¾ci smrti bydleli blÃ­zko sebe. Jejich domy se nachÃ¡zejÃ­ na jihozÃ¡padÄ›."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"DÅ¯m lÃ©ÄitelÅ¯ by mÄ›l stÃ¡t na jihovÃ½chodÄ›."); 
 };
 
 func void DIA_Addon_Riordian_WhereAreHouses_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_WhereAreHouses_15_00"); //Kde najdu tìch pìt sídel?
+	AI_Output	(other, self, "DIA_Addon_Riordian_WhereAreHouses_15_00"); //Kde najdu tÄ›ch pÄ›t sÃ­del?
 	B_WhreAreHousesOfRulers ();
 };
 
@@ -280,7 +280,7 @@ instance DIA_Addon_Riordian_FoundHouse		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_FoundHouse_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"K tìm sídlùm...";
+	description	 = 	"K tÄ›m sÃ­dlÅ¯m...";
 };
 
 func int DIA_Addon_Riordian_FoundHouse_Condition ()
@@ -304,31 +304,31 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 {
 	RiordianHouseNeuigkeit = 0;
 	
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_00"); //No, co se tıèe tìch sídel...
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_00"); //No, co se tÃ½Äe tÄ›ch sÃ­del...
 	AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_01"); //Ano?
 	
 	if (SC_COMESINTO_CANYONLIBRARY_FUNC_OneTime == TRUE)
 	&& (FOUNDHOUSEINFO [Library] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_02"); //O knihovnu uèencù se teï velmi zajímají skøeti.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_03"); //Myslíš, e se nauèili èíst ty prastaré záznamy?
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_04"); //Nemyslím, ale kdo ví.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_05"); //Moná by ses mìl pro jistotu postarat, aby odsud zmizeli.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_02"); //O knihovnu uÄencÅ¯ se teÄ velmi zajÃ­majÃ­ skÅ™eti.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_03"); //MyslÃ­Å¡, Å¾e se nauÄili ÄÃ­st ty prastarÃ© zÃ¡znamy?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_04"); //NemyslÃ­m, ale kdo vÃ­.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_05"); //MoÅ¾nÃ¡ by ses mÄ›l pro jistotu postarat, aby odsud zmizeli.
 		FOUNDHOUSEINFO[Library] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 		
 		Log_CreateTopic (TOPIC_Addon_CanyonOrcs, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CanyonOrcs, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CanyonOrcs,"Vodní mág Riordian by uvítal, kdyby z kaòonu zmizeli skøeti."); 
+		B_LogEntry (TOPIC_Addon_CanyonOrcs,"VodnÃ­ mÃ¡g Riordian by uvÃ­tal, kdyby z kaÅˆonu zmizeli skÅ™eti."); 
 	};
 	
 	if ((Npc_IsDead(StoneGuardian_Heiler)) || (Npc_HasItems (other,ItMi_Addon_Stone_04)) || (Saturas_SCFound_ItMi_Addon_Stone_04 == TRUE) )
 	&& (FOUNDHOUSEINFO [Heiler] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_06"); //Dùm léèitelù leí uprostøed bain a brání jej spousta kamennıch strácù.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_07"); //Take dùm stále stojí?
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_08"); //Ano, ale tìko øíct, jak dlouho ještì vydrí.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_09"); //Rve mi to srdce, kdy vidím, jak tak dùleité památky na minulost chátrají a upadají.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_06"); //DÅ¯m lÃ©ÄitelÅ¯ leÅ¾Ã­ uprostÅ™ed baÅ¾in a brÃ¡nÃ­ jej spousta kamennÃ½ch strÃ¡Å¾cÅ¯.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_07"); //TakÅ¾e dÅ¯m stÃ¡le stojÃ­?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_08"); //Ano, ale tÄ›Å¾ko Å™Ã­ct, jak dlouho jeÅ¡tÄ› vydrÅ¾Ã­.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_09"); //Rve mi to srdce, kdyÅ¾ vidÃ­m, jak tak dÅ¯leÅ¾itÃ© pamÃ¡tky na minulost chÃ¡trajÃ­ a upadajÃ­.
 		FOUNDHOUSEINFO[Heiler] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -336,9 +336,9 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if (RavenIsInTempel == TRUE)
 	&& (FOUNDHOUSEINFO [Warrior] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_10"); //V sídle váleèníkù se nyní ukrıvá Havran se svou bandou.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_11"); //(cynicky) Tak to si vybral dobøe.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_12"); //Je to nejspíš nejbezpeènìjší pevnost, jaká se dá v tomhle kraji najít.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_10"); //V sÃ­dle vÃ¡leÄnÃ­kÅ¯ se nynÃ­ ukrÃ½vÃ¡ Havran se svou bandou.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_11"); //(cynicky) Tak to si vybral dobÅ™e.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_12"); //Je to nejspÃ­Å¡ nejbezpeÄnÄ›jÅ¡Ã­ pevnost, jakÃ¡ se dÃ¡ v tomhle kraji najÃ­t.
 		FOUNDHOUSEINFO[Warrior] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -346,10 +346,10 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if ((Npc_IsDead(Minecrawler_Priest)) || (Npc_HasItems (other,ItMi_Addon_Stone_03)) || (Saturas_SCFound_ItMi_Addon_Stone_03 == TRUE))
 	&& (FOUNDHOUSEINFO [Priest] == FALSE)//crawler
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_13"); //Dùm knìí byl prolezlı dùlními èervy.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_14"); //Øekl bych, e tato zvíøata se do tohohle kraje moc nehodí.
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_15"); //To urèitì ne.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_16"); //Pøi Adanovi. Dìjí se to vánì divné vìci.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_13"); //DÅ¯m knÄ›Å¾Ã­ byl prolezlÃ½ dÅ¯lnÃ­mi Äervy.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_14"); //Å˜ekl bych, Å¾e tato zvÃ­Å™ata se do tohohle kraje moc nehodÃ­.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_15"); //To urÄitÄ› ne.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_16"); //PÅ™i Adanovi. DÄ›jÃ­ se to vÃ¡Å¾nÄ› divnÃ© vÄ›ci.
 		
 		FOUNDHOUSEINFO[Priest] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
@@ -358,10 +358,10 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if ((Npc_IsDead(MayaZombie04_Totenw)) || (Npc_HasItems (other,ItMi_Addon_Stone_02)) || (Saturas_SCFound_ItMi_Addon_Stone_02 == TRUE))
 	&& (FOUNDHOUSEINFO [Totenw] == FALSE)//Zombies
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_17"); //V domì strácù smrti teï vládnou síly zla.
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_18"); //Tolik zombií pohromadì se hned tak nevidí.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_19"); //To je smùla. Stráci smrti oèividnì padli za obì svım vlastním schopnostem.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_20"); //Spojení se svìtem mrtvıch je nakonec nejspíš znièilo. Doufám, e jsi je toho utrpení zbavil.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_17"); //V domÄ› strÃ¡Å¾cÅ¯ smrti teÄ vlÃ¡dnou sÃ­ly zla.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_18"); //Tolik zombiÃ­ pohromadÄ› se hned tak nevidÃ­.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_19"); //To je smÅ¯la. StrÃ¡Å¾ci smrti oÄividnÄ› padli za obÄ›Å¥ svÃ½m vlastnÃ­m schopnostem.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_20"); //SpojenÃ­ se svÄ›tem mrtvÃ½ch je nakonec nejspÃ­Å¡ zniÄilo. DoufÃ¡m, Å¾e jsi je toho utrpenÃ­ zbavil.
 		FOUNDHOUSEINFO[Totenw] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -376,7 +376,7 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_21"); //Povìz mi znovu, kde najdu jednotlivá sídla.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_21"); //PovÄ›z mi znovu, kde najdu jednotlivÃ¡ sÃ­dla.
 		B_WhreAreHousesOfRulers ();
 	};
 };
@@ -391,7 +391,7 @@ instance DIA_Addon_Riordian_OrksWeg		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_OrksWeg_Condition;
 	information	 = 	DIA_Addon_Riordian_OrksWeg_Info;
 
-	description	 = 	"Skøeti o tuhle oblast brzy ztratí zájem.";
+	description	 = 	"SkÅ™eti o tuhle oblast brzy ztratÃ­ zÃ¡jem.";
 };
 
 func int DIA_Addon_Riordian_OrksWeg_Condition ()
@@ -405,20 +405,20 @@ func int DIA_Addon_Riordian_OrksWeg_Condition ()
 
 func void DIA_Addon_Riordian_OrksWeg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_00"); //Skøeti o tenhle kraj zakrátko ztratí zájem.
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_01"); //Z èeho tak soudíš?
+	AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_00"); //SkÅ™eti o tenhle kraj zakrÃ¡tko ztratÃ­ zÃ¡jem.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_01"); //Z Äeho tak soudÃ­Å¡?
 
 	if (OrcShaman_Sit_CanyonLibraryKey.aivar [AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_02"); //Zabil jsem jejich vùdce.
+		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_02"); //Zabil jsem jejich vÅ¯dce.
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_03"); //Jejich vùdce je mrtev.
+		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_03"); //Jejich vÅ¯dce je mrtev.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_04"); //Doufejme, e máš pravdu.
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_05"); //Podobné nepokoje tu teï vánì nepotøebujeme.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_04"); //Doufejme, Å¾e mÃ¡Å¡ pravdu.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_05"); //PodobnÃ© nepokoje tu teÄ vÃ¡Å¾nÄ› nepotÅ™ebujeme.
 	
 	TOPIC_END_CanyonOrcs = TRUE;
 	B_GivePlayerXP (XP_Addon_Riordian_OrksWeg);
@@ -434,7 +434,7 @@ instance DIA_Addon_Riordian_FoundAllHouses		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_FoundAllHouses_Condition;
 	information	 = 	DIA_Addon_Riordian_FoundAllHouses_Info;
 
-	description	 = 	"Našel jsem všechna sídla.";
+	description	 = 	"NaÅ¡el jsem vÅ¡echna sÃ­dla.";
 };
 
 func int DIA_Addon_Riordian_FoundAllHouses_Condition ()
@@ -448,11 +448,11 @@ func int DIA_Addon_Riordian_FoundAllHouses_Condition ()
 
 func void DIA_Addon_Riordian_FoundAllHouses_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_00"); //Našel jsem všechna sídla.
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_01"); //Byla všechna tam, kde jsem ti øekl?
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_02"); //Víceménì.
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_03"); //Vıbornì. Pak za to ta práce stála.
-	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_04"); //Dìkuji ti.
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_00"); //NaÅ¡el jsem vÅ¡echna sÃ­dla.
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_01"); //Byla vÅ¡echna tam, kde jsem ti Å™ekl?
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_02"); //VÃ­cemÃ©nÄ›.
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_03"); //VÃ½bornÄ›. Pak za to ta prÃ¡ce stÃ¡la.
+	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_04"); //DÄ›kuji ti.
 	MIS_Riordian_HousesOfRulers = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_FoundAllHouses);
 };
@@ -467,7 +467,7 @@ instance DIA_Addon_Riordian_ADW_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_ADW_PreTeach_Condition;
 	information	 = 	DIA_Addon_Riordian_ADW_PreTeach_Info;
 
-	description	 = 	"Mùeš mì nìèemu pøiuèit?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu pÅ™iuÄit?";
 };
 
 func int DIA_Addon_Riordian_ADW_PreTeach_Condition ()
@@ -477,13 +477,13 @@ func int DIA_Addon_Riordian_ADW_PreTeach_Condition ()
 
 func void DIA_Addon_Riordian_ADW_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_ADW_PreTeach_15_00"); //Mùeš mì nauèit, co umíš?
-	AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_01"); //Mohu tì zasvìtit do tajù alchymie.
+	AI_Output	(other, self, "DIA_Addon_Riordian_ADW_PreTeach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit, co umÃ­Å¡?
+	AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_01"); //Mohu tÄ› zasvÄ›tit do tajÅ¯ alchymie.
 
 	if  (Npc_HasItems (other,ItAm_Addon_WispDetector))
 	&& (DIA_Addon_Riordian_Teach_NoPerm == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_02"); //A mùu ti ukázat, jak svou bludièku nauèit hledat rùzné vìci.
+		AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_02"); //A mÅ¯Å¾u ti ukÃ¡zat, jak svou bludiÄku nauÄit hledat rÅ¯znÃ© vÄ›ci.
 	
 		Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
 		Log_AddEntry		(TOPIC_Addon_KDWTeacher, LogText_Addon_RiordianTeach);
@@ -505,7 +505,7 @@ instance DIA_Addon_Riordian_ADW_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_ADW_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Uka mi, jak si vycvièit bludièku.";
+	description	 = 	"UkaÅ¾ mi, jak si vycviÄit bludiÄku.";
 };
 var int DIA_Addon_Riordian_ADW_Teach_NoPerm;
 
@@ -663,7 +663,7 @@ INSTANCE DIA_Riordian_ADW_TeachAlchemy   (C_INFO)
 	condition   = DIA_Riordian_ADW_TeachAlchemy_Condition;
 	information = DIA_Riordian_ADW_TeachAlchemy_Info;
 	permanent   = TRUE;
-	description = "Zasvì mì do tajemství lektvarù.";
+	description = "ZasvÄ›Å¥ mÄ› do tajemstvÃ­ lektvarÅ¯.";
 };
 //----------------------------------------
 var int DIA_Riordian_ADW_TeachAlchemy_permanent;
@@ -681,7 +681,7 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Addon_Riordian_ADW_TeachAlchemy_15_00");//Nauè mì, jak míchat lektvary.
+	AI_Output (other, self,"DIA_Addon_Riordian_ADW_TeachAlchemy_15_00");//NauÄ mÄ›, jak mÃ­chat lektvary.
 
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
@@ -697,14 +697,14 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Esence hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Riordian_ADW_TeachAlchemy_Health_01);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Esence hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)),DIA_Riordian_ADW_TeachAlchemy_Health_01);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Extrakt hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Riordian_ADW_TeachAlchemy_Health_02);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Extrakt hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)),DIA_Riordian_ADW_TeachAlchemy_Health_02);
 		talente = (talente + 1);
 	};
 	
@@ -724,20 +724,20 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Elixír many", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Riordian_ADW_TeachAlchemy_Mana_03);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("ElixÃ­r many", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)),DIA_Riordian_ADW_TeachAlchemy_Mana_03);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Elixír ducha", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Riordian_ADW_TeachAlchemy_Perm_Mana);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("ElixÃ­r ducha", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)),DIA_Riordian_ADW_TeachAlchemy_Perm_Mana);
 		talente = (talente + 1);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("Elixír obratnosti", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Riordian_ADW_TeachAlchemy_Perm_DEX);
+		Info_AddChoice (DIA_Riordian_ADW_TeachAlchemy,B_BuildLearnString ("ElixÃ­r obratnosti", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)),DIA_Riordian_ADW_TeachAlchemy_Perm_DEX);
 		talente = (talente + 1);
 	};
 
@@ -745,19 +745,19 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_01"); //Magické lektvary se pøipravují v alchymistické kolonì. Jednu máme i tady u nás.
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_02"); //Dále potøebuješ prázdnou lahvièku, ingredience pro danı lektvar a znalosti, jak jej vyrobit.
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_03"); //To všechno se mùeš nauèit u mì. Ostatní vìci si u ale musíš opatøit sám.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_01"); //MagickÃ© lektvary se pÅ™ipravujÃ­ v alchymistickÃ© kolonÄ›. Jednu mÃ¡me i tady u nÃ¡s.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_02"); //DÃ¡le potÅ™ebujeÅ¡ prÃ¡zdnou lahviÄku, ingredience pro danÃ½ lektvar a znalosti, jak jej vyrobit.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_03"); //To vÅ¡echno se mÅ¯Å¾eÅ¡ nauÄit u mÄ›. OstatnÃ­ vÄ›ci si uÅ¾ ale musÃ­Å¡ opatÅ™it sÃ¡m.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_04"); //Co chceš namíchat?
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_04"); //Co chceÅ¡ namÃ­chat?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_05"); //Mohu ti ukázat všecko, co ještì nevíš.
+		AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_05"); //Mohu ti ukÃ¡zat vÅ¡ecko, co jeÅ¡tÄ› nevÃ­Å¡.
 		DIA_Riordian_ADW_TeachAlchemy_permanent = TRUE;
 	};
 };

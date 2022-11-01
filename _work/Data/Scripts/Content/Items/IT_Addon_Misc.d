@@ -28,7 +28,7 @@ INSTANCE ItMi_GoldNugget_Addon(C_Item)
 	
 };
 //---------------------------------------------------------------------
-//	Weiﬂe Perle
+//	Wei√üe Perle
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_WhitePearl (C_Item)
 {
@@ -49,11 +49,11 @@ INSTANCE ItMi_Addon_WhitePearl (C_Item)
 	INV_ZBIAS			= INVCAM_ENTF_MISC_STANDARD;
 };
 //---------------------------------------------------------------------
-//	Gr¸ner Novize
+//	Gr√ºner Novize
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Joint_01(C_Item)
 {
-	name 				=	"Zelen˝ novic";
+	name 				=	"Zelen√Ω novic";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -93,7 +93,7 @@ func void Use_Addon_Joint_01()
 //****************************************************************************
 INSTANCE ItMi_BaltramPaket(C_Item)
 {
-	name 				=	"Baltram˘v balÌk";
+	name 				=	"Baltram≈Øv bal√≠k";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -105,19 +105,19 @@ INSTANCE ItMi_BaltramPaket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"TÏûk˝ balÌk";
-	TEXT[3]				=	"dobr˝ch vÏcÌ.";
-	TEXT[4]				=	"od sedl·ka Akila";
+	TEXT[2]				= 	"Tƒõ≈æk√Ω bal√≠k";
+	TEXT[3]				=	"dobr√Ωch vƒõc√≠.";
+	TEXT[4]				=	"od sedl√°ka Akila";
 	
 };
 
 //****************************************************************************
-//				Baltrams Lieferung f¸r Skip
+//				Baltrams Lieferung f√ºr Skip
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 {
-	name 				=	"BalÌËek pro Skipa";
+	name 				=	"Bal√≠ƒçek pro Skipa";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -129,15 +129,15 @@ INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Tento tÏûk˝ balÌk";
-	TEXT[3]				=	"dobr˝ch vÏcÌ.";
-	TEXT[4]				=	"je urËen pir·tu Skipovi";
+	TEXT[2]				= 	"Tento tƒõ≈æk√Ω bal√≠k";
+	TEXT[3]				=	"dobr√Ωch vƒõc√≠.";
+	TEXT[4]				=	"je urƒçen pir√°tu Skipovi";
 	
 };
 /******************************************************************************************/
 INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 {
-	name 				=	"Bromorova zlat· mÌsa";
+	name 				=	"Bromorova zlat√° m√≠sa";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -148,16 +148,16 @@ INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[2]				= 	"Na dnÏ mÌsy";
-	TEXT[3]				=	"je ËÌmsi ostr˝m vyryto";
-	TEXT[4]				=	"jmÈno Bromor.";
+	TEXT[2]				= 	"Na dnƒõ m√≠sy";
+	TEXT[3]				=	"je ƒç√≠msi ostr√Ωm vyryto";
+	TEXT[4]				=	"jm√©no Bromor.";
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
 };
 
 INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 {
-	name 				=	"Cavalorn˘v koûen˝ v·Ëek";
+	name 				=	"Cavalorn≈Øv ko≈æen√Ω v√°ƒçek";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -172,9 +172,9 @@ INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"Nese ötÌtek";
-	TEXT[2]				= 	"se jmÈnem 'Cavalorn'";
-	TEXT[3]				= 	"Uvnit¯ je hrudka rudy";
+	TEXT[1]				= 	"Nese ≈°t√≠tek";
+	TEXT[2]				= 	"se jm√©nem 'Cavalorn'";
+	TEXT[3]				= 	"Uvnit≈ô je hrudka rudy";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -186,7 +186,7 @@ FUNC VOID Use_CavalornsBeutel ()
 		SC_OpenedCavalornsBeutel = TRUE;
 		Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CavalornTheHut,"U Cavalornovy ch˝öe v HornickÈm ˙dolÌ jsem naöel v·Ëek s jedinou hrudkou rudy. Ten star˝ zlodÏj Cavalorn jej tu musel zapomenout.");
+		B_LogEntry (TOPIC_Addon_CavalornTheHut,"U Cavalornovy ch√Ω≈°e v Hornick√©m √∫dol√≠ jsem na≈°el v√°ƒçek s jedinou hrudkou rudy. Ten star√Ω zlodƒõj Cavalorn jej tu musel zapomenout.");
 };
 
 //**************************************
@@ -262,7 +262,7 @@ func void Use_Cello()
 
 INSTANCE ItMi_IECelloBow(C_Item)
 {
-	name 				=	"SmyËec k cellu";
+	name 				=	"Smyƒçec k cellu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -302,7 +302,7 @@ func void Use_Drum()
 
 INSTANCE ItMi_IEDrumScheit(C_Item)
 {
-	name 				=	"P¯Ìstav Tromba";
+	name 				=	"P≈ô√≠stav Tromba";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -326,7 +326,7 @@ func void Use_Drumscheit()
 
 INSTANCE ItMi_IEDrumStick(C_Item)
 {
-	name 				=	"PaliËka bubnu";
+	name 				=	"Paliƒçka bubnu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -342,7 +342,7 @@ INSTANCE ItMi_IEDrumStick(C_Item)
 
 INSTANCE ItMi_IEDudelBlau(C_Item)
 {
-	name 				=	"ModrÈ dudy";
+	name 				=	"Modr√© dudy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -366,7 +366,7 @@ func void Use_Dudel()
 
 INSTANCE ItMi_IEDudelGelb(C_Item)
 {
-	name 				=	"élutÈ dudy";
+	name 				=	"≈Ωlut√© dudy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -439,7 +439,7 @@ func void Use_Laute()
 //****************************************************************************
 INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 {
-	name 				=	"V balÌËku nÏco cink·";
+	name 				=	"V bal√≠ƒçku nƒõco cink√°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -452,9 +452,9 @@ INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Uvnit¯ jsou paklÌËe";
+	TEXT[2]				= 	"Uvnit≈ô jsou pakl√≠ƒçe";
 	TEXT[3]				=	"";
-	TEXT[4]				=	"Spousta paklÌË˘";
+	TEXT[4]				=	"Spousta pakl√≠ƒç≈Ø";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	value;
@@ -462,14 +462,14 @@ INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 FUNC VOID Use_LennarPaket()
 {
 	B_PlayerFindItem (ItKE_lockpick,Lennar_picklock_amount);
-	Snd_Play ("MÏöec");
+	Snd_Play ("Mƒõ≈°ec");
 	
 	LennarPaket_Open = TRUE;
 };
 	
 instance ItMi_Zeitspalt_Addon(C_Item)
 {
-	name 				=	"»ern· ruda";
+	name 				=	"ƒåern√° ruda";
 
 	mainflag 			=	ITEM_KAT_POTIONS;
 	flags 				=	ITEM_MULTI;
@@ -485,7 +485,7 @@ instance ItMi_Zeitspalt_Addon(C_Item)
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
 	description			= 	name;
-	TEXT[3]				= 	"⁄Ëinky nejsou zn·my.";				
+	TEXT[3]				= 	"√öƒçinky nejsou zn√°my.";				
 
 	INV_ZBIAS				= INVCAM_ENTF_MISC_STANDARD;
 };

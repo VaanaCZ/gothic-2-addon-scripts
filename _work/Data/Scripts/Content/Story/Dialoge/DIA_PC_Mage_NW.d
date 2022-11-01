@@ -89,29 +89,29 @@ FUNC VOID DIA_MiltenNW_KAP3_Hello_Info()
 {	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_00"); //(nevìøícnì) Nejde mi to na rozum. Opravdu jsi paladin?
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_01"); //Evidentnì.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_02"); //(euforicky) Pokud je mezi paladiny nìkdo jako ty, mìli by se mít Beliarovi pohùnci radši na pozoru.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_03"); //Jestli jsi porazil Spáèe, nemìlo by ti pár skøetù dìlat sebemenší potíže.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_04"); //Ve høe nejsou jenom skøeti.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_05"); //To vím, ale i tak je dobré tì mít na své stranì.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_06"); //No dobrá.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_07"); //Co dìláš tady v klášteøe? Nech mì hádat. Chceš se uèit umìní magie.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_08"); //Možná.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_09"); //Vìdìl jsem to - bìž si promluvit s Mardukem, on je zodpovìdný za vás paladiny. Najdeš ho pøed kaplí.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_00"); //(nevÄ›Å™Ã­cnÄ›) Nejde mi to na rozum. Opravdu jsi paladin?
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_01"); //EvidentnÄ›.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_02"); //(euforicky) Pokud je mezi paladiny nÄ›kdo jako ty, mÄ›li by se mÃ­t Beliarovi pohÅ¯nci radÅ¡i na pozoru.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_03"); //Jestli jsi porazil SpÃ¡Äe, nemÄ›lo by ti pÃ¡r skÅ™etÅ¯ dÄ›lat sebemenÅ¡Ã­ potÃ­Å¾e.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_04"); //Ve hÅ™e nejsou jenom skÅ™eti.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_05"); //To vÃ­m, ale i tak je dobrÃ© tÄ› mÃ­t na svÃ© stranÄ›.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_06"); //No dobrÃ¡.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_07"); //Co dÄ›lÃ¡Å¡ tady v klÃ¡Å¡teÅ™e? Nech mÄ› hÃ¡dat. ChceÅ¡ se uÄit umÄ›nÃ­ magie.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_08"); //MoÅ¾nÃ¡.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_09"); //VÄ›dÄ›l jsem to - bÄ›Å¾ si promluvit s Mardukem, on je zodpovÄ›dnÃ½ za vÃ¡s paladiny. NajdeÅ¡ ho pÅ™ed kaplÃ­.
 	};
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_10"); //Vidím, že ty øeèi mìly pravdu.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_11"); //Jaké øeèi?
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_12"); //Že ses spolèil s tìmi drakobijci.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_13"); //No, nikdy jsi nebyl dobrý materiál pro církev. A je to ale jak chce, bojuješ za naši vìc, a to je to, co se poèítá.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_14"); //Je to vše?
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_15"); //Mám samozøejmì radost. Navíc vypadáš tak, že se tì musí každý skøet hned leknout.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_16"); //Ve høe nejsou jenom skøeti.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_17"); //To vím, ale i tak s nimi jsou problémy. Jsi velmi dùležitý.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_18"); //Porazil jsi Spáèe. Možná jednoho dne budeme všichni potøebovat pomoc.
-		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_19"); //No dobrá.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_10"); //VidÃ­m, Å¾e ty Å™eÄi mÄ›ly pravdu.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_11"); //JakÃ© Å™eÄi?
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_12"); //Å½e ses spolÄil s tÄ›mi drakobijci.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_13"); //No, nikdy jsi nebyl dobrÃ½ materiÃ¡l pro cÃ­rkev. AÅ¥ je to ale jak chce, bojujeÅ¡ za naÅ¡i vÄ›c, a to je to, co se poÄÃ­tÃ¡.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_14"); //Je to vÅ¡e?
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_15"); //MÃ¡m samozÅ™ejmÄ› radost. NavÃ­c vypadÃ¡Å¡ tak, Å¾e se tÄ› musÃ­ kaÅ¾dÃ½ skÅ™et hned leknout.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_16"); //Ve hÅ™e nejsou jenom skÅ™eti.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_17"); //To vÃ­m, ale i tak s nimi jsou problÃ©my. Jsi velmi dÅ¯leÅ¾itÃ½.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Hello_03_18"); //Porazil jsi SpÃ¡Äe. MoÅ¾nÃ¡ jednoho dne budeme vÅ¡ichni potÅ™ebovat pomoc.
+		AI_Output (other,self ,"DIA_MiltenNW_KAP3_Hello_15_19"); //No dobrÃ¡.
 	};		
 };	
 
@@ -126,7 +126,7 @@ INSTANCE DIA_MiltenNW_Monastery(C_INFO)
 	condition	= DIA_MiltenNW_Monastery_Condition;
 	information	= DIA_MiltenNW_Monastery_Info;
 	permanent	= FALSE;
-	description = "Jak ses dostal do kláštera tak rychle?";
+	description = "Jak ses dostal do klÃ¡Å¡tera tak rychle?";
 };                       
 FUNC INT DIA_MiltenNW_Monastery_Condition()
 {
@@ -137,9 +137,9 @@ FUNC INT DIA_MiltenNW_Monastery_Condition()
 };
 FUNC VOID DIA_MiltenNW_Monastery_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_Monastery_15_00"); //Jak ses dostal do kláštera tak rychle?
-	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_01"); //Co je to za otázku? Proplížil jsem se prùsmykem a namíøil si to rovnou do kláštera.
-	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_02"); //Pøiznávám, že nebylo vždycky snadné proklouznout mezi tìmi všemi pøíšerami, které se zabydlují na téhle stranì údolí, ale pøece jenom jsem mìl míò problémù, než jsem èekal.
+	AI_Output (other,self ,"DIA_MiltenNW_Monastery_15_00"); //Jak ses dostal do klÃ¡Å¡tera tak rychle?
+	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_01"); //Co je to za otÃ¡zku? ProplÃ­Å¾il jsem se prÅ¯smykem a namÃ­Å™il si to rovnou do klÃ¡Å¡tera.
+	AI_Output (self ,other,"DIA_MiltenNW_Monastery_03_02"); //PÅ™iznÃ¡vÃ¡m, Å¾e nebylo vÅ¾dycky snadnÃ© proklouznout mezi tÄ›mi vÅ¡emi pÅ™Ã­Å¡erami, kterÃ© se zabydlujÃ­ na tÃ©hle stranÄ› ÃºdolÃ­, ale pÅ™ece jenom jsem mÄ›l mÃ­Åˆ problÃ©mÅ¯, neÅ¾ jsem Äekal.
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ INSTANCE DIA_MiltenNW_FourFriends(C_INFO)
 	condition	= DIA_MiltenNW_FourFriends_Condition;
 	information	= DIA_MiltenNW_FourFriends_Info;
 	permanent	= FALSE;
-	description = "Víš, kde jsou ostatní?";
+	description = "VÃ­Å¡, kde jsou ostatnÃ­?";
 };                       
 FUNC INT DIA_MiltenNW_FourFriends_Condition()
 {
@@ -164,33 +164,33 @@ FUNC INT DIA_MiltenNW_FourFriends_Condition()
 };
 FUNC VOID DIA_MiltenNW_FourFriends_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_00"); //Víš, kde jsou ostatní?
+	AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_00"); //VÃ­Å¡, kde jsou ostatnÃ­?
 	if (Npc_IsDead (PC_FIGHTER_NW_vor_DJG) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_01"); //Zdá se, že Gorn se vypoøádal s pobytem v Garondovì vìzení docela dobøe.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_01"); //ZdÃ¡ se, Å¾e Gorn se vypoÅ™Ã¡dal s pobytem v GarondovÄ› vÄ›zenÃ­ docela dobÅ™e.
 		
 		if (MIS_RescueGorn != LOG_SUCCESS)
 		{
 			AI_Output (other,self ,"DIA_MiltenNW_FourFriends_15_02"); //Jak se dostal ven?
-			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_03"); //Musel jsem Garondovi trochu zalhat, abych ho pøesvìdèil, že má obvinìní stáhnout.
-			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_04"); //Ale bude to jen mezi námi, rozumìno?
+			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_03"); //Musel jsem Garondovi trochu zalhat, abych ho pÅ™esvÄ›dÄil, Å¾e mÃ¡ obvinÄ›nÃ­ stÃ¡hnout.
+			AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_04"); //Ale bude to jen mezi nÃ¡mi, rozumÄ›no?
 		};
 		
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_05"); //Každopádnì chtìl jít za Leem a podívat se, co se dìje na farmì.
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_06"); //Po tom blivajzu, co dostával ve vìzení, se urèitì cpe ze všech sil. To bude pro zásoby žoldnéøù tìžká zkouška.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_05"); //KaÅ¾dopÃ¡dnÄ› chtÄ›l jÃ­t za Leem a podÃ­vat se, co se dÄ›je na farmÄ›.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_06"); //Po tom blivajzu, co dostÃ¡val ve vÄ›zenÃ­, se urÄitÄ› cpe ze vÅ¡ech sil. To bude pro zÃ¡soby Å¾oldnÃ©Å™Å¯ tÄ›Å¾kÃ¡ zkouÅ¡ka.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_07"); //Gorn to nepøežil.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_07"); //Gorn to nepÅ™eÅ¾il.
 	};
 	if (Npc_IsDead (PC_THIEF_NW) == FALSE)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_08"); //Diego mumlal nìco o zúètování. Netuším, co mìl na mysli.
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_09"); //Ale øekl bych, že je ve mìstì. Znáš ho - vždycky se nìco najde.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_08"); //Diego mumlal nÄ›co o zÃºÄtovÃ¡nÃ­. NetuÅ¡Ã­m, co mÄ›l na mysli.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_09"); //Ale Å™ekl bych, Å¾e je ve mÄ›stÄ›. ZnÃ¡Å¡ ho - vÅ¾dycky se nÄ›co najde.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_10"); //Diego to koupil - zdá se, že ho bariéra pøece jenom dostala.
+		AI_Output (self ,other,"DIA_MiltenNW_FourFriends_03_10"); //Diego to koupil - zdÃ¡ se, Å¾e ho bariÃ©ra pÅ™ece jenom dostala.
 	};
 };
 //*************************************************************
@@ -204,7 +204,7 @@ INSTANCE DIA_MiltenNW_KAP3_Entry(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_Entry_Condition;
 	information	= DIA_MiltenNW_KAP3_Entry_Info;
 	permanent	= TRUE;
-	description = "Potøebuji se dostat do kláštera. Je to dùležité!";
+	description = "PotÅ™ebuji se dostat do klÃ¡Å¡tera. Je to dÅ¯leÅ¾itÃ©!";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_Entry_Condition()
 {
@@ -217,10 +217,10 @@ FUNC INT DIA_MiltenNW_KAP3_Entry_Condition()
 };
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_15_00"); //Potøebuju se dostat do kláštera. Je to dùležité!
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_15_00"); //PotÅ™ebuju se dostat do klÃ¡Å¡tera. Je to dÅ¯leÅ¾itÃ©!
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self,other,"DIA_MiltenNW_KAP3_Entry_03_01"); //Ano, jistì. Tady je klíè.
+		AI_Output (self,other,"DIA_MiltenNW_KAP3_Entry_03_01"); //Ano, jistÄ›. Tady je klÃ­Ä.
 		
 		CreateInvItems (self,ItKe_Innos_Mis,1);
 		B_GiveInvItems (self,other,ItKe_Innos_Mis,1); 
@@ -229,16 +229,16 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_02"); //Nemùžu tì do kláštera vpustit. Mìl bych problémy pøed nejvyšší radou.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_03"); //Bez povolení mých nadøízených nesmím do kláštera nikoho vpustit.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_02"); //NemÅ¯Å¾u tÄ› do klÃ¡Å¡tera vpustit. MÄ›l bych problÃ©my pÅ™ed nejvyÅ¡Å¡Ã­ radou.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_03_03"); //Bez povolenÃ­ mÃ½ch nadÅ™Ã­zenÃ½ch nesmÃ­m do klÃ¡Å¡tera nikoho vpustit.
 	
 		Info_ClearChoices (DIA_MiltenNW_KAP3_Entry);
 		Info_AddChoice (DIA_MiltenNW_KAP3_Entry,DIALOG_Back,DIA_MiltenNW_KAP3_Entry_BACK);
-		Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"Je to dùležité!",DIA_MiltenNW_KAP3_Entry_Important);
+		Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"Je to dÅ¯leÅ¾itÃ©!",DIA_MiltenNW_KAP3_Entry_Important);
 	
 		if (Npc_HasItems (other,ItWr_PermissionToWearInnosEye_MIS) >=1)
 		{	
-			Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"Pøináším dopis od lorda Hagena.",DIA_MiltenNW_KAP3_Entry_Permit); 
+			Info_AddChoice (DIA_MiltenNW_KAP3_Entry,"PÅ™inÃ¡Å¡Ã­m dopis od lorda Hagena.",DIA_MiltenNW_KAP3_Entry_Permit); 
 		};
 	};	
 };	
@@ -250,21 +250,21 @@ FUNC VOID DIA_MiltenNW_KAP3_Entry_BACK ()
 
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Important ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Important_15_00"); //Je to dùležité!
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Important_03_01"); //To nepùjde. Pyrokar by mi utrhl hlavu.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Important_15_00"); //Je to dÅ¯leÅ¾itÃ©!
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Important_03_01"); //To nepÅ¯jde. Pyrokar by mi utrhl hlavu.
 	
 	Info_ClearChoices (DIA_MiltenNW_KAP3_Entry);
 };
 
 FUNC VOID DIA_MiltenNW_KAP3_Entry_Permit ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Permit_15_00"); //Pøináším dopis od lorda Hagena.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_01"); //Ukaž mi ho.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Entry_Permit_15_00"); //PÅ™inÃ¡Å¡Ã­m dopis od lorda Hagena.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_01"); //UkaÅ¾ mi ho.
 	
 	B_GiveInvItems (other,self,ItWr_PermissionToWearInnosEye_MIS,1);
 	B_UseFakeScroll ();	
 	
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_02"); //(váhavì) Dobrá. Tady je klíè od kláštera. Pyrokar je v kostele.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Entry_Permit_03_02"); //(vÃ¡havÄ›) DobrÃ¡. Tady je klÃ­Ä od klÃ¡Å¡tera. Pyrokar je v kostele.
 	
 	CreateInvItems (self,ItKe_Innos_Mis,1);
 	B_GiveInvItems (self,other,ItKe_Innos_Mis,1); 
@@ -286,7 +286,7 @@ INSTANCE DIA_MiltenNW_KAP3_NovizenChase(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_NovizenChase_Condition;
 	information	= DIA_MiltenNW_KAP3_NovizenChase_Info;
 	permanent	= FALSE;
-	description = "Nevíš, kde je Pedro?";
+	description = "NevÃ­Å¡, kde je Pedro?";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_NovizenChase_Condition()
 {
@@ -300,15 +300,15 @@ FUNC INT DIA_MiltenNW_KAP3_NovizenChase_Condition()
 
 FUNC VOID DIA_MiltenNW_KAP3_NovizenChase_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_NovizenChase_15_00"); //Nevíš, kde je Pedro?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_01"); //Myslíš, že bych tady jen tak stál, kdybych vìdìl, kde se ten odpadlík schovává?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_02"); //Musí zaplatit za své èiny. Doufám, že se nám podaøí dostat Oko zpátky.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_03"); //Musíš nám pomoci. Najdi ho a pøines zpìt Innosovo oko.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_NovizenChase_15_00"); //NevÃ­Å¡, kde je Pedro?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_01"); //MyslÃ­Å¡, Å¾e bych tady jen tak stÃ¡l, kdybych vÄ›dÄ›l, kde se ten odpadlÃ­k schovÃ¡vÃ¡?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_02"); //MusÃ­ zaplatit za svÃ© Äiny. DoufÃ¡m, Å¾e se nÃ¡m podaÅ™Ã­ dostat Oko zpÃ¡tky.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_03"); //MusÃ­Å¡ nÃ¡m pomoci. Najdi ho a pÅ™ines zpÄ›t Innosovo oko.
 	//Joly: AI_Output (self ,other,"DIA_MiltenNW_KAP3_NovizenChase_03_04"); //Ich werde sehen, was ich tun kann.
 };	
 
 //***************************************************************
-//	Weißt du etwas über die vermummten Gestalten?
+//	WeiÃŸt du etwas Ã¼ber die vermummten Gestalten?
 //***************************************************************
 
 INSTANCE DIA_MiltenNW_KAP3_Perm(C_INFO)
@@ -318,7 +318,7 @@ INSTANCE DIA_MiltenNW_KAP3_Perm(C_INFO)
 	condition	= DIA_MiltenNW_KAP3_Perm_Condition;
 	information	= DIA_MiltenNW_KAP3_Perm_Info;
 	permanent	= FALSE;
-	description = "Nevíš nìco o tìch postavách v kápích?";
+	description = "NevÃ­Å¡ nÄ›co o tÄ›ch postavÃ¡ch v kÃ¡pÃ­ch?";
 };                       
 FUNC INT DIA_MiltenNW_KAP3_Perm_Condition()
 {
@@ -330,9 +330,9 @@ FUNC INT DIA_MiltenNW_KAP3_Perm_Condition()
 
 FUNC VOID DIA_MiltenNW_KAP3_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Perm_15_00"); //Nevíš nìco o tìch postavách v kápích?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_01"); //Ne, ale nemám z tìch chlapíkù dobrý pocit.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_02"); //Pokud na nì narazíš, buï opatrný.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP3_Perm_15_00"); //NevÃ­Å¡ nÄ›co o tÄ›ch postavÃ¡ch v kÃ¡pÃ­ch?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_01"); //Ne, ale nemÃ¡m z tÄ›ch chlapÃ­kÅ¯ dobrÃ½ pocit.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP3_Perm_03_02"); //Pokud na nÄ› narazÃ­Å¡, buÄ opatrnÃ½.
 };	
 	
 
@@ -378,7 +378,7 @@ INSTANCE DIA_MiltenNW_KAP4_PERM(C_INFO)
 	condition	= DIA_MiltenNW_KAP4_PERM_Condition;
 	information	= DIA_MiltenNW_KAP4_PERM_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 FUNC INT DIA_MiltenNW_KAP4_PERM_Condition()
 {
@@ -389,28 +389,28 @@ FUNC INT DIA_MiltenNW_KAP4_PERM_Condition()
 };
 FUNC VOID DIA_MiltenNW_KAP4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_00"); //Co je nového?
-	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_01"); //Na to bych se mìl zeptat já. Máme tady dost starostí.
-	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_02"); //Nejvyšší rada se snaží zjistit, co nepøítel udìlá pøíštì.
-	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_03"); //Nìco dalšího?
+	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_00"); //Co je novÃ©ho?
+	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_01"); //Na to bych se mÄ›l zeptat jÃ¡. MÃ¡me tady dost starostÃ­.
+	AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_02"); //NejvyÅ¡Å¡Ã­ rada se snaÅ¾Ã­ zjistit, co nepÅ™Ã­tel udÄ›lÃ¡ pÅ™Ã­Å¡tÄ›.
+	AI_Output (other,self ,"DIA_MiltenNW_KAP4_PERM_15_03"); //NÄ›co dalÅ¡Ã­ho?
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_04"); //V poslední dobì jsou útoky skøetù èastìjší, dokonce i mimo Hornické údolí.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_05"); //Vùbec se mi to nechce líbit - myslím, že už nemáme moc èasu.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_04"); //V poslednÃ­ dobÄ› jsou Ãºtoky skÅ™etÅ¯ ÄastÄ›jÅ¡Ã­, dokonce i mimo HornickÃ© ÃºdolÃ­.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_05"); //VÅ¯bec se mi to nechce lÃ­bit - myslÃ­m, Å¾e uÅ¾ nemÃ¡me moc Äasu.
 	}
 	else if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_06"); //Jeden farmáø øíkal, že poblíž jeho farmy se objevila nìjaká šupinatá stvoøení.
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_07"); //Nevím, jaký to dává dohromady smysl, ale mám pocit, že nepøítel nìco chystá.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_06"); //Jeden farmÃ¡Å™ Å™Ã­kal, Å¾e poblÃ­Å¾ jeho farmy se objevila nÄ›jakÃ¡ Å¡upinatÃ¡ stvoÅ™enÃ­.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_07"); //NevÃ­m, jakÃ½ to dÃ¡vÃ¡ dohromady smysl, ale mÃ¡m pocit, Å¾e nepÅ™Ã­tel nÄ›co chystÃ¡.
 	}
 	else if (MIS_FindTheObesessed == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_08"); //Dostáváme èím dál tím víc zpráv o posedlých lidech. Nepøítel je silný, silnìjší, než jsme èekali.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_08"); //DostÃ¡vÃ¡me ÄÃ­m dÃ¡l tÃ­m vÃ­c zprÃ¡v o posedlÃ½ch lidech. NepÅ™Ã­tel je silnÃ½, silnÄ›jÅ¡Ã­, neÅ¾ jsme Äekali.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_09"); //Ne, situace je stále vážná. Jediné, co mùžeme dìlat, je vìøit v Innose.
+		AI_Output (self ,other,"DIA_MiltenNW_KAP4_PERM_03_09"); //Ne, situace je stÃ¡le vÃ¡Å¾nÃ¡. JedinÃ©, co mÅ¯Å¾eme dÄ›lat, je vÄ›Å™it v Innose.
 	};
 };
 
@@ -446,7 +446,7 @@ FUNC VOID DIA_MiltenNW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  				   Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  				   Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_MiltenNW_AllDragonsDead(C_INFO)
@@ -456,7 +456,7 @@ INSTANCE DIA_MiltenNW_AllDragonsDead(C_INFO)
 	condition	= DIA_MiltenNW_AllDragonsDead_Condition;
 	information	= DIA_MiltenNW_AllDragonsDead_Info;
 	permanent	= FALSE;
-	description = "Pobil jsem všechny draky.";
+	description = "Pobil jsem vÅ¡echny draky.";
 };                       
 FUNC INT DIA_MiltenNW_AllDragonsDead_Condition()
 {
@@ -467,15 +467,15 @@ FUNC INT DIA_MiltenNW_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_MiltenNW_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_00"); //Pobil jsem všechny draky.
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_01"); //Vážnì? Takže nadìje pøece jenom ještì žije. Teï už zbývá jen useknout zlu hlavu.
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_02"); //Pokud jsi to vážnì dokázal, mohli bychom válku vyhrát.
-	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_03"); //Kdo, já?
-	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_04"); //Samozøejmì že ty. Kdo jiný?
+	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_00"); //Pobil jsem vÅ¡echny draky.
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_01"); //VÃ¡Å¾nÄ›? TakÅ¾e nadÄ›je pÅ™ece jenom jeÅ¡tÄ› Å¾ije. TeÄ uÅ¾ zbÃ½vÃ¡ jen useknout zlu hlavu.
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_02"); //Pokud jsi to vÃ¡Å¾nÄ› dokÃ¡zal, mohli bychom vÃ¡lku vyhrÃ¡t.
+	AI_Output (other,self ,"DIA_MiltenNW_AllDragonsDead_15_03"); //Kdo, jÃ¡?
+	AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_04"); //SamozÅ™ejmÄ› Å¾e ty. Kdo jinÃ½?
 	
 	if (MiltenNW_IsOnBoard	 == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_05"); //Mìli bychom brzy vyrazit, døív než bude pozdì.
+		AI_Output (self ,other,"DIA_MiltenNW_AllDragonsDead_03_05"); //MÄ›li bychom brzy vyrazit, dÅ™Ã­v neÅ¾ bude pozdÄ›.
 	};
 };
 
@@ -500,7 +500,7 @@ func int DIA_MiltenNW_SCWasInLib_Condition ()
 };
 func void DIA_MiltenNW_SCWasInLib_Info ()
 {
-	AI_Output			(self, other, "DIA_MiltenNW_SCWasInLib_03_00"); //Hej, slyšel jsem, že jsi strávil dlouhý èas v klášterních sklepech. Co jsi zjistil?
+	AI_Output			(self, other, "DIA_MiltenNW_SCWasInLib_03_00"); //Hej, slyÅ¡el jsem, Å¾e jsi strÃ¡vil dlouhÃ½ Äas v klÃ¡Å¡ternÃ­ch sklepech. Co jsi zjistil?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -513,7 +513,7 @@ instance DIA_MiltenNW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_MiltenNW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_MiltenNW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Vím, kde se nepøítel skrývá.";
+	description	 = 	"VÃ­m, kde se nepÅ™Ã­tel skrÃ½vÃ¡.";
 };
 
 func int DIA_MiltenNW_KnowWhereEnemy_Condition ()
@@ -527,53 +527,53 @@ func int DIA_MiltenNW_KnowWhereEnemy_Condition ()
 var int SCToldMiltenHeKnowWhereEnemy;
 func void DIA_MiltenNW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_KnowWhereEnemy_15_00"); //Vím, kde se nepøítel ukrývá. Je to malý ostrùvek nedaleko odsud.
-	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_01"); //To je naše velká šance. Musíme okamžitì vyrazit a znièit zlo jednou provždy.
+	AI_Output			(other, self, "DIA_MiltenNW_KnowWhereEnemy_15_00"); //VÃ­m, kde se nepÅ™Ã­tel ukrÃ½vÃ¡. Je to malÃ½ ostrÅ¯vek nedaleko odsud.
+	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_01"); //To je naÅ¡e velkÃ¡ Å¡ance. MusÃ­me okamÅ¾itÄ› vyrazit a zniÄit zlo jednou provÅ¾dy.
 	SCToldMiltenHeKnowWhereEnemy = TRUE;
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);  
   	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
   	if ((Npc_IsDead(DiegoNW))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_02"); //Mluvil jsi o tom s Diegem? Myslím, že by chtìl jet s tebou.
- 		B_LogEntry (TOPIC_Crew,"Diego mi mùže velmi pomoci - nikdy dlouho nepobyl na jednom místì.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_02"); //Mluvil jsi o tom s Diegem? MyslÃ­m, Å¾e by chtÄ›l jet s tebou.
+ 		B_LogEntry (TOPIC_Crew,"Diego mi mÅ¯Å¾e velmi pomoci - nikdy dlouho nepobyl na jednom mÃ­stÄ›.");
  	};
 
   	if ((Npc_IsDead(GornNW_nach_DJG))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_03"); //A co Gorn? Promluv si s ním. Slyšel jsem, že se vrátil z Hornického údolí.
- 		B_LogEntry (TOPIC_Crew,"Gorn by mi jistì byl také zdatným pomocníkem. Nikdy neuškodí, máš-li po boku zdatného bojovníka. Snad by mì mohl trochu vycvièit.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_03"); //A co Gorn? Promluv si s nÃ­m. SlyÅ¡el jsem, Å¾e se vrÃ¡til z HornickÃ©ho ÃºdolÃ­.
+ 		B_LogEntry (TOPIC_Crew,"Gorn by mi jistÄ› byl takÃ© zdatnÃ½m pomocnÃ­kem. Nikdy neuÅ¡kodÃ­, mÃ¡Å¡-li po boku zdatnÃ©ho bojovnÃ­ka. Snad by mÄ› mohl trochu vycviÄit.");
  	};
 	
 	if ((Npc_IsDead(Lester))== FALSE)
   	{
- 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_04"); //A nezapomeò na Lestera. Pokud ho nevytáhneš z toho jeho údolí, tak tam shnije.
- 		B_LogEntry (TOPIC_Crew,"Jestli Lestera nevezmu s sebou, nejspíš se z tohoto údolí nikdy nedostane.");
+ 		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_04"); //A nezapomeÅˆ na Lestera. Pokud ho nevytÃ¡hneÅ¡ z toho jeho ÃºdolÃ­, tak tam shnije.
+ 		B_LogEntry (TOPIC_Crew,"Jestli Lestera nevezmu s sebou, nejspÃ­Å¡ se z tohoto ÃºdolÃ­ nikdy nedostane.");
  	};
 	
-	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_05"); //Znám také svou vlastní roli, kterou bych mìl hrát. Až budeme èelit nepøíteli, mùžu ti posílit magickou energii a pomáhat ti pøi vytváøení run. Kdy zaèneme?
+	AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_05"); //ZnÃ¡m takÃ© svou vlastnÃ­ roli, kterou bych mÄ›l hrÃ¡t. AÅ¾ budeme Äelit nepÅ™Ã­teli, mÅ¯Å¾u ti posÃ­lit magickou energii a pomÃ¡hat ti pÅ™i vytvÃ¡Å™enÃ­ run. Kdy zaÄneme?
 	
-	B_LogEntry (TOPIC_Crew,"Pùjde-li Milten se mnou, mùže mì nauèit, jak vyrábìt runy a zvýšit si zásoby many.");
+	B_LogEntry (TOPIC_Crew,"PÅ¯jde-li Milten se mnou, mÅ¯Å¾e mÄ› nauÄit, jak vyrÃ¡bÄ›t runy a zvÃ½Å¡it si zÃ¡soby many.");
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_MiltenNW_KnowWhereEnemy_15_06"); //Ne tak rychle, už mám dost lidí.
-		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_07"); //Víš, že bych s tebou šel. Pokud si to rozmyslíš, budu tady na tebe èekat.
-		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_08"); //Hodnì štìstí, a a nad tebou Innos drží ochrannou ruku.
+		AI_Output			(other,self , "DIA_MiltenNW_KnowWhereEnemy_15_06"); //Ne tak rychle, uÅ¾ mÃ¡m dost lidÃ­.
+		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_07"); //VÃ­Å¡, Å¾e bych s tebou Å¡el. Pokud si to rozmyslÃ­Å¡, budu tady na tebe Äekat.
+		AI_Output			(self, other, "DIA_MiltenNW_KnowWhereEnemy_03_08"); //HodnÄ› Å¡tÄ›stÃ­, a aÅ¥ nad tebou Innos drÅ¾Ã­ ochrannou ruku.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_MiltenNW_KnowWhereEnemy);
-		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"V tuhle chvíli pro tebe nemám využití.",DIA_MiltenNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"Vítej na palubì!",DIA_MiltenNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"V tuhle chvÃ­li pro tebe nemÃ¡m vyuÅ¾itÃ­.",DIA_MiltenNW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_MiltenNW_KnowWhereEnemy,"VÃ­tej na palubÄ›!",DIA_MiltenNW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_MiltenNW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_00"); //Vítej na palubì!
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_01"); //Setkáme se v pøístavu. Poèkej tam na mì.
-	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_Yes_03_02"); //Dobrá. Budu tam, až budeš pøipraven.
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_00"); //VÃ­tej na palubÄ›!
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_Yes_15_01"); //SetkÃ¡me se v pÅ™Ã­stavu. PoÄkej tam na mÄ›.
+	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_Yes_03_02"); //DobrÃ¡. Budu tam, aÅ¾ budeÅ¡ pÅ™ipraven.
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	MiltenNW_IsOnBoard	 = LOG_SUCCESS;
@@ -596,8 +596,8 @@ FUNC VOID DIA_MiltenNW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_MiltenNW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_No_15_00"); //V tuhle chvíli pro tebe nemám využití.
-	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_No_03_01"); //Víš, že bych to s tebou táhl až do konce. Pokud si to rozmyslíš, budu tady na tebe èekat.
+	AI_Output (other,self ,"DIA_MiltenNW_KnowWhereEnemy_No_15_00"); //V tuhle chvÃ­li pro tebe nemÃ¡m vyuÅ¾itÃ­.
+	AI_Output (self ,other,"DIA_MiltenNW_KnowWhereEnemy_No_03_01"); //VÃ­Å¡, Å¾e bych to s tebou tÃ¡hl aÅ¾ do konce. Pokud si to rozmyslÃ­Å¡, budu tady na tebe Äekat.
 
 	MiltenNW_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_MiltenNW_KnowWhereEnemy);
@@ -613,7 +613,7 @@ instance DIA_MiltenNW_WhereCaptain		(C_INFO)
 	condition	 = 	DIA_MiltenNW_WhereCaptain_Condition;
 	information	 = 	DIA_MiltenNW_WhereCaptain_Info;
 	
-	description	 = 	"Kde bych mìl hledat kapitána?";
+	description	 = 	"Kde bych mÄ›l hledat kapitÃ¡na?";
 
 };
 func int DIA_MiltenNW_WhereCaptain_Condition ()
@@ -627,14 +627,14 @@ func int DIA_MiltenNW_WhereCaptain_Condition ()
 };
 func void DIA_MiltenNW_WhereCaptain_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_WhereCaptain_15_00"); //Kde bych mìl hledat kapitána?
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_01"); //Zeptej se Jorgena. Je to koneckoncù námoøník. Mìl by být ještì poøád v klášteøe.
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_02"); //Ale jestli ti nebude schopen pomoci, budeš muset hledat nìkoho, kdo by ti øídil loï, na farmách nebo ve mìstì.
-	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_03"); //Nejlepší asi bude promluvit si s Leem nebo jít do pøístavu v Khorinidu. Nic lepšího mì teï nenapadá.
+	AI_Output			(other, self, "DIA_MiltenNW_WhereCaptain_15_00"); //Kde bych mÄ›l hledat kapitÃ¡na?
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_01"); //Zeptej se Jorgena. Je to koneckoncÅ¯ nÃ¡moÅ™nÃ­k. MÄ›l by bÃ½t jeÅ¡tÄ› poÅ™Ã¡d v klÃ¡Å¡teÅ™e.
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_02"); //Ale jestli ti nebude schopen pomoci, budeÅ¡ muset hledat nÄ›koho, kdo by ti Å™Ã­dil loÄ, na farmÃ¡ch nebo ve mÄ›stÄ›.
+	AI_Output			(self, other, "DIA_MiltenNW_WhereCaptain_03_03"); //NejlepÅ¡Ã­ asi bude promluvit si s Leem nebo jÃ­t do pÅ™Ã­stavu v Khorinidu. Nic lepÅ¡Ã­ho mÄ› teÄ nenapadÃ¡.
  
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                                                            
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                                                          
-	B_LogEntry (TOPIC_Captain,"Snad by se mi mohlo podaøit najmout kapitána - Jorgena. Mìl by se ještì zdržovat v klášteøe. Kromì nìho bych mìl na statcích èi ve mìstì natrefit i na jiné kandidáty na tuto funkci. Snad bych si mohl promluvit s Leem nebo se poptat po pøístavu.");
+	B_LogEntry (TOPIC_Captain,"Snad by se mi mohlo podaÅ™it najmout kapitÃ¡na - Jorgena. MÄ›l by se jeÅ¡tÄ› zdrÅ¾ovat v klÃ¡Å¡teÅ™e. KromÄ› nÄ›ho bych mÄ›l na statcÃ­ch Äi ve mÄ›stÄ› natrefit i na jinÃ© kandidÃ¡ty na tuto funkci. Snad bych si mohl promluvit s Leem nebo se poptat po pÅ™Ã­stavu.");
 	
 };
 
@@ -648,7 +648,7 @@ instance DIA_MiltenNW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_MiltenNW_LeaveMyShip_Condition;
 	information	 = 	DIA_MiltenNW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Nakonec tì pøece jenom nemùžu vzít s sebou.";
+	description	 = 	"Nakonec tÄ› pÅ™ece jenom nemÅ¯Å¾u vzÃ­t s sebou.";
 };
 func int DIA_MiltenNW_LeaveMyShip_Condition ()
 {	
@@ -660,8 +660,8 @@ func int DIA_MiltenNW_LeaveMyShip_Condition ()
 };
 func void DIA_MiltenNW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_LeaveMyShip_15_00"); //Nakonec tì pøece jenom nemùžu vzít s sebou.
-	AI_Output			(self, other, "DIA_MiltenNW_LeaveMyShip_03_01"); //Sám musíš nejlíp vìdìt, koho budeš potøebovat. Pokud si to rozmyslíš, budu na tebe èekat v klášteøe.
+	AI_Output			(other, self, "DIA_MiltenNW_LeaveMyShip_15_00"); //Nakonec tÄ› pÅ™ece jenom nemÅ¯Å¾u vzÃ­t s sebou.
+	AI_Output			(self, other, "DIA_MiltenNW_LeaveMyShip_03_01"); //SÃ¡m musÃ­Å¡ nejlÃ­p vÄ›dÄ›t, koho budeÅ¡ potÅ™ebovat. Pokud si to rozmyslÃ­Å¡, budu na tebe Äekat v klÃ¡Å¡teÅ™e.
 	
 	MiltenNW_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -670,7 +670,7 @@ func void DIA_MiltenNW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_MiltenNW_StillNeedYou		(C_INFO)
 {
@@ -679,11 +679,11 @@ instance DIA_MiltenNW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_MiltenNW_StillNeedYou_Condition;
 	information	 = 	DIA_MiltenNW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Potøebuji tì.";
+	description	 = 	"PotÅ™ebuji tÄ›.";
 };
 func int DIA_MiltenNW_StillNeedYou_Condition ()
 {	
-	if ((MiltenNW_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natürlich nur eine variable abfragen
+	if ((MiltenNW_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natÃ¼rlich nur eine variable abfragen
 	|| (MiltenNW_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -692,10 +692,10 @@ func int DIA_MiltenNW_StillNeedYou_Condition ()
 };
 func void DIA_MiltenNW_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_MiltenNW_StillNeedYou_15_00"); //Potøebuji tì.
+	AI_Output			(other, self, "DIA_MiltenNW_StillNeedYou_15_00"); //PotÅ™ebuji tÄ›.
 
-	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_01"); //Bude mi ctí. Pojïme, nemáme èasu nazbyt.
-	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_02"); //Jdu do pøístavu. Potkáme se tam.
+	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_01"); //Bude mi ctÃ­. PojÄme, nemÃ¡me Äasu nazbyt.
+	AI_Output	(self, other, "DIA_MiltenNW_StillNeedYou_03_02"); //Jdu do pÅ™Ã­stavu. PotkÃ¡me se tam.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	MiltenNW_IsOnBoard	 = LOG_SUCCESS;
@@ -725,7 +725,7 @@ INSTANCE DIA_MiltenNW_Teach(C_INFO)
 	condition	= DIA_MiltenNW_Teach_Condition;
 	information	= DIA_MiltenNW_Teach_Info;
 	permanent	= TRUE;
-	description = "Chci se nauèit nìjaká nová kouzla.";
+	description = "Chci se nauÄit nÄ›jakÃ¡ novÃ¡ kouzla.";
 };                       
 
 FUNC INT DIA_MiltenNW_Teach_Condition()
@@ -737,7 +737,7 @@ FUNC INT DIA_MiltenNW_Teach_Condition()
 }; 
 FUNC VOID DIA_MiltenNW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenNW_Teach_15_00");//Chci se nauèit nìjaká nová kouzla.
+	AI_Output (other,self ,"DIA_MiltenNW_Teach_15_00");//Chci se nauÄit nÄ›jakÃ¡ novÃ¡ kouzla.
 	
 	if  (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 2)
 	{
@@ -759,7 +759,7 @@ FUNC VOID DIA_MiltenNW_Teach_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenNW_Teach_03_01");//Ještì jsi nepostoupil do druhého magického kruhu. Není nic, co bych tì mohl nauèit.
+		AI_Output (self ,other,"DIA_MiltenNW_Teach_03_01");//JeÅ¡tÄ› jsi nepostoupil do druhÃ©ho magickÃ©ho kruhu. NenÃ­ nic, co bych tÄ› mohl nauÄit.
 	};
 };	
 FUNC VOID DIA_MiltenNW_Teach_BACK()
@@ -788,7 +788,7 @@ instance DIA_MiltenNW_Mana		(C_INFO)
 	condition	 = 	DIA_MiltenNW_Mana_Condition;
 	information	 = 	DIA_MiltenNW_Mana_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtìl bych posílit svoji magickou moc.";
+	description	 = 	"ChtÄ›l bych posÃ­lit svoji magickou moc.";
 };
 func int DIA_MiltenNW_Mana_Condition ()
 {	
@@ -799,7 +799,7 @@ func int DIA_MiltenNW_Mana_Condition ()
 };
 func void DIA_MiltenNW_Mana_Info ()
 {
-	AI_Output (other, self, "DIA_MiltenNW_Mana_15_00"); //Chtìl bych posílit svoji magickou moc.
+	AI_Output (other, self, "DIA_MiltenNW_Mana_15_00"); //ChtÄ›l bych posÃ­lit svoji magickou moc.
 	
 	Info_ClearChoices   (DIA_MiltenNW_Mana);
 	Info_AddChoice 		(DIA_MiltenNW_Mana, DIALOG_BACK, DIA_MiltenNW_Mana_BACK);
@@ -811,7 +811,7 @@ func void DIA_MiltenNW_Mana_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_MiltenNW_Mana_03_00"); //Tvé magické síly jsou velké. Moc velké na to, abych ti je pomohl ještì zvýšit.
+		AI_Output (self, other, "DIA_MiltenNW_Mana_03_00"); //TvÃ© magickÃ© sÃ­ly jsou velkÃ©. Moc velkÃ© na to, abych ti je pomohl jeÅ¡tÄ› zvÃ½Å¡it.
 	};
 	Info_ClearChoices (DIA_MiltenNW_Mana);
 };

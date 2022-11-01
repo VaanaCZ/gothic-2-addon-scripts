@@ -32,7 +32,7 @@ instance DIA_Rethon_HALLO		(C_INFO)
 	condition	 = 	DIA_Rethon_HALLO_Condition;
 	information	 = 	DIA_Rethon_HALLO_Info;
 
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Rethon_HALLO_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Rethon_HALLO_Condition ()
 
 func void DIA_Rethon_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_HALLO_15_00"); //Co tady dìláš?
-	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //Pøipravuju se na boj. Ještì nìco?
+	AI_Output			(other, self, "DIA_Rethon_HALLO_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //PÅ™ipravuju se na boj. JeÅ¡tÄ› nÄ›co?
 };
 
 
@@ -57,7 +57,7 @@ instance DIA_Rethon_KAMPF		(C_INFO)
 	condition	 = 	DIA_Rethon_KAMPF_Condition;
 	information	 = 	DIA_Rethon_KAMPF_Info;
 
-	description	 = 	"Proti komu se chystáš bojovat?";
+	description	 = 	"Proti komu se chystÃ¡Å¡ bojovat?";
 };
 
 func int DIA_Rethon_KAMPF_Condition ()
@@ -70,9 +70,9 @@ func int DIA_Rethon_KAMPF_Condition ()
 
 func void DIA_Rethon_KAMPF_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //Proti komu se chystáš bojovat?
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //Øíkal jsem si, e vlítnu na paladiny a nakopu jim ty jejich tlustı zadky.
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //Idiote. Proti drakùm, samozøejmì. Cos myslel?
+	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //Proti komu se chystÃ¡Å¡ bojovat?
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //Å˜Ã­kal jsem si, Å¾e vlÃ­tnu na paladiny a nakopu jim ty jejich tlustÃ½ zadky.
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //Idiote. Proti drakÅ¯m, samozÅ™ejmÄ›. Cos myslel?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ instance DIA_Rethon_PALADINE		(C_INFO)
 	condition	 = 	DIA_Rethon_PALADINE_Condition;
 	information	 = 	DIA_Rethon_PALADINE_Info;
 
-	description	 = 	"Nevadí paladinùm, e jsi tady?";
+	description	 = 	"NevadÃ­ paladinÅ¯m, Å¾e jsi tady?";
 };
 
 func int DIA_Rethon_PALADINE_Condition ()
@@ -98,11 +98,11 @@ func int DIA_Rethon_PALADINE_Condition ()
 
 func void DIA_Rethon_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Copak o tobì paladinové nevìdí?
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Nesmysl. Ty mají úplnì jinı problémy. Vìtšina z nich je ráda, e ije.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Morálka tìch chlapù není nic moc. To bude jejich konec.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Jen se podívej, jak si snaí dát dohromady ty nalámanı meèe, se kterıma se chtìjí vydat do boje.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Kadej rozumnej váleèník by okamitì dezertoval.
+	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Copak o tobÄ› paladinovÃ© nevÄ›dÃ­?
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Nesmysl. Ty majÃ­ ÃºplnÄ› jinÃ½ problÃ©my. VÄ›tÅ¡ina z nich je rÃ¡da, Å¾e Å¾ije.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //MorÃ¡lka tÄ›ch chlapÅ¯ nenÃ­ nic moc. To bude jejich konec.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Jen se podÃ­vej, jak si snaÅ¾Ã­ dÃ¡t dohromady ty nalÃ¡manÃ½ meÄe, se kterÃ½ma se chtÄ›jÃ­ vydat do boje.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //KaÅ¾dej rozumnej vÃ¡leÄnÃ­k by okamÅ¾itÄ› dezertoval.
 
 };
 
@@ -131,8 +131,8 @@ func int DIA_Rethon_WOGRUPPE_Condition ()
 func void DIA_Rethon_WOGRUPPE_Info ()
 {
 	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //Opustil jsi svou jednotku?
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //Svojí jednotku? Nemìl jsem ádnou jednotku. Jsem sbìratel trofejí.
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Na rozdíl od ostatních si nemùu dovolit pøijít domu s prázdnejma rukama. Take nemùu potøebovat nikoho dalšího.
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //SvojÃ­ jednotku? NemÄ›l jsem Å¾Ã¡dnou jednotku. Jsem sbÄ›ratel trofejÃ­.
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Na rozdÃ­l od ostatnÃ­ch si nemÅ¯Å¾u dovolit pÅ™ijÃ­t domu s prÃ¡zdnejma rukama. TakÅ¾e nemÅ¯Å¾u potÅ™ebovat nikoho dalÅ¡Ã­ho.
 };
 
 
@@ -146,7 +146,7 @@ instance DIA_Rethon_DRACHENGESEHEN		(C_INFO)
 	condition	 = 	DIA_Rethon_DRACHENGESEHEN_Condition;
 	information	 = 	DIA_Rethon_DRACHENGESEHEN_Info;
 
-	description	 = 	"U jsi vidìl nìjakého draka?";
+	description	 = 	"UÅ¾ jsi vidÄ›l nÄ›jakÃ©ho draka?";
 };
 
 func int DIA_Rethon_DRACHENGESEHEN_Condition ()
@@ -159,8 +159,8 @@ func int DIA_Rethon_DRACHENGESEHEN_Condition ()
 
 func void DIA_Rethon_DRACHENGESEHEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //U jsi vidìl nìjakého draka?
-	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Ne. Chci si nejdøív naostøit zbraò, ne na nìj vyrazím.
+	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //UÅ¾ jsi vidÄ›l nÄ›jakÃ©ho draka?
+	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Ne. Chci si nejdÅ™Ã­v naostÅ™it zbraÅˆ, neÅ¾ na nÄ›j vyrazÃ­m.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -173,7 +173,7 @@ instance DIA_Rethon_ANGST		(C_INFO)
 	condition	 = 	DIA_Rethon_ANGST_Condition;
 	information	 = 	DIA_Rethon_ANGST_Info;
 
-	description	 = 	"Nebojíš se, e tì kvùli tomu nìkdo napadne?";
+	description	 = 	"NebojÃ­Å¡ se, Å¾e tÄ› kvÅ¯li tomu nÄ›kdo napadne?";
 };
 
 func int DIA_Rethon_ANGST_Condition ()
@@ -186,30 +186,30 @@ func int DIA_Rethon_ANGST_Condition ()
 
 func void DIA_Rethon_ANGST_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_15_00"); //Nebojíš se, e tì kvùli tomu nìkdo napadne?
+	AI_Output			(other, self, "DIA_Rethon_ANGST_15_00"); //NebojÃ­Å¡ se, Å¾e tÄ› kvÅ¯li tomu nÄ›kdo napadne?
 
 	AI_Output			(self, other, "DIA_Rethon_ANGST_12_01"); //Co? Kdo? Sylvio?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //Tvùj šéf si asi myslí, e se tady mùe jen tak zabíjet, co?
-			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //Nepatøím k Sylviovım lidem. Pracuju jen sám pro sebe.
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //No, tak dobrá. Zapomeò, e jsem nìco øekl.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //TvÅ¯j Å¡Ã©f si asi myslÃ­, Å¾e se tady mÅ¯Å¾e jen tak zabÃ­jet, co?
+			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //NepatÅ™Ã­m k SylviovÃ½m lidem. Pracuju jen sÃ¡m pro sebe.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //No, tak dobrÃ¡. ZapomeÅˆ, Å¾e jsem nÄ›co Å™ekl.
 		};
 
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //Vidìl jsi ty hastroše, co mìl s sebou?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //Sylvio bude rád, kdy se odsud dostane vcelku.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //VidÄ›l jsi ty hastroÅ¡e, co mÄ›l s sebou?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //Sylvio bude rÃ¡d, kdyÅ¾ se odsud dostane vcelku.
 
 	if (Npc_IsDead(DJG_Sylvio))
 	{
-	AI_Output			(other, self, "DIA_Rethon_ANGST_15_07"); //Ne, to asi nebude. Je mrtvı.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_08"); //Taky dobøe.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_15_07"); //Ne, to asi nebude. Je mrtvÃ½.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_08"); //Taky dobÅ™e.
 	}
 	else
 	{
 	Info_AddChoice	(DIA_Rethon_ANGST, DIALOG_BACK, DIA_Rethon_ANGST_weiter );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Nevypadáš, e bys ho mìl zrovna v lásce.", DIA_Rethon_ANGST_sylviomoegen );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Tak kde je Sylvio teï?", DIA_Rethon_ANGST_woSylvio );
+	Info_AddChoice	(DIA_Rethon_ANGST, "NevypadÃ¡Å¡, Å¾e bys ho mÄ›l zrovna v lÃ¡sce.", DIA_Rethon_ANGST_sylviomoegen );
+	Info_AddChoice	(DIA_Rethon_ANGST, "Tak kde je Sylvio teÄ?", DIA_Rethon_ANGST_woSylvio );
 	Info_AddChoice	(DIA_Rethon_ANGST, "Sylvio byl tady?", DIA_Rethon_ANGST_sylviohier );
 	};
 };
@@ -222,29 +222,29 @@ func void DIA_Rethon_ANGST_weiter ()
 func void DIA_Rethon_ANGST_sylviohier ()
 {
 	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //Sylvio byl tady?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //Myslíš tady na hradì? Jo, to byl. Ale jenom chvilku.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Promluvil si tu s nìkolika lidmi a pak znovu odešel.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //MyslÃ­Å¡ tady na hradÄ›? Jo, to byl. Ale jenom chvilku.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Promluvil si tu s nÄ›kolika lidmi a pak znovu odeÅ¡el.
 
 };
 
 func void DIA_Rethon_ANGST_sylviomoegen ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //Nevypadáš, e bys ho mìl zrovna v lásce.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Coe, mìl bych ho mít rád? Nejsem pyšnı ani na to, e ho znám.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //Sylvio nemá ádné pøátele. Potøebuje lidi, co za ním pùjdou, a je mu úplnì jedno, co za lidi to bude.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //To není nic pro mì. Pracuju sám.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //NevypadÃ¡Å¡, Å¾e bys ho mÄ›l zrovna v lÃ¡sce.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //CoÅ¾e, mÄ›l bych ho mÃ­t rÃ¡d? Nejsem pyÅ¡nÃ½ ani na to, Å¾e ho znÃ¡m.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //Sylvio nemÃ¡ Å¾Ã¡dnÃ© pÅ™Ã¡tele. PotÅ™ebuje lidi, co za nÃ­m pÅ¯jdou, a je mu ÃºplnÄ› jedno, co za lidi to bude.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //To nenÃ­ nic pro mÄ›. Pracuju sÃ¡m.
 
 
 };
 
 func void DIA_Rethon_ANGST_woSylvio ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //Tak kde je Sylvio teï?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Ti paladinové tady øíkali nìco o ledovém drakovi na západì. Údajnì je to ten nejmocnìjší a nejnebezpeènìjší drak ze všech drakù.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //Mìls vidìt, jak Sylviovi zazáøily oèi, kdy o tom uslyšel. Není tak tìkı uhodnout, kam šel.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //Tak kde je Sylvio teÄ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Ti paladinovÃ© tady Å™Ã­kali nÄ›co o ledovÃ©m drakovi na zÃ¡padÄ›. ÃšdajnÄ› je to ten nejmocnÄ›jÅ¡Ã­ a nejnebezpeÄnÄ›jÅ¡Ã­ drak ze vÅ¡ech drakÅ¯.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //MÄ›ls vidÄ›t, jak Sylviovi zazÃ¡Å™ily oÄi, kdyÅ¾ o tom uslyÅ¡el. NenÃ­ tak tÄ›Å¾kÃ½ uhodnout, kam Å¡el.
 
-	B_LogEntry (TOPIC_DRACHENJAGD,"Drakobijce Rethon mumlal cosi o ledovém drakovi."); 
-	B_LogEntry (TOPIC_Dragonhunter,"Sylvio byl zalezlı na hradì a pak se vydal hledat ledového draka.");
+	B_LogEntry (TOPIC_DRACHENJAGD,"Drakobijce Rethon mumlal cosi o ledovÃ©m drakovi."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Sylvio byl zalezlÃ½ na hradÄ› a pak se vydal hledat ledovÃ©ho draka.");
 
 };
 
@@ -260,7 +260,7 @@ instance DIA_Rethon_MEINEWAFFE		(C_INFO)
 	condition	 = 	DIA_Rethon_MEINEWAFFE_Condition;
 	information	 = 	DIA_Rethon_MEINEWAFFE_Info;
 
-	description	 = 	"Mùeš mi pomoct s vylepšením mé zbranì?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi pomoct s vylepÅ¡enÃ­m mÃ© zbranÄ›?";
 };
 
 func int DIA_Rethon_MEINEWAFFE_Condition ()
@@ -273,9 +273,9 @@ func int DIA_Rethon_MEINEWAFFE_Condition ()
 
 func void DIA_Rethon_MEINEWAFFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //Mùeš mi pomoct s vylepšením mé zbranì?
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //Vylepšit? Nejlíp udìláš, kdy si koupíš nìco nového a ten svùj starej krám zahodíš.
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //Moná bych pro tebe nìco mìl. Máš zájem?
+	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //MÅ¯Å¾eÅ¡ mi pomoct s vylepÅ¡enÃ­m mÃ© zbranÄ›?
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //VylepÅ¡it? NejlÃ­p udÄ›lÃ¡Å¡, kdyÅ¾ si koupÃ­Å¡ nÄ›co novÃ©ho a ten svÅ¯j starej krÃ¡m zahodÃ­Å¡.
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //MoÅ¾nÃ¡ bych pro tebe nÄ›co mÄ›l. MÃ¡Å¡ zÃ¡jem?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -290,7 +290,7 @@ instance DIA_Rethon_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 	
-	description	 = 	"Co mi mùeš nabídnout?";
+	description	 = 	"Co mi mÅ¯Å¾eÅ¡ nabÃ­dnout?";
 };
 
 func int DIA_Rethon_TRADE_Condition ()
@@ -303,20 +303,20 @@ func int DIA_Rethon_TRADE_Condition ()
 
 func void DIA_Rethon_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_TRADE_15_00"); //Co mi mùeš nabídnout?
+	AI_Output			(other, self, "DIA_Rethon_TRADE_15_00"); //Co mi mÅ¯Å¾eÅ¡ nabÃ­dnout?
 	B_GiveTradeInv (self);
 
 	if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //Chlape, podívej, jak mám vyprodanej sklad. Teï neprodávám zbranì nikomu jinımu ne paladinùm.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //Chlape, podÃ­vej, jak mÃ¡m vyprodanej sklad. TeÄ neprodÃ¡vÃ¡m zbranÄ› nikomu jinÃ½mu neÅ¾ paladinÅ¯m.
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //Pro mágy toho vánì moc nemám, ale i tak se mùeš podívat.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //Pro mÃ¡gy toho vÃ¡Å¾nÄ› moc nemÃ¡m, ale i tak se mÅ¯Å¾eÅ¡ podÃ­vat.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_03"); //Mám dojem, e mám to, co potøebuješ, pøíteli.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_03"); //MÃ¡m dojem, Å¾e mÃ¡m to, co potÅ™ebujeÅ¡, pÅ™Ã­teli.
 		};
 };
 

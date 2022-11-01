@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_6_JOIN(C_INFO)
 	condition	= DIA_MIL_6_JOIN_Condition;
 	information	= DIA_MIL_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Co musím udìlat, abych se mohl pøidat k domobranì?";
+	description = "Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k domobranÄ›?";
 };                       
 
 FUNC INT DIA_MIL_6_JOIN_Condition()
@@ -42,11 +42,11 @@ FUNC INT DIA_MIL_6_JOIN_Condition()
 
 FUNC VOID DIA_MIL_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00"); //Co musím udìlat, aby mì vzali do domobrany?
-	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Zajdi za lordem Andrem a promluv si s ním. Od chvíle, kdy do mìsta dorazili paladinové, velí celé domobranì on.
+	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00"); //Co musÃ­m udÄ›lat, aby mÄ› vzali do domobrany?
+	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Zajdi za lordem Andrem a promluv si s nÃ­m. Od chvÃ­le, kdy do mÄ›sta dorazili paladinovÃ©, velÃ­ celÃ© domobranÄ› on.
 	if (C_NpcIsInQuarter (self) != Q_KASERNE)
 	{
-		AI_Output (self, other, "DIA_MIL_6_JOIN_06_02"); //Najdeš ho v kasárnách. Je tam vlastnì poøád.
+		AI_Output (self, other, "DIA_MIL_6_JOIN_06_02"); //NajdeÅ¡ ho v kasÃ¡rnÃ¡ch. Je tam vlastnÄ› poÅ™Ã¡d.
 	};
 };
 
@@ -59,7 +59,7 @@ instance DIA_Addon_MIL_6_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_MIL_6_MissingPeople_Condition;
 	information	 = 	DIA_Addon_MIL_6_MissingPeople_Info;
 	permanent	= TRUE;
-	description	 = 	"Slyšel jsem, e tu zmizeli nìjací lidé.";
+	description	 = 	"SlyÅ¡el jsem, Å¾e tu zmizeli nÄ›jacÃ­ lidÃ©.";
 };
 
 func int DIA_Addon_MIL_6_MissingPeople_Condition ()
@@ -73,10 +73,10 @@ func int DIA_Addon_MIL_6_MissingPeople_Condition ()
 
 func void DIA_Addon_MIL_6_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_MIL_6_MissingPeople_15_00"); //Slyšel jsem, e tu zmizeli nìjací lidé.
-	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_01"); //Vlastnì jsem taky poslední dobou slyšel, e tu zmizeli nìjací lidé.
-	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_02"); //Ale ani za boha to nevysvìtlím.
-	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_03"); //Ale nemùeme dìlat nic jiného ne mít oèi otevøené a hlídat, jak nám káe povinnost.
+	AI_Output	(other, self, "DIA_Addon_MIL_6_MissingPeople_15_00"); //SlyÅ¡el jsem, Å¾e tu zmizeli nÄ›jacÃ­ lidÃ©.
+	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_01"); //VlastnÄ› jsem taky poslednÃ­ dobou slyÅ¡el, Å¾e tu zmizeli nÄ›jacÃ­ lidÃ©.
+	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_02"); //Ale ani za boha to nevysvÄ›tlÃ­m.
+	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_03"); //Ale nemÅ¯Å¾eme dÄ›lat nic jinÃ©ho neÅ¾ mÃ­t oÄi otevÅ™enÃ© a hlÃ­dat, jak nÃ¡m kÃ¡Å¾e povinnost.
 };
 
 // *************************************************************************
@@ -88,7 +88,7 @@ INSTANCE DIA_MIL_6_PEOPLE(C_INFO)
 	condition	= DIA_MIL_6_PEOPLE_Condition;
 	information	= DIA_MIL_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Prozraï mi nìco o tìch paladinech.";
+	description = "ProzraÄ mi nÄ›co o tÄ›ch paladinech.";
 };                       
 
 FUNC INT DIA_MIL_6_PEOPLE_Condition()
@@ -101,10 +101,10 @@ FUNC INT DIA_MIL_6_PEOPLE_Condition()
 
 FUNC VOID DIA_MIL_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_PEOPLE_15_00"); //Povìz mi nìco o tìch paladinech.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Jakmile pøijeli do Khorinidu, obsadili horní èást mìsta.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Nikoho dalšího u tam nechtìjí pouštìt. Samozøejmì kromì obèanù mìsta a domobrany.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Také tu je nìkolik paladinù, kteøí hlídají jejich loï dole v pøístavu. Ale ti mají do ukecanosti hodnì daleko.
+	AI_Output (other, self, "DIA_MIL_6_PEOPLE_15_00"); //PovÄ›z mi nÄ›co o tÄ›ch paladinech.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Jakmile pÅ™ijeli do Khorinidu, obsadili hornÃ­ ÄÃ¡st mÄ›sta.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Nikoho dalÅ¡Ã­ho uÅ¾ tam nechtÄ›jÃ­ pouÅ¡tÄ›t. SamozÅ™ejmÄ› kromÄ› obÄanÅ¯ mÄ›sta a domobrany.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //TakÃ© tu je nÄ›kolik paladinÅ¯, kteÅ™Ã­ hlÃ­dajÃ­ jejich loÄ dole v pÅ™Ã­stavu. Ale ti majÃ­ do ukecanosti hodnÄ› daleko.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co bych mìl vìdìt o tomhle mìstì?";
+	description = "Co bych mÄ›l vÄ›dÄ›t o tomhle mÄ›stÄ›?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()
@@ -126,11 +126,11 @@ FUNC INT DIA_MIL_6_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Co bych mìl vìdìt o tomhle mìstì?
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //Paladinové pøevzali kontrolu nad celım mìstem. Zodpovídají se jim i všichni èlenové domobrany.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Lord Andre je velitel domobrany - a zároveò zastává i funkci soudce.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //Pokud by ses snad nìkdy dostal do konfliktu se zákonem, budeš se muset ospravedlnit pøímo pøed ním.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Ale ke èlenùm vojska je docela shovívavı. Obvykle to vyøeší nìjaká pokuta.
+	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Co bych mÄ›l vÄ›dÄ›t o tomhle mÄ›stÄ›?
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //PaladinovÃ© pÅ™evzali kontrolu nad celÃ½m mÄ›stem. ZodpovÃ­dajÃ­ se jim i vÅ¡ichni ÄlenovÃ© domobrany.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Lord Andre je velitel domobrany - a zÃ¡roveÅˆ zastÃ¡vÃ¡ i funkci soudce.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //Pokud by ses snad nÄ›kdy dostal do konfliktu se zÃ¡konem, budeÅ¡ se muset ospravedlnit pÅ™Ã­mo pÅ™ed nÃ­m.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Ale ke ÄlenÅ¯m vojska je docela shovÃ­vavÃ½. Obvykle to vyÅ™eÅ¡Ã­ nÄ›jakÃ¡ pokuta.
 	
 };
 
@@ -143,7 +143,7 @@ INSTANCE DIA_MIL_6_STANDARD(C_INFO)
 	condition	= DIA_MIL_6_STANDARD_Condition;
 	information	= DIA_MIL_6_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_MIL_6_STANDARD_Condition()
 {
@@ -151,34 +151,34 @@ func INT DIA_MIL_6_STANDARD_Condition()
 };
 FUNC VOID DIA_MIL_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //Do mìsta se poslední dobou stahuje víc a víc lùzy.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //Loupee se pomalu stávají bìnou záleitostí a lord Andre to pøièítá na vrub nìjaké vìtší skupiny.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //Není to tak dlouho, co jsme vyèistili celou pøístavní ètvr, ale nenašli jsme ani jedinou ukradenou vìc.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //Do mÄ›sta se poslednÃ­ dobou stahuje vÃ­c a vÃ­c lÅ¯zy.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //LoupeÅ¾e se pomalu stÃ¡vajÃ­ bÄ›Å¾nou zÃ¡leÅ¾itostÃ­ a lord Andre to pÅ™iÄÃ­tÃ¡ na vrub nÄ›jakÃ© vÄ›tÅ¡Ã­ skupiny.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //NenÃ­ to tak dlouho, co jsme vyÄistili celou pÅ™Ã­stavnÃ­ ÄtvrÅ¥, ale nenaÅ¡li jsme ani jedinou ukradenou vÄ›c.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_04"); //Vypadá to, e teï máme problém s lupièi víceménì pod kontrolou. Pøepady se dotıkaly úplnì všech, ale nedávno to ustalo.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_04"); //VypadÃ¡ to, Å¾e teÄ mÃ¡me problÃ©m s lupiÄi vÃ­cemÃ©nÄ› pod kontrolou. PÅ™epady se dotÃ½kaly ÃºplnÄ› vÅ¡ech, ale nedÃ¡vno to ustalo.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //Od té doby, co se lùza stahuje do mìsta, to jde od desíti k pìti. Minulou noc jsem v horní èásti mìsta sledoval mue v èerné róbì.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Jsem si jistı, e nemìl za lubem nic dobrého. Ale kdy jsem za ním šel kolem domu místodrícího, prostì zmizel. Pochybná existence...
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //Od tÃ© doby, co se lÅ¯za stahuje do mÄ›sta, to jde od desÃ­ti k pÄ›ti. Minulou noc jsem v hornÃ­ ÄÃ¡sti mÄ›sta sledoval muÅ¾e v ÄernÃ© rÃ³bÄ›.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Jsem si jistÃ½, Å¾e nemÄ›l za lubem nic dobrÃ©ho. Ale kdyÅ¾ jsem za nÃ­m Å¡el kolem domu mÃ­stodrÅ¾Ã­cÃ­ho, prostÄ› zmizel. PochybnÃ¡ existence...
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_07"); //Øíká se, e lord Hagen najal oldnéøe na boj proti drakùm. Mnì to docela vyhovuje, nechtìl bych s tìma potvorama bojovat sám osobnì.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_07"); //Å˜Ã­kÃ¡ se, Å¾e lord Hagen najal Å¾oldnÃ©Å™e na boj proti drakÅ¯m. MnÄ› to docela vyhovuje, nechtÄ›l bych s tÄ›ma potvorama bojovat sÃ¡m osobnÄ›.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_08"); //Povídá se, e se ty draky podaøilo porazit! Lord Hagen shromaïuje svoje mue, aby Hornické údolí zbavili i všech ostatních nestvùr.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_08"); //PovÃ­dÃ¡ se, Å¾e se ty draky podaÅ™ilo porazit! Lord Hagen shromaÅ¾Äuje svoje muÅ¾e, aby HornickÃ© ÃºdolÃ­ zbavili i vÅ¡ech ostatnÃ­ch nestvÅ¯r.
 	};
 };
 

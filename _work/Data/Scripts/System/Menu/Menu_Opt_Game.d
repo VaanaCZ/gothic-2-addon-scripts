@@ -11,7 +11,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[1]		= "MENUITEM_GAME_SUB_TITLES";
 	items[2]		= "MENUITEM_GAME_SUB_TITLES_CHOICE";
 	
-//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch ¸ber die ini tunebar
+//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch √ºber die ini tunebar
 //	items[4]		= "MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE";
 
 	items[3]		= "MENUITEM_GAME_FIGHTFOCUS";
@@ -29,7 +29,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[11]		= "MENUITEM_MSENSITIVITY";
 	items[12]		= "MENUITEM_MSENSITIVITY_SLIDER";
 	
-	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch ¸ber die ini tunebar
+	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch √ºber die ini tunebar
 	//items[12]		= "MENUITEM_GAME_BLOOD_CHOICE";
 	
 	items[13]		= "MENUITEM_GAME_OLDCONTROLS";
@@ -43,7 +43,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"NASTAVENÕ HRY";
+	text[0]		=	"NASTAVEN√ç HRY";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Titulky";
-	text[1]		= 	"Zapnout Ëi vypnout titulky u rozhovor˘"; // Kommentar
+	text[1]		= 	"Zapnout ƒçi vypnout titulky u rozhovor≈Ø"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -129,8 +129,8 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_FIGHTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZamÏ¯enÌ v boji";
-	text[1]		= 	"Zv˝raznÏnÌ st·vajÌcÌho cÌle ˙toku"; // Kommentar
+	text[0]		=	"Zamƒõ≈ôen√≠ v boji";
+	text[1]		= 	"Zv√Ωraznƒõn√≠ st√°vaj√≠c√≠ho c√≠le √∫toku"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*1;
 	dimx		=	4000;	dimy		=	750;
@@ -144,7 +144,7 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"û·dnÈ|okno|zjasnÏnÌ|obojÌ";
+	text[0]		= 	"≈æ√°dn√©|okno|zjasnƒõn√≠|oboj√≠";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_SOUND_DY*1 + MENU_CHOICE_YPLUS;
@@ -161,8 +161,8 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_INTERACTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZamÏ¯enÌ na objekt";
-	text[1]		= 	"Zv˝raznÏnÌ zamÏ¯enÈho objektu"; // Kommentar
+	text[0]		=	"Zamƒõ≈ôen√≠ na objekt";
+	text[1]		= 	"Zv√Ωraznƒõn√≠ zamƒõ≈ôen√©ho objektu"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
 	dimx		=	4000;	dimy		=	750;
@@ -201,7 +201,7 @@ INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Inverze kamery";
-	text[1]		= 	"Zapnout Ëi vypnout inverzi kamery"; // Kommentar
+	text[1]		= 	"Zapnout ƒçi vypnout inverzi kamery"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -236,8 +236,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Myö vyp./zap.";
-	text[1]		= 	"Umoûnit ovl·d·nÌ myöÌ"; // Kommentar
+	text[0]		=	"My≈° vyp./zap.";
+	text[1]		= 	"Umo≈ænit ovl√°d√°n√≠ my≈°√≠"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*4;
 	dimx		=	4000;	dimy		=	750;
@@ -272,7 +272,7 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Citlivost myöi";
+	text[0]		=	"Citlivost my≈°i";
 	text[1]		= 	""; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
@@ -305,7 +305,7 @@ instance MENUITEM_MSENSITIVITY_SLIDER(C_MENU_ITEM_DEF)
 
 
 //
-// Bluteffekte deaktivert in Gothic 2 (nur noch ¸ber die INI tunebar)
+// Bluteffekte deaktivert in Gothic 2 (nur noch √ºber die INI tunebar)
 //
 /*
 INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
@@ -346,8 +346,8 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_OLDCONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Ovl·d·nÌ Gothic I";
-	text[1]		= 	"PouûÌt ovl·d·nÌ boje jako ve h¯e Gothic I"; // Kommentar
+	text[0]		=	"Ovl√°d√°n√≠ Gothic I";
+	text[1]		= 	"Pou≈æ√≠t ovl√°d√°n√≠ boje jako ve h≈ôe Gothic I"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;
 	dimx		=	4000;	dimy		=	750;
@@ -380,7 +380,7 @@ INSTANCE MENUITEM_GAME_OLDCONTROLS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZPÃT";
+	text[0]		=	"ZPƒöT";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

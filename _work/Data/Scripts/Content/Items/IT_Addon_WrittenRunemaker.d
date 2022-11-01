@@ -15,7 +15,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù vody";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ vody";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC1_S1;
@@ -23,7 +23,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC1 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC2 (C_ITEM)
 {
-	name 					=	"Kniha vodních run II";
+	name 					=	"Kniha vodnÃ­ch run II";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -34,7 +34,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha vodních mágù (2. kruh)";
+	description				= 	"RunovÃ¡ kniha vodnÃ­ch mÃ¡gÅ¯ (2. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC2_S1;
@@ -42,7 +42,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC2 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC3 (C_ITEM)
 {
-	name 					=	"Kniha vodních run III";
+	name 					=	"Kniha vodnÃ­ch run III";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -53,7 +53,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha vodních mágù (3. kruh)";
+	description				= 	"RunovÃ¡ kniha vodnÃ­ch mÃ¡gÅ¯ (3. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC3_S1;
@@ -61,7 +61,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC3 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC4 (C_ITEM)
 {
-	name 					=	"Kniha vodních run IV";
+	name 					=	"Kniha vodnÃ­ch run IV";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -72,7 +72,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC4 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha vodních mágù (4. kruh)";
+	description				= 	"RunovÃ¡ kniha vodnÃ­ch mÃ¡gÅ¯ (4. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC4_S1;
@@ -81,7 +81,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC4 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC5 (C_ITEM)
 {
-	name 					=	"Kniha vodních run V";
+	name 					=	"Kniha vodnÃ­ch run V";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -92,7 +92,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC5 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha vodních mágù (5. kruh)";
+	description				= 	"RunovÃ¡ kniha vodnÃ­ch mÃ¡gÅ¯ (5. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC5_S1;
@@ -101,7 +101,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC5 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC6 (C_ITEM)
 {
-	name 					=	"Kniha vodních run VI";
+	name 					=	"Kniha vodnÃ­ch run VI";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -112,7 +112,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC6 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha vodních mágù (6. kruh)";
+	description				= 	"RunovÃ¡ kniha vodnÃ­ch mÃ¡gÅ¯ (6. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC6_S1;
@@ -127,7 +127,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC6 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC1 (C_ITEM)
 {
-	name 					=	"Kniha ohnivých run I";
+	name 					=	"Kniha ohnivÃ½ch run I";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -138,14 +138,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù ohnì (1. kruh)";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ ohnÄ› (1. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_01_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC2 (C_ITEM)
 {
-	name 					=	"Kniha ohnivých run II";
+	name 					=	"Kniha ohnivÃ½ch run II";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -156,14 +156,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù ohnì (2. kruh)";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ ohnÄ› (2. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_02_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC3 (C_ITEM)
 {
-	name 					=	"Kniha ohnivých run III";
+	name 					=	"Kniha ohnivÃ½ch run III";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -174,14 +174,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù ohnì (3. kruh)";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ ohnÄ› (3. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_03_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC4 (C_ITEM)
 {
-	name 					=	"Kniha ohnivých run IV";
+	name 					=	"Kniha ohnivÃ½ch run IV";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -192,14 +192,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC4 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù ohnì (4. kruh)";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ ohnÄ› (4. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_04_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC5 (C_ITEM)
 {
-	name 					=	"Kniha ohnivých run V";
+	name 					=	"Kniha ohnivÃ½ch run V";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -210,14 +210,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC5 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù ohnì (5. kruh)";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ ohnÄ› (5. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_05_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC6 (C_ITEM)
 {
-	name 					=	"Kniha ohnivých run VI";
+	name 					=	"Kniha ohnivÃ½ch run VI";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -228,7 +228,7 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC6 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runová kniha mágù ohnì (6. kruh)";
+	description				= 	"RunovÃ¡ kniha mÃ¡gÅ¯ ohnÄ› (6. kruh)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_06_S1;

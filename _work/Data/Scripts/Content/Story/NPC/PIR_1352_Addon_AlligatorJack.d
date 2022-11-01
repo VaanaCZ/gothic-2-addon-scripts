@@ -1,7 +1,7 @@
 INSTANCE PIR_1352_Addon_AlligatorJack (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Krokodýl Jack";
+	name 		= "KrokodÃ½l Jack";
 	guild 		= GIL_PIR;
 	id 			= 1352;
 	voice 		= 12;

@@ -36,10 +36,10 @@ FUNC INT DIA_1061_Wache_Hallo_Condition()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//St˘j - tudy nem˘ûeö projÌt.
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//ChtÏl bych mluvit s tv˝m öÈfem.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironicky) ”, j· vÌm, ty chceö mluvit s m˝m öÈfem. Tak to tÏ SAMOZÿEJMÃ nech·m projÌt.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(smrtelnÏ v·ûnÏ) Ale jen v tom p¯ÌpadÏ, ûe zn·ö jeho jmÈno. Protoûe jestli ne, tak tÏ budu muset zabÌt! Jasn˝?
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//St≈Øj - tudy nem≈Ø≈æe≈° proj√≠t.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Chtƒõl bych mluvit s tv√Ωm ≈°√©fem.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironicky) √ì, j√° v√≠m, ty chce≈° mluvit s m√Ωm ≈°√©fem. Tak to tƒõ SAMOZ≈òEJMƒö nech√°m proj√≠t.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(smrtelnƒõ v√°≈ænƒõ) Ale jen v tom p≈ô√≠padƒõ, ≈æe zn√°≈° jeho jm√©no. Proto≈æe jestli ne, tak tƒõ budu muset zab√≠t! Jasn√Ω?
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Lee",DIA_1061_Wache_Hallo_Lee);
@@ -49,12 +49,12 @@ FUNC VOID DIA_1061_Wache_Hallo_Info()
 		Info_AddChoice (DIA_1061_Wache_Hallo,"Dexter",DIA_1061_Wache_Hallo_Dexter);
 	};
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Diego",DIA_1061_Wache_Hallo_Diego);
-	Info_AddChoice (DIA_1061_Wache_Hallo,"Nem·m tuöenÌ.",DIA_1061_Wache_Hallo_Ahnung);
+	Info_AddChoice (DIA_1061_Wache_Hallo,"Nem√°m tu≈°en√≠.",DIA_1061_Wache_Hallo_Ahnung);
 };
 FUNC VOID DIA_1061_Wache_Hallo_Lee()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Lee_15_00");//Lee.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Lee_01_01");//Fajn, co na to m·m ¯Ìct? Pr·vÏ jsi propadl ûivotem, chlape!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Lee_01_01");//Fajn, co na to m√°m ≈ô√≠ct? Pr√°vƒõ jsi propadl ≈æivotem, chlape!
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -63,9 +63,9 @@ FUNC VOID DIA_1061_Wache_Hallo_Lee()
 FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Dexter.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Dobr·... H·d·m, ûe öÈfa zn·ö. Fajn, dovolÌm ti projÌt. Ale varuju tÏ.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//K¯ivej pohyb a nedostaneö se odsud vcelku!
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Takûe se zhluboka nadechni a nech hezky svoje zbranÏ tam, kde jsou. Dextera nejdeö v domÏ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Dobr√°... H√°d√°m, ≈æe ≈°√©fa zn√°≈°. Fajn, dovol√≠m ti proj√≠t. Ale varuju tƒõ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//K≈ôivej pohyb a nedostane≈° se odsud vcelku!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Tak≈æe se zhluboka nadechni a nech hezky svoje zbranƒõ tam, kde jsou. Dextera nejde≈° v domƒõ.
 	
 	Knows_Dexter = TRUE;
 	BanditGuard.aivar[AIV_PASSGATE] = TRUE;
@@ -75,9 +75,9 @@ FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 FUNC VOID DIA_1061_Wache_Hallo_Diego()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Diego.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Spr·vnÏ!
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//Ne, to byl jen ûert. Nem·ö ani ponÏtÌ, kdo je m˘j öÈf.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Takûe nevidÌm û·dnej d˘vod, proË bych tÏ mÏl nechat naûivu.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Spr√°vnƒõ!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//Ne, to byl jen ≈æert. Nem√°≈° ani ponƒõt√≠, kdo je m≈Øj ≈°√©f.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Tak≈æe nevid√≠m ≈æ√°dnej d≈Øvod, proƒç bych tƒõ mƒõl nechat na≈æivu.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -85,8 +85,8 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Ahnung()
 {
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//Nem·m tuöenÌ.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//Tak to seö mrtvej ignorant.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//Nem√°m tu≈°en√≠.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//Tak to se≈° mrtvej ignorant.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -114,7 +114,7 @@ FUNC INT DIA_1061_Wache_Perm_Condition()
 };
 FUNC VOID DIA_1061_Wache_Perm_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Pamatuj, buÔ v pohodÏ a dostaneö se odsud ûivej.
+	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Pamatuj, buƒè v pohodƒõ a dostane≈° se odsud ≈æivej.
 	AI_StopProcessInfos (self);
 };
 	 

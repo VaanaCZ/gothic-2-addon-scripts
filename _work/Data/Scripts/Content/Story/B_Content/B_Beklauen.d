@@ -29,7 +29,7 @@ func void B_Beklauen ()
 		B_GiveInvItems (self, other, ItMi_Gold, TheftGoldGlob);
 		self.aivar[AIV_PlayerHasPickedMyPocket] = TRUE;
 		B_GiveThiefXP();//B_GivePlayerXP (XP_Ambient);
-		Snd_Play ("M�ec");
+		Snd_Play ("Měšec");
 	}
 	else
 	{

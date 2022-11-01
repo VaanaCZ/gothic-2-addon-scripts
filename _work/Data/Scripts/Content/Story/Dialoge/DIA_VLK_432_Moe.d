@@ -82,111 +82,111 @@ FUNC INT DIA_Moe_Hallo_Condition()
 };
 FUNC VOID DIA_Moe_Hallo_Info()
 {
-	AI_Output (self ,other,"DIA_Moe_Hallo_01_00"); //Hej ty, tebe neznám. Co tady chceš? Máš namíøeno do hospody?
+	AI_Output (self ,other,"DIA_Moe_Hallo_01_00"); //Hej ty, tebe neznÃ¡m. Co tady chceÅ¡? MÃ¡Å¡ namÃ­Å™eno do hospody?
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ne, nemám namíøeno do hospody... (KONEC)",DIA_Moe_Hallo_Gehen);
-	Info_AddChoice 	  (DIA_Moe_Hallo,"Aha, take tohle je místní nálevna.",DIA_Moe_Hallo_Witz);
-	Info_AddChoice 	  (DIA_Moe_Hallo,"Jo, vadí ti to?",DIA_Moe_Hallo_Reizen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ne, nemÃ¡m namÃ­Å™eno do hospody... (KONEC)",DIA_Moe_Hallo_Gehen);
+	Info_AddChoice 	  (DIA_Moe_Hallo,"Aha, takÅ¾e tohle je mÃ­stnÃ­ nÃ¡levna.",DIA_Moe_Hallo_Witz);
+	Info_AddChoice 	  (DIA_Moe_Hallo,"Jo, vadÃ­ ti to?",DIA_Moe_Hallo_Reizen);
 };
 FUNC VOID DIA_Moe_Hallo_Gehen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Gehen_15_00"); //Ne, nemám namíøeno do hospody.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_01"); //Jo, to bych øekl. To je ale fuk - právì proto mùeme jít pøímo k vìci.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_02"); //Kdy u jsi tady, nìco ti nabídnu. Dej mi 50 zlaákù a mùeš jít dál.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_03"); //To je vstupné do hospody.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Gehen_15_00"); //Ne, nemÃ¡m namÃ­Å™eno do hospody.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_01"); //Jo, to bych Å™ekl. To je ale fuk - prÃ¡vÄ› proto mÅ¯Å¾eme jÃ­t pÅ™Ã­mo k vÄ›ci.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_02"); //KdyÅ¾ uÅ¾ jsi tady, nÄ›co ti nabÃ­dnu. Dej mi 50 zlaÅ¥Ã¡kÅ¯ a mÅ¯Å¾eÅ¡ jÃ­t dÃ¡l.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_03"); //To je vstupnÃ© do hospody.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Uvidíme, jestli si to samé myslí i domobrana...",DIA_Moe_Hallo_Miliz);
-	Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeò, nedostaneš ani mìïák!",DIA_Moe_Hallo_Vergisses);
-	Info_AddChoice    (DIA_Moe_Hallo,"Dobrá. Zaplatím.",DIA_Moe_Hallo_Zahlen);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ale já nechci jít do hospody!",DIA_Moe_Hallo_Kneipe);
+	Info_AddChoice    (DIA_Moe_Hallo,"UvidÃ­me, jestli si to samÃ© myslÃ­ i domobrana...",DIA_Moe_Hallo_Miliz);
+	Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeÅˆ, nedostaneÅ¡ ani mÄ›ÄÃ¡k!",DIA_Moe_Hallo_Vergisses);
+	Info_AddChoice    (DIA_Moe_Hallo,"DobrÃ¡. ZaplatÃ­m.",DIA_Moe_Hallo_Zahlen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ale jÃ¡ nechci jÃ­t do hospody!",DIA_Moe_Hallo_Kneipe);
 };
 FUNC VOID DIA_Moe_Hallo_Kneipe()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Kneipe_15_00"); //Ale já do hospody vùbec nechci jít!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Kneipe_01_01"); //Víš, døív nebo pozdìji chce do hospody kadı. Take kdy mi zaplatíš hned, budeš to mít pro pøíštì z krku.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Kneipe_15_00"); //Ale jÃ¡ do hospody vÅ¯bec nechci jÃ­t!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Kneipe_01_01"); //VÃ­Å¡, dÅ™Ã­v nebo pozdÄ›ji chce do hospody kaÅ¾dÃ½. TakÅ¾e kdyÅ¾ mi zaplatÃ­Å¡ hned, budeÅ¡ to mÃ­t pro pÅ™Ã­Å¡tÄ› z krku.
 };
 FUNC VOID  DIA_Moe_Hallo_Witz()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Witz_15_00"); //Ahá, tohle je pøístavní nálevna? A já si myslel, e je to palác místodrícího!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Witz_01_01"); //Hele, nech si ty hloupı fórky, skrèku, nebo budeš brzo vejkat dlaební kostky.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Witz_15_00"); //AhÃ¡, tohle je pÅ™Ã­stavnÃ­ nÃ¡levna? A jÃ¡ si myslel, Å¾e je to palÃ¡c mÃ­stodrÅ¾Ã­cÃ­ho!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Witz_01_01"); //Hele, nech si ty hloupÃ½ fÃ³rky, skrÄku, nebo budeÅ¡ brzo Å¾vejkat dlaÅ¾ebnÃ­ kostky.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Chápu, budu ti muset dát pár pøes drku.",DIA_Moe_Hallo_Pruegel);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ty mì chceš dostat do maléru, co?",DIA_Moe_Hallo_Aerger);
-	Info_AddChoice    (DIA_Moe_Hallo,"Uklidni se, chci si dát jenom jedno pivo.",DIA_Moe_Hallo_Ruhig);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ale já nechci jít do hospody!",DIA_Moe_Hallo_Kneipe);
+	Info_AddChoice    (DIA_Moe_Hallo,"ChÃ¡pu, budu ti muset dÃ¡t pÃ¡r pÅ™es drÅ¾ku.",DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ty mÄ› chceÅ¡ dostat do malÃ©ru, co?",DIA_Moe_Hallo_Aerger);
+	Info_AddChoice    (DIA_Moe_Hallo,"Uklidni se, chci si dÃ¡t jenom jedno pivo.",DIA_Moe_Hallo_Ruhig);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ale jÃ¡ nechci jÃ­t do hospody!",DIA_Moe_Hallo_Kneipe);
 };
 FUNC VOID DIA_Moe_Hallo_Reizen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Reizen_15_00"); //Jo, vadí ti to?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Reizen_01_01"); //Tady nemáš co pohledávat, skrèku.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Reizen_15_00"); //Jo, vadÃ­ ti to?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Reizen_01_01"); //Tady nemÃ¡Å¡ co pohledÃ¡vat, skrÄku.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Chápu, budu ti muset dát pár pøes drku.",DIA_Moe_Hallo_Pruegel);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ty mì chceš dostat do maléru, co?",DIA_Moe_Hallo_Aerger);
-	Info_AddChoice    (DIA_Moe_Hallo,"Uklidni se, chci si dát jenom jedno pivo.",DIA_Moe_Hallo_Ruhig);
+	Info_AddChoice    (DIA_Moe_Hallo,"ChÃ¡pu, budu ti muset dÃ¡t pÃ¡r pÅ™es drÅ¾ku.",DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ty mÄ› chceÅ¡ dostat do malÃ©ru, co?",DIA_Moe_Hallo_Aerger);
+	Info_AddChoice    (DIA_Moe_Hallo,"Uklidni se, chci si dÃ¡t jenom jedno pivo.",DIA_Moe_Hallo_Ruhig);
 };
 FUNC VOID DIA_Moe_Hallo_Miliz()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Miliz_15_00"); //Uvidíme, jestli si to samé myslí i domobrana.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_01"); //(smìje se) Nikdo z domobrany tady není. A víš proè?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_02"); //Protoe tady jsi v pøístavní ètvrti, skrèku. Nikdo z domobrany se tu se mnou rvát nebude.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_03"); //Vìtšinou jsou všichni nalezlí u 'Èervené lucerny'. Tak vidíš - jsme tu jen my dva. (zlı úšklebek)
+	AI_Output (other ,self,"DIA_Moe_Hallo_Miliz_15_00"); //UvidÃ­me, jestli si to samÃ© myslÃ­ i domobrana.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_01"); //(smÄ›je se) Nikdo z domobrany tady nenÃ­. A vÃ­Å¡ proÄ?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_02"); //ProtoÅ¾e tady jsi v pÅ™Ã­stavnÃ­ Ätvrti, skrÄku. Nikdo z domobrany se tu se mnou rvÃ¡t nebude.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_03"); //VÄ›tÅ¡inou jsou vÅ¡ichni nalezlÃ­ u 'ÄŒervenÃ© lucerny'. Tak vidÃ­Å¡ - jsme tu jen my dva. (zlÃ½ ÃºÅ¡klebek)
 };
 FUNC VOID DIA_Moe_Hallo_Pruegel()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Pruegel_15_00"); //Chápu. Ne pùjdu dál, budu tì muset stáhnout z kùe.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Pruegel_01_01"); //Jen si to zkus, skrèku. Uka, co umíš!
+	AI_Output (other ,self,"DIA_Moe_Hallo_Pruegel_15_00"); //ChÃ¡pu. NeÅ¾ pÅ¯jdu dÃ¡l, budu tÄ› muset stÃ¡hnout z kÅ¯Å¾e.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Pruegel_01_01"); //Jen si to zkus, skrÄku. UkaÅ¾, co umÃ­Å¡!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Aerger()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Aerger_15_00"); //Ty mì chceš dostat do maléru, co?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Aerger_01_01"); //Jo, v tom, jak dostat nìkoho do maléru, jsem mistr. Take se koukej bránit, skrèku!
+	AI_Output (other ,self,"DIA_Moe_Hallo_Aerger_15_00"); //Ty mÄ› chceÅ¡ dostat do malÃ©ru, co?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Aerger_01_01"); //Jo, v tom, jak dostat nÄ›koho do malÃ©ru, jsem mistr. TakÅ¾e se koukej brÃ¡nit, skrÄku!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Ruhig()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Ruhig_15_00"); //Uklidni se, chci si dát jenom jedno pivo.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Ruhig_01_01"); //Fajn, ale vstupné tì bude stát 50 zlaákù. (šklebí se)
+	AI_Output (other ,self,"DIA_Moe_Hallo_Ruhig_15_00"); //Uklidni se, chci si dÃ¡t jenom jedno pivo.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Ruhig_01_01"); //Fajn, ale vstupnÃ© tÄ› bude stÃ¡t 50 zlaÅ¥Ã¡kÅ¯. (Å¡klebÃ­ se)
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeò, nedostaneš ani mìïák!",DIA_Moe_Hallo_Vergisses);
-	Info_AddChoice    (DIA_Moe_Hallo,"Dobrá. Zaplatím.",DIA_Moe_Hallo_Zahlen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeÅˆ, nedostaneÅ¡ ani mÄ›ÄÃ¡k!",DIA_Moe_Hallo_Vergisses);
+	Info_AddChoice    (DIA_Moe_Hallo,"DobrÃ¡. ZaplatÃ­m.",DIA_Moe_Hallo_Zahlen);
 	
 };
 FUNC VOID DIA_Moe_Hallo_Zahlen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_00"); //No tak já ti teda zaplatím.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_00"); //No tak jÃ¡ ti teda zaplatÃ­m.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold,50)
 	{
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_01"); //Vıbornì. A kdy jsme to tak hezky vyøešili, mùeš mi dát i to ostatní, co máš u sebe.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_01"); //VÃ½bornÄ›. A kdyÅ¾ jsme to tak hezky vyÅ™eÅ¡ili, mÅ¯Å¾eÅ¡ mi dÃ¡t i to ostatnÃ­, co mÃ¡Å¡ u sebe.
 		
 		Info_ClearChoices (DIA_Moe_Hallo);
-		Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeò, nedostaneš ani mìïák!",DIA_Moe_Hallo_Vergisses);
-		Info_AddChoice    (DIA_Moe_Hallo,"OK, tohle je všechno, co mám.",DIA_Moe_Hallo_Alles);
+		Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeÅˆ, nedostaneÅ¡ ani mÄ›ÄÃ¡k!",DIA_Moe_Hallo_Vergisses);
+		Info_AddChoice    (DIA_Moe_Hallo,"OK, tohle je vÅ¡echno, co mÃ¡m.",DIA_Moe_Hallo_Alles);
 	}
 	else if (Npc_HasItems (hero, ItMi_Gold) > 9)
 	{
-		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_02"); //...ale já u sebe nemám tolik zlaákù.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_03"); //To nevadí, tak prostì naval všechno, co máš u sebe.
+		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_02"); //...ale jÃ¡ u sebe nemÃ¡m tolik zlaÅ¥Ã¡kÅ¯.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_03"); //To nevadÃ­, tak prostÄ› naval vÅ¡echno, co mÃ¡Å¡ u sebe.
 		
 		Info_ClearChoices (DIA_Moe_Hallo);
-		Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeò, nedostaneš ani mìïák!",DIA_Moe_Hallo_Vergisses);
-		Info_AddChoice    (DIA_Moe_Hallo,"OK, tohle je všechno, co mám.",DIA_Moe_Hallo_Alles);
+		Info_AddChoice    (DIA_Moe_Hallo,"Na to zapomeÅˆ, nedostaneÅ¡ ani mÄ›ÄÃ¡k!",DIA_Moe_Hallo_Vergisses);
+		Info_AddChoice    (DIA_Moe_Hallo,"OK, tohle je vÅ¡echno, co mÃ¡m.",DIA_Moe_Hallo_Alles);
 	}
 	else
 	{
-		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_04"); //...ale já nemám ani 10 zlaákù.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_05"); //Chlape, já nemám ani vindru.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_06"); //No dobøe - povzdech - mùeš jít.
+		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_04"); //...ale jÃ¡ nemÃ¡m ani 10 zlaÅ¥Ã¡kÅ¯.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_05"); //Chlape, jÃ¡ nemÃ¡m ani vindru.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_06"); //No dobÅ™e - povzdech - mÅ¯Å¾eÅ¡ jÃ­t.
 		
 		AI_StopProcessInfos (self);
 	};
@@ -194,19 +194,19 @@ FUNC VOID DIA_Moe_Hallo_Zahlen()
 };
 FUNC VOID DIA_Moe_Hallo_Vergisses()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Vergisses_15_00"); //Na to zapomeò, nedostaneš ani mìïák!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Vergisses_01_01"); //Pak si vezmu všechno, co máš - jen co mi budeš leet u nohou.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Vergisses_15_00"); //Na to zapomeÅˆ, nedostaneÅ¡ ani mÄ›ÄÃ¡k!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Vergisses_01_01"); //Pak si vezmu vÅ¡echno, co mÃ¡Å¡ - jen co mi budeÅ¡ leÅ¾et u nohou.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Alles()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Alles_15_00"); //Fajn, tohle je všechno, co mám.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Alles_15_00"); //Fajn, tohle je vÅ¡echno, co mÃ¡m.
 	
 	B_GiveInvItems (other, self, ItMi_Gold, Npc_HasItems (other,ItMi_Gold));
 	
-	AI_Output (self ,other,"DIA_Moe_Hallo_Alles_01_01"); //Dobrá, to mi teda staèí. To jsem celı já - vdycky velkorysı. (šklebí se)
+	AI_Output (self ,other,"DIA_Moe_Hallo_Alles_01_01"); //DobrÃ¡, to mi teda staÄÃ­. To jsem celÃ½ jÃ¡ - vÅ¾dycky velkorysÃ½. (Å¡klebÃ­ se)
 	AI_StopProcessInfos (self);
 };
 //************************************************
@@ -220,7 +220,7 @@ INSTANCE DIA_Moe_Harbor(C_INFO)
 	condition	= DIA_Moe_Harbor_Condition;
 	information	= DIA_Moe_Harbor_Info;
 	permanent	= TRUE;
-	description = "Ty se tady v pøístavu dost vyznáš, viï?";
+	description = "Ty se tady v pÅ™Ã­stavu dost vyznÃ¡Å¡, viÄ?";
 };                       
 
 FUNC INT DIA_Moe_Harbor_Condition()
@@ -230,14 +230,14 @@ FUNC INT DIA_Moe_Harbor_Condition()
  
 FUNC VOID DIA_Moe_Harbor_Info()
 {	
-	AI_Output (other,self ,"DIA_Moe_Harbor_15_00"); //Ty se tady v pøístavu dost vyznáš, viï?
-	AI_Output (self ,other,"DIA_Moe_Harbor_01_01"); //Jasná vìc. Proè?
+	AI_Output (other,self ,"DIA_Moe_Harbor_15_00"); //Ty se tady v pÅ™Ã­stavu dost vyznÃ¡Å¡, viÄ?
+	AI_Output (self ,other,"DIA_Moe_Harbor_01_01"); //JasnÃ¡ vÄ›c. ProÄ?
 	
 	Info_ClearChoices (DIA_Moe_Harbor);
 	Info_AddChoice		(DIA_Moe_Harbor, DIALOG_BACK, DIA_Moe_Harbor_Back);
-	Info_AddChoice		(DIA_Moe_Harbor,"Jaké lodì sem pøiplouvají?",DIA_Moe_Harbor_Ship);
-	Info_AddChoice		(DIA_Moe_Harbor,"Jak to, e tu nevidím nikoho z domobrany?",DIA_Moe_Harbor_Militia);
-	Info_AddChoice 		(DIA_Moe_Harbor,"O èem se tu asi tak nejvíc povídá?",DIA_Moe_Harbor_Rumors);
+	Info_AddChoice		(DIA_Moe_Harbor,"JakÃ© lodÄ› sem pÅ™iplouvajÃ­?",DIA_Moe_Harbor_Ship);
+	Info_AddChoice		(DIA_Moe_Harbor,"Jak to, Å¾e tu nevidÃ­m nikoho z domobrany?",DIA_Moe_Harbor_Militia);
+	Info_AddChoice 		(DIA_Moe_Harbor,"O Äem se tu asi tak nejvÃ­c povÃ­dÃ¡?",DIA_Moe_Harbor_Rumors);
 };
 
 FUNC VOID DIA_Moe_Harbor_Back ()
@@ -247,43 +247,43 @@ FUNC VOID DIA_Moe_Harbor_Back ()
 
 FUNC VOID DIA_Moe_Harbor_Ship ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Ship_15_00"); //Jak èasto sem pøiplouvají nové lodì?
-	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_01"); //Jediná loï, která sem v poslední dobì pøiplula, je ta paladinská galeona.
-	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_02"); //Najdeš ji tamhle za tím útesem na jihozápadì.
+	AI_Output (other,self ,"DIA_Moe_Harbor_Ship_15_00"); //Jak Äasto sem pÅ™iplouvajÃ­ novÃ© lodÄ›?
+	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_01"); //JedinÃ¡ loÄ, kterÃ¡ sem v poslednÃ­ dobÄ› pÅ™iplula, je ta paladinskÃ¡ galeona.
+	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_02"); //NajdeÅ¡ ji tamhle za tÃ­m Ãºtesem na jihozÃ¡padÄ›.
 	
 };
 
 FUNC VOID DIA_Moe_Harbor_Militia ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Militia_15_00"); //Jak je moné, e tu nevidím nikoho z domobrany?
-	AI_Output (self ,other,"DIA_Moe_Harbor_Militia_01_01"); //Netroufají si sem chodit - vdycky si všechno vyøídíme sami.
+	AI_Output (other,self ,"DIA_Moe_Harbor_Militia_15_00"); //Jak je moÅ¾nÃ©, Å¾e tu nevidÃ­m nikoho z domobrany?
+	AI_Output (self ,other,"DIA_Moe_Harbor_Militia_01_01"); //NetroufajÃ­ si sem chodit - vÅ¾dycky si vÅ¡echno vyÅ™Ã­dÃ­me sami.
 };
 
 FUNC VOID DIA_Moe_Harbor_Rumors ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_00"); //O èem se tu asi tak nejvíc povídá?
+	AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_00"); //O Äem se tu asi tak nejvÃ­c povÃ­dÃ¡?
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_01"); //Nemáme rádi lidi, kteøí se moc vyptávají. Zvláš kdy jsou to cizinci.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_01"); //NemÃ¡me rÃ¡di lidi, kteÅ™Ã­ se moc vyptÃ¡vajÃ­. ZvlÃ¡Å¡Å¥ kdyÅ¾ jsou to cizinci.
 	}
 	else if (Kapitel == 2)
 	{
 		if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_02"); //Coby - nic. Všechno je tu v klidu a pohodì.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_02"); //Coby - nic. VÅ¡echno je tu v klidu a pohodÄ›.
 		}
 		else if (hero.guild == GIL_KDF)
 		|| (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_03"); //(nepøirozenì) Je to špatné. Èasy jsou zlé, ale všichni se snaíme zùstat èestní a poctiví.
-			AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_04"); //Nedìlej si ze mì šoufky.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_05"); //Jak si o mnì mùeš nìco takového myslet? Teï ses mì teda hluboce dotkl.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_03"); //(nepÅ™irozenÄ›) Je to Å¡patnÃ©. ÄŒasy jsou zlÃ©, ale vÅ¡ichni se snaÅ¾Ã­me zÅ¯stat ÄestnÃ­ a poctivÃ­.
+			AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_04"); //NedÄ›lej si ze mÄ› Å¡oufky.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_05"); //Jak si o mnÄ› mÅ¯Å¾eÅ¡ nÄ›co takovÃ©ho myslet? TeÄ ses mÄ› teda hluboce dotkl.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_06"); //Je tu fakt horko. Lord Andre se u nìjakou dobu snaí strkat nos do vìcí, po kterıch mu pranic není.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_07"); //Ti nafoukanci nikdy nepochopí, jak to tady dole chodí.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_06"); //Je tu fakt horko. Lord Andre se uÅ¾ nÄ›jakou dobu snaÅ¾Ã­ strkat nos do vÄ›cÃ­, po kterÃ½ch mu pranic nenÃ­.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_07"); //Ti nafoukanci nikdy nepochopÃ­, jak to tady dole chodÃ­.
 		};
 		
 	}
@@ -295,29 +295,29 @@ FUNC VOID DIA_Moe_Harbor_Rumors ()
 			|| (hero.guild == GIL_PAL)
 			|| (hero.guild == GIL_KDF)
 			{
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_08"); //My s tím nemáme nic spoleèného.
-				AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_09"); //S èím?
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_10"); //S tím paladinem, kterého tu zabili. Opravdu by ses o ty oldáky nemìl starat - jenom tím maøíš èas.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_08"); //My s tÃ­m nemÃ¡me nic spoleÄnÃ©ho.
+				AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_09"); //S ÄÃ­m?
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_10"); //S tÃ­m paladinem, kterÃ©ho tu zabili. Opravdu by ses o ty Å¾oldÃ¡ky nemÄ›l starat - jenom tÃ­m maÅ™Ã­Å¡ Äas.
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_11"); //Vím, e s tím nemáš nic spoleèného, ale ta vrada paladina všechny urozené dentlmeny poøádnì vylekala.
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_12"); //Jestli ti mùu dát pøátelskou radu, tak zmiz z mìsta. Aspoò na chvíli.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_11"); //VÃ­m, Å¾e s tÃ­m nemÃ¡Å¡ nic spoleÄnÃ©ho, ale ta vraÅ¾da paladina vÅ¡echny urozenÃ© dÅ¾entlmeny poÅ™Ã¡dnÄ› vylekala.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_12"); //Jestli ti mÅ¯Å¾u dÃ¡t pÅ™Ã¡telskou radu, tak zmiz z mÄ›sta. AspoÅˆ na chvÃ­li.
 			};	
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_13"); //Kdy vyšlo najevo, e oldáci s tím paladinem nemìli nic spoleèného, domobrana si sem u netroufá ani vkroèit.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_14"); //Myslím, e se bojí, aby jim nikdo nerozbil drku. Mnì osobnì by to vùbec nevadilo.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_13"); //KdyÅ¾ vyÅ¡lo najevo, Å¾e Å¾oldÃ¡ci s tÃ­m paladinem nemÄ›li nic spoleÄnÃ©ho, domobrana si sem uÅ¾ netroufÃ¡ ani vkroÄit.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_14"); //MyslÃ­m, Å¾e se bojÃ­, aby jim nikdo nerozbil drÅ¾ku. MnÄ› osobnÄ› by to vÅ¯bec nevadilo.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_15"); //Nedìje se tu absolutnì nic.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_15"); //NedÄ›je se tu absolutnÄ› nic.
 	}
 	else //Kapitel 5
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_16"); //Koneènì ti nabubøelí paladinové vypadli z pøístavu. Bylo naèase.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_16"); //KoneÄnÄ› ti nabubÅ™elÃ­ paladinovÃ© vypadli z pÅ™Ã­stavu. Bylo naÄase.
 	};
 };
 
@@ -345,7 +345,7 @@ func int DIA_Moe_LEHMARGELDEINTREIBEN_Condition ()
 };
 func void DIA_Moe_LEHMARGELDEINTREIBEN_Info ()
 {
-	AI_Output (self, other, "DIA_Moe_LEHMARGELDEINTREIBEN_01_00"); //Hej, ty tam! Lehmar tì zdraví.
+	AI_Output (self, other, "DIA_Moe_LEHMARGELDEINTREIBEN_01_00"); //Hej, ty tam! Lehmar tÄ› zdravÃ­.
 
 	AI_StopProcessInfos (self);
 

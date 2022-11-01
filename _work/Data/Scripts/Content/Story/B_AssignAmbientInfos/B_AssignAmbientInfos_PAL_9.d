@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_9_JOIN(C_INFO)
 	condition	= DIA_PAL_9_JOIN_Condition;
 	information	= DIA_PAL_9_JOIN_Info;
 	permanent	= TRUE;
-	description = "Jak se mohu stát paladinem?";
+	description = "Jak se mohu stÃ¡t paladinem?";
 };                       
 
 FUNC INT DIA_PAL_9_JOIN_Condition()
@@ -42,9 +42,9 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Jak se mohu stát paladinem?
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Jen ten, kdo v Innosovıch èi královıch slubách prokáe, e je toho hoden, se mùe stát vyvolenım!
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Jinak øeèeno: Vybráni mohou bıt jen ti nejlepší. Ale TY do toho máš hodnì daleko, hochu!
+	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Jak se mohu stÃ¡t paladinem?
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Jen ten, kdo v InnosovÃ½ch Äi krÃ¡lovÃ½ch sluÅ¾bÃ¡ch prokÃ¡Å¾e, Å¾e je toho hoden, se mÅ¯Å¾e stÃ¡t vyvolenÃ½m!
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Jinak Å™eÄeno: VybrÃ¡ni mohou bÃ½t jen ti nejlepÅ¡Ã­. Ale TY do toho mÃ¡Å¡ hodnÄ› daleko, hochu!
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_PAL_9_PEOPLE(C_INFO)
 	condition	= DIA_PAL_9_PEOPLE_Condition;
 	information	= DIA_PAL_9_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tomu tady velí?";
+	description = "Kdo tomu tady velÃ­?";
 };                       
 
 FUNC INT DIA_PAL_9_PEOPLE_Condition()
@@ -69,10 +69,10 @@ FUNC INT DIA_PAL_9_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_9_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Kdo tomu tady velí?
+	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Kdo tomu tady velÃ­?
 	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Lord Hagen.
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //A?
-	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //A nikdo další. Lord Hagen je nejvyšším velitelem celého ostrova.
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //A nikdo dalÅ¡Ã­. Lord Hagen je nejvyÅ¡Å¡Ã­m velitelem celÃ©ho ostrova.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_9_LOCATION(C_INFO)
 	condition	= DIA_PAL_9_LOCATION_Condition;
 	information	= DIA_PAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Proè paladinové pøišli do Khorinidu?";
+	description = "ProÄ paladinovÃ© pÅ™iÅ¡li do Khorinidu?";
 };                       
 
 FUNC INT DIA_PAL_9_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Proè jste vy, paladinové, pøišli do Khorinidu?
-	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Do toho ti nic není, pøíteli! Musí ti staèit, e jsme tu v Innosovıch a královıch slubách!
+	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //ProÄ jste vy, paladinovÃ©, pÅ™iÅ¡li do Khorinidu?
+	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Do toho ti nic nenÃ­, pÅ™Ã­teli! MusÃ­ ti staÄit, Å¾e jsme tu v InnosovÃ½ch a krÃ¡lovÃ½ch sluÅ¾bÃ¡ch!
 };
 
 // *************************************************************************
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_9_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //Teï kdy víme, e máme co do èinìní s draky, zaène náš velitel urèitì brzy nìco dìlat.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //TeÄ kdyÅ¾ vÃ­me, Å¾e mÃ¡me co do ÄinÄ›nÃ­ s draky, zaÄne nÃ¡Å¡ velitel urÄitÄ› brzy nÄ›co dÄ›lat.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Ještì stále nemáme ádné zprávy od našich muù z Hornického údolí. To je velmi znepokojivé.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //JeÅ¡tÄ› stÃ¡le nemÃ¡me Å¾Ã¡dnÃ© zprÃ¡vy od naÅ¡ich muÅ¾Å¯ z HornickÃ©ho ÃºdolÃ­. To je velmi znepokojivÃ©.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //Díky Innosovi! Draèí hrozba byla zaehnána. Teï u se musíme jen vypoøádat s tìmi skøety a cesta k rudì je volná.
+			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //DÃ­ky Innosovi! DraÄÃ­ hrozba byla zaÅ¾ehnÃ¡na. TeÄ uÅ¾ se musÃ­me jen vypoÅ™Ã¡dat s tÄ›mi skÅ™ety a cesta k rudÄ› je volnÃ¡.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Jestli je to všechno, co mi mùeš øíct, tak u se ztra, pøíteli!
+		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Jestli je to vÅ¡echno, co mi mÅ¯Å¾eÅ¡ Å™Ã­ct, tak uÅ¾ se ztraÅ¥, pÅ™Ã­teli!
 	};
 };
 

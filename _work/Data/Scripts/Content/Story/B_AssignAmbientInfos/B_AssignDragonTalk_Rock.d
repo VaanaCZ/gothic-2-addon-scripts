@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Rock_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Dost øeèí. Tvá doèasná moc vypršela. Oko ztratilo svou sílu. Pøiprav se na smrt.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Dost Å™eÄÃ­. TvÃ¡ doÄasnÃ¡ moc vyprÅ¡ela. Oko ztratilo svou sÃ­lu. PÅ™iprav se na smrt.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -54,14 +54,14 @@ FUNC INT DIA_Dragon_Rock_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Rock_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Další troufalé stvoøení, co se odváilo vylézt do mıch skal. Ty mròavı èlovíèku. Tak stateènı a zároveò tak zranitelnı.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //DalÅ¡Ã­ troufalÃ© stvoÅ™enÃ­, co se odvÃ¡Å¾ilo vylÃ©zt do mÃ½ch skal. Ty mrÅˆavÃ½ ÄlovÃ­Äku. Tak stateÄnÃ½ a zÃ¡roveÅˆ tak zranitelnÃ½.
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Hej, vánì umíš mluvit.
+		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Hej, vÃ¡Å¾nÄ› umÃ­Å¡ mluvit.
 	};
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Vyrvu ti z tìla vnitønosti a nadìlám z nich krmení pro krysy.
-	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //Ne tak rychle. Mám u sebe Innosovo oko. Budeš mì muset poslouchat a odpovídat na mé otázky.
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(øve) Arrh. Ptej se.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Vyrvu ti z tÄ›la vnitÅ™nosti a nadÄ›lÃ¡m z nich krmenÃ­ pro krysy.
+	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //Ne tak rychle. MÃ¡m u sebe Innosovo oko. BudeÅ¡ mÄ› muset poslouchat a odpovÃ­dat na mÃ© otÃ¡zky.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(Å™ve) Arrh. Ptej se.
 
 };
 
@@ -89,7 +89,7 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition ()
 func void DIA_Dragon_Rock_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Jsem nazıván Pedrakhanem a stáhnu z tebe kùi zaiva, a tì chytím.
+	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Jsem nazÃ½vÃ¡n Pedrakhanem a stÃ¡hnu z tebe kÅ¯Å¾i zaÅ¾iva, aÅ¾ tÄ› chytÃ­m.
 
 };
 
@@ -103,7 +103,7 @@ instance DIA_Dragon_Rock_HIERARCHIE		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information	 = 	DIA_Dragon_Rock_HIERARCHIE_Info;
 
-	description	 = 	"Kdo je mezi draky nejsilnìjší?";
+	description	 = 	"Kdo je mezi draky nejsilnÄ›jÅ¡Ã­?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
@@ -116,12 +116,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Kdo je mezi draky ten nejsilnìjší?
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Èerpáme svou sílu z elementù tohoto svìta. Jejich hierarchie je jasná a jednoduchá.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Zemì, kterou pokrıvá mìkká pùda, poskytla ivot všem stvoøením pod sluncem. Teï se otevøe a všechny vás pohltí, pokud se dostanete pøíliš blízko.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //Skály, je by se radìji rozpadly, ne by se vzdaly, se pyšnì tyèí k nebi a schovávají samy pøed sebou jistou nedbalost. A ještì poskytují nejlepší ochranu proti pøílivu.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Jiskøièka ivota døímá v áru hlubin tohoto svìta. A teï plameny spálí vše ivé a nezùstane nic ne popel.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Všechny naše elementy dokáí chránit i nièit. Ale pouze ve vodì, která se mùe stát tvrdou a pevnou jako skála, se vše pøemìní na vìènou nehybnost, kde je ivot stìí monı.
+	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Kdo je mezi draky ten nejsilnÄ›jÅ¡Ã­?
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //ÄŒerpÃ¡me svou sÃ­lu z elementÅ¯ tohoto svÄ›ta. Jejich hierarchie je jasnÃ¡ a jednoduchÃ¡.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //ZemÄ›, kterou pokrÃ½vÃ¡ mÄ›kkÃ¡ pÅ¯da, poskytla Å¾ivot vÅ¡em stvoÅ™enÃ­m pod sluncem. TeÄ se otevÅ™e a vÅ¡echny vÃ¡s pohltÃ­, pokud se dostanete pÅ™Ã­liÅ¡ blÃ­zko.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //SkÃ¡ly, jeÅ¾ by se radÄ›ji rozpadly, neÅ¾ by se vzdaly, se pyÅ¡nÄ› tyÄÃ­ k nebi a schovÃ¡vajÃ­ samy pÅ™ed sebou jistou nedbalost. A jeÅ¡tÄ› poskytujÃ­ nejlepÅ¡Ã­ ochranu proti pÅ™Ã­livu.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //JiskÅ™iÄka Å¾ivota dÅ™Ã­mÃ¡ v Å¾Ã¡ru hlubin tohoto svÄ›ta. A teÄ plameny spÃ¡lÃ­ vÅ¡e Å¾ivÃ© a nezÅ¯stane nic neÅ¾ popel.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //VÅ¡echny naÅ¡e elementy dokÃ¡Å¾Ã­ chrÃ¡nit i niÄit. Ale pouze ve vodÄ›, kterÃ¡ se mÅ¯Å¾e stÃ¡t tvrdou a pevnou jako skÃ¡la, se vÅ¡e pÅ™emÄ›nÃ­ na vÄ›Änou nehybnost, kde je Å¾ivot stÄ›Å¾Ã­ moÅ¾nÃ½.
 
 };
 

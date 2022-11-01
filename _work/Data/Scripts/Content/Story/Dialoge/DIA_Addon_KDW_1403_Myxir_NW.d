@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Myxir_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Hallo_Condition;
 	information	 = 	DIA_Addon_Myxir_Hallo_Info;
 
-	description	 = 	"Je všechno v poøádku?";
+	description	 = 	"Je vÅ¡echno v poÅ™Ã¡dku?";
 };
 
 func int DIA_Addon_Myxir_Hallo_Condition ()
@@ -94,8 +94,8 @@ func int DIA_Addon_Myxir_Hallo_Condition ()
 
 func void DIA_Addon_Myxir_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Je všechno v poøádku?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Ty máš teda odvahu, jen tak se tu procházet.
+	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Je vÅ¡echno v poÅ™Ã¡dku?
+	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Ty mÃ¡Å¡ teda odvahu, jen tak se tu prochÃ¡zet.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WasMachstDu
@@ -107,7 +107,7 @@ instance DIA_Addon_Myxir_WasMachstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WasMachstDu_Condition;
 	information	 = 	DIA_Addon_Myxir_WasMachstDu_Info;
 
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Addon_Myxir_WasMachstDu_Condition ()
@@ -120,11 +120,11 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition ()
 
 func void DIA_Addon_Myxir_WasMachstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Co tu dìláš?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Studuju jazyk stavitelù.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Ten jazyk je klíèem k pochopení toho dávného lidu.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Kadı z nás se ho musí nauèit, jinak tahle expedice skonèí døív, ne vùbec nìco zjistíme.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Stavitelé své vìdomosti zaznamenávali na kamenné tabulky. Spousta z nich se bohuel rozbila nebo u je lidé dávno rozkradli.
+	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Co tu dÄ›lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Studuju jazyk stavitelÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Ten jazyk je klÃ­Äem k pochopenÃ­ toho dÃ¡vnÃ©ho lidu.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //KaÅ¾dÃ½ z nÃ¡s se ho musÃ­ nauÄit, jinak tahle expedice skonÄÃ­ dÅ™Ã­v, neÅ¾ vÅ¯bec nÄ›co zjistÃ­me.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //StavitelÃ© svÃ© vÄ›domosti zaznamenÃ¡vali na kamennÃ© tabulky. Spousta z nich se bohuÅ¾el rozbila nebo uÅ¾ je lidÃ© dÃ¡vno rozkradli.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Steintafeln
@@ -136,7 +136,7 @@ instance DIA_Addon_Myxir_Steintafeln		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Steintafeln_Condition;
 	information	 = 	DIA_Addon_Myxir_Steintafeln_Info;
 
-	description	 = 	"Tak co je tedy na tìch kamennıch tabulkách?";
+	description	 = 	"Tak co je tedy na tÄ›ch kamennÃ½ch tabulkÃ¡ch?";
 };
 
 func int DIA_Addon_Myxir_Steintafeln_Condition ()
@@ -148,15 +148,15 @@ func int DIA_Addon_Myxir_Steintafeln_Condition ()
 };
 func void DIA_Addon_Myxir_Steintafeln_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //A co je tedy na tìch kamennıch tabulkách?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //Obsahují všechny vìdomosti, které tento pradávnı lid nashromádil.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Nìkteré magicky zvyšují bojové schopnosti a magii.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Pro toho, kdo je dokáe èíst, mohou pøedstavovat skuteènı poklad.
+	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //A co je tedy na tÄ›ch kamennÃ½ch tabulkÃ¡ch?
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //ObsahujÃ­ vÅ¡echny vÄ›domosti, kterÃ© tento pradÃ¡vnÃ½ lid nashromÃ¡Å¾dil.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //NÄ›kterÃ© magicky zvyÅ¡ujÃ­ bojovÃ© schopnosti a magii.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Pro toho, kdo je dokÃ¡Å¾e ÄÃ­st, mohou pÅ™edstavovat skuteÄnÃ½ poklad.
 
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Stoneplates,"Kamenné tabulky obsahují vìdìní dávného lidu stavitelù. Nìkteré z nich mi zvıší bojové nebo magické schopnosti, ale napøed se je musím nauèit èíst."); 
+	B_LogEntry (TOPIC_Addon_Stoneplates,"KamennÃ© tabulky obsahujÃ­ vÄ›dÄ›nÃ­ dÃ¡vnÃ©ho lidu stavitelÅ¯. NÄ›kterÃ© z nich mi zvÃ½Å¡Ã­ bojovÃ© nebo magickÃ© schopnosti, ale napÅ™ed se je musÃ­m nauÄit ÄÃ­st."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WillYouTeachMe
@@ -168,7 +168,7 @@ instance DIA_Addon_Myxir_WillYouTeachMe		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WillYouTeachMe_Condition;
 	information	 = 	DIA_Addon_Myxir_WillYouTeachMe_Info;
 
-	description	 = 	"Mohl bys mì nauèit èíst v tom jazyce?";
+	description	 = 	"Mohl bys mÄ› nauÄit ÄÃ­st v tom jazyce?";
 };
 
 func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
@@ -181,8 +181,8 @@ func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
 
 func void DIA_Addon_Myxir_WillYouTeachMe_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //Nauèíš mì ten jazyk?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //No, proè ne? Rád se s tebou podìlím o své vìdomosti.
+	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //NauÄÃ­Å¡ mÄ› ten jazyk?
+	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //No, proÄ ne? RÃ¡d se s tebou podÄ›lÃ­m o svÃ© vÄ›domosti.
 	Myxir_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
@@ -204,7 +204,7 @@ instance DIA_Addon_Myxir_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nauè mì tomu jazyku.";
+	description	 = 	"NauÄ mÄ› tomu jazyku.";
 };
 
 var int DIA_Addon_Myxir_Teach_NoPerm;

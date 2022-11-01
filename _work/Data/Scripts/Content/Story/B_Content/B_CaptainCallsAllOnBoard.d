@@ -1,6 +1,6 @@
 
 // ***************************************************
-//  	B_CaptainCallsAllOnBoard	(Alle Bedingungen f¸rs 6. Kapitel sind erf¸llt. Nun gehts los!!!!!!!!!!)	
+//  	B_CaptainCallsAllOnBoard	(Alle Bedingungen f√ºrs 6. Kapitel sind erf√ºllt. Nun gehts los!!!!!!!!!!)	
 // ***************************************************
 
 func void B_CaptainCallsAllOnBoard (var C_NPC Captain)
@@ -10,19 +10,19 @@ func void B_CaptainCallsAllOnBoard (var C_NPC Captain)
 	B_GiveInvItems (Captain, other, ItKe_Ship_Levelchange_MIS, 1);					
 	B_StartOtherRoutine	(Captain,"AllOnBoard");
 
- 	if (Lee_IsOnBoard 			== LOG_SUCCESS){B_StartOtherRoutine	(Lee,				"LoÔ");};
-	if (MiltenNW_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(MiltenNW,			"LoÔ");};
-	if (Lester_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Lester,			"LoÔ");};
-	if (Gorn_IsOnBoard		 	== LOG_SUCCESS){B_StartOtherRoutine	(GornNW_nach_DJG,	"LoÔ");};
-	if (Mario_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Mario,				"LoÔ");};
-	if (Wolf_IsOnBoard		 	== LOG_SUCCESS){B_StartOtherRoutine	(SLD_Wolf,			"LoÔ");};
-	if (Lares_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Lares,				"LoÔ");};
-	if (Bennet_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Bennet,			"LoÔ");};
-	if (Diego_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(DiegoNW,			"LoÔ");};
-	if (Biff_IsOnBoard 			== LOG_SUCCESS){B_StartOtherRoutine	(Biff_NW,			"LoÔ");};
-	if (Vatras_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Vatras,			"LoÔ");};
-	if (Angar_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Angar_NW,			"LoÔ");};
-	if (Girion_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Girion,			"LoÔ");};
+ 	if (Lee_IsOnBoard 			== LOG_SUCCESS){B_StartOtherRoutine	(Lee,				"Loƒè");};
+	if (MiltenNW_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(MiltenNW,			"Loƒè");};
+	if (Lester_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Lester,			"Loƒè");};
+	if (Gorn_IsOnBoard		 	== LOG_SUCCESS){B_StartOtherRoutine	(GornNW_nach_DJG,	"Loƒè");};
+	if (Mario_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Mario,				"Loƒè");};
+	if (Wolf_IsOnBoard		 	== LOG_SUCCESS){B_StartOtherRoutine	(SLD_Wolf,			"Loƒè");};
+	if (Lares_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Lares,				"Loƒè");};
+	if (Bennet_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Bennet,			"Loƒè");};
+	if (Diego_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(DiegoNW,			"Loƒè");};
+	if (Biff_IsOnBoard 			== LOG_SUCCESS){B_StartOtherRoutine	(Biff_NW,			"Loƒè");};
+	if (Vatras_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Vatras,			"Loƒè");};
+	if (Angar_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Angar_NW,			"Loƒè");};
+	if (Girion_IsOnBoard 		== LOG_SUCCESS){B_StartOtherRoutine	(Girion,			"Loƒè");};
 	
  	MIS_ReadyforChapter6 = TRUE;
 };

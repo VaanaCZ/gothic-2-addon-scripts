@@ -144,7 +144,7 @@ instance DIA_Aya_WarteHier(C_Info)
 	condition	= DIA_Aya_WarteHier_Condition;
 	information	= DIA_Aya_WarteHier_Info;
 	permanent	= TRUE;
-	description	= "Ich f¸rchte, ich muss mich von dir trennen.";
+	description	= "Ich f√ºrchte, ich muss mich von dir trennen.";
 };
 func int DIA_Aya_WarteHier_Condition()
 {
@@ -155,10 +155,10 @@ func int DIA_Aya_WarteHier_Condition()
 };
 func void DIA_Aya_WarteHier_Info()
 {
-	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //TeÔ se musÌme rozdÏlit, je mi lÌto.
+	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Teƒè se mus√≠me rozdƒõlit, je mi l√≠to.
 	B_Say(self, other, "$YESGOOUTOFHERE");
 	AI_StopProcessInfos(self);
-	Npc_ExchangeRoutine(self, "ZaËÌt");
+	Npc_ExchangeRoutine(self, "Zaƒç√≠t");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 };
 

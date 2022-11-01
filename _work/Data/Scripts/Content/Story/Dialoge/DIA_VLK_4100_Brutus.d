@@ -54,17 +54,17 @@ func void DIA_Brutus_AFTER_FIGHT_Info ()
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_00"); //Tak co, máš ještì poøád všechny zuby?
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_01"); //Chlape, ty jsi pìknı poøízek! Nechtìl bych se s tebou utkat, to teda ne.
+		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_00"); //Tak co, mÃ¡Å¡ jeÅ¡tÄ› poÅ™Ã¡d vÅ¡echny zuby?
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_01"); //Chlape, ty jsi pÄ›knÃ½ poÅ™Ã­zek! NechtÄ›l bych se s tebou utkat, to teda ne.
 	}
 	else if  (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_02"); //Myslím, e bys mi zlomil všechny ebra, ne-li nìco horšího.
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_03"); //A já tì taky nemlátil plnou silou. No nevadí, mám rád chlapy, které nìjaká ta rána hned tak nesklátí.
+		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_02"); //MyslÃ­m, Å¾e bys mi zlomil vÅ¡echny Å¾ebra, ne-li nÄ›co horÅ¡Ã­ho.
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_03"); //A jÃ¡ tÄ› taky nemlÃ¡til plnou silou. No nevadÃ­, mÃ¡m rÃ¡d chlapy, kterÃ© nÄ›jakÃ¡ ta rÃ¡na hned tak nesklÃ¡tÃ­.
 		
 		if (Brutus_einmalig == FALSE)
 		{
-			AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_04"); //Tenhle lektvar tì zase postaví na nohy a s útrobami dìlá hotové zázraky!
+			AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_04"); //Tenhle lektvar tÄ› zase postavÃ­ na nohy a s Ãºtrobami dÄ›lÃ¡ hotovÃ© zÃ¡zraky!
 		
 			CreateInvItems (self, ItPo_Health_01,1);
 			B_GiveInvItems (self, hero, ItPo_Health_01,1); 
@@ -73,7 +73,7 @@ func void DIA_Brutus_AFTER_FIGHT_Info ()
 	}
 	else //Cancel
 	{
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_05"); //Nemám nic proti dobrému boji, ale kdy se zaènu bít, tak taky vím, kdy skonèit.
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_05"); //NemÃ¡m nic proti dobrÃ©mu boji, ale kdyÅ¾ se zaÄnu bÃ­t, tak taky vÃ­m, kdy skonÄit.
 	};
 	// ------ AIVAR resetten ------
 	self.aivar[AIV_LastFightComment] = TRUE;
@@ -87,7 +87,7 @@ instance DIA_Brutus_PRISONER		(C_INFO)
 	nr		     = 	2;
 	condition	 = 	DIA_Brutus_PRISONER_Condition;
 	information	 = 	DIA_Brutus_PRISONER_Info;
-	description	 = 	"Jakou práci tu vykonáváš?";
+	description	 = 	"Jakou prÃ¡ci tu vykonÃ¡vÃ¡Å¡?";
 };
 
 func int DIA_Brutus_PRISONER_Condition ()
@@ -100,16 +100,16 @@ func int DIA_Brutus_PRISONER_Condition ()
 };
 func void DIA_Brutus_PRISONER_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_PRISONER_15_00"); //Co tu máš na práci?
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_01"); //Co mám na práci? Cvièím tyhle hošany. Uèím je, jak získat ocelové svaly.
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_02"); //Taky se starám o vìznì, jsem pro ty bastardy nìco jako zatracenì pøísnı otec!
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_03"); //Ale opravdové umìní je pøimìt je k hovoru. A vìø mi - já rozváu jazyk úplnì kadému.
-	AI_Output (other, self, "DIA_Brutus_PRISONER_15_04"); //To zní pìknì dìsivì.
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_05"); //Ale ti zablešení zabednìnci, které jsme teï zabásli, nám toho moc neøeknou - ani nemají co.
+	AI_Output (other, self, "DIA_Brutus_PRISONER_15_00"); //Co tu mÃ¡Å¡ na prÃ¡ci?
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_01"); //Co mÃ¡m na prÃ¡ci? CviÄÃ­m tyhle hoÅ¡any. UÄÃ­m je, jak zÃ­skat ocelovÃ© svaly.
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_02"); //Taky se starÃ¡m o vÄ›znÄ›, jsem pro ty bastardy nÄ›co jako zatracenÄ› pÅ™Ã­snÃ½ otec!
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_03"); //Ale opravdovÃ© umÄ›nÃ­ je pÅ™imÄ›t je k hovoru. A vÄ›Å™ mi - jÃ¡ rozvÃ¡Å¾u jazyk ÃºplnÄ› kaÅ¾dÃ©mu.
+	AI_Output (other, self, "DIA_Brutus_PRISONER_15_04"); //To znÃ­ pÄ›knÄ› dÄ›sivÄ›.
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_05"); //Ale ti zableÅ¡enÃ­ zabednÄ›nci, kterÃ© jsme teÄ zabÃ¡sli, nÃ¡m toho moc neÅ™eknou - ani nemajÃ­ co.
 	
 	if (MIS_RescueGorn != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Brutus_PRISONER_06_06"); //A tak se nebudu moci vypoøádat s tím Gornem.
+		AI_Output (self, other, "DIA_Brutus_PRISONER_06_06"); //A tak se nebudu moci vypoÅ™Ã¡dat s tÃ­m Gornem.
 		
 		KnowsAboutGorn = TRUE; 
 	};
@@ -126,7 +126,7 @@ instance DIA_Brutus_PERM		(C_INFO)
 	condition	 = 	DIA_Brutus_PERM_Condition;
 	information	 = 	DIA_Brutus_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co je nového?";
+	description	 = 	"Co je novÃ©ho?";
 };
 
 func int DIA_Brutus_PERM_Condition ()
@@ -140,8 +140,8 @@ func int DIA_Brutus_PERM_Condition ()
 };
 func void DIA_Brutus_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_PERM_15_00"); //Nìco nového?
-	AI_Output (self, other, "DIA_Brutus_PERM_06_01"); //Všecko vypadá klidnì. ádní noví vìzni - nikomu nemùu pomáhat hledat správná slova - je to prostì zlé.
+	AI_Output (other, self, "DIA_Brutus_PERM_15_00"); //NÄ›co novÃ©ho?
+	AI_Output (self, other, "DIA_Brutus_PERM_06_01"); //VÅ¡ecko vypadÃ¡ klidnÄ›. Å½Ã¡dnÃ­ novÃ­ vÄ›zni - nikomu nemÅ¯Å¾u pomÃ¡hat hledat sprÃ¡vnÃ¡ slova - je to prostÄ› zlÃ©.
 	B_NpcClearObsessionByDMT (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -154,7 +154,7 @@ instance DIA_Brutus_Kasse		(C_INFO)
 	condition	 = 	DIA_Brutus_Kasse_Condition;
 	information	 = 	DIA_Brutus_Kasse_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mohl bys mì cvièit?";
+	description	 = 	"Mohl bys mÄ› cviÄit?";
 };
 
 func int DIA_Brutus_Kasse_Condition ()
@@ -168,20 +168,20 @@ func int DIA_Brutus_Kasse_Condition ()
 };
 func void DIA_Brutus_Kasse_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_00"); //Mohl bys mì cvièit?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_01"); //Jasnì - mùu ti pomoci zvıšit sílu, ale zadarmo ani kuøe nehrabe.
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_02"); //Kolik chceš?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_03"); //Hmm, tys pobíhal kolem toho hradu, e jo? Tak ti navrhnu tohle.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_04"); //Mùj asistent Den se pøi posledním útoku úplnì vypaøil - prostì nevydrel.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_05"); //Ale neodešel s prázdnou. Odnesl si i obsah naší pokladnice.
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_06"); //Jaké pokladnice?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_07"); //V téhle truhlici jsme schovávali zboí, které jsme èasem, ehm, vybrali.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_08"); //Byla to pìknì zaokrouhlená sumièka - 200 zlaákù, a to nepoèítám ještì vzácné klenoty.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_09"); //Jestli mi vrátíš to zlato, budeš si moci nechat ty klenoty, a ještì k tomu tì budu cvièit.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_00"); //Mohl bys mÄ› cviÄit?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_01"); //JasnÄ› - mÅ¯Å¾u ti pomoci zvÃ½Å¡it sÃ­lu, ale zadarmo ani kuÅ™e nehrabe.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_02"); //Kolik chceÅ¡?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_03"); //Hmm, tys pobÃ­hal kolem toho hradu, Å¾e jo? Tak ti navrhnu tohle.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_04"); //MÅ¯j asistent Den se pÅ™i poslednÃ­m Ãºtoku ÃºplnÄ› vypaÅ™il - prostÄ› nevydrÅ¾el.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_05"); //Ale neodeÅ¡el s prÃ¡zdnou. Odnesl si i obsah naÅ¡Ã­ pokladnice.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_06"); //JakÃ© pokladnice?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_07"); //V tÃ©hle truhlici jsme schovÃ¡vali zboÅ¾Ã­, kterÃ© jsme Äasem, ehm, vybrali.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_08"); //Byla to pÄ›knÄ› zaokrouhlenÃ¡ sumiÄka - 200 zlaÅ¥Ã¡kÅ¯, a to nepoÄÃ­tÃ¡m jeÅ¡tÄ› vzÃ¡cnÃ© klenoty.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_09"); //Jestli mi vrÃ¡tÃ­Å¡ to zlato, budeÅ¡ si moci nechat ty klenoty, a jeÅ¡tÄ› k tomu tÄ› budu cviÄit.
 	
 	Log_CreateTopic (TopicBrutusKasse,LOG_MISSION);
 	Log_SetTopicStatus (TopicBrutusKasse,LOG_RUNNING);
-	B_LogEntry (TopicBrutusKasse,"Brutùv partner Den se ztratil i s 200 zlaáky a nìjakımi klenoty. Kdy Brutovi pøinesu aspoò ty dvì stovky, pomùe mi zvıšit sílu.");
+	B_LogEntry (TopicBrutusKasse,"BrutÅ¯v partner Den se ztratil i s 200 zlaÅ¥Ã¡ky a nÄ›jakÃ½mi klenoty. KdyÅ¾ Brutovi pÅ™inesu aspoÅˆ ty dvÄ› stovky, pomÅ¯Å¾e mi zvÃ½Å¡it sÃ­lu.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo ist Den?
@@ -193,7 +193,7 @@ instance DIA_Brutus_Den		(C_INFO)
 	condition	 = 	DIA_Brutus_Den_Condition;
 	information	 = 	DIA_Brutus_Den_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Nevíš, kam Den míøil?";
+	description	 = 	"NevÃ­Å¡, kam Den mÃ­Å™il?";
 };
 
 func int DIA_Brutus_Den_Condition ()
@@ -207,12 +207,12 @@ func int DIA_Brutus_Den_Condition ()
 };
 func void DIA_Brutus_Den_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Den_15_00"); //Nevíš, kam Den míøil?
-	AI_Output (self, other, "DIA_Brutus_Den_06_01"); //Nejspíš co nejdál odsud. Moná se pokusil projít prùsmykem.
-	AI_Output (other, self, "DIA_Brutus_Den_15_02"); //Díky, fakt jsi mi moc pomohl.
-	AI_Output (self, other, "DIA_Brutus_Den_06_03"); //No co mùu øíct? Nemám ani potuchy, kam mohl jít.
+	AI_Output (other, self, "DIA_Brutus_Den_15_00"); //NevÃ­Å¡, kam Den mÃ­Å™il?
+	AI_Output (self, other, "DIA_Brutus_Den_06_01"); //NejspÃ­Å¡ co nejdÃ¡l odsud. MoÅ¾nÃ¡ se pokusil projÃ­t prÅ¯smykem.
+	AI_Output (other, self, "DIA_Brutus_Den_15_02"); //DÃ­ky, fakt jsi mi moc pomohl.
+	AI_Output (self, other, "DIA_Brutus_Den_06_03"); //No co mÅ¯Å¾u Å™Ã­ct? NemÃ¡m ani potuchy, kam mohl jÃ­t.
 	
-	B_LogEntry (TopicBrutusKasse,"Den se snail projít prùsmykem.");
+	B_LogEntry (TopicBrutusKasse,"Den se snaÅ¾il projÃ­t prÅ¯smykem.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gold
@@ -224,7 +224,7 @@ instance DIA_Brutus_Gold		(C_INFO)
 	condition	 = 	DIA_Brutus_Gold_Condition;
 	information	 = 	DIA_Brutus_Gold_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Nìco tu pro tebe mám (pøedat 200 zlaákù).";
+	description	 = 	"NÄ›co tu pro tebe mÃ¡m (pÅ™edat 200 zlaÅ¥Ã¡kÅ¯).";
 };
 
 func int DIA_Brutus_Gold_Condition ()
@@ -238,19 +238,19 @@ func int DIA_Brutus_Gold_Condition ()
 };
 func void DIA_Brutus_Gold_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Gold_15_00"); //Nìco tu pro tebe mám.
+	AI_Output (other, self, "DIA_Brutus_Gold_15_00"); //NÄ›co tu pro tebe mÃ¡m.
 	
 	if B_GiveInvItems (other,self,Itmi_Gold,200)
 	{
-		AI_Output (self, other, "DIA_Brutus_Gold_06_01"); //Vıbornì. Teï tì mùu vycvièit, jestli tedy chceš.
+		AI_Output (self, other, "DIA_Brutus_Gold_06_01"); //VÃ½bornÄ›. TeÄ tÄ› mÅ¯Å¾u vycviÄit, jestli tedy chceÅ¡.
 		Brutus_TeachSTR = TRUE;
 		Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-		B_LogEntry		(TOPIC_Teacher_OC, "S pomocí Bruta se mohu stát silnìjším.");
+		B_LogEntry		(TOPIC_Teacher_OC, "S pomocÃ­ Bruta se mohu stÃ¡t silnÄ›jÅ¡Ã­m.");
 		B_GivePlayerXP  (XP_Ambient);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Brutus_Gold_06_02"); //Poslyš, prostì mi pøines 200 zlaákù. Nezajímá mì, kde si je opatøíš - zlaák jako zlaák.
+		AI_Output (self, other, "DIA_Brutus_Gold_06_02"); //PoslyÅ¡, prostÄ› mi pÅ™ines 200 zlaÅ¥Ã¡kÅ¯. NezajÃ­mÃ¡ mÄ›, kde si je opatÅ™Ã­Å¡ - zlaÅ¥Ã¡k jako zlaÅ¥Ã¡k.
 	};
 };
 //*******************************************
@@ -263,7 +263,7 @@ INSTANCE DIA_Brutus_Teach(C_INFO)
 	condition	= DIA_Brutus_Teach_Condition;
 	information	= DIA_Brutus_Teach_Info;
 	permanent	= TRUE;
-	description = "Chtìl bych se stát silnìjším.";
+	description = "ChtÄ›l bych se stÃ¡t silnÄ›jÅ¡Ã­m.";
 };                       
 
 FUNC INT DIA_Brutus_Teach_Condition()
@@ -277,7 +277,7 @@ FUNC INT DIA_Brutus_Teach_Condition()
  
 FUNC VOID DIA_Brutus_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Brutus_Teach_15_00"); //Chtìl bych se stát silnìjším.
+	AI_Output (other,self ,"DIA_Brutus_Teach_15_00"); //ChtÄ›l bych se stÃ¡t silnÄ›jÅ¡Ã­m.
 
 	Info_ClearChoices (DIA_Brutus_Teach);
 	Info_AddChoice		(DIA_Brutus_Teach, DIALOG_BACK, DIA_Brutus_Teach_Back);
@@ -353,7 +353,7 @@ instance DIA_Brutus_DUSCHONWIEDER		(C_INFO)
 	condition	 = 	DIA_Brutus_DUSCHONWIEDER_Condition;
 	information	 = 	DIA_Brutus_DUSCHONWIEDER_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Muèil jsi dneska nìkoho?";
+	description	 = 	"MuÄil jsi dneska nÄ›koho?";
 };
 
 func int DIA_Brutus_DUSCHONWIEDER_Condition ()
@@ -367,8 +367,8 @@ func int DIA_Brutus_DUSCHONWIEDER_Condition ()
 
 func void DIA_Brutus_DUSCHONWIEDER_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_DUSCHONWIEDER_15_00"); //Muèil jsi dneska nìkoho?
-	AI_Output (self, other, "DIA_Brutus_DUSCHONWIEDER_06_01"); //Copak nevidíš, e mám práci? Vra se pozdìji.
+	AI_Output (other, self, "DIA_Brutus_DUSCHONWIEDER_15_00"); //MuÄil jsi dneska nÄ›koho?
+	AI_Output (self, other, "DIA_Brutus_DUSCHONWIEDER_06_01"); //Copak nevidÃ­Å¡, Å¾e mÃ¡m prÃ¡ci? VraÅ¥ se pozdÄ›ji.
 
 	B_NpcClearObsessionByDMT (self);
 };
@@ -419,7 +419,7 @@ instance DIA_Brutus_WARUMNICHTARBBEIT		(C_INFO)
 	condition	 = 	DIA_Brutus_WARUMNICHTARBBEIT_Condition;
 	information	 = 	DIA_Brutus_WARUMNICHTARBBEIT_Info;
 
-	description	 = 	"Jak to, e nejsi v práci?";
+	description	 = 	"Jak to, Å¾e nejsi v prÃ¡ci?";
 };
 
 func int DIA_Brutus_WARUMNICHTARBBEIT_Condition ()
@@ -434,15 +434,15 @@ func int DIA_Brutus_WARUMNICHTARBBEIT_Condition ()
 
 func void DIA_Brutus_WARUMNICHTARBBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_WARUMNICHTARBBEIT_15_00"); //Jak to, e nejsi v práci?
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_01"); //(úzkostnì) To je ale nechutné!
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_02"); //Vidìls, jak to u mì vypadá? Ty hnusnı ravı štìnice jsou úplnì všude!
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_03"); //Nemám ani šajna, kdo tam co dìlal, ale já se tam urèitì nevrátím, dokud tam bude ten hnusnı hmyz.
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_04"); //Já ty potvory prostì nesnáším. A pøestaò se tak blbì køenit.
+	AI_Output			(other, self, "DIA_Brutus_WARUMNICHTARBBEIT_15_00"); //Jak to, Å¾e nejsi v prÃ¡ci?
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_01"); //(ÃºzkostnÄ›) To je ale nechutnÃ©!
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_02"); //VidÄ›ls, jak to u mÄ› vypadÃ¡? Ty hnusnÃ½ Å¾ravÃ½ Å¡tÄ›nice jsou ÃºplnÄ› vÅ¡ude!
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_03"); //NemÃ¡m ani Å¡ajna, kdo tam co dÄ›lal, ale jÃ¡ se tam urÄitÄ› nevrÃ¡tÃ­m, dokud tam bude ten hnusnÃ½ hmyz.
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_04"); //JÃ¡ ty potvory prostÄ› nesnÃ¡Å¡Ã­m. A pÅ™estaÅˆ se tak blbÄ› kÅ™enit.
 
 	Log_CreateTopic (TOPIC_BrutusMeatbugs, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BrutusMeatbugs, LOG_RUNNING);
-	B_LogEntry (TOPIC_BrutusMeatbugs,"Hradní popravèí Brutus se mi svìøil, e mu neškodné ravé štìnice v muèírnì nahánìjí husí kùi. Je to prostì drsòák kadım coulem."); 
+	B_LogEntry (TOPIC_BrutusMeatbugs,"HradnÃ­ popravÄÃ­ Brutus se mi svÄ›Å™il, Å¾e mu neÅ¡kodnÃ© Å¾ravÃ© Å¡tÄ›nice v muÄÃ­rnÄ› nahÃ¡nÄ›jÃ­ husÃ­ kÅ¯Å¾i. Je to prostÄ› drsÅˆÃ¡k kaÅ¾dÃ½m coulem."); 
 
 };
 
@@ -457,7 +457,7 @@ instance DIA_Brutus_MEATBUGSWEG		(C_INFO)
 	condition	 = 	DIA_Brutus_MEATBUGSWEG_Condition;
 	information	 = 	DIA_Brutus_MEATBUGSWEG_Info;
 	
-	description	 = 	"U je po štìnicích.";
+	description	 = 	"UÅ¾ je po Å¡tÄ›nicÃ­ch.";
 };
 
 func int DIA_Brutus_MEATBUGSWEG_Condition ()
@@ -477,11 +477,11 @@ func int DIA_Brutus_MEATBUGSWEG_Condition ()
 
 func void DIA_Brutus_MEATBUGSWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_00"); //U je po štìnicích. Mùeš se vrátit a leštit všechny ty paleènice a ostatní muèící nástroje.
-	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_01"); //Víš opravdu jistì, e tam ani jedna z tìch potvor nezbyla?
-	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_02"); //Naprosto jistì.
-	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_03"); //No tak tedy dobøe. Tumáš, za odmìnu si vezmi tohle zlato.
-	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_04"); //Uá, jenom mì tu nerozbreè.
+	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_00"); //UÅ¾ je po Å¡tÄ›nicÃ­ch. MÅ¯Å¾eÅ¡ se vrÃ¡tit a leÅ¡tit vÅ¡echny ty paleÄnice a ostatnÃ­ muÄÃ­cÃ­ nÃ¡stroje.
+	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_01"); //VÃ­Å¡ opravdu jistÄ›, Å¾e tam ani jedna z tÄ›ch potvor nezbyla?
+	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_02"); //Naprosto jistÄ›.
+	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_03"); //No tak tedy dobÅ™e. TumÃ¡Å¡, za odmÄ›nu si vezmi tohle zlato.
+	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_04"); //UÃ¡, jenom mÄ› tu nerozbreÄ.
 
 	TOPIC_END_BrutusMeatbugs = TRUE;
 	
@@ -491,7 +491,7 @@ func void DIA_Brutus_MEATBUGSWEG_Info ()
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);					
 
-	Npc_ExchangeRoutine	(self,"Zaèít");  
+	Npc_ExchangeRoutine	(self,"ZaÄÃ­t");  
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -505,7 +505,7 @@ instance DIA_Brutus_PERM4		(C_INFO)
 	information	 = 	DIA_Brutus_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Copak ses zbláznil?";
+	description	 = 	"Copak ses zblÃ¡znil?";
 };
 
 func int DIA_Brutus_PERM4_Condition ()
@@ -530,17 +530,17 @@ func void DIA_Brutus_PERM4_Info ()
 		}
 		else 
  		{
-			AI_Output			(other, self, "DIA_Brutus_PERM4_15_00"); //Jsi v poøádku?
-			AI_Output			(self, other, "DIA_Brutus_PERM4_06_01"); //(znepokojenì) A víš urèitì, e u tam ádné ravé štìnice nejsou?
-			AI_Output			(other, self, "DIA_Brutus_PERM4_15_02"); //Ehm, podívej, jednu máš pøímo za sebou!
-			AI_Output			(self, other, "DIA_Brutus_PERM4_06_03"); //(jeèí) Coe?
+			AI_Output			(other, self, "DIA_Brutus_PERM4_15_00"); //Jsi v poÅ™Ã¡dku?
+			AI_Output			(self, other, "DIA_Brutus_PERM4_06_01"); //(znepokojenÄ›) A vÃ­Å¡ urÄitÄ›, Å¾e uÅ¾ tam Å¾Ã¡dnÃ© Å¾ravÃ© Å¡tÄ›nice nejsou?
+			AI_Output			(other, self, "DIA_Brutus_PERM4_15_02"); //Ehm, podÃ­vej, jednu mÃ¡Å¡ pÅ™Ã­mo za sebou!
+			AI_Output			(self, other, "DIA_Brutus_PERM4_06_03"); //(jeÄÃ­) CoÅ¾e?
 		
 			B_NpcClearObsessionByDMT (self);
 			
 			
 			Npc_SetTarget 		(self, other);
 			
-			self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (böse) Flag nicht zurückgesetzt wird 
+			self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bÃ¶se) Flag nicht zurÃ¼ckgesetzt wird 
 			other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 			AI_StartState 		(self, ZS_Flee, 0, "");
@@ -558,7 +558,7 @@ instance DIA_Brutus_BESSEN		(C_INFO)
 	information	 = 	DIA_Brutus_BESSEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ty jsi posedlı!";
+	description	 = 	"Ty jsi posedlÃ½!";
 };
 
 func int DIA_Brutus_BESSEN_Condition ()
@@ -572,24 +572,24 @@ func int DIA_Brutus_BESSEN_Condition ()
 
 func void DIA_Brutus_BESSEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_00"); //Ty jsi posedlı!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_00"); //Ty jsi posedlÃ½!
 
 	if (hero.guild == GIL_KDF)
 		||(hero.guild == GIL_PAL)
 	{
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_01"); //Bì do kláštera, a tì tam vyléèí.
-	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_02"); //Mnì u není pomoci, bì pryè!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_01"); //BÄ›Å¾ do klÃ¡Å¡tera, aÅ¥ tÄ› tam vylÃ©ÄÃ­.
+	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_02"); //MnÄ› uÅ¾ nenÃ­ pomoci, bÄ›Å¾ pryÄ!
 	B_NpcClearObsessionByDMT (self);
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_03"); //Nìkdo ti musí z hlavy vypudit ty démony.
-	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_04"); //(køièí) NE!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_03"); //NÄ›kdo ti musÃ­ z hlavy vypudit ty dÃ©mony.
+	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_04"); //(kÅ™iÄÃ­) NE!
 	B_NpcClearObsessionByDMT (self);
 		
 	Npc_SetTarget 		(self, other);
 	
-	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (böse) Flag nicht zurückgesetzt wird 
+	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bÃ¶se) Flag nicht zurÃ¼ckgesetzt wird 
 	other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 	AI_StartState 		(self, ZS_Flee, 0, "");	
